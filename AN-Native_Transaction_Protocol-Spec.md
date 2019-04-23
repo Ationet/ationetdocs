@@ -2364,7 +2364,7 @@ This section brings together the code tables and reference values used in messag
 	</tbody>
 </table>
 	
-###11.2 Account Type###
+### 11.2 Account Type
 
 <table>
 	<thead>
