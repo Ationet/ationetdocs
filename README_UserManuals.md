@@ -5,7 +5,7 @@
 
 
 ## ATIONet Console
-- [Network Subscription Type User Manual (Spanish)](AN-Network-UserManal-SP.md)
+- [Network Subscription Type User Manual (Spanish)](UserManuals/AN-Network-UserManal-SP.md)
 - [Home base Subscription Type User Manual (Spanish)](AN-HomeBase-UserManal-SP.md)
 
 ## ATIONet Stand Alone Terminal
