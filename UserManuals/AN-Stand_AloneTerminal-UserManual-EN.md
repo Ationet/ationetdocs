@@ -115,17 +115,17 @@
  
 <!-- /MarkdownTOC -->
 
-##Introduction
+## Introduction
 This manual is aimed to help and guide the user with the ATIONet Stand Alone terminal. ATIONet Stand Alone terminal allows the user to authorize fleet transactions in ATIONet hosts from a simple terminal very similar to  the ones used by credit cards.
 
-##Components
+## Components
 
 ATIONet Stand Alone Terminal consists of a single component from which all operations are performed. From now on we will refer to this terminal as POS (Point of Sale). From this terminal operator shall perform all necessary operations, authorize and complete fueling transactions for fleets.
 
 ![terminal](../Content/Images/standAloneTerminal/1.png)
 
 
-####POS parts
+#### POS parts
 
 a) Paper roll cover
 
