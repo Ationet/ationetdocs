@@ -7,7 +7,7 @@
 	</tr>
 	<tr>
 		<td>Archivo:</td>
-		<td>ANInventoryClient-UserManal-SP</td>
+		<td>AN-InventoryClient-UserManal-SP</td>
 	</tr>
 	<tr>
 		<td>Versión documento:</td>
