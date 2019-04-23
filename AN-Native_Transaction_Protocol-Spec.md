@@ -592,7 +592,7 @@ As described above, on certain situations, the Host will answer a Pre-Authorizat
 With commercial and industrial system that don’t control fuel price, the Controller should use a \$1 unit price for all available products to
 avoid potential declines due to the lack of unit price to resolve amount restrictions.
 
-####Customer Data####
+#### Customer Data
 Customer data on a TREQ contains extra information gathered from prompts to the Cardholder or Attendant. On a TRESP, it contains the list of prompts that must be presented to the Cardholder or Attendant or a list of values to be used by the Terminal at capture, transaction or receipt printing.
 
 *Prompt elements vs. Data elements*
@@ -601,7 +601,7 @@ Customer Data subfields can be Prompts or Data. Values contained on a Prompt are
 
 Refer to Customer Data Codes Table in the Reference Tables section for a complete list of supported field names.
 
-####Re-prompting & Dual-Card Identification####
+#### Re-prompting & Dual-Card Identification
 ATIONet supports variable prompt-set definition for each card-type processed by the Host, allowing collection and validation of different entries for different type of cards, eventually this will allow to enforce different set of rules on different Device types.
 
 There are three ways to implement this functionality on the Controller site:
@@ -617,22 +617,22 @@ There are three ways to implement this functionality on the Controller site:
     <br>Controllers with the ability to process a full parameter download from the Host, could implement selective prompting before sending the TREQ to the Host, avoiding the need to process a double request.
     <br>It is worth to mention that a failure to submit a required prompt in this kind of devices, will cause a permanent failure to process such type of card, except if the device also has a host-based re-prompt mechanism –as in (b) type.
 
-####Authorization Code####
+#### Authorization Code
 The Host will return the Authorization Code on all approved transactions.
 On Pre-Authorization/Completions message flows, the Controller must keep the Authorization Code sent on the Pre-Authorization TRESP and send it
 back to the Host on the Completion TREQ. This is a mandatory feature.
 
 Refer to Authorization Codes Table in the Reference Tables section for a complete list of supported codes.
 
-####PIN Block####
+#### PIN Block
 The PIN entry on plain text, when the whole message or the communication themselves are encrypted.
 
-####Original Data####
+#### Original Data
 Original data on a TREQ contains extra information related to the original transaction that we want to cancel. Used only in zero completions without authorization code and cancellations transactions.
 
 Refer to Original Data Table in the Reference Tables section for a complete list of supported field names.
 
-##7 Transaction Request (TREQ) Message Format##
+## 7 Transaction Request (TREQ) Message Format
 
 <table>
 	<thead>
@@ -1294,7 +1294,7 @@ Refer to Original Data Table in the Reference Tables section for a complete list
 	</tbody>
 </table>	
   
-##8 Transaction Response (TRESP) Message Format##
+## 8 Transaction Response (TRESP) Message Format
 
 <table>
 	<thead>
@@ -1813,7 +1813,7 @@ Refer to Original Data Table in the Reference Tables section for a complete list
 	</tbody>
 </table>
 
-##9 Satellite TAG Validation Request (VREQ) Message Format##
+## 9 Satellite TAG Validation Request (VREQ) Message Format##
 
 <table>
 	<thead>
@@ -2012,7 +2012,7 @@ Refer to Original Data Table in the Reference Tables section for a complete list
 	</tbody>
 </table>
 
-##10 Satellite TAG Validation Response (VRESP) Message Format##
+## 10 Satellite TAG Validation Response (VRESP) Message Format
 
 <table>
 	<thead>
@@ -2208,11 +2208,11 @@ Refer to Original Data Table in the Reference Tables section for a complete list
 	</tbody>
 </table>
 
-##11 Reference Tables##
+## 11 Reference Tables
 
 This section brings together the code tables and reference values used in messaging.
 
-###11.1 Transaction Codes###
+### 11.1 Transaction Codes
 
 <table>
 	<thead>
@@ -2389,7 +2389,7 @@ This section brings together the code tables and reference values used in messag
 	</tbody>
 </table>	
 
-###11.3 Product Data Structure###
+### 11.3 Product Data Structure
 
 <table>
 	<thead>
@@ -2548,7 +2548,7 @@ This section brings together the code tables and reference values used in messag
 	</tbody>
 </table>	
 			
-###11.4 Customer Data###
+### 11.4 Customer Data
     
 *Prompt elements*
 <table>
@@ -2696,7 +2696,7 @@ This section brings together the code tables and reference values used in messag
 	</tbody>
 </table>
 
-###11.5 Measurement Unit Codes###
+### 11.5 Measurement Unit Codes
 
 <table>
 	<thead>
@@ -2753,11 +2753,11 @@ This section brings together the code tables and reference values used in messag
 	</tbody>
 </table>
 
-###11.6 Currency Codes###
+### 11.6 Currency Codes
  
 Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_4217>)
 
-###11.7 Authorization Codes###
+### 11.7 Authorization Codes
 
 <table>
 	<thead>
@@ -5950,7 +5950,7 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
 	</tbody>
 </table>
 
-###11.8 Response Codes###
+### 11.8 Response Codes
 
 <table>
 	<thead>
@@ -6031,7 +6031,7 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
 	</tbody>
 </table>
  
-###11.9 Original Data
+### 11.9 Original Data
 
 <table>
 	<thead>
