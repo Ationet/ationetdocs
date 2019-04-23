@@ -41,12 +41,12 @@
 
 ## Contenido
 <!-- MarkdownTOC depth=3 -->
-- Introdución (#introduccion)
-- Descarga / Instalación (#descarga-/-instalación)
-- Configuración (#configuración)
-	- Valores de Configuración (#valores-de-configuración)
-- Iniciar el servicio (#iniciar-el-servicio)
-- Detener el servicio (#detener-el-servicio)
+- [Introdución](#introduccion)
+- [Descarga / Instalación](#descarga-/-instalación)
+- [Configuración](#configuración)
+	- [Valores de Configuración](#valores-de-configuración)
+- [Iniciar el servicio](#iniciar-el-servicio)
+- [Detener el servicio](#detener-el-servicio)
 
 <!-- /MarkdownTOC -->
 
@@ -67,7 +67,7 @@ Al presionar siguiente (Next) aparecerá una nueva ventana donde se solicita o c
 Seguido a la selección de ubicación se debe hacer click en siguiente (Next)
  y confirmar la instalación de nuestro servicio ATIONet Inventory Client en la nueva ventana desplegada. A continuación se muestra la ventana de solicitud de confirmación de instalación:
 
-<center><img src="Content/Includes/ANInventoryClient-Manual/3.png" width="50%"></center>
+<center><img src="../Content/Includes/ANInventoryClient-Manual/3.png" width="50%"></center>
 
 Al culminar el proceso se desplegará una nueva ventana informando que se ha completado la instalación y se encuentra disponible el servicio para ser configurado e iniciado. 
 
