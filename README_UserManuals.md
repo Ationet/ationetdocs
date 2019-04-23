@@ -1,18 +1,17 @@
 ![ationetlogo](Content/Images/ATIOnetLogo_250x70.png) 
 
-# ATIONet Integration Help Center
+# ATIONet User Manuals
 
 
 
-## Authorization API
-- [Native Transaction Protocol API description](AN-Native_Transaction_Protocol-Spec.md)
-- [Native Transaction Protocol API messages](AN-Native_Auth_Protocol_Messages.md)
+## ATIONet Console
+- [Network Subscription Type User Manual (Spanish)](AN-Network-UserManal-SP.md)
+- [Home base Subscription Type User Manual (Spanish)](AN-HomeBase-UserManal-SP.md)
 
-## Loyalty API
-- [Native Loyalty Protocol API description](AN-Native_Loyalty_Protocol-Spec.md)
+## ATIONet Stand Alone Terminal
+- [Stand Alone Terminal User Manual (Spanish)](AN-Stand_AloneTerminal-UserManual-SP.md)
+- [Stand Alone Terminal User Manual (English)](AN-Stand_AloneTerminal-UserManual-EN.md)
 
-## Device Updater
-- [Device Updater API description](AN-Native_Loyalty_Protocol-Spec.md)
+## ATIONet Inventory Client
+- [Inventory Module User Manual (Spanish)](AN-InentoryClient-UserManual-SP.md)
 
-## .NET SDK
-- [.NET SDK Reference](AN-SDK-Reference.md)
