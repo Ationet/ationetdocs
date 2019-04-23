@@ -1,4 +1,4 @@
-![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
+![ationetlogo](../Content/Images/ATIOnetLogo_250x70.png)
 # ATIONet Inventory Client - Manual de Usuario
 
 <table>
