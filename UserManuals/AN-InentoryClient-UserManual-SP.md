@@ -41,12 +41,12 @@
 
 ## Contenido
 <!-- MarkdownTOC depth=3 -->
-- Introdución
-- Descarga / Instalación
-- Configuración
-	- Valores de Configuración
-- Iniciar el servicio
-- Detener el servicio
+- Introdución (#introduccion)
+- Descarga / Instalación (#descarga-/-instalación)
+- Configuración (#configuración)
+	- Valores de Configuración (#valores-de-configuración)
+- Iniciar el servicio (#iniciar-el-servicio)
+- Detener el servicio (#detener-el-servicio)
 
 <!-- /MarkdownTOC -->
 
@@ -133,15 +133,15 @@ Posteriormente se debe hacer doble click sobre el acceso directo creado y el ser
 
 
 - **Modo Servicio de Windows:** si se desea que ATIONet Inventory Client corra como un servicio de Windows, se deben seguir los siguientes pasos:
-	1. Abra el Administrador de control de servicios. <div class="pull-right"><img src="Content/Includes/ANInventoryClient-Manual/ServiciosMenu.png" width="20%"></div>
+	1. Abra el Administrador de control de servicios. <div class="pull-right"><img src="../Content/Includes/ANInventoryClient-Manual/ServiciosMenu.png" width="20%"></div>
 	2. Seleccionar el servicio con el nombre "ATIONet Inventory Client Service".
-	3. Hacer click en Iniciar el Servicio. <center><img src="Content/Includes/ANInventoryClient-Manual/ServicioIni.png" width="90%"></center>
+	3. Hacer click en Iniciar el Servicio. <center><img src="../Content/Includes/ANInventoryClient-Manual/ServicioIni.png" width="90%"></center>
 
 
 ## Detener el Servicio
 - **Modo Consola:** si el servicio se encuentra en ejecución en este modo y se desea detener, se debe ingresar en la consola la palabra "stop" y presionar "Enter"; esta acción hará que se cierre la consola y se detendrá el servicio. <div><center><img src="../Content/Includes/ANInventoryClient-Manual/ConsoleStop.png" width="70%"></center></div>
 
 - **Modo Servicio de Window:** para detener ATIONet Inventory Client si se encuentra corriendo en este modo, debe seguir los siguientes pasos:
-	1. Abra el Administrador de control de servicios. <div class="pull-right"><img src="Content/Includes/ANInventoryClient-Manual/ServiciosMenu.png" width="20%"></div>
+	1. Abra el Administrador de control de servicios. <div class="pull-right"><img src="../Content/Includes/ANInventoryClient-Manual/ServiciosMenu.png" width="20%"></div>
 	2. Seleccionar el servicio con el nombre "ATIONet Inventory Client Service".
-	3. Hacer click en Detener el  Servicio. <center><img src="Content/Includes/ANInventoryClient-Manual/ServicioStop.png" width="90%"></center>
+	3. Hacer click en Detener el  Servicio. <center><img src="../Content/Includes/ANInventoryClient-Manual/ServicioStop.png" width="90%"></center>
