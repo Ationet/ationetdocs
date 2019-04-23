@@ -3,5 +3,5 @@
 
 
 - [Integrations](README_Integration.md)
-- [User Manuals]()
+- [User Manuals](README_UserManuals.md)
 - [Technical documentation]()
