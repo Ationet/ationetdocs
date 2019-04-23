@@ -603,7 +603,7 @@ Before start using the terminal, its necessary to configure some parameters. To 
 		<td width=50%>Description</td>
 	</tr>
 	<tr>
-		<td><img src="../Content/Images/standAloneTerminal/19e.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/19E.png"></td>
 		<td> 
 			The POS will ask to present the identification that is associated to the pre-authorization to be canceled. Or you can press the ALPHA button and type the identification<br>
 			<br>
