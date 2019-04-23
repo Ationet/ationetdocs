@@ -1072,7 +1072,7 @@ En esta sección, usted puede consultar todas las instalaciones realizadas, list
 
 Para crear una nueva Instalación, cliquée en el botón "Nuevo".
 
-![Instalaciones](../Content/Includes/AN-HomeBase-UserManal-SP/nuevoInstalaciones.png)
+![Instalaciones](../Content/Includes/AN-Network-UserManal-SP/nuevoInstalaciones.png)
 
 Los campos que tiene que completar son los siguientes:
 
