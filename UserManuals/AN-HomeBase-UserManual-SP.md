@@ -348,7 +348,7 @@ No todas las terminales tienen la capacidad de implementar este mensaje, si la t
 
 En esta vista se listan los conductores que han sido dados de alta. Recuerde que no es obligatorio cargar conductores para poder operar, solo es necesario si usted decide asociar los identificadores a conductores.
 
-![Batch](../Content/Includes/AN-HomeBase-UserManal-SP/conductores.png)
+![Batch](../Content/Includes/AN-HomeBase-UserManal-SP/conductoresAdministracion.png)
 
 #### Cuentas corrientes de compañía
 
