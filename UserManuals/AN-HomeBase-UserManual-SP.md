@@ -1,4 +1,4 @@
-![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
+![ationetlogo](../Content/Images/ATIOnetLogo_250x70.png)
 # ATIONet - Manual de Usuario Autoconsumo
 
 <table>
@@ -188,20 +188,20 @@ La lista completa de widgets disponibles para las suscripciones "Autoconsumo" es
 Este widget es de suma importancia al poner en marcha la red. Este widget nos da información de que parámetros necesitamos configurar para quedar operativos. Nos advierte cuando por ejemplo no tenemos vehículos o identificaciones creadas entre otros parámetros.
 Este widget puede mostrar "Advertencias" (ícono amarillo)cuando no esta en juego la operación de la red, pero si muestra una cruz roja indica que la red no esta operativa. 
 
-![Estado General](Content/Includes/AN-HomeBase-UserManal-SP/estadoGeneral.png)
-![Estado General](Content/Includes/AN-HomeBase-UserManal-SP/estadoGeneral2.png)
+![Estado General](../Content/Includes/AN-HomeBase-UserManal-SP/estadoGeneral.png)
+![Estado General](../Content/Includes/AN-HomeBase-UserManal-SP/estadoGeneral2.png)
 
 #### Litros-Mes
 
 El de "Litros/Mes indica la cantidad que se despachó de cada combustible en el ultimo mes. Como ultimo mes se entiende a los últimos 30 días contando desde el día de la fecha. Este widget posee la capacidad de filtrar por Sitio, Ciudad y Flota. Se debe seleccionar el filtro y después se ingresa el valor por el cual se debe filtrar. Este ultimo campo es del tipo "auto complete".
 
-![Litros Mes](Content/Includes/AN-HomeBase-UserManal-SP/litrosMes.png)
+![Litros Mes](../Content/Includes/AN-HomeBase-UserManal-SP/litrosMes.png)
 
 #### Transacciones del Día
 
 Este widget contiene un gráfico de torta que en forma muy rápida se pueden ver cuantas transacciones se aprobaron y cuantas se rechazaron en el día.
 
-![Transacciones Día](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesDia.png)
+![Transacciones Día](../Content/Includes/AN-HomeBase-UserManal-SP/transaccionesDia.png)
 
 #### Lista de Pre-Autorizaciones Pendientes
 
@@ -218,19 +218,19 @@ Este muestra 7 columnas:
 
 Las pre autorizaciones pendientes deberían ser despachos en curso, si hay registros en este widget con un Age alto, significa que el punto de venta o controlador no enviaron la transacción de finalización o la transacción de cancelación en el caso que no se haya despachado combustible.
 
-![Pre Auth Pendientes](Content/Includes/AN-HomeBase-UserManal-SP/preauthPendientes.png)
+![Pre Auth Pendientes](../Content/Includes/AN-HomeBase-UserManal-SP/preauthPendientes.png)
 
 #### Transacciones marcadas en ultimo mes
 
 El siguiente muestra todas las transacciones que fueron rechazadas por cualquiera de las validaciones que hace Ationet en el proceso de autorización. Ya sean por falta de saldo o reglas entre otras validaciones. Para mas detalles sobre "Transacciones Rechazadas" consulte este documento: [TODO](#todo) 
 
-![Transacciones Marcadas](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesMarcadasUltimoMes.png)
+![Transacciones Marcadas](../Content/Includes/AN-HomeBase-UserManal-SP/transaccionesMarcadasUltimoMes.png)
 
 #### Instalaciones
 
 Cuando la red utiliza algún medio de identificación que requiera ser instalado (como por ejemplo un anillo o ring tag), Ationet administra la lista de instalaciones. Este widget muestra las instalaciones realizadas en las ultimas 5 semanas
 
-![Instalaciones](Content/Includes/AN-HomeBase-UserManal-SP/instalaciones.png)
+![Instalaciones](../Content/Includes/AN-HomeBase-UserManal-SP/instalaciones.png)
 
 #### Sub-cuentas con excepciones
 
@@ -243,7 +243,7 @@ Este muestra todas las sub cuentas que tengan algo que prestarle atención, como
 
 Para mas detalles sobre sub cuentas consulte: [Esta sección](#sub-cuenta)
 
-![sub Cuentas con Excepciones](Content/Includes/AN-HomeBase-UserManal-SP/subcuentasConExcepciones.png)
+![sub Cuentas con Excepciones](../Content/Includes/AN-HomeBase-UserManal-SP/subcuentasConExcepciones.png)
 
 #### Actualizaciones de Identificador en ultimo mes
 
@@ -255,39 +255,39 @@ Este widget muestra la actividad de la administración de los identificadores, m
 4. ***Denunciada:*** La cantidad de identificadores que cambiaron al estado "Denunciada"
 5. ***Suspendida:*** La cantidad de identificadores que cambiaron al estado "Suspendida"
 
-![Actualizaciones de Identificadores](Content/Includes/AN-HomeBase-UserManal-SP/actualizacionIdentificadoresUltimoMes.png)
+![Actualizaciones de Identificadores](../Content/Includes/AN-HomeBase-UserManal-SP/actualizacionIdentificadoresUltimoMes.png)
 
 #### Transacciones recientes
 
 El siguiente muestra las ultimas 20 transacciones finalizadas. Se muestran los datos mas relevantes para poder identificarla, en el caso de necesitar mas información sobre la transacción se puede hacer click sobre el código de autorización, eso lo llevara a la vista de detalles de la transacción.
 
-![Transacciones Recientes](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesRecientes.png)
+![Transacciones Recientes](../Content/Includes/AN-HomeBase-UserManal-SP/transaccionesRecientes.png)
 
 #### Listado de Sub-cuentas con bajo saldo
 
 Muestra la lista de sub cuentas que contengan bajo saldo para operar 4 días mas. Este calculo se hace en base al uso de cada sub cuenta. La columna "Días disponibles" muestra cantidad de días que le quedan a la sub cuenta basada en el análisis de uso. Este numero no es exacto y podría variar si el patrón de uso cambia.
 
-![Sub Cuentas Bajo Saldo](Content/Includes/AN-HomeBase-UserManal-SP/subcuentasBajoSaldo.png)
+![Sub Cuentas Bajo Saldo](../Content/Includes/AN-HomeBase-UserManal-SP/subcuentasBajoSaldo.png)
 
 #### Estado de Terminales
 
 Todas las terminales que estén conectadas en forma nativa a ATIONet, envían en forma regular un mensaje indicando que están activas. Si la terminal reporto el estado en las ultimas 5 horas, la terminal se mostrara con el ícono verde, sino se reporto en las ultimas 5 horas el ícono sera rojo.
 La columna ***"Age"*** muestra la cantidad de minutos que pasaron desde la ultima vez que se reporta la terminal. 
 
-![Estado Terminales](Content/Includes/AN-HomeBase-UserManal-SP/estadoTerminales1.png)
-![Estado Terminales](Content/Includes/AN-HomeBase-UserManal-SP/estadoTerminales2.png)
+![Estado Terminales](../Content/Includes/AN-HomeBase-UserManal-SP/estadoTerminales1.png)
+![Estado Terminales](../Content/Includes/AN-HomeBase-UserManal-SP/estadoTerminales2.png)
 
 #### Contratos sin actividad
 
 Muestra la lista de contratos que nunca tuvieron actividad.
 
-![Contrato Sin Actividad](Content/Includes/AN-HomeBase-UserManal-SP/contratosSinActividad.png)
+![Contrato Sin Actividad](../Content/Includes/AN-HomeBase-UserManal-SP/contratosSinActividad.png)
 
 #### Listado de contratos con bajo saldo
 
 Muestra la lista de contratos que contengan bajo saldo para operar 4 días mas. Este calculo se hace en base al uso. La columna "Días disponibles" muestra cantidad de días que le quedan al contrato basada en el análisis de uso. Este numero no es exacto y podría variar si el patrón de uso cambia.
 
-![Contrato Bajo Saldo](Content/Includes/AN-HomeBase-UserManal-SP/contratoBajoSaldo.png)
+![Contrato Bajo Saldo](../Content/Includes/AN-HomeBase-UserManal-SP/contratoBajoSaldo.png)
 
 ### Favoritos
 
@@ -297,14 +297,14 @@ Una vez dentro de la pagina de Favoritos, al hacer click sobre el link de la col
 
 Si desea remover una entidad de la lista de Favoritos, haga click sobre el ícono de la derecha con forma de cruz.
 
-![Favoritos](Content/Includes/AN-HomeBase-UserManal-SP/favoritos.png)
+![Favoritos](../Content/Includes/AN-HomeBase-UserManal-SP/favoritos.png)
 
 ### Vistas
 
 ATIONet dispone de una serie de vistas donde se puede visualizar información de la operación de la red. ATIONet considera una vista a toda aquella pantalla que ademas de poder visualizar información, también es exportable para un post procesamiento. A diferencia de los [***Reportes***](#reportes) que son pantallas que muestran información con un formato pensado para ser impreso y guardado.
 Todas las vistas en ATIONet respetan una consistencia en estética y funcionalidad. Todas las vistas poseen una barra de herramientas con todas estas funciones (o al menos alguna de ellas)
 
-![Vistas](Content/Includes/AN-HomeBase-UserManal-SP/vistas.png) 
+![Vistas](../Content/Includes/AN-HomeBase-UserManal-SP/vistas.png) 
 
 1. ***Vista Condensada:*** Esta opción viene activa de defecto cuando se abre la vista, esta opción muestra en la grilla los datos mínimos en un solo renglón.
 2. ***Vista Detallada:*** Esta opción activa un segundo renglón en cada registro dentro de la grilla y muestra mas información de cada uno de los registros.
@@ -314,12 +314,12 @@ Todas las vistas en ATIONet respetan una consistencia en estética y funcionalid
 
 Algunas vistas también poseen un panel de filtros. Por defecto este panel aparece colapsado, para desplegarlo haga click en la barra que dice "Filtros". Cada vista posee campos específicos por los cuales se puede filtrar. Una vez que haya ingresado los valores deseados presione el botón "Buscar".
 
-![Vistas](Content/Includes/AN-HomeBase-UserManal-SP/vistas3.png)
+![Vistas](../Content/Includes/AN-HomeBase-UserManal-SP/vistas3.png)
 
 Las vistas también poseen paginación y el usuario podrá definir cuantos registros por pagina se muestran. Esta configuración se realiza desde [***Mis Preferencias***](#mis-preferencias)
 La siguiente es la vista de Vehículos de ATIONet:
 
-![Vistas](Content/Includes/AN-HomeBase-UserManal-SP/vistas2.png)
+![Vistas](../Content/Includes/AN-HomeBase-UserManal-SP/vistas2.png)
 
 #### Autorizaciones Pendientes
 
@@ -328,12 +328,12 @@ Las autorizaciones pendientes son aquellas transacciones que todavía no recibie
 Tenga en cuenta que al momento de pre autorizar, ATIONet congelo el monto de la autorización de la cuenta corriente de la sub cuenta.
 Esta vista presenta todos los campos necesarios para poder identificar la transacción y el vehículo. Si necesita ver mas detalles, al hacer click en el código de autorización lo llevara a la vista de detalles de la transacción.
 
-![Autorizaciones Pendientes](Content/Includes/AN-HomeBase-UserManal-SP/autorizacionesPendientes.png)
+![Autorizaciones Pendientes](../Content/Includes/AN-HomeBase-UserManal-SP/autorizacionesPendientes.png)
 
 Si aparecen transacciones pendientes viejas y usted esta seguro que no es un despacho en curso, puede cancelarlas y devolver el saldo a la cuenta corriente.
 Para hacer esto tiene 2 maneras, en forma individual, haciendo click en el ícono de la "X" a la derecha de la grilla o en forma masiva seleccionando las transacciones, desplegar el menú "Acciones en Lote" y seleccionar "Cancelar". Esto cancelara las transacciones y devolverá el saldo a cada una de las cuentas corrientes.
 
-![Autorizaciones Pendientes](Content/Includes/AN-HomeBase-UserManal-SP/autorizacionesPendientes2.png)
+![Autorizaciones Pendientes](../Content/Includes/AN-HomeBase-UserManal-SP/autorizacionesPendientes2.png)
 
 (para mas detalles sobre el flujo de transacciones consulte este [documento](AN-Transaction_Flows-TechGuide.md))
 
@@ -342,13 +342,13 @@ Para hacer esto tiene 2 maneras, en forma individual, haciendo click en el ícon
 El proceso Batch, es un proceso por el cual la terminal se asegura que envió todo lo que proceso y que el host lo recibió. La manera de asegurarse es enviando una transacción de "Cierre de Lote".
 No todas las terminales tienen la capacidad de implementar este mensaje, si la terminal lo soporta en esta vista se listaran todos los  cierres de lote enviados por las terminales. 
 
-![Batch](Content/Includes/AN-HomeBase-UserManal-SP/batch.png)
+![Batch](../Content/Includes/AN-HomeBase-UserManal-SP/batch.png)
 
 #### Conductores
 
 En esta vista se listan los conductores que han sido dados de alta. Recuerde que no es obligatorio cargar conductores para poder operar, solo es necesario si usted decide asociar los identificadores a conductores.
 
-![Batch](Content/Includes/AN-HomeBase-UserManal-SP/conductores.png)
+![Batch](../Content/Includes/AN-HomeBase-UserManal-SP/conductores.png)
 
 #### Cuentas corrientes de compañía
 
@@ -358,15 +358,15 @@ En ATIONet el termino compañía se refiere a la empresa dueña de la flota, en 
 Esta  vista posee al igual que el resto de las vistas un panel de filtros.
 La primer opción en el panel de filtros es el tipo de reporte que queremos ver:
 
-![Cuentas Corrientes](Content/Includes/AN-HomeBase-UserManal-SP/cuentasCorrientes2.png)
+![Cuentas Corrientes](../Content/Includes/AN-HomeBase-UserManal-SP/cuentasCorrientes2.png)
 
 1. ***Lista de Sub-cuentas:*** Esta opción lista las subcuentas con su respectivo saldo, pero no da detalles de los movimientos, es una vista que resume los datos de cada una de las subcuentas.
 
-	![Cuentas Corrientes](Content/Includes/AN-HomeBase-UserManal-SP/cuentasCorrientes.png)
+	![Cuentas Corrientes](../Content/Includes/AN-HomeBase-UserManal-SP/cuentasCorrientes.png)
 
 2. ***Movimientos de Sub-cuentas:*** Esta opción de la vista muestra en detalle cada uno de los movimientos de la subcuenta, tanto los créditos como los débitos.   
 
-	![Cuentas Corrientes](Content/Includes/AN-HomeBase-UserManal-SP/cuentasCorrientes3.png)
+	![Cuentas Corrientes](../Content/Includes/AN-HomeBase-UserManal-SP/cuentasCorrientes3.png)
 
 Al seleccionar esta segunda opción se habilitan varios filtros mas:
 
@@ -388,18 +388,18 @@ Las Excepciones son aquellas transacciones que no llegaron a pasar las validacio
 
 En la vista de Excepciones podemos filtrar por el tipo de Excepción primero. Los tipo de Excepciones disponibles son los siguientes:
 
-![Cuentas Corrientes](Content/Includes/AN-HomeBase-UserManal-SP/excepciones2.png)
+![Cuentas Corrientes](../Content/Includes/AN-HomeBase-UserManal-SP/excepciones2.png)
 
 Esta vista también posee el panel de filtros mencionada anteriormente. Vale la pena resaltar el filtro  ***"Transacciones Off-line"***, al tildar esta opción, también se mostraran aquellas transacciones que fueron marcadas como Excepciones en el modulo Offline. 
 (para mas detalles sobre el modulo Offline consulte esta [sección](#modulo-offline))
 
-![Cuentas Corrientes](Content/Includes/AN-HomeBase-UserManal-SP/excepciones4.png)
+![Cuentas Corrientes](../Content/Includes/AN-HomeBase-UserManal-SP/excepciones4.png)
 
 Una vez que selecciono los filtros, presiona ***"Buscar"*** y se listaran todas las transacciones marcadas como Excepciones.
 
 Algunas transacciones quedan en estado "Revisión" bajo algunas situaciones, como por ejemplo cuando se despacha mas de lo autorizado (por un error en el controlador o el POS). En estos casos es necesario aprobar o rechazar la transacción mediante uno de los 2 íconos a la derecha de cada registro.
 
-![Cuentas Corrientes](Content/Includes/AN-HomeBase-UserManal-SP/excepciones.png)
+![Cuentas Corrientes](../Content/Includes/AN-HomeBase-UserManal-SP/excepciones.png)
 
 #### Rendimiento por Transacción
 
@@ -415,7 +415,7 @@ La vista de transacciones es una de las mas importantes en ATIONet. en esta vist
 
 El panel de Filtros posee todos estas posibilidades:
 
-![Transacciones](Content/Includes/AN-HomeBase-UserManal-SP/transactions.png)
+![Transacciones](../Content/Includes/AN-HomeBase-UserManal-SP/transactions.png)
 
 * ***Cod. Autoriz.:*** Código de Autorización entregado por ATIONet.
 * ***Vehículo:*** Vehículo o Vehículos (campo autocomplete y de selección múltiple, presionando la barra espaciadora listara los primeros 20 vehículos).
@@ -434,24 +434,24 @@ El panel de Filtros posee todos estas posibilidades:
 
 Una vez seleccionado el filtro deseado se presiona ***"Buscar"*** y listara las transacciones que cumplan con el filtro.
 
-![Transacciones](Content/Includes/AN-HomeBase-UserManal-SP/transactions2.png)
+![Transacciones](../Content/Includes/AN-HomeBase-UserManal-SP/transactions2.png)
 
 En la grilla se muestran los datos principales de la transacción, en la columna acciones se puede desconocer una transacción y entrara en el proceso de desconocimiento. (para mas detalles sobre el desconocimiento de transacciones consulte esta [sección](#transacciones-desconocidas)).
 
 Si desea ver el detalle de la transacción, haga click en el Código de Autorización, esto lo llevara a una vista con el detalle de la transacción.
 
-![Transacciones](Content/Includes/AN-HomeBase-UserManal-SP/transactions3.png)
+![Transacciones](../Content/Includes/AN-HomeBase-UserManal-SP/transactions3.png)
  
 
 #### Transacciones por Conductor
 
 En esta vista se pueden ver las transacciones, agrupadas por  el conductor que la realizó. Los botones que estan colocados en la parte superior izquierda son para imprimir la tabla o crear un archivo Excel de la tabla, respectivamente.
 
-![Transacciones por Sitio](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesPorConductor.png)
+![Transacciones por Sitio](../Content/Includes/AN-HomeBase-UserManal-SP/transaccionesPorConductor.png)
 
 El panel de filtros posee las siguientes posibilidades:
 
-![Transacciones por Sitio](Content/Includes/AN-HomeBase-UserManal-SP/filtrosTransaccionesPorConductor.png)
+![Transacciones por Sitio](../Content/Includes/AN-HomeBase-UserManal-SP/filtrosTransaccionesPorConductor.png)
 
 * ***Agrupar por:***  Sitio, Flota, Programa, Id Vehículo y/o Fecha.
 * ***Conductor:*** Filtrar por el conductor que despachó.
@@ -469,11 +469,11 @@ Cuando termine de llenar el formulario, cliquee "Buscar" para aplicar el filtro,
 
 En esta vista se pueden ver las transacciones que se realizaron, agrupadas por flota. Los botones que estan colocados en la parte superior izquierda son para imprimir la tabla o crear un archivo Excel de la tabla, respectivamente.
 
-![Transacciones por Sitio](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesPorFlota.png)
+![Transacciones por Sitio](../Content/Includes/AN-HomeBase-UserManal-SP/transaccionesPorFlota.png)
 
 El panel de filtros posee las siguientes posibilidades:
 
-![Transacciones por Sitio](Content/Includes/AN-HomeBase-UserManal-SP/filtrosTransaccionesPorFlota.png)
+![Transacciones por Sitio](../Content/Includes/AN-HomeBase-UserManal-SP/filtrosTransaccionesPorFlota.png)
 
 * ***Agrupar por:***  Sitio, Vehículo, Id Conductor y/o Fecha.
 * ***Flota:*** Filtrar por flota a la cual pertenece el vehículo que realizó el despacho.
@@ -491,11 +491,11 @@ Cuando termine de llenar el formulario, cliquee "Buscar" para aplicar el filtro,
 
 En esta vista se pueden ver las transacciones que se realizaron, agrupadas por  el sitio donde ocurrieron. Los botones que estan colocados en la parte superior izquierda son para imprimir la tabla o crear un archivo Excel de la tabla, respectivamente.
 
-![Transacciones por Sitio](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesPorSitio.png)
+![Transacciones por Sitio](../Content/Includes/AN-HomeBase-UserManal-SP/transaccionesPorSitio.png)
 
 El panel de filtros posee las siguientes posibilidades:
 
-![Transacciones por Sitio](Content/Includes/AN-HomeBase-UserManal-SP/filtrosTransaccionesPorSitio.png)
+![Transacciones por Sitio](../Content/Includes/AN-HomeBase-UserManal-SP/filtrosTransaccionesPorSitio.png)
 
 * ***Agrupar por:***  Combustible, Flota, Programa, Turno y/o Fecha.
 * ***Sitio:*** Filtrar por sitio donde se realizó el despacho.
@@ -511,11 +511,11 @@ Cuando termine de llenar el formulario, cliquee "Buscar" para aplicar el filtro,
 
 En esta vista se pueden ver las transacciones, agrupadas por el vehículo que las realizó. Los botones que estan colocados en la parte superior izquierda son para imprimir la tabla o crear un archivo Excel de la tabla, respectivamente.
 
-![Transacciones por Vehiculo](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesPorVehiculo.png)
+![Transacciones por Vehiculo](../Content/Includes/AN-HomeBase-UserManal-SP/transaccionesPorVehiculo.png)
 
 El panel de filtros posee las siguientes posibilidades:
 
-![Transacciones por Sitio](Content/Includes/AN-HomeBase-UserManal-SP/filtrosTransaccionesPorVehiculo.png)
+![Transacciones por Sitio](../Content/Includes/AN-HomeBase-UserManal-SP/filtrosTransaccionesPorVehiculo.png)
 
 * ***Agrupar por:***  Sitio, Flota, Programa, Id Conductor y/o Fecha.
 * ***Vehículo:*** Filtrar por vehículo que realizó el despacho.
@@ -536,16 +536,16 @@ Las Transacciones Rechazadas son aquellas transacciones que lograron pasar las v
 
 En la vista de Transacciones Rechazadas podemos filtrar por el tipo de rechazo primero. Los tipo de rechazos disponibles son los siguientes:
 
-![Transacciones Rechazadas](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesRechazadas.png)
+![Transacciones Rechazadas](../Content/Includes/AN-HomeBase-UserManal-SP/transaccionesRechazadas.png)
 
 Esta vista también posee el panel de filtros mencionada anteriormente. Vale la pena resaltar el filtro  ***"Transacciones Off-line"***, al tildar esta opción, también se mostraran aquellas transacciones que fueron marcadas como rechazadas en el modulo Offline. 
 (para mas detalles sobre el modulo Offline consulte esta [sección](#modulo-offline))
 
-![Cuentas Corrientes](Content/Includes/AN-HomeBase-UserManal-SP/excepciones4.png)
+![Cuentas Corrientes](../Content/Includes/AN-HomeBase-UserManal-SP/excepciones4.png)
 
 Una vez que selecciono los filtros, presiona ***"Buscar"*** y se listaran todas las transacciones marcadas como rechazadas.
 
-![Transacciones Rechazadas](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesRechazadas2.png)
+![Transacciones Rechazadas](../Content/Includes/AN-HomeBase-UserManal-SP/transaccionesRechazadas2.png)
 
 Cabe aclarar que existe la posibilidad de que una transacción sea rechazada pero que el combustible haya sido entregado. Esto ocurre cuando el rechazo se produce en la transacción de terminación.
 Algunos de los motivos mas comunes de esta situación los los siguientes:
@@ -563,7 +563,7 @@ Algunos de los motivos mas comunes de esta situación los los siguientes:
 Las transacciones sin control son aquellas transacciones que se generan porque el controlador detecto una diferencia de aforadores y envía una transacción por la diferencia. Estas transacciones no contienen datos sobre el identificador ya que fueron generadas automáticamente y no se iniciaron con la presentación de un identificador. Al no tener un identificador asignado tampoco se impactan en ninguna cuenta corriente ni cuentan para calculo de reglas.
 Esta vista también el panel de filtros para hacer búsquedas mas especificas.
 
-![Transacciones sin Control](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesFueraDeControl.png)
+![Transacciones sin Control](../Content/Includes/AN-HomeBase-UserManal-SP/transaccionesFueraDeControl.png)
 
 #### Vehículos
 
@@ -571,11 +571,11 @@ En esta vista se listan los vehículos que han sido dados de alta. Recuerde que 
 
 Esta vista posee  el panel de filtros para poder especificar mas la búsqueda. Cabe destacar el filtro "Sin Identificación", seleccionando esta opción, se mostraran solo aquellos vehículos que no han sido asignados a un identificador. 
 
-![Vehicles](Content/Includes/AN-HomeBase-UserManal-SP/vehicles.png)
+![Vehicles](../Content/Includes/AN-HomeBase-UserManal-SP/vehicles.png)
 
 Para ver mas detalles del vehículo, haga click en el código:
 
-![Vehicles](Content/Includes/AN-HomeBase-UserManal-SP/vehicles2.png)
+![Vehicles](../Content/Includes/AN-HomeBase-UserManal-SP/vehicles2.png)
 
 Al final de la vista encontrara 3 secciones, ***Conductores***, ***Reglas de Vehículos*** y ***Reglas de Flota***. Si el vehículo posee uno o mas conductores asociados se mostraran en la primer sección, y si el vehículo tiene una regla asociada, ya sea en forma directa a o a través de una flota aparecerán en las ultimas 2 secciones.
 
@@ -591,7 +591,7 @@ La información es mostrada con un formato listo para ser impreso, incluyendo el
 
 Este popup posee un botón imprimir que al apretarlo se abre la ventana de impresión por defecto del navegador de internet.
 
-![Drivers](Content/Includes/AN-HomeBase-UserManal-SP/driversReport.png)
+![Drivers](../Content/Includes/AN-HomeBase-UserManal-SP/driversReport.png)
 
 #### Detalle de actividad por Vehículo
 
@@ -601,7 +601,7 @@ La información es mostrada con un formato listo para ser impreso, incluyendo el
 Este popup posee un botón imprimir que al apretarlo se abre la ventana de impresión por defecto del navegador de internet.
  
 
-![Drivers](Content/Includes/AN-HomeBase-UserManal-SP/vehicleDetailedActivity.png)
+![Drivers](../Content/Includes/AN-HomeBase-UserManal-SP/vehicleDetailedActivity.png)
 
 #### Sitios
 
@@ -610,34 +610,34 @@ La información es mostrada con un formato listo para ser impreso, incluyendo el
 
 Este popup posee un botón imprimir que al apretarlo se abre la ventana de impresión por defecto del navegador de internet.
 
-![Sites](Content/Includes/AN-HomeBase-UserManal-SP/siteReport.png)
+![Sites](../Content/Includes/AN-HomeBase-UserManal-SP/siteReport.png)
 
 #### Transacciones
 
 Este reporte muestra la lista de transacciones realizadas, ordenadas por fecha. Este reporte posee varios filtros para ajustar la busqueda. El primer campo del panel de filtros  indica porque campo se va a ordenar la lista, el campo seleccionado en esta lista sera mostrado en la primer columna.
 
-![Transactions](Content/Includes/AN-HomeBase-UserManal-SP/transactionReport.png)
+![Transactions](../Content/Includes/AN-HomeBase-UserManal-SP/transactionReport.png)
 
 Una vez seleccionado el filtro se presiona el botón ***Imprimir***, esto desplegara un popup con la información seleccionada.
 La información es mostrada con un formato listo para ser impreso, incluyendo el logo de la suscripción y la fecha y la hora de generación del reporte.
 
 Este popup posee un botón imprimir que al apretarlo se abre la ventana de impresión por defecto del navegador de internet.
 
-![Transactions](Content/Includes/AN-HomeBase-UserManal-SP/transactionReport2.png)
+![Transactions](../Content/Includes/AN-HomeBase-UserManal-SP/transactionReport2.png)
 
 
 #### Vehículo
 
 Este reporte muestra la lista de vehículos. Este reporte posee varios filtros para ajustar la búsqueda. El primer campo del panel de filtros  indica porque campo se va a ordenar la lista, el campo seleccionado en esta lista sera mostrado en la primer columna.
 
-![Vehicles](Content/Includes/AN-HomeBase-UserManal-SP/vehiclesReport.png)
+![Vehicles](../Content/Includes/AN-HomeBase-UserManal-SP/vehiclesReport.png)
 
 Una vez seleccionado el filtro se presiona el botón ***Imprimir***, esto desplegara un popup con la información seleccionada.
 La información es mostrada con un formato listo para ser impreso, incluyendo el logo de la suscripción y la fecha y la hora de generación del reporte.
 
 Este popup posee un botón imprimir que al apretarlo se abre la ventana de impresión por defecto del navegador de internet.
 
-![Vehicles](Content/Includes/AN-HomeBase-UserManal-SP/vehiclesReport2.png)
+![Vehicles](../Content/Includes/AN-HomeBase-UserManal-SP/vehiclesReport2.png)
 
 ### Administración
 
@@ -646,7 +646,7 @@ Este popup posee un botón imprimir que al apretarlo se abre la ventana de impre
 
 Si usted desea tener su flota organizada por clase de vehículo, puede hacerlo utilizando esta funcionalidad de ATIONet. Al hacer click en la opción del menú de navegación le mostrara la pagina con la lista de "Clases de Vehículos".
 
-![Vehicle Class](Content/Includes/AN-HomeBase-UserManal-SP/vehicleClass.png)
+![Vehicle Class](../Content/Includes/AN-HomeBase-UserManal-SP/vehicleClass.png)
 
 Para crear una nueva clase de vehículo, haga click en ***"Nuevo"*** y navegara hasta la pagina de alta de nueva clase de vehículo. En esta pagina deberá cargar los siguientes campos:
 
@@ -659,7 +659,7 @@ Para crear una nueva clase de vehículo, haga click en ***"Nuevo"*** y navegara 
 
 Después existe una sección llamada ***"Combustibles"*** en la que se puede indicar en tipo de combustible que usa el vehículo y también la capacidad del tanque. ***Este ultimo valor se valida en cada transacción del vehículo.*** 
 
-![Vehicle Class](Content/Includes/AN-HomeBase-UserManal-SP/vehicleClass2.png)
+![Vehicle Class](../Content/Includes/AN-HomeBase-UserManal-SP/vehicleClass2.png)
 
 Si un vehículo tiene una clase de vehículo asociada y esa clase de vehículo tiene un combustible asociado con su correspondiente capacidad de tanque de 60 litros y llega una pre autorización para el vehículo por 70 litros, la transacción sera rechazada ya que se podría asumir que es un fraude o que el combustible no va a ser entregado en el vehículo configurado. En esta sección se pueden agregar mas de un combustible ya que algunos vehículos cargan mas de 1, como por ejemplo combustible y GNC.
  
@@ -671,18 +671,18 @@ Cuando al menos un sitio tiene este parámetro activado se mostrara en el menú 
 
 ***Tenga en cuenta que por defecto los sitios no están marcados con esta opción, por consecuencia la opción "Combustible" en el menú de Administración tampoco se mostrara inicialmente.***
 
-![Combustible](Content/Includes/AN-HomeBase-UserManal-SP/combustibles.png)
+![Combustible](../Content/Includes/AN-HomeBase-UserManal-SP/combustibles.png)
 
 
 Al hacer click en la opción Combustibles vera la lista de mapeo de códigos de combustibles. En esta grilla se mostrara el nuevo código asignado, el producto al cual el código mapea y el sitio al cual pertenece este mapeo. 
 
-![Combustible](Content/Includes/AN-HomeBase-UserManal-SP/combustibles2.png)
+![Combustible](../Content/Includes/AN-HomeBase-UserManal-SP/combustibles2.png)
 
 Para dar de alta un nuevo código de producto, haga click en ***Nuevo***. 
 
 Primero deberá seleccionar el sitio al cual aplicara este mapeo, el producto maestro, y finalmente deberá proveer el código que la terminal o el POS enviara. Tenga en cuenta que no es posible tener el mismo código de mapeo para 2 productos maestros distintos.
 
-![Combustible](Content/Includes/AN-HomeBase-UserManal-SP/combustibles3.png)
+![Combustible](../Content/Includes/AN-HomeBase-UserManal-SP/combustibles3.png)
 
 
 La tabla maestra de productos de ATIONet es la siguiente:
@@ -760,30 +760,30 @@ Se listan los conductores por código, nombre completo, identificaciones y balan
 
 La columna "Habilitado" muestra el estado del conductor; para habilitar o deshabilitar un conductor, haga click en el ícono del candado en la columna "Opciones".
 
-![Conductores Administracion](Content/Includes/AN-HomeBase-UserManal-SP/opcionesConductoresAdministracion.png)
+![Conductores Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/opcionesConductoresAdministracion.png)
 
 En la columna opciones también puede asignarle una identificación al conductor, haciendo click en el primer ícono, contando de izquierda a derecha; asignarle una regla, haciendo click en el segundo ícono; editar la información del conductor, haciendo click en el tercer ícono, o marcarlo como favorito haciendo click en el ultimo ícono de la fila. Los conductores que marque como favoritos aparecerán en la sección favoritos en el apartado de la izquierda de la página.
 
-![Conductores Administracion](Content/Includes/AN-HomeBase-UserManal-SP/conductoresAdministracion.png)
+![Conductores Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/conductoresAdministracion.png)
 
 Para cambiar a una vista detallada de la información de los conductores, haga click en el ultimo ícono de la imagen de abajo.
 
-![Conductores Administracion](Content/Includes/AN-HomeBase-UserManal-SP/botonVistaDetalladaResaltadoConductoresAdministracion.png)
+![Conductores Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/botonVistaDetalladaResaltadoConductoresAdministracion.png)
 
 La vista detallada es la siguiente: 
 
-![Conductores Administracion](Content/Includes/AN-HomeBase-UserManal-SP/vistaDetallladaConductoresAdministracion.png)
+![Conductores Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/vistaDetallladaConductoresAdministracion.png)
 
 
 ##### Crear un nuevo conductor
 
 Para crear un nuevo conductor, haga click en el botón "Nuevo".
 
-![Conductores Administracion](Content/Includes/AN-HomeBase-UserManal-SP/botonNuevoResaltadoConductoresAdministracion.png)
+![Conductores Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/botonNuevoResaltadoConductoresAdministracion.png)
 
 El formulario para crear un nuevo conductor recibe los siguientes parámetros:
 
-![Conductores Administracion](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoConductorAdministracion.png)
+![Conductores Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoConductorAdministracion.png)
 
 * ***Código:*** El código de identificacion del conductor.
 * ***Apellidos:*** El apellido o apellidos del conductor.
@@ -808,23 +808,23 @@ Cuando termine de realizar los cambios, cliquée el botón "Guardar".
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis quam ac ligula maximus, vitae dictum lorem consequat. Curabitiur interdum pretium cursus. Vestibulum pharetra sodales enim, ut vestibulum dui semper quis. Aliquam convallis nulla eu neque vestibulum eleifend. Nam feugiat leo a bibendum rutrum. Duis quis augue et dui vulputate rhoncus. Sed vitae felis fringilla, lacinia est vel, imperdiet leo. Sed suscipit neque risus, eu pharetra dolor rhoncus ac.
 
-![Configuracion Administracion](Content/Includes/AN-HomeBase-UserManal-SP/configuracionAdministracion.png)
+![Configuracion Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/configuracionAdministracion.png)
 
 #### Configuración de Fast Track
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis quam ac ligula maximus, vitae dictum lorem consequat. Curabitur interdum pretium cursus. Vestibulum pharetra sodales enim, ut vestibulum dui semper quis. Aliquam convallis nulla eu neque vestibulum eleifend. Nam feugiat leo a bibendum rutrum. Duis quis augue et dui vulputate rhoncus. Sed vitae felis fringilla, lacinia est vel, imperdiet leo. Sed suscipit neque risus, eu pharetra dolor rhoncus ac.
 
-![Configuracion de Fast Track Administracion](Content/Includes/AN-HomeBase-UserManal-SP/configuracionFastTrackAdministracion.png)
+![Configuracion de Fast Track Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/configuracionFastTrackAdministracion.png)
 
 #### Contratos de Compañía
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis quam ac ligula maximus, vitae dictum lorem consequat. Curabitur interdum pretium cursus. Vestibulum pharetra sodales enim, ut vestibulum dui semper quis. Aliquam convallis nulla eu neque vestibulum eleifend. Nam feugiat leo a bibendum rutrum. Duis quis augue et dui vulputate rhoncus. Sed vitae felis fringilla, lacinia est vel, imperdiet leo. Sed suscipit neque risus, eu pharetra dolor rhoncus ac.
 
-![Contratos de Compañia](Content/Includes/AN-HomeBase-UserManal-SP/contratosDeCompaniaAdministracion.png)
+![Contratos de Compañia](../Content/Includes/AN-HomeBase-UserManal-SP/contratosDeCompaniaAdministracion.png)
 
 
 
-![Contratos de Compañia](Content/Includes/AN-HomeBase-UserManal-SP/filtrosContratosDeCompaniaAdministracion.png)
+![Contratos de Compañia](../Content/Includes/AN-HomeBase-UserManal-SP/filtrosContratosDeCompaniaAdministracion.png)
 
 #### Familias de Conceptos
 
@@ -834,7 +834,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis quam ac 
 
 Las flotas son los conjuntos de vehículos de los cual dispone la empresa. Abajo se listan por código y nombre las flotas que tiene. En la columna opciones puede asignarle una regla a la flota, o editarla.
 
-![Flotas Administracion](Content/Includes/AN-HomeBase-UserManal-SP/flotasAdministracion.png)
+![Flotas Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/flotasAdministracion.png)
 
 ###### Crear una nueva flota
 
@@ -842,7 +842,7 @@ Para crear una nueva flota, cliquée el botón "Nuevo" que se encuentra en el la
 
 El formulario para crear una nueva flota recibe los siguientes parámetros:
 
-![Flotas Administracion](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevaFlotaAdministracion.png)
+![Flotas Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/crearNuevaFlotaAdministracion.png)
 
 * ***Código:*** El código de identificación de la flota.
 * ***Nombre:*** El nombre de la flota.
@@ -855,13 +855,13 @@ Cuando termine de realizar los cambios, cliquée el botón "Guardar".
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis quam ac ligula maximus, vitae dictum lorem consequat. Curabitur interdum pretium cursus. Vestibulum pharetra sodales enim, ut vestibulum dui semper quis. Aliquam convallis nulla eu neque vestibulum eleifend. Nam feugiat leo a bibendum rutrum. Duis quis augue et dui vulputate rhoncus. Sed vitae felis fringilla, lacinia est vel, imperdiet leo. Sed suscipit neque risus, eu pharetra dolor rhoncus ac.
 
-![Identificaciones Solicitadas Administracion](Content/Includes/AN-HomeBase-UserManal-SP/identificacionesSolicitadasAdministracion.png)
+![Identificaciones Solicitadas Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/identificacionesSolicitadasAdministracion.png)
 
 #### Identificadores
 
 El identificador es el medio físico que utiliza ATIONet para poder identificar un vehículo o un conductor. ATIONet soporte varios tipos de identificaciones, como ser tarjeta, tag (anillo), chip, tarjeta ATIONet, entrada manual, código de barras e iButton. Cuando se asocia un identificador a un Vehículo o Conductor se crea una sub cuenta. En esta seccion, se mostraran los identificadores ya creados. En la columna opciones puede editar el identificador, habilitarlo o deshabilitarlo, o libearlo.
 
-![Identificadores Administracion](Content/Includes/AN-HomeBase-UserManal-SP/identificadoresAdministracion.png)
+![Identificadores Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/identificadoresAdministracion.png)
 
 ###### Crear un nuevo identificador
 
@@ -869,7 +869,7 @@ Para crear un nuevo identificador haga click en el botón nuevo que se encuentra
 
 El formulario para crear un nuevo identificador recibe los siguientes parámetros:
 
-![Nuevo Identificador Adminstracion](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoIdentificadorAdministracion.png)
+![Nuevo Identificador Adminstracion](../Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoIdentificadorAdministracion.png)
 
 * ***Tipo:*** Puede ser Tarjeta, TAG, Chipkey, Entrada Manual, Tarjeta ATIOnet o ATIOnet TAG.
 * ***Modelo:*** El modelo del tipo de identificador seleccionado en ***Tipo***.
@@ -897,7 +897,7 @@ La tabla de impuestos muestra:
 * ***Fecha Desde / Fecha Hasta:*** Rango de fechas.
 * ***Opciones:*** Editar el impuesto.
 
-![Impuestos Administracion](Content/Includes/AN-HomeBase-UserManal-SP/impuestosAdministracion.png)
+![Impuestos Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/impuestosAdministracion.png)
 
 ###### Crear un nuevo impuesto
 
@@ -905,7 +905,7 @@ Para crear un nuevo impuesto, cliquée el botón "Nuevo" que se encuentra en el 
 
 El formulario para crear un nuevo impuesto recibe los siguientes parámetros:
 
-![Nuevo Impuesto Administracion](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoImpuestoAdministracion.png) 
+![Nuevo Impuesto Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoImpuestoAdministracion.png) 
 
 * ***Código:*** El código del nuevo impuesto.
 * ***Descripción:*** La descripción del nuevo impuesto.
@@ -921,7 +921,7 @@ Cuando termine de realizar los cambios, cliquée el botón "Guardar".
 
 Los medios de pago son las distintas formas en las que se puede pagar un compra: efectivo, tarjeta de crédito, tarjeta de debito, gift cards, etc. ATIONET es una herramienta para que que un comerciante cree un medio de pago propio: una tarjeta de pago para combustibles.
 
-![Metodos De Pago Administracion](Content/Includes/AN-HomeBase-UserManal-SP/metodosDePagoAdministracion.png)
+![Metodos De Pago Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/metodosDePagoAdministracion.png)
 
 ###### Crear un nuevo método de pago
 
@@ -929,7 +929,7 @@ Para crear un nuevo método de pago, cliquée el botón "Nuevo" que se encuentra
 
 El formulario para crear un nuevo método de pago recibe los siguientes parámetros:
 
-![Nuevo Metodo De Pago Administracion](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoMetodoDePagoAdministracion.png)
+![Nuevo Metodo De Pago Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoMetodoDePagoAdministracion.png)
 
 * ***Código:*** El código del nuevo método de pago.
 * ***Descripción:*** La descripción del nuevo método de pago.
@@ -940,7 +940,7 @@ Cuando termine de realizar los cambios, cliquée el botón "Guardar".
 
 Los modelos de identificador varian segun la necesidad del cliente, pueden ser de tipo Tarjeta (Una tarjeta magnética), TAG (Anillo), Chipkey o Entrada Manual (Un código ingresado a mano).
 
-![Modelos De Identificador Administracion](Content/Includes/AN-HomeBase-UserManal-SP/modelosDeIdentificadorAdministracion.png)
+![Modelos De Identificador Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/modelosDeIdentificadorAdministracion.png)
 
 ###### Crear un nuevo modelo de identificador
 
@@ -948,7 +948,7 @@ Para crear un nuevo modelo de identificador, cliquée el botón "Nuevo" que se e
 
 El formulario para crear un nuevo modelo de identificador recibe los siguientes parámetros:
 
-![Nuevo Modelo De Idcentificador Administracion](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoModeloDeIdentificadorAdministracion.png)
+![Nuevo Modelo De Idcentificador Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoModeloDeIdentificadorAdministracion.png)
 
 * ***Tipo:*** Puede ser de tipo Tarjeta, TAG, Chipkey o Entrada Manual.
 * ***Descripción:*** La descripción del nuevo modelo de identificador.
@@ -966,7 +966,7 @@ Cuando termine de realizar los cambios, cliquée el botón "Guardar".
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis quam ac ligula maximus, vitae dictum lorem consequat. Curabitur interdum pretium cursus. Vestibulum pharetra sodales enim, ut vestibulum dui semper quis. Aliquam convallis nulla eu neque vestibulum eleifend. Nam feugiat leo a bibendum rutrum. Duis quis augue et dui vulputate rhoncus. Sed vitae felis fringilla, lacinia est vel, imperdiet leo. Sed suscipit neque risus, eu pharetra dolor rhoncus ac.
 
-![Programas Administracion](Content/Includes/AN-HomeBase-UserManal-SP/programasAdministracion.png)
+![Programas Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/programasAdministracion.png)
 
 ###### Crear un nuevo programa
 
@@ -974,7 +974,7 @@ Para crear un nuevo programa, cliquée el botón "Nuevo" que se encuentra en el 
 
 El formulario para crear un nuevo programa recibe los siguientes parámetros:
 
-![Nuevo Programa Administracion](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoProgramaAdministracion.png)
+![Nuevo Programa Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoProgramaAdministracion.png)
 
 * ***Descripción:*** La descripción del nuevo programa.
 * ***Aplicar sitios del Contrato:*** Puede ser no afectado, forzado o no forzado.
@@ -992,7 +992,7 @@ Cuando termine de realizar los cambios, cliquée el botón "Guardar".
 
 Las reglas son, limitaciones que se le asignan a vehículos, flotas, combustibles, sitios o conductores. Si no se le aplicara ninguna regla a, por ejemplo, un conductor, el conductor podría, por ejemplo, cargar cualquier combustible en cualquier sitio. En esta sección usted puede ver las reglas que ya creó, listadas por Tipo y Descripción. Si hace click en la descripción, puede ver el detalle de la regla y a que vehículos, flotas, combustibles, sitios o conductores se les ha aplicado la regla. Para editar la regla haga click en el ícono del lápiz que se encuentra en la columna "Opciones"; para eliminar la regla, haga click en el ícono de la cruz que se encuentra en la columna opciones.
 
-![Reglas Administracion](Content/Includes/AN-HomeBase-UserManal-SP/reglasAdministracion.png)
+![Reglas Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/reglasAdministracion.png)
 
 ##### Crear una nueva regla
 
@@ -1000,7 +1000,7 @@ Para crear una nueva regla, cliquée el botón "Nuevo" que se encuentra en el la
 
 El formulario para crear una nueva regla recibe los siguientes parámetros:
 
-![Nueva Regla Administracion](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevaReglaAdministracion.png)
+![Nueva Regla Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/crearNuevaReglaAdministracion.png)
 
 * ***Descripción:*** La descripción de la nueva regla.
 * ***Tipo:*** El tipo de regla. Dependiendo el tipo de regla que seleccione, se carga un distinto tipo de formulario.
@@ -1009,7 +1009,7 @@ El formulario para crear una nueva regla recibe los siguientes parámetros:
 
 El formulario para crear una nueva regla de tipo cuota es el siguiente:
 
-![Nueva Regla Cuota](Content/Includes/AN-HomeBase-UserManal-SP/nuevaReglaCuota.png)
+![Nueva Regla Cuota](../Content/Includes/AN-HomeBase-UserManal-SP/nuevaReglaCuota.png)
 
 * ***Frecuencia:*** La frecuencia se compone de valor (numérico) y de unidad de tiempo (Ej. Días, Semanas). Si, por ejemplo, se introduce 2 - Días, la frecuencia con la que será evaluada toda la regla sera de 2 días.
 
@@ -1035,7 +1035,7 @@ Cuando termine, cliquée el botón "Guardar".
 
 El formulario para crear una nueva regla de tipo Rango de Fechas es el siguiente:
 
-![Nueva Regla Rango de Fechas](Content/Includes/AN-HomeBase-UserManal-SP/nuevaReglaRangoDeFechas.png)
+![Nueva Regla Rango de Fechas](../Content/Includes/AN-HomeBase-UserManal-SP/nuevaReglaRangoDeFechas.png)
 
 * ***Fecha desde/Fecha hasta:*** Rango de fechas en las que se podrá realizar una transacción.
 * ***Hora desde/Hora Hasta:*** Rango de horas en las que se podrá realizar una transacción.
@@ -1050,7 +1050,7 @@ Cuando termine, cliquée el botón "Guardar".
 
 El formulario para crear una nueva regla de tipo Ubicación es el siguiente:
 
-![Nueva Regla Ubicacion](Content/Includes/AN-HomeBase-UserManal-SP/nuevaReglaUbicacion.png) 
+![Nueva Regla Ubicacion](../Content/Includes/AN-HomeBase-UserManal-SP/nuevaReglaUbicacion.png) 
 
 * ***Sitio:*** El sitio (o sitios) donde **solamente** podrán cargar las flotas, vehículos, etc., a las cuáles se les aplique esta regla.
 
@@ -1064,7 +1064,7 @@ Cuando termine, cliquée el botón "Guardar".
 
 El formulario para crear una nueva regla de tipo Combustible es el siguiente:
 
-![Nueva Regla Combustible](Content/Includes/AN-HomeBase-UserManal-SP/nuevaReglaCombustible.png)
+![Nueva Regla Combustible](../Content/Includes/AN-HomeBase-UserManal-SP/nuevaReglaCombustible.png)
 
 * ***Combustible:*** El combustible (o combustibles) que **solamente** podrán cargar las flotas, vehículos, etc., a las cuáles se les aplique esta regla.
 
@@ -1078,7 +1078,7 @@ Cuando termine, cliquée el botón "Guardar".
 
 El formulario para crear una nueva regla de tipo Límite por Transacción es el siguiente:
 
-![Nueva Regla Limite Por Transaccion](Content/Includes/AN-HomeBase-UserManal-SP/nuevaReglaLimitePorTransaccion.png)
+![Nueva Regla Limite Por Transaccion](../Content/Includes/AN-HomeBase-UserManal-SP/nuevaReglaLimitePorTransaccion.png)
 
 **Volumen:**
 
@@ -1098,7 +1098,7 @@ Cuando termine, cliquée el botón "Guardar".
 
 El formulario para crear una nueva regla de tipo Días es el siguiente:
 
-![Nueva Regla Dias](Content/Includes/AN-HomeBase-UserManal-SP/nuevaReglaDias.png)
+![Nueva Regla Dias](../Content/Includes/AN-HomeBase-UserManal-SP/nuevaReglaDias.png)
 
 * ***Días de la semana habilitados:*** Los días de la semana en los que se pueden realizar transacciones.
 
@@ -1112,7 +1112,7 @@ Cuando termine, cliquée el botón "Guardar".
 
 El formulario para crear una nueva regla de tipo Días/Horas es el siguiente:
 
-![Nueva Regla Dias/Horas](Content/Includes/AN-HomeBase-UserManal-SP/nuevaReglaDiasHoras.png)
+![Nueva Regla Dias/Horas](../Content/Includes/AN-HomeBase-UserManal-SP/nuevaReglaDiasHoras.png)
 
 * ***Días de la semana habilitados:*** Los días de la semana en los que se pueden realizar transacciones.
 * ***Hora desde/Hora hasta:*** Rango de horas en el cual se pueden realizar transacciones.
@@ -1129,7 +1129,7 @@ Antes de completar la transacción, la terminal requerirá el ingreso de cierta 
 
 El formulario para crear una nueva regla de tipo Solicitudes es el siguiente:
 
-![Nueva Regla Solicitudes](Content/Includes/AN-HomeBase-UserManal-SP/nuevaReglaSolicitudes.png)
+![Nueva Regla Solicitudes](../Content/Includes/AN-HomeBase-UserManal-SP/nuevaReglaSolicitudes.png)
 
 * ***Reintentos:*** La cantidad máxima de errores que se le permite al usuario.
 
@@ -1153,7 +1153,7 @@ Cuando termine, cliquée el botón "Guardar".
 
 El formulario para crear una nueva regla de tipo Límite de Producto por Transacción es el siguiente:
 
-![Nueva Regla Limite De Producto Por Transaccion](Content/Includes/AN-HomeBase-UserManal-SP/nuevaReglaLimiteDeProductoPorTransaccion.png)
+![Nueva Regla Limite De Producto Por Transaccion](../Content/Includes/AN-HomeBase-UserManal-SP/nuevaReglaLimiteDeProductoPorTransaccion.png)
 
 **Importe**
 
@@ -1169,7 +1169,7 @@ Cuando termine, cliquee el botón "Guardar".
 
 El formulario para crear una nueva regla de cuota por producto es el siguiente:
 
-![Nueva Regla Cuota Por Producto](Content/Includes/AN-HomeBase-UserManal-SP/nuevaReglaCuotaPorProducto.png)
+![Nueva Regla Cuota Por Producto](../Content/Includes/AN-HomeBase-UserManal-SP/nuevaReglaCuotaPorProducto.png)
 
 * ***Frecuencia:*** La frecuencia se compone de valor (numérico) y de unidad de tiempo (Ej. Días, Semanas). Si, por ejemplo, se introduce 2 - Días, la frecuencia con la que será evaluada toda la regla será de 2 días.
 
@@ -1187,7 +1187,7 @@ Cuando termine, cliquée el botón "Guardar".
 
 El Sitio representa a la estación de servicio. A un sitio se le asigna la terminal y también puede tener asociadas reglas de Ubicación. En esta sección se listan los sitios ya ingresados en el sistema y sus características. En la columna opciones puede editar el sitio, o asignarle una regla al sitio.
 
-![Sitios Administracion](Content/Includes/AN-HomeBase-UserManal-SP/sitiosAdministracion.png)
+![Sitios Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/sitiosAdministracion.png)
 
 ####### Crear nuevo sitio
 
@@ -1195,7 +1195,7 @@ Para crear un nuevo sitio, cliquée el botón "Nuevo" que se encuentra en el lad
 
 El formulario para crear un nuevo sitio recibe los siguientes parámetros:
 
-![Nuevo Sitio Administracion](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoSitioAdministracion.png)
+![Nuevo Sitio Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoSitioAdministracion.png)
 
 * ***Código:*** El código que se le quiere asignar al sitio.
 * ***Idioma:*** El lenguaje de mensajería que se va a usar en el sitio.
@@ -1222,7 +1222,7 @@ Cuando termine de realizar los cambios, cliquée el botón "Guardar".
 
 La terminal (o controlador) es la representación del controlador de surtidores, que necesita parametrizarse de manera particular según el tipo de terminal. Las terminales que ATIONet maneja son ATIO-NanoCPI, ATIO-Standalone, ATIO-CG, VF-Standalone, VF-Sapphire, VF-Ruby, ControlGas y OPW-FSC3000. En esta seccion se listan las terminales que ya están dadas de alta en el sistema. Puede editarla haciendo click en el ícono del lapiz que se encuentra en la columna opciones.
 
-![Terminales Administracion](Content/Includes/AN-HomeBase-UserManal-SP/terminalesAdministracion.png)
+![Terminales Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/terminalesAdministracion.png)
 
 ###### Crear una nueva terminal
 
@@ -1230,7 +1230,7 @@ Para crear una nueva terminal, cliquée el botón "Nuevo" que se encuentra en el
 
 El formulario para crear una nueva terminal recibe los siguientes parámetros:
 
-![Nueva Terminal Administracion](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevaTerminalAdministracion.png)
+![Nueva Terminal Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/crearNuevaTerminalAdministracion.png)
 
 * ***Sitio:*** El sitio al que se le asigna esta terminal.
 * ***Terminal/Tipo de controlador:*** La terminal/tipo de controlador.
@@ -1266,7 +1266,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis quam ac 
 
 En esta sección se muestran los vehiculos que usted dio de alta, listados por código, patente e identificación. Se muestra tambien a que flota pertenece el vehículo y la marca del vehículo. En la columna opciones usted puede asignar una identificación, asignar una regla, editar la informacion del vehículo, o habilitar/deshabilitar el vehículo.
 
-![Vehiculos Administracion](Content/Includes/AN-HomeBase-UserManal-SP/vehiculosAdministracion.png)
+![Vehiculos Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/vehiculosAdministracion.png)
 
 ###### Crear nuevo vehículo
 
@@ -1274,11 +1274,11 @@ Para crear un nuevo vehículo, cliquée el botón "Nuevo" que se encuentra en el
 
 El formulario para crear un nuevo vehículo recibe los siguientes parámetros:
 
-![Nuevo Vehiculo Administracion](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoVehiculoAdministracion.png)
+![Nuevo Vehiculo Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoVehiculoAdministracion.png)
 
 En primera instancia, la información del vehículo.
 
-![Nuevo Vehiculo Informacion](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoVehiculoInformacion.png)
+![Nuevo Vehiculo Informacion](../Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoVehiculoInformacion.png)
 
 * ***Código:*** El código del vehículo.
 * ***Flota:*** La flota a la cual pertenece el vehículo.
@@ -1300,19 +1300,19 @@ En primera instancia, la información del vehículo.
 
 En segunda instancia, los identificadores del vehículo que se le quieran asignar, o, de no existir, crearlos, haciendo luego click en el botón "Alta rápida"
 
-![Nuevo Vehiculo Identificadores](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoVehiculoIdentificadores.png)
+![Nuevo Vehiculo Identificadores](../Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoVehiculoIdentificadores.png)
 
 En tercera instancia, los conductores que se le quieren asignar al vehículo.
 
-![Nuevo Vehiculo Conductores](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoVehiculoConductores.png)
+![Nuevo Vehiculo Conductores](../Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoVehiculoConductores.png)
 
 En cuarta instancia, las reglas que se le quieren asignar al vehículo.
 
-![Nuevo Vehiculo Reglas](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoVehiculoReglasDeVehiculo.png)
+![Nuevo Vehiculo Reglas](../Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoVehiculoReglasDeVehiculo.png)
 
 Por último, si las hubiera, se listarán las reglas que están asociadas a la flota a la cual pertenece el vehículo, la cual se seleccionó en ***Flota***.
 
-![Nuevo Vehiculo Reglas De Flota](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoVehiculoReglasDeFlota.png)
+![Nuevo Vehiculo Reglas De Flota](../Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoVehiculoReglasDeFlota.png)
 
 Cuando termine de realizar los cambios, cliquée el botón "Guardar".
 
