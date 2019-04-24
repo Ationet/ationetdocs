@@ -211,7 +211,200 @@ Body:
 ## Mensaje KeepAlive
 ### Request
 Descripción del cuerpo:
-XXXXXXXXXXXXXXXXXXXXXXX
+
+<table border="1">
+	<thead>
+		<tr valign="top">
+			<th align="left" rowspan="2" valign="middle">
+				Nombre
+			</th>
+			<th align="left" rowspan="2" valign="middle">
+				Tamaño
+			</th>
+			<th align="left" rowspan="2" valign="middle">
+				Tipo
+			</th>
+			<th align="left" rowspan="2" valign="middle">
+				Condición
+			</th>
+			<th align="left" rowspan="2" valign="middle">
+				Descripción
+			</th>
+		</tr>	
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">TransactionCode</p>
+			</td>
+			<td>
+				<p align="left">3</p>
+			</td>
+			<td>
+				<p align="left">A</p>
+			</td>
+			<td>
+				<p align="left">Requerido</p>
+			</td>
+			<td>
+				<p align="left">Código de transacción / operación</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TerminalCode</p>
+			</td>
+			<td>
+				<p align="left">4-20</p>
+			</td>
+			<td>
+				<p align="left">A</p>
+			</td>
+			<td>
+				<p align="left">Requerido</p>
+			</td>
+			<td>
+				<p align="left">Código de Terminal</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Ip</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Opcional</p>
+			</td>
+			<td>
+				<p align="left">Ip de conexión</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SystemModel</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Opcional</p>
+			</td>
+			<td>
+				<p align="left">Modelo del sistema</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SystemVersion</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Opcional</p>
+			</td>
+			<td>
+				<p align="left">Versión del sistema</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SerialNumber</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Requerido</p>
+			</td>
+			<td>
+				<p align="left">Número de serie de terminal</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">OperatingSystem</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Opcional</p>
+			</td>
+			<td>
+				<p align="left">Sistema Operativo</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BatteryCharge</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Opcional</p>
+			</td>
+			<td>
+				<p align="left">Cantidad de carga de la batería</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PaperStatus</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Opcional</p>
+			</td>
+			<td>
+				<p align="left">Estado del papel</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">LastSchedule</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">GUID</p>
+			</td>
+			<td>
+				<p align="left">Opcional</p>
+			</td>
+			<td>
+				<p align="left">Id de última agenda aplicada</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
 
 Ejemplo:
 
