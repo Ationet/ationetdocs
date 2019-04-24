@@ -12,7 +12,7 @@
 - [Native Loyalty Protocol API description](AN-Native_Loyalty_Protocol-Spec.md)
 
 ## Device Updater
-- [Device Updater API description](AN-Native_Loyalty_Protocol-Spec.md)
+- [Device Updater API description](AN-Native_DeviceUpdater_Protocol-Spec.md)
 
 ## .NET SDK
 - [.NET SDK Reference](AN-SDK-Reference.md)
