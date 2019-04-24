@@ -410,17 +410,17 @@ Ejemplo:
 
 {“TransactionCode”:“600”,“TerminalCode”:“AXN8763542”, “Ip”:“192.168.20.154”, “SystemModel”:“ StandAloneTerminal”,“SystemVersion”:“ 2.0.0150”,“SerialNumber”: “SR937492”,“OperatingSystem”:“ EVO”,“BatteryCharge”:“100%”, “PaperStatus”:“OK”,“LastSchedule”:“ 90BEBD7C-78F8-4711-A304-0E690F2A0466” }
 
-Response
+### Response
 Descripción del Cuerpo:
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 Ejemplo:
 
-{“TransactionCode”:“ 601”,“SiteDateTime”:“ 05-11-18 09:10:00”,“SiteTimeZone”:“Argentina Standard Time”,“HostDateTime”:“ null”,“IdSchedule”:“90BEBD7C-78F8-4711-A304-0E690F2A0466”}
+{“TransactionCode”:“ 601”,“SiteDateTime”:“05-11-18 09:10:00”,“SiteTimeZone”:“Argentina Standard Time”,“HostDateTime”:“ null”,“IdSchedule”:“90BEBD7C-78F8-4711-A304-0E690F2A0466”}
 
-Mensaje GetNews
-Request
+## Mensaje GetNews
+### Request
 Descripción del Cuerpo:
 
 XXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -428,7 +428,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXX
 Ejemplo:
 
 {“TransactionCode”:“602”,“TerminalCode”:“AXN8763542,“SerialNumber”:“SR937492”,“IdSchedule”:“ 90BEBD7C-78F8-4711-A304-0E690F2A0466”}
-Response
+### Response
 Descripción del Cuerpo:
 
 XXXXXXXXXXXXXXXXXXXXXXXXX
@@ -438,8 +438,8 @@ Ejemplo:
 {“TransactionCode”:“603”,“FirmwareUrl”: “https://storage.blob.net/terminalsmanagment/firmwares/45aa5bd5-7344-f8688c6878a14e42483.zip”, “ResourcesUrl”:“https://storage.blob.net/terminalsmanagment/Resources/45aa5bd5-7344-4f86-88c6-878a14e42483.zip”,“ Configurations”:“{“Parámetro1”:“Valor1”,“Parámetro2”:“Valor2”,…,“ParametroN”: “ValorN”}” ,“ ApplicationMethod”:“0”}
 
 
-Mensaje ParametersReport
-Request
+## Mensaje ParametersReport
+### Request
 Descripción del Cuerpo:
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -448,7 +448,7 @@ Ejemplo:
 
 {“TransactionCode”:“604”,“TerminalCode”:“AXN8763542”,“SerialNumber”:“SR937492”,“ Configurations”:“{“Parámetro1”:“Valor1”,“Parámetro2”:“Valor2”,…,“ParametroN”: “ValorN”}”}
 
-Response
+### Response
 Descripción del Cuerpo:
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
