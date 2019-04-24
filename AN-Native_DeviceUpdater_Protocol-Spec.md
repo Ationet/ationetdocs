@@ -132,13 +132,13 @@ El presente documento del protocolo de la API de Terminals Management especifica
 <table border="1">
 	<thead>
 		<tr valign="top">
-			<th align="left" rowspan="2" valign="middle">
+			<th align="left" valign="middle">
 				Nombre
 			</th>
-			<th align="left" rowspan="2" valign="middle">
+			<th align="left" valign="middle">
 				Versión Protocolo
 			</th>
-			<th align="left" rowspan="2" valign="middle">
+			<th align="left" valign="middle">
 				Descripción
 			</th>
 		</tr>	
@@ -215,19 +215,19 @@ Descripción del cuerpo:
 <table border="1">
 	<thead>
 		<tr valign="top">
-			<th align="left" rowspan="2" valign="middle">
+			<th align="left" valign="middle">
 				Nombre
 			</th>
-			<th align="left" rowspan="2" valign="middle">
+			<th align="left" valign="middle">
 				Tamaño
 			</th>
-			<th align="left" rowspan="2" valign="middle">
+			<th align="left" valign="middle">
 				Tipo
 			</th>
-			<th align="left" rowspan="2" valign="middle">
+			<th align="left" valign="middle">
 				Condición
 			</th>
-			<th align="left" rowspan="2" valign="middle">
+			<th align="left" valign="middle">
 				Descripción
 			</th>
 		</tr>	
@@ -258,7 +258,7 @@ Descripción del cuerpo:
 				<p align="left">4-20</p>
 			</td>
 			<td>
-				<p align="left">A</p>
+				<p align="left">A/N</p>
 			</td>
 			<td>
 				<p align="left">Requerido</p>
