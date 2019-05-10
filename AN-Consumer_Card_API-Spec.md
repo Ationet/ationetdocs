@@ -109,7 +109,6 @@ Response structure json object:
 			<th rowspan="2" width="250" align="left">Type</th>
 			<th rowspan="2" align="left">Description</th>
 		</tr>
-	
 	</thead>
 	<tbody>
 		 <tr valign="top">
@@ -121,13 +120,11 @@ Response structure json object:
 			<td align="left">message</td>
 			<td align="center">string</td>
 			<td align="left">Error or warning message if the response was a not success</td>
-
 		 </tr>
 		<tr valign="top">
 			<td align="left">data</td>
 			<td align="center">object | any</td>
 			<td align="left">Response object data.Its content changes based on the request made</td>
-
 		 </tr>
 	</tbody>
 </table>
@@ -227,8 +224,7 @@ This is a Json object inside of UserAPILogged Object who contains the detailed u
 			<th rowspan="2" width="250" align="left">Name</th>
 			<th rowspan="2" width="250" align="center">Type</th>
 			<th rowspan="2" align="left">Description</th>
-		</tr>
-	
+		</tr>	
 	</thead>
 	<tbody>
 		 <tr valign="top">
@@ -240,31 +236,26 @@ This is a Json object inside of UserAPILogged Object who contains the detailed u
 			<td align="left">Name</td>
 			<td align="center">string</td>
 			<td align="left">The name of user</td>
-
 		 </tr>
 		<tr valign="top">
 			<td align="left">Street1</td>
 			<td align="center">string</td>
 			<td align="left">The user address (can be null)</td>
-
 		 </tr>
 		<tr valign="top">
 			<td align="left">PhoneNumber1</td>
 			<td align="center">string</td>
 			<td align="left">The user phone nomber. (can be null)</td>
-
 		 </tr>
 	<tr valign="top">
 			<td align="left">ProfilePicture</td>
 			<td align="center">string</td>
 			<td align="left">The user profile picture url. (can be null)</td>
-
 		 </tr>
 		<tr valign="top">
 			<td align="left">Provider</td>
 			<td align="center">string</td>
 			<td align="left">The register provider user: Must be: Ationet, Facebook, Google</td>
-
 		 </tr>
 		<tr valign="top">
 			<td align="left">ConsumerCardIdentifications</td>
@@ -277,8 +268,7 @@ This is a Json object inside of UserAPILogged Object who contains the detailed u
 						<th  width="250" align="left">Name</th>
 						<th  width="250" align="center">Type</th>
 						<th rowspan="2" align="left">Description</th>
-					</tr>
-				
+					</tr>	
 				</thead>
 				<tbody>
 				<tr>
@@ -296,11 +286,9 @@ This is a Json object inside of UserAPILogged Object who contains the detailed u
 					<td>string </td>
 					<td>The card PAN number</td>
 				</tr>
-
 				</tbody>
-				</table>
+			</table>
 			</td>
-
 		 </tr>
 	</tbody>
 </table>
@@ -459,7 +447,6 @@ inside the UserAPILogged.ConsumerCardIdentifications array object.
 			<th rowspan="2" width="250" align="center">Type</th>
 			<th rowspan="2" align="left">Description</th>
 		</tr>
-	
 	</thead>
 	<tbody>
 		<tr valign="top">
@@ -476,23 +463,17 @@ inside the UserAPILogged.ConsumerCardIdentifications array object.
 			<td align="left">IdentificationActive</td>
 			<td align="center">boolean</td>
 			<td align="left">Indicate if the card is in active state</td>
-
 		 </tr>
 		<tr valign="top">
 			<td align="left">NetworkId</td>
 			<td align="center">string</td>
 			<td align="left">Unique identifier of Network in Guid format</td>
-
 		 </tr>
 		<tr valign="top">
 			<td align="left">Balance</td>
 			<td align="center">decimal</td>
 			<td align="left">The available card balance </td>
-
-		 </tr>
-	
-
-		 
+		 </tr>	 
 	</tbody>
 </table>
 
@@ -527,7 +508,6 @@ This json object contains the movement information.
 			<th rowspan="2" width="250" align="center">Type</th>
 			<th rowspan="2" align="left">Description</th>
 		</tr>
-	
 	</thead>
 	<tbody>
 		<tr valign="top">
@@ -544,31 +524,26 @@ This json object contains the movement information.
 			<td align="left">SubscriberCode</td>
 			<td align="center">string</td>
 			<td align="left">The suscriber code</td>
-
 		 </tr>
 		<tr valign="top">
 			<td align="left">HostDateTime</td>
 			<td align="center">string</td>
 			<td align="left">The host transaction datetime</td>
-
 		 </tr>
 		<tr valign="top">
 			<td align="left">DateTime</td>
 			<td align="center">string</td>
 			<td align="left">The transaction datetime in suscriber time zone </td>
-
 		 </tr>
 	<tr valign="top">
 			<td align="left">SubscriberTimeZone</td>
 			<td align="center">string</td>
 			<td align="left">The suscriber time zone</td>
-
 		 </tr>
 		<tr valign="top">
 			<td align="left">Type</td>
 			<td align="center">byte</td>
 			<td align="left">The type of movement</td>
-
 		 </tr>
 		 <tr valign="top">
 			<td align="left">TypeDescription</td>
@@ -585,7 +560,7 @@ This json object contains the movement information.
 				<td align="center">string</td>
 				<td align="left">The origin description of movement</td>
 			</tr>
-	<tr valign="top">
+		<tr valign="top">
 			<td align="left">Description</td>
 			<td align="center">string</td>
 			<td align="left">The description of movement</td>
@@ -662,7 +637,6 @@ This json object contains the transaction information.
 			<th rowspan="2" width="250" align="center">Type</th>
 			<th rowspan="2" align="left">Description</th>
 		</tr>
-	
 	</thead>
 	<tbody>
 		<tr valign="top">
@@ -670,36 +644,30 @@ This json object contains the transaction information.
 			<td align="center">string</td>
 			<td align="left">Unique identifier of Transaction in Guid format</td>
 		 </tr>
-
 		 <tr valign="top">
 			<td align="left">SubscriberCode</td>
 			<td align="center">string</td>
 			<td align="left">The suscriber code</td>
-
 		 </tr>
 		<tr valign="top">
 			<td align="left">SubscriberName</td>
 			<td align="center">string</td>
 			<td align="left">The suscriber name</td>
-
 		 </tr>
 		<tr valign="top">
 			<td align="left">TransactionSequenceNumber</td>
 			<td align="center">string</td>
 			<td align="left">The transaction sequence number </td>
-
 		 </tr>
-	<tr valign="top">
+		<tr valign="top">
 			<td align="left">AuthorizationCode</td>
 			<td align="center">string</td>
 			<td align="left">the autorization code</td>
-
 		 </tr>
 		<tr valign="top">
 			<td align="left">Type</td>
 			<td align="center">byte</td>
 			<td align="left">The type of transaction</td>
-
 		 </tr>
 		 <tr valign="top">
 			<td align="left">TypeDescription</td>
@@ -710,7 +678,7 @@ This json object contains the transaction information.
 				<td align="left">Mode</td>
 				<td align="center">byte</td>
 				<td align="left">The mode of transaction</td>
-			 </tr>
+		 </tr>
 	 		<tr valign="top">
 				<td align="left">ModeDescription</td>
 				<td align="center">string</td>
@@ -730,19 +698,16 @@ This json object contains the transaction information.
 			<td align="left">HostDateTime</td>
 			<td align="center">string</td>
 			<td align="left">The host transaction datetime</td>
-
 		 </tr>
 		<tr valign="top">
 			<td align="left">DateTime</td>
 			<td align="center">string</td>
 			<td align="left">The transaction datetime in suscriber time zone </td>
-
 		 </tr>
 	<tr valign="top">
 			<td align="left">SubscriberTimeZone</td>
 			<td align="center">string</td>
 			<td align="left">The suscriber time zone</td>
-
 		 </tr>
 
 		<tr valign="top">
@@ -790,8 +755,6 @@ This json object contains the transaction information.
 					<td align="center">string</td>
 					<td align="left">The driver code</td>
 				 </tr>
-
-
 				<tr valign="top">
 					<td align="left">DriverCompleteName</td>
 					<td align="center">string</td>
@@ -802,13 +765,11 @@ This json object contains the transaction information.
 			<td align="center">string</td>
 			<td align="left">the code of currency. (can be null)</td>
 		 </tr>
-
 		<tr valign="top">
 			<td align="left">ProductUnitPriceRequested</td>
 			<td align="center">decimal</td>
 			<td align="left">the product unit price requested</td>
 		 </tr>
-
 		<tr valign="top">
 			<td align="left">ProductVolumeRequested</td>
 			<td align="center">decimal</td>
