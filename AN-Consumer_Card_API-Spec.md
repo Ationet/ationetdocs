@@ -640,256 +640,255 @@ This json object contains the transaction information.
 	</thead>
 	<tbody>
 		<tr valign="top">
-			<td align="left">Id</td>
-			<td align="center">string</td>
-			<td align="left">Unique identifier of Transaction in Guid format</td>
-		 </tr>
-		 <tr valign="top">
-			<td align="left">SubscriberCode</td>
-			<td align="center">string</td>
-			<td align="left">The suscriber code</td>
-		 </tr>
+		<td align="left">Id</td>
+		<td align="center">string</td>
+		<td align="left">Unique identifier of Transaction in Guid format</td>
+		</tr>
 		<tr valign="top">
-			<td align="left">SubscriberName</td>
-			<td align="center">string</td>
-			<td align="left">The suscriber name</td>
-		 </tr>
+		<td align="left">SubscriberCode</td>
+		<td align="center">string</td>
+		<td align="left">The suscriber code</td>
+		</tr>
 		<tr valign="top">
-			<td align="left">TransactionSequenceNumber</td>
-			<td align="center">string</td>
-			<td align="left">The transaction sequence number </td>
-		 </tr>
+		<td align="left">SubscriberName</td>
+		<td align="center">string</td>
+		<td align="left">The suscriber name</td>
+		</tr>
 		<tr valign="top">
-			<td align="left">AuthorizationCode</td>
-			<td align="center">string</td>
-			<td align="left">the autorization code</td>
-		 </tr>
+		<td align="left">TransactionSequenceNumber</td>
+		<td align="center">string</td>
+		<td align="left">The transaction sequence number </td>
+		</tr>
 		<tr valign="top">
-			<td align="left">Type</td>
-			<td align="center">byte</td>
-			<td align="left">The type of transaction</td>
-		 </tr>
-		 <tr valign="top">
-			<td align="left">TypeDescription</td>
-			<td align="center">string</td>
-			<td align="left">The type description of transaction</td>
-		 </tr>
-	 		 <tr valign="top">
-				<td align="left">Mode</td>
-				<td align="center">byte</td>
-				<td align="left">The mode of transaction</td>
-		 </tr>
-	 		<tr valign="top">
-				<td align="left">ModeDescription</td>
-				<td align="center">string</td>
-				<td align="left">The mode description of transaction</td>
-			 </tr>
-	 	<tr valign="top">
-				<td align="left">Status</td>
-				<td align="center">int</td>
-				<td align="left">The status of transaction</td>
-			 </tr>
-	<tr valign="top">
-			<td align="left">StatusDescription</td>
-			<td align="center">string</td>
-			<td align="left">The status description of transaction</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">HostDateTime</td>
-			<td align="center">string</td>
-			<td align="left">The host transaction datetime</td>
-		 </tr>
+		<td align="left">AuthorizationCode</td>
+		<td align="center">string</td>
+		<td align="left">the autorization code</td>
+		</tr>
 		<tr valign="top">
-			<td align="left">DateTime</td>
-			<td align="center">string</td>
-			<td align="left">The transaction datetime in suscriber time zone </td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">SubscriberTimeZone</td>
-			<td align="center">string</td>
-			<td align="left">The suscriber time zone</td>
-		 </tr>
-
+		<td align="left">Type</td>
+		<td align="center">byte</td>
+		<td align="left">The type of transaction</td>
+		</tr>
 		<tr valign="top">
-			<td align="left">CompanyCode</td>
-			<td align="center">string</td>
-			<td align="left">The company code</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">CompanyName</td>
-			<td align="center">string</td>
-			<td align="left">The company name</td>
-		 </tr>
+		<td align="left">TypeDescription</td>
+		<td align="center">string</td>
+		<td align="left">The type description of transaction</td>
+		</tr>
 		<tr valign="top">
-			<td align="left">SiteCode</td>
-			<td align="center">string</td>
-			<td align="left">The site code</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">SiteName</td>
-			<td align="center">string</td>
-			<td align="left">The site name</td>
-		 </tr>
+		<td align="left">Mode</td>
+		<td align="center">byte</td>
+		<td align="left">The mode of transaction</td>
+		</tr>
 		<tr valign="top">
-			<td align="left">PrimaryIdentificationPAN</td>
-			<td align="center">string</td>
-			<td align="left">the card PAN number of primary Identification</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">SecondaryIdentificationPAN</td>
-			<td align="center">string</td>
-			<td align="left">the card PAN number of secondary Identification</td>
-		 </tr>
+		<td align="left">ModeDescription</td>
+		<td align="center">string</td>
+		<td align="left">The mode description of transaction</td>
+		</tr>
 		<tr valign="top">
-			<td align="left">VehicleCode</td>
-			<td align="center">string</td>
-			<td align="left">The vehicle code</td>
-		 </tr>
+		<td align="left">Status</td>
+		<td align="center">int</td>
+		<td align="left">The status of transaction</td>
+		</tr>
 		<tr valign="top">
-			<td align="left">VehiclePlate</td>
-			<td align="center">string</td>
-			<td align="left">The vehicle Plate</td>
-		 </tr>
+		<td align="left">StatusDescription</td>
+		<td align="center">string</td>
+		<td align="left">The status description of transaction</td>
+		</tr>
 		<tr valign="top">
-					<td align="left">DriverCode</td>
-					<td align="center">string</td>
-					<td align="left">The driver code</td>
-				 </tr>
-				<tr valign="top">
-					<td align="left">DriverCompleteName</td>
-					<td align="center">string</td>
-					<td align="left">The driver complete name</td>
-				 </tr>
+		<td align="left">HostDateTime</td>
+		<td align="center">string</td>
+		<td align="left">The host transaction datetime</td>
+		</tr>
 		<tr valign="top">
-			<td align="left">CurrencyCode</td>
-			<td align="center">string</td>
-			<td align="left">the code of currency. (can be null)</td>
-		 </tr>
+		<td align="left">DateTime</td>
+		<td align="center">string</td>
+		<td align="left">The transaction datetime in suscriber time zone </td>
+		</tr>
 		<tr valign="top">
-			<td align="left">ProductUnitPriceRequested</td>
-			<td align="center">decimal</td>
-			<td align="left">the product unit price requested</td>
-		 </tr>
+		<td align="left">SubscriberTimeZone</td>
+		<td align="center">string</td>
+		<td align="left">The suscriber time zone</td>
+		</tr>
 		<tr valign="top">
-			<td align="left">ProductVolumeRequested</td>
-			<td align="center">decimal</td>
-			<td align="left">the product volume requested</td>
-		 </tr>
+		<td align="left">CompanyCode</td>
+		<td align="center">string</td>
+		<td align="left">The company code</td>
+		</tr>
 		<tr valign="top">
-			<td align="left">ProductAmountRequested</td>
-			<td align="center">decimal</td>
-			<td align="left">the product amount requested</td>
-		 </tr>
+		<td align="left">CompanyName</td>
+		<td align="center">string</td>
+		<td align="left">The company name</td>
+		</tr>
 		<tr valign="top">
-			<td align="left">TransactionAmountRequested</td>
-			<td align="center">decimal</td>
-			<td align="left">the transaction amount requested</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">ProductUnitPriceAuthorized</td>
-			<td align="center">decimal</td>
-			<td align="left">the product unit price autorized</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">ProductVolumeAuthorized</td>
-			<td align="center">decimal</td>
-			<td align="left">the product volume autorized</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">ProductAmountAuthorized</td>
-			<td align="center">decimal</td>
-			<td align="left">the product amount autorized</td>
-		 </tr>
+		<td align="left">SiteCode</td>
+		<td align="center">string</td>
+		<td align="left">The site code</td>
+		</tr>
 		<tr valign="top">
-			<td align="left">TransactionAmountAuthorized</td>
-			<td align="center">decimal</td>
-			<td align="left">the transaction amount autorized</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">ProductUnitPriceDispensed</td>
-			<td align="center">decimal</td>
-			<td align="left">the product unit price dispensed</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">ProductVolumeDispensed</td>
-			<td align="center">decimal</td>
-			<td align="left">the product volume dispensed</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">ProductAmountDispensed</td>
-			<td align="center">decimal</td>
-			<td align="left">the product amount dispensed</td>
-		 </tr>
+		<td align="left">SiteName</td>
+		<td align="center">string</td>
+		<td align="left">The site name</td>
+		</tr>
 		<tr valign="top">
-			<td align="left">ProductNetAmountDispensed</td>
-			<td align="center">decimal</td>
-			<td align="left">the product net amount dispensed</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">TransactionAmountDispensed</td>
-			<td align="center">decimal</td>
-			<td align="left">the transaction amount dispensed</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">ProductUnitPriceCompany</td>
-			<td align="center">decimal</td>
-			<td align="left">the unit price of company</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">ProductAmountCompany</td>
-			<td align="center">decimal</td>
-			<td align="left">the product amount of company</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">TransactionAmountCompany</td>
-			<td align="center">decimal</td>
-			<td align="left">the transaction amount of company</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">MeasurementUnitCode</td>
-			<td align="center">string</td>
-			<td align="left">Mesurement unit code</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">FuelCode</td>
-			<td align="center">string</td>
-			<td align="left">The fuel code</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">FuelMasterCode</td>
-			<td align="center">string</td>
-			<td align="left">The fuel master code</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">FuelMasterDescription</td>
-			<td align="center">string</td>
-			<td align="left">The fuel master description</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">InvoiceNumber</td>
-			<td align="center">string</td>
-			<td align="left">The invoice number</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">BatchNumber</td>
-			<td align="center">integer</td>
-			<td align="left">The barch number</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">ShiftNumber</td>
-			<td align="center">string</td>
-			<td align="left">The shift number</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">PumpNumber</td>
-			<td align="center">string</td>
-			<td align="left">The pump number</td>
-		 </tr>
-	<tr valign="top">
-			<td align="left">CustomerData</td>
-			<td align="center">object</td>
-			<td align="left">the consumer data in json array list</td>
-		 </tr>
+		<td align="left">PrimaryIdentificationPAN</td>
+		<td align="center">string</td>
+		<td align="left">the card PAN number of primary Identification</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">SecondaryIdentificationPAN</td>
+		<td align="center">string</td>
+		<td align="left">the card PAN number of secondary Identification</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">VehicleCode</td>
+		<td align="center">string</td>
+		<td align="left">The vehicle code</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">VehiclePlate</td>
+		<td align="center">string</td>
+		<td align="left">The vehicle Plate</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">DriverCode</td>
+		<td align="center">string</td>
+		<td align="left">The driver code</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">DriverCompleteName</td>
+		<td align="center">string</td>
+		<td align="left">The driver complete name</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">CurrencyCode</td>
+		<td align="center">string</td>
+		<td align="left">the code of currency. (can be null)</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">ProductUnitPriceRequested</td>
+		<td align="center">decimal</td>
+		<td align="left">the product unit price requested</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">ProductVolumeRequested</td>
+		<td align="center">decimal</td>
+		<td align="left">the product volume requested</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">ProductAmountRequested</td>
+		<td align="center">decimal</td>
+		<td align="left">the product amount requested</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">TransactionAmountRequested</td>
+		<td align="center">decimal</td>
+		<td align="left">the transaction amount requested</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">ProductUnitPriceAuthorized</td>
+		<td align="center">decimal</td>
+		<td align="left">the product unit price autorized</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">ProductVolumeAuthorized</td>
+		<td align="center">decimal</td>
+		<td align="left">the product volume autorized</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">ProductAmountAuthorized</td>
+		<td align="center">decimal</td>
+		<td align="left">the product amount autorized</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">TransactionAmountAuthorized</td>
+		<td align="center">decimal</td>
+		<td align="left">the transaction amount autorized</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">ProductUnitPriceDispensed</td>
+		<td align="center">decimal</td>
+		<td align="left">the product unit price dispensed</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">ProductVolumeDispensed</td>
+		<td align="center">decimal</td>
+		<td align="left">the product volume dispensed</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">ProductAmountDispensed</td>
+		<td align="center">decimal</td>
+		<td align="left">the product amount dispensed</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">ProductNetAmountDispensed</td>
+		<td align="center">decimal</td>
+		<td align="left">the product net amount dispensed</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">TransactionAmountDispensed</td>
+		<td align="center">decimal</td>
+		<td align="left">the transaction amount dispensed</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">ProductUnitPriceCompany</td>
+		<td align="center">decimal</td>
+		<td align="left">the unit price of company</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">ProductAmountCompany</td>
+		<td align="center">decimal</td>
+		<td align="left">the product amount of company</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">TransactionAmountCompany</td>
+		<td align="center">decimal</td>
+		<td align="left">the transaction amount of company</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">MeasurementUnitCode</td>
+		<td align="center">string</td>
+		<td align="left">Mesurement unit code</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">FuelCode</td>
+		<td align="center">string</td>
+		<td align="left">The fuel code</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">FuelMasterCode</td>
+		<td align="center">string</td>
+		<td align="left">The fuel master code</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">FuelMasterDescription</td>
+		<td align="center">string</td>
+		<td align="left">The fuel master description</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">InvoiceNumber</td>
+		<td align="center">string</td>
+		<td align="left">The invoice number</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">BatchNumber</td>
+		<td align="center">integer</td>
+		<td align="left">The barch number</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">ShiftNumber</td>
+		<td align="center">string</td>
+		<td align="left">The shift number</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">PumpNumber</td>
+		<td align="center">string</td>
+		<td align="left">The pump number</td>
+		</tr>
+		<tr valign="top">
+		<td align="left">CustomerData</td>
+		<td align="center">object</td>
+		<td align="left">the consumer data in json array list</td>
+		</tr>
 	</tbody>
 </table>
 
