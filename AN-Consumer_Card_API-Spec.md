@@ -1,7 +1,7 @@
 ![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
 # ATIONet - Consumer Card API v1.0
 
-	<table>
+<table>
 		<tr>
 			<th colspan="2" align="left">Document Information</th>
 		</tr>
@@ -21,9 +21,9 @@
 			<td>Author:</td>
 			<td>ATIO International LLC</td>
 		</tr>
-	</table>
+</table>
 
-	<table>
+<table>
 		<tr>
 			<th colspan="3" align="left">Change Log</th>
 		</tr>
@@ -37,7 +37,7 @@
 			<td>07/May/2019</td>
 			<td>Initial version.</td>
 		</tr>
-	</table>
+</table>
 
 ## Contents
 
