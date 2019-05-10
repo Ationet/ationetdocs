@@ -495,11 +495,11 @@ The others parameters are used to filter the informatin, like a dates filters an
 *Get Movements Response*
 
 	{"success":true,"message":"","data": 
-	{
-	 consumerCardClient:{<object ConsumerCardClient>},
-	 transactions:{<array Movement List object>},
-	 transactionCount:<number of transaction in integer value>
-	}
+		{
+		 consumerCardClient:{<object ConsumerCardClient>},
+		 transactions:{<array Movement objects>},
+		 transactionCount:<number of transaction in integer value>
+		}
 	}
 #### Movement object Description
 This json object contains the movement information.
@@ -521,7 +521,7 @@ This json object contains the movement information.
 		 <tr valign="top">
 			<td align="left">MovementId</td>
 			<td align="center">string</td>
-			<td align="left">Unique identifier of Movement in Guid format/td>
+			<td align="left">Unique identifier of Movement in Guid format</td>
 		 </tr>
 		 <tr valign="top">
 			<td align="left">SubscriberCode</td>
