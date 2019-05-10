@@ -345,7 +345,7 @@ This sends an email to the user's account with a link inside to enter it and fin
 ## Register ConsumerCard Client
 This service is used to register new consumer card clients or register empty cards to existing users.
 
-The first step is validate the card PAN number by the fallow endpoint:
+The first step is validate the card PAN number.
 
 The second step is a validate the user name (email address).
 
