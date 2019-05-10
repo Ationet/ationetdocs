@@ -363,9 +363,12 @@ This endpoint receive a PAN number and validate then if exists and if it is curr
 
 *Validate Card Number Response*
 
-	{"success":true,"message":"","data":{"isValidPanNumber":true,"isUsedIdentificator":true}}
+	{"success":true,"message":"","data":{"isValidPanNumber":true,"isUsedIdentificator":false}}
 
-If the isValidPanNumber and isUsedIdentificator response fields is in true. It means the current card is enabled to be used and continue with the registration process.
+If the isValidPanNumber field is true and isUsedIdentificator field is false. It means the current card is enabled to be used and continue with the registration process.
+
+It is possible that the card does not exist. In this case the isValidPanNumber is false. Or this card exist but is current in use, in this case the isUsedIdentificator is set in true.
+
 
 
 ### 2)Validate user name
