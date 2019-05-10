@@ -583,12 +583,12 @@ This json object contains the movement information.
 		<tr valign="top">
 			<td align="left">CurrencyCode</td>
 			<td align="center">string</td>
-			<td align="left">the code of currency. (can be null)</td>
+			<td align="left">The code of currency. (can be null)</td>
 		 </tr>
 		<tr valign="top">
 			<td align="left">Amount</td>
 			<td align="center">decimal</td>
-			<td align="left">the amount of movement</td>
+			<td align="left">The amount of movement</td>
 		 </tr>
 	</tbody>
 </table>
@@ -732,12 +732,12 @@ This json object contains the transaction information.
 		<tr valign="top">
 		<td align="left">PrimaryIdentificationPAN</td>
 		<td align="center">string</td>
-		<td align="left">the card PAN number of primary Identification</td>
+		<td align="left">The card PAN number of primary Identification</td>
 		</tr>
 		<tr valign="top">
 		<td align="left">SecondaryIdentificationPAN</td>
 		<td align="center">string</td>
-		<td align="left">the card PAN number of secondary Identification</td>
+		<td align="left">The card PAN number of secondary Identification</td>
 		</tr>
 		<tr valign="top">
 		<td align="left">VehicleCode</td>
@@ -762,87 +762,87 @@ This json object contains the transaction information.
 		<tr valign="top">
 		<td align="left">CurrencyCode</td>
 		<td align="center">string</td>
-		<td align="left">the code of currency. (can be null)</td>
+		<td align="left">The code of currency. (can be null)</td>
 		</tr>
 		<tr valign="top">
 		<td align="left">ProductUnitPriceRequested</td>
 		<td align="center">decimal</td>
-		<td align="left">the product unit price requested</td>
+		<td align="left">The product unit price requested</td>
 		</tr>
 		<tr valign="top">
 		<td align="left">ProductVolumeRequested</td>
 		<td align="center">decimal</td>
-		<td align="left">the product volume requested</td>
+		<td align="left">The product volume requested</td>
 		</tr>
 		<tr valign="top">
 		<td align="left">ProductAmountRequested</td>
 		<td align="center">decimal</td>
-		<td align="left">the product amount requested</td>
+		<td align="left">The product amount requested</td>
 		</tr>
 		<tr valign="top">
 		<td align="left">TransactionAmountRequested</td>
 		<td align="center">decimal</td>
-		<td align="left">the transaction amount requested</td>
+		<td align="left">The transaction amount requested</td>
 		</tr>
 		<tr valign="top">
 		<td align="left">ProductUnitPriceAuthorized</td>
 		<td align="center">decimal</td>
-		<td align="left">the product unit price autorized</td>
+		<td align="left">The product unit price autorized</td>
 		</tr>
 		<tr valign="top">
 		<td align="left">ProductVolumeAuthorized</td>
 		<td align="center">decimal</td>
-		<td align="left">the product volume autorized</td>
+		<td align="left">The product volume autorized</td>
 		</tr>
 		<tr valign="top">
 		<td align="left">ProductAmountAuthorized</td>
 		<td align="center">decimal</td>
-		<td align="left">the product amount autorized</td>
+		<td align="left">The product amount autorized</td>
 		</tr>
 		<tr valign="top">
 		<td align="left">TransactionAmountAuthorized</td>
 		<td align="center">decimal</td>
-		<td align="left">the transaction amount autorized</td>
+		<td align="left">The transaction amount autorized</td>
 		</tr>
 		<tr valign="top">
 		<td align="left">ProductUnitPriceDispensed</td>
 		<td align="center">decimal</td>
-		<td align="left">the product unit price dispensed</td>
+		<td align="left">The product unit price dispensed</td>
 		</tr>
 		<tr valign="top">
 		<td align="left">ProductVolumeDispensed</td>
 		<td align="center">decimal</td>
-		<td align="left">the product volume dispensed</td>
+		<td align="left">The product volume dispensed</td>
 		</tr>
 		<tr valign="top">
 		<td align="left">ProductAmountDispensed</td>
 		<td align="center">decimal</td>
-		<td align="left">the product amount dispensed</td>
+		<td align="left">The product amount dispensed</td>
 		</tr>
 		<tr valign="top">
 		<td align="left">ProductNetAmountDispensed</td>
 		<td align="center">decimal</td>
-		<td align="left">the product net amount dispensed</td>
+		<td align="left">The product net amount dispensed</td>
 		</tr>
 		<tr valign="top">
 		<td align="left">TransactionAmountDispensed</td>
 		<td align="center">decimal</td>
-		<td align="left">the transaction amount dispensed</td>
+		<td align="left">The transaction amount dispensed</td>
 		</tr>
 		<tr valign="top">
 		<td align="left">ProductUnitPriceCompany</td>
 		<td align="center">decimal</td>
-		<td align="left">the unit price of company</td>
+		<td align="left">The unit price of company</td>
 		</tr>
 		<tr valign="top">
 		<td align="left">ProductAmountCompany</td>
 		<td align="center">decimal</td>
-		<td align="left">the product amount of company</td>
+		<td align="left">The product amount of company</td>
 		</tr>
 		<tr valign="top">
 		<td align="left">TransactionAmountCompany</td>
 		<td align="center">decimal</td>
-		<td align="left">the transaction amount of company</td>
+		<td align="left">The transaction amount of company</td>
 		</tr>
 		<tr valign="top">
 		<td align="left">MeasurementUnitCode</td>
