@@ -194,7 +194,6 @@ Contains the complete user information.
 			<th rowspan="2" width="250" align="center">Type</th>
 			<th rowspan="2" align="left">Description</th>
 		</tr>
-	
 	</thead>
 	<tbody>
 		 <tr valign="top">
@@ -206,21 +205,17 @@ Contains the complete user information.
 			<td align="left">UserAtionetName</td>
 			<td align="center">string</td>
 			<td align="left">The name of user</td>
-
 		 </tr>
 		<tr valign="top">
 			<td align="left">Email</td>
 			<td align="center">string</td>
 			<td align="left">The email of user</td>
-
 		 </tr>
 		<tr valign="top">
 			<td align="left">UserAtionet</td>
 			<td align="center">object</td>
 			<td align="left">Object that contains the detailed definition of the user. See UserAtionet description</td>
-
 		 </tr>
-
 	</tbody>
 </table>
 
