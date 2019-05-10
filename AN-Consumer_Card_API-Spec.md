@@ -920,8 +920,9 @@ If you do not want to change the user's password these two fields must be in nul
 	Endpoint: https://consumercardapi.ationet.com/api/users/updateProfile{ConsumerCardClientId}
 	Method: PUT
 	Body: {profilePicture:'<image in base64 format (can be null)>',
-	 name:'<user full name>',phoneNumber1:'<user phone number (can be null)>',consumerCarClientPassword:'<current user password (can be null)>' consumerCarClientNewPassword='<the new passwod (can be null)>'
-      	 
+	 name:'<user full name>',phoneNumber1:'<user phone number (can be null)>',
+	 consumerCarClientPassword:'<current user password (can be null)>',
+	 consumerCarClientNewPassword:'<the new passwod (can be null)>'
     }
 
 *Change Card Status Response*
