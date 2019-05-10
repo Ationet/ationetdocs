@@ -102,7 +102,7 @@ All the responses of this API have the same format:
 
 Response structure json object:
 
-	<table>
+<table>
 	<thead>
 		<tr valign="center">
 			<th rowspan="2" width="250" align="left">Name</th>
@@ -130,7 +130,7 @@ Response structure json object:
 
 		 </tr>
 	</tbody>
-	</table>
+</table>
 
 
 #### Authorization token
@@ -187,7 +187,7 @@ This is a protected resource, therefore, they must be authenticated to obtain a 
 This is the Json object return by the service when login is success.
 Contains the complete user information.
 
-	<table>
+<table>
 	<thead>
 		<tr valign="center">
 			<th rowspan="2" width="250" align="left">Name</th>
@@ -222,11 +222,11 @@ Contains the complete user information.
 		 </tr>
 
 	</tbody>
-	</table>
+</table>
 
 ### UserAtionet Description
 This is a Json object inside of UserAPILogged Object who contains the detailed user data.
-	<table>
+<table>
 	<thead>
 		<tr valign="center">
 			<th rowspan="2" width="250" align="left">Name</th>
@@ -308,7 +308,7 @@ This is a Json object inside of UserAPILogged Object who contains the detailed u
 
 		 </tr>
 	</tbody>
-	</table>
+</table>
 
 
 ## Users Consumer Card Social Login endpoint (without credentials)
@@ -457,7 +457,7 @@ inside the UserAPILogged.ConsumerCardIdentifications array object.
 
 #### ConsumerCardClient object Description
 
-	<table>
+<table>
 	<thead>
 		<tr valign="center">
 			<th rowspan="2" width="250" align="left">Name</th>
@@ -499,7 +499,7 @@ inside the UserAPILogged.ConsumerCardIdentifications array object.
 
 		 
 	</tbody>
-	</table>
+</table>
 
 ## Get Movements 
 This service is used to get transactions movements by filters.
@@ -525,7 +525,7 @@ The others parameters are used to filter the informatin, like a dates filters an
 #### Movement object Description
 This json object contains the movement information.
 
-	<table>
+<table>
 	<thead>
 		<tr valign="center">
 			<th rowspan="2" width="250" align="left">Name</th>
@@ -621,7 +621,7 @@ This json object contains the movement information.
 			<td align="left">the amount of movement</td>
 		 </tr>
 	</tbody>
-	</table>
+</table>
 
 ## Get Movements for export (Excel)
 This service is used to get transactions movements for excel export by filters.
@@ -660,7 +660,7 @@ This service is used to get transaction details by TransactionId field.
 #### Transaction object Description
 This json object contains the transaction information.
 
-	<table>
+<table>
 	<thead>
 		<tr valign="center">
 			<th rowspan="2" width="250" align="left">Name</th>
@@ -935,7 +935,7 @@ This json object contains the transaction information.
 			<td align="left">the consumer data in json array list</td>
 		 </tr>
 	</tbody>
-	</table>
+</table>
 
 ## Change Card Status
 
