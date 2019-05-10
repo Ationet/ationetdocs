@@ -887,7 +887,7 @@ This json object contains the transaction information.
 		<tr valign="top">
 		<td align="left">CustomerData</td>
 		<td align="center">object</td>
-		<td align="left">the consumer data in json array list</td>
+		<td align="left">The consumer data in json array list</td>
 		</tr>
 	</tbody>
 </table>
