@@ -102,7 +102,7 @@ All the responses of this API have the same format:
 
 Response structure json object:
 
-<table>
+	<table>
 	<thead>
 		<tr valign="center">
 			<th rowspan="2" width="250" align="left">Name</th>
@@ -130,7 +130,7 @@ Response structure json object:
 
 		 </tr>
 	</tbody>
-</table>
+	</table>
 
 
 #### Authorization token
@@ -186,7 +186,7 @@ This is a protected resource, therefore, they must be authenticated to obtain a 
 ### UserAPILogged Description
 This is the Json object return by the service when login is success.
 Contains the complete user information.
-<table>
+	<table>
 	<thead>
 		<tr valign="center">
 			<th rowspan="2" width="250" align="left">Name</th>
@@ -221,7 +221,7 @@ Contains the complete user information.
 		 </tr>
 
 	</tbody>
-</table>
+	</table>
 
 ### UserAtionet Description
 This is a Json object inside of UserAPILogged Object who contains the detailed user data.
@@ -307,7 +307,7 @@ This is a Json object inside of UserAPILogged Object who contains the detailed u
 
 		 </tr>
 	</tbody>
-</table>
+	</table>
 
 
 ## Users Consumer Card Social Login endpoint (without credentials)
@@ -358,7 +358,7 @@ This sends an email to the user's account with a link inside to enter it and fin
 
 	{"success":true,"message":"","data":null}
 
-##Register ConsumerCard Client
+## Register ConsumerCard Client
 This service is used to register new consumer card clients or register empty cards to existing users.
 
 The first step is validate the card PAN number by the fallow endpoint:
@@ -411,7 +411,7 @@ a) Normal flow of user registration with password.
 
 b) Through social networks (Facebook or Google). Where the user information is provided by the network provider and does not require a password field.
 
-####Normal flow of user registration with password
+#### Normal flow of user registration with password
 
 *Register Consumer card client Request*
 
@@ -426,7 +426,7 @@ b) Through social networks (Facebook or Google). Where the user information is p
 
 
 
-####Through social networks (Facebook or Google)
+#### Through social networks (Facebook or Google)
 
 *Register Consumer card client by social networks (Facebook or Google) Request*
 
@@ -439,7 +439,7 @@ b) Through social networks (Facebook or Google). Where the user information is p
 
 	{"success":true,"message":"","data": {<object UserAPILogged>}}
 
-##Get ConsumerCard Client
+## Get ConsumerCard Client
 This service is used to get consumer card account information like a balance.
 The mandatory field for search this information is a ConsumerCardClientId 
 inside the UserAPILogged.ConsumerCardIdentifications array object. 
@@ -454,9 +454,9 @@ inside the UserAPILogged.ConsumerCardIdentifications array object.
 	{"success":true,"message":"","data": {<object ConsumerCardClient>}}
 
 
-####ConsumerCardClient object Description
+#### ConsumerCardClient object Description
 
-<table>
+	<table>
 	<thead>
 		<tr valign="center">
 			<th rowspan="2" width="250" align="left">Name</th>
@@ -498,9 +498,9 @@ inside the UserAPILogged.ConsumerCardIdentifications array object.
 
 		 
 	</tbody>
-</table>
+	</table>
 
-##Get Movements 
+## Get Movements 
 This service is used to get transactions movements by filters.
 
 The only required url parameter is a id. 
@@ -521,7 +521,7 @@ The others parameters are used to filter the informatin, like a dates filters an
 	 transactionCount:<number of transaction in integer value>
 	}
 	}
-####Movement object Description
+#### Movement object Description
 This json object contains the movement information.
 <table>
 	<thead>
@@ -578,16 +578,16 @@ This json object contains the movement information.
 			<td align="center">string</td>
 			<td align="left">The type description of movement</td>
 		 </tr>
- 		 <tr valign="top">
-			<td align="left">Origin</td>
-			<td align="center">byte</td>
-			<td align="left">The origin of movement</td>
-		 </tr>
- 		<tr valign="top">
-			<td align="left">OriginDescription</td>
-			<td align="center">string</td>
-			<td align="left">The origin description of movement</td>
-		 </tr>
+	 		 <tr valign="top">
+				<td align="left">Origin</td>
+				<td align="center">byte</td>
+				<td align="left">The origin of movement</td>
+			 </tr>
+	 		<tr valign="top">
+				<td align="left">OriginDescription</td>
+				<td align="center">string</td>
+				<td align="left">The origin description of movement</td>
+			</tr>
 	<tr valign="top">
 			<td align="left">Description</td>
 			<td align="center">string</td>
@@ -619,12 +619,12 @@ This json object contains the movement information.
 			<td align="left">the amount of movement</td>
 		 </tr>
 	</tbody>
-</table>
-##Get Movements for export (Excel)
+	</table>
+## Get Movements for export (Excel)
 This service is used to get transactions movements for excel export by filters.
 
 The only required url parameter is a id. 
-The others parameters are used to filter the informatin, like a dates filters and pagination filters (page and pagesize fields)
+The others parameters are used to filter the information, like a dates filters and pagination filters (page and pagesize fields)
 
 *Header:*
 
@@ -640,7 +640,7 @@ The others parameters are used to filter the informatin, like a dates filters an
 
 	ConsumerCardMovements.xlsx file
 
-##Get Transaction
+## Get Transaction
 This service is used to get transaction details by TransactionId field.
 
 
@@ -654,10 +654,10 @@ This service is used to get transaction details by TransactionId field.
 	{"success":true,"message":"","data":<transaction object data>}}
 
 
-####Transaction object Description
+#### Transaction object Description
 This json object contains the transaction information.
 
-<table>
+	<table>
 	<thead>
 		<tr valign="center">
 			<th rowspan="2" width="250" align="left">Name</th>
@@ -708,21 +708,21 @@ This json object contains the transaction information.
 			<td align="center">string</td>
 			<td align="left">The type description of transaction</td>
 		 </tr>
- 		 <tr valign="top">
-			<td align="left">Mode</td>
-			<td align="center">byte</td>
-			<td align="left">The mode of transaction</td>
-		 </tr>
- 		<tr valign="top">
-			<td align="left">ModeDescription</td>
-			<td align="center">string</td>
-			<td align="left">The mode description of transaction</td>
-		 </tr>
- 	<tr valign="top">
-			<td align="left">Status</td>
-			<td align="center">int</td>
-			<td align="left">The status of transaction</td>
-		 </tr>
+	 		 <tr valign="top">
+				<td align="left">Mode</td>
+				<td align="center">byte</td>
+				<td align="left">The mode of transaction</td>
+			 </tr>
+	 		<tr valign="top">
+				<td align="left">ModeDescription</td>
+				<td align="center">string</td>
+				<td align="left">The mode description of transaction</td>
+			 </tr>
+	 	<tr valign="top">
+				<td align="left">Status</td>
+				<td align="center">int</td>
+				<td align="left">The status of transaction</td>
+			 </tr>
 	<tr valign="top">
 			<td align="left">StatusDescription</td>
 			<td align="center">string</td>
@@ -932,9 +932,9 @@ This json object contains the transaction information.
 			<td align="left">the consumer data in json array list</td>
 		 </tr>
 	</tbody>
-</table>
+	</table>
 
-##Change Card Status
+## Change Card Status
 
 This service is used to activate or deactivate a card.
 
@@ -949,7 +949,7 @@ This service is used to activate or deactivate a card.
 
 	{"success":true,"message":"","data":{activeState:<true o false>}}
 
-##Update User profile
+## Update User profile
 
 This service is used to update user profile data like a name, profile picture or password.
 
