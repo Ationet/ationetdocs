@@ -1,43 +1,43 @@
 ![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
 # ATIONet - Consumer Card API v1.0
 
-<table>
-	<tr>
-		<th colspan="2" align="left">Document Information</th>
-	</tr>
-	<tr>
-		<td>File:</td>
-		<td>ATIONet-Consumer Card API-Spec-v1</td>
-	</tr>
-	<tr>
-		<td>Doc Version:</td>
-		<td>1.0</td>
-	</tr>
-	<tr>
-		<td>Release Date:</td>
-		<td>07, May 2019</td>
-	</tr>
-	<tr>
-		<td>Author:</td>
-		<td>ATIO International LLC</td>
-	</tr>
-</table>
+	<table>
+		<tr>
+			<th colspan="2" align="left">Document Information</th>
+		</tr>
+		<tr>
+			<td>File:</td>
+			<td>ATIONet-Consumer Card API-Spec-v1</td>
+		</tr>
+		<tr>
+			<td>Doc Version:</td>
+			<td>1.0</td>
+		</tr>
+		<tr>
+			<td>Release Date:</td>
+			<td>07, May 2019</td>
+		</tr>
+		<tr>
+			<td>Author:</td>
+			<td>ATIO International LLC</td>
+		</tr>
+	</table>
 
-<table>
-	<tr>
-		<th colspan="3" align="left">Change Log</th>
-	</tr>
-	<tr>
-		<td>Ver.</td>
-		<td>Date</td>
-		<td>Change Summary</td>
-	</tr>
-	<tr valign="top">
-		<td>1.0</td>
-		<td>07/May/2019</td>
-		<td>Initial version.</td>
-	</tr>
-</table>
+	<table>
+		<tr>
+			<th colspan="3" align="left">Change Log</th>
+		</tr>
+		<tr>
+			<td>Ver.</td>
+			<td>Date</td>
+			<td>Change Summary</td>
+		</tr>
+		<tr valign="top">
+			<td>1.0</td>
+			<td>07/May/2019</td>
+			<td>Initial version.</td>
+		</tr>
+	</table>
 
 ## Contents
 
@@ -139,7 +139,7 @@ The user name and Consumer Card Client Password must be an existing a AtionetAdm
 
 *Get Authorization token:*
 
-	Endpoint: https://ationetconsumercardapi.azurewebsites.net/api/Membership/authenticate
+	Endpoint: https://consumercardapi.ationet.com/api/Membership/authenticate
 	Method: POST
 	Body Contain: {UserName:'', ConsumerCarClientPassword:''}
 
@@ -164,7 +164,7 @@ This is a protected resource, therefore, they must be authenticated to obtain a 
 ### Scope Details
 *Login endoint Request*
 
-	Endpoint: https://ationetconsumercardapi.azurewebsites.net/api/Membership/login
+	Endpoint: https://consumercardapi.ationet.com/api/Membership/login
 	Method: POST
 	Body Contain: {UserName:'', ConsumerCarClientPassword:''}
 
@@ -186,6 +186,7 @@ This is a protected resource, therefore, they must be authenticated to obtain a 
 ### UserAPILogged Description
 This is the Json object return by the service when login is success.
 Contains the complete user information.
+
 	<table>
 	<thead>
 		<tr valign="center">
@@ -225,7 +226,7 @@ Contains the complete user information.
 
 ### UserAtionet Description
 This is a Json object inside of UserAPILogged Object who contains the detailed user data.
-<table>
+	<table>
 	<thead>
 		<tr valign="center">
 			<th rowspan="2" width="250" align="left">Name</th>
@@ -325,7 +326,7 @@ This is a protected resource, therefore, they must be authenticated to obtain a 
 ### Scope Details
 *Social Login endoint Request*
 
-	Endpoint: https://ationetconsumercardapi.azurewebsites.net/api/Membership/SocialLogin
+	Endpoint: https://consumercardapi.ationet.com/api/Membership/SocialLogin
 	Method: POST
 	Body Contain: {UserName:'', ConsumerCarClientPassword:''}
 
@@ -350,7 +351,7 @@ This sends an email to the user's account with a link inside to enter it and fin
 
 *Social Login endoint Request*
 
-	Endpoint: https://ationetconsumercardapi.azurewebsites.net/api/Membership/resetPassword
+	Endpoint: https://consumercardapi.ationet.com/api/Membership/resetPassword
 	Method: POST
 	Body Contain: {UserName:'<user Email to reset>'}
 
@@ -373,7 +374,7 @@ This endpoint receive a PAN number and validate then if exists and if it is curr
 
 *Validate Card Number Request*
 
-	Endpoint: https://ationetconsumercardapi.azurewebsites.net/api/ConsumerCardClient/getByPanNumber?panNumber=<PAN NUMBER>
+	Endpoint: https://consumercardapi.ationet.com/api/ConsumerCardClient/getByPanNumber?panNumber=<PAN NUMBER>
 	Method: GET
 
 
@@ -390,7 +391,7 @@ This endpoint receive a user name ( email address) and validate then if exists o
 
 *Validate user name Request*
 
-	Endpoint: https://ationetconsumercardapi.azurewebsites.net/api/Users/validateUserName?userName=<THE USER NAME>
+	Endpoint: https://consumercardapi.ationet.com/api/Users/validateUserName?userName=<THE USER NAME>
 	Method: GET
 
 
@@ -415,7 +416,7 @@ b) Through social networks (Facebook or Google). Where the user information is p
 
 *Register Consumer card client Request*
 
-	Endpoint: https://ationetconsumercardapi.azurewebsites.net/api/Users/registerConsumerCardClient
+	Endpoint: https://consumercardapi.ationet.com/api/Users/registerConsumerCardClient
 	Method: POST
 	Body Contain: {UserName:'<user Email', consumerCarClientPANNumber:'<PAN Card Number>',
 	name:'The name of person', consumerCarClientPassword:'<user password>', phoneNumber1:'<(optional) the user phone number>', provider:'ATIONET'}
@@ -430,7 +431,7 @@ b) Through social networks (Facebook or Google). Where the user information is p
 
 *Register Consumer card client by social networks (Facebook or Google) Request*
 
-	Endpoint: https://ationetconsumercardapi.azurewebsites.net/api/Users/registerConsumerCardClient
+	Endpoint: https://consumercardapi.ationet.com/api/Users/registerConsumerCardClient
 	Method: POST
 	Body Contain: {UserName:'<user Email', consumerCarClientPANNumber:'<PAN Card Number>',
 	name:'The name of person', consumerCarClientPassword:null, phoneNumber1:'<(optional) the user phone number>',provider:'<FACEBOOK | GOOGLE>'}
@@ -446,7 +447,7 @@ inside the UserAPILogged.ConsumerCardIdentifications array object.
 
 *Get ConsumerCard Client Request*
 
-	Endpoint: https://ationetconsumercardapi.azurewebsites.net/api/ConsumerCardClient/getConsumerCardClientDto?id=<consumerCardClientId>
+	Endpoint: https://consumercardapi.ationet.com/api/ConsumerCardClient/getConsumerCardClientDto?id=<consumerCardClientId>
 	Method: GET
 
 *Get ConsumerCard Client Response*
@@ -508,7 +509,7 @@ The others parameters are used to filter the informatin, like a dates filters an
 
 *Get Movements Request*
 
-	Endpoint: https://ationetconsumercardapi.azurewebsites.net/api/ConsumerCardClient/getMovements?id=<consumerCardClientId>&dateTimeFrom=<date time from filter (can be null)>
+	Endpoint: https://consumercardapi.ationet.com/api/ConsumerCardClient/getMovements?id=<consumerCardClientId>&dateTimeFrom=<date time from filter (can be null)>
 	&dateTimeTo=<date time to filter (can be null)>&page=<number of page(can be null)>&pageSize=<number of records return (can be null)>
 	Method: GET
 
@@ -523,7 +524,8 @@ The others parameters are used to filter the informatin, like a dates filters an
 	}
 #### Movement object Description
 This json object contains the movement information.
-<table>
+
+	<table>
 	<thead>
 		<tr valign="center">
 			<th rowspan="2" width="250" align="left">Name</th>
@@ -620,6 +622,7 @@ This json object contains the movement information.
 		 </tr>
 	</tbody>
 	</table>
+
 ## Get Movements for export (Excel)
 This service is used to get transactions movements for excel export by filters.
 
@@ -632,7 +635,7 @@ The others parameters are used to filter the information, like a dates filters a
 
 *Get Movements for export (Excel) Request*
 
-	Endpoint: https://ationetconsumercardapi.azurewebsites.net/api/ConsumerCardClient/getMovementsForExport?id=<consumerCardClientId>&dateTimeFrom=<date time from filter (can be null)>
+	Endpoint: https://consumercardapi.ationet.com/api/ConsumerCardClient/getMovementsForExport?id=<consumerCardClientId>&dateTimeFrom=<date time from filter (can be null)>
 	&dateTimeTo=<date time to filter (can be null)>&page=<number of page(can be null)>&pageSize=<number of records return (can be null)>
 	Method: GET
 
@@ -646,7 +649,7 @@ This service is used to get transaction details by TransactionId field.
 
 *Get Transaction Request*
 
-	Endpoint: https://ationetconsumercardapi.azurewebsites.net/api/ConsumerCardClient/getTransaction?id=<transactionId>
+	Endpoint: https://consumercardapi.ationet.com/api/ConsumerCardClient/getTransaction?id=<transactionId>
 	Method: GET
 
 *Get Movements Response*
@@ -941,7 +944,7 @@ This service is used to activate or deactivate a card.
 
 *Change Card Status Request*
 
-	Endpoint: https://ationetconsumercardapi.azurewebsites.net/api/ConsumerCardClient/changeCardStatus
+	Endpoint: https://consumercardapi.ationet.com/api/ConsumerCardClient/changeCardStatus
 	Method: POST
 	Body: {id:<consumerCardClientId>}
 
@@ -959,7 +962,7 @@ If you do not want to change the user's password these two fields must be in nul
 
 *Update user profile Request*
 
-	Endpoint: https://ationetconsumercardapi.azurewebsites.net/api/users/updateProfile{ConsumerCardClientId}
+	Endpoint: https://consumercardapi.ationet.com/api/users/updateProfile{ConsumerCardClientId}
 	Method: PUT
 	Body: {profilePicture:'<image in base64 format (can be null)>',
 	 name:'<user full name>',phoneNumber1:'<user phone number (can be null)>',consumerCarClientPassword:'<current user password (can be null)>' consumerCarClientNewPassword='<the new passwod (can be null)>'
