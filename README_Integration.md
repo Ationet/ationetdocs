@@ -5,7 +5,7 @@
 
 
 ## Authorization API
-- [Native Transaction Protocol API description](AN-Native_Transaction_Protocol-Spec.md)
+- [Native Transaction Protocol API Specifications](AN-Native_Transaction_Protocol-Spec.md)
 - [Native Transaction Protocol API messages](AN-Native_Auth_Protocol_Messages.md)
 
 ## Loyalty API
