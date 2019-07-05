@@ -170,8 +170,8 @@
 	- [11.8 Response Codes](#118-response-codes)
 	- [11.9 Original Data](#119-original-data)
 - [12 Message Samples](#12-message-samples)
-	-[12.1] Pre Authorization Sample(#121-pre-authorization-samples)
-	-[12.2] Completion Sample(#122-completion-sample)
+	- [12.1 Pre Authorization Sample](#121-pre-authorization-samples)
+	- [12.2 Completion Sample](#122-completion-sample)
 - [Appendix A - Native Authorization Protocol Messages](#appendix-a---native-authorization-protocol-messages)
 
 ## Overview
