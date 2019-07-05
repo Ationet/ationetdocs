@@ -6067,6 +6067,7 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
 		</tr>
 	</tbody>
 </table>
+
 ## 12 Message Samples
 
 ### 12.1 Pre Authorization Sample
@@ -6084,7 +6085,6 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
     "MessageFormatVersion": "1.3",
     "DeviceTypeIdentifier": "4",
     "PumpNumber": "1",
-    
     "TerminalIdentification": "AN111111",
     "TransactionSequenceNumber": 1,
     "LocalTransactionDate": 20190614,
@@ -6097,7 +6097,6 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
     "ProductAmount": 20,
     "ProductQuantity": null,
     "ProductUnitPrice": null,
-    
     "OriginalData": {},
     "ProductNetAmount": null,
     "ProductTaxes": null,
@@ -6113,7 +6112,8 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
     "ResponseText": null,
     "ReceiptData": null
 }
-### 12.92 Completion Sample
+
+### 12.2 Completion Sample
 
 {
     "ProcessingMode": "1",
@@ -6128,7 +6128,6 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
     "MessageFormatVersion": "1.3",
     "DeviceTypeIdentifier": "4",
     "PumpNumber": "1",
-    
     "AuthorizationCode": "032524100",
     "TerminalIdentification": "AN111111",
     "TransactionSequenceNumber": 2,
@@ -6141,9 +6140,8 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
     "ProductCode": "3",
     "ProductQuantity": null,
     "ProductAmount": 20,
-"TransactionAmount": null,
+    "TransactionAmount": null,
     "ProductUnitPrice": 5,
-    
     "ProductNetAmount": null,
     "ProductTaxes": null,
     "TransactionNetAmount": null,
