@@ -169,6 +169,9 @@
 	- [11.7 Authorization Codes](#117-authorization-codes)
 	- [11.8 Response Codes](#118-response-codes)
 	- [11.9 Original Data](#119-original-data)
+- [12 Message samples]
+	-[12.1] Pre Authorization Sample
+	-[12.2] Completion Sample
 - [Appendix A - Native Authorization Protocol Messages](#appendix-a---native-authorization-protocol-messages)
 
 ## Overview
@@ -6064,6 +6067,94 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
 		</tr>
 	</tbody>
 </table>
+## 12 Message Samples
+### 12.1 Pre Authorization Sample
+{
+    "ProcessingMode": "1",
+    "SystemModel": "",
+    "SystemVersion": "",
+    "TransactionCode": "100",
+    "EntryMethod": "M",
+    "CurrencyCode": "ARS",
+    "UnitCode": "l",
+    "ApplicationType": "FCS",
+    "AccountType": "1",
+    "MessageFormatVersion": "1.3",
+    "DeviceTypeIdentifier": "4",
+    "PumpNumber": "1",
+    
+    "TerminalIdentification": "AN111111",
+    "TransactionSequenceNumber": 1,
+    "LocalTransactionDate": 20190614,
+    "LocalTransactionTime": 121500,
+    "PrimaryTrack": "9532013015986508780=3905=000000",
+    "PrimaryPin": null,
+    "SecondaryTrack": null,
+    "SecondaryPin": null,
+    "ProductCode": "3",
+    "ProductAmount": 20,
+    "ProductQuantity": null,
+    "ProductUnitPrice": null,
+    
+    "OriginalData": {},
+    "ProductNetAmount": null,
+    "ProductTaxes": null,
+    "TransactionNetAmount": null,
+    "TransactionAmount": null,
+    "AuthorizationCode": null,
+    "ServiceCode": null,
+    "BatchNumber": null,
+    "ShiftNumber": null,
+    "TransactionExtendedData": null,
+    "InvoiceNumber": null,
+    "ResponseCode": null,
+    "ResponseText": null,
+    "ReceiptData": null
+}
+### 12.92 Completion Sample
+{
+    "ProcessingMode": "1",
+    "SystemModel": "",
+    "SystemVersion": "",
+    "TransactionCode": "120",
+    "EntryMethod": "S",
+    "CurrencyCode": "ARS",
+    "UnitCode": "l",
+    "ApplicationType": "FCS",
+    "AccountType": "1",
+    "MessageFormatVersion": "1.3",
+    "DeviceTypeIdentifier": "4",
+    "PumpNumber": "1",
+    
+    "AuthorizationCode": "032524100",
+    "TerminalIdentification": "AN111111",
+    "TransactionSequenceNumber": 2,
+    "LocalTransactionDate": 20190614,
+    "LocalTransactionTime": 122000,
+    "PrimaryTrack": "9532013015986508780=3905=000000",
+    "PrimaryPin": null,
+    "SecondaryTrack": null,
+    "SecondaryPin": null,
+    "ProductCode": "3",
+    "ProductQuantity": null,
+    "ProductAmount": 20,
+"TransactionAmount": null,
+    "ProductUnitPrice": 5,
+    
+    "ProductNetAmount": null,
+    "ProductTaxes": null,
+    "TransactionNetAmount": null,
+    "CustomerData": {},
+    "OriginalData": {},
+    "ServiceCode": null,
+    "BatchNumber": null,
+    "ShiftNumber": null,
+    "TransactionExtendedData": null,
+    "InvoiceNumber": null,
+    "ResponseCode": null,
+    "ResponseText": null,
+    "ReceiptData": null
+}
 
 ## Appendix A - Native Authorization Protocol Messages
 
