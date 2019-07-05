@@ -6072,6 +6072,7 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
 
 ### 12.1 Pre Authorization Sample
 
+```json
 {
     "ProcessingMode": "1",
     "SystemModel": "",
@@ -6112,9 +6113,11 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
     "ResponseText": null,
     "ReceiptData": null
 }
+```
 
 ### 12.2 Completion Sample
 
+```json
 {
     "ProcessingMode": "1",
     "SystemModel": "",
@@ -6156,6 +6159,7 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
     "ResponseText": null,
     "ReceiptData": null
 }
+```
 
 ## Appendix A - Native Authorization Protocol Messages
 
