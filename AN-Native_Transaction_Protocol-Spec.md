@@ -6068,7 +6068,9 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
 	</tbody>
 </table>
 ## 12 Message Samples
+
 ### 12.1 Pre Authorization Sample
+
 {
     "ProcessingMode": "1",
     "SystemModel": "",
@@ -6112,6 +6114,7 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
     "ReceiptData": null
 }
 ### 12.92 Completion Sample
+
 {
     "ProcessingMode": "1",
     "SystemModel": "",
