@@ -1,7 +1,7 @@
-![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
+![ationetlogo](../Content/Images/ATIOnetLogo_250x70.png)
 
 
-#Operations procedure for ATIONet Stand Alone terminal
+# Operations procedure for ATIONet Stand Alone terminal
 
 <table>
 	<tr>
@@ -115,17 +115,17 @@
  
 <!-- /MarkdownTOC -->
 
-##Introduction
+## Introduction
 This manual is aimed to help and guide the user with the ATIONet Stand Alone terminal. ATIONet Stand Alone terminal allows the user to authorize fleet transactions in ATIONet hosts from a simple terminal very similar to  the ones used by credit cards.
 
-##Components
+## Components
 
 ATIONet Stand Alone Terminal consists of a single component from which all operations are performed. From now on we will refer to this terminal as POS (Point of Sale). From this terminal operator shall perform all necessary operations, authorize and complete fueling transactions for fleets.
 
-![terminal](Content/Images/standAloneTerminal/1.png)
+![terminal](../Content/Images/standAloneTerminal/1.png)
 
 
-####POS parts
+#### POS parts
 
 a) Paper roll cover
 
@@ -145,13 +145,13 @@ d) Display
 		<td width=50%>Description</td>
 	</tr>
 		<tr>
-			<td><img src="Content/Images/standAloneTerminal/2.png"></td>
+			<td><img src="../Content/Images/standAloneTerminal/2.png"></td>
 			<td> Prior to process transactions that require a receipt or be recorded, you must install paper in the printer. <br> The POS uses a thermal paper roll of a sheet about 45 cm. Before the end of the roll, on the edge of the paper one red line appears indicating that it is about to finish. <br> After this line appears, it will be enough paper on the roll to complete at least one transaction.
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<img src="Content/Images/standAloneTerminal/3.png">
+			<img src="../Content/Images/standAloneTerminal/3.png">
 		</td>
 		<td>
 			Before operating any electronic system should you take off the gloves, as these can damage equipment.
@@ -164,7 +164,7 @@ d) Display
 	</tr>
 	<tr>
 		<td>
-			<img src="Content/Images/standAloneTerminal/4.png">
+			<img src="../Content/Images/standAloneTerminal/4.png">
 		</td>
 		<td>
 			Parts <br>
@@ -174,7 +174,7 @@ d) Display
 	</tr>
 	<tr>
 		<td>
-			<img src="Content/Images/standAloneTerminal/5.png">
+			<img src="../Content/Images/standAloneTerminal/5.png">
 		</td>
 		<td>
  			With your finger, gently hold down the latch and pull up to open the paper roll cover.
@@ -182,7 +182,7 @@ d) Display
 	</tr>
 	<tr>
 		<td>
-			<img src="Content/Images/standAloneTerminal/6.png">
+			<img src="../Content/Images/standAloneTerminal/6.png">
 		</td>
 		<td>
  			Remove the used paper roll, if any, from the printer tray by pulling it up.
@@ -190,7 +190,7 @@ d) Display
 	</tr>
 	<tr>
 		<td>
-			<img src="Content/Images/standAloneTerminal/7.png">
+			<img src="../Content/Images/standAloneTerminal/7.png">
 		</td>
 		<td>
 			a) Loosen the leading edge by removing the protective strip. <br>
@@ -202,7 +202,7 @@ d) Display
 	</tr>
 	<tr>
 		<td>
-			<img src="Content/Images/standAloneTerminal/8.png">
+			<img src="../Content/Images/standAloneTerminal/8.png">
 		</td>
 		<td>
 			a) Close the paper roll cover by applying light pressure on it until it clicks, leaving a couple of centimeters of paper. <br>
@@ -223,43 +223,43 @@ In general the whole operation of the terminal is done with numeric characters a
 	</tr>
 	<tr>
 		<td>
-			<img src="Content/Images/standAloneTerminal/9.png">
+			<img src="../Content/Images/standAloneTerminal/9.png">
 		</td>
 		<td> 
-			In normal mode, the <img src="Content/Images/standAloneTerminal/16.png"> [ALPHA] key allows you to enter one of the two or more symbols or characters assigned to the keys on the keyboard  (note that this is normal and is specific to the application). <br>
+			In normal mode, the <img src="../Content/Images/standAloneTerminal/16.png"> [ALPHA] key allows you to enter one of the two or more symbols or characters assigned to the keys on the keyboard  (note that this is normal and is specific to the application). <br>
 			<br>
-			Use the <img src="Content/Images/standAloneTerminal/16.png"> [ALPHA] key to enter up to 50 different letters or symbols using the following procedure:
+			Use the <img src="../Content/Images/standAloneTerminal/16.png"> [ALPHA] key to enter up to 50 different letters or symbols using the following procedure:
 		</td>
 	</tr>	
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/10.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/10.png"></td>
 		<td>
 			Press the key on the keyboard the desired letter or symbol, eg for any of the following [2, A, B or C] press [2]).
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/11.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/11.png"></td>
 		<td>
-			2) Press once the <img src="Content/Images/standAloneTerminal/16.png"> [ALPHA] key to display the first letter, Continuing our example, press the [2] ALPHA key and then to display the letter A.
+			2) Press once the <img src="../Content/Images/standAloneTerminal/16.png"> [ALPHA] key to display the first letter, Continuing our example, press the [2] ALPHA key and then to display the letter A.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/12.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/12.png"></td>
 		<td>
-			3) If you press the <img src="Content/Images/standAloneTerminal/16.png"> [ALPHA] key again as many times as necessary they unveil the other characters or letters assigned to the key you pressed before ALPHA. For example, press 2 to display the number 2; Press the <img src="Content/Images/standAloneTerminal/16.png"> [ALPHA] key Alpha once to display the letter A, twice to display B, or three times to display C. Pressing alpha once again shows the number 2.
+			3) If you press the <img src="../Content/Images/standAloneTerminal/16.png"> [ALPHA] key again as many times as necessary they unveil the other characters or letters assigned to the key you pressed before ALPHA. For example, press 2 to display the number 2; Press the <img src="../Content/Images/standAloneTerminal/16.png"> [ALPHA] key Alpha once to display the letter A, twice to display B, or three times to display C. Pressing alpha once again shows the number 2.
 
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/13.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/13.png"></td>
 		<td>
-			Note: If you keep pressing one of the keys on the phone type keyboard without using the <img src="Content/Images/standAloneTerminal/16.png"> [ALPHA] key, the same character repeats until you release it. For example, if you press 2 and hold it down, the screen will display "2222222..."
+			Note: If you keep pressing one of the keys on the phone type keyboard without using the <img src="../Content/Images/standAloneTerminal/16.png"> [ALPHA] key, the same character repeats until you release it. For example, if you press 2 and hold it down, the screen will display "2222222..."
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/14.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/14.png"></td>
 		<td>
-			If two or more characters are displayed on screen, pressing the <img src="Content/Images/standAloneTerminal/16.png"> [ALPHA] key changes the last character to the next letter, number or symbol on the sequence.
+			If two or more characters are displayed on screen, pressing the <img src="../Content/Images/standAloneTerminal/16.png"> [ALPHA] key changes the last character to the next letter, number or symbol on the sequence.
 		</td>
 	</tr>
 </table>
@@ -275,7 +275,7 @@ While operating the POS, you must use the lower color keys for Confirmation (Gre
 		<td>Description</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/15.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/15.png"></td>
 		<td> 
 			Use the lower color keys to confirm, return or cancel in any of the POS flows.
 		</td>
@@ -293,7 +293,7 @@ Before start using the terminal, its necessary to configure some parameters. To 
 	</tr>
 	<tr>
 		<td>
-			<img src="Content/Images/standAloneTerminal/64_1E.png">
+			<img src="../Content/Images/standAloneTerminal/64_1E.png">
 		</td>
 		<td> 
 			In the main window press F2 and F4 simultaneously.
@@ -301,7 +301,7 @@ Before start using the terminal, its necessary to configure some parameters. To 
 	</tr>	
 	<tr>
 		<td>
-			<img src="Content/Images/standAloneTerminal/65.png">
+			<img src="../Content/Images/standAloneTerminal/65.png">
 		</td>
 		<td> 
 			Type: 284647 + enter
@@ -309,7 +309,7 @@ Before start using the terminal, its necessary to configure some parameters. To 
 	</tr>	
 	<tr>
 		<td>
-			<img src="Content/Images/standAloneTerminal/66.png">
+			<img src="../Content/Images/standAloneTerminal/66.png">
 		</td>
 		<td> 
 			Press F2
@@ -317,7 +317,7 @@ Before start using the terminal, its necessary to configure some parameters. To 
 	</tr>	
 	<tr>
 		<td>
-			<img src="Content/Images/standAloneTerminal/67.png">
+			<img src="../Content/Images/standAloneTerminal/67.png">
 		</td>
 		<td> 
 			Press Enter
@@ -325,7 +325,7 @@ Before start using the terminal, its necessary to configure some parameters. To 
 	</tr>
 	<tr>
 		<td>
-			<img src="Content/Images/standAloneTerminal/68.png">
+			<img src="../Content/Images/standAloneTerminal/68.png">
 		</td>
 		<td> 
 			Type: 284647 + enter
@@ -333,7 +333,7 @@ Before start using the terminal, its necessary to configure some parameters. To 
 	</tr>
 	<tr>
 		<td>
-			<img src="Content/Images/standAloneTerminal/69.png">
+			<img src="../Content/Images/standAloneTerminal/69.png">
 		</td>
 		<td> 
 			Press enter. Navigate the parameters with the UP and DOWN arrow keys. Select the one you want to modify. check below the complete list of parameters.
@@ -478,7 +478,7 @@ Before start using the terminal, its necessary to configure some parameters. To 
 		<td width=50%>Description</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/3.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/3.png"></td>
 		<td> 
 			BEFORE OPERATING THE ELECTRONIC SYSTEM, YOU MUST REMOVE THE GLOVES, AS THESE CAN DAMAGE THE EQUIPMENT.<br>
 			<br>
@@ -486,13 +486,13 @@ Before start using the terminal, its necessary to configure some parameters. To 
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/17.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/17.png"></td>
 		<td> 
 			Before proceeding with the transaction, validate that the POS terminal has enough paper to print the tickets. If it doesn't, review the "Change Thermal Paper Roll" section.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/64_1E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/64_1E.png"></td>
 		<td> 
 			 Once the system has been turned on, the POS shows the principal menu options to start operating.<br>
 			<br>
@@ -518,37 +518,37 @@ Before start using the terminal, its necessary to configure some parameters. To 
 		<td width=50%>Description</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/19E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/19E.png"></td>
 		<td> 
 			Select option 1 form the menu to make a pre-authorization and start operating. Or you can press ALPHA button and type de identification.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/20.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/20.png"></td>
 		<td> 
 			The card that was assigned to the vehicle should be slided from top to bottom in the terminal slot reader with the magnetic stripe (brown or black) facing the computer screen. After sliding the card, the POS will request data about the dispatch to continue with the transaction.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/21.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/21.png"></td>
 		<td> 
 			Select the number corresponding to the product that you intent to dispatch.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/23E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/23E.png"></td>
 		<td> 
 			Once all the data has been responded, the POS will display the message "Processing..." while communicating with the central system to request authorization.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/36E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/36E.png"></td>
 		<td>
 			If the transaction is unauthorized the system will respond with an error message indicating this while the terminal prints a ticket. In the example: "ID nonexistent". Please refer to Annex errors at the end of this document for details.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/25E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/25E.png"></td>
 		<td> 
 			If the transaction is authorized the system will respond with a confirmation message like the example while the terminal prints an authorization ticket. The ticket indicates the authorized amount to dispatch for that identifier in that transaction.<br>   
 			<br>Proceed with the dispatch following the indicated on the ticket.
@@ -566,7 +566,7 @@ Before start using the terminal, its necessary to configure some parameters. To 
 		<td width=50%>Description</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/26E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/26E.png"></td>
 		<td> 
 			Remember that the dispatched amount can not exceed the authorized amount in the pre-authorization.<br>
 			<br>
@@ -576,7 +576,7 @@ Before start using the terminal, its necessary to configure some parameters. To 
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/27E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/27E.png"></td>
 		<td> 
 			If the data entered is correct the operation will be confirmed on the server.<br>
 			<br>
@@ -586,7 +586,7 @@ Before start using the terminal, its necessary to configure some parameters. To 
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/28E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/28E.png"></td>
 		<td> 
 			Then the POS will offer to print a second copy for the client. Press the green button to print or the red button to not do so.
 		</td>
@@ -603,7 +603,7 @@ Before start using the terminal, its necessary to configure some parameters. To 
 		<td width=50%>Description</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/19e.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/19E.png"></td>
 		<td> 
 			The POS will ask to present the identification that is associated to the pre-authorization to be canceled. Or you can press the ALPHA button and type the identification<br>
 			<br>
@@ -611,19 +611,19 @@ Before start using the terminal, its necessary to configure some parameters. To 
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/30.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/30.png"></td>
 		<td> 
 			The card that was assigned to the vehicle should now be slided through the slot reader terminal with the magnetic stripe (brown or black) facing the POS screen.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/23E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/23E.png"></td>
 		<td>
 			After reading the card, the terminal displays "Processing..." while communicating with the central systems to cancel the pre- authorization.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/27E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/27E.png"></td>
 		<td> 
 			When the server has responded confirming the cancellation of the pre-authorization the screen displays a confirmation message. The balance of the pre-authorization is now available for use.
 		</td>
@@ -639,7 +639,7 @@ Before start using the terminal, its necessary to configure some parameters. To 
 		<td width=50%>Description</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/19E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/19E.png"></td>
 		<td> 
 			The POS will ask to present the identification associated with the sale to be informed. Or you can press the ALPHA button and type the identification<br>
 			<br>
@@ -647,25 +647,25 @@ Before start using the terminal, its necessary to configure some parameters. To 
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/30.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/30.png"></td>
 		<td> 
 			The card that was assigned to the vehicle should be slided through the slot reader terminal with the magnetic stripe (brown or black) facing the POS screen.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/23E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/23E.png"></td>
 		<td> 
 			After reading the card, the terminal displays "Processing..." while communicating with the central systems to report the sale.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/36E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/36E.png"></td>
 		<td> 
 			If the transaction is unauthorized the system will respond with an error message indicating this and will print a ticket. In the example: "ID nonexistent". Please refer to Annex errors at the end of this document for details.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/27E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/27E.png"></td>
 		<td> 
 			If the data entered is correct the operation will be confirmed on the server.<br>
 			<br>
@@ -675,13 +675,13 @@ Before start using the terminal, its necessary to configure some parameters. To 
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/25E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/25E.png"></td>
 		<td> 
 			If the transaction is authorized the system will respond with a confirmation message like the example and will print an authorization ticket.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/28E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/28E.png"></td>
 		<td> 
 			Then the POS will offer to print a second copy for the client. Press the green button to print or the red button to not do so.
 		</td>
@@ -698,25 +698,25 @@ Before start using the terminal, its necessary to configure some parameters. To 
 		<td width=50%>Description</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/19E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/19E.png"></td>
 		<td> 
 			Select Menu Option 5 for a balance enquiry and start operating.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/30.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/30.png"></td>
 		<td> 
 			The card whose balance you desire to check should be slided throught the slot reader with the magnetic stripe (brown or black) facing the POS screen. Or press the ALPHA button and type the identification.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/23E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/23E.png"></td>
 		<td> 
 			After reading the card, the terminal displays "Processing..." while communicating with the central systems to check the balance.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/43E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/43E.png"></td>
 		<td> 
 			The system responds with the maximum amount available for dispatch. It is shown on screen and the POS also prints a ticket with such information.
 		</td>
@@ -739,7 +739,7 @@ Before start using the terminal, its necessary to configure some parameters. To 
 		<td width=50%>Description</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/44E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/44E.png"></td>
 		<td> 
 			The POS will ask the user to choose one of the following options.
 		</td>
@@ -755,25 +755,25 @@ Before start using the terminal, its necessary to configure some parameters. To 
 		<td width=50%>Description</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/45E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/45E.png"></td>
 		<td> 
 			In order to proceed with the batch close, you require supervisor permits. Please enter the supervisor password.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/23E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/23E.png"></td>
 		<td> 
 			The POS will ask the Central System to close a batch and process it. During that process, "PROCESSING..." is displayed on screen.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/27E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/27E.png"></td>
 		<td> 
 			When the process finishes the POS displays a message indicating and prints the closure ticket.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/48E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/48E.png"></td>
 		<td> 
 			The closure ticket includes a unique identification number generated by the server, the number of processed transactions from the last close, the total sales, cancellations and acumulated amount during the period.
 		</td>
@@ -790,13 +790,13 @@ Before start using the terminal, its necessary to configure some parameters. To 
 		<td width=50%>Description</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/49E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/49E.png"></td>
 		<td> 
 			The POS will automatically print a copy of the last receipt issued. You can not re-print any other ticket.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/28E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/28E.png"></td>
 		<td> 
 			Then the POS will offer to print a second copy for the client. Press the green button to print or the red button to not do so.
 		</td>
@@ -813,19 +813,19 @@ Before start using the terminal, its necessary to configure some parameters. To 
 		<td width=50%>Description</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/51E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/51E.png"></td>
 		<td> 
 			The POS will request the authorization code of the transaction to be canceled. You can find the authorization code in the ticket. Press the green button to process the void transaction.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/23E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/23E.png"></td>
 		<td> 
 			The POS will ask the system to annul the transaction. During that process, "PROCESSING..." will be displayed on screen.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/27E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/27E.png"></td>
 		<td> 
 			Upon completion of the annulment process correctly, the POS displays a message indicating so and prints a confirmation ticket or an error one if the process had failed.
 		</td>
@@ -849,19 +849,19 @@ To enter the Configuration Menu press option (8) in the maintenance menu.
 		<td width=50%>Description</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/45E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/45E.png"></td>
 		<td> 
 			Enter the current password to perform this function. Press the green button to confirm.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/55E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/55E.png"></td>
 		<td> 
 			Insert new password and press the green key to continue.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/56E.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/56E.png"></td>
 		<td> 
 			Upon completion of the password changing process the POS will display a confirmation message or an error if the process had failed.
 		</td>
@@ -882,7 +882,7 @@ To enter the Configuration Menu press option (8) in the maintenance menu.
 		<td width=50%>Description</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/57.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/57.png"></td>
 		<td> 
 			When you select Other Products a screen like the example is displayed. In it you can see the data of the first product of the catalog and the option buttons to create, edit and delete products as well as those that let you scroll between the products of the catalog:<br>
 			<br>
@@ -902,25 +902,25 @@ To enter the Configuration Menu press option (8) in the maintenance menu.
 		<td width=50%>Description</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/58.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/58.png"></td>
 		<td> 
 			When the new name screen shows, input the name you want to identify the product with. Refer to input alphanumeric values ​​section of this manual to remember how to enter this data. When finished press the green button to confirm and continue.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/59.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/59.png"></td>
 		<td> 
 			When the product code screen shows, input the code you want to identify the product with. Refer to input alphanumeric values ​​section of this manual to remember how to enter this data. When finished press the green button to confirm and continue.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/60.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/60.png"></td>
 		<td>
 			When the new price screen shows, input the price you want for the new product. When finished press the green button to confirm and continue.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/61.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/61.png"></td>
 		<td> 
 			When the ATIONET code screen shows, input the code you want for the new product which will be used for network referal. Refer to input alphanumeric values ​​section of this manual to remember how to enter this data. When finished press the green button to confirm and continue. The product has been created in the local catalog.
 		</td>
@@ -936,13 +936,13 @@ To enter the Configuration Menu press option (8) in the maintenance menu.
 		<td width=50%>Description</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/62.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/62.png"></td>
 		<td> 
 			When the edit screen shows, please choose the field you want to modify using the side keys. Remember that the product must be chosen before selecting Edit in the previous step.
 		</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/63.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/63.png"></td>
 		<td> 
 			Enter the new value for the field edited by following the same instructions in the product creation. In the example, price is being edited. When finished press the green button to confirm.
 		</td>
@@ -958,7 +958,7 @@ To enter the Configuration Menu press option (8) in the maintenance menu.
 		<td width=50%>Description</td>
 	</tr>
 	<tr>
-		<td><img src="Content/Images/standAloneTerminal/64.png"></td>
+		<td><img src="../Content/Images/standAloneTerminal/64.png"></td>
 		<td> 
 			To delete a product, use the scroll keys (C) until you see the product to be deleted in the sector (B). Only then press the Delete key (A).
 		</td>

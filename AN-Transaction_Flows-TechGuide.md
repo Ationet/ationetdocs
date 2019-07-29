@@ -27,7 +27,7 @@ The information contained here is complementary of the Protocol manuals and it i
 		</tr>
 		<tr>
 			<td align="right">Author:</td>
-			<td>ATIO International LLC</td>
+			<td>ATIONet LLC</td>
 		</tr>
 	</tbody>
 </table>

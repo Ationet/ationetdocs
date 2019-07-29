@@ -1,4 +1,4 @@
-![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
+![ationetlogo](../Content/Images/ATIOnetLogo_250x70.png)
 # ATIONet - Manual de Usuario Network (Suscripción tipo Network)
 
 <table>
@@ -191,20 +191,20 @@ La lista completa de widgets disponibles para las suscripciones "Network" es la 
 Este widget es de suma importancia al poner en marcha la red. Este widget nos da información de que parámetros necesitamos configurar para quedar operativos. Nos advierte cuando por ejemplo no tenemos vehículos o identificaciones creadas entre otros parámetros.
 Este widget puede mostrar "Advertencias" (ícono amarillo) cuando no esta en juego la operación de la red, pero si muestra una cruz roja indica que la red no esta operativa. 
 
-![Estado General](Content/Includes/AN-HomeBase-UserManal-SP/estadoGeneral.png)
-![Estado General](Content/Includes/AN-HomeBase-UserManal-SP/estadoGeneral2.png)
+![Estado General](../Content/Includes/AN-HomeBase-UserManal-SP/estadoGeneral.png)
+![Estado General](../Content/Includes/AN-HomeBase-UserManal-SP/estadoGeneral2.png)
 
 #### Litros-Mes
 
 El de "Litros/Mes indica la cantidad que se despachó de cada combustible en el ultimo mes. Como ultimo mes se entiende a los últimos 30 días contando desde el día de la fecha. Este widget posee la capacidad de filtrar por Sitio, Ciudad y Flota. Se debe seleccionar el filtro y después se ingresa el valor por el cual se debe filtrar. Este ultimo campo es del tipo "auto complete".
 
-![Litros Mes](Content/Includes/AN-HomeBase-UserManal-SP/litrosMes.png)
+![Litros Mes](../Content/Includes/AN-HomeBase-UserManal-SP/litrosMes.png)
 
 #### Transacciones del Día
 
 Este widget contiene un gráfico de torta que en forma muy rápida se pueden ver cuantas transacciones se aprobaron y cuantas se rechazaron en el día.
 
-![Transacciones Día](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesDia.png)
+![Transacciones Día](../Content/Includes/AN-HomeBase-UserManal-SP/transaccionesDia.png)
 
 #### Lista de Pre-Autorizaciones Pendientes
 
@@ -221,19 +221,19 @@ Este muestra 7 columnas:
 
 Las pre autorizaciones pendientes deberían ser despachos en curso, si hay registros en este widget con un Age alto, significa que el punto de venta o controlador no enviaron la transacción de finalización o la transacción de cancelación en el caso que no se haya despachado combustible.
 
-![Pre Auth Pendientes](Content/Includes/AN-HomeBase-UserManal-SP/preauthPendientes.png)
+![Pre Auth Pendientes](../Content/Includes/AN-HomeBase-UserManal-SP/preauthPendientes.png)
 
 #### Transacciones marcadas en ultimo mes
 
 El siguiente muestra todas las transacciones que fueron rechazadas por cualquiera de las validaciones que hace ATIONet en el proceso de autorización. Ya sean por falta de saldo o reglas entre otras validaciones. Para mas detalles sobre "Transacciones Rechazadas" consulte este documento: [TODO](#todo)
 
-![Transacciones Marcadas](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesMarcadasUltimoMes.png)
+![Transacciones Marcadas](../Content/Includes/AN-HomeBase-UserManal-SP/transaccionesMarcadasUltimoMes.png)
 
 #### Contratos sin actividad
 
 Muestra la lista de contratos que nunca tuvieron actividad.
 
-![Contrato Sin Actividad](Content/Includes/AN-HomeBase-UserManal-SP/contratosSinActividad.png)
+![Contrato Sin Actividad](../Content/Includes/AN-HomeBase-UserManal-SP/contratosSinActividad.png)
 
 #### Sub-cuentas con excepciones
 
@@ -246,25 +246,25 @@ Este muestra todas las sub cuentas que tengan algo que prestarle atención, como
 
 Para mas detalles sobre sub cuentas consulte: [Esta sección](#sub-cuenta)
 
-![sub Cuentas con Excepciones](Content/Includes/AN-HomeBase-UserManal-SP/subcuentasConExcepciones.png)
+![sub Cuentas con Excepciones](../Content/Includes/AN-HomeBase-UserManal-SP/subcuentasConExcepciones.png)
 
 #### Transacciones recientes
 
 El siguiente muestra las ultimas 20 transacciones finalizadas. Se muestran los datos mas relevantes para poder identificarla, en el caso de necesitar mas información sobre la transacción se puede hacer click sobre el código de autorización, eso lo llevara a la vista de detalles de la transacción.
 
-![Transacciones Recientes](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesRecientes.png)
+![Transacciones Recientes](../Content/Includes/AN-HomeBase-UserManal-SP/transaccionesRecientes.png)
 
 #### Listado de contratos con bajo saldo
 
 Muestra la lista de contratos que contengan bajo saldo para operar 4 días mas. Este calculo se hace en base al uso. La columna "Días disponibles" muestra cantidad de días que le quedan al contrato basada en el análisis de uso. Este numero no es exacto y podría variar si el patrón de uso cambia.
 
-![Contrato Bajo Saldo](Content/Includes/AN-HomeBase-UserManal-SP/contratoBajoSaldo.png)
+![Contrato Bajo Saldo](../Content/Includes/AN-HomeBase-UserManal-SP/contratoBajoSaldo.png)
 
 #### Listado de Sub-cuentas con bajo saldo
 
 Muestra la lista de sub cuentas que contengan bajo saldo para operar 4 días mas. Este calculo se hace en base al uso de cada sub cuenta. La columna "Días disponibles" muestra cantidad de días que le quedan a la sub cuenta basada en el análisis de uso. Este numero no es exacto y podría variar si el patrón de uso cambia.
 
-![Sub Cuentas Bajo Saldo](Content/Includes/AN-HomeBase-UserManal-SP/subcuentasBajoSaldo.png)
+![Sub Cuentas Bajo Saldo](../Content/Includes/AN-HomeBase-UserManal-SP/subcuentasBajoSaldo.png)
 
 #### Actualizaciones de Identificador en ultimo mes
 
@@ -276,15 +276,15 @@ Este widget muestra la actividad de la administración de los identificadores, m
 4. ***Denunciada:*** La cantidad de identificadores que cambiaron al estado "Denunciada".
 5. ***Suspendida:*** La cantidad de identificadores que cambiaron al estado "Suspendida".
 
-![Actualizaciones de Identificadores](Content/Includes/AN-HomeBase-UserManal-SP/actualizacionIdentificadoresUltimoMes.png)
+![Actualizaciones de Identificadores](../Content/Includes/AN-HomeBase-UserManal-SP/actualizacionIdentificadoresUltimoMes.png)
 
 #### Estado de Terminales
 
 Todas las terminales que estén conectadas en forma nativa a ATIONet, envían en forma regular un mensaje indicando que están activas. Si la terminal reporto el estado en las ultimas 5 horas, la terminal se mostrara con el ícono verde, sino se reporto en las ultimas 5 horas el ícono sera rojo.
 La columna ***"Age"*** muestra la cantidad de minutos que pasaron desde la ultima vez que se reporta la terminal. 
 
-![Estado Terminales](Content/Includes/AN-HomeBase-UserManal-SP/estadoTerminales1.png)
-![Estado Terminales](Content/Includes/AN-HomeBase-UserManal-SP/estadoTerminales2.png)
+![Estado Terminales](../Content/Includes/AN-HomeBase-UserManal-SP/estadoTerminales1.png)
+![Estado Terminales](../Content/Includes/AN-HomeBase-UserManal-SP/estadoTerminales2.png)
 
 ### Favoritos
 
@@ -294,14 +294,14 @@ Una vez dentro de la pagina de Favoritos, al hacer click sobre el link de la col
 
 Si desea remover una entidad de la lista de Favoritos, haga click sobre el ícono de la derecha con forma de cruz.
 
-![Favoritos](Content/Includes/AN-HomeBase-UserManal-SP/favoritos.png)
+![Favoritos](../Content/Includes/AN-HomeBase-UserManal-SP/favoritos.png)
 
 ### Vistas
 
 ATIONet dispone de una serie de vistas donde se puede visualizar información de la operación de la red. ATIONet considera una vista a toda aquella pantalla que ademas de poder visualizar información, también es exportable para un post procesamiento. A diferencia de los [***Reportes***](#reportes) que son pantallas que muestran información con un formato pensado para ser impreso y guardado.
 Todas las vistas en ATIONet respetan una consistencia en estética y funcionalidad. Todas las vistas poseen una barra de herramientas con todas estas funciones (o al menos alguna de ellas)
 
-![Vistas](Content/Includes/AN-HomeBase-UserManal-SP/vistas.png) 
+![Vistas](../Content/Includes/AN-HomeBase-UserManal-SP/vistas.png) 
 
 1. ***Vista Condensada:*** Esta opción viene activa de defecto cuando se abre la vista, esta opción muestra en la grilla los datos mínimos en un solo renglón.
 2. ***Vista Detallada:*** Esta opción activa un segundo renglón en cada registro dentro de la grilla y muestra mas información de cada uno de los registros.
@@ -311,12 +311,12 @@ Todas las vistas en ATIONet respetan una consistencia en estética y funcionalid
 
 Algunas vistas también poseen un panel de filtros. Por defecto este panel aparece colapsado, para desplegarlo haga click en la barra que dice "Filtros". Cada vista posee campos específicos por los cuales se puede filtrar. Una vez que haya ingresado los valores deseados presione el botón "Buscar".
 
-![Vistas](Content/Includes/AN-HomeBase-UserManal-SP/vistas3.png)
+![Vistas](../Content/Includes/AN-HomeBase-UserManal-SP/vistas3.png)
 
 Las vistas también poseen paginación y el usuario podrá definir cuantos registros por pagina se muestran. Esta configuración se realiza desde [***Mis Preferencias***](#mis-preferencias)
 La siguiente es la vista de Vehículos de ATIONet:
 
-![Vistas](Content/Includes/AN-HomeBase-UserManal-SP/vistas2.png)
+![Vistas](../Content/Includes/AN-HomeBase-UserManal-SP/vistas2.png)
 
 #### Autorizaciones Pendientes
 
@@ -325,12 +325,12 @@ Las autorizaciones pendientes son aquellas transacciones que todavía no recibie
 Tenga en cuenta que al momento de pre autorizar, ATIONet congelo el monto de la autorización de la cuenta corriente de la sub cuenta.
 Esta vista presenta todos los campos necesarios para poder identificar la transacción y el vehículo. Si necesita ver mas detalles, al hacer click en el código de autorización lo llevara a la vista de detalles de la transacción.
 
-![Autorizaciones Pendientes](Content/Includes/AN-Network-UserManal-SP/autorizacionesPendientes.png)
+![Autorizaciones Pendientes](../Content/Includes/AN-Network-UserManal-SP/autorizacionesPendientes.png)
 
 Si aparecen transacciones pendientes viejas y usted esta seguro que no es un despacho en curso, puede cancelarlas y devolver el saldo a la cuenta corriente.
 Para hacer esto tiene 2 maneras, en forma individual, haciendo click en el ícono de la "X" a la derecha de la grilla o en forma masiva seleccionando las transacciones, desplegar el menú "Acciones en Lote" y seleccionar "Cancelar". Esto cancelara las transacciones y devolverá el saldo a cada una de las cuentas corrientes.
 
-![Autorizaciones Pendientes](Content/Includes/AN-Network-UserManal-SP/autorizacionesPendientes2.png)
+![Autorizaciones Pendientes](../Content/Includes/AN-Network-UserManal-SP/autorizacionesPendientes2.png)
 
 (para más detalles sobre el flujo de transacciones consulte este [documento](AN-Transaction_Flows-TechGuide.md))
 
@@ -338,7 +338,7 @@ Para hacer esto tiene 2 maneras, en forma individual, haciendo click en el ícon
 
 En esta vista se listan los conductores que han sido dados de alta. Puede filtrarlos por nombre, identificacion, compañía, regla de alerta o estatus. También, en la columna de opciones que se encuentra a la derecha, puede elegir asignar una identificacion, editarla o marcar al conductor como favorito.
 
-![Conductores](Content/Includes/AN-Network-UserManal-SP/conductores.png)
+![Conductores](../Content/Includes/AN-Network-UserManal-SP/conductores.png)
 
 #### Cuentas corrientes de Comercio
 
@@ -348,7 +348,7 @@ En ATIONet el termino comercio se refiere a la empresa dueña de los sitios.
 Esta vista posee al igual que el resto de las vistas un panel de filtros.
 La primer opción en el panel es el tipo de reporte que queremos ver.
 
-![Cuentas Corrientes de Comercio](Content/Includes/AN-Network-UserManal-SP/cuentasCorrientesDeComercio.png)
+![Cuentas Corrientes de Comercio](../Content/Includes/AN-Network-UserManal-SP/cuentasCorrientesDeComercio.png)
 
 #### Cuentas corrientes de Compañía
 
@@ -358,23 +358,23 @@ En ATIONet el termino compañía se refiere a la empresa dueña de la flota. Par
 Esta vista posee al igual que el resto de las vistas un panel de filtros.
 La primer opción en el panel de filtros es el tipo de reporte que queremos ver:
 
-![Cuentas Corrientes](Content/Includes/AN-Network-UserManal-SP/tiposDeCuentasCorrientesDeCompañia.PNG)
+![Cuentas Corrientes](../Content/Includes/AN-Network-UserManal-SP/tiposDeCuentasCorrientesDeCompañia.PNG)
 
 1. ***Lista de Contratos:*** Esta opción lista los contratos con su respectivo saldo, pero no da detalles de los movimientos, es una vista que resume los datos de cada una de las subcuentas.
 
-	![Cuentas Corrientes](Content/Includes/AN-Network-UserManal-SP/listaDeContratos.png)
+	![Cuentas Corrientes](../Content/Includes/AN-Network-UserManal-SP/listaDeContratos.png)
 
 2. ***Movimientos de Contratos:*** Esta opción lista las subcuentas con su respectivo saldo, pero no da detalles de los movimientos, es una vista que resume los datos de cada una de las subcuentas.
 
-	![Cuentas Corrientes](Content/Includes/AN-Network-UserManal-SP/movimientosDeContratos.png)
+	![Cuentas Corrientes](../Content/Includes/AN-Network-UserManal-SP/movimientosDeContratos.png)
 
 3. ***Lista de Sub-cuentas:*** Esta opción lista las subcuentas con su respectivo saldo, pero no da detalles de los movimientos, es una vista que resume los datos de cada una de las subcuentas.
 
-	![Cuentas Corrientes](Content/Includes/AN-Network-UserManal-SP/listaDeSubCuentas.png)
+	![Cuentas Corrientes](../Content/Includes/AN-Network-UserManal-SP/listaDeSubCuentas.png)
 
 4. ***Movimientos de Sub-cuentas:*** Esta opción de la vista muestra en detalle cada uno de los movimientos de la subcuenta, tanto los créditos como los débitos.   
 
-	![Cuentas Corrientes](Content/Includes/AN-HomeBase-UserManal-SP/cuentasCorrientes3.png)
+	![Cuentas Corrientes](../Content/Includes/AN-HomeBase-UserManal-SP/cuentasCorrientes3.png)
 
 Al seleccionar esta segunda opción se habilitan varios filtros mas:
 
@@ -396,18 +396,18 @@ Las Excepciones son aquellas transacciones que no llegaron a pasar las validacio
 
 En la vista de Excepciones podemos filtrar por el tipo de Excepción primero. Los tipo de Excepciones disponibles son los siguientes:
 
-![Cuentas Corrientes](Content/Includes/AN-HomeBase-UserManal-SP/excepciones2.png)
+![Cuentas Corrientes](../Content/Includes/AN-HomeBase-UserManal-SP/excepciones2.png)
 
 Esta vista también posee el panel de filtros mencionada anteriormente. Vale la pena resaltar el filtro  ***"Transacciones Off-line"***, al tildar esta opción, también se mostraran aquellas transacciones que fueron marcadas como Excepciones en el modulo Offline. 
 (para mas detalles sobre el modulo Offline consulte esta [sección](#modulo-offline))
 
-![Cuentas Corrientes](Content/Includes/AN-HomeBase-UserManal-SP/excepciones4.png)
+![Cuentas Corrientes](../Content/Includes/AN-HomeBase-UserManal-SP/excepciones4.png)
 
 Una vez que seleccionó los filtros, presione ***"Buscar"*** y se listarán todas las transacciones marcadas como Excepciones.
 
 Algunas transacciones quedan en estado "Revisión" bajo algunas situaciones, como por ejemplo cuando se despacha más de lo autorizado (por un error en el controlador o el POS). En estos casos es necesario aprobar o rechazar la transacción mediante uno de los 2 íconos a la derecha de cada registro.
 
-![Cuentas Corrientes](Content/Includes/AN-HomeBase-UserManal-SP/excepciones.png)
+![Cuentas Corrientes](../Content/Includes/AN-HomeBase-UserManal-SP/excepciones.png)
 
 #### Transacciones
 
@@ -415,7 +415,7 @@ La vista de transacciones es una de las mas importantes en ATIONet. en esta vist
 
 El panel de Filtros posee todos estas posibilidades:
 
-![Transacciones](Content/Includes/AN-HomeBase-UserManal-SP/transactions.png)
+![Transacciones](../Content/Includes/AN-HomeBase-UserManal-SP/transactions.png)
 
 * ***Cod. Autoriz.:*** Código de Autorización entregado por ATIONet.
 * ***Vehículo:*** Vehículo o Vehículos (campo autocomplete y de selección múltiple, presionando la barra espaciadora listara los primeros 20 vehículos).
@@ -434,24 +434,24 @@ El panel de Filtros posee todos estas posibilidades:
 
 Una vez seleccionado el filtro deseado se presiona ***"Buscar"*** y listara las transacciones que cumplan con el filtro.
 
-![Transacciones](Content/Includes/AN-HomeBase-UserManal-SP/transactions2.png)
+![Transacciones](../Content/Includes/AN-HomeBase-UserManal-SP/transactions2.png)
 
 En la grilla se muestran los datos principales de la transacción, en la columna acciones se puede desconocer una transacción y entrara en el proceso de desconocimiento. (para mas detalles sobre el desconocimiento de transacciones consulte esta [sección](#transacciones-desconocidas)).
 
 Si desea ver el detalle de la transacción, haga click en el Código de Autorización, esto lo llevará a una vista con el detalle de la transacción.
 
-![Transacciones](Content/Includes/AN-HomeBase-UserManal-SP/transactions3.png)
+![Transacciones](../Content/Includes/AN-HomeBase-UserManal-SP/transactions3.png)
  
 
 #### Transacciones por Conductor
 
 En esta vista se pueden ver las transacciones, agrupadas por  el conductor que la realizó. Los botones que están colocados en la parte superior izquierda son para imprimir la tabla o crear un archivo Excel de la tabla, respectivamente.
 
-![Transacciones por Sitio](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesPorConductor.png)
+![Transacciones por Sitio](../Content/Includes/AN-HomeBase-UserManal-SP/transaccionesPorConductor.png)
 
 El panel de filtros posee las siguientes posibilidades:
 
-![Transacciones por Sitio](Content/Includes/AN-HomeBase-UserManal-SP/filtrosTransaccionesPorConductor.png)
+![Transacciones por Sitio](../Content/Includes/AN-HomeBase-UserManal-SP/filtrosTransaccionesPorConductor.png)
 
 * ***Agrupar por:***  Sitio, Flota, Programa, Id Vehículo y/o Fecha.
 * ***Conductor:*** Filtrar por el conductor que despachó.
@@ -469,11 +469,11 @@ Cuando termine de llenar el formulario, cliquée "Buscar" para aplicar el filtro
 
 En esta vista se pueden ver las transacciones que se realizaron, agrupadas por flota. Los botones que están colocados en la parte superior izquierda son para imprimir la tabla o crear un archivo Excel de la tabla, respectivamente.
 
-![Transacciones por Sitio](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesPorFlota.png)
+![Transacciones por Sitio](../Content/Includes/AN-HomeBase-UserManal-SP/transaccionesPorFlota.png)
 
 El panel de filtros posee las siguientes posibilidades:
 
-![Transacciones por Sitio](Content/Includes/AN-HomeBase-UserManal-SP/filtrosTransaccionesPorFlota.png)
+![Transacciones por Sitio](../Content/Includes/AN-HomeBase-UserManal-SP/filtrosTransaccionesPorFlota.png)
 
 * ***Agrupar por:***  Sitio, Vehículo, Id Conductor y/o Fecha.
 * ***Flota:*** Filtrar por flota a la cual pertenece el vehículo que realizó el despacho.
@@ -491,11 +491,11 @@ Cuando termine de llenar el formulario, cliquée "Buscar" para aplicar el filtro
 
 En esta vista se pueden ver las transacciones que se realizaron, agrupadas por  el sitio donde ocurrieron. Los botones que están colocados en la parte superior izquierda son para imprimir la tabla o crear un archivo Excel de la tabla, respectivamente.
 
-![Transacciones por Sitio](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesPorSitio.png)
+![Transacciones por Sitio](../Content/Includes/AN-HomeBase-UserManal-SP/transaccionesPorSitio.png)
 
 El panel de filtros posee las siguientes posibilidades:
 
-![Transacciones por Sitio](Content/Includes/AN-HomeBase-UserManal-SP/filtrosTransaccionesPorSitio.png)
+![Transacciones por Sitio](../Content/Includes/AN-HomeBase-UserManal-SP/filtrosTransaccionesPorSitio.png)
 
 * ***Agrupar por:*** Combustible, Flota, Programa, Turno y/o Fecha.
 * ***Sitio:*** Filtrar por sitio donde se realizó el despacho.
@@ -511,11 +511,11 @@ Cuando termine de llenar el formulario, cliquée "Buscar" para aplicar el filtro
 
 En esta vista se pueden ver las transacciones, agrupadas por el vehículo que las realizó. Los botones que están colocados en la parte superior izquierda son para imprimir la tabla o crear un archivo Excel de la tabla, respectivamente.
 
-![Transacciones por Vehículo](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesPorVehiculo.png)
+![Transacciones por Vehículo](../Content/Includes/AN-HomeBase-UserManal-SP/transaccionesPorVehiculo.png)
 
 El panel de filtros posee las siguientes posibilidades:
 
-![Transacciones por Sitio](Content/Includes/AN-HomeBase-UserManal-SP/filtrosTransaccionesPorVehiculo.png)
+![Transacciones por Sitio](../Content/Includes/AN-HomeBase-UserManal-SP/filtrosTransaccionesPorVehiculo.png)
 
 * ***Agrupar por:***  Sitio, Flota, Programa, Id Conductor y/o Fecha.
 * ***Vehículo:*** Filtrar por vehículo que realizó el despacho.
@@ -536,16 +536,16 @@ Las Transacciones Rechazadas son aquellas transacciones que lograron pasar las v
 
 En la vista de Transacciones Rechazadas podemos filtrar por el tipo de rechazo primero. Los tipo de rechazos disponibles son los siguientes:
 
-![Transacciones Rechazadas](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesRechazadas.png)
+![Transacciones Rechazadas](../Content/Includes/AN-HomeBase-UserManal-SP/transaccionesRechazadas.png)
 
 Esta vista también posee el panel de filtros mencionada anteriormente. Vale la pena resaltar el filtro  ***"Transacciones Off-line"***, al tildar esta opción, también se mostraran aquellas transacciones que fueron marcadas como rechazadas en el modulo Offline. 
 (para mas detalles sobre el modulo Offline consulte esta [sección](#modulo-offline))
 
-![Cuentas Corrientes](Content/Includes/AN-HomeBase-UserManal-SP/excepciones4.png)
+![Cuentas Corrientes](../Content/Includes/AN-HomeBase-UserManal-SP/excepciones4.png)
 
 Una vez que selecciono los filtros, presiona ***"Buscar"*** y se listaran todas las transacciones marcadas como rechazadas.
 
-![Transacciones Rechazadas](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesRechazadas2.png)
+![Transacciones Rechazadas](../Content/Includes/AN-HomeBase-UserManal-SP/transaccionesRechazadas2.png)
 
 Cabe aclarar que existe la posibilidad de que una transacción sea rechazada pero que el combustible haya sido entregado. Esto ocurre cuando el rechazo se produce en la transacción de terminación.
 Algunos de los motivos mas comunes de esta situación los los siguientes:
@@ -563,7 +563,7 @@ Algunos de los motivos mas comunes de esta situación los los siguientes:
 Las transacciones sin control son aquellas transacciones que se generan porque el controlador detecto una diferencia de aforadores y envía una transacción por la diferencia. Estas transacciones no contienen datos sobre el identificador ya que fueron generadas automáticamente y no se iniciaron con la presentación de un identificador. Al no tener un identificador asignado tampoco se impactan en ninguna cuenta corriente ni cuentan para calculo de reglas.
 Esta vista también el panel de filtros para hacer búsquedas mas especificas.
 
-![Transacciones sin Control](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesFueraDeControl.png)
+![Transacciones sin Control](../Content/Includes/AN-HomeBase-UserManal-SP/transaccionesFueraDeControl.png)
 
 #### Vehículos
 
@@ -571,11 +571,11 @@ En esta vista se listan los vehículos que han sido dados de alta. Recuerde que 
 
 Esta vista posee  el panel de filtros para poder especificar mas la búsqueda. Cabe destacar el filtro "Sin Identificación", seleccionando esta opción, se mostraran solo aquellos vehículos que no han sido asignados a un identificador. 
 
-![Vehicles](Content/Includes/AN-Network-UserManal-SP/vehiculos.png)
+![Vehicles](../Content/Includes/AN-Network-UserManal-SP/vehiculos.png)
 
 Para ver mas detalles del vehículo, haga click en el código:
 
-![Vehicles](Content/Includes/AN-HomeBase-UserManal-SP/vehicles2.png)
+![Vehicles](../Content/Includes/AN-HomeBase-UserManal-SP/vehicles2.png)
 
 ### Reportes
 
@@ -589,57 +589,57 @@ La información es mostrada con un formato listo para ser impreso, incluyendo el
 
 Este popup posee un botón imprimir que al apretarlo se abre la ventana de impresión por defecto del navegador de Internet.
 
-![Drivers](Content/Includes/AN-HomeBase-UserManal-SP/driversReport.png)
+![Drivers](../Content/Includes/AN-HomeBase-UserManal-SP/driversReport.png)
 
 
 #### Transacciones
 
 Este reporte muestra la lista de transacciones realizadas, ordenadas por fecha. Este reporte posee varios filtros para ajustar la búsqueda. El primer campo del panel de filtros  indica porque campo se va a ordenar la lista, el campo seleccionado en esta lista sera mostrado en la primer columna.
 
-![Transactions](Content/Includes/AN-HomeBase-UserManal-SP/transactionReport.png)
+![Transactions](../Content/Includes/AN-HomeBase-UserManal-SP/transactionReport.png)
 
 Una vez seleccionado el filtro se presiona el botón ***Imprimir***, esto desplegara un popup con la información seleccionada.
 La información es mostrada con un formato listo para ser impreso, incluyendo el logo de la suscripción y la fecha y la hora de generación del reporte.
 
 Este popup posee un botón imprimir que al apretarlo se abre la ventana de impresión por defecto del navegador de Internet.
 
-![Transactions](Content/Includes/AN-HomeBase-UserManal-SP/transactionReport2.png)
+![Transactions](../Content/Includes/AN-HomeBase-UserManal-SP/transactionReport2.png)
 
 
 #### Vehículo
 
 Este reporte muestra la lista de vehículos. Este reporte posee varios filtros para ajustar la búsqueda. El primer campo del panel de filtros  indica porque campo se va a ordenar la lista, el campo seleccionado en esta lista sera mostrado en la primer columna.
 
-![Vehicles](Content/Includes/AN-HomeBase-UserManal-SP/vehiclesReport.png)
+![Vehicles](../Content/Includes/AN-HomeBase-UserManal-SP/vehiclesReport.png)
 
 Una vez seleccionado el filtro se presiona el botón ***Imprimir***, esto desplegará un popup con la información seleccionada.
 La información es mostrada con un formato listo para ser impreso, incluyendo el logo de la suscripción y la fecha y la hora de generación del reporte.
 
 Este popup posee un botón imprimir que al apretarlo se abre la ventana de impresión por defecto del navegador de Internet.
 
-![Vehicles](Content/Includes/AN-HomeBase-UserManal-SP/vehiclesReport2.png)
+![Vehicles](../Content/Includes/AN-HomeBase-UserManal-SP/vehiclesReport2.png)
 
 ### Inventario
 
 #### Gráfico de Inventarios
 
-![Grafico de Inventarios](Content/Includes/AN-Network-UserManal-SP/graficoDeInventarios.png)
+![Grafico de Inventarios](../Content/Includes/AN-Network-UserManal-SP/graficoDeInventarios.png)
 
 #### Inventarios
 
-![Inventarios](Content/Includes/AN-Network-UserManal-SP/inventarios.png)
+![Inventarios](../Content/Includes/AN-Network-UserManal-SP/inventarios.png)
 
-![Inventarios](Content/Includes/AN-Network-UserManal-SP/nuevoInventario.png)
+![Inventarios](../Content/Includes/AN-Network-UserManal-SP/nuevoInventario.png)
 
 #### Recepciones
 
-![Recepciones](Content/Includes/AN-Network-UserManal-SP/recepciones.png)
+![Recepciones](../Content/Includes/AN-Network-UserManal-SP/recepciones.png)
 
-![Recepciones](Content/Includes/AN-Network-UserManal-SP/nuevoRecepciones.png)
+![Recepciones](../Content/Includes/AN-Network-UserManal-SP/nuevoRecepciones.png)
 
 #### Reconciliación Inventario
 
-![Reconciliacion Inventario](Content/Includes/AN-Network-UserManal-SP/reconciliacionInventario.png)
+![Reconciliacion Inventario](../Content/Includes/AN-Network-UserManal-SP/reconciliacionInventario.png)
 
 ### Administración
  
@@ -649,13 +649,13 @@ En esta sección usted puede consultar las categorías de SKUs (Stock Keeping Un
 
 Para crear un nuevo SKU, cliquée en el botón "Nuevo".
 
-![SKUs](Content/Includes/AN-Network-UserManal-SP/categoriasDeSkus.png)
+![SKUs](../Content/Includes/AN-Network-UserManal-SP/categoriasDeSkus.png)
 
 ###### Crear una nueva categoría de SKU
 
 Para crear una nueva categoría de SKU, debe llenar el siguiente formulario:
 
-![SKUs](Content/Includes/AN-Network-UserManal-SP/nuevaCategoriaDeSkus.png)
+![SKUs](../Content/Includes/AN-Network-UserManal-SP/nuevaCategoriaDeSkus.png)
 
 * **Código**: El código de la categoría de SKU.
 * **Nombre**: El nombre de la categoría de SKU.
@@ -671,13 +671,13 @@ Para crear una nueva categoría de SKU, debe llenar el siguiente formulario:
 
 En ATIOnet el termino comercio se refiere a la empresa dueña de los sitios. En esta sección puede ver los comercios existentes con sus detalles y editarlas si quiere.
 
-![Comercios](Content/Includes/AN-Network-UserManal-SP/comerciosAdministracion.png)
+![Comercios](../Content/Includes/AN-Network-UserManal-SP/comerciosAdministracion.png)
 
 #### Compañías
 
 En ATIOnet el termino compañía se refiere a la empresa dueña de la flota. En esta sección puede ver las compañías existentes con sus detalles y editarlas si quiere. También puede filtrarlas por nombre y/o código.
 
-![Compañías](Content/Includes/AN-Network-UserManal-SP/compañias.png)
+![Compañías](../Content/Includes/AN-Network-UserManal-SP/compañias.png)
 
 #### Conceptos
 
@@ -685,13 +685,13 @@ En esta sección usted puede consultar los Conceptos ya creados, listados por C�
 
 Para crear un nuevo concepto, haga click en el botón "Nuevo".
 
-![Conceptos](Content/Includes/AN-Network-UserManal-SP/conceptos.png)
+![Conceptos](../Content/Includes/AN-Network-UserManal-SP/conceptos.png)
 
 ###### Crear un nuevo concepto
 
 Para crear un nuevo concepto, debe llenar el siguiente formulario:
 
-![Conceptos](Content/Includes/AN-Network-UserManal-SP/nuevoConcepto.png)
+![Conceptos](../Content/Includes/AN-Network-UserManal-SP/nuevoConcepto.png)
 
 En la sección información, debe llenar los siguientes campos:
 
@@ -720,7 +720,7 @@ Cuando termine de llenar el formulario, haga click en "Guardar".
 
 ?
 
-![Configuración de Fast Track Administración](Content/Includes/AN-HomeBase-UserManal-SP/configuracionFastTrackAdministracion.png)
+![Configuración de Fast Track Administración](../Content/Includes/AN-HomeBase-UserManal-SP/configuracionFastTrackAdministracion.png)
 
 #### Contingencia
 
@@ -728,11 +728,11 @@ En esta sección, usted puede consultar las contingencias de la Network. Para ha
 
 Las contingencias son las transacciones que se realizaron sin una pre-autorización, ya sea porque la terminal estaba off-line o porque no contaba con una.
 
-![Contingencia](Content/Includes/AN-Network-UserManal-SP/contingencias.png)
+![Contingencia](../Content/Includes/AN-Network-UserManal-SP/contingencias.png)
 
 Para crear una nueva contingencia, haga click en el botón "Nuevo".
 
-![Contigencia](Content/Includes/AN-Network-UserManal-SP/nuevaContingencia.png)
+![Contigencia](../Content/Includes/AN-Network-UserManal-SP/nuevaContingencia.png)
 
 Los campos a completar son los siguientes:
 
@@ -759,13 +759,13 @@ Los campos a completar son los siguientes:
 
 En ATIONet el termino comercio se refiere a la empresa dueña de los sitios. En esta sección usted puede consultar los contratos.
 
-![Contratos de Comercio](Content/Includes/AN-Network-UserManal-SP/contratosDeComercio.png)
+![Contratos de Comercio](../Content/Includes/AN-Network-UserManal-SP/contratosDeComercio.png)
 
 Para crear un nuevo contrato de Compañía, haga click en el botón Nuevo.
 
 Los campos a completar son los siguientes:
 
-![Contratos de Compañia](Content/Includes/AN-Network-UserManal-SP/nuevoContratoDeComercio.png)
+![Contratos de Compañia](../Content/Includes/AN-Network-UserManal-SP/nuevoContratoDeComercio.png)
 
 * **Código**: El código que le quiere asignar al contrato.
 * **Descripción**: Ingrese una descripción del contrato.
@@ -777,7 +777,7 @@ Los campos a completar son los siguientes:
 
 Luego de llenar estos campos, deberá ingresar el combustible asignado al contrato, y llenar los campos Volumen, Limite de Seguridad, Sobregiro, Fechas de Inicio y Finalización del Sobregiro, la moneda en la que se encuentra el Valor del Combustible y el precio del combustible.
 
-![Contratos de Compañía](Content/Includes/AN-Network-UserManal-SP/nuevoContratoDeComercio2.png)
+![Contratos de Compañía](../Content/Includes/AN-Network-UserManal-SP/nuevoContratoDeComercio2.png)
 
 Lo siguiente es dar de alta diferentes ítems.
 
@@ -787,7 +787,7 @@ Luego de eso, tendrá que llenar el formulario de Configuración de Liquidacione
 
 Los campos a completar son los siguientes:
 
-![Contratos de Compañia](Content/Includes/AN-Network-UserManal-SP/nuevoContratoDeComercio3.png)
+![Contratos de Compañia](../Content/Includes/AN-Network-UserManal-SP/nuevoContratoDeComercio3.png)
 
 * **Tipo de Proceso de Billing**: Seleccione el tipo de proceso de Billing que quiere.
 * **Periodicidad**: ?
@@ -807,11 +807,11 @@ Los campos a completar son los siguientes:
 
 Por ultimo, debe llenar el formulario de Alta de Conceptos.
 
-![Contratos de Compañía](Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia5.png)
+![Contratos de Compañía](../Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia5.png)
 
 Ingrese un concepto y luego se desplegara otro formulario.
 
-![Contratos de Compañía](Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia6.png)
+![Contratos de Compañía](../Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia6.png)
 
 * **Precio Real**: ?
 * **Moneda**: Seleccione la moneda en la que se encuentra el precio.
@@ -822,7 +822,7 @@ Ingrese un concepto y luego se desplegara otro formulario.
 
 Luego, en la segunda solapa, de Descuentos/Incrementos, debe llenar los siguientes campos.
 
-![Contratos de Compañía](Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia7.png)
+![Contratos de Compañía](../Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia7.png)
 
 * **Clase**: Seleccione si el concepto es de Descuento o de Incremento.
 * **Incluido**: Tilde esta opción si ?
@@ -844,17 +844,17 @@ Cuando termine de llenar estos campos, haga click en el botón "Alta" para darlo
 
 En ATIONet el termino compañía se refiere a la empresa dueña de la flota. En esta sección usted puede consultar los contratos. 
 
-![Contratos de Compañía](Content/Includes/AN-HomeBase-UserManal-SP/contratosDeCompaniaAdministracion.png)
+![Contratos de Compañía](../Content/Includes/AN-HomeBase-UserManal-SP/contratosDeCompaniaAdministracion.png)
 
 Para hacer las consultas mas fáciles existe una ventana de filtros aplicables. Puede filtrar por el código, la compañía, el modo (crédito o débito), la descripción o especies.
 
-![Contratos de Compañía](Content/Includes/AN-Network-UserManal-SP/filtrosContratosDeCompañia.png)
+![Contratos de Compañía](../Content/Includes/AN-Network-UserManal-SP/filtrosContratosDeCompañia.png)
 
 Para crear un nuevo contrato de Compañía, haga click en el botón Nuevo.
 
 Los campos a completar son los siguientes:
 
-![Contratos de Compañía](Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia.png)
+![Contratos de Compañía](../Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia.png)
 
 * **Código**: El código que le quiere asignar al contrato.
 * **Modo**: Puede elegir si el contrato es de crédito o de débito.
@@ -871,7 +871,7 @@ Los campos a completar son los siguientes:
 
 Luego de llenar estos campos, deberá ingresar el combustible asignado al contrato, y llenar los campos Volumen, Limite de Seguridad, Sobregiro, Fechas de Inicio y Finalización del Sobregiro, la moneda en la que se encuentra el Valor del Combustible y el precio del combustible.
 
-![Contratos de Compañia](Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia2.png)
+![Contratos de Compañia](../Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia2.png)
 
 Lo siguiente es dar de alta diferentes ítems.
 
@@ -879,13 +879,13 @@ Lo primero es la Alta de Sitios. Ingrese el sitio y se cargara abajo, solicitán
 
 Luego, en la sección "Alta identificadores" ingrese los identificadores que quiere relacionar con el contrato.
 
-![Contratos de Compañía](Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia3.png)
+![Contratos de Compañía](../Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia3.png)
 
 Luego de eso, tendrá que llenar el formulario de Configuración de Liquidaciones.
 
 Los campos a completar son los siguientes:
 
-![Contratos de Compañia](Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia4.png)
+![Contratos de Compañia](../Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia4.png)
 
 * **Tipo de Proceso de Billing**: Seleccione el tipo de proceso de Billing que quiere.
 * **Periodicidad**: ?
@@ -904,11 +904,11 @@ Los campos a completar son los siguientes:
 
 Por ultimo, debe llenar el formulario de Alta de Conceptos.
 
-![Contratos de Compañia](Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia5.png)
+![Contratos de Compañia](../Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia5.png)
 
 Ingrese un concepto y luego se desplegara otro formulario.
 
-![Contratos de Compañia](Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia6.png)
+![Contratos de Compañia](../Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia6.png)
 
 * **Precio Real**: ?
 * **Moneda**: Seleccione la moneda en la que se encuentra el precio.
@@ -918,7 +918,7 @@ Ingrese un concepto y luego se desplegara otro formulario.
 
 Luego, en la segunda solapa, de Descuentos/Incrementos, debe llenar los siguientes campos.
 
-![Contratos de Compañia](Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia7.png)
+![Contratos de Compañia](../Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia7.png)
 
 * **Clase**: Seleccione si el concepto es de Descuento o de Incremento.
 * **Incluido**: Tilde esta opción si ?
@@ -940,13 +940,13 @@ Cuando termine de llenar estos campos, haga click en el botón "Alta" para darlo
 
 En esta sección, usted puede crear una nueva cuenta corriente de Comercio. Los datos a ingresar son la descripción del contrato, el nombre del comercio, el contrato de comercio y el tipo.
 
-![Contratos de Comercio](Content/Includes/AN-Network-UserManal-SP/nuevaCuentaCorrienteDeComercio.png)
+![Contratos de Comercio](../Content/Includes/AN-Network-UserManal-SP/nuevaCuentaCorrienteDeComercio.png)
 
 #### Cuentas corrientes de Compañía
 
 En esta sección, usted puede crear una nueva cuenta corriente de compañía. Los datos a ingresar son la descripción de la compañía, el nombre de la compañía, el contrato de compañía y el tipo.
 
-![Contratos de Compañía](Content/Includes/AN-Network-UserManal-SP/nuevaCuentaCorrienteDeCompania.png)
+![Contratos de Compañía](../Content/Includes/AN-Network-UserManal-SP/nuevaCuentaCorrienteDeCompania.png)
 
 #### Depósitos
 
@@ -954,11 +954,11 @@ Los depósitos son los lugares físicos en donde se guardan los identificadores.
 
 En esta sección, usted puede consultar los depósitos creados, listados por código y descripción. También los puede editar haciendo click en el icono del lápiz que se encuentra en la columna opciones. Para crear un deposito nuevo, cliquée en el botón "Nuevo" que se encuentra sobre la columna "Código".
 
-![Depósitos](Content/Includes/AN-Network-UserManal-SP/depositos.png)
+![Depósitos](../Content/Includes/AN-Network-UserManal-SP/depositos.png)
 
 Para crear un nuevo deposito, complete los campos código y descripción y cliquée el botón "Guardar".
 
-![Depósitos](Content/Includes/AN-Network-UserManal-SP/nuevoDeposito.png)
+![Depósitos](../Content/Includes/AN-Network-UserManal-SP/nuevoDeposito.png)
 
 #### Familias de Conceptos
 
@@ -966,11 +966,11 @@ En esta sección, usted puede consultar las familias de conceptos creadas, lista
 
 En ATIOnet, las familias de conceptos son ?
 
-![Depósitos](Content/Includes/AN-Network-UserManal-SP/familiaDeConceptos.png)
+![Depósitos](../Content/Includes/AN-Network-UserManal-SP/familiaDeConceptos.png)
 
 Para crear una nueva familia de conceptos, haga click en el botón "Nuevo" y llene los campos Código y Descripción.
 
-![Depósitos](Content/Includes/AN-Network-UserManal-SP/nuevoFamiliaDeConceptos.png)
+![Depósitos](../Content/Includes/AN-Network-UserManal-SP/nuevoFamiliaDeConceptos.png)
 
 #### Identificaciones Solicitadas
 
@@ -978,7 +978,7 @@ En esta sección usted puede consultar las identificaciones solicitadas, solicit
 
 También cuenta con un panel para filtrar las identificaciones solicitadas y así hacer mas fácil la búsqueda. Puede filtrar por nombre de la compañía, numero de orden, programa, contrato, estado y/o programa de fidelidad.
 
-![Identificaciones Solicitadas](Content/Includes/AN-Network-UserManal-SP/identificacionesSolicitadas.png)
+![Identificaciones Solicitadas](../Content/Includes/AN-Network-UserManal-SP/identificacionesSolicitadas.png)
 
 Para solicitar un identificador de flota, haga click en el botón "Solicitar Identificadores de Flota". Cuando lo haga, se abrirá un formulario a llenar. Los campos a completar son:
 
@@ -991,7 +991,7 @@ Para solicitar un identificador de flota, haga click en el botón "Solicitar Ide
 
 Cuando termine de llenar los campos, cliquée el botón "Solicitar identificaciones".
 
-![Identificaciones Solicitadas](Content/Includes/AN-Network-UserManal-SP/solicitarIdentificadoresDeFlota.png)
+![Identificaciones Solicitadas](../Content/Includes/AN-Network-UserManal-SP/solicitarIdentificadoresDeFlota.png)
 
 Para solicitar un identificador de fidelidad, haga click en el botón "Solicitar Identificadores de Fidelidad". Cuando lo haga, se abrirá un formulario a llenar. Los campos a completar son:
 
@@ -1001,13 +1001,13 @@ Para solicitar un identificador de fidelidad, haga click en el botón "Solicitar
 
 Cuando termine de llenar los campos, cliquée el botón "Solicitar identificaciones".
 
-![Identificaciones Solicitadas](Content/Includes/AN-Network-UserManal-SP/solicitarIdentificadoresDeFidelidad.png)
+![Identificaciones Solicitadas](../Content/Includes/AN-Network-UserManal-SP/solicitarIdentificadoresDeFidelidad.png)
 
 #### Identificadores
 
 El identificador es el medio físico que utiliza ATIONet para poder identificar un vehículo o un conductor. ATIONet soporte varios tipos de identificaciones, como ser tarjeta, tag (anillo), chip, tarjeta ATIONet, entrada manual, código de barras e iButton. Cuando se asocia un identificador a un Vehículo o Conductor se crea una sub cuenta. En esta sección, se mostraran los identificadores ya creados. En la columna opciones puede editar el identificador, habilitarlo o deshabilitarlo, o liberarlo.
 
-![Identificadores Administracion](Content/Includes/AN-HomeBase-UserManal-SP/identificadoresAdministracion.png)
+![Identificadores Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/identificadoresAdministracion.png)
 
 ###### Crear un nuevo identificador
 
@@ -1015,7 +1015,7 @@ Para crear un nuevo identificador haga click en el botón nuevo que se encuentra
 
 El formulario para crear un nuevo identificador recibe los siguientes parámetros:
 
-![Nuevo Identificador Administración](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoIdentificadorAdministracion.png)
+![Nuevo Identificador Administración](../Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoIdentificadorAdministracion.png)
 
 * ***Tipo:*** Puede ser Tarjeta, TAG, Chipkey, Entrada Manual, Tarjeta ATIOnet o ATIOnet TAG.
 * ***Modelo:*** El modelo del tipo de identificador seleccionado en ***Tipo***.
@@ -1042,7 +1042,7 @@ La tabla de impuestos muestra:
 * ***Fecha Desde / Fecha Hasta:*** Rango de fechas.
 * ***Opciones:*** Editar el impuesto.
 
-![Impuestos Administración](Content/Includes/AN-HomeBase-UserManal-SP/impuestosAdministracion.png)
+![Impuestos Administración](../Content/Includes/AN-HomeBase-UserManal-SP/impuestosAdministracion.png)
 
 ###### Crear un nuevo impuesto
 
@@ -1050,7 +1050,7 @@ Para crear un nuevo impuesto, cliquée el botón "Nuevo" que se encuentra en el 
 
 El formulario para crear un nuevo impuesto recibe los siguientes parámetros:
 
-![Nuevo Impuesto Administración](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoImpuestoAdministracion.png) 
+![Nuevo Impuesto Administración](../Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoImpuestoAdministracion.png) 
 
 * ***Código:*** El código del nuevo impuesto.
 * ***Descripción:*** La descripción del nuevo impuesto.
@@ -1068,11 +1068,11 @@ En ATIOnet, se refiere a Instalaciones el hecho de que un técnico coloque un id
 
 En esta sección, usted puede consultar todas las instalaciones realizadas, listadas por Fecha, Orden de Trabajo, los identificadores colocados, el vehículo en el que fue colocado el identificador, el deposito de donde se saco el identificador, el técnico que lo coloco y ?
 
-![Instalaciones](Content/Includes/AN-HomeBase-UserManal-SP/instalaciones.png)
+![Instalaciones](../Content/Includes/AN-HomeBase-UserManal-SP/instalaciones.png)
 
 Para crear una nueva Instalación, cliquée en el botón "Nuevo".
 
-![Instalaciones](Content/Includes/AN-HomeBase-UserManal-SP/nuevoInstalaciones.png)
+![Instalaciones](../Content/Includes/AN-Network-UserManal-SP/nuevoInstalaciones.png)
 
 Los campos que tiene que completar son los siguientes:
 
@@ -1101,7 +1101,7 @@ Cuando termine, cliquée el botón "Guardar"
 
 Los métodos de pago son las distintas formas en las que se puede pagar un compra: efectivo, tarjeta de crédito, tarjeta de débito, gift cards, etc. ATIONET es una herramienta para que que un comerciante cree un medio de pago propio: una tarjeta de pago para combustibles.
 
-![Métodos De Pago Administración](Content/Includes/AN-HomeBase-UserManal-SP/metodosDePagoAdministracion.png)
+![Métodos De Pago Administración](../Content/Includes/AN-HomeBase-UserManal-SP/metodosDePagoAdministracion.png)
 
 ###### Crear un nuevo método de pago
 
@@ -1109,7 +1109,7 @@ Para crear un nuevo método de pago, cliquée el botón "Nuevo" que se encuentra
 
 El formulario para crear un nuevo método de pago recibe los siguientes parámetros:
 
-![Nuevo Método De Pago Administración](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoMetodoDePagoAdministracion.png)
+![Nuevo Método De Pago Administración](../Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoMetodoDePagoAdministracion.png)
 
 * ***Código:*** El código del nuevo método de pago.
 * ***Descripción:*** La descripción del nuevo método de pago.
@@ -1120,7 +1120,7 @@ Cuando termine de realizar los cambios, cliquée el botón "Guardar".
 
 Los modelos de identificador varían según la necesidad del cliente, pueden ser de tipo Tarjeta (Una tarjeta magnética), TAG (Anillo), Chipkey o Entrada Manual (Un código ingresado a mano).
 
-![Modelos De Identificador Administracion](Content/Includes/AN-HomeBase-UserManal-SP/modelosDeIdentificadorAdministracion.png)
+![Modelos De Identificador Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/modelosDeIdentificadorAdministracion.png)
 
 ###### Crear un nuevo modelo de identificador
 
@@ -1128,7 +1128,7 @@ Para crear un nuevo modelo de identificador, cliquée el botón "Nuevo" que se e
 
 El formulario para crear un nuevo modelo de identificador recibe los siguientes parámetros:
 
-![Nuevo Modelo De Idcentificador Administración](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoModeloDeIdentificadorAdministracion.png)
+![Nuevo Modelo De Idcentificador Administración](../Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoModeloDeIdentificadorAdministracion.png)
 
 * ***Tipo:*** Puede ser de tipo Tarjeta, TAG, Chipkey o Entrada Manual.
 * ***Descripción:*** La descripción del nuevo modelo de identificador.
@@ -1146,11 +1146,11 @@ Cuando termine de realizar los cambios, cliquée el botón "Guardar".
 
 Los programas en ATIOnet son ?
 
-![Programas Administración](Content/Includes/AN-HomeBase-UserManal-SP/programasAdministracion.png)
+![Programas Administración](../Content/Includes/AN-HomeBase-UserManal-SP/programasAdministracion.png)
 
 Para crear un nuevo programa haga click en el botón "Nuevo".
 
-![Programas Administración](Content/Includes/AN-Network-UserManal-SP/nuevoPrograma.png)
+![Programas Administración](../Content/Includes/AN-Network-UserManal-SP/nuevoPrograma.png)
 
 Los campos a completar son los siguientes:
 
@@ -1167,7 +1167,7 @@ Para crear un nuevo programa, cliquée el botón "Nuevo" que se encuentra en el 
 
 El formulario para crear un nuevo programa recibe los siguientes parámetros:
 
-![Nuevo Programa Administración](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoProgramaAdministracion.png)
+![Nuevo Programa Administración](../Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoProgramaAdministracion.png)
 
 * ***Descripción:*** La descripción del nuevo programa.
 * ***Aplicar sitios del Contrato:*** Puede ser no afectado, forzado o no forzado.
@@ -1185,7 +1185,7 @@ Cuando termine de realizar los cambios, cliquée el botón "Guardar".
 
 El Sitio representa a la estación de servicio. A un sitio se le asigna la terminal y también puede tener asociadas reglas de Ubicación. En esta sección se listan los sitios ya ingresados en el sistema y sus características. En la columna opciones puede asignarle un impuesto al sitio.
 
-![Sitios Administracion](Content/Includes/AN-HomeBase-UserManal-SP/sitiosAdministracion.png)
+![Sitios Administracion](../Content/Includes/AN-HomeBase-UserManal-SP/sitiosAdministracion.png)
 
 #### SKUs
 
@@ -1195,13 +1195,13 @@ Para buscar mas fácilmente, esta el panel de filtros donde puede filtrar por ci
 
 Para crear un nuevo SKU, haga click en el botón "Nuevo".
 
-![SKUs](Content/Includes/AN-Network-UserManal-SP/skus.png)
+![SKUs](../Content/Includes/AN-Network-UserManal-SP/skus.png)
 
 Los campos a completar son los siguientes:
 
-![SKUs](Content/Includes/AN-Network-UserManal-SP/nuevoSku1.png)
-![SKUs](Content/Includes/AN-Network-UserManal-SP/nuevoSku2.png)
-![SKUs](Content/Includes/AN-Network-UserManal-SP/nuevoSku3.png)
+![SKUs](../Content/Includes/AN-Network-UserManal-SP/nuevoSku1.png)
+![SKUs](../Content/Includes/AN-Network-UserManal-SP/nuevoSku2.png)
+![SKUs](../Content/Includes/AN-Network-UserManal-SP/nuevoSku3.png)
 
 * **Código**: El código del SKU.
 * **Descripción** La descripción del SKU.
@@ -1251,11 +1251,11 @@ En esta sección usted puede consultar las tarjetas de regalo creadas. Puede rea
 
 Para crear una nueva Tarjeta de Regalo, cliquée el botón de "Nuevo".
 
-![Tarjeta de Regalo](Content/Includes/AN-Network-UserManal-SP/tarjetasDeRegalo.png)
+![Tarjeta de Regalo](../Content/Includes/AN-Network-UserManal-SP/tarjetasDeRegalo.png)
 
 Los campos a completar para crear una nueva tarjeta de regalo son los siguientes:
 
-![Tarjeta de Regalo](Content/Includes/AN-Network-UserManal-SP/nuevaTarjetaDeRegalo.png)
+![Tarjeta de Regalo](../Content/Includes/AN-Network-UserManal-SP/nuevaTarjetaDeRegalo.png)
 
 * **Programa**: El programa al cual va a estar asociada la tarjeta de regalo.
 * **Contrato**: El contrato al cual va a estar asociada la tarjeta de regalo.
@@ -1272,11 +1272,11 @@ Cuando termine de llenar los campos, cliquée el botón "Guardar".
 
 En esta sección, usted puede consultar y solicitar lotes de tarjetas de regalo.
 
-![Tarjetas de Regalo Solicitadas](Content/Includes/AN-Network-UserManal-SP/tarjetasDeRegaloSolicitadas.png)
+![Tarjetas de Regalo Solicitadas](../Content/Includes/AN-Network-UserManal-SP/tarjetasDeRegaloSolicitadas.png)
 
 Para pedir un nuevo lote de tarjetas de regalo, cliquée el botón "Nueva Solicitación".
 
-![Tarjetas de Regalo Solicitadas](Content/Includes/AN-Network-UserManal-SP/nuevoTarjetasDeRegaloSolicitadas.png)
+![Tarjetas de Regalo Solicitadas](../Content/Includes/AN-Network-UserManal-SP/nuevoTarjetasDeRegaloSolicitadas.png)
 
 Los campos a completar son los siguientes:
 
@@ -1295,7 +1295,7 @@ En esta sección usted puede consultar las transacciones desconocidas, listadas 
 
 Para hacer las consultas mas fáciles, esta sección cuenta con un panel de filtros en la parte superior.
 
-![Transacciones Desconocidas](Content/Includes/AN-Network-UserManal-SP/transaccionesDesconocidas.png)
+![Transacciones Desconocidas](../Content/Includes/AN-Network-UserManal-SP/transaccionesDesconocidas.png)
 
 #### Usuarios
 
@@ -1303,11 +1303,11 @@ En esta vista puede consultar los usuarios de la Network. Puede editarlos, hacie
 
 Para crear un nuevo Usuario, haga click en el botón "Nuevo".
 
-![Usuarios](Content/Includes/AN-Network-UserManal-SP/usuarios.png)
+![Usuarios](../Content/Includes/AN-Network-UserManal-SP/usuarios.png)
 
 Los campos a completar son los siguientes:
 
-![Usuarios](Content/Includes/AN-Network-UserManal-SP/nuevoUsuario.png)
+![Usuarios](../Content/Includes/AN-Network-UserManal-SP/nuevoUsuario.png)
 
 * **Correo**: El correo electrónico del usuario.
 * **Nombre**: El nombre del usuario.

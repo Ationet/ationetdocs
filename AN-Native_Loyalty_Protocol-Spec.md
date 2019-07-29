@@ -596,7 +596,6 @@ Refer to Authorization Codes Table in the Reference Tables section for a complet
 				<p align="left">Refer to Customer Data in Field Description section</p>
 			</td>
 		</tr>
-
 		<tr valign="top">
 			<td>
 				<p align="left">TransactionAmount</p>
