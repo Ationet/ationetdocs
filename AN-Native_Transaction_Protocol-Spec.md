@@ -279,18 +279,6 @@ API URI: native.ationet.com/v1/auth
 		 </tr>
 		 <tr valign="top">
 			<td>
-				<p align="left">Completion</p>
-			</td>
-			<td>
-				<p align="center">1.0</p>
-			</td>
-			<td></td>
-			<td>
-				<p align="left">Informs a sale initiated with a Pre-Authorization.</p>
-			</td>
-		 </tr>
-		 <tr valign="top">
-			<td>
 				<p align="left">Offline Completion</p>
 			</td>
 			<td>
@@ -400,7 +388,7 @@ Transactions intended to post a command, for example Authorizations and Pre-Auth
 
 Failure to process the request will be indicated by an HTTP 400’s range status code. The body will contain a single JSON-formatted item with the “ResponseCode”, “ResponseMessage” and “ResponseError” fields.
 
-Refer to Response Codes Table in the Reference Tables section for a complete list of supported codes.
+Refer to [Response Codes](11.2 Response Codes) Table in the Reference Tables section for a complete list of supported codes.
 
 ## 6 Field Descriptions
 
