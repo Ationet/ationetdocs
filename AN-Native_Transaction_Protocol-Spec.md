@@ -620,7 +620,7 @@ The PIN entry on plain text, when the whole message or the communication themsel
 #### Original Data
 Original data on a TREQ contains extra information related to the original transaction that we want to cancel. Used only in zero completions without authorization code and cancellations transactions.
 
-Refer to Original Data Table in the Reference Tables section for a complete list of supported field names.
+Refer to [Original Data](#118-original-data) Table in the Reference Tables section for a complete list of supported field names.
 
 ## 7 Transaction Request (TREQ) Message Format
 
