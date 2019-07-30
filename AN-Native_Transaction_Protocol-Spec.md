@@ -444,7 +444,7 @@ Transaction messages include a list of Product fields, plus a Product Taxes comp
 
 On single product messages, like a simple fueling transaction, product’s amount and other details must be sent on the fields included in the main body of the message. When the sale includes more than one product, the first one must be sent on the main body and rest on the Product Data structure. Fuel presets will only work for the product in the main body; therefore, first product in the list should be the fuel sale if there is any.
 
-Refer to Product Data Structure Table on the Reference Tables Section.
+Refer to [Product Data Structure](#114-product-data-structure) Table on the Reference Tables Section.
 
 Transaction authorization and register is based on ProductAmount and ProductQuantity; taxes and net amount fields are optional and are not considered by ATIOnet during transaction processing, but those fields may be used later for billing and reporting. Therefore, although optional at the protocol level, those might be required for certain integration projects for a given market or functional scope.
 
