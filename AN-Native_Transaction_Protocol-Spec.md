@@ -751,7 +751,7 @@ This section brings together the code tables and reference values used in messag
 ### 11.2 Response Codes
 |Code|Response Message|Long Response Message|Description|
 |--- |--- |--- |--- |
-|Authorized||||
+|**Authorized**||||
 |00000|Authorized|Authorized||
 |Request Validations||||
 |10000|Invalid date|Invalid date||
@@ -776,7 +776,7 @@ This section brings together the code tables and reference values used in messag
 |10019|Invalid old PIN|Invalid old PIN||
 |10020|Invalid new PIN|Invalid new PIN||
 |10021|Invalid orig data|Invalid original data||
-|Integrity Validations||||
+|**Integrity Validations**||||
 |11000|Merch not found|Merchant not found|
 |11001|NetMerch not found|Network merchant not found|
 |11002|Site not found|Site not found||
@@ -801,12 +801,12 @@ This section brings together the code tables and reference values used in messag
 |11021|Merch qty needed|Merchant quantity needed||
 |11022|Fleet not found|Fleet not found||
 |11023|Trans not found|Transaction not found||
-|To Review Validations|.|.|
+|**To Review Validations**|||
 |12000|Auth amount exceeded|Authorized amount exceeded||
 |12001|Auth qty exceeded|Authorized quantity exceeded||
 |12002|Auth with diff PPU|Authorization with different PPU||
 |12003|Tr amount exceeded|Transaction amount exceeded||
-|Unlawful Validations||||
+|**Unlawful Validations**||||
 |13000|Term does not exist|Terminal does not exist||
 |13001|Netw does not exist|Network does not exist||
 |13002|Id does not exist|Id does not exist||
@@ -855,10 +855,10 @@ This section brings together the code tables and reference values used in messag
 |13045|Merchant not enabled|Merchant not enabled||
 |13046|Invalid sec ident|Invalid secondary identification||
 |13047|Invalid sec ident|Invalid secondary identification||
-|Current Account Validations||||
+|**Current Account Validations**||||
 |14000|CA movement declined|Current account movement declined||
 |14001|Merchant CA mov dec|Merchant current account movement declined||
-|Establish Limits||||
+|**Establish Limits**||||
 |20000|Unit price needed|Unit price needed||
 |20001|Max quota not set|Maximum quiota not set||
 |40000|Insufficient balance|Insufficient balance||
@@ -868,17 +868,17 @@ This section brings together the code tables and reference values used in messag
 |40004|Term qty excedeed|Terminal quantity excedeed||
 |40005|Term money excedeed|Terminal money excedeed||
 |40006|Offline lim excedeed|Offline limit excedeed||
-|Location Rule||||
+|**Location Rule**||||
 |40100|Site not authorized|Site not authorized||
 |40101|Site not authorized|Site not authorized||
 |40102|Site not authorized|Site not authorized||
 |40103|Site not authorized|Site not authorized||
-|Fuel Rule||||
+|**Fuel Rule**||||
 |40200|Fuel not authorized|Fuel not authorized||
 |40201|Fuel not authorized|Fuel not authorized||
 |40202|Fuel not authorized|Fuel not authorized||
 |40203|Fuel not authorized|Fuel not authorized||
-|Transaction Rule||||
+|**Transaction Rule**||||
 |20300|Quota not set|Quota not set||
 |40300|Veh money excedeed|Vehicle money excedeed||
 |40301|Driv money excedeed|Driver money excedeed||
@@ -890,7 +890,7 @@ This section brings together the code tables and reference values used in messag
 |40307|Fuel qty excedeed|Fuel quantity excedeed||
 |40308|Site qty excedeed|Site quantity excedeed||
 |40309|Fleet qty excedeed|Fleet quantity excedeed||
-|Quota Rule||||
+|**Quota Rule**||||
 |20400|Quota not set|Quota not set||
 |40400|Veh money excedeed|Vehicle money excedeed||
 |40401|Driv money excedeed|Driver money excedeed||
@@ -907,7 +907,7 @@ This section brings together the code tables and reference values used in messag
 |40412|Prod tran excedeed|Prod transactions excedeed||
 |40413|Site tran excedeed|Site transactions excedeed||
 |40414|Fleet tran excedeed|Fleet transactions excedeed||
-|Prompting Rule||||
+|**Prompting Rule**||||
 |20500|Retries exceeded|Retries exceeded||
 |40500|Prompting needed|Prompting needed||
 |40501|Pri PIN needed|Primary PIN needed||
@@ -917,14 +917,14 @@ This section brings together the code tables and reference values used in messag
 |40505|Sec Track needed|Secondary track needed||
 |40506|Invalid odometer|Invalid odometer||
 |40507|Invalid eng hours|Invalid engine hours||
-|Days Rule||||
+|**Days Rule**||||
 |20600|Week days not set|Week days not set||
 |40600|Day not authorized|Day not authorized||
 |40601|Day not authorized|Day not authorized||
 |40602|Day not authorized|Day not authorized||
 |40603|Day not authorized|Day not authorized||
 |40604|Day not authorized|Day not authorized||
-|DateTime Rule||||
+|**DateTime Rule**||||
 |20700|DateTime not set|DateTime not set||
 |40700|DateTime not auth|DateTime not auth||
 |40701|DateTime not auth|DateTime not auth||
@@ -956,7 +956,7 @@ This section brings together the code tables and reference values used in messag
 |40727|DateTime not auth|DateTime not auth||
 |40728|DateTime not auth|DateTime not auth||
 |40729|DateTime not auth|DateTime not auth||
-|DaysTime Rule||||
+|**DaysTime Rule**||||
 |20800|Week days not set|Week days not set||
 |20801|Time not set|Time not set||
 |40800|Day not authorized|Day not authorized||
@@ -974,19 +974,19 @@ This section brings together the code tables and reference values used in messag
 |40812|DaysTime not auth|Day not authorized||
 |40813|DaysTime not auth|Day not authorized||
 |40814|DaysTime not auth|Day not authorized||
-|Dry Transaction Rule||||
+|**Dry Transaction Rule**||||
 |20900|Quota Not Set|Quota not set||
 |40900|Veh money exceeded|Vehicle money exceeded||
 |40901|Driv money exceeded|Driver money exceeded||
 |40902|Site money exceeded|Site money exceeded||
 |40903|Fleet money exceeded|Fleet money exceeded||
-|Dry Quota Rule||||
+|**Dry Quota Rule**||||
 |21000|Quota not set|Quota not set||
 |41000|Veh money exceeded|Vehicle money exceeded||
 |41001|Driv money exceeded|Driver money exceeded||
 |41002|Site money exceeded|Site money exceeded||
 |41003|Fleet money exceeded|Fleet money exceeded||
-|Process Messages||||
+|**Process Messages**||||
 |50000|App error|Application error||
 |50001|Not available in off|Not available in offline mode||
 
