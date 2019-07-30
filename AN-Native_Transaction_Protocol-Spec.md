@@ -162,7 +162,7 @@
 - [11 Reference Tables](#11-reference-tables)
 	- [11.1 Transaction Codes](#111-transaction-codes)
 	- [11.2 Response Codes](#112-response-codes)	
-	- [11.3 Account Type](#113-account-type)
+	- [11.3 Account Types](#113-account-type)
 	- [11.4 Product Data Structure](#114-product-data-structure)
 	- [11.5 Customer Data](#115-customer-data)
 	- [11.6 Measurement Unit Codes](#116-measurement-unit-codes)
@@ -732,7 +732,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 				<p align="left">Required</p>
 			</td>
 			<td>
-				<p align="left">Refer to Transaction Codes in Reference Tables Section</p>
+				<p align="left">Refer to [Transactions Codes](#111-transaction-codes) in Reference Tables Section</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -749,7 +749,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 				<p align="left">Required</p>
 			</td>
 			<td>
-				<p align="left">Refer to Account Types in Reference Tables Section</p>
+				<p align="left">Refer to [Account Types](#113-account-type) in Reference Tables Section</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -938,7 +938,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 				<p align="left">Conditional</p>
 			</td>
 			<td>
-				<p align="left">Refer to Product Fields in Field Description section</p>
+				<p align="left">Refer to [Product Fields](#product-fields) in Field Description section</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -972,7 +972,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 				<p align="left">Optional</p>
 			</td>
 			<td>
-				<p align="left">Refer to Measurement Unit Codes in Reference Tables Section</p>
+				<p align="left">Refer to [Measurement Unit Codes](#116-measurement-unit-codes) in Reference Tables Section</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -989,7 +989,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 				<p align="left">Optional</p>
 			</td>
 			<td>
-				<p align="left">Refer to Currency Codes in Reference Tables Section</p>
+				<p align="left">Refer to [Currency Codes](#117-currency-codes) in Reference Tables Section</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1006,7 +1006,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 				<p align="left">Optional</p>
 			</td>
 			<td>
-				<p align="left">Refer to Batch Number in Field Description section</p>
+				<p align="left">Refer to [Batch Number](#batch-number) in Field Description section</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1023,7 +1023,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 				<p align="left">Optional</p>
 			</td>
 			<td>
-				<p align="left">Refer to Shift Number in Field Description section</p>
+				<p align="left">Refer to [Shift Number](#shift-number) in Field Description section</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1040,7 +1040,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 				<p align="left">Required</p>
 			</td>
 			<td>
-				<p align="left">Refer to Transaction Sequence Number in Field Description section</p>
+				<p align="left">Refer to [Transaction Sequence Number](#transaction-sequence-number) in Field Description section</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1091,7 +1091,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 				<p align="left">Required</p>
 			</td>
 			<td>
-				<p align="left">Refer to Track Data in Field Description section</p>
+				<p align="left">Refer to [Track Data](#track-data) in Field Description section</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1108,7 +1108,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 				<p align="left">Conditional</p>
 			</td>
 			<td>
-				<p align="left">Refer to PIN Block in Field Description section</p>
+				<p align="left">Refer to [PIN Block](#pin-block) in Field Description section</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1142,7 +1142,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 				<p align="left">Optional</p>
 			</td>
 			<td>
-				<p align="left">Refer to PIN Block in Field Description section</p>
+				<p align="left">Refer to [PIN Block](#pin-block) in Field Description section</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1159,7 +1159,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 				<p align="left">Conditional</p>
 			</td>
 			<td>
-				<p align="left">Refer to Customer Data in Field Description section</p>
+				<p align="left">Refer to [Customer Data](#customer-data) in Field Description section</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1193,7 +1193,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 				<p align="left">Conditional</p>
 			</td>
 			<td>
-				<p align="left">Refer to Original Data in Field Description section</p>
+				<p align="left">Refer to [Original Data](#original-data) in Field Description section</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1210,7 +1210,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 				<p align="left">Conditional</p>
 			</td>
 			<td>
-				<p align="left">Refer to Authorization Code in Field Description section</p>
+				<p align="left">Refer to [Authorization Code](#authorization-code) in Field Description section</p>
 			</td>
 		</tr>
 		<tr valign="top">
