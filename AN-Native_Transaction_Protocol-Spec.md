@@ -388,7 +388,7 @@ Transactions intended to post a command, for example Authorizations and Pre-Auth
 
 Failure to process the request will be indicated by an HTTP 400’s range status code. The body will contain a single JSON-formatted item with the “ResponseCode”, “ResponseMessage” and “ResponseError” fields.
 
-Refer to [Response Codes](#11.2-response-codes) Table in the Reference Tables section for a complete list of supported codes.
+Refer to [Response Codes](#112-response-codes) Table in the Reference Tables section for a complete list of supported codes.
 
 ## 6 Field Descriptions
 
