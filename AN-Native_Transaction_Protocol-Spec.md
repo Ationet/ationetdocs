@@ -1286,8 +1286,8 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
   
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-				Field Name | Size | Type | Condition | Descriptions/Field Value(s)
-				---------- | ---- | ---- | --------- | ---------------------------
+				| Field Name | Size | Type | Condition | Descriptions/Field Value(s)|
+				| ---------- | ---- | ---- | --------- | ---------------------------|
 				ApplicationType|3|3|Required|Always “FCS” Fleet Control System|ProcessingMode|1|string|Required
 ## 8 Transaction Response (TRESP) Message Format
 
