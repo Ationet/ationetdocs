@@ -659,7 +659,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 |TransactionExtendedData|Var|string|Optional|Designed to capture OBD extended data (On board Devices)|
 |OriginalData|Var|Dictionary|Conditional|Refer to [Original Data](#original-data) in Field Description section|
 |AuthorizationCode|Var|string|Conditional|Refer to [Authorization Code](#authorization-code) in Field Description section|
-|InvoiceNumber|Var|string|Optional|.|
+|InvoiceNumber|Var|string|Optional||
 |ResponseCode|5|string|Conditional|Use only when informing a Response not created by the Host (for example a local authorization), otherwise it should not be echoed from TRESP|
 |ResponseText|20|string|Conditional|Idem Response Code|
 |LongResponseText|200|string|Conditional|Idem Response Code|
@@ -696,8 +696,8 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 |InvoiceNumber|Var|string|Optional||
 |ResponseCode|5|string|Required|“0” = Authorized, !”0” = Not Authorized|
 |ResponseText|20|string|Required|Message from the Network|
-|ReceiptData|Var|string|Conditional|.|
-|LongResponseText|200|string|Conditional|.|
+|ReceiptData|Var|string|Conditional||
+|LongResponseText|200|string|Conditional||
 
 ## 9 Satellite TAG Validation Request (VREQ) Message Format##
 
