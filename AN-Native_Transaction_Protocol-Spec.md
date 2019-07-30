@@ -674,25 +674,25 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 |MessageFormatVersion|3|string|Required|Echoed from TREQ|
 |TerminalIdentification|Var|string|Required|Echoed from TREQ|
 |DeviceTypeIdentifier|1|string|Required|Echoed from TREQ|
-|TransactionCode|3|string|Required|Refer to Transaction Codes in Reference Tables Section|
+|TransactionCode|3|string|Required|Refer to [Transactions Codes](#111-transaction-codes) in Reference Tables Section|
 |AccountType|1|string|Required|Echoed from TREQ|
 |EntryMethod|1|string|Required|Echoed from TREQ|
 |PumpNumber|2|string|Optional|Echoed from TREQ|
-|ProductCode|4|string|Conditional|Refer to Product Fields in Field Description section|
+|ProductCode|4|string|Conditional|Refer to [Product Fields](#product-fields) in Field Description section|
 |ProductUnitPrice|Var|decimal|Conditional|xxx.xxx|
 |ProductAmount|Var|decimal|Conditional|xxxxxxx.xx|
 |ProductQuantity|Var|decimal|Conditional|xxxxxxx.xx|
-|ProductData|Var|List|Conditional|Refer to Product Fields in Field Description section|
+|ProductData|Var|List|Conditional|Refer to [Product Fields](#product-fields) in Field Description section|
 |TransactionAmount|Var|decimal|Conditional|xxxxxxx.xx|
-|UnitCode|Var|string|Optional|Refer to Measurement Unit Codes in Reference Tables Section|
-|CurrencyCode|3|string|Optional|Refer to Currency Codes in Reference Tables Section|
+|UnitCode|Var|string|Optional|Refer to [Measurement Unit Codes](#116-measurement-unit-codes) in Reference Tables Section|
+|CurrencyCode|3|string|Optional|Refer to [Currency Codes](#117-currency-codes) in Reference Tables Section|
 |BatchNumber|Var|int|Optional|Echoed from TREQ|
 |ShiftNumber|Var|string|Optional|Echoed from TREQ|
 |TransactionSequenceNumber|Var|int|Required|Echoed from TREQ|
 |LocalTransactionDate|8|int|Required|Echoed from TREQ|
 |LocalTransactionTime|6|int|Required|Echoed from TREQ|
-|CustomerData|Var|Dictionary|Conditional|Refer to Customer Data in Field Description section|
-|AuthorizationCode|Var|string|Conditional|Refer to Authorization Code in Field Description section|
+|CustomerData|Var|Dictionary|Conditional|Refer to [Customer Data](#customer-data) in Field Description section|
+|AuthorizationCode|Var|string|Conditional|Refer to [Authorization Code](#authorization-code) in Field Description section|
 |InvoiceNumber|Var|string|Optional||
 |ResponseCode|5|string|Required|“0” = Authorized, !”0” = Not Authorized|
 |ResponseText|20|string|Required|Message from the Network|
@@ -707,7 +707,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 |ProcessingMode|1|string|Required|“0” = Host Capture Only “1” = Host processing required|
 |MessageFormatVersion|3|string|Required|Current Host Message Version = “1.2”|
 |TerminalIdentification|Var|string|Required||
-|TransactionCode|3|string|Required|Refer to Transaction Codes in Reference Tables Section|
+|TransactionCode|3|string|Required|Refer to [Transactions Codes](#111-transaction-codes) in Reference Tables Section|
 |LocalDate|8|int|Required|Local Transaction Date: yyyymmdd|
 |LocalTime|6|int|Required|Local Transaction Time: hhmmss|
 |TagId1|Var|string|Required|First TAG’s ID or Secure ID|
@@ -721,7 +721,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 |ProcessingMode|1|string|Required|Echoed from VREQ|
 |MessageFormatVersion|3|string|Required|Echoed from VREQ|
 |TerminalIdentification|Var|string|Required|Echoed from VREQ|
-|TransactionCode|3|string|Required|Refer to Transaction Codes in Reference Tables Section|
+|TransactionCode|3|string|Required|Refer to [Transactions Codes](#111-transaction-codes) in Reference Tables Section|
 |LocalDate|8|int|Required|Echoed from VREQ|
 |LocalTime|6|int|Required|Echoed from VREQ|
 |AuthorizationCode|Var|string|Required|Echoed from VREQ|
