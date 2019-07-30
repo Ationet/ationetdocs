@@ -149,7 +149,7 @@
 	- [Re-prompting & Dual-Card Identification](#re-prompting--dual-card-identification)
 	- [Authorization Code](#authorization-code)
 	- [PIN Block](#pin-block)
-	= [Original Data](#original-data)
+	- [Original Data](#original-data)
 
 - [7 Transaction Request (TREQ) Message Format](#7-transaction-request-treq-message-format)
 
@@ -2366,401 +2366,8 @@ This section brings together the code tables and reference values used in messag
 		</tr>
 	</tbody>
 </table>
-	
-### 11.2 Account Type
 
-<table>
-	<thead>
-		<tr valign="top">
-			<th align="left">
-				Type
-			</th>
-			<th align="left">
-				Description
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr valign="top">
-			<td>
-				<p align="left">“1”</p>
-			</td>
-			<td>
-				<p align="left">ATIONet native track</p>
-			</td>
-		</tr>
-	</tbody>
-</table>	
-
-### 11.3 Product Data Structure
-
-<table>
-	<thead>
-		<tr valign="top">
-			<th align="left">
-				Field Name
-			</th>
-			<th align="left">
-				Size
-			</th>
-			<th align="left">
-				Type
-			</th>
-			<th align="left">
-				Condition
-			</th>
-			<th align="left">
-				Descriptions/Field Value(s)
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr valign="top">
-			<td>
-				<p align="left">ServiceCode</p>
-			</td>
-			<td>
-				<p align="left">1</p>
-			</td>
-			<td>
-				<p align="left">string</p>
-			</td>
-			<td>	
-				<p align="left">Required</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>    
-				<p align="left">ProductCode</p>
-			</td>
-			<td>	
-				<p align="left">4</p>
-			</td>
-			<td>
-				<p align="left">string</p>
-			</td>
-			<td>
-				<p align="left">Required</p>
-			</td>
-			<td>
-				<p align="left">“0”-“9999”</p>
-			</td>
-		</tr>
-		<tr valign="top">		
-			<td>	
-				<p align="left">ProductUnitPrice</p>
-			</td>
-			<td>
-				<p align="left">Var</p>
-			</td>
-			<td>
-				<p align="left">decimal</p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
-				<p align="left">xxx.xxx</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ProductNetAmount</p>
-			</td>
-			<td>
-				<p align="left">Var</p>
-			</td>
-			<td>
-				<p align="left">decimal</p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
-				<p align="left">xxxxxxx.xx</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ProductTaxes</p>
-			</td>
-			<td>
-				<p align="left">Var</p>
-			</td>
-			<td>
-				<p align="left">Dictionary<string, decimal></p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
-				<p align="left"><”[Tax Description]”, [Tax Value]></p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ProductAmount</p>
-			</td>
-			<td>
-				<p align="left">Var</p>
-			</td>
-			<td>
-				<p align="left">decimal</p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
-				<p align="left">xxxxxxx.xx</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ProductQuantity</p>
-			</td>
-			<td>
-				<p align="left">Var</p>
-			</td>
-			<td>
-				<p align="left">decimal</p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
-				<p align="left">xxxxxxx.xx</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">UnitCode</p>
-			</td>
-			<td>
-				<p align="left">Var</p>
-			</td>
-			<td>
-				<p align="left">string</p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
-				<p align="left">Refer to Measurement Unit Codes in Reference Tables Section</p>
-			</td>
-		</tr>
-	</tbody>
-</table>	
-			
-### 11.4 Customer Data
-    
-*Prompt elements*
-<table>
-	<thead>
-		<tr valign="top">
-			<th align="left">
-				Field Name
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr valign="top">
-			<td>
-				<p align="left">PromptOdometer</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">Last Odometer</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">Min Odometer</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">Max Odometer</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">PromptDriverId</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">PromptTruckUnitNumber</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">PromptTrailerNumber</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">PromptEngine Hours</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">Last Engine Hours</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">Min Engine Hours</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">Max Engine Hours</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">PromptMiscellaneous</p>
-			</td>
-		</tr>
-	</tbody>
-</table>	
-
-*Data elements*
-<table>
-	<thead>
-		<tr valign="top">
-			<th align="left">
-				Field Name
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr valign="top">
-			<td>
-				<p align="left">TruckUnitNumber</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">TrailerNumber</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">Odometer</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">EngineHours</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">DriverId</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">Miscellaneous</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">DriverLicenseState</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">DriverLicenseNumber</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">TripNumber</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">PurchaseOrderNumber</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ClientSupportsReceiptDownloading</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">TrailerHourMeterReading</p>
-			</td>
-		</tr>	
-	</tbody>
-</table>
-
-### 11.5 Measurement Unit Codes
-
-<table>
-	<thead>
-		<tr valign="top">
-			<th align="left">
-				Value
-			</th>
-			<th align="left">
-				Description
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr valign="top">
-			<td>
-				<p align="left">“usgal”</p>
-			</td>
-			<td>
-				<p align="left">Gallon USA</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">“ukgal”</p>
-			</td>
-			<td>
-				<p align="left">Gallon UK</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">“l”</p>
-			</td>
-			<td>
-				<p align="left">Litro</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">“m3”</p>
-			</td>
-			<td>
-				<p align="left">Metro Cúbico</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">“kg”</p>
-			</td>
-			<td>
-				<p align="left">Kilogramo</p>
-			</td>
-		</tr>	
-	</tbody>
-</table>
-
-### 11.6 Currency Codes
- 
-Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_4217>)
-
-### 11.7 Authorization Codes
+### 11.2 Response Codes
 
 <table>
 	<thead>
@@ -5952,89 +5559,402 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
         </tr>
 	</tbody>
 </table>
-
-### 11.8 Response Codes
+	
+### 11.3 Account Type
 
 <table>
 	<thead>
 		<tr valign="top">
 			<th align="left">
-				ResponseCode
+				Type
 			</th>
 			<th align="left">
-				ResponseMessage
+				Description
 			</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr valign="top">
 			<td>
-				<p align="left">00000</p>
+				<p align="left">“1”</p>
 			</td>
 			<td>
-				<p align="left">Operation Succeeded</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">40000</p>
-			</td>
-			<td>
-				<p align="left">Invalid Identification Data</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">40001</p>
-			</td>
-			<td>
-				<p align="left">Invalid Filter Data</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">40002</p>
-			</td>
-			<td>
-				<p align="left">User not allowed to use this action</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">40003</p>
-			</td>
-			<td>
-				<p align="left">Invalid Action Code</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">40004</p>
-			</td>
-			<td>
-				<p align="left">Invalid user name or password</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">40005</p>
-			</td>
-			<td>
-				<p align="left">Movement not allowed</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">50000</p>
-			</td>
-			<td>
-				<p align="left">Internal Server Error</p>
+				<p align="left">ATIONet native track</p>
 			</td>
 		</tr>
 	</tbody>
+</table>	
+
+### 11.4 Product Data Structure
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Condition
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">ServiceCode</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>	
+				<p align="left">Required</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>    
+				<p align="left">ProductCode</p>
+			</td>
+			<td>	
+				<p align="left">4</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left">Required</p>
+			</td>
+			<td>
+				<p align="left">“0”-“9999”</p>
+			</td>
+		</tr>
+		<tr valign="top">		
+			<td>	
+				<p align="left">ProductUnitPrice</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">decimal</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">xxx.xxx</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductNetAmount</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">decimal</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">xxxxxxx.xx</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductTaxes</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">Dictionary<string, decimal></p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left"><”[Tax Description]”, [Tax Value]></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductAmount</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">decimal</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">xxxxxxx.xx</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductQuantity</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">decimal</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">xxxxxxx.xx</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">UnitCode</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Refer to Measurement Unit Codes in Reference Tables Section</p>
+			</td>
+		</tr>
+	</tbody>
+</table>	
+			
+### 11.5 Customer Data
+    
+*Prompt elements*
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">PromptOdometer</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Last Odometer</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Min Odometer</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Max Odometer</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PromptDriverId</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PromptTruckUnitNumber</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PromptTrailerNumber</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PromptEngine Hours</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Last Engine Hours</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Min Engine Hours</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Max Engine Hours</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PromptMiscellaneous</p>
+			</td>
+		</tr>
+	</tbody>
+</table>	
+
+*Data elements*
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">TruckUnitNumber</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TrailerNumber</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Odometer</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">EngineHours</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverId</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Miscellaneous</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverLicenseState</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverLicenseNumber</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TripNumber</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PurchaseOrderNumber</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ClientSupportsReceiptDownloading</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TrailerHourMeterReading</p>
+			</td>
+		</tr>	
+	</tbody>
 </table>
+
+### 11.6 Measurement Unit Codes
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Value
+			</th>
+			<th align="left">
+				Description
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">“usgal”</p>
+			</td>
+			<td>
+				<p align="left">Gallon USA</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">“ukgal”</p>
+			</td>
+			<td>
+				<p align="left">Gallon UK</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">“l”</p>
+			</td>
+			<td>
+				<p align="left">Litro</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">“m3”</p>
+			</td>
+			<td>
+				<p align="left">Metro Cúbico</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">“kg”</p>
+			</td>
+			<td>
+				<p align="left">Kilogramo</p>
+			</td>
+		</tr>	
+	</tbody>
+</table>
+
+### 11.7 Currency Codes
  
-### 11.9 Original Data
+Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_4217>)
+
+
+### 11.8 Original Data
 
 <table>
 	<thead>
