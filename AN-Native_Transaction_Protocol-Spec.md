@@ -753,7 +753,7 @@ This section brings together the code tables and reference values used in messag
 |--- |--- |--- |--- |
 |**Authorized**||||
 |00000|Authorized|Authorized||
-|Request Validations||||
+|**Request Validations**||||
 |10000|Invalid date|Invalid date||
 |10001|Invalid time|Invalid time||
 |10002|Invalid seq num|Invalid sequence number||
@@ -993,394 +993,70 @@ This section brings together the code tables and reference values used in messag
 	
 ### 11.3 Account Type
 
-<table>
-	<thead>
-		<tr valign="top">
-			<th align="left">
-				Type
-			</th>
-			<th align="left">
-				Description
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr valign="top">
-			<td>
-				<p align="left">“1”</p>
-			</td>
-			<td>
-				<p align="left">ATIONet native track</p>
-			</td>
-		</tr>
-	</tbody>
-</table>	
+|Type|Description|
+|--- |--- |
+|“1”|ATIONet native track|	
 
 ### 11.4 Product Data Structure
 
-<table>
-	<thead>
-		<tr valign="top">
-			<th align="left">
-				Field Name
-			</th>
-			<th align="left">
-				Size
-			</th>
-			<th align="left">
-				Type
-			</th>
-			<th align="left">
-				Condition
-			</th>
-			<th align="left">
-				Descriptions/Field Value(s)
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr valign="top">
-			<td>
-				<p align="left">ServiceCode</p>
-			</td>
-			<td>
-				<p align="left">1</p>
-			</td>
-			<td>
-				<p align="left">string</p>
-			</td>
-			<td>	
-				<p align="left">Required</p>
-			</td>
-			<td>	
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>    
-				<p align="left">ProductCode</p>
-			</td>
-			<td>	
-				<p align="left">4</p>
-			</td>
-			<td>
-				<p align="left">string</p>
-			</td>
-			<td>
-				<p align="left">Required</p>
-			</td>
-			<td>
-				<p align="left">“0”-“9999”</p>
-			</td>
-		</tr>
-		<tr valign="top">		
-			<td>	
-				<p align="left">ProductUnitPrice</p>
-			</td>
-			<td>
-				<p align="left">Var</p>
-			</td>
-			<td>
-				<p align="left">decimal</p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
-				<p align="left">xxx.xxx</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ProductNetAmount</p>
-			</td>
-			<td>
-				<p align="left">Var</p>
-			</td>
-			<td>
-				<p align="left">decimal</p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
-				<p align="left">xxxxxxx.xx</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ProductTaxes</p>
-			</td>
-			<td>
-				<p align="left">Var</p>
-			</td>
-			<td>
-				<p align="left">Dictionary<string, decimal></p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
-				<p align="left"><”[Tax Description]”, [Tax Value]></p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ProductAmount</p>
-			</td>
-			<td>
-				<p align="left">Var</p>
-			</td>
-			<td>
-				<p align="left">decimal</p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
-				<p align="left">xxxxxxx.xx</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ProductQuantity</p>
-			</td>
-			<td>
-				<p align="left">Var</p>
-			</td>
-			<td>
-				<p align="left">decimal</p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
-				<p align="left">xxxxxxx.xx</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">UnitCode</p>
-			</td>
-			<td>
-				<p align="left">Var</p>
-			</td>
-			<td>
-				<p align="left">string</p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
-				<p align="left">Refer to Measurement Unit Codes in Reference Tables Section</p>
-			</td>
-		</tr>
-	</tbody>
-</table>	
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |--- |
+|ServiceCode|1|string|Required||
+|ProductCode|4|string|Required|“0”-“9999”|
+|ProductUnitPrice|Var|decimal|Optional|xxx.xxx|
+|ProductNetAmount|Var|decimal|Optional|xxxxxxx.xx|
+|ProductTaxes|Var|Dictionary|Optional|<”[Tax Description]”, [Tax Value]>|
+|ProductAmount|Var|decimal|Optional|xxxxxxx.xx|
+|ProductQuantity|Var|decimal|Optional|xxxxxxx.xx|
+|UnitCode|Var|string|Optional|Refer to Measurement Unit Codes in Reference Tables Section|
 			
 ### 11.5 Customer Data
     
 *Prompt elements*
-<table>
-	<thead>
-		<tr valign="top">
-			<th align="left">
-				Field Name
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr valign="top">
-			<td>
-				<p align="left">PromptOdometer</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">Last Odometer</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">Min Odometer</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">Max Odometer</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">PromptDriverId</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">PromptTruckUnitNumber</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">PromptTrailerNumber</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">PromptEngine Hours</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">Last Engine Hours</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">Min Engine Hours</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">Max Engine Hours</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">PromptMiscellaneous</p>
-			</td>
-		</tr>
-	</tbody>
-</table>	
+
+|Field Name|
+|--- |
+|PromptOdometer|
+|Last Odometer|
+|Min Odometer|
+|Max Odometer|
+|PromptDriverId|
+|PromptTruckUnitNumber|
+|PromptTrailerNumber|
+|PromptEngine Hours|
+|Last Engine Hours|
+|Min Engine Hours|
+|Max Engine Hours|
+|PromptMiscellaneous|
+
 
 *Data elements*
-<table>
-	<thead>
-		<tr valign="top">
-			<th align="left">
-				Field Name
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr valign="top">
-			<td>
-				<p align="left">TruckUnitNumber</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">TrailerNumber</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">Odometer</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">EngineHours</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">DriverId</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">Miscellaneous</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">DriverLicenseState</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">DriverLicenseNumber</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">TripNumber</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">PurchaseOrderNumber</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ClientSupportsReceiptDownloading</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">TrailerHourMeterReading</p>
-			</td>
-		</tr>	
-	</tbody>
-</table>
+
+|Field Name|
+|--- |
+|TruckUnitNumber|
+|TrailerNumber|
+|Odometer|
+|EngineHours|
+|DriverId|
+|Miscellaneous|
+|DriverLicenseState|
+|DriverLicenseNumber|
+|TripNumber|
+|PurchaseOrderNumber|
+|ClientSupportsReceiptDownloading|
+|TrailerHourMeterReading|
 
 ### 11.6 Measurement Unit Codes
 
-<table>
-	<thead>
-		<tr valign="top">
-			<th align="left">
-				Value
-			</th>
-			<th align="left">
-				Description
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr valign="top">
-			<td>
-				<p align="left">“usgal”</p>
-			</td>
-			<td>
-				<p align="left">Gallon USA</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">“ukgal”</p>
-			</td>
-			<td>
-				<p align="left">Gallon UK</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">“l”</p>
-			</td>
-			<td>
-				<p align="left">Litro</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">“m3”</p>
-			</td>
-			<td>
-				<p align="left">Metro Cúbico</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">“kg”</p>
-			</td>
-			<td>
-				<p align="left">Kilogramo</p>
-			</td>
-		</tr>	
-	</tbody>
-</table>
+|Value|Description|
+|--- |--- |
+|“usgal”|Gallon USA|
+|“ukgal”|Gallon UK|
+|“l”|Litro|
+|“m3”|Metro Cúbico|
+|“kg”|Kilogramo|
+
 
 ### 11.7 Currency Codes
  
@@ -1389,37 +1065,12 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
 
 ### 11.8 Original Data
 
-<table>
-	<thead>
-		<tr valign="top">
-			<th align="left">
-				Field Name
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr valign="top">
-			<td>
-				<p align="left">TransactionCode</p>
-			</td>
-		</tr>	
-		<tr valign="top">	
-			<td>
-				<p align="left">TransactionSequenceNumber</p>
-			</td>
-		</tr>	
-		<tr valign="top">	
-			<td>
-				<p align="left">LocalTransactionDate</p>
-			</td>
-		</tr>	
-		<tr valign="top">	
-			<td>
-				<p align="left">LocalTransactionTime</p>
-			</td>
-		</tr>
-	</tbody>
-</table>
+|Field Name|
+|--- |
+|TransactionCode|
+|TransactionSequenceNumber|
+|LocalTransactionDate|
+|LocalTransactionTime|
 
 ## 12 Message Samples
 
