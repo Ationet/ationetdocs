@@ -85,11 +85,12 @@ description paragraph.
 
 ### 2.2 Supported Transactions
 
-|Name|Version|Description|
 
+|Name|Version|Description|
 |--- |--- |--- |--- |
 |Send Transaction|1.0|Used to receive and store transactions from gas stations.|
 |Get Transaction|1.0|Send to client the latest transaction done in the specified fueling point.|
+
 
 ## 3 Data Security
 
