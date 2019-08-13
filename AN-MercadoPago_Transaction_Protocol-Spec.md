@@ -114,6 +114,10 @@ Failure to process the request will be indicated by an HTTP 400’s range status
 - **ResponseMessage**: A short message describing the error
 - **ResponseError**: Will contain the stack trace of the error, this helps debug process.
 
+*Sample JSON body*
+
+	{“ResponseCode”:”40001”,”ResponseMessage”:”Site not Found”,”ResponseError”:""}
+
 Refer to [Response Codes](#112-response-codes) Table in the Reference Tables section for a complete list of supported codes.
 
 ## 5 Message Structure
@@ -142,7 +146,7 @@ In the body a Transaction structure should be placed (in JSON format)
 	Content-Type: application/json; charset=utf-8
 
 *Body:*
-If the HTTP response is different than 200, then the following structure is return 
+If the HTTP response code is different than 200, then the following structure is return 
 
 	{“ResponseCode”:”StringValue”,”ResponseMessage”:”StringValue”,”ResponseError”:StringValue}
 
@@ -166,8 +170,8 @@ If the HTTP response is different than 200, then the following structure is retu
 	Content-Type: application/json; charset=utf-8
 
 *Body:*
-If the HTTP request return 200, the body will contain the Transaction structure described before.
-If the  
+If the HTTP request response code is 200, the body will contain the Transaction structure described in section 7.
+If the HTTP response code is different than 200, the structure described in section 4 is return 
 
 	{“Fieldname”:”StringValue”,”FieldName”:”StringValue”,”FieldName”:Value}
 
@@ -319,21 +323,6 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 
 This section brings together the code tables and reference values used in messaging.
 
-### 8.1 Transaction Codes
-|Code|Message|Description|
-|--- |--- |--- |
-|“100”|TREQ|Pre-Authorization REQ|
-|“101”|VREQ|Satellite TAG Validation REQ|
-|“110”|TRESP|Pre-Authorization RESP|
-|“111”|VRESP|Satellite TAG Validation RESP|
-|“120”|TREQ|Completion REQ|
-|“125”|TREQ|Offline REQ|
-|“126”|TREQ|Contingency REQ|
-|“130”|TRESP|Completion RESP|
-|“200”|TREQ|Sale REQ|
-|“210”|TRESP|Sale RESP|
-|“400”|TREQ|Cancellation REQ|
-|“410”|TRESP|Cancellation RESP|
 
 ### 8.2 Response Codes
 |Code|Response Message|Long Response Message|Description|
