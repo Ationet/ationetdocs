@@ -183,143 +183,49 @@ Note: Alphanumeric fields, stated as Type “A/N” in record format tables belo
 
 This section details the purpose and expected behavior on the Controller system for relevant items on the protocol.
 
-#### System Model and System Version
-Brand/Model and Firmware/Software version of the client system. Format and content will be assigned for each vendor during the Integration project.
 
-#### Pump Authorization Values
-Pre-sale Authorizations processed by ATIONet might be (a) Fully-authorized, (b) Partially-authorized, or (c) Declined. Full and partial authorizations may have the same Authorized codes, but a partial authorization only allows to sale a fraction of the requested amount. Controllers must always check the Authorized Amount/Quantity on approved transactions.
+## 7 Order object
 
-The second value relevant for the authorization value is the local authorization limit that can be enforced locally. On any case, the preset sent to the gas pump must be the lesser value between the Authorized Amount/Quantity and the DCR Cutoff Amount.
-
-#### Terminal Identification
-Terminal ID is a system-wide unique ID for the Controller or Terminal device on the capture side. Terminal ID should be configured on the client system during manual installation. The length of the TID’s code depends on the controller.
-
-#### Device Type Identifier
-A single digit field, informed by the Controller system, that identifies the type of capture device. (Manned/Unmanned, Indoor/Outdoor). In case the Controller system doesn’t have the capability to inform this distinction, “4 – Other self-service” should be always informed.
-
-#### Transaction Sequence Number
-The Transaction number is a fixed-length integer value from 1 to 999999 and it is assigned and incremented for each transaction sent to the Host, regardless of the result. It must be reset back to 1 every time it reaches the limit.
-
-#### Entry Method
-The Entry Method code indicates whether the customer identification was manually typed-in, read from a card swipe or any other automatic identification mechanism.
-
-#### Processing Mode
-Indicates whether the Host must apply an alternative process to the request. Regular transactions must inform “1 = Host processing required”
-
-#### Track Data
-This field identifies the account of the transaction.
-
-Track Data field must contain the whole identifier’s information (for example, complete Track 2 data on a magnetic card, or all the TAG’s fields on an AVI capture).
-
-There are two Tracks and PINs field pairs, the Primary and Secondary, on the Primary, the Controller must send the track of the identifier used to initiate the capture transaction (first card presented) and the Secondary should contain the complementary identification (if used). For example if the transaction is initiated presenting a Driver Card that also requires a Vehicle Identification, Primary will be the Driver and Secondary will be the Vehicle.
-
-The Primary identification will mandate the sub-account to be charged for the transaction, the Secondary will be used for rules validation but will not be affected on its balance.
-
-#### Batch Number
-Optional information, if informed, ATIONet will use this field for report filtering and queries.
-
-If used, data must be formatted as an 11 digit number: yyyymmddbbb. Year (4 digits), Month (2 digits), Day (2 digits), Batch/Shift number (3 digits, padded with zeros). Date part must be the starting date of the batch. Batch number must wrap-around to 1 after reaching 999.
-
-If there is no batch functionality at all, the recommended format is Transaction Date plus 3 zeros.
-
-#### Shift Number
-Optional information, if informed, ATIONet will use this field for report filtering and queries.
-
-The Controller application can manage the Shift Number and meaning as needed. It may be day’s shift number, weekly batches, split-batches, etc., although this is a fixed length field, therefore the format must be maintained.
-
-If there is no batch or shift functionality at all, the recommended format is the business date of the transaction followed of 3 zeros.
-
-#### Product Fields
-Transaction messages include a list of Product fields, plus a Product Taxes compound field plus and a Product Data compound field, the later will be used only on multi-product transactions.
-
-On single product messages, like a simple fueling transaction, product’s amount and other details must be sent on the fields included in the main body of the message. When the sale includes more than one product, the first one must be sent on the main body and rest on the Product Data structure. Fuel presets will only work for the product in the main body; therefore, first product in the list should be the fuel sale if there is any.
-
-Refer to [Product Data Structure](#114-product-data-structure) Table on the Reference Tables Section.
-
-Transaction authorization and register is based on ProductAmount and ProductQuantity; taxes and net amount fields are optional and are not considered by ATIOnet during transaction processing, but those fields may be used later for billing and reporting. Therefore, although optional at the protocol level, those might be required for certain integration projects for a given market or functional scope.
-
-ATIONet expects standard NACS product codes. Although it can also map custom product codes for each site, Host-based product mapping is not recommended due to the extra administrative burden.
-
-*Product Restrictions & Authorization limits on Fuel Transactions (FCS)*
-
-Pre-Authorization Requests support different business scenarios:
-
-**REMOVE**
-
-|Scenario|Relevant fields values|Description|
-|--- |--- |--- |
-|Zero Authorization \ Any product|Product Amount = 0Product Quantity = 0Product Code = NULLProduct Unit Price = NULL or != NULL|Terminal doesn’t enforce any pre-auth value and the user didn’t select a specific product (or the client system doesn’t have product identification capabilities).ATIONet will authorize according to: <br/><br/>1.  If there is any product restriction the host will respond with a Product Code otherwise will echo the NULL Product code, confirming any product authorization.<br/>2.  If Product Unit Price is NULL and exists any price configuration the host will respond with a Product Unit Price otherwise will echo the Product Unit Price.<br/>3.  Establish amount and quantity limits based on rules and current account.<br/>4.  If the current account is based on quantity and the Terminal supports product authorization, the Host will limit by Product Quantity (with Product Code)<br/>5.  If the current account is based on quantity and the Terminal doesn’t supports product authorization, the Host will limit by Product Amount if exists Product Unit Price, otherwise the transaction will be declined. <br/>6.  If the current account is based on money and the Terminal supports amount authorization, the Host will limit by Product Amount.<br/>7.  If the current account is based on amount and the Terminal doesn’t supports amount authorization, the Host will limit by Product Quantity (with Product Code) if exists Product Unit Price, otherwise the transaction will be declined|
-|Zero Authorization \ Specific product|Product Amount = 0 Product Quantity = 0 Product Code != NULL Product Unit Price = NULL or != NULL | Open value transaction for a specific product.ATIONet will authorize according to:<br/><br/>1.  If there is any product restriction will be validated first. <br/>2.  2) 3) 4) 5) 6) and 7) Equal than Zero Authorization any product.|
-|Amount Authorization|Product Amount > 0 Product Quantity = 0 Product code = NULL or != NULL Product Unit Price = NULL or != NULL|Amount requested, any or specific product. ATIONet will authorize according to:<br/><br/>1.  If there is any product restriction the host will respond with a Product Code otherwise will echo the NULL Product code, confirming any product authorization.<br/>2.  If Product Unit Price is NULL and exists any price configuration the host will respond with a Product Unit Price otherwise will echo the Product Unit Price.<br/>3.  Establish amount limits based on rules and current account. If exists quantity limits and Product Unit Price is NULL the transaction will be declined.<br/>4.  5) 6) and 7) Equal than Zero Authorization any product.|
-|Quantity Authorization|Product Amount = 0 Product Quantity > 0 Product code = NULL or != NULL Product Unit Price = NULL or != NULL|Quantity requested, any or specific product. <br/>ATIONet will authorize according to:<br/>1.  If there is any product restriction the host will respond with a Product Code otherwise will echo the NULL Product code, confirming any product authorization. <br/>2.  If Product Unit Price is NULL and exists any price configuration the host will respond with a Product Unit Price otherwise will echo the Product Unit Price. <br/>3.  Establish quantity limits based on rules and current account. If exists amount limits and Product Unit Price is NULL the transaction will be  declined.<br/>4.  5) 6) and 7) Equal than Zero Authorization any product.|
-
-
-Transaction Amount is not relevant on Authorization requests in this version of the protocol as Dry Products sale is not yet available, on future versions, the Transaction Amount will be validated against the whole balance of the sub-account while Product figures will be evaluated against fuel product rules and restrictions.
-
-In this version of the protocol, Transaction Amount should always match the Product Amount in Completions and Sales TREQs.
-
-As described above, on certain situations, the Host will answer a Pre-Authorization request with an unsolicited Product Code; the Terminal must enforce such product restriction, otherwise the Completion will be declined.
-
-With commercial and industrial system that don’t control fuel price, the Controller should use a \$1 unit price for all available products to
-avoid potential declines due to the lack of unit price to resolve amount restrictions.
-
-#### Customer Data
-Customer data on a TREQ contains extra information gathered from prompts to the Cardholder or Attendant. On a TRESP, it contains the list of prompts that must be presented to the Cardholder or Attendant or a list of values to be used by the Terminal at capture, transaction or receipt printing.
-
-*Prompt elements vs. Data elements*
-
-Customer Data subfields can be Prompts or Data. Values contained on a Prompt are sent by the Host to be used by the Terminal to support the local processing of the prompt’s, for example minimum and maximum odometer values. ATIONet can send and receive Data elements.
-
-Refer to Customer Data Codes Table in the Reference Tables section for a complete list of supported field names.
-
-
-#### Authorization Code
-The Host will return the Authorization Code on all approved transactions.
-On Pre-Authorization/Completions message flows, the Controller must keep the Authorization Code sent on the Pre-Authorization TRESP and send it
-back to the Host on the Completion TREQ. This is a mandatory feature.
-
-Refer to Authorization Codes Table in the Reference Tables section for a complete list of supported codes.
-
-#### PIN Block
-The PIN entry on plain text, when the whole message or the communication themselves are encrypted.
-
-#### Original Data
-Original data on a TREQ contains extra information related to the original transaction that we want to cancel. Used only in zero completions without authorization code and cancellations transactions.
-
-Refer to [Original Data](#118-original-data) Table in the Reference Tables section for a complete list of supported field names.
-
-## 7 Transaction Structure
-
-|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|Field Name|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
-|ApplicationType|3|string|Required|Always “FCS” Fleet Control System|
-|ProcessingMode|1|string|Required|“0” = Host Capture Only “1” = Host Processing Required“2” = Operator Assisted Capture|
-|SiteId|Var|string|Required|Terminal Identification|
-|PumpId|Var|string|Required|Terminal Identification|
-|DeviceTypeIdentifier|1|string|Required|“1” = Indoor Payment Terminal “2” = Outdoor Payment Terminal “3” = Card Reader in Dispenser “4” = Other Self-Service|
-|TransactionCode|3|string|Required|Refer to [Transactions Codes](#111-transaction-codes) in Reference Tables Section|
-|AccountType|1|string|Required|Refer to [Account Types](#113-account-type) in Reference Tables Section|
-|EntryMethod|1|string|Required|“M” Manual Entry “S” Swap Card “T” Tag read|
-|PumpNumber|2|string|Optional|“00”-“99”|
-|ProductCode|4|string|Optional|“0”-“9999”|
-|ProductUnitPrice|Var|decimal|Optional|xxx.xxx|
-|ProductNetAmount|Var|decimal|Optional|xxxxxxx.xx|
-|ProductTaxes|Var|Dictionary|Optional|<”[Tax Description]”, [Tax Value]\>|
-|ProductAmount|Var|decimal|Optional|xxxxxxx.xx|
-|ProductQuantity|Var|decimal|Optional|xxxxxxx.xx|
-|TransactionNetAmount|Var|decimal|Optional|xxxxxxx.xx|
-|ProductData|Var|List|Conditional|Refer to [Product Fields](#product-fields) in Field Description section|
-|TransactionAmount|Var|decimal|Optional|xxxxxxx.xx|
-|UnitCode|Var|string|Optional|Refer to [Measurement Unit Codes](#116-measurement-unit-codes) in Reference Tables Section|
-|CurrencyCode|3|string|Optional|Refer to [Currency Codes](#117-currency-codes) in Reference Tables Section|
-|BatchNumber|Var|int|Optional|Refer to [Batch Number](#batch-number) in Field Description section|
-|ShiftNumber|Var|string|Optional|Refer to [Shift Number](#shift-number) in Field Description section|
-|LocalTransactionDate|8|int|Required|Local Transaction Date: yyyymmdd|
-|LocalTransactionTime|6|int|Required|Local Transaction Time: hhmmss|
-|CustomerData|Var|Dictionary|Conditional|Refer to [Customer Data](#customer-data) in Field Description section|
-|OriginalData|Var|Dictionary|Conditional|Refer to [Original Data](#original-data) in Field Description section|
-|InvoiceNumber|Var|string|Optional|.|
+|collector_id|Long|Required| Identificador de la cuenta de Mercado Pago a la que se le acreditarán los pagos.|
+|sponsor_id|Long|Required|Identificador de una cuenta de Mercado Pago que integra la solución.|
+|external_reference|String|Required|Referencia para sincronizar con tu sistema.|
+|notification_url|String|Required|URL a la cual se enviarán las notificaciones, definida por el integrador.
+|items|Array|Required|Lista de los productos, donde cada item es un object con los siguientes campos:
+|loyalty|Object|Required|Datos necesarios para sumar puntos en un determinado programa de fidelización|
 
+##7.1 Items object
+
+
+|Field Name|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |--- |
+|title|String|Required|Nombre del producto.
+|quantity|Entero|Required|Cantidad de este producto.
+|unit_price|Decimal|Required|Precio unitario del producto.
+
+
+##7.2 Loyalty object
+
+|Field Name|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |--- |
+|program|String|Required|Programa de fidelización (serviclub, payback, etc.)
+|transaction_id|String|Required|Número de transacción.
+|invoice_number|String|Required|Número de comprobante.
+|transaction_date|String|Required|Fecha y hora de la transacción (ISO 8601).
+|transaction_amount|Decimal|Required|Importe total de la transacció.
+|store_id|String|Required|Identificador único del negocio (identificador de estación de servicio o APIES).
+|products|Array|Required|Lista de los productos comprados con los siguientes atributos
+|code|String|Required|Código del producto.
+|quantity|Decimal o entero|Required|Por ejemplo 20.50 litros.
+|unit_price|Decimal|Required|Precio unitario del producto.
+|unit|String|Required|Unidad de medida si aplica (litre, etc.)
+|cashier_identification|Object|Required|Datos del empleado
+|type|String|Required|Tipo de documento (DNI, INE, etc.)
+|number|String|Required|Id de documento.
+|period|String|Required|Número del período.
+|shift|String|Required|Número del turno.
+|affinity_plan|String|Required|Plan de afinidad.
 
 ## 8 Reference Tables
 
