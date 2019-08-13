@@ -77,15 +77,16 @@ description paragraph.
 
 ### 2.1 Scope Details
 
-Protocol: ATIONet Mercado Pago Transaction Protocol
+**Protocol**: ATIONet Mercado Pago Transaction Protocol
 
-Version: Version 1.0
+**Version**: Version 1.0
 
-API Base URI: mercadopago.ationet.com/v1/
+**API Base URI**: mercadopago.ationet.com/v1/
 
 ### 2.2 Supported Transactions
 
 |Name|Version|Description|
+
 |--- |--- |--- |--- |
 |Send Transaction|1.0|Used to receive and store transactions from gas stations.|
 |Get Transaction|1.0|Send to client the latest transaction done in the specified fueling point.|
