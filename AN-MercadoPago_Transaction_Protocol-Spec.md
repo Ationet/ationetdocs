@@ -200,7 +200,7 @@ This section details the purpose and expected behavior on the Controller system 
 |unit_price|Decimal|Required|Precio unitario del producto.
 
 
-##7.2 Loyalty object
+###7.2 Loyalty object
 |Field Name|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
 |program|String|Required|Programa de fidelización (serviclub, payback, etc.)
