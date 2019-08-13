@@ -418,7 +418,7 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
 
 ## 9 Message Samples
 
-### 9.1 Pre Authorization Sample
+### 9.1 POST Sample
 
 ```json
 {
@@ -452,52 +452,6 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
     "TransactionNetAmount": null,
     "TransactionAmount": null,
     "AuthorizationCode": null,
-    "ServiceCode": null,
-    "BatchNumber": null,
-    "ShiftNumber": null,
-    "TransactionExtendedData": null,
-    "InvoiceNumber": null,
-    "ResponseCode": null,
-    "ResponseText": null,
-    "ReceiptData": null
-}
-```
-
-### 9.2 Completion Sample
-
-```json
-{
-    "ProcessingMode": "1",
-    "SystemModel": "",
-    "SystemVersion": "",
-    "TransactionCode": "120",
-    "EntryMethod": "S",
-    "CurrencyCode": "ARS",
-    "UnitCode": "l",
-    "ApplicationType": "FCS",
-    "AccountType": "1",
-    "MessageFormatVersion": "1.3",
-    "DeviceTypeIdentifier": "4",
-    "PumpNumber": "1",
-    "AuthorizationCode": "032524100",
-    "TerminalIdentification": "AN111111",
-    "TransactionSequenceNumber": 2,
-    "LocalTransactionDate": 20190614,
-    "LocalTransactionTime": 122000,
-    "PrimaryTrack": "9532013015986508780=3905=000000",
-    "PrimaryPin": null,
-    "SecondaryTrack": null,
-    "SecondaryPin": null,
-    "ProductCode": "3",
-    "ProductQuantity": null,
-    "ProductAmount": 20,
-    "TransactionAmount": null,
-    "ProductUnitPrice": 5,
-    "ProductNetAmount": null,
-    "ProductTaxes": null,
-    "TransactionNetAmount": null,
-    "CustomerData": {},
-    "OriginalData": {},
     "ServiceCode": null,
     "BatchNumber": null,
     "ShiftNumber": null,
