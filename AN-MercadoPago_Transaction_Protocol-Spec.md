@@ -84,8 +84,6 @@ description paragraph.
 **API Base URI**: mercadopago.ationet.com/v1/
 
 ### 2.2 Supported Transactions
-
-
 |Name|Version|Description|
 |--- |--- |--- |--- |
 |Send Transaction|1.0|Used to receive and store transactions from gas stations.|
@@ -185,7 +183,6 @@ This section details the purpose and expected behavior on the Controller system 
 
 
 ## 7 Order object
-
 |Field Name|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
 |collector_id|Long|Required| Identificador de la cuenta de Mercado Pago a la que se le acreditarán los pagos.|
@@ -196,8 +193,6 @@ This section details the purpose and expected behavior on the Controller system 
 |loyalty|Object|Required|Datos necesarios para sumar puntos en un determinado programa de fidelización|
 
 ##7.1 Items object
-
-
 |Field Name|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
 |title|String|Required|Nombre del producto.
@@ -206,7 +201,6 @@ This section details the purpose and expected behavior on the Controller system 
 
 
 ##7.2 Loyalty object
-
 |Field Name|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
 |program|String|Required|Programa de fidelización (serviclub, payback, etc.)
