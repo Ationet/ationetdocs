@@ -454,124 +454,13 @@ ATIONet expects standard NACS product codes. Although it can also map custom pro
 
 Pre-Authorization Requests support different business scenarios:
 
-<table>
-	<thead>
-		<tr valign="top">
-			<th align="left">
-				Scenario
-			</th>
-			<th align="left">
-				Relevant fields values
-			</th>
-			<th align="left">
-				Description
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr valign="top">
-			<td>
-				<p align="left">Zero Authorization \ Any product</p>
-			</td>
-			<td>
-				<p align="left">
-					Product Amount = 0
-					<br>Product Quantity = 0
-					<br>Product Code = NULL
-					<br>Product Unit Price = NULL or != NULL
-				</p>
-			</td>
-			<td>
-				<p align="left">
-					Terminal doesn’t enforce any pre-auth value and the user didn’t select a specific product (or the client system doesn’t have product identification capabilities).
-					<br>
-					ATIONet will authorize according to:
-					<br>
-					<br>1.  If there is any product restriction the host will respond with a Product Code otherwise will echo the NULL Product code, confirming any product authorization.
-					<br>2.  If Product Unit Price is NULL and exists any price configuration the host will respond with a Product Unit Price otherwise will echo the Product Unit Price.
-					<br>3.  Establish amount and quantity limits based on rules and current account.
-					<br>4.  If the current account is based on quantity and the Terminal supports product authorization, the Host will limit by Product Quantity (with Product Code)
-					<br>5.  If the current account is based on quantity and the Terminal doesn’t supports product authorization, the Host will limit by Product Amount if exists Product Unit Price, otherwise the transaction will be declined
-					<br>6.  If the current account is based on money and the Terminal supports amount authorization, the Host will limit by Product Amount.
-					<br>7.  If the current account is based on amount and the Terminal doesn’t supports amount authorization, the Host will limit by Product Quantity (with Product Code) if exists Product Unit Price, otherwise the transaction will be declined
-				</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">Zero Authorization \ Specific product</p>
-			</td>
-			<td>
-				<p align="left">
-					Product Amount = 0
-					<br>Product Quantity = 0
-					<br>Product Code != NULL
-					<br>Product Unit Price = NULL or != NULL
-				</p>
-			</td>
-			<td>
-				<p align="left">
-					Open value transaction for a specific product.
-					<br>
-					ATIONet will authorize according to:
-					<br>
-					<br>1.  If there is any product restriction will be validated first.
-					<br>2.  2) 3) 4) 5) 6) and 7) Equal than Zero Authorization any product.
-				</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">Amount Authorization</p>
-			</td>
-			<td>
-				<p align="left">
-					Product Amount > 0
-					<br>Product Quantity = 0
-					<br>Product code = NULL or != NULL
-					<br>Product Unit Price = NULL or != NULL
-				</p>
-			</td>
-			<td>
-				<p align="left">
-					Amount requested, any or specific product.
-					<br>
-					ATIONet will authorize according to:
-					<br>
-					<br>1.  If there is any product restriction the host will respond with a Product Code otherwise will echo the NULL Product code, confirming any product authorization.
-					<br>2.  If Product Unit Price is NULL and exists any price configuration the host will respond with a Product Unit Price otherwise will echo the Product Unit Price.
-					<br>3.  Establish amount limits based on rules and current account. If exists quantity limits and Product Unit Price is NULL the transaction will be declined.
-					<br>4.  5) 6) and 7) Equal than Zero Authorization any product.
-				</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">Quantity Authorization</p>
-			</td>
-			<td>
-				<p align="left">
-					Product Amount = 0
-					<br>Product Quantity > 0
-					<br>Product code = NULL or != NULL
-					<br>Product Unit Price = NULL or != NULL
-				</p>
-			</td>
-			<td>
-				<p align="left">
-					Quantity requested, any or specific product.
-					<br>
-					ATIONet will authorize according to:
-					<br>
-					<br>1.  If there is any product restriction the host will respond with a Product Code otherwise will echo the NULL Product code, confirming any product authorization.
-					<br>2.  If Product Unit Price is NULL and exists any price configuration the host will respond with a Product Unit Price otherwise will echo the Product Unit Price.
-					<br>3.  Establish quantity limits based on rules and current account. If exists amount limits and Product Unit Price is NULL the transaction will be  declined.
-					<br>4.  5) 6) and 7) Equal than Zero Authorization any product.
-				</p>
-			</td>
-		</tr>
-	</tbody>
-</table>
+|Scenario|Relevant fields values|Description|
+|--- |--- |--- |
+|Zero Authorization \ Any product|Product Amount = 0Product Quantity = 0Product Code = NULLProduct Unit Price = NULL or != NULL|Terminal doesn’t enforce any pre-auth value and the user didn’t select a specific product (or the client system doesn’t have product identification capabilities).ATIONet will authorize according to: <br/><br/>1.  If there is any product restriction the host will respond with a Product Code otherwise will echo the NULL Product code, confirming any product authorization.<br/>2.  If Product Unit Price is NULL and exists any price configuration the host will respond with a Product Unit Price otherwise will echo the Product Unit Price.<br/>3.  Establish amount and quantity limits based on rules and current account.<br/>4.  If the current account is based on quantity and the Terminal supports product authorization, the Host will limit by Product Quantity (with Product Code)<br/>5.  If the current account is based on quantity and the Terminal doesn’t supports product authorization, the Host will limit by Product Amount if exists Product Unit Price, otherwise the transaction will be declined. <br/>6.  If the current account is based on money and the Terminal supports amount authorization, the Host will limit by Product Amount.<br/>7.  If the current account is based on amount and the Terminal doesn’t supports amount authorization, the Host will limit by Product Quantity (with Product Code) if exists Product Unit Price, otherwise the transaction will be declined|
+|Zero Authorization \ Specific product|Product Amount = 0 Product Quantity = 0 Product Code != NULL Product Unit Price = NULL or != NULL | Open value transaction for a specific product.ATIONet will authorize according to:<br/><br/>1.  If there is any product restriction will be validated first. <br/>2.  2) 3) 4) 5) 6) and 7) Equal than Zero Authorization any product.|
+|Amount Authorization|Product Amount > 0 Product Quantity = 0 Product code = NULL or != NULL Product Unit Price = NULL or != NULL|Amount requested, any or specific product. ATIONet will authorize according to:<br/><br/>1.  If there is any product restriction the host will respond with a Product Code otherwise will echo the NULL Product code, confirming any product authorization.<br/>2.  If Product Unit Price is NULL and exists any price configuration the host will respond with a Product Unit Price otherwise will echo the Product Unit Price.<br/>3.  Establish amount limits based on rules and current account. If exists quantity limits and Product Unit Price is NULL the transaction will be declined.<br/>4.  5) 6) and 7) Equal than Zero Authorization any product.|
+|Quantity Authorization|Product Amount = 0 Product Quantity > 0 Product code = NULL or != NULL Product Unit Price = NULL or != NULL|Quantity requested, any or specific product. <br/>ATIONet will authorize according to:<br/>1.  If there is any product restriction the host will respond with a Product Code otherwise will echo the NULL Product code, confirming any product authorization. <br/>2.  If Product Unit Price is NULL and exists any price configuration the host will respond with a Product Unit Price otherwise will echo the Product Unit Price. <br/>3.  Establish quantity limits based on rules and current account. If exists amount limits and Product Unit Price is NULL the transaction will be  declined.<br/>4.  5) 6) and 7) Equal than Zero Authorization any product.|
+
 
 Transaction Amount is not relevant on Authorization requests in this version of the protocol as Dry Products sale is not yet available, on future versions, the Transaction Amount will be validated against the whole balance of the sub-account while Product figures will be evaluated against fuel product rules and restrictions.
 
