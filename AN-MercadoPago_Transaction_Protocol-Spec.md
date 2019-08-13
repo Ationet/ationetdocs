@@ -188,38 +188,37 @@ This section details the purpose and expected behavior on the Controller system 
 |collector_id|Long|Required| Identificador de la cuenta de Mercado Pago a la que se le acreditarán los pagos.|
 |sponsor_id|Long|Required|Identificador de una cuenta de Mercado Pago que integra la solución.|
 |external_reference|String|Required|Referencia para sincronizar con tu sistema.|
-|notification_url|String|Required|URL a la cual se enviarán las notificaciones, definida por el integrador.
-|items|Array|Required|Lista de los productos, donde cada item es un object con los siguientes campos:
+|notification_url|String|Required|URL a la cual se enviarán las notificaciones, definida por el integrador.|
+|items|Array|Required|Lista de los productos, donde cada item es un object con los siguientes campos|
 |loyalty|Object|Required|Datos necesarios para sumar puntos en un determinado programa de fidelización|
 
 ##7.1 Items object
 |Field Name|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
-|title|String|Required|Nombre del producto.
-|quantity|Entero|Required|Cantidad de este producto.
-|unit_price|Decimal|Required|Precio unitario del producto.
+|title|String|Required|Nombre del producto.|
+|quantity|Entero|Required|Cantidad de este producto.|
+|unit_price|Decimal|Required|Precio unitario del producto.|
 
-
-###7.2 Loyalty object
+##7.2 Loyalty object
 |Field Name|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
-|program|String|Required|Programa de fidelización (serviclub, payback, etc.)
-|transaction_id|String|Required|Número de transacción.
-|invoice_number|String|Required|Número de comprobante.
-|transaction_date|String|Required|Fecha y hora de la transacción (ISO 8601).
-|transaction_amount|Decimal|Required|Importe total de la transacció.
-|store_id|String|Required|Identificador único del negocio (identificador de estación de servicio o APIES).
-|products|Array|Required|Lista de los productos comprados con los siguientes atributos
-|code|String|Required|Código del producto.
-|quantity|Decimal o entero|Required|Por ejemplo 20.50 litros.
-|unit_price|Decimal|Required|Precio unitario del producto.
-|unit|String|Required|Unidad de medida si aplica (litre, etc.)
-|cashier_identification|Object|Required|Datos del empleado
-|type|String|Required|Tipo de documento (DNI, INE, etc.)
-|number|String|Required|Id de documento.
-|period|String|Required|Número del período.
-|shift|String|Required|Número del turno.
-|affinity_plan|String|Required|Plan de afinidad.
+|program|String|Required|Programa de fidelización (serviclub, payback, etc.)|
+|transaction_id|String|Required|Número de transacción.|
+|invoice_number|String|Required|Número de comprobante.|
+|transaction_date|String|Required|Fecha y hora de la transacción (ISO 8601).|
+|transaction_amount|Decimal|Required|Importe total de la transacció.|
+|store_id|String|Required|Identificador único del negocio (identificador de estación de servicio o APIES).|
+|products|Array|Required|Lista de los productos comprados con los siguientes atributos|
+|code|String|Required|Código del producto.|
+|quantity|Decimal o entero|Required|Por ejemplo 20.50 litros.|
+|unit_price|Decimal|Required|Precio unitario del producto.|
+|unit|String|Required|Unidad de medida si aplica (litre, etc.)|
+|cashier_identification|Object|Required|Datos del empleado|
+|type|String|Required|Tipo de documento (DNI, INE, etc.)|
+|number|String|Required|Id de documento.|
+|period|String|Required|Número del período.|
+|shift|String|Required|Número del turno.|
+|affinity_plan|String|Required|Plan de afinidad.|
 
 ## 8 Reference Tables
 
