@@ -185,7 +185,7 @@ This section details the purpose and expected behavior on the Controller system 
 ## 7 Order object
 |Field Name|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
-|collector_id|Long|Required| Identificador de la cuenta de Mercado Pago a la que se le acreditarán los pagos.|
+|collector_id|Long|Required|Identificador de la cuenta de Mercado Pago a la que se le acreditarán los pagos.|
 |sponsor_id|Long|Required|Identificador de una cuenta de Mercado Pago que integra la solución.|
 |external_reference|String|Required|Referencia para sincronizar con tu sistema.|
 |notification_url|String|Required|URL a la cual se enviarán las notificaciones, definida por el integrador.|
