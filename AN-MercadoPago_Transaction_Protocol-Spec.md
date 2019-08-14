@@ -30,24 +30,6 @@
 
 - [5 Error Handling](#5-error-handling)
 
-- [6 Field descriptions](#6-field-descriptions)
-	- [System Model and System Version](#system-model-and-system-version)
-	- [Pump Authorization Values](#pump-authorization-values)
-	- [Terminal Identification](#terminal-identification)
-	- [Device Type Identifier](#device-type-identifier)
-	- [Transaction Sequence Number](#transaction-sequence-number)
-	- [Entry Method](#entry-method)
-	- [Processing Mode](#processing-mode)
-	- [Track Data](#track-data)
-	- [Batch Number](#batch-number)
-	- [Shift Number](#shift-number)
-	- [Product Fields](#product-fields)
-	- [Customer Data](#customer-data)
-	- [Re-prompting & Dual-Card Identification](#re-prompting--dual-card-identification)
-	- [Authorization Code](#authorization-code)
-	- [PIN Block](#pin-block)
-	- [Original Data](#original-data)
-
 - [7 Transaction Request (TREQ) Message Format](#7-transaction-request-treq-message-format)
 
 - [8 Reference Tables](#11-reference-tables)
@@ -162,10 +144,6 @@ If the HTTP response code is different than 200, then the following structure is
 
 
 Note: Alphanumeric fields, stated as Type “A/N” in record format tables below show the maximum possible length as the Size, although in JSON-formatted strings they will be represented with trailing spaces trimmed.
-
-## 6 Field Descriptions
-
-This section details the purpose and expected behavior on the Controller system for relevant items on the protocol.
 
 
 ## 7 Order object
