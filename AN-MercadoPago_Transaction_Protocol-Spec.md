@@ -138,7 +138,7 @@ Response Body:
 |---|---|
 |pump_id|The pump where the sale was done|
 |reference_number|The sale number provided by the controller in the command "C"|
-|action|If "L" the controller needs to lock the sale, if "P", the controller needs to pay the transaction. Both actions needs to be done with "B" command|
+|action|If "L" the controller needs to lock the transaction, if "P", the controller needs to pay the transaction. Both actions needs to be done with "B" command|
 
 #### Confirm Status (B)
 Request Body:
