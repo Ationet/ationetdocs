@@ -94,8 +94,6 @@ Any interaction with the API will return a single JSON-formatted item with the �
 
 Failure to process the request will be indicated by an HTTP 400’s range status code. The body will contain a single JSON-formatted item with the “ResponseCode”, “ResponseMessage” and “ResponseError” fields.
 
-
-
 - **ResponseCode**: Will contain a unique code for that specific error
 - **ResponseMessage**: A short message describing the error
 - **ResponseError**: Will contain the stack trace of the error, this helps debug process.
@@ -172,7 +170,7 @@ This section details the purpose and expected behavior on the Controller system 
 
 ## 7 Order object
 |Field Name|Type|Condition|Descriptions/Field Value(s)|
-|--- |--- |--- |--- |--- |
+|---|---|---|---|
 |collector_id|Long|Required|Identificador de la cuenta de Mercado Pago a la que se le acreditarán los pagos.|
 |sponsor_id|Long|Required|Identificador de una cuenta de Mercado Pago que integra la solución.|
 |external_reference|String|Required|Referencia para sincronizar con tu sistema.|
@@ -182,14 +180,14 @@ This section details the purpose and expected behavior on the Controller system 
 
 ##7.1 Items object
 |Field Name|Type|Condition|Descriptions/Field Value(s)|
-|--- |--- |--- |--- |--- |
+|---|---|---|---|
 |title|String|Required|Nombre del producto.|
 |quantity|Entero|Required|Cantidad de este producto.|
 |unit_price|Decimal|Required|Precio unitario del producto.|
 
 ##7.2 Loyalty object
 |Field Name|Type|Condition|Descriptions/Field Value(s)|
-|--- |--- |--- |--- |--- |
+|---|---|---|---|
 |program|String|Required|Programa de fidelización (serviclub, payback, etc.)|
 |transaction_id|String|Required|Número de transacción.|
 |invoice_number|String|Required|Número de comprobante.|
@@ -215,7 +213,7 @@ This section brings together the code tables and reference values used in messag
 
 ### 8.2 Response Codes
 |Code|Response Message|Long Response Message|Description|
-|--- |--- |--- |--- |
+|---|---|---|---|
 |**Authorized**||||
 |00000|Authorized|Authorized||
 |**Request Validations**||||
