@@ -124,7 +124,7 @@ Refer to [Response Codes](#112-response-codes) Table in the Reference Tables sec
 
 #### Commands flow
 ![ationetlogo](Content/Images/mercadoPagoFlow.jpeg)
-####Get Status (A)
+#### Get Status (A)
 Request Body:
 
 	{"transaction_code":"A","site_id":"123456"}
@@ -140,7 +140,7 @@ Response Body:
 |reference_number|The sale number provided by the controller in the command "C"|
 |action|If "L" the controller needs to lock the sale, if "P", the controller needs to pay the transaction. Both actions needs to be done with "B" command|
 
-####Confirm Status (B)
+#### Confirm Status (B)
 Request Body:
 
 	{"transaction_code":"B","site_id":"123456","pump_id":"7"}
@@ -151,7 +151,7 @@ If the HTTP response code is different than 200, then the following structure is
 	{“ResponseCode”:”StringValue”,”ResponseMessage”:”StringValue”,”ResponseError”:"StringValue"}
 
 
-####Send Transaction (C)
+#### Send Transaction (C)
 Request Body:
 
 	{"transaction_code":"C","site_id":"123456","pump_id":"7","reference_number":"975321"}
