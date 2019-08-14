@@ -44,7 +44,7 @@
 - [9 Message Samples](#10-message-samples)
 	- [9.1 Pre Authorization Sample](#101-pre-authorization-samples)
 	- [9.2 Completion Sample](#102-completion-sample)
-- [Appendix A - Native Authorization Protocol Messages](#appendix-a---native-authorization-protocol-messages)
+
 
 ## Overview
 
