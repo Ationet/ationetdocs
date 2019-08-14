@@ -97,7 +97,9 @@ Refer to [Response Codes](#112-response-codes) Table in the Reference Tables sec
 
 ### Controllers
 **Verb**: POST
+
 **URL**: https://mercadopago.ationet.com/v1/controllers
+
 **Headers**:
 - Accept-Encoding: gzip
 - Authorization: Basic user:password
