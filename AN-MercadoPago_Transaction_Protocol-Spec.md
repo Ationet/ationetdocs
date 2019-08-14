@@ -107,6 +107,7 @@ Failure to process the request will be indicated by an HTTP 400’s range status
 Refer to [Response Codes](#112-response-codes) Table in the Reference Tables section for a complete list of supported codes.
 
 ## 5 Supported Commands 
+
 |Code|Name|Description
 |---|---|
 |A|Get Status|This is the message that the controller sends to get news|
