@@ -4,7 +4,7 @@
 ||Document Information|
 |--- |--- |
 |File:|AN-MercadoPago_Transaction_Protocol-Spec|
-|Doc Version:|1.0|
+|Doc Version:|1.1|
 |Release Date:|10, August 2019|
 |Author:|ATIONet LLC|
 
@@ -12,7 +12,7 @@
 |||Change Log|
 |--- |--- |--- |
 |Ver.|Date|Change Summary|
-|1.0|10, August 2019|Initial version. Covers POST and GET Transactions|
+|1.1|10, August 2019|Initial version. Covers POST and GET Transactions|
 
 
 
