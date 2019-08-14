@@ -108,8 +108,8 @@ Refer to [Response Codes](#112-response-codes) Table in the Reference Tables sec
 
 ## 5 Supported Commands 
 
-|Code|Name|Description
-|---|---|
+|Code|Name|Description|
+|---|---|---|
 |A|Get Status|This is the message that the controller sends to get news|
 |B|Confirm Status|This is the message that the controller sends to confirm that the receibed status in message A was processed OK|
 |C|Send Transaction|Message sent by the controller containing new sales generated at the POS|
