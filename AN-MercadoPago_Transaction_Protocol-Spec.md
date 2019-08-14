@@ -178,14 +178,14 @@ This section details the purpose and expected behavior on the Controller system 
 |items|Array|Required|Lista de los productos, donde cada item es un object con los siguientes campos|
 |loyalty|Object|Required|Datos necesarios para sumar puntos en un determinado programa de fidelización|
 
-##7.1 Items object
+## 7.1 Items object
 |Field Name|Type|Condition|Descriptions/Field Value(s)|
 |---|---|---|---|
 |title|String|Required|Nombre del producto.|
 |quantity|Entero|Required|Cantidad de este producto.|
 |unit_price|Decimal|Required|Precio unitario del producto.|
 
-##7.2 Loyalty object
+## 7.2 Loyalty object
 |Field Name|Type|Condition|Descriptions/Field Value(s)|
 |---|---|---|---|
 |program|String|Required|Programa de fidelización (serviclub, payback, etc.)|
