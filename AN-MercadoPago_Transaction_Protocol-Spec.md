@@ -75,20 +75,6 @@ This specification is intended to document ATIONet’s Mercado Pago Protocol mes
 Version 1.0 of this document covers a particular version of ATIONet’s Host protocol. Although feature’s descriptions are generally not related to a particular version of the protocol, some changes may apply which would be specifically commented and identified on each feature’s
 description paragraph.
 
-### 2.1 Scope Details
-
-**Protocol**: ATIONet Mercado Pago Transaction Protocol
-
-**Version**: Version 1.0
-
-**API Base URI**: mercadopago.ationet.com/v1/
-
-### 2.2 Supported Transactions
-|Name|Version|Description|
-|--- |--- |--- |--- |
-|Send Transaction|1.0|Used to receive and store transactions from gas stations.|
-|Get Transaction|1.0|Send to client the latest transaction done in the specified fueling point.|
-
 
 ## 3 Data Security
 
@@ -120,60 +106,61 @@ Failure to process the request will be indicated by an HTTP 400’s range status
 
 Refer to [Response Codes](#112-response-codes) Table in the Reference Tables section for a complete list of supported codes.
 
-## 5 Message Structure
+## 5 Supported Commands 
+|Code|Name|Description
+|---|---|
+|A|Get Status|This is the message that the controller sends to get news|
+|B|Confirm Status|This is the message that the controller sends to confirm that the receibed status in message A was processed OK|
+|C|Send Transaction|Message sent by the controller containing new sales generated at the POS|
 
-At the moment of writing the "Transactions Controller" is supporting two HTTP actions, POST and GET, this actions are handle in the following URL: **mercadopago.ationet.com/v1/transactions**.
+
+### Controllers
+**Verb**: POST
+**URL**: https://mercadopago.ationet.com/v1/controllers
+**Headers**:
+- Accept-Encoding: gzip
+- Authorization: Basic user:password
 
 
-### HTTP POST 
-#### Request
+#### Commands flow
+![ationetlogo](Content/Images/mercadoPagoFlow.jpeg)
+####Get Status (A)
+Request Body:
 
-*Header:*
+	{"transaction_code":"A","site_id":"123456"}
 
-	Accept-Encoding: gzip
+Response Body:
 
-	Authorization: Basic user:password
+	[{"pump_id":"2","reference_number":"974423","action":"L"},
+	{"pump_id":"7","reference_number":"975321","action":"P"}]
 
-*Body:*
-In the body a Transaction structure should be placed (in JSON format)
+|Field|Description|
+|---|---|
+|pump_id|The pump where the sale was done|
+|reference_number|The sale number provided by the controller in the command "C"|
+|action|If "L" the controller needs to lock the sale, if "P", the controller needs to pay the transaction. Both actions needs to be done with "B" command|
 
-	{“Fieldname”:”StringValue”,”FieldName”:”StringValue”,”FieldName”:Value}
+####Confirm Status (B)
+Request Body:
 
-#### Response
+	{"transaction_code":"B","site_id":"123456","pump_id":"7"}
 
-*Header:*
-
-	Content-Type: application/json; charset=utf-8
-
-*Body:*
+Response Body:
 If the HTTP response code is different than 200, then the following structure is return 
 
-	{“ResponseCode”:”StringValue”,”ResponseMessage”:”StringValue”,”ResponseError”:StringValue}
+	{“ResponseCode”:”StringValue”,”ResponseMessage”:”StringValue”,”ResponseError”:"StringValue"}
 
-### HTTP GET 
-#### Request
 
-*Header:*
+####Send Transaction (C)
+Request Body:
 
-	Accept-Encoding: gzip
+	{"transaction_code":"C","site_id":"123456","pump_id":"7","reference_number":"975321"}
 
-	Authorization: Basic user:password
+Response Body:
+If the HTTP response code is different than 200, then the following structure is return 
 
-*Body:*
+	{“ResponseCode”:”StringValue”,”ResponseMessage”:”StringValue”,”ResponseError”:"StringValue"}
 
-	{“SiteId”:”33335b11-455a-498c-9e60-9a3d41b35135”,”PumpId”:”09”}
-
-#### Response
-
-*Header:*
-
-	Content-Type: application/json; charset=utf-8
-
-*Body:*
-If the HTTP request response code is 200, the body will contain the Transaction structure described in section 7.
-If the HTTP response code is different than 200, the structure described in section 4 is return 
-
-	{“Fieldname”:”StringValue”,”FieldName”:”StringValue”,”FieldName”:Value}
 
 Note: Alphanumeric fields, stated as Type “A/N” in record format tables below show the maximum possible length as the Size, although in JSON-formatted strings they will be represented with trailing spaces trimmed.
 
