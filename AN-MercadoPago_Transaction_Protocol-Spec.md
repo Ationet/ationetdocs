@@ -143,7 +143,8 @@ Request Body:
 	        "currency_id": "MXN",
 	        "description": "$500.00 de Premium",
 	        "quantity": 1.0,
-	        "unit_price": 500.00
+	        "unit_price": 500.00,
+		"total_amount": 500.00,
 	      }
 	    ],
 	    "external_reference": "45ea80da",
@@ -179,6 +180,7 @@ If the HTTP response code is different than 200, then the following structure is
 |title|String|Required|Nombre del producto.|
 |quantity|Entero|Required|Cantidad de este producto.|
 |unit_price|Decimal|Required|Precio unitario del producto.|
+|total_amount|Decimal|Required|Monto total del item.|
 
 ### Loyalty object
 |Field Name|Type|Condition|Descriptions/Field Value(s)|
