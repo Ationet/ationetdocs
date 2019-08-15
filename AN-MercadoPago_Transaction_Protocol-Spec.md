@@ -159,8 +159,8 @@ If the HTTP response code is different than 200, then the following structure is
 	{“ResponseCode”:”StringValue”,”ResponseMessage”:”StringValue”,”ResponseError”:"StringValue"}
 
 
-**Note**: *If a transaction is confirmed by Fusion as PAY, and then the payment is removed, Fusion will send the transaction again using the command "C".
-*
+**Note**: If a transaction is confirmed by Fusion as PAY, and then the payment is removed, Fusion will send the transaction again using the command "C".
+	
 
 ## Objects references
 ### Order object
