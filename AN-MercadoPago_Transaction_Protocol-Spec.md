@@ -121,6 +121,7 @@ Request Body:
 	{"transaction_code":"B","site_id":"123456","pump_id":"7","action":"L"}
 
 Response Body:
+
 If the HTTP response code is different than 200, then the following structure is return 
 
 	{“ResponseCode”:”StringValue”,”ResponseMessage”:”StringValue”,”ResponseError”:"StringValue"}
@@ -152,13 +153,14 @@ Request Body:
 	}
 
 Response Body:
+
 If the HTTP response code is different than 200, then the following structure is return 
 
 	{“ResponseCode”:”StringValue”,”ResponseMessage”:”StringValue”,”ResponseError”:"StringValue"}
 
 
-Note: If a transaction is confirmed by Fusion as PAY, and then the payment is removed, Fusion will send the transaction again using the command "C".
-
+**Note**: *If a transaction is confirmed by Fusion as PAY, and then the payment is removed, Fusion will send the transaction again using the command "C".
+*
 
 ## Objects references
 ### Order object
