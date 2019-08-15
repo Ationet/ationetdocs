@@ -136,7 +136,6 @@ Request Body:
 	 "pump_id": "7",
 	 "order": {
 	    "collector_id": 178106235,
-	    "sponsor_id": 334249281,
 	    "items": [
 	      {
 	        "title": " $500.00 de Premium",
@@ -148,7 +147,6 @@ Request Body:
 	      }
 	    ],
 	    "external_reference": "45ea80da",
-	    "notification_url": "https://www.tusitio.com/notifiaction",
 	    "loyalty": null
 	  }
 	}
