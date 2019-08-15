@@ -126,7 +126,7 @@ Response Body:
 #### Confirm Status (B)
 Request Body:
 
-	{"transaction_code":"B","site_id":"123456","pump_id":"7"}
+	{"transaction_code":"B","site_id":"123456","pump_id":"7","action":"L"}
 
 Response Body:
 If the HTTP response code is different than 200, then the following structure is return 
