@@ -1,7 +1,7 @@
 ![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
 # ATIONet - Mercado Pago Transaction Protocol Specification v1.1 #
 
-||Document Information|
+|Document Information||
 |--- |--- |
 |File:|AN-MercadoPago_Transaction_Protocol-Spec|
 |Doc Version:|1.1|
@@ -9,7 +9,7 @@
 |Author:|ATIONet LLC|
 
 
-|||Change Log|
+|Change Log|||
 |--- |--- |--- |
 |Ver.|Date|Change Summary|
 |1.1|10, August 2019|Initial version. Covers POST and GET Transactions|
