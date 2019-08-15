@@ -118,7 +118,7 @@ Response Body:
 #### Confirm Status (B)
 Request Body:
 
-	{"transaction_code":"B","site_id":"123456","pump_id":"7","action":"L"}
+	{"transaction_code":"B","site_id":"123456","pump_id":"7",, "reference_number":"974423", "action":"L"}
 
 Response Body:
 
