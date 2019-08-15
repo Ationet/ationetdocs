@@ -106,19 +106,19 @@ Request Body:
 
 Response Body:
 
-	[{"pump_id":"2","reference_number":"974423","action":"L"},
-	{"pump_id":"7","reference_number":"975321","action":"P"}]
+	[{"pump_id":"2","external_reference":"974423","action":"L"},
+	{"pump_id":"7","external_reference":"975321","action":"P"}]
 
 |Field|Description|
 |---|---|
 |pump_id|The pump where the sale was done|
-|reference_number|The sale number provided by the controller in the command "C"|
+|external_reference|The sale number provided by the controller in the command "C"|
 |action|If "L" the controller needs to lock the transaction, if "P", the controller needs to pay the transaction. Both actions needs to be done with "B" command|
 
 #### Confirm Status (B)
 Request Body:
 
-	{"transaction_code":"B","site_id":"123456","pump_id":"7", "reference_number":"974423", "action":"L"}
+	{"transaction_code":"B","site_id":"123456","pump_id":"7", "external_reference":"974423", "action":"L"}
 
 Response Body:
 
