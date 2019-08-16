@@ -25,12 +25,14 @@
 
 - [Error Handling](#error-handling)
 
-- [Supported Commands](#supported-commands)
+- [Architecture](#architecture) 
+
 	- [Controllers](#controllers)
-		- [Commands Flow](#commands-flow)
-		- [Get Status (A)](#get-status-a)
-		- [Confirm Status (B)](#confirm-status-b)
-		- [Send Transaction (C)](#send-transaction-c)
+		- [Supported Commands](#supported-commands)
+			- [Commands Flow](#commands-flow)
+			- [Get Status (A)](#get-status-a)
+			- [Confirm Status (B)](#confirm-status-b)
+			- [Send Transaction (C)](#send-transaction-c)
 	- [Mercado Pago Host](#mercado-pago-host)
 
 - [Objects references](#objects-references)
