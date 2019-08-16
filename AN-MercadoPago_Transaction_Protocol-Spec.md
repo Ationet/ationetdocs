@@ -106,19 +106,19 @@ Request Body:
 
 Response Body:
 
-	[{"pump_id":"2","reference_number":"974423","action":"L"},
-	{"pump_id":"7","reference_number":"975321","action":"P"}]
+	[{"pump_id":"2","external_reference":"974423","action":"L"},
+	{"pump_id":"7","external_reference":"975321","action":"P"}]
 
 |Field|Description|
 |---|---|
 |pump_id|The pump where the sale was done|
-|reference_number|The sale number provided by the controller in the command "C"|
+|external_reference|The sale number provided by the controller in the command "C"|
 |action|If "L" the controller needs to lock the transaction, if "P", the controller needs to pay the transaction. Both actions needs to be done with "B" command|
 
 #### Confirm Status (B)
 Request Body:
 
-	{"transaction_code":"B","site_id":"123456","pump_id":"7", "reference_number":"974423", "action":"L"}
+	{"transaction_code":"B","site_id":"123456","pump_id":"7", "external_reference":"974423", "action":"L"}
 
 Response Body:
 
@@ -136,18 +136,17 @@ Request Body:
 	 "pump_id": "7",
 	 "order": {
 	    "collector_id": 178106235,
-	    "sponsor_id": 334249281,
 	    "items": [
 	      {
 	        "title": " $500.00 de Premium",
 	        "currency_id": "MXN",
 	        "description": "$500.00 de Premium",
 	        "quantity": 1.0,
-	        "unit_price": 500.00
+	        "unit_price": 500.00,
+		"total_amount": 500.00,
 	      }
 	    ],
 	    "external_reference": "45ea80da",
-	    "notification_url": "https://www.tusitio.com/notifiaction",
 	    "loyalty": null
 	  }
 	}
@@ -179,6 +178,7 @@ If the HTTP response code is different than 200, then the following structure is
 |title|String|Required|Nombre del producto.|
 |quantity|Entero|Required|Cantidad de este producto.|
 |unit_price|Decimal|Required|Precio unitario del producto.|
+|total_amount|Decimal|Required|Monto total del item.|
 
 ### Loyalty object
 |Field Name|Type|Condition|Descriptions/Field Value(s)|
