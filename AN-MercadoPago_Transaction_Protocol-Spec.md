@@ -18,15 +18,10 @@
 ## Contents
 
 - [Introduction](#introduction)
-
 - [Scope](#scope)
-
 - [Data Security](#data-security)
-
 - [Error Handling](#error-handling)
-
 - [Architecture](#architecture) 
-
 	- [Controllers](#controllers)
 		- [Supported Commands](#supported-commands)
 			- [Commands Flow](#commands-flow)
@@ -34,7 +29,6 @@
 			- [Confirm Status (B)](#confirm-status-b)
 			- [Send Transaction (C)](#send-transaction-c)
 	- [Mercado Pago Host](#mercado-pago-host)
-
 - [Objects references](#objects-references)
 	- [Order object](#order-object)
 	- [Items object](#items-object)	
