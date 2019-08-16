@@ -31,6 +31,7 @@
 		- [Get Status (A)](#get-status-a)
 		- [Confirm Status (B)](#confirm-status-b)
 		- [Send Transaction (C)](#send-transaction-c)
+	- [Mercado Pago Host](#mercado-pago-host)
 
 - [Objects references](#objects-references)
 	- [Order object](#order-object)
@@ -77,16 +78,20 @@ Failure to process the request will be indicated by an HTTP 400’s range status
 
 Refer to [Response Codes](#112-response-codes) Table in the Reference Tables section for a complete list of supported codes.
 
-## Supported Commands 
+## Architecture
+This cloud module contains 2 main components, the one that talks to the controllers and the one that talks to Mercado Pago. Both are HTTPS web APIs.
+
+![ationetlogo](Content/Images/architecture.jpeg)
+
+### Controllers API
+#### Supported Commands 
 
 |Code|Name|Description|
 |---|---|---|
 |A|Get Status|This is the message that the controller sends to get news|
-|B|Confirm Status|This is the message that the controller sends to confirm that the receibed status in message A was processed OK|
+|B|Confirm Status|This is the message that the controller sends to confirm that the received status in message A was processed OK|
 |C|Send Transaction|Message sent by the controller containing new sales generated at the POS|
 
-
-### Controllers
 **Verb**: POST
 
 **URL**: https://mercadopago.ationet.com/v1/controllers
@@ -160,6 +165,8 @@ If the HTTP response code is different than 200, then the following structure is
 
 **Note**: If a transaction is confirmed by Fusion as PAID  and then the payment cleared, Fusion will send the transaction again using the command "C", only if this is the latest sale on Fusion (OLD SALES doesn’t require this behavior).
 	
+
+### Mercado Pago API
 
 ## Objects references
 ### Order object
