@@ -81,7 +81,7 @@ Refer to [Response Codes](#112-response-codes) Table in the Reference Tables sec
 ## Architecture
 This cloud module contains 2 main components, the one that talks to the controllers and the one that talks to Mercado Pago. Both are HTTPS web APIs.
 
-![ationetlogo](Content/Images/architecture.jpeg)
+![ationetlogo](Content/Images/architecture.png)
 
 ### Controllers API
 #### Supported Commands 
