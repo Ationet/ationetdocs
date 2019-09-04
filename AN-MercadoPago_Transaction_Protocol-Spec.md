@@ -162,7 +162,7 @@ If the HTTP response code is different than 200, then the following structure is
 	
 
 ### Mercado Pago API
-(TBC)
+Mercado Pago API reference: https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/qr-gas-station
 
 ## Objects references
 ### Order object
