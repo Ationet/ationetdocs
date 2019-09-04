@@ -140,7 +140,6 @@ Request Body:
 	    "items": [
 	      {
 	        "title": " $500.00 de Premium",
-	        "currency_id": "MXN",
 	        "description": "$500.00 de Premium",
 	        "quantity": 1.0,
 	        "unit_price": 500.00,
