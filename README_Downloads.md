@@ -4,6 +4,8 @@
 
 
 - Local Agent
-    - V2.0.8500
+    - [V2.0.8500](www.google.com)
+    - [V2.0.8500](www.google.com)
+    
 - Inventory Client
 - Stand Alone Terminal
