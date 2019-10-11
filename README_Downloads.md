@@ -8,4 +8,7 @@
     - [V2.0.8500](www.google.com)
     
 - Inventory Client
+    - [V1.0.0010](www.google.com)
+    
 - Stand Alone Terminal
+    - [V1.0.1500](www.google.com)
