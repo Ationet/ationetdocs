@@ -61,66 +61,66 @@
 		- [List of Pending Pre-Authorizations](#list-of-pending-pre-authorizations)
 		- [Transactions marked last month](#transactions-marked-last-month)
 		- [Installations](#installations)
-		- [Sub-cuentas con excepciones](#sub-cuentas-con-excepciones)
-		- [Actualizaciones de Identificador en ultimo mes](#actualizaciones-de-identificador-en-ultimo-mes)
-		- [Transacciones recientes](#transacciones-recientes)
-		- [Listado de Sub-cuentas con bajo saldo](#listado-de-sub-cuentas-con-bajo-saldo)
-		- [Estado de Terminales](#estado-de-terminales)
-		- [Contratos sin actividad](#contratos-sin-actividad)
-		- [Listado de contratos con bajo saldo](#listado-de-contratos-con-bajo-saldo)
-	- [Favoritos](#favoritos)	
-	- [Vistas](#vistas)
-		- [Autorizaciones Pendientes](#autorizaciones-pendientes)
-		- [Conductores](#conductores)
-		- [Cuentas corrientes de Comercio](#cuentas-corrientes-de-comercio)
-		- [Cuentas corrientes de Compañia](#cuentas-corrientes-de-compañía)
-		- [Transacciones](#transacciones)
-		- Transacciones por Conductor
-		- Transacciones por Flota
-		- Transacciones por Sitio
-		- Transacciones por Vehículo
-		- [Transacciones Rechazadas](#transacciones-rechazadas)
-		- [Transacciones sin Control](#transacciones-sin-control)
-		- [Vehiculos](#vehiculos)
-	- [Reportes](#reportes)
-		- [Conductor](#conductor)
-		- [Transacciones](#transacciones)
-		- [Vehiculo](#vehiculos)
-	- [Inventario](#inventario)
-		- Grafico de Inventarios
-		- Inventario
-		- Recepciones
-		- Reconciliación Inventario 
-	- [Administración](#administración)
-		- [Categorías de SKUs](#categorías-de-skus)
-		- [Comercios](#comercios)
-		- [Compañias](#compañias)
-		- [Conceptos](#conceptos)
-		- [Configuración de Fast Track](#configuración-de-fast-track)
-		- [Contingencia](#contingencia)
-		- [Contratos de Comercios](#contratos-de-comercios)
-		- [Contratos de Compañias](#contratos-de-compañias)
-		- [Cuentas corrientes de Comercio](#cuentas-corrientes-de-comercio)
-		- [Cuentas corrientes de Compañia](#cuentas-corrientes-de-compañia)
-		- [Depositos](#depositos)
-		- [Familias de Conceptos](#familias-de-conceptos)
+		- [Sub-accounts with exceptions](#Sub-accounts-with-exceptions)
+		- [Last Month Identifier Updates](#last-last-month-identifier-updates)
+		- [Recent transactions](#Recent-transactions)
+		- [Low-Balance Sub-accounts Listing](#Low-Balance-Sub-accounts-Listing)
+		- [State of Terminals](#state-of-terminals)
+		- [Contracts without activity](#contracts-without-activity)
+		- [List of low-balance contracts](#List-of-low-balance-contracts)
+	- [Favorites](#favorites)	
+	- [Views](#views)
+		- [Pending Authorizations](#pending-authorizations)
+		- [Drivers](#drivers)
+		- [Merchant Current Accounts](#merchant-current-accounts)
+		- [Company Current Accounts](#Company-Current-Accounts)
+		- [Transactions](#transactions)
+		- Driver Transactions
+		- Fleet Transactions
+		- Site Transactions
+		- Vehicle Transactions
+		- [Transactions Rejected](#transactions-rejected)
+		- [Transactions without Control](#transactions-without-control)
+		- [Vehicles](#vehicles)
+	- [Reports](#reports)
+		- [Driver](#Driver)
+		- [Transactions](#transactions)
+		- [Vehicle](#vehicles)
+	- [Inventory](#inventory)
+		- Inventory Chart
+		- Inventory
+		- Receptions
+		- Inventory Reconciliation 
+	- [Administration](#administration)
+		- [SKUs categories](#skus-categories)
+		- [Merchants](#Merchants)
+		- [Companies](#companies)
+		- [Concepts](#concepts)
+		- [Fast Track Configuration](#fast-track-configuration)
+		- [Contingency](#contingency)
+		- [Merchants Contracts](#Merchants-contracts)
+		- [Company Contracts](#Company-Contracts)
+		- [Merchant Current Accounts](#Merchant-current accounts)
+		- [Company Current Accounts](#Company-Current-Accounts)
+		- [Deposits](#deposits)
+		- [Concept Families](#concept-families)
 		- [Identificaciones Solicitadas](#identificaciones-solicitadas)
-		- [Identificadores](#identificadores)
-		- [Impuestos](#impuestos)
+		- [Identifications Requested](#identifications-requested)
+		- [Taxes](#taxes)
 		- [Installations](#installations)
-		- [Métodos de Pago](#metodos-de-pago)
-		- [Modelos de Identificador](#modelos-de-identificador)
+		- [Payment Methods](#payment-methods)
+		- [Identifier Models](#identifier-models)
 		- [Programas](#programas)
-		- [Sitios](#sitios)
+		- [Programs](#programs)
 		- [SKUs](#skus)
-		- [Tarjeta de Regalo](#tarjeta-de-regalo)
-		- [Tarjetas de Regalo Solicitadas](#tarjetas-de-regalo-solicitadas)
-		- [Transacciones Desconocidas](#transacciones-desconocidas)
-		- [Usuarios](#usuarios)
-- [Mis Filtros](#mis-filtros)
-- [Solución de Problemas](#solucion-de-problemas)
-- [Mis Preferencias](#mis-preferencias)
-- [Configuración Nano CPI para ATIONet](#configuración-nano-cpi-para-ationet)
+		- [Gift Card](#gift-card)
+		- [Gift Cards Requested](#Gift-Cards-Requested)
+		- [Unknown Transactions](#unknown-transactions)
+		- [Users](#users)
+- [My Filters](#my-filters)
+- [Troubleshooting](#Troubleshooting)
+- [My Preferences](#my-preferences)
+- [Nano CPI configuration for ATIONet](#configuration-nano-cpi-for-ationet)
 
 <!-- /MarkdownTOC -->
 
@@ -231,13 +231,13 @@ The following shows all transactions that were rejected by any of the validation
 
 ![Transacciones Marcadas](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesMarcadasUltimoMes.png)
 
-#### Contratos sin actividad
+#### Contracts with no activity
 
 Displays the list of contracts that were never active.
 
 ![Contrato Sin Actividad](Content/Includes/AN-HomeBase-UserManal-SP/contratosSinActividad.png)
 
-#### Sub-cuentas con excepciones
+#### Sub-accounts with exceptions
 
 This shows all sub-accounts that have something to pay attention to, such as:
 
@@ -250,25 +250,25 @@ For more details about sub-accounts please consult:[Esta sección](#sub-cuenta)
 
 ![sub Cuentas con Excepciones](Content/Includes/AN-HomeBase-UserManal-SP/subcuentasConExcepciones.png)
 
-#### Transacciones recientes
+#### Recent Transactions
 
 The following shows the last 20 completed transactions. It shows the most relevant data to be able to identify it, in case you need more information about the transaction you can click on the authorization code, that will take you to the view of details of the transaction.
 
 ![Transacciones Recientes](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesRecientes.png)
 
-#### Listado de contratos con bajo saldo
+#### List of contracts with low balance
 
 Shows the list of contracts with low balance to trade 4 more days. This calculation is based on usage. The "Days Available" column shows the number of days remaining in the contract based on usage analysis. This number is not exact and may vary if the usage pattern changes.
 
 ![Contrato Bajo Saldo](Content/Includes/AN-HomeBase-UserManal-SP/contratoBajoSaldo.png)
 
-#### Listado de Sub-cuentas con bajo saldo
+#### List of Sub-accounts with low balance
 
 Shows the list of sub accounts containing low balance to trade 4 more days. This calculation is made based on the use of each sub account. The "Available Days" column shows the number of days left in the sub account based on the usage analysis. This number is not exact and may vary if the usage pattern changes.
 
 ![Sub Cuentas Bajo Saldo](Content/Includes/AN-HomeBase-UserManal-SP/subcuentasBajoSaldo.png)
 
-#### Actualizaciones de Identificador en ultimo mes
+#### Identifier updates in last month
 
 This widget shows the activity of the administration of identifiers, shows the number of identifiers that were modified grouped by state.
 
@@ -280,7 +280,7 @@ This widget shows the activity of the administration of identifiers, shows the n
 
 ![Actualizaciones de Identificadores](Content/Includes/AN-HomeBase-UserManal-SP/actualizacionIdentificadoresUltimoMes.png)
 
-#### Estado de Terminales
+#### Terminal Status
 
 All terminals that are natively connected to ATIONet send a regular message indicating that they are active. If the terminal reported the status in the last 5 hours, the terminal will be shown with the green icon, if not reported in the last 5 hours the icon will be red.
 The column ***"Age "*** shows the number of minutes since the last time the terminal was reported. 
@@ -288,7 +288,7 @@ The column ***"Age "*** shows the number of minutes since the last time the term
 ![Estado Terminales](Content/Includes/AN-HomeBase-UserManal-SP/estadoTerminales1.png)
 ![Estado Terminales](Content/Includes/AN-HomeBase-UserManal-SP/estadoTerminales2.png)
 
-### Favoritos
+### Favorites
 
 Vehicles, Drivers, Sites and Fleets are entities that may require daily monitoring by certain users. To facilitate this task you can add some of these entities to the list of Favorites. Once entered an entity to this list the access is faster and direct, without the need to enter filters each time you want to search. 
 
@@ -298,7 +298,7 @@ If you want to remove an entity from the list of Favorites, click on the icon on
 
 ![Favoritos](Content/Includes/AN-HomeBase-UserManal-SP/favoritos.png)
 
-### Vistas
+### Views
 
 ATIONet has a series of views where you can view information on the operation of the network. ATIONet considers a view to all those screens that besides being able to visualize information, it is also exportable for a post processing. Unlike the [***Reportes***](#reportes) which are screens that display information in a format designed to be printed and saved.
 All the views in ATIONet respect a consistency in aesthetics and functionality. All the views have a toolbar with all these functions (or at least some of them).
@@ -320,7 +320,7 @@ The following is the view of ATIONet Vehicles:
 
 ![Vistas](Content/Includes/AN-HomeBase-UserManal-SP/vistas2.png)
 
-#### Autorizaciones Pendientes
+#### Pending Authorizations
 
 Pending authorizations are those transactions that have not yet received the completion transaction. The records seen in this view are shipments that are currently underway. If for some reason there are old pre-authorizations, it is likely that the POS did not send the completion transaction or the cancellation transaction if the shipment was not completed.
 
@@ -336,13 +336,13 @@ To do this you have 2 ways, individually, by clicking on the "X" icon to the rig
 
 (for more details on the transaction flow refer to this [documento](AN-Transaction_Flows-TechGuide.md))
 
-#### Conductores
+#### Drivers
 
 This view lists drivers who have been discharged. You can filter them by name, ID, company, alert rule or status. Also, in the options column to the right, you can choose to assign an ID, edit it, or mark the driver as a favorite.
 
 ![Conductores](Content/Includes/AN-Network-UserManal-SP/conductores.png)
 
-#### Cuentas corrientes de Comercio
+#### Merchant Current Accounts
 
 The trade current accounts view is the view where the balances and movements of the trades are consulted.
 In ATIONet the term trade refers to the company that owns the sites.
@@ -352,7 +352,7 @@ The first option in the panel is the type of report we want to see.
 
 ![Cuentas Corrientes de Comercio](Content/Includes/AN-Network-UserManal-SP/cuentasCorrientesDeComercio.png)
 
-#### Cuentas corrientes de Compañía
+#### Company Current Accounts
 
 The Company Checking Accounts view is the view where the available sub account balances are consulted (Remember that the sub account is the union between a vehicle/driver and an identifier. For more details on sub-accounts consult: [Esta sección](#sub-cuenta)).
 
@@ -392,7 +392,7 @@ Selecting this second option enables several more filters:
 ***Origin:***Origin of the movement, whether it is the ATIONet console, a mobile application or a call to the API from a third party application.
 * ***Transient Movements:*** Checking this option will show the internal movements generated by ATIONet. For example, each time a balance is frozen after a pre-authorization and a termination transaction is received, ATIONet returns the frozen balance and subsequently debits the final amount reported. The return of the frozen balance is considered a transitory movement and is not shown if this option is not selected.
 
-#### Excepciones
+#### Exceptions
 
 ATIONet separates unauthorized transactions into 2 sections, Exceptions and [Transacciones Rechazadas](#transacciones-rechazadas).
 Exceptions are those transactions that did not pass the hard validations of the system or those that are detected as possible frauds.
@@ -412,7 +412,7 @@ Some transactions remain in "Review" status in some situations, such as when mor
 
 ![Cuentas Corrientes](Content/Includes/AN-HomeBase-UserManal-SP/excepciones.png)
 
-#### Transacciones
+#### Transactions
 
 The transaction view is one of the most important in ATIONet. In this view you can see the transactions that were made and approved.
 
@@ -446,7 +446,7 @@ If you want to see the transaction detail, click on the Authorization Code, this
 ![Transacciones](Content/Includes/AN-HomeBase-UserManal-SP/transactions3.png)
  
 
-#### Transacciones por Conductor
+#### Driver Transactions
 
 In this view you can see the transactions, grouped by the driver who made them. The buttons at the top left are for printing the table or creating an Excel file from the table, respectively.
 
@@ -468,7 +468,7 @@ The filter panel has the following possibilities:
 
 When you have finished filling out the form, click "Search" to apply the filter, or "Create filter" to save the filter done.
 
-#### Transacciones por Flota
+#### Fleet Transactions
 
 In this view you can see the transactions that were made, grouped by fleet. The buttons at the top left are for printing the table or creating an Excel file from the table, respectively.
 
@@ -490,7 +490,7 @@ The filter panel has the following possibilities:
 
 When you finish filling the form, click "Search" to apply the filter, or "Create filter" to save the filter done.
 
-#### Transacciones por Sitio
+#### Site Transactions
 
 In this view you can see the transactions that took place, grouped by the place where they took place. The buttons at the top left are for printing the table or creating an Excel file from the table, respectively.
 
@@ -510,7 +510,7 @@ The filter panel has the following possibilities:
 
 When you finish filling the form, click "Search" to apply the filter, or "Create filter" to save the filter done.
 
-#### Transacciones por Vehículo
+#### Vehicle Transactions
 
 In this view you can see the transactions, grouped by the vehicle that made them. The buttons at the top left are for printing the table or creating an Excel file from the table, respectively.
 
@@ -532,7 +532,7 @@ The filter panel has the following possibilities:
 
 When you have finished filling out the form, click "Search" to apply the filter, or "Create filter" to save the filter done.
 
-#### Transacciones Rechazadas
+#### Rejected Transactions
 
 ATIONet separates unauthorized transactions into 2 sections, [Excepciones](#excepciones)and Rejected Transactions.
 Rejected Transactions are those transactions that managed to pass ATIONet's hard validations but were rejected by other validations such as an unsatisfied rule or balance validation.
@@ -561,7 +561,7 @@ Some of the most common reasons for this situation are the following:
 * The termination transaction contains different information than the pre-authorization information, such as for example.
 * The termination transaction reports more volume or amount than was authorized. In this case the authorization can be approved.
 
-#### Transacciones sin Control
+#### Uncontrolled Transactions
 
 Uncontrolled transactions are those transactions that are generated because the controller detects a difference in gauges and sends a transaction for the difference. These transactions do not contain data about the identifier since they were generated automatically and were not initiated with the presentation of an identifier. As they do not have an identifier assigned, they are not impacted in any current account nor do they count for the calculation of rules.
 This view also filters panel to make more specific searches.
@@ -628,20 +628,19 @@ This popup has a print button that when pressed opens the default print window o
 
 ![Grafico de Inventarios](Content/Includes/AN-Network-UserManal-SP/graficoDeInventarios.png)
 
-#### Inventarios
+#### Inventory
 
 ![Inventarios](Content/Includes/AN-Network-UserManal-SP/inventarios.png)
 
 ![Inventarios](Content/Includes/AN-Network-UserManal-SP/nuevoInventario.png)
 
-#### Recepciones
+#### Receptions
 
 ![Recepciones](Content/Includes/AN-Network-UserManal-SP/recepciones.png)
 
 ![Recepciones](Content/Includes/AN-Network-UserManal-SP/nuevoRecepciones.png)
 
-#### Reconciliación Inventario
-
+#### Inventory Reconciliation
 ![Reconciliacion Inventario](Content/Includes/AN-Network-UserManal-SP/reconciliacionInventario.png)
 
 ### Administration
