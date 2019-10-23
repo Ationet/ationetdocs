@@ -8,6 +8,9 @@
 - [Native Transaction Protocol API Specifications](AN-Native_Transaction_Protocol-Spec.md)
 - [Native Transaction Protocol API messages](AN-Native_Auth_Protocol_Messages.md)
 
+## Entities API
+- [Entities API description](http://api.ationet.com/Help)
+
 ## Loyalty API
 - [Native Loyalty Protocol API description](AN-Native_Loyalty_Protocol-Spec.md)
 
