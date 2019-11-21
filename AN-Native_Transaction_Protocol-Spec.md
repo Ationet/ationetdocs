@@ -935,6 +935,7 @@ This section brings together the code tables and reference values used in messag
 |PurchaseOrderNumber|
 |ClientSupportsReceiptDownloading|
 |TrailerHourMeterReading|
+|POSSalesId|
 
 ### 11.6 Measurement Unit Codes
 
