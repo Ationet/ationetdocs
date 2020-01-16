@@ -174,7 +174,6 @@
 - [Appendix A - Native Authorization Protocol Messages](#appendix-a---native-authorization-protocol-messages)
 
 ## Overview
-Nano v1:(<https://drive.google.com/open?id=19x8RIe4AP9JLCTMKk8ThdmWcPoDemI1i&authuser=srenzi@ationet.com&usp=drive_fs>)
 
 
 ### Introduction
