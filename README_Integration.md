@@ -17,7 +17,7 @@
 ## Loyalty API
 - [Native Loyalty Protocol API description](AN-Native_Loyalty_Protocol-Spec.md)
 
-## Device Updater
+## Device Updater API
 - [Device Updater API description](AN-Native_DeviceUpdater_Protocol-Spec.md)
 
 ## Consumer Card API
