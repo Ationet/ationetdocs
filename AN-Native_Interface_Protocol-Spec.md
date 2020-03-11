@@ -3,7 +3,7 @@
 
 |Document Information|.|
 |--- |--- |
-|File:|ATIONet-Native_Interface_Protocol-Spec-v1.3|
+|File:|ATIONet-Native_Interface_Protocol-Spec|
 |Doc Version:|1.3|
 |Release Date:|05, July 2014|
 |Author:|ATIO International LLC|
@@ -907,7 +907,7 @@ the message:
 	</tbody>
 </table>
 
-##7 Transactions Download Interface##
+## 7 Transactions Download Interface
 
 The Transactions Download Interface are POST actions to recover all the
 payment transactions processed by ATIONet for a given Terminal, Contract
