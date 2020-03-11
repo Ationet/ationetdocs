@@ -1,150 +1,23 @@
 ![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
 # ATIONet Native Interface API Protocol Specification
 
-<table>
-	<tr>
-		<th colspan="2" align="left">
-			Document Information
-		</th>
-	</tr>
-	<tr>
-		<td>
-			File:
-		</td>
-		<td>
-			ATIONet-Native_Interface_Protocol-Spec-v1.3
-		</td>
-	</tr>
-	<tr>
-		<td>
-		 Doc Version:
-		</td>
-		<td>
-		 1.3
-		</td>
-	</tr>
-	<tr>
-		<td>
-		 Release Date:
-		</td>
-		<td>
-		 05, July 2014
-		</td>
-	</tr>
-	<tr>
-		<td>
-		 Author:
-		</td>
-		<td>
-		 ATIO International LLC
-		</td>
-	</tr>
-</table>
+|||
+|--- |--- |
+|Document Information|.|
+|File:|ATIONet-Native_Interface_Protocol-Spec-v1.3|
+|Doc Version:|1.3|
+|Release Date:|05, July 2014|
+|Author:|ATIO International LLC|
 
-<table>
-	<tr>
-		<th colspan="3" align="left">
-			Change Log
-		</th>
-	</tr>
-	<tr>
-		<td>
-			Ver.
-		</td>
-		<td>
-			Date
-		</td>
-		<td>
-			Change Summary
-		</td>
-	</tr>
-	<tr valign="top">
-		<td>
-			<p>1.0</p>
-		</td>
-		<td>
-			<p>04/Jan/2013</p>
-		</td>
-		<td>
-			<p>Initial version.</p>
-			<p>General information
-			<br> Actions: Statement Charges (partial)
-			<br> Transactions Download</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td>
-			<p>1.1</p>
-		</td>
-		<td>
-			<p>07/Jan/2013</p>
-		</td>
-		<td>
-			<p>Statement Charges
-			<br> - Added Action 902 Negative Balance transfer to a sub-account</p>
-			<p>New group of actions: 941 &ndash; 950 Account Inquiries (partial)
-			<br> Actions: 941 Sub-account Balance Enquiry
-			<br> 942 Sub-account Limit Enquiry</p>
-			<p>Transactions Downloads
-			<br> - Consolidated Classification Fields for Vehicles and Drivers
-			<br> - Reorganized Response record, moved Classification fields after Driver Fields.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td>
-			<p>1.2</p>
-		</td>
-		<td>
-			<p>30/10/2013</p>
-		</td>
-		<td>
-			<p>Account Inquiries
-			<br> - Added Action 943 Contract Balance Enquiry</p>
-			<p>New group of actions: 951 &ndash; 959 Account Download (partial)
-			<br> Actions: 951 Sub-Account Movements Download
-			<br> 952 Contract Movements Download</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td>
-			<p>1.3</p>
-		</td>
-		<td>
-			<p>05/07/2014</p>
-		</td>
-		<td>
-			<p><b>Statement Charges</b>
-			<br> - Added Action 903 Transfer balance from sub-account to a sub-account</p>
-			<p>- Added Action 904 Transfer balance from contract to a sub-account</p>
-			<p>- Added Action 905 Transfer balance from sub-account to a contract</p>
-			<p>- Change and reorganize request and response records</p>
-			<p><b>Transactions Downloads</b>
-			<br> - Change and reorganize request and response records</p>
-			<p><b>Account Inquiries</b>
-			<br> - Remove Action 943 Contract Balance Enquiry</p>
-			<p>- Change and reorganize request and response records</p>
-			<p><b>Account Downloads</b>
-			<br> - Remove Action 952 Contract Movements Download</p>
-			<p>- Change Action 951 Sub-Account Movements Download to 951 Movements Download</p>
-			<p>- Change and reorganize request and response records</p>
-			<p><b>Error Handling</b></p>
-			<p>- Include &ldquo;ResponseError&rdquo; in response record for actions intended to post a command</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td>
-			<p>1.4</p>
-		</td>
-		<td>
-			<p>27/11/2018</p>
-		</td>
-		<td>
-			<p><b>FastTrack</b>
-			<br> - Added Action 971 Request insertion of new FastTrack</p>
-			<p>- Added Action 972 Request FastTrack list download</p>
-		</td>
-	</tr>
-</table>
+||||
+|--- |--- |--- |
+|Change Log|||
+|Ver.|Date|Change Summary|
+|1.0|04/Jan/2013|- Initial version. <br> - General information Actions: Statement Charges (partial)<br> - Transactions Download|
+|1.1|07/Jan/2013|**Statement Charges**<br> - Added Action 902 Negative Balance transfer to a sub-account<br> - New group of actions: 941 – 950 Account Inquiries (partial)<br> - Actions: 941 Sub-account Balance Enquiry <br> - 942 Sub-account Limit Enquiry <br> - Transactions Downloads <br> - Consolidated Classification Fields for Vehicles and Drivers <br> - Reorganized Response record, moved Classification fields after Driver Fields.|
+|1.2|30/10/2013|**Account Inquiries** <br> - Added Action 943 Contract Balance Enquiry <br> - New group of actions: 951 – 959 Account Download (partial) <br> Actions: 951 Sub-Account Movements Download <br> - 952 Contract Movements Download|
+|1.3|05/07/2014|**Statement Charges** <br> - Added Action 903 Transfer balance from sub-account to a sub-account<br> - Added Action 904 Transfer balance from contract to a sub-account <br> - Added Action 905 Transfer balance from sub-account to a contract <br> - Change and reorganize request and response records<br> **Transactions Downloads** <br> - Change and reorganize request and response records <br> - Account Inquiries <br> - Remove Action 943 Contract Balance Enquiry <br> - Change and reorganize request and response records **Account Downloads** <br> - Remove Action 952 Contract Movements Download <br> - Change Action 951 Sub-Account Movements Download to 951 Movements Download <br> - Change and reorganize request and response records <br>**Error Handling** <br> - Include “ResponseError” in response record for actions intended to post a command|
+|1.4|27/11/2018|**FastTrack** <br> - Added Action 971 Request insertion of new FastTrack <br> - Added Action 972 Request FastTrack list download|
 
 ##Contents##
 
