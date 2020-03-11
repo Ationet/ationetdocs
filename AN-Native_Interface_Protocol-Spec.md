@@ -1,17 +1,16 @@
 ![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
 # ATIONet Native Interface API Protocol Specification
 
-|||
-|--- |--- |
 |Document Information|.|
+|--- |--- |
 |File:|ATIONet-Native_Interface_Protocol-Spec-v1.3|
 |Doc Version:|1.3|
 |Release Date:|05, July 2014|
 |Author:|ATIO International LLC|
 
-||||
-|--- |--- |--- |
+
 |Change Log|||
+|--- |--- |--- |
 |Ver.|Date|Change Summary|
 |1.0|04/Jan/2013|- Initial version. <br> - General information Actions: Statement Charges (partial)<br> - Transactions Download|
 |1.1|07/Jan/2013|**Statement Charges**<br> - Added Action 902 Negative Balance transfer to a sub-account<br> - New group of actions: 941 – 950 Account Inquiries (partial)<br> - Actions: 941 Sub-account Balance Enquiry <br> - 942 Sub-account Limit Enquiry <br> - Transactions Downloads <br> - Consolidated Classification Fields for Vehicles and Drivers <br> - Reorganized Response record, moved Classification fields after Driver Fields.|
@@ -19,7 +18,7 @@
 |1.3|05/07/2014|**Statement Charges** <br> - Added Action 903 Transfer balance from sub-account to a sub-account<br> - Added Action 904 Transfer balance from contract to a sub-account <br> - Added Action 905 Transfer balance from sub-account to a contract <br> - Change and reorganize request and response records<br> **Transactions Downloads** <br> - Change and reorganize request and response records <br> - Account Inquiries <br> - Remove Action 943 Contract Balance Enquiry <br> - Change and reorganize request and response records **Account Downloads** <br> - Remove Action 952 Contract Movements Download <br> - Change Action 951 Sub-Account Movements Download to 951 Movements Download <br> - Change and reorganize request and response records <br>**Error Handling** <br> - Include “ResponseError” in response record for actions intended to post a command|
 |1.4|27/11/2018|**FastTrack** <br> - Added Action 971 Request insertion of new FastTrack <br> - Added Action 972 Request FastTrack list download|
 
-##Contents##
+## Contents
 
 - [1 Scope](#1-scope)
 	- [1.1 Scope details](#11-scope-details)
@@ -63,9 +62,9 @@
 - [11 Examples](#11-examples)
 	- [11.1 C# example](#111-c-example)
 
-##Overview##
+## Overview
 
-###Introduction###
+###Introduction
 
 This specification is intended to document ATIONet’s Native Interface
 API messaging format and related features required for the systems
