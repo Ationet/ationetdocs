@@ -1,103 +1,47 @@
 ![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
 # ATIONet - Native Loyalty Protocol Specification v1.0
 
-<table>
-	<tr>
-		<th colspan="2" align="left">
-			Document Information
-		</th>
-	</tr>
-	<tr>
-		<td>
-			File:
-		</td>
-		<td>
-			ATIONet-Native_Loyalty_Protocol-Spec
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Doc Version:
-		</td>
-		<td>
-			1.2
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Release Date:
-		</td>
-		<td>
-			04, Nov 2014
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Author:
-		</td>
-		<td>
-			ATIOnet LLC
-		</td>
-	</tr>
-</table>
+|Document Information||
+|--- |--- |
+|File:|ATIONet-Native_Loyalty_Protocol-Spec|
+|Doc Version:|1.2|
+|Release Date:|04, Nov 2014|
+|Author:|ATIOnet LLC|
 
-<table>
-	<tr>
-		<th colspan="3" align="left">
-			Change Log
-		</th>
-	</tr>
-	<tr>
-		<td>
-			Ver.
-		</td>
-		<td>
-			Date
-		</td>
-		<td>
-			Change Summary
-		</td>
-	</tr>
-	<tr valign="top">
-		<td>
-			<p>1.0</p>
-		</td>
-		<td>
-			<p>04/Nov/2014</p>
-		</td>
-		<td>
-			<p>Initial version.</p>
-		</td>
-	</tr>
-</table>
+
+|Change Log|||
+|--- |--- |--- |
+|Ver.|Date|Change Summary|
+|1.0|04/Nov/2014|Initial version.|
+
 
 ## Contents
 
 <!-- MarkdownTOC depth=3 -->
 
-- Overview
-	- Introduction
-	- Definitions
-- ATIOnet Integration Documentation Scope
-- Scope
-	- Scope Details
-	- Supported Transactions
-- Data Security
-- Message Structure
-	- Request Format
-	- Response
-- Error Handling
-- Field Descriptions
-- Loyalty Transaction Request (LREQ) Message Format
-- Loyalty Transaction Response (LRESP) Message Format
-- Reference Tables
-	- Transaction Codes
-	- Account Type
-	- Transaction Data Structure
-	- Customer Data
-	- Currency Codes
-	- Authorization Codes
-	- Response Codes
+- [Overview](#overview)
+	- [Introduction](#introduction)
+	- [Definitions](#definitions)
+- [ATIOnet Integration Documentation Scope](#ationet-integration-documentation-scope)
+- [Scope](#scope)
+	- [Scope Details](#scope-details)
+	- [Supported Transactions](#suported-transactions)
+- [Data Security](#data-security)
+- [Message Structure](#message-structure)
+	- [Request Format](#request-format)
+	- [Response](#response)
+- [Error Handling](#error-handling)
+- [Field Descriptions](#field-descriptions)
+- [Loyalty Transaction Request (LREQ) Message Format](#loyalty-transaction-request-lreq-message-format)
+- [Loyalty Transaction Response (LRESP) Message Format](#loyalty-transaction-response-lresp-message-format)
+- [Reference Tables](#reference-tables)
+	- [Transaction Codes](#transaction-codes)
+	- [Account Type](#account-type)
+	- [Transaction Data Structure](#transaction-data-structure)
+	- [Customer Data](#customer-data)
+	- [Currency Codes](#currency-codes)
+	- [Authorization Codes](#authorization-codes)
+	- [Response Codes](#response-codes)
 
 <!-- /MarkdownTOC -->
 
