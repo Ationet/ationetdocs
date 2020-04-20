@@ -4458,9 +4458,737 @@ You can download a fully functional sample code from here: https://github.com/at
 	</tbody>
 </table>
 <BR/>
+<table>
+		<h4>PaymentsMethodDto</h4>
+			<thead>
+				<tr> 
+					<td>Data</td>
+					<td>Description</td>
+				</tr>
+			</thead>
+			<tbody>
+			<tr>
+                <td>Guid Id</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid NetworkId</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string Code</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string Description</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>decimal? Total</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>DateTime UpdateDate</td>
+                <td></td>
+            </tr>
+            
+			</tbody>
+</table>
+<table>
+	 <thead>
+		<tr> 
+			<td>Method</td>
+			<td>Parameters</td>
+			<td>Response</td>
+			<td>Description</td>
+			
+		</tr>
+	 </thead>
+	 <tbody>
+		<tr>
+			<td>GetPaymentsMethods</td>
+			<td>List Guid  paymentsMethodIds = null</br> string code = null</br> string description = null</br> DateTime? updateDate = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "code"</br> string orderType = "asc"</td>
+			<td>PaymentsMethodDto</td>
+			<td>Get list of the PaymentsMethodDto</td>
+		</tr>
+		<tr>
+			<td>GetPaymentsMethodsAsync</td>
+			<td>List Guid  paymentsMethodIds = null</br> string code = null</br> string description = null</br> DateTime? updateDate = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "code"</br> string orderType = "asc"</td>
+			<td>PaymentsMethodDto</td>
+			<td>Get list of the PaymentsMethodDto</td>
+		</tr>
+
+		<tr>
+			<td>GetPaymentsMethod</td>
+			<td>Guid id</td>
+			<td>PaymentsMethodDto</td>
+			<td>Get individual PaymentsMethodDto</td>
+		</tr>
+		<tr>
+			<td>GetPaymentsMethodAsync</td>
+			<td>Guid id</td>
+			<td>PaymentsMethodDto</td>
+			<td>Get individual PaymentsMethodDto</td>
+		</tr>
+		
+		<tr>
+			<td>CreatePaymentsMethod</td>
+			<td>PaymentsMethodDto data</td>
+			<td>PaymentsMethodDto</td>
+			<td>Create PaymentsMethodDto</td>
+		</tr>
+		<tr>
+			<td>CreatePaymentsMethodAsync</td>
+			<td>PaymentsMethodDto data</td>
+			<td>PaymentsMethodDto</td>
+			<td>Create PaymentsMethodDto</td>
+		</tr>
+	
+		<tr>
+			<td>UpdatePaymentsMethod</td>
+			<td>Guid id </br>PaymentsMethodDto data</td>
+			<td>string</td>
+			<td>Update PaymentsMethodDto</td>
+		</tr>
+		<tr>
+			<td>UpdatePaymentsMethodAsync</td>
+			<td>Guid id </br>PaymentsMethodDto data</td>
+			<td>string</td>
+			<td>Update PaymentsMethodDto</td>
+		</tr>
+	</tbody>
+</table>
 <BR/>
+<table>
+		<h4>ProgramDto</h4>
+			<thead>
+				<tr> 
+					<td>Data</td>
+					<td>Description</td>
+				</tr>
+			</thead>
+			<tbody>
+			 <tr>
+                <td>bool SupportsDryProducts</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string BINRange</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>decimal? GiftCardAmount</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bool IsRechargeable</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>byte SupportsOffline</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>byte SupportsContingency</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>byte ApplyContractsSites</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bool ValidateExpDate</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>byte BalanceMode</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string Description</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string CompanyName</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid? CompanyId</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string NetworkName</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid NetworkId</td>
+                <td></td>
+            </tr>
+			<tr>
+                <td>string InternalCode</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid Id</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>byte Type</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ProgramRuleDto Rule</td>
+                <td></td>
+            </tr>
+
+            
+			</tbody>
+</table>
+<table>
+	 <thead>
+		<tr> 
+			<td>Method</td>
+			<td>Parameters</td>
+			<td>Response</td>
+			<td>Description</td>
+			
+		</tr>
+	 </thead>
+	 <tbody>
+		<tr>
+			<td>GetProgramsAsync</td>
+			<td>List Guid programIds = null</br> string description = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc"</td>
+			<td>Get list of the ProgramDto</td>
+		</tr>
+		<tr>
+			<td>GetProgramsAsync</td>
+			<td>List Guid programIds = null</br> string description = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc"</td>
+			<td>Get list of the ProgramDto</td>
+		</tr>
+
+		<tr>
+			<td>GetProgram</td>
+			<td>Guid id</td>
+			<td>ProgramDto</td>
+			<td>Get individual ProgramDto</td>
+		</tr>
+		<tr>
+			<td>GetProgramAsync</td>
+			<td>Guid id</td>
+			<td>ProgramDto</td>
+			<td>Get individual ProgramDto</td>
+		</tr>
+		
+		<tr>
+			<td>CreateProgram</td>
+			<td>ProgramDto data</td>
+			<td>ProgramDto</td>
+			<td>Create ProgramDto</td>
+		</tr>
+		<tr>
+			<td>CreateProgramAsync</td>
+			<td>ProgramDto data</td>
+			<td>ProgramDto</td>
+			<td>Create ProgramDto</td>
+		</tr>
+	
+		<tr>
+			<td>UpdateProgram</td>
+			<td>Guid id </br>ProgramDto data</td>
+			<td>string</td>
+			<td>Update ProgramDto</td>
+		</tr>
+		<tr>
+			<td>UpdateProgramAsync</td>
+			<td>Guid id </br>ProgramDto data</td>
+			<td>string</td>
+			<td>Update ProgramDto</td>
+		</tr>
+	</tbody>
+</table>
 <BR/>
+<table>
+		<h4>RuleDto</h4>
+			<thead>
+				<tr> 
+					<td>Data</td>
+					<td>Description</td>
+				</tr>
+			</thead>
+			<tbody>
+			<tr>
+                <td>int? OdometerMaxVariation</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bool EngineHoursReprompt</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>int? EngineHoursMinVariation</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>int? EngineHoursMaxVariation</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bool DriverIdReprompt</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bool DriverPINReprompt</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bool TruckUnitNumberReprompt</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bool TrailerNumberReprompt</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>decimal? ContingencyLimit</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>decimal? OfflineLimit</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>List<Guid> SitesIds</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>byte Owner</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>List<DaysTimeRuleTypeDto> DaysTimeRuleType</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string RuleTypeDescription</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string RuleValues</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid? ProgramId</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string ProgramDescription</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bool ExactDateTime</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bool VehicleIdReprompt</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bool SecondaryTrack</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>List<Guid> FuelsIds</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>List<RuleFuelDto> Fuels</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>List<RuleDriverDto> Drivers</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>int? OdometerMinVariation</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>List<RuleVehicleDto> Vehicles</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bool OdometerReprompt</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bool SecondaryTrackReprompt</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid Id</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid? NetworkId</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string NetworkName</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid? CompanyId</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string CompanyName</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid? MerchantId</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string MerchantName</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid? CompanyContractId</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string ContractDescription</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>short? RuleType</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string Description</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>byte? Periodicity</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>short? PeriodicityAmount</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>decimal? MoneyQuota</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>decimal? VolumeQuota</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>int? TimeFrom</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>int? TimeTo</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>int? DateFrom</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>int? DateTo</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>decimal? SecurityLimit</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>int? TransactionsQuantity</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>int? Retries</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bool VehiclePINReprompt</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>bool MiscellaneousReprompt</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>List RuleFleetDto  Fleets</td>
+                <td></td>
+            </tr>
+
+            
+			</tbody>
+</table>
+<table>
+	 <thead>
+		<tr> 
+			<td>Method</td>
+			<td>Parameters</td>
+			<td>Response</td>
+			<td>Description</td>
+			
+		</tr>
+	 </thead>
+	 <tbody>
+		<tr>
+			<td>GetRules</td>
+			<td>string rule = null</br> short? ruleType = null</br> Guid? idVehicle = null</br> Guid? idDriver = null</br> Guid? idFleet = null</br> string customer = null</br> string company = null</br> string contract = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "description"</br> string orderType = "asc"</td>
+			<td>Get list of the RuleDto</td>
+		</tr>
+		<tr>
+			<td>GetRulesAsync</td>
+			<td>string rule = null</br> short? ruleType = null</br> Guid? idVehicle = null</br> Guid? idDriver = null</br> Guid? idFleet = null</br> string customer = null</br> string company = null</br> string contract = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "description"</br> string orderType = "asc"</td>
+			<td>Get list of the RuleDto</td>
+		</tr>
+
+		<tr>
+			<td>GetRule</td>
+			<td>Guid id</td>
+			<td>RuleDto</td>
+			<td>Get individual RuleDto</td>
+		</tr>
+		<tr>
+			<td>GetRuleAsync</td>
+			<td>Guid id</td>
+			<td>RuleDto</td>
+			<td>Get individual RuleDto</td>
+		</tr>
+		
+		<tr>
+			<td>CreateRule</td>
+			<td>RuleDto data</td>
+			<td>RuleDto</td>
+			<td>Create RuleDto</td>
+		</tr>
+		<tr>
+			<td>CreateRuleAsync</td>
+			<td>RuleDto data</td>
+			<td>RuleDto</td>
+			<td>Create RuleDto</td>
+		</tr>
+	
+		<tr>
+			<td>UpdateRule</td>
+			<td>Guid id </br>RuleDto data</td>
+			<td>string</td>
+			<td>Update RuleDto</td>
+		</tr>
+		<tr>
+			<td>UpdateRuleAsync</td>
+			<td>Guid id </br>RuleDto data</td>
+			<td>string</td>
+			<td>Update RuleDto</td>
+		</tr>
+		<tr>
+			<td>DeleteRule</td>
+			<td>Guid id</td>
+			<td>string</td>
+			<td>Get individual RuleDto</td>
+		</tr>
+		<tr>
+			<td>DeleteRuleAsync</td>
+			<td>Guid id</td>
+			<td>string</td>
+			<td>Get individual RuleDto</td>
+		</tr>
+	</tbody>
+</table>
 <BR/>
+<table>
+		<h4>ServiceFileEntryDto</h4>
+			<thead>
+				<tr> 
+					<td>Data</td>
+					<td>Description</td>
+				</tr>
+			</thead>
+			<tbody>
+			<tr>
+                <td>DateTime RecordDate</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>byte? ServiceFileTargetType</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>byte? TransactionType</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>int? EngineHours</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>int? Odometer</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string FreeText</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string StockKeepingUnitDescription</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string ServiceEntryClass3Description</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string ServiceEntryClass2Description</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string ServiceEntryClass1Description</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string ServiceEntryTypeGroupDescription</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string ServiceEntryTypeDescription</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string ServiceFileCode</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string DriverDescription</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string VehicleDescription</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>string NetworkName</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid? IdStockKeepingUnit</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid? IdServiceEntryClass3</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid? IdServiceEntryClass2</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid? IdServiceEntryClass1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid? IdLoyaltyTransaction</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid? IdTransaction</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid? IdServiceEntryTypeGroup</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid? IdServiceEntryType</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid? IdServiceFile</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid? IdDriver</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid? IdVehicle</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid? IdNetwork</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guid Id</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>DateTime? EntryDate</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>DateTime? ExpirationDate</td>
+                <td></td>
+            </tr>
+            
+			</tbody>
+</table>
+<table>
+	 <thead>
+		<tr> 
+			<td>Method</td>
+			<td>Parameters</td>
+			<td>Response</td>
+			<td>Description</td>
+			
+		</tr>
+	 </thead>
+	 <tbody>
+		<tr>
+			<td>GetServiceFileEntries</td>
+			<td>List Guid  loyaltyPrograms = null</br> List<Guid> identifications = null</br> List<Guid> drivers = null</br> List<Guid> vehicles = null</br> List<Guid> groups = null</br> List<Guid> types = null</br> List<Guid> products = null</br> string memberDate = null</br> string dateFrom = null</br> string dateTo = null</br> int page = 1</br> int pageSize = 50</td>
+			<td>Get list of the ServiceFileEntryDto</td>
+		</tr>
+		<tr>
+			<td>GetServiceFileEntriesAsync</td>
+			<td>List Guid  loyaltyPrograms = null</br> List<Guid> identifications = null</br> List<Guid> drivers = null</br> List<Guid> vehicles = null</br> List<Guid> groups = null</br> List<Guid> types = null</br> List<Guid> products = null</br> string memberDate = null</br> string dateFrom = null</br> string dateTo = null</br> int page = 1</br> int pageSize = 50</td>
+			<td>Get list of the ServiceFileEntryDto</td>
+			<td>Get list of the ServiceFileEntryDto</td>
+		</tr>
+
+		<tr>
+			<td>GetServiceFileEntry</td>
+			<td>Guid id</td>
+			<td>ServiceFileEntryDto</td>
+			<td>Get individual ServiceFileEntryDto</td>
+		</tr>
+		<tr>
+			<td>GetServiceFileEntryAsync</td>
+			<td>Guid id</td>
+			<td>ServiceFileEntryDto</td>
+			<td>Get individual ServiceFileEntryDto</td>
+		</tr>
+		
+		<tr>
+			<td>CreateServiceFileEntry</td>
+			<td>ServiceFileEntryDto data</td>
+			<td>ServiceFileEntryDto</td>
+			<td>Create ServiceFileEntryDto</td>
+		</tr>
+		<tr>
+			<td>CreateServiceFileEntryAsync</td>
+			<td>ServiceFileEntryDto data</td>
+			<td>ServiceFileEntryDto</td>
+			<td>Create ServiceFileEntryDto</td>
+		</tr>
+	</tbody>
+</table>
 <BR/>
 <BR/>
 <BR/>
