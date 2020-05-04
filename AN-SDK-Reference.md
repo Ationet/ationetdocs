@@ -12,27 +12,11 @@
 |Release Date:|10, July 2016|
 |Author:|ATIOnet LLC|
 
-<table>
-     <thead>
-          <tr>
-          	<td colspan="3">Change Log</td>
-          </tr>
-     </thead>
-     <tbody>
-        <tr>
-          	<td>Ver.</td>
-            <td>Date</td>
-            <td>Change summary</td>
-        </tr>
-        <!-- Insert a table row like this for each version -->
-        <tr>
-          	<td>1.0</td>
-          	<td>10/July/2016</td>
-          	<td>Initial version</td>
-        </tr>
-        <!-- End of version table row -->
-     </tbody>
-</table>
+|Change Log|||
+|--- |--- |--- |
+|Ver.|Date|Change summary|
+|1.0|10/July/2016|Initial version|
+
 </br>
 
 <!--###Table of Content -->
