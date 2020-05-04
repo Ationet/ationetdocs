@@ -5,39 +5,12 @@
 
 <BR/>
 
-|Month|Savings|Spending|
-|--- |--- |--- |
-|January|$100|$900|
-|July|$750|$1000|
-|December|$250|$300|
-|April|$400|$700|
-
-
-<table>
-	<thead>
-		<tr>
-			<td colspan="2" class="tablehead">Document Information</td>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td width="20%" class="rowhead" align="right">File:</td>
-			<td>AN-SDK-Reference</td>
-		</tr>
-		<tr>
-			<td align="right">Doc. Version:</td>
-			<td>1.0</td>
-		</tr>
-		<tr>
-			<td align="right">Release Date:</td>
-			<td>10, July 2016</td>
-		</tr>
-		<tr>
-			<td align="right">Author:</td>
-			<td>ATIOnet LLC</td>
-		</tr>
-	</tbody>
-</table>
+|Document Information||
+|--- |--- |
+|File:|AN-SDK-Reference|
+|Doc. Version:|1.0|
+|Release Date:|10, July 2016|
+|Author:|ATIOnet LLC|
 
 <table>
      <thead>
