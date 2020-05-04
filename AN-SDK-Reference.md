@@ -186,9 +186,9 @@ You can download a fully functional sample code from here: https://github.com/at
 |DateTime RealDate||
 |string RealDateString||
 
-|Method|Parameters|Response|Description|
+|Method|Parameters (Type / var name / default value / Descr)|Response|Description|
 |--- |--- |--- |--- |
-|GetLogs|List Guid  userIds <BR> List int  categories <BR> string dateFrom <BR> string dateTo = null <BR> Guid? idCompany = null int page = 1 int pageSize = 50 int? action = null int? subCategory = null string timeFrom = null string timeTo = null|AuditLogDto|Get list of the AuditLogDto|
+|GetLogs|List<Guid>  userIds <BR> List<int>  categories <BR> string dateFrom <BR> string dateTo = null <BR> Guid? idCompany = null int page = 1 int pageSize = 50 int? action = null int? subCategory = null string timeFrom = null string timeTo = null|AuditLogDto|Get list of the AuditLogDto|
 |GetLogsAsync|List Guid  userIds List int  categories string dateFrom string dateTo = null Guid? idCompany = null int page = 1 int pageSize = 50 int? action = null int? subCategory = null string timeFrom = null string timeTo = null|AuditLogDto|Get list of the AuditLogDto|
 
 </BR>
