@@ -1,13 +1,3 @@
-<!-- ---------PRUEBA ------------ -->
-</br>
-
-
-<!-- -----------FIN PRUEBA---------------- -->
-<BR/>
-
-
-
-
 ![ationetlogo](Content/Images/ATIOnetLogo_250x70.png) 
 # ATIOnet .NET SDK Reference
 > **About:** This document describes and explains how to consume the .NET SDK for all ATIOnet APIs.	
