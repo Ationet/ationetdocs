@@ -6,7 +6,6 @@
 <BR/>
 
 |Document Information||
-|--- |--- |
 |File:|AN-SDK-Reference|
 |Doc. Version:|1.0|
 |Release Date:|10, July 2016|
