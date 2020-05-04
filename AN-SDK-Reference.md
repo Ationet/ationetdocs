@@ -157,135 +157,39 @@ You can download a fully functional sample code from here: https://github.com/at
 
 ### Api Methods
 </BR>
-<table>
-		<h4>AuditLogDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-             <tr>
-                <td> string NetworkDateString { get; }
-            <tr>
-                <td> DateTime? NetworkDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> string NewData</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> string OriginalData</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> Guid? EntityId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> string MerchantName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> string CompanyName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> string NetworkName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> string UserName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> Guid UserId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> string OriginDescription { get; }
-            <tr>
-                <td> int? Origin</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> string ActionDescription { get; }
-            <tr>
-                <td> int Action</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> string SubCategoryDescription { get; }
-            <tr>
-                <td> int? SubCategory</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> string CategoryDescription { get; }
-            <tr>
-                <td> int Category</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> int Environment</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> Guid? MerchantId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> Guid? CompanyId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> Guid? NetworkId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> Guid Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> DateTime RealDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td> string RealDateString</td>
-                <td></td>
-            </tr>
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetLogs</td>
-			<td>List Guid  userIds</br> List int  categories</br> string dateFrom</br> string dateTo = null</br> Guid? idCompany = null</br> int page = 1</br> int pageSize = 50</br> int? action = null</br> int? subCategory = null</br> string timeFrom = null</br> string timeTo = null</td>
-			<td>AuditLogDto</td>
-			<td>Get list of the AuditLogDto</td>
-		</tr>
-		<tr>
-			<td>GetLogsAsync</td>
-			<td>List Guid  userIds</br> List int  categories</br> string dateFrom</br> string dateTo = null</br> Guid? idCompany = null</br> int page = 1</br> int pageSize = 50</br> int? action = null</br> int? subCategory = null</br> string timeFrom = null</br> string timeTo = null</td>
-			<td>AuditLogDto</td>
-			<td>Get list of the AuditLogDto</td>
-		</tr>
+|Data|Description|
+|--- |--- |
+|string NetworkDateString||
+|DateTime? NetworkDate||
+|string NewData||
+|string OriginalData||
+|Guid? EntityId||
+|string MerchantName||
+|string CompanyName||
+|string NetworkName||
+|string UserName||
+|Guid UserId||
+|string OriginDescription||
+|int? Origin||
+|string ActionDescription||
+|int Action||
+|string SubCategoryDescription||
+|int? SubCategory||
+|string CategoryDescription||
+|int Category||
+|int Environment||
+|Guid? MerchantId||
+|Guid? CompanyId||
+|Guid? NetworkId||
+|Guid Id||
+|DateTime RealDate||
+|string RealDateString||
 
-		
-	
-	</tbody>
-</table>
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetLogs|List Guid  userIds List int  categories string dateFrom string dateTo = null Guid? idCompany = null int page = 1 int pageSize = 50 int? action = null int? subCategory = null string timeFrom = null string timeTo = null|AuditLogDto|Get list of the AuditLogDto|
+|GetLogsAsync|List Guid  userIds List int  categories string dateFrom string dateTo = null Guid? idCompany = null int page = 1 int pageSize = 50 int? action = null int? subCategory = null string timeFrom = null string timeTo = null|AuditLogDto|Get list of the AuditLogDto|
+
 </BR>
 <table>
 		<h4>CompanyDto</h4>
