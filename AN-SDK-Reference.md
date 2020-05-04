@@ -156,7 +156,6 @@ Each Operation Type class has multiple methods to perform specific operation aga
 You can download a fully functional sample code from here: https://github.com/atioint/ationetsdksamples/tree/master/AtionetAuthSample](https://github.com/atioint/ationetsdksamples/tree/master/AtionetAuthSample
 
 ### Api Methods
-</BR>
 
 #### AuditLog
 |Data|Description|
