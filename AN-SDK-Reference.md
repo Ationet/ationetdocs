@@ -29,6 +29,7 @@
 - [Download / Installation](#download-installation)
 - [Operation Types](#operation-types)
   -  [Auth](#auth)
+  -  [Api](#api)
   -  [FMS](#fms)
   -  [Interface](#interface)
   -  [Loyalty](#loyalty)
@@ -36,6 +37,7 @@
 - [Consuming the SDK](#consuming-the-sdk)
   -  [Operation Types methods](#operation-types-methods)
 	  -  [Auth Methods](#auth-methods)
+	  -  [Api Methods](#api-methods)
 	  -  [FMS Methods](#fms-methods)
 	  -  [Interface Methods](#interface-methods)
 	  -  [Loyalty Methods](#loyalty-methods)
@@ -276,6 +278,8 @@ You can download a fully functional sample code from here: https://github.com/at
 |Guid Id||
 |decimal Amount||
 |string DisplayNetworkDateTimeString||
+
+
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
 |GetCompaniesGroupsMovements||CompaniesGroupsMovementDto|Get list of the CompaniesGroupsMovementDto|
@@ -530,2650 +534,626 @@ You can download a fully functional sample code from here: https://github.com/at
 |GetCountriesAsync|int page = 1 int pageSize = 50|CountryDto|Get list of the CountryDto|
 
 #### DriverDto
-<table>
-		<h4>DriverDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			        <tbody>
-            <tr>
-                <td>string CompanyContractDuration </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Clasification2Description</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? Clasification3Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Clasification3Description</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? Clasification4Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Clasification4Description</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List DriverRuleDto  Rules</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List DriverVehicleDto2> Vehicles</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List DriverIdentificationDto Identifications</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List DriverLoyaltyIdentificationDto LoyaltyIdentifications</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Balance</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Consumption</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string IdentificationsDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string LoyaltyProgramsDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string LoyaltyIdentificationsDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List DriverVehicleDto VehiclesDrivers</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Custom0</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Custom1</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Custom2</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Custom3</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? Clasification2Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Clasification1Description</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? Clasification1Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Email</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid CompanyId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string CompanyName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Code</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string LastName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string FirstName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string CompleteName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Birthdate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string LicenseNumber</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>decimal? AvaliableAmount</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool Enabled</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string CountryName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? StateId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string StateName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string City</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Street1</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Street2</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ZipCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string PhoneNumber1</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string PhoneNumber2</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? CountryId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>decimal? AvaliableVolume</td>
-                <td></td>
-            </tr>
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetDrivers</td>
-			<td>List Guid identificationIds = null</br> List Guid ruleIds = null</br> List Guid classification1Ids = null</br> List Guid classification2Ids = null</br> List Guid classification3Ids = null</br> List Guid classification4Ids = null</br> string code = null</br> string name = null</br> string custom0 = null</br> string custom1 = null</br> string custom2 = null</br> string custom3 = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "code"</br> string orderType = "asc"</td>
-			<td>DriverDto</td>
-			<td>Get list of the DriverDto</td>
-		</tr>
-		<tr>
-			<td>GetDriversAsync</td>
-			<td>List Guid identificationIds = null</br> List Guid ruleIds = null</br> List Guid classification1Ids = null</br> List Guid classification2Ids = null</br> List Guid classification3Ids = null</br> List Guid classification4Ids = null</br> string code = null</br> string name = null</br> string custom0 = null</br> string custom1 = null</br> string custom2 = null</br> string custom3 = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "code"</br> string orderType = "asc"</td>
-			<td>DriverDto</td>
-			<td>Get list of the DriverDto</td>
-		</tr>
+|Data|Description|
+|--- |--- |
+|string CompanyContractDuration||
+|string Clasification2Description||
+|Guid? Clasification3Id||
+|string Clasification3Description||
+|Guid? Clasification4Id||
+|string Clasification4Description||
+|List DriverRuleDto  Rules||
+|List DriverVehicleDto2> Vehicles||
+|List DriverIdentificationDto Identifications||
+|List DriverLoyaltyIdentificationDto LoyaltyIdentifications||
+|string Balance||
+|string Consumption||
+|string IdentificationsDescription||
+|string LoyaltyProgramsDescription||
+|string LoyaltyIdentificationsDescription||
+|List DriverVehicleDto VehiclesDrivers||
+|string Custom0||
+|string Custom1||
+|string Custom2||
+|string Custom3||
+|Guid? Clasification2Id||
+|string Clasification1Description||
+|Guid? Clasification1Id||
+|string Email||
+|Guid Id||
+|Guid CompanyId||
+|string CompanyName||
+|string Code||
+|string LastName||
+|string FirstName||
+|string CompleteName||
+|string Birthdate||
+|string LicenseNumber||
+|decimal? AvaliableAmount||
+|bool Enabled||
+|string CountryName||
+|Guid? StateId||
+|string StateName||
+|string City||
+|string Street1||
+|string Street2||
+|string ZipCode||
+|string PhoneNumber1||
+|string PhoneNumber2||
+|Guid? CountryId||
+|decimal? AvaliableVolume||
 
-		<tr>
-			<td>GetDriver</td>
-			<td>Guid id</td>
-			<td>DriverDto</td>
-			<td>Get individual DriverDto</td>
-		</tr>
-		<tr>
-			<td>GetDriverAsync</td>
-			<td>Guid id</td>
-			<td>DriverDto</td>
-			<td>Get individual DriverDto</td>
-		</tr>
-		
-		<tr>
-			<td>CreateDriver</td>
-			<td>DriverDto data</td>
-			<td>DriverDto</td>
-			<td>Create DriverDto</td>
-		</tr>
-		<tr>
-			<td>CreateDriverAsync</td>
-			<td>DriverDto data</td>
-			<td>DriverDto</td>
-			<td>Create DriverDto</td>
-		</tr>
-	
-		<tr>
-			<td>UpdateDriver</td>
-			<td>Guid id </br>DriverDto data</td>
-			<td>string</td>
-			<td>Update DriverDto</td>
-		</tr>
-		<tr>
-			<td>UpdateDriverAsync</td>
-			<td>Guid id </br>DriverDto data</td>
-			<td>string</td>
-			<td>Update DriverDto</td>
-		</tr>
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>FleetDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-            <tr>
-                <td>string Clasification4Description</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdClasification4</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Clasification3Description</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdClasification3</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Clasification2Description</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdClasification2</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Clasification1Description</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdClasification1</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Code</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string City</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string StateDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdState</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string CountryDescriptiion</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdCountry</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Streep2</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Street1</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Name</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string CompanyDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid IdCompany</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List EntityRuleDto  Rules</td>
-                <td></td>
-            </tr>
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetFleets</td>
-			<td>string code = null</br> string name = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc"</td>
-			<td>FleetDto</td>
-			<td>Get list of the FleetDto</td>
-		</tr>
-		<tr>
-			<td>GetFleetsAsync</td>
-			<td>string code = null</br> string name = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc"</td>
-			<td>FleetDto</td>
-			<td>Get list of the FleetDto</td>
-		</tr>
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetDrivers|List Guid identificationIds = null List Guid ruleIds = null List Guid classification1Ids = null List Guid classification2Ids = null List Guid classification3Ids = null List Guid classification4Ids = null string code = null string name = null string custom0 = null string custom1 = null string custom2 = null string custom3 = null int page = 1 int pageSize = 50 string orderField = "code" string orderType = "asc"|DriverDto|Get list of the DriverDto|
+|GetDriversAsync|List Guid identificationIds = null List Guid ruleIds = null List Guid classification1Ids = null List Guid classification2Ids = null List Guid classification3Ids = null List Guid classification4Ids = null string code = null string name = null string custom0 = null string custom1 = null string custom2 = null string custom3 = null int page = 1 int pageSize = 50 string orderField = "code" string orderType = "asc"|DriverDto|Get list of the DriverDto|
+|GetDriver|Guid id|DriverDto|Get individual DriverDto|
+|GetDriverAsync|Guid id|DriverDto|Get individual DriverDto|
+|CreateDriver|DriverDto data|DriverDto|Create DriverDto|
+|CreateDriverAsync|DriverDto data|DriverDto|Create DriverDto|
+|UpdateDriver|Guid id DriverDto data|string|Update DriverDto|
+|UpdateDriverAsync|Guid id DriverDto data|string|Update DriverDto|
 
-		<tr>
-			<td>GetFleet</td>
-			<td>Guid id</td>
-			<td>FleetDto</td>
-			<td>Get individual FleetDto</td>
-		</tr>
-		<tr>
-			<td>GetFleetAsync</td>
-			<td>Guid id</td>
-			<td>FleetDto</td>
-			<td>Get individual FleetDto</td>
-		</tr>
-		
-		<tr>
-			<td>CreateFleet</td>
-			<td>FleetDto data</td>
-			<td>FleetDto</td>
-			<td>Create FleetDto</td>
-		</tr>
-		<tr>
-			<td>CreateFleetAsync</td>
-			<td>FleetDto data</td>
-			<td>FleetDto</td>
-			<td>Create FleetDto</td>
-		</tr>
-	
-		<tr>
-			<td>UpdateFleet</td>
-			<td>Guid id </br>FleetDto data</td>
-			<td>string</td>
-			<td>Update FleetDto</td>
-		</tr>
-		<tr>
-			<td>UpdateFleetAsync</td>
-			<td>Guid id </br>FleetDto data</td>
-			<td>string</td>
-			<td>Update FleetDto</td>
-		</tr>
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>FuelDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-            <tr>
-                <td>string CodeBrandFuelMasterDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid Id</td>
-                <td></td>
-            </tr>
-			<tr>
-                <td>Guid MerchantId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string MerchantName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid SiteId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string SiteShortName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid FuelsMasterId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string FuelMasterDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string BrandFuelMasterDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Code</td>
-                <td></td>
-            </tr>
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetFuels</td>
-			<td>int page = 1</br> int pageSize = 50</br> string orderField = "code"</br> string orderType = "asc"</td>
-			<td>FuelDto</td>
-			<td>Get list of the FuelDto</td>
-		</tr>
-		<tr>
-			<td>GetFuelsAsync</td>
-			<td>int page = 1</br> int pageSize = 50</br> string orderField = "code"</br> string orderType = "asc"</td>
-			<td>FuelDto</td>
-			<td>Get list of the FuelDto</td>
-		</tr>
+#### FleetDto
+|Data|Description|
+|--- |--- |
+|string Clasification4Description||
+|Guid? IdClasification4||
+|string Clasification3Description||
+|Guid? IdClasification3||
+|string Clasification2Description||
+|Guid? IdClasification2||
+|string Clasification1Description||
+|Guid? IdClasification1||
+|string Code||
+|string City||
+|string StateDescription||
+|Guid? IdState||
+|string CountryDescriptiion||
+|Guid? IdCountry||
+|string Streep2||
+|string Street1||
+|string Name||
+|string CompanyDescription||
+|Guid IdCompany||
+|Guid Id||
+|List EntityRuleDto  Rules||
 
-		<tr>
-			<td>GetFuel</td>
-			<td>Guid id</td>
-			<td>FuelDto</td>
-			<td>Get individual FuelDto</td>
-		</tr>
-		<tr>
-			<td>GetFuelAsync</td>
-			<td>Guid id</td>
-			<td>FuelDto</td>
-			<td>Get individual FuelDto</td>
-		</tr>
-		
-		<tr>
-			<td>CreateFuel</td>
-			<td>FuelDto data</td>
-			<td>FuelDto</td>
-			<td>Create FuelDto</td>
-		</tr>
-		<tr>
-			<td>CreateFuelAsync</td>
-			<td>FuelDto data</td>
-			<td>FuelDto</td>
-			<td>Create FuelDto</td>
-		</tr>
-	
-		<tr>
-			<td>UpdateFuel</td>
-			<td>Guid id </br>FuelDto data</td>
-			<td>string</td>
-			<td>Update FuelDto</td>
-		</tr>
-		<tr>
-			<td>UpdateFuelAsync</td>
-			<td>Guid id </br>FuelDto data</td>
-			<td>string</td>
-			<td>Update FuelDto</td>
-		</tr>
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>FuelsMasterDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-			 <tr>
-                <td>Guid Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>short? Type</td>
-                <td></td>
-            </tr> 
-			<tr>
-                <td>string Code</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Description</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte? ContingencyCode</td>
-                <td></td>
-            </tr>
-           
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetFuelsMasters</td>
-			<td>int page = 1</br> int pageSize = 50</br> string orderField = "code"</br> string orderType = "asc"</td>
-			<td>FuelsMasterDto</td>
-			<td>Get list of the FuelsMasterDto</td>
-		</tr>
-		<tr>
-			<td>GetFuelsMastersAsync</td>
-			<td>int page = 1</br> int pageSize = 50</br> string orderField = "code"</br> string orderType = "asc"</td>
-			<td>FuelsMasterDto</td>
-			<td>Get list of the FuelsMasterDto</td>
-		</tr>
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetFleets|string code = null string name = null int page = 1 int pageSize = 50 string orderField = "name" string orderType = "asc"|FleetDto|Get list of the FleetDto|
+|GetFleetsAsync|string code = null string name = null int page = 1 int pageSize = 50 string orderField = "name" string orderType = "asc"|FleetDto|Get list of the FleetDto|
+|GetFleet|Guid id|FleetDto|Get individual FleetDto|
+|GetFleetAsync|Guid id|FleetDto|Get individual FleetDto|
+|CreateFleet|FleetDto data|FleetDto|Create FleetDto|
+|CreateFleetAsync|FleetDto data|FleetDto|Create FleetDto|
+|UpdateFleet|Guid id FleetDto data|string|Update FleetDto|
+|UpdateFleetAsync|Guid id FleetDto data|string|Update FleetDto|
 
-		<tr>
-			<td>GetFuelsMaster</td>
-			<td>Guid id</td>
-			<td>FuelsMasterDto</td>
-			<td>Get individual FuelsMasterDto</td>
-		</tr>
-		<tr>
-			<td>GetFuelsMasterAsync</td>
-			<td>Guid id</td>
-			<td>FuelsMasterDto</td>
-			<td>Get individual FuelsMasterDto</td>
-		</tr>
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>GiftCardClientDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-            <tr>
-                <td>string PIN</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool RequiresPIN</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool IdentificationActive</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string TypeModelDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid TypeModelId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>short Type</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>int RequestOrder</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>DateTime? RequestOrderDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte GiftCardState</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>DateTime CreationDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>int? PINDigits</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? GiftCardRequestOrderId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid GiftCardProgramValueId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid GiftCardDriverId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid GiftCardSubAccountId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid GiftCardIdentificationId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid GiftCardProgramId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string IdentificationLabel</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string IdentificationTrackNumber</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>decimal? Balance</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid NetworkId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string GiftCardProgramName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string PAN</td>
-                <td></td>
-            </tr>
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetGiftCardClients</td>
-			<td>Guid? programId = null</br> byte? cardState = null</br> DateTime? CreatedFrom = null</br> DateTime? CreatedTo = null</br> decimal? BalanceFrom = null</br> decimal? BalanceTo = null</br> bool? active = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "label"</br> string orderType = "asc"</br> string pan = ""</td>
-			<td>GiftCardClientDto</td>
-			<td>Get list of the GiftCardClientDto</td>
-		</tr>
-		<tr>
-			<td>GetGiftCardClientsAsync</td>
-			<td>Guid? programId = null</br> byte? cardState = null</br> DateTime? CreatedFrom = null</br> DateTime? CreatedTo = null</br> decimal? BalanceFrom = null</br> decimal? BalanceTo = null</br> bool? active = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "label"</br> string orderType = "asc"</br> string pan = ""</td>
-			<td>GiftCardClientDto</td>
-			<td>Get list of the GiftCardClientDto</td>
-		</tr>
+#### FuelDto
+|Data|Description|
+|--- |--- |
+|string CodeBrandFuelMasterDescription||
+|Guid Id||
+|Guid MerchantId||
+|string MerchantName||
+|Guid SiteId||
+|string SiteShortName||
+|Guid FuelsMasterId||
+|string FuelMasterDescription||
+|string BrandFuelMasterDescription||
+|string Code||
 
-		<tr>
-			<td>GetGiftCardClient</td>
-			<td>Guid id</td>
-			<td>GiftCardClientDto</td>
-			<td>Get individual GiftCardClientDto</td>
-		</tr>
-		<tr>
-			<td>GetGiftCardClientAsync</td>
-			<td>Guid id</td>
-			<td>GiftCardClientDto</td>
-			<td>Get individual GiftCardClientDto</td>
-		</tr>
-		
-		<tr>
-			<td>CreateGiftCardClient</td>
-			<td>GiftCardClientDto data</td>
-			<td>GiftCardClientDto</td>
-			<td>Create GiftCardClientDto</td>
-		</tr>
-		<tr>
-			<td>CreateGiftCardClientAsync</td>
-			<td>GiftCardClientDto data</td>
-			<td>GiftCardClientDto</td>
-			<td>Create GiftCardClientDto</td>
-		</tr>
-	
-		<tr>
-			<td>UpdateGiftCardClient</td>
-			<td>GiftCardClientDto data</td>
-			<td>string</td>
-			<td>Update GiftCardClientDto</td>
-		</tr>
-		<tr>
-			<td>UpdateGiftCardClientAsync</td>
-			<td>GiftCardClientDto data</td>
-			<td>string</td>
-			<td>Update GiftCardClientDto</td>
-		</tr>
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>GiftCardProgramDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-            <tr>
-                <td>List GiftCardProgramValueDto  Values</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List GiftCardProgramSiteDto  Sites</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List GiftCardProgramFuelDto  Fuels</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List GiftCardProgramDiscountDto  Discounts</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string BINRange</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>short? CardDuration</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte? CardPeriodicity</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool ActiveCards</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool ValidateSites</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string StartDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>short Duration</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte Periodicity</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte CurrentAccountMode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool Rechargable</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool SingleUse</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Description</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Name</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Code</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string NetworkName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid NetworkId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>GiftCardProgramIdentificationTypeModelDto IdentificationsTypesModel</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>GiftCardProgramRuleDto Rule</td>
-                <td></td>
-            </tr>
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetGiftCardPrograms</td>
-			<td>Guid? NetworkId</br> Guid? IdSite</br> string name = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "label"</br> string orderType = "asc"</td>
-			<td>GiftCardProgramDto</td>
-			<td>Get list of the GiftCardProgramDto</td>
-		</tr>
-		<tr>
-			<td>GetGiftCardProgramsAsync</td>
-			<td>Guid? NetworkId</br> Guid? IdSite</br> string name = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "label"</br> string orderType = "asc"</td>
-			<td>GiftCardProgramDto</td>
-			<td>Get list of the GiftCardProgramDto</td>
-		</tr>
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetFuels|int page = 1 int pageSize = 50 string orderField = "code" string orderType = "asc"|FuelDto|Get list of the FuelDto|
+|GetFuelsAsync|int page = 1 int pageSize = 50 string orderField = "code" string orderType = "asc"|FuelDto|Get list of the FuelDto|
+|GetFuel|Guid id|FuelDto|Get individual FuelDto|
+|GetFuelAsync|Guid id|FuelDto|Get individual FuelDto|
+|CreateFuel|FuelDto data|FuelDto|Create FuelDto|
+|CreateFuelAsync|FuelDto data|FuelDto|Create FuelDto|
+|UpdateFuel|Guid id FuelDto data|string|Update FuelDto|
+|UpdateFuelAsync|Guid id FuelDto data|string|Update FuelDto|
 
-		<tr>
-			<td>GetGiftCardProgram</td>
-			<td>Guid id</td>
-			<td>GiftCardProgramDto</td>
-			<td>Get individual GiftCardProgramDto</td>
-		</tr>
-		<tr>
-			<td>GetGiftCardProgramAsync</td>
-			<td>Guid id</td>
-			<td>GiftCardProgramDto</td>
-			<td>Get individual GiftCardProgramDto</td>
-		</tr>
-		
-		<tr>
-			<td>CreateGiftCardProgram</td>
-			<td>GiftCardProgramDto data</td>
-			<td>GiftCardProgramDto</td>
-			<td>Create GiftCardProgramDto</td>
-		</tr>
-		<tr>
-			<td>CreateGiftCardProgramAsync</td>
-			<td>GiftCardProgramDto data</td>
-			<td>GiftCardProgramDto</td>
-			<td>Create GiftCardProgramDto</td>
-		</tr>
-	
-		<tr>
-			<td>UpdateGiftCardProgram</td>
-			<td>Guid id </br>GiftCardProgramDto data</td>
-			<td>string</td>
-			<td>Update GiftCardProgramDto</td>
-		</tr>
-		<tr>
-			<td>UpdateGiftCardProgramAsync</td>
-			<td>Guid id </br>GiftCardProgramDto data</td>
-			<td>string</td>
-			<td>Update GiftCardProgramDto</td>
-		</tr>
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>IdentificationDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-            <tr>
-                <td>string SubAccountDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? DriverId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? VehicleId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? ProgramId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ProgramDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? LoyaltyProgramId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string LoyaltyProgramDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? ContractId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ContractDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool RequiresPINChange</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdCompany</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string CompanyName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string DriverCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string DriverFirstName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string DriverLastName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string VehicleCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string VehiclePlate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? SubAccountId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string DriverDescription { get; }
-			 </tr>
-            <tr>
-                <td>string PIN</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ExpirationDateShort</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid NetworkId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string NetworkName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte UseType</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>short? Type</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid TypeModelId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string TypeModelDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Label</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string TrackNumber</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string PAN</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte State</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool Active</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string CreationDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string UpdateDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string AssignmentDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ExpirationDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string AssignmentDateShort</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>int? RequestOrder</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string VehicleDescription</td>
-                <td></td>
-            </tr>
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetIdentifications</td>
-			<td>List Guid  contractIds = null</br> string label = null</br> Guid? vehicle = null</br> Guid? driver = null</br> byte? type = null</br> Guid? model = null</br> Guid? program = null</br> byte? status = null</br> byte? active = null</br> string pan = null</br> int page = 1</br>int pageSize = 50</br> string orderField = "label"</br> string orderType = "asc"</td>
-			<td>IdentificationDto</td>
-			<td>Get list of the IdentificationDto</td>
-		</tr>
-		<tr>
-			<td>GetIdentificationsAsync</td>
-			<td>List Guid  contractIds = null</br> string label = null</br> Guid? vehicle = null</br> Guid? driver = null</br> byte? type = null</br> Guid? model = null</br> Guid? program = null</br> byte? status = null</br> byte? active = null</br> string pan = null</br> int page = 1</br>int pageSize = 50</br> string orderField = "label"</br> string orderType = "asc"</td>
-			<td>IdentificationDto</td>
-			<td>Get list of the IdentificationDto</td>
-		</tr>
+#### FuelsMasterDto
+|Data|Description|
+|--- |--- |
+|Guid Id||
+|short? Type||
+|string Code||
+|string Description||
+|byte? ContingencyCode||
 
-		<tr>
-			<td>GetIdentification</td>
-			<td>Guid id</td>
-			<td>IdentificationDto</td>
-			<td>Get individual IdentificationDto</td>
-		</tr>
-		<tr>
-			<td>GetIdentificationAsync</td>
-			<td>Guid id</td>
-			<td>IdentificationDto</td>
-			<td>Get individual IdentificationDto</td>
-		</tr>
-		
-		<tr>
-			<td>CreateIdentification</td>
-			<td>IdentificationDto data</td>
-			<td>IdentificationDto</td>
-			<td>Create IdentificationDto</td>
-		</tr>
-		<tr>
-			<td>CreateIdentificationAsync</td>
-			<td>IdentificationDto data</td>
-			<td>IdentificationDto</td>
-			<td>Create IdentificationDto</td>
-		</tr>
-	
-		<tr>
-			<td>UpdateIdentification</td>
-			<td>Guid id </br>IdentificationDto data</td>
-			<td>string</td>
-			<td>Update IdentificationDto</td>
-		</tr>
-		<tr>
-			<td>UpdateIdentificationAsync</td>
-			<td>Guid id </br>IdentificationDto data</td>
-			<td>string</td>
-			<td>Update IdentificationDto</td>
-		</tr>
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>IdentificationDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-            <tr>
-                <td>Guid Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string PIN</td>
-                <td></td>
-            </tr>
-            
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		
-		<tr>
-			<td>UpdateIdentificationChangePin</td>
-			<td>Guid id </br>IdentificationsChangePinDto data</td>
-			<td>string</td>
-			<td>Update Pin of identification</td>
-		</tr>
-		<tr>
-			<td>UpdateIdentificationChangePinAsync</td>
-			<td>Guid id </br>IdentificationsChangePinDto data</td>
-			<td>string</td>
-			<td>Update Pin of identification</td>
-		</tr>
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>IdentificationsProviderDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-            <tr>
-                <td>Guid Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid IdNetwork</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>tring Name</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Email</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string EmailTemplate</td>
-                <td></td>
-            </tr>
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetIdentificationsProviders</td>
-			<td>string name = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc"</td>
-			<td>IdentificationsProviderDto</td>
-			<td>Get list of the IdentificationsProviderDto</td>
-		</tr>
-		<tr>
-			<td>GetIdentificationsProvidersAsync</td>
-			<td>string name = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc"</td>
-			<td>IdentificationsProviderDto</td>
-			<td>Get list of the IdentificationsProviderDto</td>
-		</tr>
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetFuelsMasters|int page = 1 int pageSize = 50 string orderField = "code" string orderType = "asc"|FuelsMasterDto|Get list of the FuelsMasterDto|
+|GetFuelsMastersAsync|int page = 1 int pageSize = 50 string orderField = "code" string orderType = "asc"|FuelsMasterDto|Get list of the FuelsMasterDto|
+|GetFuelsMaster|Guid id|FuelsMasterDto|Get individual FuelsMasterDto|
+|GetFuelsMasterAsync|Guid id|FuelsMasterDto|Get individual FuelsMasterDto|
 
-		<tr>
-			<td>GetIdentificationProvider</td>
-			<td>Guid id</td>
-			<td>IdentificationsProviderDto</td>
-			<td>Get individual IdentificationsProviderDto</td>
-		</tr>
-		<tr>
-			<td>GetIdentificationProviderAsync</td>
-			<td>Guid id</td>
-			<td>IdentificationsProviderDto</td>
-			<td>Get individual IdentificationsProviderDto</td>
-		</tr>
-		
-		<tr>
-			<td>CreateIdentificationProvider</td>
-			<td>IdentificationsProviderDto data</td>
-			<td>IdentificationsProviderDto</td>
-			<td>Create IdentificationsProviderDto</td>
-		</tr>
-		<tr>
-			<td>CreateIdentificationProviderAsync</td>
-			<td>IdentificationsProviderDto data</td>
-			<td>IdentificationsProviderDto</td>
-			<td>Create IdentificationsProviderDto</td>
-		</tr>
-	
-		<tr>
-			<td>UpdateIdentificationProvider</td>
-			<td>Guid id </br>IdentificationsProviderDto data</td>
-			<td>string</td>
-			<td>Update IdentificationsProviderDto</td>
-		</tr>
-		<tr>
-			<td>UpdateIdentificationProviderAsync</td>
-			<td>Guid id </br>IdentificationsProviderDto data</td>
-			<td>string</td>
-			<td>Update IdentificationsProviderDto</td>
-		</tr>
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>IdentificationTypeModelDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-            <tr>
-                <td>Guid Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid IdNetwork</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>short IdentificationType</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Description</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool Instalable</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool Personalized</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool Reusable</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool MultipleAssign</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool ValidateExpDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool RequierePin</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>int PinDigits</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool IgnoreTerminalVehicleIdBehavior</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool CustomTrack</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool RequiresPINChange</td>
-                <td></td>
-            </tr>
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetIdentificationTypeModels</td>
-			<td>short? identificationType = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc"</td>
-			<td>IdentificationTypeModelDto</td>
-			<td>Get list of the IdentificationTypeModelDto</td>
-		</tr>
-		<tr>
-			<td>GetIdentificationTypeModelsAsync</td>
-			<td>short? identificationType = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc"</td>
-			<td>IdentificationTypeModelDto</td>
-			<td>Get list of the IdentificationTypeModelDto</td>
-		</tr>
+#### GiftCardClientDto
+|Data|Description|
+|--- |--- |
+|string PIN||
+|bool RequiresPIN||
+|bool IdentificationActive||
+|string TypeModelDescription||
+|Guid TypeModelId||
+|short Type||
+|int RequestOrder||
+|DateTime? RequestOrderDate||
+|byte GiftCardState||
+|DateTime CreationDate||
+|int? PINDigits||
+|Guid? GiftCardRequestOrderId||
+|Guid GiftCardProgramValueId||
+|Guid GiftCardDriverId||
+|Guid GiftCardSubAccountId||
+|Guid GiftCardIdentificationId||
+|Guid GiftCardProgramId||
+|string IdentificationLabel||
+|string IdentificationTrackNumber||
+|decimal? Balance||
+|Guid NetworkId||
+|Guid Id||
+|string GiftCardProgramName||
+|string PAN||
 
-		<tr>
-			<td>GetIdentificationtypeModel</td>
-			<td>Guid id</td>
-			<td>IdentificationTypeModelDto</td>
-			<td>Get individual IdentificationTypeModelDto</td>
-		</tr>
-		<tr>
-			<td>GetIdentificationtypeModelAsync</td>
-			<td>Guid id</td>
-			<td>IdentificationTypeModelDto</td>
-			<td>Get individual IdentificationTypeModelDto</td>
-		</tr>
-	
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>IdentityDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-            <tr>
-                <td>string ReportedCopy</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ReportedProcedureNumber</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ReportedIssueDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ReportedBirthDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ReportedSex</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ReportedLastName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ReportedFirstName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ReportedCountry</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ReportedIdentityNumber</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool UserConsent</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ProfilePicture</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ZipCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string StreetAddress</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>DateTime? BirthDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Alias</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Name</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte? IdentityNumberType</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string IdentityNumber</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid IdNetwork</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string PhoneNumber</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List IdentityLoyaltyIdentificationDto  LoyaltyIdentifications</td>
-                <td></td>
-            </tr>
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetIdentities</td>
-			<td>string identitiyNumber = null</br> string name = null</br> bool? userConsent = null</br> string searchText = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc"</td>
-			<td>IdentityDto</td>
-			<td>Get list of the IdentityDto</td>
-		</tr>
-		<tr>
-			<td>GetIdentitiesAsync</td>
-			<td>string identitiyNumber = null</br> string name = null</br> bool? userConsent = null</br> string searchText = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc"</td>
-			<td>IdentityDto</td>
-			<td>Get list of the IdentityDto</td>
-		</tr>
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetGiftCardClients|Guid? programId = null byte? cardState = null DateTime? CreatedFrom = null DateTime? CreatedTo = null decimal? BalanceFrom = null decimal? BalanceTo = null bool? active = null int page = 1 int pageSize = 50 string orderField = "label" string orderType = "asc" string pan = ""|GiftCardClientDto|Get list of the GiftCardClientDto|
+|GetGiftCardClientsAsync|Guid? programId = null byte? cardState = null DateTime? CreatedFrom = null DateTime? CreatedTo = null decimal? BalanceFrom = null decimal? BalanceTo = null bool? active = null int page = 1 int pageSize = 50 string orderField = "label" string orderType = "asc" string pan = ""|GiftCardClientDto|Get list of the GiftCardClientDto|
+|GetGiftCardClient|Guid id|GiftCardClientDto|Get individual GiftCardClientDto|
+|GetGiftCardClientAsync|Guid id|GiftCardClientDto|Get individual GiftCardClientDto|
+|CreateGiftCardClient|GiftCardClientDto data|GiftCardClientDto|Create GiftCardClientDto|
+|CreateGiftCardClientAsync|GiftCardClientDto data|GiftCardClientDto|Create GiftCardClientDto|
+|UpdateGiftCardClient|GiftCardClientDto data|string|Update GiftCardClientDto|
+|UpdateGiftCardClientAsync|GiftCardClientDto data|string|Update GiftCardClientDto|
 
-		<tr>
-			<td>GetIdentity</td>
-			<td>Guid id</td>
-			<td>IdentityDto</td>
-			<td>Get individual IdentityDto</td>
-		</tr>
-		<tr>
-			<td>GetIdentityAsync</td>
-			<td>Guid id</td>
-			<td>IdentityDto</td>
-			<td>Get individual IdentityDto</td>
-		</tr>
-		
-		<tr>
-			<td>CreateIdentity</td>
-			<td>IdentityDto data</td>
-			<td>IdentityDto</td>
-			<td>Create IdentityDto</td>
-		</tr>
-		<tr>
-			<td>CreateIdentityAsync</td>
-			<td>IdentityDto data</td>
-			<td>IdentityDto</td>
-			<td>Create IdentityDto</td>
-		</tr>
-	
-		<tr>
-			<td>UpdateIdentity</td>
-			<td>Guid id </br>IdentityDto data</td>
-			<td>string</td>
-			<td>Update IdentityDto</td>
-		</tr>
-		<tr>
-			<td>UpdateIdentityAsync</td>
-			<td>Guid id </br>IdentityDto data</td>
-			<td>string</td>
-			<td>Update IdentityDto</td>
-		</tr>
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>LoyaltyAccountDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-            <tr>
-                <td>string VehiclePlate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdFleet</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdVehicle</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string DriverLastName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string DriverFirstName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string DriverEmail</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string DriverCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string DriverLicenseNumber</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string VehicleCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdDriver</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid IdNetwork</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string IdentitiyName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte IdentitiyNumberType</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string IdentitiyNumber</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid IdIdentity</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid IdCompany</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid IdCommunity</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>short CommunityTarget</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>IEnumerable<LoyaltyAccountIdentificationDto> LoyaltyClientCards</td>
-                <td></td>
-            </tr>
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetLoyaltyAccounts</td>
-			<td>string searchText = null</br> string identificationLabel = null</br> string identificationTrackNumber = null</br> Guid? idCommunity = null</br> Guid? idIdentity = null</br> string identityNumber = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "label"</br> string orderType = "asc"</td>
-			<td>LoyaltyAccountDto</td>
-			<td>Get list of the LoyaltyAccountDto</td>
-		</tr>
-		<tr>
-			<td>GetLoyaltyAccounts</td>
-			<td>string searchText = null</br> string identificationLabel = null</br> string identificationTrackNumber = null</br> Guid? idCommunity = null</br> Guid? idIdentity = null</br> string identityNumber = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "label"</br> string orderType = "asc"</td>
-			<td>LoyaltyAccountDto</td>
-			<td>Get list of the LoyaltyAccountDto</td>
-		</tr>
+#### GiftCardProgramDto
+|Data|Description|
+|--- |--- |
+|List GiftCardProgramValueDto  Values||
+|List GiftCardProgramSiteDto  Sites||
+|List GiftCardProgramFuelDto  Fuels||
+|List GiftCardProgramDiscountDto  Discounts||
+|string BINRange||
+|short? CardDuration||
+|byte? CardPeriodicity||
+|bool ActiveCards||
+|bool ValidateSites||
+|string StartDate||
+|short Duration||
+|byte Periodicity||
+|byte CurrentAccountMode||
+|bool Rechargable||
+|bool SingleUse||
+|string Description||
+|string Name||
+|string Code||
+|string NetworkName||
+|Guid NetworkId||
+|Guid Id||
+|GiftCardProgramIdentificationTypeModelDto IdentificationsTypesModel||
+|GiftCardProgramRuleDto Rule||
 
-		<tr>
-			<td>GetLoyaltyAccount</td>
-			<td>Guid id</td>
-			<td>LoyaltyAccountDto</td>
-			<td>Get individual LoyaltyAccountDto</td>
-		</tr>
-		<tr>
-			<td>GetLoyaltyAccountAsync</td>
-			<td>Guid id</td>
-			<td>LoyaltyAccountDto</td>
-			<td>Get individual LoyaltyAccountDto</td>
-		</tr>
-		
-		<tr>
-			<td>CreateLoyaltyAccount</td>
-			<td>LoyaltyAccountDto data</td>
-			<td>LoyaltyAccountDto</td>
-			<td>Create LoyaltyAccountDto</td>
-		</tr>
-		<tr>
-			<td>CreateLoyaltyAccountAsync</td>
-			<td>LoyaltyAccountDto data</td>
-			<td>LoyaltyAccountDto</td>
-			<td>Create LoyaltyAccountDto</td>
-		</tr>
-	
-		<tr>
-			<td>UpdateLoyaltyAccount</td>
-			<td>Guid id </br>LoyaltyAccountDto data</td>
-			<td>string</td>
-			<td>Update LoyaltyAccountDto</td>
-		</tr>
-		<tr>
-			<td>UpdateLoyaltyAccountAsync</td>
-			<td>Guid id </br>LoyaltyAccountDto data</td>
-			<td>string</td>
-			<td>Update LoyaltyAccountDto</td>
-		</tr>
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>LoyaltyTransactionDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-             <tr>
-                <td>Guid? DriverId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string VehiclePlate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string VehicleCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? VehicleId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string FleetName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string FleetCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string DriverCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? FleetId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string SecondaryLoyaltyAccountDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? SecondaryLoyaltyAccountId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool IsPrimaryLoyaltyAccountVehicle</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string PrimaryLoyaltyAccountDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? PrimaryLoyaltyAccountId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string SecondaryIdentificationPAN</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool IsSecondaryLoyaltyAccountVehicle</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string DriverCompleteName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string AccountTypeDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string InvoiceNumber</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool EHVoided</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool Voided</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>short EHState</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte State</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>short ConciliationState</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>decimal? LoyaltyPoints</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>decimal? EHLoyaltyPoints</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string EHComments</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string EHAuthorizationCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string UnitName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>decimal? TransactionAmount</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>decimal? Amount</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string EntryMethod</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ShiftNumber</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>int? BatchNumber</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string SecondaryIdentificationLabel</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List< PaymentsMethodDto PaymentMethods</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? SecondaryIdentificationId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string PrimaryIdentificationLabel</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string StatusDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>short? Status</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ModeDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>short? Mode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string TypeDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>short Type</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string HostDateTime</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ResponseMessage</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string AuthorizationCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string TransactionSequenceNumber</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string SubscriberName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string SubscriberCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? SubscriberId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ResponseCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string SubscriberDateTime</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string SubscriberTimeZone</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string SiteDateTime</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? PrimaryIdentificationId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string CompanyTaxpayerId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string CompanyName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string CompanyCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? CompanyId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string TerminalCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? TerminalId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string SiteName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string SiteCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? SiteId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string MerchantName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string MerchantCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? MerchantId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string DateTime</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string SiteTimeZone</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string PrimaryIdentificationPAN</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List LoyaltyTransactionsProductDto  Products</td>
-                <td></td>
-            </tr>
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetLoyaltyTransactions</td>
-			<td>string dateTimeFrom = null</br> string dateTimeTo = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "code"</br> string orderType = "asc"</td>
-			<td>LoyaltyTransactionDto</td>
-			<td>Get list of the LoyaltyTransactionDto</td>
-		</tr>
-		<tr>
-			<td>GetLoyaltyTransactionsAsync</td>
-			<td>string dateTimeFrom = null</br> string dateTimeTo = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "code"</br> string orderType = "asc"</td>
-			<td>LoyaltyTransactionDto</td>
-			<td>Get list of the LoyaltyTransactionDto</td>
-		</tr>
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetGiftCardPrograms|Guid? NetworkId Guid? IdSite string name = null int page = 1 int pageSize = 50 string orderField = "label" string orderType = "asc"|GiftCardProgramDto|Get list of the GiftCardProgramDto|
+|GetGiftCardProgramsAsync|Guid? NetworkId Guid? IdSite string name = null int page = 1 int pageSize = 50 string orderField = "label" string orderType = "asc"|GiftCardProgramDto|Get list of the GiftCardProgramDto|
+|GetGiftCardProgram|Guid id|GiftCardProgramDto|Get individual GiftCardProgramDto|
+|GetGiftCardProgramAsync|Guid id|GiftCardProgramDto|Get individual GiftCardProgramDto|
+|CreateGiftCardProgram|GiftCardProgramDto data|GiftCardProgramDto|Create GiftCardProgramDto|
+|CreateGiftCardProgramAsync|GiftCardProgramDto data|GiftCardProgramDto|Create GiftCardProgramDto|
+|UpdateGiftCardProgram|Guid id GiftCardProgramDto data|string|Update GiftCardProgramDto|
+|UpdateGiftCardProgramAsync|Guid id GiftCardProgramDto data|string|Update GiftCardProgramDto|
 
-		<tr>
-			<td>GetLoyaltyTransaction</td>
-			<td>Guid id</td>
-			<td>LoyaltyTransactionDto</td>
-			<td>Get individual LoyaltyTransactionDto</td>
-		</tr>
-		<tr>
-			<td>GetLoyaltyTransactionAsync</td>
-			<td>Guid id</td>
-			<td>LoyaltyTransactionDto</td>
-			<td>Get individual LoyaltyTransactionDto</td>
-		</tr>
-	
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>MerchantDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-             <tr>
-                <td>string Custom1</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Custom0</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool Active</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ContactPhone2</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ContactPhone1</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ContactEmail</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ContactName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>DateTime CreationDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string IndustryDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid IndustryId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Custom2</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string TaxPayerId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ZipCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string StateDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid StateId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string CountryDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid CountryId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Street2</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Street1</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Name</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Code</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string City</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Custom3</td>
-                <td></td>
-            </tr>
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetMerchants</td>
-			<td>List Guid  merchantIds = null</br> string code = null</br> string name = null</br> string custom0 = null</br> string custom1 = null</br> string custom2 = null</br> string custom3 = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc"</td>
-			<td>MerchantDto</td>
-			<td>Get list of the MerchantDto</td>
-		</tr>
-		<tr>
-			<td>GetMerchantsAsync</td>
-			<td>List Guid  merchantIds = null</br> string code = null</br> string name = null</br> string custom0 = null</br> string custom1 = null</br> string custom2 = null</br> string custom3 = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc"</td>
-			<td>MerchantDto</td>
-			<td>Get list of the MerchantDto</td>
-		</tr>
+#### IdentificationDto
+|Data|Description|
+|--- |--- |
+|string SubAccountDescription||
+|Guid? DriverId||
+|Guid? VehicleId||
+|Guid? ProgramId||
+|string ProgramDescription||
+|Guid? LoyaltyProgramId||
+|string LoyaltyProgramDescription||
+|Guid? ContractId||
+|string ContractDescription||
+|bool RequiresPINChange||
+|Guid? IdCompany||
+|string CompanyName||
+|string DriverCode||
+|string DriverFirstName||
+|string DriverLastName||
+|string VehicleCode||
+|string VehiclePlate||
+|Guid? SubAccountId||
+|string DriverDescription||
+|string PIN||
+|string ExpirationDateShort||
+|Guid NetworkId||
+|string NetworkName||
+|Guid Id||
+|byte UseType||
+|short? Type||
+|Guid TypeModelId||
+|string TypeModelDescription||
+|string Label||
+|string TrackNumber||
+|string PAN||
+|byte State||
+|bool Active||
+|string CreationDate||
+|string UpdateDate||
+|string AssignmentDate||
+|string ExpirationDate||
+|string AssignmentDateShort||
+|int? RequestOrder||
+|string VehicleDescription||
 
-		<tr>
-			<td>GetMerchant</td>
-			<td>Guid id</td>
-			<td>MerchantDto</td>
-			<td>Get individual MerchantDto</td>
-		</tr>
-		<tr>
-			<td>GetMerchantAsync</td>
-			<td>Guid id</td>
-			<td>MerchantDto</td>
-			<td>Get individual MerchantDto</td>
-		</tr>
-		
-		<tr>
-			<td>CreateMerchant</td>
-			<td>MerchantDto data</td>
-			<td>MerchantDto</td>
-			<td>Create MerchantDto</td>
-		</tr>
-		<tr>
-			<td>CreateMerchantAsync</td>
-			<td>MerchantDto data</td>
-			<td>MerchantDto</td>
-			<td>Create MerchantDto</td>
-		</tr>
-	
-		<tr>
-			<td>UpdateMerchant</td>
-			<td>Guid id </br>MerchantDto data</td>
-			<td>string</td>
-			<td>Update MerchantDto</td>
-		</tr>
-		<tr>
-			<td>UpdateMerchantAsync</td>
-			<td>Guid id </br>MerchantDto data</td>
-			<td>string</td>
-			<td>Update MerchantDto</td>
-		</tr>
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>MovementDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-             <tr>
-                <td>string OriginId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte Origin</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte Type</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>DateTime NetworkDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string NetworkTimeZone</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>DateTime RealDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool Reversed</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Description</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? UserAtionetId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? ProcessBillingStatementId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? FastTrackId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? TransactionId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid CompanyId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? LastMovementId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List MovementsDetailDto  DetailsMovementDto</td>
-                <td></td>
-            </tr>
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetMovements</td>
-			<td>Guid? idCompany=null</br>
-			  Guid? fastTrackId = null</br> Guid? lastMovementId = null</br> Guid? processBillingStatementId = null</br> Guid? transactionId = null</br> Guid? userAtionetId = null</br>
-			  string originId = null</br> string description = null</br>
-			  byte? origin = null</br> byte? type = null</br> bool? reversed = null</br>
-			  string realDateFrom = null</br> string realDateTo = null</br>
-			  string order = "desc"</br> int page = 1</br> int pageSize = 50</td>
-			<td>MovementDto</td>
-			<td>Get list of the MovementDto</td>
-		</tr>
-		<tr>
-			<td>GetMovementsAsync</td>
-			<td>Guid? idCompany=null</br>
-			  Guid? fastTrackId = null</br> Guid? lastMovementId = null</br> Guid? processBillingStatementId = null</br> Guid? transactionId = null</br> Guid? userAtionetId = null</br>
-			  string originId = null</br> string description = null</br>
-			  byte? origin = null</br> byte? type = null</br> bool? reversed = null</br>
-			  string realDateFrom = null</br> string realDateTo = null</br>
-			  string order = "desc"</br> int page = 1</br> int pageSize = 50</td>
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetIdentifications|List Guid  contractIds = null string label = null Guid? vehicle = null Guid? driver = null byte? type = null Guid? model = null Guid? program = null byte? status = null byte? active = null string pan = null int page = 1int pageSize = 50 string orderField = "label" string orderType = "asc"|IdentificationDto|Get list of the IdentificationDto|
+|GetIdentificationsAsync|List Guid  contractIds = null string label = null Guid? vehicle = null Guid? driver = null byte? type = null Guid? model = null Guid? program = null byte? status = null byte? active = null string pan = null int page = 1int pageSize = 50 string orderField = "label" string orderType = "asc"|IdentificationDto|Get list of the IdentificationDto|
+|GetIdentification|Guid id|IdentificationDto|Get individual IdentificationDto|
+|GetIdentificationAsync|Guid id|IdentificationDto|Get individual IdentificationDto|
+|CreateIdentification|IdentificationDto data|IdentificationDto|Create IdentificationDto|
+|CreateIdentificationAsync|IdentificationDto data|IdentificationDto|Create IdentificationDto|
+|UpdateIdentification|Guid id IdentificationDto data|string|Update IdentificationDto|
+|UpdateIdentificationAsync|Guid id IdentificationDto data|string|Update IdentificationDto|
 
-			<td>MovementDto</td>
-			<td>Get list of the MovementDto</td>
-		</tr>
+#### IdentificationDto
+|Data|Description|
+|--- |--- |
+|Guid Id||
+|string PIN||
 
-		<tr>
-			<td>GetMovement</td>
-			<td>Guid id</td>
-			<td>MovementDto</td>
-			<td>Get individual MovementDto</td>
-		</tr>
-		<tr>
-			<td>GetMovementAsync</td>
-			<td>Guid id</td>
-			<td>MovementDto</td>
-			<td>Get individual MovementDto</td>
-		</tr>
-	
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>NetworkDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-             <tr>
-                <td>string StateName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string TimeZone</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string City</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Street1</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Street2</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ZipCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string PhoneNumber1</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string PhoneNumber2</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ContactName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ContactEmail</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string CreationDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid StateId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid BrandId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string IdentificationRequestMail</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string SupportMail</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string SenderMail</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool IsEdiFactBillingProcessType</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List NetworkCustomFieldsConfigurationDto  CustomFieldsConfigurations</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List NetworkCompanyDto  Companies</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List NetworkMerchantDto  Merchants</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List NetworkFiscalConfigurationDto  FiscalConfigurations</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string PrimaryColor</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string SecondaryColor</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string AccentColor</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string BrandName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string NetworkLogoURL</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string CountryName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string TaxPayerId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Name</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>short Type</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte? BalanceMode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte? CurrentAccountMode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte BillingProcessType</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>short EdiFactTaxRegimeCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Code</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string InternalCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool Active</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool SupportsLoyalty</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid CountryId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool SupportsInventory</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool SupportsTracking</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool SupportsFleet</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool SupportsAnalytics</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool SupportsConsumerCard</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool SupportsWorkflows</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool SupportsDriverMobileApp</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool SupportsCompanyMobileApp</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool SupportsMerchantMobileApp</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool SupportsNetworkMobileApp</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid IndustryId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string IndustryDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool SupportsOffline</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string NetworkLogoExtension</td>
-                <td></td>
-            </tr>
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		
-		<tr>
-			<td>GetNetworkAsync</td>
-			<td></td>
-			<td>NetworkDto</td>
-			<td>Get individual NetworkDto</td>
-		</tr>
-		<tr>
-			<td>GetNetworkAsync</td>
-			<td></td>
-			<td>NetworkDto</td>
-			<td>Get individual NetworkDto</td>
-		</tr>
-	
-	</tbody>
-</table>
-<BR/>
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|UpdateIdentificationChangePin|Guid id IdentificationsChangePinDto data|string|Update Pin of identification|
+|UpdateIdentificationChangePinAsync|Guid id IdentificationsChangePinDto data|string|Update Pin of identification|
+
+#### IdentificationsProviderDto
+|Data|Description|
+|--- |--- |
+|Guid Id||
+|Guid IdNetwork||
+|tring Name||
+|string Email||
+|string EmailTemplate||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetIdentificationsProviders|string name = null int page = 1 int pageSize = 50 string orderField = "name" string orderType = "asc"|IdentificationsProviderDto|Get list of the IdentificationsProviderDto|
+|GetIdentificationsProvidersAsync|string name = null int page = 1 int pageSize = 50 string orderField = "name" string orderType = "asc"|IdentificationsProviderDto|Get list of the IdentificationsProviderDto|
+|GetIdentificationProvider|Guid id|IdentificationsProviderDto|Get individual IdentificationsProviderDto|
+|GetIdentificationProviderAsync|Guid id|IdentificationsProviderDto|Get individual IdentificationsProviderDto|
+|CreateIdentificationProvider|IdentificationsProviderDto data|IdentificationsProviderDto|Create IdentificationsProviderDto|
+|CreateIdentificationProviderAsync|IdentificationsProviderDto data|IdentificationsProviderDto|Create IdentificationsProviderDto|
+|UpdateIdentificationProvider|Guid id IdentificationsProviderDto data|string|Update IdentificationsProviderDto|
+|UpdateIdentificationProviderAsync|Guid id IdentificationsProviderDto data|string|Update IdentificationsProviderDto|
+
+#### IdentificationTypeModelDto
+|Data|Description|
+|--- |--- |
+|Guid Id||
+|Guid IdNetwork||
+|short IdentificationType||
+|string Description||
+|bool Instalable||
+|bool Personalized||
+|bool Reusable||
+|bool MultipleAssign||
+|bool ValidateExpDate||
+|bool RequierePin||
+|int PinDigits||
+|bool IgnoreTerminalVehicleIdBehavior||
+|bool CustomTrack||
+|bool RequiresPINChange||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetIdentificationTypeModels|short? identificationType = null int page = 1 int pageSize = 50 string orderField = "name" string orderType = "asc"|IdentificationTypeModelDto|Get list of the IdentificationTypeModelDto|
+|GetIdentificationTypeModelsAsync|short? identificationType = null int page = 1 int pageSize = 50 string orderField = "name" string orderType = "asc"|IdentificationTypeModelDto|Get list of the IdentificationTypeModelDto|
+|GetIdentificationtypeModel|Guid id|IdentificationTypeModelDto|Get individual IdentificationTypeModelDto|
+|GetIdentificationtypeModelAsync|Guid id|IdentificationTypeModelDto|Get individual IdentificationTypeModelDto|
+
+#### IdentityDto
+|Data|Description|
+|--- |--- |
+|string ReportedCopy||
+|string ReportedProcedureNumber||
+|string ReportedIssueDate||
+|string ReportedBirthDate||
+|string ReportedSex||
+|string ReportedLastName||
+|string ReportedFirstName||
+|string ReportedCountry||
+|string ReportedIdentityNumber||
+|bool UserConsent||
+|string ProfilePicture||
+|string ZipCode||
+|string StreetAddress||
+|DateTime? BirthDate||
+|string Alias||
+|string Name||
+|byte? IdentityNumberType||
+|string IdentityNumber||
+|Guid IdNetwork||
+|Guid Id||
+|string PhoneNumber||
+|List IdentityLoyaltyIdentificationDto  LoyaltyIdentifications||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetIdentities|string identitiyNumber = null string name = null bool? userConsent = null string searchText = null int page = 1 int pageSize = 50 string orderField = "name" string orderType = "asc"|IdentityDto|Get list of the IdentityDto|
+|GetIdentitiesAsync|string identitiyNumber = null string name = null bool? userConsent = null string searchText = null int page = 1 int pageSize = 50 string orderField = "name" string orderType = "asc"|IdentityDto|Get list of the IdentityDto|
+|GetIdentity|Guid id|IdentityDto|Get individual IdentityDto|
+|GetIdentityAsync|Guid id|IdentityDto|Get individual IdentityDto|
+|CreateIdentity|IdentityDto data|IdentityDto|Create IdentityDto|
+|CreateIdentityAsync|IdentityDto data|IdentityDto|Create IdentityDto|
+|UpdateIdentity|Guid id IdentityDto data|string|Update IdentityDto|
+|UpdateIdentityAsync|Guid id IdentityDto data|string|Update IdentityDto|
+
+#### LoyaltyAccountDto
+|Data|Description|
+|--- |--- |
+|string VehiclePlate||
+|Guid? IdFleet||
+|Guid? IdVehicle||
+|string DriverLastName||
+|string DriverFirstName||
+|string DriverEmail||
+|string DriverCode||
+|string DriverLicenseNumber||
+|string VehicleCode||
+|Guid? IdDriver||
+|Guid IdNetwork||
+|string IdentitiyName||
+|byte IdentitiyNumberType||
+|string IdentitiyNumber||
+|Guid IdIdentity||
+|Guid IdCompany||
+|Guid IdCommunity||
+|Guid Id||
+|short CommunityTarget||
+|IEnumerable LoyaltyClientCards||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetLoyaltyAccounts|string searchText = null string identificationLabel = null string identificationTrackNumber = null Guid? idCommunity = null Guid? idIdentity = null string identityNumber = null int page = 1 int pageSize = 50 string orderField = "label" string orderType = "asc"|LoyaltyAccountDto|Get list of the LoyaltyAccountDto|
+|GetLoyaltyAccounts|string searchText = null string identificationLabel = null string identificationTrackNumber = null Guid? idCommunity = null Guid? idIdentity = null string identityNumber = null int page = 1 int pageSize = 50 string orderField = "label" string orderType = "asc"|LoyaltyAccountDto|Get list of the LoyaltyAccountDto|
+|GetLoyaltyAccount|Guid id|LoyaltyAccountDto|Get individual LoyaltyAccountDto|
+|GetLoyaltyAccountAsync|Guid id|LoyaltyAccountDto|Get individual LoyaltyAccountDto|
+|CreateLoyaltyAccount|LoyaltyAccountDto data|LoyaltyAccountDto|Create LoyaltyAccountDto|
+|CreateLoyaltyAccountAsync|LoyaltyAccountDto data|LoyaltyAccountDto|Create LoyaltyAccountDto|
+|UpdateLoyaltyAccount|Guid id LoyaltyAccountDto data|string|Update LoyaltyAccountDto|
+|UpdateLoyaltyAccountAsync|Guid id LoyaltyAccountDto data|string|Update LoyaltyAccountDto|
+
+#### LoyaltyTransactionDto
+|Data|Description|
+|--- |--- |
+|Guid? DriverId||
+|string VehiclePlate||
+|string VehicleCode||
+|Guid? VehicleId||
+|string FleetName||
+|string FleetCode||
+|string DriverCode||
+|Guid? FleetId||
+|string SecondaryLoyaltyAccountDescription||
+|Guid? SecondaryLoyaltyAccountId||
+|bool IsPrimaryLoyaltyAccountVehicle||
+|string PrimaryLoyaltyAccountDescription||
+|Guid? PrimaryLoyaltyAccountId||
+|string SecondaryIdentificationPAN||
+|bool IsSecondaryLoyaltyAccountVehicle||
+|string DriverCompleteName||
+|string AccountTypeDescription||
+|string InvoiceNumber||
+|bool EHVoided||
+|bool Voided||
+|short EHState||
+|byte State||
+|short ConciliationState||
+|decimal? LoyaltyPoints||
+|decimal? EHLoyaltyPoints||
+|string EHComments||
+|string EHAuthorizationCode||
+|string UnitName||
+|decimal? TransactionAmount||
+|decimal? Amount||
+|string EntryMethod||
+|string ShiftNumber||
+|int? BatchNumber||
+|string SecondaryIdentificationLabel||
+|List< PaymentsMethodDto PaymentMethods||
+|Guid? SecondaryIdentificationId||
+|string PrimaryIdentificationLabel||
+|string StatusDescription||
+|short? Status||
+|string ModeDescription||
+|short? Mode||
+|string TypeDescription||
+|short Type||
+|string HostDateTime||
+|string ResponseMessage||
+|string AuthorizationCode||
+|string TransactionSequenceNumber||
+|string SubscriberName||
+|string SubscriberCode||
+|Guid? SubscriberId||
+|Guid Id||
+|string ResponseCode||
+|string SubscriberDateTime||
+|string SubscriberTimeZone||
+|string SiteDateTime||
+|Guid? PrimaryIdentificationId||
+|string CompanyTaxpayerId||
+|string CompanyName||
+|string CompanyCode||
+|Guid? CompanyId||
+|string TerminalCode||
+|Guid? TerminalId||
+|string SiteName||
+|string SiteCode||
+|Guid? SiteId||
+|string MerchantName||
+|string MerchantCode||
+|Guid? MerchantId||
+|string DateTime||
+|string SiteTimeZone||
+|string PrimaryIdentificationPAN||
+|List LoyaltyTransactionsProductDto  Products||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetLoyaltyTransactions|string dateTimeFrom = null string dateTimeTo = null int page = 1 int pageSize = 50 string orderField = "code" string orderType = "asc"|LoyaltyTransactionDto|Get list of the LoyaltyTransactionDto|
+|GetLoyaltyTransactionsAsync|string dateTimeFrom = null string dateTimeTo = null int page = 1 int pageSize = 50 string orderField = "code" string orderType = "asc"|LoyaltyTransactionDto|Get list of the LoyaltyTransactionDto|
+|GetLoyaltyTransaction|Guid id|LoyaltyTransactionDto|Get individual LoyaltyTransactionDto|
+|GetLoyaltyTransactionAsync|Guid id|LoyaltyTransactionDto|Get individual LoyaltyTransactionDto|
+
+#### MerchantDto
+|Data|Description|
+|--- |--- |
+|string Custom1||
+|string Custom0||
+|bool Active||
+|string ContactPhone2||
+|string ContactPhone1||
+|string ContactEmail||
+|string ContactName||
+|DateTime CreationDate||
+|string IndustryDescription||
+|Guid IndustryId||
+|string Custom2||
+|string TaxPayerId||
+|string ZipCode||
+|string StateDescription||
+|Guid StateId||
+|string CountryDescription||
+|Guid CountryId||
+|string Street2||
+|string Street1||
+|string Name||
+|string Code||
+|Guid Id||
+|string City||
+|string Custom3||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetMerchants|List Guid  merchantIds = null string code = null string name = null string custom0 = null string custom1 = null string custom2 = null string custom3 = null int page = 1 int pageSize = 50 string orderField = "name" string orderType = "asc"|MerchantDto|Get list of the MerchantDto|
+|GetMerchantsAsync|List Guid  merchantIds = null string code = null string name = null string custom0 = null string custom1 = null string custom2 = null string custom3 = null int page = 1 int pageSize = 50 string orderField = "name" string orderType = "asc"|MerchantDto|Get list of the MerchantDto|
+|GetMerchant|Guid id|MerchantDto|Get individual MerchantDto|
+|GetMerchantAsync|Guid id|MerchantDto|Get individual MerchantDto|
+|CreateMerchant|MerchantDto data|MerchantDto|Create MerchantDto|
+|CreateMerchantAsync|MerchantDto data|MerchantDto|Create MerchantDto|
+|UpdateMerchant|Guid id MerchantDto data|string|Update MerchantDto|
+|UpdateMerchantAsync|Guid id MerchantDto data|string|Update MerchantDto|
+
+#### MovementDto
+|Data|Description|
+|--- |--- |
+|string OriginId||
+|byte Origin||
+|byte Type||
+|DateTime NetworkDate||
+|string NetworkTimeZone||
+|DateTime RealDate||
+|bool Reversed||
+|string Description||
+|Guid? UserAtionetId||
+|Guid? ProcessBillingStatementId||
+|Guid? FastTrackId||
+|Guid? TransactionId||
+|Guid CompanyId||
+|Guid Id||
+|Guid? LastMovementId||
+|List MovementsDetailDto  DetailsMovementDto||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetMovements|Guid? idCompany=null
+		  Guid? fastTrackId = null Guid? lastMovementId = null Guid? processBillingStatementId = null Guid? transactionId = null Guid? userAtionetId = null
+			  string originId = null string description = null
+			  byte? origin = null byte? type = null bool? reversed = null
+			  string realDateFrom = null string realDateTo = null
+			  string order = "desc" int page = 1 int pageSize = 50|MovementDto|Get list of the MovementDto|
+|GetMovementsAsync|Guid? idCompany=null
+		  Guid? fastTrackId = null Guid? lastMovementId = null Guid? processBillingStatementId = null Guid? transactionId = null Guid? userAtionetId = null
+			  string originId = null string description = null
+			  byte? origin = null byte? type = null bool? reversed = null
+			  string realDateFrom = null string realDateTo = null
+			  string order = "desc" int page = 1 int pageSize = 50|MovementDto|Get list of the MovementDto|
+|GetMovement|Guid id|MovementDto|Get individual MovementDto|
+|GetMovementAsync|Guid id|MovementDto|Get individual MovementDto|
+
+#### NetworkDto
+|Data|Description|
+|--- |--- |
+|string StateName||
+|string TimeZone||
+|string City||
+|string Street1||
+|string Street2||
+|string ZipCode||
+|string PhoneNumber1||
+|string PhoneNumber2||
+|string ContactName||
+|string ContactEmail||
+|string CreationDate||
+|Guid StateId||
+|Guid BrandId||
+|string IdentificationRequestMail||
+|string SupportMail||
+|string SenderMail||
+|bool IsEdiFactBillingProcessType||
+|List NetworkCustomFieldsConfigurationDto  CustomFieldsConfigurations||
+|List NetworkCompanyDto  Companies||
+|List NetworkMerchantDto  Merchants||
+|List NetworkFiscalConfigurationDto  FiscalConfigurations||
+|string PrimaryColor||
+|string SecondaryColor||
+|string AccentColor||
+|string BrandName||
+|string NetworkLogoURL||
+|string CountryName||
+|string TaxPayerId||
+|Guid Id||
+|string Name||
+|short Type||
+|byte? BalanceMode||
+|byte? CurrentAccountMode||
+|byte BillingProcessType||
+|short EdiFactTaxRegimeCode||
+|string Code||
+|string InternalCode||
+|bool Active||
+|bool SupportsLoyalty||
+|Guid CountryId||
+|bool SupportsInventory||
+|bool SupportsTracking||
+|bool SupportsFleet||
+|bool SupportsAnalytics||
+|bool SupportsConsumerCard||
+|bool SupportsWorkflows||
+|bool SupportsDriverMobileApp||
+|bool SupportsCompanyMobileApp||
+|bool SupportsMerchantMobileApp||
+|bool SupportsNetworkMobileApp||
+|Guid IndustryId||
+|string IndustryDescription||
+|bool SupportsOffline||
+|string NetworkLogoExtension||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetNetworkAsync||NetworkDto|Get individual NetworkDto|
+|GetNetworkAsync||NetworkDto|Get individual NetworkDto|
+
+#### PaymentsMethodDto
 <table>
 		<h4>PaymentsMethodDto</h4>
 			<thead>
