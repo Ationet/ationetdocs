@@ -179,7 +179,7 @@ You can download a fully functional sample code from here: https://github.com/at
 |string |CategoryDescription||
 |int |Category||
 |int |Environment||
-|Guid? MerchantId||
+|Guid? |MerchantId||
 |Guid? |CompanyId||
 |Guid? |NetworkId||
 |Guid |Id||
@@ -191,203 +191,51 @@ You can download a fully functional sample code from here: https://github.com/at
 |GetLogs|List&lt;Guid>  userIds <BR> List&lt;int>  categories <BR> string dateFrom <BR> string dateTo = null <BR> Guid? idCompany = null<BR> int page = 1 <BR>int pageSize = 50 <BR>int? action = null <BR>int? subCategory = null <BR>string timeFrom = null <BR>string timeTo = null|AuditLogDto|Get list of the AuditLogDto|
 |GetLogsAsync|List&lt;Guid>  userIds <BR>List&lt;int>  categories<BR> string dateFrom <BR>string dateTo = null <BR>Guid? idCompany = null <BR>int page = 1 <BR>int pageSize = 50 <BR>int? action = null <BR>int? subCategory = null <BR>string timeFrom = null <BR>string timeTo = null|AuditLogDto|Get list of the AuditLogDto|
 
-</BR>
-<table>
-		<h4>CompanyDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-			<tr>
-                <td>string Custom1</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Custom0</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte? DesactivationType</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool Active</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ContactPhone2</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ContactPhone1</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ContactEmail</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ContactName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>DateTime UpdateDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte Type</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>DateTime CreationDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string IndustryDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid IndustryId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Custom2</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string TaxpayerCategoryDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string TaxPayerId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string City</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ZipCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string StateDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid StateId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string CountryDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid CountryId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Street2</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Street1</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Name</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Code</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid NetworkId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid TaxpayerCategoryId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Custom3</td>
-                <td></td>
-            </tr>
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetCompanies</td>
-			<td>List Guid  companyIds = null</br> string code = null</br> string name = null</br> string custom0 = null</br> string custom1 = null</br> string custom2 = null</br> string custom3 = null</br> DateTime? updateDate = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc"</td>
-			<td>CompanyDto</td>
-			<td>Get list of the CompanyDto</td>
-		</tr>
-		<tr>
-			<td>GetCompaniesAsync</td>
-			<td>List Guid  companyIds = null</br> string code = null</br> string name = null</br> string custom0 = null</br> string custom1 = null</br> string custom2 = null</br> string custom3 = null</br> DateTime? updateDate = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc"</td>
-			<td>CompanyDto</td>
-			<td>Get list of the CompanyDto</td>
-		</tr>
+#### CompanyDto
+|Type|Name|Description|
+|--- |--- |--- |
+|string |Custom1||
+|string |Custom0||
+|byte? |DesactivationType||
+|bool |Active||
+|string |ContactPhone2||
+|string |ContactPhone1||
+|string |ContactEmail||
+|string |ContactName||
+|DateTime |UpdateDate||
+|byte |Type||
+|DateTime |CreationDate||
+|string |IndustryDescription||
+|Guid |IndustryId||
+|string |Custom2||
+|string |TaxpayerCategoryDescription||
+|string |TaxPayerId||
+|string |City||
+|string |ZipCode||
+|string |StateDescription||
+|Guid |StateId||
+|string |CountryDescription||
+|Guid |CountryId||
+|string |Street2||
+|string |Street1||
+|string |Name||
+|string |Code||
+|Guid |NetworkId||
+|Guid |Id||
+|Guid |TaxpayerCategoryId||
+|string |Custom3||
 
-		<tr>
-			<td>GetCompany</td>
-			<td>Guid id</td>
-			<td>CompanyDto</td>
-			<td>Get individual CompanyDto</td>
-		</tr>
-		<tr>
-			<td>GetCompanyAsync</td>
-			<td>Guid id</td>
-			<td>CompanyDto</td>
-			<td>Get individual CompanyDto</td>
-		</tr>
-		
-		<tr>
-			<td>CreateCompany</td>
-			<td>CompanyDto data</td>
-			<td>CompanyDto</td>
-			<td>Create CompanyDto</td>
-		</tr>
-		<tr>
-			<td>CreateCompanyAsync</td>
-			<td>CompanyDto data</td>
-			<td>CompanyDto</td>
-			<td>Create CompanyDto</td>
-		</tr>
-	
-		<tr>
-			<td>UpdateCompany</td>
-			<td>Guid id </br>CompanyDto data</td>
-			<td>string</td>
-			<td>Update CompanyDto</td>
-		</tr>
-		<tr>
-			<td>UpdateCompanyAsync</td>
-			<td>Guid id </br>CompanyDto data</td>
-			<td>string</td>
-			<td>Update CompanyDto</td>
-		</tr>
-	</tbody>
-</table>
-</BR>
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetCompanies|List&lt;Guid>  companyIds = null <BR>string code = null <BR>string name = null <BR>string custom0 = null <BR>string custom1 = null <BR>string custom2 = null <BR>string custom3 = null <BR>DateTime? updateDate = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "name" <BR>string orderType = "asc"|CompanyDto|Get list of the CompanyDto|
+|GetCompaniesAsync|List&lt;Guid> companyIds = null <BR>string code = null <BR>string name = null <BR>string custom0 = null <BR>string custom1 = null <BR>string custom2 = null <BR>string custom3 = null <BR>DateTime? updateDate = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "name" <BR>string orderType = "asc"|CompanyDto|Get list of the CompanyDto|
+|GetCompany|Guid id|CompanyDto|Get individual CompanyDto|
+|GetCompanyAsync|Guid id|CompanyDto|Get individual CompanyDto|
+|CreateCompany|CompanyDto data|CompanyDto|Create CompanyDto|
+|CreateCompanyAsync|CompanyDto data|CompanyDto|Create CompanyDto|
+|UpdateCompany|Guid id CompanyDto data|string|Update CompanyDto|
+|UpdateCompanyAsync|Guid id CompanyDto data|string|Update CompanyDto|
+
 <table>
 		<h4>CompanyClassificationsConfigurationDto</h4>
 			<thead>
