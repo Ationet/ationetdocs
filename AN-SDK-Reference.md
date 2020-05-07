@@ -158,38 +158,38 @@ You can download a fully functional sample code from here: https://github.com/at
 ### Api Methods
 
 #### AuditLog
-|Data|Description|
-|--- |--- |
-|string NetworkDateString||
-|DateTime? NetworkDate||
-|string NewData||
-|string OriginalData||
-|Guid? EntityId||
-|string MerchantName||
-|string CompanyName||
-|string NetworkName||
-|string UserName||
-|Guid UserId||
-|string OriginDescription||
-|int? Origin||
-|string ActionDescription||
-|int Action||
-|string SubCategoryDescription||
-|int? SubCategory||
-|string CategoryDescription||
-|int Category||
-|int Environment||
+|Type|Name|Description|
+|--- |--- |--- |
+|string|NetworkDateString||
+|DateTime?|NetworkDate||
+|string|NewData||
+|string|OriginalData||
+|Guid? |EntityId||
+|string |MerchantName||
+|string |CompanyName||
+|string |NetworkName||
+|string |UserName||
+|Guid |UserId||
+|string |OriginDescription||
+|int? |Origin||
+|string |ActionDescription||
+|int |Action||
+|string |SubCategoryDescription||
+|int? |SubCategory||
+|string |CategoryDescription||
+|int |Category||
+|int |Environment||
 |Guid? MerchantId||
-|Guid? CompanyId||
-|Guid? NetworkId||
-|Guid Id||
-|DateTime RealDate||
-|string RealDateString||
+|Guid? |CompanyId||
+|Guid? |NetworkId||
+|Guid |Id||
+|DateTime |RealDate||
+|string |RealDateString||
 
 |Method|Parameters (Type / var name / default value / Descr)|Response|Description|
 |--- |--- |--- |--- |
-|GetLogs|List&lt;Guid>  userIds <BR> List<int>  categories <BR> string dateFrom <BR> string dateTo = null <BR> Guid? idCompany = null int page = 1 int pageSize = 50 int? action = null int? subCategory = null string timeFrom = null string timeTo = null|AuditLogDto|Get list of the AuditLogDto|
-|GetLogsAsync|List Guid  userIds List int  categories string dateFrom string dateTo = null Guid? idCompany = null int page = 1 int pageSize = 50 int? action = null int? subCategory = null string timeFrom = null string timeTo = null|AuditLogDto|Get list of the AuditLogDto|
+|GetLogs|List&lt;Guid>  userIds <BR> List&lt;int>  categories <BR> string dateFrom <BR> string dateTo = null <BR> Guid? idCompany = null<BR> int page = 1 <BR>int pageSize = 50 <BR>int? action = null <BR>int? subCategory = null <BR>string timeFrom = null <BR>string timeTo = null|AuditLogDto|Get list of the AuditLogDto|
+|GetLogsAsync|List&lt;Guid>  userIds <BR>List&lt;int>  categories<BR> string dateFrom <BR>string dateTo = null <BR>Guid? idCompany = null <BR>int page = 1 <BR>int pageSize = 50 <BR>int? action = null <BR>int? subCategory = null <BR>string timeFrom = null <BR>string timeTo = null|AuditLogDto|Get list of the AuditLogDto|
 
 </BR>
 <table>
