@@ -233,1296 +233,303 @@ You can download a fully functional sample code from here: https://github.com/at
 |GetCompanyAsync|Guid id|CompanyDto|Get individual CompanyDto|
 |CreateCompany|CompanyDto data|CompanyDto|Create CompanyDto|
 |CreateCompanyAsync|CompanyDto data|CompanyDto|Create CompanyDto|
-|UpdateCompany|Guid id CompanyDto data|string|Update CompanyDto|
-|UpdateCompanyAsync|Guid id CompanyDto data|string|Update CompanyDto|
+|UpdateCompany|Guid id <BR>CompanyDto data|string|Update CompanyDto|
+|UpdateCompanyAsync|Guid id <BR>CompanyDto data|string|Update CompanyDto|
 
-<table>
-		<h4>CompanyClassificationsConfigurationDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-				<tr> 
-					<td>Guid IdCompany</td>
-					<td>Identification of de Company</td>
-				</tr>
-				<tr> 
-					<td>string Classification1Label</td>
-					<td>classification 1 Label</td>
-				</tr>
-				<tr> 
-					<td>string Classification2Label</td>
-					<td>classification 2 Label</td>
-				</tr>
-				<tr> 
-					<td>string Classification3Label</td>
-					<td>classification 3 Label</td>
-				</tr>
-				<tr> 
-					<td>string Classification4Label</td>
-					<td>classification 4 Label</td>
-				</tr>
-				<tr> 
-					<td>bool Classification1Enabled</td>
-					<td>status for the use of the company</td>
-				</tr>
-				<tr> 
-					<td>bool Classification2Enabled</td>
-					<td>status for the use of the company</td>
-				</tr>
-				<tr> 
-					<td>bool Classification3Enabled</td>
-					<td>status for the use of the company</td>
-				</tr>
-				<tr> 
-					<td>bool Classification4Enabled</td>
-					<td>status for the use of the company</td>
-				</tr>
-			</tbody>
-</table>
-<table>
-	
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
 
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetCompaniesClassificationsConfiguration</td>
-			<td></td>
-			<td>CompanyClassificationsConfigurationDto</td>
-			<td>Get the configuractions of the Classifications Companies</td>
-		</tr>
-		<tr>
-			<td>GetCompaniesClassificationsConfigurationAsync</td>
-			<td></td>
-			<td>CompanyClassificationsConfigurationDto</td>
-			<td>Get the configuractions of the Classifications Companies</td>
-			
-		</tr>
-		<tr>
-			<td>UpdateCompaniesClassificationsConfiguration</td>
-			<td>CompanyClassificationsConfigurationDto data</td>
-			<td>string</td>
-			<td>Update configuractions of the Classifications Companies</td>
-			
-		</tr>
-		<tr>
-			<td>UpdateCompaniesClassificationsConfigurationAsync</td>
-			<td>CompanyClassificationsConfigurationDto data</td>
-			<td>string</td>
-			<td>Update configuractions of the Classifications Companies</td>
-		</tr>
-	</tbody>
-</table>
-</BR>
-<table>
-		<h4>CompaniesGroupsMovementDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-				<tr> 
-					<td>string TypeDescription</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>Guid? IdOrigen</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>byte Origen</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>DateTime NetworkDate</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>DateTime RealDate</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>bool IsDebit</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>string DisplayDateTimeString </td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>Guid? IdCurrencyCode</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>string Description</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>byte Type</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>string CompaniesGroupDescription</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>Guid IdCompaniesGroup</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>Guid IdNetwork</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>Guid Id</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>decimal Amount</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>string DisplayNetworkDateTimeString</td>
-					<td></td>
-				</tr>
-			</tbody>
-</table>
-<table>
-	
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetCompaniesGroupsMovements</td>
-			<td></td>
-			<td>CompaniesGroupsMovementDto</td>
-			<td>Get list of the CompaniesGroupsMovementDto</td>
-		</tr>
-		<tr>
-			<td>GetCompaniesGroupsMovements</td>
-			<td>Guid? companiesGroupId = null </br>string companiesGroupCode = null</br> string dateFrom = null</br> string dateTo = null</br> decimal? amountFrom = null</br> decimal? amountTo = null</br> byte? type = null</br> byte? origin = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "networkDate"</br> string orderType = "asc"</td>
-			<td>CompaniesGroupsMovementDto</td>
-			<td>Get list of the CompaniesGroupsMovementDto</td>
-		</tr>
-		<tr>
-			<td>GetCompaniesGroupsMovementsAsync</td>
-			<td>Guid? companiesGroupId = null </br>string companiesGroupCode = null</br> string dateFrom = null</br> string dateTo = null</br> decimal? amountFrom = null</br> decimal? amountTo = null</br> byte? type = null</br> byte? origin = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "networkDate"</br> string orderType = "asc"</td>
-			<td>CompaniesGroupsMovementDto</td>
-			<td>Get list of the CompaniesGroupsMovementDto</td>
-		</tr>
-		<tr>
-			<td>GetCompaniesGroupsMovementAsync</td>
-			<td>Guid id</td>
-			<td>CompaniesGroupsMovementDto</td>
-			<td>Get individual CompaniesGroupsMovementDto</td>
-			
-		</tr>
-		<tr>
-			<td>CreateCompaniesGroupsMovement</td>
-			<td>CompanyClassificationsConfigurationDto data</td>
-			<td>string</td>
-			<td>Create a CompaniesGroupsMovement</td>
-			
-		</tr>
-		<tr>
-			<td>CreateCompaniesGroupsMovementAsync</td>
-			<td>CompanyClassificationsConfigurationDto data</td>
-			<td>string</td>
-			<td>Create a CompaniesGroupsMovement</td>
-		</tr>
-	</tbody>
-</table>
-<table>
-		<h4>CompanyClassificationDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-				<tr> 
-					<td>Guid Id</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>Guid IdCompany</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>string Code</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>string Description</td>
-					<td></td>
-				</tr>
-			</tbody>
-</table>
-</BR>
-<table>
-	
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetCompaniesClassifications1</td>
-			<td>int page = 1</br> int pageSize = 50</br> string orderType = "asc"</td>
-			<td>CompanyClassificationDto</td>
-			<td>Get list of the CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>GetCompaniesClassifications1Async</td>
-			<td>int page = 1</br> int pageSize = 50</br> string orderType = "asc"</td>
-			<td>CompanyClassificationDto</td>
-			<td>Get list of the CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>GetCompaniesClassifications2</td>
-			<td>int page = 1</br> int pageSize = 50</br> string orderType = "asc"</td>
-			<td>CompanyClassificationDto</td>
-			<td>Get list of the CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>GetCompaniesClassifications2Async</td>
-			<td>int page = 1</br> int pageSize = 50</br> string orderType = "asc"</td>
-			<td>CompanyClassificationDto</td>
-			<td>Get list of the CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>GetCompaniesClassifications3</td>
-			<td>int page = 1</br> int pageSize = 50</br> string orderType = "asc"</td>
-			<td>CompanyClassificationDto</td>
-			<td>Get list of the CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>GetCompaniesClassifications3Async</td>
-			<td>int page = 1</br> int pageSize = 50</br> string orderType = "asc"</td>
-			<td>CompanyClassificationDto</td>
-			<td>Get list of the CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>GetCompaniesClassifications4</td>
-			<td>int page = 1</br> int pageSize = 50</br> string orderType = "asc"</td>
-			<td>CompanyClassificationDto</td>
-			<td>Get list of the CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>GetCompaniesClassifications4Async</td>
-			<td>int page = 1</br> int pageSize = 50</br> string orderType = "asc"</td>
-			<td>CompanyClassificationDto</td>
-			<td>Get list of the CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>GetCompanyClassifications1</td>
-			<td>Guid id</td>
-			<td>CompanyClassificationDto</td>
-			<td>Get individual CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>GetCompanyClassifications1Async</td>
-			<td>Guid id</td>
-			<td>CompanyClassificationDto</td>
-			<td>Get individual CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>GetCompanyClassifications2</td>
-			<td>Guid id</td>
-			<td>CompanyClassificationDto</td>
-			<td>Get individual CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>GetCompanyClassifications2Async</td>
-			<td>Guid id</td>
-			<td>CompanyClassificationDto</td>
-			<td>Get individual CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>GetCompanyClassifications3</td>
-			<td>Guid id</td>
-			<td>CompanyClassificationDto</td>
-			<td>Get individual CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>GetCompanyClassifications3Async</td>
-			<td>Guid id</td>
-			<td>CompanyClassificationDto</td>
-			<td>Get individual CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>GetCompanyClassifications4</td>
-			<td>Guid id</td>
-			<td>CompanyClassificationDto</td>
-			<td>Get individual CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>GetCompanyClassifications4Async</td>
-			<td>Guid id</td>
-			<td>CompanyClassificationDto</td>
-			<td>Get individual CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>CreateCompaniesClassification1</td>
-			<td>CompanyClassificationDto data</td>
-			<td>CompanyClassificationDto</td>
-			<td>Create CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>CreateCompaniesClassification1Async</td>
-			<td>CompanyClassificationDto data</td>
-			<td>CompanyClassificationDto</td>
-			<td>Create CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>CreateCompaniesClassification2</td>
-			<td>CompanyClassificationDto data</td>
-			<td>CompanyClassificationDto</td>
-			<td>Create CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>CreateCompaniesClassification2Async</td>
-			<td>CompanyClassificationDto data</td>
-			<td>CompanyClassificationDto</td>
-			<td>Create CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>CreateCompaniesClassification3</td>
-			<td>CompanyClassificationDto data</td>
-			<td>CompanyClassificationDto</td>
-			<td>Create CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>CreateCompaniesClassification3Async</td>
-			<td>CompanyClassificationDto data</td>
-			<td>CompanyClassificationDto</td>
-			<td>Create CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>CreateCompaniesClassification4</td>
-			<td>CompanyClassificationDto data</td>
-			<td>CompanyClassificationDto</td>
-			<td>Create CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>CreateCompaniesClassification4Async</td>
-			<td>CompanyClassificationDto data</td>
-			<td>CompanyClassificationDto</td>
-			<td>Create CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>UpdateCompaniesClassification1</td>
-			<td>CompanyClassificationDto data</td>
-			<td>CompanyClassificationDto</td>
-			<td>Update CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>UpdateCompaniesClassification1Async</td>
-			<td>CompanyClassificationDto data</td>
-			<td>CompanyClassificationDto</td>
-			<td>Update CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>UpdateCompaniesClassification2</td>
-			<td>CompanyClassificationDto data</td>
-			<td>CompanyClassificationDto</td>
-			<td>Update CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>UpdateCompaniesClassification2Async</td>
-			<td>CompanyClassificationDto data</td>
-			<td>CompanyClassificationDto</td>
-			<td>Update CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>UpdateCompaniesClassification3</td>
-			<td>CompanyClassificationDto data</td>
-			<td>CompanyClassificationDto</td>
-			<td>Update CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>UpdateCompaniesClassification3Async</td>
-			<td>CompanyClassificationDto data</td>
-			<td>CompanyClassificationDto</td>
-			<td>Update CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>UpdateCompaniesClassification4</td>
-			<td>CompanyClassificationDto data</td>
-			<td>CompanyClassificationDto</td>
-			<td>Update CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>UpdateCompaniesClassification4Async</td>
-			<td>CompanyClassificationDto data</td>
-			<td>CompanyClassificationDto</td>
-			<td>Update CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>DeleteCompaniesClassification1</td>
-			<td>Guid id</td>
-			<td>string</td>
-			<td>delete CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>DeleteCompaniesClassification1Async</td>
-			<td>Guid id</td>
-			<td>string</td>
-			<td>delete CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>DeleteCompaniesClassification2</td>
-			<td>Guid id</td>
-			<td>string</td>
-			<td>delete CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>DeleteCompaniesClassification2Async</td>
-			<td>Guid id</td>
-			<td>string</td>
-			<td>delete CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>DeleteCompaniesClassification3</td>
-			<td>Guid id</td>
-			<td>string</td>
-			<td>delete CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>DeleteCompaniesClassification3Async</td>
-			<td>Guid id</td>
-			<td>string</td>
-			<td>delete CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>DeleteCompaniesClassification4</td>
-			<td>Guid id</td>
-			<td>string</td>
-			<td>delete CompanyClassificationDto</td>
-		</tr>
-		<tr>
-			<td>DeleteCompaniesClassification4Async</td>
-			<td>Guid id</td>
-			<td>string</td>
-			<td>delete CompanyClassificationDto</td>
-		</tr>
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>CompanyContractDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-				<tr> 
-					<td>List CompanyContractProductDto  Products</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>List CompanyContractSiteDto  Sites</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>List CompanyContractFuelDto  Fuels</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>CompanyContractBillingDto Billing</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>decimal? ReactivationAmount</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>byte? DeactivationType</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>bool Active</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>bool ValidateSites</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>decimal? SecurityLimit</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>decimal? Limit</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>Guid? CurrencyId</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>byte CurrentAccountMode</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>List CompanyContractDiscountDto  Discounts</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>short BalanceMode</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>byte Periodicity</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>string StartDate</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>decimal Version</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>string InternalCode</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>byte Mode</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>string Description</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>string Code</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>byte Type</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>Guid NetworksCompanyId</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>Guid CompanyId</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>Guid NetworkId</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>Guid Id</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>short Duration</td>
-					<td></td>
-				</tr>
-				<tr> 
-					<td>bool MoneyBalance</td>
-					<td></td>
-				</tr>
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetContracts</td>
-			<td>string companyCode = null</br> List Guid contractIds = null</br> string code = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "description"</br> string orderType = "asc"</td>
-			<td>CompanyContractDto</td>
-			<td>Get list of the CompanyContractDto</td>
-		</tr>
-		<tr>
-			<td>GetContractsAsync</td>
-			<td>string companyCode = null</br> List Guid contractIds = null</br> string code = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "description"</br> string orderType = "asc"</td>
-			<td>CompanyContractDto</td>
-			<td>Get list of the CompanyContractDto</td>
-		</tr>
+#### CompanyClassificationsConfigurationDto
+|Data|Description|
+|--- |--- |
+|Guid IdCompany|Identification of de Company|
+|string Classification1Label|classification 1 Label|
+|string Classification2Label|classification 2 Label|
+|string Classification3Label|classification 3 Label|
+|string Classification4Label|classification 4 Label|
+|bool Classification1Enabled|status for the use of the company|
+|bool Classification2Enabled|status for the use of the company|
+|bool Classification3Enabled|status for the use of the company|
+|bool Classification4Enabled|status for the use of the company|
 
-		<tr>
-			<td>GetContract</td>
-			<td>Guid id</td>
-			<td>CompanyContractDto</td>
-			<td>Get individual CompanyContractDto</td>
-		</tr>
-		<tr>
-			<td>GetContractAsync</td>
-			<td>Guid id</td>
-			<td>CompanyContractDto</td>
-			<td>Get individual CompanyContractDto</td>
-		</tr>
-		
-		<tr>
-			<td>CreateContract</td>
-			<td>CompanyContractDto data</td>
-			<td>CompanyContractDto</td>
-			<td>Create CompanyContractDto</td>
-		</tr>
-		<tr>
-			<td>CreateContractAsync</td>
-			<td>CompanyContractDto data</td>
-			<td>CompanyContractDto</td>
-			<td>Create CompanyContractDto</td>
-		</tr>
-	
-		<tr>
-			<td>UpdateContract</td>
-			<td>CompanyContractDto data</td>
-			<td>CompanyContractDto</td>
-			<td>Update CompanyContractDto</td>
-		</tr>
-		<tr>
-			<td>UpdateContractAsync</td>
-			<td>CompanyContractDto data</td>
-			<td>CompanyContractDto</td>
-			<td>Update CompanyContractDto</td>
-		</tr>
-	
-		
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>CompanyContractOverLimitDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>			
-			<tr> 
-				<td>Guid Id</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>Guid IdCompanyContract</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>string ContractName</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>Guid IdCompany</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>string CompanyName</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>Guid IdNetwork</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>string DateFrom</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>string DateTo</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>string CreationDate</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>string CreationNetworkDate</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>string NetworkTimeZone</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>decimal Value</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>byte Type</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>byte State</td>
-				<td></td>
-			</tr>
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetCompanyContractOverLimits</td>
-			<td>Guid? idCompany = null</br> Guid? idCompanyContract = null</br> string dateFrom = null</br> string dateTo = null</br> string creationDate = null</br> byte? filterType = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "idFuelMaster"</br> string orderType = "asc"</td>
-			<td>CompanyContractOverLimitDto</td>
-			<td>Get list of the CompanyContractOverLimitDto</td>
-		</tr>
-		<tr>
-			<td>GetCompanyContractOverLimitsAsync</td>
-			<td>Guid? idCompany = null</br> Guid? idCompanyContract = null</br> string dateFrom = null</br> string dateTo = null</br> string creationDate = null</br> byte? filterType = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "idFuelMaster"</br> string orderType = "asc"</td>
-			<td>CompanyContractOverLimitDto</td>
-			<td>Get list of the CompanyContractOverLimitDto</td>
-		</tr>
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetCompaniesClassificationsConfiguration||CompanyClassificationsConfigurationDto|Get the configuractions of the Classifications Companies|
+|GetCompaniesClassificationsConfigurationAsync||CompanyClassificationsConfigurationDto|Get the configuractions of the Classifications Companies|
+|UpdateCompaniesClassificationsConfiguration|CompanyClassificationsConfigurationDto data|string|Update configuractions of the Classifications Companies|
+|UpdateCompaniesClassificationsConfigurationAsync|CompanyClassificationsConfigurationDto data|string|Update configuractions of the Classifications Companies|
 
-		<tr>
-			<td>GetCompanyContractOverLimit</td>
-			<td>Guid id</td>
-			<td>CompanyContractOverLimitDto</td>
-			<td>Get individual CompanyContractOverLimitDto</td>
-		</tr>
-		<tr>
-			<td>GetCompanyContractOverLimitAsync</td>
-			<td>Guid id</td>
-			<td>CompanyContractOverLimitDto</td>
-			<td>Get individual CompanyContractOverLimitDto</td>
-		</tr>
-		
-		<tr>
-			<td>CreateCompanyContractOverLimit</td>
-			<td>CompanyContractOverLimitDto data</td>
-			<td>CompanyContractOverLimitDto</td>
-			<td>Create CompanyContractOverLimitDto</td>
-		</tr>
-		<tr>
-			<td>CreateCompanyContractOverLimitAsync</td>
-			<td>CompanyContractOverLimitDto data</td>
-			<td>CompanyContractOverLimitDto</td>
-			<td>Create CompanyContractOverLimitDto</td>
-		</tr>
-	
-		<tr>
-			<td>UpdateCompanyContractOverLimit</td>
-			<td>Guid id</br> CompanyContractOverLimitDto data</td>
-			<td>CompanyContractOverLimitDto</td>
-			<td>Update CompanyContractOverLimitDto</td>
-		</tr>
-		<tr>
-			<td>UpdateCompanyContractOverLimitAsync</td>
-			<td>Guid id</br> CompanyContractOverLimitDto data</td>
-			<td>CompanyContractOverLimitDto</td>
-			<td>Update CompanyContractOverLimitDto</td>
-		</tr>
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>CompanyInvoiceDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-			<tr> 
-				<td>Guid Id</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>Guid IdNetwork</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>Guid IdCompany</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>string InvoiceNumber</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>byte Type</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>DateTime Date</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>decimal Net</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>decimal Taxes</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>decimal? Total</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>IEnumerable CompanyInvoiceDetailDto CompaniesInvoicesDetails</td>
-				<td></td>
-			</tr>
-			<tr> 
-				<td>IEnumerable TransactionDto  Transactions</td>
-				<td></td>
-			</tr>
-			
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetInvoices</td>
-			<td>string companyCode = null</br> List Guid companyIds = null</br> string invoiceNumber = null</br> byte? invoiceType = null</br> DateTime? dateFrom = null</br> DateTime? dateTo = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "description"</br> string orderType = "asc"</td>
-			<td>CompanyInvoiceDto</td>
-			<td>Get list of the CompanyInvoiceDto</td>
-		</tr>
-		<tr>
-			<td>GetInvoicesAsync</td>
-			<td>string companyCode = null</br> List Guid companyIds = null</br> string invoiceNumber = null</br> byte? invoiceType = null</br> DateTime? dateFrom = null</br> DateTime? dateTo = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "description"</br> string orderType = "asc"</td>
-			<td>CompanyInvoiceDto</td>
-			<td>Get list of the CompanyInvoiceDto</td>
-		</tr>
+#### CompaniesGroupsMovementDto
+|Data|Description|
+|--- |--- |
+|string TypeDescription||
+|Guid? IdOrigen||
+|byte Origen||
+|DateTime NetworkDate||
+|DateTime RealDate||
+|bool IsDebit||
+|string DisplayDateTimeString||
+|Guid? IdCurrencyCode||
+|string Description||
+|byte Type||
+|string CompaniesGroupDescription||
+|Guid IdCompaniesGroup||
+|Guid IdNetwork||
+|Guid Id||
+|decimal Amount||
+|string DisplayNetworkDateTimeString||
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetCompaniesGroupsMovements||CompaniesGroupsMovementDto|Get list of the CompaniesGroupsMovementDto|
+|GetCompaniesGroupsMovements|Guid? companiesGroupId = null string companiesGroupCode = null string dateFrom = null string dateTo = null decimal? amountFrom = null decimal? amountTo = null byte? type = null byte? origin = null int page = 1 int pageSize = 50 string orderField = "networkDate" string orderType = "asc"|CompaniesGroupsMovementDto|Get list of the CompaniesGroupsMovementDto|
+|GetCompaniesGroupsMovementsAsync|Guid? companiesGroupId = null string companiesGroupCode = null string dateFrom = null string dateTo = null decimal? amountFrom = null decimal? amountTo = null byte? type = null byte? origin = null int page = 1 int pageSize = 50 string orderField = "networkDate" string orderType = "asc"|CompaniesGroupsMovementDto|Get list of the CompaniesGroupsMovementDto|
+|GetCompaniesGroupsMovementAsync|Guid id|CompaniesGroupsMovementDto|Get individual CompaniesGroupsMovementDto|
+|CreateCompaniesGroupsMovement|CompanyClassificationsConfigurationDto data|string|Create a CompaniesGroupsMovement|
+|CreateCompaniesGroupsMovementAsync|CompanyClassificationsConfigurationDto data|string|Create a CompaniesGroupsMovement|
 
-		<tr>
-			<td>GetInvoice</td>
-			<td>Guid id</td>
-			<td>CompanyInvoiceDto</td>
-			<td>Get individual CompanyInvoiceDto</td>
-		</tr>
-		<tr>
-			<td>GetInvoiceAsync</td>
-			<td>Guid id</td>
-			<td>CompanyInvoiceDto</td>
-			<td>Get individual CompanyInvoiceDto</td>
-		</tr>
-		
-		<tr>
-			<td>CreateInvoice</td>
-			<td>CompanyInvoiceDto data</td>
-			<td>CompanyInvoiceDto</td>
-			<td>Create CompanyInvoiceDto</td>
-		</tr>
-		<tr>
-			<td>CreateInvoiceAsync</td>
-			<td>CompanyInvoiceDto data</td>
-			<td>CompanyInvoiceDto</td>
-			<td>Create CompanyInvoiceDto</td>
-		</tr>
-	
-		<tr>
-			<td>UpdateInvoice</td>
-			<td>CompanyInvoiceDto data</td>
-			<td>string</td>
-			<td>Update CompanyInvoiceDto</td>
-		</tr>
-		<tr>
-			<td>UpdateInvoiceAsync</td>
-			<td>CompanyInvoiceDto data</td>
-			<td>string</td>
-			<td>Update CompanyInvoiceDto</td>
-		</tr>
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>CurrentAccountReportDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-			<tr> 
-				<td>short? CompanyContractDuration</td><td></td></tr>
-			<tr>
-				<td>int? CompanyContractAccountsLimit</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>decimal? CompanyContractVersion</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string ContractCode</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>decimal? Balance</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>bool? IsDebit</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>decimal? CreditLimit</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>decimal? OverLimit</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>Guid? StatementId</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string MovementTypeDescription</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string CompanyContractDescription</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string VehicleDescription</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string DriverDescription</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string CompleteName</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string FuelName</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string ModeDescription</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>decimal? Debit</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>decimal? Credit</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>decimal BillingValue</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>bool Enable</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string CompanyContractExpirationDate</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string IdentificationsDescription</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string LocalDateShortString</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>byte? CompanyContractPeriodicity</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>DateTime? CompanyContractStartDate</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string SiteFuelName</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string NetworkFuelName</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>Guid Id</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>Guid? IdMovement</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>Guid? IdCompanyContract</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>Guid? IdFuelMaster</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>Guid? IdSubAccount</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string Description</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>decimal Amount</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>Guid? IdCurrencyCode</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>Guid? IdUserAtionet</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>byte MovementType</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string NetworkName</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string LocalTimeString</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string CompanyName</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string MovementIdOrigin</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string MovementDescription</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>byte ContractMode</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>Guid? VehicleId</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string VehiclePlate</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string VehicleCode</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>Guid? DriverId</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string DriverCode</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string DriverFirstName</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string DriverLastName</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string FuelMasterName</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>DateTime MovementDate</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>string DisplayDateTimeString</td>
-				<td></td>
-			</tr>
-			
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetContractsBalance</td>
-			<td>Guid? idContract</br> 
-			  string dateFrom = null</br> string dateTo = null</br>
-			  string order = "desc"</br> int page = 1</br> int pageSize = 50</td>
-			<td>CurrentAccountReportDto</td>
-			<td>Get list of the CurrentAccountReportDto</td>
-		</tr>
-		<tr>
-			<td>GetContractsBalanceAsync</td>
-			<td>Guid? idContract</br> 
-			  string dateFrom = null</br> string dateTo = null</br>
-			  string order = "desc"</br> int page = 1</br> int pageSize = 50</td>
-			<td>CurrentAccountReportDto</td>
-			<td>Get list of the CurrentAccountReportDto</td>
-		</tr>
-		<tr>
-			<td>GetContractsMovements</td>
-			<td>Guid idContract</br> 
-			  string dateFrom = null</br> string dateTo = null</br>
-			  string order = "desc"</br> int page = 1</br> int pageSize = 50</td>
-			<td>CurrentAccountReportDto</td>
-			<td>Get list of the CurrentAccountReportDto</td>
-		</tr>
-		<tr>
-			<td>GetContractsMovementsAsync</td>
-			<td>Guid idContract</br> 
-			  string dateFrom = null</br> string dateTo = null</br>
-			  string order = "desc"</br> int page = 1</br> int pageSize = 50</td>
-			<td>CurrentAccountReportDto</td>
-			<td>Get list of the CurrentAccountReportDto</td>
-		</tr>
-		<tr>
-			<td>GetSubAccountsBalance</td>
-			<td> Guid? idContract=null</br>Guid? idSubAccount=null</br>
-			  string dateFrom = null</br> string dateTo = null</br>
-			  string order = "desc"</br> int page = 1</br> int pageSize = 50</td>
-			<td>CurrentAccountReportDto</td>
-			<td>Get list of the CurrentAccountReportDto</td>
-		</tr>
-		<tr>
-			<td>GetSubAccountsBalanceAsync</td>
-			<td> Guid? idContract=null</br>Guid? idSubAccount=null</br>
-			  string dateFrom = null</br> string dateTo = null</br>
-			  string order = "desc"</br> int page = 1</br> int pageSize = 50</td>
-			<td>CurrentAccountReportDto</td>
-			<td>Get list of the CurrentAccountReportDto</td>
-		</tr>
-				<tr>
-			<td>GetSubAccountsMovements</td>
-			<td> Guid? idContract=null</br>Guid? idSubAccount=null</br>
-			  string dateFrom = null</br> string dateTo = null</br>
-			  string order = "desc"</br> int page = 1</br> int pageSize = 50</td>
-			<td>CurrentAccountReportDto</td>
-			<td>Get list of the CurrentAccountReportDto</td>
-		</tr>
-		<tr>
-			<td>GetSubAccountsMovementsAsync</td>
-			<td> Guid? idContract=null</br>Guid? idSubAccount=null</br>
-			  string dateFrom = null</br> string dateTo = null</br>
-			  string order = "desc"</br> int page = 1</br> int pageSize = 50</td>
-			<td>CurrentAccountReportDto</td>
-			<td>Get list of the CurrentAccountReportDto</td>
-		</tr>
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>CountryDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-			<tr> 
-				<td>Guid Id</td>
-				<td></td>
-				</tr>
-			<tr>
-				<td>string Name</td>
-				<td></td>
-			</tr>
-			
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetCountries</td>
-			<td>int page = 1</br> int pageSize = 50</td>
-			<td>CompanyInvoiceDto</td>
-			<td>Get list of the CountryDto</td>
-		</tr>
-		<tr>
-			<td>GetCountriesAsync</td>
-			<td>int page = 1</br> int pageSize = 50</td>
-			<td>CountryDto</td>
-			<td>Get list of the CountryDto</td>
-		</tr>
-	</tbody>
-</table>
-<BR/>
+#### CompanyClassificationDto
+|Data|Description|
+|--- |--- |
+|Guid Id||
+|Guid IdCompany||
+|string Code||
+|string Description||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetCompaniesClassifications1|int page = 1 int pageSize = 50 string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
+|GetCompaniesClassifications1Async|int page = 1 int pageSize = 50 string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
+|GetCompaniesClassifications2|int page = 1 int pageSize = 50 string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
+|GetCompaniesClassifications2Async|int page = 1 int pageSize = 50 string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
+|GetCompaniesClassifications3|int page = 1 int pageSize = 50 string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
+|GetCompaniesClassifications3Async|int page = 1 int pageSize = 50 string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
+|GetCompaniesClassifications4|int page = 1 int pageSize = 50 string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
+|GetCompaniesClassifications4Async|int page = 1 int pageSize = 50 string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
+|GetCompanyClassifications1|Guid id|CompanyClassificationDto|Get individual CompanyClassificationDto|
+|GetCompanyClassifications1Async|Guid id|CompanyClassificationDto|Get individual CompanyClassificationDto|
+|GetCompanyClassifications2|Guid id|CompanyClassificationDto|Get individual CompanyClassificationDto|
+|GetCompanyClassifications2Async|Guid id|CompanyClassificationDto|Get individual CompanyClassificationDto|
+|GetCompanyClassifications3|Guid id|CompanyClassificationDto|Get individual CompanyClassificationDto|
+|GetCompanyClassifications3Async|Guid id|CompanyClassificationDto|Get individual CompanyClassificationDto|
+|GetCompanyClassifications4|Guid id|CompanyClassificationDto|Get individual CompanyClassificationDto|
+|GetCompanyClassifications4Async|Guid id|CompanyClassificationDto|Get individual CompanyClassificationDto|
+|CreateCompaniesClassification1|CompanyClassificationDto data|CompanyClassificationDto|Create CompanyClassificationDto|
+|CreateCompaniesClassification1Async|CompanyClassificationDto data|CompanyClassificationDto|Create CompanyClassificationDto|
+|CreateCompaniesClassification2|CompanyClassificationDto data|CompanyClassificationDto|Create CompanyClassificationDto|
+|CreateCompaniesClassification2Async|CompanyClassificationDto data|CompanyClassificationDto|Create CompanyClassificationDto|
+|CreateCompaniesClassification3|CompanyClassificationDto data|CompanyClassificationDto|Create CompanyClassificationDto|
+|CreateCompaniesClassification3Async|CompanyClassificationDto data|CompanyClassificationDto|Create CompanyClassificationDto|
+|CreateCompaniesClassification4|CompanyClassificationDto data|CompanyClassificationDto|Create CompanyClassificationDto|
+|CreateCompaniesClassification4Async|CompanyClassificationDto data|CompanyClassificationDto|Create CompanyClassificationDto|
+|UpdateCompaniesClassification1|CompanyClassificationDto data|CompanyClassificationDto|Update CompanyClassificationDto|
+|UpdateCompaniesClassification1Async|CompanyClassificationDto data|CompanyClassificationDto|Update CompanyClassificationDto|
+|UpdateCompaniesClassification2|CompanyClassificationDto data|CompanyClassificationDto|Update CompanyClassificationDto|
+|UpdateCompaniesClassification2Async|CompanyClassificationDto data|CompanyClassificationDto|Update CompanyClassificationDto|
+|UpdateCompaniesClassification3|CompanyClassificationDto data|CompanyClassificationDto|Update CompanyClassificationDto|
+|UpdateCompaniesClassification3Async|CompanyClassificationDto data|CompanyClassificationDto|Update CompanyClassificationDto|
+|UpdateCompaniesClassification4|CompanyClassificationDto data|CompanyClassificationDto|Update CompanyClassificationDto|
+|UpdateCompaniesClassification4Async|CompanyClassificationDto data|CompanyClassificationDto|Update CompanyClassificationDto|
+|DeleteCompaniesClassification1|Guid id|string|delete CompanyClassificationDto|
+|DeleteCompaniesClassification1Async|Guid id|string|delete CompanyClassificationDto|
+|DeleteCompaniesClassification2|Guid id|string|delete CompanyClassificationDto|
+|DeleteCompaniesClassification2Async|Guid id|string|delete CompanyClassificationDto|
+|DeleteCompaniesClassification3|Guid id|string|delete CompanyClassificationDto|
+|DeleteCompaniesClassification3Async|Guid id|string|delete CompanyClassificationDto|
+|DeleteCompaniesClassification4|Guid id|string|delete CompanyClassificationDto|
+|DeleteCompaniesClassification4Async|Guid id|string|delete CompanyClassificationDto|
+
+
+#### CompanyContractDto
+|Data|Description|
+|--- |--- |
+|List CompanyContractProductDto  Products||
+|List CompanyContractSiteDto  Sites||
+|List CompanyContractFuelDto  Fuels||
+|CompanyContractBillingDto Billing||
+|decimal? ReactivationAmount||
+|byte? DeactivationType||
+|bool Active||
+|bool ValidateSites||
+|decimal? SecurityLimit||
+|decimal? Limit||
+|Guid? CurrencyId||
+|byte CurrentAccountMode||
+|List CompanyContractDiscountDto  Discounts||
+|short BalanceMode||
+|byte Periodicity||
+|string StartDate||
+|decimal Version||
+|string InternalCode||
+|byte Mode||
+|string Description||
+|string Code||
+|byte Type||
+|Guid NetworksCompanyId||
+|Guid CompanyId||
+|Guid NetworkId||
+|Guid Id||
+|short Duration||
+|bool MoneyBalance||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetContracts|string companyCode = null List Guid contractIds = null string code = null int page = 1 int pageSize = 50 string orderField = "description" string orderType = "asc"|CompanyContractDto|Get list of the CompanyContractDto|
+|GetContractsAsync|string companyCode = null List Guid contractIds = null string code = null int page = 1 int pageSize = 50 string orderField = "description" string orderType = "asc"|CompanyContractDto|Get list of the CompanyContractDto|
+|GetContract|Guid id|CompanyContractDto|Get individual CompanyContractDto|
+|GetContractAsync|Guid id|CompanyContractDto|Get individual CompanyContractDto|
+|CreateContract|CompanyContractDto data|CompanyContractDto|Create CompanyContractDto|
+|CreateContractAsync|CompanyContractDto data|CompanyContractDto|Create CompanyContractDto|
+|UpdateContract|CompanyContractDto data|CompanyContractDto|Update CompanyContractDto|
+|UpdateContractAsync|CompanyContractDto data|CompanyContractDto|Update CompanyContractDto|
+
+#### CompanyContractOverLimitDto
+|Data|Description|
+|--- |--- |
+|Guid Id||
+|Guid IdCompanyContract||
+|string ContractName||
+|Guid IdCompany||
+|string CompanyName||
+|Guid IdNetwork||
+|string DateFrom||
+|string DateTo||
+|string CreationDate||
+|string CreationNetworkDate||
+|string NetworkTimeZone||
+|decimal Value||
+|byte Type||
+|byte State||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetCompanyContractOverLimits|Guid? idCompany = null Guid? idCompanyContract = null string dateFrom = null string dateTo = null string creationDate = null byte? filterType = null int page = 1 int pageSize = 50 string orderField = "idFuelMaster" string orderType = "asc"|CompanyContractOverLimitDto|Get list of the CompanyContractOverLimitDto|
+|GetCompanyContractOverLimitsAsync|Guid? idCompany = null Guid? idCompanyContract = null string dateFrom = null string dateTo = null string creationDate = null byte? filterType = null int page = 1 int pageSize = 50 string orderField = "idFuelMaster" string orderType = "asc"|CompanyContractOverLimitDto|Get list of the CompanyContractOverLimitDto|
+|GetCompanyContractOverLimit|Guid id|CompanyContractOverLimitDto|Get individual CompanyContractOverLimitDto|
+|GetCompanyContractOverLimitAsync|Guid id|CompanyContractOverLimitDto|Get individual CompanyContractOverLimitDto|
+|CreateCompanyContractOverLimit|CompanyContractOverLimitDto data|CompanyContractOverLimitDto|Create CompanyContractOverLimitDto|
+|CreateCompanyContractOverLimitAsync|CompanyContractOverLimitDto data|CompanyContractOverLimitDto|Create CompanyContractOverLimitDto|
+|UpdateCompanyContractOverLimit|Guid id CompanyContractOverLimitDto data|CompanyContractOverLimitDto|Update CompanyContractOverLimitDto|
+|UpdateCompanyContractOverLimitAsync|Guid id CompanyContractOverLimitDto data|CompanyContractOverLimitDto|Update CompanyContractOverLimitDto|
+
+#### CompanyInvoiceDto
+|Data|Description|
+|--- |--- |
+|Guid Id||
+|Guid IdNetwork||
+|Guid IdCompany||
+|string InvoiceNumber||
+|byte Type||
+|DateTime Date||
+|decimal Net||
+|decimal Taxes||
+|decimal? Total||
+|IEnumerable CompanyInvoiceDetailDto CompaniesInvoicesDetails||
+|IEnumerable TransactionDto  Transactions||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetInvoices|string companyCode = null List Guid companyIds = null string invoiceNumber = null byte? invoiceType = null DateTime? dateFrom = null DateTime? dateTo = null int page = 1 int pageSize = 50 string orderField = "description" string orderType = "asc"|CompanyInvoiceDto|Get list of the CompanyInvoiceDto|
+|GetInvoicesAsync|string companyCode = null List Guid companyIds = null string invoiceNumber = null byte? invoiceType = null DateTime? dateFrom = null DateTime? dateTo = null int page = 1 int pageSize = 50 string orderField = "description" string orderType = "asc"|CompanyInvoiceDto|Get list of the CompanyInvoiceDto|
+|GetInvoice|Guid id|CompanyInvoiceDto|Get individual CompanyInvoiceDto|
+|GetInvoiceAsync|Guid id|CompanyInvoiceDto|Get individual CompanyInvoiceDto|
+|CreateInvoice|CompanyInvoiceDto data|CompanyInvoiceDto|Create CompanyInvoiceDto|
+|CreateInvoiceAsync|CompanyInvoiceDto data|CompanyInvoiceDto|Create CompanyInvoiceDto|
+|UpdateInvoice|CompanyInvoiceDto data|string|Update CompanyInvoiceDto|
+|UpdateInvoiceAsync|CompanyInvoiceDto data|string|Update CompanyInvoiceDto|
+
+#### CurrentAccountReportDto
+|Data|Description|
+|--- |--- |
+|short? CompanyContractDuration||
+|int? CompanyContractAccountsLimit||
+|decimal? CompanyContractVersion||
+|string ContractCode||
+|decimal? Balance||
+|bool? IsDebit||
+|decimal? CreditLimit||
+|decimal? OverLimit||
+|Guid? StatementId||
+|string MovementTypeDescription||
+|string CompanyContractDescription||
+|string VehicleDescription||
+|string DriverDescription||
+|string CompleteName||
+|string FuelName||
+|string ModeDescription||
+|decimal? Debit||
+|decimal? Credit||
+|decimal BillingValue||
+|bool Enable||
+|string CompanyContractExpirationDate||
+|string IdentificationsDescription||
+|string LocalDateShortString||
+|byte? CompanyContractPeriodicity||
+|DateTime? CompanyContractStartDate||
+|string SiteFuelName||
+|string NetworkFuelName||
+|Guid Id||
+|Guid? IdMovement||
+|Guid? IdCompanyContract||
+|Guid? IdFuelMaster||
+|Guid? IdSubAccount||
+|string Description||
+|decimal Amount||
+|Guid? IdCurrencyCode||
+|Guid? IdUserAtionet||
+|byte MovementType||
+|string NetworkName||
+|string LocalTimeString||
+|string CompanyName||
+|string MovementIdOrigin||
+|string MovementDescription||
+|byte ContractMode||
+|Guid? VehicleId||
+|string VehiclePlate||
+|string VehicleCode||
+|Guid? DriverId||
+|string DriverCode||
+|string DriverFirstName||
+|string DriverLastName||
+|string FuelMasterName||
+|DateTime MovementDate||
+|string DisplayDateTimeString||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetContractsBalance|Guid? idContract 
+		  string dateFrom = null string dateTo = null
+			  string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
+|GetContractsBalanceAsync|Guid? idContract 
+		  string dateFrom = null string dateTo = null
+			  string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
+|GetContractsMovements|Guid idContract 
+		  string dateFrom = null string dateTo = null
+			  string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
+|GetContractsMovementsAsync|Guid idContract 
+		  string dateFrom = null string dateTo = null
+			  string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
+|GetSubAccountsBalance|Guid? idContract=nullGuid? idSubAccount=null
+		  string dateFrom = null string dateTo = null
+			  string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
+|GetSubAccountsBalanceAsync|Guid? idContract=nullGuid? idSubAccount=null
+		  string dateFrom = null string dateTo = null
+			  string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
+|GetSubAccountsMovements|Guid? idContract=nullGuid? idSubAccount=null
+		  string dateFrom = null string dateTo = null
+			  string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
+|GetSubAccountsMovementsAsync|Guid? idContract=nullGuid? idSubAccount=null
+		  string dateFrom = null string dateTo = null
+			  string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
+#### CountryDto
+|Data|Description|
+|--- |--- |
+|Guid Id||
+|string Name||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetCountries|int page = 1 int pageSize = 50|CompanyInvoiceDto|Get list of the CountryDto|
+|GetCountriesAsync|int page = 1 int pageSize = 50|CountryDto|Get list of the CountryDto|
+
+#### DriverDto
 <table>
 		<h4>DriverDto</h4>
 			<thead>
