@@ -26,7 +26,7 @@
 <!-- MarkdownTOC depth=3 -->
 
 - [Introduction](#introduction)
-- [Download / Installation](#download-installation)
+- [Download / Installation](#download/installation)
 - [Operation Types](#operation-types)
   -  [Auth](#auth)
   -  [Api](#api)
