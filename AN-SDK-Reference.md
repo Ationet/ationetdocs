@@ -1060,18 +1060,8 @@ You can download a fully functional sample code from here: https://github.com/at
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetMovements|Guid? idCompany=null
-		  Guid? fastTrackId = null Guid? lastMovementId = null Guid? processBillingStatementId = null Guid? transactionId = null Guid? userAtionetId = null
-			  string originId = null string description = null
-			  byte? origin = null byte? type = null bool? reversed = null
-			  string realDateFrom = null string realDateTo = null
-			  string order = "desc" int page = 1 int pageSize = 50|MovementDto|Get list of the MovementDto|
-|GetMovementsAsync|Guid? idCompany=null
-		  Guid? fastTrackId = null Guid? lastMovementId = null Guid? processBillingStatementId = null Guid? transactionId = null Guid? userAtionetId = null
-			  string originId = null string description = null
-			  byte? origin = null byte? type = null bool? reversed = null
-			  string realDateFrom = null string realDateTo = null
-			  string order = "desc" int page = 1 int pageSize = 50|MovementDto|Get list of the MovementDto|
+|GetMovements|Guid? idCompany=null Guid? fastTrackId = null Guid? lastMovementId = null Guid? processBillingStatementId = null Guid? transactionId = null Guid? userAtionetId = null string originId = null string description = null byte? origin = null byte? type = null bool? reversed = null string realDateFrom = null string realDateTo = null string order = "desc" int page = 1 int pageSize = 50|MovementDto|Get list of the MovementDto|
+|GetMovementsAsync|Guid? idCompany=null Guid? fastTrackId = null Guid? lastMovementId = null Guid? processBillingStatementId = null Guid? transactionId = null Guid? userAtionetId = null string originId = null string description = null byte? origin = null byte? type = null bool? reversed = null string realDateFrom = null string realDateTo = null string order = "desc" int page = 1 int pageSize = 50|MovementDto|Get list of the MovementDto|
 |GetMovement|Guid id|MovementDto|Get individual MovementDto|
 |GetMovementAsync|Guid id|MovementDto|Get individual MovementDto|
 
@@ -1139,255 +1129,59 @@ You can download a fully functional sample code from here: https://github.com/at
 |GetNetworkAsync||NetworkDto|Get individual NetworkDto|
 
 #### PaymentsMethodDto
-<table>
-		<h4>PaymentsMethodDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-			<tr>
-                <td>Guid Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid NetworkId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Code</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Description</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>decimal? Total</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>DateTime UpdateDate</td>
-                <td></td>
-            </tr>
-            
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetPaymentsMethods</td>
-			<td>List Guid  paymentsMethodIds = null</br> string code = null</br> string description = null</br> DateTime? updateDate = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "code"</br> string orderType = "asc"</td>
-			<td>PaymentsMethodDto</td>
-			<td>Get list of the PaymentsMethodDto</td>
-		</tr>
-		<tr>
-			<td>GetPaymentsMethodsAsync</td>
-			<td>List Guid  paymentsMethodIds = null</br> string code = null</br> string description = null</br> DateTime? updateDate = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "code"</br> string orderType = "asc"</td>
-			<td>PaymentsMethodDto</td>
-			<td>Get list of the PaymentsMethodDto</td>
-		</tr>
+|Data|Description|
+|--- |--- |
+|Guid Id||
+|Guid NetworkId||
+|string Code||
+|string Description||
+|decimal? Total||
+|DateTime UpdateDate||
 
-		<tr>
-			<td>GetPaymentsMethod</td>
-			<td>Guid id</td>
-			<td>PaymentsMethodDto</td>
-			<td>Get individual PaymentsMethodDto</td>
-		</tr>
-		<tr>
-			<td>GetPaymentsMethodAsync</td>
-			<td>Guid id</td>
-			<td>PaymentsMethodDto</td>
-			<td>Get individual PaymentsMethodDto</td>
-		</tr>
-		
-		<tr>
-			<td>CreatePaymentsMethod</td>
-			<td>PaymentsMethodDto data</td>
-			<td>PaymentsMethodDto</td>
-			<td>Create PaymentsMethodDto</td>
-		</tr>
-		<tr>
-			<td>CreatePaymentsMethodAsync</td>
-			<td>PaymentsMethodDto data</td>
-			<td>PaymentsMethodDto</td>
-			<td>Create PaymentsMethodDto</td>
-		</tr>
-	
-		<tr>
-			<td>UpdatePaymentsMethod</td>
-			<td>Guid id </br>PaymentsMethodDto data</td>
-			<td>string</td>
-			<td>Update PaymentsMethodDto</td>
-		</tr>
-		<tr>
-			<td>UpdatePaymentsMethodAsync</td>
-			<td>Guid id </br>PaymentsMethodDto data</td>
-			<td>string</td>
-			<td>Update PaymentsMethodDto</td>
-		</tr>
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>ProgramDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-			 <tr>
-                <td>bool SupportsDryProducts</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string BINRange</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>decimal? GiftCardAmount</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool IsRechargeable</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte SupportsOffline</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte SupportsContingency</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte ApplyContractsSites</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool ValidateExpDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte BalanceMode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Description</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string CompanyName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? CompanyId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string NetworkName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid NetworkId</td>
-                <td></td>
-            </tr>
-			<tr>
-                <td>string InternalCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte Type</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>ProgramRuleDto Rule</td>
-                <td></td>
-            </tr>
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetPaymentsMethods|List Guid  paymentsMethodIds = null string code = null string description = null DateTime? updateDate = null int page = 1 int pageSize = 50 string orderField = "code" string orderType = "asc"|PaymentsMethodDto|Get list of the PaymentsMethodDto|
+|GetPaymentsMethodsAsync|List Guid  paymentsMethodIds = null string code = null string description = null DateTime? updateDate = null int page = 1 int pageSize = 50 string orderField = "code" string orderType = "asc"|PaymentsMethodDto|Get list of the PaymentsMethodDto|
+|GetPaymentsMethod|Guid id|PaymentsMethodDto|Get individual PaymentsMethodDto|
+|GetPaymentsMethodAsync|Guid id|PaymentsMethodDto|Get individual PaymentsMethodDto|
+|CreatePaymentsMethod|PaymentsMethodDto data|PaymentsMethodDto|Create PaymentsMethodDto|
+|CreatePaymentsMethodAsync|PaymentsMethodDto data|PaymentsMethodDto|Create PaymentsMethodDto|
+|UpdatePaymentsMethod|Guid id PaymentsMethodDto data|string|Update PaymentsMethodDto|
+|UpdatePaymentsMethodAsync|Guid id PaymentsMethodDto data|string|Update PaymentsMethodDto|
 
-            
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetProgramsAsync</td>
-			<td>List Guid programIds = null</br> string description = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc"</td>
-			<td>Get list of the ProgramDto</td>
-		</tr>
-		<tr>
-			<td>GetProgramsAsync</td>
-			<td>List Guid programIds = null</br> string description = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc"</td>
-			<td>Get list of the ProgramDto</td>
-		</tr>
+#### ProgramDto
+|Data|Description|
+|--- |--- |
+|bool SupportsDryProducts||
+|string BINRange||
+|decimal? GiftCardAmount||
+|bool IsRechargeable||
+|byte SupportsOffline||
+|byte SupportsContingency||
+|byte ApplyContractsSites||
+|bool ValidateExpDate||
+|byte BalanceMode||
+|string Description||
+|string CompanyName||
+|Guid? CompanyId||
+|string NetworkName||
+|Guid NetworkId||
+|string InternalCode||
+|Guid Id||
+|byte Type||
+|ProgramRuleDto Rule||
 
-		<tr>
-			<td>GetProgram</td>
-			<td>Guid id</td>
-			<td>ProgramDto</td>
-			<td>Get individual ProgramDto</td>
-		</tr>
-		<tr>
-			<td>GetProgramAsync</td>
-			<td>Guid id</td>
-			<td>ProgramDto</td>
-			<td>Get individual ProgramDto</td>
-		</tr>
-		
-		<tr>
-			<td>CreateProgram</td>
-			<td>ProgramDto data</td>
-			<td>ProgramDto</td>
-			<td>Create ProgramDto</td>
-		</tr>
-		<tr>
-			<td>CreateProgramAsync</td>
-			<td>ProgramDto data</td>
-			<td>ProgramDto</td>
-			<td>Create ProgramDto</td>
-		</tr>
-	
-		<tr>
-			<td>UpdateProgram</td>
-			<td>Guid id </br>ProgramDto data</td>
-			<td>string</td>
-			<td>Update ProgramDto</td>
-		</tr>
-		<tr>
-			<td>UpdateProgramAsync</td>
-			<td>Guid id </br>ProgramDto data</td>
-			<td>string</td>
-			<td>Update ProgramDto</td>
-		</tr>
-	</tbody>
-</table>
-<BR/>
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetPrograms|List Guid programIds = null</br> string description = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc"|string orderType = "asc"|Get list of the ProgramDto|
+|GetProgramsAsync|List Guid programIds = null</br> string description = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc"|string orderType = "asc"|Get list of the ProgramDto|
+|GetProgram|Guid id|ProgramDto|Get individual ProgramDto|
+|GetProgramAsync|Guid id|ProgramDto|Get individual ProgramDto|
+|CreateProgram|ProgramDto data|ProgramDto|Create ProgramDto|
+|CreateProgramAsync|ProgramDto data|ProgramDto|Create ProgramDto|
+|UpdateProgram|Guid id ProgramDto data|string|Update ProgramDto|
+|UpdateProgramAsync|Guid id ProgramDto data|string|Update ProgramDto|
+
 <table>
 		<h4>RuleDto</h4>
 			<thead>
