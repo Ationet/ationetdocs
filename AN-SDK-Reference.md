@@ -1182,510 +1182,118 @@ You can download a fully functional sample code from here: https://github.com/at
 |UpdateProgram|Guid id ProgramDto data|string|Update ProgramDto|
 |UpdateProgramAsync|Guid id ProgramDto data|string|Update ProgramDto|
 
-<table>
-		<h4>RuleDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-			<tr>
-                <td>int? OdometerMaxVariation</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool EngineHoursReprompt</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>int? EngineHoursMinVariation</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>int? EngineHoursMaxVariation</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool DriverIdReprompt</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool DriverPINReprompt</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool TruckUnitNumberReprompt</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool TrailerNumberReprompt</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>decimal? ContingencyLimit</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>decimal? OfflineLimit</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List<Guid> SitesIds</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte Owner</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List<DaysTimeRuleTypeDto> DaysTimeRuleType</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string RuleTypeDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string RuleValues</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? ProgramId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ProgramDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool ExactDateTime</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool VehicleIdReprompt</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool SecondaryTrack</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List<Guid> FuelsIds</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List<RuleFuelDto> Fuels</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List<RuleDriverDto> Drivers</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>int? OdometerMinVariation</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List<RuleVehicleDto> Vehicles</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool OdometerReprompt</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool SecondaryTrackReprompt</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? NetworkId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string NetworkName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? CompanyId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string CompanyName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? MerchantId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string MerchantName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? CompanyContractId</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ContractDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>short? RuleType</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string Description</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte? Periodicity</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>short? PeriodicityAmount</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>decimal? MoneyQuota</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>decimal? VolumeQuota</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>int? TimeFrom</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>int? TimeTo</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>int? DateFrom</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>int? DateTo</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>decimal? SecurityLimit</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>int? TransactionsQuantity</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>int? Retries</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool VehiclePINReprompt</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>bool MiscellaneousReprompt</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>List RuleFleetDto  Fleets</td>
-                <td></td>
-            </tr>
+#### RuleDto
+|Data|Description|
+|--- |--- |
+|int? OdometerMaxVariation||
+|bool EngineHoursReprompt||
+|int? EngineHoursMinVariation||
+|int? EngineHoursMaxVariation||
+|bool DriverIdReprompt||
+|bool DriverPINReprompt||
+|bool TruckUnitNumberReprompt||
+|bool TrailerNumberReprompt||
+|decimal? ContingencyLimit||
+|decimal? OfflineLimit||
+|List SitesIds||
+|byte Owner||
+|List DaysTimeRuleType||
+|string RuleTypeDescription||
+|string RuleValues||
+|Guid? ProgramId||
+|string ProgramDescription||
+|bool ExactDateTime||
+|bool VehicleIdReprompt||
+|bool SecondaryTrack||
+|List FuelsIds||
+|List Fuels||
+|List Drivers||
+|int? OdometerMinVariation||
+|List Vehicles||
+|bool OdometerReprompt||
+|bool SecondaryTrackReprompt||
+|Guid Id||
+|Guid? NetworkId||
+|string NetworkName||
+|Guid? CompanyId||
+|string CompanyName||
+|Guid? MerchantId||
+|string MerchantName||
+|Guid? CompanyContractId||
+|string ContractDescription||
+|short? RuleType||
+|string Description||
+|byte? Periodicity||
+|short? PeriodicityAmount||
+|decimal? MoneyQuota||
+|decimal? VolumeQuota||
+|int? TimeFrom||
+|int? TimeTo||
+|int? DateFrom||
+|int? DateTo||
+|decimal? SecurityLimit||
+|int? TransactionsQuantity||
+|int? Retries||
+|bool VehiclePINReprompt||
+|bool MiscellaneousReprompt||
+|List RuleFleetDto  Fleets||
 
-            
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetRules</td>
-			<td>string rule = null</br> short? ruleType = null</br> Guid? idVehicle = null</br> Guid? idDriver = null</br> Guid? idFleet = null</br> string customer = null</br> string company = null</br> string contract = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "description"</br> string orderType = "asc"</td>
-			<td>Get list of the RuleDto</td>
-		</tr>
-		<tr>
-			<td>GetRulesAsync</td>
-			<td>string rule = null</br> short? ruleType = null</br> Guid? idVehicle = null</br> Guid? idDriver = null</br> Guid? idFleet = null</br> string customer = null</br> string company = null</br> string contract = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "description"</br> string orderType = "asc"</td>
-			<td>Get list of the RuleDto</td>
-		</tr>
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetRules|string rule = null</br> short? ruleType = null</br> Guid? idVehicle = null</br> Guid? idDriver = null</br> Guid? idFleet = null</br> string customer = null</br> string company = null</br> string contract = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "description"</br> string orderType = "asc"|List&lt;RuleDto>|Get list of the RuleDto|
+|GetRulesAsync|string rule = null</br> short? ruleType = null</br> Guid? idVehicle = null</br> Guid? idDriver = null</br> Guid? idFleet = null</br> string customer = null</br> string company = null</br> string contract = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "description"</br> string orderType = "asc"|List&lt;RuleDto>|Get list of the RuleDto|
+|GetRule|Guid id|RuleDto|Get individual RuleDto|
+|GetRuleAsync|Guid id|RuleDto|Get individual RuleDto|
+|CreateRule|RuleDto data|RuleDto|Create RuleDto|
+|CreateRuleAsync|RuleDto data|RuleDto|Create RuleDto|
+|UpdateRule|Guid id RuleDto data|string|Update RuleDto|
+|UpdateRuleAsync|Guid id RuleDto data|string|Update RuleDto|
+|DeleteRule|Guid id|string|Get individual RuleDto|
+|DeleteRuleAsync|Guid id|string|Get individual RuleDto|
 
-		<tr>
-			<td>GetRule</td>
-			<td>Guid id</td>
-			<td>RuleDto</td>
-			<td>Get individual RuleDto</td>
-		</tr>
-		<tr>
-			<td>GetRuleAsync</td>
-			<td>Guid id</td>
-			<td>RuleDto</td>
-			<td>Get individual RuleDto</td>
-		</tr>
-		
-		<tr>
-			<td>CreateRule</td>
-			<td>RuleDto data</td>
-			<td>RuleDto</td>
-			<td>Create RuleDto</td>
-		</tr>
-		<tr>
-			<td>CreateRuleAsync</td>
-			<td>RuleDto data</td>
-			<td>RuleDto</td>
-			<td>Create RuleDto</td>
-		</tr>
-	
-		<tr>
-			<td>UpdateRule</td>
-			<td>Guid id </br>RuleDto data</td>
-			<td>string</td>
-			<td>Update RuleDto</td>
-		</tr>
-		<tr>
-			<td>UpdateRuleAsync</td>
-			<td>Guid id </br>RuleDto data</td>
-			<td>string</td>
-			<td>Update RuleDto</td>
-		</tr>
-		<tr>
-			<td>DeleteRule</td>
-			<td>Guid id</td>
-			<td>string</td>
-			<td>Get individual RuleDto</td>
-		</tr>
-		<tr>
-			<td>DeleteRuleAsync</td>
-			<td>Guid id</td>
-			<td>string</td>
-			<td>Get individual RuleDto</td>
-		</tr>
-	</tbody>
-</table>
-<BR/>
-<table>
-		<h4>ServiceFileEntryDto</h4>
-			<thead>
-				<tr> 
-					<td>Data</td>
-					<td>Description</td>
-				</tr>
-			</thead>
-			<tbody>
-			<tr>
-                <td>DateTime RecordDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte? ServiceFileTargetType</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>byte? TransactionType</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>int? EngineHours</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>int? Odometer</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string FreeText</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string StockKeepingUnitDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ServiceEntryClass3Description</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ServiceEntryClass2Description</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ServiceEntryClass1Description</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ServiceEntryTypeGroupDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ServiceEntryTypeDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string ServiceFileCode</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string DriverDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string VehicleDescription</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>string NetworkName</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdStockKeepingUnit</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdServiceEntryClass3</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdServiceEntryClass2</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdServiceEntryClass1</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdLoyaltyTransaction</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdTransaction</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdServiceEntryTypeGroup</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdServiceEntryType</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdServiceFile</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdDriver</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdVehicle</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid? IdNetwork</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Guid Id</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>DateTime? EntryDate</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>DateTime? ExpirationDate</td>
-                <td></td>
-            </tr>
-            
-			</tbody>
-</table>
-<table>
-	 <thead>
-		<tr> 
-			<td>Method</td>
-			<td>Parameters</td>
-			<td>Response</td>
-			<td>Description</td>
-			
-		</tr>
-	 </thead>
-	 <tbody>
-		<tr>
-			<td>GetServiceFileEntries</td>
-			<td>List Guid  loyaltyPrograms = null</br> List<Guid> identifications = null</br> List<Guid> drivers = null</br> List<Guid> vehicles = null</br> List<Guid> groups = null</br> List<Guid> types = null</br> List<Guid> products = null</br> string memberDate = null</br> string dateFrom = null</br> string dateTo = null</br> int page = 1</br> int pageSize = 50</td>
-			<td>Get list of the ServiceFileEntryDto</td>
-		</tr>
-		<tr>
-			<td>GetServiceFileEntriesAsync</td>
-			<td>List Guid  loyaltyPrograms = null</br> List<Guid> identifications = null</br> List<Guid> drivers = null</br> List<Guid> vehicles = null</br> List<Guid> groups = null</br> List<Guid> types = null</br> List<Guid> products = null</br> string memberDate = null</br> string dateFrom = null</br> string dateTo = null</br> int page = 1</br> int pageSize = 50</td>
-			<td>Get list of the ServiceFileEntryDto</td>
-			<td>Get list of the ServiceFileEntryDto</td>
-		</tr>
+#### ServiceFileEntryDto
+|Data|Description|
+|--- |--- |
+|DateTime RecordDate||
+|byte? ServiceFileTargetType||
+|byte? TransactionType||
+|int? EngineHours||
+|int? Odometer||
+|string FreeText||
+|string StockKeepingUnitDescription||
+|string ServiceEntryClass3Description||
+|string ServiceEntryClass2Description||
+|string ServiceEntryClass1Description||
+|string ServiceEntryTypeGroupDescription||
+|string ServiceEntryTypeDescription||
+|string ServiceFileCode||
+|string DriverDescription||
+|string VehicleDescription||
+|string NetworkName||
+|Guid? IdStockKeepingUnit||
+|Guid? IdServiceEntryClass3||
+|Guid? IdServiceEntryClass2||
+|Guid? IdServiceEntryClass1||
+|Guid? IdLoyaltyTransaction||
+|Guid? IdTransaction||
+|Guid? IdServiceEntryTypeGroup||
+|Guid? IdServiceEntryType||
+|Guid? IdServiceFile||
+|Guid? IdDriver||
+|Guid? IdVehicle||
+|Guid? IdNetwork||
+|Guid Id||
+|DateTime? EntryDate||
+|DateTime? ExpirationDate||
 
-		<tr>
-			<td>GetServiceFileEntry</td>
-			<td>Guid id</td>
-			<td>ServiceFileEntryDto</td>
-			<td>Get individual ServiceFileEntryDto</td>
-		</tr>
-		<tr>
-			<td>GetServiceFileEntryAsync</td>
-			<td>Guid id</td>
-			<td>ServiceFileEntryDto</td>
-			<td>Get individual ServiceFileEntryDto</td>
-		</tr>
-		
-		<tr>
-			<td>CreateServiceFileEntry</td>
-			<td>ServiceFileEntryDto data</td>
-			<td>ServiceFileEntryDto</td>
-			<td>Create ServiceFileEntryDto</td>
-		</tr>
-		<tr>
-			<td>CreateServiceFileEntryAsync</td>
-			<td>ServiceFileEntryDto data</td>
-			<td>ServiceFileEntryDto</td>
-			<td>Create ServiceFileEntryDto</td>
-		</tr>
-	</tbody>
-</table>
-<BR/>
-<BR/>
-<BR/>
-<BR/>
-<BR/>
-
-
-
-
-<BR/>
-
-
-
-
-
-
-
-
-
-
-
-
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetServiceFileEntries|List Guid  loyaltyPrograms = null List identifications = null List drivers = null List vehicles = null List groups = null List types = null List products = null string memberDate = null string dateFrom = null string dateTo = null int page = 1 int pageSize = 50|List<ServiceFileEntryDto>|Get list of the ServiceFileEntryDto|
+|GetServiceFileEntriesAsync|List Guid  loyaltyPrograms = null List identifications = null List drivers = null List vehicles = null List groups = null List types = null List products = null string memberDate = null string dateFrom = null string dateTo = null int page = 1 int pageSize = 50|List<ServiceFileEntryDto>|Get list of the ServiceFileEntryDto|
+|GetServiceFileEntry|Guid id|ServiceFileEntryDto|Get individual ServiceFileEntryDto|
+|GetServiceFileEntryAsync|Guid id|ServiceFileEntryDto|Get individual ServiceFileEntryDto|
+|CreateServiceFileEntry|ServiceFileEntryDto data|ServiceFileEntryDto|Create ServiceFileEntryDto|
+|CreateServiceFileEntryAsync|ServiceFileEntryDto data|ServiceFileEntryDto|Create ServiceFileEntryDto|
 
 
 
