@@ -26,7 +26,7 @@
 <!-- MarkdownTOC depth=3 -->
 
 - [Introduction](#introduction)
-- [Download / Installation](#download-/-installation)
+- [Download / Installation](#download-installation)
 - [Operation Types](#operation-types)
   -  [Auth](#auth)
   -  [Api](#api)
@@ -1295,7 +1295,47 @@ You can download a fully functional sample code from here: https://github.com/at
 |CreateServiceFileEntry|ServiceFileEntryDto data|ServiceFileEntryDto|Create ServiceFileEntryDto|
 |CreateServiceFileEntryAsync|ServiceFileEntryDto data|ServiceFileEntryDto|Create ServiceFileEntryDto|
 
-
+#### SiteDto
+|Type|Name|Description|
+|--- |--- |--- |
+|string|City||
+|string|Code||
+|double?|Latitude||
+|double?|Longitude||
+|string|TimeZone||
+|decimal?|MaxDiffVolume||
+|decimal?|MaxDiffAmount||
+|byte?|SiteType||
+|Guid?|IdSiteClassification0||
+|Guid?|IdSiteClassification2||
+|Guid?|IdSiteClassification3||
+|string|SiteClassification0Description||
+|string|SiteClassification1Description||
+|string|SiteClassification2Description||
+|string|SiteClassification3Description||
+|Guid?|IdZone||
+|Guid?|IdSiteClassification1||
+|string|ZoneName||
+|bool|RequiresFuelMapping||
+|string|PhoneNumber1||
+|Guid|Id||
+|string|ShortName||
+|string|FullName||
+|string|Street1||
+|string|Street2||
+|Guid?|CountryId||
+|string|CountryDescription||
+|string|PhoneNumber2||
+|Guid?|StateId||
+|Guid?|LanguageId||
+|string|LanguageDescription||
+|Guid|MerchantId||
+|string|MerchantName||
+|Guid|BrandId||
+|string|BrandName||
+|string|ZipCode||
+|string|StateDescription||
+|string|ZoneCode||
 
 
 
