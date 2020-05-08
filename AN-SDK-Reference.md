@@ -1173,8 +1173,8 @@ You can download a fully functional sample code from here: https://github.com/at
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetPrograms|List Guid programIds = null</br> string description = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc"|string orderType = "asc"|Get list of the ProgramDto|
-|GetProgramsAsync|List Guid programIds = null</br> string description = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc"|string orderType = "asc"|Get list of the ProgramDto|
+|GetPrograms|List Guid programIds = null</br> string description = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc" string orderType = "asc"|List&lt;ProgramDto>|Get list of the ProgramDto|
+|GetProgramsAsync|List Guid programIds = null</br> string description = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "name"</br> string orderType = "asc" string orderType = "asc"|List&lt;ProgramDto>|Get list of the ProgramDto|
 |GetProgram|Guid id|ProgramDto|Get individual ProgramDto|
 |GetProgramAsync|Guid id|ProgramDto|Get individual ProgramDto|
 |CreateProgram|ProgramDto data|ProgramDto|Create ProgramDto|
@@ -1288,8 +1288,8 @@ You can download a fully functional sample code from here: https://github.com/at
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetServiceFileEntries|List Guid  loyaltyPrograms = null List identifications = null List drivers = null List vehicles = null List groups = null List types = null List products = null string memberDate = null string dateFrom = null string dateTo = null int page = 1 int pageSize = 50|List<ServiceFileEntryDto>|Get list of the ServiceFileEntryDto|
-|GetServiceFileEntriesAsync|List Guid  loyaltyPrograms = null List identifications = null List drivers = null List vehicles = null List groups = null List types = null List products = null string memberDate = null string dateFrom = null string dateTo = null int page = 1 int pageSize = 50|List<ServiceFileEntryDto>|Get list of the ServiceFileEntryDto|
+|GetServiceFileEntries|List Guid  loyaltyPrograms = null List identifications = null List drivers = null List vehicles = null List groups = null List types = null List products = null string memberDate = null string dateFrom = null string dateTo = null int page = 1 int pageSize = 50|List&lt;ServiceFileEntryDto>|Get list of the ServiceFileEntryDto|
+|GetServiceFileEntriesAsync|List Guid  loyaltyPrograms = null List identifications = null List drivers = null List vehicles = null List groups = null List types = null List products = null string memberDate = null string dateFrom = null string dateTo = null int page = 1 int pageSize = 50|List&lt;ServiceFileEntryDto>|Get list of the ServiceFileEntryDto|
 |GetServiceFileEntry|Guid id|ServiceFileEntryDto|Get individual ServiceFileEntryDto|
 |GetServiceFileEntryAsync|Guid id|ServiceFileEntryDto|Get individual ServiceFileEntryDto|
 |CreateServiceFileEntry|ServiceFileEntryDto data|ServiceFileEntryDto|Create ServiceFileEntryDto|
