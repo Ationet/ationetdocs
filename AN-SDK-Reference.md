@@ -502,10 +502,6 @@ You can download a fully functional sample code from here: https://github.com/at
 |GetContractsBalanceAsync|Guid? idContract string dateFrom = null string dateTo = null string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the rentAccountReportDto|
 |GetContractsMovements|Guid idContract string dateFrom = null string dateTo = null string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
 |GetContractsMovementsAsync|Guid idContract string dateFrom = null string dateTo = null string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
-|GetSubAccountsBalance|Guid? idContract=nullGuid? idSubAccount=null string dateFrom = null string dateTo = null  string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
-|GetSubAccountsBalanceAsync|Guid? idContract=nullGuid? idSubAccount=null string dateFrom = null string dateTo = null string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
-|GetSubAccountsMovements|Guid? idContract=nullGuid? idSubAccount=null string dateFrom = null string dateTo = null string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
-|GetSubAccountsMovementsAsync|Guid? idContract=nullGuid? idSubAccount=null string dateFrom = null string dateTo = null string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
 
 #### CountryDto
 |Data|Description|
