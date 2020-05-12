@@ -179,8 +179,10 @@ To consume the Fiscal API you should point to this URL: fiscal.ationet.com
 		</tr>
 	</tbody>
 </table>
+
 ---
 ### Fiscal Methods
+
 <table>
      <thead> 
         <tr>
