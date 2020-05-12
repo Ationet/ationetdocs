@@ -463,6 +463,63 @@ To consume the Fiscal API you should point to this URL: fiscal.ationet.com
 	</tbody>
 </table>
 
+#### Tax specifications:
+
+<table>
+	<thead>
+		<tr>
+			<td>Property</td>
+			<td>Description</td>
+			<td>Data Type</td>
+			<td>Required</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Code</td>
+			<td>Tax code.</td>
+			<td>String</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td>Description</td>
+			<td>Tax description.</td>
+			<td>String</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Ationet tax type</td>
+			<td>Int</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td>Included</td>
+			<td>Indicates if the tax is included or not.</td>
+			<td>Bool</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td>TaxBase</td>
+			<td>Tax base.</td>
+			<td>Decimal</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td>Value</td>
+			<td>Tax value</td>
+			<td>Decimal</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td>Total</td>
+			<td>Tax total</td>
+			<td>Decimal</td>
+			<td>Yes</td>
+		</tr>
+	</tbody>
+</table>
+
 #### FiscalizationResult specification:
 
 <table>
