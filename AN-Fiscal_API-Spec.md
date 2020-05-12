@@ -201,8 +201,9 @@ To consume the Fiscal API you should point to this URL: fiscal.ationet.com
         </tr>
 	</tbody>
 </table>
-<b>FiscalizeRequest Class specification</b>
-<br/>
+
+#### FiscalizeRequest Class specification</b>
+
 <table>
 	<thead>
 		<tr>
