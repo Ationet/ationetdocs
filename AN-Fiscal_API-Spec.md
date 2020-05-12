@@ -126,8 +126,9 @@ To consume the Fiscal API you should point to this URL: fiscal.ationet.com
         </tr>
  	</tbody>
 </table>
-<b>UserAuth specification</b>
-<br/>
+
+#### UserAuth specification:
+
 <table>
 	<thead>
 		<tr>
@@ -152,7 +153,9 @@ To consume the Fiscal API you should point to this URL: fiscal.ationet.com
 		</tr>
 	</tbody>
 </table>
-<b>Token Result specification</b>
+
+#### Token Result specification:
+
 <table>
 	<thead>
 		<tr>
@@ -202,7 +205,7 @@ To consume the Fiscal API you should point to this URL: fiscal.ationet.com
 	</tbody>
 </table>
 
-#### FiscalizeRequest Class specification</b>
+#### FiscalizeRequest Class specification:
 
 <table>
 	<thead>
@@ -360,8 +363,9 @@ To consume the Fiscal API you should point to this URL: fiscal.ationet.com
 		</tr>
 	</tbody>
 </table>
-<b>Transaction specifications</b>
-<br/>
+
+#### Transaction specifications:
+
 <table>
 	<thead>
 		<tr>
@@ -458,8 +462,9 @@ To consume the Fiscal API you should point to this URL: fiscal.ationet.com
 		</tr>
 	</tbody>
 </table>
-<b>FiscalizationResult specification</b>
-<br/>
+
+#### FiscalizationResult specification:
+
 <table>
 	<thead>
 		<tr>
@@ -502,8 +507,9 @@ To consume the Fiscal API you should point to this URL: fiscal.ationet.com
 		</tr>
 	</tbody>
 </table>
-<br/>
-<b>TransactionCodes specifications</b>
+
+#### TransactionCodes specifications:
+
 <table>
 	<thead>
 		<tr>
@@ -546,8 +552,9 @@ To consume the Fiscal API you should point to this URL: fiscal.ationet.com
 		</tr>
 	</tbody>
 </table>
-<b>ResponseCodes specifications</b>
-<br/>
+
+#### ResponseCodes specifications:
+
 <table>
 	<thead>
 		<tr>
