@@ -23,5 +23,8 @@
 ## Consumer Card API
 - [Consumer Card API description](AN-Consumer_Card_API-Spec.md)
 
+## Fiscal API
+- [Fiscal API description](AN-Fiscal_API-Spec.md)
+
 ## .NET SDK
 - [.NET SDK Reference](AN-SDK-Reference.md)
