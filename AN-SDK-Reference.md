@@ -1338,6 +1338,20 @@ You can download a fully functional sample code from here: https://github.com/at
 |string|ZoneCode||
 
 
+|Method|Parameters (Type - Name - Default Value - Description)|Response|Description|
+|--- |--- |--- |--- |
+|GetSites|List&lt;Guid> - merchantIds - null - TBD<BR>List&lt;Guid> - countryIds - null - TBD<BR>List&lt;Guid> - stateIds - null - TBD<BR>List&lt;Guid> - ruleIds - null - TBD<BR>string - code - null - TBD<BR>string - shortName - null - TBD<BR>string - fullName - null - TBD<BR>int - page - 1 - TBD<BR>int - pageSize - 50 - TBD<BR>string - orderField - "code" - TBD<BR>string - orderType - "asc" - TBD<BR>double? - atitude - null - TBD<BR>double? - longitude - null - TBD<BR>double - distance - 5000 - TBD<BR>Guid? - idZone - null - TBD|List&lt;SiteDto>|Get List SiteDto|
+|GetSitesAsync|List&lt;Guid> - merchantIds - null - TBD<BR>List&lt;Guid> - countryIds - null - TBD<BR>List&lt;Guid> - stateIds - null - TBD<BR>List&lt;Guid> - ruleIds - null - TBD<BR>string - code - null - TBD<BR>string - shortName - null - TBD<BR>string - fullName - null - TBD<BR>int - page - 1 - TBD<BR>int - pageSize - 50 - TBD<BR>string - orderField - "code" - TBD<BR>string - orderType - "asc" - TBD<BR>double? - atitude - null - TBD<BR>double? - longitude - null - TBD<BR>double - distance - 5000 - TBD<BR>Guid? - idZone - null - TBD|List&lt;SiteDto>|Get List SiteDto|
+|GetSite|Guid - id - Identification of Site|SiteDto|Get individual SiteDto|
+|GetSiteAsync|Guid - id - Identification of Site|SiteDto|Get individual SiteDto|
+|CreateSite|SiteDto - data - - Represent a Site entity to Create|SiteDto|Create SiteDto|
+|CreateSiteAsync|SiteDto - data - - Represent a Site entity to Create|SiteDto|Create SiteDto|
+|UpdateSite|Guid - id - - Identification of Site<BR>SiteDto - data - - Represent a Site entity to Update|SiteDto|Update SiteDto|
+|UpdateSiteAsync|Guid - id - - Identification of Site<BR>SiteDto - data - Represent a Site entity to Update|SiteDto|Update SiteDto|
+
+
+
+
 
 ### FMS Methods
 <table>
