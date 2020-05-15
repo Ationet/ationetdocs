@@ -1349,7 +1349,43 @@ You can download a fully functional sample code from here: https://github.com/at
 |UpdateSite|Guid - id - - Identification of Site<BR>SiteDto - data - - Represent a Site entity to Update|SiteDto|Update SiteDto|
 |UpdateSiteAsync|Guid - id - - Identification of Site<BR>SiteDto - data - Represent a Site entity to Update|SiteDto|Update SiteDto|
 
-
+#### SkuDto
+|Type|Name|Description|
+|--- |--- |--- |
+|bool|Weighable||
+|bool|Fractional||
+|byte|POSProductType||
+|bool|Stockable||
+|bool|Consignment||
+|int?|StockMinVolumeDefault||
+|bool|Salable||
+|int?|StockMaxVolumeDefault||
+|int?|RestockVolumeDefault||
+|DateTime |AvailabilityFrom||
+|DateTime? |AvailabilityTo||
+|List&lt;SkuItemDto> |StockKeepingUnitsItems||
+|List&lt;SkuRewardDto> |StockKeepingUnitsRewards||
+|List&lt;SkuTaxDto> |StockKeepingUnitsTaxes||
+|int? |RestockDaysDefault||
+|List&lt;SkuSiteDto> |StockKeepingUnitsSites||
+|Guid? |IdFuelBlend||
+|byte |Fuel||
+|Guid |Id||
+|Guid |NetworkId||
+|string |Code||
+|string |DescriptionFull||
+|string |DescriptionShort||
+|string |DescriptionUltraShort||
+|int? |FuelGrade||
+|bool |IsPos||
+|bool |IsReward||
+|bool |IsService||
+|bool |IsLoyalty||
+|string |IdStockUnitOfMeasure||
+|Guid |StockKeepingUnitsCategoryId||
+|Guid? |IdCostPriceGroup||
+|bool |IsFleetDry||
+|DateTime |UpdateDate||
 
 
 
