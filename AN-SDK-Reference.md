@@ -1387,6 +1387,16 @@ You can download a fully functional sample code from here: https://github.com/at
 |bool |IsFleetDry||
 |DateTime |UpdateDate||
 
+|Method|Parameters (Type - Name - Default Value - Description)|Response|Description|
+|--- |--- |--- |--- |
+|GetSku|List&lt;Guid> - skuIds - null - TBD<br> string - code - null - TBD<br> bool - isPos - false - TBD<br> bool - isLoyalty - false - TBD<br> bool - isFleetDry - false - TBD<br> bool - isReward - false - TBD<br> bool - isService - false - TBD<br> string descriptionShort - null - TBD<br> DateTime? updateDate - null - TBD<br> int - page - 1 - TBD<br> int - pageSize - 50 - TBD<br> string - orderField - "code" - TBD<br> string - orderType - "asc"|List&lt;SiteDto>|Get List SiteDto|
+|GetSkuAsync|List&lt;Guid> - skuIds - null - TBD<br> string - code - null - TBD<br> bool - isPos - false - TBD<br> bool - isLoyalty - false - TBD<br> bool - isFleetDry - false - TBD<br> bool - isReward - false - TBD<br> bool - isService - false - TBD<br> string descriptionShort - null - TBD<br> DateTime? updateDate - null - TBD<br> int - page - 1 - TBD<br> int - pageSize - 50 - TBD<br> string - orderField - "code" - TBD<br> string - orderType - "asc"|List&lt;SkuDto>|Get List SkuDto|
+|GetSku|Guid - id - Identification of Sku|SkuDto|Get individual SkuDto|
+|GetSkuAsync|Guid - id - Identification of Sku|SiteDto|Get individual SkuDto|
+|CreateSku|SiteDto - data - - Represent a Sku entity to Create|SkuDto|Create SkuDto|
+|CreateSkuAsync|SiteDto - data - - Represent a Sku entity to Create|SkuDto|Create SkuDto|
+|UpdateSku|Guid - id - - Identification of Sku<BR>SiteDto - data - - Represent a Sku entity to Update|SkuDto|Update SkuDto|
+|UpdateSkuAsync|Guid - id - - Identification of Sku<BR>SiteDto - data - Represent a SitSkue entity to Update|SkuDto|Update SkuDto|
 
 
 ### FMS Methods
