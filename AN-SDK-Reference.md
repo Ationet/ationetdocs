@@ -1431,18 +1431,12 @@ You can download a fully functional sample code from here: https://github.com/at
 |Guid |Id||
 |string |ProfilePicture||
 
-#### UserResetPasswordDto 
+#### ResetUserAtionetPassword 
 |Type|Name|Description|
 |--- |--- |--- |
 |Guid |UserId||
 |string |NewPassword||
 |string |Message||
-
-#### UserUnlockedDto 
-|Type|Name|Description|
-|--- |--- |--- |
-|string |UserName|
-
 
 |Method|Parameters (Type - Name - Default Value - Description)|Response|Description|
 |--- |--- |--- |--- |
@@ -1454,10 +1448,10 @@ You can download a fully functional sample code from here: https://github.com/at
 |CreateUserAsync|SiteDto - data - - Represent a User entity to Create|UsersAtionetDto|Create UsersAtionetDto|
 |UpdateUser|Guid - id - - Identification of User<BR>SiteDto - data - - Represent a User entity to Update|string|Update UsersAtionetDto|
 |UpdateUserAsync|Guid - id - - Identification of User<BR>SiteDto - data - Represent a User entity to Update|string|Update UsersAtionetDto|
-|RessetPasswordUser|UserResetPasswordDto - data - - Represent a User entity needed to Reset Password|UserResetPasswordDto|Reset User Password|
-|RessetPasswordUserAsync|UserResetPasswordDto - data - - Represent a User entity needed to Reset Password|UserResetPasswordDto|Reset User Password|
-|UnlockedUser|Guid - id - - Identification of User<BR>UserUnlockedDto - data - - Represent a entity with a UserName to Unlock|string|Unlocked User|
-|UnlockedUserAsync|Guid - id - - Identification of User<BR>UserUnlockedDto - data - - epresent a entity with a UserName to Unlock|string|Unlocked User|
+|ResetUserAtionetPassword|ResetUserAtionetPasswordDto - data - - Represent a User entity needed to Reset Password|ResetUserAtionetPasswordDto|Reset User Password|
+|ResetUserAtionetPasswordAsync|ResetUserAtionetPasswordDto - data - - Represent a User entity needed to Reset Password|ResetUserAtionetPasswordDto|Reset User Password|
+|UnlockedUser|Guid - id - - Identification of User|string|Unlocked User|
+|UnlockedUserAsync|Guid - id - - Identification of User|string|Unlocked User|
 	
 	
 	
