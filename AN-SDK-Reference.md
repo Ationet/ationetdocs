@@ -1346,8 +1346,8 @@ You can download a fully functional sample code from here: https://github.com/at
 |GetSiteAsync|Guid - id - Identification of Site|SiteDto|Get individual SiteDto|
 |CreateSite|SiteDto - data - - Represent a Site entity to Create|SiteDto|Create SiteDto|
 |CreateSiteAsync|SiteDto - data - - Represent a Site entity to Create|SiteDto|Create SiteDto|
-|UpdateSite|Guid - id - - Identification of Site<BR>SiteDto - data - - Represent a Site entity to Update|SiteDto|Update SiteDto|
-|UpdateSiteAsync|Guid - id - - Identification of Site<BR>SiteDto - data - Represent a Site entity to Update|SiteDto|Update SiteDto|
+|UpdateSite|Guid - id - - Identification of Site<BR>SiteDto - data - - Represent a Site entity to Update|string|Update SiteDto|
+|UpdateSiteAsync|Guid - id - - Identification of Site<BR>SiteDto - data - Represent a Site entity to Update|string|Update SiteDto|
 
 #### SkuDto
 |Type|Name|Description|
@@ -1395,10 +1395,74 @@ You can download a fully functional sample code from here: https://github.com/at
 |GetSkuAsync|Guid - id - Identification of Sku|SiteDto|Get individual SkuDto|
 |CreateSku|SiteDto - data - - Represent a Sku entity to Create|SkuDto|Create SkuDto|
 |CreateSkuAsync|SiteDto - data - - Represent a Sku entity to Create|SkuDto|Create SkuDto|
-|UpdateSku|Guid - id - - Identification of Sku<BR>SiteDto - data - - Represent a Sku entity to Update|SkuDto|Update SkuDto|
-|UpdateSkuAsync|Guid - id - - Identification of Sku<BR>SiteDto - data - Represent a SitSkue entity to Update|SkuDto|Update SkuDto|
+|UpdateSku|Guid - id - - Identification of Sku<BR>SiteDto - data - - Represent a Sku entity to Update|string|Update SkuDto|
+|UpdateSkuAsync|Guid - id - - Identification of Sku<BR>SiteDto - data - Represent a Sku entity to Update|string|Update SkuDto|
+
+#### UsersAtionetDto 
+|Type|Name|Description|
+|--- |--- |--- |
+|bool? |isLockedOut||
+|bool |IsOnlyApiUser||
+|string |Provider||
+|string |ConsumerCarClientNewPassword||
+|string |ConsumerCarClientPassword||
+|string |ConsumerCarClientPANNumber||
+|List&lt;RolesStruct> |CompaniesGroups||
+|List&lt;RolesStruct> |ConsumerCardClients||
+|List&lt;RolesStruct> |Sites||
+|List&lt;RolesStruct> |Merchants||
+|List&lt;RolesStruct> |Fleets||
+|List&lt;RolesStruct> |Companies||
+|List&lt;RolesStruct> |Networks||
+|IEnumerable&lt;ConsumerCardIdentificationsStruct> |ConsumerCardIdentifications||
+|List&lt;string> |PhonePNSTokens||
+|string |SocialSecurity||
+|string |PhoneNumber2||
+|string |PhoneNumber1||
+|string |ZipCode||
+|Guid |StateId||
+|Guid |CountryId||
+|string |Street2||
+|string |Street1||
+|string |NewPassword||
+|string |OldPassword||
+|string |Name||
+|string |UserName||
+|Guid |Id||
+|string |ProfilePicture||
+
+#### UserResetPasswordDto 
+|Type|Name|Description|
+|--- |--- |--- |
+|Guid |UserId||
+|string |NewPassword||
+|string |Message||
+
+#### UserUnlockedDto 
+|Type|Name|Description|
+|--- |--- |--- |
+|string |UserName|
 
 
+|Method|Parameters (Type - Name - Default Value - Description)|Response|Description|
+|--- |--- |--- |--- |
+|GetUsers|string - userName - null- TBD<br> int - page - 1- TBD<br> int - pageSize - 50- TBD<br> string - orderField - "userName"- TBD<br> string - orderType - "asc"- TBD<br> string - name - null- TBD<br> string - socialSecurityNumber - null|List&lt;SiteDto>|Get List SiteDto|
+|GetUsersAsync|string - userName - null- TBD<br> int - page - 1- TBD<br> int - pageSize - 50- TBD<br> string - orderField - "userName"- TBD<br> string - orderType - "asc"- TBD<br> string - name - null- TBD<br> string - socialSecurityNumber - null|List&lt;UsersAtionetDto>|Get List UsersAtionetDto|
+|GetUser|Guid - id - Identification of User|UsersAtionetDto|Get individual UsersAtionetDto|
+|GetUserAsync|Guid - id - Identification of User|SiteDto|Get individual UsersAtionetDto|
+|CreateUser|SiteDto - data - - Represent a User entity to Create|UsersAtionetDto|Create UsersAtionetDto|
+|CreateUserAsync|SiteDto - data - - Represent a User entity to Create|UsersAtionetDto|Create UsersAtionetDto|
+|UpdateUser|Guid - id - - Identification of User<BR>SiteDto - data - - Represent a User entity to Update|string|Update UsersAtionetDto|
+|UpdateUserAsync|Guid - id - - Identification of User<BR>SiteDto - data - Represent a User entity to Update|string|Update UsersAtionetDto|
+|RessetPasswordUser|UserResetPasswordDto - data - - Represent a User entity needed to Reset Password|UserResetPasswordDto|Reset User Password|
+|RessetPasswordUserAsync|UserResetPasswordDto - data - - Represent a User entity needed to Reset Password|UserResetPasswordDto|Reset User Password|
+|UnlockedUser|Guid - id - - Identification of User<BR>UserUnlockedDto - data - - Represent a entity with a UserName to Unlock|string|Unlocked User|
+|UnlockedUserAsync|Guid - id - - Identification of User<BR>UserUnlockedDto - data - - epresent a entity with a UserName to Unlock|string|Unlocked User|
+	
+	
+	
+	
+	
 ### FMS Methods
 <table>
      <thead>
