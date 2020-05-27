@@ -1452,7 +1452,8 @@ You can download a fully functional sample code from here: https://github.com/at
 |ResetUserAtionetPasswordAsync|ResetUserAtionetPasswordDto - data - - Represent a User entity needed to Reset Password|ResetUserAtionetPasswordDto|Reset User Password|
 |UnlockedUser|Guid - id - - Identification of User|string|Unlocked User|
 |UnlockedUserAsync|Guid - id - - Identification of User|string|Unlocked User|
-	
+|LockedUser|Guid - id - - Identification of User|string|Locked User|
+|LockedUserAsync|Guid - id - - Identification of User|string|Locked User|	
 	
 	
 	
