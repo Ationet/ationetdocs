@@ -961,6 +961,7 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
 |TransactionSequenceNumber|
 |LocalTransactionDate|
 |LocalTransactionTime|
+|AuthorizationCode|
 
 ## 12 Message Samples
 
