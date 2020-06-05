@@ -547,7 +547,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 |SecondaryPIN|Var|string|Optional|Refer to [PIN Block](#pin-block) in Field Description section|
 |CustomerData|Var|Dictionary<string, string>|Conditional|Refer to [Customer Data](#customer-data) in Field Description section|
 |TransactionExtendedData|Var|string|Optional|Designed to capture OBD extended data (On board Devices)|
-|OriginalData|Var|Dictionary|Conditional|Refer to [Original Data](#original-data) in Field Description section|
+|OriginalData|Var|Dictionary<string, string>|Conditional|Refer to [Original Data](#original-data) in Field Description section|
 |AuthorizationCode|Var|string|Conditional|Refer to [Authorization Code](#authorization-code) in Field Description section|
 |InvoiceNumber|Var|string|Optional||
 |ResponseCode|5|string|Conditional|Use only when informing a Response not created by the Host (for example a local authorization), otherwise it should not be echoed from TRESP|
