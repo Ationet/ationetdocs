@@ -226,6 +226,16 @@ You can download a fully functional sample code from here: https://github.com/at
 |Guid |Id||
 |Guid |TaxpayerCategoryId||
 |string |Custom3||
+|string |LabelCustom1||
+|string |LabelCustom2||
+|string |LabelCustom3||
+|string |LabelCustom4||
+|string |EnableCustom1||
+|string |EnableCustom2||
+|string |EnableCustom3||
+|string |EnableCustom4||
+|string |EdiFactCFDIUseCode||
+|bool |IsEdiFactBilling||
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
@@ -341,37 +351,64 @@ You can download a fully functional sample code from here: https://github.com/at
 |DeleteCompaniesClassification4Async|Guid id|string|delete CompanyClassificationDto|
 
 
+
 #### CompanyContractDto
-|Data|Description|
-|--- |--- |
-|List CompanyContractProductDto  Products||
-|List CompanyContractSiteDto  Sites||
-|List CompanyContractFuelDto  Fuels||
-|CompanyContractBillingDto Billing||
-|decimal? ReactivationAmount||
-|byte? DeactivationType||
-|bool Active||
-|bool ValidateSites||
-|decimal? SecurityLimit||
-|decimal? Limit||
-|Guid? CurrencyId||
-|byte CurrentAccountMode||
-|List CompanyContractDiscountDto  Discounts||
-|short BalanceMode||
-|byte Periodicity||
-|string StartDate||
-|decimal Version||
-|string InternalCode||
-|byte Mode||
-|string Description||
-|string Code||
-|byte Type||
-|Guid NetworksCompanyId||
-|Guid CompanyId||
-|Guid NetworkId||
-|Guid Id||
-|short Duration||
-|bool MoneyBalance||
+|Type|Name|Description|
+|--- |--- |--- |
+|List CompanyContractProductDto  |Products||
+|List CompanyContractSiteDto  |Sites||
+|List CompanyContractFuelDto  |Fuels||
+|CompanyContractBillingDto |Billing||
+|decimal? |ReactivationAmount||
+|byte? |DeactivationType||
+|bool |Active||
+|bool |ValidateSites||
+|decimal? |SecurityLimit||
+|decimal? |Limit||
+|Guid? |CurrencyId||
+|byte |CurrentAccountMode||
+|List |CompanyContractDiscountDto  Discounts||
+|short |BalanceMode||
+|byte |Periodicity||
+|string |StartDate||
+|decimal |Version||
+|string |InternalCode||
+|byte |Mode||
+|string |Description||
+|string |Code||
+|byte |Type||
+|Guid |NetworksCompanyId||
+|Guid |CompanyId||
+|Guid |NetworkId||
+|Guid |Id||
+|short |Duration||
+|bool |MoneyBalance||
+
+#### CompanyContractBillingDto
+|Type|Name|Description|
+|--- |--- |--- |
+|string |Name ||
+|string |City ||
+|string |Street1 ||
+|string |Street2 ||
+|string |ZipCode ||
+|string |TaxPayerId ||
+|Guid |CurrencyId ||
+|byte |Type ||
+|byte? |PeriodicityMode ||
+|short? |PeriodicityValue ||
+|string |CutTime ||
+|byte? |CutDay ||
+|byte? |CutMonth ||
+|bool |Manual ||
+|bool |DeductChargesFromBalance ||
+|bool |SeparateChargesDocument ||
+|int |StatementDueDays ||
+|short? |BillingDuration ||
+|byte? |BillingPeriodicityCutDay ||
+|string |CountryDescription ||
+|string |StateDescription ||
+|string |CurrencyCode ||
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
