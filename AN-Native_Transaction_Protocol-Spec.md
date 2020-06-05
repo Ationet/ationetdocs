@@ -545,7 +545,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 |PrimaryPIN|Var|string|Conditional|Refer to [PIN Block](#pin-block) in Field Description section|
 |SecondaryTrack|Var|string|Optional|Refer to Track Data in Field Description section|
 |SecondaryPIN|Var|string|Optional|Refer to [PIN Block](#pin-block) in Field Description section|
-|CustomerData|Var|Dictionary|Conditional|Refer to [Customer Data](#customer-data) in Field Description section|
+|CustomerData|Var|Dictionary<string, string>|Conditional|Refer to [Customer Data](#customer-data) in Field Description section|
 |TransactionExtendedData|Var|string|Optional|Designed to capture OBD extended data (On board Devices)|
 |OriginalData|Var|Dictionary|Conditional|Refer to [Original Data](#original-data) in Field Description section|
 |AuthorizationCode|Var|string|Conditional|Refer to [Authorization Code](#authorization-code) in Field Description section|
@@ -581,7 +581,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 |TransactionSequenceNumber|Var|int|Required|Echoed from TREQ|
 |LocalTransactionDate|8|int|Required|Echoed from TREQ|
 |LocalTransactionTime|6|int|Required|Echoed from TREQ|
-|CustomerData|Var|Dictionary|Conditional|Refer to [Customer Data](#customer-data) in Field Description section|
+|CustomerData|Var|Dictionary<string, string>|Conditional|Refer to [Customer Data](#customer-data) in Field Description section|
 |AuthorizationCode|Var|string|Conditional|Refer to [Authorization Code](#authorization-code) in Field Description section|
 |InvoiceNumber|Var|string|Optional||
 |ResponseCode|5|string|Required|“0” = Authorized, !”0” = Not Authorized|
