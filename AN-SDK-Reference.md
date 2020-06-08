@@ -383,6 +383,8 @@ You can download a fully functional sample code from here: https://github.com/at
 |Guid |Id||
 |short |Duration||
 |bool |MoneyBalance||
+|string |CompanyName||
+|string |CurrencyCode||
 
 #### CompanyContractBillingDto
 |Type|Name|Description|
@@ -404,8 +406,6 @@ You can download a fully functional sample code from here: https://github.com/at
 |bool |DeductChargesFromBalance ||
 |bool |SeparateChargesDocument ||
 |int |StatementDueDays ||
-|short? |BillingDuration ||
-|byte? |BillingPeriodicityCutDay ||
 |string |CountryDescription ||
 |string |StateDescription ||
 |string |CurrencyCode ||
