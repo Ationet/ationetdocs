@@ -1477,7 +1477,7 @@ You can download a fully functional sample code from here: https://github.com/at
 
 |Method|Parameters (Type - Name - Default Value - Description)|Response|Description|
 |--- |--- |--- |--- |
-|GetUsers|string - userName - null- TBD<br> int - page - 1- TBD<br> int - pageSize - 50- TBD<br> string - orderField - "userName"- TBD<br> string - orderType - "asc"- TBD<br> string - name - null- TBD<br> string - socialSecurityNumber - null|List&lt;SiteDto>|Get List SiteDto|
+|GetUsers|string - userName - null- TBD<br> int - page - 1- TBD<br> int - pageSize - 50- TBD<br> string - orderField - "userName"- TBD<br> string - orderType - "asc"- TBD<br> string - name - null- TBD<br> string - socialSecurityNumber - null|List&lt;SiteDto>|Get List UsersAtionetDto|
 |GetUsersAsync|string - userName - null- TBD<br> int - page - 1- TBD<br> int - pageSize - 50- TBD<br> string - orderField - "userName"- TBD<br> string - orderType - "asc"- TBD<br> string - name - null- TBD<br> string - socialSecurityNumber - null|List&lt;UsersAtionetDto>|Get List UsersAtionetDto|
 |GetUser|Guid - id - Identification of User|UsersAtionetDto|Get individual UsersAtionetDto|
 |GetUserAsync|Guid - id - Identification of User|SiteDto|Get individual UsersAtionetDto|
@@ -1493,6 +1493,18 @@ You can download a fully functional sample code from here: https://github.com/at
 |LockedUserAsync|Guid - id - - Identification of User|string|Locked User|	
 	
 	
+#### GlobalSearch 
+|Type|Name|Description|
+|--- |--- |--- |
+|Guid |Id||
+|int |Type||
+|int? |SubType||
+|string |Description||
+
+|Method|Parameters (Type - Name - Default Value - Description)|Response|Description|
+|--- |--- |--- |--- |
+|GetGlobalSearch|string - searchText - - TBD|List&lt;GlobalSearchDto>|Get List GlobalSearchDto|
+|GetGlobalSearchAsync|string - searchText - - TBD<|List&lt;GlobalSearchDto>|Get List GlobalSearchDto|
 	
 	
 ### FMS Methods
