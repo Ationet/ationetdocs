@@ -1519,7 +1519,7 @@ You can download a fully functional sample code from here: https://github.com/at
 |--- |--- |--- |
 |int |AlertType|Representa un NotificationAlertTypeEnum|
 |string |AlertTypeName||
-|List&lt;NotificationChannelDto> |SubTChannelsype||
+|List&lt;NotificationChannelDto> |Channels||
 |string |Configuration||
 	
 #### NotificationChannelDto 
