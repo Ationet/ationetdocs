@@ -1507,6 +1507,36 @@ You can download a fully functional sample code from here: https://github.com/at
 |GetGlobalSearchAsync|string - searchText - - TBD<|List&lt;GlobalSearchDto>|Get List GlobalSearchDto|
 	
 	
+	
+#### UsersAtionetNotificationsSubscriptionDto 
+|Type|Name|Description|
+|--- |--- |--- |
+|List<NotificationSubscriptionDto> |NotificationSuscriptionDto||
+
+
+#### NotificationSubscriptionDto 
+|Type|Name|Description|
+|--- |--- |--- |
+|int |AlertType|Representa un NotificationAlertTypeEnum|
+|string |AlertTypeName||
+|List<NotificationChannelDto> |SubTChannelsype||
+|string |Configuration||
+	
+#### NotificationChannelDto 
+|Type|Name|Description|
+|--- |--- |--- |
+|string |ChannelName||
+|byte |Channel| Representa un NotificationChannelEnum|
+|bool |Suscribed||
+
+|Method|Parameters (Type - Name - Default Value - Description)|Response|Description|
+|--- |--- |--- |--- |
+|GetUsersAtionetNotificationsSubscription||UsersAtionetNotificationsSubscriptionDto|Get UsersAtionetNotificationsSubscriptionDto|
+|GetUsersAtionetNotificationsSubscriptionAsync||UsersAtionetNotificationsSubscriptionDto|Get UsersAtionetNotificationsSubscriptionDto|
+|UpdateNotificationSubscription|UsersAtionetNotificationsSubscriptionDto - data - - Represent a UsersAtionetNotificationsSubscriptionDto entity to Update|string|Update UsersAtionetNotificationsSubscriptionDto|
+|UpdateNotificationSubscriptionAsync|UsersAtionetNotificationsSubscriptionDto - data - Represent a UsersAtionetNotificationsSubscriptionDto entity to Update|string|Update UsersAtionetNotificationsSubscriptionDto|
+
+	
 ### FMS Methods
 <table>
      <thead>
