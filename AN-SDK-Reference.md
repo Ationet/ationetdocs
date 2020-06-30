@@ -1511,7 +1511,7 @@ You can download a fully functional sample code from here: https://github.com/at
 #### UsersAtionetNotificationsSubscriptionDto 
 |Type|Name|Description|
 |--- |--- |--- |
-|List<NotificationSubscriptionDto> |NotificationSuscriptionDto||
+|List&lt;NotificationSubscriptionDto> |NotificationSuscriptionDto||
 
 
 #### NotificationSubscriptionDto 
@@ -1519,7 +1519,7 @@ You can download a fully functional sample code from here: https://github.com/at
 |--- |--- |--- |
 |int |AlertType|Representa un NotificationAlertTypeEnum|
 |string |AlertTypeName||
-|List<NotificationChannelDto> |SubTChannelsype||
+|List&lt;NotificationChannelDto> |SubTChannelsype||
 |string |Configuration||
 	
 #### NotificationChannelDto 
