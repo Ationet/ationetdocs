@@ -1520,7 +1520,7 @@ You can download a fully functional sample code from here: https://github.com/at
 |int |AlertType|Representa un NotificationAlertTypeEnum|
 |string |AlertTypeName||
 |List&lt;NotificationChannelDto> |Channels||
-|string |Configuration||
+|string |Configuration|corresponde a un json que se representa diferentes entidades dependiendo del AlertType <BR>OdometerConfigurationJson cuando AlertType = 23 <BR>AmountDebitNotificationConfigurationJson cuando AlertType = 26<BR>PercentCreditNotificationConfigurationJson cuando AlertType = 25 |
 	
 #### NotificationChannelDto 
 |Type|Name|Description|
