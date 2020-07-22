@@ -948,7 +948,7 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 				<p align="left">Var</p>
 			</td>
 			<td>
-				<p align="left">Dictionary[string, decimal]</p>
+				<p align="left">Dictionary<string, decimal></p>
 			</td>
 			<td>
 				<p align="left">O</p>
@@ -1747,7 +1747,7 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 				<p align="left">Var</p>
 			</td>
 			<td>
-				<p align="left">Dictionary[string, string]</p>
+				<p align="left">Dictionary<string, string></p>
 			</td>
 			<td>
 				<p align="left">O</p>
@@ -1844,7 +1844,7 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 				<p align="left">Var</p>
 			</td>
 			<td valign="top" rowspan="4">
-				<p align="left">Dictionary[string, string]</p>
+				<p align="left">Dictionary<string, string></p>
 			</td>
 			<td>
 				<p align="left"></p>
@@ -2193,7 +2193,6 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 				<p align="left">Var</p>
 			</td>
 			<td>
-				<p align="left">string</p>
 			</td>
 			<td>
 				<p align="left"></p>
@@ -2920,7 +2919,7 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 				<p align="left">Var</p>
 			</td>
 			<td>
-				<p align="left">Dictionary[string, decimal]</p>
+				<p align="left">Dictionary<string, decimal></p>
 			</td>
 			<td>
 				<p align="left">O</p>
@@ -3617,7 +3616,7 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 				<p align="left">Var</p>
 			</td>
 			<td>
-				<p align="left">Dictionary[string, string]</p>
+				<p align="left">Dictionary<string, string></p>
 			</td>
 			<td>
 				<p align="left">O</p>
@@ -3702,7 +3701,7 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 				<p align="left">Var</p>
 			</td>
 			<td valign="top" rowspan="4">
-				<p align="left">Dictionary[string, string]</p>
+				<p align="left">Dictionary<string, string></p>
 			</td>
 			<td>
 				<p align="left"></p>

@@ -565,6 +565,9 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 |ResponseCode|5|string|Conditional|Use only when informing a Response not created by the Host (for example a local authorization), otherwise it should not be echoed from TRESP|
 |ResponseText|20|string|Conditional|Idem Response Code|
 |LongResponseText|200|string|Conditional|Idem Response Code|
+|OldPin|200|string|Conditional|Only used when sending a 300 Transaction Code|
+|NewPin|200|string|Conditional|Only used when sending a 300 Transaction Code|
+|ConfirmationPin|200|string|Conditional|Only used when sending a 300 Transaction Code|
 
 
 ## 8 Transaction Response (TRESP) Message Format
@@ -598,7 +601,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 |InvoiceNumber|Var|string|Optional||
 |ResponseCode|5|string|Required|“0” = Authorized, !”0” = Not Authorized|
 |ResponseText|20|string|Required|Message from the Network|
-|ReceiptData|Var|string|Conditional||
+|ReceiptData|Var|Dictionary<string, string>|Conditional||
 |LongResponseText|200|string|Conditional||
 
 ## 9 Satellite TAG Validation Request (VREQ) Message Format##
