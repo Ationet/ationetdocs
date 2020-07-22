@@ -161,7 +161,7 @@
 
 - [11 Identification Pin Change Request (PREQ) Message Format](#11-identification-pin-change-request-preq-message-format)
 
-  [12 Identification Pin Change Request (PREQ) Message Format](#12-identification-pin-change-request-preq-message-format)
+- [12 Identification Pin Change Request (PREQ) Message Format](#12-identification-pin-change-request-preq-message-format)
 
 - [13 Reference Tables](#11-reference-tables)
 	- [13.1 Transaction Codes](#111-transaction-codes)
