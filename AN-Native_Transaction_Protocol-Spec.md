@@ -161,7 +161,7 @@
 
 - [11 Identification Pin Change Request (PREQ) Message Format](#11-identification-pin-change-request-preq-message-format)
 
-- [12 Identification Pin Change Request (PREQ) Message Format](#12-identification-pin-change-request-preq-message-format)
+- [12 Identification Pin Change Request (PRESP) Message Format](#12-identification-pin-change-request-presp-message-format)
 
 - [13 Reference Tables](#11-reference-tables)
 	- [13.1 Transaction Codes](#111-transaction-codes)
@@ -608,7 +608,7 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 |ReceiptData|Var|Dictionary<string, string>|Conditional||
 |LongResponseText|200|string|Conditional||
 
-## 9 Satellite TAG Validation Request (VREQ) Message Format##
+## 9 Satellite TAG Validation Request (VREQ) Message Format
 
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
@@ -650,7 +650,6 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 |AuthorizationCode|Var|string|Required|Echoed from VREQ|
 |ResponseCode|5|string|Required|“0” = Authorized, !”0” = Not Authorized|
 |ResponseText|20|string|Required|Message from the Network|
-
 
 ## 12 Identification Pin Change Response (PRESP) Message Format
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
