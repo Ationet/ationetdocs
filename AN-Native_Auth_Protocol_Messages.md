@@ -2192,8 +2192,7 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 			<td>
 				<p align="left">Var</p>
 			</td>
-			<td>
-			</td>
+				<td>Dictionary[string, string]</td>
 			<td>
 				<p align="left"></p>
 			</td>
@@ -4002,7 +4001,7 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 				<p align="left">Var</p>
 			</td>
 			<td>
-				<p align="left">string</p>
+				<p align="left">Dictionary[string, string]</p>
 			</td>
 			<td>
 				<p align="left"></p>

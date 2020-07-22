@@ -159,18 +159,22 @@
 
 - [10 Satellite TAG Validation Response (VRESP) Message Format](#10-satellite-tag-validation-response-vresp-message-format)
 
-- [11 Reference Tables](#11-reference-tables)
-	- [11.1 Transaction Codes](#111-transaction-codes)
-	- [11.2 Response Codes](#112-response-codes)	
-	- [11.3 Account Types](#113-account-type)
-	- [11.4 Product Data Structure](#114-product-data-structure)
-	- [11.5 Customer Data](#115-customer-data)
-	- [11.6 Measurement Unit Codes](#116-measurement-unit-codes)
-	- [11.7 Currency Codes](#117-currency-codes)
-	- [11.8 Original Data](#118-original-data)
-- [12 Message Samples](#12-message-samples)
-	- [12.1 Pre Authorization Sample](#121-pre-authorization-samples)
-	- [12.2 Completion Sample](#122-completion-sample)
+- [11 Identification Pin Change Request (PREQ) Message Format](#11-identification-pin-change-request-preq-message-format)
+
+  [12 Identification Pin Change Request (PREQ) Message Format](#12-identification-pin-change-request-preq-message-format)
+
+- [13 Reference Tables](#11-reference-tables)
+	- [13.1 Transaction Codes](#111-transaction-codes)
+	- [13.2 Response Codes](#112-response-codes)	
+	- [13.3 Account Types](#113-account-type)
+	- [13.4 Product Data Structure](#114-product-data-structure)
+	- [13.5 Customer Data](#115-customer-data)
+	- [13.6 Measurement Unit Codes](#116-measurement-unit-codes)
+	- [13.7 Currency Codes](#117-currency-codes)
+	- [13.8 Original Data](#118-original-data)
+- [14 Message Samples](#12-message-samples)
+	- [14.1 Pre Authorization Sample](#121-pre-authorization-samples)
+	- [14.2 Completion Sample](#122-completion-sample)
 - [Appendix A - Native Authorization Protocol Messages](#appendix-a---native-authorization-protocol-messages)
 
 ## Overview
@@ -633,11 +637,40 @@ Refer to [Original Data](#118-original-data) Table in the Reference Tables secti
 |ResponseCode|5|string|Required|“0” = Authorized, !”0” = Not Authorized|
 |ResponseText|20|string|Required|Message from the Network|
 
-## 11 Reference Tables
+## 11 Identification Pin Change Request (PREQ) Message Format
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |--- |
+|ApplicationType|3|string|Required|Echoed from VREQ|
+|ProcessingMode|1|string|Required|Echoed from VREQ|
+|MessageFormatVersion|3|string|Required|Echoed from VREQ|
+|TerminalIdentification|Var|string|Required|Echoed from VREQ|
+|TransactionCode|3|string|Required|Refer to [Transactions Codes](#111-transaction-codes) in Reference Tables Section|
+|LocalDate|8|int|Required|Echoed from VREQ|
+|LocalTime|6|int|Required|Echoed from VREQ|
+|AuthorizationCode|Var|string|Required|Echoed from VREQ|
+|ResponseCode|5|string|Required|“0” = Authorized, !”0” = Not Authorized|
+|ResponseText|20|string|Required|Message from the Network|
+
+
+## 12 Identification Pin Change Response (PRESP) Message Format
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |--- |
+|ApplicationType|3|string|Required|Echoed from VREQ|
+|ProcessingMode|1|string|Required|Echoed from VREQ|
+|MessageFormatVersion|3|string|Required|Echoed from VREQ|
+|TerminalIdentification|Var|string|Required|Echoed from VREQ|
+|TransactionCode|3|string|Required|Refer to [Transactions Codes](#111-transaction-codes) in Reference Tables Section|
+|LocalDate|8|int|Required|Echoed from VREQ|
+|LocalTime|6|int|Required|Echoed from VREQ|
+|AuthorizationCode|Var|string|Required|Echoed from VREQ|
+|ResponseCode|5|string|Required|“0” = Authorized, !”0” = Not Authorized|
+|ResponseText|20|string|Required|Message from the Network|
+
+## 13 Reference Tables
 
 This section brings together the code tables and reference values used in messaging.
 
-### 11.1 Transaction Codes
+### 13.1 Transaction Codes
 |Code|Message|Description|
 |--- |--- |--- |
 |100|TREQ|Pre-Authorization REQ|
@@ -654,7 +687,7 @@ This section brings together the code tables and reference values used in messag
 |400|TREQ|Cancellation REQ|
 |410|TRESP|Cancellation RESP|
 
-### 11.2 Response Codes
+### 13.2 Response Codes
 |Code|Response Message|Long Response Message|Description|
 |--- |--- |--- |--- |
 |**Authorized**||||
@@ -897,13 +930,13 @@ This section brings together the code tables and reference values used in messag
 |50001|Not available in off|Not available in offline mode||
 
 	
-### 11.3 Account Type
+### 13.3 Account Type
 
 |Type|Description|
 |--- |--- |
 |“1”|ATIONet native track|	
 
-### 11.4 Product Data Structure
+### 13.4 Product Data Structure
 
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
@@ -916,7 +949,7 @@ This section brings together the code tables and reference values used in messag
 |ProductQuantity|Var|decimal|Optional|xxxxxxx.xx|
 |UnitCode|Var|string|Optional|Refer to Measurement Unit Codes in Reference Tables Section|
 			
-### 11.5 Customer Data
+### 13.5 Customer Data
     
 *Prompt elements*
 
@@ -953,7 +986,7 @@ This section brings together the code tables and reference values used in messag
 |ClientSupportsReceiptDownloading|
 |TrailerHourMeterReading|
 
-### 11.6 Measurement Unit Codes
+### 13.6 Measurement Unit Codes
 
 |Value|Description|
 |--- |--- |
@@ -964,12 +997,12 @@ This section brings together the code tables and reference values used in messag
 |“kg”|Kilogramo|
 
 
-### 11.7 Currency Codes
+### 13.7 Currency Codes
  
 Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_4217>)
 
 
-### 11.8 Original Data
+### 13.8 Original Data
 
 |Field Name|
 |--- |
@@ -979,9 +1012,9 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
 |LocalTransactionTime|
 |AuthorizationCode|
 
-## 12 Message Samples
+## 14 Message Samples
 
-### 12.1 Pre Authorization Sample
+### 14.1 Pre Authorization Sample
 
 ```json
 {
@@ -1026,7 +1059,7 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
 }
 ```
 
-### 12.2 Completion Sample
+### 14.2 Completion Sample
 
 ```json
 {
