@@ -337,6 +337,18 @@ API URI: native.ationet.com/v1/auth
 				<p align="left">Cancels a Completion or a Sale.</p>
 			</td>
 		 </tr>
+ 		 <tr valign="top">
+			<td>
+				<p align="left">Change PIN</p>
+			</td>
+			<td>
+				<p align="center">1.2</p>
+			</td>
+			<td></td>
+			<td>
+				<p align="left">Change the PIN of any identification, providing the valid old one</p>
+			</td>
+		 </tr>
 	</tbody>
 </table>
 
@@ -625,18 +637,19 @@ This section brings together the code tables and reference values used in messag
 ### 11.1 Transaction Codes
 |Code|Message|Description|
 |--- |--- |--- |
-|“100”|TREQ|Pre-Authorization REQ|
-|“101”|VREQ|Satellite TAG Validation REQ|
-|“110”|TRESP|Pre-Authorization RESP|
-|“111”|VRESP|Satellite TAG Validation RESP|
-|“120”|TREQ|Completion REQ|
-|“125”|TREQ|Offline REQ|
-|“126”|TREQ|Contingency REQ|
-|“130”|TRESP|Completion RESP|
-|“200”|TREQ|Sale REQ|
-|“210”|TRESP|Sale RESP|
-|“400”|TREQ|Cancellation REQ|
-|“410”|TRESP|Cancellation RESP|
+|100|TREQ|Pre-Authorization REQ|
+|101|VREQ|Satellite TAG Validation REQ|
+|110|TRESP|Pre-Authorization RESP|
+|111|VRESP|Satellite TAG Validation RESP|
+|120|TREQ|Completion REQ|
+|125|TREQ|Offline REQ|
+|126|TREQ|Contingency REQ|
+|130|TRESP|Completion RESP|
+|200|TREQ|Sale REQ|
+|300|TREQ|Change PIN|
+|210|TRESP|Sale RESP|
+|400|TREQ|Cancellation REQ|
+|410|TRESP|Cancellation RESP|
 
 ### 11.2 Response Codes
 |Code|Response Message|Long Response Message|Description|
