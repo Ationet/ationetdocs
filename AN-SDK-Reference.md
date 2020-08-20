@@ -1536,6 +1536,27 @@ You can download a fully functional sample code from here: https://github.com/at
 |UpdateNotificationSubscription|UsersAtionetNotificationsSubscriptionDto - data - - Represent a UsersAtionetNotificationsSubscriptionDto entity to Update|string|Update UsersAtionetNotificationsSubscriptionDto|
 |UpdateNotificationSubscriptionAsync|UsersAtionetNotificationsSubscriptionDto - data - Represent a UsersAtionetNotificationsSubscriptionDto entity to Update|string|Update UsersAtionetNotificationsSubscriptionDto|
 
+#### PaymentsMethodDto 
+|Type|Name|Description|
+|--- |--- |--- |
+|Guid |ChannelName||
+|Guid |Id||
+|bool |NetworkId||
+|string |Code||
+|string |Description||
+|decimal |Total||
+|DateTime |UpdateDate||
+
+|Method|Parameters (Type - Name - Default Value - Description)|Response|Description|
+|--- |--- |--- |--- |
+|GetPaymentsMethods|List&lt;Guid> - paymentsMethodIds - null - TBD<br> string - code - null - TBD<br>string - description - null - TBD<br>  DateTime? updateDate - null - TBD<br> int - page - 1 - TBD<br> int - pageSize - 50 - TBD<br> string - orderField - "code" - TBD<br> string - orderType - "asc"|List&lt;PaymentsMethodDto>|Get List PaymentsMethodDto|
+|GetPaymentsMethodsAsync|List&lt;Guid> - paymentsMethodIds - null - TBD<br> string - code - null - TBD<br>string - description - null - TBD<br>  DateTime? updateDate - null - TBD<br> int - page - 1 - TBD<br> int - pageSize - 50 - TBD<br> string - orderField - "code" - TBD<br> string - orderType - "asc"|List&lt;PaymentsMethodDto>|Get List PaymentsMethodDto|
+|GetPaymentsMethod|Guid - id - Identification of PaymentsMethod|PaymentsMethodDto|Get individual PaymentsMethodDto|
+|GetPaymentsMethodAsync|Guid - id - Identification of PaymentsMethod|PaymentsMethodDto|Get individual PaymentsMethodDto|
+|CreatePaymentsMethod|PaymentsMethodDto - data - - Represent a PaymentsMethod entity to Create|PaymentsMethodDto|Create PaymentsMethodDto|
+|CreatePaymentsMethodAsync|PaymentsMethodDto - data - - Represent a PaymentsMethod entity to Create|PaymentsMethodDto|Create PaymentsMethodDto|
+|UpdatePaymentsMethod|Guid - id - - Identification of PaymentsMethod<BR>PaymentsMethodDto - data - - Represent a PaymentsMethod entity to Update|string|Update PaymentsMethodDto|
+|UpdatePaymentsMethodAsync|Guid - id - - Identification of PaymentsMethod<BR>PaymentsMethodDto - data - Represent a PaymentsMethod entity to Update|string|Update PaymentsMethodDto|
 	
 ### FMS Methods
 <table>
