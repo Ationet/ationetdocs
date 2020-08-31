@@ -8,81 +8,10 @@
 |Release Date:|31, August 2020|
 |Author:|ATIONet LLC|
 
-<table>
-	<tr>
-		<th colspan="3" align="left">
-			Change Log
-		</th>
-	</tr>
-	<tr>
-		<td>
-			Ver.
-		</td>
-		<td>
-			Date
-		</td>
-		<td>
-			Change Summary
-		</td>
-	</tr>
-	<tr valign="top">
-		<td>
-			<p>1.0</p>
-		</td>
-		<td>
-			<p>04/Jan/2013</p>
-		</td>
-		<td>
-			<p>Initial version. Covers Fleet Fueling Transactions. No Dry products support.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td>
-			<p>1.1</p>
-		</td>
-		<td>
-			<p>05/Jan/2013</p>
-		</td>
-		<td>
-			<p>1.1  Protocol version changes
-			<br> - Enhanced Limits explanation
-			<br> - Converted message format to JSON</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td>
-			<p>1.2</p>
-		</td>
-		<td>
-			<p>17/July/2014</p>
-		</td>
-		<td>
-			<p>1.2  Protocol version changes
-			<br> - Add contingency request
-			<br> - Add sale request
-			<br> - Add cancellation request
-			<br> - Enhanced Customer Data and Product Data fields description
-			<br> - Add Original Data Field in TREQ messages
-			<br> - Enhanced Transaction Codes table
-			<br> - Enhanced Customer Data and Product reference tables
-			<br> - Add Authorization Codes table
-			<br> - Add Response Codes table
-			<br> - Add Original Data tables</p>	
-		</td>
-	</tr>
-	<tr valign="top">
-		<td>
-			<p>1.3</p>
-		</td>
-		<td>
-			<p>5/Dec/2017</p>
-		</td>
-		<td>
-			<p>1.3  Protocol version changes
-			<br> - Update Response Codes table </p>	
-		</td>
-	</tr>
-</table>
+|Change Log|||
+|--- |--- |--- |
+|Ver.|Date|Change Summary|
+|1.0|31/Aug/2020|Initial version. Covers inventory and delivery messages.|
 
 ## Contents ##
 
