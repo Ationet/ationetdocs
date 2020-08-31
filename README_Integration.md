@@ -8,6 +8,9 @@
 - [Native Transaction Protocol API Specifications](AN-Native_Transaction_Protocol-Spec.md)
 - [Native Transaction Protocol API messages](AN-Native_Auth_Protocol_Messages.md)
 
+## Iventory API
+- [Inventory API Specifications](AN-Native_Inventory_Protocol-Spec.md)
+
 ## Interface API
 - [Interface API Specifications](AN-Native_Interface_Protocol-Spec.md)
 
