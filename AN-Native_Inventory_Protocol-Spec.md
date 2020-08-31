@@ -1,45 +1,12 @@
 ![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
-# ATIONet - Native Inventory Protocol Specification v1.2 #
+# ATIONet - Native Inventory Protocol Specification v1.0 #
 
-<table>
-	<tr>
-		<th colspan="2" align="left">
-			Document Information
-		</th>
-	</tr>
-	<tr>
-		<td>
-			File:
-		</td>
-		<td>
-			ATIONet-Native_Transaction_Protocol-Spec-v1.2
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Doc Version:
-		</td>
-		<td>
-			1.2
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Release Date:
-		</td>
-		<td>
-			16, July 2014
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Author:
-		</td>
-		<td>
-			ATIO International LLC
-		</td>
-	</tr>
-</table>
+|Document Information||
+|--- |--- |
+|File:|ATIONet-Native_Inventory_Protocol-Spec|
+|Doc Version:|1.2|
+|Release Date:|31, August 2020|
+|Author:|ATIONet LLC|
 
 <table>
 	<tr>
