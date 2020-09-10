@@ -1536,7 +1536,7 @@ You can download a fully functional sample code from here: https://github.com/at
 |UpdateNotificationSubscription|UsersAtionetNotificationsSubscriptionDto - data - - Represent a UsersAtionetNotificationsSubscriptionDto entity to Update|string|Update UsersAtionetNotificationsSubscriptionDto|
 |UpdateNotificationSubscriptionAsync|UsersAtionetNotificationsSubscriptionDto - data - Represent a UsersAtionetNotificationsSubscriptionDto entity to Update|string|Update UsersAtionetNotificationsSubscriptionDto|
 
-#### PaymentsMethodDto 
+#### IdentificationCompactDto 
 |Type|Name|Description|
 |--- |--- |--- |
 |Guid |Id||
@@ -1551,6 +1551,20 @@ You can download a fully functional sample code from here: https://github.com/at
 |GetIdentificationsToAssign|Guid - Id -  - TBD<br> bool - isDriver -  - TBD<br>Guid? - companyContractId - null - TBD<br>  string - searchText - null - TBD<br>|List&lt;IdentificationCompactDto>|Get List IdentificationCompactDto|
 |GetIdentificationsToAssignAsync|Guid - Id -  - TBD<br> bool - isDriver -  - TBD<br>Guid? - companyContractId - null - TBD<br>  string - searchText - null - TBD<br>|List&lt;IdentificationCompactDto>|Get List IdentificationCompactDto|
 
+#### RuleQuotaUpdateDto 
+|Type|Name|Description|
+|--- |--- |--- |
+|List&lt;Guid> |Ids||
+|bool |Increase||
+|bool |IsPercentage||
+|decimal |Value||
+|bool |QuantityEnabled||
+|bool |MoneyEnabled||
+|bool |VolumeEnabled||
+
+
+|UpdateRuleQuotaBulk|RuleQuotaUpdateDto - data - - Represent a RuleQuotaUpdateDto entity to Update|string|Update Rules type Quota|
+|UpdateRuleQuotaBulkAsync|RuleQuotaUpdateDto - data - Represent a RuleQuotaUpdateDto entity to Update|string|Update Rules type Quota|
 	
 ### FMS Methods
 <table>
