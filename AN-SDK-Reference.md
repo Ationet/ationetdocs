@@ -1539,24 +1539,18 @@ You can download a fully functional sample code from here: https://github.com/at
 #### PaymentsMethodDto 
 |Type|Name|Description|
 |--- |--- |--- |
-|Guid |ChannelName||
 |Guid |Id||
-|bool |NetworkId||
-|string |Code||
 |string |Description||
-|decimal |Total||
-|DateTime |UpdateDate||
+|bool |RequirePin||
+|int? |PinDigits||
+|string |PIN||
+|bool |Instalable||
 
 |Method|Parameters (Type - Name - Default Value - Description)|Response|Description|
 |--- |--- |--- |--- |
-|GetPaymentsMethods|List&lt;Guid> - paymentsMethodIds - null - TBD<br> string - code - null - TBD<br>string - description - null - TBD<br>  DateTime? updateDate - null - TBD<br> int - page - 1 - TBD<br> int - pageSize - 50 - TBD<br> string - orderField - "code" - TBD<br> string - orderType - "asc"|List&lt;PaymentsMethodDto>|Get List PaymentsMethodDto|
-|GetPaymentsMethodsAsync|List&lt;Guid> - paymentsMethodIds - null - TBD<br> string - code - null - TBD<br>string - description - null - TBD<br>  DateTime? updateDate - null - TBD<br> int - page - 1 - TBD<br> int - pageSize - 50 - TBD<br> string - orderField - "code" - TBD<br> string - orderType - "asc"|List&lt;PaymentsMethodDto>|Get List PaymentsMethodDto|
-|GetPaymentsMethod|Guid - id - Identification of PaymentsMethod|PaymentsMethodDto|Get individual PaymentsMethodDto|
-|GetPaymentsMethodAsync|Guid - id - Identification of PaymentsMethod|PaymentsMethodDto|Get individual PaymentsMethodDto|
-|CreatePaymentsMethod|PaymentsMethodDto - data - - Represent a PaymentsMethod entity to Create|PaymentsMethodDto|Create PaymentsMethodDto|
-|CreatePaymentsMethodAsync|PaymentsMethodDto - data - - Represent a PaymentsMethod entity to Create|PaymentsMethodDto|Create PaymentsMethodDto|
-|UpdatePaymentsMethod|Guid - id - - Identification of PaymentsMethod<BR>PaymentsMethodDto - data - - Represent a PaymentsMethod entity to Update|string|Update PaymentsMethodDto|
-|UpdatePaymentsMethodAsync|Guid - id - - Identification of PaymentsMethod<BR>PaymentsMethodDto - data - Represent a PaymentsMethod entity to Update|string|Update PaymentsMethodDto|
+|GetIdentificationsToAssign|Guid - Id -  - TBD<br> bool - isDriver -  - TBD<br>Guid? - companyContractId - null - TBD<br>  string - searchText - null - TBD<br>|List&lt;IdentificationCompactDto>|Get List IdentificationCompactDto|
+|GetIdentificationsToAssignAsync|Guid - Id -  - TBD<br> bool - isDriver -  - TBD<br>Guid? - companyContractId - null - TBD<br>  string - searchText - null - TBD<br>|List&lt;IdentificationCompactDto>|Get List IdentificationCompactDto|
+
 	
 ### FMS Methods
 <table>
