@@ -1562,7 +1562,8 @@ You can download a fully functional sample code from here: https://github.com/at
 |bool |MoneyEnabled||
 |bool |VolumeEnabled||
 
-
+|Method|Parameters (Type - Name - Default Value - Description)|Response|Description|
+|--- |--- |--- |--- |
 |UpdateRuleQuotaBulk|RuleQuotaUpdateDto - data - - Represent a RuleQuotaUpdateDto entity to Update|string|Update Rules type Quota|
 |UpdateRuleQuotaBulkAsync|RuleQuotaUpdateDto - data - Represent a RuleQuotaUpdateDto entity to Update|string|Update Rules type Quota|
 	
