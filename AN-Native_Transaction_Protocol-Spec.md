@@ -941,10 +941,10 @@ This section brings together the code tables and reference values used in messag
 |--- |--- |--- |--- |--- |
 |ServiceCode|1|string|Required||
 |ProductCode|4|string|Required|“0”-“9999”|
-|ProductUnitPrice|Var|decimal|Optional|xxx.xxx|
-|ProductNetAmount|Var|decimal|Optional|xxxxxxx.xx|
+|ProductUnitPrice|Var|decimal|Optional|xxx.xxxx|
+|ProductNetAmount|Var|decimal|Optional|xxxxxxx.xxxx|
 |ProductTaxes|Var|Dictionary|Optional|<”[Tax Description]”, [Tax Value]>|
-|ProductAmount|Var|decimal|Optional|xxxxxxx.xx|
+|ProductAmount|Var|decimal|Optional|xxxxxxx.xxxx|
 |ProductQuantity|Var|decimal|Optional|xxxxxxx.xx|
 |UnitCode|Var|string|Optional|Refer to Measurement Unit Codes in Reference Tables Section|
 			
