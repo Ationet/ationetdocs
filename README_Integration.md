@@ -11,6 +11,9 @@
 ## Inventory API (NEW !)
 - [Inventory API Specifications](AN-Native_Inventory_Protocol-Spec.md)
 
+## Wallet API (NEW !)
+- [Wallet API Specifications](AN-Native_Wallet_Protocol-Spec.md)
+
 ## Interface API
 - [Interface API Specifications](AN-Native_Interface_Protocol-Spec.md)
 
