@@ -1,17 +1,17 @@
 ![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
-# ATIONet - Native Inventory Protocol Specification v1.0 #
+# ATIONet - Native Wallet Protocol Specification v1.0 #
 
 |Document Information||
 |--- |--- |
-|File:|ATIONet-Native_Inventory_Protocol-Spec|
+|File:|ATIONet-Native_Wallet_Protocol-Spec|
 |Doc Version:|1.2|
-|Release Date:|31, August 2020|
+|Release Date:|1, Oct 2020|
 |Author:|ATIONet LLC|
 
 |Change Log|||
 |--- |--- |--- |
 |Ver.|Date|Change Summary|
-|1.0|31/Aug/2020|Initial version. Covers inventory and delivery messages.|
+|1.0|1/Oct/2020|Initial version.|
 
 ## Contents ##
 
