@@ -136,23 +136,6 @@ subscriber.
 
 ### 2.1 Interface API Messages
 
-INICIO
-|Name|Protocol Ver.||Description|
-|--- |--- |--- |--- |
-||Initial|Change||
-|Statement charges [HTTP POST] 901 to 920|1.0||Commands ATIONet to process a movement on the account of a driver or vehicle, given an action type indicated on the message body. Availability of this message and the type of actions allowed depend on the subscriber type and its contracting terms. 901 - Balance transfer to a sub-account|
-||1.1||902 - Balance withdrawal from a sub-account|
-|||1.3|901 - Balance transfer to a sub-account 902 - Balance withdrawal from a sub-account 903 - Transfer balance from sub-account to a sub-account 904 - Transfer balance from contract to a sub-account 905 - Transfer balance from sub-account to a contract|
-|Transactions Download [HTTP POST] 931 to 940|1.0||Returns a list of completed transactions from ATIONet host, between two dates, for a given Subscriber, Merchant or fleet Company 931 - Transactions Download 932 - Transactions Download for Merchants|
-|||1.1|931 - Transactions Download 932 - Transactions Download for Merchants|
-|||1.3|931 - Transactions Download 932 - Transactions Download for Merchants|
-|Account Enquiries [HTTP POST] 941 to 950|1.1||Returns specific values of a Contract or Sub-account. 941 - Sub-account Balance Enquiry 942 - Sub-Account Limit Enquiry|
-||1.2||943 - Contract Balance Enquiry|
-|||1.3|941 - Sub-account Balance Enquiry 942 - Sub-Account Limit Enquiry 943 - Contract Balance Enquiry|
-|Account Downloads [HTTP POST] 951 to 960|1.2||951 - Sub-Account Movements Download 952 - Contract Movements Download|
-|||1.3|951 - Movements Download 951 - Sub-Account Movements Download 952 - Contract Movements Download|
-FIN
-
 <table>
 	<thead>
 		<tr valign="center">
