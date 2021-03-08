@@ -15,7 +15,7 @@
 
 ## Contenido
 
-- [Introducción](#Introduction)
+- [Introducción](#Introducción)
 - [Hardware necesario](#Hardware-necesario)
 - [Software necesario](#Software-necesario)
 - [Descarga de Pre-requisitos y Aplicación](#Descarga-de-Pre-requisitos-y-Aplicación)
