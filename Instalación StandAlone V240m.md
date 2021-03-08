@@ -29,7 +29,7 @@ Descargue los archivos necesarios para la instalación desde aquí. Los archivos
 
 Con la terminal encendida ingrese al menú Supervisor presionando las teclas **1+5+9** simultáneamente. De esta manera podrá ver el siguiente menú:
 
-![](RackMultipart20210308-4-1fe69wp_html_a17f57682edf9bd3.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Supervisor%20Menu.png)
 
 Ingresando a **supervisor** le solicitará una contraseña. La contraseña de supervisor por defecto es **166831**. Desde este menú iremos a **Administration – Date/Time** y actualizaremos la fecha y la hora de la terminal.
 
