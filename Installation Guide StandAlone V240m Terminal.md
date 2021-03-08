@@ -1,16 +1,16 @@
 ![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
 
-|Document Information|.|
+|**Document Information**|.|
 |--- |--- |
-|File:|ATIONet-Installation_Guide_StandAlone_V240m_Terminal.md|
-|Doc Version:|1.0|
-|Release Date:|08, March 2021|
-|Author:|ATIO International LLC|
+|**File:**|ATIONet-Installation_Guide_StandAlone_V240m_Terminal.md|
+|**Doc Version:**|1.0|
+|**Release Date:**|08, March 2021|
+|**Author:**|ATIO International LLC|
 
 
-|Change Log|||
+|**Change Log**|||
 |--- |--- |--- |
-|Ver.|Date|Change Summary|
+|**Ver.**|**Date**|**Change Summary**|
 |1.0|08/Mar/2021|- Initial version
 
 ## Contents
