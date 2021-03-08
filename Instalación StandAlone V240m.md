@@ -63,7 +63,7 @@ Una vez conectado correctamente a la red, el icono de conexión ubicado en la se
 
 ![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/WiFi%20Connected.png)
 
-```IMPORTANTE:```En caso de tener una versión anterior instalada, retornar al menú inicial e ingresar a la opción **Remove user bundle** y seleccionar **Remove all** (**NO** seleccionar opción **Remove Users**).
+```IMPORTANTE: En caso de tener una versión anterior instalada, retornar al menú inicial e ingresar a la opción **Remove user bundle** y seleccionar **Remove all** (**NO** seleccionar opción **Remove Users**).```
 
 Finalizada esta configuración podremos proceder a instalar los pre-requisitos y aplicación StandAlone en la terminal.
 
@@ -92,7 +92,7 @@ Este procedimiento debe repetirse con cada archivo específicamente en el siguie
 - Librería Cámara
 - Aplicación StandAlone para V240m
 
-```IMPORTANTE:```Si la terminal V240m no tiene una cámara en la parte superior de la misma, entonces el pre-requisito **Librería Cámara** no debe ser instalado.
+```IMPORTANTE: Si la terminal V240m no tiene una cámara en la parte superior de la misma, entonces el pre-requisito **Librería Cámara** no debe ser instalado.```
 
 # Configuración
 
@@ -100,7 +100,7 @@ Una vez instalado todo procederemos a configurar la terminal. Al iniciar la apli
 
 ![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/Application%20Configuration.png)
 
-```NOTA:```En caso de no haber podido hacer click en **configuración** a tiempo, podemos ingresar a la misma desde **Mantenimiento – Configuración – Parámetros** dentro de la aplicación en si.
+```NOTA: En caso de no haber podido hacer click en **configuración** a tiempo, podemos ingresar a la misma desde **Mantenimiento – Configuración – Parámetros** dentro de la aplicación en si.```
 
 Una vez aquí la terminal nos solicitara clave (ingresar la clave por defecto **123456**).
 
