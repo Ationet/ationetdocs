@@ -129,7 +129,7 @@ Los parámetros para configurar en esta sección son los siguientes:
 - **CTLS:** 1
 - **EMV debug:** 0
 - **VAS:** 0
-- **WI-FI:** ON – **GSM:** FF
+- **WI-FI:** ON – **GSM:** OFF
 
 **Parámetros para GSM**
 
