@@ -16,7 +16,7 @@ En este Manual procederemos a realizar una breve explicación de cómo actualiza
 
 # Descarga de Pre-requisitos y Aplicación
 
-Descargue los archivos necesarios para la instalación desde aquí. Los archivos a descargar son:
+Descargue los archivos necesarios para la instalación desde [aquí](https://github.com/Ationet/ationetdownloads/blob/master/README.md). Los archivos a descargar son:
 
 - Aplicación StandAlone para terminal V240m
 - Sistema operativo
