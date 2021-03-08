@@ -150,61 +150,61 @@ Los parámetros para configurar en esta sección son los siguientes:
 
 Los parámetros para configurar en esta sección son los siguientes:
 
-**Site code:** Código del sitio
+**Site code:** *Código del sitio*
 
-**Site address:** Dirección del sitio
+**Site address:** *Dirección del sitio*
 
-**Site name:** Nombre del sitio
+**Site name:** *Nombre del sitio*
 
-**Site cuit:** Id Tributario del sitio
+**Site cuit:** *Id Tributario del sitio*
 
-**Main header:** Texto de cabecera primario
+**Main header:** *Texto de cabecera primario*
 
-**Secondary header:** Texto de cabecera secundario
+**Secondary header:** *Texto de cabecera secundario*
 
-**Main footer:** Texto de pie de página primario
+**Main footer:** *Texto de pie de página primario*
 
-**Secondary footer:** Texto de pie de página secundario
+**Secondary footer:** *Texto de pie de página secundario*
 
 ## Ationet
 
 Los parámetros para configurar en esta sección son los siguientes:
 
-**Sale in money:** 0 Venta en volumen - 1 Venta en monto
+**Sale in money:** 0 *Venta en volumen* - 1 *Venta en monto*
 
-**Default prompt:** 0 La terminal no solicita parámetros extra - 1 La terminal solicita parámetros extra
+**Default prompt:** 0 *La terminal no solicita parámetros extra* - 1 *La terminal solicita parámetros extra*
 
-**Attendant Id:** 0 Deshabilitar función de Encargado - 1 Habilitar función de Encargado
+**Attendant Id:** 0 *Deshabilitar función de Encargado* - 1 *Habilitar función de Encargado*
 
-**Driver ID:** 0 Parámetro de solicitud (0 deshabilitado - 1 habilitado)
+**Driver ID:** 0 *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
 
-**Vehicle ID:** 0 Parámetro de solicitud (0 deshabilitado - 1 habilitado)
+**Vehicle ID:** 0 *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
 
-**Odometer:** 0 Parámetro de solicitud (0 deshabilitado - 1 habilitado)
+**Odometer:** 0 *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
 
-**Engine hours:** 0 Parámetro de solicitud (0 deshabilitado - 1 habilitado)
+**Engine hours:** 0 *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
 
-**Trailer:** 0 Parámetro de solicitud (0 deshabilitado - 1 habilitado)
+**Trailer:** 0 *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
 
-**Miscellaneous:** 0 Parámetro de solicitud (0 deshabilitado - 1 habilitado)
+**Miscellaneous:** 0 *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
 
-**Truck unit:** 0 Parámetro de solicitud (0 deshabilitado - 1 habilitado)
+**Truck unit:** 0 *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
 
-**Secondary track:** 0 Parámetro de solicitud (0 deshabilitado - 1 habilitado)
+**Secondary track:** 0 *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
 
-**Primary pin:** 0 Parámetro de solicitud (0 deshabilitado - 1 habilitado)
+**Primary pin:** 0 *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
 
-**Secondary pin:** 0 Parámetro de solicitud (0 deshabilitado - 1 habilitado)
+**Secondary pin:** 0 *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
 
-**Native URL:** Dirección de ATIONet ambiente Beta o Producción
+**Native URL:** *Dirección de ATIONet ambiente Beta o Producción*
 
-**Maintenance URL:** Dirección de ATIONet ambiente Beta o Producción
+**Maintenance URL:** *Dirección de ATIONet ambiente Beta o Producción*
 
-**User name:** Usuario de fidelidad configurado en ATIONet (Siempre en mayúscula)
+**User name:** *Usuario de fidelidad configurado en ATIONet*
 
-**Password:** Contraseña del usuario de fidelidad configurado en ATIONet
+**Password:** *Contraseña del usuario de fidelidad configurado en ATIONet*
 
-**Terminal ID:** ID de terminal configurado en ATIONet
+**Terminal ID:** *ID de terminal configurado en ATIONet*
 
 **Local agent:** 0 
 
