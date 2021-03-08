@@ -29,7 +29,7 @@ Download the files needed for the installation from [here](https://github.com/At
 
 With the terminal turned on, enter the Supervisor menu by pressing the **1+5+9** keys simultaneously. This way you&#39;ll see the following menu:
 
-![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/Supervisor%20Menu.pn)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/Supervisor%20Menu.png)
 
 Selecting the **supervisor** option will prompt for a password. The default supervisor password is **166831**. From this menu go to **Administration - Date/Time** and update the date and time of the terminal.
 
