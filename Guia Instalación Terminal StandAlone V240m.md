@@ -1,3 +1,31 @@
+![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
+
+|**Información del Documento**|.|
+|--- |--- |
+|**Archivo:**|ATIONet-Guia-Instalación-Terminal-StandAlone-V240m.md.md|
+|**Versión del Doc.:**|1.0|
+|**Fecha de Publicación:**|08, Marzo 2021|
+|**Autor:**|ATIO International LLC|
+
+
+|**Registro de Cambios**|||
+|--- |--- |--- |
+|**Ver.**|**Fecha**|**Resumen de Cambios**|
+|1.0|08/Mar/2021|- Versión Inicial
+
+## Contenido
+
+- [Introducción](#Introduction)
+- [Hardware necesario](#Hardware-necesario)
+- [Software necesario](#Software-necesario)
+- [Descarga de Pre-requisitos y Aplicación](#Descarga-de-Pre-requisitos-y-Aplicación)
+- [Configuración Fecha/Hora & WiFi](#Configuración-FechaHora-&amp;-WiFi)
+- [Instalación](#Instalación)
+- [Configuración](#Configuración)
+    - [Terminal](#Terminal)
+    - [Sites](#Sites)
+    - [Ationet](#Ationet)
+
 # Introducción
 
 En este Manual procederemos a realizar una breve explicación de cómo actualizar las terminales StandAlone V240m. La instalación puede ser realizada mediante Wifi o con el cable de programación + USB pendrive.
@@ -25,7 +53,7 @@ Descargue los archivos necesarios para la instalación desde [aquí](https://git
 - Librería Cámara
 - Mx Downloader
 
-# Configuración Fecha/Hora &amp; Wifi
+# Configuración Fecha/Hora &amp; WiFi
 
 Con la terminal encendida ingrese al menú Supervisor presionando las teclas **1+5+9** simultáneamente. De esta manera podrá ver el siguiente menú:
 
@@ -119,16 +147,16 @@ Los parámetros para configurar en esta sección son los siguientes:
 - **Chip card:** 0 Deshabilitado - 1 Habilitado (Lector de Chip)
 - **NFC card:** 0 Deshabilitado - 1 Habilitado (RFID)
 - **MSR card:** 0 Deshabilitado - 1 Habilitado (Lector de Tarjetas)
-- **Receipt number:** 1
-- **Ping:** 3
-- **Ping threshold:** 3
-- **SSL:** 1
+- **Receipt number:** 1 (recomendamos no modificar)
+- **Ping:** 3 (recomendamos no modificar)
+- **Ping threshold:** 3 (recomendamos no modificar)
+- **SSL:** 1 (recomendamos no modificar)
 
 **Parámetros para NFC**
 
-- **CTLS:** 1
-- **EMV debug:** 0
-- **VAS:** 0
+- **CTLS:** 1 (recomendamos no modificar)
+- **EMV debug:** 0 (recomendamos no modificar)
+- **VAS:** 0 (recomendamos no modificar)
 - **WI-FI:** ON – **GSM:** OFF
 
 **Parámetros para GSM**
@@ -137,7 +165,7 @@ Los parámetros para configurar en esta sección son los siguientes:
 
 **Parámetros para WI-FI**
 
-  - **DHCP:** 1
+  - **DHCP:** 1 (recomendamos no modificar)
   - **IP:** 0.0.0.0
   - **Subnetmask:** 0.0.0.0
   - **Gateway:** 0.0.0.0
@@ -170,35 +198,35 @@ Los parámetros para configurar en esta sección son los siguientes:
 
 Los parámetros para configurar en esta sección son los siguientes:
 
-**Sale in money:** *Venta en monto* (0 deshabilitado - 1 habilitado)
+**Sale in money:** 0 deshabilitado - 1 habilitado *(Venta en monto)*
 
-**Default prompt:** *Solicitud de parámetros extra* (0 deshabilitado - 1 habilitado)
+**Default prompt:** 0 deshabilitado - 1 habilitado *(Solicitud de parámetros extra)*
 
-**Attendant Id:** *Función de Encargado* (0 deshabilitado - 1 habilitado)
+**Attendant Id:** 0 deshabilitado - 1 habilitado *(Función de Encargado)*
 
-**Driver ID:** *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
+**Driver ID:** 0 deshabilitado - 1 habilitado *(Parámetro de solicitud)*
 
-**Vehicle ID:** *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
+**Vehicle ID:** 0 deshabilitado - 1 habilitado *(Parámetro de solicitud)*
 
-**Odometer:** *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
+**Odometer:** 0 deshabilitado - 1 habilitado *(Parámetro de solicitud)*
 
-**Engine hours:** *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
+**Engine hours:** 0 deshabilitado - 1 habilitado *(Parámetro de solicitud)*
 
-**Trailer:** *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
+**Trailer:** 0 deshabilitado - 1 habilitado *(Parámetro de solicitud)*
 
-**Miscellaneous:** *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
+**Miscellaneous:** 0 deshabilitado - 1 habilitado *(Parámetro de solicitud)*
 
-**Truck unit:** *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
+**Truck unit:** 0 deshabilitado - 1 habilitado *(Parámetro de solicitud)*
 
-**Secondary track:** *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
+**Secondary track:** 0 deshabilitado - 1 habilitado *(Parámetro de solicitud)*
 
-**Primary pin:** *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
+**Primary pin:** 0 deshabilitado - 1 habilitado *(Parámetro de solicitud)*
 
-**Secondary pin:** *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
+**Secondary pin:** 0 deshabilitado - 1 habilitado *(Parámetro de solicitud)*
 
-**Native URL:** *Dirección de ATIONet ambiente Beta o Producción*
+**Native URL:** *Dirección de ATIONet ambiente Beta o Producción* (```native.ationet.com``` para Producción / ```native-beta.ationet.com``` para Beta)
 
-**Maintenance URL:** *Dirección de ATIONet ambiente Beta o Producción*
+**Maintenance URL:** *Dirección de ATIONet ambiente Beta o Producción* (```native.ationet.com``` para Producción / ```native-beta.ationet.com``` para Beta)
 
 **User name:** *Usuario de fidelidad configurado en ATIONet*
 
@@ -206,6 +234,7 @@ Los parámetros para configurar en esta sección son los siguientes:
 
 **Terminal ID:** *ID de terminal configurado en ATIONet*
 
-**Local agent:** 0 
+**Local agent:** 0 deshabilitado - 1 habilitado
 
-**Local agent IP:** 0.0.0.0
+**Local agent IP:** 0.0.0.0 *(Dirección de IP del Local Agent)*
+
