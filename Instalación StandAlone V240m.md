@@ -29,39 +29,39 @@ Descargue los archivos necesarios para la instalación desde aquí. Los archivos
 
 Con la terminal encendida ingrese al menú Supervisor presionando las teclas **1+5+9** simultáneamente. De esta manera podrá ver el siguiente menú:
 
-![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Supervisor%20Menu.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/Supervisor%20Menu.png)
 
 Ingresando a **supervisor** le solicitará una contraseña. La contraseña de supervisor por defecto es **166831**. Desde este menú iremos a **Administration – Date/Time** y actualizaremos la fecha y la hora de la terminal.
 
-![](RackMultipart20210308-4-1fe69wp_html_865639e4b434fb68.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/Date%20and%20Time.png)
 
 Configurada la fecha y hora, iremos a **Administration - Communications - WiFi - WiFi Scan** y encenderemos el WiFi para que pueda escanear por las redes disponibles.
 
-![](RackMultipart20210308-4-1fe69wp_html_61697734628955f5.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/WiFi%20Scan.png)
 
 Una vez finalizado el escaneo, seleccione la red a utilizar dentro de la lista de redes disponibles.
 
-![](RackMultipart20210308-4-1fe69wp_html_844703c56decab5d.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/WiFi%20List.png)
 
 Volvemos al Menú de **WiFi** utilizando las flechas de la esquina superior izquierda e ingresamos a **WiFi Configuration**.
 
-![](RackMultipart20210308-4-1fe69wp_html_cf70d0f645d2278d.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/WiFi%20Menu%20-%20Configuration.png)
 
 Ingresar en el campo **PSK** la contraseña de la red y presionar **Enter** (tecla verde).
 
-![](RackMultipart20210308-4-1fe69wp_html_3f3a6f993ae902f9.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/WiFi%20Configuration.png)
 
 Retornar al menú de **WiFi** e ingresar a la opción **WiFi Interface IPv4**.
 
-![](RackMultipart20210308-4-1fe69wp_html_c44ebe27423c1f46.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/WiFi%20Menu%20-%20IPv4.png)
 
 Aquí configuraremos las opciones **Mode=&quot;DHCP&quot;** , **AutoStart=&quot;Once&quot;** y luego hacer clic en la conexión en rojo.
 
-![](RackMultipart20210308-4-1fe69wp_html_27f0dfd451afb48e.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/WiFi%20IPv4.png)
 
 Una vez conectado correctamente a la red, el icono de conexión ubicado en la sección superior derecha de la pantalla, se mostrará en verde e indicará la IP que se le asigna a la terminal en el campo **IP address**.
 
-![](RackMultipart20210308-4-1fe69wp_html_c0bea99206d1978c.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/WiFi%20Connected.png)
 
 IMPORTANTE: En caso de tener una versión anterior instalada, retornar al menú inicial e ingresar a la opción **Remove user bundle** y seleccionar **Remove all** ( **NO** seleccionar opción **Remove Users** ).
 
@@ -71,7 +71,7 @@ Finalizada esta configuración podremos proceder a instalar los pre-requisitos y
 
 Primeramente, dejaremos la terminal en modo carga para poder recibir los archivos de instalación. Para eso debemos ingresar desde el menú de supervisor a **Update - Netloader - wlan0**.
 
-![](RackMultipart20210308-4-1fe69wp_html_82f8f56b7bf156b5.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/Waiting%20for%20Download.png)
 
 Luego, desde una PC dentro de la misma red que la terminal, debemos abrir la aplicación **MxDownloader**. Vamos a la pestaña **Network** y completaremos los campos:
 
@@ -80,7 +80,7 @@ Luego, desde una PC dentro de la misma red que la terminal, debemos abrir la apl
 - **Download Type:** Seleccionar la opción **Full**.
 - **Post-Download:** Seleccionar la opción **Run App**.
 
-![](RackMultipart20210308-4-1fe69wp_html_4c7ca121f0f15e53.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/Mx%20Downloader.png)
 
 Una vez completado todos los campos correspondientes haremos clic en **Send** , lo que enviará el archivo a la terminal y se instalará automáticamente. Luego de la instalación la terminal procederá a reiniciarse (caso contrario forzar reinicio manualmente).
 
@@ -98,7 +98,7 @@ IMPORTANTE: Si la terminal V240m no tiene una cámara en la parte superior de la
 
 Una vez instalado todo procederemos a configurar la terminal. Al iniciar la aplicación nos dirigimos al símbolo de configuración en la esquina superior a la derecha.
 
-![](RackMultipart20210308-4-1fe69wp_html_948d2615370d01a0.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/Application%20Configuration.png)
 
 NOTA: En caso de no haber podido hacer click en **configuración** a tiempo, podemos ingresar a la misma desde **Mantenimiento**** – Configuración – Parámetros** dentro de la aplicación en si.
 
@@ -106,7 +106,7 @@ Una vez aquí la terminal nos solicitara clave (ingresar la clave por defecto **
 
 Desde aquí tendremos las 3 secciones de configuración: **Terminal** , **Sites** y **Ationet**.
 
-![](RackMultipart20210308-4-1fe69wp_html_9ffd7e3de2a0aeb8.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/Parameters.png)
 
 ## Terminal
 
