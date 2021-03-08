@@ -4,5 +4,5 @@
 
 
 ## V240m StandAlone Terminal Installation Guide
-- [English]()
+- [English](https://github.com/Ationet/ationetdocs/blob/master/Installation%20StandAlone%20V240m.md)
 - [Spanish](https://github.com/Ationet/ationetdocs/blob/master/Instalaci%C3%B3n%20StandAlone%20V240m.md)
