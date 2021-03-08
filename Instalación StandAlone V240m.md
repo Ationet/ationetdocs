@@ -100,7 +100,7 @@ Una vez instalado todo procederemos a configurar la terminal. Al iniciar la apli
 
 ![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/Application%20Configuration.png)
 
-NOTA: En caso de no haber podido hacer click en **configuración** a tiempo, podemos ingresar a la misma desde **Mantenimiento**** – Configuración – Parámetros** dentro de la aplicación en si.
+NOTA: En caso de no haber podido hacer click en **configuración** a tiempo, podemos ingresar a la misma desde **Mantenimiento – Configuración – Parámetros** dentro de la aplicación en si.
 
 Una vez aquí la terminal nos solicitara clave (ingresar la clave por defecto **123456** ).
 
@@ -170,31 +170,31 @@ Los parámetros para configurar en esta sección son los siguientes:
 
 Los parámetros para configurar en esta sección son los siguientes:
 
-**Sale in money:** 0
+**Sale in money:** 0 Venta en volumen - 1 Venta en monto
 
-**Default prompt:** 0
+**Default prompt:** 0 La terminal no solicita parámetros extra - 1 La terminal solicita parámetros extra
 
 **Attendant Id:** 0 Deshabilitar función de Encargado - 1 Habilitar función de Encargado
 
-**Driver ID:** 0
+**Driver ID:** 0 Parámetro de solicitud (0 deshabilitado - 1 habilitado)
 
-**Vehicle ID:** 0
+**Vehicle ID:** 0 Parámetro de solicitud (0 deshabilitado - 1 habilitado)
 
-**Odometer:** 0
+**Odometer:** 0 Parámetro de solicitud (0 deshabilitado - 1 habilitado)
 
-**Engine hours:** 0
+**Engine hours:** 0 Parámetro de solicitud (0 deshabilitado - 1 habilitado)
 
-**Trailer:** 0
+**Trailer:** 0 Parámetro de solicitud (0 deshabilitado - 1 habilitado)
 
-**Miscellaneous:** 0
+**Miscellaneous:** 0 Parámetro de solicitud (0 deshabilitado - 1 habilitado)
 
-**Truck unit:** 0
+**Truck unit:** 0 Parámetro de solicitud (0 deshabilitado - 1 habilitado)
 
-**Secondary track:** 0
+**Secondary track:** 0 Parámetro de solicitud (0 deshabilitado - 1 habilitado)
 
-**Primary pin:** 0
+**Primary pin:** 0 Parámetro de solicitud (0 deshabilitado - 1 habilitado)
 
-**Secondary pin:** 0
+**Secondary pin:** 0 Parámetro de solicitud (0 deshabilitado - 1 habilitado)
 
 **Native URL:** Dirección de ATIONet ambiente Beta o Producción
 
@@ -206,6 +206,6 @@ Los parámetros para configurar en esta sección son los siguientes:
 
 **Terminal ID:** ID de terminal configurado en ATIONet
 
-**Local agent:** 0
+**Local agent:** 0 
 
 **Local agent IP:** 0.0.0.0
