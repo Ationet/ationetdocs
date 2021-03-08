@@ -156,7 +156,7 @@ Los parámetros para configurar en esta sección son los siguientes:
 
 **Site name:** *Nombre del sitio*
 
-**Site cuit:** *Id Tributario del sitio*
+**Site cuit:** *ID Tributario del sitio*
 
 **Main header:** *Texto de cabecera primario*
 
