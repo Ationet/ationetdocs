@@ -170,31 +170,31 @@ Los parámetros para configurar en esta sección son los siguientes:
 
 Los parámetros para configurar en esta sección son los siguientes:
 
-**Sale in money:** 0 *Venta en volumen* - 1 *Venta en monto*
+**Sale in money:** *Venta en monto* (0 deshabilitado - 1 habilitado)
 
-**Default prompt:** 0 *La terminal no solicita parámetros extra* - 1 *La terminal solicita parámetros extra*
+**Default prompt:** *Solicitud de parámetros extra* (0 deshabilitado - 1 habilitado)
 
-**Attendant Id:** 0 *Deshabilitar función de Encargado* - 1 *Habilitar función de Encargado*
+**Attendant Id:** *Función de Encargado* (0 deshabilitado - 1 habilitado)
 
-**Driver ID:** 0 *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
+**Driver ID:** *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
 
-**Vehicle ID:** 0 *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
+**Vehicle ID:** *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
 
-**Odometer:** 0 *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
+**Odometer:** *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
 
-**Engine hours:** 0 *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
+**Engine hours:** *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
 
-**Trailer:** 0 *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
+**Trailer:** *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
 
-**Miscellaneous:** 0 *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
+**Miscellaneous:** *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
 
-**Truck unit:** 0 *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
+**Truck unit:** *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
 
-**Secondary track:** 0 *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
+**Secondary track:** *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
 
-**Primary pin:** 0 *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
+**Primary pin:** *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
 
-**Secondary pin:** 0 *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
+**Secondary pin:** *Parámetro de solicitud* (0 deshabilitado - 1 habilitado)
 
 **Native URL:** *Dirección de ATIONet ambiente Beta o Producción*
 
