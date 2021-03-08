@@ -19,7 +19,7 @@
 - [Hardware required](#Hardware-required)
 - [Software required](#Software-required)
 - [Pre-requisites and application download](#Pre-requisites-and-application-download)
-- [Date/Time & WiFi configuration](#Date/Time-&-WiFi-configuration)
+- [Date/Time & WiFi configuration](#Date/Time-&amp;-WiFi-configuration)
 - [Installation](#Installation)
 - [Configuration](#Configuration)
     - [Terminal](#Terminal)
