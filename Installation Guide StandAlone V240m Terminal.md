@@ -1,5 +1,24 @@
 ![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
 
+|Document Information|.|
+|--- |--- |
+|File:|ATIONet-Installation_Guide_StandAlone_V240m_Terminal.md|
+|Doc Version:|1.0|
+|Release Date:|08, March 2021|
+|Author:|ATIO International LLC|
+
+
+|Change Log|||
+|--- |--- |--- |
+|Ver.|Date|Change Summary|
+|1.0|08/Mar/2021|- Initial version
+
+## Contents
+
+- [Introduction](#Introduction)
+- [Hardware required](#Hardware-required)
+- [Software required](#Software-required)
+
 # Introduction
 
 In this manual we&#39;ll proceed to explain how to update the StandAlone V240m terminals. The installation can be done via WiFi or with the programming cable + USB flashdrive.
@@ -200,7 +219,7 @@ The parameters to be configured in this section are as follows:
 
 **Native URL:** *ATIONet&#39;s address for Beta or Production environment* (```native.ationet.com``` for Production / ```native-beta.ationet.com``` for Beta)
 
-**Maintenance URL:** *ATIONet&#39;s address for Beta or Production environment*
+**Maintenance URL:** *ATIONet&#39;s address for Beta or Production environment* (```native.ationet.com``` for Production / ```native-beta.ationet.com``` for Beta)
 
 **User name:** *LoyaltyAPI user configured in ATIONet*
 
