@@ -92,7 +92,7 @@ This procedure must be repeated for each file specifically in the following orde
 - Camera Library
 - V240m StandAlone Terminal Application
 
-```IMPORTANT: If the V240m terminal doesn't have a camera on top of it, then the "Camera Library" prerequisite shouldn&#39;t be installed.```
+```IMPORTANT: If the V240m terminal doesn't have a camera on top of it, then the "Camera Library" prerequisite shouldn't be installed.```
 
 # Configuration
 
