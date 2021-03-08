@@ -1,3 +1,5 @@
+![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
+
 # Introduction
 
 In this manual we&#39;ll proceed to explain how to update the StandAlone V240m terminals. The installation can be done via WiFi or with the programming cable + USB flashdrive.
@@ -112,32 +114,32 @@ From here you&#39;ll have the 3 configuration sections: **Terminal**, **Sites** 
 
 The parameters to be configured in this section are as follows:
 
-- **Language:** SPA for Spanish - ENG for English)
-- **Password:** Initial supervisor password of the application. Once modified, the field is invalidated even if it is modified or is not the same as the one configured.
+- **Language:** SPA for Spanish - ENG for English
+- **Password:** Initial supervisor password of the application. Once modified, the field is invalidated even if it is modified or is not the same as the one configured
 - **iButton:** 0 Disabled - 1 Enabled (iButton Reader)
 - **Bar code:** 0 Disabled - 1 Enabled (Scanner)
 - **Chip card:** 0 Disabled - 1 Enabled (Chip Reader)
 - **NFC card:** 0 Disabled - 1 Enabled (RFID)
-- **MSR card:** 0 Disabled - 1 Enabled (Card Reader)
-- **Receipt number:** 1
-- **Ping:** 3
-- **Ping threshold:** 3
-- **SSL:** 1
+- **MSR card:** 0 Disabled - 1 Enabled (Magnetic Stripe Card Reader)
+- **Receipt number:** 1 (suggested not to change)
+- **Ping:** 3 (adviced not to change)
+- **Ping threshold:** 3 (adviced not to change)
+- **SSL:** 1 (adviced not to change)
 
 **NFC Parameters**
 
-- **CTLS:** 1
-- **EMV debug:** 0
-- **VAS:** 0
-- **WI-FI:** ON – **GSM:** OFF
+- **CTLS:** 1 (adviced not to change)
+- **EMV debug:** 0 (adviced not to change)
+- **VAS:** 0 (adviced not to change)
+- **WI-FI:** ON – **GSM:** OFF (adviced not to change)
 
 **GSM Parameters**
 
-- **APN:** APN provider
+- **APN:** APN provider (adviced not to change)
 
 **WI-FI Parameters**
 
-  - **DHCP:** 1
+  - **DHCP:** 1 (adviced not to change)
   - **IP:** 0.0.0.0
   - **Subnetmask:** 0.0.0.0
   - **Gateway:** 0.0.0.0
@@ -170,33 +172,33 @@ The parameters to be configured in this section are as follows:
 
 The parameters to be configured in this section are as follows:
 
-**Sale in money:** *Allows you to make sales either in amount or volume* (0 Disabled - 1 Enabled)
+**Sale in money:** 0 Disabled - 1 Enabled *(Allows you to make sales either in amount or volume)*
 
-**Default prompt:** *Request for extra parameters* (0 Disabled – 1 Enabled)
+**Default prompt:** 0 Disabled - 1 Enabled *(Request for extra parameters)*
 
-**Attendant Id:** *Request Attendant ID* (0 Disabled – 1 Enabled)
+**Attendant Id:** 0 Disabled - 1 Enabled *(Request Attendant ID)*
 
-**Driver ID:** *Prompting parameter* (0 Disabled – 1 Enabled)
+**Driver ID:** 0 Disabled - 1 Enabled *(Prompting parameter)*
 
-**Vehicle ID:** *Prompting parameter* (0 Disabled – 1 Enabled)
+**Vehicle ID:** 0 Disabled - 1 Enabled *(Prompting parameter)*
 
-**Odometer:** *Prompting parameter* (0 Disabled – 1 Enabled)
+**Odometer:** 0 Disabled - 1 Enabled *(Prompting parameter)*
 
-**Engine hours:** *Prompting parameter* (0 Disabled – 1 Enabled)
+**Engine hours:** 0 Disabled - 1 Enabled *(Prompting parameter)*
 
-**Trailer:** *Prompting parameter* (0 Disabled – 1 Enabled)
+**Trailer:** 0 Disabled - 1 Enabled *(Prompting parameter)*
 
-**Miscellaneous:** *Prompting parameter* (0 Disabled – 1 Enabled)
+**Miscellaneous:** 0 Disabled - 1 Enabled *(Prompting parameter)*
 
-**Truck unit:** *Prompting parameter* (0 Disabled – 1 Enabled)
+**Truck unit:** 0 Disabled - 1 Enabled *(Prompting parameter)*
 
-**Secondary track:** *Prompting parameter* (0 Disabled – 1 Enabled)
+**Secondary track:** 0 Disabled - 1 Enabled *(Prompting parameter)*
 
-**Primary pin:** *Prompting parameter* (0 Disabled – 1 Enabled)
+**Primary pin:** 0 Disabled - 1 Enabled *(Prompting parameter)*
 
-**Secondary pin:** *Prompting parameter*_ (0 Disabled – 1 Enabled)
+**Secondary pin:** 0 Disabled - 1 Enabled *(Prompting parameter)*
 
-**Native URL:** *ATIONet&#39;s address for Beta or Production environment*
+**Native URL:** *ATIONet&#39;s address for Beta or Production environment* (```native.ationet.com``` for Production / ```native-beta.ationet.com``` for Beta)
 
 **Maintenance URL:** *ATIONet&#39;s address for Beta or Production environment*
 
@@ -206,6 +208,6 @@ The parameters to be configured in this section are as follows:
 
 **Terminal ID:** *Terminal ID configured in ATIONet*
 
-**Local agent:** 0
+**Local agent:** 0 Disabled - 1 Enabled
 
-**Local agent IP:** 0.0.0.0
+**Local agent IP:** 0.0.0.0 *(Local Agent IP address)*
