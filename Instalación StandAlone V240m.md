@@ -112,100 +112,100 @@ Desde aquí tendremos las 3 secciones de configuración: **Terminal** , **Sites*
 
 Los parámetros para configurar en esta sección son los siguientes:
 
-- _ **Language:** _ Idioma (SPA español - ENG inglés)
-- _ **Password:** _ Contraseña inicial de supervisor de la aplicación. Una vez modificado por aplicación, el campo queda invalidado por más que se modifique o no sea el mismo configurado.
-- _ **iButton:** _ 0 Deshabilitado - 1 Habilitado (Lector de iButton)
-- _ **Bar code:** _ 0 Deshabilitado - 1 Habilitado (Scanner)
-- _ **Chip card:** _ 0 Deshabilitado - 1 Habilitado (Lector de Chip)
-- _ **NFC card:** _ 0 Deshabilitado - 1 Habilitado (RFID)
-- _ **MSR card:** _ 0 Deshabilitado - 1 Habilitado (Lector de Tarjetas)
-- _ **Receipt number:** _ 1
-- _ **Ping:** _ 3
-- _ **Ping threshold:** _ 3
-- _ **SSL:** _ 1
+- **Language:** Idioma (SPA español - ENG inglés)
+- **Password:** Contraseña inicial de supervisor de la aplicación. Una vez modificado por aplicación, el campo queda invalidado por más que se modifique o no sea el mismo configurado.
+- **iButton:** 0 Deshabilitado - 1 Habilitado (Lector de iButton)
+- **Bar code:** 0 Deshabilitado - 1 Habilitado (Scanner)
+- **Chip card:** 0 Deshabilitado - 1 Habilitado (Lector de Chip)
+- **NFC card:** 0 Deshabilitado - 1 Habilitado (RFID)
+- **MSR card:** 0 Deshabilitado - 1 Habilitado (Lector de Tarjetas)
+- **Receipt number:** 1
+- **Ping:** 3
+- **Ping threshold:** 3
+- **SSL:** 1
 
 **Parámetros para NFC**
 
-- _ **CTLS:** _ 1
-- _ **EMV debug:** _ 0
-- _ **VAS:** _ 0
-- _ **WI-FI:** _ ON – _ **GSM:** _ OFF
+- **CTLS:** 1
+- **EMV debug:** 0
+- **VAS:** 0
+- **WI-FI:** ON – **GSM:** FF
 
 **Parámetros para GSM**
 
-- _ **APN:** _ APN proveedor
+- **APN:** APN proveedor
 
 **Parámetros para WI-FI**
 
-  - _ **DHCP:** _ 1
-  - _ **IP:** _ 0.0.0.0
-  - _ **Subnetmask:** _ 0.0.0.0
-  - _ **Gateway:** _ 0.0.0.0
-  - _ **DNS1:** _ 0.0.0.0
-  - _ **DNS2:** _ 0.0.0.0
-  - _ **NETWORK NAME:** _ Nombre de la red WiFi (SSID)
-  - _ **NETWORK PASSWORD:** _ Contraseña de la red WiFi
+  - **DHCP:** 1
+  - **IP:** 0.0.0.0
+  - **Subnetmask:** 0.0.0.0
+  - **Gateway:** 0.0.0.0
+  - **DNS1:** 0.0.0.0
+  - **DNS2:** 0.0.0.0
+  - **NETWORK NAME:** Nombre de la red WiFi (SSID)
+  - **NETWORK PASSWORD:** Contraseña de la red WiFi
 
 ## Sites
 
 Los parámetros para configurar en esta sección son los siguientes:
 
-_ **Site code:** _ Código del sitio
+**Site code:** Código del sitio
 
-_ **Site address:** _ Dirección del sitio
+**Site address:** Dirección del sitio
 
-_ **Site name:** _ Nombre del sitio
+**Site name:** Nombre del sitio
 
-_ **Site cuit:** _ Id Tributario del sitio
+**Site cuit:** Id Tributario del sitio
 
-_ **Main header:** _ Texto de cabecera primario
+**Main header:** Texto de cabecera primario
 
-_ **Secondary header:** _ Texto de cabecera secundario
+**Secondary header:** Texto de cabecera secundario
 
-_ **Main footer:** _ Texto de pie de página primario
+**Main footer:** Texto de pie de página primario
 
-_ **Secondary footer:** _ Texto de pie de página secundario
+**Secondary footer:** Texto de pie de página secundario
 
 ## Ationet
 
 Los parámetros para configurar en esta sección son los siguientes:
 
-_ **Sale in money:** _ 0
+**Sale in money:** 0
 
-_ **Default prompt:** _ 0
+**Default prompt:** 0
 
-_ **Attendant Id:** _ 0 Deshabilitar función de Encargado - 1 Habilitar función de Encargado
+**Attendant Id:** 0 Deshabilitar función de Encargado - 1 Habilitar función de Encargado
 
-_ **Driver ID:** _ 0
+**Driver ID:** 0
 
-_ **Vehicle ID:** _ 0
+**Vehicle ID:** 0
 
-_ **Odometer:** _ 0
+**Odometer:** 0
 
-_ **Engine hours:** _ 0
+**Engine hours:** 0
 
-_ **Trailer:** _ 0
+**Trailer:** 0
 
-_ **Miscellaneous:** _ 0
+**Miscellaneous:** 0
 
-_ **Truck unit:** _ 0
+**Truck unit:** 0
 
-_ **Secondary track:** _ 0
+**Secondary track:** 0
 
-_ **Primary pin:** _ 0
+**Primary pin:** 0
 
-_ **Secondary pin:** _ 0
+**Secondary pin:** 0
 
-_ **Native URL:** _ Dirección de ATIONet ambiente Beta o Producción
+**Native URL:** Dirección de ATIONet ambiente Beta o Producción
 
-_ **Maintenance URL:** _ Dirección de ATIONet ambiente Beta o Producción
+**Maintenance URL:** Dirección de ATIONet ambiente Beta o Producción
 
-_ **User name:** _ Usuario de fidelidad configurado en ATIONet (Siempre en mayúscula)
+**User name:** Usuario de fidelidad configurado en ATIONet (Siempre en mayúscula)
 
-_ **Password:** _ Contraseña del usuario de fidelidad configurado en ATIONet
+**Password:** Contraseña del usuario de fidelidad configurado en ATIONet
 
-_ **Terminal ID:** _ ID de terminal configurado en ATIONet
+**Terminal ID:** ID de terminal configurado en ATIONet
 
-_ **Local agent:** _ 0
+**Local agent:** 0
 
-_ **Local agent IP:** _ 0.0.0.0
+**Local agent IP:** 0.0.0.0
