@@ -19,7 +19,7 @@
 - [Hardware required](#Hardware-required)
 - [Software required](#Software-required)
 - [Pre-requisites and application download](#Pre-requisites-and-application-download)
-- [Date/Time & WiFi configuration](#Date/Time-&amp;-WiFi-configuration)
+- [Date/Time and WiFi configuration](#Date/Time-and-WiFi-configuration)
 - [Installation](#Installation)
 - [Configuration](#Configuration)
     - [Terminal](#Terminal)
@@ -53,7 +53,7 @@ Download the files needed for the installation from [here](https://github.com/At
 - Library Camera
 - Mx Downloader
 
-# Date/Time &amp; WiFi configuration
+# Date/Time and WiFi configuration
 
 With the terminal turned on, enter the Supervisor menu by pressing the **1+5+9** keys simultaneously. This way you&#39;ll see the following menu:
 
