@@ -2,7 +2,7 @@
 
 |**Información del Documento**|.|
 |--- |--- |
-|**Archivo:**|ATIONet-Installation_Guide_StandAlone_V240m_Terminal-ES.md|
+|**Archivo:**|ATIONet-StandAlone_V240m_Terminal_Installation_Guide-ES.md|
 |**Versión del Doc.:**|1.0|
 |**Fecha de Publicación:**|08, Marzo 2021|
 |**Autor:**|ATIONet LLC|
