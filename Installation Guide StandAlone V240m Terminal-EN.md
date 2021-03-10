@@ -2,10 +2,10 @@
 
 |**Document Information**|.|
 |--- |--- |
-|**File:**|ATIONet-Installation_Guide_StandAlone_V240m_Terminal.md|
+|**File:**|ATIONet-Installation_Guide_StandAlone_V240m_Terminal-EN.md|
 |**Doc Version:**|1.0|
 |**Release Date:**|08, March 2021|
-|**Author:**|ATIO International LLC|
+|**Author:**|ATIONet LLC|
 
 
 |**Change Log**|||
@@ -44,7 +44,7 @@ In this manual we&#39;ll proceed to explain how to update the StandAlone V240m t
 
 # Pre-requisites and application download
 
-Download the files needed for the installation from [here](https://github.com/Ationet/ationetdownloads/blob/master/README.md). The files to download are:
+Download the files needed for the installation from [here](https://downloads.ationet.com). The files to download are:
 
 - StandAlone Application for the V240m Terminal
 - Operative System
