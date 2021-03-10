@@ -2,6 +2,10 @@
 
 # ATIONet Technical Documentation
 
+## Local Agent Installation Guide
+- [English]()
+- [Spanish](https://github.com/Ationet/ationetdocs/blob/master/Instalacion%20de%20Local%20Agent.md)
+
 
 ## V240m StandAlone Terminal Installation Guide
 - [English](https://github.com/Ationet/ationetdocs/blob/master/Installation%20Guide%20StandAlone%20V240m%20Terminal.md)
