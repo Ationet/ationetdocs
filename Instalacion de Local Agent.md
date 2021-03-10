@@ -18,8 +18,8 @@
 - [Herramientas necesarias](#herramientas-necesarias)
 - [Pasos de Instalación](#pasos-de-instalación)
 - [Como Armar el Archivo install.config](#como-armar-el-archivo-installconfig)
-- [Revisión de Logs](#revisión-de-logs-luego-de-la-instalación)
-- [Estadísticas](#estadisticas)
+- [Revisión de Logs](#revisión-de-logs)
+- [Estadísticas](#estadísticas)
 
 # **Herramientas necesarias**
 
