@@ -2,10 +2,10 @@
 
 |**Información del Documento**|.|
 |--- |--- |
-|**Archivo:**|ATIONet-Instalacion-de-Local-Agent.md|
+|**Archivo:**|ATIONet-Local-Agent-Installation-Guide-ES.md|
 |**Versión del Doc.:**|1.0|
 |**Fecha de Publicación:**|10, Marzo 2021|
-|**Autor:**|ATIO International LLC|
+|**Autor:**|ATIONet LLC|
 
 
 |**Registro de Cambios**|||
@@ -37,9 +37,9 @@ Para la instalación del servicio existen ciertos prerrequisitos. Los prerrequis
 - Windows Installer 3.1
 - Windows Installer 4.5
 
-Cada programa se puede descargar directamente de la página oficial de Microsoft, sin embargo, en nuestro [repositorio oficial](https://github.com/Ationet/ationetdownloads/blob/master/README.md) podemos conseguir estos prerrequisitos junto con el instalador de Local Agent, el cual instala todos los programas automáticamente, de una sola vez sin la necesidad de ir instalando un por uno por separado.
+Cada programa se puede descargar directamente de la página oficial de Microsoft, sin embargo, en nuestro [Download Center](https://downloads.ationet.com) podemos conseguir estos prerrequisitos junto con el instalador de Local Agent, el cual instala todos los programas automáticamente, de una sola vez sin la necesidad de ir instalando un por uno por separado.
 
-Desde el repositorio podrá localizar los siguientes archivos para descargar:
+Desde el Download Center podrá localizar los siguientes archivos para descargar:
 
 ![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/ATIONet%20Download%20Center%20Site.png)
 
@@ -47,7 +47,7 @@ Una vez descargado el paquete de archivos, vamos a ver los siguientes ejecutable
 
 ![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Paquete%20Archivos.png)
 
-El ejecutable &quot;Setup.exe&quot;, se encarga de ejecutar todos los instaladores con los prerrequisitos. Es importante que los archivos de prerrequisitos estén en la misma carpeta que el ejecutable **Setup.exe** y descomprimidos.
+El ejecutable **Setup.exe** se encarga de ejecutar todos los instaladores con los prerrequisitos. Es importante que los archivos de prerrequisitos estén en la misma carpeta que el ejecutable **Setup.exe** y descomprimidos.
 
 El equipo va chequear si tiene todo instalado, y en caso de no tenerlo el programa de instalación se encargará de agregar todos los prerrequisitos que hagan falta. Una vez llegado el momento de la instalación del Local Agent veremos la siguiente imagen:
 
