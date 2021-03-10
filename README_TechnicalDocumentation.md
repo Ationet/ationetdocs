@@ -4,7 +4,7 @@
 
 ## Local Agent Installation Guide
 - [English]()
-- [Spanish](https://github.com/Ationet/ationetdocs/blob/master/Instalacion%20de%20Local%20Agent.md)
+- [Spanish](https://github.com/Ationet/ationetdocs/blob/master/Local%20Agent%20Installation%20Guide-ES.md)
 
 
 ## V240m StandAlone Terminal Installation Guide
