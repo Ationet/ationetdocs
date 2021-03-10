@@ -16,8 +16,10 @@
 ## Contenido
 
 - [Herramientas necesarias](#herramientas-necesarias)
-
-# **Guía de instalación de Local Agent**
+- [Pasos de Instalación](#pasos-de-instalación)
+- [Como Armar el Archivo install.config](#como-armar-el-archivo-installconfig)
+- [Revisión de Logs](#revisión-de-logs-luego-de-la-instalación)
+- [Estadísticas](#estadisticas)
 
 # **Herramientas necesarias**
 
@@ -26,7 +28,7 @@
 - Mouse
 - Monitor
 
-# **Pasos de instalación**
+# **Pasos de Instalación**
 
 Para la instalación del servicio existen ciertos prerrequisitos. Los prerrequisitos necesarios para instalar Local Agent son los siguientes:
 
@@ -63,7 +65,7 @@ Una vez encontrado y seleccionado el archivo, la instalación del Local Agent co
 
 Cuando finalice la instalación, haremos click en **Finalizar** para terminar con la instalación del mismo.
 
-## **Como armar el archivo install.config**
+## **Como Armar el Archivo install.config**
 
 El **install.config** es un archivo de texto que se puede editar/crear con bloc de notas. Los datos que deben figurar en el archivo son los siguientes:
 
@@ -79,7 +81,7 @@ Para que nuestro equipo se pueda conectar con el portal de Ationet deberemos mod
 
 Una vez estemos en este apartado deberemos copiar los primero tres caracteres que se encuentran en el apartado de Código y colocarlos en **Subscriber_Code**.
 
-## **Revisión de logs luego de la instalación**
+## **Revisión de logs**
 
 Una vez finalizada la instalación procedemos a verificar los logs para ver si completó la descarga de datos correspondiente para la base offline.
 
@@ -87,7 +89,7 @@ Los logs se encuentran ubicados por defecto en:
 
 **C:\Program Files (x86)\ATIONet\ATIONet Local Agent\logs**
 
-# **Estadisticas**
+# **Estadísticas**
 
 La siguiente información compartida es en un ambiente de prueba. Estos son los tiempos de espera de subida de datos del Local Agent cuando pasa de modo OFFLINE a ONLINE.
 
