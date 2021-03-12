@@ -53,7 +53,7 @@ The program will check if it has everything installed, and if not, the installat
 
 ![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Installer%20Assistant.PNG)
 
-We will click on next, after that it'll ask us the location where to install the service data, in this case we will use the default one.
+We'll click on next, after that it'll ask us the location where to install the service data, in this case we will use the default one.
 
 ![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Installation%20Folder.PNG)
 
