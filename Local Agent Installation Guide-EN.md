@@ -65,7 +65,7 @@ Once the file is located and selected, the Local Agent installation will continu
 
 When the installation is finished, click on **Finish** to complete the installation.
 
-## **How to prepare the install.config file**
+# **How to prepare the install.config file**
 
 The **install.config** is a text file that can be edited/created with notepad. The data to be included in the file are as follows:
 
@@ -81,7 +81,7 @@ For our equipment to be able to connect to the Ationet portal, we will have to m
 
 Once we are in this section we must copy the first three characters found in the Code section and place them in **Subscriber_Code**.
 
-## **Log Review**
+# **Log Review**
 
 Once the installation is finished we proceed to check the logs to see if it completed the corresponding data download for the offline base.
 
