@@ -45,21 +45,21 @@ From the Download Center you can locate the following files for download:
 
 Once the file package is downloaded, you'll see the following executables:
 
-![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Paquete%20Archivos.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/File%20Folder.PNG)
 
 The **Setup.exe** executable is responsible for running all the installers with the prerequisites. It is important that the prerequisite files are in the same folder as the **Setup.exe** executable and unzipped.
 
 The program will check if it has everything installed, and if not, the installation program will take care of adding all the prerequisites that are needed. Once it is time to install the Local Agent you'll see the following image:
 
-![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Asistente%20de%20Instalaci%C3%B3n.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Installer%20Assistant.PNG)
 
 We will click on next, after that it'll ask us the location where to install the service data, in this case we will use the default one.
 
-![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Selecci%C3%B3n%20Carpeta%20de%20Instalaci%C3%B3n.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Installation%20Folder.PNG)
 
 We'll click next once more and the Local Agent will ask for confirmation again. Once confirmed, the installer will reach 75% of the installation and at this point it will open a pop-up window asking for a file, this is the **install.config**.
 
-![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Selecci%C3%B3n%20Install.Config.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Install.Config%20Selection.PNG)
 
 Once the file is located and selected, the Local Agent installation will continue.
 
@@ -73,11 +73,11 @@ The **install.config** is a text file that can be edited/created with notepad. T
 
 Here follows a brief description of each parameter:
 
-![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Configuraci%C3%B3n%20Install.Config.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Install.Config%20Configuration.PNG)
 
 For our equipment to be able to connect to the Ationet portal, we will have to modify the **Subscriber_Code**. To find out which is the one of our site, we must enter the ATIONet portal, go to the **Administration - Terminals / Drivers** section.
 
-![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Terminales-Controladores.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Terminals-Controllers.PNG)
 
 Once we are in this section we must copy the first three characters found in the Code section and place them in **Subscriber_Code**.
 
@@ -93,4 +93,4 @@ The logs are normally located inside the following folder:
 
 The following information shared is in a test environment. These are the Local Agent upload timeouts when going from OFFLINE to ONLINE mode.
 
-![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Estad%C3%ADsticas.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Statistics.PNG)
