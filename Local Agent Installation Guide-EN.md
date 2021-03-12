@@ -13,7 +13,7 @@
 |**Ver.**|**Date**|**Change Summary**|
 |1.0|12/Mar/2021|- Initial version
 
-## Contents
+# Contents
 
 - [Required Hardware](#required-hardware)
 - [Installation Steps](#installation-steps)
