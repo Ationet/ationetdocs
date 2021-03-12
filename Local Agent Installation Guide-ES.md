@@ -13,7 +13,7 @@
 |**Ver.**|**Fecha**|**Resumen de Cambios**|
 |1.0|10/Mar/2021|- Versión Inicial
 
-## Contenido
+# Contenido
 
 - [Herramientas necesarias](#herramientas-necesarias)
 - [Pasos de Instalación](#pasos-de-instalación)
@@ -65,7 +65,7 @@ Una vez encontrado y seleccionado el archivo, la instalación del Local Agent co
 
 Cuando finalice la instalación, haremos click en **Finalizar** para terminar con la instalación del mismo.
 
-## **Como Armar el Archivo install.config**
+# **Como Armar el Archivo install.config**
 
 El **install.config** es un archivo de texto que se puede editar/crear con bloc de notas. Los datos que deben figurar en el archivo son los siguientes:
 
@@ -81,7 +81,7 @@ Para que nuestro equipo se pueda conectar con el portal de Ationet deberemos mod
 
 Una vez estemos en este apartado deberemos copiar los primero tres caracteres que se encuentran en el apartado de Código y colocarlos en **Subscriber_Code**.
 
-## **Revisión de logs**
+# **Revisión de logs**
 
 Una vez finalizada la instalación procedemos a verificar los logs para ver si completó la descarga de datos correspondiente para la base offline.
 
