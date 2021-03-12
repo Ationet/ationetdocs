@@ -16,7 +16,7 @@
 ## Contents
 
 - [Required Hardware](#required-hardware)
-- [Installation Steps](#insgtallation-steps)
+- [Installation Steps](#installation-steps)
 - [How to prepare the install.config file](#how-to-prepare-the-installconfig-file)
 - [Log Review](#log-review)
 - [Statistics](#statistics)
