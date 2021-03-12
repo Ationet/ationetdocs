@@ -61,6 +61,8 @@ Damos siguiente una vez más y el Local Agent pedirá confirmación nuevamente. 
 
 ![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Selecci%C3%B3n%20Install.Config.png)
 
+```NOTA: Antes de seleccionar el archivo "install.config" deberá preparar el mismo para su sitio.```
+
 Una vez encontrado y seleccionado el archivo, la instalación del Local Agent continuará.
 
 Cuando finalice la instalación, haremos click en **Finalizar** para terminar con la instalación del mismo.
