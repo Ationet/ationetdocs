@@ -13,7 +13,7 @@
 |**Ver.**|**Fecha**|**Resumen de Cambios**|
 |1.0|08/Mar/2021|- Versión Inicial
 
-## Contenido
+# Contenido
 
 - [Introducción](#Introducción)
 - [Hardware necesario](#Hardware-necesario)
