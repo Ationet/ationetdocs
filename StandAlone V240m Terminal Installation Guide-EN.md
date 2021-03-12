@@ -13,7 +13,7 @@
 |**Ver.**|**Date**|**Change Summary**|
 |1.0|08/Mar/2021|- Initial version
 
-## Contents
+# Contents
 
 - [Introduction](#Introduction)
 - [Hardware required](#Hardware-required)
