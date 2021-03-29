@@ -35,10 +35,10 @@
 
 - [5 Error handling](#5-error-handling)
 
-- [6 Statement Charges Interface](#6-statement-charges-interface)
+- [6 Current Account Interface](#6-current-account-interface)
 	- [6.1 Action Codes](#61-action-codes)
 	- [6.2 Identification](#62-identification)
-	- [6.3 Statement Charge (POST) – Body Section Record Format](#63-statement-charge-post--body-section-record-format)
+	- [6.3 Current Account (POST) – Body Section Record Format](#63-current-account-post--body-section-record-format)
 
 - [7 Transactions Download Interface](#7-transactions-download-interface)
 	- [7.1 Action Codes](#71-action-codes)
@@ -181,10 +181,6 @@ Availability of this message and the type of actions allowed depend on the subsc
   <tr>
     <td class="tg-eygw">907</td>
     <td class="tg-eygw">Balance withdrawal from contract</td>
-  </tr>
-  <tr>
-    <td class="tg-gvcd">915</td>
-    <td class="tg-gvcd">Balance recharge to sub-account</td>
   </tr>
   <tr>
     <td class="tg-eygw">941</td>
@@ -349,14 +345,14 @@ Failure to process the request will be indicated by an HTTP 400’s range
 status code. The body will contain a single JSON-formatted item with the
 “ResponseCode”, “ResponseMessage” and “ResponseError” fields.
 
-## 6 Statement Charges Interface
+## 6 Current Account Interface
 
-The Statement Charge message sends an instruction to ATIONet to apply a
-well-defined action on the current account subsystem, the subject of the
+The Current Account message sends an instruction to ATIONet to apply a
+well-defined action on the current account subsystem. The subject of the
 action will be a sub-account of a contract, lets say a Vehicle or a
 Driver account.
 
-Depending on the type of charge, this message might be used by one or
+Depending on the type of charge this message might be used by one or
 the other party of the contract (the subscriber or the fleet company).
 
 ### 6.1 Action Codes
@@ -367,123 +363,71 @@ pre-defined operation types. Not all operation types are available for
 all subscribers and/or fleet companies, availability depends on
 subscription types but also on contract terms with ATIONet.
 
-<table>
-	<tr valign="top">
-		<th align="left">
-			Action Code
-		</th>
-		<th colspan="2" align="left">
-			Description
-		</th>
-	</tr>
-	<tr valign="top">
-		<td rowspan="3">
-			<p>901</p>
-		</td>
-		<td>
-			<p>Title:</p>
-		</td>
-		<td>
-			<p>Balance transfer to a sub-account</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td>
-			<p>Function:</p>
-		</td>
-		<td>
-			<p>Transfers a given value from the global balance of the Contract to the sub-account related to the Vehicle or Driver.</p>
-			<p>Contract Balance must have enough funds (or product volume) to allow the transfer; otherwise the action will be rejected by the current accounts subsystem.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td>
-			<p>Observations</p>
-		</td>
-		<td>
-			<p>The action will first trigger a Deposit action on the Contract and the Contract to sub-account transfer.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td rowspan="2">
-			<p>902</p>
-		</td>
-		<td>
-			<p>Title:</p>
-		</td>
-		<td>
-			<p>Balance withdrawal from a sub-account</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td>
-			<p>Function:</p>
-		</td>
-		<td>
-			<p>Withdraws a given value from the sub-account related to the Vehicle or Driver.</p>
-			<p>Sub-account Balance must have enough funds (or product volume) to allow the withdrawal; otherwise the action will be rejected by the current accounts subsystem.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td rowspan="2">
-			<p>903</p>
-		</td>
-		<td>
-			<p>Title:</p>
-		</td>
-		<td>
-			<p>Balance transfer from sub-account to sub-account</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td>
-			<p>Function:</p>
-		</td>
-		<td>
-			<p>Transfers a given value from the original sub-account (related to the Original Vehicle or Driver) to the sub-account related to the Vehicle or Driver.</p>
-			<p>Original sub-account balance must have enough funds (or product volume) to allow the transfer; otherwise the action will be rejected by the current accounts subsystem.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td rowspan="2">
-			<p>904</p>
-		</td>
-		<td>
-			<p>Title:</p>
-		</td>
-		<td>
-			<p>Balance transfer from contract to sub-account</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td>
-			<p>Function:</p>
-		</td>
-		<td>
-			<p>Transfers a given value from the contract to the sub-account related to the Vehicle or Driver.</p>
-			<p>Contract balance must have enough funds (or product volume) to allow the transfer; otherwise the action will be rejected by the current accounts subsystem.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td rowspan="2">
-			<p>905</p>
-		</td>
-		<td>
-			<p>Title:</p>
-		</td>
-		<td>
-			<p>Balance transfer from sub-account to contract</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td>
-			<p>Function:</p>
-		</td>
-		<td>
-			<p>Transfers a given value from the sub-account related to the Vehicle or Driver to the contract.</p>
-			<p>Sub-account Balance must have enough funds (or product volume) to allow the withdrawal; otherwise the action will be rejected by the current accounts subsystem.</p>
-		</td>
-	</tr>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-gvcd"><span style="font-weight:bold">Action Code</span></th>
+    <th class="tg-gvcd"><span style="font-weight:bold">Title</span></th>
+    <th class="tg-gvcd">Function</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-eygw">901</td>
+    <td class="tg-dqd0">Balance transfer to a sub-account</td>
+    <td class="tg-eygw">Transfers a given value from the global balance of the contract to the sub-account related to the vehicle or driver.<br><br>Contract balance must have enough funds (or product volume) to allow the transfer; otherwise the action will be rejected by the current accounts system.<br><br>The action will first trigger a deposit action on the contract and then a contract to sub-account transfer.</td>
+  </tr>
+  <tr>
+    <td class="tg-gvcd">902</td>
+    <td class="tg-bthj">Balance withdrawal from a sub-account</td>
+    <td class="tg-gvcd">Withdraws a given value from the sub-account related to the vehicle or driver.<br><br>Sub-account balance must have enough funds (or product volume) to allow the withdrawal; otherwise the action will be rejected by the current accounts subsystem.</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">903</td>
+    <td class="tg-dqd0">Balance transfer from sub-account to a sub-account</td>
+    <td class="tg-eygw">Transfers a given value from the original sub-account (related to the original vehicle or driver) to another sub-account related to the vehicle or driver.<br><br>Original sub-account balance must have enough funds (or product volume) to allow the transfer; otherwise the action will be rejected by the current accounts system.</td>
+  </tr>
+  <tr>
+    <td class="tg-gvcd">904</td>
+    <td class="tg-bthj">Balance transfer from contract to a sub-account</td>
+    <td class="tg-gvcd">Transfers a given value from the contract to the sub-account related to the vehicle or driver.<br><br>Contract balance must have enough funds (or product volume) to allow the transfer; otherwise the action will be rejected by the current accounts subsystem.</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">905</td>
+    <td class="tg-dqd0">Balance transfer from sub-account to a contract</td>
+    <td class="tg-dm8k">Transfers a given value from the sub-account related to the vehicle or driver contract.<br><br>Sub-account balance must have enough funds (or product volume) to allow the withdrawal; otherwise the action will be rejected by the current accounts subsystem.</td>
+  </tr>
+  <tr>
+    <td class="tg-gvcd">906</td>
+    <td class="tg-bthj">Balance transfer to contract</td>
+    <td class="tg-gvcd">Transfers a given value to a contract.</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">907</td>
+    <td class="tg-dqd0">Balance withdrawal from contract</td>
+    <td class="tg-eygw">Withdraws a given value from a contract.</td>
+  </tr>
+  <tr>
+    <td class="tg-gvcd">941</td>
+    <td class="tg-bthj">Balance download of sub-account</td>
+    <td class="tg-gvcd">Downloads the balance of all sub-accounts related to the vehicle or driver of a determined contract.</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">942</td>
+    <td class="tg-dqd0">Balance download of contract</td>
+    <td class="tg-eygw">Downloads the balance of all contracts related to the network.</td>
+  </tr>
+  <tr>
+    <td class="tg-gvcd">951</td>
+    <td class="tg-bthj">Movements download of company</td>
+    <td class="tg-gvcd">Downloads the movements of all contracts of a determined company.<br><br>A contract can also be specified in order to download all movements only for that contract related to the company.</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">952</td>
+    <td class="tg-dqd0">Movements download of company group</td>
+    <td class="tg-eygw">Downloads the movements of a determined company group.</td>
+  </tr>
+</tbody>
 </table>
 
 ### 6.2 Identification
@@ -503,7 +447,7 @@ the message:
 3.  Company Code + Contract Code + (Driver Code or Vehicle Code or
     Vehicle Plate)
 
-### 6.3 Statement Charge (POST) – Body Section Record Format
+### 6.3 Current Account (POST) – Body Section Record Format
 
 <table>
 	<thead>
