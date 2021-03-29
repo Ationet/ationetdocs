@@ -26,6 +26,8 @@
 
 - [2 System Interface API](#2-system-interface-api)
 	- [2.1 Interface API Messages](#21-interface-api-messages)
+		- [2.1.1 Current Account Messages](#211-current-account-messages)
+		- [2.1.1 Transaction Messages](#212-transaction-messages)
 
 - [3 Data security](#3-data-security)
 
@@ -43,11 +45,11 @@
 	- [7.2 Transactions Download (POST) – Body Section Format Request](#72-transactions-download-post--body-section-format-request)
 	- [7.3 Transactions Download (POST) – Body Section Format Response](#73-transactions-download-post--body-section-format-response)
 
-- [8 FastTracks Interface](#8-fasttracks-interface)
+- [8 FastTracks Interface](#8-fasttrack-interface)
 	- [8.1 Action Codes](#81-action-codes)
 	- [8.2 FastTracks Order Insert (POST) – Body Section Format Request](#82-fasttracks-order-insert-post--body-section-format-request)
-	- [8.3 FastTracks Download (POST) – Body Section Format Request](#82-fasttracks-download-post--body-section-format-request)
-	- [8.4 FastTracks Download (POST) – Body Section Format Response](#83-fasttracks-download-post--body-section-format-response)
+	- [8.3 FastTracks Download (POST) – Body Section Format Request](#83-fasttracks-download-post--body-section-format-request)
+	- [8.4 FastTracks Download (POST) – Body Section Format Response](#84-fasttracks-download-post--body-section-format-response)
 	
 - [9 Account Enquiries](#9-account-enquiries)
 	- [9.1 Action Codes](#91-action-codes)
@@ -203,7 +205,7 @@ Availability of this message and the type of actions allowed depend on the subsc
 </tbody>
 </table>
 
-#### 2.1.2 Transactions Messages
+#### 2.1.2 Transaction Messages
 
 <table class="tg">
 <thead>
