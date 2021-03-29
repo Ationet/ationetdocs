@@ -4,9 +4,9 @@
 |Document Information|.|
 |--- |--- |
 |File:|ATIONet-Native_Interface_Protocol-Spec|
-|Doc Version:|1.3|
-|Release Date:|05, July 2014|
-|Author:|ATIO International LLC|
+|Doc Version:|1.5|
+|Release Date:|29, March 2021|
+|Author:|ATIONet LLC|
 
 
 |Change Log|||
@@ -17,6 +17,7 @@
 |1.2|30/10/2013|**Account Inquiries** <br> - Added Action 943 Contract Balance Enquiry <br> - New group of actions: 951 – 959 Account Download (partial) <br> Actions: 951 Sub-Account Movements Download <br> - 952 Contract Movements Download|
 |1.3|05/07/2014|**Statement Charges** <br> - Added Action 903 Transfer balance from sub-account to a sub-account<br> - Added Action 904 Transfer balance from contract to a sub-account <br> - Added Action 905 Transfer balance from sub-account to a contract <br> - Change and reorganize request and response records<br> **Transactions Downloads** <br> - Change and reorganize request and response records <br> - Account Inquiries <br> - Remove Action 943 Contract Balance Enquiry <br> - Change and reorganize request and response records **Account Downloads** <br> - Remove Action 952 Contract Movements Download <br> - Change Action 951 Sub-Account Movements Download to 951 Movements Download <br> - Change and reorganize request and response records <br>**Error Handling** <br> - Include “ResponseError” in response record for actions intended to post a command|
 |1.4|27/11/2018|**FastTrack** <br> - Added Action 971 Request insertion of new FastTrack <br> - Added Action 972 Request FastTrack list download|
+|1.5|29/03/2021|**API Interface Messages** <br> - Updated lists of Action Codes|
 
 ## Contents
 
@@ -109,7 +110,7 @@ Transaction capture device at the site.
 
 ## 1 Scope
 
-Version 1.3 of this document covers a particular version of ATIONet’s
+Version 1.4 of this document covers a particular version of ATIONet’s
 Host protocol. Although feature’s descriptions are generally not related
 to a particular version of the protocol, some changes may apply which
 would be specifically commented and identified on each feature’s
@@ -119,7 +120,7 @@ description paragraph.
 
 Protocol: ATIONet Native Interface API
 
-Version: Version 1.3
+Version: Version 1.4
 
 API URI: native.ationet.com/v1/interface
 
@@ -136,165 +137,129 @@ subscriber.
 
 ### 2.1 Interface API Messages
 
-<table>
-	<thead>
-		<tr valign="center">
-			<th rowspan="2" width="125" align="left">
-				Name
-			</th>
-			<th colspan="2" align="center">
-				Protocol Ver.
-			</th>
-			<th rowspan="2" align="left">
-				Description
-			</th>
-		</tr>
- <tr valign="top">
-  <th align="center">
-		Initial
-  </th>
-  <th align="center">
-		Change
-  </th>
- </tr>
-	</thead>
-	<tbody>
-		<tr valign="top">
-			<td rowspan="3">
-				<p align="left">Statement charges
-				<br> [HTTP POST]</p>
-				<p align="left">901 to 920</p>
-			</td>
-			<td>
-				<p align="center">1.0</p>
-			</td>
-			<td></td>
-			<td>
-				<p align="left">Commands ATIONet to process a movement on the account of a driver or vehicle, given an action type indicated on the message body.</p>
-				<p align="left">Availability of this message and the type of actions allowed depend on the subscriber type and its contracting terms.</p>
-				<p align="left">901 - Balance transfer to a sub-account</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="center">1.1</p>
-			</td>
-			<td></td>
-			<td>
-				<p align="left">902 - Balance withdrawal from a sub-account</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td></td>
-			<td>
-				<p align="center">1.3</p>
-			</td>
-			<td>
-				<p align="left">901 - Balance transfer to a sub-account</p>
-				<p align="left">902 - Balance withdrawal from a sub-account</p>
-				<p align="left">903 - Transfer balance from sub-account to a sub-account</p>
-				<p align="left">904 - Transfer balance from contract to a sub-account</p>
-				<p align="left">905 - Transfer balance from sub-account to a contract</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td rowspan="3">
-				<p align="left">Transactions Download
-				<br> [HTTP POST]</p>
-				<p align="left">931 to 940</p>
-			</td>
-			<td rowspan="2">
-				<p align="center">1.0</p>
-			</td>
-			<td></td>
-			<td>
-				<p align="left">Returns a list of completed transactions from ATIONet host, between two dates, for a given Subscriber, Merchant or fleet Company</p>
-				<p align="left">931 - Transactions Download</p>
-				<p align="left">932 - Transactions Download for Merchants</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="center">1.1</p>
-			</td>
-			<td>
-				<p align="left">931 - Transactions Download</p>
-				<p align="left">932 - Transactions Download for Merchants</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td></td>
-			<td>
-				<p align="center">1.3</p>
-			</td>
-			<td>
-				<p align="left">931 - Transactions Download</p>
-				<p align="left">932 - Transactions Download for Merchants</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td rowspan="3">
-				<p align="left">Account Enquiries
-				<br>[HTTP POST]</p>
-				<p align="left">941 to 950</p>
-			</td>
-			<td>
-				<p align="center">1.1</p>
-			</td>
-			<td></td>
-			<td>
-				<p align="left">Returns specific values of a Contract or Sub-account.</p>
-				<p align="left">941 - Sub-account Balance Enquiry</p>
-				<p align="left">942 - Sub-Account Limit Enquiry</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="center">1.2</p>
-			</td>
-			<td></td>
-			<td>
-				<p align="left">943 - Contract Balance Enquiry</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td></td>
-			<td>
-				<p align="center">1.3</p>
-			</td>
-			<td>
-				<p align="left">941 - Sub-account Balance Enquiry</p>
-				<p align="left">942 - Sub-Account Limit Enquiry</p>
-				<p align="left"><strike>943 - Contract Balance Enquiry</strike></p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td rowspan="2">
-				<p align="left">Account Downloads
-				<br>[HTTP POST]</p>
-				<p align="left">951 to 960</p>
-			</td>
-			<td>
-				<p align="center">1.2</p>
-			</td>
-			<td></td>
-			<td>
-				<p align="left">951 - Sub-Account Movements Download</p>
-				<p align="left">952 - Contract Movements Download</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td></td>
-			<td>
-				<p align="center">1.3</p>
-			</td>
-			<td>
-				<p align="left">951 - Movements Download</p>
-				<p align="left"><strike>951 - Sub-Account Movements Download</strike></p>
-				<p align="left"><strike>952	- Contract Movements Download</strike></p>
-			</td>
-		</tr>
-	</tbody>
+Commands ATIONet to process a movement on the account of a driver or vehicle, given an action type indicated on the message body.
+Availability of this message and the type of actions allowed depend on the subscriber type and its contracting terms.
+
+#### 2.1.1 Current Account Messages
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-gvcd"><span style="font-weight:bold">Type</span></th>
+    <th class="tg-gvcd"><span style="font-weight:bold">Action Code</span></th>
+    <th class="tg-gvcd"><span style="font-weight:bold">Description</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-rjo2" rowspan="12">Current Accounts</td>
+    <td class="tg-eygw">901</td>
+    <td class="tg-eygw">Balance transfer to a sub-account</td>
+  </tr>
+  <tr>
+    <td class="tg-gvcd">902</td>
+    <td class="tg-gvcd">Balance withdrawal from a sub-account</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">903</td>
+    <td class="tg-eygw">Balance transfer from sub-account to a sub-account</td>
+  </tr>
+  <tr>
+    <td class="tg-gvcd">904</td>
+    <td class="tg-gvcd">Balance transfer from contract to a sub-account</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">905</td>
+    <td class="tg-eygw">Balance transfer from sub-account to a contract</td>
+  </tr>
+  <tr>
+    <td class="tg-gvcd">906</td>
+    <td class="tg-gvcd">Balance transfer to contract</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">907</td>
+    <td class="tg-eygw">Balance withdrawal from contract</td>
+  </tr>
+  <tr>
+    <td class="tg-gvcd">915</td>
+    <td class="tg-gvcd">Balance recharge to sub-account</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">941</td>
+    <td class="tg-eygw">Balance download of sub-account</td>
+  </tr>
+  <tr>
+    <td class="tg-gvcd">942</td>
+    <td class="tg-gvcd">Balance download of contract</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">951</td>
+    <td class="tg-eygw">Movements download of company</td>
+  </tr>
+  <tr>
+    <td class="tg-gvcd">952</td>
+    <td class="tg-gvcd">Movements download of company group</td>
+  </tr>
+</tbody>
+</table>
+
+#### 2.1.2 Transactions Messages
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-gvcd"><span style="font-weight:bold">Type</span></th>
+    <th class="tg-gvcd"><span style="font-weight:bold">Action Code</span></th>
+    <th class="tg-gvcd"><span style="font-weight:bold">Description</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-rjo2" rowspan="11">Transactions</td>
+    <td class="tg-eygw">931</td>
+    <td class="tg-eygw">Transactions download</td>
+  </tr>
+  <tr>
+    <td class="tg-gvcd">932</td>
+    <td class="tg-gvcd">Merchant transactions download</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">933</td>
+    <td class="tg-eygw">Exceptions download</td>
+  </tr>
+  <tr>
+    <td class="tg-gvcd">934</td>
+    <td class="tg-gvcd">Uncontrolled transactions download</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">935</td>
+    <td class="tg-eygw">Transactions disputes download</td>
+  </tr>
+  <tr>
+    <td class="tg-gvcd">936</td>
+    <td class="tg-gvcd">GPS transactions download</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">937</td>
+    <td class="tg-eygw">GPS transactions update</td>
+  </tr>
+  <tr>
+    <td class="tg-gvcd">938</td>
+    <td class="tg-gvcd">GiftCard transactions download</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">939</td>
+    <td class="tg-eygw">GiftCard exceptions download</td>
+  </tr>
+  <tr>
+    <td class="tg-gvcd">943</td>
+    <td class="tg-gvcd">ConsumerCard transactions download</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">944</td>
+    <td class="tg-eygw">ConsumerCard exceptions download</td>
+  </tr>
+</tbody>
 </table>
 
 ## 3 Data security
