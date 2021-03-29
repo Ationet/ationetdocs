@@ -347,7 +347,7 @@ status code. The body will contain a single JSON-formatted item with the
 
 ## 6 Current Account Movements Interface
 
-The Current Account message sends an instruction to ATIONet to apply a
+The Current Account Movements message sends an instruction to ATIONet to apply a
 well-defined action on the current account subsystem. The subject of the
 action will be a sub-account of a contract, lets say a Vehicle or a
 Driver account.
