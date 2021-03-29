@@ -45,7 +45,7 @@
 	- [7.2 Transactions Download (POST) – Body Section Format Request](#72-transactions-download-post--body-section-format-request)
 	- [7.3 Transactions Download (POST) – Body Section Format Response](#73-transactions-download-post--body-section-format-response)
 
-- [8 FastTracks Interface](#8-fasttrack-interface)
+- [8 FastTrack Interface](#8-fasttrack-interface)
 	- [8.1 Action Codes](#81-action-codes)
 	- [8.2 FastTracks Order Insert (POST) – Body Section Format Request](#82-fasttracks-order-insert-post--body-section-format-request)
 	- [8.3 FastTracks Download (POST) – Body Section Format Request](#83-fasttracks-download-post--body-section-format-request)
