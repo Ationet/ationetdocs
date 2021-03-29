@@ -27,7 +27,7 @@
 - [2 System Interface API](#2-system-interface-api)
 	- [2.1 Interface API Messages](#21-interface-api-messages)
 		- [2.1.1 Current Account Messages](#211-current-account-messages)
-		- [2.1.1 Transaction Messages](#212-transaction-messages)
+		- [2.1.2 Transaction Messages](#212-transaction-messages)
 
 - [3 Data security](#3-data-security)
 
