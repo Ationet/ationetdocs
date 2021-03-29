@@ -35,10 +35,10 @@
 
 - [5 Error handling](#5-error-handling)
 
-- [6 Current Account Interface](#6-current-account-interface)
+- [6 Current Account Movements Interface](#6-current-account-movements-interface)
 	- [6.1 Action Codes](#61-action-codes)
 	- [6.2 Identification](#62-identification)
-	- [6.3 Current Account (POST) – Body Section Record Format](#63-current-account-post--body-section-record-format)
+	- [6.3 Current Account Movements (POST) – Body Section Record Format](#63-current-account-movements-post--body-section-record-format)
 
 - [7 Transactions Download Interface](#7-transactions-download-interface)
 	- [7.1 Action Codes](#71-action-codes)
@@ -345,7 +345,7 @@ Failure to process the request will be indicated by an HTTP 400’s range
 status code. The body will contain a single JSON-formatted item with the
 “ResponseCode”, “ResponseMessage” and “ResponseError” fields.
 
-## 6 Current Account Interface
+## 6 Current Account Movements Interface
 
 The Current Account message sends an instruction to ATIONet to apply a
 well-defined action on the current account subsystem. The subject of the
@@ -432,9 +432,9 @@ subscription types but also on contract terms with ATIONet.
 
 ### 6.2 Identification
 
-When a Statement Charge is received, ATIONet will try to identify the
+When a movement request is received, ATIONet will try to identify the
 Subscriber, the Species (Currency Code or Master Fuel Code) and the
-Identifier of the sub-account (Vehicle or Driver), this can be performed
+Identifier of the sub-account (Vehicle or Driver). This can be performed
 thru several combinations of the Identification Fields on the body of
 the message:
 
@@ -447,7 +447,7 @@ the message:
 3.  Company Code + Contract Code + (Driver Code or Vehicle Code or
     Vehicle Plate)
 
-### 6.3 Current Account (POST) – Body Section Record Format
+### 6.3 Current Account Movements (POST) – Body Section Record Format
 
 <table>
 	<thead>
