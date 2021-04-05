@@ -106,9 +106,9 @@ Luego, desde una PC dentro de la misma red que la terminal, debemos abrir la apl
 - **File to send:** Seleccionar el archivo a instalar.
 - **Destination IP:** Ingresar la IP de la terminal V240m.
 - **Download Type:** Seleccionar la opción **Full**.
-- **Post-Download:** Seleccionar la opción **Run App**.
+- **Post-Download:** Seleccionar la opción **Reboot Mx**.
 
-![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/Mx%20Downloader.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/Mx%20Download%20example.png)
 
 Una vez completado todos los campos correspondientes haremos clic en **Send**, lo que enviará el archivo a la terminal y se instalará automáticamente. Luego de la instalación la terminal procederá a reiniciarse (caso contrario forzar reinicio manualmente).
 
