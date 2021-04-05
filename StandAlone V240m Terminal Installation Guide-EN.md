@@ -106,9 +106,9 @@ Then, from a PC within the same network as the terminal, open the **MxDownloader
 - **File to send:** Select the file to install.
 - **Destination IP:** Input the V240m terminal&#39;s IP address
 - **Download Type:** Select the option **Full**.
-- **Post-Download:** Select the option **Run App**.
+- **Post-Download:** Select the option **Reboot Mx**.
 
-![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/Mx%20Downloader.png)
+![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20V240m/Mx%20Download%20example.png)
 
 Once all the corresponding fields have been completed, click on **Send** , which will send the file to the terminal and it will be installed automatically. After the installation the terminal will proceed to restart (otherwise force restart manually).
 
