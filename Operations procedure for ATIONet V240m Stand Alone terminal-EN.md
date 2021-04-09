@@ -15,7 +15,27 @@
 
 # Contents
 
-- [Introduction](#Introduction)
+- [Introduction](#introduction)
+- [Operations](#operations)
+- [Main Menu](#main-menu)
+  - [Pre-Authorization](#pre-authorization)
+  - [Confirmation](#confirmation)
+  - [Clear Pending Pre-Authorization](#clear-pending-pre-authorization)
+  - [Sale](#sale)
+  - [Balance Enquiry](#balance-enquiry)
+  - [Loyalty](#loyalty)
+    - [Accumulation](#accumulation)
+    - [Accumulation Refund](#accumulation-refund)
+    - [Balance Enquiry](#balance-enquiry-1)
+- [Maintenance](#maintenance)
+  - [Batch Close](#batch-close)
+  - [Print Last Receipt](#print-last-receipt)
+  - [Reverse Transaction](#reverse-transaction)
+  - [Active GiftCard](#activate-giftcard)
+  - [Recharge CC](#recharge-cc)
+- [Configuration](#configuration)
+  - [Supervisor Password](#supervisor-password)
+  - [Fuels](#fuels)
 
 # **Operations procedure for ATIONet V240m Stand Alone terminal**
 
