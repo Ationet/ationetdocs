@@ -43,7 +43,7 @@ This manual is aimed to help and guide the user with the ATIONet V240m Stand Alo
 
 ## Operations
 
-Inside this section we will cover all available operations within the V240m Stand Alone terminals:
+Here follows all available operations within the V240m Stand Alone terminals:
 
 - Main Menu
   - Pre-Authorization
