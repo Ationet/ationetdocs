@@ -37,8 +37,6 @@
   - [Supervisor Password](#supervisor-password)
   - [Fuels](#fuels)
 
-# **Operations procedure for ATIONet V240m Stand Alone terminal**
-
 ## Introduction
 
 This manual is aimed to help and guide the user with the ATIONet V240m Stand Alone terminal. ATIONet Stand Alone terminals allows the user to authorize fleet transactions in ATIONet hosts.
