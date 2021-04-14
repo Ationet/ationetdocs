@@ -89,7 +89,7 @@ Upon completion of the dispatch it is necessary to confirm the transaction in th
 
 - Start the confirmation by selecting from the touch-pad menu the option **CONFIRMATION**.
 - Remember that the dispatched amount cannot exceed the authorized amount in the pre-authorization.
-- 
+
 If you enter an amount greater than the pre-authorized you&#39;ll receive an error message and the transaction will NOT be confirmed.
 Press the green button to re-enter the correct amount.
 
