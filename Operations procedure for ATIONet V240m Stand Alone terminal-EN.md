@@ -218,7 +218,7 @@ This concept allows users to activate their Gift Card directly from the terminal
 
 ### Recharge CC
 
-If for some reason it is neessary to recharge a ConsumerCard directly from the terminal instead from the portal itself, this option will allow to do so.
+If for some reason it is neessary to recharge a Consumer Card directly from the terminal instead from the portal itself, this option will allow to do so.
 
 - Start the operation by selecting from the touch-pad menu the option **RECHARGE CC**.
 - The terminal will now prompt to present the Consumer Card desired to recharge.
