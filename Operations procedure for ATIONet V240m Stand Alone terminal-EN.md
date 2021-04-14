@@ -184,7 +184,6 @@ The Maintenance menu provides access to system operations that are not directly 
 This concept allows grouping a set of transactions for further analysis and processing convalescence. Usually, it is recommended to perform a batch close for each closing operating shift at the gas station. This way you can easily reconcile transactions that were paid with any of the means of payment processed by ATIONET.
 
 - Start the operation by selecting from the touch-pad menu the option **BATCH CLOSE**.
-
 - In order to proceed with the batch close, you require supervisor permits. Please enter the supervisor password.
 - The POS will ask the Central System to close a batch and process it. During that process, **Processing…** is displayed on screen.
 - When the process finishes the POS displays a message indicating **OPERATION COMPLETED** and prints the closure ticket.
@@ -195,7 +194,6 @@ This concept allows grouping a set of transactions for further analysis and proc
 If for some reason it is necessary to reprint the last ticket issued (typically when the printer paper is locked), this can be done from this menu.
 
 - Start the operation by selecting from the touch-pad menu the option **PRINT LAST RECEIPT**.
-
 - The POS will automatically print a copy of the last receipt issued. You cannot re-print any other ticket.
 
 ### Reverse Transaction
@@ -209,7 +207,25 @@ If there is an error while processing a transaction in the system and the turn s
 
 ### Activate GiftCard
 
+This concept allows users to activate their Gift Card directly from the terminal without having to access the portal itself.
+
+- Start the operation by selecting from the touch-pad menu the option **ACTIVATE GIFTCARD**.
+- In order to proceed with the activation of the Gift Card you require supervisor permits. Please enter the supervisor password.
+- The terminal will now ask to present the Gift Card.
+- The POS will then ask the system to activate the card. During that process, **Processing…** will be displayed on screen.
+- Upon completion the system will active the Gift Card and the POS displays a message indicating so.
+
+
 ### Recharge CC
+
+If for some reason it is neessary to recharge a ConsumerCard directly from the terminal instead from the portal itself, this option will allow to do so.
+
+- Start the operation by selecting from the touch-pad menu the option **RECHARGE CC**.
+- The terminal will now prompt to present the Consumer Card desired to recharge.
+- Then the terminal will ask to input the ammount desired to recharge the card.
+- The POS will then ask the system to recharge the card with the ammount input. During that process, **Processing…** will be displayed on screen.
+- Upon completion the system will have added the ammount to the Consumer Card and the POS displays a message indicating so.
+
 
 ## Configuration
 
