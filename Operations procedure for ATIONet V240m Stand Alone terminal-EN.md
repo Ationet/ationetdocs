@@ -117,7 +117,7 @@ Under some circumstances it may be the case that the sale has already been made 
 - Start the sale by selecting from the touch-pad menu the option **SALE**.
 - The POS will ask to present the identification associated with the sale to be informed.
 - After reading the identification, the terminal displays **Processing...** while communicating with the central systems to report the sale.
-- If the transaction is unauthorized the system will respond with an error message and after selecting **Ok** the terminal prints the ticket. In the example: **ID does not exist**.
+- If the transaction is unauthorized the system will respond with an error message and after selecting **Ok** the terminal prints the ticket.
 - If the data entered is correct the operation will be confirmed on the server.
 The display will show the message **OPERATION COMPLETED** and the POS will print the ticket of the transaction.
 - If the transaction is authorized the system will respond with a confirmation message like the example and will print an authorization ticket.
