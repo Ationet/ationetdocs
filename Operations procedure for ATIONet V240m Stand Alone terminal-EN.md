@@ -89,13 +89,12 @@ Upon completion of the dispatch it is necessary to confirm the transaction in th
 
 - Start the confirmation by selecting from the touch-pad menu the option **CONFIRMATION**.
 - Remember that the dispatched amount cannot exceed the authorized amount in the pre-authorization.
-
+- 
 If you enter an amount greater than the pre-authorized you&#39;ll receive an error message and the transaction will NOT be confirmed.
-
 Press the green button to re-enter the correct amount.
-- If the data entered is correct, the operation will be confirmed on the server.
 
-The display will show the message **Operation Completed** and the POS will print the ticket of the transaction.
+- If the data entered is correct, the operation will be confirmed on the server.
+- The display will show the message **Operation Completed** and the POS will print the ticket of the transaction.
 
 This first copy of the ticket is for the station and is normally requested to be signed by the Customer. The terminal will then prompt to print a second copy for the client. To do so just press the green button to print or the red button to not do so.
 
