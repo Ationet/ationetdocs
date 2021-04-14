@@ -4,14 +4,14 @@
 |--- |--- |
 |**File:**|Operations procedure for ATIONet V240m Stand Alone terminal-EN.md|
 |**Doc Version:**|1.0|
-|**Release Date:**|09, April 2021|
+|**Release Date:**|14, April 2021|
 |**Author:**|ATIONet LLC|
 
 
 |**Change Log**|||
 |--- |--- |--- |
 |**Ver.**|**Date**|**Change Summary**|
-|1.0|09/Apr/2021|- Initial version
+|1.0|14/Apr/2021|- Initial version
 
 # Contents
 
