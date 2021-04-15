@@ -39,7 +39,7 @@
 	</tr>
 </table>
 
-## Contents
+# Contents
 
 <!-- MarkdownTOC depth=3 -->
 
@@ -124,7 +124,7 @@
 
 <!-- /MarkdownTOC -->
 
-## Overview
+# Overview
 
 ATIOnet is based on the premise that online communications between sites and the web portal are possible, however, it provides solid contingency procedures in the event of a communication error.
 
@@ -137,60 +137,60 @@ ATIOnet can be installed at any service station with one or multiple fleet servi
 ATIOnet makes it possible for the fleet manager to operate, monitor, change and edit fleet information in real time.
 
 
-## Definitions
+# Definitions
 
-### Contract 
+## Contract 
 
 The contract is the relationship that exists between the network and the client, in which it is guided, for example, if it will be of amount or volume, the price at which the fuel is going to be sold, in which sites it can load, among others.
 
-### Sub account 
+## Sub-account 
 
-Each time an identifier is associated with a vehicle or driver, a sub-account is created. The sub account is definitely who is going to have a current account, the sub account is going to be able to receive deposits of money or product. The rules also impact the sub account.
+Each time an identifier is associated with a vehicle or driver, a sub-account is created. The sub-account is definitely who is going to have a current account, the sub-account is going to be able to receive deposits of money or product. The rules also impact the sub-account.
 
 The sub-accounts are hierarchically dependent on the contract.
 
-### Company
+## Company
 
-In ATIOnet, the company refers to the company that owns the fleet.
+In ATIONet the company refers to the entity that owns the fleet. It is the one that manages the vehicles and drivers.
 
-### Identifiers 
+## Identification
 
-The identifier is the physical means used by ATIONet to identify a vehicle or driver. ATIONet supports various types of identification, such as card, tag (ring), chip, ATIONet card, manual entry, barcode and iButton. When an identifier is associated to a Vehicle or Driver, a sub account is created.
+The identification is the physical means used by ATIONet to identify a vehicle or driver. ATIONet supports various types of identifications, such as card, tag (ring), chip, ATIONet card, manual entry, barcode and iButton. When an identification is associated to a Vehicle or Driver, a sub-account is created.
 
-### Site 
+## Site 
 
-The Site represents the service station. A site is assigned the terminal and may also have associated Location rules.
+The Site represents the service station. A site is assigned a terminal and may also have associated Location rules.
 
-### Vehicle 
+## Vehicle 
 
-The vehicles can be associated or grouped by a fleet, they can have associated rules and at the moment of being related with an identifier a sub account is created. They may also have an associated driver.
+The vehicles can be associated or grouped by a fleet, they can have associated rules and at the moment of being related with an identification a sub-account is created. They may also have an associated driver.
 
-### Driver 
+## Driver 
 
-The Driver is the person who is identified in ATIONet as a driver. If this driver is assigned an identifier, a sub account is created. Drivers may also have associated rules.
+The driver in ATIONet is the person who is identified as a chauffer. If this driver is assigned an identification, a sub-account is created. Drivers may also have associated rules.
 
-### Offline module 
+## Offline module 
 
-ATIONet's offline module is automatically activated when the service station has no Internet connection and the authorisations cannot be processed online. At this point the offline module comes into play. For the Nano CPI controller it is completely transparent. When the offline module recovers the connectivity it sends all the information processed locally and also lowers the news. As long as there is connectivity, the offline module is continuously downloading ATIONet news (balances, identifiers, rules, etc).
+ATIONet's offline module is automatically activated when the service station has no Internet connection and the authorisations cannot be processed online. At this point the offline module comes into play. For the Nano CPI controller it is completely transparent. When the offline module recovers the connectivity it sends all the information processed locally and also downloads any updates. As long as there is connectivity, the offline module is continuously downloading ATIONet updates (balances, identifications, rules, etc).
 
-### Terminal
+## Terminal
 
-The terminal (or controller) is the representation of the dispenser controller, which needs to be parameterized in a particular way according to the type of terminal. The terminals handled by ATIONet are ATIO-NanoCPI, ATIO-Standalone, ATIO-CG, VF-Standalone, VF-Sapphire, VF-Ruby, ControlGas and OPW-FSC3000. 
+The terminal (or controller) is the representation of the dispenser controller, which needs to be parameterized in a particular way according to the type of terminal. The terminals handled by ATIONet are ATIO-NanoCPI, ATIO-Standalone, ATIO-CG, VF-Standalone, VF-Sapphire, VF-Ruby, ControlGas, among others. 
 
-### Navigation Menu
+# Navigation Menu
 
-ATIOnet has a quick access menu located on the left side of the page. From this menu you can access the different options. The menu is divided into 7 sections. (Dashboard, Favorites, Views, Reports, Inventory, Administration and Logbook)
+ATIOnet has a quick access menu located on the left side of the website. From this menu you can access different options. The menu is divided into 9 sections. (Dashboard, Favorites, Reports, Administration, Fleets, Billing, Notifications, Configuration and Logbook).
 
-### Board
+## Board
 
-The Board is a page where you will have a global vision of the operation of your network. The dashboard has specific widgets that will help you make preventive or corrective decisions according to the information and data they show. The data shown in the Dashboard is real time data. Some of the widgets are automatically refreshed.
-These can be removed or added according to the user's needs in the My Preferences window. They can also be placed on the board according to the level of visibility you want to give each one.
+The Board is a page where you will have a global vision of the operation of your network. The dashboard has specific widgets that will help you make preventive or corrective decisions according to the information and data they show. The data shown in the Dashboard is real time data and some of the widgets are automatically refreshed.
+These can be removed or added according to the user's needs in the **My Preferences** option. They can also be placed on the board according to the level of visibility you want to give each one.
 The complete list of widgets available for Network subscriptions is as follows:
 
 #### General Status
 
 This widget is very important when starting up the network. This widget gives us information of which parameters we need to configure to be operative. It warns us when, for example, we don't have vehicles or identifications created among other parameters.
-This widget can show "Warnings" (yellow icon) when the operation of the network is not in play, but if it shows a red cross indicates that the network is not operational.
+This widget can show **Warnings** (yellow icon) when the operation of the network is not in play, but if it shows a red cross indicates that the network is not operational.
 
 ![Estado General](Content/Includes/AN-HomeBase-UserManal-SP/estadoGeneral.png)
 ![Estado General](Content/Includes/AN-HomeBase-UserManal-SP/estadoGeneral2.png)
@@ -209,7 +209,7 @@ This widget contains a pie chart that shows very quickly how many transactions w
 
 #### List of Pending Pre-Authorizations
 
-This list widget displays all preauthorizations that have not yet received the completion transaction. (For more details on the transaction flow refer to this one [document](AN-Transaction_Flows-TechGuide.md).
+This list widget displays all pre-authorizations that have not yet received the completion transaction. (For more details on the transaction flow refer to this one [document](AN-Transaction_Flows-TechGuide.md).
 
 This shows 7 columns:
 
@@ -221,7 +221,7 @@ This shows 7 columns:
 6. ***Pos:*** Position or pump informed by the point of sale or controller.
 7. ***Age:*** The time in minutes that this pre-authorization has been in effect.
 
-The pending pre authorizations should be dispatches in progress, if there are records in this widget with a high Age, means that the point of sale or controller did not send the completion transaction or the cancellation transaction in the case that fuel has not been dispatched.
+The pending pre-authorizations should be dispatches in progress, if there are records in this widget with a high Age, means that the point of sale or controller did not send the completion transaction or the cancellation transaction in the case that fuel has not been dispatched.
 
 ![Pre Auth Pendientes](Content/Includes/AN-HomeBase-UserManal-SP/preauthPendientes.png)
 
@@ -242,8 +242,8 @@ Displays the list of contracts that were never active.
 This shows all sub-accounts that have something to pay attention to, such as:
 
 1. ***Without Identifiers:*** These are vehicles or drivers that do not have an associated identifier.
-2. ***With inactive identifiers:*** Are subaccounts that have an associated identifier that has been deactivated from the portal.
-3. ***With Suspended Identifiers:*** Sub-accounts that have an identifier that has been suspended. ***Only ATIONet can suspend an identifier***.
+2. ***With inactive Identifications:*** Are sub-accounts that have an associated identification that has been deactivated from the portal.
+3. ***With Suspended Identifications:*** Sub-accounts that have an identification that has been suspended. ***Only ATIONet can suspend an identification***.
 4. ***With inactive drivers or vehicles:*** These are sub-accounts that have a vehicle or driver that has not been deactivated from the portal.
 
 For more details about sub-accounts please consult:[Esta sección](#sub-cuenta)
@@ -262,45 +262,45 @@ Shows the list of contracts with low balance to trade 4 more days. This calculat
 
 ![Contrato Bajo Saldo](Content/Includes/AN-HomeBase-UserManal-SP/contratoBajoSaldo.png)
 
-#### List of Sub-accounts with low balance
+#### List of sub-accounts with low balance
 
-Shows the list of sub accounts containing low balance to trade 4 more days. This calculation is made based on the use of each sub account. The "Available Days" column shows the number of days left in the sub account based on the usage analysis. This number is not exact and may vary if the usage pattern changes.
+Shows the list of sub-accounts containing low balance to trade 4 more days. This calculation is made based on the use of each sub account. The "Available Days" column shows the number of days left in the sub-account based on the usage analysis. This number is not exact and may vary if the usage pattern changes.
 
 ![Sub Cuentas Bajo Saldo](Content/Includes/AN-HomeBase-UserManal-SP/subcuentasBajoSaldo.png)
 
-#### Identifier updates in last month
+#### Identification updates in last month
 
-This widget shows the activity of the administration of identifiers, shows the number of identifiers that were modified grouped by state.
+This widget shows the activity of the administration of identifications, shows the number of identifications that were modified grouped by state.
 
-1. ***Assigned:*** The number of identifiers that changed to the "Assigned" state.
-2. ***Available:*** The number of identifiers that changed to the "Available" state.
-3. ***Cancelled:*** The number of identifiers that changed to "Cancelled" status.
-4. ***Reported:*** The number of identifiers that changed to "Reported" status.
-5. ***Suspended:*** The number of identifiers that changed to "Suspended" status.
+1. ***Assigned:*** The number of identifications that changed to the "Assigned" state.
+2. ***Available:*** The number of identifications that changed to the "Available" state.
+3. ***Cancelled:*** The number of identifications that changed to "Cancelled" status.
+4. ***Reported:*** The number of identifications that changed to "Reported" status.
+5. ***Suspended:*** The number of identifications that changed to "Suspended" status.
 
 ![Actualizaciones de Identificadores](Content/Includes/AN-HomeBase-UserManal-SP/actualizacionIdentificadoresUltimoMes.png)
 
-#### Terminal Status
+#### Terminal status
 
 All terminals that are natively connected to ATIONet send a regular message indicating that they are active. If the terminal reported the status in the last 5 hours, the terminal will be shown with the green icon, if not reported in the last 5 hours the icon will be red.
-The column ***"Age "*** shows the number of minutes since the last time the terminal was reported. 
+The column ***Age*** shows the number of minutes since the last time the terminal was reported. 
 
 ![Estado Terminales](Content/Includes/AN-HomeBase-UserManal-SP/estadoTerminales1.png)
 ![Estado Terminales](Content/Includes/AN-HomeBase-UserManal-SP/estadoTerminales2.png)
 
-### Favorites
+## Favorites
 
-Vehicles, Drivers, Sites and Fleets are entities that may require daily monitoring by certain users. To facilitate this task you can add some of these entities to the list of Favorites. Once entered an entity to this list the access is faster and direct, without the need to enter filters each time you want to search. 
+Vehicles, Drivers, Sites and Fleets are entities that may require daily monitoring by certain users. To facilitate this task you can add some of these sections to the list of **Favorites**. Once entered a section to this list, the access is faster and direct, without the need to enter filters each time you want to search.
 
-Once inside the Favorites page, by clicking on the link in the "Type" column, you will be redirected to the detailed view of that entity. 
+Once inside the Favorites page, by clicking on the link in the **Type** column, you will be redirected to the detailed view of that section.
 
-If you want to remove an entity from the list of Favorites, click on the icon on the right with the shape of a cross.
+If you want to remove a section from the list of Favorites, click on the icon on the right side with the shape of a cross.
 
 ![Favoritos](Content/Includes/AN-HomeBase-UserManal-SP/favoritos.png)
 
-### Views
+## Views
 
-ATIONet has a series of views where you can view information on the operation of the network. ATIONet considers a view to all those screens that besides being able to visualize information, it is also exportable for a post processing. Unlike the [***Reportes***](#reportes) which are screens that display information in a format designed to be printed and saved.
+ATIONet has a series of views where you can see information on the operation of the network. ATIONet considers a view to all those screens that besides being able to visualize information, it is also exportable for a post processing. Unlike the [**Reports**](#reports) which are screens that display information in a format designed to be printed and saved.
 All the views in ATIONet respect a consistency in aesthetics and functionality. All the views have a toolbar with all these functions (or at least some of them).
 
 ![Vistas](Content/Includes/AN-HomeBase-UserManal-SP/vistas.png) 
@@ -311,26 +311,26 @@ All the views in ATIONet respect a consistency in aesthetics and functionality. 
 4. ***Export:*** By clicking on this option the information currently displayed in the grid is exported to Excel. An automatic download will start in your browser.
 5. ***Update:*** Some views where the frequency of change of information is high, it might be useful to want to refresh the grid. This option refreshes the data immediately.  
 
-Some views also have a filter panel. By default this panel appears collapsed, to display it click on the bar that says "Filters". Each view has specific fields by which you can filter. Once you have entered the desired values press the "Search" button.
+Some views also have a filter panel. By default this panel appears collapsed, to display it click on the bar that says **Filters**. Each view has specific fields by which you can filter. Once you have entered the desired values press the **Search** button.
 
 ![Vistas](Content/Includes/AN-HomeBase-UserManal-SP/vistas3.png)
 
-The views also have pagination and the user will be able to define how many records per page are shown. This configuration is done from [***Mis Preferencias***](#mis-preferencias)
+The views also have pagination and the user will be able to define how many records per page are shown. This configuration is done from [**My Preferences**](#my-preferences).
 The following is the view of ATIONet Vehicles:
 
 ![Vistas](Content/Includes/AN-HomeBase-UserManal-SP/vistas2.png)
 
-#### Pending Authorizations
+### Pending Authorizations
 
-Pending authorizations are those transactions that have not yet received the completion transaction. The records seen in this view are shipments that are currently underway. If for some reason there are old pre-authorizations, it is likely that the POS did not send the completion transaction or the cancellation transaction if the shipment was not completed.
+Pending authorizations are those transactions that have not yet received the completion transaction. The records seen in this view are dispatched that are currently underway. If for some reason there are old pre-authorizations, it is likely that the POS did not send the completion transaction or the cancellation transaction if the dispatch was not completed.
 
-Please note that at the time of preauthorization, ATIONet froze the amount of the authorization of the current account of the sub account.
+Please note that at the time of pre-authorization, ATIONet froze the amount of the authorization of the current account of the sub-account.
 This view presents all the fields necessary to identify the transaction and the vehicle. If you need to see more details, clicking on the authorization code will take you to the transaction details view.
 
 ![Autorizaciones Pendientes](Content/Includes/AN-Network-UserManal-SP/autorizacionesPendientes.png)
 
-If old pending transactions appear and you are sure it is not an ongoing shipment, you may cancel them and return the balance to the checking account.
-To do this you have 2 ways, individually, by clicking on the "X" icon to the right of the grid or massively by selecting the transactions, displaying the "Batch Actions" menu and selecting "Cancel". This will cancel the transactions and return the balance to each of the current accounts.
+If old pending transactions appear and you are sure it is not an ongoing dispatch, you may cancel them and return the balance to the current account.
+To do this you have 2 ways, individually, by clicking on the **X** icon to the right side of the grid, or massively by selecting the transactions, displaying the **Batch Actions** menu and selecting "Cancel". This will cancel the transactions and return the balance to each of the current accounts.
 
 ![Autorizaciones Pendientes](Content/Includes/AN-Network-UserManal-SP/autorizacionesPendientes2.png)
 
