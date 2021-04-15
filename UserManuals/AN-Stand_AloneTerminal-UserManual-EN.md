@@ -1,7 +1,7 @@
 ![ationetlogo](../Content/Images/ATIOnetLogo_250x70.png)
 
 
-# Operations procedure for ATIONet Stand Alone terminal
+# Operations procedure for ATIONet Stand Alone terminal (Vx520)
 
 <table>
 	<tr>
