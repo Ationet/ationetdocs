@@ -1,7 +1,7 @@
 ![ationetlogo](../Content/Images/ATIOnetLogo_250x70.png)
 
 
-# Procedimientos para la operación de la terminal autonoma ATIONet
+# Procedimientos para la operación de la terminal autonoma ATIONet (Vx520)
 
 <table>
 	<tr>
