@@ -4,7 +4,7 @@
 
 
 
-## ATIONet Console
+## ATIONet Web Portal
 - [Network Subscription Type User Manual (Spanish)](UserManuals/AN-Network-UserManal-SP.md)
 - [Network Subscription Type User Manual (English)(PREVIEW)](UserManuals/AN-Network-UserManual-EN.md)
 - [Home base Subscription Type User Manual (Spanish)](UserManuals/AN-HomeBase-UserManual-SP.md)
