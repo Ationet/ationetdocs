@@ -155,7 +155,7 @@ Each Operation Type class has multiple methods to perform specific operation aga
 	</tbody>
 </table>
 <BR/>
-You can download a fully functional sample code from here: [ATIONet Auth Sample](https://github.com/atioint/ationetsdksamples)
+You can download a fully functional sample code from here: [ATIONet Auth Sample] (https://github.com/atioint/ationetsdksamples)
 
 ### Api Methods
 
