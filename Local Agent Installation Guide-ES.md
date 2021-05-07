@@ -16,6 +16,7 @@
 # Contenido
 
 - [Herramientas necesarias](#herramientas-necesarias)
+- [Hardware & Software necesario](#hardware)
 - [Pasos de Instalación](#pasos-de-instalación)
 - [Como Armar el Archivo install.config](#como-armar-el-archivo-installconfig)
 - [Revisión de Logs](#revisión-de-logs)
@@ -27,6 +28,13 @@
 - Teclado
 - Mouse
 - Monitor
+
+# **Hardware & Software necesario**
+
+- Sistema Operativo: Windows 10 Enterprise 2016
+- Procesador: Intel(R) Celeron(R) CPU N3550 @ 1.10GHz
+- Memoria RAM: 8,00 GB
+- Memoria ROM: 60,00 GB
 
 # **Pasos de Instalación**
 
