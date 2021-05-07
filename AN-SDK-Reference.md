@@ -125,7 +125,7 @@ Each Operation Type class has multiple methods to perform specific operation aga
         <tr>
           	<td>SendConfirmation</td>
             <td>AuthTransactionRequest</td>
-            <td>Sends a <i>Confirmation</i> message to the host (learn more about transactions flow here:</td>
+            <td>Sends a <i>Confirmation</i> message to the host (learn more about transactions flow here: https://github.com/Ationet/ationetdocs/blob/master/AN-Transaction_Flows-TechGuide.md</td>
         </tr>
         <tr>
           	<td>SendConfirmationAsync</td>
@@ -135,7 +135,7 @@ Each Operation Type class has multiple methods to perform specific operation aga
         <tr>
           	<td>SendPreAuthorization</td>
             <td>AuthTransactionRequest</td>
-            <td>Sends a <i>Pre Authorization</i> message to the host (learn more about transactions flow here:</td>
+            <td>Sends a <i>Pre Authorization</i> message to the host (learn more about transactions flow here: https://github.com/Ationet/ationetdocs/blob/master/AN-Transaction_Flows-TechGuide.md</td>
         </tr>
         <tr>
           	<td>SendPreAuthorizationAsync</td>
@@ -145,7 +145,7 @@ Each Operation Type class has multiple methods to perform specific operation aga
         <tr>
           	<td>SendSale</td>
             <td>AuthTransactionRequest</td>
-            <td>Sends a <i>Sale</i> message to the host (learn more about transactions flow here:</td>
+            <td>Sends a <i>Sale</i> message to the host (learn more about transactions flow here: https://github.com/Ationet/ationetdocs/blob/master/AN-Transaction_Flows-TechGuide.md</td>
         </tr>
         <tr>
           	<td>SendSaleAsync</td>
@@ -155,7 +155,7 @@ Each Operation Type class has multiple methods to perform specific operation aga
 	</tbody>
 </table>
 <BR/>
-You can download a fully functional sample code from here: https://github.com/atioint/ationetsdksamples/tree/master/AtionetAuthSample](https://github.com/atioint/ationetsdksamples/tree/master/AtionetAuthSample
+You can download a fully functional sample code from here: [ATIONet Auth Sample](https://github.com/atioint/ationetsdksamples)
 
 ### Api Methods
 
