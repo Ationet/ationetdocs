@@ -15,18 +15,26 @@
 
 # Contents
 
-- [Required Hardware](#required-hardware)
+- [Required Tools](#required-tools)
+- [Required Hardware & Sofware](#required-hardware--software)
 - [Installation Steps](#installation-steps)
 - [How to prepare the install.config file](#how-to-prepare-the-installconfig-file)
 - [Log Review](#log-review)
 - [Statistics](#statistics)
 
-# **Required Hardware**
+# **Required Tools**
 
 - Flashdrive
 - Keyboard
 - Mouse
 - Monitor
+
+# **Required Hardware & Software**
+
+- Operative System: Windows 10
+- Processor: Intel(R) Celeron(R) CPU N3550 @ 1.10GHz
+- Memory RAM: 8.00 GB
+- Storage: 60.00 GB
 
 # **Installation Steps**
 
