@@ -318,6 +318,7 @@ This popup has a print button that when pressed opens the default print window o
 
 ### Transactions
 This report shows the list of transactions made, sorted by date. This report has several filters to adjust the search. The first field of the filter panel indicates why the field will sort the list, the field selected in this list will be shown in the first column.
+
 ![Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Reports/Transaction%20Filter.PNG)
 
 Once the filter is selected press the ***Print*** button, this will display a popup with the selected information.
