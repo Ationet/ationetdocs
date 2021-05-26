@@ -302,7 +302,7 @@ Once inside the Favorites page, by clicking on the link in the **Type** column, 
 
 If you want to remove a section from the list of Favorites, click on the icon on the right side with the shape of a cross.
 
-![Favoritos](Content/Includes/AN-HomeBase-UserManal-SP/favoritos.png)
+![Favorites](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Favorites.PNG)
 
 ## Reports
 In ATIONet the reports are considered those lists of information that if or if they are going to be printed and filed in physical format. When they are printed, ATIONet adds a header with the logo of the subscription automatically.
