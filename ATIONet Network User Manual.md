@@ -314,44 +314,46 @@ The information is displayed in a print-ready format, including the subscription
 
 This popup has a print button that when pressed opens the default print window of the Internet browser.
 
-![Drivers](Content/Includes/AN-HomeBase-UserManal-SP/driversReport.png)
+![Drivers](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Reports/Driver.PNG)
 
 ### Transactions
 This report shows the list of transactions made, sorted by date. This report has several filters to adjust the search. The first field of the filter panel indicates why the field will sort the list, the field selected in this list will be shown in the first column.
-![Transactions](Content/Includes/AN-HomeBase-UserManal-SP/transactionReport.png)
+![Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Reports/Transaction%20Filter.PNG)
 
 Once the filter is selected press the ***Print*** button, this will display a popup with the selected information.
 The information is displayed in a print-ready format, including the subscription logo and the date and time of report generation.
 
 This popup has a print button that when pressed opens the default print window of the Internet browser.
 
-![Transactions](Content/Includes/AN-HomeBase-UserManal-SP/transactionReport2.png)
+![Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Reports/Transaction.PNG)
 
 ### Vehicle
 This report shows the list of vehicles. This report has several filters to adjust the search. The first field of the filter panel indicates why the field will sort the list, the field selected in this list will be shown in the first column.
 
-![Vehicles](Content/Includes/AN-HomeBase-UserManal-SP/vehiclesReport.png)
+![Vehicles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Reports/Vehicle%20Filter.PNG)
 
 Once the filter is selected press the ***Print*** button, this will display a popup with the selected information.
 The information is displayed in a print-ready format, including the subscription logo and the date and time the report was generated.
 
 This popup has a print button that when pressed opens the default print window of the Internet browser.
 
-![Vehicles](Content/Includes/AN-HomeBase-UserManal-SP/vehiclesReport2.png)
+![Vehicles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Reports/Vehicle.PNG)
 
 ## Administration
+
 ### Brands
+
 ### Companies
 In ATIONet the term company refers to the entity that owns the fleet. In this section you can see the existing companies with their details and edit them if you want. You can also filter them by name and/or code.
 
-![Compañías](Content/Includes/AN-Network-UserManal-SP/compañias.png)
+![Companies](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Companies.PNG)
 
 ### Companies Groups
 ### Companies Groups – Movements
 ### Drivers
 This view lists drivers who have been discharged. You can filter them by name, ID, company, etc. Also, in the options column to the right, you can choose to assign an ID, edit it, or mark the driver as a favorite.
 
-![Conductores](Content/Includes/AN-Network-UserManal-SP/conductores.png)
+![Drivers](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Drivers.PNG)
 
 ### Fuels
 ### Fuels Masters Groups
@@ -360,11 +362,11 @@ In this section you can consult the created gift cards. You can perform batch ac
 
 To create a new Gift Card, click the **New** button.
 
-![Tarjeta de Regalo](Content/Includes/AN-Network-UserManal-SP/tarjetasDeRegalo.png)
+![Gift Card](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Gift%20Card.PNG)
 
 The fields to fill in to create a new gift card are the following:
 
-![Tarjeta de Regalo](Content/Includes/AN-Network-UserManal-SP/nuevaTarjetaDeRegalo.png)
+![Gift Card New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Gift%20Card%20New.PNG)
 
 * **Program**: The program to which the gift card will be associated.
 * **Contract**: The contract to which the gift card will be associated.
@@ -380,11 +382,11 @@ When you have finished filling in the fields, click the **Save** button.
 ### Gift Cards Request
 In this section, you can consult and request lots of gift cards.
 
-![Tarjetas de Regalo Solicitadas](Content/Includes/AN-Network-UserManal-SP/tarjetasDeRegaloSolicitadas.png)
+![Gift Cards Request](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Gift%20Card%20Request.PNG)
 
 To order a new set of gift cards, click the **New Request** button.
 
-![Tarjetas de Regalo Solicitadas](Content/Includes/AN-Network-UserManal-SP/nuevoTarjetasDeRegaloSolicitadas.png)
+![Gift Cards Request New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Gift%20Card%20Request%20New.PNG)
 
 The fields to complete are the following:
 
@@ -398,7 +400,7 @@ The fields to complete are the following:
 ### Identifications
 The identification is the physical means used by ATIONet to identify a vehicle or driver. ATIONet supports various types of identification, such as card, TAG, chip, ATIONet card, manual entry, barcode and iButton. When an identification is associated to a Vehicle or Driver, a sub-account is created. In this section, the identification already created will be shown. In the options column you can edit the identification, enable or disable it, release it.
 
-![Identifications]()
+![Identifications](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identifications.PNG)
 
 #### Create a new identification
 
@@ -406,7 +408,7 @@ To create a new identification click on the **New** button in the upper left sid
 
 The form to create a new identification receives the following parameters:
 
-![New Identification]()
+![New Identification](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identifications%20New.PNG)
 
 * **Type:** Can be Card, TAG, Chipkey, Manual Entry, ATIOnet Card or ATIOnet TAG.
 * **Model:** The model of the type of identification selected in **Type**.
@@ -425,7 +427,7 @@ Secondly, the form is completed by assigning the identification to a vehicle or 
 ### Identifications Models
 The models of identification vary according to the necessity of the client, they can be of type Card (A magnetic card), TAG, Chipkey or Manual Entry (A code entered by hand).
 
-![Identification Models]()
+![Identification Models](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identifications%20Model.PNG)
 
 #### Create a new identification model
 
@@ -433,7 +435,7 @@ To create a new identificaiton model click on the **New** button located on the 
 
 The form to create a new identification model receives the following parameters:
 
-![New Identification Model]()
+![New Identification Model](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identifications%20Model%20New.PNG)
 
 * **Type:** Can be Card, TAG, Chipkey or Manual Entry type.
 * **Description:** The description of the new identification model.
@@ -452,11 +454,11 @@ When you have finished making the changes click the **Save** button.
 In ATIONet, the fact that a technician places an identifier refers to Installations. 
 In this section you can consult all the installations carried out, listed by Date, Work Order, the identifications placed, the vehicle in which the identification was placed, the deposit from which the identification was removed and the technician who placed it.
 
-![Instalaciones](Content/Includes/AN-HomeBase-UserManal-SP/instalaciones.png)
+![Installations](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Installation.PNG)
 
 To create a new installation, click on the **New** button.
 
-![Instalaciones](Content/Includes/AN-HomeBase-UserManal-SP/nuevoInstalaciones.png)
+![Installation New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Installation%20New.PNG)
 
 The fields you have to fill in are the following:
 
@@ -478,6 +480,7 @@ If you have OBD, more fields will be displayed:
 * **Proportion**: Enter the OBD proportions.
 
 Then, in the Identification section, enter the Identification. When finished, click the **Save** button.
+
 ### Merchants
 In ATIONet the term commerce refers to the company that owns the sites. In this section you can see the existing shops with their details and edit them if you want.
 
