@@ -343,6 +343,23 @@ This popup has a print button that when pressed opens the default print window o
 ## Administration
 
 ### Brands
+In ATIONet the term brands refers to the names for each fuel available. This section lists ATIONet brands created by the Network.
+
+![Brands](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Brands.PNG)
+
+For every Network ATIONet already has a **DEFAULT** brand created with the following fuels:
+
+![Brand DEFAULT](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Brand%20DEFAULT.PNG)
+
+To create a new Brand, click the **New** button:
+
+![Brands New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Brands%20New.PNG)
+
+The fields to complete are the following:
+
+* **Name:** The name of the new brand.
+* **Fuel:** Select the ATIONet Master Fuel you wish to rename.
+* **Fuel Name:** Input the new name for your fuel.
 
 ### Companies
 In ATIONet the term company refers to the entity that owns the fleet. In this section you can see the existing companies with their details and edit them if you want. You can also filter them by name and/or code.
@@ -350,7 +367,60 @@ In ATIONet the term company refers to the entity that owns the fleet. In this se
 ![Companies](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Companies.PNG)
 
 ### Companies Groups
+This section lists all company groups created on the Network. This feature will allow you to group up companies into one.
+
+![Companies Groups](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Companies%20Groups.PNG)
+
+To create a new Company Group, click on the **New** button.
+
+![Companies Groups New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Companies%20Groups%20New.PNG)
+
+The fields to complete are the following:
+
+* **Tax Payer Id:** Input the Company Group Taxpayer identification.
+* **Active:** Checkmark to enable/disable the group company.
+* **Code:** Input the Company Group unique code.
+* **Name:** Input the Company Group name.
+* **Industry:** Select the Company Group industry from the drop down menu.
+* **Type:** Select the Company Group Type (Fleet, GiftCard or Retail).
+* **Street 1:** Input the Company Group primary street.
+* **Street 2:** Input the Company Group secondary street (if applicable).
+* **Zip Code:** Input the Company Group zip code.
+* **City:** Input the Company Group city.
+* **Country:** Input the Company Group country.
+* **State:** Input the Company Group state.
+* **Taxpayer Category:** Select the Company Group taxpayer category (if applicable).
+* **Contact Name:** Input the Company Group contact name.
+* **Contact Email:** Input the Company Group contact email.
+* **Phone Number 1:** Input the Company Group primary phone number.
+* **Phone Number 2:** Input the Company Group secondary phone number (if applicable).
+* **Current Account Mode:** Select the Company Group current account mode.
+* **Currency:** Select the Company Group currency.
+* **Mode:** Select the Company Group Mode (credit or debit).
+* **Limit:** Input the Company Group limit.
+
+<br>
+
+* **Company:** Select the company or companies that are included in the Company Group.
+
 ### Companies Groups – Movements
+This sections lists all movements (deposits, withrawals, completions, etc.) for all the Company Groups of the Network.
+
+![Companies Groups Movements](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Companies%20Groups%20Movements.PNG)
+
+Note that you must first complete the field **Companies Group** and then click on the **Search** button in order to see all their movements.
+
+To create a new movement, click on the **New** button:
+
+![Companies Groups Movements New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Companies%20Groups%20Movements%20New.PNG)
+
+The fields to complete are the following:
+
+* **Description:** Input a short description of the movement.
+* **Companies Group:** Select the Companies Group associated to the movement.
+* **Type:** Select the type of movement (deposit or withrawal).
+* **Ammount:** Input the amount associated to the movement.
+
 ### Drivers
 This view lists drivers who have been discharged. You can filter them by name, ID, company, etc. Also, in the options column to the right, you can choose to assign an ID, edit it, or mark the driver as a favorite.
 
@@ -423,10 +493,8 @@ The form to create a new identification receives the following parameters:
 
 Note that depending on the type of identification, it will ask for certain items. For example, the TAG does not need a PIN. Also, if you select "Fleet" in the program type, it will not ask you to enter a loyalty program.
 
-Secondly, the form is completed by assigning the identification to a vehicle or driver.
-
 ### Identifications Models
-The models of identification vary according to the necessity of the client, they can be of type Card (A magnetic card), TAG, Chipkey or Manual Entry (A code entered by hand).
+The models of identification vary according to the necessity of the client. They can be a Card type (a magnetic card), TAG, Chipkey or Manual Entry (A code entered by hand).
 
 ![Identification Models](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identifications%20Model.PNG)
 
@@ -452,8 +520,9 @@ When you have finished making the changes click the **Save** button.
 
 ### Identifications Providers
 ### Installations
-In ATIONet, the fact that a technician places an identifier refers to Installations. 
-In this section you can consult all the installations carried out, listed by Date, Work Order, the identifications placed, the vehicle in which the identification was placed, the deposit from which the identification was removed and the technician who placed it.
+In ATIONet, the fact that identifier needs to be placed by a technician is known as **Installations**. 
+
+In this section you can consult all the installations carried out, listed by Date, Work Order, the identifications installed, the vehicle in which the identification was installed, the deposit from which the identification was removed and the technician who installed it.
 
 ![Installations](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Installation.PNG)
 
@@ -483,113 +552,107 @@ If you have OBD, more fields will be displayed:
 Then, in the Identification section, enter the Identification. When finished, click the **Save** button.
 
 ### Merchants
-In ATIONet the term commerce refers to the company that owns the sites. In this section you can see the existing shops with their details and edit them if you want.
+In ATIONet the term merchant refers to the company that owns the sites. In this section you can see the existing shops with their details and edit them if you want.
 
-![Comercios](Content/Includes/AN-Network-UserManal-SP/comerciosAdministracion.png)
+![Merhcants](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Merchants.PNG)
 
 ### Notifications
 ### Payment Methods
-Payment methods are the different ways in which you can pay for a purchase: cash, credit card, debit card, gift cards, etc. ATIONet is a tool for a merchant to create their own means of payment: a fuel payment card.
+Payment methods are the different ways in which you can pay for a transaction: cash, credit card, debit card, gift cards, etc. ATIONet is a tool for a merchant to create their own means of payment: a fuel payment card.
 
-![Métodos De Pago Administración](Content/Includes/AN-HomeBase-UserManal-SP/metodosDePagoAdministracion.png)
+![Payment Methods](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Payment%20Methods.PNG)
 
 #### Create a new payment method
 
-To create a new payment method, click on the "New" button in the upper left hand corner.
+To create a new payment method, click on the **New** button in the upper left hand corner.
 
 The form to create a new payment method receives the following parameters:
 
-![Nuevo Método De Pago Administración](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoMetodoDePagoAdministracion.png)
+![Payment Method New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Payment%20Methods%20New.PNG)
 
 * **Code:** The code of the new payment method.
 * **Description:** The description of the new payment method.
 
-When you have finished making the changes, click the "Save" button.
+When finished completing all fields, click the **Save** button.
 
+### Quotations
 ### Rack Prices
 
 ### Sites
-The Site represents the service station. A site is assigned the terminal and may also have associated Location rules. This section lists the sites already entered in the system and their characteristics. In the options column you can assign a tax to the site.
+The Site represents the service station. You assing terminals to a site and also it may have associated a location rules. This section lists the sites already entered in the system and their characteristics and you can also create new ones. You can also add taxes to sites directly from the **Options** column
 
-![Sitios Administracion](Content/Includes/AN-HomeBase-UserManal-SP/sitiosAdministracion.png)
+![Sites](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Sites.PNG)
 
 ### SKUs
-Stock Keeping Units (SKUs) are non-combustible products. In this section you can consult the created products, edit them by clicking on the pencil icon in the options column.
+Stock Keeping Units (SKUs) are non-fuel products. In this section you can consult the created SKUs and edit them by clicking on the pencil icon in the options column.
 
-To search more easily, there is the filter panel where you can filter by certain parameters.
+![SKUs](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/SKUs.PNG)
 
-To create a new SKU, click on the "New" button.
+To create a new SKU, click on the **New** button.
 
-![SKUs](Content/Includes/AN-Network-UserManal-SP/skus.png)
+![SKUs New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/SKUs%20New.PNG)
 
 The fields to complete are the following:
-
-![SKUs](Content/Includes/AN-Network-UserManal-SP/nuevoSku1.png)
-![SKUs](Content/Includes/AN-Network-UserManal-SP/nuevoSku2.png)
-![SKUs](Content/Includes/AN-Network-UserManal-SP/nuevoSku3.png)
 
 * **Code**: The SKU code.
 * **Description**: The description of the SKU.
 * **Short Description**: A short description of the SKU.
 * **Ultra Short Description**: A very short description of the SKU.
-
 * **POS Product Type**: Select what type of product it is.
-* **Fuel Product**: Tilde this option if the SKU is a fuel product?
+* **Fuel Product**: Checkmark this option if the SKU is a fuel product.
 * **SKU Category**: Enter the category to which the SKU belongs.
 * **Measurement Unit**: Enter the unit in which the SKU is measured.
-* **Sellable**: Tilde this option if the SKU is sellable.
-* **Weighted**: Tilde this option if the SKU is weighable.
-* **Fractionable**: Tilde this option if the SKU is fractional.
-* **Storeable**: Tilde this option if the SKU is storable.
-* **In consignment**: Tilde this option if the SKU is in consignment.
-
+* **Sellable**: Checkmark this option if the SKU is sellable.
+* **Weightable**: Checkmark this option if the SKU is weighable.
+* **Fractional**: Checkmark this option if the SKU is fractional.
+* **Stockable**: Checkmark this option if the SKU is storable.
+* **Consignment**: Checkmark this option if the SKU is in consignment.
 * **Availability From/To**: Select the dates among which the SKU is available.
-* **Is POS**: Tilde this option if the SKU is sold at the point of sale.
-* **Dry Fleet**: Tilde this option if the SKU is a dry product.
-* **Reward**: Tilde this option if the SKU can be redeemed for reward points.
-* **Service**: Tilde this option if the SKU is a service.
-* **Accumulate Points**: Tilde this option if the SKU accumulates points.
-
+* **Is POS**: Checkmark this option if the SKU is sold at the point of sale.
+* **Dry Fleet**: Checkmark this option if the SKU is a dry product.
+* **Reward**: Checkmark this option if the SKU can be redeemed for reward points.
+* **Service**: Checkmark this option if the SKU is a service.
+* **Loyalty**: Checkmark this option if the SKU accumulates points.
 * **Stock Volume Min/Max Default**: ?
 * **Days of Restock Default**: ?
 * **Restock Default Volume**: ?
 
-Price List.
+Pricebook:
 
 * **Site**: Select the site to which you will charge the SKU price.
 * **Date From**: Select the date on which the SKU goes into effect.
 * **Price**: Indicate the price of the SKU.
 * **Currency**: Select the currency in which the SKU is priced.
 
-Items.
+Items:
 
 * **POS Code Format**: Select the point-of-sale code format.
 * **POS Code**: Enter a point-of-sale code.
 
-When you have finished filling those two fields, click the "Add" button.
+When you have finished filling those two fields, click the **Add** button.
 
-* **Tax**: Enter the SKU tax code.
+* **Taxes**: Enter the SKU tax code.
 
 ### SKUs categories
-In this section you can consult the categories of SKUs (Stock Keeping Units) already created and, if you want, edit them by clicking on the pencil icon in the options column. To make the searches easier, if you have many, you can filter them by searching by code, name and/or short description.
+In this section you can consult the categories of SKUs (Stock Keeping Units) already created and, if you want, edit them by clicking on the pencil icon in the options column.
 
-To create a new SKU, click on the "New" button.
+![SKUs Categories](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/SKUs%20Category.PNG)
 
-![SKUs](Content/Includes/AN-Network-UserManal-SP/categoriasDeSkus.png)
+To create a new SKU, click on the **New** button.
 
-To create a new SKU category, you must fill out the form below:
+![SKUs Categories New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/SKUs%20Category%20New.PNG)
 
-![SKUs](Content/Includes/AN-Network-UserManal-SP/nuevaCategoriaDeSkus.png)
+The fields to complete are the following:
 
 * **Code**: The SKU category code.
 * **Name**: The name of the SKU category.
 * **Short Description**: A short description of the SKU category.
 * **First/Second Parent Category**: For example, if the SKU category was "Camel Cigarettes", the first parent category would be "Tobacco" and the second would be "Cigarettes".
-* **It's POS**: Tilde this option if the SKU category can be purchased at the point of sale.
-* **Dry Fleet**: Tilde this option if the SKU category is dry fleet.
-* **Reward**: Tilde this option if it can be redeemed for loyalty points.
-* **It is Service**: Tilde this option if it is a service.
-* **Accumulate points**: Tilde this option if the purchase of the product accumulates loyalty points. 
+* **Is POS**: Checkmark this option if the SKU category can be purchased at the point of sale.
+* **Dry Fleet**: Checkmark this option if the SKU category is dry fleet.
+* **Reward**: Checkmark this option if it can be redeemed for loyalty points.
+* **Service**: Checkmark this option if it is a service.
+* **Loyalty**: Checkmark this option if the purchase of the product accumulates loyalty points. 
 
 ### Taxes
 The tax table displays:
@@ -600,57 +663,55 @@ The tax table displays:
 * **Date From / Date To:** Range of dates.
 * **Options:** Edit the tax.
 
-![Impuestos Administración](Content/Includes/AN-HomeBase-UserManal-SP/impuestosAdministracion.png)
-To create a new tax, click on the "New" button in the upper left corner.
+![Taxes](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Taxes.PNG)
+
+To create a new tax, click on the **New** button in the upper left corner.
+
+![Taxes New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Taxes%20New.PNG) 
+
 The form to create a new tax receives the following parameters:
 
-![Nuevo Impuesto Administración](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoImpuestoAdministracion.png) 
-
 * **Code:** The code of the new tax.
-* ** Description:** The description of the new tax.
-* **Type:** Type of tax (Can be a fixed tax, a percentage tax or a fixed tax per unit)
+* **Description:** The description of the new tax.
+* **Type:** Type of tax (Can be a fixed tax, a percentual tax or a fixed tax per unit).
 * **Date from:** The date on which the tax takes effect.
-* **Amount:** The amount of the tax (In the case of percentage tax, the percentage)
+* **Amount:** The amount of the tax (In the case of percentual tax, the percentage).
 
-After filling in the fields **Date from** and **Amount** click the high button. 
-When you have finished making the changes, click the "Save" button.
+After filling in the fields **Date from** and **Amount** click the **Add** button. 
+When you have finished making the changes, click the **Save** button.
 
 ### Terminals / Controllers
 ### Users
-In this view you can consult the users of the Network. You can edit them by clicking on the pencil icon in the options column. To enable/disable a user, click on the padlock icon.
+In this view you can consult the users of the Network. You can edit them by clicking on the pencil icon in the options column, enable/disable a user by clicking on the padlock icon and reset the password with the star icon.
 
-To create a new User, click on the "New" button.
+![Users](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Users.PNG)
 
-![Usuarios](Content/Includes/AN-Network-UserManal-SP/usuarios.png)
+To create a new User, click on the **New** button.
+
+![Users New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Users%20New.PNG)
 
 The fields to complete are the following:
 
-![Usuarios](Content/Includes/AN-Network-UserManal-SP/nuevoUsuario.png)
-
-* **Email**: The user's email address.
+* **User Mail**: The user's email address.
 * **Name**: The user's name.
-* **Document**: The user's document.
-* **Street**: The street where the user resides.
+* **Social Security**: The user's document.
+* **Street 1**: The street where the user resides.
 * **Street 2**: Another street of reference, as it can be the one of the corner.
 * **Country**: The user's country.
 * **State**: The state of the user's country.
-* **Postal Code**: The postal code of the locality where the user resides.
-* **Phone 1**: The user's phone.
-* **Phone 2**: The user's other phone if available.
+* **Zip Code**: The postal code of the locality where the user resides.
+* **Phone Number 1**: The user's phone.
+* **Phone Number 2**: The user's other phone if available.
+
+<br>
 
 * **Role**: The role that the new user will assume.
 * **Entity**: The entity assigned to the user.
 
 ### Vehicle
-This view lists the vehicles that have been discharged. Remember that it is not mandatory to load vehicles in order to operate, it is only necessary if you decide to associate the identifiers to vehicles.
+This view lists all vehicles that have been created for the Network. Remember that it is not mandatory to load vehicles in order to operate, it is only necessary if you decide to associate the identifications to vehicles.
 
-This view has the panel of filters to be able to specify more the search. It is necessary to emphasize the filter "Without Identification", selecting this option, will be shown only those vehicles that have not been assigned to an identifier. 
-
-![Vehicles](Content/Includes/AN-Network-UserManal-SP/vehiculos.png)
-
-To see more details of the vehicle, click on the code:
-
-![Vehicles](Content/Includes/AN-HomeBase-UserManal-SP/vehicles2.png)
+![Vehicles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Vehicles.PNG)
 
 ### Vouchers
 ### Warehouses
