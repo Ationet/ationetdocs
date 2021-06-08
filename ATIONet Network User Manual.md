@@ -343,7 +343,7 @@ This popup has a print button that when pressed opens the default print window o
 ## Administration
 
 ### Brands
-In ATIONet the term brands refers to the names for each fuel available. This section lists ATIONet brands created by the Network.
+In ATIONet the term brand refers to the name for each master fuel available in ATIONet. This section lists all brands created in the Network.
 
 ![Brands](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Brands.PNG)
 
