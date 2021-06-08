@@ -265,13 +265,13 @@ The following shows the last 20 completed transactions. It shows the most releva
 
 ### Contract Low Balance Listing
 
-Shows the list of contracts with low balance to trade 4 more days. This calculation is based on usage. The "Days Left" column shows the number of days remaining in the contract based on usage analysis. This number is not exact and may vary if the usage pattern changes.
+Shows the list of contracts with low balance to trade 4 more days. This calculation is based on usage. The **Days Left** column shows the number of days remaining in the contract based on usage analysis. This number is not exact and may vary if the usage pattern changes.
 
 ![Contract Low Balance Listing](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Dashboard/Contract%20Low%20Balance%20Listing.PNG)
 
 ### Sub-Account Low Balance Listing
 
-Shows the list of sub-accounts containing low balance to trade 4 more days. This calculation is made based on the use of each sub account. The "Days Left" column shows the number of days left in the sub-account based on the usage analysis. This number is not exact and may vary if the usage pattern changes.
+Shows the list of sub-accounts containing low balance to trade 4 more days. This calculation is made based on the use of each sub account. The **Days Left** column shows the number of days left in the sub-account based on the usage analysis. This number is not exact and may vary if the usage pattern changes.
 
 ![Sub-Account Low Balance Listing](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Dashboard/Sub-Account%20Low%20Balance%20Listing.PNG)
 
@@ -279,11 +279,11 @@ Shows the list of sub-accounts containing low balance to trade 4 more days. This
 
 This widget shows the activity of the administration of identifications, shows the number of identifications that were modified grouped by state.
 
-1. **Assigned:** The number of identifications that changed to the "Assigned" state.
-2. **Available:** The number of identifications that changed to the "Available" state.
-3. **Cancelled:** The number of identifications that changed to "Cancelled" status.
-4. **Reported:** The number of identifications that changed to "Reported" status.
-5. **Suspended:** The number of identifications that changed to "Suspended" status.
+1. **Assigned:** The number of identifications that changed to the **Assigned** state.
+2. **Available:** The number of identifications that changed to the **Available** state.
+3. **Cancelled:** The number of identifications that changed to **Cancelled** status.
+4. **Reported:** The number of identifications that changed to **Reported** status.
+5. **Suspended:** The number of identifications that changed to **Suspended** status.
 
 ![Last Month Identification Updates](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Dashboard/Last%20Month%20Identification%20Updates.PNG)
 
