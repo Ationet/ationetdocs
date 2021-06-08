@@ -474,7 +474,6 @@ The identification is the physical means used by ATIONet to identify a vehicle o
 ![Identifications](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identifications.PNG)
 
 #### Create a new identification
-
 To create a new identification click on the **New** button in the upper left side.
 
 The form to create a new identification receives the following parameters:
@@ -491,10 +490,10 @@ The form to create a new identification receives the following parameters:
 * **PAN:** Number of between 1 and 19 characters found in the identification. 
 * **PIN:** The PIN of the identification.
 
-Note that depending on the type of identification, it will ask for certain items. For example, the TAG does not need a PIN. Also, if you select "Fleet" in the program type, it will not ask you to enter a loyalty program.
+Note that depending on the identification type, it will ask for certain items. For example, the TAG does not need a PIN. Also, if you select **Fleet** in the program type, it will not ask you to enter a loyalty program.
 
 ### Identifications Models
-The models of identification vary according to the necessity of the client. They can be a Card type (a magnetic card), TAG, Chipkey or Manual Entry (A code entered by hand).
+The models of identification vary according to the necessity of the client. They can be a Card type (a magnetic card), TAG, Chipkey or Manual Entry (a code entered by hand).
 
 ![Identification Models](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identifications%20Model.PNG)
 
@@ -519,6 +518,24 @@ The form to create a new identification model receives the following parameters:
 When you have finished making the changes click the **Save** button.
 
 ### Identifications Providers
+In this section you can upload any provider you wish to send your identifications to production. You will first have a list of all providers created for the Network.
+
+![Identification Providers](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identification%20Provider.PNG)
+
+To create a new provider, click the **New** button.
+
+![Identification Providers New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identification%20Provider%20New.PNG)
+
+The fields to complete are the following:
+
+* **Name:** Input the providers name.
+* **Email:** Input the providers contact email
+* **E-mail Template:** Input the email body you wish to send to your provider.
+
+<br>
+
+* **File Settings For Export:** Select the format you wish to send the identification information to your provider. You can either send it as Excel, CSV or Text. You can also select what information to send on the file (First Name, Last Name, Card Number, Track Number, etc.).
+
 ### Installations
 In ATIONet, the fact that identifier needs to be placed by a technician is known as **Installations**. 
 
