@@ -419,7 +419,7 @@ The fields to complete are the following:
 * **Description:** Input a short description of the movement.
 * **Companies Group:** Select the Companies Group associated to the movement.
 * **Type:** Select the type of movement (deposit or withrawal).
-* **Ammount:** Input the amount associated to the movement.
+* **Amount:** Input the amount associated to the movement.
 
 ### Drivers
 This view lists drivers who have been discharged. You can filter them by name, ID, company, etc. Also, in the options column to the right, you can choose to assign an ID, edit it, or mark the driver as a favorite.
