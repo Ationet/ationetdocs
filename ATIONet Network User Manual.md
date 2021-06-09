@@ -427,7 +427,33 @@ This view lists drivers who have been discharged. You can filter them by name, I
 ![Drivers](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Drivers.PNG)
 
 ### Fuels
+This view lists fuel mappings and their respected code for all sites that have **Required Fuel Mapping** option enabled (for more info on fuel mapping click [here](#sites)). To make queries easier there is a panel of filters at the top.
+
+![Fuels](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Fuels.PNG)
+
+To create new fuel mapping, click the **New** button.
+
+![Fuels New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Fuels%20New.PNG)
+
+* **Site:** Select the site associated to the fuel mapping.
+* **Fuels Masters:** Select the master fuel associated to the fuel mapping.
+* **Code:** Input the code associated to the fuel mapping.
+
 ### Fuels Masters Groups
+This view lists all fuel groups created. This option enables the possibility to group up several master fuels into one.
+
+![Fuel Masters Groups](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Fuels%20Masters%20Groups.PNG)
+
+To create a new group, click the **New** button.
+
+![Fuels Masters Groups New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Fuels%20Masters%20Groups%20New.PNG)
+
+* **Code:** Input the fuels masters group code.
+* **Name:** Input the name of the fuels masters group.
+* **Description:** Input a description for the fuels masters group.
+* **Fuel:** Select all fuels associated to the fuels masters group.
+* **CO2 Emission Coefficient:**
+
 ### Gift Card
 In this section you can consult the created gift cards. You can perform batch actions such as activating or deactivating them. To make queries easier there is a panel of filters at the top.
 
@@ -488,9 +514,7 @@ The form to create a new identification receives the following parameters:
 * **Label:** The name on the card (e.g. Pablo Pérez)
 * **Track:** The track is the information that has the identification engraved inside it. It is divided into three parts. In this field you can edit what the second field of the track contains. 
 * **PAN:** Number of between 1 and 19 characters found in the identification. 
-* **PIN:** The PIN of the identification.
-
-Note that depending on the identification type, it will ask for certain items. For example, the TAG does not need a PIN. Also, if you select **Fleet** in the program type, it will not ask you to enter a loyalty program.
+* **PIN:** The PIN of the identification (this option will only be available if the identification model has the **PIN** option enabled.
 
 ### Identifications Models
 The models of identification vary according to the necessity of the client. They can be a Card type (a magnetic card), TAG, Chipkey or Manual Entry (a code entered by hand).
@@ -569,11 +593,13 @@ If you have OBD, more fields will be displayed:
 Then, in the Identification section, enter the Identification. When finished, click the **Save** button.
 
 ### Merchants
-In ATIONet the term merchant refers to the company that owns the sites. In this section you can see the existing shops with their details and edit them if you want.
+In ATIONet the term merchant refers to the company that owns the sites. In this section you can view, create and edit all merchants within the Network.
 
 ![Merhcants](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Merchants.PNG)
 
 ### Notifications
+
+
 ### Payment Methods
 Payment methods are the different ways in which you can pay for a transaction: cash, credit card, debit card, gift cards, etc. ATIONet is a tool for a merchant to create their own means of payment: a fuel payment card.
 
