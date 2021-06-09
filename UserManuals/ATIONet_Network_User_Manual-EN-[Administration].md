@@ -26,7 +26,7 @@
 	- [Taxes](#taxes)
 	- [Terminals / Controllers](#terminals--controllers)
 	- [Users](#users)
-	- [Vehicle](#vehicle-2)
+	- [Vehicle](#vehicle)
 	- [Vouchers](#vouchers)
 	- [Warehouses](#warehouses)
 	- [Zones](#zones)
