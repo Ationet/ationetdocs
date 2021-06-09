@@ -305,7 +305,7 @@ If you want to remove a section from the list of Favorites, click on the icon on
 ![Favorites](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Favorites.PNG)
 
 ## Reports
-In ATIONet the reports are considered those lists of information that if or if they are going to be printed and filed in physical format. When they are printed, ATIONet adds a header with the logo of the subscription automatically.
+In ATIONet the reports are considered those lists of information that are going to be printed and filed in physical format. When they are printed, ATIONet adds a header with the logo of the subscription automatically.
 
 ### Driver
 The Driver report can be filtered by driver name/code or by identification.
@@ -341,6 +341,7 @@ This popup has a print button that when pressed opens the default print window o
 ![Vehicles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Reports/Vehicle.PNG)
 
 ## Administration
+In this module you can create and edit Companies, Merchants, Sites, Identifications, Payment Methods and Users among other things.
 
 ### Brands
 In ATIONet the term brand refers to the name for each master fuel available in ATIONet. This section lists all brands created in the Network.
@@ -365,6 +366,30 @@ The fields to complete are the following:
 In ATIONet the term company refers to the entity that owns the fleet. In this section you can see the existing companies with their details and edit them if you want. You can also filter them by name and/or code.
 
 ![Companies](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Companies.PNG)
+
+To create a Company, click the **New** button.
+
+![Companies New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Companies%20New.PNG)
+
+The fields to complete are the following:
+
+* **Tax Payer Id:** Input the company taxpayer identification.
+* **Active:** Checkmark to enable/disable the group company.
+* **Code:** Input the company unique code.
+* **Name:** Input the company name.
+* **Automatically Generated:** Checkmark this option to have the **code** automatically generated.
+* **Industry:** Select the industry associated to the company.
+* **Street 1:** Input the company primary street.
+* **Street 2:** Input the company secondary street (if applicable).
+* **Zip Code:** Input the company zip code.
+* **City:** Input the company city.
+* **Country:** Input the company country.
+* **State:** Input the company state.
+* **Taxpayer Category:** Select the company taxpayer category (if applicable).
+* **Contact Name:** Input the company contact name.
+* **Contact Email:** Input the company contact email.
+* **Phone Number 1:** Input the company primary phone number.
+* **Phone Number 2:** Input the company secondary phone number (if applicable).
 
 ### Companies Groups
 This section lists all company groups created on the Network. This feature will allow you to group up companies into one.
@@ -452,7 +477,7 @@ To create a new group, click the **New** button.
 * **Name:** Input the name of the fuels masters group.
 * **Description:** Input a description for the fuels masters group.
 * **Fuel:** Select all fuels associated to the fuels masters group.
-* **CO2 Emission Coefficient:**
+* **CO2 Emission Coefficient:** Input the coefficient for the CO2 emission of all fuels in the group.
 
 ### Gift Card
 In this section you can consult the created gift cards. You can perform batch actions such as activating or deactivating them. To make queries easier there is a panel of filters at the top.
@@ -511,9 +536,9 @@ The form to create a new identification receives the following parameters:
 * **Type of use:** Can be fleet, loyalty or dual.
 * **Program:** The program to which this identification will be assigned.
 * **Loyalty program:** The loyalty program to which this identifier will be assigned.
-* **Label:** The name on the card (e.g. Pablo Pérez)
-* **Track:** The track is the information that has the identification engraved inside it. It is divided into three parts. In this field you can edit what the second field of the track contains. 
-* **PAN:** Number of between 1 and 19 characters found in the identification. 
+* **Label:** The name on the card (for example Pablo Pérez)
+* **Track:** The track is the information that has the identification engraved inside it. It is divided into three parts. In this field you can edit what the second field of the track contains.
+* **PAN:** A number between 1 and 19 characters found in the identification. 
 * **PIN:** The PIN of the identification (this option will only be available if the identification model has the **PIN** option enabled.
 
 ### Identifications Models
@@ -597,8 +622,63 @@ In ATIONet the term merchant refers to the company that owns the sites. In this 
 
 ![Merhcants](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Merchants.PNG)
 
-### Notifications
+To create a new merchant, click the **New** button.
 
+![Merchants New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Merchants%20New.PNG)
+
+The fields to complete are the following:
+
+* **Tax Payer Id:** Input the company taxpayer identification.
+* **Active:** Checkmark to enable/disable the group company.
+* **Code:** Input the company unique code.
+* **Name:** Input the company name.
+* **Automatically Generated:** Checkmark this option to have the **code** automatically generated.
+* **Street 1:** Input the company primary street.
+* **Street 2:** Input the company secondary street (if applicable).
+* **Zip Code:** Input the company zip code.
+* **City:** Input the company city.
+* **Country:** Input the company country.
+* **State:** Input the company state.
+* **Contact Name:** Input the company contact name.
+* **Contact Email:** Input the company contact email.
+* **Phone Number 1:** Input the company primary phone number.
+* **Phone Number 2:** Input the company secondary phone number (if applicable).
+
+When finished, click the **Save** button.
+
+### Notifications
+In this section each user can select their own notifications to be received either by email or sms.
+
+![Notifications](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notification.PNG)
+
+1. ***Inventory***
+   * **New Delivery notification:**
+   * **Inventorty low notification:**
+   * **Water volume notificationalert:**
+2. ***Contract***
+   * **Contract balance low notification:**
+   * **Contract balance empty notification:**
+   * **Percent Credit Notification:**
+   * **Low amount balance:**
+   * **Company Contract Deposit:**
+ 3. ***Identification***
+   * **Identifications in risk of expiration notification:**
+ 4. ***Loyalty***
+   * **New loyalty account notification:**
+   * **Loyalty points accumulation notification:**
+   * **Notification loyalty exceptions:**
+ 5. ***Billing***
+   * **Billing process notification:**
+   * **Merchant Charges:**
+   * **External Charges:**
+ 6. ***Transactions***
+   * **New contingency transaction notification:**
+   * **Transaction to review notification:**
+   * **Fuel Out Exception:**
+   * **Transaction Exception:**
+   * **Incorrect PIN:**
+   * **Transaction Rejected:**
+   * **Disputed Transactions:**
 
 ### Payment Methods
 Payment methods are the different ways in which you can pay for a transaction: cash, credit card, debit card, gift cards, etc. ATIONet is a tool for a merchant to create their own means of payment: a fuel payment card.
