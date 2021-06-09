@@ -3,18 +3,18 @@
 # Contents
 
 - [DashBoard](#dashboard)
-		- [Health Status](#health-status)
-		- [Units/Months](#unitsmonths)
-		- [Today’s Transactions](#todays-transactions)
-		- [List of Outstanding Pre-Authorizations](#list-of-outstanding-pre-authorizations)
-		- [Flagged Transactions Current Month](#flagged-transactions-current-month)
-		- [Contracts Without Activity](list-of-outstanding-pre-authorizations)
-		- [Sub-Accounts with Exceptions](#sub-accounts-with-exceptions)
-		- [Recent Transactions](#recent-transactions)
-		- [Contract Low Balance Listing](#contract-low-balance-listing)
-		- [Sub-Account Low Balance Listing](#sub-account-low-balance-listing)
-		- [Last Month Identification Updates](#last-month-identification-updates)
-		- [Terminal status](#terminal-status)
+	- [Health Status](#health-status)
+	- [Units/Months](#unitsmonths)
+	- [Today’s Transactions](#todays-transactions)
+	- [List of Outstanding Pre-Authorizations](#list-of-outstanding-pre-authorizations)
+	- [Flagged Transactions Current Month](#flagged-transactions-current-month)
+	- [Contracts Without Activity](list-of-outstanding-pre-authorizations)
+	- [Sub-Accounts with Exceptions](#sub-accounts-with-exceptions)
+	- [Recent Transactions](#recent-transactions)
+	- [Contract Low Balance Listing](#contract-low-balance-listing)
+	- [Sub-Account Low Balance Listing](#sub-account-low-balance-listing)
+	- [Last Month Identification Updates](#last-month-identification-updates)
+	- [Terminal status](#terminal-status)
 
 # Dashboard
 
