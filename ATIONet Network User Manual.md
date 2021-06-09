@@ -661,17 +661,17 @@ In this section each user can select their own notifications to be received eith
    * **Percent Credit Notification:** Get a notification when a percent credit is reached (click on the pencil to configure the percent).
    * **Low amount balance:** Get a notification when a balance amount is reached (click on the pencil to configure the amount).
    * **Company Contract Deposit:** Get a notification when a deposit to a contract is detected.
- 3. ***Identification***
+3. ***Identification***
    * **Identifications in risk of expiration notification:** Get a notification when an identification is about to expire.
- 4. ***Loyalty***
+4. ***Loyalty***
    * **New loyalty account notification:** Get a notification when a new loyalty program was detected.
    * **Loyalty points accumulation notification:** Get a notification when an accumulation was detected.
    * **Notification loyalty exceptions:** Get a notification when a exception was detected.
- 5. ***Billing***
+5. ***Billing***
    * **Billing process notification:** Get a notification when a bulling process was detected.
    * **Merchant Charges:** Get a notification when merchant charges were detected.
    * **External Charges:** Get a notification when external charges were detected.
- 6. ***Transactions***
+6. ***Transactions***
    * **New contingency transaction notification:** Get a notification when a new contingency was detected.
    * **Transaction to review notification:** Get a notification when an exception marked to be reviwed was detected.
    * **Fuel Out Exception:** Get a notification when an exception for fuel out was detected.
@@ -683,7 +683,7 @@ In this section each user can select their own notifications to be received eith
 #### Company Notifications
 In this section company users can configure their own notifications (inside their company profiles in ATIONet).
 
-![Notification Company)(https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notification%20Company.PNG)
+![Notification Company](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notification%20Company.PNG)
 
 1. ***Contract***
    * **Contract balance low notification:** Get a notification when a contract balance is low.
