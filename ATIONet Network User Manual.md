@@ -652,33 +652,56 @@ In this section each user can select their own notifications to be received eith
 ![Notifications](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notification.PNG)
 
 1. ***Inventory***
-   * **New Delivery notification:**
-   * **Inventorty low notification:**
-   * **Water volume notificationalert:**
+   * **New Delivery notification:** Get a notification for each delivery detected.
+   * **Inventorty low notification:** Get a notification when the inventory is low.
+   * **Water volume notification alert:** Get a notification when the water is low.
 2. ***Contract***
-   * **Contract balance low notification:**
-   * **Contract balance empty notification:**
-   * **Percent Credit Notification:**
-   * **Low amount balance:**
-   * **Company Contract Deposit:**
+   * **Contract balance low notification:** Get a notification when a contract balance is low.
+   * **Contract balance empty notification:** Get a notification when a contract has no balance.
+   * **Percent Credit Notification:** Get a notification when a percent credit is reached (click on the pencil to configure the percent).
+   * **Low amount balance:** Get a notification when a balance amount is reached (click on the pencil to configure the amount).
+   * **Company Contract Deposit:** Get a notification when a deposit to a contract is detected.
  3. ***Identification***
-   * **Identifications in risk of expiration notification:**
+   * **Identifications in risk of expiration notification:** Get a notification when an identification is about to expire.
  4. ***Loyalty***
-   * **New loyalty account notification:**
-   * **Loyalty points accumulation notification:**
-   * **Notification loyalty exceptions:**
+   * **New loyalty account notification:** Get a notification when a new loyalty program was detected.
+   * **Loyalty points accumulation notification:** Get a notification when an accumulation was detected.
+   * **Notification loyalty exceptions:** Get a notification when a exception was detected.
  5. ***Billing***
-   * **Billing process notification:**
-   * **Merchant Charges:**
-   * **External Charges:**
+   * **Billing process notification:** Get a notification when a bulling process was detected.
+   * **Merchant Charges:** Get a notification when merchant charges were detected.
+   * **External Charges:** Get a notification when external charges were detected.
  6. ***Transactions***
-   * **New contingency transaction notification:**
-   * **Transaction to review notification:**
-   * **Fuel Out Exception:**
-   * **Transaction Exception:**
-   * **Incorrect PIN:**
-   * **Transaction Rejected:**
-   * **Disputed Transactions:**
+   * **New contingency transaction notification:** Get a notification when a new contingency was detected.
+   * **Transaction to review notification:** Get a notification when an exception marked to be reviwed was detected.
+   * **Fuel Out Exception:** Get a notification when an exception for fuel out was detected.
+   * **Transaction Exception:** Get a notification when an exception is detected.
+   * **Incorrect PIN:** Get a notification when a rejected transaction for incorrect PIN was detected.
+   * **Transaction Rejected:** Get a notification when a rejected transaction was detected.
+   * **Disputed Transactions:** Get a notification when a disputed transaction was detected.
+
+#### Company Notifications
+In this section company users can configure their own notifications (inside their company profiles in ATIONet).
+
+![Notification Company)(https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notification%20Company.PNG)
+
+1. ***Contract***
+   * **Contract balance low notification:** Get a notification when a contract balance is low.
+   * **Contract balance empty notification:** Get a notification when a contract has no balance.
+   * **Percent Credit Notification:** Get a notification when a percent credit is reached (click on the pencil to configure the percent).
+   * **Low amount balance:** Get a notification when a balance amount is reached (click on the pencil to configure the amount).
+   * **Company Contract Deposit:** Get a notification when a deposit to a contract is detected.
+2. ***Billing***
+   * **External Charges:** Get a notification when external charges were detected.
+3. ***Transactions***
+   * **Transaction Exception:** Get a notification when an exception is detected.
+   * **Non-Blocking Rules Authorization:** Get a notification when a non-blocking rule authorization was detected.
+   * **Identification Enabled/Disabled:** Get a notification when an identification was enabled/disabled.
+   * **Requested Identifications:** Get a notification when an identification request was detected.
+   * **Transaction Rejected:** Get a notification when a rejected transaction was detected.
+   * **Disputed Transactions:** Get a notification when a disputed transaction was detected.
+4. ***Fleet***
+   * **Vehicle Odometer Limit:** Get a notification when a vehicle odometer is reached (click the **Vehicle List** button to configure the odometer and select the vehicle associated to the notification). 
 
 ### Payment Methods
 Payment methods are the different ways in which you can pay for a transaction: cash, credit card, debit card, gift cards, etc. ATIONet is a tool for a merchant to create their own means of payment: a fuel payment card.
