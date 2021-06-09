@@ -19,6 +19,7 @@
 	- [Merchants](#merchants)
 	- [Notifications](#notifications)
 	- [Payment Methods](#payment-methods)
+	- [Quotations](#quotations)
 	- [Rack Prices](#rack-prices)
 	- [Sites](#sites)
 	- [SKUs](#skus)
