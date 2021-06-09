@@ -47,7 +47,7 @@
 		- [Transactions](#transactions)
 		- [Vehicle](#vehicle-1)
 	- [Administration](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administration.md)
-		- [Brands](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN/Administration.md#brands)
+		- [Brands](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administration.md#brands)
 		- [Companies](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administration.md#companies)
 		- [Companies Groups](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administration.md#companies-groups)
 		- [Companies Groups – Movements](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administration.md#companies-groups--movements)
