@@ -32,10 +32,10 @@
 	- [Warehouses](#warehouses)
 	- [Zones](#zones)
 
-## Administration
+# Administration
 In this module you can create and edit Companies, Merchants, Sites, Identifications, Payment Methods and Users among other things.
 
-### Brands
+## Brands
 In ATIONet the term brand refers to the name for each master fuel available in ATIONet. This section lists all brands created in the Network.
 
 ![Brands](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Brands.PNG)
@@ -54,7 +54,7 @@ The fields to complete are the following:
 * **Fuel:** Select the ATIONet Master Fuel you wish to rename.
 * **Fuel Name:** Input the new name for your fuel.
 
-### Companies
+## Companies
 In ATIONet the term company refers to the entity that owns the fleet. In this section you can see the existing companies with their details and edit them if you want. You can also filter them by name and/or code.
 
 ![Companies](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Companies.PNG)
@@ -83,7 +83,7 @@ The fields to complete are the following:
 * **Phone Number 1:** Input the company primary phone number.
 * **Phone Number 2:** Input the company secondary phone number (if applicable).
 
-### Companies Groups
+## Companies Groups
 This section lists all company groups created on the Network. This feature will allow you to group up companies into one.
 
 ![Companies Groups](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Companies%20Groups.PNG)
@@ -120,7 +120,7 @@ The fields to complete are the following:
 
 * **Company:** Select the company or companies that are included in the Company Group.
 
-### Companies Groups – Movements
+## Companies Groups – Movements
 This sections lists all movements (deposits, withrawals, completions, etc.) for all the Company Groups of the Network.
 
 ![Companies Groups Movements](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Companies%20Groups%20Movements.PNG)
@@ -138,12 +138,12 @@ The fields to complete are the following:
 * **Type:** Select the type of movement (deposit or withrawal).
 * **Amount:** Input the amount associated to the movement.
 
-### Drivers
+## Drivers
 This view lists drivers who have been discharged. You can filter them by name, ID, company, etc. Also, in the options column to the right, you can choose to assign an ID, edit it, or mark the driver as a favorite.
 
 ![Drivers](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Drivers.PNG)
 
-### Fuels
+## Fuels
 This view lists fuel mappings and their respected code for all sites that have **Required Fuel Mapping** option enabled (for more info on fuel mapping click [here](#sites)). To make queries easier there is a panel of filters at the top.
 
 ![Fuels](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Fuels.PNG)
@@ -156,7 +156,7 @@ To create new fuel mapping, click the **New** button.
 * **Fuels Masters:** Select the master fuel associated to the fuel mapping.
 * **Code:** Input the code associated to the fuel mapping.
 
-### Fuels Masters Groups
+## Fuels Masters Groups
 This view lists all fuel groups created. This option enables the possibility to group up several master fuels into one.
 
 ![Fuel Masters Groups](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Fuels%20Masters%20Groups.PNG)
@@ -171,7 +171,7 @@ To create a new group, click the **New** button.
 * **Fuel:** Select all fuels associated to the fuels masters group.
 * **CO2 Emission Coefficient:** Input the coefficient for the CO2 emission of all fuels in the group.
 
-### Gift Card
+## Gift Card
 In this section you can consult the created gift cards. You can perform batch actions such as activating or deactivating them. To make queries easier there is a panel of filters at the top.
 
 To create a new Gift Card, click the **New** button.
@@ -193,7 +193,7 @@ The fields to fill in to create a new gift card are the following:
 
 When you have finished filling in the fields, click the **Save** button.
 
-### Gift Cards Request
+## Gift Cards Request
 In this section, you can consult and request lots of gift cards.
 
 ![Gift Cards Request](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Gift%20Card%20Request.PNG)
@@ -211,12 +211,12 @@ The fields to complete are the following:
 * **Type**: Select the type. It can be Card, TAG, Chipkey, Manual Entry, ATIONet Card or ATIONet TAG.
 * **Model**: Select the model. It can be ATIONet CG, Card or Gift Card.
 
-### Identifications
+## Identifications
 The identification is the physical means used by ATIONet to identify a vehicle or driver. ATIONet supports various types of identification, such as card, TAG, chip, ATIONet card, manual entry, barcode and iButton. When an identification is associated to a Vehicle or Driver, a sub-account is created. In this section, the identification already created will be shown. In the options column you can edit the identification, enable or disable it, release it.
 
 ![Identifications](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identifications.PNG)
 
-#### Create a new identification
+### Create a new identification
 To create a new identification click on the **New** button in the upper left side.
 
 The form to create a new identification receives the following parameters:
@@ -233,12 +233,12 @@ The form to create a new identification receives the following parameters:
 * **PAN:** A number between 1 and 19 characters found in the identification. 
 * **PIN:** The PIN of the identification (this option will only be available if the identification model has the **PIN** option enabled.
 
-### Identifications Models
+## Identifications Models
 The models of identification vary according to the necessity of the client. They can be a Card type (a magnetic card), TAG, Chipkey or Manual Entry (a code entered by hand).
 
 ![Identification Models](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identifications%20Model.PNG)
 
-#### Create a new identification model
+### Create a new identification model
 
 To create a new identificaiton model click on the **New** button located on the upper left side.
 
@@ -258,7 +258,7 @@ The form to create a new identification model receives the following parameters:
 
 When you have finished making the changes click the **Save** button.
 
-### Identifications Providers
+## Identifications Providers
 In this section you can upload any provider you wish to send your identifications to production. You will first have a list of all providers created for the Network.
 
 ![Identification Providers](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identification%20Provider.PNG)
@@ -277,7 +277,7 @@ The fields to complete are the following:
 
 * **File Settings For Export:** Select the format you wish to send the identification information to your provider. You can either send it as Excel, CSV or Text. You can also select what information to send on the file (First Name, Last Name, Card Number, Track Number, etc.).
 
-### Installations
+## Installations
 In ATIONet, the fact that identifier needs to be placed by a technician is known as **Installations**. 
 
 In this section you can consult all the installations carried out, listed by Date, Work Order, the identifications installed, the vehicle in which the identification was installed, the deposit from which the identification was removed and the technician who installed it.
@@ -309,7 +309,7 @@ If you have OBD, more fields will be displayed:
 
 Then, in the Identification section, enter the Identification. When finished, click the **Save** button.
 
-### Merchants
+## Merchants
 In ATIONet the term merchant refers to the company that owns the sites. In this section you can view, create and edit all merchants within the Network.
 
 ![Merhcants](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Merchants.PNG)
@@ -338,7 +338,7 @@ The fields to complete are the following:
 
 When finished, click the **Save** button.
 
-### Notifications
+## Notifications
 In this section each user can select their own notifications to be received either by email or sms.
 
 ![Notifications](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notification.PNG)
@@ -372,7 +372,7 @@ In this section each user can select their own notifications to be received eith
    * **Transaction Rejected:** Get a notification when a rejected transaction was detected.
    * **Disputed Transactions:** Get a notification when a disputed transaction was detected.
 
-#### Company Notifications
+### Company Notifications
 In this section company users can configure their own notifications (inside their company profiles in ATIONet).
 
 ![Notification Company](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notification%20Company.PNG)
@@ -395,7 +395,7 @@ In this section company users can configure their own notifications (inside thei
 4. ***Fleet***
    * **Vehicle Odometer Limit:** Get a notification when a vehicle odometer is reached (click the **Vehicle List** button to configure the odometer and select the vehicle associated to the notification). 
 
-### Payment Methods
+## Payment Methods
 Payment methods are the different ways in which you can pay for a transaction: cash, credit card, debit card, gift cards, etc. ATIONet is a tool for a merchant to create their own means of payment: a fuel payment card.
 
 ![Payment Methods](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Payment%20Methods.PNG)
@@ -411,9 +411,9 @@ The form to create a new payment method receives the following parameters:
 
 When finished completing all fields, click the **Save** button.
 
-### Quotations
+## Quotations
 
-### Rack Prices
+## Rack Prices
 In this section you can view all rack prices generated by the Network. Rack prices are used when a company contract has no prices configured (that is if the option is enables inside the contract configuration).
 
 ![Rack Prices](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Rack%20Prices.PNG)
@@ -428,7 +428,7 @@ To create a new rack price, click the **New** button.
 
 When finished completing all fields, click the **Save** button.
 
-### Sites
+## Sites
 The Site represents the service station. You assign terminals to a site and also it may have associated a location rules. This section lists the sites already entered in the system and their characteristics and you can also create new ones. You can also add taxes to sites directly from the **Options** column
 
 ![Sites](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Sites.PNG)
@@ -466,7 +466,7 @@ To create a site, click the **New** button.
 * **Inventory Low Notification:** Input the low inventory amount. When reached, contacts in **recipient emails** will receive a notification.
 * **Water Volume Notification Alert:** Input the low water volume. When reached, contacts in **recipient emails** will receive a notification.
 
-### SKUs
+## SKUs
 Stock Keeping Units (SKUs) are non-fuel products. In this section you can consult the created SKUs and edit them by clicking on the pencil icon in the options column.
 
 ![SKUs](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/SKUs.PNG)
@@ -513,7 +513,7 @@ When you have finished filling those two fields, click the **Add** button.
 
 * **Taxes**: Enter the SKU tax code.
 
-### SKUs categories
+## SKUs categories
 In this section you can consult the categories of SKUs (Stock Keeping Units) already created and, if you want, edit them by clicking on the pencil icon in the options column.
 
 ![SKUs Categories](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/SKUs%20Category.PNG)
@@ -534,7 +534,7 @@ The fields to complete are the following:
 * **Service**: Checkmark this option if it is a service.
 * **Loyalty**: Checkmark this option if the purchase of the product accumulates loyalty points. 
 
-### Taxes
+## Taxes
 The tax table displays:
 * **Code:** Tax Code.
 * **Description:** Tax description.
@@ -561,7 +561,7 @@ After filling in the fields **Date from** and **Amount** click the **Add** butto
 
 When you have finished making the changes, click the **Save** button.
 
-### Terminals / Controllers
+## Terminals / Controllers
 Inside this section you can view, create and edit all terminals/controllers. The terminal is the point of sale of the site and the controller manages the pumps.
 
 ![Terminals](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Terminals.PNG)
@@ -587,7 +587,7 @@ To create a Terminal/Controller, click the **New** button.
 
 When finished completing all fields, click the **Save** button.
 
-### Users
+## Users
 In this view you can consult the users of the Network. You can edit them by clicking on the pencil icon in the options column, enable/disable a user by clicking on the padlock icon and reset the password with the star icon.
 
 ![Users](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Users.PNG)
@@ -614,7 +614,7 @@ The fields to complete are the following:
 * **Role**: The role that the new user will assume.
 * **Entity**: The entity assigned to the user.
 
-### Vehicle
+## Vehicle
 This view lists all vehicles that have been created for the Network. Remember that it is not mandatory to load vehicles in order to operate, it is only necessary if you decide to associate the identifications to vehicles.
 
 ![Vehicles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Vehicles.PNG)
@@ -625,12 +625,12 @@ Under the **Options** column you can
 * **Renew Identification:** Renew the identification associated to the vehicle.
 * **Favorites:** Add the vehicle to the **favorites** module.
 
-### Vouchers
+## Vouchers
 This view lists all vouchers created by companies.
 
 ![Vouchers](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Vouchers.PNG)
 
-### Warehouses
+## Warehouses
 In this section you can create/edit warehouses. Warehouses is where installed identifications are stored.
 
 ![Warehouses](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Warehouses.PNG)
@@ -639,7 +639,7 @@ To create a Warehouse, click the **New** button.
 
 ![Warehouses New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Warehouses%20New.PNG)
 
-### Zones
+## Zones
 In this section you can create/edit zones. Zones is an area where several sites are associated to it. Generally a Territory Manager is associated to specicif zone(s).
 
 ![Zones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Zones.PNG)
