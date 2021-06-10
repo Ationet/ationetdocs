@@ -294,6 +294,9 @@ Once the general information is completed, you have different tabs to configure:
 ![Company Contracts New - Concepts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Concepts.PNG)
 	
 7. **Documents:** Upload any document associated to the contract (for example: a pdf of the actual physical contract).
+
+![Company Contracts New - Documents](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Documents.PNG)
+
 8. **Blocks:** Configure the blocks associated to the contract
 
 ![Company Contracts New - Blocks](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Blocks.PNG)
