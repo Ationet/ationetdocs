@@ -204,7 +204,7 @@ In ATIONet the term company refers to the entity that manages the fleet. In this
 
 To make queries easier there filter option on the top. You can filter by code, company, mode (credit or debit), description, etc.
 
-To create a company, click the **New** button.
+To create a company contract, click the **New** button.
 
 ![Company Contracts New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New.PNG)
 
