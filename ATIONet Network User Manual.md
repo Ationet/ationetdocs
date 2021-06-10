@@ -237,162 +237,168 @@ Once the general information is completed, you have different tabs to configure:
 
 ![Company Contract New - Fuels](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Fuels.PNG)
 
-3. **Sites:** Select the sites associated to the contract.
+2. **Sites:** Select the sites associated to the contract.
 
 ![Company Contract New - Sites](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Sites.PNG)
 
-5. **Prices:** Configure prices associated to the contract.
-	* **Fuel:** Select the fuel associated to the price.
-	* **Value:** Input the price value.
-	* **Site:** Select the site associated to the price.
-	* **Date From:** Input the starting date of the price.
-	* **Time From:** Input the starting time of the price.
-	* **Date To:**  Input the ending date of the price.
-	* **Time To:** Input the ending time of the price.
+3. **Prices:** Configure prices associated to the contract.
+	* ***Fuel:*** Select the fuel associated to the price.
+	* ***Value:*** Input the price value.
+	* ***Site:*** Select the site associated to the price.
+	* ***Date From:*** Input the starting date of the price.
+	* ***Time From:*** Input the starting time of the price.
+	* ***Date To:***  Input the ending date of the price.
+	* ***Time To:*** Input the ending time of the price.
 
 ![Company Contract New - Prices](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Prices.PNG)
 
-7. **Modifiers:** Configure modifiers associated to the contract.
-	* **Description:** Input the modifier description.
-	* **Class:** Select the modifier class (Discount or Recharge).
-	* **Type:** Select the modifier type (Percentual, Fixed per Transaction or Fixed per Unit).
-	* **Value:** Input the modifier value.
-	* **Fuel:** Select the fuel associated to the modifier.
-	* **Site:** Select the site associated to the modifier.
-	* **Date From:** Input the starting date of the modifier.
-	* **Time From:** Input the starting time of the modifier.
-	* **Date To:**  Input the ending date of the modifier.
-	* **Time To:** Input the ending time of the modifier.
+4. **Modifiers:** Configure modifiers associated to the contract.
+	* ***Description:*** Input the modifier description.
+	* ***Class:*** Select the modifier class (Discount or Recharge).
+	* ***Type:*** Select the modifier type (Percentual, Fixed per Transaction or Fixed per Unit).
+	* ***Value:*** Input the modifier value.
+	* ***Fuel:*** Select the fuel associated to the modifier.
+	* ***Site:*** Select the site associated to the modifier.
+	* ***Date From:*** Input the starting date of the modifier.
+	* ***Time From:*** Input the starting time of the modifier.
+	* ***Date To:***  Input the ending date of the modifier.
+	* ***Time To:*** Input the ending time of the modifier.
 
 ![Company Contract New - Modifiers](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Modifiers.PNG)
 
-9. **Billing:**
-11. **Concepts:**
-12. **Documents:**
-13. **Blocks:**
-14. **Over Limit:**
-15. **Programs:**
-16. **Subsidies:**
-17. **Custom Fields:**
+5. **Billing:** Configure the billing process associated to the contract.
+	* ***Process Billing Type:*** Select the process billing type associated to the contract (EdiFactMx is for Mexico client only)
+	* ***Active:*** Checkmark this option to enable/disble the billing process.
+	* ***Due Days:*** Input the amount of expiration days associated to the statement.
+	* ***Periodicity:*** Input the frequency in which statements are generated.
+	* ***Manual:*** Checkmarck this option to enable/disable the manual process of the billing process.
+	* ***Charges Deduct Balance from Accounts:*** Checkmark this option to enable/disable ATIONet from automatically substracting concepts from accounts balances.
+	* ***Separate Charges Document:*** Checkmark this option to enable/disable ATIONet from separating each concept associated to the statement.
+	* ***Recipient Emails:*** Input the emails addresses that will receive the statements.
+	* ***Tax Payer Id:*** Input the tax payer id associated to the statement.
+	* ***Name:*** Input the name associated to the statement.
+	* ***Street 1:*** Input the primary street associated to the statement.
+	* ***Street 2:*** Input the secobndary street associated to the statement.
+	* ***Zip Code:*** Input the zip code associated to the statement.
+	* ***City:*** Input the city associated to the statement.
+	* ***Country:*** Input the country associated to the statement.
+	* ***State:*** Input the state associated to the statement.
+
+![Company Contract New - Billing](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Billing.PNG)
+
+6. **Concepts:** Select the concept associated to the contract.
+
+![Company Contracts New - Concepts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Concepts.PNG)
+	
+7. **Documents:** Upload any document associated to the contract (for example: a pdf of the actual physical contract).
+8. **Blocks:** Configure the blocks associated to the contract
+	* ***Type:*** Select **Fixed** to block operation on specific dates, or select **Fixed** to block operation on specific days of every month. 
+	* ***Date From:*** Input the starting date of the block.
+	* ***Date To:*** Input the ending date of the block.
+	* ***Day From:*** Input the starting day of every month for the block.
+	* ***Day To:*** Input the ending day of every moth for the block.
+
+![Company Contracts New - Blocks](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Blocks.PNG)
+
+9. **Over Limit:** Configure the overlimits associated to the contract.
+	* ***Type:*** Select the over limit type (Percent or Amount).
+	* ***Value:*** Input the value associated to the over limit.
+	* ***Date From:*** Input the starting date of the over limit.
+	* ***Date To:*** Input the ending date of the over limit.
+10. **Programs:**
+11. **Subsidies:**
+12. **Custom Fields:**
 
 ### Company Current Accounts
-The Company Checking Accounts view is the view where the available sub account balances are consulted (Remember that the sub account is the union between a vehicle/driver and an identifier. For more details on sub-a Conceptsccounts consult: [Esta sección](#sub-cuenta)).
+The Company Current Accounts section is the view of available balance of sub-account and/or contracts, and also the view of all movements of sub-accounts and/or contracts.
 
-In ATIONet the term company refers to the company that owns the fleet. For more details about companies consult: [Esta sección](#compañía)
+For easier quieries there is a filter panel available. The first option in the filter panel is the type of report:
 
-This view has, like the rest of the views, a panel of filters.
-The first option in the filter panel is the type of report we want to see:
+![Company Current Accounts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts.PNG)
 
-![Cuentas Corrientes](Content/Includes/AN-Network-UserManal-SP/tiposDeCuentasCorrientesDeCompañia.PNG)
+1. **Contract List:** This option lists all contracts with their respective balance, but does not give details of the movements.
 
-1. ***List of Contracts:*** This option lists the contracts with their respective balance, but does not give details of the movements, it is a view that summarizes the data of each of the sub-accounts.
+![Company Current Accounts - Contract List](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20-%20Contract%20List.PNG)
 
-	![Cuentas Corrientes](Content/Includes/AN-Network-UserManal-SP/listaDeContratos.png)
+2. **Contract Movements:** This option lists all contract movements.
 
-2. ***Contract Movements:*** This option lists the sub-accounts with their respective balance, but does not give details of the movements, it is a view that summarizes the data of each of the sub-accounts.
+![Company Current Accounts - Contract Movements](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20-%20Contract%20Movements.PNG)
 
-	![Cuentas Corrientes](Content/Includes/AN-Network-UserManal-SP/movimientosDeContratos.png)
+3. **Sub-account List:** This option lists all sub-accounts with their respective balances, but does not give details of the movements.
 
-3. ***List of Sub-accounts:*** This option lists the sub-accounts with their respective balance, but does not give details of the movements, it is a view that summarizes the data of each of the sub-accounts.
+![Company Current Accounts - Sub-Account List](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20-%20Sub-Account%20List.PNG)
 
-	![Cuentas Corrientes](Content/Includes/AN-Network-UserManal-SP/listaDeSubCuentas.png)
+4. **Sub-account Movements:** This view lists all sub-account movements.  
 
-4. ***Sub-accounts Movements:*** This view option shows in detail each of the movements of the sub-account, both credits and debits.   
-
-	![Cuentas Corrientes](Content/Includes/AN-HomeBase-UserManal-SP/cuentasCorrientes3.png)
-
-Selecting this second option enables several more filters:
-
-* ***Account Statement:*** Account Statement Number.
-* If you enter one or more sub-account names, only the movements of those sub-accounts will be listed. Note that this field is "autocomplete", will be completed as you type, if you press the space bar will show all subaccounts.
-* ***Date From / Date To:*** Entering these values will filter the movements between the two dates.
-* ***Time From / Time To:*** Entering these values will filter the movements between the two hours.
-* ***Amount From / Amount To:*** Entering these values will filter the movements whose amount is between both values.
-* ***Species:*** You can filter by species (Product).
-* ***Debit / Credit:*** You can select which type of movements you want to see, whether debit or credit.
-* ***Type:*** What type of movement generated the movement in the current account
-***Origin:***Origin of the movement, whether it is the ATIONet console, a mobile application or a call to the API from a third party application.
-* ***Transient Movements:*** Checking this option will show the internal movements generated by ATIONet. For example, each time a balance is frozen after a pre-authorization and a termination transaction is received, ATIONet returns the frozen balance and subsequently debits the final amount reported. The return of the frozen balance is considered a transitory movement and is not shown if this option is not selected.
+![Company Current Accounts - Sub-Account Movements](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20-%20Sub-Account%20Movements.PNG)
 
 ### Concepts
-In this section you can consult the Concepts already created, listed by Code, Name, Type of Concept, Family of Concepts, Class, Type, Model and State. If you want to edit them, you can do so by clicking on the pencil icon in the options column.
+Concepts in ATIONet refer to taxes or commission fees that can be added to company or merchant contracts. In this section you can consult, create and edit concepts.
 
-To create a new concept, click on the "New" button.
+![Concepts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Concepts.PNG)
 
-![Conceptos](Content/Includes/AN-Network-UserManal-SP/conceptos.png)
+To create a concept, click the **New** button.
 
-###### Create a new concept
-
-To create a new concept, you must fill out the following form:
-
-![Conceptos](Content/Includes/AN-Network-UserManal-SP/nuevoConcepto.png)
-
-In the information section, you must fill in the following fields:
-
-* **Concept Type**: Select if it is a Product, Discount or Commission type.
-* **Code**: The concept code.
-* **Name**: The name of the concept.
-* **Concept Family**: Select which concept family it belongs to.
-* **Class**: Select which class of concept it belongs to.
-* **Type**: The type of concept.
-* **Model** The concept model.
-* **Taxes Included**: Tilde this option if included in the amount of the transaction.
-
-In the price list section, you must fill in the following fields:
-
-* **Date from**: The date on which the concept comes into effect.
-* **Currency**: In what currency is the concept.
-* **Price**: The price of the concept.
-
-When you have finished filling these fields, click on "Register".
-
-In the tax section, you must fill the Tax field with the tax code to apply to the concept.
-
-When you have finished filling out the form, click on "Save".
-
-### Concept Families
-
-In this section, you can consult the families of concepts created, listed by Code and Description. If you want to edit it, you can click on the pencil icon on the right.
-
-In ATIOnet, the families of concepts are ?
-
-![Depósitos](Content/Includes/AN-Network-UserManal-SP/familiaDeConceptos.png)
-
-To create a new concept family, click on the "New" button and fill in the Code and Description fields.
-
-![Depósitos](Content/Includes/AN-Network-UserManal-SP/nuevoFamiliaDeConceptos.png)
-
-### Contingency
-In this section, you can consult the contingencies of the Network. To make the queries easier, you have a panel of filters.
-
-The contingencies are the transactions that were made without a pre-authorization, either because the terminal was off-line or because it did not have one.
-
-![Contingencia](Content/Includes/AN-Network-UserManal-SP/contingencias.png)
-
-To create a new contingency, click on the "New" button.
-
-![Contigencia](Content/Includes/AN-Network-UserManal-SP/nuevaContingencia.png)
+![Concepts New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Concepts%20New.PNG)
 
 The fields to complete are the following:
 
-* **Authorization Code**: The authorization code for the contingency.
-* **Date**: The date of the contingency.
-* **Time**: The time of the contingency.
-* **Site**: The place where the contingency occurs.
-* **Terminal/Controller**: The terminal/controller where the contingency occurs.
-* **Primary Account**: ?
-* **Secondary Account**: ?
-* **Fuel**: The fuel being shipped.
-* **Volume Dispatched**: The amount of fuel dispatched.
-* **Unit Price**: The unit price of the shipment.
-* **Dispatched Amount**: ?
-* **Shift**: ?
-* **Jet**: The jet from which the fuel is dispatched.
-* **Odometer**: The amount of kilometers marked on the odometer of the vehicle.
-* **Engine Hours**: The amount of engine hours the vehicle has.
-* **Driver's Identifier**: The driver's identifier.
-* **Vehicle ID**: The identifier of the vehicle.
-* **Miscellaneous**: ?
+* **Concept Type**: Select the concept type (Product, Discount or Fee).
+* **Code**: Input the concept unique code.
+* **Name**: Input the concept name.
+* **Concept Family**: Select the family associated to the concept.
+* **Class**: Select the call associated to the concept.
+* **Type**: Input the concept type.
+* **Model** Input the concept model.
+* **Taxes Included**: Checkmark this option if the taxes are included in the amount of the transaction.
+
+In the pricebook section fill in the following fields:
+
+* **Date From**: Input the starting date of the concept.
+* **Currency**: Input the currency of the concept.
+* **Price**: Input the price of the concept.
+
+### Concept Families
+Concept Families in ATIONet is just a way to group up several concepts. In this section you can consult, create or edit family concepts.
+
+![Concept Families](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Family%20Concepts.PNG)
+
+To create a concept family, click  the **New** button.
+
+![Concept Families New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Family%20Concepts%20New.PNG)
+
+### Contingency
+In ATIONet a contingency is a manually entered transaction. In this section you can consult and create contingencies. Take into account that contingencies are transactions without a pre-authorization.
+
+![Contingency](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Contingencies.PNG)
+
+To create a contingency, click the **New** button.
+
+![Contingencies New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Contingencies%20New.PNG)
+
+The fields to complete are the following:
+
+* **Date:** Input the date of the contingency.
+* **Time:** Input the time of the contingency.
+* **Site:** Select the site associated to the contingency.
+* **Terminal/Controller:** Select the terminal/controller associated to the contingency.
+* **Primary Account:** Select the primary sub-account associated to the contingency.
+* **Secondary Account:** Select the secondary sub-account associated to the contingency.
+* **Fuel:** Select the fuel associated to the contingency.
+* **Dispensed Volume:** Input the volume associated to the contingency.
+* **Unit Price:** Input the unit price associated to the contingency.
+* **Dispensed Amount:** Input the amount associated to the contingency.
+* **Shift Number:** Input the shift associated to the contingency.
+* **Pump Number:** Input the pump associated to the contingency.
+* **Odometer:** Input the vehicle's odometer associated to the contingency.
+* **Engine Hours:** Input the vehicle's engine hours associated to the contingency.
+* **Driver Id:** Input the the driver's identifier associated to the contingency.
+* **Vehicle Id:** Input the vehicle's identifier associated to the contingency.
+* **Attendant:** Input the attendant associated to the contingency.
+* **Pump Side:** Input the pump side associated to the contingency.
+* **Miscellaneous:** Input the vehicle's miscellaneous associated to the contingency.
+* **Invoice Number:** Input the invoice number associated to the contingency.
+* **Purchase Order Number:** Input the purchase orden number associated to the contingency.
 
 ### Declined Transactions
 ATIONet separates unauthorized transactions into 2 sections, [Excepciones](#excepciones)and Rejected Transactions.
