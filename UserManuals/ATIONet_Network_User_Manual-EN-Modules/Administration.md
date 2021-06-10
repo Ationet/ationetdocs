@@ -640,7 +640,7 @@ To create a Warehouse, click the **New** button.
 ![Warehouses New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Warehouses%20New.PNG)
 
 ## Zones
-In this section you can create/edit zones. Zones is an area where several sites are associated to it. Generally a Territory Manager is associated to specicif zone(s).
+In this section you can create/edit zones. Zones is an area where several sites are associated to it. Generally a Territory Manager is associated to specific zone(s).
 
 ![Zones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Zones.PNG)
 
