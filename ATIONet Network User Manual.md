@@ -289,7 +289,7 @@ Once the general information is completed, you have different tabs to configure:
 * ***Country:*** Input the country associated to the statement.
 * ***State:*** Input the state associated to the statement.
 
-6. **Concepts:** Select the concept associated to the contract.
+6. **Concepts:** Select the concept associated to the contract. For more information on concepts access [here]().
 
 ![Company Contracts New - Concepts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Concepts.PNG)
 	
