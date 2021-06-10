@@ -202,95 +202,79 @@ In ATIONet the term company refers to the entity that manages the fleet. In this
 
 ![Company Contracts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts.PNG)
 
-To make queries easier there is a window of applicable filters. You can filter by code, company, mode (credit or debit), description or species.
+To make queries easier there filter option on the top. You can filter by code, company, mode (credit or debit), description, etc.
 
-![Contratos de Compañía](Content/Includes/AN-Network-UserManal-SP/filtrosContratosDeCompañia.png)
+To create a company, click the **New** button.
 
-To create a new Company contract, click on the New button.
+![Company Contracts New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New.PNG)
 
-The fields to be completed are as follows:
+The first step to create a new contract is filling out the general information:
 
-![Contratos de Compañía](Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia.png)
+* **Active:** Checkmark this option to enable/disable the contract.
+* **Code**: Input the code associated to the contract.
+* **Company**: Select the company associated to the contract
+* **Reactivation amount:** Input the minimum amount required for automatic reactivation (if the contract is disabled and a deposit was made for that amount or higher).
+* **Description**: Input the description of the contract.
+* **Start Date**: Input the starting date of the contract.
+* **Duration** Input the duration of the contract.
+* **Current Account Mode**: Select the current account mode associated to the contract (Product or Money).
+* **Currency:** Select the currency associated to the contract (this option is only enabled if the **current account mode** is **Money**).
+* **Mode**: Select the contract mode (Credit, Debir or Cash).
+* **Limit:** Input the credit limit associated to the contract.
+* **Balance Mode**: Select the balance mode associated to the contract:
+	* ***Disperse:*** The balance is managed on a sub-account level.
+	* ***Do not Disperse:*** The balace is managed on a contract level.
+	* ***Auto Fill:*** There is no balance.
+* **Site Validation:** Checkmark this option to enable/disable site validation (the contract can only operate within the sites assigned).
+* **Validate Fuels:** Checkmark this option to enable/disable fuel validation (the contract can only operate with fuels assigned).
+* **Use Rack Prices:** Checkmark this option to enable/disable the usage of rack prices (the contract will only use rack prices when there are no prices configured in the contract).
+* **Validate Programs:**
+* **Subsidized Values:**
 
-* **Code**: The code you want to assign to the contract.
-* **Mode**: You can choose whether the contract is credit or debit.
-* **Description**: Enter a description of the contract.
-* **Company**: Select a company.
-* **Company User**: Enter a Company User.
-* **Start Date**: Enter the effective date of the contract.
-* **Duration** Enter the duration of the opposite.
-* **Checking Account Mode**: You can select between Products or Amount.
-* **Balance Mode**: You can choose between Scatter, No Scatter and Auto Fill.
-* **Maximum Amount of Accounts**: Enter the maximum amount of account you will allow.
-* **Validate Sites**: Check this option if you want to validate the sites.
-* **Gift Card**: Tilde this option if ?
+Once the general information is completed, you have different tabs to configure:
 
-After filling these fields, you must enter the fuel assigned to the contract, and fill the fields Volume, Safety Limit, Overdraft, Start and End Dates of Overdraft, the currency in which the Fuel Value is and the fuel price.
+1. **Fuels:** Select the fuels associated to the contract.
 
-![Contratos de Compañia](Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia2.png)
+![Company Contract New - Fuels](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Fuels.PNG)
 
-The next thing is to register different items.
+3. **Sites:** Select the sites associated to the contract.
 
-The first thing is the Registration of Sites. Enter the site and it will load below, asking you to provide the price of the fuels, and the currency in which they are.
+![Company Contract New - Sites](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Sites.PNG)
 
-Then, in the section "High identifiers" enter the identifiers that you want to relate to the contract.
+5. **Prices:** Configure prices associated to the contract.
+	* **Fuel:** Select the fuel associated to the price.
+	* **Value:** Input the price value.
+	* **Site:** Select the site associated to the price.
+	* **Date From:** Input the starting date of the price.
+	* **Time From:** Input the starting time of the price.
+	* **Date To:**  Input the ending date of the price.
+	* **Time To:** Input the ending time of the price.
 
-![Contratos de Compañía](Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia3.png)
+![Company Contract New - Prices](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Prices.PNG)
 
-After that, you will need to fill out the Settlement Configuration form.
+7. **Modifiers:** Configure modifiers associated to the contract.
+	* **Description:** Input the modifier description.
+	* **Class:** Select the modifier class (Discount or Recharge).
+	* **Type:** Select the modifier type (Percentual, Fixed per Transaction or Fixed per Unit).
+	* **Value:** Input the modifier value.
+	* **Fuel:** Select the fuel associated to the modifier.
+	* **Site:** Select the site associated to the modifier.
+	* **Date From:** Input the starting date of the modifier.
+	* **Time From:** Input the starting time of the modifier.
+	* **Date To:**  Input the ending date of the modifier.
+	* **Time To:** Input the ending time of the modifier.
 
-The fields to complete are the following:
+![Company Contract New - Modifiers](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Modifiers.PNG)
 
-![Contratos de Compañia](Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia4.png)
+9. **Billing:**
+11. **Concepts:**
+12. **Documents:**
+13. **Blocks:**
+14. **Over Limit:**
+15. **Programs:**
+16. **Subsidies:**
+17. **Custom Fields:**
 
-* **Type of Billing Process**: Select the type of Billing process you want.
-* **Periodicity**: ?
-* **Manual**: Tilde this option if ?
-* **Cutting time**: ?
-* **Charges Deducted from Contract Balance**: Tilde this option if the charges are deducted from the contract balance.
-* **Separate Charge Document**: ?
-* **Taxpayer ID**: ?
-* **Street**: ?
-* **Street 2**: ?
-* **Zip Code**: ?
-* **City**: ?
-* **Country**: ?
-* **State**: ?
-* **Currency**: ?
-
-Finally, you must fill out the Concept Registration form.
-
-![Contratos de Compañia](Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia5.png)
-
-Enter a concept and then another form will be displayed.
-
-![Contratos de Compañia](Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia6.png)
-
-* **Real price **: ?
-* **Currency**: Select the currency in which the price is located.
-* **Quantity**: ?
-* **Liquid Event**: Select between Contract Period, Next Run of the Liquidation Process or Summary Period. ?
-* **Application**: ?
-
-Then, in the second tab, Discounts/Increases, you must fill in the following fields.
-
-![Contratos de Compañia](Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia7.png)
-
-* **Class**: Select whether the concept is Discount or Increment.
-* **Included**: Tilde this option if ?
-* **Type**: Select if the concept is for Amount, Units, Percentage or if it is for Amount per unit.
-* **Type of Rank**: Select if the type of rank is by amount or by units.
-* **Staggered**: Tilde this option if ?
-* **Roof Type**: Select if the roof type is by amount or by units.
-* **Roof**: Enter the value of the roof.
-
-In the Steps section you must fill in the following fields.
-
-* **Range from**: ?
-* **Range to**: ?
-* **Value**: ?
-
-When you have finished filling these fields, click on the "Add" button to register it.
 ### Company Current Accounts
 The Company Checking Accounts view is the view where the available sub account balances are consulted (Remember that the sub account is the union between a vehicle/driver and an identifier. For more details on sub-a Conceptsccounts consult: [Esta sección](#sub-cuenta)).
 
