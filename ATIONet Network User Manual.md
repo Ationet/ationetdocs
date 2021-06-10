@@ -198,9 +198,9 @@ ATIONet has a quick access menu located on the left side of the website. From th
 
 ### Attendants
 ### Company Contracts
-In ATIONet the term company refers to the company that owns the fleet. In this section you can consult the contracts. 
+In ATIONet the term company refers to the entity that manages the fleet. In this section you can create, edit or consult all company contracts.
 
-![Contratos de Compañía](Content/Includes/AN-HomeBase-UserManal-SP/contratosDeCompaniaAdministracion.png)
+![Company Contracts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts.PNG)
 
 To make queries easier there is a window of applicable filters. You can filter by code, company, mode (credit or debit), description or species.
 
