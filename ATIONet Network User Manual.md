@@ -242,49 +242,52 @@ Once the general information is completed, you have different tabs to configure:
 ![Company Contract New - Sites](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Sites.PNG)
 
 3. **Prices:** Configure prices associated to the contract.
-	* ***Fuel:*** Select the fuel associated to the price.
-	* ***Value:*** Input the price value.
-	* ***Site:*** Select the site associated to the price.
-	* ***Date From:*** Input the starting date of the price.
-	* ***Time From:*** Input the starting time of the price.
-	* ***Date To:***  Input the ending date of the price.
-	* ***Time To:*** Input the ending time of the price.
 
 ![Company Contract New - Prices](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Prices.PNG)
 
+* ***Fuel:*** Select the fuel associated to the price.
+* ***Value:*** Input the price value.
+* ***Site:*** Select the site associated to the price.
+* ***Date From:*** Input the starting date of the price.
+* ***Time From:*** Input the starting time of the price.
+* ***Date To:***  Input the ending date of the price.
+* ***Time To:*** Input the ending time of the price.
+
 4. **Modifiers:** Configure modifiers associated to the contract.
-	* ***Description:*** Input the modifier description.
-	* ***Class:*** Select the modifier class (Discount or Recharge).
-	* ***Type:*** Select the modifier type (Percentual, Fixed per Transaction or Fixed per Unit).
-	* ***Value:*** Input the modifier value.
-	* ***Fuel:*** Select the fuel associated to the modifier.
-	* ***Site:*** Select the site associated to the modifier.
-	* ***Date From:*** Input the starting date of the modifier.
-	* ***Time From:*** Input the starting time of the modifier.
-	* ***Date To:***  Input the ending date of the modifier.
-	* ***Time To:*** Input the ending time of the modifier.
 
 ![Company Contract New - Modifiers](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Modifiers.PNG)
 
+* ***Description:*** Input the modifier description.
+* ***Class:*** Select the modifier class (Discount or Recharge).
+* ***Type:*** Select the modifier type (Percentual, Fixed per Transaction or Fixed per Unit).
+* ***Value:*** Input the modifier value.
+* ***Fuel:*** Select the fuel associated to the modifier.
+* ***Site:*** Select the site associated to the modifier.
+* ***Date From:*** Input the starting date of the modifier.
+* ***Time From:*** Input the starting time of the modifier.
+* ***Date To:***  Input the ending date of the modifier.
+* ***Time To:*** Input the ending time of the modifier.
+
 5. **Billing:** Configure the billing process associated to the contract.
-	* ***Process Billing Type:*** Select the process billing type associated to the contract (EdiFactMx is for Mexico client only)
-	* ***Active:*** Checkmark this option to enable/disble the billing process.
-	* ***Due Days:*** Input the amount of expiration days associated to the statement.
-	* ***Periodicity:*** Input the frequency in which statements are generated.
-	* ***Manual:*** Checkmarck this option to enable/disable the manual process of the billing process.
-	* ***Charges Deduct Balance from Accounts:*** Checkmark this option to enable/disable ATIONet from automatically substracting concepts from accounts balances.
-	* ***Separate Charges Document:*** Checkmark this option to enable/disable ATIONet from separating each concept associated to the statement.
-	* ***Recipient Emails:*** Input the emails addresses that will receive the statements.
-	* ***Tax Payer Id:*** Input the tax payer id associated to the statement.
-	* ***Name:*** Input the name associated to the statement.
-	* ***Street 1:*** Input the primary street associated to the statement.
-	* ***Street 2:*** Input the secobndary street associated to the statement.
-	* ***Zip Code:*** Input the zip code associated to the statement.
-	* ***City:*** Input the city associated to the statement.
-	* ***Country:*** Input the country associated to the statement.
-	* ***State:*** Input the state associated to the statement.
 
 ![Company Contract New - Billing](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Billing.PNG)
+
+* ***Process Billing Type:*** Select the process billing type associated to the contract (EdiFactMx is for Mexico client only)
+* ***Active:*** Checkmark this option to enable/disble the billing process.
+* ***Due Days:*** Input the amount of expiration days associated to the statement.
+* ***Periodicity:*** Input the frequency in which statements are generated.
+* ***Manual:*** Checkmarck this option to enable/disable the manual process of the billing process.
+* ***Charges Deduct Balance from Accounts:*** Checkmark this option to enable/disable ATIONet from automatically substracting concepts from accounts balances.
+* ***Separate Charges Document:*** Checkmark this option to enable/disable ATIONet from separating each concept associated to the statement.
+* ***Recipient Emails:*** Input the emails addresses that will receive the statements.
+* ***Tax Payer Id:*** Input the tax payer id associated to the statement.
+* ***Name:*** Input the name associated to the statement.
+* ***Street 1:*** Input the primary street associated to the statement.
+* ***Street 2:*** Input the secobndary street associated to the statement.
+* ***Zip Code:*** Input the zip code associated to the statement.
+* ***City:*** Input the city associated to the statement.
+* ***Country:*** Input the country associated to the statement.
+* ***State:*** Input the state associated to the statement.
 
 6. **Concepts:** Select the concept associated to the contract.
 
@@ -292,19 +295,24 @@ Once the general information is completed, you have different tabs to configure:
 	
 7. **Documents:** Upload any document associated to the contract (for example: a pdf of the actual physical contract).
 8. **Blocks:** Configure the blocks associated to the contract
-	* ***Type:*** Select **Fixed** to block operation on specific dates, or select **Fixed** to block operation on specific days of every month. 
-	* ***Date From:*** Input the starting date of the block.
-	* ***Date To:*** Input the ending date of the block.
-	* ***Day From:*** Input the starting day of every month for the block.
-	* ***Day To:*** Input the ending day of every moth for the block.
 
 ![Company Contracts New - Blocks](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Blocks.PNG)
 
+* ***Type:*** Select **Fixed** to block operation on specific dates, or select **Fixed** to block operation on specific days of every month. 
+* ***Date From:*** Input the starting date of the block.
+* ***Date To:*** Input the ending date of the block.
+* ***Day From:*** Input the starting day of every month for the block.
+* ***Day To:*** Input the ending day of every moth for the block.
+
 9. **Over Limit:** Configure the overlimits associated to the contract.
-	* ***Type:*** Select the over limit type (Percent or Amount).
-	* ***Value:*** Input the value associated to the over limit.
-	* ***Date From:*** Input the starting date of the over limit.
-	* ***Date To:*** Input the ending date of the over limit.
+
+![Company Contracts New - Over Limit](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Over%20Limit.PNG)
+
+* ***Type:*** Select the over limit type (Percent or Amount).
+* ***Value:*** Input the value associated to the over limit.
+* ***Date From:*** Input the starting date of the over limit.
+* ***Date To:*** Input the ending date of the over limit.
+
 10. **Programs:**
 11. **Subsidies:**
 12. **Custom Fields:**
