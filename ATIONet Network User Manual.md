@@ -328,7 +328,7 @@ Once the general information is completed, you have different tabs to configure:
 11. **Subsidies:**
 12. **Custom Fields:**
 
-### Company Current Accounts
+## Company Current Accounts
 The Company Current Accounts section is the view of available balance of sub-account and/or contracts, and also the view of all movements of sub-accounts and/or contracts.
 
 For easier quieries there is a filter panel available. The first option in the filter panel is the type of report:
@@ -351,7 +351,7 @@ For easier quieries there is a filter panel available. The first option in the f
 
 ![Company Current Accounts - Sub-Account Movements](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20-%20Sub-Account%20Movements.PNG)
 
-### Concepts
+## Concepts
 Concepts in ATIONet refer to taxes or commission fees that can be added to company or merchant contracts. In this section you can consult, create and edit concepts.
 
 ![Concepts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Concepts.PNG)
@@ -377,7 +377,7 @@ In the pricebook section fill in the following fields:
 * **Currency**: Input the currency of the concept.
 * **Price**: Input the price of the concept.
 
-### Concept Families
+## Concept Families
 Concept Families in ATIONet is just a way to group up several concepts. In this section you can consult, create or edit family concepts.
 
 ![Concept Families](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Family%20Concepts.PNG)
@@ -386,7 +386,7 @@ To create a concept family, click  the **New** button.
 
 ![Concept Families New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Family%20Concepts%20New.PNG)
 
-### Contingency
+## Contingency
 In ATIONet a contingency is a manually entered transaction. In this section you can consult and create contingencies. Take into account that contingencies are transactions without a pre-authorization.
 
 ![Contingency](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Contingencies.PNG)
@@ -419,33 +419,16 @@ The fields to complete are the following:
 * **Invoice Number:** Input the invoice number associated to the contingency.
 * **Purchase Order Number:** Input the purchase orden number associated to the contingency.
 
-### Declined Transactions
-ATIONet separates unauthorized transactions into 2 sections, [Excepciones](#excepciones)and Rejected Transactions.
-Rejected Transactions are those transactions that managed to pass ATIONet's hard validations but were rejected by other validations such as an unsatisfied rule or balance validation.
+## Declined Transactions
+ATIONet separates unauthorized transactions into 2 sections: [Exceptions](#exceptions) and **Declined Transactions**.
 
-In the Rejected Transactions view we can filter by the type of rejection first. The types of rejections available are as follows:
+Declined Transactions are those that managed to pass ATIONet's hard authentications, but were rejected by other validations such as an unsatisfied rule or balance validation.
 
-![Transacciones Rechazadas](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesRechazadas.png)
+![Declined Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Declined%20Transactions.PNG)
 
-This view also has the filter panel mentioned above. It is worth highlighting the ***"Offline Transactions "*** filter, by checking this option, it will also show those transactions that were marked as rejected in the Offline module. 
-(for more details about the Offline module see this [sección](#modulo-offline))
+In this view, at the start you can filter by the type of rejection. The types of rejections available are as follows:
 
-![Cuentas Corrientes](Content/Includes/AN-HomeBase-UserManal-SP/excepciones4.png)
-
-Once you select the filters, press ***"Search "*** and all transactions marked as rejected will be listed.
-
-![Transacciones Rechazadas](Content/Includes/AN-HomeBase-UserManal-SP/transaccionesRechazadas2.png)
-
-It should be clarified that there is a possibility that a transaction may be rejected but that the fuel has been delivered. This occurs when the rejection occurs in the termination transaction.
-Some of the most common reasons for this situation are the following:
-
-* The pre authorization is expired (more than 3hs between the date of creation of the pre authorization and the date of creation of the termination. This is not related to the time it may take for the termination to arrive in offline mode).
-* There is no existing pre-authorization for that transaction.
-* The pre-authorization was cancelled manually.
-* The termination transaction contains invalid information (errors in the terminal or controller).
-* The termination transaction was executed with errors on the host.
-* The termination transaction contains different information than the pre-authorization information, such as for example.
-* The termination transaction reports more volume or amount than was authorized. In this case the authorization can be approved.
+![Declined Transactions Filters](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Declined%20Transactions%20Filters.PNG)
 
 ### Dispensed Transactions
 ### Disputed Transactions
