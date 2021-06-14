@@ -430,128 +430,70 @@ In this view, at the start you can filter by the type of rejection. The types of
 
 ![Declined Transactions Filters](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Declined%20Transactions%20Filters.PNG)
 
-### Dispensed Transactions
-### Disputed Transactions
-Disputed transactions are those that either party (Commerce or Company) claims to be unaware of.
+## Dispensed Transactions
 
-In this section you can consult the disputed transactions, listed by code, date, reason, state, transaction number, company, trade, site. There is also the commentary of the company, the trade and the network.
 
-To make queries easier, this section has a panel of filters at the top.
+## Disputed Transactions
+Disputed transactions are those that either party (Merchant or Company) claims to be unaware of.
 
-![Transacciones Desconocidas](Content/Includes/AN-Network-UserManal-SP/transaccionesDesconocidas.png)
+In this section you can consult the disputed transactions, listed by code, date, reason, state, transaction number, company, site. There is also the commentary of the company, the merchant and the network.
 
-### Exceptions
-ATIONet separates unauthorized transactions into 2 sections, Exceptions and [Transacciones Rechazadas](#transacciones-rechazadas).
-Exceptions are those transactions that did not pass the hard validations of the system or those that are detected as possible frauds.
+![Disputed Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Disputed%20Transactions.PNG)
 
-In the Exceptions view we can filter by Exception type first. The types of Exceptions available are as follows:
+## Exceptions
+ATIONet separates unauthorized transactions into 2 sections: **Exceptions** and [Declined transactions](#declined-transactions). Exceptions are those transactions that did not pass the hard validations of the system or those that are detected as possible frauds.
 
-![Cuentas Corrientes](Content/Includes/AN-HomeBase-UserManal-SP/excepciones2.png)
+![Exceptions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Exceptions.PNG)
 
-This view also has the filter panel mentioned above. It is worth highlighting the ***"Offline Transactions "*** filter, by checking this option, it will also show those transactions that were marked as Exceptions in the Offline module. 
-(for more details about the Offline module see this [sección](#modulo-offline))
+In this view, at the start you can filter by the type of exception. The types of exceptions available are as follows:
 
-![Cuentas Corrientes](Content/Includes/AN-HomeBase-UserManal-SP/excepciones4.png)
+![Exceptions Filters](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Exceptions%20Filters.PNG)
 
-Once you have selected the filters, press ***"Search "***" and all transactions marked as Exceptions will appear in the list.
-
-Some transactions remain in "Review" status in some situations, such as when more than authorized is sent (due to a controller or POS error). In these cases it is necessary to approve or reject the transaction using one of the two icons to the right of each record.
-
-![Cuentas Corrientes](Content/Includes/AN-HomeBase-UserManal-SP/excepciones.png)
-
+Some transactions remain in **Review** status in some situations, such as when more than authorized is sent (due to a controller or POS error). In these cases it is necessary to approve or reject the transaction using one of the two icons to the right of each record.
 
 ### Fast Track Configuration
-?
+A Fast Track in ATIONet is a way to configure a one-use-only authorization for an specific amount to an already existing fleet sub-account. In this sections you can configure up to 10 Custom Fields for Fast Tracks.
 
-![Configuración de Fast Track Administración](Content/Includes/AN-HomeBase-UserManal-SP/configuracionFastTrackAdministracion.png)
+![Fast Track Configuration](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Fast%20Track%20Configuration.PNG)
+
 ### Fraud Alerts
+Inside this section you can see a list of all frauds performed by the Network. To configure how/when to alert of fraud, go to [Fraud Alerts Configuration](#fraud-alerts-configuration).
+
+![Fraud Alerts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Fraud%20Alerts.PNG)
+
 ### Fraud Alerts Configuration
+In this section you can consult and configure how and when are fraud alerts triggered for the Network.
+
+![Fraud Alerts Configuration](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Fraud%20Alerts%20Configuration.PNG)
+
+To create a configuration, click the **New** button.
+
+![Fraud Alerts Configuration New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Fraud%20Alerts%20Configuration%20New.PNG)
+
 ### Generation of Vouchers
 ### Invoice Type
 ### Invoices
 ### Merchants Contracts
-In ATIONet the term commerce refers to the company that owns the sites. In this section you can consult the contracts.
+In ATIONet the term merchant refers to the entity that owns the sites. In this section you can consult, edit and create merchant contracts.
 
-![Contratos de Comercio](Content/Includes/AN-Network-UserManal-SP/contratosDeComercio.png)
+![Merchant Contracts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Merchant%20Contracts.PNG)
 
-To create a new Company contract, click on the New button.
+To create a merhcant contract, click the **New** button.
+
+![Merchant Contract New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Merchant%20Contracts%20New.PNG)
 
 The fields to be completed are as follows:
 
-![Contratos de Compañia](Content/Includes/AN-Network-UserManal-SP/nuevoContratoDeComercio.png)
+* **Code**: Input the code of the contract.
+* **Automatically Generated:** Checkmark this option to have ATIONet automatically generate the contract code.
+* **Description**: Input the description of the contract.
+* **Merchant**: Select the merchant assocciated to the contract.
+* **Merchant User**: Input the merchant contact user.
+* **Start Date**: Input the starting date of the contract.
+* **Duration** Input the duration of the contract.
+* **Current Account Mode**: Select the current account mode (Product or Money).
 
-* **Code**: The code you want to assign to the contract.
-* **Description**: Enter a description of the contract.
-* **Trade**: Select a trade.
-* **Commerce User**: Enter a Commerce User.
-* **Start Date**: Enter the effective date of the contract.
-* **Duration** Enter the duration of the opposite.
-* **Checking Account Mode**: You can select between Products or Amount.
-
-After completing these fields, you must enter the fuel assigned to the contract, and fill in the Volume, Safety Limit, Overdraft, Overdraft Start and End Dates fields, the currency in which the Fuel Value is located, and the fuel price.
-
-![Contratos de Compañía](Content/Includes/AN-Network-UserManal-SP/nuevoContratoDeComercio2.png)
-
-The next thing is to register different items.
-
-The first thing is the Registration of Sites. Enter the site and it will load below, asking you to provide the price of the fuels, and the currency in which they are.
-
-After that, you will have to fill out the Settlement Configuration form.
-
-The fields to complete are the following:
-
-![Contratos de Compañia](Content/Includes/AN-Network-UserManal-SP/nuevoContratoDeComercio3.png)
-
-* **Type of Billing Process**: Select the type of Billing process you want.
-* **Periodicity**: ?
-* **Manual**: Tilde this option if ?
-* **Cutting time**: ?
-* **Charges Deducted from Contract Balance**: Tilde this option if the charges are deducted from the contract balance.
-* **Separate Charges Document**: ?
-* **Taxpayer ID**: ?
-* **Name**: ?
-* **Street**: ?
-* **Street 2**: ?
-* **Postal Code**: ?
-* **City**: ?
-* **Country**: ?
-* **State**: ?
-* **Currency**: ?
-
-Finally, you must fill out the Concept Registration form.
-
-![Contratos de Compañía](Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia5.png)
-
-Enter a concept and then another form will be displayed.
-
-![Contratos de Compañía](Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia6.png)
-
-* **Real price **: ?
-* **Currency**: Select the currency in which the price is located.
-* **Quantity**: ?
-* **Clearing**: Tilde this option if ?
-* **Liquid Event **: Select between Contract Period, Next Run of the Liquidation Process or Summary Period. ?
-* **Application**: ?
-
-Then, in the second tab, Discounts/Increases, you must fill in the following fields.
-
-![Contratos de Compañía](Content/Includes/AN-Network-UserManal-SP/nuevoContratoCompañia7.png)
-
-* **Class**: Select whether the concept is Discount or Increment.
-* **Included**: Tilde this option if ?
-* **Type**: Select if the concept is for Amount, Units, Percentage or if it is for Amount per unit.
-* **Type of Rank**: Select if the type of rank is by amount or by units.
-* **Staggered**: Tilde this option if ?
-* **Roof Type**: Select if the roof type is by amount or by units.
-* **Roof**: Enter the value of the roof.
-
-In the Steps section you must fill in the following fields.
-
-* **Range from**: ?
-* **Range to**: ?
-* **Value**: ?
-
-When you have finished filling these fields, click on the "Add" button to register it.
+After completing these fields, you must enter the fuel assigned to the contract and fill in the Volume, Security Limit, Over Limit, Over Limit Start and End Dates fields, Currency in which the Fuel Value is located, and the Fuel Price.
 
 ### Merchant Current Accounts
 The trade current accounts view is the view where the balances and movements of the trades are consulted.
