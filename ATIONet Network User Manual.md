@@ -194,10 +194,18 @@ ATIONet has a quick access menu located on the left side of the website. From th
 <br>
 <br>
 
-## Fleets
+# Fleets
 
-### Attendants
-### Company Contracts
+## Attendants
+In ATIONet the term attendant refers to the person responsible to make the dispatch, that operates the pumps. In this section you can view, create and edit all attendants.
+
+![Attendants](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Attendant.PNG)
+
+To create an attendant, click the **New** button.
+
+[Attendants New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Attendant%20New.PNG)
+
+## Company Contracts
 In ATIONet the term company refers to the entity that manages the fleet. In this section you can create, edit or consult all company contracts.
 
 ![Company Contracts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts.PNG)
