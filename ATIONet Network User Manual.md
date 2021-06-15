@@ -598,48 +598,39 @@ Take into consideration that all rules can be **Non Blocking**, which it means t
 
 ![Rules](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules.PNG)
 
-1. **Quota**
-In this rule you can limit transactions quantity, volume and/or money on an specific frequency.
+1. **Quota:** In this rule you can limit transactions quantity, volume and/or money on an specific frequency.
 
 ![Rules - Quota](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Quota.PNG)
 
-2. **Date Range**
-In this rule you can limit transactions to be made on specific date and time ranges.
+2. **Date Range:** In this rule you can limit transactions to be made on specific date and time ranges.
 
 ![Rules - Date Range](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Date%20Range.PNG)
 
-3. **Location**
-In this rule you can limit transactions to be made on specific sites and zones.
+3. **Location:** In this rule you can limit transactions to be made on specific sites and zones.
 
 ![Rules - Location](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Location.PNG)
 
-4. **Fuel**
-In this rule you can limit transactions to be made for specific fuels and fuels masters groups.
+4. **Fuel:** In this rule you can limit transactions to be made for specific fuels and fuels masters groups.
 
 ![Rules - Fuel](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Fuel.PNG)
 
-5. **Limit Per Transactions**
-In this rule you can limit each transaction volume and/or money.
+5. **Limit Per Transactions:** In this rule you can limit each transaction volume and/or money.
 
 ![Rules - Limit Per Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Limit%20Per%20Transaction.PNG)
 
-6. **DaysTime**
-In this rule you can limit transactions to be made on specific days and times of the week.
+6. **DaysTime:** In this rule you can limit transactions to be made on specific days and times of the week.
 
 ![Rules - DaysTime](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20DaysTime.PNG)
 
-7. **Prompting**
-In this rule you can configure prompts to be requested for transactions, such as Driver/Vehicle ID, Driver/Vehicle PIN, etc.
+7. **Prompting:** In this rule you can configure prompts to be requested for transactions, such as Driver/Vehicle ID, Driver/Vehicle PIN, etc.
 
 ![Rules - Prompting](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Prompting.PNG)
 
-8. **Dry Transaction Limit**
-In this rule you can limit each SKUs transactions money.
+8. **Dry Transaction Limit:** In this rule you can limit each SKUs transactions money.
 
 ![Rules - Dry Transaction Limit](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Dry%20Transaction%20Limit.PNG)
 
-9. **Dry Quota Limit**
-In this rule you can limit transactions money on an specific frequency.
+9. **Dry Quota Limit:** In this rule you can limit transactions money on an specific frequency.
 
 ![Rules - Dry Quota Limit](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Dry%20Quota%20Limit.PNG)
 
