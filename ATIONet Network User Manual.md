@@ -451,17 +451,17 @@ In this view, at the start you can filter by the type of exception. The types of
 
 Some transactions remain in **Review** status in some situations, such as when more than authorized is sent (due to a controller or POS error). In these cases it is necessary to approve or reject the transaction using one of the two icons to the right of each record.
 
-### Fast Track Configuration
+## Fast Track Configuration
 A Fast Track in ATIONet is a way to configure a one-use-only authorization for an specific amount to an already existing fleet sub-account. In this sections you can configure up to 10 Custom Fields for Fast Tracks.
 
 ![Fast Track Configuration](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Fast%20Track%20Configuration.PNG)
 
-### Fraud Alerts
+## Fraud Alerts
 Inside this section you can see a list of all frauds performed by the Network. To configure how/when to alert of fraud, go to [Fraud Alerts Configuration](#fraud-alerts-configuration).
 
 ![Fraud Alerts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Fraud%20Alerts.PNG)
 
-### Fraud Alerts Configuration
+## Fraud Alerts Configuration
 In this section you can consult and configure how and when are fraud alerts triggered for the Network.
 
 ![Fraud Alerts Configuration](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Fraud%20Alerts%20Configuration.PNG)
@@ -470,10 +470,10 @@ To create a configuration, click the **New** button.
 
 ![Fraud Alerts Configuration New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Fraud%20Alerts%20Configuration%20New.PNG)
 
-### Generation of Vouchers
-### Invoice Type
-### Invoices
-### Merchants Contracts
+## Generation of Vouchers
+## Invoice Type
+## Invoices
+## Merchants Contracts
 In ATIONet the term merchant refers to the entity that owns the sites. In this section you can consult, edit and create merchant contracts.
 
 ![Merchant Contracts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Merchant%20Contracts.PNG)
@@ -495,29 +495,23 @@ The fields to be completed are as follows:
 
 After completing these fields, you must enter the fuel assigned to the contract and fill in the Volume, Security Limit, Over Limit, Over Limit Start and End Dates fields, Currency in which the Fuel Value is located, and the Fuel Price.
 
-### Merchant Current Accounts
-The trade current accounts view is the view where the balances and movements of the trades are consulted.
-In ATIONet the term trade refers to the company that owns the sites.
+## Merchant Current Accounts
+The merchant current accounts view is where the balances and movements of all merchant are consulted.
 
-This view has, like the rest of the views, a panel of filters.
-The first option in the panel is the type of report we want to see.
+For easier quieries there is a filter panel available and the first option in the panel is the type of report to see (Contracts List, Contracts Movements, Sites List and Sites Movements).
 
-![Cuentas Corrientes de Comercio](Content/Includes/AN-Network-UserManal-SP/cuentasCorrientesDeComercio.png)
+![Merchant Current Accounts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Merchant%20Current%20Accounts.PNG)
 
-### Outstanding Authorizations
-Pending authorizations are those transactions that have not yet received the completion transaction. The records seen in this view are dispatched that are currently underway. If for some reason there are old pre-authorizations, it is likely that the POS did not send the completion transaction or the cancellation transaction if the dispatch was not completed.
+## Outstanding Authorizations
+In ATIONet outstanding authorizations are those transactions that have not yet received the completion transaction, but have been pre-authorized. The information seen in this view are dispatches that are currently underway. If for some reason there are old pre-authorizations, it is likely that the POS did not send the completion transaction or the cancellation transaction if the dispatch was not completed.
 
-Please note that at the time of pre-authorization, ATIONet froze the amount of the authorization of the current account of the sub-account.
-This view presents all the fields necessary to identify the transaction and the vehicle. If you need to see more details, clicking on the authorization code will take you to the transaction details view.
+Please note that at the time of pre-authorization, ATIONet froze the amount of the authorization of the current account for the sub-account associated. This view presents all the fields necessary to identify the transaction and the sub-account. If you need to see more details, clicking on the authorization code will take you to the transaction details view.
 
-![Autorizaciones Pendientes](Content/Includes/AN-Network-UserManal-SP/autorizacionesPendientes.png)
+![Outstanding Authorization](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Outstanding%20Authorization.PNG)
 
 If old pending transactions appear and you are sure it is not an ongoing dispatch, you may cancel them and return the balance to the current account.
-To do this you have 2 ways, individually, by clicking on the **X** icon to the right side of the grid, or massively by selecting the transactions, displaying the **Batch Actions** menu and selecting "Cancel". This will cancel the transactions and return the balance to each of the current accounts.
-
-![Autorizaciones Pendientes](Content/Includes/AN-Network-UserManal-SP/autorizacionesPendientes2.png)
-
-(for more details on the transaction flow refer to this [documento](AN-Transaction_Flows-TechGuide.md))
+To do so there are 2 ways: individually, by clicking on the **X** icon to the right side of the grid, or massively by selecting the transactions, displaying the **Batch Actions** menu and selecting **Cancel**. This will cancel the transactions and return the balance reserved to each of the current accounts.
+(for more details on the transaction flow refer to this [document](AN-Transaction_Flows-TechGuide.md))
 
 ### Over Limit
 ### Programs
