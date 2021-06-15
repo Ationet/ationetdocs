@@ -16,9 +16,6 @@
 	- [Fast Track Configuration](#fast-track-configuration)
 	- [Fraud Alerts](#fraud-alerts)
 	- [Fraud Alerts Configuration](#fraud-alerts-configuration)
-	- [Generation of Vouchers](#generation-of-vouchers)
-	- [Invoice Type](#invoice-type)
-	- [Invoices](#invoices)
 	- [Merchants Contracts](#merchants-contracts)
 	- [Merchant Current Accounts](#merchant-current-accounts)
 	- [Outstanding Authorizations](#outstanding-authorizations)
@@ -34,9 +31,10 @@
 	- [Uncontrolled Transactions](#uncontrolled-transactions)
 
 # Fleets
+Inside this module you can manage Company and Merchant Contracts, Concepts, Contingencies and Transactions among other things.
 
 ## Attendants
-In ATIONet the term attendant refers to the person responsible to make the dispatch, that operates the pumps. In this section you can view, create and edit all attendants.
+In ATIONet the term attendant refers to the person responsible to make the dispatch, that operates the pumps. In this section you can view, create and edit all attendants. To make queries easier, there is a panel of filters at the top.
 
 ![Attendants](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Attendant.PNG)
 
@@ -44,12 +42,12 @@ To create an attendant, click the **New** button.
 
 ![Attendants New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Attendant%20New.PNG)
 
+When you have finished filling in the fields, click the **Save** button.
+
 ## Company Contracts
-In ATIONet the term company refers to the entity that manages the fleet. In this section you can create, edit or consult all company contracts.
+In ATIONet the term company refers to the entity that manages the fleet. In this section you can create, edit or consult all company contracts. To make queries easier, there is a panel of filters at the top.
 
 ![Company Contracts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts.PNG)
-
-To make queries easier, there is a filter panel on the top. You can filter by code, company, mode (credit or debit), description, etc.
 
 To create a company contract, click the **New** button.
 
@@ -167,10 +165,12 @@ Once the general information is completed, you have different tabs to configure:
 11. **Subsidies:**
 12. **Custom Fields:**
 
+When you have finished filling in the fields, click the **Save** button.
+
 ## Company Current Accounts
 The Company Current Accounts section is the view of available balance of sub-account and/or contracts, and also the view of all movements of sub-accounts and/or contracts.
 
-For easier quieries there is a filter panel available. The first option in the filter panel is the type of report:
+For easier quieries, there is a filter panel available. The first option in the filter panel is the type of report:
 
 ![Company Current Accounts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts.PNG)
 
@@ -216,6 +216,8 @@ In the pricebook section fill in the following fields:
 * **Currency**: Input the currency of the concept.
 * **Price**: Input the price of the concept.
 
+When you have finished filling in the fields, click the **Save** button.
+
 ## Concept Families
 Concept Families in ATIONet is just a way to group up several concepts. In this section you can consult, create or edit family concepts.
 
@@ -224,6 +226,8 @@ Concept Families in ATIONet is just a way to group up several concepts. In this 
 To create a concept family, click  the **New** button.
 
 ![Concept Families New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Family%20Concepts%20New.PNG)
+
+When you have finished filling in the fields, click the **Save** button.
 
 ## Contingency
 In ATIONet a contingency is a manually entered transaction. In this section you can consult and create contingencies. Take into account that contingencies are transactions without a pre-authorization.
@@ -257,6 +261,8 @@ The fields to complete are the following:
 * **Miscellaneous:** Input the vehicle's miscellaneous associated to the contingency.
 * **Invoice Number:** Input the invoice number associated to the contingency.
 * **Purchase Order Number:** Input the purchase orden number associated to the contingency.
+
+When you have finished filling in the fields, click the **Save** button.
 
 ## Declined Transactions
 ATIONet separates unauthorized transactions into 2 sections: [Exceptions](#exceptions) and **Declined Transactions**.
@@ -297,6 +303,8 @@ A Fast Track in ATIONet is a way to configure a one-use-only authorization for a
 
 ![Fast Track Configuration](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Fast%20Track%20Configuration.PNG)
 
+When you have finished filling in the fields, click the **Save** button.
+
 ## Fraud Alerts
 Inside this section you can see a list of all frauds performed by the Network. To configure how/when to alert of fraud, go to [Fraud Alerts Configuration](#fraud-alerts-configuration).
 
@@ -311,12 +319,10 @@ To create a configuration, click the **New** button.
 
 ![Fraud Alerts Configuration New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Fraud%20Alerts%20Configuration%20New.PNG)
 
-## Generation of Vouchers
-## Invoice Type
-## Invoices
+When you have finished filling in the fields, click the **Save** button.
 
 ## Merchants Contracts
-In ATIONet the term merchant refers to the entity that owns the sites. In this section you can consult, edit and create merchant contracts.
+In ATIONet the term merchant refers to the entity that owns the sites. In this section you can consult, edit and create merchant contracts. To make queries easier, there is a panel of filters at the top.
 
 ![Merchant Contracts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Merchant%20Contracts.PNG)
 
@@ -336,6 +342,8 @@ The fields to be completed are as follows:
 * **Current Account Mode**: Select the current account mode (Product or Money).
 
 After completing these fields, you must enter the fuel assigned to the contract and fill in the Volume, Security Limit, Over Limit, Over Limit Start and End Dates fields, Currency in which the Fuel Value is located, and the Fuel Price.
+
+When you have finished filling in the fields, click the **Save** button.
 
 ## Merchant Current Accounts
 The merchant current accounts view is where the balances and movements of all merchant are consulted.
@@ -372,6 +380,8 @@ The fields to be completed are as follows:
 * **Type:** Select the over limit type (Percent or Amount).
 * **Value:** Input the value of the over limit.
 
+When you have finished filling in the fields, click the **Save** button.
+
 ## Programs
 Inside this section you can consult, edit or create fleet programs. For every Network, ATIONet already has a CLASSIC program created by default. A fleet progam in ATIONet allows identifications to override some of their behaviors, like for example: Balance Mode, Contingency Support, Offline Support, etc.
 
@@ -400,6 +410,8 @@ Once the general information was completed, you can also configure prompt and lo
 
 For more information about rules go [here](#rules).
 
+When you have finished filling in the fields, click the **Save** button.
+
 ## Requested Identifications
 In this section you can consult the requested identifications by the company and request fleet and/or loyalty identification. You can also perform actions such as establishing the identifications as in production or as delivered.
 
@@ -416,17 +428,6 @@ To request a fleet identification, click the **New Request** button and select *
 * **Company:** Select the company associated to the identifications.
 * **Contract:** Select the company contract associated to the identifications.
 * **Program:** Select the program associated to the identifications.
-* **Quantity:** Input the quantity of identifications to be requested.
-
-When you have finished filling in the fields, click the **Request identifications** button.
-
-To request a loyalty identification, click the **New Request** button and select **Request Loyalty Identifications**. When you do, a form will open up.
-
-![Requested Identifications - New Loyalty](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Requested%20Identifications%20-%20New%20Loyalty.PNG)
-
-* **Type:** Select the identification type.
-* **Model:** Select the identifications model.
-* **Community:** Select the loyalty community associated to the identifications.
 * **Quantity:** Input the quantity of identifications to be requested.
 
 When you have finished filling in the fields, click the **Request identifications** button.
