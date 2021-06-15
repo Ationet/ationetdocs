@@ -510,79 +510,143 @@ Please note that at the time of pre-authorization, ATIONet froze the amount of t
 ![Outstanding Authorization](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Outstanding%20Authorization.PNG)
 
 If old pending transactions appear and you are sure it is not an ongoing dispatch, you may cancel them and return the balance to the current account.
-To do so there are 2 ways: individually, by clicking on the **X** icon to the right side of the grid, or massively by selecting the transactions, displaying the **Batch Actions** menu and selecting **Cancel**. This will cancel the transactions and return the balance reserved to each of the current accounts.
-(for more details on the transaction flow refer to this [document](AN-Transaction_Flows-TechGuide.md))
+To do so there are 2 ways: individually, by clicking on the **X** icon to the right side of the grid, or massively by selecting the transactions, displaying the **Batch Actions** menu and selecting **Cancel**. This will cancel the transactions and return the balance reserved to each of the current accounts. (for more details on the transaction flow refer to this [document](AN-Transaction_Flows-TechGuide.md))
 
-### Over Limit
-### Programs
-The programs in ATIOnet are ?
+## Over Limit
+In this section you can consult or create over limits for company contracts. Over limit in ATIONet refers to an amount that sub-accounts can overextend from their balances.
 
-![Programas Administración](Content/Includes/AN-HomeBase-UserManal-SP/programasAdministracion.png)
+![Over Limit](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Over%20Limit.PNG)
 
-To create a new program click on the "New" button.
+To create an over limit, click the **New** button.
 
-![Programas Administración](Content/Includes/AN-Network-UserManal-SP/nuevoPrograma.png)
+![Over Limit New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Over%20Limit%20New.PNG)
+
+The fields to be completed are as follows:
+
+* **Company:** Select the company associated to the over limit.
+* **Contract:** Select the company contract associated to the over limit.
+* **Date From:** Input the starting date of the over limit.
+* **Date To:** Input the ending date of the over limit.
+* **Type:** Select the over limit type (Percent or Amount).
+* **Value:** Input the value of the over limit.
+
+## Programs
+Inside this section you can consult, edit or create fleet programs. For every Network, ATIONet already has a CLASSIC program created by default. A fleet progam in ATIONet allows identifications to override some of their behaviors, like for example: Balance Mode, Contingency Support, Offline Support, etc.
+
+![Programs](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Programs.PNG)
+
+To create a program, click the **New** button.
+
+![Programs New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Programs%20New.PNG)
 
 The fields to complete are the following:
 
-* **Description**: The description of the program.
-* **Apply Contract Sites**:
-* **Balance Mode**:
-* **Supports contigencies**:
-* **Off-line support**:
-* **Gift Card**: Tilde this option if ?
+* **Description:** Input the program description.
+* **BIN Range:** Input the BIN Range associated to the program.
+* **Apply Contract Sites:** Select if the site validation is enforced or not on the program.
+* **Balance Mode:** Select the balance mode for the program (Contract, Disperse, Do Not Disperse or Auto Fill).
+* **Contingency Support:** Select if contingency creation is enforced or not on the program.
+* **Offline Support:** Select if the offline module is enforced or not on the program.
+* **Type:** Select the type of program (Fleet or Voucher).
+* **Support Dry Products:** Checkmark this option if the program supports SKUs.
+* **Validates Expiration Date:** Checkmark this option if the program validates identification expiration dates.
+* **Identifier Expiration:** Input the identification duration.
 
-#### Create a new program
+Once the general information was completed, you can also configure prompt and location rules for the program:
 
-To create a new program, click on the "New" button in the upper left corner.
+![Programs New - Rules](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Programs%20New%20-%20Rules.PNG)
 
-The form to create a new program receives the following parameters:
+For more information about rules go [here](#rules).
 
-![Nuevo Programa Administración](Content/Includes/AN-HomeBase-UserManal-SP/crearNuevoProgramaAdministracion.png)
+## Requested Identifications
+In this section you can consult the requested identifications by the company and request fleet and/or loyalty identification. You can also perform actions such as establishing the identifications as in production or as delivered.
 
-* ***Description:*** The description of the new program.
-* ***Apply Contract Sites:*** May be unaffected, forced or unforced.
-* ***Balance mode:*** Can be unaffected, dispersed, undispersed, unlimited or automatic filling.
-* ***Supports contingencies:*** Can be unaffected, forced or unforced.
-* ***Supports offline:*** Can be unaffected, forced or unforced.
-* ***Gift card:*** Whether it includes a gift card or not. If this option is checked, three more parameters will appear:
-* ***Gift Card Amount:*** The amount of the gift card.
-* ***Rechargeable:*** If it is rechargeable.
-* ***Company:***The company to which it is assigned.
+It also has a panel to filter the requested identifications and thus make the search easier.
 
-When you have finished making the changes, click the "Save" button.
+![Requested Identifications](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Requested%20Identifications.PNG)
 
-### Requested Identifications
-In this section you can consult the requested identifications, request fleet identification and/or loyalty. You can also perform actions such as establishing the identifications as in production or as delivered.
+To request a fleet identification, click the **New Request** button and select **Request Fleet Identifications**. When you do, a form will open up.
 
-It also has a panel to filter the requested identifications and thus make the search easier. You can filter by company name, order number, program, contract, state and/or loyalty program.
+![Requested Identifications - New Fleet](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Requested%20Identifications%20-%20New%20Fleet.PNG)
 
-![Requested Identifications]()
+* **Type:** Select the identifications type (Card, TAG, Chipkey, ATIOnet Card, ATIOnet TAG, Barcode and QR).
+* **Model:** Select the identifications model.
+* **Company:** Select the company associated to the identifications.
+* **Contract:** Select the company contract associated to the identifications.
+* **Program:** Select the program associated to the identifications.
+* **Quantity:** Input the quantity of identifications to be requested.
 
-To request a fleet identification click on the *Request Fleet Identifiers** button. When you do, a form will open. The fields to complete are:
+When you have finished filling in the fields, click the **Request identifications** button.
 
-* **Type**: Can be Card, TAG, Chipkey, Manual Entry, ATIOnet Card or ATIOnet TAG.
-* **Model**: The model. Only those with a custom track will be shown.
-* **Company**: The name of the company.
-* **Contract**: The contract.
-* **Program**: Select the program for the identifier.
-* **Quantity**: The number of identifiers.
+To request a loyalty identification, click the **New Request** button and select **Request Loyalty Identifications**. When you do, a form will open up.
 
-When you have finished filling in the fields, click on the **Request IDs** button.
+![Requested Identifications - New Loyalty](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Requested%20Identifications%20-%20New%20Loyalty.PNG)
 
-![Fleet Requested Identification]()
+* **Type:** Select the identification type.
+* **Model:** Select the identifications model.
+* **Community:** Select the loyalty community associated to the identifications.
+* **Quantity:** Input the quantity of identifications to be requested.
 
-To request a loyalty ID, click on the **Request Loyalty IDs** button. When you do, a form will open. The fields to complete are:
+When you have finished filling in the fields, click the **Request identifications** button.
 
-* **Model**: The model of the ATIOnet Card.
-* **Loyalty Program**: The loyalty program to which the requested identifier belongs.
-* **Number**: The number of identifiers you want to request.
+In order to change the requested identification status, click the **Bulk Action** button and select either **Set in production** or **Set as delivered** option. You can either have **All** requests change the status or only the **Selected** ones.
 
-When you have finished filling in the fields, click on the "Request IDs" button.
+## Rules
+In ATIONet rules refer to limits that can be configured by the company and associated to different entities. Inside this view you can consult, create or edit rules. There are different type of rules: Quota, Date Range, Location, Fuel, Limit Per Transactions, DaysTime, Prompting, Dry Transaction Limit and Dry Quota Limit.
 
-![Loyalty Requested Identification]()
+Take into consideration that all rules can be **Non Blocking**, which it means that ATIONet will not reject the transaction even when the parameters are met.
 
-### Rules
+![Rules](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules.PNG)
+
+1. **Quota**
+In this rule you can limit transactions quantity, volume and/or money on an specific frequency.
+
+![Rules - Quota](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Quota.PNG)
+
+2. **Date Range**
+In this rule you can limit transactions to be made on specific date and time ranges.
+
+![Rules - Date Range](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Date%20Range.PNG)
+
+3. **Location**
+In this rule you can limit transactions to be made on specific sites and zones.
+
+![Rules - Location](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Location.PNG)
+
+4. **Fuel**
+In this rule you can limit transactions to be made for specific fuels and fuels masters groups.
+
+![Rules - Fuel](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Fuel.PNG)
+
+5. **Limit Per Transactions**
+In this rule you can limit each transaction volume and/or money.
+
+![Rules - Limit Per Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Limit%20Per%20Transaction.PNG)
+
+6. **DaysTime**
+In this rule you can limit transactions to be made on specific days and times of the week.
+
+![Rules - DaysTime](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20DaysTime.PNG)
+
+7. **Prompting**
+In this rule you can configure prompts to be requested for transactions, such as Driver/Vehicle ID, Driver/Vehicle PIN, etc.
+
+![Rules - Prompting](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Prompting.PNG)
+
+8. **Dry Transaction Limit**
+In this rule you can limit each SKUs transactions money.
+
+![Rules - Dry Transaction Limit](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Dry%20Transaction%20Limit.PNG)
+
+9. **Dry Quota Limit**
+In this rule you can limit transactions money on an specific frequency.
+
+![Rules - Dry Quota Limit](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Dry%20Quota%20Limit.PNG)
+
+After configuring any type of rule, the last step is to associate the rule to an entity. You can apply rules to: Fleets, Vehicles, Drivers, Sites and Fuels.
+
+![Rules - Association](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Association.PNG)
+
 ### Transactions
 
 The transaction view is one of the most important in ATIONet. In this view you can see the transactions that were made and approved.
