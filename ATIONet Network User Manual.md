@@ -27,6 +27,7 @@
 	- [Driver](#driver)
 	- [Offline module](#offline-module)
 	- [Terminal](#terminal)
+- [My Preferences](#my-preferences) 
 - [Navigation Menu](#navigation-menu)
 	- [DashBoard](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/DashBoard.md)
 		- [Health Status](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/DashBoard.md)
@@ -120,13 +121,6 @@
 	- [Logs](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Billing%20%26%20Configuration%20%26%20Logs.md)
 		- [Audit Log](#audit-log)
 		- [Process History](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Billing%20%26%20Configuration%20%26%20Logs.md)
-- [My Filters](#my-filters)
-- [My Preferences](#my-preferences)
-- [Inventory](#inventory)
-  - [Inventory Chart](#inventory-chart)
-  - [Inventory](#inventory-1)
-  - [Deliveries](#deliveries)
-  - [Inventory Reconciliation](#inventory-reconciliation)
 
 # Overview
 
@@ -185,32 +179,25 @@ The terminal (or controller) is the representation of the dispenser controller, 
 
 ATIONet has a quick access menu located on the left side of the website. From this menu you can access different options. The menu is divided into 9 sections. (Dashboard, Favorites, Reports, Administration, Fleets, Billing, Notifications, Configuration and Logbook).
 
-<br>
-<br>
-<br>
-
-# My Filters
-
 # My Preferences
+Inside this section each user can customize their portal preferences.
 
-# Inventory
+1. **Default Role:** Select the default role when loggin in.
 
-## Inventory Chart
+![Default Role](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/My%20Preferences/Default%20Role.PNG)
 
-![Grafico de Inventarios](Content/Includes/AN-Network-UserManal-SP/graficoDeInventarios.png)
+2. **Profile Picture:** Change the profile picture of your user.
 
-## Inventory
+![Profile Picture](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/My%20Preferences/Profile%20Picture.PNG)
 
-![Inventarios](Content/Includes/AN-Network-UserManal-SP/inventarios.png)
+3. **Change Password:** Change the password for your user.
 
-![Inventarios](Content/Includes/AN-Network-UserManal-SP/nuevoInventario.png)
+![Change Password](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/My%20Preferences/Change%20Password.PNG)
 
-## Deliveries
+To edit your password, click the ***change password*** link.
 
-![Recepciones](Content/Includes/AN-Network-UserManal-SP/recepciones.png)
+![Change Password New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/My%20Preferences/Change%20Password%20New.PNG)
 
-![Recepciones](Content/Includes/AN-Network-UserManal-SP/nuevoRecepciones.png)
+4. **Widgets Configuration:** Select which widgets to show on your dashboard.
 
-## Inventory Reconciliation
-![Reconciliacion Inventario](Content/Includes/AN-Network-UserManal-SP/reconciliacionInventario.png)
-
+![Widget Configuration](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/My%20Preferences/Widget%20Configuration.PNG)
