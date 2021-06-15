@@ -638,38 +638,37 @@ After configuring any type of rule, the last step is to associate the rule to an
 
 ![Rules - Association](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Association.PNG)
 
-### Transactions
+## Transactions
+The transaction view is one of the most important in ATIONet. In this view you can see all successful transactions.
 
-The transaction view is one of the most important in ATIONet. In this view you can see the transactions that were made and approved.
+The filter panel has all these fields available:
 
-The Filter panel has all these possibilities:
+![Trasactions - Filter](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20-%20Filter.PNG)
 
-![Transacciones](Content/Includes/AN-HomeBase-UserManal-SP/transactions.png)
+* **Authorization Code:** Input the authorization code associated to the transaction.
+* **Shift Number:** Input the shift number associated to the transaction.
+* **Vehicle:** Select the vehicle associated to the transaction.
+* **Driver:** Select the driver associated to the transaction.
+* **Merchant:** Select the merchant associated to the transaction.
+* **Site:** Select the site associated to the transaction.
+* **Terminal/Controller:** Select the terminal associated to the transaction.
+* **Fuel:** Select the fuel associated to the transaction.
+* **Program:** Select the fleet program associated to the transaction.
+* **Contract:** Select the company contract associated to the transaction.
+* **Invoice Number:** Input the invoice number associated to the transaction.
+* **Date Type:** Select the date type associated to the transaction (Controller, Host, Subscription or Site).
+* **Date From / Date To:** Input the starting and ending dates associated to the transaction.
+* **Time From / Time To:** Input the starting and ending times associated to the transaction.
+* **Mode:** Select the transaction mode (Contingency, Offline or Standard).
+* **Show Zero Completions:** Checkmark this option to view transactions that no fuel was dispatched.
 
-* ***Authorization Code:*** Authorization Code delivered by ATIONet.
-* ***Vehicle:*** Vehicle or Vehicles (autocomplete field and multiple selection, pressing the space bar will list the first 20 vehicles).
-* ***Fleet:***The name of the fleet. (autocomplete and multiple selection field)
-* ***Site:*** The name of the site. (autocomplete and multiple selection field)
-* ***Date From / Date To:*** Range of dates.
-* ***Time From / Time To:*** Range of hours.
-* ***Period Performance:*** ?
-* ***Offline Transactions:*** Checking this option will also list the approved transactions in Offline mode. (for more details on the Offline module please see this [sección](#modulo-offline))
-* ***Shift:*** The turn in which the transaction occurred. (as long as the terminal or POS informs you)
-* ***Driver:***The name of the driver. (autocomplete and multiple selection field).
-* ***Terminal / Controller:*** Name of the terminal that recorded the transaction. (Autocomplete and multiple selection field).
-* ***Fuel:*** The product involved in the transaction. (autocomplete and multiple selection field)
-* ***Show Complete Transactions at Zero:*** Checking this option will also show transactions that have been sent with amount or volume at 0.
-* ***Product Transactions:*** Checking this option will also show transactions that contain dry products.
+Once you have filtered, press ***Search*** and it will list the transactions that comply with the filter.
 
-Once you have selected the desired filter, press ***"Search "*** and it will list the transactions that comply with the filter.
+![Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions.PNG)
 
-![Transacciones](Content/Includes/AN-HomeBase-UserManal-SP/transactions2.png)
+If you want to see the transaction detail, click on the **Authorization Code** and this will take you to a detail view of the transaction.
 
-The grid shows the main data of the transaction, in the actions column you can ignore a transaction and enter the process of ignorance. (for more details on the ignorance of transactions see this [sección](#transacciones-desconocidas)).
-
-If you want to see the transaction detail, click on the Authorization Code, this will take you to a detail view of the transaction.
-
-![Transacciones](Content/Includes/AN-HomeBase-UserManal-SP/transactions3.png)
+![Transaction Details](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transaction%20Details.PNG)
  
 ### Transactions by Driver
 
