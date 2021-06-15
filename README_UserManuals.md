@@ -6,7 +6,7 @@
 
 ## ATIONet Web Portal
 - [Network Subscription Type User Manual (Spanish)](UserManuals/AN-Network-UserManal-SP.md)
-- [Network Subscription Type User Manual (English)(PREVIEW)](UserManuals/AN-Network-UserManual-EN.md)
+- [Network Subscription Type User Manual (English)](https://github.com/Ationet/ationetdocs/blob/master/ATIONet%20Network%20User%20Manual.md)
 - [Home base Subscription Type User Manual (Spanish)](UserManuals/AN-HomeBase-UserManual-SP.md)
 
 ## ATIONet Stand Alone Terminal (Verifone Vx520)
