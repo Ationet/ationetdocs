@@ -99,7 +99,7 @@
 		- [Programs](#programs)
 		- [Requested Identifications](#requested-identifications)
 		- [Rules](#rules)
-		- [Transactions](#transactions-1)
+		- [Transactions](#transactions)
 		- [Transactions by Driver](#transactions-by-driver)
 		- [Transactions by Fleet](#transactions-by-fleet)
 		- [Transactions by Site](#transactions-by-site)
