@@ -80,8 +80,6 @@ This shows all sub-accounts that have something to pay attention to, such as:
 3. **With Suspended Identification:** Sub-accounts that have an identification that has been suspended. **Only ATIONet can suspend an identification**.
 4. **With inactive Vehicle/Driver:** These are sub-accounts that have a vehicle or driver that has not been deactivated from the portal.
 
-For more details about sub-accounts please consult [this section](#sub-account)
-
 ![Sub-Accounts with Exceptions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Dashboard/Sub-Accounts%20with%20Exceptions.PNG)
 
 ## Recent Transactions
