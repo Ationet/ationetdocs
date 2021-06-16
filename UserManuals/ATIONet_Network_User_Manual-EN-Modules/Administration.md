@@ -10,8 +10,6 @@
 	- [Drivers](#drivers)
 	- [Fuels](#fuels)
 	- [Fuels Masters Groups](#fuels-masters-groups)
-	- [Gift Card](#gift-card)
-	- [Gift Cards Request](#gift-cards-request)
 	- [Identifications](#identifications)
 	- [Identifications Models](#identifications-models)
 	- [Identifications Providers](#identifications-providers)
@@ -19,7 +17,6 @@
 	- [Merchants](#merchants)
 	- [Notifications](#notifications)
 	- [Payment Methods](#payment-methods)
-	- [Quotations](#quotations)
 	- [Rack Prices](#rack-prices)
 	- [Sites](#sites)
 	- [SKUs](#skus)
@@ -184,48 +181,6 @@ The fields to complete are the following:
 * **Description:** Input a description for the fuels masters group.
 * **Fuel:** Select all fuels associated to the fuels masters group.
 * **CO2 Emission Coefficient:** Input the coefficient for the CO2 emission of all fuels in the group.
-
-When you have finished filling in the fields, click the **Save** button.
-
-## Gift Card
-In this section you can consult the created gift cards. You can also perform batch actions such as activating or deactivating them. To make queries easier, there is a panel of filters at the top.
-
-![Gift Card](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Gift%20Card.PNG)
-
-To create a Gift Card, click the **New** button.
-
-![Gift Card New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Gift%20Card%20New.PNG)
-
-The fields to complete are the following:
-
-* **Program**: The program to which the gift card will be associated.
-* **Contract**: The contract to which the gift card will be associated.
-* **Label**: The label is the inscription on the back of the card.
-* **PAN**: The PAN is the number between 1 and 19 characters found on the gift card.
-* **Track**: The Track is the information contained in the card, which is divided into three parts. In this field, you can customize what the second field of the track contains.
-* **Type**: Select whether the gift card is a Card, TAG, Chipkey, Manual Entry, ATIONet Card or ATIONet TAG.
-* **Model**: The model of the gift card.
-* **Expiration Date**: The expiration date of the gift card.
-
-When you have finished filling in the fields, click the **Save** button.
-
-## Gift Cards Request
-In this section, you can consult and request lots of gift cards. To make queries easier, there is a panel of filters at the top.
-
-![Gift Cards Request](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Gift%20Card%20Request.PNG)
-
-To order a set of gift cards, click the **New Request** button.
-
-![Gift Cards Request New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Gift%20Card%20Request%20New.PNG)
-
-The fields to complete are the following:
-
-* **Program**: Select the program assigned to the batch of cards you are requesting.
-* **Contract**: Select the contract of the program assigned to the batch of cards you are requesting.
-* **Quantity**: Enter the number of cards you want to apply.
-* **Expiration Date**: Enter the date the gift cards expire.
-* **Type**: Select the type. It can be Card, TAG, Chipkey, Manual Entry, ATIONet Card or ATIONet TAG.
-* **Model**: Select the model. It can be ATIONet CG, Card or Gift Card.
 
 When you have finished filling in the fields, click the **Save** button.
 
@@ -431,8 +386,6 @@ The fields to complete are the following:
 * **Description:** The description of the new payment method.
 
 When you have finished filling in the fields, click the **Save** button.
-
-## Quotations
 
 ## Rack Prices
 In this section you can view all rack prices generated. Rack prices are used when a company contract has no prices configured (that is if the option is enables inside the contract configuration).
