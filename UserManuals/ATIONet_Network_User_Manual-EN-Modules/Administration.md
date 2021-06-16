@@ -296,21 +296,21 @@ To create a merchant, click the **New** button.
 
 The fields to complete are the following:
 
-* **Tax Payer Id:** Input the company taxpayer identification.
-* **Active:** Checkmark to enable/disable the group company.
-* **Code:** Input the company unique code.
-* **Name:** Input the company name.
+* **Tax Payer Id:** Input the merchant taxpayer identification.
+* **Active:** Checkmark to enable/disable the merchant.
+* **Code:** Input the merchant unique code.
+* **Name:** Input the merchant name.
 * **Automatically Generated:** Checkmark this option to have the **code** automatically generated.
-* **Street 1:** Input the company primary street.
-* **Street 2:** Input the company secondary street (if applicable).
-* **Zip Code:** Input the company zip code.
-* **City:** Input the company city.
-* **Country:** Input the company country.
-* **State:** Input the company state.
-* **Contact Name:** Input the company contact name.
-* **Contact Email:** Input the company contact email.
-* **Phone Number 1:** Input the company primary phone number.
-* **Phone Number 2:** Input the company secondary phone number (if applicable).
+* **Street 1:** Input the merchant primary street.
+* **Street 2:** Input the merchant secondary street (if applicable).
+* **Zip Code:** Input the merchant zip code.
+* **City:** Input the merchant city.
+* **Country:** Input the merchant country.
+* **State:** Input the merchant state.
+* **Contact Name:** Input the merchant contact name.
+* **Contact Email:** Input the merchant contact email.
+* **Phone Number 1:** Input the merchant primary phone number.
+* **Phone Number 2:** Input the merchant secondary phone number (if applicable).
 
 When you have finished filling in the fields, click the **Save** button.
 
