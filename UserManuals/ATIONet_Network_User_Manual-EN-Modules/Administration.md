@@ -433,7 +433,7 @@ The fields to complete are the following:
 * **State:** Input the site state.
 * **Phone Number 1:** Input the site primary phone number.
 * **Phone Number 2:** Input the site secondary phone number.
-* **Require Fuel Mapping:** Checkmark this option if specific fuel codes need to be configured for the site (if not, [ATIONet Master Fuel Codes]() will be used).
+* **Require Fuel Mapping:** Checkmark this option if specific fuel codes need to be configured for the site (if not, [ATIONet Master Fuel Codes](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/C%C3%B3digos%20Maestros%20de%20Combustible.PNG) will be used).
 * **Recipient Emails:** Input the email addresses associated to the site (they will receive the billing statements for the site).
 * **Latitude:** Input the latitude of the site.
 * **Longitude:** Input the longitude of the site.
