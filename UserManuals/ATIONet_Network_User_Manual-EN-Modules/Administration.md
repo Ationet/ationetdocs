@@ -437,7 +437,7 @@ The fields to complete are the following:
 * **Recipient Emails:** Input the email addresses associated to the site (they will receive the billing statements for the site).
 * **Latitude:** Input the latitude of the site.
 * **Longitude:** Input the longitude of the site.
-* **Currency:** Señect the currency associated to the site.
+* **Currency:** Select the currency associated to the site.
 
 <br>
 
