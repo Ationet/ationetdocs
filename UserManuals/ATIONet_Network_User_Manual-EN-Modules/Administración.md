@@ -1,6 +1,6 @@
 ![ationetlogo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/ATIOnetLogo_250x70.png)
 
-# Contents
+# Contenido
 
 - [Administración](#administración)
   - [Banderas](#banderas)
