@@ -4,7 +4,7 @@
 
 - [Tablero](#tablero)
 	- [Estado General](#estado-general)
-	- [Unidades/Mes](#unidades-/-mes)
+	- [Unidades/Mes](#unidadesmes)
 	- [Transacciones del Día](#transacciones-del-día)
 	- [Lista de Pre-Autorizaciones Pendientes](#lista-de-pre---autorizaciones-pendientes)
 	- [Transacciones Marcadas en el Mes Actual](#transacciones-marcadas-en-el-mes-actual)
