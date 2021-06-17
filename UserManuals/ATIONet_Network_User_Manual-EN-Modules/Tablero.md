@@ -6,7 +6,7 @@
 	- [Estado General](#estado-general)
 	- [Unidades/Mes](#unidadesmes)
 	- [Transacciones del Día](#transacciones-del-día)
-	- [Lista de Pre-Autorizaciones Pendientes](#lista-de-pre---autorizaciones-pendientes)
+	- [Lista de Pre-Autorizaciones Pendientes](#lista-de-pre-autorizaciones-pendientes)
 	- [Transacciones Marcadas en el Mes Actual](#transacciones-marcadas-en-el-mes-actual)
 	- [Contratos sin Actividad](#contratos-sin-actividad)
 	- [Transacciones Recientes](#transacciones-recientes)
