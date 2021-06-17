@@ -2,7 +2,34 @@
 
 # Contents
 
-- [Administración](#administracion)
+- [Administración](#administración)
+  - [Banderas](#banderas)
+  - [Categorías de SKUs](#categorías-de-skus)
+  - [Combustibles](#combustibles)
+  - [Comercios](#comercios)
+  - [Compañías](#compañías)
+  - [Conductores](#conductores)
+  - [Cotizaciones](#cotizaciones)
+  - [Depositos](#depositos)
+  - [Documentos Externos](#documentos-externos)
+  - [Grupos de Combustibles Maestros](#grupos-de-combustibles-maestros)
+  - [Grupos de Compañías](#grupos-de-compañías)
+  - [Grupos de Compañías - Movimientos](#grupos-de-compañías---movimientos)
+  - [Identificadores](#identificadores)
+  - [Impuestos](#impuestos)
+  - [Instalaciones](#instalaciones)
+  - [Métodos de Pago](#métodos-de-pago)
+  - [Modelos de Identificadores](#modelos-de-identificadores)
+  - [Notificaciones](#notificaciones)
+  - [Precios de Distribución](#precios-de-distribución)
+  - [Proveedores de Identificadores](#proveedores-de-identificadores)
+  - [Sitios](#sitios)
+  - [SKUs](#skus)
+  - [Terminales/Controladores](#terminales--controladores)
+  - [Usuarios](#usuarios)
+  - [Vales](#vales)
+  - [Vehículos](#vehículo)
+  - [Zonas](#zonas)
 
 # Administración
 Dentro de este módulo podrá gestionar Compañías, Comercios, Sitios, Identificadores, Métodos de Pago y Usuarios entre otras cosas.
@@ -10,15 +37,15 @@ Dentro de este módulo podrá gestionar Compañías, Comercios, Sitios, Identifi
 ## Banderas
 En ATIONet el término bandera se refiere al nombre de cada combustible maestro disponible en ATIONet. En esta sección se pueden consultar y crear banderas.
 
-![Banderas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Brands.PNG)
+![Banderas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Banderas.PNG)
 
 Para cada Network ATIONet ya tiene una bandera **DEFAULT** creada con los siguientes combustibles:
 
-![Bandera DEFAULT](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Brand%20DEFAULT.PNG)
+![Bandera DEFAULT](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Banderas%20DEFAULT.PNG)
 
 Para crear una bandera, haga clic en el botón **Nuevo**:
 
-![Bandera Nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Brands%20New.PNG)
+![Bandera Nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Banderas%20Nueva.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -31,11 +58,11 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Categorías de SKUs
 En esta sección puede consultar las categorías de SKUs (Stock Keeping Units) ya creadas, editarlas o crear nuevas. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Categorías de SKUs](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/SKUs%20Category.PNG)
+![Categorías de SKUs](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Categorias%20SKU.PNG)
 
 Para crear una categoría SKU, haga clic en el botón **Nuevo**.
 
-![Categorías SKU nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/SKUs%20Category%20New.PNG)
+![Categorías SKU nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Categorias%20SKU%20Neueva.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -54,11 +81,11 @@ Cuando haya terminado de rellenar los campos, pulse el botón **Guardar**.
 ## Combustibles
 Esta vista enumera las asignaciones de combustible y su respectivo código para todos los sitios que tienen activada la opción **Mapeo de Combustible Requerido** (para más información sobre el mapeo de combustible haga clic [aquí](#sitios)). Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Combustibles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Fuels.PNG)
+![Combustibles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Combustibles.PNG)
 
 Para crear un mapeo de combustible, haga clic en el botón **Nuevo**.
 
-![Combustibles nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Fuels%20New.PNG)
+![Combustibles nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Combustibles%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -71,11 +98,11 @@ Cuando haya terminado de rellenar los campos, pulse el botón **Guardar**.
 ## Comercios
 En ATIONet el término comercio se refiere a la empresa propietaria de los sitios. En esta sección puede ver, crear y editar todos los comercios. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Comercios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Merchants.PNG)
+![Comercios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Comercios.PNG)
 
 Para crear un comercio, haga clic en el botón **Nuevo**.
 
-![Comercios nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Merchants%20New.PNG)
+![Comercios nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Comercios%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 * **Identificación del contribuyente:** Introduzca el identificador del contribuyente del comercio.
@@ -99,15 +126,15 @@ Cuando haya terminado de rellenar los campos, haga clic en el botón **Guardar**
 ## Compañías
 En ATIONet el término compañías se refiere a la entidad propietaria de la flota. En esta sección puedes ver las compañías existentes con sus detalles, editarlas y/o crear nuevas. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Compañías](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Companies.PNG)
+![Compañías](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Compa%C3%B1%C3%ADas.PNG)
 
 Para crear una compañía, haga clic en el botón **Nuevo**.
 
-![Compañías nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Companies%20New.PNG)
+![Compañías nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Compa%C3%B1%C3%ADas%20Nueva.PNG)
 
 Los campos a completar son los siguientes:
 
-* **ID Contribuyente:** Introduzca la identificación del contribuyente de la empresa.
+* **ID Contribuyente:** Introduzca la identificación del contribuyente de la compañía.
 * **Activo:** Marcar para activar/desactivar la compañía del grupo.
 * **Código:** Introduzca el código único de la compañía.
 * **Nombre:** Introduzca el nombre de la compañía.
@@ -130,19 +157,24 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Conductores
 En esta vista se listan los conductores que han sido creados. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Conductores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Drivers.PNG)
+![Conductores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Conductores.PNG)
 
 ## Cotizaciones
 
+![Cotizaciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Cotizaciones.PNG)
+
+<br>
+
+![Cotizaciones Nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Cotizaciones%20Nuevo.PNG)
 
 ## Depositos
 En esta sección puede crear/editar depositos. El deposito es donde se almacenan los identificadores instalados.
 
-![Depositos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Warehouses.PNG)
+![Depositos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Depositos.PNG)
 
 Para crear un Deposito, haga clic en el botón **Nuevo**.
 
-![Depositos nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Warehouses%20New.PNG)
+![Depositos nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Depositos%20Nuevo.PNG)
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
@@ -153,11 +185,11 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Grupos de Combustibles Maestros
 Esta vista muestra todos los grupos de combustibles creados. Esta opción permite agrupar varios combustibles maestros en uno solo. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Grupos maestros de combustibles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Fuels%20Masters%20Groups.PNG)
+![Grupos maestros de combustibles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Grupo%20Maestro%20de%20Combustibles.PNG)
 
 Para crear un nuevo grupo, haga clic en el botón **Nuevo**.
 
-![Grupos de combustibles nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Fuels%20Masters%20Groups%20New.PNG)
+![Grupos de combustibles nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Grupo%20Maestro%20de%20Combustibles%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -172,11 +204,11 @@ Cuando haya terminado de rellenar los campos, pulse el botón **Guardar**.
 # Grupos de Compañías
 Esta sección muestra todos los grupos de compañías creados. Esta función le permitirá agrupar las compañías en una sola. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Grupos de Compañías](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Companies%20Groups.PNG)
+![Grupos de Compañías](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Grupos%20de%20Compa%C3%B1%C3%ADas.PNG)
 
 Para crear un grupo de compañías, haga clic en el botón **Nuevo**.
 
-![Grupos de Compañías Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Companies%20Groups%20New.PNG)
+![Grupos de Compañías Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Grupos%20de%20Compa%C3%B1%C3%ADas%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -211,13 +243,13 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Grupos de Compañías - Movimientos
 En esta sección se listan todos los movimientos (ingresos, retiros, finalizaciones, etc.) de todos los Grupos de Empresas.
 
-![Movimientos de Grupos de Compañías](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Companies%20Groups%20Movements.PNG)
+![Movimientos de Grupos de Compañías](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Grupos%20de%20Compa%C3%B1%C3%ADas%20Movimientos.PNG)
 
 Tenga en cuenta que primero debe completar el campo **Grupo de Compañías** y luego hacer clic en el botón **Búsqueda** para poder ver todos sus movimientos.
 
 Para crear un movimiento, haga clic en el botón **Nuevo**:
 
-![Grupos de Compañías Movimientos Nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Companies%20Groups%20Movements%20New.PNG)
+![Grupos de Compañías Movimientos Nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Grupos%20de%20Compa%C3%B1%C3%ADas%20Movimientos%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -233,11 +265,11 @@ El identificador es el medio físico utilizado por ATIONet para identificar un v
 
 En esta sección aparecerán los identificadores ya creados. En la columna de opciones se puede editar el identificador, activarlo o desactivarlo y liberarlo. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Identificadores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identifications.PNG)
+![Identificadores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Identificadores.PNG)
 
 Para crear un identificador, haga clic en el botón **Nuevo**.
 
-![Identificadores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identifications%20New.PNG)
+![Identificadores Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Identificador%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -264,11 +296,11 @@ La tabla de impuestos muestra:
 * **Fecha Desde / Fecha Hasta:** Rango de fechas.
 * **Opciones:** Editar el impuesto.
 
-![Impuestos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Taxes.PNG)
+![Impuestos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Impuestos.PNG)
 
 Para crear un impuesto, haga clic en el botón **Nuevo**.
 
-![Impuestos nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Taxes%20New.PNG) 
+![Impuestos nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Impuestos%20Nuevo.PNG) 
 
 Los campos a completar son los siguientes:
 
@@ -287,11 +319,11 @@ En ATIONet el hecho de que los identificadores deban ser colocados por un técni
 
 En este apartado podrá consultar todas las instalaciones realizadas, listadas por Fecha, Orden de Trabajo, los identificadores instalados, el vehículo en el que se instaló el identificador, el depósito del que se retiró el identificador y el técnico que lo instaló.
 
-![Instalaciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Installation.PNG)
+![Instalaciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Instalaciones.PNG)
 
 Para crear una instalación, haga clic en el botón **Nueva**.
 
-![Instalación nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Installation%20New.PNG)
+![Instalaciiones nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Instalaciones%20Nueva.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -317,11 +349,11 @@ Luego, en la sección de Identificadores seleccione el Identificador. Al termina
 ## Métodos de pago
 Los métodos de pago son las diferentes formas en que se puede pagar una transacción: efectivo, tarjeta de crédito, tarjeta de débito, tarjetas de regalo, etc. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Métodos de pago](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Payment%20Methods.PNG)
+![Métodos de pago](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/M%C3%A9todos%20de%20Pago.PNG)
 
 Para crear un método de pago, haga clic en el botón **Nuevo**.
 
-![Método de pago nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Payment%20Methods%20New.PNG)
+![Método de pago nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/M%C3%A9todos%20de%20Pago%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -333,11 +365,11 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Modelos de Identificadores
 Los modelos de identificador varían según la necesidad del cliente. Pueden ser del tipo Card (una tarjeta magnética), TAG, Chipkey o Manual Entry (un código introducido a mano). 
 
-![Modelos de identificadores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identifications%20Model.PNG)
+![Modelos de identificadores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Modelos%20de%20Identificador.PNG)
 
 Para crear un modelo de identificador, haga clic en el botón **Nuevo**.
 
-![Nuevo modelo de identificadores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identifications%20Model%20New.PNG)
+![Nuevo modelo de identificadores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Modelos%20de%20Identificador%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -356,7 +388,7 @@ Cuando haya terminado de rellenar los campos, pulse el botón **Guardar**.
 ## Notificaciones
 En esta sección cada usuario puede seleccionar sus propias notificaciones para recibirlas por correo electrónico o sms.
 
-![Notificaciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notification.PNG)
+![Notificaciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones.PNG)
 
 1. ***Inventario***
    * **Notificación de nueva entrega:** Recibe una notificación por cada entrega detectada.
@@ -390,7 +422,7 @@ En esta sección cada usuario puede seleccionar sus propias notificaciones para 
 ### Notificaciones de compañía
 En esta sección los usuarios de la compañía pueden configurar sus propias notificaciones (dentro de sus perfiles de compañía en ATIONet).
 
-![Notificación Empresa](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notification%20Company.PNG)
+![Notificaciones Compañía](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20Compa%C3%B1%C3%ADas.PNG)
 
 1. ***Contrato***
    * **Notificación de saldo de contrato bajo:** Recibe una notificación cuando el saldo de un contrato es bajo.
@@ -413,11 +445,11 @@ En esta sección los usuarios de la compañía pueden configurar sus propias not
 ## Precios de Distribución
 En esta sección puede ver todos los precios de distribución generados. Estos precios se utilizan cuando un contrato de compañía no tiene precios configurados (siempre y cuando la opción de precios de distribución esté habilitada dentro de la configuración del contrato de compañía).
 
-![Precios de distribución](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Rack%20Prices.PNG)
+![Precios de distribución](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Precios%20de%20Distribuci%C3%B3n.PNG)
 
 Para crear un precio de distribución, haga click en el botón **Nuevo**.
 
-![Precios de distribución nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Rack%20Prices%20New.PNG)
+![Precios de distribución nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Precios%20de%20Distribuci%C3%B3n%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -430,11 +462,11 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Proveedores de Identificadores
 En este apartado podrá consultar y crear cualquier proveedor que desee para enviar sus identificadores a producción. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Proveedores de identificaciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identificadores%20Provider.PNG)
+![Proveedores de identificaciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Proveedores%20de%20Identificadores.PNG)
 
-Para crear un proveedor, pulse el botón **Nuevo**.
+Para crear un proveedor, haga click en el botón **Nuevo**.
 
-![Proveedores de identificación nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identificadores%20Provider%20New.PNG)
+![Proveedores de identificación nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Proveedores%20de%20Identificadores%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -446,16 +478,16 @@ Los campos a completar son los siguientes:
 
 * **Configuración del archivo para la exportación:** Seleccione el formato en el que desea enviar la información de los identificadores a su proveedor. Puede enviarlo como Excel, CSV o Texto. También puede seleccionar qué información enviar en el archivo (Nombre, Apellido, Número de tarjeta, Número de track, etc.).
 
-Cuando haya terminado de rellenar los campos, pulse el botón **Guardar**.
+Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 ## Sitios
 En ATIONet el sitio representa la estación de servicio. Esta sección muestra los sitios ya creados, editarlos y también crear nuevos. También puede añadir impuestos a los sitios directamente desde la columna **Opciones**. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Sitios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Sites.PNG)
+![Sitios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Sitios.PNG)
 
 Para crear un sitio, haga clic en el botón **Nuevo**.
 
-![Sitios nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Sites%20New.PNG)
+![Sitios nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Sitios%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -493,11 +525,11 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## SKUs
 Las Unidades de Mantenimiento de Stock (SKUs - Stock Keeping Units) son productos no combustibles. En esta sección puede consultar los SKUs creados, editarlos y también crear nuevos. Para facilitar las consultas, hay un panel de filtros en la parte superior. 
 
-![SKUs](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/SKUs.PNG)
+![SKUs](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/SKUs.PNG)
 
 Para crear un SKU, haga clic en el botón **Nuevo**.
 
-![SKUs Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/SKUs%20New.PNG)
+![SKUs Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/SKUs%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -542,11 +574,11 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Terminales / Controladores
 Dentro de esta sección puede ver, crear y editar todos los terminales/controladores. El terminal es el punto de venta del sitio y el controlador gestiona los surtidores. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Terminales](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Terminals.PNG)
+![Terminales](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Terminales%20-%20Controladores.PNG)
 
 Para crear un Terminal/Controlador, haga clic en el botón **Nuevo**.
 
-![Terminales nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Terminals%20New.PNG)
+![Terminales nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Terminales%20-%20Controladores%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -570,11 +602,11 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Usuarios
 En esta sección puede ver, crear o editar usuarios para la Network. Puede editarlos haciendo clic en el icono del lápiz en la columna de opciones, activar/desactivar un usuario haciendo clic en el icono del candado y restablecer la contraseña con el icono de la estrella.
 
-![Usuarios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Users.PNG)
+![Usuarios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Usuarios.PNG)
 
 Para crear un usuario, haga clic en el botón **Nuevo**.
 
-![Usuarios nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Users%20New.PNG)
+![Usuarios nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Usuarios%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -599,12 +631,12 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Vales
 Dentro de esta sección se puede ver un listado de todos los vales creados por las compañías. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Vales](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Vouchers.PNG)
+![Vales](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Vales.PNG)
 
 ## Vehículo
 Esta vista muestra todos los vehículos que han sido creados. Recuerde que no es obligatorio cargar los vehículos para poder operar, sólo es necesario si decide asociar las identificaciones a los vehículos. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Vehículos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Vehicles.PNG)
+![Vehículos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Veh%C3%ADculos.PNG)
 
 En la columna **Opciones** puede:
 
@@ -615,10 +647,10 @@ En la columna **Opciones** puede:
 ## Zonas
 En esta sección puede crear/editar zonas. Las zonas son áreas a las que se asocian varios sitios. Generalmente un TM (Territory Manager) está asociado a una(s) zona(s) específica(s). Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Zonas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Zones.PNG)
+![Zonas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Zonas.PNG)
 
 Para crear una zona, haga clic en el botón **Nuevo**.
 
-![Zonas nuevas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Zones%20New.PNG)
+![Zonas nuevas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Zonas%20Nueva.PNG)
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
