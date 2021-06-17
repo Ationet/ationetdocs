@@ -15,8 +15,8 @@
 	- [Motivos de Contingencias](#motivos-de-contingencias)
 	- [Red](#red)
 	- [Tipos de Documentos Externos](#tipos-de-documentos-externos)
-- [Bitacora](#bitácora)
-	- [Bitácora de Auditorias](#bitácora-de-auditorias)
+- [Bitácora](#bitácora)
+	- [Bitácora de Auditorias](#bitácora-de-auditoria)
 	- [Bitácora de Procesos](#bitácora-de-procesos)
 
 
