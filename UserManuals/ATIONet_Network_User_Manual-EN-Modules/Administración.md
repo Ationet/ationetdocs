@@ -509,7 +509,7 @@ Los campos a completar son los siguientes:
 * **Estado:** Introduzca el estado del sitio.
 * **Número de teléfono 1:** Introduzca el número de teléfono principal del sitio.
 * **Número de teléfono 2:** Introduzca el número de teléfono secundario del sitio.
-* **Requerir asignación de combustible:** Marque esta opción si es necesario configurar códigos de combustible específicos para el sitio (si no, se utilizará [ATIONet Master Fuel Codes]()).
+* **Requerir asignación de combustible:** Marque esta opción si es necesario configurar códigos de combustible específicos para el sitio (sino, se utilizará [ATIONet Master Fuel Codes]()).
 * **Emails de los destinatarios:** Introduzca las direcciones de correo electrónico asociadas al sitio (recibirán los estados de cuenta del sitio).
 * **Latitud:** Introduzca la latitud del sitio.
 * **Longitud:** Introduzca la longitud del sitio.
