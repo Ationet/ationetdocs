@@ -266,22 +266,22 @@ To create an installation, click the **New** button.
 
 The fields to complete are the following:
 
-* **Work Order**: The unique number related to the work order document.
-* **Technician**: The technician who carried out the installation.
-* **Company**: The company of which the vehicle to which the installation was made was a part.
-* **Date**: The date on which the installation was carried out.
-* **Contract**: The contract to which the vehicle is linked.
-* **Vehicle**: The vehicle to which the installation was made.
-* **Deposit**: The deposit is the physical place where the identifier was removed to place it.
-* **Has OBD**: Mark this option if the vehicle has an On-Board Diagnostics.
+* **Work Order:** The unique number related to the work order document.
+* **Technician:** The technician who carried out the installation.
+* **Company:** The company of which the vehicle to which the installation was made was a part.
+* **Date:** The date on which the installation was carried out.
+* **Contract:** The contract to which the vehicle is linked.
+* **Vehicle:** The vehicle to which the installation was made.
+* **Deposit:** The deposit is the physical place where the identifier was removed to place it.
+* **Has OBD:** Mark this option if the vehicle has an On-Board Diagnostics.
 
 If you have OBD, more fields will be displayed:
 
-* **ID**: Enter the OBD ID.
-* **Model**: Select the OBD model.
-* **Sensor**: Tilde this option if the OBD has a sensor.
-* **Initial Odometer**: Enter the initial odometer.
-* **Proportion**: Enter the OBD proportions.
+* **ID:** Enter the OBD ID.
+* **Model:** Select the OBD model.
+* **Sensor:** Tilde this option if the OBD has a sensor.
+* **Initial Odometer:** Enter the initial odometer.
+* **Proportion:** Enter the OBD proportions.
 
 Then, in the Identification section select the Identification. When finished, click the **Save** button.
 
