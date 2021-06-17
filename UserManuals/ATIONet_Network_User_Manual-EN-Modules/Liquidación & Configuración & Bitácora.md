@@ -16,7 +16,7 @@
 	- [Red](#red)
 	- [Tipos de Documentos Externos](#tipos-de-documentos-externos)
 - [Bitácora](#bitácora)
-	- [Bitácora de Auditorias](#bitácora-de-auditoria)
+	- [Bitácora de Auditoria](#bitácora-de-auditoría)
 	- [Bitácora de Procesos](#bitácora-de-procesos)
 
 
