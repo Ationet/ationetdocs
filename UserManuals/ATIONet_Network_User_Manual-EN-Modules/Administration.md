@@ -457,41 +457,41 @@ To create a SKU, click the **New** button.
 
 The fields to complete are the following:
 
-* **Code**: The SKU code.
-* **Description**: The description of the SKU.
-* **Short Description**: A short description of the SKU.
-* **Ultra Short Description**: A very short description of the SKU.
-* **POS Product Type**: Select what type of product it is.
-* **Fuel Product**: Checkmark this option if the SKU is a fuel product.
-* **SKU Category**: Enter the category to which the SKU belongs.
-* **Measurement Unit**: Enter the unit in which the SKU is measured.
-* **Sellable**: Checkmark this option if the SKU is sellable.
-* **Weightable**: Checkmark this option if the SKU is weighable.
-* **Fractional**: Checkmark this option if the SKU is fractional.
-* **Stockable**: Checkmark this option if the SKU is storable.
-* **Consignment**: Checkmark this option if the SKU is in consignment.
-* **Availability From/To**: Select the dates among which the SKU is available.
-* **Is POS**: Checkmark this option if the SKU is sold at the point of sale.
-* **Dry Fleet**: Checkmark this option if the SKU is a dry product.
-* **Reward**: Checkmark this option if the SKU can be redeemed for reward points.
-* **Service**: Checkmark this option if the SKU is a service.
-* **Loyalty**: Checkmark this option if the SKU accumulates points.
+* **Code:** The SKU code.
+* **Description:** The description of the SKU.
+* **Short Description:** A short description of the SKU.
+* **Ultra Short Description:** A very short description of the SKU.
+* **POS Product Type:** Select what type of product it is.
+* **Fuel Product:** Checkmark this option if the SKU is a fuel product.
+* **SKU Category:** Enter the category to which the SKU belongs.
+* **Measurement Unit:** Enter the unit in which the SKU is measured.
+* **Sellable:** Checkmark this option if the SKU is sellable.
+* **Weightable:** Checkmark this option if the SKU is weighable.
+* **Fractional:** Checkmark this option if the SKU is fractional.
+* **Stockable:** Checkmark this option if the SKU is storable.
+* **Consignment:** Checkmark this option if the SKU is in consignment.
+* **Availability From/To:** Select the dates among which the SKU is available.
+* **Is POS:** Checkmark this option if the SKU is sold at the point of sale.
+* **Dry Fleet:** Checkmark this option if the SKU is a dry product.
+* **Reward:** Checkmark this option if the SKU can be redeemed for reward points.
+* **Service:** Checkmark this option if the SKU is a service.
+* **Loyalty:** Checkmark this option if the SKU accumulates points.
 
 Pricebook:
 
-* **Site**: Select the site to which you will charge the SKU price.
-* **Date From**: Select the date on which the SKU goes into effect.
-* **Price**: Indicate the price of the SKU.
-* **Currency**: Select the currency in which the SKU is priced.
+* **Site:** Select the site to which you will charge the SKU price.
+* **Date From:** Select the date on which the SKU goes into effect.
+* **Price:** Indicate the price of the SKU.
+* **Currency:** Select the currency in which the SKU is priced.
 
 Items:
 
-* **POS Code Format**: Select the point-of-sale code format.
-* **POS Code**: Enter a point-of-sale code.
+* **POS Code Format:** Select the point-of-sale code format.
+* **POS Code:** Enter a point-of-sale code.
 
 When you have finished filling those two fields, click the **Add** button.
 
-* **Taxes**: Enter the SKU tax code.
+* **Taxes:** Enter the SKU tax code.
 
 When you have finished filling in the fields, click the **Save** button.
 
@@ -506,15 +506,15 @@ To create a SKU Category, click the **New** button.
 
 The fields to complete are the following:
 
-* **Code**: The SKU category code.
-* **Name**: The name of the SKU category.
-* **Short Description**: A short description of the SKU category.
-* **First/Second Parent Category**: For example, if the SKU category was "Camel Cigarettes", the first parent category would be "Tobacco" and the second would be "Cigarettes".
-* **Is POS**: Checkmark this option if the SKU category can be purchased at the point of sale.
-* **Dry Fleet**: Checkmark this option if the SKU category is dry fleet.
-* **Reward**: Checkmark this option if it can be redeemed for loyalty points.
-* **Service**: Checkmark this option if it is a service.
-* **Loyalty**: Checkmark this option if the purchase of the product accumulates loyalty points.
+* **Code:** The SKU category code.
+* **Name:** The name of the SKU category.
+* **Short Description:** A short description of the SKU category.
+* **First/Second Parent Category:** For example, if the SKU category was "Camel Cigarettes", the first parent category would be "Tobacco" and the second would be "Cigarettes".
+* **Is POS:** Checkmark this option if the SKU category can be purchased at the point of sale.
+* **Dry Fleet:** Checkmark this option if the SKU category is dry fleet.
+* **Reward:** Checkmark this option if it can be redeemed for loyalty points.
+* **Service:** Checkmark this option if it is a service.
+* **Loyalty:** Checkmark this option if the purchase of the product accumulates loyalty points.
 
 When you have finished filling in the fields, click the **Save** button.
 
@@ -586,16 +586,16 @@ To create a User, click the **New** button.
 
 The fields to complete are the following:
 
-* **User Mail**: The user's email address.
-* **Name**: The user's name.
-* **Social Security**: The user's document.
-* **Street 1**: The street where the user resides.
-* **Street 2**: Another street of reference, as it can be the one of the corner.
-* **Country**: The user's country.
-* **State**: The state of the user's country.
-* **Zip Code**: The postal code of the locality where the user resides.
-* **Phone Number 1**: The user's phone.
-* **Phone Number 2**: The user's other phone if available.
+* **User Mail:** The user's email address.
+* **Name:** The user's name.
+* **Social Security:** The user's document.
+* **Street 1:** The street where the user resides.
+* **Street 2:** Another street of reference, as it can be the one of the corner.
+* **Country:** The user's country.
+* **State:** The state of the user's country.
+* **Zip Code:** The postal code of the locality where the user resides.
+* **Phone Number 1:** The user's phone.
+* **Phone Number 2:** The user's other phone if available.
 
 <br>
 
@@ -609,7 +609,7 @@ This view lists all vehicles that have been created. Remember that it is not man
 
 ![Vehicles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Vehicles.PNG)
 
-Under the **Options** column you can
+Under the **Options** column you can:
 
 * **Assign Identification:** Assign/Unassign identifications to the vehicle.  
 * **Renew Identification:** Renew the identification associated to the vehicle.
