@@ -9,7 +9,7 @@
 	- [Items Liquidados](#items-liquidados)
 	- [Procesos de Liquidación](#procesos-de-liquidación)
 - [Configuración](#configuración)
-	- [Clasificadores de Contratos de Compañía](##clasificadores-de-contratos-de-compañía)
+	- [Clasificadores de Contratos de Compañía](#clasificadores-de-contratos-de-compañía)
 	- [Clasificadores de Sitios](#clasificadores-de-sitios)
 	- [Configuraciones de Procesos](#configuraciones-de-procesos)
 	- [Motivos de Contingencias](#motivos-de-contingencias)
