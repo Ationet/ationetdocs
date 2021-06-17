@@ -9,7 +9,7 @@
 	- [Items Liquidados](#items-liquidados)
 	- [Procesos de Liquidación](#procesos-de-liquidación)
 - [Configuración](#configuración)
-	- [Clasificadores de Contratos de Compañía](#clasificadores-de-contratos-de-compañía)
+	- [Clasificadores de Contratos de Compañía](##clasificadores-de-contratos-de-compañía)
 	- [Clasificadores de Sitios](#clasificadores-de-sitios)
 	- [Configuraciones de Procesos](#configuraciones-de-procesos)
 	- [Motivos de Contingencias](#motivos-de-contingencias)
@@ -51,7 +51,7 @@ Para ejecutar manualmente un proceso de facturación, haga clic en el botón **E
 
 # Configuración
 
-## Clasificadores de los Contratos de Compañía
+## Clasificadores de Contratos de Compañía
 En esta sección puede configurar los clasificadores de contratos de compañía personalizados.
 
 ![Clasificaciones de contratos de compañía](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Configuraci%C3%B3n/Clasificadores%20de%20Contratos%20de%20Compa%C3%B1%C3%ADa.PNG)
@@ -61,7 +61,7 @@ En esta sección puede configurar los clasificadores de sitios personalizados.
 
 ![Clasificadores de Sitios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Configuraci%C3%B3n/Clasificadores%20de%20Sitios.PNG)
 
-## Configuración de procesos
+## Configuración de Procesos
 En esta sección se visualizan y crean las configuraciones de los procesos de liquidación para que se ejecuten automáticamente.
 
 ![Configuración de procesos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Configuraci%C3%B3n/Configuraciones%20de%20Procesos.PNG)
