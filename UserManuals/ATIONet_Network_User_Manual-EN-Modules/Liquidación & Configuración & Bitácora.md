@@ -11,12 +11,12 @@
 - [Configuración](#configuración)
 	- [Clasificadores de Contratos de Compañía](#clasificadores-de-contratos-de-compañía)
 	- [Clasificadores de Sitios](#clasificadores-de-sitios)
-	- [Configuraciones de Procesos](#configuraciones-de-procesos)
+	- [Configuración de Procesos](#configuración-de-procesos)
 	- [Motivos de Contingencias](#motivos-de-contingencias)
 	- [Red](#red)
 	- [Tipos de Documentos Externos](#tipos-de-documentos-externos)
-- [Bitacora](#bitacora)
-	- [Bitácora de Auditorias](#bitácoras-de-auditorias)
+- [Bitacora](#bitácora)
+	- [Bitácora de Auditorias](#bitácora-de-auditorias)
 	- [Bitácora de Procesos](#bitácora-de-procesos)
 
 
