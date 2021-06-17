@@ -8,7 +8,6 @@
 	- [Today’s Transactions](#todays-transactions)
 	- [List of Outstanding Pre-Authorizations](#list-of-outstanding-pre-authorizations)
 	- [Flagged Transactions Current Month](#flagged-transactions-current-month)
-	- [List of Outstanding Pre-Authorizations](#list-of-outstanding-pre-authorizations)
 	- [Sub-Accounts with Exceptions](#sub-accounts-with-exceptions)
 	- [Recent Transactions](#recent-transactions)
 	- [Contract Low Balance Listing](#contract-low-balance-listing)
