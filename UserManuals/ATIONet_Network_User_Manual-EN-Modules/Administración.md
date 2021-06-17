@@ -105,7 +105,7 @@ Para crear un comercio, haga clic en el botón **Nuevo**.
 ![Comercios nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Comercios%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
-* **ID Contribuyente:** Introduzca el identificador del contribuyente del comercio.
+* **Id Contribuyente:** Introduzca el identificador del contribuyente del comercio.
 * **Activo:** Marcar para activar/desactivar del comercio.
 * **Código:** Introduzca el código único del comercio.
 * **Nombre:** Introduzca el nombre del comercio.
