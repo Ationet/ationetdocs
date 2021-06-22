@@ -56,17 +56,17 @@ To create a company contract, click the **New** button.
 The first step to create a new contract is filling out the general information:
 
 * **Active:** Checkmark this option to enable/disable the contract.
-* **Code**: Input the code associated to the contract.
-* **Company**: Select the company associated to the contract
+* **Code:** Input the code associated to the contract.
+* **Company:** Select the company associated to the contract
 * **Reactivation amount:** Input the minimum amount required for automatic reactivation (if the contract is disabled and a deposit was made for that amount or higher).
-* **Description**: Input the description of the contract.
-* **Start Date**: Input the starting date of the contract.
-* **Duration** Input the duration of the contract.
-* **Current Account Mode**: Select the current account mode associated to the contract (Product or Money).
+* **Description:** Input the description of the contract.
+* **Start Date:** Input the starting date of the contract.
+* **Duration:** Input the duration of the contract.
+* **Current Account Mode:** Select the current account mode associated to the contract (Product or Money).
 * **Currency:** Select the currency associated to the contract (this option is only enabled if the **current account mode** is **Money**).
-* **Mode**: Select the contract mode (Credit, Debir or Cash).
+* **Mode:** Select the contract mode (Credit, Debir or Cash).
 * **Limit:** Input the credit limit associated to the contract.
-* **Balance Mode**: Select the balance mode associated to the contract:
+* **Balance Mode:** Select the balance mode associated to the contract:
 	* ***Disperse:*** The balance is managed on a sub-account level.
 	* ***Do not Disperse:*** The balace is managed on a contract level.
 	* ***Auto Fill:*** There is no balance.
@@ -201,20 +201,20 @@ To create a concept, click the **New** button.
 
 The fields to complete are the following:
 
-* **Concept Type**: Select the concept type (Product, Discount or Fee).
-* **Code**: Input the concept unique code.
-* **Name**: Input the concept name.
-* **Concept Family**: Select the family associated to the concept.
-* **Class**: Select the call associated to the concept.
-* **Type**: Input the concept type.
-* **Model** Input the concept model.
-* **Taxes Included**: Checkmark this option if the taxes are included in the amount of the transaction.
+* **Concept Type:** Select the concept type (Product, Discount or Fee).
+* **Code:** Input the concept unique code.
+* **Name:** Input the concept name.
+* **Concept Family:** Select the family associated to the concept.
+* **Class:** Select the cllassL associated to the concept.
+* **Type:** Input the concept type.
+* **Model:** Input the concept model.
+* **Taxes Included:** Checkmark this option if the taxes are included in the amount of the transaction.
 
 In the pricebook section fill in the following fields:
 
-* **Date From**: Input the starting date of the concept.
-* **Currency**: Input the currency of the concept.
-* **Price**: Input the price of the concept.
+* **Date From:** Input the starting date of the concept.
+* **Currency:** Input the currency of the concept.
+* **Price:** Input the price of the concept.
 
 When you have finished filling in the fields, click the **Save** button.
 
@@ -326,20 +326,20 @@ In ATIONet the term merchant refers to the entity that owns the sites. In this s
 
 ![Merchant Contracts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Merchant%20Contracts.PNG)
 
-To create a merhcant contract, click the **New** button.
+To create a merchant contract, click the **New** button.
 
 ![Merchant Contract New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Merchant%20Contracts%20New.PNG)
 
 The fields to be completed are as follows:
 
-* **Code**: Input the code of the contract.
+* **Code:** Input the code of the contract.
 * **Automatically Generated:** Checkmark this option to have ATIONet automatically generate the contract code.
-* **Description**: Input the description of the contract.
-* **Merchant**: Select the merchant assocciated to the contract.
-* **Merchant User**: Input the merchant contact user.
-* **Start Date**: Input the starting date of the contract.
-* **Duration** Input the duration of the contract.
-* **Current Account Mode**: Select the current account mode (Product or Money).
+* **Description:** Input the description of the contract.
+* **Merchant:** Select the merchant assocciated to the contract.
+* **Merchant User:** Input the merchant contact user.
+* **Start Date:** Input the starting date of the contract.
+* **Duration:** Input the duration of the contract.
+* **Current Account Mode:** Select the current account mode (Product or Money).
 
 After completing these fields, you must enter the fuel assigned to the contract and fill in the Volume, Security Limit, Over Limit, Over Limit Start and End Dates fields, Currency in which the Fuel Value is located, and the Fuel Price.
 
