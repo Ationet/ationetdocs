@@ -533,8 +533,6 @@ In this view you can see the transactions grouped by the vehicle who made them. 
 
 ![Transactions by Vehicle](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Vehicle.PNG)
 
-The filter panel has the following possibilities:
-
 ## Uncontrolled Transactions
 Uncontrolled transactions are those that are generated because the controller detects a difference in gauges and sends a transaction for the difference. These transactions do not contain data about the identification, since they were generated automatically and were not initiated with the presentation of an identification. As they do not have an identification assigned, they are not impacted in any current account nor do they count for the calculation of rules.
 
