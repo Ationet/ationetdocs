@@ -36,14 +36,14 @@ Dentro de este módulo se pueden gestionar los Contratos de Compañía y Comerci
 ## Alertas de Fraude
 Dentro de esta sección puede ver una lista de todos los fraudes realizados por la Network. Para configurar cómo/cuándo alertar de los fraudes, vaya a [Configuración de Alertas de Fraude](#configuración-de-alertas-de-fraude).
 
-![Alertas de fraude](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Fraud%20Alerts.PNG)
+![Alertas de fraude](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Alertas%20de%20Fraude.PNG)
 
 ## Autorizaciones Pendientes
 En ATIONet las autorizaciones pendientes son aquellas operaciones que aún no han recibido la transacción de finalización, pero que han sido preautorizadas. La información que se ve en esta vista son los despachos que están actualmente en curso. Si por alguna razón hay preautorizaciones antiguas, es probable que el TPV no haya enviado la transacción de finalización o la transacción de cancelación si el despacho no se ha completado.
 
 Tenga en cuenta que en el momento de la preautorización, ATIONet congeló el importe de la autorización de la cuenta corriente para la subcuenta asociada. Esta vista presenta todos los campos necesarios para identificar la transacción y la subcuenta. Si necesita ver más detalles, al hacer clic en el código de autorización accederá a la vista de detalles de la transacción.
 
-![Autorización pendiente](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Outstanding%20Authorization.PNG)
+![Autorización pendiente](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Autorizaciones%20Pendientes.PNG)
 
 Si aparecen transacciones pendientes antiguas y está seguro de que no se trata de un envío en curso, puede cancelarlas y devolver el saldo a la cuenta corriente.
 Para ello hay 2 formas: de forma individual, pulsando el icono **X** a la derecha, o de forma masiva, seleccionando las transacciones, desplegando el menú **Acciones en Lote** y seleccionando **Cancelar**. Esto cancelará las transacciones y devolverá el saldo reservado a cada una de las cuentas corrientes. (para más detalles sobre el flujo de transacciones consulte este [documento](AN-Transaction_Flows-TechGuide.md))
@@ -51,11 +51,11 @@ Para ello hay 2 formas: de forma individual, pulsando el icono **X** a la derech
 ## Conceptos
 Los conceptos en ATIONet hacen referencia a los impuestos o comisiones que se pueden añadir a los contratos de compañía o del comercio. En esta sección puede consultar, crear y editar conceptos.
 
-![Conceptos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Concepts.PNG)
+![Conceptos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Conceptos.PNG)
 
 Para crear un concepto, haga clic en el botón **Nuevo**.
 
-![Conceptos Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Concepts%20New.PNG)
+![Conceptos Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Conceptos%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -79,29 +79,29 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Configuración de Alertas de Fraude
 En esta sección puede consultar y configurar cómo y cuándo se activan las alertas de fraude para la Network.
 
-![Configuración de las alertas de fraude](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Fraud%20Alerts%20Configuration.PNG)
+![Configuración de las alertas de fraude](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Configuraci%C3%B3n%20de%20Alertas%20de%20Fraude.PNG)
 
 Para crear una configuración, haga clic en el botón **Nuevo**.
 
-![Configuración de Alertas de Fraude Nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Fraud%20Alerts%20Configuration%20New.PNG)
+![Configuración de Alertas de Fraude Nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Configuraci%C3%B3n%20de%20Alertas%20de%20Fraude%20Nuevo.PNG)
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 ## Configuración de Fast Track
 Un Fast Track en ATIONet es una forma de configurar una autorización de un solo uso para una cantidad específica a una subcuenta de flota ya existente. En esta sección puede configurar hasta 10 campos personalizados para Fast Tracks.
 
-![Configuración de Fast Track](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Fast%20Track%20Configuration.PNG)
+![Configuración de Fast Track](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Configuraci%C3%B3n%20de%20Fast%20Track.PNG)
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 ## Contingencia
 En ATIONet una contingencia es una operación introducida manualmente. En esta sección puede consultar y crear contingencias. Tenga en cuenta que las contingencias son transacciones sin autorización previa.
 
-![Contingencia](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Contingencies.PNG)
+![Contingencia](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contingencias.PNG)
 
 Para crear una contingencia, haga click en el botón **Nuevo**.
 
-![Contingencias Nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Contingencies%20New.PNG)
+![Contingencias Nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contingencias%20Nueva.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -132,11 +132,11 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Contratos de Comercio
 En ATIONet el término comercio se refiere a la entidad propietaria de los sitios. En esta sección puede consultar, editar y crear contratos de comercio. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Contratos de Comerio](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Merchant%20Contracts.PNG)
+![Contratos de Comerio](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Comercio.PNG)
 
 Para crear un contrato de comercio, haga clic en el botón **Nuevo**.
 
-![Contrato de Comercio Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Merchant%20Contracts%20New.PNG)
+![Contrato de Comercio Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Comercio%20Nuevo.PNG)
 
 Los campos a rellenar son los siguientes:
 
@@ -156,11 +156,11 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Contratos de Compañía
 En ATIONet el término compañía se refiere a la entidad que gestiona la flota. En esta sección podrá crear, editar o consultar todos los contratos de compañía. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Contratos de Compañía](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts.PNG)
+![Contratos de Compañía](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Compa%C3%B1%C3%ADa.PNG)
 
 Para crear un contrato de empresa, haga clic en el botón **Nuevo**.
 
-![Contratos de Compañía Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New.PNG)
+![Contratos de Compañía Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Compa%C3%B1%C3%ADa%20Nuevo.PNG)
 
 El primer paso para crear un nuevo contrato es completar la información general:
 
@@ -189,15 +189,15 @@ Una vez completada la información general, tiene diferentes pestañas para conf
 
 1. **Combustibles:** Seleccione los combustibles asociados al contrato.
 
-![Contrato de Compañía Nuevo - Combustibles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Fuels.PNG)
+![Contrato de Compañía Nuevo - Combustibles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Compa%C3%B1%C3%ADa%20Nuevo%20-%20Combustible.PNG)
 
 2. **Sitios:** Seleccione los sitios asociados al contrato.
 
-![Contrato Compañía Nuevo - Sitios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Sites.PNG)
+![Contrato Compañía Nuevo - Sitios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Compa%C3%B1%C3%ADa%20Nuevo%20-%20Sitios.PNG)
 
 3. **Precios:** Configure los precios asociados al contrato.
 
-![Contrato de Compañía Nuevo - Precios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Prices.PNG)
+![Contrato de Compañía Nuevo - Precios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Compa%C3%B1%C3%ADa%20Nuevo%20-%20Precios.PNG)
 
 * ***Combustible:*** Seleccionar el combustible asociado al precio.
 * ***Valor:*** Introduzca el valor del precio.
@@ -209,7 +209,7 @@ Una vez completada la información general, tiene diferentes pestañas para conf
 
 4. **Modificadores:** Configurar los modificadores asociados al contrato.
 
-![Contrato de Compañía Nuevo - Modificadores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Modifiers.PNG)
+![Contrato de Compañía Nuevo - Modificadores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Compa%C3%B1%C3%ADa%20Nuevo%20-%20Modificadores.PNG)
 
 * ***Descripción:*** Introduzca la descripción del modificador.
 * ***Clase:*** Seleccionar la clase de modificador (Descuento o Recarga).
@@ -224,7 +224,7 @@ Una vez completada la información general, tiene diferentes pestañas para conf
 
 5. **Liquidación:** Configurar el proceso de facturación asociado al contrato.
 
-![Contrato de Compañía Nuevo - Liquidación](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Billing.PNG)
+![Contrato de Compañía Nuevo - Liquidación](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Compa%C3%B1%C3%ADa%20Nuevo%20-%20Liquidaciones.PNG)
 
 * ***Tipo de Proceso de Facturación:*** Seleccionar el tipo de proceso de liquidación asociado al contrato (EdiFactMx es sólo para el cliente de México)
 * ***Activo:*** Marque esta opción para activar/desactivar el proceso de liquidación.
@@ -245,15 +245,15 @@ Una vez completada la información general, tiene diferentes pestañas para conf
 
 6. **Conceptos:** Seleccione el concepto asociado al contrato. Para más información sobre los conceptos acceda a [aquí]().
 
-![Contratos de Compañía Nuevo - Conceptos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Concepts.PNG)
+![Contratos de Compañía Nuevo - Conceptos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Compa%C3%B1%C3%ADa%20Nuevo%20-%20Conceptos.PNG)
 	
 7. **Documentos:** Suba cualquier documento asociado al contrato (por ejemplo: un pdf del propio contrato físico).
 
-![Contratos de Compañía Nuevo - Documentos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Documents.PNG)
+![Contratos de Compañía Nuevo - Documentos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Compa%C3%B1%C3%ADa%20Nuevo%20-%20Documentos.PNG)
 
 8. **Bloqueos:** Configurar los bloqueos asociados al contrato
 
-![Contratos de la Compañía Nuevo - Bloqueos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Blocks.PNG)
+![Contratos de la Compañía Nuevo - Bloqueos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Compa%C3%B1%C3%ADa%20Nuevo%20-%20Bloqueos.PNG)
 
 * ***Tipo:*** Seleccione **Fijo** para bloquear la operación en fechas concretas, o seleccione **Fijo** para bloquear la operación en días concretos de cada mes. 
 * ***Fecha desde:*** Introduzca la fecha de inicio del bloqueo.
@@ -263,7 +263,7 @@ Una vez completada la información general, tiene diferentes pestañas para conf
 
 9. **Sobregiro:** Configure los sobregiros asociados al contrato.
 
-![Contratos de la Compañía Nuevo - Sobregiro](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Over%20Limit.PNG)
+![Contratos de la Compañía Nuevo - Sobregiro](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Compa%C3%B1%C3%ADa%20Nuevo%20-%20Sobregiro.PNG)
 
 * ***Tipo:*** Seleccione el tipo de sobregiro (Porcentaje o Importe).
 * ***Valor:*** Introduzca el valor asociado al sobregiro.
@@ -281,61 +281,61 @@ La vista de cuentas corrientes de los comercios es donde se consultan los saldos
 
 Para facilitar las consultas se dispone de un panel de filtros y la primera opción del panel es el tipo de informe que se quiere ver (Lista de Contratos, Movimientos de Contratos, Lista de Sitios y Movimientos de Sitios).
 
-![Cuentas Corrientes de Comercio](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Merchant%20Current%20Accounts.PNG)
+![Cuentas Corrientes de Comercio](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Comercio.PNG)
 
 ## Cuentas Corrientes de Compañía
 La sección de Cuentas Corrientes de Compañía es la vista del saldo disponible de las subcuentas y/o contratos, y también la vista de todos los movimientos de las subcuentas y/o contratos.
 
 Para facilitar las consultas, hay un panel de filtros disponible. La primera opción del panel de filtros es el tipo de informe:
 
-![Cuentas Corrientes de la Compañía](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts.PNG)
+![Cuentas Corrientes de la Compañía](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa.PNG)
 
 1. **Lista de Contratos:** Esta opción lista todos los contratos con sus respectivos saldos, pero no da detalles de los movimientos.
 
-![Cuentas Corrientes de Compañía - Lista de Contratos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20-%20Contract%20List.PNG)
+![Cuentas Corrientes de Compañía - Lista de Contratos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Lista%20de%20Contratos.PNG)
 
 2. **Movimientos de Contratos:** Esta opción muestra todos los movimientos de los contratos.
 
-![Cuentas Corrientes de Compañía - Movimientos de Contratos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20-%20Contract%20Movements.PNG)
+![Cuentas Corrientes de Compañía - Movimientos de Contratos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Movimientos%20de%20Contratos.PNG)
 
 3. **Lista de Subcuentas:** Esta opción lista todas las subcuentas con sus respectivos saldos, pero no da detalles de los movimientos.
 
-![Cuentas Corrientes de Compañía - Lista de Subcuentas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20-%20Sub-Account%20List.PNG)
+![Cuentas Corrientes de Compañía - Lista de Subcuentas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Lista%20de%20Subcuentas.PNG)
 
 4. **Movimientos de Subcuentas:** Esta vista lista todos los movimientos de las subcuentas.  
 
-![Cuentas Corrientes de Compañía - Movimientos de Subcuentas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20-%20Sub-Account%20Movements.PNG)
+![Cuentas Corrientes de Compañía - Movimientos de Subcuentas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Movimientos%20de%20Subcuentas.PNG)
 
 ## Encargados
 En ATIONet el término encargado se refiere a la persona responsable de hacer el despacho, el que opera las bombas. En esta sección se pueden ver, crear y editar todos los encargados. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Encargados](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Attendant.PNG)
+![Encargados](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Encargados.PNG)
 
 Para crear un encargado, haga clic en el botón **Nuevo**.
 
-![Encargados Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Attendant%20New.PNG)
+![Encargados Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Encargados%20Nuevo.PNG)
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 ## Excepciones
 ATIONet separa las transacciones no autorizadas en 2 secciones: **Excepciones** y [Transacciones Rechazadas] (#transacciones-rechazadas). Las excepciones son aquellas transacciones que no pasaron las validaciones duras del sistema o las que se detectan como posibles fraudes.
 
-![Excepciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Exceptions.PNG)
+![Excepciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Excepciones.PNG)
 
 En esta vista, al principio se puede filtrar por el tipo de excepción. Los tipos de excepciones disponibles son los siguientes:
 
-![Excepciones Filtros](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Exceptions%20Filters.PNG)
+![Excepciones Filtros](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Excepciones%20Filtros.PNG)
 
 Algunas transacciones permanecen en estado de **Revisión** en algunas situaciones, como cuando se envía más de lo autorizado (debido a un error del controlador o del TPV). En estos casos es necesario aprobar o rechazar la transacción utilizando uno de los dos iconos a la derecha de cada registro.
 
 ## Familias de Conceptos
 Las familias de conceptos en ATIONet son una forma de agrupar varios conceptos. En esta sección puedes consultar, crear o editar conceptos de familias.
 
-![Familias de Conceptos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Family%20Concepts.PNG)
+![Familias de Conceptos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Famlia%20de%20Conceptos.PNG)
 
 Para crear una familia de conceptos, haz clic en el botón **Nuevo**.
 
-![Familias de Conceptos Nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Family%20Concepts%20New.PNG)
+![Familias de Conceptos Nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Famlia%20de%20Conceptos%20Nuevo.PNG)
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
@@ -344,11 +344,11 @@ En este apartado podrá consultar las identificaciones solicitadas por la compa�
 
 También dispone de un panel para filtrar las identificaciones solicitadas y así facilitar la búsqueda.
 
-![Identificadores solicitados](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Requested%20Identifications.PNG)
+![Identificadores solicitados](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Identificadores%20Solicitados.PNG)
 
 Para solicitar una identificación de flota, haga clic en el botón **Nueva solicitud** y seleccione **Solicitar identificadores de flota**. Al hacerlo, se abrirá un formulario.
 
-![Identificadores solicitados - Nueva flota](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Requested%20Identifications%20-%20New%20Fleet.PNG)
+![Identificadores solicitados - Nueva flota](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Identificadores%20Solicitados%20Nuevo.PNG)
 
 * **Tipo:** Seleccione el tipo de identificadores (Tarjeta, TAG, Chipkey, Tarjeta ATIOnet, TAG ATIOnet, Código de barras y QR).
 * **Modelo:** Seleccione el modelo de identificadores.
@@ -364,11 +364,11 @@ Para cambiar el estado de los identificadores solicitados, haga clic en el botó
 ## Programas
 Dentro de esta sección puede consultar, editar o crear programas de flota. Para cada Network ATIONet ya tiene un programa CLÁSICO creado por defecto. Un programa de flota en ATIONet permite a los identificadores ignorar algunos de sus comportamientos, como por ejemplo Modo de Balance, Soporte de Contingencia, Soporte Offline, etc.
 
-![Programas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Programs.PNG)
+![Programas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Programas.PNG)
 
 Para crear un programa, haga clic en el botón **Nuevo**.
 
-![Programas Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Programs%20New.PNG)
+![Programas Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Programas%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -385,7 +385,7 @@ Los campos a completar son los siguientes:
 
 Una vez completada la información general, también puede configurar las reglas de solicitud y localización para el programa:
 
-![Programas Nuevos - Reglas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Programs%20New%20-%20Rules.PNG)
+![Programas Nuevos - Reglas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Programas%20Nuevo%20Reglas.PNG)
 
 Para más información sobre las reglas vaya [aquí](#reglas).
 
@@ -396,56 +396,56 @@ En ATIONet las reglas se refieren a los límites que pueden ser configurados por
 
 Tenga en cuenta que todas las reglas pueden ser **No Bloqueantes**, lo que significa que ATIONet no rechazará la transacción aunque se cumplan los parámetros.
 
-![Reglas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules.PNG)
+![Reglas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas.PNG)
 
 1. **Cuota:** En esta regla puede limitar la cantidad de transacciones, el volumen y/o el dinero en una frecuencia específica.
 
-![Reglas - Cuota](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Quota.PNG)
+![Reglas - Cuota](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Cuota.PNG)
 
 2. **Rango de fechas:** En esta regla puede limitar las transacciones que se harán en rangos de fecha y hora específicos.
 
-![Reglas - Rango de fechas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Date%20Range.PNG)
+![Reglas - Rango de fechas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Rango%20de%20Fechas.PNG)
 
 3. **Ubicación:** En esta regla puede limitar las transacciones que se realicen en sitios y zonas específicas.
 
-![Reglas - Ubicación](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Location.PNG)
+![Reglas - Ubicación](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Ubicaci%C3%B3n.PNG)
 
 4. **Combustible:** En esta regla puede limitar las transacciones que se realicen para combustibles específicos y grupos de maestros de combustibles.
 
-![Reglas - Combustible](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Fuel.PNG)
+![Reglas - Combustible](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Combustible.PNG)
 
 5. **Límite por Transacciones:** En esta regla puede limitar el volumen de cada transacción y/o el dinero.
 
-![Reglas - Límite por Transacciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Limit%20Per%20Transaction.PNG)
+![Reglas - Límite por Transacciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Limite%20por%20Transacci%C3%B3n.PNG)
 
-6. **DíasHora:** En esta regla puede limitar las transacciones a realizar en días y horas específicas de la semana.
+6. **Días/Hora:** En esta regla puede limitar las transacciones a realizar en días y horas específicas de la semana.
 
-![Reglas - DíasHora](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20DaysTime.PNG)
+![Reglas - Días/Hora](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20D%C3%ADaHora.PNG)
 
 7. **Solicitud:** En esta regla se puede configurar la solicitud de información para las transacciones, como la identificación del conductor/vehículo, el PIN del conductor/vehículo, etc.
 
-![Reglas - Solicitud](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Prompting.PNG)
+![Reglas - Solicitud](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Solicitudes.PNG)
 
-8. **Límite de Transacciones Secas:** En esta regla se puede limitar el dinero de las transacciones de cada SKU.
+8. **Límite de Producto por Transacción:** En esta regla se puede limitar el dinero de las transacciones de cada SKU.
 
-![Reglas - Límite de Transacción Seca](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Dry%20Transaction%20Limit.PNG)
+![Reglas - Límite de Producto por Transacción](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Limite%20de%20Producto%20por%20Transacci%C3%B3n.PNG)
 
-9. **Límite de cuota seca:** En esta regla puede limitar el dinero de las transacciones en una frecuencia específica.
+9. **Cuota por Producto:** En esta regla puede limitar el dinero de las transacciones en una frecuencia específica.
 
-![Reglas - Límite de Cuota Seca](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Dry%20Quota%20Limit.PNG)
+![Reglas - Cuota por Producto](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Cuota%20por%20Producto.PNG)
 
 Después de configurar cualquier tipo de regla, el último paso es asociar la regla a una entidad. Se pueden aplicar reglas a: Flotas, Vehículos, Conductores, Sitios y Combustibles.
 
-![Reglas - Asociación](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Association.PNG)
+![Reglas - Asociación](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Aplicacion.PNG)
 
 ## Sobregiro
 En esta sección puede consultar o crear sobregiros para los contratos de compañía. El sobregiro en ATIONet se refiere a una cantidad que las subcuentas pueden sobrepasar de sus saldos.
 
-![Sobregiro](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Over%20Limit.PNG)
+![Sobregiro](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Sobregiro.PNG)
 
 Para crear un sobregiro, haga clic en el botón **Nuevo**.
 
-![Sobregiro Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Over%20Limit%20New.PNG)
+![Sobregiro Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Sobregiro%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -463,7 +463,7 @@ La vista de transacciones es una de las más importantes en ATIONet. En esta vis
 
 El panel de filtro tiene todos estos campos disponibles:
 
-![Trasacciones - Filtro](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20-%20Filter.PNG)
+![Trasacciones - Filtro](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Filtros.PNG)
 
 * **Código de Autorización:** Introduzca el código de autorización asociado a la transacción.
 * **Turno:** Introduzca el número de turno asociado a la transacción.
@@ -484,56 +484,56 @@ El panel de filtro tiene todos estos campos disponibles:
 
 Una vez que haya filtrado, haga clic en ***Búsqueda*** y se listarán las transacciones que cumplen con el filtro.
 
-![Transacciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions.PNG)
+![Transacciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones.PNG)
 
 Si quiere ver el detalle de la transacción, presione sobre el **Código de Autorización** y esto le llevará a una vista detallada de la transacción.
 
-![Transacciones Detalles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transaction%20Details.PNG)
+![Transacciones Detalles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Detalles.PNG)
 
 ## Transacciones Desconocidas
 Las transacciones desconocidas son aquellas que cualquiera de las partes (Comercio o Compañía) dice desconocer.
 
 En esta sección se pueden consultar las transacciones desconocidas, listadas por código, fecha, motivo, estado, número de transacción, compañía, sitio. También está el comentario de la compañía, del comercio y de la network.
 
-![Transacciones desconocidas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Disputed%20Transactions.PNG)
+![Transacciones desconocidas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Desconocidas.PNG)
 
 ## Transacciones Despachadas
 En esta sección puede ver todas las transacciones que han sido dispensadas.
 
-![Transacciones Despachadas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Dispensed%20Transactions.PNG)
+![Transacciones Despachadas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Despachadas.PNG)
  
 ## Transacciones por Conductor
 En esta vista puede ver las transacciones agrupadas por el conductor que las realizó. Los botones de la parte superior izquierda sirven para imprimir la tabla o crear un archivo Excel a partir de la misma, respectivamente.
 
-![Transacciones por Conductor](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Driver.PNG)
+![Transacciones por Conductor](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20por%20Conductor.PNG)
 
 ## Transacciones por Flota
 En esta vista puede ver las transacciones agrupadas por la flota que las realizó. Los botones de la parte superior izquierda sirven para imprimir la tabla o crear un archivo Excel a partir de la misma, respectivamente.
 
-![Transacciones por Flota](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Fleet.PNG)
+![Transacciones por Flota](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20por%20Flota.PNG)
 
 ## Transacciones por Sitio
 En esta vista se pueden ver las transacciones agrupadas por el sitio donde se realizaron. Los botones de la parte superior izquierda sirven para imprimir la tabla o crear un archivo Excel a partir de ella, respectivamente.
 
-![Transacciones por Sitio](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Site.PNG)
+![Transacciones por Sitio](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20por%20Sitio.PNG)
 
 ## Transacciones por Vehículo
 En esta vista puede ver las transacciones agrupadas por el vehículo que las realizó. Los botones de la parte superior izquierda sirven para imprimir la tabla o crear un archivo Excel a partir de la misma, respectivamente.
 
-Transacciones por Vehículo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Vehicle.PNG)
+![Transacciones por Vehículo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20por%20Veh%C3%ADculo.PNG)
 
 ## Transacciones Rechazadas
 ATIONet separa las transacciones no autorizadas en 2 secciones: [Excepciones](#excepciones) y **Transacciones Rechazadas**.
 
 Las Transacciones Rechazadas son aquellas que lograron pasar las autenticaciones duras de ATIONet, pero fueron rechazadas por otras validaciones como una regla insatisfecha o una validación de saldo.
 
-![Transacciones Rechazadas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Declined%20Transactions.PNG)
+![Transacciones Rechazadas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Rechazadas.PNG)
 
 En esta vista, al principio se puede filtrar por el tipo de rechazo. Los tipos de rechazo disponibles son los siguientes:
 
-![Transacciones Rechazadas Filtros](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Declined%20Transactions%20Filters.PNG)
+![Transacciones Rechazadas Filtros](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Rechazadas%20Filtros.PNG)
 
 ## Transacciones Sin Control
 Las transacciones sin control son aquellas que se generan porque el controlador detecta una diferencia en los indicadores y envía una transacción por la diferencia. Estas transacciones no contienen datos sobre la identificación, ya que se generaron automáticamente y no se iniciaron con la presentación de un identificador. Al no tener un identificador asignado, no tienen impacto en ninguna cuenta corriente ni cuentan para el cálculo de las reglas.
 
-![Transacciones sin control](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Uncontrolled%20Transactions.PNG)
+![Transacciones sin control](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Sin%20Control.PNG)
