@@ -3,7 +3,7 @@
 # Contenido
 
 - [Favoritos](#favoritos)
-	- [Reportes](#reportes)
+- [Reportes](#reportes)
 	- [Conductor](#conductor)
 	- [Transacciones](#transacciones)
 	- [Vehículo](#vehículo)
