@@ -3,7 +3,32 @@
 # Contenido
 
 - [Flotas](#flotas)
-	- [
+	- [Alertas De Fraude](#alertas-de-fraude)
+	- [Autorizaciones Pendientes](#autorizaciones-pendientes)
+	- [Conceptos](#conceptos)
+	- [Configuración de Alertas de Fraude](#configuración-de-alertas-de-fraude)
+	- [Configuración de Fast Track](#configuración-de-fast-track)
+	- [Contingencia](#contingencia)
+	- [Contratos de Comercio](#contratos-de-comercio)
+	- [Contrtos de Compañía](#contratos-de-compañía)
+	- [Cuentas Corrientes de Comercio](#cuentas-corrientes-de-comercio)
+	- [Cuentas Corrientes de Compañía](#cuentas-corrientes-de-compañía)
+	- [Encargados](#encargados)
+	- [Excepciones](#excepciones)
+	- [Familias de Conceptos](#familias-de-conceptos)
+	- [Identificadores Solicitados](#identificadores-solicitados)
+	- [Programas](#programas)
+	- [Reglas](#reglas)
+	- [Sobregiro](#sobregiro)
+	- [Transacciones](#transacciones)
+	- [Transacciones Desconocidas](#transacciones-desconocidas)
+	- [Transacciones Despachadas](#transacciones-despachadas)
+	- [Transacciones por Conductor](#transacciones-por-conductor)
+	- [Transacciones por Flota](#transacciones-por-flota)
+	- [Transacciones por Sitio](#transacciones-por-sitio)
+	- [Transacciones por Vehículo](#transacciones-por-vehículo)
+	- [Transacciones por Rechazadas](#transacciones-rechazadas)
+	- [Transacciones Sin Control](#transacciones-sin-control)
 
 # Flotas
 Dentro de este módulo se pueden gestionar los Contratos de Compañía y Comercios, los Conceptos, las Contingencias y las Transacciones entre otras cosas.
@@ -157,7 +182,7 @@ El primer paso para crear un nuevo contrato es completar la información general
 * **Validar Sitios:** Marque esta opción para activar/desactivar la validación de sitios (el contrato sólo puede operar dentro de los sitios asignados).
 * **Validar Combustibles:** Marque esta opción para activar/desactivar la validación de combustible (el contrato sólo puede operar con los combustibles asignados).
 * **Utilizar Precios de Distribución:** Marque esta opción para activar/desactivar el uso de precios de distribución (el contrato sólo utilizará los precios de distribución cuando no haya precios configurados en el contrato).
-**Validar Programas:**
+* **Validar Programas:**
 * **Valores Subsidiados:**
 
 Una vez completada la información general, tiene diferentes pestañas para configurar:
@@ -168,7 +193,7 @@ Una vez completada la información general, tiene diferentes pestañas para conf
 
 2. **Sitios:** Seleccione los sitios asociados al contrato.
 
-[Contrato Compañía Nuevo - Sitios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Sites.PNG)
+![Contrato Compañía Nuevo - Sitios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Sites.PNG)
 
 3. **Precios:** Configure los precios asociados al contrato.
 
@@ -399,7 +424,7 @@ Tenga en cuenta que todas las reglas pueden ser **No Bloqueantes**, lo que signi
 
 7. **Solicitud:** En esta regla se puede configurar la solicitud de información para las transacciones, como la identificación del conductor/vehículo, el PIN del conductor/vehículo, etc.
 
-![Reglas - Avisos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Prompting.PNG)
+![Reglas - Solicitud](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Prompting.PNG)
 
 8. **Límite de Transacciones Secas:** En esta regla se puede limitar el dinero de las transacciones de cada SKU.
 
