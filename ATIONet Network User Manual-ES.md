@@ -29,170 +29,170 @@
   - [Terminal](#terminal)
 - [Mis Preferencias](#mis-preferencias) 
 - [Menú Navegación](#menú-navegación)
-  - [Tablero](#tablero)
-  	- [Estado General](#estado-general)
-  	- [Unidades/Mes](#unidadesmes)
-  	- [Transacciones del Día](#transacciones-del-día)
- 	- [Lista de Pre-Autorizaciones Pendientes](#lista-de-pre-autorizaciones-pendientes)
-	- [Transacciones Marcadas en el Mes Actual](#transacciones-marcadas-en-el-mes-actual)
-	- [Contratos sin Actividad](#contratos-sin-actividad)
-	- [Transacciones Recientes](#transacciones-recientes)
-	- [Listado de Contratos con Bajo Saldo](#listado-de-contratos-con-bajo-saldo)
-	- [Actualizaciones de Identificadores del Último Mes](#actualizaciones-de-identificadores-del-último-mes)
-	- [Estado de Terminales](#estado-de-terminales)
-  - [Favoritos](#favoritos)
-  - [Reportes](#reportes)
-	- [Conductor](#conductor)
-	- [Transacciones](#transacciones)
-	- [Vehículo](#vehículo)
-  - [Administración](#administración)
-  	- [Banderas](#banderas)
-  	- [Categorías de SKUs](#categorías-de-skus)
-   	- [Combustibles](#combustibles)
-   	- [Comercios](#comercios)
-   	- [Compañías](#compañías)
-   	- [Conductores](#conductores)
-   	- [Cotizaciones](#cotizaciones)
-   	- [Depositos](#depositos)
-   	- [Documentos Externos](#documentos-externos)
-   	- [Grupos de Combustibles Maestros](#grupos-de-combustibles-maestros)
-   	- [Grupos de Compañías](#grupos-de-compañías)
-   	- [Grupos de Compañías - Movimientos](#grupos-de-compañías---movimientos)
-   	- [Identificadores](#identificadores)
-   	- [Impuestos](#impuestos)
-   	- [Instalaciones](#instalaciones)
-   	- [Métodos de Pago](#métodos-de-pago)
-   	- [Modelos de Identificadores](#modelos-de-identificadores)
-   	- [Notificaciones](#notificaciones)
-   	- [Precios de Distribución](#precios-de-distribución)
-   	- [Proveedores de Identificadores](#proveedores-de-identificadores)
-   	- [Sitios](#sitios)
-   	- [SKUs](#skus)
-   	- [Terminales/Controladores](#terminales--controladores)
-   	- [Usuarios](#usuarios)
-   	- [Vales](#vales)
-   	- [Vehículos](#vehículo)
-   	- [Zonas](#zonas)
-  - [Flotas](#flotas)
-  	- [Alertas de Fraude](#alertas-de-fraude)
-	- [Autorizaciones Pendientes](#autorizaciones-pendientes)
-	- [Conceptos](#conceptos)
-  	- [Configuración de Alertas de Fraude](#configuración-de-alertas-de-fraude)
-  	- [Configuración de Fast Track](#configuración-de-fast-track)
-  	- [Contingencia](#contingencia)
-  	- [Contratos de Comercio](#contratos-de-comercio)
-  	- [Contrtos de Compañía](#contratos-de-compañía)
-  	- [Cuentas Corrientes de Comercio](#cuentas-corrientes-de-comercio)
-  	- [Cuentas Corrientes de Compañía](#cuentas-corrientes-de-compañía)
-  	- [Encargados](#encargados)
-  	- [Excepciones](#excepciones)
-  	- [Familias de Conceptos](#familias-de-conceptos)
-  	- [Identificadores Solicitados](#identificadores-solicitados)
-  	- [Programas](#programas)
-  	- [Reglas](#reglas)
-  	- [Sobregiro](#sobregiro)
-  	- [Transacciones](#transacciones)
-  	- [Transacciones Desconocidas](#transacciones-desconocidas)
-  	- [Transacciones Despachadas](#transacciones-despachadas)
-  	- [Transacciones por Conductor](#transacciones-por-conductor)
-  	- [Transacciones por Flota](#transacciones-por-flota)
-  	- [Transacciones por Sitio](#transacciones-por-sitio)
-  	- [Transacciones por Vehículo](#transacciones-por-vehículo)
-  	- [Transacciones por Rechazadas](#transacciones-rechazadas)
-  	- [Transacciones Sin Control](#transacciones-sin-control)
-  - [Liquidaciones](#liquidaciones)
-	- [Documentos de Cargo](#documentos-de-cargo)
-	- [Documentos de Liquidaciones](#documentos-de-liquidaciones)
-	- [Estados de Cuenta](#estados-de-cuenta)
-	- [Items Liquidados](#items-liquidados)
-	- [Procesos de Liquidación](#procesos-de-liquidación)
-  - [Configuración](#configuración)
-	- [Clasificadores de Contratos de Compañía](#clasificadores-de-contratos-de-compañía)
-	- [Clasificadores de Sitios](#clasificadores-de-sitios)
-	- [Configuración de Procesos](#configuración-de-procesos)
-	- [Motivos de Contingencias](#motivos-de-contingencias)
-	- [Red](#red)
-	- [Tipos de Documentos Externos](#tipos-de-documentos-externos)
-  - [Bitácora](#bitácora)
-	- [Bitácora de Auditoria](#bitácora-de-auditoría)
-	- [Bitácora de Procesos](#bitácora-de-procesos)
+  - [Tablero](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Tablero.md)
+  	- [Estado General](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Tablero.md)
+  	- [Unidades/Mes](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Tablero.md)
+  	- [Transacciones del Día](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Tablero.md)
+ 	- [Lista de Pre-Autorizaciones Pendientes](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Tablero.md)
+	- [Transacciones Marcadas en el Mes Actual](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Tablero.md)
+	- [Contratos sin Actividad](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Tablero.md)
+	- [Transacciones Recientes](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Tablero.md)
+	- [Listado de Contratos con Bajo Saldo](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Tablero.md)
+	- [Actualizaciones de Identificadores del Último Mes](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Tablero.md)
+	- [Estado de Terminales](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Tablero.md)
+  - [Favoritos](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Favoritos%20%26%20Reportes.md)
+  - [Reportes](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Favoritos%20%26%20Reportes.md)
+	- [Conductor](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Favoritos%20%26%20Reportes.md)
+	- [Transacciones](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Favoritos%20%26%20Reportes.md)
+	- [Vehículo](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Favoritos%20%26%20Reportes.md)
+  - [Administración](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+  	- [Banderas](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+  	- [Categorías de SKUs](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Combustibles](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Comercios](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Compañías](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Conductores](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Cotizaciones](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Depositos](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Documentos Externos](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Grupos de Combustibles Maestros](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Grupos de Compañías](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Grupos de Compañías - Movimientos](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Identificadores](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Impuestos](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Instalaciones](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Métodos de Pago](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Modelos de Identificadores](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Notificaciones](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Precios de Distribución](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Proveedores de Identificadores](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Sitios](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [SKUs](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Terminales/Controladores](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Usuarios](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Vales](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Vehículos](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+   	- [Zonas](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administraci%C3%B3n.md)
+  - [Flotas](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Alertas de Fraude](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+	- [Autorizaciones Pendientes](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+	- [Conceptos](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Configuración de Alertas de Fraude](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Configuración de Fast Track](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Contingencia](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Contratos de Comercio](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Contrtos de Compañía](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Cuentas Corrientes de Comercio](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Cuentas Corrientes de Compañía](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Encargados](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Excepciones](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Familias de Conceptos](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Identificadores Solicitados](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Programas](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Reglas](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Sobregiro](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Transacciones](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Transacciones Desconocidas](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Transacciones Despachadas](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Transacciones por Conductor](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Transacciones por Flota](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Transacciones por Sitio](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Transacciones por Vehículo](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Transacciones por Rechazadas](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  	- [Transacciones Sin Control](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Flotas.md)
+  - [Liquidaciones](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Liquidaci%C3%B3n%20%26%20Configuraci%C3%B3n%20%26%20Bit%C3%A1cora.md)
+	- [Documentos de Cargo](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Liquidaci%C3%B3n%20%26%20Configuraci%C3%B3n%20%26%20Bit%C3%A1cora.md)
+	- [Documentos de Liquidaciones](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Liquidaci%C3%B3n%20%26%20Configuraci%C3%B3n%20%26%20Bit%C3%A1cora.md)
+	- [Estados de Cuenta](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Liquidaci%C3%B3n%20%26%20Configuraci%C3%B3n%20%26%20Bit%C3%A1cora.md)
+	- [Items Liquidados](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Liquidaci%C3%B3n%20%26%20Configuraci%C3%B3n%20%26%20Bit%C3%A1cora.md)
+	- [Procesos de Liquidación](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Liquidaci%C3%B3n%20%26%20Configuraci%C3%B3n%20%26%20Bit%C3%A1cora.md)
+  - [Configuración](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Liquidaci%C3%B3n%20%26%20Configuraci%C3%B3n%20%26%20Bit%C3%A1cora.md)
+	- [Clasificadores de Contratos de Compañía](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Liquidaci%C3%B3n%20%26%20Configuraci%C3%B3n%20%26%20Bit%C3%A1cora.md)
+	- [Clasificadores de Sitios](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Liquidaci%C3%B3n%20%26%20Configuraci%C3%B3n%20%26%20Bit%C3%A1cora.md)
+	- [Configuración de Procesos](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Liquidaci%C3%B3n%20%26%20Configuraci%C3%B3n%20%26%20Bit%C3%A1cora.md)
+	- [Motivos de Contingencias](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Liquidaci%C3%B3n%20%26%20Configuraci%C3%B3n%20%26%20Bit%C3%A1cora.md)
+	- [Red](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Liquidaci%C3%B3n%20%26%20Configuraci%C3%B3n%20%26%20Bit%C3%A1cora.md)
+	- [Tipos de Documentos Externos](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Liquidaci%C3%B3n%20%26%20Configuraci%C3%B3n%20%26%20Bit%C3%A1cora.md)
+  - [Bitácora](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Liquidaci%C3%B3n%20%26%20Configuraci%C3%B3n%20%26%20Bit%C3%A1cora.md)
+	- [Bitácora de Auditoria](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Liquidaci%C3%B3n%20%26%20Configuraci%C3%B3n%20%26%20Bit%C3%A1cora.md)
+	- [Bitácora de Procesos](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Liquidaci%C3%B3n%20%26%20Configuraci%C3%B3n%20%26%20Bit%C3%A1cora.md)
 
 # Resumen
 
-ATIONet is based on the premise that online communications between sites and the web portal are possible, however, it provides solid contingency procedures in the event of a communication error.
+ATIONet se basa en la premisa de que las comunicaciones en línea entre los sitios y el portal web son posibles, sin embargo, proporciona sólidos procedimientos de contingencia en caso de un error de comunicación.
 
-The ATIONet platform is a fleet management service with an innovative and unique market offer. Cloud processing, 100% web-based, multi-user access, data availability and sharing, instant updates, security, automatic back-up and paperwork reduction.
+La plataforma ATIONet es un servicio de gestión de flotas con una oferta innovadora y única en el mercado. Procesamiento en la nube, 100% basado en la web, acceso multiusuario, disponibilidad y compartición de datos, actualizaciones instantáneas, seguridad, copia de seguridad automática y reducción del papeleo.
 
-ATIONet is a web portal for fleet service companies that allows the processing of transactions from any point of sale application through a simple and reliable interface. 
+ATIONet es un portal web para empresas de servicios de flotas que permite el procesamiento de transacciones desde cualquier aplicación de punto de venta a través de una interfaz sencilla y fiable. 
 
-ATIONet can be installed at any service station with one or multiple fleet service programs. The web portal allows fleet managers full access to their vehicle information.
+ATIONet puede instalarse en cualquier estación de servicio con uno o varios programas de servicio de flotas. El portal web permite a los gestores de flotas un acceso completo a la información de sus vehículos.
 
-ATIONet makes it possible for the fleet manager to operate, monitor, change and edit fleet information in real time.
+ATIONet hace posible que el gestor de la flota opere, supervise, cambie y edite la información de la flota en tiempo real.
 
 
-# Definitions
+# Definiciones
 
-## Contract 
+## Contrato 
 
-The contract is the relationship that exists between the network and the client, in which it is guided, for example, if it will be of amount or volume, the price at which the fuel is going to be sold, in which sites it can load, among others.
+El contrato es la relación que existe entre la Network y el cliente, en la que se orienta, por ejemplo, si será de cantidad o volumen, el precio al que se va a vender el combustible, en qué sitios se puede cargar, entre otros.
 
-## Sub-account 
+## Subcuenta
 
-Each time an identification is associated with a vehicle or driver, a sub-account is created. The sub-account is definitely who is going to have a current account, the sub-account is going to be able to receive deposits of money or product. The rules also impact the sub-account.
+Cada vez que se asocia un identificador a un vehículo o conductor, se crea una subcuenta. La subcuenta es en definitiva quien va a tener una cuenta corriente, la subcuenta va a poder recibir depósitos de dinero o producto. Las reglas también afectan a la subcuenta.
 
-The sub-accounts are hierarchically dependent on the contract.
+Las subcuentas dependen jerárquicamente del contrato.
 
-## Company
+## Compañía
 
-In ATIONet the company refers to the entity that owns the fleet. It is the one that manages the vehicles, drivers and fleet rules.
+En ATIONet la compañía se refiere a la entidad propietaria de la flota. Es la que gestiona los vehículos, los conductores y las reglas de la flota.
 
-## Identification
+## Identificador
 
-The identification is the physical means used by ATIONet to identify a vehicle or driver. ATIONet supports various types of identifications, such as card, TAG, chip, ATIONet card, manual entry, barcode and iButton. When an identification is associated to a Vehicle or Driver, a sub-account is created.
+El identificador es el medio físico utilizado por ATIONet para identificar un vehículo o conductor. ATIONet soporta varios tipos de identificadores, como tarjeta, TAG, chip, tarjeta ATIONet, entrada manual, código de barras e iButton. Cuando se asocia un identificador a un vehículo o conductor, se crea una subcuenta.
 
-## Site 
+## Sitio
 
-The Site represents the service station. A site is assigned a terminal/controller and may also have associated Location rules.
+El Sitio representa la estación de servicio. A un sitio se le asigna un terminal/controlador y también puede tener reglas de localización asociadas.
 
-## Vehicle 
+## Vehículo 
 
-The vehicles can be associated or grouped by a fleet, they can have associated rules and at the moment of being related with an identification a sub-account is created. They may also have an associated driver.
+Los vehículos pueden estar asociados o agrupados por una flota, pueden tener reglas asociadas y en el momento de relacionarse con un identificador se crea una subcuenta. También pueden tener un conductor asociado.
 
-## Driver 
+## Conductor
 
-The driver in ATIONet is the person who is identified as a chauffeur. If this driver is assigned an identification, a sub-account is created. Drivers may also have associated rules.
+El conductor en ATIONet es la persona que se identifica como chófer. Si a este conductor se le asigna un identificador, se crea una subcuenta. Los conductores también pueden tener reglas asociadas.
 
-## Offline module 
+## Modulo Offline 
 
-ATIONet's offline module is automatically activated when the service station has no Internet connection and the authorizations cannot be processed online. At this point the offline module comes into play. For the terminal/controller it is completely transparent. When the offline module recovers the connectivity it sends all the information processed locally and also downloads any updates. As long as there is connectivity, the offline module is continuously downloading ATIONet updates (balances, identifications, rules, etc).
+El módulo offline de ATIONet se activa automáticamente cuando la estación de servicio no tiene conexión a Internet y las autorizaciones no pueden procesarse online. En este momento entra en juego el módulo offline. Para el terminal/controlador es completamente transparente. Cuando el módulo offline recupera la conectividad, envía toda la información procesada localmente y también descarga cualquier actualización. Mientras haya conectividad, el módulo offline está descargando continuamente las actualizaciones de ATIONet (saldos, identificaciones, reglas, etc).
 
 ## Terminal
 
-The terminal (or controller) is the representation of the dispenser controller, which needs to be parameterized in a particular way according to the type of terminal. The terminals handled by ATIONet are ATIO-NanoCPI, ATIO-Standalone, ATIO-CG, VF-Sapphire, VF-Commander, VF-Ruby, ControlGas, among others. 
+El terminal (o controlador) es la representación del controlador del dispensador, que debe ser parametrizado de forma particular según el tipo de terminal. Los terminales que maneja ATIONet son: ATIO-NanoCPI, ATIO-Standalone, ATIO-CG, VF-Sapphire, VF-Commander, VF-Ruby, ControlGas, entre otros. 
 
-# Navigation Menu
+# Menú Navegación
 
-ATIONet has a quick access menu located on the left side of the website. From this menu you can access different options. The menu is divided into 9 sections. (Dashboard, Favorites, Reports, Administration, Fleets, Billing, Notifications, Configuration and Logbook).
+ATIONet tiene un menú de acceso rápido situado en la parte izquierda de la web. Desde este menú se puede acceder a diferentes opciones. El menú está dividido en 9 secciones. (Tablero, Favoritos, Reportes, Administración, Flotas, Liquidación, Notificaciones, Configuración y Bitácora de Auditoria).
 
-# My Preferences
-Inside this section each user can customize their portal preferences.
+# Mis Preferencias
+Dentro de esta sección cada usuario puede personalizar sus preferencias del portal.
 
-1. **Default Role:** Select the default role when loggin in.
+1. **Rol por Defecto:** Seleccione el rol por defecto al iniciar la sesión.
 
-![Default Role](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/My%20Preferences/Default%20Role.PNG)
+![Rol por defecto](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Mis%20Preferencias/Rol%20por%20Defecto.PNG)
 
-2. **Profile Picture:** Change the profile picture of your user.
+2. **Imagen de Perfil:** Cambia la imagen de perfil de tu usuario.
 
-![Profile Picture](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/My%20Preferences/Profile%20Picture.PNG)
+![Imagen de perfil](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Mis%20Preferencias/Foto%20de%20Perfil.PNG)
 
-3. **Change Password:** Change the password for your user.
+3. **Cambiar la Contraseña:** Cambia la contraseña de tu usuario.
 
-![Change Password](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/My%20Preferences/Change%20Password.PNG)
+![Cambiar contraseña](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Mis%20Preferencias/Cambio%20Contrase%C3%B1a.PNG)
 
-To edit your password, click the ***change password*** link.
+Para editar su contraseña, haga clic en el enlace ***change password***.
 
-![Change Password New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/My%20Preferences/Change%20Password%20New.PNG)
+![Cambiar contraseña nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Mis%20Preferencias/Cambio%20Contrase%C3%B1a%20Nuevo.PNG)
 
-4. **Widgets Configuration:** Select which widgets to show on your dashboard.
+4. **Configuración de Widgets:** Selecciona los widgets que se mostrarán en tu panel de control.
 
-![Widget Configuration](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/My%20Preferences/Widget%20Configuration.PNG)
+![Configuración de widgets](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Mis%20Preferencias/Widgets.PNG)
