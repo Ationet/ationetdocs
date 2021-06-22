@@ -4,7 +4,7 @@
 |--- |--- |
 |**File:**|ATIONet_Network_User_Manual-EN.md|
 |**Doc Version:**|2.0|
-|**Release Date:**|14, May 2021|
+|**Release Date:**|15, Jun 2021|
 |**Author:**|ATIONet LLC|
 
 
