@@ -3,7 +3,7 @@
 # Contenido
 
 - [Flotas](#flotas)
-	- [Alertas De Fraude](#alertas-de-fraude)
+	- [Alertas de Fraude](#alertas-de-fraude)
 	- [Autorizaciones Pendientes](#autorizaciones-pendientes)
 	- [Conceptos](#conceptos)
 	- [Configuración de Alertas de Fraude](#configuración-de-alertas-de-fraude)
