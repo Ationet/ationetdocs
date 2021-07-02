@@ -8,6 +8,9 @@
 - [Network Subscription Type User Manual (Spanish)](https://github.com/Ationet/ationetdocs/blob/master/ATIONet%20Network%20User%20Manual-ES.md)
 - [Network Subscription Type User Manual (English)](https://github.com/Ationet/ationetdocs/blob/master/ATIONet%20Network%20User%20Manual-EN.md)
 
+## ATIONet Local Agent
+- [Local Agent Product Description (Spanish)](https://github.com/Ationet/ationetdocs/blob/master/ATIONet-Local%20Agent%20Product%20Description-ES.md)
+
 ## ATIONet Stand Alone Terminal (Verifone Vx520)
 - [Stand Alone Terminal User Manual (Spanish)](UserManuals/AN-Stand_AloneTerminal-UserManual-SP.md)
 - [Stand Alone Terminal User Manual (English)](UserManuals/AN-Stand_AloneTerminal-UserManual-EN.md)
