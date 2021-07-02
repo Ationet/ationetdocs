@@ -19,7 +19,7 @@
 
 - [Información General](#información-general)
 - [Procesamiento de Transacciones](#procesamiento-de-transacciones)
-- [Reconexión a Ationet](#reconexión-a-ationet)
+- [Reconexión a ATIONet](#reconexión-a-ationet)
 - [Reglas y Validaciones](#reglas-y-validaciones) 
 
 
@@ -62,7 +62,7 @@ A continuación, se adjunta un gráfico explicativo del flujo que realiza LocalA
     2. Descarga las novedades de ATIONet y aplica esas novedades.
     3. Evalúa si hay transacciones procesadas offline durante el período que estuvo sin conexión. Caso afirmativo, envía las novedades a ATIONet.
 
-**Reglas y Validaciones**
+# **Reglas y Validaciones**
 
 El producto contempla la aplicación de ciertas reglas del mismo modo que el host cloud de ATIONet, pero no contempla el 100% de las mismas, el motivo es que al ser un autorizador local no se puede replicar la misma cantidad de información que se tiene al nivel del host en el LocalAgent, ya que esto afectaría la cantidad de datos administrados de forma local con el correspondiente impacto de requerimiento de servidor, y la cantidad de tráfico que sería necesario considerar entre el servidor local y el host de ATIONet.
 
