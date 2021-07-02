@@ -17,7 +17,7 @@
 
 # Contenido
 
-- [Información General](#inforamción-general)
+- [Información General](#información-general)
 - [Procesamiento de Transacciones](#procesamiento-de-transacciones)
 - [Reconexión a Ationet](#reconexión-a-ationet)
 - [Reglas y Validaciones](#reglas-y-validaciones) 
