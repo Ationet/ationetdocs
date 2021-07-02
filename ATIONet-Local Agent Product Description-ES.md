@@ -71,7 +71,7 @@ Se debe tener en cuenta que todas las reglas que se mencionan en el presente doc
 A continuación, se detallan las reglas que son aplicadas en el LocalAgent:
 
 - ***DateTime:*** Valida que la transacción sea hecha entre las fechas establecidas. Podría haber más de una regla de este tipo y rechazaría con que solo una le impida, a pesar de que haya otra que sí le permita. La lógica actual descarga los valores de la regla como enteros y convierte la fecha de validación a uno para luego compararlos.
-- ***Location:*** Valida que la transacción sea hecha por cualquiera de las terminales permitidas. Al no existir el concepto de sitio en LA, la regla obtiene todas las terminales que pertenezcan a los sitios de la regla.
+- ***Location:*** Valida que la transacción sea hecha por cualquiera de las terminales permitidas. Al no existir el concepto de sitio en LocalAgent, la regla obtiene todas las terminales que pertenezcan a los sitios de la regla.
 - ***Fuel:*** Valida que la transacción haya sido realizada con alguno de los combustibles configurados.
 - ***TransactionsLimit:*** Limita los máximos de la transacción en volumen o monto.
 - ***DaysTime:*** Valida que la transacción sea hecha entre los horarios y los días establecidos. Todavía tiene el formato viejo, que limita los mismos horarios sin importar el día.
