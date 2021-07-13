@@ -4696,9 +4696,525 @@ transactions to download.
 	</tbody>
 </table>
 
-## 11 Examples
+## 11 Account Downloads
 
-### 11.1 C# example
+The Account Download messages are POST actions to recover all the
+currents accounts movements processed by ATIONet for a given Company
+Code depending on the particular Action Code.
+
+The Action Code is validated against the type of company of the
+authenticated user. Request not passing this validation will be
+rejected.
+
+The download will be limited by dates (from and to), which must be
+included in the request
+
+### 11.1 Action Codes
+
+The Action Code specifies the type of record transaction to be
+retrieved; this differentiation is based on the different roles on an
+ATIONet operation (Fleet Company, Merchant, Network, Home-base), which
+also mandates different ways to identify the requester and scope of
+transactions to download.
+
+<table>
+	<tr valign="top">
+		<th align="left">
+			Action Code
+		</th>
+		<th colspan="2" align="left">
+			Description
+		</th>
+	</tr>
+	<tr valign="top">
+		<td rowspan="4">
+			<p>951</p>
+		</td>
+		<td>
+			<p>Title:</p>
+		</td>
+		<td>
+			<p>Movements Download</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Function:</p>
+		</td>
+		<td>
+			<p>Download complete current account movements records</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Allowed for:</p>
+		</td>
+		<td>
+			<p>Subscribers and Fleet Companies</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Identification:</p>
+		</td>
+		<td>
+			<p>Subscriber Code</p>
+			<p>Company Code (Optional, if included will act as a filter)</p>
+		</td>
+	</tr>
+</table>
+
+### 11.2 Account Download (POST) – Body Section Format *Request*
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Condition
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">SubscriberCode</p>
+			</td>
+			<td>
+				<p align="left">3</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Required</p>
+			</td>
+			<td>
+				<p align="left">Fixed. To be assigned by ATIONet</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ActionCode</p>
+			</td>
+			<td>
+				<p align="left">3</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Required</p>
+			</td>
+			<td>
+				<p align="left">See Action Codes section above</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyCode</p>
+			</td>
+			<td>
+				<p align="left">30</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Conditional</p>
+			</td>
+			<td>
+				<p align="left">See Action Codes section above</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DateFrom</p>
+			</td>
+			<td>
+				<p align="left">19</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Required</p>
+			</td>
+			<td>
+				<p align="left">From date to filter movements</p>
+				<p align="left">&ldquo;yyyy/MM/dd hh:mm:ss&rdquo;</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DateTo</p>
+			</td>
+			<td>
+				<p align="left">19</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">To date to filter movements</p>
+				<p align="left">&ldquo;yyyy/MM/dd hh:mm:ss&rdquo;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+### 11.3 Account Download (POST) – Body Section Format *Response*
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">Field Name
+			</th>
+			<th align="left">Size
+			</th>
+			<th align="left">Type
+			</th>
+			<th align="left">Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p>Id</p>
+			</td>
+			<td>
+				<p>36</p>
+			</td>
+			<td>
+				<p>A/N</p>
+			</td>
+			<td>
+				<p>Current account&rsquo;s UID</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>MovementId</p>
+			</td>
+			<td>
+				<p>36</p>
+			</td>
+			<td>
+				<p>A/N</p>
+			</td>
+			<td>
+				<p>Movements&rsquo;s UID</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>SubscriberCode</p>
+			</td>
+			<td>
+				<p>3</p>
+			</td>
+			<td>
+				<p>A/N</p>
+			</td>
+			<td>
+				<p>Code of the subscriber who owns the transaction</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>HostDateTime</p>
+			</td>
+			<td>
+				<p>19</p>
+			</td>
+			<td>
+				<p>A/N</p>
+			</td>
+			<td>
+				<p>ATIONet&rsquo;s transaction date time &ldquo;yyyy/mm/dd hh:mm:ss&rdquo;.</p>
+				<p>ATIONet Host date time is UCT</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>DateTime</p>
+			</td>
+			<td>
+				<p>19</p>
+			</td>
+			<td>
+				<p>A/N</p>
+			</td>
+			<td>
+				<p>movement date expressed in subscriber time zone</p>
+				<p>&ldquo;yyyy/mm/dd hh:mm:ss&rdquo;.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>SubscriberTimeZone</p>
+			</td>
+			<td>
+				<p>50</p>
+			</td>
+			<td>
+				<p>A/N</p>
+			</td>
+			<td>
+				<p>TimeZone code of the subscriber (abbreviation)</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>Type</p>
+			</td>
+			<td>
+				<p>1</p>
+			</td>
+			<td>
+				<p>N</p>
+			</td>
+			<td>
+				<p align="left">Internal ATIOnet movement type code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>TypeDescription</p>
+			</td>
+			<td>
+				<p>50</p>
+			</td>
+			<td>
+				<p>A/N</p>
+			</td>
+			<td>
+				<p align="left">Movement type description</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>Origin</p>
+			</td>
+			<td>
+				<p>1</p>
+			</td>
+			<td>
+				<p>N</p>
+			</td>
+			<td>
+				<p>Internal ATIOnet code for the origin of the movement</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>OriginDescription</p>
+			</td>
+			<td>
+				<p>50</p>
+			</td>
+			<td>
+				<p>A/N</p>
+			</td>
+			<td>
+				<p>Description for the origin of the movement</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>Description</p>
+			</td>
+			<td>
+				<p>1000</p>
+			</td>
+			<td>
+				<p>A/N</p>
+			</td>
+			<td>
+				<p>Movement description</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>SubAccountId</p>
+			</td>
+			<td>
+				<p>36</p>
+			</td>
+			<td>
+				<p>A/N</p>
+			</td>
+			<td>
+				<p>SubAccount&rsquo;s UID</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>SubAccountExternalCode</p>
+			</td>
+			<td>
+				<p>50</p>
+			</td>
+			<td>
+				<p>A/N</p>
+			</td>
+			<td>
+				<p>SubAccount&rsquo;s external code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyCode</p>
+			</td>
+			<td>
+				<p>30</p>
+			</td>
+			<td>
+				<p>A/N</p>
+			</td>
+			<td>
+				<p>Company code</p>
+				<p>Not meaningful for Homebase subscribers</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyName</p>
+			</td>
+			<td>
+				<p>250</p>
+			</td>
+			<td>
+				<p>A/N</p>
+			</td>
+			<td>
+				<p>Company name</p>
+				<p>Not meaningful for Homebase subscribers</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>ContractCode</p>
+			</td>
+			<td>
+				<p>20</p>
+			</td>
+			<td>
+				<p>A/N</p>
+			</td>
+			<td>
+				<p>Contract code</p>
+				<p>Not meaningful for Homebase subscribers</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>SubContractCode</p>
+			</td>
+			<td>
+				<p>50</p>
+			</td>
+			<td>
+				<p>A/N</p>
+			</td>
+			<td>
+				<p>SubContract code</p>
+				<p>Not meaningful for Homebase subscribers</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>IsDebit</p>
+			</td>
+			<td>
+				<p>1</p>
+			</td>
+			<td>
+				<p>N</p>
+			</td>
+			<td>
+				<p>Indicates that&rsquo;s a debit or credit movement</p>
+				<p>1 = &ldquo;True&rdquo;, 2= &ldquo;False&rdquo;</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>FuelMasterCode</p>
+			</td>
+			<td>
+				<p>50</p>
+			</td>
+			<td>
+				<p>A/N</p>
+			</td>
+			<td>
+				<p>Standardized product code. Helps to identify a fuel product category across multiple Merchant brands and site&rsquo;s product codes</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>FuelMasterDescription</p>
+			</td>
+			<td>
+				<p>100</p>
+			</td>
+			<td>
+				<p>A/N</p>
+			</td>
+			<td>
+				<p>Standardized product description. Helps to identify a fuel product category across multiple Merchant brands and site&rsquo;s product codes</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CurrencyCode</p>
+			</td>
+			<td>
+				<p>50</p>
+			</td>
+			<td>
+				<p>A/N</p>
+			</td>
+			<td>
+				<p>Currency of the amount fields</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Amount</p>
+			</td>
+			<td>
+				<p align="left">10</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Amount balance for the sub-account.</p>
+				<p align="left">xxxxxxx.xx</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+## 12 Examples
+
+### 12.1 C# example
 
 ```C#
 using System.IO;
