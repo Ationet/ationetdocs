@@ -4408,10 +4408,8 @@ transactions to download.
 |Id|36|A/N|Current account’s UID|
 |MovementId|36|A/N|Movements’s UID|
 |SubscriberCode|3|A/N|Code of the subscriber who owns the transaction|
-|HostDateTime|19|A/N|ATIONet’s transaction date time “yyyy/mm/dd hh:mm:ss”.
-			ATIONet Host date time is UCT|
-|DateTime|19|A/N|movement date expressed in subscriber time zone
-			“yyyy/mm/dd hh:mm:ss”.|
+|HostDateTime|19|A/N|ATIONet’s transaction date time “yyyy/mm/dd hh:mm:ss”. (ATIONet Host date time is UCT)|
+|DateTime|19|A/N|movement date expressed in subscriber time zone ("yyyy/mm/dd hh:mm:ss")|
 |SubscriberTimeZone|50|A/N|TimeZone code of the subscriber (abbreviation)|
 |Type|1|N|Internal ATIOnet movement type code|
 |TypeDescription|50|A/N|Movement type description|
