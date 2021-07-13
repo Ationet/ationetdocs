@@ -4743,7 +4743,7 @@ transactions to download.
 			<p>Function:</p>
 		</td>
 		<td>
-			<p>Download complete current account movements records</p>
+			<p>Download complete deliveries movements records</p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -4751,7 +4751,7 @@ transactions to download.
 			<p>Allowed for:</p>
 		</td>
 		<td>
-			<p>Subscribers and Fleet Companies</p>
+			<p>Subscribers and Merchants</p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -4760,7 +4760,7 @@ transactions to download.
 		</td>
 		<td>
 			<p>Subscriber Code</p>
-			<p>Company Code (Optional, if included will act as a filter)</p>
+			<p>Merchant Code (If logged in with with the ROL MC Interfce API , if logged with ROL NW Interface API and included will act as a filter)</p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -4779,7 +4779,7 @@ transactions to download.
 			<p>Function:</p>
 		</td>
 		<td>
-			<p>Download complete current account movements records</p>
+			<p>Download complete inventories movements records</p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -4787,7 +4787,7 @@ transactions to download.
 			<p>Allowed for:</p>
 		</td>
 		<td>
-			<p>Subscribers and Fleet Companies</p>
+			<p>Subscribers and Merchants</p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -4796,7 +4796,7 @@ transactions to download.
 		</td>
 		<td>
 			<p>Subscriber Code</p>
-			<p>Company Code (Optional, if included will act as a filter)</p>
+			<p>Merchant Code (If logged in with with the ROL MC Interfce API , if logged with ROL NW Interface API and included will act as a filter)</p>
 		</td>
 	</tr>
 </table>
