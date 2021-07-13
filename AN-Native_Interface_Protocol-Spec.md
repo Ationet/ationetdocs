@@ -18,6 +18,7 @@
 |1.3|05/07/2014|**Statement Charges** <br> - Added Action 903 Transfer balance from sub-account to a sub-account<br> - Added Action 904 Transfer balance from contract to a sub-account <br> - Added Action 905 Transfer balance from sub-account to a contract <br> - Change and reorganize request and response records<br> **Transactions Downloads** <br> - Change and reorganize request and response records <br> - Account Inquiries <br> - Remove Action 943 Contract Balance Enquiry <br> - Change and reorganize request and response records **Account Downloads** <br> - Remove Action 952 Contract Movements Download <br> - Change Action 951 Sub-Account Movements Download to 951 Movements Download <br> - Change and reorganize request and response records <br>**Error Handling** <br> - Include “ResponseError” in response record for actions intended to post a command|
 |1.4|27/11/2018|**FastTrack** <br> - Added Action 971 Request insertion of new FastTrack <br> - Added Action 972 Request FastTrack list download|
 |1.5|29/03/2021|**API Interface Messages** <br> - Updated lists of Action Codes|
+|1.5|13/07/2021|**Inventory Interface Messages** <br> - Updated lists of Action Codes|
 
 ## Contents
 
@@ -4698,8 +4699,8 @@ transactions to download.
 
 ## 11 Account Downloads
 
-The Account Download messages are POST actions to recover all the
-currents accounts movements processed by ATIONet for a given Company
+The Inventory and Delivery Download messages are POST actions to recover all the
+transactions processed by ATIONET for a given Merchant or the complete Subscriber
 Code depending on the particular Action Code.
 
 The Action Code is validated against the type of company of the
@@ -4713,7 +4714,7 @@ included in the request
 
 The Action Code specifies the type of record transaction to be
 retrieved; this differentiation is based on the different roles on an
-ATIONet operation (Fleet Company, Merchant, Network, Home-base), which
+ATIONet operation (Merchant, Network), which
 also mandates different ways to identify the requester and scope of
 transactions to download.
 
@@ -4728,13 +4729,49 @@ transactions to download.
 	</tr>
 	<tr valign="top">
 		<td rowspan="4">
-			<p>951</p>
+			<p>981</p>
 		</td>
 		<td>
 			<p>Title:</p>
 		</td>
 		<td>
-			<p>Movements Download</p>
+			<p>Deliveries Download</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Function:</p>
+		</td>
+		<td>
+			<p>Download complete current account movements records</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Allowed for:</p>
+		</td>
+		<td>
+			<p>Subscribers and Fleet Companies</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Identification:</p>
+		</td>
+		<td>
+			<p>Subscriber Code</p>
+			<p>Company Code (Optional, if included will act as a filter)</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td rowspan="4">
+			<p>982</p>
+		</td>
+		<td>
+			<p>Title:</p>
+		</td>
+		<td>
+			<p>Inventories Download</p>
 		</td>
 	</tr>
 	<tr valign="top">
