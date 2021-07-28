@@ -85,7 +85,7 @@ Here follows a brief description of each parameter:
 
 ![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Install.Config%20Configuration.PNG)
 
-For our equipment to be able to connect to the Ationet portal, we will have to modify the **Subscriber_Code**. To find out which is the one of our site, we must enter the ATIONet portal, go to the **Administration - Terminals / Drivers** section.
+For our equipment to be able to connect to the Ationet portal, we will have to modify the **Subscriber_Code**. To find out which is the one of our site, we must enter the ATIONet portal, go to the **Administration - Terminals / Controllers** section.
 
 ![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Terminals-Controllers.PNG)
 
