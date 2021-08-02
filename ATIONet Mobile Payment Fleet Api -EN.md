@@ -131,15 +131,15 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 
 ## 4 Message Structure
 
-### MobilePayments 
+### 4.1 MobilePayments 
 
-#### Request Format
+#### 4.1.1 Request Format
 
 *URL: /api/MobilePayments* </br>
 *Method: POST* </br>
 *Body: { siteCode: string, pumpNumber: integer, fuelCode: string, amount: double, primaryTrack: string, terminalCode: string, mobilePaymentMode: integer, potencyKeyId: string ,  externalReferanceID:string } * </br>
 
-#### Response Format
+#### 4.1.2 Response Format
 
 *Header:*
 
@@ -149,15 +149,15 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 *Body:	{“TransactionId”:”StringValue”}*
 
 
-### PreAuthorizedPayments
+### 4.2 PreAuthorizedPayments
 
-#### Request Format
+#### 4.2.1 Request Format
 
 *URL: /api/PreAuthorizedPayments* </br>
 *Method: POST* </br>
 *Body: { siteCode: string, pumpNumber: integer, fuelCode: string, amount: double, mobilePaymentMode: integer, potencyKeyId: string , externalReferanceID": string }* </br>
 
-#### Response Format
+#### 4.2.2 Response Format
 
 *Header:*
 
@@ -166,15 +166,15 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 
 *Body: {“TransactionId”:”StringValue”}*
 
-### GetTransaction
+### 4.3 GetTransaction
 
-#### Request Format
+#### 4.3.1 Request Format
 
 *URL: /api/MobilePayments/GetTransaction/{id}* </br>
 *Method: GET* </br>
 *Body: { id: string }* </br>
 
-#### Response Format
+#### 4.3.2 Response Format
 
 *Header:*
 
@@ -202,17 +202,17 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
   updateDateTime: string</br>
 }*
 
-### Cancel 
+### 4.3 Cancel 
 
-#### Request Format
+#### 4.3.1 Request Format
 
 *URL: /api/MobilePayments/Cancel* </br>
 *Method: POST* </br>
-*Body:{ “TransactionId”:”StringValue” } * </br>
+*Body:{ “TransactionId”:”StringValue” }* </br>
 
-Check the following diagram to know all Cancellable Transactions States: <a href="#CancelTRStates">Transaction states sequence diagram on Cancelation Request<a/>
+Check the following diagram to know all Cancellable Transactions States <a href="cancelTRStates"> here </a>
 
-#### Response Format
+#### 4.3.2 Response Format
 
 *Header:*
 
@@ -398,7 +398,7 @@ This section describe through a table  all parameters from request.
 
 
 ## 7 Transactions States
-
+<span id="#cancelTRStates"></span>
 
 This section describe through a table  all  states that a sale can have.
 
