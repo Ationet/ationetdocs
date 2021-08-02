@@ -210,8 +210,6 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 *Method: POST* </br>
 *Body:{ “TransactionId”:”StringValue” }* </br>
 
-Check the following diagram to know all Cancellable Transactions States <a href="#transactionsCancelableStates">Here</a>.
-
 #### 4.3.2 Response Format
 
 *Header:*
@@ -398,7 +396,6 @@ This section describe through a table  all parameters from request.
 
 
 ## 7 Transactions States
-<a href="transactionsCancelableStates">a</a>
 
 This section describe through a table  all  states that a sale can have.
 
