@@ -19,7 +19,7 @@
 - [API](#API)
 - [Details](#api-details)	
 - [Supported Transactions](#supported-transactions)
--[Message Structure](#message-structure)
+- [Message Structure](#message-structure)
 	- [MobilePayments](#mobilePayments)
 	- [PreAuthorizedPayments](#preAuthorizedPayments)
 	- [GetTransaction](#getTransaction)
