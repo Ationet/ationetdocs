@@ -627,4 +627,4 @@ This section describe through a table  all transactions states.
 </table>
 
 
-
+![ationetTR](Content/Images/MobilePaymentFleet/MobilePaymentFleetTransactionStates.PNG)
