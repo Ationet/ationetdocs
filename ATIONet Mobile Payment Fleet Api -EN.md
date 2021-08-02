@@ -19,11 +19,11 @@
 - [API](#API)
 	- [Details](#api-details)	
 	- [Supported Transactions](#supported-transactions)
--[Message Structure](#message-structure) 
-	-[MobilePayments](#mobilePayments)
-	-[PreAuthorizedPayments](#preAuthorizedPayments)
-	-[GetTransaction](#getTransaction)
-	-[Cancel](#cancel)
+-[Message Structure](#message-structure) <br>
+	-[MobilePayments](#mobilePayments) <br>
+	-[PreAuthorizedPayments](#preAuthorizedPayments)<br>
+	-[GetTransaction](#getTransaction)<br>
+	-[Cancel](#cancel)<br>
 - [Error Handling](#error-handling)
 - [Field Descriptions](#field-descriptions)
 - [Transactions States](#transactions-states)
