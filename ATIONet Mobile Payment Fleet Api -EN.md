@@ -641,5 +641,291 @@ This section describe through a table  all transactions states.
 
 ![ationetTRCancel](Content/Images/MobilePaymentFleet/MobilePaymentFleetCancelationState.png)
 
-## Response Codes
+## 8 Response Codes
 
+### 8.1 MobilePayments | PreAuthorizedPayments Response codes
+	
+Both methos response the same codes.
+
+	<table>
+	<thead>
+		<tr valign="center">
+			<th rowspan="3" width="125" align="left">
+				Code
+			</th>
+			<th rowspan="3" width="125" align="left">
+				Description
+			</th>
+		</tr>
+	</thead>
+		<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">00000</p>
+			</td>
+			<td>
+				<p align="left">Successfully Canceled</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">-10000</p>
+			</td>
+			<td>
+				<p align="left">Invalid state - Transaction not updated</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">04001</p>
+			</td>
+			<td>
+				<p align="left">Invalid state - Transaction status is alredy cancel</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">02001</p>
+			</td>
+			<td>
+				<p align="left">Cancel by Generic error</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">04003</p>
+			</td>
+			<td>
+				<p align="left">Invalid state - dispenser is fueling</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">04004</p>
+			</td>
+			<td>
+				<p align="left">Invalid state - Transaction status is completed</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">04007</p>
+			</td>
+			<td>
+				<p align="left">Unknow transaction or authorization</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">04008</p>
+			</td>
+			<td>
+				<p align="left">Invalid state - Cancelation is alredy requested</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">04009</p>
+			</td>
+			<td>
+				<p align="left">Invalid state - dispenser is fueling</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">04010</p>
+			</td>
+			<td>
+				<p align="left">Transacion canceled by Session not available</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">04011</p>
+			</td>
+			<td>
+				<p align="left">Transacion canceled by unknow error</p>
+			</td>
+		 </tr>
+	 </tbody>
+
+</table>
+
+
+### 8.2 Cancelation Response codes
+
+<table>
+	<thead>
+		<tr valign="center">
+			<th rowspan="3" width="225" align="left">
+				Code
+			</th>
+			<th rowspan="3" width="225" align="left">
+				Response
+			</th>
+			<th rowspan="3" width="225" align="left">
+				Response body Code
+			</th>
+			<th rowspan="3" width="225" align="left">
+				Response body Message
+			</th>
+		</tr>
+	</thead>
+		<tbody>
+		<tr valign="top">
+			<td>
+			<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">Success</p>
+			</td>
+			<td>
+				<p align="left">00000</p>
+			</td>
+			<td>
+				<p align="left">Successfully Canceled</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+			<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">Success</p>
+			</td>
+			<td>
+				<p align="left">-10000</p>
+			</td>
+			<td>
+				<p align="left">Invalid state - Transaction not updated</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+			<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">Success</p>
+			</td>
+			<td>
+				<p align="left">04001</p>
+			</td>
+			<td>
+				<p align="left">Invalid state - Transaction status is alredy cancel</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+			<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">Success</p>
+			</td>
+			<td>
+				<p align="left">02001</p>
+			</td>
+			<td>
+				<p align="left">Cancel by Generic error</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+			<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">Success</p>
+			</td>
+			<td>
+				<p align="left">04003</p>
+			</td>
+			<td>
+				<p align="left">Invalid state - dispenser is fueling</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+			<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">Success</p>
+			</td>
+			<td>
+				<p align="left">04004</p>
+			</td>
+			<td>
+				<p align="left">Invalid state - Transaction status is completed</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+			<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">Success</p>
+			</td>
+			<td>
+				<p align="left">04007</p>
+			</td>
+			<td>
+				<p align="left">Unknow transaction or authorization</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+			<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">Success</p>
+			</td>
+			<td>
+				<p align="left">04008</p>
+			</td>
+			<td>
+				<p align="left">Invalid state - Cancelation is alredy requested</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+			<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">Success</p>
+			</td>
+			<td>
+				<p align="left">04009</p>
+			</td>
+			<td>
+				<p align="left">Invalid state - dispenser is fueling</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+			<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">Success</p>
+			</td>
+			<td>
+				<p align="left">04010</p>
+			</td>
+			<td>
+				<p align="left">Transacion canceled by Session not available</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+			<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">Success</p>
+			</td>
+			<td>
+				<p align="left">04011</p>
+			</td>
+			<td>
+				<p align="left">Transacion canceled by unknow error</p>
+			</td>
+		 </tr>
+	 </tbody>
+
+</table>
