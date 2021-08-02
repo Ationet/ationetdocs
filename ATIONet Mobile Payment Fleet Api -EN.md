@@ -60,7 +60,7 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 				Name
 			</th>
 			<th colspan="2" align="center">
-				Protocol Ver.
+				Ver.
 			</th>
 			<th rowspan="2" align="left">
 				Description
@@ -155,7 +155,7 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 
 *URL: /api/PreAuthorizedPayments* </br>
 *Method: POST* </br>
-*Body: { siteCode: string, pumpNumber: integer, fuelCode: string, amount: double, mobilePaymentMode: integer, potencyKeyId: string , externalReferanceID": string } * </br>
+*Body: { siteCode: string, pumpNumber: integer, fuelCode: string, amount: double, mobilePaymentMode: integer, potencyKeyId: string , externalReferanceID": string }* </br>
 
 #### Response Format
 
@@ -164,7 +164,7 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 	Content-Type: application/json; charset=utf-8
 	content-encoding: gzip 
 
-*Body: {“TransactionId”:”StringValue”} *
+*Body: {“TransactionId”:”StringValue”}*
 
 ### GetTransaction
 
@@ -172,7 +172,7 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 
 *URL: /api/MobilePayments/GetTransaction/{id}* </br>
 *Method: GET* </br>
-*Body: { id: string } * </br>
+*Body: { id: string }* </br>
 
 #### Response Format
 
@@ -400,7 +400,7 @@ This section describe through a table  all parameters from request.
 ## 7 Transactions States
 
 
-This section describe through a table  all transactions states.
+This section describe through a table  all  states that a sale can have.
 
 
 <table>
@@ -647,7 +647,7 @@ This section describe through a table  all transactions states.
 	
 Both methos response the same codes.
 
-	<table>
+<table>
 	<thead>
 		<tr valign="center">
 			<th rowspan="3" width="125" align="left">
@@ -658,97 +658,25 @@ Both methos response the same codes.
 			</th>
 		</tr>
 	</thead>
-		<tbody>
+	<tbody>
 		<tr valign="top">
 			<td>
-				<p align="left">00000</p>
+			<p align="left">200</p>
 			</td>
 			<td>
-				<p align="left">Successfully Canceled</p>
+				<p align="left">Success</p>
 			</td>
 		 </tr>
-		<tr valign="top">
+			<tr valign="top">
 			<td>
-				<p align="left">-10000</p>
+			<p align="left">400</p>
 			</td>
 			<td>
-				<p align="left">Invalid state - Transaction not updated</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">04001</p>
-			</td>
-			<td>
-				<p align="left">Invalid state - Transaction status is alredy cancel</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">02001</p>
-			</td>
-			<td>
-				<p align="left">Cancel by Generic error</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">04003</p>
-			</td>
-			<td>
-				<p align="left">Invalid state - dispenser is fueling</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">04004</p>
-			</td>
-			<td>
-				<p align="left">Invalid state - Transaction status is completed</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">04007</p>
-			</td>
-			<td>
-				<p align="left">Unknow transaction or authorization</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">04008</p>
-			</td>
-			<td>
-				<p align="left">Invalid state - Cancelation is alredy requested</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">04009</p>
-			</td>
-			<td>
-				<p align="left">Invalid state - dispenser is fueling</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">04010</p>
-			</td>
-			<td>
-				<p align="left">Transacion canceled by Session not available</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">04011</p>
-			</td>
-			<td>
-				<p align="left">Transacion canceled by unknow error</p>
+				<p align="left">Bad request</p>
 			</td>
 		 </tr>
 	 </tbody>
-
+		
 </table>
 
 
@@ -926,6 +854,69 @@ Both methos response the same codes.
 				<p align="left">Transacion canceled by unknow error</p>
 			</td>
 		 </tr>
+			<tr valign="top">
+			<td>
+			<p align="left">400</p>
+			</td>
+			<td>
+				<p align="left">Bad request</p>
+			</td>
+			<td>
+				<p align="center">-</p>
+			</td>
+			<td>
+				<p align="center">-</p>
+			</td>
+		 </tr>
 	 </tbody>
 
 </table>
+	
+## 8.2 Message Samples
+
+### MobilePayments Sample
+	
+```
+{
+  "siteCode": "1524",
+  "pumpNumber": 1,
+  "fuelCode": "3",
+  "amount": 9,
+  "primaryTrack": "0000000000001",
+  "terminalCode": "S2G321",
+  "mobilePaymentMode": 1,
+  "potencyKeyId": "5734cbb9-f78f-4ad4-aa87-79ed95181c5a"
+}
+	
+```
+	
+### PreAuthorizedPayments
+
+```
+{
+  "siteCode": "1524",
+  "pumpNumber": 1,
+  "fuelCode": "3",
+  "amount": 9,
+  "mobilePaymentMode": 1,
+  "potencyKeyId": "5734cbb9-f78f-4ad4-aa87-79ed95181c5a",
+  "externalReferanceID": "854712"
+}
+
+```
+	
+### GetTransaction
+
+```
+{
+  "id": 5734cbb9-f78f-4ad4-aa87-79ed95181c5a
+}
+```
+	
+### Cancel
+
+```
+{
+  "transactionId": "5664cbb9-f78f-4ad4-aa87-79ed95181c5a"
+}
+```
