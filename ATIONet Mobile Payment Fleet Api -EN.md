@@ -16,12 +16,9 @@
 ## Contents ##
 
 - [Overview](#overview)
-	- [Introduction](#introduction)
-	- [Purpose](#purpose)
-	- [Scope](#scope)
-	- [Definitions, Acronyms and Abbreviations](#definitions,acronyms-and-abbreviations)
-	- [Reference](#references)
-- [Solution Architecture](#solution-architecture)
+- [API](#API)
+	- [Details](#API-Details)	
+	- [Details](#Supported-Transactions)
 - [Messaging Flow](#messaging-flow)
 - [Communication](#communication)
 	- [Error Handling](#error-handling)
@@ -38,10 +35,6 @@
 ### Introduction
 
 This specification is intended to document ATIONet’s Mobile Payment fleet Protocol messaging format and related features required for usarage. The following sections provide descriptions of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item.
-
-### Definitions
-
-
 
 ## 2 API 
 
