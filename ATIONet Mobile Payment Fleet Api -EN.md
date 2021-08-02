@@ -19,15 +19,25 @@
 - [API](#API)
 	- [Details](#api-details)	
 	- [Supported Transactions](#supported-transactions)
-- [Messaging Flow](#messaging-flow)
-- [Communication](#communication)
-	- [Error Handling](#error-handling)
-	- [Messages Structure](#messages-structure)
+-[Message Structure](#message-structure) 
+	-[MobilePayments](#mobilePayments)
+	-[PreAuthorizedPayments](#preAuthorizedPayments)
+	-[GetTransaction](#getTransaction)
+	-[Cancel](#cancel)
+- [Error Handling](#error-handling)
+- [Field Descriptions](#field-descriptions)
+- [Transactions States](#transactions-states)
+	- [Transaction states sequence diagram on Pre authorization Request](#transactionstates-sequence-diagram-on-pre-authorization-request)
+	- [Transaction states sequence diagram on Cancelation Request](#transaction-states-sequence-diagram-on-cancelation-request)
+- [Response Codes](#response-codes)
+	- [ MobilePayments | PreAuthorizedPayments Response codes](#mobilePayments-|-preAuthorizedpaymentsresponse-codes)
+	- [ Cancelation Response codes](#cancelation-response-codes)
+- [Message Samples](#message-samples)
+	- [MobilePayments ](#mobilePayments)
+	- [PreAuthorizedPayments ](#preAuthorizedpayments)
+	- [GetTransaction ](#gettransaction)
+	- [Cancel ](#cancel)
 	
-
-- [1 ATIOnet Integration Documentation Scope](#1-ationet-integration-documentation-scope)
-
-
 
 ## Overview
 
@@ -122,17 +132,17 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 </table>
 
 
-## 4 Message Structure
+## Message Structure
 
-### 4.1 MobilePayments 
+### MobilePayments 
 
-#### 4.1.1 Request Format
+#### Request Format
 
 *URL: /api/MobilePayments* </br>
 *Method: POST* </br>
 *Body: { siteCode: string, pumpNumber: integer, fuelCode: string, amount: double, primaryTrack: string, terminalCode: string, mobilePaymentMode: integer, potencyKeyId: string ,  externalReferanceID:string } * </br>
 
-#### 4.1.2 Response Format
+#### Response Format
 
 *Header:*
 
@@ -142,15 +152,15 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 *Body:	{“TransactionId”:”StringValue”}*
 
 
-### 4.2 PreAuthorizedPayments
+### PreAuthorizedPayments
 
-#### 4.2.1 Request Format
+#### Request Format
 
 *URL: /api/PreAuthorizedPayments* </br>
 *Method: POST* </br>
 *Body: { siteCode: string, pumpNumber: integer, fuelCode: string, amount: double, mobilePaymentMode: integer, potencyKeyId: string , externalReferanceID": string }* </br>
 
-#### 4.2.2 Response Format
+#### Response Format
 
 *Header:*
 
@@ -159,15 +169,15 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 
 *Body: {“TransactionId”:”StringValue”}*
 
-### 4.3 GetTransaction
+### GetTransaction
 
-#### 4.3.1 Request Format
+#### Request Format
 
 *URL: /api/MobilePayments/GetTransaction/{id}* </br>
 *Method: GET* </br>
 *Body: { id: string }* </br>
 
-#### 4.3.2 Response Format
+#### Response Format
 
 *Header:*
 
@@ -195,15 +205,15 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
   updateDateTime: string</br>
 }*
 
-### 4.3 Cancel 
+### Cancel 
 
-#### 4.3.1 Request Format
+#### Request Format
 
 *URL: /api/MobilePayments/Cancel* </br>
 *Method: POST* </br>
 *Body:{ “TransactionId”:”StringValue” }* </br>
 
-#### 4.3.2 Response Format
+#### Response Format
 
 *Header:*
 
@@ -213,7 +223,7 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 *Body:{ ”transactionId”: ”StringValue”, ”isSuccessCanceled”: ”bool”, ”responseCode"”: ”string”, ”responseMessage”: ”string” }*
 
 
-## 5 Error Handling
+## Error Handling
 
 Success/failure exits on the Native Transaction Protocol will be handled via HTTP status codes.
 
@@ -221,9 +231,7 @@ Successful request will get a HTTP 200 and the resulting response.
 
 Failure to process the request will be indicated by an HTTP 400’s range status code.
 
-Refer to [Response Codes](#112-response-codes) Table in the Reference Tables section for a complete list of supported codes.
-
-## 6 Field Descriptions
+## Field Descriptions
 
 This section describe through a table  all parameters from request.
 
@@ -388,7 +396,7 @@ This section describe through a table  all parameters from request.
 </table>
 
 
-## 7 Transactions States
+## Transactions States
 
 This section describe through a table  all  states that a sale can have.
 
@@ -631,9 +639,9 @@ This section describe through a table  all  states that a sale can have.
 
 ![ationetTRCancel](Content/Images/MobilePaymentFleet/MobilePaymentFleetCancelationState.png)
 
-## 8 Response Codes
+## Response Codes
 
-### 8.1 MobilePayments | PreAuthorizedPayments Response codes
+### MobilePayments | PreAuthorizedPayments Response codes
 	
 Both methos response the same codes.
 
@@ -670,7 +678,7 @@ Both methos response the same codes.
 </table>
 
 
-### 8.2 Cancelation Response codes
+### Cancelation Response codes
 
 <table>
 	<thead>
@@ -862,7 +870,7 @@ Both methos response the same codes.
 
 </table>
 	
-## 8.2 Message Samples
+## Message Samples
 
 ### MobilePayments Sample
 	
