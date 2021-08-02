@@ -210,7 +210,7 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 *Method: POST* </br>
 *Body:{ “TransactionId”:”StringValue” }* </br>
 
-Check the following diagram to know all Cancellable Transactions States [Transaction states sequence diagram on Pre authorization Request](#Transaction statessequencediagram on Pre authorization Request)
+Check the following diagram to know all Cancellable Transactions States [Transaction states sequence diagram on Pre authorization Request](#Transaction-statessequencediagram-on-Pre-authorization-Request)
 
 #### 4.3.2 Response Format
 
