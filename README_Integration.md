@@ -8,7 +8,7 @@
 - [Native Transaction Protocol API Specifications](AN-Native_Transaction_Protocol-Spec.md)
 - [Native Transaction Protocol API messages](AN-Native_Auth_Protocol_Messages.md)
 
-## Wallet API (NEW !)
+## ATIONet Mobile Payment Fleet (NEW !)
 - [ATIONet Mobile Payment Fleet Api -EN](ATIONet Mobile Payment Fleet Api -EN.md)
 
 ## Inventory API (NEW !)
