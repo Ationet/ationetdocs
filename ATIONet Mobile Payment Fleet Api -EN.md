@@ -208,8 +208,9 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 
 *URL: /api/MobilePayments/Cancel* </br>
 *Method: POST* </br>
-*Body:*
-	{ “TransactionId”:”StringValue” } </br>
+*Body:{ “TransactionId”:”StringValue” } * </br>
+
+Check the following diagram to know all Cancellable Transactions States: <a href="#CancelTRStates">Transaction states sequence diagram on Cancelation Request<a/>
 
 #### Response Format
 
@@ -638,5 +639,7 @@ This section describe through a table  all transactions states.
 ### Transaction states sequence diagram on Cancelation Request
 
 
-![ationetTRCancel](Content/Images/MobilePaymentFleet/MobilePaymentFleetCancelationStates.png)
+![ationetTRCancel](Content/Images/MobilePaymentFleet/MobilePaymentFleetCancelationState.png)
+
+## Response Codes
 
