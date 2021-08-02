@@ -398,7 +398,9 @@ This section describe through a table  all parameters from request.
 
 ## 7 Transactions States
 
+
 This section describe through a table  all transactions states.
+
 
 <table>
 	<thead>
@@ -627,4 +629,14 @@ This section describe through a table  all transactions states.
 </table>
 
 
+### Transaction states sequence diagram on Pre authorization Request
+
+
 ![ationetTR](Content/Images/MobilePaymentFleet/MobilePaymentFleetTransactionStates.PNG)
+
+
+### Transaction states sequence diagram on Cancelation Request
+
+
+![ationetTRCancel](Content/Images/MobilePaymentFleet/MobilePaymentFleetCancelationStates.png)
+
