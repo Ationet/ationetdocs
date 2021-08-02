@@ -17,8 +17,8 @@
 
 - [Overview](#overview)
 - [API](#API)
-	- [Details](#API-Details)	
-	- [Details](#Supported-Transactions)
+	- [Details](#api-details)	
+	- [Supported Transactions](#supported-transactions)
 - [Messaging Flow](#messaging-flow)
 - [Communication](#communication)
 	- [Error Handling](#error-handling)
