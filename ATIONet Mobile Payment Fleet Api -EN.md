@@ -36,15 +36,15 @@
 
 This specification is intended to document ATIONet’s Mobile Payment fleet Protocol messaging format and related features required for usarage. The following sections provide descriptions of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item.
 
-## 2 API 
+## API 
 
 This service receives the requests from the client and stores them in a Queue in Azure to later be unqueued and processed.
 
-### 2.1 API Details
+### API Details
 
 API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 
-### 2.2 Supported Transactions
+### Supported Transactions
 
 <table>
 	<thead>
