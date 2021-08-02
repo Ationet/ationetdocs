@@ -16,7 +16,7 @@
 ## Contents ##
 
 - [Overview](#overview)
-- [API](#API)
+- [Description](#description)
 - [Details](#api-details)	
 - [Supported Transactions](#supported-transactions)
 - [Message Structure](#message-structure)
@@ -46,7 +46,7 @@
 
 This specification is intended to document ATIONet’s Mobile Payment fleet Protocol messaging format and related features required for usarage. The following sections provide descriptions of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item.
 
-## API 
+## Description 
 
 This service receives the requests from the client and stores them in a Queue in Azure to later be unqueued and processed.
 
