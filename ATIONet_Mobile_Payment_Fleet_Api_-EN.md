@@ -44,7 +44,7 @@
 
 ### Introduction
 
-This specification is intended to document ATIONet’s Mobile Payment fleet Protocol messaging format and related features required for usarage. The following sections provide descriptions of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item.
+This specification is intended to document ATIONet’s Mobile Payment fleet API messaging format and related features required for usarage. The following sections provide descriptions of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item.
 
 ## Description 
 
@@ -52,7 +52,7 @@ This service receives the requests from the client and stores them in a Queue in
 
 ### API Details
 
-API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
+API URI: *ationetmobilepayment-appshost-test.azurewebsites.net/*
 
 ### Supported Transactions
 
@@ -88,7 +88,7 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 			</td>
 			<td></td>
 			<td>
-				<p align="left">Used to validate a sale request and obtain transaction Guid ID.</p>
+				<p align="left">Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
 			</td>
 		 </tr>
 		 <tr valign="top">
@@ -100,7 +100,7 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 			</td>
 			<td></td>
 			<td>
-				<p align="left">Used to do a sale request with external approval and obtain transaction Guid ID.</p>
+				<p align="left">Used to do a sale request with external approval, returns Transaction ID. If the Sale already exists, returns the ID</p>
 			</td>
 		 </tr>
 		 <tr valign="top">
@@ -112,7 +112,7 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 			</td>
 			<td></td>
 			<td>
-				<p align="left">Returns sale information.</p>
+				<p align="left">Returns a Sale information.</p>
 			</td>
 		 </tr>
 		 <tr valign="top">
@@ -134,13 +134,17 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 
 ## Message Structure
 
+This section describe the message structure for each API Method available, as well as the responses messages for each one.
+
 ### MobilePayments 
+
+Create a Sale with Ationet authorization. The sale creation recibes an ID, if this ID already exists then the method returns the Sale's Id.
 
 #### Request Format
 
 *URL: /api/MobilePayments* </br>
 *Method: POST* </br>
-*Body: { siteCode: string, pumpNumber: integer, fuelCode: string, amount: double, primaryTrack: string, terminalCode: string, mobilePaymentMode: integer, potencyKeyId: string ,  externalReferanceID:string } * </br>
+*Body: { "siteCode":"string", "pumpNumber": integer, "fuelCode": "string", "amount": double, "primaryTrack": string, "terminalCode": "string", "mobilePaymentMode": integer, "potencyKeyId": "string" ,  "externalReferanceID":"string" }* </br>
 
 #### Response Format
 
@@ -149,16 +153,18 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 	Content-Type: application/json; charset=utf-8
 	content-encoding: gzip 
 
-*Body:	{“TransactionId”:”StringValue”}*
+*Body:	{ “TransactionId”:”StringValue” }*
 
 
 ### PreAuthorizedPayments
+
+Create a Sale with external authorization. The sale creation recibes an ID, if this ID already exists then the method returns the Sale's Id.
 
 #### Request Format
 
 *URL: /api/PreAuthorizedPayments* </br>
 *Method: POST* </br>
-*Body: { siteCode: string, pumpNumber: integer, fuelCode: string, amount: double, mobilePaymentMode: integer, potencyKeyId: string , externalReferanceID": string }* </br>
+*Body: { "siteCode":"string", "pumpNumber":integer, "fuelCode":"string", "amount":double, "mobilePaymentMode":integer, "potencyKeyId":"string", "externalReferanceID":"string" }* </br>
 
 #### Response Format
 
@@ -167,7 +173,7 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 	Content-Type: application/json; charset=utf-8
 	content-encoding: gzip 
 
-*Body: {“TransactionId”:”StringValue”}*
+*Body: { “TransactionId”:”StringValue” }*
 
 ### GetTransaction
 
@@ -175,7 +181,7 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 
 *URL: /api/MobilePayments/GetTransaction/{id}* </br>
 *Method: GET* </br>
-*Body: { id: string }* </br>
+*Body: { "id": "string" }* </br>
 
 #### Response Format
 
@@ -185,27 +191,29 @@ API URI: ationetmobilepayment-appshost-test.azurewebsites.net/api/resource
 	content-encoding: gzip 
 
 *Body: {
-  id: string, </br>
-  siteCode: string, </br>
-  primaryTrack: string, </br>
-  odometer: double, </br>
-  terminalIdentification: string, </br>
-  transactionSequenceNumber: integer, </br>
-  state_Name: string,</br>
-  state_Id: integer,</br>
-  dispatchedAmount: double,</br>
-  paymentProcessorReferenceId: string,</br>
-  paymentProcessorMessage: string,</br>
-  siteSystemMessage: string,</br>
-  fuelPointNumber: integer,</br>
-  paymentMethod: string,</br>
-  requestedAmount: double,</br>
-  authorizedAmount: double,</br>
-  createDateTime: string,</br>
-  updateDateTime: string</br>
+  "id":"string", </br>
+  "siteCode":"string", </br>
+  "primaryTrack":"string", </br>
+  "odometer": double, </br>
+  "terminalIdentification":"string", </br>
+  "transactionSequenceNumber":integer, </br>
+  "state_Name":"string",</br>
+  "state_Id":integer,</br>
+  "dispatchedAmount":double,</br>
+  "paymentProcessorReferenceId":"string",</br>
+  "paymentProcessorMessage":"string",</br>
+  "siteSystemMessage":"string",</br>
+  "fuelPointNumber":integer,</br>
+  "paymentMethod":"string",</br>
+  "requestedAmount":double,</br>
+  "authorizedAmount":double,</br>
+  "createDateTime":"string",</br>
+  "updateDateTime":"string"</br>
 }*
 
 ### Cancel 
+
+Cancels a Sale that is in course as long as your status is correct. In the following diagram you can check all cancellable transaction statuses - [Transaction states sequence diagram on Cancelation Request](#transaction-states-sequence-diagram-on-cancelation-request)
 
 #### Request Format
 
