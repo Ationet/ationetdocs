@@ -207,6 +207,7 @@ Create a Sale with external authorization. The sale creation recibes an ID, if t
   "paymentMethod":"string",</br>
   "requestedAmount":double,</br>
   "authorizedAmount":double,</br>
+  "dispatchedQuantity":double,</br>
   "createDateTime":"string",</br>
   "updateDateTime":"string"</br>
 }*
