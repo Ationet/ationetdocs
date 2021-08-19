@@ -199,7 +199,6 @@ Create a Sale with external authorization. The sale creation recibes an ID, if t
   "transactionSequenceNumber":integer, </br>
   "state_Name":"string",</br>
   "state_Id":integer,</br>
-  "dispatchedAmount":double,</br>
   "paymentProcessorReferenceId":"string",</br>
   "paymentProcessorMessage":"string",</br>
   "siteSystemMessage":"string",</br>
@@ -207,6 +206,7 @@ Create a Sale with external authorization. The sale creation recibes an ID, if t
   "paymentMethod":"string",</br>
   "requestedAmount":double,</br>
   "authorizedAmount":double,</br>
+  "dispatchedAmount":double,</br>
   "dispatchedQuantity":double,</br>
   "productCode":"string",</br>
   "productDescription":"string",</br>
