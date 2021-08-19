@@ -208,6 +208,10 @@ Create a Sale with external authorization. The sale creation recibes an ID, if t
   "requestedAmount":double,</br>
   "authorizedAmount":double,</br>
   "dispatchedQuantity":double,</br>
+  "productCode":"string",</br>
+  "productDescription":"string",</br>
+  "productUnitPrice":double,</br>
+  "unitMeasure":"string",</br>
   "createDateTime":"string",</br>
   "updateDateTime":"string"</br>
 }*
