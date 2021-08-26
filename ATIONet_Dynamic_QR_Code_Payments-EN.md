@@ -201,6 +201,300 @@ The following table describes each field in the table, its description and its o
 				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
 			</td>
 		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
+			<td>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
+			<td>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
+			<td>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
+			<td>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
+			<td>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
+			<td>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
+			<td>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
+			<td>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
+			<td>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
+			<td>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
+			<td>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
+			<td>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
+			<td>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
+			<td>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
+			<td>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
+			<td>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
+			<td>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
+			<td>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
+			<td>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
+			<td>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
+			<td>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+			</td>
+		 </tr>
 	</tbody>
 </table>
 
