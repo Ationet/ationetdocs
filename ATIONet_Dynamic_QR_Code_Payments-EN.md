@@ -65,11 +65,11 @@ escanearlo y generar la Transacción.
 
 ![ationetTR](Content/Images/DynamicQRPayments/demoQR.gif)
 
-## Dynamic QR Code Payments API
+## Dynamic QR Code Payments Implementation
 
 ### Introduction
 
-This sections is intended to document Dynamic QR Code Payments API messaging format and related features required for usarage. The following sections only provide descriptions necessary to implements Dynamic QR Code Payments. If you want to read full information of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item of this API, you can do this from <a href="AN-Native_Interface_Protocol-Spec.md"> here</a>
+This sections is intended to document Dynamic QR Code Payments API messaging format and related features required for usarage. The following sections only provide necessary descriptions  to implements Dynamic QR Code Payments. If you want to read full information of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item of this API, you can do this from <a href="AN-Native_Interface_Protocol-Spec.md"> here</a>
 
 ### Description
 
@@ -78,8 +78,6 @@ This service receives the request from the client and create a Sale.
 ### API Details
 
 *URL:  http://native-beta.ationet.com* </br>
-
-In the next section will
 
 ### Request Format 
 
@@ -105,7 +103,8 @@ In the next section will
 	"ProductCode": "string",
 	"ProductUnitPrice": double, 
 	"ProductAmount": double, 
-	"ProductQuantity": double
+	"ProductQuantity": double,
+	"DispatchId": "string"
 }*
 
 ### Response Format 
@@ -164,28 +163,30 @@ In the next section will
     "LongResponseText": "Autorizado"
 }*
 
+### QR Code Trama
+
+The QR code only encodes the minimal information of sale. The rest of the trama information is completed by the Merchant Backend (point of sale).
+The following table describes each field in the table, its description and its origin, being QR for values that have to be coded and POS for values that are completed by Merchant Backend.
+
 
 <table>
 	<thead>
 		<tr valign="center">
-			<th rowspan="2" width="125" align="left">
+			<th rowspan="2"  align="left">
 				Name
 			</th>
 			<th colspan="2" align="center">
-				Ver.
+				Type
 			</th>
 			<th rowspan="2" align="left">
+				Origin
+			</th>
+			<th rowspan="2" width="300" align="left">
 				Description
 			</th>
+			
 		</tr>
-		 <tr valign="top">
-			  <th align="center">
-					Initial
-			  </th>
-			  <th align="center">
-					Change
-			  </th>
-		 </tr>
+		 
 	</thead>
 	<tbody>
 		 <tr valign="top">
@@ -195,48 +196,13 @@ In the next section will
 			<td>
 				<p align="center">1.0</p>
 			</td>
-			<td></td>
+			<td>
+			 	<p align="center">1.0</p>
+			 </td>
 			<td>
 				<p align="left">Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
 			</td>
 		 </tr>
-		 <tr valign="top">
-			<td>
-				<p align="left">PreAuthorizedPayments</p>
-			</td>
-			<td>
-				<p align="center">1.0</p>
-			</td>
-			<td></td>
-			<td>
-				<p align="left">Used to do a sale request with external approval, returns Transaction ID. If the Sale already exists, returns the ID</p>
-			</td>
-		 </tr>
-		 <tr valign="top">
-			<td>
-				<p align="left">GetTransaction</p>
-			</td>
-			<td>
-				<p align="center">1.0</p>
-			</td>
-			<td></td>
-			<td>
-				<p align="left">Returns a Sale information.</p>
-			</td>
-		 </tr>
-		 <tr valign="top">
-			<td>
-				<p align="left">Cancel</p>
-			</td>
-			<td>
-				<p align="center">1.1</p>
-			</td>
-			<td></td>
-			<td>
-				<p align="left">Cancels a Sale.</p>
-			</td>
-		 </tr>
-		 
 	
 </table>
 
