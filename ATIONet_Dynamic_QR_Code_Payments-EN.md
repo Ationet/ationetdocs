@@ -66,7 +66,10 @@ escanearlo y generar la Transacción.
 ### QR Transaction demo
 
 <span style="border: 5px solid black;border-radius:30px;">![ationetTR](Content/Images/DynamicQRPayments/demoQR.gif)</span>
-<img src="Content/Images/DynamicQRPayments/demoQR.gif" style="border: 5px solid black;border-radius:30px;">
+
+<img src="Content/Images/DynamicQRPayments/demoQR.gif" style="border: 5px solid black;border-radius:30px;" />
+
+<p style="color:red">a</p>
 
 ### API Details
 
