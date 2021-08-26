@@ -83,28 +83,28 @@ This service receives the request from the client and create a Sale.
 
 *URL: v1/auth* </br>
 *Method: POST* </br>
-*Body { "ProcessingMode": "string",  
-	"SystemModel": "string,  
-	"SystemVersion": "string", 
-	"TransactionCode": "string", 
-	"EntryMethod": "string", 
-	"ApplicationType": "string", 
-	"AccountType": "string", 
-	"MessageFormatVersion": "string",
-	"CurrencyCode": "string", 
-	"DeviceTypeIdentifier": "string", 
-	"PumpNumber": "string", 
-	"TransactionSequenceNumber": integer,
-	"LocalTransactionDate": integer,
-	"LocalTransactionTime": integer,
-	"TerminalIdentification": "string",
-	"PrimaryTrack": "string", 
-	"TransactionAmount": integer, 
-	"ProductCode": "string",
-	"ProductUnitPrice": double, 
-	"ProductAmount": double, 
-	"ProductQuantity": double,
-	"DispatchId": "string"
+*Body { "ProcessingMode": "string",</br>  
+	"SystemModel": "string,</br>  
+	"SystemVersion": "string",</br> 
+	"TransactionCode": "string",</br> 
+	"EntryMethod": "string",</br> 
+	"ApplicationType": "string",</br> 
+	"AccountType": "string",</br> 
+	"MessageFormatVersion": "string",</br>
+	"CurrencyCode": "string",</br> 
+	"DeviceTypeIdentifier": "string",</br> 
+	"PumpNumber": "string",</br> 
+	"TransactionSequenceNumber": integer,</br>
+	"LocalTransactionDate": integer,</br>
+	"LocalTransactionTime": integer,</br>
+	"TerminalIdentification": "string",</br>
+	"PrimaryTrack": "string",</br> 
+	"TransactionAmount": integer,</br> 
+	"ProductCode": "string",</br>
+	"ProductUnitPrice": double,</br> 
+	"ProductAmount": double,</br> 
+	"ProductQuantity": double,</br>
+	"DispatchId": "string"</br>
 }*
 
 ### Response Format 
@@ -184,9 +184,7 @@ The following table describes each field in the table, its description and its o
 			<th rowspan="2" width="300" align="left">
 				Description
 			</th>
-			
 		</tr>
-		 
 	</thead>
 	<tbody>
 		 <tr valign="top">
@@ -203,7 +201,7 @@ The following table describes each field in the table, its description and its o
 				<p align="left">Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
 			</td>
 		 </tr>
-	
+	</tbody>
 </table>
 
 
