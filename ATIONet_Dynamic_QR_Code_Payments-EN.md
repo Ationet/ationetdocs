@@ -65,7 +65,7 @@ escanearlo y generar la Transacción.
 
 ![ationetTR](Content/Images/DynamicQRPayments/demoQR.gif)
 
-### QR code Payments squence
+## QR code Payments squence
 
 ![ationetTR](Content/Images/DynamicQRPayments/sequence.svg)
 
