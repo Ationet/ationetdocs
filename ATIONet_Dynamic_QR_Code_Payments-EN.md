@@ -54,9 +54,18 @@ escanearlo y generar la Transacción.
 ```
 
 
-## Description 
+## Overview of Dynamic QR Code
 
-This service receives the requests from the client and stores them in a Queue in Azure to later be unqueued and processed.
+<ol>
+	<li>La terminal obtiene los datos para generar el código QR</li>
+	<li>Una vez obtenido los datos se genera el código QR con la información para el pago, luego se queda haciendo pulling hasta que la Transaccion es creada.</li>
+	<li>El cliente escanea el código QR y confirma la venta.</li>
+	<li>La venta es creada.</li>
+</ol>
+
+### QR Transaction demo
+
+![ationetTR](Content/Images/DynamicQRPayments/demo.gif)
 
 ### API Details
 
