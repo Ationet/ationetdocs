@@ -165,8 +165,7 @@ This service receives the request from the client and create a Sale.
 
 ### QR Code 
 
-The Merchant Backend  only encodes the minimal information of sale into QR. The rest of the trama information is completed by the Merchant Backend (point of sale).
-The following table describes each field in the table, its description and its origin, being QR for values that have to be coded and POS for values that are completed by Merchant Backend.
+Merchant Backend only encodes the minimum sale information in QR, It is the one that comes from a terminal when generating a sale. The rest of the trama information is completed by the Merchant Backend (point of sale).The following table describes each field in the table, its description and its origin, being QR for values that have to be coded and POS for values that are completed by Merchant Backend.
 
 
 <table>
@@ -198,7 +197,7 @@ The following table describes each field in the table, its description and its o
 			 	<p align="center">POS</p>
 			 </td>
 			<td>
-				<p>Always “FCS” Fleet Control System</p>
+				<p>“0” = Host Capture Only “1” = Host Processing Required“2” = Operator Assisted Capture</p>
 			</td>
 		 </tr>
 		<tr valign="top">
@@ -240,10 +239,93 @@ The following table describes each field in the table, its description and its o
 			 	<p align="center">POS</p>
 			 </td>
 			<td>
-				<p>Refer to Transactions Codes in Reference <a href="AN-Native_Transaction_Protocol-Spec.md#111-transaction-codes.md">Tables Section</a></p>
+				<p>Refer to Transactions Codes in Reference <a href="AN-Native_Transaction_Protocol-Spec.md#111-transaction-codes.md">Tables Section</a>.Use 200 for a Sale request</p>
 			</td>
 		 </tr>
-		
+		<tr valign="top">
+			<td>
+				<p align="left">EntryMethod</p>
+			</td>
+			<td>
+				<p align="center">string</p>
+			</td>
+			<td>
+			 	<p align="center">POS</p>
+			 </td>
+			<td>
+				<p>“M” Manual Entry “S” Swap Card “T” Tag read</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ApplicationType</p>
+			</td>
+			<td>
+				<p align="center">string</p>
+			</td>
+			<td>
+			 	<p align="center">POS</p>
+			 </td>
+			<td>
+				<p>“Always “FCS” Fleet Control System</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">AccountType</p>
+			</td>
+			<td>
+				<p align="center">string</p>
+			</td>
+			<td>
+			 	<p align="center">POS</p>
+			 </td>
+			<td>
+				<p>Refer to Account Types in <a href="AN-Native_Transaction_Protocol-Spec.md#track-data">Tables Section.</a> Use 1 for QR Payments</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MessageFormatVersion</p>
+			</td>
+			<td>
+				<p align="center">string</p>
+			</td>
+			<td>
+			 	<p align="center">POS</p>
+			 </td>
+			<td>
+				<p>For QR Payments use 1.3</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MessageFormatVersion</p>
+			</td>
+			<td>
+				<p align="center">string</p>
+			</td>
+			<td>
+			 	<p align="center">POS</p>
+			 </td>
+			<td>
+				<p>For QR Payments use 1.3</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CurrencyCode</p>
+			</td>
+			<td>
+				<p align="center">string</p>
+			</td>
+			<td>
+			 	<p align="center">POS</p>
+			 </td>
+			<td>
+				<p>Refer to Currency Codes in Reference <a href="AN-Native_Transaction_Protocol-Spec.md#117-currency-codes">Tables Section.</a></p>
+			</td>
+		 </tr>
 	</tbody>
 </table>
 
