@@ -163,9 +163,9 @@ This service receives the request from the client and create a Sale.
     "LongResponseText": "Autorizado"</br>
 }*
 
-### QR Code Trama
+### QR Code 
 
-The QR code only encodes the minimal information of sale. The rest of the trama information is completed by the Merchant Backend (point of sale).
+The Merchant Backend  only encodes the minimal information of sale into QR. The rest of the trama information is completed by the Merchant Backend (point of sale).
 The following table describes each field in the table, its description and its origin, being QR for values that have to be coded and POS for values that are completed by Merchant Backend.
 
 
@@ -189,44 +189,44 @@ The following table describes each field in the table, its description and its o
 	<tbody>
 		 <tr valign="top">
 			<td>
-				<p align="left">MobilePayments</p>
+				<p align="left">ProcessingMode</p>
 			</td>
 			<td>
-				<p align="center">1.0</p>
+				<p align="center">string</p>
 			</td>
 			<td>
-			 	<p align="center">1.0</p>
+			 	<p align="center">POS</p>
 			 </td>
 			<td>
-				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+				<p>Always “FCS” Fleet Control System</p>
 			</td>
 		 </tr>
 		<tr valign="top">
 			<td>
-				<p align="left">MobilePayments</p>
+				<p align="left">SystemModel</p>
 			</td>
 			<td>
-				<p align="center">1.0</p>
+				<p align="center">string</p>
 			</td>
 			<td>
-			 	<p align="center">1.0</p>
+			 	<p align="center">POS</p>
 			 </td>
 			<td>
-				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+				<p>It is the environment from which the request is made</p>
 			</td>
 		 </tr>
 		<tr valign="top">
 			<td>
-				<p align="left">MobilePayments</p>
+				<p align="left">SystemVersion</p>
 			</td>
 			<td>
-				<p align="center">1.0</p>
+				<p align="center">string</p>
 			</td>
 			<td>
-			 	<p align="center">1.0</p>
+			 	<p align="center">POS</p>
 			 </td>
 			<td>
-				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+				<p>By default is NB.</p>
 			</td>
 		 </tr>
 		<tr valign="top">
