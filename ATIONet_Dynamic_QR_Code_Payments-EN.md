@@ -181,7 +181,7 @@ The following table describes each field in the table, its description and its o
 			<th rowspan="2" align="left">
 				Origin
 			</th>
-			<th rowspan="4" width="400" align="left">
+			<th rowspan="8" align="left">
 				Description
 			</th>
 		</tr>
@@ -198,7 +198,7 @@ The following table describes each field in the table, its description and its o
 			 	<p align="center">1.0</p>
 			 </td>
 			<td>
-				<p align="left">Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+				<p>Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
 			</td>
 		 </tr>
 	</tbody>
