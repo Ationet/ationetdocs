@@ -83,7 +83,7 @@ This service receives the request from the client and create a Sale.
 
 *URL: v1/auth* </br>
 *Method: POST* </br>
-*Body { "ProcessingMode": "string",</br>  
+*Body { "ProcessingMode": "string",
 	"SystemModel": "string,</br>  
 	"SystemVersion": "string",</br> 
 	"TransactionCode": "string",</br> 
@@ -181,7 +181,7 @@ The following table describes each field in the table, its description and its o
 			<th rowspan="2" align="left">
 				Origin
 			</th>
-			<th rowspan="2" width="300" align="left">
+			<th rowspan="4" width="400" align="left">
 				Description
 			</th>
 		</tr>
