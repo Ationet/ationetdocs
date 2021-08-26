@@ -65,11 +65,7 @@ escanearlo y generar la Transacción.
 
 ### QR Transaction demo
 
-<span style="border: 5px solid black;border-radius:30px;">![ationetTR](Content/Images/DynamicQRPayments/demoQR.gif)</span>
-
-<img src="Content/Images/DynamicQRPayments/demoQR.gif" style="border: 5px solid black;border-radius:30px;" />
-
-<p class="has-line-data" data-line-start="155" data-line-end="156">Note: <code>--capt-add=SYS-ADMIN</code> is required for PDF rendering.</p>
+![ationetTR](Content/Images/DynamicQRPayments/demoQR.gif)
 
 ### API Details
 
