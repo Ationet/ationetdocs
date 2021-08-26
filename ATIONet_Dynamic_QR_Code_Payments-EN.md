@@ -69,7 +69,7 @@ escanearlo y generar la Transacción.
 
 ### Introduction
 
-This sections is intended to document Dynamic QR Code Payments API messaging format and related features required for usarage. The following sections provide descriptions of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item.
+This sections is intended to document Dynamic QR Code Payments API messaging format and related features required for usarage. The following sections only provide descriptions necessary to implements Dynamic QR Code Payments. If you want to read full information of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item of this API, you can do this from <a href="AN-Native_Loyalty_Protocol"> here</a>
 
 ### Description
 
@@ -79,11 +79,90 @@ This service receives the request from the client and create a Sale.
 
 *URL:  http://native-beta.ationet.com* </br>
 
+In the next section will
+
 ### Request Format 
 
 *URL: v1/auth* </br>
 *Method: POST* </br>
-*Body {  "ProcessingMode": "1",  "SystemModel": "POSTMAN,  "SystemVersion": "NB",   "TransactionCode": "200",  "EntryMethod": "S", "ApplicationType": "FCS",  "AccountType": "1",    "MessageFormatVersion": "1.3",    "CurrencyCode": "ARS", "DeviceTypeIdentifier": "4",    "PumpNumber": "1",  "TransactionSequenceNumber": 808,  "LocalTransactionDate": 20210812,    "LocalTransactionTime": 113152,  "TerminalIdentification": "S2G321", "PrimaryTrack": "0000000000001",    "TransactionAmount": 99,   "ProductCode": "1",  "ProductUnitPrice": 1,   "ProductAmount": 99,   "ProductQuantity": 99 }*
+*Body { "ProcessingMode": "string",  
+	"SystemModel": "string,  
+	"SystemVersion": "string", 
+	"TransactionCode": "string", 
+	"EntryMethod": "string", 
+	"ApplicationType": "string", 
+	"AccountType": "string", 
+	"MessageFormatVersion": "string",
+	"CurrencyCode": "string", 
+	"DeviceTypeIdentifier": "string", 
+	"PumpNumber": "string", 
+	"TransactionSequenceNumber": integer,
+	"LocalTransactionDate": integer,
+	"LocalTransactionTime": integer,
+	"TerminalIdentification": "string",
+	"PrimaryTrack": "string", 
+	"TransactionAmount": integer, 
+	"ProductCode": "string",
+	"ProductUnitPrice": double, 
+	"ProductAmount": double, 
+	"ProductQuantity": double
+}*
+
+### Response Format 
+
+*Body {
+    "ApplicationType": "string",
+    "ProcessingMode": "string",
+    "MessageFormatVersion": "string",
+    "TerminalIdentification": "string",
+    "DeviceTypeIdentifier": "string",
+    "TransactionCode": "string",
+    "AccountType": "string",
+    "EntryMethod": "string",
+    "PumpNumber": "string",
+    "ProductCode": string,
+    "ProductUnitPrice": double,
+    "ProductAmount": double,
+    "ProductQuantity": double,
+    "ProductData": [],
+    "TransactionAmount": double,
+    "UnitCode": string,
+    "CurrencyCode": string,
+    "BatchNumber": integerer,
+    "ShiftNumber": string,
+    "TransactionSequenceNumber": integer,
+    "LocalTransactionDate": integerr,
+    "LocalTransactionTime": integer,
+    "CustomerData": {
+        "ContractMode": "string"
+    },
+    "AuthorizationCode": "string",
+    "InvoiceNumber": string,
+    "ResponseCode": "string",
+    "ResponseText": "string",
+    "ReceiptData": "{ "CustomerName":"string", 
+    		      "CustomerIdentification":"string", 
+		      "CustomerPlate":"string", 
+		      "CustomerPAN":"string", 
+		      "CustomerLabel":"string",
+		      "CompanyName":"string",
+		      "CompanyCode":"string",
+		      "TransactionId":"string",
+		      "AuthorizationType":integer,
+		      "CustomerVehiclePlate":"string",
+		      "CustomerVehicleCode":"string",
+		      "CustomerVehicleModel":"string",
+		      "CustomerVehicleBrand":"string",
+		      "CustomerTruckUnitNumber":"string",
+		      "CustomerOdometer":"string", 
+		      "CustomerDriverId":"string", 
+		      "ContractCode":"string",
+		      "CompanyTaxPayerId":"string",
+		      "CompanyStreet1":"string",
+		      "CompanyStreet2":"string",
+		      "ContractBalanceMode":"string" }",
+    "LongResponseText": "Autorizado"
+}*
 
 
 <table>
