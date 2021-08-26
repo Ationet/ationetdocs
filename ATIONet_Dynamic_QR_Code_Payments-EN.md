@@ -65,6 +65,10 @@ escanearlo y generar la Transacción.
 
 ![ationetTR](Content/Images/DynamicQRPayments/demoQR.gif)
 
+### QR code Payments squence
+
+![ationetTR](Content/Images/DynamicQRPayments/sequence.svg)
+
 ## Dynamic QR Code Payments Implementation
 
 ### Introduction
