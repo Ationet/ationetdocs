@@ -69,7 +69,7 @@ escanearlo y generar la Transacción.
 
 ### Introduction
 
-This sections is intended to document Dynamic QR Code Payments API messaging format and related features required for usarage. The following sections only provide descriptions necessary to implements Dynamic QR Code Payments. If you want to read full information of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item of this API, you can do this from <a href="AN-Native_Loyalty_Protocol"> here</a>
+This sections is intended to document Dynamic QR Code Payments API messaging format and related features required for usarage. The following sections only provide descriptions necessary to implements Dynamic QR Code Payments. If you want to read full information of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item of this API, you can do this from <a href="AN-Native_Interface_Protocol-Spec.md"> here</a>
 
 ### Description
 
