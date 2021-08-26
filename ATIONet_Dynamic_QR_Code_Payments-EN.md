@@ -11,7 +11,7 @@
 |Change Log|||
 |--- |--- |--- |
 |Ver.|Date|Change Summary|
-|1.0|2/August/2021|Initial version.|
+|1.0|26/August/2021|Initial version.|
 
 ## Contents ##
 
@@ -63,15 +63,23 @@ escanearlo y generar la Transacción.
 	<li>La venta es creada.</li>
 </ol>
 
-### QR Transaction demo
-
 ![ationetTR](Content/Images/DynamicQRPayments/demoQR.gif)
+
+## Dynamic QR Code Payments API
+
+### Introduction
+
+This sections is intended to document Dynamic QR Code Payments API messaging format and related features required for usarage. The following sections provide descriptions of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item.
+
+### Description
+
+This service receives the request from the client and create a Sale.
 
 ### API Details
 
-API URI: *ationetmobilepayment-appshost-test.azurewebsites.net/*
+*URL:  http://native-beta.ationet.com* </br>
 
-### Supported Transactions
+### Request Format 
 
 <table>
 	<thead>
