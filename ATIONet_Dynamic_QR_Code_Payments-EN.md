@@ -69,7 +69,7 @@ escanearlo y generar la Transacción.
 
 <img src="Content/Images/DynamicQRPayments/demoQR.gif" style="border: 5px solid black;border-radius:30px;" />
 
-<p style="color:red">a</p>
+<p class="has-line-data" data-line-start="155" data-line-end="156">Note: <code>--capt-add=SYS-ADMIN</code> is required for PDF rendering.</p>
 
 ### API Details
 
