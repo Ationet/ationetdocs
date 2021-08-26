@@ -81,6 +81,11 @@ This service receives the request from the client and create a Sale.
 
 ### Request Format 
 
+*URL: v1/auth* </br>
+*Method: POST* </br>
+*Body {  "ProcessingMode": "1",  "SystemModel": "POSTMAN,  "SystemVersion": "NB",   "TransactionCode": "200",  "EntryMethod": "S", "ApplicationType": "FCS",  "AccountType": "1",    "MessageFormatVersion": "1.3",    "CurrencyCode": "ARS", "DeviceTypeIdentifier": "4",    "PumpNumber": "1",  "TransactionSequenceNumber": 808,  "LocalTransactionDate": 20210812,    "LocalTransactionTime": 113152,  "TerminalIdentification": "S2G321", "PrimaryTrack": "0000000000001",    "TransactionAmount": 99,   "ProductCode": "1",  "ProductUnitPrice": 1,   "ProductAmount": 99,   "ProductQuantity": 99 }*
+
+
 <table>
 	<thead>
 		<tr valign="center">
