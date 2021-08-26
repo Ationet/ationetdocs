@@ -45,7 +45,10 @@
 
 ### Introduction
 
-This specification is intended to document ATIONet’s Mobile Payment fleet API messaging format and related features required for usarage. The following sections provide descriptions of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item.
+ATIONet Dynamic QR Code Payments permite  de generar ventas sin contacto y sin errores de los clientes. El punto de venta genera el código QR dinámico a partir de los datos obtenidos de la terminal, entonces el usuario puede escanear ese código y generar la transacción.
+
+#### Nota: Se requiere una pantalla orientada al cliente, la cual mostrara el QR generado dinámicamente a este con el fin de poder escanearlo y generar la Transacción.
+
 
 ## Description 
 
