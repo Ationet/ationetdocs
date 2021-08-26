@@ -69,7 +69,7 @@ escanearlo y generar la Transacción.
 
 ### Introduction
 
-This sections is intended to document Dynamic QR Code Payments API messaging format and related features required for usarage. The following sections only provide necessary descriptions  to implements Dynamic QR Code Payments. If you want to read full information of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item of this API, you can do this from <a href="AN-Native_Interface_Protocol-Spec.md"> here</a>
+This sections is intended to document Dynamic QR Code Payments API messaging format and related features required for usarage. The following sections only provide necessary descriptions  to implements Dynamic QR Code Payments. If you want to read full information of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item of this API, you can do this from <a href="AN-Native_Interface_Protocol-Spec.md"> here</a>.
 
 ### Description
 
@@ -110,57 +110,57 @@ This service receives the request from the client and create a Sale.
 ### Response Format 
 
 *Body {
-    "ApplicationType": "string",
-    "ProcessingMode": "string",
-    "MessageFormatVersion": "string",
-    "TerminalIdentification": "string",
-    "DeviceTypeIdentifier": "string",
-    "TransactionCode": "string",
-    "AccountType": "string",
-    "EntryMethod": "string",
-    "PumpNumber": "string",
-    "ProductCode": string,
-    "ProductUnitPrice": double,
-    "ProductAmount": double,
-    "ProductQuantity": double,
-    "ProductData": [],
-    "TransactionAmount": double,
-    "UnitCode": string,
-    "CurrencyCode": string,
-    "BatchNumber": integerer,
-    "ShiftNumber": string,
-    "TransactionSequenceNumber": integer,
-    "LocalTransactionDate": integerr,
-    "LocalTransactionTime": integer,
-    "CustomerData": {
-        "ContractMode": "string"
-    },
-    "AuthorizationCode": "string",
-    "InvoiceNumber": string,
-    "ResponseCode": "string",
-    "ResponseText": "string",
-    "ReceiptData": "{ "CustomerName":"string", 
-    		      "CustomerIdentification":"string", 
-		      "CustomerPlate":"string", 
-		      "CustomerPAN":"string", 
-		      "CustomerLabel":"string",
-		      "CompanyName":"string",
-		      "CompanyCode":"string",
-		      "TransactionId":"string",
-		      "AuthorizationType":integer,
-		      "CustomerVehiclePlate":"string",
-		      "CustomerVehicleCode":"string",
-		      "CustomerVehicleModel":"string",
-		      "CustomerVehicleBrand":"string",
-		      "CustomerTruckUnitNumber":"string",
-		      "CustomerOdometer":"string", 
-		      "CustomerDriverId":"string", 
-		      "ContractCode":"string",
-		      "CompanyTaxPayerId":"string",
-		      "CompanyStreet1":"string",
-		      "CompanyStreet2":"string",
-		      "ContractBalanceMode":"string" }",
-    "LongResponseText": "Autorizado"
+    "ApplicationType": "string",</br>
+    "ProcessingMode": "string",</br>
+    "MessageFormatVersion": "string",</br>
+    "TerminalIdentification": "string",</br>
+    "DeviceTypeIdentifier": "string",</br>
+    "TransactionCode": "string",</br>
+    "AccountType": "string",</br>
+    "EntryMethod": "string",</br>
+    "PumpNumber": "string",</br>
+    "ProductCode": string,</br>
+    "ProductUnitPrice": double,</br>
+    "ProductAmount": double,</br>
+    "ProductQuantity": double,</br>
+    "ProductData": [],</br>
+    "TransactionAmount": double,</br>
+    "UnitCode": string,</br>
+    "CurrencyCode": string,</br>
+    "BatchNumber": integerer,</br>
+    "ShiftNumber": string,</br>
+    "TransactionSequenceNumber": integer,</br>
+    "LocalTransactionDate": integerr,</br>
+    "LocalTransactionTime": integer,</br>
+    "CustomerData": {</br>
+        "ContractMode": "string"</br>
+    },</br>
+    "AuthorizationCode": "string",</br>
+    "InvoiceNumber": string,</br>
+    "ResponseCode": "string",</br>
+    "ResponseText": "string",</br>
+    "ReceiptData": "{ "CustomerName":"string",</br> 
+    		      "CustomerIdentification":"string",</br> 
+		      "CustomerPlate":"string",</br> 
+		      "CustomerPAN":"string",</br> 
+		      "CustomerLabel":"string",</br>
+		      "CompanyName":"string",</br>
+		      "CompanyCode":"string",</br>
+		      "TransactionId":"string",</br>
+		      "AuthorizationType":integer,</br>
+		      "CustomerVehiclePlate":"string",</br>
+		      "CustomerVehicleCode":"string",</br>
+		      "CustomerVehicleModel":"string",</br>
+		      "CustomerVehicleBrand":"string",</br>
+		      "CustomerTruckUnitNumber":"string",</br>
+		      "CustomerOdometer":"string",</br> 
+		      "CustomerDriverId":"string",</br> 
+		      "ContractCode":"string",</br>
+		      "CompanyTaxPayerId":"string",</br>
+		      "CompanyStreet1":"string",</br>
+		      "CompanyStreet2":"string",</br>
+		      "ContractBalanceMode":"string" }",</br>
+    "LongResponseText": "Autorizado"</br>
 }*
 
 ### QR Code Trama
@@ -175,7 +175,7 @@ The following table describes each field in the table, its description and its o
 			<th rowspan="2"  align="left">
 				Name
 			</th>
-			<th colspan="2" align="center">
+			<th rowspan="2" align="center">
 				Type
 			</th>
 			<th rowspan="2" align="left">
