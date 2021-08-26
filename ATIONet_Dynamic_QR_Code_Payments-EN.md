@@ -65,7 +65,7 @@ escanearlo y generar la Transacción.
 
 ### QR Transaction demo
 
-![ationetTR](Content/Images/DynamicQRPayments/demo.gif)
+![ationetTR](Content/Images/DynamicQRPayments/demoQR.gif)
 
 ### API Details
 
