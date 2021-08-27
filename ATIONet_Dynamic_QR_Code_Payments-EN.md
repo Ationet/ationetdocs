@@ -98,7 +98,7 @@ Note: Never share your secret POS's Backend Key with anyone.
 POS's Backend Backend only encodes the minimum sale information in QR, It is the one that comes from site controller when generating a sale. The rest of the plot information is completed by the POS's Backend.The following table describes each field in the table, its description and its origin.
 
 ```
-Important: Plot have to be in JSON format.
+Important: Plot have to be in JSON format. QR image must be free text type
 
 ```
 
@@ -291,6 +291,11 @@ Important: Plot have to be in JSON format.
 		</tbody>
 </table>
 
+### Examples
+
+#### QR Image example
+
+#### Plot example
 ```
 Complete Plot example in JSON Format:
 
