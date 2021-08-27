@@ -40,7 +40,7 @@
 		- [Request Example](#Request-Example)
 		- [Response Example](#Response-Example)
 	 - [Get Sale Method](#Get-Sale-Method)
-		- [Request Example](#Request-Example)
+		- [Get Request Example](#Get-Request-Example)
 		- [Response Example](#Response-Example)
 	
 
