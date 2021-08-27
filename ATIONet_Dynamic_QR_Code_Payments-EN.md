@@ -35,13 +35,7 @@
 		- [Description](#Description)
 		- [Request Format](#Request-Format)
 		- [Response Format](#Request-Format)
-- [Messages samples](#Messages-samples)
-	 - [Get Sale Method](#Get-Sale-Method)
-		- [Get Request Example](#Get-Request-Example)
-		- [Response Example](#Response-Example)
-	-[Sale Method](#Sale-Method)
-		- [Request Example](#Request-Example)
-		- [Response Example](#Response-Example)
+
 	
 	 
 		
