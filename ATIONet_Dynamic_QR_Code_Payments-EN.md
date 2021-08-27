@@ -99,6 +99,7 @@ Important: Trama have to be in JSON format.
 
 ```
 ### The following table  contains all static  properties that the Merchant Backend must complete to do a sale.
+
 <table>
 	<thead>
 		<tr valign="center">
@@ -260,7 +261,8 @@ Important: Trama have to be in JSON format.
 		</tbody>
 </table>
 
-### The following table  contains all properties that come from the site controller.
+### The following table  contains all properties that come from the Site controller.
+
 <table>
 	<thead>
 		<tr valign="center">
@@ -454,20 +456,20 @@ Important: Trama have to be in JSON format.
 Complete Trama example in JSON Format:
 
 {
-    "ProcessingMode": "1", //static
-    "SystemModel": "POSTMAN",//static
-    "SystemVersion": "NB", //static
-    "TransactionCode": "200", //static
-    "EntryMethod": "S",//static
-    "ApplicationType": "FCS", //static
-    "AccountType": "1", //static
-    "MessageFormatVersion": "1.3", //static
-    "CurrencyCode": "ARS",//static
-    "DeviceTypeIdentifier": "4", //static, habria que generar un nuevo tipo de dispositivo en ationet
+    "ProcessingMode": "1", 
+    "SystemModel": "POSTMAN",
+    "SystemVersion": "NB", 
+    "TransactionCode": "200", 
+    "EntryMethod": "S",
+    "ApplicationType": "FCS", 
+    "AccountType": "1", 
+    "MessageFormatVersion": "1.3", 
+    "CurrencyCode": "ARS",
+    "DeviceTypeIdentifier": "4", 
     "PumpNumber": "1",
     "TransactionSequenceNumber": 808,
-    "LocalTransactionDate": 20210812, // sino lo manda la terminar generarlo automatico
-    "LocalTransactionTime": 113152, // sino lo manda la terminar generarlo automatico
+    "LocalTransactionDate": 20210812, 
+    "LocalTransactionTime": 113152, 
     "TerminalIdentification": "S2G321",
     "PrimaryTrack": "0000000000001",
     "TransactionAmount": 99,
@@ -480,12 +482,40 @@ Complete Trama example in JSON Format:
 	
 ```
 
-### Description
+## STEP 3: Customer scans Dynamic QR code
+
+When the QR code is generated for an specific order, the customer scans that QR code and pays using the Ationet Driver App from. The customer is notified about the payment status on their Ationet Driver App after the successful completion of payment.
+
+```
+Note: Customers cannot change the order amount in their app on scanning the particular order QR code.
+```
+
+## STEP 4: Confirm the Transaction Status
+
+Once the payment is completed by a customer, the merchant can confirm the transaction status by Polling  the Transaction Status API.
+
+```
+Polling - Setup a polling process after regular intervals using the Transaction Status API.
+
+```
+
+## STEP 5: Manage Refunds XXX
 
 
-This service receives the request from the client and create a Sale.
+### Integration Checklist
 
-### API Details
+Post completion of integration in your staging environment, it is mandatory to test the integration before moving into the live environment with production. Below points should be taken care of during the integration of the flow:
+
+<ol>
+   <li>The transaction status should be verified through the Transaction Status API in the payment flow.</li>	
+   <li>The Dispacht ID passed to Ationet should be unique.</li>	
+   <li>The amount must not contain more than 2 decimal points, comma, or any special characters.</li>	 XXX
+   <li>Dispatch ID parameter is mandatory for creating QR.</li>	
+   <li>For any local errors implemented in POS, user-friendly messages should be displayed to the cashier.</li>	
+   <li></li>	
+</ol>
+
+### API Documentation
 
 *URL:  http://native-beta.ationet.com* </br>
 
