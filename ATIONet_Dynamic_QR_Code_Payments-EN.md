@@ -95,9 +95,7 @@ Note: Never share your secret Merchant Key with anyone.
 Merchant Backend only encodes the minimum sale information in QR, It is the one that comes from site controller when generating a sale. The rest of the trama information is completed by the Merchant Backend (point of sale).The following table describes each field in the table, its description and its origin, being QR for values that have to be coded and POS for values that are completed by Merchant Backend.
 
 ```diff
-@@ - Important: Trama have to be in JSON format.@@ 
 - Important: Trama have to be in JSON format.
-- @@Important: Trama have to be in JSON format.@@ 
 
 ```
 
