@@ -45,22 +45,27 @@
 
 ### Introduction
 
-ATIONet Dynamic QR Code Payments allows you to generate sales without contact and without customer errors. The point of sale generates the dynamic QR code from the data obtained from the site controller, then the user can scan that code and pay for that sale.
-
-
-
-<ol>
-	<li>The Merchant Backend obtains the data to generate the QR code</li>
-	<li>Once the data is obtained, the QR code is generated with the information for the payment, the The Merchant Backend waits until the Sale is created..</li>
-	<li>The customer scans the QR code and confirms the sale.</li>
-	<li>The sale is created.</li>
-</ol>
+ATIONet Dynamic QR Code Payments allows to generate the dynamic QR code from their Billing POS/System for a specific order/bill and must pass the order-specific information such as Order ID, Order Amount, etc. while generating the code. The customer can scan this QR to make a payment and the merchant can check the transaction status using the Dispatch ID and accordingly close the order/bill.
 
 ``` 
 Note: A customer-facing screen is required, which will show the dynamically generated QR to him in order to be able to
 scan it and generate the sale.
 
 ```
+
+### Overview of Dynamic QR Code
+
+<ol>
+	<li>Customer chooses the goods/service in a store and shows the intent to the cashier for Ationet Driver App payment.</li>
+	<li>Cashier creates an order with the bill amount and a unique Dispatch ID in the POS system.</li>
+	<li>Merchant’s backend server  Create QR Code  and displays the QR Code to the Customer on the consumer-facing screen.</li>
+	<li>Customer scans QR code via Paytm or any Ationet Driver App.</li>
+	<li>Customer enters the  pin in the respective tionet Driver App app to complete the payment XXXXX</li>
+	<li>Merchant's server receives the transaction confirmation by pulling them from an API to get the transaction confirmation against the order.</li>
+	<li>Merchant's POS system closes the bill/order and shares the payment response with the customer..</li>
+</ol>
+
+
 
 ![ationetTR](Content/Images/DynamicQRPayments/demoQR.gif)
 
