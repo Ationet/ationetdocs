@@ -349,11 +349,11 @@ Return a Sale information.
 ```
 Body { 
      "DispatchID": "string",
-    "ActionCode": "string",
-    "SubscriberCode": "string",
-    "LocalDateFrom": "Date",
-    "LocalDateTo": "Date"
-   }
+     "ActionCode": "string",
+     "SubscriberCode": "string",
+     "LocalDateFrom": "Date",
+     "LocalDateTo": "Date"
+     }
 ```
 
 #### Response Format
