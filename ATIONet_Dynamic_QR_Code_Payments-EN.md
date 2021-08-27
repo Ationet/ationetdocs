@@ -53,7 +53,7 @@ Note: A customer-facing screen is required, which will show the dynamically gene
 scan it and generate the sale.
 
 ```
-
+<h3 style="color:#ff0000">Danger</h3>
 ### Overview of Dynamic QR Code
 
 <ol>
