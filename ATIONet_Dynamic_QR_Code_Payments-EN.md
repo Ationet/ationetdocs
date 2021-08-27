@@ -313,7 +313,7 @@ Complete Plot example in JSON Format:
 
 #### QR Image example
 
-![ationetTR](Content/Images/DynamicQRPayments/qr_example2.svg)
+![ationetTR](Content/Images/DynamicQRPayments/miniQr.png)
 
 ### STEP 3 Confirm the Transaction Status
 
