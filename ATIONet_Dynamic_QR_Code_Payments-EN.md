@@ -199,7 +199,7 @@ Important: Plot have to be in JSON format. QR image must be free text type.
 			 	<p align="center">Site controller/POS IdentificationAtionet</p>
 			 </td>
 			<td>
-				<p>it must be requested from ationet</p>
+				<p>It must be requested from ationet</p>
 			</td>
 		 </tr>
 		<tr valign="top">
