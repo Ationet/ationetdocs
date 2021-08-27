@@ -521,9 +521,9 @@ Post completion of integration in your staging environment, it is mandatory to t
 
 #### Request Format 
 
-*URL: api/makeASale* xxxx </br>
-*Method: POST* </br>
-*Body { "PumpNumber": "string",</br> 
+<ul><li>*URL: api/makeASale* xxxx</li> </br>
+<li>*Method: POST*</li> </br>
+<li>*Body { "PumpNumber": "string",</br> 
 	"TransactionSequenceNumber": integer,</br>
 	"LocalTransactionDate": integer,</br>
 	"LocalTransactionTime": integer,</br>
@@ -535,8 +535,8 @@ Post completion of integration in your staging environment, it is mandatory to t
 	"ProductAmount": double,</br> 
 	"ProductQuantity": double,</br>
 	"DispatchId": "string"</br>
-}*
-
+}*</li>
+</ul>
 #### Response Format 
 
 Header:
