@@ -16,6 +16,8 @@
 ## Contents ##
 
 - [Overview](#overview)
+	- [Introduction](#introduction)
+	- [Overview of Dynamic QR Code](Overview-of-Dynamic-QR-Code)
 - [Description](#description)
 - [Details](#api-details)	
 - [Supported Transactions](#supported-transactions)
