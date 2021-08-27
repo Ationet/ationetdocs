@@ -125,7 +125,7 @@ Important: Plot have to be in JSON format. QR image must be free text type.
 				<p align="left">IDDispatch</p>
 			</td>
 			<td>
-				<p align="center">(string) Guid ID</p>
+				<p align="center">(string) Guid</p>
 			</td>
 			<td>
 			 	<p align="center">Site controller or POS Backend</p>
@@ -566,7 +566,7 @@ body [
 
 #### Description
 
-Create a Sale. The sale creation recibes a Dispatch ID. It's must be unic. 
+Create a Sale. The sale creation recibes a Dispatch ID. It's must be unique.
 
 #### Request Format
 
