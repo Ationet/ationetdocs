@@ -45,7 +45,7 @@
 
 ### Introduction
 
-Ationet fleet Mobile payments - Dynamic QR  allows to generate the dynamic QR code from their Billing POS/System for a specific order/bill and must pass the order-specific information such as Dispatch ID, Order Amount, etc. while generating the code. The customer can scan this QR to make a payment and the merchant can check the transaction status using the Dispatch ID and.
+Ationet fleet Mobile payments - Dynamic QR  allows to generate the dynamic QR code from their Billing POS/System for a specific order/bill and must pass the order-specific information such as Dispatch ID, Order Amount, etc. while generating the code. The customer can scan this QR to make a payment and the POS's Backend can check the transaction status using the Dispatch ID and.
 
 ``` 
 Note: A customer-facing screen is required, which will show the dynamically generated QR to him in order to be able to
@@ -80,17 +80,17 @@ The section describes the integration steps required to integrate ATIONe's Dynam
 ### STEP 1: Get your authentication keys (pending/In progress)
 
 <ul>
-	<li>Merchant Key: A unique secret key used to secure encryption of every request. This needs to be kept on server-side and should not be shared with anyone.</li>
+	<li>POS's Backend Key: A unique secret key used to secure encryption of every request. This needs to be kept on server-side and should not be shared with anyone.</li>
 </ul>
 
 ```
-Note: Never share your secret Merchant Key with anyone.
+Note: Never share your secret POS's Backend Key with anyone.
 ```
 
 
 ### STEP 2: Create Dynamic QR Code
 
-Merchant Backend only encodes the minimum sale information in QR, It is the one that comes from site controller when generating a sale. The rest of the plot information is completed by the Merchant Backend (point of sale).The following table describes each field in the table, its description and its origin.
+POS's Backend Backend only encodes the minimum sale information in QR, It is the one that comes from site controller when generating a sale. The rest of the plot information is completed by the POS's Backend.The following table describes each field in the table, its description and its origin.
 
 ```
 Important: Plot have to be in JSON format.
@@ -308,7 +308,7 @@ Complete Plot example in JSON Format:
 
 ### STEP 3: Customer scans Dynamic QR code
 
-Once the payment is completed by a customer, the merchant can confirm the transaction status by Polling  the Transaction Status API.
+Once the payment is completed by a customer, the POS's Backend can confirm the transaction status by Polling  the Transaction Status API.
 
 ```
 Note: Customers cannot change the order amount in their app on scanning the particular Transaction QR code.
@@ -339,11 +339,17 @@ Post completion of integration in your staging environment, it is mandatory to t
 
 *URL:  ationetmobilepayment-appshost-test.azurewebsites.net* </br>
 
-#### Request Format 
+### Sale Method
 
-<ul><li>*URL: api/makeASale* xxxx</li> </br>
-<li>*Method: POST*</li> </br>
-<li>*Body { "PumpNumber": "string",</br> 
+#### Description
+
+Create a Sale. The sale creation recibes a Dispatch ID. It's must be unic. 
+
+#### Request Format
+
+*URL: /api/ContactlessPayment/ProccessCash* </br>
+*Method: POST* </br>
+*Body { "PumpNumber": "string",</br> 
 	"TransactionSequenceNumber": integer,</br>
 	"LocalTransactionDate": integer,</br>
 	"LocalTransactionTime": integer,</br>
@@ -355,8 +361,7 @@ Post completion of integration in your staging environment, it is mandatory to t
 	"ProductAmount": double,</br> 
 	"ProductQuantity": double,</br>
 	"DispatchId": "string"</br>
-}*</li>
-</ul>
+}*
 #### Response Format 
 
 Header:
@@ -364,6 +369,7 @@ Header:
 Content-Type: application/json; charset=utf-8
 content-encoding: gzip 
 ```
+
 *Body {
     "ApplicationType": "string",</br>
     "ProcessingMode": "string",</br>
@@ -420,6 +426,214 @@ content-encoding: gzip
 
 
 
+### Get Sale Method
 
+#### Description
 
+Return a Sale information.
 
+#### Request Format
+
+*URL: /api/ContactlessPayment/GetTransaction* </br>
+*Method: POST* </br>
+*Body { 
+    "ActionCode": "string",
+    "SubscriberCode": "string",
+    "LocalDateFrom": "Date",
+    "LocalDateTo": "Date",
+    "DispatchID": "string",
+}*
+
+#### Response Format
+Header:
+```
+Content-Type: application/json; charset=utf-8
+content-encoding: gzip 
+```
+
+[
+    {
+        "TransactionId": "92a3c3cb-49d6-4b64-a9e2-5544fb155227",
+        "SubscriberCode": "S2G",
+        "TransactionSequenceNumber": "120",
+        "AuthorizationCode": "075532151",
+        "ResponseCode": "00000",
+        "ResponseMessage": "Autorizado",
+        "Status": 3,
+        "Mode": 0,
+        "StatusDescription": "Confirmed",
+        "HostDateTime": "2021/08/06 15:31:52",
+        "SubscriberDateTime": "2021/08/06 12:31:52",
+        "SubscriberTimeZone": "Argentina Standard Time",
+        "SiteDateTime": "2021/08/06 12:31:52",
+        "SiteTimeZone": "Argentina Standard Time",
+        "DateTime": "2021/08/06 12:31:52",
+        "MerchantCode": "04012",
+        "MerchantContractCode": "123",
+        "MerchantName": "fuel company ",
+        "MerchantCustomField0": null,
+        "MerchantCustomField1": null,
+        "MerchantCustomField2": null,
+        "MerchantCustomField3": null,
+        "SiteCode": "1524",
+        "SiteName": "lomas",
+        "SiteShortName": "lomas",
+        "TerminalCode": "S2G321",
+        "TerminalType": "ATIONET Mobile Payment",
+        "TerminalId": "09c5e5fa-af46-49a3-a0ba-041535f5e870",
+        "TerminalTypeId": "70e808d3-47d2-4ba8-893a-20babab46f91",
+        "SubAccountId": "1200318c-1a25-4263-b75b-291ac3d28853",
+        "SecondarySubAccountId": null,
+        "AccountTypeDescription": "Vehicle",
+        "VehicleCode": "5924",
+        "DriverCode": null,
+        "TransactionNetAmount": null,
+        "ProductUnitPriceRequested": 1.000000,
+        "ProductVolumeRequested": 99.000000,
+        "ProductAmountRequested": 99.000000,
+        "TransactionAmountRequested": 99.000000,
+        "ProductUnitPriceAuthorized": 0.000000,
+        "ProductVolumeAuthorized": 0.000000,
+        "ProductAmountAuthorized": 0.000000,
+        "TransactionAmountAuthorized": 0.000000,
+        "ProductUnitPriceDispensed": 1.000000,
+        "ProductVolumeDispensed": 99.000000,
+        "ProductAmountDispensed": 99.000000,
+        "ProductNetAmountDispensed": null,
+        "TransactionAmountDispensed": 99.000000,
+        "ProductUnitPriceCompany": 1.000000,
+        "ProductUnitPriceMerchant": 1.000000,
+        "ProductAmountCompany": 99.000000,
+        "ProductAmountMerchant": 99.000000,
+        "TransactionAmountCompany": 99.000000,
+        "TransactionAmountMerchant": 99.000000,
+        "MeasurementUnitCode": null,
+        "CurrencyCode": "ARS",
+        "FuelCode": "1",
+        "FuelMasterCode": "022",
+        "FuelMasterDescription": "Compressed Natural Gas",
+        "InvoiceNumber": null,
+        "BatchNumber": null,
+        "ShiftNumber": null,
+        "PumpNumber": "1",
+        "EntryMethod": "S",
+        "CompanyCode": "40206",
+        "CompanyName": "CON'AUTO",
+        "CompanyCustomField0": null,
+        "CompanyCustomField1": null,
+        "CompanyCustomField2": null,
+        "CompanyCustomField3": null,
+        "CompaniesGroupCode": "",
+        "ClassificationLabel1": "Clasificador 1 Departamentos",
+        "ClassificationLabel2": "Classification 2",
+        "ClassificationLabel3": "Classification 3",
+        "ClassificationLabel4": "Classification 4",
+        "ContractCode": "40206",
+        "CompanyContractClassificationValue1": "",
+        "CompanyContractClassificationValue2": "",
+        "CompanyContractClassificationValue3": "",
+        "CompanyContractClassificationValue4": "",
+        "CompanyContractCustomField0": null,
+        "CompanyContractCustomField1": null,
+        "CompanyContractCustomField2": null,
+        "CompanyContractCustomField3": null,
+        "SubContractCode": "40206",
+        "PrimaryIdentificationTrack": "0000000000001",
+        "SecondaryIdentificationTrack": null,
+        "PrimaryIdentificationPAN": "004",
+        "SecondaryIdentificationPAN": null,
+        "PrimaryIdentificationLabel": "Identification1 ATIONet",
+        "SecondaryIdentificationLabel": null,
+        "PrimaryIdentificationModelDescription": "Card",
+        "SecondaryIdentificationModelDescription": null,
+        "FleetCode": "4210",
+        "FleetName": "CONAUTO Fleet",
+        "VehiclePlate": "HAL180",
+        "VehicleClassDescription": null,
+        "VehicleClassificationValue1": null,
+        "VehicleClassificationValue2": null,
+        "VehicleClassificationValue3": null,
+        "VehicleClassificationValue4": null,
+        "DriverName": null,
+        "DriverClassificationValue1": null,
+        "DriverClassificationValue2": null,
+        "DriverClassificationValue3": null,
+        "DriverClassificationValue4": null,
+        "CustomerData": {},
+        "FastTrackData": {},
+        "TaxesData": {},
+        "FeesData": [
+            {
+                "Name": "descuentos",
+                "Value": 496.366000,
+                "Id": "715a7981-84f1-477f-9360-626bf6addb41"
+            }
+        ],
+        "CompanyTaxpayerId": "15024",
+        "ApplicationCode": null,
+        "DisputeDate": null,
+        "Reason": null,
+        "State": null,
+        "DisputeCommentCompany": null,
+        "ResolvedDate": null,
+        "DisputeResolveNetworkComment": null,
+        "Odometer": null,
+        "SiteCountryId": "e8812e4f-406c-49dc-8b99-d985361af691",
+        "SiteCountry": "Argentina",
+        "SiteAddress": "Av. Muñiz 366, () (Martinez) Buenos Aires Argentina",
+        "SiteStateId": "785f7886-3429-4f2e-b633-049e802a4ece",
+        "SiteState": "Buenos Aires",
+        "SiteCity": "Martinez",
+        "SiteZipCode": null,
+        "SiteClassificationValue1": "ZONA GOBIERNO 2",
+        "SiteClassificationValue2": null,
+        "SiteClassificationValue3": null,
+        "SiteClassificationValue4": null,
+        "SiteCustomField0": null,
+        "SiteCustomField1": null,
+        "SiteCustomField2": null,
+        "SiteCustomField3": null,
+        "DriverFirstName": null,
+        "DriverLastName": null,
+        "GPSVirtualOdometer": null,
+        "GPSDistance": null,
+        "GPSAddress": null,
+        "GPSComment": null,
+        "DriverCustomField0": null,
+        "DriverCustomField1": null,
+        "DriverCustomField2": null,
+        "DriverCustomField3": null,
+        "VehicleCustomField0": null,
+        "VehicleCustomField1": null,
+        "VehicleCustomField2": null,
+        "VehicleCustomField3": null,
+        "IdProgram": "d112c23a-4bdb-4c68-9bde-43cd334627c5",
+        "ProgramDescription": "Classic",
+        "LatitudeStart": null,
+        "LongitudeStart": null,
+        "AltitudeStart": null,
+        "LatitudeEnd": null,
+        "LongitudeEnd": null,
+        "AltitudeEnd": null,
+        "ContingencyReason": null,
+        "AuthorizationType": 0,
+        "AttendantCode": null,
+        "PumpSide": null,
+        "VehicleBrand": "TOYOTA",
+        "VehicleModel": null,
+        "Subsidized": null,
+        "SiteCountryCode": "ARG",
+        "CompanyContractCustomInterface0": false,
+        "CompanyContractCustomInterface1": false,
+        "CompanyContractCustomInterface2": false,
+        "CompanyContractCustomInterface3": false,
+        "CompanyContractCustomInterface4": false,
+        "CompanyContractCustomOperation0": false,
+        "CompanyContractCustomOperation1": false,
+        "CompanyContractCustomOperation2": false,
+        "CompanyContractCustomOperation3": false,
+        "CompanyContractCustomOperation4": false,
+        "ProductsData": [],
+        "ModifiersData": []
+    }
+]
