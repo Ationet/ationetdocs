@@ -40,6 +40,8 @@
 - [Messages samples](#Messages-samples)
 	- [Get Sale Method](#Get-Sale-method-sample)
 	- [Sale Method](#Sale-method-sample)
+- [Error handling](#Error-handling)
+
 
 
 ## Overview
@@ -664,6 +666,17 @@ Body {
     "ProductQuantity": 99
 }
 ```
+### Error handling
+
+Success/failure exits on the Interface API will be handled via HTTP status codes.
+
+Successful request will get a HTTP 200 and the resulting response.
+
+Actions intended to return data, for example the Transactions Downloads group may return many records, just a single record or even no records at all and even though will be considered successful if the requests met the validation criteria. These Actions will always return a JSON-formatted list of records, enclosed in curly brackets “[…]”. An empty response will contain [] as body.
+
+Actions intended to post a command, for example the Statement Charges group will return a single JSON-formatted item with the “ResponseCode”, “ResponseMessage” and “ResponseError” fields. The body of these responses will never be empty.
+
+Failure to process the request will be indicated by an HTTP 400’s range status code. The body will contain a single JSON-formatted item with the “ResponseCode”, “ResponseMessage” and “ResponseError” fields.
 
 
 ## Messages samples
