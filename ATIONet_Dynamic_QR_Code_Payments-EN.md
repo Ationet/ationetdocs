@@ -98,7 +98,7 @@ Merchant Backend only encodes the minimum sale information in QR, It is the one 
 Important: Trama have to be in JSON format.
 
 ```
-<h3>The following table  contains all static  properties that the Merchant Backend must complete to do a sale.<h3>
+### The following table  contains all static  properties that the Merchant Backend must complete to do a sale.
 <table>
 	<thead>
 		<tr valign="center">
@@ -260,7 +260,7 @@ Important: Trama have to be in JSON format.
 		</tbody>
 </table>
 
-<h3>The following table  contains all properties that come from the site controller.<h3>
+### The following table  contains all properties that come from the site controller.
 <table>
 	<thead>
 		<tr valign="center">
