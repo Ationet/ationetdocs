@@ -36,10 +36,12 @@
 		- [Request Format](#Request-Format)
 		- [Response Format](#Request-Format)
 - [Messages-samples](#Messages-samples)
+	- [Get Sale Method](#Get-Sale-Method)
+	- [Sale Method](#Sale-Method)
 	
 	 
 		
-<p style='color:red'>This is some red text.</p>
+
 ## Overview
 
 ![ationetTR](Content/Images/DynamicQRPayments/schema.png)
