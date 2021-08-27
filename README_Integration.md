@@ -7,7 +7,7 @@
 ## Authorization API
 - [Native Transaction Protocol API Specifications](AN-Native_Transaction_Protocol-Spec.md)
 - [Native Transaction Protocol API messages](AN-Native_Auth_Protocol_Messages.md)
--
+
 ## ATIONet Dynamic QR Code Payments  (NEW !)
 - [ATIONet Dynamic QR Code Payments](ATIONet_Dynamic_QR_Code_Payments-EN.md)
 
