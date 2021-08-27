@@ -35,11 +35,11 @@
 		- [Description](#Description)
 		- [Request Format](#Request-Format)
 		- [Response Format](#Request-Format)
-
+- [Messages-samples](#Messages-samples)
 	
 	 
 		
-
+<p style='color:red'>This is some red text.</p>
 ## Overview
 
 ![ationetTR](Content/Images/DynamicQRPayments/schema.png)
