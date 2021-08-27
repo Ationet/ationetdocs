@@ -80,7 +80,7 @@ The section describes the integration steps required to integrate ATIONe's Dynam
 
 ### STEP 1 Get your authentication keys
 ```
-Importante: Pending/ In progress. Ignore this step.
+Importante: Pending/In progress. Ignore this step.
 ```
 <ul>
 	<li>POS's Backend Key: A unique secret key used to secure encryption of every request. This needs to be kept on server-side and should not be shared with anyone.</li>
@@ -93,10 +93,10 @@ Note: Never share your secret POS's Backend Key with anyone.
 
 ### STEP 2 Create Dynamic QR Code
 
-POS's Backend Backend only encodes the minimum sale information in QR, It is the one that comes from site controller when generating a sale. The rest of the plot information is completed by the POS's Backend.The following table describes each field in the table, its description and its origin.
+POS's Backend only encodes the minimum sale information in QR, It is the one that comes from site controller when generating a sale. The rest of the plot information is completed by the POS's Backend. The following table describes each field in the table, its description and its origin.
 
 ```
-Important: Plot have to be in JSON format. QR image must be free text type
+Important: Plot have to be in JSON format. QR image must be free text type.
 
 ```
 
@@ -118,6 +118,20 @@ Important: Plot have to be in JSON format. QR image must be free text type
 		</tr>
 	</thead>
 	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">DispatchID</p>
+			</td>
+			<td>
+				<p align="center">(string) Guid ID</p>
+			</td>
+			<td>
+			 	<p align="center">Site controller or POS Backend</p>
+			 </td>
+			<td>
+				<p>XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</p>
+			</td>
+		 </tr>
 		 <tr valign="top">
 			<td>
 				<p align="left">PumpNumber</p>
@@ -176,30 +190,16 @@ Important: Plot have to be in JSON format. QR image must be free text type
 		 </tr>
 		<tr valign="top">
 			<td>
-				<p align="left">TerminalIdentification/ POS Identification</p>
+				<p align="left">TerminalIdentification</p>
 			</td>
 			<td>
 				<p align="center">string</p>
 			</td>
 			<td>
-			 	<p align="center">Ationet</p>
+			 	<p align="center">Site controller/POS IdentificationAtionet</p>
 			 </td>
 			<td>
-				<p>Terminal Identification</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">PrimaryTrack</p>
-			</td>
-			<td>
-				<p align="center">string</p>
-			</td>
-			<td>
-			 	<p align="center">Customer</p>
-			 </td>
-			<td>
-				<p>Refer to Track Data in <a href="AN-Native_Transaction_Protocol-Spec.md#track-data">Field Description section</a>.</p>
+				<p>it must be requested from ationet</p>
 			</td>
 		 </tr>
 		<tr valign="top">
@@ -241,7 +241,7 @@ Important: Plot have to be in JSON format. QR image must be free text type
 			 	<p align="center">Site controller</p>
 			 </td>
 			<td>
-				<p>xxx.xxx</p>
+				<p>xxx.xx</p>
 			</td>
 		 </tr>
 		<tr valign="top">
@@ -272,20 +272,6 @@ Important: Plot have to be in JSON format. QR image must be free text type
 				<p>xxxxxxx.xx</p>
 			</td>
 		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">DispatchID</p>
-			</td>
-			<td>
-				<p align="center">(string) Guid ID</p>
-			</td>
-			<td>
-			 	<p align="center">Site controller or POS Backend</p>
-			 </td>
-			<td>
-				<p>XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</p>
-			</td>
-		 </tr>
 		</tbody>
 </table>
 
@@ -296,29 +282,28 @@ Important: Plot have to be in JSON format. QR image must be free text type
 Complete Plot example in JSON Format:
 
 {
+    "DispatchID": "dc152309-6b50-45cc-939c-a43d69ec817a",
     "PumpNumber": "1",
     "TransactionSequenceNumber": 808,
     "LocalTransactionDate": 20210812, 
     "LocalTransactionTime": 113152, 
     "TerminalIdentification": "S2G321",
-    "PrimaryTrack": "0000000000001",
     "TransactionAmount": 99,
     "ProductCode": "1",
     "ProductUnitPrice": 1,
     "ProductAmount": 99,
     "ProductQuantity": 99
-    "DispatchID": "dc152309-6b50-45cc-939c-a43d69ec817a"
 }
 	
 ```
 
 #### QR Image example
 
-![ationetTR](Content/Images/DynamicQRPayments/miniQr2.png)
+![ationetTR](Content/Images/DynamicQRPayments/miniQr3.png)
 
 ### STEP 3 Confirm the Transaction Status
 
-When the QR code is generated for an specific transaction, the POS's Backend Get The Transaction status with a pollin process using the [Transaction status API](#Get-Sale-Method).
+When the QR code is generated for an specific transaction, the POS's Backend Get The Transaction status with a polling process using the [Transaction status API](#Get-Sale-Method).
 
 ```
 Polling : Setup a polling process after regular intervals using the Transaction Status API. 
@@ -362,11 +347,11 @@ Return a Sale information.
 *URL: /api/ContactlessPayment/GetTransaction* </br>
 *Method: POST* </br>
 *Body { 
+     "DispatchID": "string",
     "ActionCode": "string",
     "SubscriberCode": "string",
     "LocalDateFrom": "Date",
-    "LocalDateTo": "Date",
-    "DispatchID": "string",
+    "LocalDateTo": "Date"
 }*
 
 #### Response Format
@@ -575,7 +560,9 @@ Create a Sale. The sale creation recibes a Dispatch ID. It's must be unic.
 
 *URL: /api/ContactlessPayment/ProccessCash* </br>
 *Method: POST* </br>
-*Body { "PumpNumber": "string",</br> 
+*Body { 
+	"DispatchId": "string",</br>
+	"PumpNumber": "string",</br> 
 	"TransactionSequenceNumber": integer,</br>
 	"LocalTransactionDate": integer,</br>
 	"LocalTransactionTime": integer,</br>
@@ -586,7 +573,7 @@ Create a Sale. The sale creation recibes a Dispatch ID. It's must be unic.
 	"ProductUnitPrice": double,</br> 
 	"ProductAmount": double,</br> 
 	"ProductQuantity": double,</br>
-	"DispatchId": "string"</br>
+	
 }*
 #### Response Format 
 
@@ -661,11 +648,12 @@ Body {
 
 ```
 {
+    "DispatchID": "d27a1c89-ab2f-469e-91aa-3a20943ab79c",
     "ActionCode": "931",
     "SubscriberCode": "S2G",
     "LocalDateFrom": "2021/08/05 11:39:45",
-    "LocalDateTo": "2021/08/05 11:39:45",
-    "DispatchID": "d27a1c89-ab2f-469e-91aa-3a20943ab79c"
+    "LocalDateTo": "2021/08/05 11:39:45"
+    
 }
 ```
 
@@ -866,6 +854,7 @@ Body {
 
 ```
 {
+    "DispatchID": "d27a1c89-ab2f-469e-91aa-3a20943ab79c",
     "PumpNumber": "1",
     "TransactionSequenceNumber": 123,
     "TerminalIdentification": "S2G321",
@@ -875,7 +864,6 @@ Body {
     "ProductUnitPrice": 1,
     "ProductAmount": 99,
     "ProductQuantity": 99
-    "DispatchID": "d27a1c89-ab2f-469e-91aa-3a20943ab79c"
 }
 ```
 
