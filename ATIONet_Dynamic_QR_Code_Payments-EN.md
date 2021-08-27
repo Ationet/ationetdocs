@@ -23,8 +23,6 @@
 	- [Introduction](#Introduction)
 	- [STEP 1 Get your authentication keys (Pending/ In progress)](#STEP-1-Get-your-authentication-keys)
 	- [STEP 2 Create Dynamic QR Code](#STEP-2-Create-Dynamic-QR-Code)
-		-[Plot example](#Plot-example)
-		-[QR Image example](#QR-Image-example)
 	- [STEP 3 Customer scans Dynamic QR code](#STEP-3-Customer-scans-Dynamic-QR-code)
 	- [STEP 4 Confirm the Transaction Status](#STEP-4-Confirm-the-Transaction-Status)
 	- [Integration Checklist](#Integration-Checklist)
