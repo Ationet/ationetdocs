@@ -82,7 +82,7 @@ scan it and generate the sale.
 
 The section describes the integration steps required to integrate ATIONe's Dynamic QR Code Payments with billing POS to accept contactless payment from your customer using the Ationet Driver App payment.
 
-### STEP 1: Get your authentication keys
+### STEP 1: Get your authentication keys (Pending/In progress)
 
 <ul>
 	<li>POS's Backend Key: A unique secret key used to secure encryption of every request. This needs to be kept on server-side and should not be shared with anyone.</li>
@@ -311,7 +311,9 @@ Complete Plot example in JSON Format:
 	
 ```
 
-### STEP 3: Customer scans Dynamic QR code
+### STEP 3: Confirm the Transaction Status
+
+When the QR code is generated for an specific transaction, the POS's Backend Get The Transaction status with a pollin process using the [Transaction status API](#Get-Sale-Method)
 
 Once the payment is completed by a customer, the POS's Backend can confirm the transaction status by Polling  the Transaction Status API.
 
@@ -320,12 +322,12 @@ Note: Customers cannot change the order amount in their app on scanning the part
 
 ```
 
-### STEP 4: Confirm the Transaction Status
+### STEP 4: Customer scans Dynamic QR code
 
 Once the QR is generted the POS's Backend should start to polling process to confirm the transaction status. 
 
 ```
-Polling - Setup a polling process after regular intervals using the Transaction Status API.
+Polling - Setup a polling process after regular intervals 8 times/minute
 
 ```
 
