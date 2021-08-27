@@ -21,7 +21,7 @@
 - [QR code Payments squence](#QR-code-Payments-squence)
 - [Dynamic QR Code Payments Implementation](#Dynamic-QR-Code-Payments-Implementation)	
 	- [Introduction](#Introduction)
-	- [STEP 1 Get your authentication keys](#STEP-:-1-Get-your-authentication-keys [Pending/In progress])
+	- [STEP 1 Get your authentication keys](#STEP:-1-Get-your-authentication-keys-[Pending/In-progress])
 	- [STEP 2 Create Dynamic QR Code](#STEP-2-:-Create-Dynamic-QR-Code)
 	- [STEP 3 Customer scans Dynamic QR code](#STEP-3:-Customer-scans-Dynamic-QR-code)
 	- [STEP 4 Confirm the Transaction Status](#STEP-4:-Confirm-the-Transaction-Status)
