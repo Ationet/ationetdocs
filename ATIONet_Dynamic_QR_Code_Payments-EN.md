@@ -90,7 +90,7 @@ Note: Never share your secret Merchant Key with anyone.
 ```
 
 
-## STEP 2: Create Dynamic QR Code
+### STEP 2: Create Dynamic QR Code
 
 Merchant Backend only encodes the minimum sale information in QR, It is the one that comes from site controller when generating a sale. The rest of the trama information is completed by the Merchant Backend (point of sale).The following table describes each field in the table, its description and its origin, being QR for values that have to be coded and POS for values that are completed by Merchant Backend.
 
@@ -241,7 +241,7 @@ Important: Trama have to be in JSON format.
 			 	<p align="center">POS</p>
 			 </td>
 			<td>
-				<p>Refer to Currency Codes in Reference <a href="AN-Native_Transaction_Protocol-Spec.md#117-currency-codes">Tables Section.</a>.</p>
+				<p>Refer to Currency Codes in Reference <a href="AN-Native_Transaction_Protocol-Spec.md#117-currency-codes">Tables Section</a>.</p>
 			</td>
 		 </tr>
 		<tr valign="top">
@@ -306,7 +306,7 @@ Important: Trama have to be in JSON format.
 			 	<p align="center">Site controller</p>
 			 </td>
 			<td>
-				<p>Refer to Transaction Sequence Number in <a href="AN-Native_Transaction_Protocol-Spec.md#transaction-sequence-number">Field Description section</a></p>
+				<p>Refer to Transaction Sequence Number in <a href="AN-Native_Transaction_Protocol-Spec.md#transaction-sequence-number">Field Description section.</a></p>
 			</td>
 		 </tr>
 		<tr valign="top">
@@ -362,7 +362,7 @@ Important: Trama have to be in JSON format.
 			 	<p align="center">Site controller</p>
 			 </td>
 			<td>
-				<p>Refer to Track Data in <a href="AN-Native_Transaction_Protocol-Spec.md#track-data">Field Description section</a></p>
+				<p>Refer to Track Data in <a href="AN-Native_Transaction_Protocol-Spec.md#track-data">Field Description section</a>.</p>
 			</td>
 		 </tr>
 		<tr valign="top">
@@ -482,7 +482,7 @@ Complete Trama example in JSON Format:
 	
 ```
 
-## STEP 3: Customer scans Dynamic QR code
+### STEP 3: Customer scans Dynamic QR code
 
 When the QR code is generated for an specific order, the customer scans that QR code and pays using the Ationet Driver App from. The customer is notified about the payment status on their Ationet Driver App after the successful completion of payment.
 
@@ -490,7 +490,7 @@ When the QR code is generated for an specific order, the customer scans that QR 
 Note: Customers cannot change the order amount in their app on scanning the particular order QR code.
 ```
 
-## STEP 4: Confirm the Transaction Status
+### STEP 4: Confirm the Transaction Status
 
 Once the payment is completed by a customer, the merchant can confirm the transaction status by Polling  the Transaction Status API.
 
@@ -499,7 +499,7 @@ Polling - Setup a polling process after regular intervals using the Transaction 
 
 ```
 
-## STEP 5: Manage Refunds XXX
+### STEP 5: Manage Refunds XXX
 
 
 ### Integration Checklist
@@ -509,7 +509,7 @@ Post completion of integration in your staging environment, it is mandatory to t
 <ol>
    <li>The transaction status should be verified through the Transaction Status API in the payment flow.</li>	
    <li>The Dispacht ID passed to Ationet should be unique.</li>	
-   <li>The amount must not contain more than 2 decimal points, comma, or any special characters.</li>	 XXX
+   <li>The amount must not contain more than 2 decimal points, comma, or any special characters.XXX</li>	 
    <li>Dispatch ID parameter is mandatory for creating QR.</li>	
    <li>For any local errors implemented in POS, user-friendly messages should be displayed to the cashier.</li>	
    <li></li>	
@@ -517,23 +517,13 @@ Post completion of integration in your staging environment, it is mandatory to t
 
 ### API Documentation
 
-*URL:  http://native-beta.ationet.com* </br>
+*URL:  ationetmobilepayment-appshost-test.azurewebsites.net* </br>
 
 ### Request Format 
 
-*URL: v1/auth* </br>
+*URL: api/makeASale* xxxx </br>
 *Method: POST* </br>
-*Body { "ProcessingMode": "string",
-	"SystemModel": "string,</br>  
-	"SystemVersion": "string",</br> 
-	"TransactionCode": "string",</br> 
-	"EntryMethod": "string",</br> 
-	"ApplicationType": "string",</br> 
-	"AccountType": "string",</br> 
-	"MessageFormatVersion": "string",</br>
-	"CurrencyCode": "string",</br> 
-	"DeviceTypeIdentifier": "string",</br> 
-	"PumpNumber": "string",</br> 
+*Body { "PumpNumber": "string",</br> 
 	"TransactionSequenceNumber": integer,</br>
 	"LocalTransactionDate": integer,</br>
 	"LocalTransactionTime": integer,</br>
@@ -549,6 +539,11 @@ Post completion of integration in your staging environment, it is mandatory to t
 
 ### Response Format 
 
+Header:
+```
+Content-Type: application/json; charset=utf-8
+content-encoding: gzip 
+```
 *Body {
     "ApplicationType": "string",</br>
     "ProcessingMode": "string",</br>
@@ -603,9 +598,6 @@ Post completion of integration in your staging environment, it is mandatory to t
     "LongResponseText": "Autorizado"</br>
 }*
 
-### QR Code 
-
-Merchant Backend only encodes the minimum sale information in QR, It is the one that comes from a terminal when generating a sale. The rest of the trama information is completed by the Merchant Backend (point of sale).The following table describes each field in the table, its description and its origin, being QR for values that have to be coded and POS for values that are completed by Merchant Backend.
 
 
 
