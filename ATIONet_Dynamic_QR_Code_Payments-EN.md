@@ -79,7 +79,7 @@ scan it and generate the sale.
 
 The section describes the integration steps required to integrate ATIONe's Dynamic QR Code Payments with billing POS to accept contactless payment from your customer using the Ationet Driver App payment.
 
-## STEP 1: Get your authentication keys XXX
+### STEP 1: Get your authentication keys XXX
 
 <ul>
 	<li>Merchant Key: A unique secret key used to secure encryption of every request. This needs to be kept on server-side and should not be shared with anyone.</li>
