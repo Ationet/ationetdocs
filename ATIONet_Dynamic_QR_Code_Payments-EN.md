@@ -346,13 +346,14 @@ Return a Sale information.
 
 *URL: /api/ContactlessPayment/GetSale* </br>
 *Method: POST* </br>
-*Body { 
+```Body { 
      "DispatchID": "string",
     "ActionCode": "string",
     "SubscriberCode": "string",
     "LocalDateFrom": "Date",
     "LocalDateTo": "Date"
-}*
+   }
+```
 
 #### Response Format
 Header:
