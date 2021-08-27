@@ -46,7 +46,7 @@
 
 ### Introduction
 
-Ationet fleet Mobile payments - Dynamic QR  allows to generate the dynamic QR code from their Billing POS/System for a specific order/bill and must pass the order-specific information such as Dispatch ID, Order Amount, etc. while generating the code. The customer can scan this QR to make a payment and the POS's Backend can check the transaction status using the Dispatch ID and.
+Ationet fleet Mobile payments - Dynamic QR  allows to generate the dynamic QR code from their Billing POS/System for a specific order/bill and must pass the order-specific information such as Dispatch ID, Order Amount, etc. while generating the code. The customer can scan this QR to make a payment and the POS's Backend can check the transaction status using the Dispatch ID.
 
 ``` 
 Note: A customer-facing screen is required, which will show the dynamically generated QR to him in order to be able to
@@ -80,7 +80,7 @@ The section describes the integration steps required to integrate ATIONe's Dynam
 
 ### STEP 1 Get your authentication keys
 ```
-Importante: Pending/In progress. Ignore this step.
+Important: Pending/In progress. Ignore this step.
 ```
 <ul>
 	<li>POS's Backend Key: A unique secret key used to secure encryption of every request. This needs to be kept on server-side and should not be shared with anyone.</li>
@@ -346,6 +346,7 @@ Return a Sale information.
 
 *URL: /api/ContactlessPayment/GetSale* </br>
 *Method: POST* </br>
+
 ```
 Body { 
      "DispatchID": "string",
@@ -355,7 +356,9 @@ Body {
      "LocalDateTo": "Date"
      }
 ```
-
+```
+Note: SubscriberCode are the first three characters of the TerminalIdentification
+```
 #### Response Format
 Header:
 ```
@@ -552,6 +555,19 @@ body [
 ]
 ```
 
+#### Request Example of Get Sale method
+
+```
+{
+    "DispatchID": "d27a1c89-ab2f-469e-91aa-3a20943ab79c",
+    "ActionCode": "931",
+    "SubscriberCode": "S2G",
+    "LocalDateFrom": "2021/08/05 11:39:45",
+    "LocalDateTo": "2021/08/05 11:39:45"
+    
+}
+```
+
 ### Sale Method
 
 #### Description
@@ -638,6 +654,23 @@ Body {
 		      "CompanyStreet2":"string",
 		      "ContractBalanceMode":"string" }",
     "LongResponseText": "Autorizado"
+}
+```
+
+#### Request Example of Sale method
+
+```
+{
+    "DispatchID": "d27a1c89-ab2f-469e-91aa-3a20943ab79c",
+    "PumpNumber": "1",
+    "TransactionSequenceNumber": 123,
+    "TerminalIdentification": "S2G321",
+    "PrimaryTrack": "0000000000001",
+    "TransactionAmount": 99,
+    "ProductCode": "1",
+    "ProductUnitPrice": 1,
+    "ProductAmount": 99,
+    "ProductQuantity": 99
 }
 ```
 
