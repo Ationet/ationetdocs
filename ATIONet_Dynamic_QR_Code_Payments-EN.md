@@ -567,21 +567,23 @@ Create a Sale. The sale creation recibes a Dispatch ID. It's must be unique.
 
 *URL: /api/ContactlessPayment/ProcessSale* </br>
 *Method: POST* </br>
-*Body { 
-	"IDDispatch": "string",</br>
-	"PumpNumber": "string",</br> 
-	"TransactionSequenceNumber": integer,</br>
-	"LocalTransactionDate": integer,</br>
-	"LocalTransactionTime": integer,</br>
-	"TerminalIdentification": "string",</br>
-	"PrimaryTrack": "string",</br> 
-	"TransactionAmount": integer,</br> 
-	"ProductCode": "string",</br>
-	"ProductUnitPrice": double,</br> 
-	"ProductAmount": double,</br> 
-	"ProductQuantity": double,</br>
+```
+Body { 
+	"IDDispatch": "string",
+	"PumpNumber": "string", 
+	"TransactionSequenceNumber": integer,
+	"LocalTransactionDate": integer,
+	"LocalTransactionTime": integer,
+	"TerminalIdentification": "string",
+	"PrimaryTrack": "string", 
+	"TransactionAmount": integer, 
+	"ProductCode": "string",
+	"ProductUnitPrice": double, 
+	"ProductAmount": double, 
+	"ProductQuantity": double,
 	
-}*
+}
+```
 #### Response Format 
 
 Header:
