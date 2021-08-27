@@ -295,6 +295,8 @@ Important: Plot have to be in JSON format. QR image must be free text type
 
 #### QR Image example
 
+![ationetTR](Content/Images/DynamicQRPayments/qr_example.PNG)
+
 #### Plot example
 ```
 Complete Plot example in JSON Format:
