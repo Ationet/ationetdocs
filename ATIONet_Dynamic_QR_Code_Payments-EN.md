@@ -712,7 +712,7 @@ body [
     "SubscriberCode": "S2G",
     "LocalDateFrom": "2021/08/05 11:39:45",
     "LocalDateTo": "2021/08/05 11:39:45",
-    "DispatchId": "d27a1c89-ab2f-469e-91aa-3a20943ab79c"
+    "DispatchID": "d27a1c89-ab2f-469e-91aa-3a20943ab79c"
 }
 ```
 
