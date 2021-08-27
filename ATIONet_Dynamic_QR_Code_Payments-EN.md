@@ -306,7 +306,7 @@ Complete Plot example in JSON Format:
     "ProductUnitPrice": 1,
     "ProductAmount": 99,
     "ProductQuantity": 99
-    "DispatchID": guid ID
+    "DispatchID": "dc152309-6b50-45cc-939c-a43d69ec817a"
 }
 	
 ```
@@ -315,21 +315,20 @@ Complete Plot example in JSON Format:
 
 When the QR code is generated for an specific transaction, the POS's Backend Get The Transaction status with a pollin process using the [Transaction status API](#Get-Sale-Method)
 
-Once the payment is completed by a customer, the POS's Backend can confirm the transaction status by Polling  the Transaction Status API.
-
 ```
-Note: Customers cannot change the order amount in their app on scanning the particular Transaction QR code.
+Polling : Setup a polling process after regular intervals using the Transaction Status API. To get the best results out of a status query, you should check the status 8 times/minute.
 
 ```
 
 ### STEP 4: Customer scans Dynamic QR code
 
-Once the QR is generted the POS's Backend should start to polling process to confirm the transaction status. 
+When the QR code is generated for an specific transaction, the customer scans that QR code and pays using Ationet Driver App payment. The customer is notified about the payment status on their Ationet Driver App  after the successful completion of payment. If you want to implement a new client app you can check the specification of the [create sale api](#Sale-Method).
+
 
 ```
-Polling - Setup a polling process after regular intervals 8 times/minute
-
+Note: Customers cannot change the Transaction amount in their app on scanning the particular order QR code.
 ```
+
 
 ### Integration Checklist
 
