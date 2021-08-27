@@ -94,19 +94,11 @@ Note: Never share your secret Merchant Key with anyone.
 
 Merchant Backend only encodes the minimum sale information in QR, It is the one that comes from site controller when generating a sale. The rest of the trama information is completed by the Merchant Backend (point of sale).The following table describes each field in the table, its description and its origin, being QR for values that have to be coded and POS for values that are completed by Merchant Backend.
 
-```diff
-- Important: Trama have to be in JSON format.
+```
+Important: Trama have to be in JSON format.
 
 ```
-
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
-
+<h3>The following table  contains all static  properties that the Merchant Backend must complete to do a sale.<h3>
 <table>
 	<thead>
 		<tr valign="center">
@@ -239,20 +231,6 @@ Merchant Backend only encodes the minimum sale information in QR, It is the one 
 		 </tr>
 		<tr valign="top">
 			<td>
-				<p align="left">MessageFormatVersion</p>
-			</td>
-			<td>
-				<p align="center">string</p>
-			</td>
-			<td>
-			 	<p align="center">POS</p>
-			 </td>
-			<td>
-				<p>For QR Payments use 1.3</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
 				<p align="left">CurrencyCode</p>
 			</td>
 			<td>
@@ -262,13 +240,245 @@ Merchant Backend only encodes the minimum sale information in QR, It is the one 
 			 	<p align="center">POS</p>
 			 </td>
 			<td>
-				<p>Refer to Currency Codes in Reference <a href="AN-Native_Transaction_Protocol-Spec.md#117-currency-codes">Tables Section.</a></p>
+				<p>Refer to Currency Codes in Reference <a href="AN-Native_Transaction_Protocol-Spec.md#117-currency-codes">Tables Section.</a>.</p>
 			</td>
 		 </tr>
-	</tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">DeviceTypeIdentifier</p>
+			</td>
+			<td>
+				<p align="center">string</p>
+			</td>
+			<td>
+			 	<p align="center">POS</p>
+			 </td>
+			<td>
+				<p>“1” = Indoor Payment Terminal “2” = Outdoor Payment Terminal “3” = Card Reader in Dispenser “4” = Other Self-Service</p>
+			</td>
+		 </tr>
+		</tbody>
 </table>
 
+<h3>The following table  contains all properties that come from the site controller.<h3>
+<table>
+	<thead>
+		<tr valign="center">
+			<th rowspan="2"  align="left">
+				Name
+			</th>
+			<th rowspan="2" align="center">
+				Type
+			</th>
+			<th rowspan="2" align="left">
+				Origin
+			</th>
+			<th rowspan="8" align="left">
+				Description
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		 <tr valign="top">
+			<td>
+				<p align="left">PumpNumber</p>
+			</td>
+			<td>
+				<p align="center">string</p>
+			</td>
+			<td>
+			 	<p align="center">Site controller</p>
+			 </td>
+			<td>
+				<p>“00”-“99”</p>
+			</td>
+		 </tr>
+		 <tr valign="top">
+			<td>
+				<p align="left">TransactionSequenceNumber</p>
+			</td>
+			<td>
+				<p align="center">integer</p>
+			</td>
+			<td>
+			 	<p align="center">Site controller</p>
+			 </td>
+			<td>
+				<p>Refer to Transaction Sequence Number in <a href="AN-Native_Transaction_Protocol-Spec.md#transaction-sequence-number">Field Description section</a></p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">LocalTransactionDate</p>
+			</td>
+			<td>
+				<p align="center">integer</p>
+			</td>
+			<td>
+			 	<p align="center">Site controller</p>
+			 </td>
+			<td>
+				<p>Local Transaction Date: yyyymmdd</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">LocalTransactionTime</p>
+			</td>
+			<td>
+				<p align="center">integer</p>
+			</td>
+			<td>
+			 	<p align="center">Site controller</p>
+			 </td>
+			<td>
+				<p>Local Transaction Time: hhmmss</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TerminalIdentification</p>
+			</td>
+			<td>
+				<p align="center">string</p>
+			</td>
+			<td>
+			 	<p align="center">Site controller</p>
+			 </td>
+			<td>
+				<p>Terminal Identification</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PrimaryTrack</p>
+			</td>
+			<td>
+				<p align="center">string</p>
+			</td>
+			<td>
+			 	<p align="center">Site controller</p>
+			 </td>
+			<td>
+				<p>Refer to Track Data in <a href="AN-Native_Transaction_Protocol-Spec.md#track-data">Field Description section</a></p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TransactionAmount</p>
+			</td>
+			<td>
+				<p align="center">double</p>
+			</td>
+			<td>
+			 	<p align="center">Site controller</p>
+			 </td>
+			<td>
+				<p>xxxxxxx.xx</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductCode</p>
+			</td>
+			<td>
+				<p align="center">string</p>
+			</td>
+			<td>
+			 	<p align="center">Site controller</p>
+			 </td>
+			<td>
+				<p>“0”-“9999”</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductUnitPrice</p>
+			</td>
+			<td>
+				<p align="center">double</p>
+			</td>
+			<td>
+			 	<p align="center">Site controller</p>
+			 </td>
+			<td>
+				<p>xxx.xxx</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductAmount</p>
+			</td>
+			<td>
+				<p align="center">double</p>
+			</td>
+			<td>
+			 	<p align="center">Site controller</p>
+			 </td>
+			<td>
+				<p>xxxxxxx.xx</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductQuantity</p>
+			</td>
+			<td>
+				<p align="center">double</p>
+			</td>
+			<td>
+			 	<p align="center">Site controller</p>
+			 </td>
+			<td>
+				<p>xxxxxxx.xx</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DispatchID</p>
+			</td>
+			<td>
+				<p align="center">(string) Guid ID</p>
+			</td>
+			<td>
+			 	<p align="center">Site controller</p>
+			 </td>
+			<td>
+				<p>XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</p>
+			</td>
+		 </tr>
+		</tbody>
+</table>
 
+```
+Complete Trama example in JSON Format:
+
+{
+    "ProcessingMode": "1", //static
+    "SystemModel": "POSTMAN",//static
+    "SystemVersion": "NB", //static
+    "TransactionCode": "200", //static
+    "EntryMethod": "S",//static
+    "ApplicationType": "FCS", //static
+    "AccountType": "1", //static
+    "MessageFormatVersion": "1.3", //static
+    "CurrencyCode": "ARS",//static
+    "DeviceTypeIdentifier": "4", //static, habria que generar un nuevo tipo de dispositivo en ationet
+    "PumpNumber": "1",
+    "TransactionSequenceNumber": 808,
+    "LocalTransactionDate": 20210812, // sino lo manda la terminar generarlo automatico
+    "LocalTransactionTime": 113152, // sino lo manda la terminar generarlo automatico
+    "TerminalIdentification": "S2G321",
+    "PrimaryTrack": "0000000000001",
+    "TransactionAmount": 99,
+    "ProductCode": "1",
+    "ProductUnitPrice": 1,
+    "ProductAmount": 99,
+    "ProductQuantity": 99
+    "DispatchID": guid ID
+}
+	
+```
 
 ### Description
 
