@@ -45,23 +45,22 @@
 
 ### Introduction
 
-ATIONet Dynamic QR Code Payments permite  de generar ventas sin contacto y sin errores de los clientes. El punto de venta genera el código QR dinámico a partir de los datos obtenidos de la terminal, entonces el usuario puede escanear ese código y generar la transacción.
-
-``` 
-Nota: Se requiere una pantalla orientada al cliente, la cual mostrara el QR generado dinámicamente a este con el fin de poder 
-escanearlo y generar la Transacción.
-
-```
+ATIONet Dynamic QR Code Payments allows you to generate sales without contact and without customer errors. The point of sale generates the dynamic QR code from the data obtained from the site controller, then the user can scan that code and pay for that sale.
 
 
-## Overview of Dynamic QR Code
 
 <ol>
-	<li>La terminal obtiene los datos para generar el código QR</li>
-	<li>Una vez obtenido los datos se genera el código QR con la información para el pago, luego se queda haciendo pulling hasta que la Transaccion es creada.</li>
-	<li>El cliente escanea el código QR y confirma la venta.</li>
-	<li>La venta es creada.</li>
+	<li>The Merchant Backend obtains the data to generate the QR code</li>
+	<li>Once the data is obtained, the QR code is generated with the information for the payment, the The Merchant Backend waits until the Sale is created..</li>
+	<li>The customer scans the QR code and confirms the sale.</li>
+	<li>The sale is created.</li>
 </ol>
+
+``` 
+Note: A customer-facing screen is required, which will show the dynamically generated QR to him in order to be able to
+scan it and generate the sale.
+
+```
 
 ![ationetTR](Content/Images/DynamicQRPayments/demoQR.gif)
 
