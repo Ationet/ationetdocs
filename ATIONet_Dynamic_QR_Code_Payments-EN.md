@@ -36,8 +36,8 @@
 		- [Request Format](#Request-Format)
 		- [Response Format](#Request-Format)
 - [Messages-samples](#Messages-samples)
-	- [Get Sale Method](#Get-Sale-Method)
-	- [Sale Method](#Sale-Method)
+	- [Get Sale Method](#Get-Sale-method-sample)
+	- [Sale Method](#Sale-method-sample)
 	
 	 
 		
@@ -650,7 +650,7 @@ Body {
 
 ## Messages samples
 
-### Get Sale Method
+### Get sale method sample
 
 #### Get Request example
 
@@ -855,7 +855,7 @@ Body {
 ]
 ```
 
-### Sale Method
+### Sale method sample
 
 #### Request example
 
