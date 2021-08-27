@@ -97,6 +97,13 @@ Merchant Backend only encodes the minimum sale information in QR, It is the one 
 ```
 ![#f03c15]Important: Trama have to be in JSON format.
 ```
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
 <table>
 	<thead>
