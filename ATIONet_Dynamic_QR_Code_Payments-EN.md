@@ -370,59 +370,61 @@ Content-Type: application/json; charset=utf-8
 content-encoding: gzip 
 ```
 
-*Body {
-    "ApplicationType": "string",</br>
-    "ProcessingMode": "string",</br>
-    "MessageFormatVersion": "string",</br>
-    "TerminalIdentification": "string",</br>
-    "DeviceTypeIdentifier": "string",</br>
-    "TransactionCode": "string",</br>
-    "AccountType": "string",</br>
-    "EntryMethod": "string",</br>
-    "PumpNumber": "string",</br>
-    "ProductCode": string,</br>
-    "ProductUnitPrice": double,</br>
-    "ProductAmount": double,</br>
-    "ProductQuantity": double,</br>
-    "ProductData": [],</br>
-    "TransactionAmount": double,</br>
-    "UnitCode": string,</br>
-    "CurrencyCode": string,</br>
-    "BatchNumber": integerer,</br>
-    "ShiftNumber": string,</br>
-    "TransactionSequenceNumber": integer,</br>
-    "LocalTransactionDate": integerr,</br>
-    "LocalTransactionTime": integer,</br>
-    "CustomerData": {</br>
-        "ContractMode": "string"</br>
-    },</br>
-    "AuthorizationCode": "string",</br>
-    "InvoiceNumber": string,</br>
-    "ResponseCode": "string",</br>
-    "ResponseText": "string",</br>
-    "ReceiptData": "{ "CustomerName":"string",</br> 
-    		      "CustomerIdentification":"string",</br> 
-		      "CustomerPlate":"string",</br> 
-		      "CustomerPAN":"string",</br> 
-		      "CustomerLabel":"string",</br>
-		      "CompanyName":"string",</br>
-		      "CompanyCode":"string",</br>
-		      "TransactionId":"string",</br>
-		      "AuthorizationType":integer,</br>
-		      "CustomerVehiclePlate":"string",</br>
-		      "CustomerVehicleCode":"string",</br>
-		      "CustomerVehicleModel":"string",</br>
-		      "CustomerVehicleBrand":"string",</br>
-		      "CustomerTruckUnitNumber":"string",</br>
-		      "CustomerOdometer":"string",</br> 
-		      "CustomerDriverId":"string",</br> 
-		      "ContractCode":"string",</br>
-		      "CompanyTaxPayerId":"string",</br>
-		      "CompanyStreet1":"string",</br>
-		      "CompanyStreet2":"string",</br>
-		      "ContractBalanceMode":"string" }",</br>
-    "LongResponseText": "Autorizado"</br>
-}*
+```
+Body {
+    "ApplicationType": "string",
+    "ProcessingMode": "string",
+    "MessageFormatVersion": "string",
+    "TerminalIdentification": "string",
+    "DeviceTypeIdentifier": "string",
+    "TransactionCode": "string",
+    "AccountType": "string",
+    "EntryMethod": "string",
+    "PumpNumber": "string",
+    "ProductCode": string,
+    "ProductUnitPrice": double,
+    "ProductAmount": double,
+    "ProductQuantity": double,
+    "ProductData": [],
+    "TransactionAmount": double,
+    "UnitCode": string,
+    "CurrencyCode": string,
+    "BatchNumber": integerer,
+    "ShiftNumber": string,
+    "TransactionSequenceNumber": integer,
+    "LocalTransactionDate": integerr,
+    "LocalTransactionTime": integer,
+    "CustomerData": {
+        "ContractMode": "string"
+    },
+    "AuthorizationCode": "string",
+    "InvoiceNumber": string,
+    "ResponseCode": "string",
+    "ResponseText": "string",
+    "ReceiptData": "{ "CustomerName":"string", 
+    		      "CustomerIdentification":"string", 
+		      "CustomerPlate":"string", 
+		      "CustomerPAN":"string", 
+		      "CustomerLabel":"string",
+		      "CompanyName":"string",
+		      "CompanyCode":"string",
+		      "TransactionId":"string",
+		      "AuthorizationType":integer,
+		      "CustomerVehiclePlate":"string",
+		      "CustomerVehicleCode":"string",
+		      "CustomerVehicleModel":"string",
+		      "CustomerVehicleBrand":"string",
+		      "CustomerTruckUnitNumber":"string",
+		      "CustomerOdometer":"string", 
+		      "CustomerDriverId":"string", 
+		      "ContractCode":"string",
+		      "CompanyTaxPayerId":"string",
+		      "CompanyStreet1":"string",
+		      "CompanyStreet2":"string",
+		      "ContractBalanceMode":"string" }",
+    "LongResponseText": "Autorizado"
+}
+```
 
 
 
@@ -450,10 +452,276 @@ Header:
 Content-Type: application/json; charset=utf-8
 content-encoding: gzip 
 ```
+```
+body [
 
+    {
+        "TransactionId": "string",
+        "SubscriberCode": "string",
+        "TransactionSequenceNumber": "string",
+        "AuthorizationCode": "string",
+        "ResponseCode": "string",
+        "ResponseMessage": "string",
+        "Status": 3,
+        "Mode": 0,
+        "StatusDescription": "string",
+        "HostDateTime": "string",
+        "SubscriberDateTime": "string",
+        "SubscriberTimeZone": "string",
+        "SiteDateTime": "string",
+        "SiteTimeZone": "string",
+        "DateTime": "string",
+        "MerchantCode": "string",
+        "MerchantContractCode": "string",
+        "MerchantName": "string",
+        "MerchantCustomField0": null,
+        "MerchantCustomField1": null,
+        "MerchantCustomField2": null,
+        "MerchantCustomField3": null,
+        "SiteCode": "string",
+        "SiteName": "string",
+        "SiteShortName": "string",
+        "TerminalCode": "string",
+        "TerminalType": "string",
+        "TerminalId": "string",
+        "TerminalTypeId": "string",
+        "SubAccountId": "string",
+        "SecondarySubAccountId": null,
+        "AccountTypeDescription": "string",
+        "VehicleCode": "string",
+        "DriverCode": null,
+        "TransactionNetAmount": null,
+        "ProductUnitPriceRequested": double,
+        "ProductVolumeRequested": double,
+        "ProductAmountRequested": double,
+        "TransactionAmountRequested": double,
+        "ProductUnitPriceAuthorized": double,
+        "ProductVolumeAuthorized": double,
+        "ProductAmountAuthorized": double,
+        "TransactionAmountAuthorized": double,
+        "ProductUnitPriceDispensed": double,
+        "ProductVolumeDispensed": double,
+        "ProductAmountDispensed": double,
+        "ProductNetAmountDispensed": null,
+        "TransactionAmountDispensed": double,
+        "ProductUnitPriceCompany": double,
+        "ProductUnitPriceMerchant": double,
+        "ProductAmountCompany": double,
+        "ProductAmountMerchant": double,
+        "TransactionAmountCompany": double,
+        "TransactionAmountMerchant": double,
+        "MeasurementUnitCode": null,
+        "CurrencyCode": "string",
+        "FuelCode": "string",
+        "FuelMasterCode": "string",
+        "FuelMasterDescription": "string",
+        "InvoiceNumber": null,
+        "BatchNumber": null,
+        "ShiftNumber": null,
+        "PumpNumber": "string",
+        "EntryMethod": "string",
+        "CompanyCode": "string",
+        "CompanyName": "string",
+        "CompanyCustomField0": null,
+        "CompanyCustomField1": null,
+        "CompanyCustomField2": null,
+        "CompanyCustomField3": null,
+        "CompaniesGroupCode": "",
+        "ClassificationLabel1": "string",
+        "ClassificationLabel2": "string",
+        "ClassificationLabel3": "string",
+        "ClassificationLabel4": "string",
+        "ContractCode": "string",
+        "CompanyContractClassificationValue1": "string",
+        "CompanyContractClassificationValue2": "string",
+        "CompanyContractClassificationValue3": "string",
+        "CompanyContractClassificationValue4": "string",
+        "CompanyContractCustomField0": null,
+        "CompanyContractCustomField1": null,
+        "CompanyContractCustomField2": null,
+        "CompanyContractCustomField3": null,
+        "SubContractCode": "string",
+        "PrimaryIdentificationTrack": "string",
+        "SecondaryIdentificationTrack": null,
+        "PrimaryIdentificationPAN": "string",
+        "SecondaryIdentificationPAN": null,
+        "PrimaryIdentificationLabel": "string",
+        "SecondaryIdentificationLabel": null,
+        "PrimaryIdentificationModelDescription": "string",
+        "SecondaryIdentificationModelDescription": null,
+        "FleetCode": "string",
+        "FleetName": "string",
+        "VehiclePlate": "string",
+        "VehicleClassDescription": null,
+        "VehicleClassificationValue1": null,
+        "VehicleClassificationValue2": null,
+        "VehicleClassificationValue3": null,
+        "VehicleClassificationValue4": null,
+        "DriverName": null,
+        "DriverClassificationValue1": null,
+        "DriverClassificationValue2": null,
+        "DriverClassificationValue3": null,
+        "DriverClassificationValue4": null,
+        "CustomerData": {},
+        "FastTrackData": {},
+        "TaxesData": {},
+        "FeesData": [
+            {
+                "Name": "string",
+                "Value": double,
+                "Id": "string"
+            }
+        ],
+        "CompanyTaxpayerId": "string",
+        "ApplicationCode": null,
+        "DisputeDate": null,
+        "Reason": null,
+        "State": null,
+        "DisputeCommentCompany": null,
+        "ResolvedDate": null,
+        "DisputeResolveNetworkComment": null,
+        "Odometer": null,
+        "SiteCountryId": "string",
+        "SiteCountry": "string",
+        "SiteAddress": "string",
+        "SiteStateId": "string",
+        "SiteState": "string",
+        "SiteCity": "string",
+        "SiteZipCode": null,
+        "SiteClassificationValue1": "string",
+        "SiteClassificationValue2": null,
+        "SiteClassificationValue3": null,
+        "SiteClassificationValue4": null,
+        "SiteCustomField0": null,
+        "SiteCustomField1": null,
+        "SiteCustomField2": null,
+        "SiteCustomField3": null,
+        "DriverFirstName": null,
+        "DriverLastName": null,
+        "GPSVirtualOdometer": null,
+        "GPSDistance": null,
+        "GPSAddress": null,
+        "GPSComment": null,
+        "DriverCustomField0": null,
+        "DriverCustomField1": null,
+        "DriverCustomField2": null,
+        "DriverCustomField3": null,
+        "VehicleCustomField0": null,
+        "VehicleCustomField1": null,
+        "VehicleCustomField2": null,
+        "VehicleCustomField3": null,
+        "IdProgram": "string",
+        "ProgramDescription": "string",
+        "LatitudeStart": null,
+        "LongitudeStart": null,
+        "AltitudeStart": null,
+        "LatitudeEnd": null,
+        "LongitudeEnd": null,
+        "AltitudeEnd": null,
+        "ContingencyReason": null,
+        "AuthorizationType": 0,
+        "AttendantCode": null,
+        "PumpSide": null,
+        "VehicleBrand": "string",
+        "VehicleModel": null,
+        "Subsidized": null,
+        "SiteCountryCode": "string",
+        "CompanyContractCustomInterface0": bool,
+        "CompanyContractCustomInterface1": bool,
+        "CompanyContractCustomInterface2": bool,
+        "CompanyContractCustomInterface3": bool,
+        "CompanyContractCustomInterface4": bool,
+        "CompanyContractCustomOperation0": bool,
+        "CompanyContractCustomOperation1": bool,
+        "CompanyContractCustomOperation2": bool,
+        "CompanyContractCustomOperation3": bool,
+        "CompanyContractCustomOperation4": bool,
+        "ProductsData": [],
+        "ModifiersData": []
+    }
+]
+```
+
+
+## Messages samples
+
+### Sale Method
+
+#### Request example
+
+```
+{
+    "PumpNumber": "1",
+    "TransactionSequenceNumber": 123,
+    "TerminalIdentification": "S2G321",
+    "PrimaryTrack": "0000000000001",
+    "TransactionAmount": 99,
+    "ProductCode": "1",
+    "ProductUnitPrice": 1,
+    "ProductAmount": 99,
+    "ProductQuantity": 99
+    "DispatchID": "d27a1c89-ab2f-469e-91aa-3a20943ab79c"
+}
+```
+
+#### Response example
+
+```
+{
+    "ApplicationType": "FCS",
+    "ProcessingMode": "1",
+    "MessageFormatVersion": "1.3",
+    "TerminalIdentification": "S2G321",
+    "DeviceTypeIdentifier": "4",
+    "TransactionCode": "210",
+    "AccountType": "1",
+    "EntryMethod": "S",
+    "PumpNumber": "1",
+    "ProductCode": null,
+    "ProductUnitPrice": null,
+    "ProductAmount": null,
+    "ProductQuantity": null,
+    "ProductData": [],
+    "TransactionAmount": null,
+    "UnitCode": null,
+    "CurrencyCode": null,
+    "BatchNumber": null,
+    "ShiftNumber": null,
+    "TransactionSequenceNumber": 296,
+    "LocalTransactionDate": 20210827,
+    "LocalTransactionTime": 125346,
+    "CustomerData": {
+        "ContractMode": "1"
+    },
+    "AuthorizationCode": "052554144",
+    "InvoiceNumber": null,
+    "ResponseCode": "00000",
+    "ResponseText": "Autorizado",
+    "ReceiptData": "{\"CustomerName\":\"5924 - HAL180\",\"CustomerIdentification\":\"5924\",\"CustomerPlate\":\"HAL180\",\"CustomerPAN\":\"004\",\"CustomerLabel\":\"Identification1 ATIONet\",\"CompanyName\":\"CON'AUTO\",\"CompanyCode\":\"40206\",\"TransactionId\":\"00e49ed2-210f-4d0d-8093-dd80996c05e7\",\"AuthorizationType\":0,\"CustomerVehiclePlate\":\"HAL180\",\"CustomerVehicleCode\":\"5924\",\"CustomerVehicleModel\":null,\"CustomerVehicleBrand\":\"TOYOTA\",\"CustomerTruckUnitNumber\":null,\"CustomerOdometer\":\"\",\"CustomerDriverId\":null,\"ContractCode\":\"40206\",\"CompanyTaxPayerId\":\"15024\",\"CompanyStreet1\":\"Av. Conauto\",\"CompanyStreet2\":null,\"ContractBalanceMode\":\"4\"}",
+    "LongResponseText": "Autorizado"
+}
+```
+
+### Get Sale Method
+
+#### Request example
+
+```
+{
+    "ActionCode": "931",
+    "SubscriberCode": "S2G",
+    "LocalDateFrom": "2021/08/05 11:39:45",
+    "LocalDateTo": "2021/08/05 11:39:45",
+    "DispatchId": "d27a1c89-ab2f-469e-91aa-3a20943ab79c"
+}
+```
+
+#### Response example
+
+```
 [
     {
-        "TransactionId": "92a3c3cb-49d6-4b64-a9e2-5544fb155227",
+        "TransactionId": "d27a1c89-ab2f-469e-91aa-3a20943ab79c",
         "SubscriberCode": "S2G",
         "TransactionSequenceNumber": "120",
         "AuthorizationCode": "075532151",
@@ -637,3 +905,4 @@ content-encoding: gzip
         "ModifiersData": []
     }
 ]
+```
