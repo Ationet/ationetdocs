@@ -31,10 +31,12 @@
 		- [Description](#Description)
 		- [Request Format](#Request-Format)
 		- [Response Format](#Request-Format)
+		- [Request Example](#Request-Example-of-Get-Sale-method)
 	- [Sale Method](#Sale-Method)
 		- [Description](#Description)
 		- [Request Format](#Request-Format)
 		- [Response Format](#Request-Format)
+		- [Request Example](#Request-Example-of-Sale-method)
 - [Messages-samples](#Messages-samples)
 	- [Get Sale Method](#Get-Sale-method-sample)
 	- [Sale Method](#Sale-method-sample)
@@ -120,7 +122,7 @@ Important: Plot have to be in JSON format. QR image must be free text type.
 	<tbody>
 		<tr valign="top">
 			<td>
-				<p align="left">DispatchID</p>
+				<p align="left">IDDispatch</p>
 			</td>
 			<td>
 				<p align="center">(string) Guid ID</p>
@@ -282,7 +284,7 @@ Important: Plot have to be in JSON format. QR image must be free text type.
 Complete Plot example in JSON Format:
 
 {
-    "DispatchID": "dc152309-6b50-45cc-939c-a43d69ec817a",
+    "IDDispatch": "dc152309-6b50-45cc-939c-a43d69ec817a",
     "PumpNumber": "1",
     "TransactionSequenceNumber": 808,
     "LocalTransactionDate": 20210812, 
@@ -348,17 +350,9 @@ Return a Sale information.
 *Method: POST* </br>
 
 ```
-Body { 
-     "DispatchID": "string",
-     "ActionCode": "string",
-     "SubscriberCode": "string",
-     "LocalDateFrom": "Date",
-     "LocalDateTo": "Date"
-     }
+Body { "IDDispatch": "string" }
 ```
-```
-Note: SubscriberCode are the first three characters of the TerminalIdentification
-```
+
 #### Response Format
 Header:
 ```
@@ -559,7 +553,7 @@ body [
 
 ```
 {
-    "DispatchID": "d27a1c89-ab2f-469e-91aa-3a20943ab79c",
+    "IDDispatch": "d27a1c89-ab2f-469e-91aa-3a20943ab79c",
     "ActionCode": "931",
     "SubscriberCode": "S2G",
     "LocalDateFrom": "2021/08/05 11:39:45",
@@ -579,7 +573,7 @@ Create a Sale. The sale creation recibes a Dispatch ID. It's must be unic.
 *URL: /api/ContactlessPayment/ProcessSale* </br>
 *Method: POST* </br>
 *Body { 
-	"DispatchId": "string",</br>
+	"IDDispatch": "string",</br>
 	"PumpNumber": "string",</br> 
 	"TransactionSequenceNumber": integer,</br>
 	"LocalTransactionDate": integer,</br>
@@ -661,7 +655,7 @@ Body {
 
 ```
 {
-    "DispatchID": "d27a1c89-ab2f-469e-91aa-3a20943ab79c",
+    "IDDispatch": "d27a1c89-ab2f-469e-91aa-3a20943ab79c",
     "PumpNumber": "1",
     "TransactionSequenceNumber": 123,
     "TerminalIdentification": "S2G321",
@@ -682,14 +676,7 @@ Body {
 #### Get Request example
 
 ```
-{
-    "DispatchID": "d27a1c89-ab2f-469e-91aa-3a20943ab79c",
-    "ActionCode": "931",
-    "SubscriberCode": "S2G",
-    "LocalDateFrom": "2021/08/05 11:39:45",
-    "LocalDateTo": "2021/08/05 11:39:45"
-    
-}
+{ "IDDispatch": "d27a1c89-ab2f-469e-91aa-3a20943ab79c" }
 ```
 
 #### Response example
@@ -889,7 +876,7 @@ Body {
 
 ```
 {
-    "DispatchID": "d27a1c89-ab2f-469e-91aa-3a20943ab79c",
+    "IDDispatch": "d27a1c89-ab2f-469e-91aa-3a20943ab79c",
     "PumpNumber": "1",
     "TransactionSequenceNumber": 123,
     "TerminalIdentification": "S2G321",
