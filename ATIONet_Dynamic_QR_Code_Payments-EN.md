@@ -709,7 +709,7 @@ body [
 
 ### Get Sale Method
 
-#### Request example
+#### Get Request example
 
 ```
 {
