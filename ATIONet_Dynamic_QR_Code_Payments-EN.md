@@ -27,20 +27,20 @@
 	- [STEP 4: Confirm the Transaction Status](#STEP-4:-Confirm-the-Transaction-Status)
 	- [Integration Checklist](#Integration-Checklist)
 - [API Documentation](#API-Documentatio)
-	- [Sale Method](#Sale-Method)
+	 - [Get Sale Method](#Get-Sale-Method)
 		- [Description](#Description)
 		- [Request Format](#Request-Format)
 		- [Response Format](#Request-Format)
-	- [Get Sale Method](#Get-Sale-Method)
+	- [Sale Method](#Sale-Method)
 		- [Description](#Description)
 		- [Request Format](#Request-Format)
 		- [Response Format](#Request-Format)
 - [Messages samples](#getTransaction)
-	- [Sale Method](#Sale-Method)
-		- [Request Example](#Request-Example)
-		- [Response Example](#Response-Example)
 	 - [Get Sale Method](#Get-Sale-Method)
 		- [Get Request Example](#Get-Request-Example)
+		- [Response Example](#Response-Example)
+	 -[Sale Method](#Sale-Method)
+		- [Request Example](#Request-Example)
 		- [Response Example](#Response-Example)
 	
 
@@ -313,10 +313,11 @@ Complete Plot example in JSON Format:
 
 ### STEP 3: Confirm the Transaction Status
 
-When the QR code is generated for an specific transaction, the POS's Backend Get The Transaction status with a pollin process using the [Transaction status API](#Get-Sale-Method)
+When the QR code is generated for an specific transaction, the POS's Backend Get The Transaction status with a pollin process using the [Transaction status API](#Get-Sale-Method).
 
 ```
-Polling : Setup a polling process after regular intervals using the Transaction Status API. To get the best results out of a status query, you should check the status 8 times/minute.
+Polling : Setup a polling process after regular intervals using the Transaction Status API. 
+To get the best results out of a status query, you should check the status 8 times/minute.
 
 ```
 
@@ -344,95 +345,6 @@ Post completion of integration in your staging environment, it is mandatory to t
 ## API Documentation
 
 *URL:  ationetmobilepayment-appshost-test.azurewebsites.net* </br>
-
-### Sale Method
-
-#### Description
-
-Create a Sale. The sale creation recibes a Dispatch ID. It's must be unic. 
-
-#### Request Format
-
-*URL: /api/ContactlessPayment/ProccessCash* </br>
-*Method: POST* </br>
-*Body { "PumpNumber": "string",</br> 
-	"TransactionSequenceNumber": integer,</br>
-	"LocalTransactionDate": integer,</br>
-	"LocalTransactionTime": integer,</br>
-	"TerminalIdentification": "string",</br>
-	"PrimaryTrack": "string",</br> 
-	"TransactionAmount": integer,</br> 
-	"ProductCode": "string",</br>
-	"ProductUnitPrice": double,</br> 
-	"ProductAmount": double,</br> 
-	"ProductQuantity": double,</br>
-	"DispatchId": "string"</br>
-}*
-#### Response Format 
-
-Header:
-```
-Content-Type: application/json; charset=utf-8
-content-encoding: gzip 
-```
-
-```
-Body {
-    "ApplicationType": "string",
-    "ProcessingMode": "string",
-    "MessageFormatVersion": "string",
-    "TerminalIdentification": "string",
-    "DeviceTypeIdentifier": "string",
-    "TransactionCode": "string",
-    "AccountType": "string",
-    "EntryMethod": "string",
-    "PumpNumber": "string",
-    "ProductCode": string,
-    "ProductUnitPrice": double,
-    "ProductAmount": double,
-    "ProductQuantity": double,
-    "ProductData": [],
-    "TransactionAmount": double,
-    "UnitCode": string,
-    "CurrencyCode": string,
-    "BatchNumber": integerer,
-    "ShiftNumber": string,
-    "TransactionSequenceNumber": integer,
-    "LocalTransactionDate": integerr,
-    "LocalTransactionTime": integer,
-    "CustomerData": {
-        "ContractMode": "string"
-    },
-    "AuthorizationCode": "string",
-    "InvoiceNumber": string,
-    "ResponseCode": "string",
-    "ResponseText": "string",
-    "ReceiptData": "{ "CustomerName":"string", 
-    		      "CustomerIdentification":"string", 
-		      "CustomerPlate":"string", 
-		      "CustomerPAN":"string", 
-		      "CustomerLabel":"string",
-		      "CompanyName":"string",
-		      "CompanyCode":"string",
-		      "TransactionId":"string",
-		      "AuthorizationType":integer,
-		      "CustomerVehiclePlate":"string",
-		      "CustomerVehicleCode":"string",
-		      "CustomerVehicleModel":"string",
-		      "CustomerVehicleBrand":"string",
-		      "CustomerTruckUnitNumber":"string",
-		      "CustomerOdometer":"string", 
-		      "CustomerDriverId":"string", 
-		      "ContractCode":"string",
-		      "CompanyTaxPayerId":"string",
-		      "CompanyStreet1":"string",
-		      "CompanyStreet2":"string",
-		      "ContractBalanceMode":"string" }",
-    "LongResponseText": "Autorizado"
-}
-```
-
-
 
 ### Get Sale Method
 
@@ -648,65 +560,95 @@ body [
 ]
 ```
 
-
-## Messages samples
-
 ### Sale Method
 
-#### Request example
+#### Description
+
+Create a Sale. The sale creation recibes a Dispatch ID. It's must be unic. 
+
+#### Request Format
+
+*URL: /api/ContactlessPayment/ProccessCash* </br>
+*Method: POST* </br>
+*Body { "PumpNumber": "string",</br> 
+	"TransactionSequenceNumber": integer,</br>
+	"LocalTransactionDate": integer,</br>
+	"LocalTransactionTime": integer,</br>
+	"TerminalIdentification": "string",</br>
+	"PrimaryTrack": "string",</br> 
+	"TransactionAmount": integer,</br> 
+	"ProductCode": "string",</br>
+	"ProductUnitPrice": double,</br> 
+	"ProductAmount": double,</br> 
+	"ProductQuantity": double,</br>
+	"DispatchId": "string"</br>
+}*
+#### Response Format 
+
+Header:
+```
+Content-Type: application/json; charset=utf-8
+content-encoding: gzip 
+```
 
 ```
-{
-    "PumpNumber": "1",
-    "TransactionSequenceNumber": 123,
-    "TerminalIdentification": "S2G321",
-    "PrimaryTrack": "0000000000001",
-    "TransactionAmount": 99,
-    "ProductCode": "1",
-    "ProductUnitPrice": 1,
-    "ProductAmount": 99,
-    "ProductQuantity": 99
-    "DispatchID": "d27a1c89-ab2f-469e-91aa-3a20943ab79c"
-}
-```
-
-#### Response example
-
-```
-{
-    "ApplicationType": "FCS",
-    "ProcessingMode": "1",
-    "MessageFormatVersion": "1.3",
-    "TerminalIdentification": "S2G321",
-    "DeviceTypeIdentifier": "4",
-    "TransactionCode": "210",
-    "AccountType": "1",
-    "EntryMethod": "S",
-    "PumpNumber": "1",
-    "ProductCode": null,
-    "ProductUnitPrice": null,
-    "ProductAmount": null,
-    "ProductQuantity": null,
+Body {
+    "ApplicationType": "string",
+    "ProcessingMode": "string",
+    "MessageFormatVersion": "string",
+    "TerminalIdentification": "string",
+    "DeviceTypeIdentifier": "string",
+    "TransactionCode": "string",
+    "AccountType": "string",
+    "EntryMethod": "string",
+    "PumpNumber": "string",
+    "ProductCode": string,
+    "ProductUnitPrice": double,
+    "ProductAmount": double,
+    "ProductQuantity": double,
     "ProductData": [],
-    "TransactionAmount": null,
-    "UnitCode": null,
-    "CurrencyCode": null,
-    "BatchNumber": null,
-    "ShiftNumber": null,
-    "TransactionSequenceNumber": 296,
-    "LocalTransactionDate": 20210827,
-    "LocalTransactionTime": 125346,
+    "TransactionAmount": double,
+    "UnitCode": string,
+    "CurrencyCode": string,
+    "BatchNumber": integerer,
+    "ShiftNumber": string,
+    "TransactionSequenceNumber": integer,
+    "LocalTransactionDate": integerr,
+    "LocalTransactionTime": integer,
     "CustomerData": {
-        "ContractMode": "1"
+        "ContractMode": "string"
     },
-    "AuthorizationCode": "052554144",
-    "InvoiceNumber": null,
-    "ResponseCode": "00000",
-    "ResponseText": "Autorizado",
-    "ReceiptData": "{\"CustomerName\":\"5924 - HAL180\",\"CustomerIdentification\":\"5924\",\"CustomerPlate\":\"HAL180\",\"CustomerPAN\":\"004\",\"CustomerLabel\":\"Identification1 ATIONet\",\"CompanyName\":\"CON'AUTO\",\"CompanyCode\":\"40206\",\"TransactionId\":\"00e49ed2-210f-4d0d-8093-dd80996c05e7\",\"AuthorizationType\":0,\"CustomerVehiclePlate\":\"HAL180\",\"CustomerVehicleCode\":\"5924\",\"CustomerVehicleModel\":null,\"CustomerVehicleBrand\":\"TOYOTA\",\"CustomerTruckUnitNumber\":null,\"CustomerOdometer\":\"\",\"CustomerDriverId\":null,\"ContractCode\":\"40206\",\"CompanyTaxPayerId\":\"15024\",\"CompanyStreet1\":\"Av. Conauto\",\"CompanyStreet2\":null,\"ContractBalanceMode\":\"4\"}",
+    "AuthorizationCode": "string",
+    "InvoiceNumber": string,
+    "ResponseCode": "string",
+    "ResponseText": "string",
+    "ReceiptData": "{ "CustomerName":"string", 
+    		      "CustomerIdentification":"string", 
+		      "CustomerPlate":"string", 
+		      "CustomerPAN":"string", 
+		      "CustomerLabel":"string",
+		      "CompanyName":"string",
+		      "CompanyCode":"string",
+		      "TransactionId":"string",
+		      "AuthorizationType":integer,
+		      "CustomerVehiclePlate":"string",
+		      "CustomerVehicleCode":"string",
+		      "CustomerVehicleModel":"string",
+		      "CustomerVehicleBrand":"string",
+		      "CustomerTruckUnitNumber":"string",
+		      "CustomerOdometer":"string", 
+		      "CustomerDriverId":"string", 
+		      "ContractCode":"string",
+		      "CompanyTaxPayerId":"string",
+		      "CompanyStreet1":"string",
+		      "CompanyStreet2":"string",
+		      "ContractBalanceMode":"string" }",
     "LongResponseText": "Autorizado"
 }
 ```
+
+
+## Messages samples
 
 ### Get Sale Method
 
@@ -911,4 +853,61 @@ body [
         "ModifiersData": []
     }
 ]
+```
+
+### Sale Method
+
+#### Request example
+
+```
+{
+    "PumpNumber": "1",
+    "TransactionSequenceNumber": 123,
+    "TerminalIdentification": "S2G321",
+    "PrimaryTrack": "0000000000001",
+    "TransactionAmount": 99,
+    "ProductCode": "1",
+    "ProductUnitPrice": 1,
+    "ProductAmount": 99,
+    "ProductQuantity": 99
+    "DispatchID": "d27a1c89-ab2f-469e-91aa-3a20943ab79c"
+}
+```
+
+#### Response example
+
+```
+{
+    "ApplicationType": "FCS",
+    "ProcessingMode": "1",
+    "MessageFormatVersion": "1.3",
+    "TerminalIdentification": "S2G321",
+    "DeviceTypeIdentifier": "4",
+    "TransactionCode": "210",
+    "AccountType": "1",
+    "EntryMethod": "S",
+    "PumpNumber": "1",
+    "ProductCode": null,
+    "ProductUnitPrice": null,
+    "ProductAmount": null,
+    "ProductQuantity": null,
+    "ProductData": [],
+    "TransactionAmount": null,
+    "UnitCode": null,
+    "CurrencyCode": null,
+    "BatchNumber": null,
+    "ShiftNumber": null,
+    "TransactionSequenceNumber": 296,
+    "LocalTransactionDate": 20210827,
+    "LocalTransactionTime": 125346,
+    "CustomerData": {
+        "ContractMode": "1"
+    },
+    "AuthorizationCode": "052554144",
+    "InvoiceNumber": null,
+    "ResponseCode": "00000",
+    "ResponseText": "Autorizado",
+    "ReceiptData": "{\"CustomerName\":\"5924 - HAL180\",\"CustomerIdentification\":\"5924\",\"CustomerPlate\":\"HAL180\",\"CustomerPAN\":\"004\",\"CustomerLabel\":\"Identification1 ATIONet\",\"CompanyName\":\"CON'AUTO\",\"CompanyCode\":\"40206\",\"TransactionId\":\"00e49ed2-210f-4d0d-8093-dd80996c05e7\",\"AuthorizationType\":0,\"CustomerVehiclePlate\":\"HAL180\",\"CustomerVehicleCode\":\"5924\",\"CustomerVehicleModel\":null,\"CustomerVehicleBrand\":\"TOYOTA\",\"CustomerTruckUnitNumber\":null,\"CustomerOdometer\":\"\",\"CustomerDriverId\":null,\"ContractCode\":\"40206\",\"CompanyTaxPayerId\":\"15024\",\"CompanyStreet1\":\"Av. Conauto\",\"CompanyStreet2\":null,\"ContractBalanceMode\":\"4\"}",
+    "LongResponseText": "Autorizado"
+}
 ```
