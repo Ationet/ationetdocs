@@ -23,6 +23,8 @@
 	- [Introduction](#Introduction)
 	- [STEP 1 Get your authentication keys (Pending/ In progress)](#STEP-1-Get-your-authentication-keys)
 	- [STEP 2 Create Dynamic QR Code](#STEP-2-Create-Dynamic-QR-Code)
+		-[Plot example](#Plot-example)
+		-[QR Image example](#QR-Image-example)
 	- [STEP 3 Customer scans Dynamic QR code](#STEP-3-Customer-scans-Dynamic-QR-code)
 	- [STEP 4 Confirm the Transaction Status](#STEP-4-Confirm-the-Transaction-Status)
 	- [Integration Checklist](#Integration-Checklist)
@@ -38,10 +40,7 @@
 - [Messages-samples](#Messages-samples)
 	- [Get Sale Method](#Get-Sale-method-sample)
 	- [Sale Method](#Sale-method-sample)
-	
-	 
-		
-
+		 
 ## Overview
 
 ![ationetTR](Content/Images/DynamicQRPayments/schema.png)
@@ -293,10 +292,6 @@ Important: Plot have to be in JSON format. QR image must be free text type
 
 ### Examples
 
-#### QR Image example
-
-![ationetTR](Content/Images/DynamicQRPayments/qr_example.PNG)
-
 #### Plot example
 ```
 Complete Plot example in JSON Format:
@@ -317,6 +312,10 @@ Complete Plot example in JSON Format:
 }
 	
 ```
+
+#### QR Image example
+
+![ationetTR](Content/Images/DynamicQRPayments/qr_example.PNG)
 
 ### STEP 3 Confirm the Transaction Status
 
