@@ -42,7 +42,7 @@
 
 ## Overview
 
-![ationetTR](Content/Images/DynamicQRPayments/final.PNG)
+![ationetTR](Content/Images/DynamicQRPayments/schemaDarkLight.png)
 
 ### Introduction
 
@@ -70,7 +70,7 @@ scan it and generate the sale.
 
 ## QR code Payments squence
 
-![ationetTR](Content/Images/DynamicQRPayments/dark_sequence.svg)
+![ationetTR](Content/Images/DynamicQRPayments/seq_darklight.svg)
 
 ## Dynamic QR Code Payments Implementation
 
