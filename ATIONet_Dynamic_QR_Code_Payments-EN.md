@@ -344,7 +344,7 @@ Return a Sale information.
 
 #### Request Format
 
-*URL: /api/ContactlessPayment/GetTransaction* </br>
+*URL: /api/ContactlessPayment/GetSale* </br>
 *Method: POST* </br>
 *Body { 
      "DispatchID": "string",
@@ -558,7 +558,7 @@ Create a Sale. The sale creation recibes a Dispatch ID. It's must be unic.
 
 #### Request Format
 
-*URL: /api/ContactlessPayment/ProccessCash* </br>
+*URL: /api/ContactlessPayment/ProcessSale* </br>
 *Method: POST* </br>
 *Body { 
 	"DispatchId": "string",</br>
