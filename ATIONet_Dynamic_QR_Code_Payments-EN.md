@@ -41,7 +41,7 @@
 		 
 ## Overview
 
-![ationetTR](Content/Images/DynamicQRPayments/schema.png)
+![ationetTR](Content/Images/DynamicQRPayments/dark_schema.svg)
 
 ### Introduction
 
