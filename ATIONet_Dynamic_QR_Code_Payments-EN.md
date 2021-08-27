@@ -515,11 +515,11 @@ Post completion of integration in your staging environment, it is mandatory to t
    <li></li>	
 </ol>
 
-### API Documentation
+## API Documentation
 
 *URL:  ationetmobilepayment-appshost-test.azurewebsites.net* </br>
 
-### Request Format 
+#### Request Format 
 
 *URL: api/makeASale* xxxx </br>
 *Method: POST* </br>
@@ -537,7 +537,7 @@ Post completion of integration in your staging environment, it is mandatory to t
 	"DispatchId": "string"</br>
 }*
 
-### Response Format 
+#### Response Format 
 
 Header:
 ```
