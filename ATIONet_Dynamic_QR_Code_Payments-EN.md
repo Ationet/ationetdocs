@@ -69,7 +69,7 @@ scan it and generate the sale.
 
 ## QR code Payments squence
 
-![ationetTR](Content/Images/DynamicQRPayments/sequence.svg)
+![ationetTR](Content/Images/DynamicQRPayments/dark_sequence.svg)
 
 ## Dynamic QR Code Payments Implementation
 
