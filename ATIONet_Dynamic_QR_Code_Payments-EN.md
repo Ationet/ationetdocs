@@ -21,10 +21,10 @@
 - [QR code Payments squence](#QR-code-Payments-squence)
 - [Dynamic QR Code Payments Implementation](#Dynamic-QR-Code-Payments-Implementation)	
 	- [Introduction](#Introduction)
-	- [STEP 1 Get your authentication keys](#STEP-1-Get-your-authentication-keys-|-Pending/In-progress)
-	- [STEP 2 Create Dynamic QR Code](#STEP-2-:-Create-Dynamic-QR-Code)
-	- [STEP 3 Customer scans Dynamic QR code](#STEP-3:-Customer-scans-Dynamic-QR-code)
-	- [STEP 4 Confirm the Transaction Status](#STEP-4:-Confirm-the-Transaction-Status)
+	- [STEP 1 Get your authentication keys (Pending/ In progress)](#STEP-1-Get-your-authentication-keys)
+	- [STEP 2 Create Dynamic QR Code](#STEP-2-Create-Dynamic-QR-Code)
+	- [STEP 3 Customer scans Dynamic QR code](#STEP-3-Customer-scans-Dynamic-QR-code)
+	- [STEP 4 Confirm the Transaction Status](#STEP-4-Confirm-the-Transaction-Status)
 	- [Integration Checklist](#Integration-Checklist)
 - [API Documentation](#API-Documentatio)
 	 - [Get Sale Method](#Get-Sale-Method)
@@ -84,8 +84,10 @@ scan it and generate the sale.
 
 The section describes the integration steps required to integrate ATIONe's Dynamic QR Code Payments with billing POS to accept contactless payment from your customer using the Ationet Driver App payment.
 
-### STEP 1 Get your authentication keys | Pending/In-progress
-
+### STEP 1 Get your authentication keys
+```
+Importante: Pending/ In progress. Ignore this step.
+```
 <ul>
 	<li>POS's Backend Key: A unique secret key used to secure encryption of every request. This needs to be kept on server-side and should not be shared with anyone.</li>
 </ul>
@@ -95,7 +97,7 @@ Note: Never share your secret POS's Backend Key with anyone.
 ```
 
 
-### STEP 2: Create Dynamic QR Code
+### STEP 2 Create Dynamic QR Code
 
 POS's Backend Backend only encodes the minimum sale information in QR, It is the one that comes from site controller when generating a sale. The rest of the plot information is completed by the POS's Backend.The following table describes each field in the table, its description and its origin.
 
@@ -313,7 +315,7 @@ Complete Plot example in JSON Format:
 	
 ```
 
-### STEP 3: Confirm the Transaction Status
+### STEP 3 Confirm the Transaction Status
 
 When the QR code is generated for an specific transaction, the POS's Backend Get The Transaction status with a pollin process using the [Transaction status API](#Get-Sale-Method).
 
@@ -323,7 +325,7 @@ To get the best results out of a status query, you should check the status 8 tim
 
 ```
 
-### STEP 4: Customer scans Dynamic QR code
+### STEP 4 Customer scans Dynamic QR code
 
 When the QR code is generated for an specific transaction, the customer scans that QR code and pays using Ationet Driver App payment. The customer is notified about the payment status on their Ationet Driver App  after the successful completion of payment. If you want to implement a new client app you can check the specification of the [create sale api](#Sale-Method).
 
