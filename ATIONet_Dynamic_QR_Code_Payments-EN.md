@@ -350,7 +350,7 @@ Return a Sale information.
 *Method: POST* </br>
 
 ```
-Body { "IDDispatch": "string" }
+Body {"IDDispatch": "string"}
 ```
 
 #### Response Format
