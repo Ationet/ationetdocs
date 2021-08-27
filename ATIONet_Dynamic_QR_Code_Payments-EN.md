@@ -36,13 +36,14 @@
 		- [Request Format](#Request-Format)
 		- [Response Format](#Request-Format)
 - [Messages samples](#getTransaction)
+	-[Sale Method](#Sale-Method)
+		- [Request Example](#Request-Example)
+		- [Response Example](#Response-Example)
 	 - [Get Sale Method](#Get-Sale-Method)
 		- [Get Request Example](#Get-Request-Example)
 		- [Response Example](#Response-Example)
 	
-	 -[Sale Method](#Sale-Method)
-		- [Request Example](#Request-Example)
-		- [Response Example](#Response-Example)
+	 
 		
 
 ## Overview
