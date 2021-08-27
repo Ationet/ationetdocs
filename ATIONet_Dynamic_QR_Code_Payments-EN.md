@@ -38,7 +38,8 @@
 - [Messages-samples](#Messages-samples)
 	- [Get Sale Method](#Get-Sale-method-sample)
 	- [Sale Method](#Sale-method-sample)
-		 
+
+![#f03c15](sdsd)
 ## Overview
 
 ![ationetTR](Content/Images/DynamicQRPayments/final.PNG)
