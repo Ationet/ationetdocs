@@ -80,7 +80,7 @@ scan it and generate the sale.
 
 ### Introduction
 
-The section describes the integration steps required to integrate ATIONe's Dynamic QR Code Payments with billing POS to accept contactless payment from your customer using the Ationet Driver App payment.
+The section describes the integration steps required to integrate ATIONet's Dynamic QR Code Payments with billing POS to accept contactless payment from your customer using the Ationet Driver App payment.
 
 ### STEP 1 Get your authentication keys
 ```
@@ -203,7 +203,7 @@ Important: Plot have to be in JSON format. QR image must be free text type.
 			 	<p align="center">Site controller/POS IdentificationAtionet</p>
 			 </td>
 			<td>
-				<p>It must be requested from ationet</p>
+				<p>It must be requested from ATIONet</p>
 			</td>
 		 </tr>
 		<tr valign="top">
@@ -282,6 +282,7 @@ Important: Plot have to be in JSON format. QR image must be free text type.
 ### Examples
 
 #### Plot example
+
 ```
 Complete Plot example in JSON Format:
 
