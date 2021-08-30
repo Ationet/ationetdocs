@@ -427,7 +427,7 @@ This section describe through a table  all  states that a sale can have.
 			<th rowspan="2" width="125" align="left">
 				State name
 			</th>			
-			<th rowspan="2" width="125" align="left">
+			<th rowspan="2" width="125" align="center">
 				ID
 			</th>			
 			<th rowspan="2" width="125" align="left">
