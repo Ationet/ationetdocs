@@ -41,6 +41,11 @@
 
 ## Overview
 
+Explaining in a general way, ATIONet Fleet's Mobile Payments solution is divided into two parts. The first part is composed of the API, and the cloud server which is in charge of queuing the requests from cutomers.
+
+The second part of the solution is divided into a socket Server that is responsible for unqueuing those requests, validating them against ATIONet, and in case of obtaining a positive response, processing them on the Site System side, and returning a result to the client.
+
+
 ![ationetTRCancel](Content/Images/MobilePaymentFleet/API_Schem.png)
 
 
