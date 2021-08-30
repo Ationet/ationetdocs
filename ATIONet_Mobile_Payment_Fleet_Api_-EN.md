@@ -652,7 +652,7 @@ This section describe through a table  all  states that a sale can have.
 ### Transaction states sequence diagram on Cancelation Request
 
 
-![ationetTRCancel](Content/Images/MobilePaymentFleet/MobilePaymentFleetCancelationState.png)
+![ationetTRCancel](Content/Images/MobilePaymentFleet/MobilePaymentFleetCancelationState2.png)
 
 ## Response Codes
 
