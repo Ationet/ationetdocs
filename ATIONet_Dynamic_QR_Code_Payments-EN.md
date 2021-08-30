@@ -318,7 +318,7 @@ To get the best results out of a status query, you should check the status 8 tim
 
 ### STEP 4 Customer scans Dynamic QR code
 
-When the QR code is generated for an specific transaction, the customer scans that QR code and pays using Ationet Driver App payment. The customer is notified about the payment status on their Ationet Driver App  after the successful completion of payment. If you want to implement a new client app you can check the specification of the [create sale api](#Sale-Method).
+When the QR code is generated for an specific transaction, the customer scans that QR code and pays using Ationet Driver App. The customer is notified about the payment status on their Ationet Driver App  after the successful completion of payment. If you want to implement a new client app you can check the specification of the [create sale api](#Sale-Method).
 
 
 ```
@@ -331,7 +331,7 @@ Note: Customers cannot change the Transaction amount in their app on scanning th
 Post completion of integration in your staging environment, it is mandatory to test the integration before moving into the live environment with production. Below points should be taken care of during the integration of the flow:
 
 <ol>
-   <li>The transaction status should be verified through the Transaction Status API in the payment flow.</li>	
+   <li>The Transaction status should be verified through the Transaction Status API in the payment flow.</li>	
    <li>The Dispacht ID passed to Ationet should be unique.</li>	
    <li>The amount must not contain more than 2 decimal points, comma, or any special characters.</li>	 
    <li>Dispatch ID parameter is mandatory for creating QR.</li>	
@@ -357,11 +357,13 @@ Body {"IDDispatch": "string"}
 ```
 
 #### Response Format
+
 Header:
 ```
 Content-Type: application/json; charset=utf-8
 content-encoding: gzip 
 ```
+
 ```
 body [
 
@@ -570,6 +572,7 @@ Create a Sale. The sale creation recibes a Dispatch ID. It's must be unique.
 
 *URL: /api/ContactlessPayment/ProcessSale* </br>
 *Method: POST* </br>
+
 ```
 Body { 
 	"IDDispatch": "string",
