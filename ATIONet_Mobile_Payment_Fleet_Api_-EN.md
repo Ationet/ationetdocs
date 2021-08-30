@@ -41,7 +41,7 @@
 
 ## Overview
 
-![ationetTRCancel](Content/Images/MobilePaymentFleet/API_Schema.svg)
+![ationetTRCancel](Content/Images/MobilePaymentFleet/API_Schema.png)
 
 
 ### Introduction
