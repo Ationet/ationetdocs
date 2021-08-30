@@ -15,37 +15,35 @@
 
 ## Contents ##
 
-- [Overview](#overview)
+- [Visión general](#Visión-general)
 	- [Introduction](#Introduccion)
-	- [Overview of Dynamic QR Code](#Descripcion-general-del-codigo-QR-dinamico)
-- [QR code Payments squence](#Secuencia-de-pagos-con-código-QR)
-- [Dynamic QR Code Payments Implementation](#Implementación-de-pagos-con-código-QR-dinámico)	
-	- [Introduction](#Introducción)
-	- [STEP 1 Get your authentication keys (Pending/ In progress)](#PASO-1-Obtener-sus-claves-de-autenticación)
-	- [STEP 2 Create Dynamic QR Code](#PASO-2-Crear-código-QR-dinámico)
-	- [STEP 3 Customer scans Dynamic QR code](#PASO-3-Confirmar-el-estado-de la-Transacción)
-	- [STEP 4 Confirm the Transaction Status](#PASO-4-El-cliente-escanea-el-código-QR-dinámico)
-	- [Integration Checklist](#Lista-de-verificación-de-integración)
-- [API Documentation](#API-Documentatio)
-	 - [Get Sale Method](#Get-Sale-Method)
-		- [Description](#Description)
-		- [Request Format](#Request-Format)
-		- [Response Format](#Request-Format)
-		- [Request Example](#Request-Example-of-Get-Sale-method)
-	- [Sale Method](#Sale-Method)
-		- [Description](#Description)
-		- [Request Format](#Request-Format)
-		- [Response Format](#Request-Format)
-		- [Request Example](#Request-Example-of-Sale-method)
-- [Messages samples](#Messages-samples)
-	- [Get Sale Method](#Get-Sale-method-sample)
-	- [Sale Method](#Sale-method-sample)
-- [Error handling](#Error-handling)
+	- [Descripcion general del codigo QR Dinámico](#Descripcion-general-del-codigo-QR-dinamico)
+- [Secuencia de pagos con código QR](#Secuencia-de-pagos-con-código-QR)
+- [Implementación de pagos con códido QR dinámico](#Implementación-de-pagos-con-código-QR-dinámico)	
+	- [Introducción](#Introducción)
+	- [PASO 1 Obtener sus claves de autenticación(Pendiente/En desarrollo)](#PASO-1-Obtener-sus-claves-de-autenticación)
+	- [PASO 2 Crear código QR dinámico](#PASO-2-Crear-código-QR-dinámico)
+	- [PASO 3 Confirmar el estado de la Transacción](#PASO-3-Confirmar-el-estado-de-la-Transacción)
+	- [PASO 4 El cliente escanea el código QR dinámico](#PASO-4-El-cliente-escanea-el-código-QR-dinámico)
+	- [Lista de verificación de integración](#Lista-de-verificación-de-integración)
+- [Documentación de API](#Documentación-de-API)
+	 - [Método obtener Venta](#Método-obtener-Venta)
+		- [Descripción](#Descripción)
+		- [Formato de solicitud](#Formato-de-solicitud)
+		- [Formato de respuesta](#Formato-de-respuesta)
+		- [Solicitud de ejemplo del metodo Obtener una-venta](#Solicitud-de-ejemplo-del-metodo-Obtener-una-venta)
+	- [Metodo Venta](#Metodo-Venta)
+		- [Descripción](#Descripción)
+		- [Formato de solicitud](#Formato-de-solicitud)
+		- [Formato de respuesta](#Formato-de-respuesta)
+		- [Solicitud de ejemplo del metodo venta](#Solicitud-de-ejemplo-del-metodo-venta)
+- [Manejo de errores](#Manejo-de-errores)
+- [Messages samples](#Mensajes-de-ejemplo)
+	- [Ejemplo Obtener una venta](#Ejemplo-Obtener-una-venta)
+	- [Ejemplo método venta](#Ejemplo-método-venta)
 
 
-<p>Some Markdown text with <span style="color:blue">some <em>blue</em> text</span>.</p>
-
-## Overview
+## Visión general
 
 ![ationetTR](Content/Images/DynamicQRPayments/schemaDarkLight.png)
 
@@ -347,7 +345,7 @@ Una vez finalizada la integración en su entorno de ensayo, es obligatorio proba
 
 Devuelve la informacion de una venta.
 
-#### Request Format
+#### Formato de solicitud
 
 *URL: /api/ContactlessPayment/GetSale* </br>
 *Method: POST* </br>
@@ -356,7 +354,7 @@ Devuelve la informacion de una venta.
 Body {"IDDispatch": "string"}
 ```
 
-#### Response Format
+#### Formato de respuesta
 Header:
 ```
 Content-Type: application/json; charset=utf-8
@@ -552,7 +550,7 @@ body [
 ]
 ```
 
-#### Request Example of Get Sale method
+#### Solicitud de ejemplo del metodo Obtener una venta 
 
 ```
 {
@@ -560,13 +558,13 @@ body [
 }
 ```
 
-### Sale Method
+### Método Venta
 
-#### Description
+#### Descripción
 
-Create a Sale. The sale creation recibes a Dispatch ID. It's must be unique.
+Crea una venta. Recibe  un Dispatch ID que deberá ser único.
 
-#### Request Format
+#### Formato de solicitud
 
 *URL: /api/ContactlessPayment/ProcessSale* </br>
 *Method: POST* </br>
@@ -587,7 +585,7 @@ Body {
 	
 }
 ```
-#### Response Format 
+#### Formato de respuesta
 
 Header:
 ```
@@ -651,7 +649,7 @@ Body {
 }
 ```
 
-#### Request Example of Sale method
+#### Solicitud de ejemplo del metodo venta
 
 ```
 {
@@ -667,30 +665,31 @@ Body {
     "ProductQuantity": 99
 }
 ```
-### Error handling
+### Manejo de errores
 
-Success/failure exits on the Interface API will be handled via HTTP status codes.
+Las salidas exitosas / fallidas en la API de la interfaz se manejarán a través de códigos de estado HTTP.
 
-Successful request will get a HTTP 200 and the resulting response.
+La solicitud exitosa obtendrá un HTTP 200 y la respuesta resultante.
 
-Actions intended to return data, for example the Transactions Downloads group may return many records, just a single record or even no records at all and even though will be considered successful if the requests met the validation criteria. These Actions will always return a JSON-formatted list of records, enclosed in curly brackets “[…]”. An empty response will contain [] as body.
+Las acciones destinadas a devolver datos, por ejemplo, el grupo Descargas de transacciones pueden devolver muchos registros, solo un registro o incluso ningún registro y aunque se considerarán exitosas si las solicitudes cumplen con los criterios de validación. Estas acciones siempre devolverán una lista de registros con formato JSON, encerrada entre corchetes “[…]”. Una respuesta vacía contendrá [] como cuerpo.
 
-Actions intended to post a command, for example the Statement Charges group will return a single JSON-formatted item with the “ResponseCode”, “ResponseMessage” and “ResponseError” fields. The body of these responses will never be empty.
+Las acciones destinadas a publicar un comando, por ejemplo, el grupo Cargos de declaración devolverán un solo elemento con formato JSON con los campos "ResponseCode", "ResponseMessage" y "ResponseError". El cuerpo de estas respuestas nunca estará vacío.
 
-Failure to process the request will be indicated by an HTTP 400’s range status code. The body will contain a single JSON-formatted item with the “ResponseCode”, “ResponseMessage” and “ResponseError” fields.
+Si no se procesa la solicitud, se indicará mediante un código de estado de rango HTTP 400. El cuerpo contendrá un solo elemento con formato JSON con los campos "ResponseCode", "ResponseMessage" y "ResponseError".
 
 
-## Messages samples
+## Mensajes de ejemplo
 
-### Get sale method sample
+### Ejemplo Obtener una venta
 
-#### Get Request example
+#### Ejemplo Formato de solicitud
+
 
 ```
 { "IDDispatch": "d27a1c89-ab2f-469e-91aa-3a20943ab79c" }
 ```
 
-#### Response example
+#### Ejemplo Formato de respuesta example
 
 ```
 [
@@ -881,9 +880,9 @@ Failure to process the request will be indicated by an HTTP 400’s range status
 ]
 ```
 
-### Sale method sample
+### Ejemplo método venta
 
-#### Request example
+#### Ejemplo formato de solicitud 
 
 ```
 {
@@ -900,7 +899,7 @@ Failure to process the request will be indicated by an HTTP 400’s range status
 }
 ```
 
-#### Response example
+#### Ejemplo formato de respuesta
 
 ```
 {
