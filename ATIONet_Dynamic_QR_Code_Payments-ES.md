@@ -16,16 +16,16 @@
 ## Contents ##
 
 - [Overview](#overview)
-	- [Introduction](#introduction)
-	- [Overview of Dynamic QR Code](#Overview-of-Dynamic-QR-Code)
-- [QR code Payments squence](#QR-code-Payments-squence)
-- [Dynamic QR Code Payments Implementation](#Dynamic-QR-Code-Payments-Implementation)	
-	- [Introduction](#Introduction)
-	- [STEP 1 Get your authentication keys (Pending/ In progress)](#STEP-1-Get-your-authentication-keys)
-	- [STEP 2 Create Dynamic QR Code](#STEP-2-Create-Dynamic-QR-Code)
-	- [STEP 3 Customer scans Dynamic QR code](#STEP-3-Customer-scans-Dynamic-QR-code)
-	- [STEP 4 Confirm the Transaction Status](#STEP-4-Confirm-the-Transaction-Status)
-	- [Integration Checklist](#Integration-Checklist)
+	- [Introduction](#Introduccion)
+	- [Overview of Dynamic QR Code](#Descripcion-general-del-codigo-QR-dinamico)
+- [QR code Payments squence](#Secuencia-de-pagos-con-código-QR)
+- [Dynamic QR Code Payments Implementation](#Implementación-de-pagos-con-código-QR-dinámico)	
+	- [Introduction](#Introducción)
+	- [STEP 1 Get your authentication keys (Pending/ In progress)](#PASO-1-Obtener-sus-claves-de-autenticación)
+	- [STEP 2 Create Dynamic QR Code](#PASO-2-Crear-código-QR-dinámico)
+	- [STEP 3 Customer scans Dynamic QR code](#PASO-3-Confirmar-el-estado-de la-Transacción)
+	- [STEP 4 Confirm the Transaction Status](#PASO-4-El-cliente-escanea-el-código-QR-dinámico)
+	- [Integration Checklist](#Lista-de-verificación-de-integración)
 - [API Documentation](#API-Documentatio)
 	 - [Get Sale Method](#Get-Sale-Method)
 		- [Description](#Description)
@@ -43,64 +43,65 @@
 - [Error handling](#Error-handling)
 
 
+<p>Some Markdown text with <span style="color:blue">some <em>blue</em> text</span>.</p>
 
 ## Overview
 
 ![ationetTR](Content/Images/DynamicQRPayments/schemaDarkLight.png)
 
-### Introduction
+### Introduccion
 
-Ationet fleet Mobile payments - Dynamic QR  allows to generate the dynamic QR code from their Billing POS/System for a specific order/bill and must pass the order-specific information such as Dispatch ID, Order Amount, etc. while generating the code. The customer can scan this QR to make a payment and the POS's Backend can check the transaction status using the Dispatch ID.
+Ationet fleet Mobile payments - Dynamic QR permite generar el código QR dinámico desde su POS / Sistema de facturación para un pedido / factura específico y debe pasar la información específica del pedido, como el Dispatch ID, el monto del pedido, etc., mientras se genera el código. El cliente puede escanear este QR para realizar un pago y el Backend del POS puede verificar el estado de la transacción utilizando el ID de envío.
 
 ``` 
-Note: A customer-facing screen is required, which will show the dynamically generated QR to him in order to be able to
-scan it and generate the sale.
+Nota: Se requiere una pantalla orientada al cliente, que le mostrará el QR generado dinámicamente para poder
+escanearlo y generar la venta.
 
 ```
 
-### Overview of Dynamic QR Code
+### Descripcion general del codigo QR dinamico
 
 <ol>
-	<li>Customer chooses the goods/service in a store and shows the intent to the cashier for Ationet Driver App payment.</li>
-	<li>Cashier creates an order with the bill amount and a unique Dispatch ID in the POS system.</li>
-	<li>POS’s backend server  Create QR Code  and displays it to the Customer on the consumer-facing screen.</li>
-	<li>Customer scans QR code via Ationet Driver App.</li>
-	<li>POS’s backend server automatically starts polling the Transaction status every 8 times/minute using Dispatch ID.</li>
+	<li>El cliente elige los productos / servicios en una tienda y muestra la intención de pago usando la aplicación Ationet Driver.</li>
+	<li>El cajero crea un pedido con el monto de la factura y un Dispatch ID único en el sistema POS.</li>
+	<li>El servidor backend de POS crea un código QR y se lo muestra al cliente en la pantalla de cara al consumidor.</li>
+	<li>El cliente escanea el codigo QR usando Ationet Driver App.</li>
+	<li>El servidor de back-end de POS comienza a sondear automáticamente el estado de la transacción cada 8 veces / minuto utilizando el Dispatch ID.</li>
 </ol>
 
 
 
 ![ationetTR](Content/Images/DynamicQRPayments/demoQR.gif)
 
-## QR code Payments squence
+## Secuencia de pagos con código QR
 
 ![ationetTR](Content/Images/DynamicQRPayments/seq_darklight.svg)
 
-## Dynamic QR Code Payments Implementation
+## Implementación de pagos con código QR dinámico
 
-### Introduction
+### Introducción
 
-The section describes the integration steps required to integrate ATIONe's Dynamic QR Code Payments with billing POS to accept contactless payment from your customer using the Ationet Driver App payment.
+La sección describe los pasos de integración necesarios para integrar los pagos con código QR dinámico de ATIONet con el punto de venta de facturación para aceptar pagos sin contacto de su cliente mediante el pago de la aplicación Ationet Driver.
 
-### STEP 1 Get your authentication keys
+### PASO 1 Obtener sus claves de autenticación
 ```
-Important: Pending/In progress. Ignore this step.
+Importante: Pendiente/En desarrollo. No tener en cuenta este paso.
 ```
 <ul>
-	<li>POS's Backend Key: A unique secret key used to secure encryption of every request. This needs to be kept on server-side and should not be shared with anyone.</li>
+	<li>Clave de backend de POS: una clave secreta única que se utiliza para asegurar el cifrado de cada solicitud. Esto debe mantenerse en el lado del servidor y no debe compartirse con nadie.</li>
 </ul>
 
 ```
-Note: Never share your secret POS's Backend Key with anyone.
+Nota: Nunca comparta la clave secreta de backend de su POS con nadie.
 ```
 
 
-### STEP 2 Create Dynamic QR Code
+### PASO 2 Crear código QR dinámico
 
-POS's Backend only encodes the minimum sale information in QR, it is the one that comes from site controller when generating a sale. The rest of the plot information is completed by the POS's Backend. The following table describes each field in the table, its description and its origin.
+El Backend de POS solo codifica la información mínima de venta en QR, es la que proviene del controlador del sitio (Site controller) al generar una venta. El resto de la información de la trama se completa con el Backend del POS. La siguiente tabla describe cada campo en la tabla, su descripción y su origen.
 
 ```
-Important: Plot have to be in JSON format. QR image must be free text type.
+Importante: La trama debe estar en formato JSON. La imagen del código QR debe ser de tipo texto libre.
 
 ```
 
@@ -108,16 +109,16 @@ Important: Plot have to be in JSON format. QR image must be free text type.
 	<thead>
 		<tr valign="center">
 			<th rowspan="2"  align="left">
-				Name
+				Nombre
 			</th>
 			<th rowspan="2" align="center">
-				Type
+				Tipo
 			</th>
 			<th rowspan="2" align="left">
-				Origin
+				Origen
 			</th>
 			<th rowspan="8" align="left">
-				Description
+				Descripción
 			</th>
 		</tr>
 	</thead>
@@ -161,7 +162,7 @@ Important: Plot have to be in JSON format. QR image must be free text type.
 			 	<p align="center">Site controller</p>
 			 </td>
 			<td>
-				<p>Refer to Transaction Sequence Number in <a href="AN-Native_Transaction_Protocol-Spec.md#transaction-sequence-number">Field Description section.</a></p>
+				<p>Consulte Número de secuencia de transacción en la sección <a href="AN-Native_Transaction_Protocol-Spec.md#transaction-sequence-number">Descripción del campo.</a></p>
 			</td>
 		 </tr>
 		<tr valign="top">
@@ -175,7 +176,7 @@ Important: Plot have to be in JSON format. QR image must be free text type.
 			 	<p align="center">Site controller</p>
 			 </td>
 			<td>
-				<p>Local Transaction Date: yyyymmdd</p>
+				<p>Fecha local de la transacción: aaaammdd</p>
 			</td>
 		 </tr>
 		<tr valign="top">
@@ -189,7 +190,7 @@ Important: Plot have to be in JSON format. QR image must be free text type.
 			 	<p align="center">Site controller</p>
 			 </td>
 			<td>
-				<p>Local Transaction Time: hhmmss</p>
+				<p>Hora local de la transacción: hhmmss</p>
 			</td>
 		 </tr>
 		<tr valign="top">
@@ -203,7 +204,7 @@ Important: Plot have to be in JSON format. QR image must be free text type.
 			 	<p align="center">Site controller/POS IdentificationAtionet</p>
 			 </td>
 			<td>
-				<p>It must be requested from ationet</p>
+				<p>Debe solicitarse a ATIONet</p>
 			</td>
 		 </tr>
 		<tr valign="top">
@@ -279,11 +280,12 @@ Important: Plot have to be in JSON format. QR image must be free text type.
 		</tbody>
 </table>
 
-### Examples
+### Ejemplos
 
-#### Plot example
+#### Ejemplo de Trama
+
 ```
-Complete Plot example in JSON Format:
+Ejemplo completo de una de trama en formato JSON:
 
 {
     "IDDispatch": "dc152309-6b50-45cc-939c-a43d69ec817a",
@@ -300,51 +302,50 @@ Complete Plot example in JSON Format:
 }
 	
 ```
-
-#### QR Image example
+#### Ejemplo de imagen QR
 
 ![ationetTR](Content/Images/DynamicQRPayments/miniQr3.png)
 
-### STEP 3 Confirm the Transaction Status
+### PASO 3 Confirmar el estado de la Transacción
 
-When the QR code is generated for an specific transaction, the POS's Backend Get The Transaction status with a polling process using the [Transaction status API](#Get-Sale-Method).
-
-```
-Polling : Setup a polling process after regular intervals using the Transaction Status API. 
-To get the best results out of a status query, you should check the status 8 times/minute.
+Cuando se genera el código QR para una Transacción específica, el backend del POS obtiene el estado de la transacción con un proceso de sondeo mediante la [Api de estado de una Transaccion](#Método-obtener-Venta).
 
 ```
+Sondeo : Configure un proceso de sondeo después de intervalos regulares utilizando la API de estado de transacción.
+Para obtener los mejores resultados de una consulta de estado, debe verificar el estado 8 veces por minuto.
 
-### STEP 4 Customer scans Dynamic QR code
+```
 
-When the QR code is generated for an specific transaction, the customer scans that QR code and pays using Ationet Driver App payment. The customer is notified about the payment status on their Ationet Driver App  after the successful completion of payment. If you want to implement a new client app you can check the specification of the [create sale api](#Sale-Method).
+### PASO 4 El cliente escanea el código QR dinámico
+
+Cuando se genera el código QR para una transacción específica, el cliente escanea ese código QR y paga mediante la aplicación Ationet Driver. Se notifica al cliente sobre el estado del pago en su aplicación Ationet Driver después de completar con éxito el pago. Si desea implementar una nueva aplicación de cliente, puede verificar la especificación de [API Crear venta](#Metodo-Venta).
 
 
 ```
-Note: Customers cannot change the Transaction amount in their app on scanning the particular order QR code.
+Nota: Los clientes no pueden cambiar el monto de la transacción en su aplicación al escanear el código QR del pedido en particular.
 ```
 
 
-### Integration Checklist
+### Lista de verificación de integración
 
-Post completion of integration in your staging environment, it is mandatory to test the integration before moving into the live environment with production. Below points should be taken care of during the integration of the flow:
+Una vez finalizada la integración en su entorno de ensayo, es obligatorio probar la integración antes de pasar a un entorno en producción. Los siguientes puntos deben tenerse en cuenta durante el flujo integración:
 
 <ol>
-   <li>The transaction status should be verified through the Transaction Status API in the payment flow.</li>	
-   <li>The Dispacht ID passed to Ationet should be unique.</li>	
-   <li>The amount must not contain more than 2 decimal points, comma, or any special characters.</li>	 
-   <li>Dispatch ID parameter is mandatory for creating QR.</li>	
+   <li>El estado de la Transacción debe verificarse a través de la API de estado de la transacción en el flujo de pago.</li>	
+   <li>El Dispacht ID enviado a to ATIONet dee ser único.</li>	
+   <li>La cantidad no debe contener más de 2 puntos decimales, comas o caracteres especiales.</li>	 
+   <li>El parámetro Dispatch ID es obligatorio para crear QR.</li>	
 </ol>
 
-## API Documentation
+## Documentación de API 
 
 *URL:  ationetmobilepayment-appshost-test.azurewebsites.net* </br>
 
-### Get Sale Method
+### Método obtener Venta
 
-#### Description
+#### Descripción
 
-Return a Sale information.
+Devuelve la informacion de una venta.
 
 #### Request Format
 
