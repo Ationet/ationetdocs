@@ -51,11 +51,11 @@ The second part of the solution is divided into a socket Server that is responsi
 
 ### Introduction
 
-This specification is intended to document ATIONet’s Mobile Payment fleet API messaging format and related features required for usarage. The following sections provide descriptions of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item.
+This specification is intended to document ATIONet’s fleet Mobile Payment API messaging format and related features required for usarage. The following sections provide descriptions of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item.
 
 ## Description 
 
-This service receives the requests from the client and stores them in a Queue in Azure to later be unqueued and processed.
+ATIONet’s fleet Mobile Payment API It is responsible for creating pre-authorizations, obtaining information on a Transaction and Canceling a pre-authorization, as long as it meets the requirements to do so.
 
 ### API Details
 
