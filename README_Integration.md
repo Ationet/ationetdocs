@@ -8,6 +8,13 @@
 - [Native Transaction Protocol API Specifications](AN-Native_Transaction_Protocol-Spec.md)
 - [Native Transaction Protocol API messages](AN-Native_Auth_Protocol_Messages.md)
 
+## ATIONet Fleet Mobile Payment - Dynamic QR (NEW !)
+- [ATIONet Dynamic QR Code Payments-EN](ATIONet_Dynamic_QR_Code_Payments-EN.md)
+- [ATIONet Dynamic QR Code Payments-ES](ATIONet_Dynamic_QR_Code_Payments-ES.md)
+
+## ATIONet Fleet Mobile Payment  (NEW !)
+- [ATIONet Fleet Mobile Payment](ATIONet_Mobile_Payment_Fleet_Api_-EN.md)
+
 ## Inventory API (NEW !)
 - [Inventory API Specifications](AN-Native_Inventory_Protocol-Spec.md)
 
