@@ -38,7 +38,7 @@
 		- [Formato de respuesta](#Formato-de-respuesta)
 		- [Solicitud de ejemplo del metodo venta](#Solicitud-de-ejemplo-del-metodo-venta)
 - [Manejo de errores](#Manejo-de-errores)
-- [Messages samples](#Mensajes-de-ejemplo)
+- [Mensajes de ejemplo](#Mensajes-de-ejemplo)
 	- [Ejemplo Obtener una venta](#Ejemplo-Obtener-una-venta)
 	- [Ejemplo método venta](#Ejemplo-método-venta)
 
