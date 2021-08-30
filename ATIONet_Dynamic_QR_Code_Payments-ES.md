@@ -45,7 +45,7 @@
 
 ## Visión general
 
-![ationetTR](Content/Images/DynamicQRPayments/schemaDarkLight-sp.png)
+![ationetTR](Content/Images/DynamicQRPayments/schemaDarkLight-sp.PNG)
 
 ### Introduccion
 
