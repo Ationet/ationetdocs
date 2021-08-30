@@ -13,7 +13,7 @@
 |Ver.|Date|Change Summary|
 |1.0|26/August/2021|Initial version.|
 
-## Contents ##
+## Contenido ##
 
 - [Visión general](#Visión-general)
 	- [Introduction](#Introduccion)
