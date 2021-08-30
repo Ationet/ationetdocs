@@ -45,7 +45,7 @@
 
 ## Visión general
 
-![ationetTR](Content/Images/DynamicQRPayments/schemaDarkLight.png)
+![ationetTR](Content/Images/DynamicQRPayments/schemaDarkLight-sp.png)
 
 ### Introduccion
 
@@ -73,7 +73,7 @@ escanearlo y generar la venta.
 
 ## Secuencia de pagos con código QR
 
-![ationetTR](Content/Images/DynamicQRPayments/seq_darklight.svg)
+![ationetTR](Content/Images/DynamicQRPayments/seq_darklight-sp.svg)
 
 ## Implementación de pagos con código QR dinámico
 
