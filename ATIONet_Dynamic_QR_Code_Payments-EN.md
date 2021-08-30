@@ -37,10 +37,10 @@
 		- [Request Format](#Request-Format)
 		- [Response Format](#Request-Format)
 		- [Request Example](#Request-Example-of-Sale-method)
+- [Error handling](#Error-handling)
 - [Messages samples](#Messages-samples)
 	- [Get Sale Method](#Get-Sale-method-sample)
 	- [Sale Method](#Sale-method-sample)
-- [Error handling](#Error-handling)
 
 
 
