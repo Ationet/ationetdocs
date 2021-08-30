@@ -17,11 +17,11 @@
 
 - [Visión general](#Visión-general)
 	- [Introduction](#Introduccion)
-	- [Descripcion general del codigo QR Dinámico](#Descripcion-general-del-codigo-QR-dinamico)
+	- [Descripción general del codigo QR Dinámico](#Descripcion-general-del-codigo-QR-dinamico)
 - [Secuencia de pagos con código QR](#Secuencia-de-pagos-con-código-QR)
-- [Implementación de pagos con códido QR dinámico](#Implementación-de-pagos-con-código-QR-dinámico)	
+- [Implementación de pagos con código QR dinámico](#Implementación-de-pagos-con-código-QR-dinámico)	
 	- [Introducción](#Introducción)
-	- [PASO 1 Obtener sus claves de autenticación(Pendiente/En desarrollo)](#PASO-1-Obtener-sus-claves-de-autenticación)
+	- [PASO 1 Obtener sus claves de autenticación (Pendiente/En desarrollo)](#PASO-1-Obtener-sus-claves-de-autenticación)
 	- [PASO 2 Crear código QR dinámico](#PASO-2-Crear-código-QR-dinámico)
 	- [PASO 3 Confirmar el estado de la Transacción](#PASO-3-Confirmar-el-estado-de-la-Transacción)
 	- [PASO 4 El cliente escanea el código QR dinámico](#PASO-4-El-cliente-escanea-el-código-QR-dinámico)
@@ -31,7 +31,7 @@
 		- [Descripción](#Descripción)
 		- [Formato de solicitud](#Formato-de-solicitud)
 		- [Formato de respuesta](#Formato-de-respuesta)
-		- [Solicitud de ejemplo del metodo Obtener una-venta](#Solicitud-de-ejemplo-del-metodo-Obtener-una-venta)
+		- [Solicitud de ejemplo del metodo Obtener una venta](#Solicitud-de-ejemplo-del-metodo-Obtener-una-venta)
 	- [Metodo Venta](#Metodo-Venta)
 		- [Descripción](#Descripción)
 		- [Formato de solicitud](#Formato-de-solicitud)
@@ -39,7 +39,7 @@
 		- [Solicitud de ejemplo del metodo venta](#Solicitud-de-ejemplo-del-metodo-venta)
 - [Manejo de errores](#Manejo-de-errores)
 - [Mensajes de ejemplo](#Mensajes-de-ejemplo)
-	- [Ejemplo Obtener una venta](#Ejemplo-Obtener-una-venta)
+	- [Ejemplo obtener una venta](#Ejemplo-Obtener-una-venta)
 	- [Ejemplo método venta](#Ejemplo-método-venta)
 
 
@@ -49,7 +49,7 @@
 
 ### Introduccion
 
-Ationet fleet Mobile payments - Dynamic QR permite generar el código QR dinámico desde su POS / Sistema de facturación para un pedido / factura específico y debe pasar la información específica del pedido, como el Dispatch ID, el monto del pedido, etc., mientras se genera el código. El cliente puede escanear este QR para realizar un pago y el Backend del POS puede verificar el estado de la transacción utilizando el ID de envío.
+Ationet fleet Mobile payments - Dynamic QR permite generar el código QR dinámico desde su POS/Sistema de facturación para un pedido/factura específico para lo cual se debe pasar la información específica del pedido, como el Dispatch ID, el monto del pedido, etc., mientras se genera la imagen del código QR. El cliente puede escanear este QR para realizar un pago y el Backend del POS puede verificar el estado de la transacción utilizando el ID de envío.
 
 ``` 
 Nota: Se requiere una pantalla orientada al cliente, que le mostrará el QR generado dinámicamente para poder
@@ -60,16 +60,16 @@ escanearlo y generar la venta.
 ### Descripcion general del codigo QR dinamico
 
 <ol>
-	<li>El cliente elige los productos / servicios en una tienda y muestra la intención de pago usando la aplicación Ationet Driver.</li>
+	<li>El cliente elige los productos/servicios en una tienda y muestra la intención de pago usando la aplicación Ationet Driver.</li>
 	<li>El cajero crea un pedido con el monto de la factura y un Dispatch ID único en el sistema POS.</li>
 	<li>El servidor backend de POS crea un código QR y se lo muestra al cliente en la pantalla de cara al consumidor.</li>
 	<li>El cliente escanea el codigo QR usando Ationet Driver App.</li>
-	<li>El servidor de back-end de POS comienza a sondear automáticamente el estado de la transacción cada 8 veces / minuto utilizando el Dispatch ID.</li>
+	<li>El servidor de backend de POS comienza a sondear automáticamente el estado de la transacción cada 8 veces/minuto utilizando el Dispatch ID.</li>
 </ol>
 
 
-
 ![ationetTR](Content/Images/DynamicQRPayments/demoQR.gif)
+
 
 ## Secuencia de pagos con código QR
 
@@ -79,7 +79,7 @@ escanearlo y generar la venta.
 
 ### Introducción
 
-La sección describe los pasos de integración necesarios para integrar los pagos con código QR dinámico de ATIONet con el punto de venta de facturación para aceptar pagos sin contacto de su cliente mediante el pago de la aplicación Ationet Driver.
+La sección describe los pasos de integración necesarios para integrar los pagos con código QR dinámico de ATIONet con el punto de venta de facturación para aceptar pagos sin contacto de su cliente mediante la aplicación Ationet Driver.
 
 ### PASO 1 Obtener sus claves de autenticación
 ```
@@ -96,7 +96,7 @@ Nota: Nunca comparta la clave secreta de backend de su POS con nadie.
 
 ### PASO 2 Crear código QR dinámico
 
-El Backend de POS solo codifica la información mínima de venta en QR, es la que proviene del controlador del sitio (Site controller) al generar una venta. El resto de la información de la trama se completa con el Backend del POS. La siguiente tabla describe cada campo en la tabla, su descripción y su origen.
+El Backend de POS solo codifica la información mínima de venta en la imagen QR, ésta información es la que proviene del controlador del sitio (Site controller) al generar una venta. El resto de la información de la trama se completa con el Backend del POS. La siguiente tabla describe cada campo en la tabla, su descripción y su origen.
 
 ```
 Importante: La trama debe estar en formato JSON. La imagen del código QR debe ser de tipo texto libre.
@@ -309,7 +309,7 @@ Ejemplo completo de una de trama en formato JSON:
 Cuando se genera el código QR para una Transacción específica, el backend del POS obtiene el estado de la transacción con un proceso de sondeo mediante la [Api de estado de una Transaccion](#Método-obtener-Venta).
 
 ```
-Sondeo : Configure un proceso de sondeo después de intervalos regulares utilizando la API de estado de transacción.
+Sondeo: Configure un proceso de sondeo en intervalos regulares utilizando la API de estado de transacción.
 Para obtener los mejores resultados de una consulta de estado, debe verificar el estado 8 veces por minuto.
 
 ```
@@ -330,9 +330,9 @@ Una vez finalizada la integración en su entorno de ensayo, es obligatorio proba
 
 <ol>
    <li>El estado de la Transacción debe verificarse a través de la API de estado de la transacción en el flujo de pago.</li>	
-   <li>El Dispacht ID enviado a to ATIONet dee ser único.</li>	
+   <li>El Dispacht ID enviado a to ATIONet debe ser único.</li>	
    <li>La cantidad no debe contener más de 2 puntos decimales, comas o caracteres especiales.</li>	 
-   <li>El parámetro Dispatch ID es obligatorio para crear QR.</li>	
+   <li>El parámetro Dispatch ID es obligatorio para crear la imagen con código QR.</li>	
 </ol>
 
 ## Documentación de API 
@@ -649,7 +649,7 @@ Body {
 }
 ```
 
-#### Solicitud de ejemplo del metodo venta
+#### Solicitud de ejemplo del método venta
 
 ```
 {
@@ -689,7 +689,7 @@ Si no se procesa la solicitud, se indicará mediante un código de estado de ran
 { "IDDispatch": "d27a1c89-ab2f-469e-91aa-3a20943ab79c" }
 ```
 
-#### Ejemplo Formato de respuesta example
+#### Ejemplo Formato de respuesta
 
 ```
 [
