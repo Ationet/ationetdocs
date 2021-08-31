@@ -34,11 +34,12 @@ This Implementation Guide is intended to guide petroleum convenience retailers a
 ISO 12812. 
 
 ```
-Note: ISO 12812 is document that will provide requirements, guidance and use cases for all stakeholders in the mobile payments arena.
+Note: ISO 12812 is document that will provide requirements, guidance and use cases for 
+all stakeholders in the mobile payments arena.
 
 ```
 
-### About Logical Entites
+### About Entites
 
 This section outlines the logical entities, including location options, for Mobile Payment and identifies possible physical architectures. The term “entity” is used in this
 document to differentiate logical processing functionality without regard to its physical location in an implementation. 
@@ -50,6 +51,15 @@ phone or tablet, which enables mobile payments for in-store and forecourt transa
 ```Mobile Payment Processing Application (MPPA):``` This entity is an application provided by the Mobile Payment Processor (MPP) not on the Mobile Device that is responsible for
 interfacing between the Token Vault or Token/Trusted Service Provider, the MPA, the Site System, the Payment Front End Processor (PFEP), and the Loyalty Front End Processor (LFEP) in order to authorize transactions.
 
+```Payment Front End Processor (PFEP):``` This entity is a host that facilitates the authorization of payment transactions between the MPPA or the Site System and the
+Issuer networks. The standard does not dictate the processing that is performed by the PFEP for each payment method. This entity is sometimes referred to as the Front End
+Processor (FEP).
+
+```Loyalty Front End Processor (LFEP):``` This entity is a host that facilitates the authorization of loyalty rewards, including rewards issued or redeemed using a Mobile
+Device. This Mobile Specification does not dictate the messaging that is exchanged with the LFEP, although the Conexxus Loyalty Standard is suitable for that message space.
+The LFEP entity is sometimes referred to as the Loyalty Host. There may be multiple LFEPs involved in processing a single transaction.
+
+>Note: This implementation does not work with LFEP.
 
 ### Overview of Dynamic QR Code
 
