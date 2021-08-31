@@ -109,10 +109,10 @@ Processing Applications might require more information than others.
 <table>
 	<thead>
 		<tr valign="center">
-			<th rowspan="4"  align="left">
+			<th rowspan="6"  align="left">
 				Site configuration Information
 			</th>
-			<th rowspan="8" align="left">
+			<th rowspan="6" align="left">
 				Description
 			</th>
 		</tr>
