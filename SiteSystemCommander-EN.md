@@ -282,3 +282,169 @@ Note: The values in the image are for example. You must request the correspondin
 		 </tr>
 		</tbody>
 </table>
+
+
+## Status Codes and Messages
+
+The first two digits of the response code identify the message pair type. The last 3 digits is the error identifier for the status. A ‘good’ status is always represented as 00000 regardless of the message type.
+
+
+<table>
+	<thead>
+		<tr valign="center">
+			<th>
+				Message Type
+			</th>
+			<th>
+				Response Code
+			</th>
+			<th>
+				Message Code
+			</th>
+			<th>
+				Overall Result
+			</th>
+			<th>
+				Description
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">All</p>
+			</td>
+			<td>
+				<p align="left">00000</p>
+			</td>
+			<td>
+				<p align="left">Success</p>
+			</td>
+			<td>
+				<p align="left">Success</p>
+			</td>
+			<td>
+				<p align="left">Message was successfully processed.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">All</p>
+			</td>
+			<td>
+				<p align="left">00001</p>
+			</td>
+			<td>
+				<p align="left">Generic Error</p>
+			</td>
+			<td>
+				<p align="left">Failure</p>
+			</td>
+			<td>
+				<p align="left">An unexpected error has occurred while processing the request message.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">All</p>
+			</td>
+			<td>
+				<p align="left">00001</p>
+			</td>
+			<td>
+				<p align="left">Generic Error</p>
+			</td>
+			<td>
+				<p align="left">MissingMandatoryData</p>
+			</td>
+			<td>
+				<p align="left">Mandatory data is missing from the request header.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobileAuth</p>
+			</td>
+			<td>
+				<p align="left">02001</p>
+			</td>
+			<td>
+				<p align="left">Generic Error</p>
+			</td>
+			<td>
+				<p align="left">Failure</p>
+			</td>
+			<td>
+				<p align="left">Unexpected error while processing the MobileAuthRequest data.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobileAuth</p>
+			</td>
+			<td>
+				<p align="left">02001</p>
+			</td>
+			<td>
+				<p align="left">Generic Error</p>
+			</td>
+			<td>
+				<p align="left">MissingMandatoryData</p>
+			</td>
+			<td>
+				<p align="left">Mandatory data is missing from the MobileAuthRequest</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobileAuth</p>
+			</td>
+			<td>
+				<p align="left">02002</p>
+			</td>
+			<td>
+				<p align="left">Invalid info in MobileTxnInfo element</p>
+			</td>
+			<td>
+				<p align="left">Failure</p>
+			</td>
+			<td>
+				<p align="left">The header info matches an already processed transaction.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobileAuth</p>
+			</td>
+			<td>
+				<p align="left">02002</p>
+			</td>
+			<td>
+				<p align="left">Invalid info in MobileTxnInfo element</p>
+			</td>
+			<td>
+				<p align="left">MissingMandatoryData</p>
+			</td>
+			<td>
+				<p align="left">The header is missing mandatory data to complete Auth processing.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobileAuth</p>
+			</td>
+			<td>
+				<p align="left">02003</p>
+			</td>
+			<td>
+				<p align="left">POS or Fueling Position in use</p>
+			</td>
+			<td>
+				<p align="left">Failure</p>
+			</td>
+			<td>
+				<p align="left">The targeted fueling position is already in use. ```(Unused)``` </p>
+			</td>
+		 </tr>
+		</tbody>
+</table>
