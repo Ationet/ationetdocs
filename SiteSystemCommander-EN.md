@@ -443,7 +443,313 @@ The first two digits of the response code identify the message pair type. The la
 				<p align="left">Failure</p>
 			</td>
 			<td>
-				<p align="left">The targeted fueling position is already in use. ```(Unused)``` </p>
+				<p align="left">The targeted fueling position is already in use. (Unused) </p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobileAuth</p>
+			</td>
+			<td>
+				<p align="left">02004</p>
+			</td>
+			<td>
+				<p align="left">POS or Fueling Position in use</p>
+			</td>
+			<td>
+				<p align="left">Failure</p>
+			</td>
+			<td>
+				<p align="left">The Commander was unable to process the authorization request. Communication with the POS or fueling position has been lost.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobileAuth</p>
+			</td>
+			<td>
+				<p align="left">02005</p>
+			</td>
+			<td>
+				<p align="left">Unknown POS or Fueling Position</p>
+			</td>
+			<td>
+				<p align="left">Failure</p>
+			</td>
+			<td>
+				<p align="left">The targeted fueling position is not configured.(Unused)</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobileCancel</p>
+			</td>
+			<td>
+				<p align="left">04001</p>
+			</td>
+			<td>
+				<p align="left">Generic Error</p>
+			</td>
+			<td>
+				<p align="left">Failure</p>
+			</td>
+			<td>
+				<p align="left">Unexpected error while trying to cancel the transaction. It is likely too late in the transaction to honor.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobileCancel</p>
+			</td>
+			<td>
+				<p align="left">04003</p>
+			</td>
+			<td>
+				<p align="left">04003</p>
+			</td>
+			<td>
+				<p align="left">Failure</p>
+			</td>
+			<td>
+				<p align="left">The Commander is beyond the point to honor a cancel request.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobileCancel</p>
+			</td>
+			<td>
+				<p align="left">04004</p>
+			</td>
+			<td>
+				<p align="left">Invalid state - dispenser is fueling</p>
+			</td>
+			<td>
+				<p align="left">Failure</p>
+			</td>
+			<td>
+				<p align="left">Cancel occurred while dispensing fuel.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobileCancel</p>
+			</td>
+			<td>
+				<p align="left">04005</p>
+			</td>
+			<td>
+				<p align="left">Invalid Dispenser number</p>
+			</td>
+			<td>
+				<p align="left">Failure</p>
+			</td>
+			<td>
+				<p align="left">The targeted fueling position does not match the original authorized fueling position.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobileCancel</p>
+			</td>
+			<td>
+				<p align="left">04006</p>
+			</td>
+			<td>
+				<p align="left">Invalid payment/auth information</p>
+			</td>
+			<td>
+				<p align="left">Failure</p>
+			</td>
+			<td>
+				<p align="left">The payment info does not match the original payment info.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobileCancel</p>
+			</td>
+			<td>
+				<p align="left">04007</p>
+			</td>
+			<td>
+				<p align="left">Unknown transaction or authorization</p>
+			</td>
+			<td>
+				<p align="left">Failure</p>
+			</td>
+			<td>
+				<p align="left">There is no active transaction to cancel matching the provided header.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobileCancel</p>
+			</td>
+			<td>
+				<p align="left">04008</p>
+			</td>
+			<td>
+				<p align="left">04008</p>
+			</td>
+			<td>
+				<p align="left">Failure</p>
+			</td>
+			<td>
+				<p align="left">Unexpectedly failed to cancel</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePumpReserve</p>
+			</td>
+			<td>
+				<p align="left">06001</p>
+			</td>
+			<td>
+				<p align="left">Generic Error</p>
+			</td>
+			<td>
+				<p align="left">Failure</p>
+			</td>
+			<td>
+				<p align="left">Unexpected pump reserve failure</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePumpReserve</p>
+			</td>
+			<td>
+				<p align="left">06001</p>
+			</td>
+			<td>
+				<p align="left">Generic Error</p>
+			</td>
+			<td>
+				<p align="left">MissingMandatoryData</p>
+			</td>
+			<td>
+				<p align="left">Data mandatory to handling the pump reserve request is not present.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePumpReserve</p>
+			</td>
+			<td>
+				<p align="left">06002</p>
+			</td>
+			<td>
+				<p align="left">Invalid info in MobileTxnInfo element</p>
+			</td>
+			<td>
+				<p align="left">Failure</p>
+			</td>
+			<td>
+				<p align="left">The header information(UMTI) was present in an already processed transaction.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePumpReserve</p>
+			</td>
+			<td>
+				<p align="left">06002</p>
+			</td>
+			<td>
+				<p align="left">Invalid info in MobileTxnInfo element</p>
+			</td>
+			<td>
+				<p align="left">MissingMandatoryData</p>
+			</td>
+			<td>
+				<p align="left">Data required to reserve a fueling position is missing from the request message.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePumpReserve</p>
+			</td>
+			<td>
+				<p align="left">06003</p>
+			</td>
+			<td>
+				<p align="left">Fueling Position in use</p>
+			</td>
+			<td>
+				<p align="left">Failure</p>
+			</td>
+			<td>
+				<p align="left">The dispenser is not ready to reserve for a mobile transaction. It is in use or handling configuration updates.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePumpReserve</p>
+			</td>
+			<td>
+				<p align="left">06004</p>
+			</td>
+			<td>
+				<p align="left">Fueling Position inaccessible/offline</p>
+			</td>
+			<td>
+				<p align="left">Failure</p>
+			</td>
+			<td>
+				<p align="left">The targeted dispenser is configured, but offline.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePumpReserve</p>
+			</td>
+			<td>
+				<p align="left">06005</p>
+			</td>
+			<td>
+				<p align="left">Unknown POS or Fueling Position</p>
+			</td>
+			<td>
+				<p align="left">Failure</p>
+			</td>
+			<td>
+				<p align="left">The targeted dispenser is not configured.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobileTransactionData</p>
+			</td>
+			<td>
+				<p align="left">13001</p>
+			</td>
+			<td>
+				<p align="left">Generic Error</p>
+			</td>
+			<td>
+				<p align="left">MissingMandatoryData</p>
+			</td>
+			<td>
+				<p align="left">The transaction data request is missing data required for processing.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobileTransactionData</p>
+			</td>
+			<td>
+				<p align="left">13002</p>
+			</td>
+			<td>
+				<p align="left">Invalid Transaction Data Header</p>
+			</td>
+			<td>
+				<p align="left">Failure</p>
+			</td>
+			<td>
+				<p align="left">This is a duplicate transaction for an already processed transaction, or the transaction does not exist on the system.</p>
 			</td>
 		 </tr>
 		</tbody>
