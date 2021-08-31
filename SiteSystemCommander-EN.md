@@ -21,7 +21,7 @@
 	- [Overview of Dynamic QR Code](#Overview-of-Dynamic-QR-Code)
 
 
-
+</br>
 > <h3>IMPORTANT: The following document is only valid for the commander configuration.</h3>
 
 ## Overview
@@ -32,7 +32,7 @@
 
 This Implementation Guide is intended to guide petroleum convenience retailers and their associated vendors when implementing mobile payment solutions consistent with
 ISO 12812. 
-
+</br>
 >Note: ISO 12812 is document that will provide requirements, guidance and use cases for all stakeholders in the mobile payments arena.
 
 
@@ -55,7 +55,7 @@ Processor (FEP).
 ```Site System:``` This entity encompasses the site equipment and components (hardware and software) and may perform the function of local card processing business rules,
 such as consumer prompting, local velocity checking and receipt formatting and printing. Examples of site systems include Point of Sale (POS), Outside Sales Processor
 (OSP), Electronic Payment Server (EPS) and Forecourt Device Controller (FDC).
-
+</br>
 >Note: MOBILE PAYMENT API is the common interface through which the MPA sends and receives requests from the MPPA. The description, the methods and how to consume this interface is not part of the scope of this document. You can read more about this <a href="ATIONet_Mobile_Payment_Fleet_Api_-EN.md">here.</a>
 
 
@@ -95,27 +95,36 @@ need to regenerate the receipt information.</li>
 
 ```Commander``` will provide a ConfigClient screen for configuration of Mobile Payments. These details will be provided by MPPA to commander. The screen will provide for configuration options for Site Details, and host configurations and connectivity parameters. The image below is an example. Some Mobile Payments
 Processing Applications might require more information than others.
-
+</br>
 >You have to request de configuration's values to ATIONet
 
 ### STEP 1 Site Mobile Configuration
 
+</br>
+
 ```
 Note: The values in the image are for example. You must request the corresponding values from ATIONet.
 ```
+</br>
+
 ![ationetTR](Content/Images/SiteSystemCommander/configA.PNG)
 
 
 ### STEP 2 Host Mobile Configuation
 
+</br>
+
 ```
 Note: The values in the image are for example. You must request the corresponding values from ATIONet.
 ```
+</br>
+
 
 ![ationetTR](Content/Images/SiteSystemCommander/configB.PNG)
 
 ### Values descriptions
 
+</br>
 <table>
 	<thead>
 		<tr valign="center">
@@ -227,6 +236,9 @@ Note: The values in the image are for example. You must request the correspondin
 		</tbody>
 </table>
 
+</br>
+
+
 <table>
 	<thead>
 		<tr valign="center">
@@ -270,67 +282,3 @@ Note: The values in the image are for example. You must request the correspondin
 		 </tr>
 		</tbody>
 </table>
-
-
-## Status Codes and Messages
-
-The first two digits of the response code identify the message pair type. The last 3 digits is the error identifier for the status. A ‘good’ status is always represented as 00000 regardless of the message type.
-
-<table>
-	<thead>
-		<tr valign="center">
-			<th>
-				Message Type
-			</th>
-			<th>
-				Response Code
-			</th>
-			<th>
-				Message Code
-			</th>
-			<th>
-				Overall Result
-			</th>
-			<th>
-				Description
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr valign="top">
-			<td>
-				<p align="left">All</p>
-			</td>
-			<td>
-				<p align="left">00000</p>
-			</td>
-			<td>
-				<p align="left">Success</p>
-			</td>
-			<td>
-				<p align="left">Success</p>
-			</td>
-			<td>
-				<p align="left">Message was successfully processed.</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">All</p>
-			</td>
-			<td>
-				<p align="left">00001</p>
-			</td>
-			<td>
-				<p align="left">Generic Error</p>
-			</td>
-			<td>
-				<p align="left">Failure</p>
-			</td>
-			<td>
-				<p align="left">An unexpected error has occurred while processing the request message..</p>
-			</td>
-		 </tr>
-		</tbody>
-</table>
-
