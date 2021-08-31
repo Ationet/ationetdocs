@@ -98,14 +98,14 @@ need to regenerate the receipt information.</li>
 	<li>MPPA sends a receipt response back to the Site System.</li>
 </ol>
 
-## Site System Implementation guide
+# Site System Implementation guide
 
 ```Commander``` will provide a ConfigClient screen for configuration of Mobile Payments. These details will be provided by MPPA to commander. The screen will provide for configuration options for Site Details, and host configurations and connectivity parameters. The image below is an example. Some Mobile Payments
 Processing Applications might require more information than others.
 </br>
 >You have to request de configuration's values to ATIONet
 
-### STEP 1 Site Mobile Configuration
+## STEP 1 Site Mobile Configuration
 
 </br>
 
@@ -117,7 +117,7 @@ Note: The values in the image are for example. You must request the correspondin
 ![ationetTR](Content/Images/SiteSystemCommander/configA.PNG)
 
 
-### STEP 2 Host Mobile Configuation
+## STEP 2 Host Mobile Configuation
 
 </br>
 
