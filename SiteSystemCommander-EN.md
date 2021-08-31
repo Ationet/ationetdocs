@@ -33,11 +33,8 @@
 This Implementation Guide is intended to guide petroleum convenience retailers and their associated vendors when implementing mobile payment solutions consistent with
 ISO 12812. 
 
-```
-Note: ISO 12812 is document that will provide requirements, guidance and use cases for 
-all stakeholders in the mobile payments arena.
+>Note: ISO 12812 is document that will provide requirements, guidance and use cases for all stakeholders in the mobile payments arena.
 
-```
 
 ### Architecture
 
