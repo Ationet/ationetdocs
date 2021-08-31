@@ -20,7 +20,7 @@
 	- [Introduction](#introduction)
 	- [Entities](#Entities)
 	- [Sequence diagram Pay at Pump with Above Site Payment Authorization](#Sequence-diagram-Pay-at-Pump-with-Above-Site-Payment-Authorization)
-- [Site System configuration](#Site-System-configuration)
+- [Site System Implementation guide](#Site-System-Implementation-guide)
 	- [STEP 1 Site Mobile Configuration](#STEP-1-Site-Mobile-Configuration)
 	- [STEP 2 Host Mobile Configuation](#STEP2-Host-Mobile-Configuation)
 	- [Values descriptions](#Values-descriptions)
@@ -30,9 +30,6 @@
 
 ><h3>IMPORTANT: The following document is only valid for the COMMANDER configuration.</h3>
 
-</br>
-<h3> For API documentation please visit <a href="ATIONet_Mobile_Payment_Fleet_Api_-EN.md">here.</a> </h3>
-</br>
 
 ## Overview
 
@@ -101,7 +98,7 @@ need to regenerate the receipt information.</li>
 	<li>MPPA sends a receipt response back to the Site System.</li>
 </ol>
 
-## Site System configuration
+## Site System Implementation guide
 
 ```Commander``` will provide a ConfigClient screen for configuration of Mobile Payments. These details will be provided by MPPA to commander. The screen will provide for configuration options for Site Details, and host configurations and connectivity parameters. The image below is an example. Some Mobile Payments
 Processing Applications might require more information than others.
@@ -765,24 +762,11 @@ The first two digits of the response code identify the message pair type. The la
 		</tbody>
 </table>
 
-![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
+
 # ATIONet Fleet - Mobile Payment Api v1.0 #
-
-|Document Information||
-|--- |--- |
-|File:|ATIONet-Mobile Payment Fleet Api|
-|Doc Version:|1.0|
-|Release Date:|2, August 2021|
-|Author:|ATIONet LLC|
-
-|Change Log|||
-|--- |--- |--- |
-|Ver.|Date|Change Summary|
-|1.0|2/August/2021|Initial version.|
 
 ## Contents ##
 
-- [Overview](#overview)
 - [Description](#description)
 - [Details](#api-details)	
 - [Supported Transactions](#supported-transactions)
@@ -805,15 +789,6 @@ The first two digits of the response code identify the message pair type. The la
 	- [GetTransaction ](#gettransaction)
 	- [Cancel ](#cancel)
 	
-
-## Overview
-
-Explaining in a general way, ATIONet Fleet's Mobile Payments solution is divided into two parts. The first part is composed of the API, and the cloud server which is in charge of queuing the requests from cutomers.
-
-The second part of the solution is divided into a socket Server that is responsible for unqueuing those requests, validating them against ATIONet, and in case of obtaining a positive response, processing them on the Site System side, and returning a result to the cutomer.
-
-
-![ationetTR](Content/Images/SiteSystemCommander/Complete_Diagram.png)
 
 
 ### Introduction
