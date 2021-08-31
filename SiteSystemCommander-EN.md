@@ -44,7 +44,7 @@
 	- [Sale Method](#Sale-method-sample)
 
 
-><ul><li>Attention: The following document is only valid for the commander configuration</li></ul>
+> <h3>Important: The following document is only valid for the commander configuration.</h3>
 
 ## Overview
 
