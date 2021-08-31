@@ -26,7 +26,7 @@
 
 ## Overview
 
-![ationetTR](Content/Images/DynamicQRPayments/schemaDarkLight.png)
+![ationetTR](Content/Images/SiteSystemCommander/Complete_Diagram.png)
 
 ### Introduction
 
@@ -57,6 +57,9 @@ such as consumer prompting, local velocity checking and receipt formatting and p
 (OSP), Electronic Payment Server (EPS) and Forecourt Device Controller (FDC).
 
 >Note: MOBILE PAYMENT API is the common interface through which the MPA sends and receives requests from the MPPA. The description, the methods and how to consume this interface is not part of the scope of this document. You can read more about this <a href="ATIONet_Mobile_Payment_Fleet_Api_-EN.md">here.</a>
+
+![ationetTR](Content/Images/SiteSystemCommander/SiteSystem_secuencia.svg)
+
 ### Overview of Dynamic QR Code
 
 <ol>
