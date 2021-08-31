@@ -31,7 +31,7 @@
 ><h3>IMPORTANT: The following document is only valid for the COMMANDER configuration.</h3>
 
 </br>
-<h3> If you want to read about the API documentation please visit <a href="ATIONet_Mobile_Payment_Fleet_Api_-EN.md">here.</a> </h3>
+<h3> For API documentation please visit <a href="ATIONet_Mobile_Payment_Fleet_Api_-EN.md">here.</a> </h3>
 </br>
 
 ## Overview
