@@ -114,6 +114,7 @@ Note: The values in the image are for example. You must request the correspondin
 
 ![ationetTR](Content/Images/SiteSystemCommander/configB.PNG)
 
+### Values descriptions
 
 <table>
 	<thead>
@@ -221,6 +222,50 @@ Note: The values in the image are for example. You must request the correspondin
 			</td>
 			<td>
 				<p align="left">Password used during settlement assigned by MPPA.</p>
+			</td>
+		 </tr>
+		</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr valign="center">
+			<th>
+				Site Initiated Loyalty
+			</th>
+			<th>
+				Description
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">Never Allow Site Entered Loyalty</p>
+			</td>
+			<td>
+				<p align="left">If this option is selected, the site will be restricted to accepting loyalty only from the site or only from the MPPA. If a transaction already contains loyalty (i.e. the consumer has swiped a loyalty card prior to starting the mobile transaction) the MobileReserve / Auth will be rejected. This enforces that mobile loyalty and site entered loyalty cannot co-exist.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Allow Site Entry i.e., Swiped Loyalty Card</p>
+			</td>
+			<td>
+				<p align="left">Both Mobile loyalty and site card swipe loyalty are allowed and Mobile payments can be tendered at DCR.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Allow Site Entered Loyalty if no Mobile Loyalty</p>
+			</td>
+			<td>
+				<p align="left">
+					<ol>
+						<li>If Mobile Loyalty is not present, loyalty card swipe at DCR will be accepted.</li>
+						<li>If Mobile Loyalty is present and Loyalty Card is swiped at DCR, MobileReserve/Auth will be rejected.</li>
+					</ol>
+				</p>
 			</td>
 		 </tr>
 		</tbody>
