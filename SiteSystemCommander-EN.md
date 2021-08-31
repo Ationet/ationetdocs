@@ -39,7 +39,7 @@ all stakeholders in the mobile payments arena.
 
 ```
 
-### About Entites
+### Architecture
 
 This section outlines the logical entities, including location options, for Mobile Payment and identifies possible physical architectures. The term “entity” is used in this
 document to differentiate logical processing functionality without regard to its physical location in an implementation. 
@@ -55,12 +55,11 @@ interfacing between the Token Vault or Token/Trusted Service Provider, the MPA, 
 Issuer networks. The standard does not dictate the processing that is performed by the PFEP for each payment method. This entity is sometimes referred to as the Front End
 Processor (FEP).
 
-```Loyalty Front End Processor (LFEP):``` This entity is a host that facilitates the authorization of loyalty rewards, including rewards issued or redeemed using a Mobile
-Device. This Mobile Specification does not dictate the messaging that is exchanged with the LFEP, although the Conexxus Loyalty Standard is suitable for that message space.
-The LFEP entity is sometimes referred to as the Loyalty Host. There may be multiple LFEPs involved in processing a single transaction.
+```Site System:``` This entity encompasses the site equipment and components (hardware and software) and may perform the function of local card processing business rules,
+such as consumer prompting, local velocity checking and receipt formatting and printing. Examples of site systems include Point of Sale (POS), Outside Sales Processor
+(OSP), Electronic Payment Server (EPS) and Forecourt Device Controller (FDC).
 
->Note: This implementation does not work with LFEP.
-
+>MOBILE PAYMENT API is the common interface through which the MPA sends and receives requests from the MPPA. The description, the methods and how to consume this interface is not part of the scope of this document. If you want to know more please visit <a href="ATIONet_Mobile_Payment_Fleet_Api_-EN.md">this document.</a>this document.
 ### Overview of Dynamic QR Code
 
 <ol>
