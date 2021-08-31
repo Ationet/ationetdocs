@@ -1,5 +1,5 @@
 ![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
-# ATIONet - Dynamic QR Code Payments #
+# ATIONet - Site System implementation Guide #
 
 |Document Information||
 |--- |--- |
@@ -19,32 +19,10 @@
 - [Overview](#overview)
 	- [Introduction](#introduction)
 	- [Overview of Dynamic QR Code](#Overview-of-Dynamic-QR-Code)
-- [QR code Payments squence](#QR-code-Payments-squence)
-- [Dynamic QR Code Payments Implementation](#Dynamic-QR-Code-Payments-Implementation)	
-	- [Introduction](#Introduction)
-	- [STEP 1 Get your authentication keys (Pending/ In progress)](#STEP-1-Get-your-authentication-keys)
-	- [STEP 2 Create Dynamic QR Code](#STEP-2-Create-Dynamic-QR-Code)
-	- [STEP 3 Customer scans Dynamic QR code](#STEP-3-Customer-scans-Dynamic-QR-code)
-	- [STEP 4 Confirm the Transaction Status](#STEP-4-Confirm-the-Transaction-Status)
-	- [Integration Checklist](#Integration-Checklist)
-- [API Documentation](#API-Documentatio)
-	 - [Get Sale Method](#Get-Sale-Method)
-		- [Description](#Description)
-		- [Request Format](#Request-Format)
-		- [Response Format](#Request-Format)
-		- [Request Example](#Request-Example-of-Get-Sale-method)
-	- [Sale Method](#Sale-Method)
-		- [Description](#Description)
-		- [Request Format](#Request-Format)
-		- [Response Format](#Request-Format)
-		- [Request Example](#Request-Example-of-Sale-method)
-- [Error handling](#Error-handling)
-- [Messages samples](#Messages-samples)
-	- [Get Sale Method](#Get-Sale-method-sample)
-	- [Sale Method](#Sale-method-sample)
 
 
-> <h3>Important: The following document is only valid for the commander configuration.</h3>
+
+> <h3>IMPORTANT: The following document is only valid for the commander configuration.</h3>
 
 ## Overview
 
@@ -52,13 +30,26 @@
 
 ### Introduction
 
-Ationet fleet Mobile payments - Dynamic QR  allows to generate the dynamic QR code from their Billing POS/System for a specific order/bill and must pass the order-specific information such as Dispatch ID, Order Amount, etc. while generating the code. The customer can scan this QR to make a payment and the POS's Backend can check the transaction status using the Dispatch ID.
-
-``` 
-Note: A customer-facing screen is required, which will show the dynamically generated QR to him in order to be able to
-scan it and generate the sale.
+This Implementation Guide is intended to guide petroleum convenience retailers and their associated vendors when implementing mobile payment solutions consistent with
+ISO 12812. 
 
 ```
+Note: ISO 12812 is document that will provide requirements, guidance and use cases for all stakeholders in the mobile payments arena.
+
+```
+
+### About Logical Entites
+
+This section outlines the logical entities, including location options, for Mobile Payment and identifies possible physical architectures. The term “entity” is used in this
+document to differentiate logical processing functionality without regard to its physical location in an implementation. 
+
+
+```Mobile Payment Application (MPA):```  This entity is a software application embedded in a Mobile Device or downloaded by a consumer onto a Mobile Device, such as a smart
+phone or tablet, which enables mobile payments for in-store and forecourt transactions.
+
+```Mobile Payment Processing Application (MPPA):``` This entity is an application provided by the Mobile Payment Processor (MPP) not on the Mobile Device that is responsible for
+interfacing between the Token Vault or Token/Trusted Service Provider, the MPA, the Site System, the Payment Front End Processor (PFEP), and the Loyalty Front End Processor (LFEP) in order to authorize transactions.
+
 
 ### Overview of Dynamic QR Code
 
