@@ -62,7 +62,7 @@ such as consumer prompting, local velocity checking and receipt formatting and p
 ### Sequence diagram Pay at Pump with Above-Site Payment Authorization 
 
 
-![ationetTR](Content/Images/SiteSystemCommander/SiteSystem_secuencia2.svg)
+![ationetTR](Content/Images/SiteSystemCommander/SiteSystem_secuencia3.svg)
 
 <ol>
 	<li>Mobile Payment Application (MPA) is activated by consumer.</li>
@@ -71,8 +71,10 @@ such as consumer prompting, local velocity checking and receipt formatting and p
 	<li>MPPA optionally sends a Mobile Pump Reserve Request to the Site System to reserve the fueling point.</li>
 	<li>Site System responds to the Mobile Pump Reserve Request.</li>
 	<li>The MPPA sends a Mobile Auth Request to the Site System. If generated, the validation code in the payload.</li>
-	<li>The Site System sends the Mobile Auth Response to the MPPA.</li>
-	<li>The MPPA sends the Authorization Response to the MPA.</li>
+	<li>The PFEP (through the site system) sends the Mobile Auth Response to the MPPA.</li>
+	<li>The MPPA sends a Mobile Auth Request to Site Systen.</li>
+	<li>The Site Systen response to MPPA with a Mobile Auth Response.</li>
+	<li>MPPA sends an Authorizacion Response to MPA</li>
 	<li>Mobile Begin Fueling Response is sent from MPPA to Site System.</li>
 	<li>Site System sends a Mobile Loyalty Award Request message to give the MPPA the opportunity to adjust the rewards. This message is always sent after fueling as
 the final amount is not determined until fueling is complete.</li>
