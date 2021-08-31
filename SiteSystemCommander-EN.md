@@ -36,7 +36,7 @@ ISO 12812.
 >Note: ISO 12812 is document that will provide requirements, guidance and use cases for all stakeholders in the mobile payments arena.
 
 
-### Architecture
+### Entities
 
 This section outlines the logical entities, including location options, for Mobile Payment and identifies possible physical architectures. The term “entity” is used in this
 document to differentiate logical processing functionality without regard to its physical location in an implementation. 
@@ -58,8 +58,49 @@ such as consumer prompting, local velocity checking and receipt formatting and p
 
 >Note: MOBILE PAYMENT API is the common interface through which the MPA sends and receives requests from the MPPA. The description, the methods and how to consume this interface is not part of the scope of this document. You can read more about this <a href="ATIONet_Mobile_Payment_Fleet_Api_-EN.md">here.</a>
 
+
+### Sequence diagram Pay at Pump with Above-Site Payment Authorization 
+
+
 ![ationetTR](Content/Images/SiteSystemCommander/SiteSystem_secuencia2.svg)
 
+<ol>
+	<li>Customer chooses the goods/service in a store and shows the intent to the cashier for Ationet Driver App payment.</li>
+	<li>Cashier creates an order with the bill amount and a unique Dispatch ID in the POS system.</li>
+	<li>POS’s backend server  Create QR Code  and displays it to the Customer on the consumer-facing screen.</li>
+	<li>Customer scans QR code via Ationet Driver App.</li>
+	<li>POS’s backend server automatically starts polling the Transaction status every 8 times/minute using Dispatch ID.</li>
+</ol>
+<ol>
+	
+	<li>Mobile Payment Application (MPA) is activated by consumer.</li>
+	<li> MPA determines location and fueling point.</li>
+	<li> MPA sends information to MPPA as an Authorization Request.</li>
+	<li> MPPA optionally sends a Mobile Pump Reserve Request to the Site System to</li>
+reserve the fueling point.
+	<li> Site System responds to the Mobile Pump Reserve Request.</li>
+	<li>The MPPA sends a Mobile Auth Request to the Site System. If generated, the
+validation code in the payload.</li>
+	<li> The Site System sends the Mobile Auth Response to the MPPA.</li>
+	<li>The MPPA sends the Authorization Response to the MPA.</li>
+	<li>Mobile Begin Fueling Response is sent from MPPA to Site System.</li>
+	<li>Site System sends a Mobile Loyalty Award Request message to give the MPPA the
+opportunity to adjust the rewards. This message is always sent after fueling as
+the final amount is not determined until fueling is complete.</li>
+	<li>The MPPA sends a response to the Site System with the additional rewards
+information.</li>
+	<li>Site System sends Mobile Finalize Request to MPPA with completion
+information.</li>
+	<li>MPPA sends Completion Request to PFEP.</li>
+	<li>PFEP send Completion Response message to MPPA.</li>
+	<li>MPPA sends Mobile Finalize Response to Site System. Note: If additional or</li>
+updated receipt information is included in this response, the Site System may
+need to regenerate the receipt information.
+	<li>Site System sends receipt information to the MPPA.</li>
+	<li> MPPA sends receipt information to MPA.</li>
+	<li>Site System prints the receipt (if applicable).</li>
+	<li>MPPA sends a receipt response back to the Site System.</li>
+</ol>
 ### Overview of Dynamic QR Code
 
 <ol>
