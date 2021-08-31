@@ -65,13 +65,6 @@ such as consumer prompting, local velocity checking and receipt formatting and p
 ![ationetTR](Content/Images/SiteSystemCommander/SiteSystem_secuencia2.svg)
 
 <ol>
-	<li>Customer chooses the goods/service in a store and shows the intent to the cashier for Ationet Driver App payment.</li>
-	<li>Cashier creates an order with the bill amount and a unique Dispatch ID in the POS system.</li>
-	<li>POS’s backend server  Create QR Code  and displays it to the Customer on the consumer-facing screen.</li>
-	<li>Customer scans QR code via Ationet Driver App.</li>
-	<li>POS’s backend server automatically starts polling the Transaction status every 8 times/minute using Dispatch ID.</li>
-</ol>
-<ol>
 	
 	<li>Mobile Payment Application (MPA) is activated by consumer.</li>
 	<li> MPA determines location and fueling point.</li>
