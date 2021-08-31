@@ -13,7 +13,6 @@
 |Ver.|Date|Change Summary|
 |1.0|26/August/2021|Initial version.|
 
->Attention: The following document only applies to commander.
 
 ## Contents ##
 
@@ -45,6 +44,7 @@
 	- [Sale Method](#Sale-method-sample)
 
 
+>Attention: The following document only applies to commander.
 
 ## Overview
 
