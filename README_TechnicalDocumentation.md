@@ -12,4 +12,4 @@
 - [Spanish](https://github.com/Ationet/ationetdocs/blob/master/StandAlone%20V240m%20Terminal%20Installation%20Guide-ES.md)
 
 ## Site System Installation Guide (NEW!)
-- [English](https://github.com/Ationet/ationetdocs/blob/master/SiteSystemCommander-EN.md)
+- [English](SiteSystemCommander-EN.md)
