@@ -46,7 +46,7 @@ Explaining in a general way, ATIONet Fleet's Mobile Payments solution is divided
 The second part of the solution is divided into a socket Server that is responsible for unqueuing those requests, validating them against ATIONet, and in case of obtaining a positive response, processing them on the Site System side, and returning a result to the cutomer.
 
 
-![ationetTRCancel](Content/Images/MobilePaymentFleet/API_Schem.png)
+![ationetTR](Content/Images/SiteSystemCommander/Complete_Diagram.png)
 
 
 ### Introduction
