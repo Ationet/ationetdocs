@@ -59,7 +59,7 @@ Processor (FEP).
 such as consumer prompting, local velocity checking and receipt formatting and printing. Examples of site systems include Point of Sale (POS), Outside Sales Processor
 (OSP), Electronic Payment Server (EPS) and Forecourt Device Controller (FDC).
 
->MOBILE PAYMENT API is the common interface through which the MPA sends and receives requests from the MPPA. The description, the methods and how to consume this interface is not part of the scope of this document. If you want to know more please visit <a href="ATIONet_Mobile_Payment_Fleet_Api_-EN.md">this document.</a>this document.
+>Note: MOBILE PAYMENT API is the common interface through which the MPA sends and receives requests from the MPPA. The description, the methods and how to consume this interface is not part of the scope of this document. You can read more about this <a href="ATIONet_Mobile_Payment_Fleet_Api_-EN.md">here.</a>
 ### Overview of Dynamic QR Code
 
 <ol>
