@@ -65,30 +65,24 @@ such as consumer prompting, local velocity checking and receipt formatting and p
 ![ationetTR](Content/Images/SiteSystemCommander/SiteSystem_secuencia2.svg)
 
 <ol>
-	
 	<li>Mobile Payment Application (MPA) is activated by consumer.</li>
-	<li> MPA determines location and fueling point.</li>
-	<li> MPA sends information to MPPA as an Authorization Request.</li>
-	<li> MPPA optionally sends a Mobile Pump Reserve Request to the Site System to</li>
-reserve the fueling point.
-	<li> Site System responds to the Mobile Pump Reserve Request.</li>
-	<li>The MPPA sends a Mobile Auth Request to the Site System. If generated, the
-validation code in the payload.</li>
-	<li> The Site System sends the Mobile Auth Response to the MPPA.</li>
+	<li>MPA determines location and fueling point.</li>
+	<li>MPA sends information to MPPA as an Authorization Request.</li>
+	<li>MPPA optionally sends a Mobile Pump Reserve Request to the Site System to reserve the fueling point.</li>
+	<li>Site System responds to the Mobile Pump Reserve Request.</li>
+	<li>The MPPA sends a Mobile Auth Request to the Site System. If generated, the validation code in the payload.</li>
+	<li>The Site System sends the Mobile Auth Response to the MPPA.</li>
 	<li>The MPPA sends the Authorization Response to the MPA.</li>
 	<li>Mobile Begin Fueling Response is sent from MPPA to Site System.</li>
-	<li>Site System sends a Mobile Loyalty Award Request message to give the MPPA the
-opportunity to adjust the rewards. This message is always sent after fueling as
+	<li>Site System sends a Mobile Loyalty Award Request message to give the MPPA the opportunity to adjust the rewards. This message is always sent after fueling as
 the final amount is not determined until fueling is complete.</li>
-	<li>The MPPA sends a response to the Site System with the additional rewards
-information.</li>
-	<li>Site System sends Mobile Finalize Request to MPPA with completion
-information.</li>
+	<li>The MPPA sends a response to the Site System with the additional rewards information.</li>
+	<li>Site System sends Mobile Finalize Request to MPPA with completion information.</li>
 	<li>MPPA sends Completion Request to PFEP.</li>
 	<li>PFEP send Completion Response message to MPPA.</li>
-	<li>MPPA sends Mobile Finalize Response to Site System. Note: If additional or</li>
+	<li>MPPA sends Mobile Finalize Response to Site System. Note: If additional or
 updated receipt information is included in this response, the Site System may
-need to regenerate the receipt information.
+need to regenerate the receipt information.</li>
 	<li>Site System sends receipt information to the MPPA.</li>
 	<li> MPPA sends receipt information to MPA.</li>
 	<li>Site System prints the receipt (if applicable).</li>
