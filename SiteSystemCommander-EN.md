@@ -18,11 +18,17 @@
 
 - [Overview](#overview)
 	- [Introduction](#introduction)
-	- [Overview of Dynamic QR Code](#Overview-of-Dynamic-QR-Code)
+	- [Entities](#Entities)
+	- [Sequence diagram Pay at Pump with Above Site Payment Authorization](#Sequence-diagram-Pay-at-Pump-with-Above-Site-Payment-Authorization)
+- [Site System configuration](#Site-System-configuration)
+	- [STEP 1 Site Mobile Configuration](#STEP-1-Site-Mobile-Configuration)
+	- [STEP 2 Host Mobile Configuation](#STEP2-Host-Mobile-Configuation)
+	- [Values descriptions](#Values-descriptions)
+- [Status Codes and Messages](#Status-Codes-and-Messages)
 
 
 
-> <h3>IMPORTANT: The following document is only valid for the commander configuration.</h3>
+><h3>IMPORTANT: The following document is only valid for the commander configuration.</h3>
 
 ## Overview
 
@@ -59,7 +65,7 @@ such as consumer prompting, local velocity checking and receipt formatting and p
 >Note: MOBILE PAYMENT API is the common interface through which the MPA sends and receives requests from the MPPA. The description, the methods and how to consume this interface is not part of the scope of this document. You can read more about this <a href="ATIONet_Mobile_Payment_Fleet_Api_-EN.md">here.</a>
 
 
-### Sequence diagram Pay at Pump with Above-Site Payment Authorization 
+### Sequence diagram Pay at Pump with Above Site Payment Authorization 
 
 
 ![ationetTR](Content/Images/SiteSystemCommander/SiteSystem_secuencia3.svg)
