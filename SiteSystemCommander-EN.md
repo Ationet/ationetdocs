@@ -96,12 +96,21 @@ need to regenerate the receipt information.</li>
 ```Commander``` will provide a ConfigClient screen for configuration of Mobile Payments. These details will be provided by MPPA to commander. The screen will provide for configuration options for Site Details, and host configurations and connectivity parameters. The image below is an example. Some Mobile Payments
 Processing Applications might require more information than others.
 
+>You have to request de configuration's values to ATIONet
+
 ### STEP 1 Site Mobile Configuration
 
+```
+Note: The values in the image are for example. You must request the corresponding values from ATIONet.
+```
 ![ationetTR](Content/Images/SiteSystemCommander/configA.PNG)
 
 
 ### STEP 2 Host Mobile Configuation
+
+```
+Note: The values in the image are for example. You must request the corresponding values from ATIONet.
+```
 
 ![ationetTR](Content/Images/SiteSystemCommander/configB.PNG)
 
