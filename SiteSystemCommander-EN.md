@@ -96,17 +96,127 @@ need to regenerate the receipt information.</li>
 ```Commander``` will provide a ConfigClient screen for configuration of Mobile Payments. These details will be provided by MPPA to commander. The screen will provide for configuration options for Site Details, and host configurations and connectivity parameters. The image below is an example. Some Mobile Payments
 Processing Applications might require more information than others.
 
-<ol>
-	<li>Customer chooses the goods/service in a store and shows the intent to the cashier for Ationet Driver App payment.</li>
-	<li>Cashier creates an order with the bill amount and a unique Dispatch ID in the POS system.</li>
-	<li>POS’s backend server  Create QR Code  and displays it to the Customer on the consumer-facing screen.</li>
-	<li>Customer scans QR code via Ationet Driver App.</li>
-	<li>POS’s backend server automatically starts polling the Transaction status every 8 times/minute using Dispatch ID.</li>
-</ol>
+### STEP 1 Site Mobile Configuration
+
+![ationetTR](Content/Images/SiteSystemCommander/configA.PNG)
 
 
+### STEP 2 Host Mobile Configuation
 
-![ationetTR](Content/Images/DynamicQRPayments/demoQR.gif)
+![ationetTR](Content/Images/SiteSystemCommander/configB.PNG)
+
+
+<table>
+	<thead>
+		<tr valign="center">
+			<th rowspan="4"  align="left">
+				Site configuration Information
+			</th>
+			<th rowspan="8" align="left">
+				Description
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">Enable Host</p>
+			</td>
+			<td>
+				<p align="left">Enable/Disable messaging to this particular host. If the box is not checked messages will not be sent to this particular host.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Adapter</p>
+			</td>
+			<td>
+				<p align="left">Mobile payment APIs used by commander for communication with MPPA.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Program Name</p>
+			</td>
+			<td>
+				<p align="left">Program name as defined by MPPA.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Authentication Type</p>
+			</td>
+			<td>
+				<p align="left">Authentication mode supported by MPPA for that adapter.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Host IP address</p>
+			</td>
+			<td>
+				<p align="left">IP address will be used by commander for communication with MPPA.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Port</p>
+			</td>
+			<td>
+				<p align="left">Service Port will be used by commander for communication with MPPA.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SSL Enabled</p>
+			</td>
+			<td>
+				<p align="left">Commander uses this Boolean for SSL communication or no-SSL communication between commander and MPPA.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Site Terminal ID</p>
+			</td>
+			<td>
+				<p align="left">This number is supplied by MPPA as terminal identification number.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Merchant ID</p>
+			</td>
+			<td>
+				<p align="left">Merchant Id given to the store by the MPPA.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Location ID</p>
+			</td>
+			<td>
+				<p align="left">Location ID is given by the MPPA which identifies a site of a merchant during on boarding process.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Settlement Employee Number</p>
+			</td>
+			<td>
+				<p align="left">Number used by commander for settlement with MPPA.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Settlement Passcode</p>
+			</td>
+			<td>
+				<p align="left">Password used during settlement assigned by MPPA.</p>
+			</td>
+		 </tr>
+		</tbody>
+</table>
+
 
 ## QR code Payments squence
 
@@ -140,180 +250,7 @@ Important: Plot have to be in JSON format. QR image must be free text type.
 
 ```
 
-<table>
-	<thead>
-		<tr valign="center">
-			<th rowspan="2"  align="left">
-				Name
-			</th>
-			<th rowspan="2" align="center">
-				Type
-			</th>
-			<th rowspan="2" align="left">
-				Origin
-			</th>
-			<th rowspan="8" align="left">
-				Description
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr valign="top">
-			<td>
-				<p align="left">IDDispatch</p>
-			</td>
-			<td>
-				<p align="center">(string) Guid</p>
-			</td>
-			<td>
-			 	<p align="center">Site controller or POS Backend</p>
-			 </td>
-			<td>
-				<p>XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</p>
-			</td>
-		 </tr>
-		 <tr valign="top">
-			<td>
-				<p align="left">PumpNumber</p>
-			</td>
-			<td>
-				<p align="center">string</p>
-			</td>
-			<td>
-			 	<p align="center">Site controller</p>
-			 </td>
-			<td>
-				<p>“00”-“99”</p>
-			</td>
-		 </tr>
-		 <tr valign="top">
-			<td>
-				<p align="left">TransactionSequenceNumber</p>
-			</td>
-			<td>
-				<p align="center">integer</p>
-			</td>
-			<td>
-			 	<p align="center">Site controller</p>
-			 </td>
-			<td>
-				<p>Refer to Transaction Sequence Number in <a href="AN-Native_Transaction_Protocol-Spec.md#transaction-sequence-number">Field Description section.</a></p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">LocalTransactionDate</p>
-			</td>
-			<td>
-				<p align="center">integer</p>
-			</td>
-			<td>
-			 	<p align="center">Site controller</p>
-			 </td>
-			<td>
-				<p>Local Transaction Date: yyyymmdd</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">LocalTransactionTime</p>
-			</td>
-			<td>
-				<p align="center">integer</p>
-			</td>
-			<td>
-			 	<p align="center">Site controller</p>
-			 </td>
-			<td>
-				<p>Local Transaction Time: hhmmss</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">TerminalIdentification</p>
-			</td>
-			<td>
-				<p align="center">string</p>
-			</td>
-			<td>
-			 	<p align="center">Site controller/POS IdentificationAtionet</p>
-			 </td>
-			<td>
-				<p>It must be requested from ATIONet</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">TransactionAmount</p>
-			</td>
-			<td>
-				<p align="center">double</p>
-			</td>
-			<td>
-			 	<p align="center">Site controller</p>
-			 </td>
-			<td>
-				<p>xxxxxxx.xx</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ProductCode</p>
-			</td>
-			<td>
-				<p align="center">string</p>
-			</td>
-			<td>
-			 	<p align="center">Site controller</p>
-			 </td>
-			<td>
-				<p>“0”-“9999”</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ProductUnitPrice</p>
-			</td>
-			<td>
-				<p align="center">double</p>
-			</td>
-			<td>
-			 	<p align="center">Site controller</p>
-			 </td>
-			<td>
-				<p>xxx.xx</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ProductAmount</p>
-			</td>
-			<td>
-				<p align="center">double</p>
-			</td>
-			<td>
-			 	<p align="center">Site controller</p>
-			 </td>
-			<td>
-				<p>xxxxxxx.xx</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ProductQuantity</p>
-			</td>
-			<td>
-				<p align="center">double</p>
-			</td>
-			<td>
-			 	<p align="center">Site controller</p>
-			 </td>
-			<td>
-				<p>xxxxxxx.xx</p>
-			</td>
-		 </tr>
-		</tbody>
-</table>
+
 
 ### Examples
 
