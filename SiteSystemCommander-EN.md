@@ -21,7 +21,7 @@
 	- [Overview of Dynamic QR Code](#Overview-of-Dynamic-QR-Code)
 
 
-</br>
+
 > <h3>IMPORTANT: The following document is only valid for the commander configuration.</h3>
 
 ## Overview
