@@ -90,7 +90,11 @@ need to regenerate the receipt information.</li>
 	<li>Site System prints the receipt (if applicable).</li>
 	<li>MPPA sends a receipt response back to the Site System.</li>
 </ol>
-### Overview of Dynamic QR Code
+
+## Site System configuration
+
+```Commander``` will provide a ConfigClient screen for configuration of Mobile Payments. These details will be provided by MPPA to commander. The screen will provide for configuration options for Site Details, and host configurations and connectivity parameters. The image below is an example. Some Mobile Payments
+Processing Applications might require more information than others.
 
 <ol>
 	<li>Customer chooses the goods/service in a store and shows the intent to the cashier for Ationet Driver App payment.</li>
