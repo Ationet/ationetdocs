@@ -27,7 +27,7 @@
 	- [Status Codes and Messages](#Status-Codes-and-Messages)
 	- [Static QR Image](#Static-QR-Image)
 	- [How to generate QR Code Image](#How-to-generate-QR-Code-Image)
-- [ATIONet Fleet Mobile Payment Api v1.0](#ATIONet-Fleet-Mobile-Payment-Api-v1.0)
+- [ATIONet Fleet Mobile Payment Api (ATIONet PFEP)](#ATIONet-Fleet-Mobile-Payment-Api-(ATIONet PFEP))
 	- [Description](#description)
 	- [Details](#api-details)	
 	- [Supported Transactions](#supported-transactions)
@@ -822,7 +822,7 @@ Using the ATIONet Mobile Driver App, the Customer can read the Imagen QR and do 
 
 You must request the image of the QR code to ATIONet.
 
-# ATIONet Fleet Mobile Payment Api v1.0 #
+# ATIONet Fleet Mobile Payment Api (ATIONet PFEP)
 
 ### Introduction
 
