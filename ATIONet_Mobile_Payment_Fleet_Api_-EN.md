@@ -88,7 +88,7 @@ Processor (FEP).
 such as consumer prompting, local velocity checking and receipt formatting and printing. Examples of site systems include Point of Sale (POS), Outside Sales Processor
 (OSP), Electronic Payment Server (EPS) and Forecourt Device Controller (FDC).
 </br>
->Note: MOBILE PAYMENT API is the common interface through which the MPA sends and receives requests from the MPPA. The description, you can read about  the methods and how to consume in [API Section](#ATIONet-Fleet-Mobile-Payment-Api-v1.0)
+>Note: MOBILE PAYMENT API is the common interface through which the MPA sends and receives requests from the MPPA. The description, you can read about  the methods and how to consume in [API Section](#ATIONet-PFEP-Fleet-Mobile-Payment-Api)
 
 
 ### Sequence diagram Pay at Pump with Above Site Payment Authorization 
@@ -828,7 +828,7 @@ You must request the image of the QR code to ATIONet.
 
 This specification is intended to document ATIONet’s fleet Mobile Payment API messaging format and related features required for usarage. The following sections provide descriptions of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item.
 
->IMPORTANT: Preauthorization code and completions result are in charge of ATIONet. Fleet Mobile payment Api with External PFEP are available [here](#External PFEP Fleet Mobile Payment Api)
+>IMPORTANT: Preauthorization code and completions result are in charge of ATIONet. Fleet Mobile payment Api with External PFEP are available [here](#External-PFEP-Fleet-Mobile-Payment-Api)
 
 ## Description 
 
