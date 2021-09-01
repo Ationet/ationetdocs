@@ -820,7 +820,8 @@ Using the ATIONet Mobile Driver App, the Customer can read the Imagen QR and do 
 
 ### How to generate QR Code Image 
 
-(pending)...............
+You must request the image of the QR code to ATIONet.
+
 # ATIONet Fleet Mobile Payment Api v1.0 #
 
 ## Contents ##
