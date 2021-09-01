@@ -107,7 +107,7 @@ warning. Below is an image as an example
 
 ```Using the ATIONet Mobile Driver App, the Customer can read the Imagen QR and do a Transaction more easier```
 
-![ationetTR](Content/Images/SiteSystemCommander/demo_staticQR2.gif)
+![ationetTR](Content/Images/SiteSystemCommander/demo_staticQR.gif)
 
 <ol>
 	<li>The customer arrives at the service stations and chooses a free pump</li>
