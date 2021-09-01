@@ -793,7 +793,7 @@ The first two digits of the response code identify the message pair type. The la
 ### Static QR Image
 
 Static QR Image is a photo that is pasted in the Pump and contains the pump Number and the Site code, it's mandatory data to do a Transacction.
-warning. Below is an image as an example
+Below is an image as an example
 
 ![ationetTR](Content/Images/SiteSystemCommander/siteqr2.jpeg)
 
