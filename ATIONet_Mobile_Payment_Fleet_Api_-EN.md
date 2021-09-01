@@ -25,7 +25,7 @@
 	- [STEP 2 Host Mobile Configuation](#STEP2-Host-Mobile-Configuation)
 	- [Values descriptions](#Values-descriptions)
 - [Status Codes and Messages](#Status-Codes-and-Messages)
--[ATIONet Fleet Mobile Payment Api v1.0](#ATIONet-Fleet-Mobile-Payment-Api-v1.0)
+- [ATIONet Fleet Mobile Payment Api v1.0](#ATIONet-Fleet-Mobile-Payment-Api-v1.0)
 </br>
 
 
