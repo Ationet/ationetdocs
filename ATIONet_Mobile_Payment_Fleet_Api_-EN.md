@@ -828,8 +828,7 @@ You must request the image of the QR code to ATIONet.
 
 This specification is intended to document ATIONet’s fleet Mobile Payment API messaging format and related features required for usarage. The following sections provide descriptions of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item.
 
-
->IMPORTANT: Preauthorization code and completions result are in charge of ATIONet. 
+>IMPORTANT: Preauthorization code and completions result are in charge of ATIONet. Fleet Mobile payment Api with External PFEP are available [here](#External PFEP Fleet Mobile Payment Api)
 
 ## Description 
 
@@ -1716,3 +1715,5 @@ Both methos response the same codes.
   "transactionId": "5664cbb9-f78f-4ad4-aa87-79ed95181c5a"
 }
 ```
+
+# External PFEP Fleet Mobile Payment Api
