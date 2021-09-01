@@ -63,7 +63,7 @@ Processor (FEP).
 such as consumer prompting, local velocity checking and receipt formatting and printing. Examples of site systems include Point of Sale (POS), Outside Sales Processor
 (OSP), Electronic Payment Server (EPS) and Forecourt Device Controller (FDC).
 </br>
->Note: MOBILE PAYMENT API is the common interface through which the MPA sends and receives requests from the MPPA. The description, you can read about  the methods and how to consume in ![API Section](ATIONet-Fleet---Mobile-Payment-Api-v1.0)
+>Note: MOBILE PAYMENT API is the common interface through which the MPA sends and receives requests from the MPPA. The description, you can read about  the methods and how to consume in [API Section](#ATIONet-Fleet---Mobile-Payment-Api-v1.0)
 
 
 ### Sequence diagram Pay at Pump with Above Site Payment Authorization 
