@@ -824,32 +824,6 @@ You must request the image of the QR code to ATIONet.
 
 # ATIONet Fleet Mobile Payment Api v1.0 #
 
-## Contents ##
-
-- [Description](#description)
-- [Details](#api-details)	
-- [Supported Transactions](#supported-transactions)
-- [Message Structure](#message-structure)
-	- [MobilePayments](#mobilePayments)
-	- [PreAuthorizedPayments](#preAuthorizedPayments)
-	- [GetTransaction](#getTransaction)
-	- [Cancel](#cancel)
-- [Error Handling](#error-handling)
-- [Field Descriptions](#field-descriptions)
-- [Transactions States](#transactions-states)
-	- [Transaction states sequence diagram on Pre authorization Request](#transactionstates-sequence-diagram-on-pre-authorization-request)
-	- [Transaction states sequence diagram on Cancelation Request](#transaction-states-sequence-diagram-on-cancelation-request)
-- [Response Codes](#response-codes)
-	- [ MobilePayments | PreAuthorizedPayments Response codes](#mobilePayments-|-preAuthorizedpaymentsresponse-codes)
-	- [ Cancelation Response codes](#cancelation-response-codes)
-- [Message Samples](#message-samples)
-	- [MobilePayments ](#mobilePayments)
-	- [PreAuthorizedPayments ](#preAuthorizedpayments)
-	- [GetTransaction ](#gettransaction)
-	- [Cancel ](#cancel)
-	
-
-
 ### Introduction
 
 This specification is intended to document ATIONet’s fleet Mobile Payment API messaging format and related features required for usarage. The following sections provide descriptions of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item.
