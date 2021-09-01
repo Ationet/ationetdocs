@@ -25,6 +25,7 @@
 	- [STEP 2 Host Mobile Configuation](#STEP2-Host-Mobile-Configuation)
 	- [Values descriptions](#Values-descriptions)
 - [Status Codes and Messages](#Status-Codes-and-Messages)
+-[ATIONet Fleet Mobile Payment Api v1.0](#ATIONet-Fleet-Mobile-Payment-Api-v1.0)
 </br>
 
 
@@ -110,12 +111,11 @@ warning. Below is an image as an example
 ![ationetTR](Content/Images/SiteSystemCommander/demo_staticQR.gif)
 
 <ol>
-	<li>The customer arrives at the service stations and chooses a free pump</li>
+	<li>The customer arrives at the service station and chooses a free pump</li>
 	<li>Customer open the ATIONet mobile driver app and select Pay</li>
-	<li>Choses Scan the QR code using your cell phone option</li>
+	<li>Choses Scan the QR code using his cell phone option</li>
 	<li>Customer scans the QR code and get the site info</li>
-	<li>Finally, chooses Fuel and amount and touch confirm to  approve Transaction</li>
-	<li></li>
+	<li>Finally, chooses Fuel and amount and touch confirm to approve Transaction</li>
 </ol>
 
 
