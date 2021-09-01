@@ -828,6 +828,10 @@ You must request the image of the QR code to ATIONet.
 
 This specification is intended to document ATIONet’s fleet Mobile Payment API messaging format and related features required for usarage. The following sections provide descriptions of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item.
 
+```
+>Authorization code and completions are in charge of ATIONet. 
+```
+
 ## Description 
 
 ATIONet’s fleet Mobile Payment API It is responsible for creating pre-authorizations, obtaining information on a Transaction and Canceling a pre-authorization, as long as it meets the requirements to do so.
