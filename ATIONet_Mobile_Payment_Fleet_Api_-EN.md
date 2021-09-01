@@ -65,34 +65,6 @@ such as consumer prompting, local velocity checking and receipt formatting and p
 </br>
 >Note: MOBILE PAYMENT API is the common interface through which the MPA sends and receives requests from the MPPA. The description, you can read about  the methods and how to consume in [API Section](#ATIONet-Fleet-Mobile-Payment-Api-v1.0)
 
-### Abaout Static QR Image
-
-Static QR Image is a photo that is pasted in the Pump and contains the pump Number and the Site code, it's mandatory data to do a Transacction.
-warning. Below is an image as an example
-
-![ationetTR](Content/Images/SiteSystemCommander/siteqr.jpeg)
-
-```Using the ATIONet Mobile Driver App, the Customer can read the Imagen QR and do a Transaction more easier```
-
-![ationetTR](Content/Images/SiteSystemCommander/demo_staticQR.gif)
-
-<ol>
-	<li>The customer arrives at the service stations and chooses a free pump</li>
-	<li>Customer open the ATIONet mobile driver app and select Pay</li>
-	<li>Choses Scan the QR code using your cell phone option</li>
-	<li>Customer scans the QR code and get the site info</li>
-	<li>Finally, chooses Fuel and amount and touch confirm to  approve Transaction</li>
-	<li></li>
-</ol>
-
-
->Note: The QR code Image must be of the type free code. Bellow you have an example
-
-![ationetTR](Content/Images/SiteSystemCommander/qrexample.PNG)
-
-### How to generate QR Code Image
-
-(pending)...............
 
 ### Sequence diagram Pay at Pump with Above Site Payment Authorization 
 
@@ -125,6 +97,36 @@ need to regenerate the receipt information.</li>
 	<li>Site System prints the receipt (if applicable).</li>
 	<li>MPPA sends a receipt response back to the Site System.</li>
 </ol>
+
+### About Static QR Image
+
+Static QR Image is a photo that is pasted in the Pump and contains the pump Number and the Site code, it's mandatory data to do a Transacction.
+warning. Below is an image as an example
+
+![ationetTR](Content/Images/SiteSystemCommander/siteqr2.jpeg)
+
+```Using the ATIONet Mobile Driver App, the Customer can read the Imagen QR and do a Transaction more easier```
+
+![ationetTR](Content/Images/SiteSystemCommander/demo_staticQR2.gif)
+
+<ol>
+	<li>The customer arrives at the service stations and chooses a free pump</li>
+	<li>Customer open the ATIONet mobile driver app and select Pay</li>
+	<li>Choses Scan the QR code using your cell phone option</li>
+	<li>Customer scans the QR code and get the site info</li>
+	<li>Finally, chooses Fuel and amount and touch confirm to  approve Transaction</li>
+	<li></li>
+</ol>
+
+
+>Note: The QR code Image must be of the type free code. Bellow you have an example
+
+![ationetTR](Content/Images/SiteSystemCommander/qrexample.PNG)
+
+### How to generate QR Code Image
+
+(pending)...............
+
 
 # Site System Implementation guide
 
