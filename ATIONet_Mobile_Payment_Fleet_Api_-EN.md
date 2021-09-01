@@ -797,7 +797,11 @@ warning. Below is an image as an example
 
 ![ationetTR](Content/Images/SiteSystemCommander/siteqr2.jpeg)
 
-```Using the ATIONet Mobile Driver App, the Customer can read the Imagen QR and do a Transaction more easier```
+```
+
+Using the ATIONet Mobile Driver App, the Customer can read the Imagen QR and do a Transaction more easier
+
+```
 
 ![ationetTR](Content/Images/SiteSystemCommander/demo_staticQR.gif)
 
@@ -810,7 +814,7 @@ warning. Below is an image as an example
 </ol>
 
 
->Note: The QR code Image must be of the type free code. Bellow you have an example
+>Note: The QR code Image must be of the type free code.
 
 ![ationetTR](Content/Images/SiteSystemCommander/qrexample.PNG)
 
