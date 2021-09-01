@@ -24,7 +24,7 @@
 	- [STEP 1 Site Mobile Configuration](#STEP-1-Site-Mobile-Configuration)
 	- [STEP 2 Host Mobile Configuation](#STEP2-Host-Mobile-Configuation)
 	- [Values descriptions](#Values-descriptions)
-- [Status Codes and Messages](#Status-Codes-and-Messages)
+	- [Status Codes and Messages](#Status-Codes-and-Messages)
 - [ATIONet Fleet Mobile Payment Api v1.0](#ATIONet-Fleet-Mobile-Payment-Api-v1.0)
 	- [Description](#description)
 	- [Details](#api-details)	
@@ -342,7 +342,7 @@ Note: The values in the image are for example. You must request the correspondin
 </table>
 
 
-## Status Codes and Messages
+### Status Codes and Messages
 
 The first two digits of the response code identify the message pair type. The last 3 digits is the error identifier for the status. A ‘good’ status is always represented as 00000 regardless of the message type.
 
