@@ -97,5 +97,450 @@ Failure to process the request will be indicated by an HTTP 400’s range status
 
 ## Field Descriptions
 
-- [Transactions States](ATIONet_Mobile_Payment_Fleet_Api_-EN.md#transactions-states)
+This section describe through a table  all parameters from request.
 
+<table>
+	<thead>
+		<tr valign="center">
+			<th rowspan="3" width="400" align="left">
+				Method
+			</th>
+			<th rowspan="3" width="125" align="left">
+				Paramether
+			</th>
+			<th rowspan="3" width="125" align="left">
+				Type
+			</th>
+			<th rowspan="3" width="225" align="left">
+				Description
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		 <tr valign="top">
+			<td>
+				<p align="left">MobilePayments | PreAuthorizedPayments</p>
+			</td>
+			<td>
+				<p align="left">siteCode</p>
+			</td>
+			<td>
+			 	<p align="left">string</p>
+			 </td>
+			<td>
+				<p align="left">The site code</p>
+			</td>
+		 </tr>
+		 <tr valign="top">
+			<td>
+				<p align="left">MobilePayments | PreAuthorizedPayments</p>
+			</td>
+			<td>
+				<p align="left">pumpNumber</p>
+			</td>
+			<td>
+			 	<p align="left">integer</p>
+			 </td>
+			<td>
+				<p align="left">The pump number</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments | PreAuthorizedPayments</p>
+			</td>
+			<td>
+				<p align="left">fuelCode</p>
+			</td>
+			<td>
+			 	<p align="left">string</p>
+			 </td>
+			<td>
+				<p align="left">The fuel code</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments | PreAuthorizedPayments</p>
+			</td>
+			<td>
+				<p align="left">amount</p>
+			</td>
+			<td>
+			 	<p align="left">double</p>
+			 </td>
+			<td>
+				<p align="left">Number of liters of fuel to dispatch</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="left">primaryTrack</p>
+			</td>
+			<td>
+			 	<p align="left">string</p>
+			 </td>
+			<td>
+				<p align="left">The number associated with the card</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments</p>
+			</td>
+			<td>
+				<p align="left">terminalCode</p>
+			</td>
+			<td>
+			 	<p align="left">string</p>
+			 </td>
+			<td>
+				<p align="left">The terminal code</p>
+			</td>
+		 </tr>		
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments | PreAuthorizedPayments</p>
+			</td>
+			<td>
+				<p align="left">mobilePaymentMode</p>
+			</td>
+			<td>
+			 	<p align="left">integer</p>
+			 </td>
+			<td>
+				<p align="left">The operation mode Code. It can be for 1 for Fullintegrated</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MobilePayments | PreAuthorizedPayments</p>
+			</td>
+			<td>
+				<p align="left">potencyKeyId</p>
+			</td>
+			<td>
+			 	<p align="left">string</p>
+			 </td>
+			<td>
+				<p align="left">The Transaction's ID</p>
+			</td>
+		 </tr>		
+		<tr valign="top">
+			<td>
+				<p align="left">PreAuthorizedPayments</p>
+			</td>
+			<td>
+				<p align="left">externalReferenceID</p>
+			</td>
+			<td>
+			 	<p align="left">string</p>
+			 </td>
+			<td>
+				<p align="left">Authorization reference ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">GetTransaction | Cancel</p>
+			</td>
+			<td>
+				<p align="left">transactionId</p>
+			</td>
+			<td>
+			 	<p align="left">string</p>
+			 </td>
+			<td>
+				<p align="left">Transaction ID</p>
+			</td>
+		 </tr>
+</table>
+
+## Transactions States
+
+This section describe through a table  all  states that a sale can have.
+
+
+<table>
+	<thead>
+		<tr valign="center">
+			<th rowspan="2" width="125" align="left">
+				State name
+			</th>			
+			<th rowspan="2" width="125" align="center">
+				ID
+			</th>			
+			<th rowspan="2" width="125" align="left">
+				Message
+			</th>
+		</tr>		
+	</thead>
+	<tbody>
+		 <tr valign="top">
+			<td>
+				<p align="left">Created</p>
+			</td>
+			<td>
+				<p align="center">1</p>
+			</td>
+			<td>
+				<p align="left">Created</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PreauthorizationAccepted</p>
+			</td>
+			<td>
+				<p align="center">2</p>
+			</td>
+			<td>
+				<p align="left">Preauthorization Accepted</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PreauthorizationRejected</p>
+			</td>
+			<td>
+				<p align="center">3</p>
+			</td>
+			<td>
+				<p align="left">Preauthorization Rejected</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">FuelPointAuthorizationRequested</p>
+			</td>
+			<td>
+				<p align="center">4</p>
+			</td>
+			<td>
+				<p align="left">FuelPoint Authorization Requested</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PumpReserveAccepted</p>
+			</td>
+			<td>
+				<p align="center">5</p>
+			</td>
+			<td>
+				<p align="left">Site System Accept Pump Reserve</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PumpReserveRefused</p>
+			</td>
+			<td>
+				<p align="center">6</p>
+			</td>
+			<td>
+				<p align="left">Site System not Accept Pump Reserve</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">FuelPointAuthorized</p>
+			</td>
+			<td>
+				<p align="center">7</p>
+			</td>
+			<td>
+				<p align="left">Fuel Point Authorized</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CanceledByFuelPoint</p>
+			</td>
+			<td>
+				<p align="center">8</p>
+			</td>
+			<td>
+				<p align="left">Canceled By Fuel Point</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Fueling</p>
+			</td>
+			<td>
+				<p align="center">9</p>
+			</td>
+			<td>
+				<p align="left">Fueling</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Complete</p>
+			</td>
+			<td>
+				<p align="center">10</p>
+			</td>
+			<td>
+				<p align="left">Complete</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompleteFailed</p>
+			</td>
+			<td>
+				<p align="center">11</p>
+			</td>
+			<td>
+				<p align="left">Complete Failed</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CancelationRequested</p>
+			</td>
+			<td>
+				<p align="center">12</p>
+			</td>
+			<td>
+				<p align="left">Cancelation Requested</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CanceledByUser</p>
+			</td>
+			<td>
+				<p align="center">13</p>
+			</td>
+			<td>
+				<p align="left">Canceled By User</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CanceledBySiteSystem</p>
+			</td>
+			<td>
+				<p align="center">14</p>
+			</td>
+			<td>
+				<p align="left">Canceled By Site System</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">FuelPointDeauthorizationRequested</p>
+			</td>
+			<td>
+				<p align="center">15</p>
+			</td>
+			<td>
+				<p align="left">Fuel Point Deauthorization Requested</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SessionError</p>
+			</td>
+			<td>
+				<p align="center">16</p>
+			</td>
+			<td>
+				<p align="left">Session not available</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">UnknownError</p>
+			</td>
+			<td>
+				<p align="center">17</p>
+			</td>
+			<td>
+				<p align="left">Unknown error when trying to connect with session</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteSystemError</p>
+			</td>
+			<td>
+				<p align="center">18</p>
+			</td>
+			<td>
+				<p align="left">Site System Generic error</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteSystemError</p>
+			</td>
+			<td>
+				<p align="center">19</p>
+			</td>
+			<td>
+				<p align="left">Cancelled By MPPA</p>
+			</td>
+		 </tr>
+</table>
+
+## Response Codes
+
+### MobilePayments | PreAuthorizedPayments Response codes
+	
+Both methos response the same codes.
+
+<table>
+	<thead>
+		<tr valign="center">
+			<th rowspan="3" width="125" align="left">
+				Code
+			</th>
+			<th rowspan="3" width="125" align="left">
+				Description
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+			<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">Success</p>
+			</td>
+		 </tr>
+			<tr valign="top">
+			<td>
+			<p align="left">400</p>
+			</td>
+			<td>
+				<p align="left">Bad request</p>
+			</td>
+		 </tr>
+	 </tbody>
+		
+</table>
+
+## Message Samples
+
+### PreAuthorizedPayments
+
+```
+{
+  "siteCode": "1524",
+  "pumpNumber": 1,
+  "fuelCode": "3",
+  "amount": 9,
+  "mobilePaymentMode": 1,
+  "potencyKeyId": "5734cbb9-f78f-4ad4-aa87-79ed95181c5a",
+  "externalReferanceID": "854712"
+}
+
+```
