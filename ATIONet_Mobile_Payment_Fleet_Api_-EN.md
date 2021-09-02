@@ -873,7 +873,7 @@ API URI: *ationetmobilepayment-appshost-test.azurewebsites.net/*
 			</td>
 			<td></td>
 			<td>
-				<p align="left">Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID</p>
+				<p align="left">Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID.</p>
 			</td>
 		 </tr>
 		 <tr valign="top">
@@ -885,7 +885,9 @@ API URI: *ationetmobilepayment-appshost-test.azurewebsites.net/*
 			</td>
 			<td></td>
 			<td>
-				<p align="left">Used to do a sale request with external approval, returns Transaction ID. If the Sale already exists, returns the ID</p>
+				<p align="left">Used to do a sale request with external approval, returns Transaction ID. If the Sale already exists, returns the ID.
+				Visit [here](EXTERNAL_Mobile_Payment_Fleet_Api_-EN) to read more.
+				</p>
 			</td>
 		 </tr>
 		 <tr valign="top">
@@ -940,12 +942,6 @@ Create a Sale with Ationet authorization. The sale creation recibes an ID, if th
 
 *Body:	{ “TransactionId”:”StringValue” }*
 
-
-### PreAuthorizedPayments
-
-in the  [External PFEP Fleet Mobile Payment Api section](#External-PFEP-Fleet-Mobile-Payment-Api) you will be able to find a more detailed explanation about how to consume this method.
-
->Note: This method use External PFEP.
 
 ### GetTransaction
 
@@ -1024,7 +1020,7 @@ This section describe through a table  all parameters from request.
 	<thead>
 		<tr valign="center">
 			<th rowspan="3" width="400" align="left">
-				Request
+				Method
 			</th>
 			<th rowspan="3" width="125" align="left">
 				Paramether
@@ -1704,31 +1700,3 @@ Both methos response the same codes.
 }
 ```
 
-# External PFEP Fleet Mobile Payment Api
-
-## Introduction
-
-This section describes the Mobile Payment Solution flow in which the PFEP is an external agent to `ATIONet`.
-
-## Sequence diagram Pay at Pump with external PFEP
-
-![ationetTR](Content/Images/SiteSystemCommander/external_PFEP.drawio.svg)
-
-## PreAuthorizedPayments
-
-Create a Sale with external authorization. The sale creation recibes an ID, if this ID already exists then the method returns the Sale's Id.
-
-#### Request Format
-
-*URL: /api/PreAuthorizedPayments* </br>
-*Method: POST* </br>
-*Body: { "siteCode":"string", "pumpNumber":integer, "fuelCode":"string", "amount":double, "mobilePaymentMode":integer, "potencyKeyId":"string", "externalReferanceID":"string" }* </br>
-
-#### Response Format
-
-*Header:*
-
-	Content-Type: application/json; charset=utf-8
-	content-encoding: gzip 
-
-*Body: { “TransactionId”:”StringValue” }*
