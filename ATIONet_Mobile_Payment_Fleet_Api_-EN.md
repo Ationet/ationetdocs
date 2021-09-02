@@ -33,7 +33,7 @@
 	- [Supported Transactions](#supported-transactions)
 	- [Message Structure](#message-structure)
 		- [MobilePayments](#mobilePayments)
-		- [PreAuthorizedPayments](#preAuthorizedPayments)
+		- [PreAuthorizedPayments](EXTERNAL_Mobile_Payment_Fleet_Api_-EN.md)
 		- [GetTransaction](#getTransaction)
 		- [Cancel](#cancel)
 	- [Error Handling](#error-handling)
