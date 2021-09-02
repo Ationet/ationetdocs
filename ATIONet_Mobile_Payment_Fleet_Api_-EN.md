@@ -828,7 +828,7 @@ You must request the QR Code Image to ATIONet.
 
 This specification is intended to document ATIONet’s fleet Mobile Payment API messaging format and related features required for usarage. The following sections provide descriptions of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item.
 
->IMPORTANT: `ATIONet` is the PFEP that  facilitates the authorization of payment transactions between the MPPA and the Issuer networks. Fleet Mobile payment Api with External PFEP are available [here](EXTERNAL_Mobile_Payment_Fleet_Api_-EN.md)
+>IMPORTANT: `ATIONet` is the PFEP that  facilitates the authorization of payment transactions between the MPPA and the Issuer networks. Fleet Mobile payment Api with External PFEP are available [here](EXTERNAL_Mobile_Payment_Fleet_Api_-EN.md).
 
  
 ## Description 
