@@ -24,8 +24,7 @@
 
 ## Overview
 
-This document is part of the Ationet Fleet Mobile Payment Fully Integrated  and only describe  Mobile Payment Solution flow in which the PFEP is an external agent to `ATIONet`. 
-Visit [here](ATIONet_Mobile_Payment_Fleet_Api_-EN.md) for read more about this specification.
+This document is part of [Ationet Fleet Mobile Payment Fully Integrated](ATIONet_Mobile_Payment_Fleet_Api_-EN.md) and only describe  Mobile Payment Solution flow in which the PFEP is an external agent to `ATIONet`. 
 
 ## Sequence diagram Pay at Pump with external PFEP
 
