@@ -820,7 +820,7 @@ Using the ATIONet Mobile Driver App, the Customer can read the Imagen QR and do 
 
 ### How to generate QR Code Image 
 
-You must request the image of the QR code to ATIONet.
+You must request the QR Code Image to ATIONet.
 
 # ATIONet PFEP Fleet Mobile Payment Api
 
@@ -828,8 +828,9 @@ You must request the image of the QR code to ATIONet.
 
 This specification is intended to document ATIONet’s fleet Mobile Payment API messaging format and related features required for usarage. The following sections provide descriptions of the messages themselves, the expected behaviour for each supported transaction type and a common ground for the functionality of each relevant item.
 
->IMPORTANT: Preauthorization code and completions result are in charge of ATIONet. Fleet Mobile payment Api with External PFEP are available [here](#External-PFEP-Fleet-Mobile-Payment-Api)
+>IMPORTANT: `ATIONet` is the PFEP that  facilitates the authorization of payment transactions between the MPPA and the Issuer networks. Fleet Mobile payment Api with External PFEP are available [here](#External-PFEP-Fleet-Mobile-Payment-Api)
 
+ 
 ## Description 
 
 ATIONet’s fleet Mobile Payment API It is responsible for creating pre-authorizations, obtaining information on a Transaction and Canceling a pre-authorization, as long as it meets the requirements to do so.
