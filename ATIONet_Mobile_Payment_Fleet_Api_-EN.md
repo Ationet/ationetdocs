@@ -986,7 +986,7 @@ Create a Sale with Ationet authorization. The sale creation recibes an ID, if th
 
 ### Cancel 
 
-Cancels a Sale that is in course as long as your status is correct. In the following diagram you can check all cancellable transaction statuses - [Transaction states sequence diagram on Cancelation Request](#transaction-states-sequence-diagram-on-cancelation-request)
+Cancels a Sale that is in course as long as your status is correct. In the following diagram you can check all cancellable transaction statuses - [Transaction states sequence diagram on Cancelation Request](#transaction-states-sequence-diagram-on-cancelation-request).
 
 #### Request Format
 
