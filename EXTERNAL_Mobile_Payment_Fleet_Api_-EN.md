@@ -36,7 +36,7 @@ This section describes the Mobile Payment Solution flow in which the PFEP is an 
 
 API Details
 
-API URI: ationetmobilepayment-appshost-test.azurewebsites.net/
+*API URI: ationetmobilepayment-appshost-test.azurewebsites.net/*
 
 ## Message Structure
 
