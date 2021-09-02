@@ -58,7 +58,7 @@
 
 ## Overview
 
-![ationetTR](Content/Images/SiteSystemCommander/Complete_Diagram.png)
+![ationetTR](Content/Images/SiteSystemCommander/SiteSystem_Diagram.drawio.svg)
 
 ### Introduction
 
