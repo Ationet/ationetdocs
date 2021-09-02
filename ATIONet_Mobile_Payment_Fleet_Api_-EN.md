@@ -943,22 +943,9 @@ Create a Sale with Ationet authorization. The sale creation recibes an ID, if th
 
 ### PreAuthorizedPayments
 
-Create a Sale with external authorization. The sale creation recibes an ID, if this ID already exists then the method returns the Sale's Id.
+in the  [External PFEP Fleet Mobile Payment Api section](#External PFEP Fleet Mobile Payment Api) you will be able to find a more detailed explanation about how to consume this method.
 
-#### Request Format
-
-*URL: /api/PreAuthorizedPayments* </br>
-*Method: POST* </br>
-*Body: { "siteCode":"string", "pumpNumber":integer, "fuelCode":"string", "amount":double, "mobilePaymentMode":integer, "potencyKeyId":"string", "externalReferanceID":"string" }* </br>
-
-#### Response Format
-
-*Header:*
-
-	Content-Type: application/json; charset=utf-8
-	content-encoding: gzip 
-
-*Body: { “TransactionId”:”StringValue” }*
+>Note: This method use External PFEP.
 
 ### GetTransaction
 
@@ -1723,7 +1710,25 @@ Both methos response the same codes.
 
 This section describes the Mobile Payment Solution flow in which the PFEP is an external agent to `ATIONet`.
 
-## Sequence diagram Pay at Pump with external PFEP.
+## Sequence diagram Pay at Pump with external PFEP
 
 ![ationetTR](Content/Images/SiteSystemCommander/external_PFEP.drawio.svg)
 
+## PreAuthorizedPayments
+
+Create a Sale with external authorization. The sale creation recibes an ID, if this ID already exists then the method returns the Sale's Id.
+
+#### Request Format
+
+*URL: /api/PreAuthorizedPayments* </br>
+*Method: POST* </br>
+*Body: { "siteCode":"string", "pumpNumber":integer, "fuelCode":"string", "amount":double, "mobilePaymentMode":integer, "potencyKeyId":"string", "externalReferanceID":"string" }* </br>
+
+#### Response Format
+
+*Header:*
+
+	Content-Type: application/json; charset=utf-8
+	content-encoding: gzip 
+
+*Body: { “TransactionId”:”StringValue” }*
