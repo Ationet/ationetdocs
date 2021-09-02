@@ -34,6 +34,10 @@ This section describes the Mobile Payment Solution flow in which the PFEP is an 
 
 ![ationetTR](Content/Images/SiteSystemCommander/external_PFEP.drawio.svg)
 
+API Details
+
+API URI: ationetmobilepayment-appshost-test.azurewebsites.net/
+
 ## Message Structure
 
 This section describe the message structure for each API Method available, as well as the responses messages for each one.
