@@ -5,7 +5,7 @@
 |--- |--- |
 |File:|ATIONet - Dynamic QR Code Payments|
 |Doc Version:|1.0|
-|Release Date:|26, August 2021|
+|Release Date:|2, September 2021|
 |Author:|ATIONet LLC|
 
 |Change Log|||
@@ -19,36 +19,7 @@
 - [Overview](#overview)
 	- [Introduction](#introduction)
 	- [Entities](#Entities)
-	- [Sequence diagram Pay at Pump with Above Site Payment Authorization](#Sequence-diagram-Pay-at-Pump-with-Above-Site-Payment-Authorization)
-- [Site System Implementation guide](#Site-System-Implementation-guide)
-	- [STEP 1 Site Mobile Configuration](#STEP-1-Site-Mobile-Configuration)
-	- [STEP 2 Host Mobile Configuation](#STEP2-Host-Mobile-Configuation)
-	- [Values descriptions](#Values-descriptions)
-	- [Status Codes and Messages](#Status-Codes-and-Messages)
-	- [Static QR Image](#Static-QR-Image)
-	- [How to generate QR Code Image](#How-to-generate-QR-Code-Image)
-- [ATIONet PFEP Fleet Mobile Payment Api](#ATIONet-PFEP-Fleet-Mobile-Payment-Api)
-	- [Description](#description)
-	- [Details](#api-details)	
-	- [Supported Transactions](#supported-transactions)
-	- [Message Structure](#message-structure)
-		- [MobilePayments](#mobilePayments)
-		- [PreAuthorizedPayments](#preAuthorizedPayments)
-		- [GetTransaction](#getTransaction)
-		- [Cancel](#cancel)
-	- [Error Handling](#error-handling)
-	- [Field Descriptions](#field-descriptions)
-	- [Transactions States](#transactions-states)
-		- [Transaction states sequence diagram on Pre authorization Request](#transactionstates-sequence-diagram-on-pre-authorization-request)
-		- [Transaction states sequence diagram on Cancelation Request](#transaction-states-sequence-diagram-on-cancelation-request)
-	- [Response Codes](#response-codes)
-		- [ MobilePayments | PreAuthorizedPayments Response codes](#mobilePayments-|-preAuthorizedpaymentsresponse-codes)
-		- [ Cancelation Response codes](#cancelation-response-codes)
-	- [Message Samples](#message-samples)
-		- [MobilePayments ](#mobilePayments)
-		- [PreAuthorizedPayments ](#preAuthorizedpayments)
-		- [GetTransaction ](#gettransaction)
-		- [Cancel ](#cancel)
+	
 </br>
 
 
@@ -102,9 +73,6 @@ This section describe through a table  all parameters from request.
 <table>
 	<thead>
 		<tr valign="center">
-			<th rowspan="3" width="400" align="left">
-				Method
-			</th>
 			<th rowspan="3" width="125" align="left">
 				Paramether
 			</th>
@@ -119,9 +87,6 @@ This section describe through a table  all parameters from request.
 	<tbody>
 		 <tr valign="top">
 			<td>
-				<p align="left">MobilePayments | PreAuthorizedPayments</p>
-			</td>
-			<td>
 				<p align="left">siteCode</p>
 			</td>
 			<td>
@@ -132,9 +97,6 @@ This section describe through a table  all parameters from request.
 			</td>
 		 </tr>
 		 <tr valign="top">
-			<td>
-				<p align="left">MobilePayments | PreAuthorizedPayments</p>
-			</td>
 			<td>
 				<p align="left">pumpNumber</p>
 			</td>
@@ -147,9 +109,6 @@ This section describe through a table  all parameters from request.
 		 </tr>
 		<tr valign="top">
 			<td>
-				<p align="left">MobilePayments | PreAuthorizedPayments</p>
-			</td>
-			<td>
 				<p align="left">fuelCode</p>
 			</td>
 			<td>
@@ -160,9 +119,6 @@ This section describe through a table  all parameters from request.
 			</td>
 		 </tr>
 		<tr valign="top">
-			<td>
-				<p align="left">MobilePayments | PreAuthorizedPayments</p>
-			</td>
 			<td>
 				<p align="left">amount</p>
 			</td>
@@ -175,37 +131,6 @@ This section describe through a table  all parameters from request.
 		 </tr>
 		<tr valign="top">
 			<td>
-				<p align="left">MobilePayments</p>
-			</td>
-			<td>
-				<p align="left">primaryTrack</p>
-			</td>
-			<td>
-			 	<p align="left">string</p>
-			 </td>
-			<td>
-				<p align="left">The number associated with the card</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">MobilePayments</p>
-			</td>
-			<td>
-				<p align="left">terminalCode</p>
-			</td>
-			<td>
-			 	<p align="left">string</p>
-			 </td>
-			<td>
-				<p align="left">The terminal code</p>
-			</td>
-		 </tr>		
-		<tr valign="top">
-			<td>
-				<p align="left">MobilePayments | PreAuthorizedPayments</p>
-			</td>
-			<td>
 				<p align="left">mobilePaymentMode</p>
 			</td>
 			<td>
@@ -216,9 +141,6 @@ This section describe through a table  all parameters from request.
 			</td>
 		 </tr>
 		<tr valign="top">
-			<td>
-				<p align="left">MobilePayments | PreAuthorizedPayments</p>
-			</td>
 			<td>
 				<p align="left">potencyKeyId</p>
 			</td>
@@ -231,9 +153,6 @@ This section describe through a table  all parameters from request.
 		 </tr>		
 		<tr valign="top">
 			<td>
-				<p align="left">PreAuthorizedPayments</p>
-			</td>
-			<td>
 				<p align="left">externalReferenceID</p>
 			</td>
 			<td>
@@ -243,20 +162,7 @@ This section describe through a table  all parameters from request.
 				<p align="left">Authorization reference ID</p>
 			</td>
 		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">GetTransaction | Cancel</p>
-			</td>
-			<td>
-				<p align="left">transactionId</p>
-			</td>
-			<td>
-			 	<p align="left">string</p>
-			 </td>
-			<td>
-				<p align="left">Transaction ID</p>
-			</td>
-		 </tr>
+		
 </table>
 
 ## Transactions States
@@ -288,28 +194,6 @@ This section describe through a table  all  states that a sale can have.
 			</td>
 			<td>
 				<p align="left">Created</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">PreauthorizationAccepted</p>
-			</td>
-			<td>
-				<p align="center">2</p>
-			</td>
-			<td>
-				<p align="left">Preauthorization Accepted</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">PreauthorizationRejected</p>
-			</td>
-			<td>
-				<p align="center">3</p>
-			</td>
-			<td>
-				<p align="left">Preauthorization Rejected</p>
 			</td>
 		 </tr>
 		<tr valign="top">
@@ -387,17 +271,6 @@ This section describe through a table  all  states that a sale can have.
 			</td>
 			<td>
 				<p align="left">Complete</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">CompleteFailed</p>
-			</td>
-			<td>
-				<p align="center">11</p>
-			</td>
-			<td>
-				<p align="left">Complete Failed</p>
 			</td>
 		 </tr>
 		<tr valign="top">
