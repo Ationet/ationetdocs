@@ -18,8 +18,16 @@
 
 - [Overview](#overview)
 	- [Introduction](#introduction)
-	- [Entities](#Entities)
-	
+- [Message Structure](#Message-Structure)
+	- [PreAuthorizedPayments](#PreAuthorizedPayments)
+		- [Request Format](#Request-Format)
+		- [Response Format](#Response-Format)
+- [Field Descriptions](#Field-Descriptions)
+- [Error Handling](#Error-Handling)
+- [Transactions States](#Transactions-States)
+- [Response Codes](#Response-Codes)
+- [Message Samples](#Message-Samples)
+
 </br>
 
 ## Overview
@@ -57,14 +65,6 @@ Create a Sale with external authorization. The sale creation recibes an ID, if t
 	content-encoding: gzip 
 
 *Body: { “TransactionId”:”StringValue” }*
-
-## Error Handling
-
-Success/failure exits on the Native Transaction Protocol will be handled via HTTP status codes.
-
-Successful request will get a HTTP 200 and the resulting response.
-
-Failure to process the request will be indicated by an HTTP 400’s range status code.
 
 ## Field Descriptions
 
@@ -164,6 +164,15 @@ This section describe through a table  all parameters from request.
 		 </tr>
 		
 </table>
+
+
+## Error Handling
+
+Success/failure exits on the Native Transaction Protocol will be handled via HTTP status codes.
+
+Successful request will get a HTTP 200 and the resulting response.
+
+Failure to process the request will be indicated by an HTTP 400’s range status code.
 
 ## Transactions States
 
@@ -365,8 +374,6 @@ This section describe through a table  all  states that a sale can have.
 
 ## Response Codes
 
-### MobilePayments | PreAuthorizedPayments Response codes
-	
 Both methos response the same codes.
 
 <table>
