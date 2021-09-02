@@ -36,8 +36,8 @@
 		- [PreAuthorizedPayments](EXTERNAL_Mobile_Payment_Fleet_Api_-EN.md)
 		- [GetTransaction](#getTransaction)
 		- [Cancel](#cancel)
-	- [Error Handling](#error-handling)
 	- [Field Descriptions](#field-descriptions)
+	- [Error Handling](#error-handling)
 	- [Transactions States](#transactions-states)
 		- [Transaction states sequence diagram on Pre authorization Request](#transactionstates-sequence-diagram-on-pre-authorization-request)
 		- [Transaction states sequence diagram on Cancelation Request](#transaction-states-sequence-diagram-on-cancelation-request)
@@ -1004,14 +1004,6 @@ Cancels a Sale that is in course as long as your status is correct. In the follo
 *Body:{ ”transactionId”: ”StringValue”, ”isSuccessCanceled”: ”bool”, ”responseCode"”: ”string”, ”responseMessage”: ”string” }*
 
 
-## Error Handling
-
-Success/failure exits on the Native Transaction Protocol will be handled via HTTP status codes.
-
-Successful request will get a HTTP 200 and the resulting response.
-
-Failure to process the request will be indicated by an HTTP 400’s range status code.
-
 ## Field Descriptions
 
 This section describe through a table  all parameters from request.
@@ -1175,6 +1167,15 @@ This section describe through a table  all parameters from request.
 			</td>
 		 </tr>
 </table>
+
+
+## Error Handling
+
+Success/failure exits on the Native Transaction Protocol will be handled via HTTP status codes.
+
+Successful request will get a HTTP 200 and the resulting response.
+
+Failure to process the request will be indicated by an HTTP 400’s range status code.
 
 
 ## Transactions States
