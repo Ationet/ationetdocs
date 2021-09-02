@@ -943,7 +943,7 @@ Create a Sale with Ationet authorization. The sale creation recibes an ID, if th
 
 ### PreAuthorizedPayments
 
-in the  [External PFEP Fleet Mobile Payment Api section](#External PFEP Fleet Mobile Payment Api) you will be able to find a more detailed explanation about how to consume this method.
+in the  [External PFEP Fleet Mobile Payment Api section](#External-PFEP-Fleet-Mobile-Payment-Api) you will be able to find a more detailed explanation about how to consume this method.
 
 >Note: This method use External PFEP.
 
