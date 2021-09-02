@@ -22,13 +22,9 @@
 	
 </br>
 
+## Overview
 
-><h3>IMPORTANT: The following document is only valid for the COMMANDER configuration.</h3>
-
-
-## Introduction
-
-This section describes the Mobile Payment Solution flow in which the PFEP is an external agent to `ATIONet`.
+This section describes the Mobile Payment Solution flow in which the PFEP is an external agent to `ATIONet`. 
 
 ## Sequence diagram Pay at Pump with external PFEP
 
