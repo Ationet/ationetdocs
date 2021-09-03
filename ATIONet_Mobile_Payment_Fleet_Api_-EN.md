@@ -1,3 +1,4 @@
+Using the ATIONet Mobile Driver App, the Customer can read the Imagen QR and do a Transaction more easier
 ![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
 # Ationet Fleet Mobile Payment Fully Integrated #
 
@@ -799,7 +800,7 @@ Below is an image as an example
 
 ```
 
-Using the ATIONet Mobile Driver App, the Customer can read the Imagen QR and do a Transaction more easier
+Using the ATIONet Mobile Driver App, the Customer can read the Imagen QR and do a Transaction more easier.
 
 ```
 
