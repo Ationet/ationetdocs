@@ -1028,7 +1028,7 @@ This section describe through a table  all parameters from request.
 	<tbody>
 		 <tr valign="top">
 			<td>
-				<p align="left">MobilePayments | PreAuthorizedPayments</p>
+				<p align="left">MobilePayments</p>
 			</td>
 			<td>
 				<p align="left">siteCode</p>
@@ -1042,7 +1042,7 @@ This section describe through a table  all parameters from request.
 		 </tr>
 		 <tr valign="top">
 			<td>
-				<p align="left">MobilePayments | PreAuthorizedPayments</p>
+				<p align="left">MobilePayments</p>
 			</td>
 			<td>
 				<p align="left">pumpNumber</p>
@@ -1056,7 +1056,7 @@ This section describe through a table  all parameters from request.
 		 </tr>
 		<tr valign="top">
 			<td>
-				<p align="left">MobilePayments | PreAuthorizedPayments</p>
+				<p align="left">MobilePayments</p>
 			</td>
 			<td>
 				<p align="left">fuelCode</p>
@@ -1070,7 +1070,7 @@ This section describe through a table  all parameters from request.
 		 </tr>
 		<tr valign="top">
 			<td>
-				<p align="left">MobilePayments | PreAuthorizedPayments</p>
+				<p align="left">MobilePayments</p>
 			</td>
 			<td>
 				<p align="left">amount</p>
@@ -1112,7 +1112,7 @@ This section describe through a table  all parameters from request.
 		 </tr>		
 		<tr valign="top">
 			<td>
-				<p align="left">MobilePayments | PreAuthorizedPayments</p>
+				<p align="left">MobilePayments</p>
 			</td>
 			<td>
 				<p align="left">mobilePaymentMode</p>
@@ -1126,7 +1126,7 @@ This section describe through a table  all parameters from request.
 		 </tr>
 		<tr valign="top">
 			<td>
-				<p align="left">MobilePayments | PreAuthorizedPayments</p>
+				<p align="left">MobilePayments</p>
 			</td>
 			<td>
 				<p align="left">potencyKeyId</p>
