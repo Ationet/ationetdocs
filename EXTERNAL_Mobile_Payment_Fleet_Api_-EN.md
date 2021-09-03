@@ -38,6 +38,11 @@ This document is part of [Ationet Fleet Mobile Payment Fully Integrated](ATIONet
 
 ![ationetTR](Content/Images/SiteSystemCommander/external_PFEP.drawio.svg)
 
+
+### Transaction states sequence diagram on Pre authorization Request
+
+![ationetTR](Content/Images/SiteSystemCommander/external_PFEP.drawio.svg)
+
 ## API Details
 
 *API URI: ationetmobilepayment-appshost-test.azurewebsites.net/*
