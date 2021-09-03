@@ -1657,6 +1657,7 @@ Both methos response the same codes.
 ### MobilePayments Sample 
 
 
+>Request Example
 ```
 {
   "siteCode": "1524",
@@ -1671,16 +1672,58 @@ Both methos response the same codes.
 	
 ```
 
+>Response Example
+
+```
+{
+  "transactionId": "5734cbb9-f78f-4ad4-aa87-79ed95181c5a"
+}
+
+```
 	
 ### GetTransaction
 
+>Request Example
+>
 ```
 {
   "id": 5734cbb9-f78f-4ad4-aa87-79ed95181c5a
 }
 ```
-	
+
+>Response Example
+
+```
+{
+  "id": "5734cbb9-f78f-4ad4-aa87-79ed95181c5a",
+  "siteCode": "1524",
+  "primaryTrack": "0000000000001",
+  "odometer": 0,
+  "terminalIdentification": null,
+  "transactionSequenceNumber": 17565,
+  "state_Name": "Site System not Accept Pump Reserve",
+  "state_Id": 6,
+  "paymentProcessorReferenceId": null,
+  "paymentProcessorMessage": null,
+  "siteSystemMessage": "Fueling Position inaccessible/offline",
+  "fuelPointNumber": 1,
+  "paymentMethod": "AtionetPrepaid",
+  "requestedAmount": 9,
+  "authorizedAmount": 0,
+  "dispatchedAmount": 0,
+  "dispatchedQuantity": 0,
+  "productCode": null,
+  "productDescription": null,
+  "productUnitPrice": 0,
+  "unitMeasure": null,
+  "createDateTime": "2021-09-03T13:43:16.6157799",
+  "updateDateTime": "2021-09-03T13:43:24.5466667"
+}
+```
+
 ### Cancel
+
+>Request Example
 
 ```
 {
@@ -1688,3 +1731,12 @@ Both methos response the same codes.
 }
 ```
 
+>Response Example
+
+```
+{
+  "code": "00000",
+  "message": "Successfully Canceled"
+}
+
+```
