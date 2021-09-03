@@ -884,7 +884,7 @@ API URI: *ationetmobilepayment-appshost-test.azurewebsites.net/*
 			<td></td>
 			<td>
 				<p align="left">Used to do a sale request with external approval, returns Transaction ID. If the Sale already exists, returns the ID.
-				Visit [here](EXTERNAL_Mobile_Payment_Fleet_Api_-EN) to read more.
+				Visit [EXTERNAL PFEP Fleet Mobile Payment Api](EXTERNAL_Mobile_Payment_Fleet_Api_-EN.md) to read more.
 				</p>
 			</td>
 		 </tr>
