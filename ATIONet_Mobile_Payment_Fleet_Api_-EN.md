@@ -41,8 +41,6 @@
 		- [Transaction states sequence diagram on Pre authorization Request](#transactionstates-sequence-diagram-on-pre-authorization-request)
 		- [Transaction states sequence diagram on Cancelation Request](#transaction-states-sequence-diagram-on-cancelation-request)
 	- [Response Codes](#response-codes)
-		- [ MobilePayments Response codes](#mobilePayments-response-codes)
-		- [ Cancelation Response codes](#cancelation-response-codes)
 	- [Message Samples](#message-samples)
 		- [MobilePayments ](#mobilePayments)
 		- [PreAuthorizedPayments ](#preAuthorizedpayments)
