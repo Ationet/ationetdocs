@@ -812,7 +812,7 @@ Using the ATIONet Mobile Driver App, the Customer can read the Imagen QR and do 
 </ol>
 
 
->Note: The QR code Image must be of the type free code.
+>Note: The QR code Image must be of the type free text.
 
 ![ationetTR](Content/Images/SiteSystemCommander/qrexample.PNG)
 
