@@ -1654,8 +1654,9 @@ Both methos response the same codes.
 	
 ## Message Samples
 
-### MobilePayments Sample
-	
+### MobilePayments Sample 
+
+
 ```
 {
   "siteCode": "1524",
@@ -1669,21 +1670,7 @@ Both methos response the same codes.
 }
 	
 ```
-	
-### PreAuthorizedPayments
 
-```
-{
-  "siteCode": "1524",
-  "pumpNumber": 1,
-  "fuelCode": "3",
-  "amount": 9,
-  "mobilePaymentMode": 1,
-  "potencyKeyId": "5734cbb9-f78f-4ad4-aa87-79ed95181c5a",
-  "externalReferanceID": "854712"
-}
-
-```
 	
 ### GetTransaction
 
