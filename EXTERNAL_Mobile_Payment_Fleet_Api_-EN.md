@@ -41,7 +41,7 @@ This document is part of [Ationet Fleet Mobile Payment Fully Integrated](ATIONet
 
 ### Transaction states sequence diagram on Pre authorization Request
 
-![ationetTR](Content/Images/SiteSystemCommander/external_PFEP.drawio.svg)
+![ationetTR](Content/Images/SiteSystemCommander/external_states.PNG)
 
 ## API Details
 
