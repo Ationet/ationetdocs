@@ -5,13 +5,13 @@
 |--- |--- |
 |File:|ATIONet - Dynamic QR Code Payments|
 |Doc Version:|1.0|
-|Release Date:|26, August 2021|
+|Release Date:|02, September 2021|
 |Author:|ATIONet LLC|
 
 |Change Log|||
 |--- |--- |--- |
 |Ver.|Date|Change Summary|
-|1.0|26/August/2021|Initial version.|
+|1.0|02/September/2021|Initial version.|
 
 
 ## Contents ##
