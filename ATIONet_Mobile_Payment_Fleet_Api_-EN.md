@@ -33,7 +33,6 @@
 	- [Supported Transactions](#supported-transactions)
 	- [Message Structure](#message-structure)
 		- [MobilePayments](#mobilePayments)
-		- [PreAuthorizedPayments](EXTERNAL_Mobile_Payment_Fleet_Api_-EN.md)
 		- [GetTransaction](#getTransaction)
 		- [Cancel](#cancel)
 	- [Field Descriptions](#field-descriptions)
@@ -49,6 +48,7 @@
 		- [PreAuthorizedPayments ](#preAuthorizedpayments)
 		- [GetTransaction ](#gettransaction)
 		- [Cancel ](#cancel)
+- [EXTERNAL PFEP Fleet Mobile Payment Api](EXTERNAL_Mobile_Payment_Fleet_Api_-EN.md)
 </br>
 
 
