@@ -992,7 +992,14 @@ Cancels a Sale that is in course as long as your status is correct. In the follo
 
 *URL: /api/MobilePayments/Cancel* </br>
 *Method: POST* </br>
-*Body:{ “TransactionId”:”StringValue” }* </br>
+*Body:{ “TransactionId”:”StringValue” }*
+{
+  "transactionId": "StringValue",
+  "isSuccessCanceled": bool,
+  "responseCode": "StringValue",
+  "responseMessage": "StringValue"
+}
+</br>
 
 #### Response Format
 
@@ -1735,8 +1742,10 @@ Both methos response the same codes.
 
 ```
 {
-  "code": "00000",
-  "message": "Successfully Canceled"
+  "transactionId": "5664cbb9-f78f-4ad4-aa87-79ed95181c5a",
+  "isSuccessCanceled": true,
+  "responseCode": "0",
+  "responseMessage": "Successfully Canceled"
 }
 
 ```
