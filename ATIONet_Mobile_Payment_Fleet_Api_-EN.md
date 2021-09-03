@@ -41,7 +41,7 @@
 		- [Transaction states sequence diagram on Pre authorization Request](#transactionstates-sequence-diagram-on-pre-authorization-request)
 		- [Transaction states sequence diagram on Cancelation Request](#transaction-states-sequence-diagram-on-cancelation-request)
 	- [Response Codes](#response-codes)
-		- [ MobilePayments | PreAuthorizedPayments Response codes](#mobilePayments-|-preAuthorizedpaymentsresponse-codes)
+		- [ MobilePayments Response codes](#mobilePayments-response-codes)
 		- [ Cancelation Response codes](#cancelation-response-codes)
 	- [Message Samples](#message-samples)
 		- [MobilePayments ](#mobilePayments)
@@ -1430,7 +1430,7 @@ This section describe through a table  all  states that a sale can have.
 
 ## Response Codes
 
-### MobilePayments | PreAuthorizedPayments Response codes
+### MobilePayments codes
 	
 Both methos response the same codes.
 
