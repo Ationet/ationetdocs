@@ -412,6 +412,8 @@ Both methos response the same codes.
 
 ### PreAuthorizedPayments
 
+>Request Example
+
 ```
 {
   "siteCode": "1524",
@@ -421,6 +423,15 @@ Both methos response the same codes.
   "mobilePaymentMode": 1,
   "potencyKeyId": "5734cbb9-f78f-4ad4-aa87-79ed95181c5a",
   "externalReferanceID": "854712"
+}
+
+```
+
+>Response Example
+
+```
+{
+  "transactionId": "5734cbb9-f78f-4ad4-aa87-79ed95181c5a"
 }
 
 ```
