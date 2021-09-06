@@ -549,7 +549,8 @@ body [
         "CompanyContractCustomOperation3": bool,
         "CompanyContractCustomOperation4": bool,
         "ProductsData": [],
-        "ModifiersData": []
+        "ModifiersData": [],
+	"IdDispatch": "string"
     }
 ]
 ```
@@ -879,7 +880,8 @@ Failure to process the request will be indicated by an HTTP 400’s range status
         "CompanyContractCustomOperation3": false,
         "CompanyContractCustomOperation4": false,
         "ProductsData": [],
-        "ModifiersData": []
+        "ModifiersData": [],
+	"IdDispatch": "f39382c9-5efe-4c48-9d16-23eb4427e861"
     }
 ]
 ```
