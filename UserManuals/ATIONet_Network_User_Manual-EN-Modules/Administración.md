@@ -435,7 +435,7 @@ En esta sección los usuarios de la compañía pueden configurar sus propias not
 3. ***Transacciones***
    * **Excepción de transacción:** Recibe una notificación cuando se detecta una excepción.
    * **Autorización de reglas no bloqueantes:** Recibe una notificación cuando se detecta una autorización de regla no bloqueante.
-   * **Identificación habilitada/deshabilitada: Recibe una notificación cuando un identificador fue habilitado/deshabilitado.
+   * **Identificación habilitada/deshabilitada:** Recibe una notificación cuando un identificador fue habilitado/deshabilitado.
    * **Identificadores solicitados:** Recibe una notificación cuando se detecta una solicitud de identificación.
    * **Transacción rechazada:** Recibe una notificación cuando se detecta una transacción rechazada.
    * **Transacciones Disputadas:** Recibe una notificación cuando se detecta una transacción disputada.
