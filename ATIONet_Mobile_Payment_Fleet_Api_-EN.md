@@ -155,7 +155,7 @@ Note: The values in the image are for example. You must request the correspondin
 
 [ationetTR](Content/Images/SiteSystemCommander/configB.PNG)
 
->It is recommended check the conection status after complete configuration.
+>We recommended check the conection status after complete configuration.
 
 ## Check Status
 
