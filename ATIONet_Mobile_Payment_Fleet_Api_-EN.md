@@ -33,7 +33,6 @@ Commander guide Implementation
 			- [Sites](#Sites)
 			- [Terminals/Controllers](#Terminals-or-Controllers)
 			- [Static QR Image](#Static-QR-Image)
-			- [How to generate QR Code Image](#How-to-generate-QR-Code-Image)
 - [ATIONet PFEP Fleet Mobile Payment Api](#ATIONet-PFEP-Fleet-Mobile-Payment-Api)
 	- [Description](#description)
 	- [Details](#api-details)	
