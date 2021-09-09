@@ -22,7 +22,8 @@
 	- [Sequence diagram Pay at Pump with Above Site Payment Authorization](#Sequence-diagram-Pay-at-Pump-with-Above-Site-Payment-Authorization)
 - [Site System Implementation guide](#Site-System-Implementation-guide)
 	- [STEP 1 Site Mobile Configuration](#STEP-1-Site-Mobile-Configuration)
-	- [STEP 2 Host Mobile Configuation](#STEP2-Host-Mobile-Configuation)
+	- [STEP 2 Host Mobile Configuation](#STEP-2-Host-Mobile-Configuation)
+	- [Check Status](#Check-Status)
 	- [Values descriptions](#Values-descriptions)
 	- [Status Codes and Messages](#Status-Codes-and-Messages)
 	- [Static QR Image](#Static-QR-Image)
@@ -152,8 +153,17 @@ Note: The values in the image are for example. You must request the correspondin
 ```
 </br>
 
+[ationetTR](Content/Images/SiteSystemCommander/configB.PNG)
 
-![ationetTR](Content/Images/SiteSystemCommander/configB.PNG)
+>It is recommended check the conection status after complete configuration.
+
+## Check Status
+
+After completing the configuration, if all the entered values are correct, you should see the status of the site created `online`.
+
+To be able to check this, go to the menu Tools -> Helpdesk Diagnostic -> Payment
+
+![ationetTR](Content/Images/SiteSystemCommander/status.PNG)
 
 ### Values descriptions
 
