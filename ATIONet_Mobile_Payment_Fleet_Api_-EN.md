@@ -822,9 +822,9 @@ Once this is done you will be able to generate the QR code to paste on the pump.
 >You can read more about QR in the [Static QR Image](#Static-QR-Image) section.
 
 
-### Terminals/Controllers
+### Terminals or Controllers
 
-In the Terminals/ Cotrolers menu You have to create a new Terminal of the type AN-MobilePayment.
+In the Terminals/Cotrollers menu You have to create a new Terminal of the type AN-MobilePayment.
 
 ![ationetTR](Content/Images/SiteSystemCommander/terminalConfiguration.PNG)
 
