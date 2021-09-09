@@ -186,7 +186,7 @@ Once this is done you will be able to generate the QR code to paste on the pump.
 
 In the Terminals/ Cotrolers menu You have to create a new Terminal of the type AN-MobilePayment.
 
-![ationetTR](Content/Images/SiteSystemCommander/terminalConfigurationg.PNG)
+![ationetTR](Content/Images/SiteSystemCommander/terminalConfiguration.PNG)
 
 ### Values descriptions
 
