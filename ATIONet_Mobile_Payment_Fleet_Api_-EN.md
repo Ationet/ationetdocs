@@ -26,8 +26,9 @@
 		- [Values descriptions](#Values-descriptions)
 		- [Status Codes and Messages](#Status-Codes-and-Messages)
 	- [STEP 3 ATIONet Configuration](#STEP-3-ATIONet-Configuration)
-	- [Static QR Image](#Static-QR-Image)
-	- [How to generate QR Code Image](#How-to-generate-QR-Code-Image)
+		- [Sites](#Sites)
+		- [Terminals/Controllers](#Terminals/Controllers)
+		- [Static QR Image](#Static-QR-Image)
 - [ATIONet PFEP Fleet Mobile Payment Api](#ATIONet-PFEP-Fleet-Mobile-Payment-Api)
 	- [Description](#description)
 	- [Details](#api-details)	
@@ -813,7 +814,7 @@ Once this is done you will be able to generate the QR code to paste on the pump.
 >You can read more about QR in the [Static QR Image](#Static-QR-Image) section.
 
 
-### Terminals/Controlers
+### Terminals/Controllers
 
 In the Terminals/ Cotrolers menu You have to create a new Terminal of the type AN-MobilePayment.
 
