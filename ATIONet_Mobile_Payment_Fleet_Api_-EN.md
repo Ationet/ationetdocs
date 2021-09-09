@@ -23,9 +23,9 @@
 	- [STEP 1 Site Mobile Configuration](#STEP-1-Site-Mobile-Configuration)
 	- [STEP 2 Host Mobile Configuation](#STEP-2-Host-Mobile-Configuation)
 		- [Check Status](#Check-Status)
-	- [STEP 3 ATIONet Configuration](#STEP-3-ATIONet-Configuration)
 	- [Values descriptions](#Values-descriptions)
 	- [Status Codes and Messages](#Status-Codes-and-Messages)
+	- [STEP 3 ATIONet Configuration](#STEP-3-ATIONet-Configuration)
 	- [Static QR Image](#Static-QR-Image)
 	- [How to generate QR Code Image](#How-to-generate-QR-Code-Image)
 - [ATIONet PFEP Fleet Mobile Payment Api](#ATIONet-PFEP-Fleet-Mobile-Payment-Api)
@@ -165,26 +165,6 @@ To be able to check this, go to the menu Tools -> Helpdesk Diagnostic -> Payment
 
 ![ationetTR](Content/Images/SiteSystemCommander/status.PNG)
 
-
-## STEP 3 ATIONet Configuration
-
-### Sites
-
-In the Sites menu, in the site that you want to start operating with Mobile Payments, you must update the information of the cell phone payment mode and add the FullyIntegraded type.
-
-Once this is done you will be able to generate the QR code to paste on the pump. It should generate one per pump and each one must create introducing the Pump Code.
-
-![ationetTR](Content/Images/SiteSystemCommander/SiteConfig.PNG)
-
-
->You can read more about QR in the [Static QR Image](#Static-QR-Image) section.
-
-
-### Terminals/Controlers
-
-In the Terminals/ Cotrolers menu You have to create a new Terminal of the type AN-MobilePayment.
-
-![ationetTR](Content/Images/SiteSystemCommander/terminalConfiguration.PNG)
 
 ### Values descriptions
 
@@ -818,6 +798,26 @@ The first two digits of the response code identify the message pair type. The la
 		 </tr>
 		</tbody>
 </table>
+
+## STEP 3 ATIONet Configuration
+
+### Sites
+
+In the Sites menu, in the site that you want to start operating with Mobile Payments, you must update the information of the cell phone payment mode and add the FullyIntegraded type.
+
+Once this is done you will be able to generate the QR code to paste on the pump. It should generate one per pump and each one must create introducing the Pump Code.
+
+![ationetTR](Content/Images/SiteSystemCommander/SiteConfig.PNG)
+
+
+>You can read more about QR in the [Static QR Image](#Static-QR-Image) section.
+
+
+### Terminals/Controlers
+
+In the Terminals/ Cotrolers menu You have to create a new Terminal of the type AN-MobilePayment.
+
+![ationetTR](Content/Images/SiteSystemCommander/terminalConfiguration.PNG)
 
 ### Static QR Image
 
