@@ -14,9 +14,6 @@
 |1.0|02/September/2021|Initial version.|
 
 
-Commander guide Implementation
-
-
 ## Contents ##
 
 - [Overview](#overview)
@@ -54,10 +51,6 @@ Commander guide Implementation
 		- [Cancel ](#cancel)
 - [EXTERNAL PFEP Fleet Mobile Payment Api](EXTERNAL_Mobile_Payment_Fleet_Api_-EN.md)
 </br>
-
-
-
-><h3>IMPORTANT: The following document is only valid for the COMMANDER configuration.</h3>
 
 
 ## Overview
