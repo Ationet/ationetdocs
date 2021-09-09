@@ -130,8 +130,6 @@ need to regenerate the receipt information.</li>
 Processing Applications might require more information than others.
 </br>
 
-><h3>IMPORTANT: You have to request de configuration values to ATIONet.</h3>
-
 ## STEP 1 Site Mobile Configuration
 
 </br>
@@ -148,9 +146,9 @@ Note: The values in the image are for example. You must request the correspondin
 
 </br>
 
-```
-Note: The values in the image are for example. You must request the corresponding values from ATIONet.
-```
+
+><h3>IMPORTANT: You have to request de configuration values to ATIONet.</h3>
+
 </br>
 
 ![ationetTR](Content/Images/SiteSystemCommander/configB.PNG)
