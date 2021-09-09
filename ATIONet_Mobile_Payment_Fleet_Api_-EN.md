@@ -31,7 +31,7 @@ Commander guide Implementation
 			- [Status Codes and Messages](#Status-Codes-and-Messages)
 		- [STEP 3 ATIONet Configuration](#STEP-3-ATIONet-Configuration)
 			- [Sites](#Sites)
-			- [Terminals/Controllers](#Terminals/Controllers)
+			- [Terminals/Controllers](#Terminals-or-Controllers)
 			- [Static QR Image](#Static-QR-Image)
 			- [Static QR Image](#Static-QR-Image)
 			- [How to generate QR Code Image](#How-to-generate-QR-Code-Image)
