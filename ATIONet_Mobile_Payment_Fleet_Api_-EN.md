@@ -13,7 +13,6 @@
 |Ver.|Date|Change Summary|
 |1.0|02/September/2021|Initial version.|
 
-
 ## Contents ##
 
 - [Overview](#overview)
@@ -23,7 +22,8 @@
 - [Site System Implementation guide](#Site-System-Implementation-guide)
 	- [STEP 1 Site Mobile Configuration](#STEP-1-Site-Mobile-Configuration)
 	- [STEP 2 Host Mobile Configuation](#STEP-2-Host-Mobile-Configuation)
-	- [Check Status](#Check-Status)
+		- [Check Status](#Check-Status)
+	- [STEP 3 ATIONet Configuration](#STEP-3-ATIONet-Configuration)
 	- [Values descriptions](#Values-descriptions)
 	- [Status Codes and Messages](#Status-Codes-and-Messages)
 	- [Static QR Image](#Static-QR-Image)
@@ -157,7 +157,7 @@ Note: The values in the image are for example. You must request the correspondin
 
 >We recommended check the conection status after complete configuration.
 
-## Check Status
+### Check Status
 
 After completing the configuration, if all the entered values are correct, you should see the status of the site created `online`.
 
@@ -167,8 +167,6 @@ To be able to check this, go to the menu Tools -> Helpdesk Diagnostic -> Payment
 
 
 ## STEP 3 ATIONet Configuration
-
->The next configuration its mandatory and it must do in the ATIONet Portal.
 
 ### Sites
 
