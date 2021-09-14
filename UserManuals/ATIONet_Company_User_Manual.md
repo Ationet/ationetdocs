@@ -405,7 +405,7 @@ Los campos a completar son los siguientes:
 * **Tipo de servicio:** Seleccione el tipo de servicio asociado al vehículo.
 * **Descripción de servicio:** Introduzca una breve descripción del servicio asociado al vehículo.
 * **Número motor:** Introduzca el número de motor del vehículo.
-* **Número chasis:**Introduzca el número de chasis del vehículo.
+* **Número chasis:** Introduzca el número de chasis del vehículo.
 * **Odómetro inicial:** Introduzca el odómetro inicial del vehículo.
 * **Odómetro actual:** Introduzca el odómetro actual del vehículo.
 * **Fecha de último odómetro:** Introduzca la fecha del último odómetro del vehículo.
