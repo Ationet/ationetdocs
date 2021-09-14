@@ -148,8 +148,8 @@ Para editar su contraseña, haga clic en el enlace ***change password***.
 
 # Tablero
 El Tablero es una página donde se tiene una visión global del funcionamiento de su Compañía. El tablero cuenta con widgets específicos que le ayudarán a tomar decisiones preventivas o correctivas en función de la información y los datos que muestran. Los datos que se muestran en el Tablero son datos en tiempo real y algunos de los widgets se actualizan automáticamente.
+
 Estos pueden ser eliminados o añadidos según las necesidades del usuario en la opción **Mis Preferencias**. También se pueden colocar en el tablero según el nivel de visibilidad que se quiera dar a cada uno.
-La lista de widgets disponibles es la siguiente:
 
 ## Estado General
 Este widget es muy importante a la hora de poner en marcha la Network. Este widget nos da información de los parámetros que necesitamos configurar para estar operativos. Nos avisa cuando, por ejemplo, no tenemos vehículos o identificaciones creadas entre otros parámetros.
