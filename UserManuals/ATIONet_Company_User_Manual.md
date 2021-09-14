@@ -217,7 +217,9 @@ Los campos a completar son los siguientes:
 * **Modelo:** Introduzca el modelo asociado a la clase de vehículo.
 * **Kilometraje mínimo:** Introduzca el kilometraje mínimo asociado a la clase de vehículo.
 * **Kilometraje máximo:** Introduzca el kilometraje máximo asociado a la clase de vehículo.
+
 <br>
+
 * **Combustibles:** Seleccione el combustible asociado a la clase de vehículo.
 	* ***Capacidad del tanque:*** Introduzca la capacidad del tanque para cada combustible agregado.
 
