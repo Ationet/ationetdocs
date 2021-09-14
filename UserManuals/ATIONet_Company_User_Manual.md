@@ -298,7 +298,7 @@ Los campos a completar son los siguientes:
 	* ***Capacidad del tanque:*** Introduzca la capacidad del tanque para cada combustible agregado.
 
 ## Compañías
-En ATIONet el término compañías se refiere a la entidad propietaria de la flota. En esta sección puedes ver los detalles de su compañía.
+En ATIONet el término compañías se refiere a la entidad propietaria de la flota. En esta sección puede ver los detalles de su compañía.
 
 ![Compañías](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Compa%C3%B1%C3%ADas.PNG)
 
