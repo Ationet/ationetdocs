@@ -509,7 +509,7 @@ En esta vista se listan los vehículos/conductores de la Compañía y sus respec
 ![Cuotas por Vehículo/Conductor](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Flota/Cuotas%20por%20veh%C3%ADculo-conductor.PNG)
 
 ## Excepciones
-ATIONet separa las transacciones no autorizadas en 2 secciones: **Excepciones** y [Transacciones Rechazadas] (#transacciones-rechazadas). Las excepciones son aquellas transacciones que no pasaron las validaciones duras del sistema o las que se detectan como posibles fraudes.
+ATIONet separa las transacciones no autorizadas en 2 secciones: **Excepciones** y [Transacciones Rechazadas](#transacciones-rechazadas). Las excepciones son aquellas transacciones que no pasaron las validaciones duras del sistema o las que se detectan como posibles fraudes.
 
 ![Excepciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Excepciones.PNG)
 
