@@ -8,7 +8,7 @@
 |**Autor:**|ATIONet LLC|
 
 
-|**Bitácora de Cambios**|||
+|**Bitácora de Cambios**|.|.|
 |--- |--- |--- |
 |**Ver.**|**Fecha**|**Resumen de Cambios**|
 |1.0|14/Sep/2021|- Versión Inicial  
