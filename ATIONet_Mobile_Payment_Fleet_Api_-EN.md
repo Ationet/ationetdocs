@@ -860,7 +860,7 @@ ATIONet’s fleet Mobile Payment API It is responsible for creating pre-authoriz
 
 ### API Details
 
-API URI: *ationetmobilepayment-appshost-test.azurewebsites.net/*
+API URI: *https://ationetmobilepayment-appshost.azurewebsites.net/*
 
 ### Supported Transactions
 
