@@ -723,7 +723,10 @@ En esta sección puede ver todas las transacciones en las que hubo combustible d
 
 ![Transacciones Despachadas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Despachadas.PNG)
  
-## Transacciones ERP****
+## Transacciones ERP
+En esta vista puede ver las transacciones que fueron modificadas por un ERP y enviadas a ATIONet para su debida correción dentro del portal. Haciendo click en el **Código de Autorización** podrá ver los detalles de la misma.
+
+![Transacciones ERP](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Flota/Transacciones%20ERP.PNG)
 
 ## Transacciones por Conductor
 En esta vista puede ver las transacciones agrupadas por el conductor que las realizó. Los botones de la parte superior izquierda sirven para imprimir la tabla o crear un archivo Excel a partir de la misma, respectivamente.
@@ -754,11 +757,34 @@ En esta vista, al principio se puede filtrar por el tipo de rechazo. Los tipos d
 ## Cargos Externos
 En esta sección podrá subir un comprobante asociado a un documento externo. El comprobante toma el importe informado en el documento y se debe adjuntar un archivo/comprobante que respalde la información cargada.
 
+![Cargos Externos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Liquidaci%C3%B3n/Cargos%20Externos.PNG)
+
+Para crear un cargo externo, haga click en el botón **Nuevo**.
+
+![Cargos Externos Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Liquidaci%C3%B3n/Cargos%20Externos%20Nuevo.PNG)
+
+Los campos a completar son los siguientes:
+
+* **Fecha:** Ingresar la fecha del cargo externo.
+* **Documento Externo:** Seleccionar el documento externo asociado al cargo.
+* **Descripción:** Ingresar la descripción del cargo externo.
+* **Tipo de Comprobante:** Seleccionar el tipo de comprobante asociado al cargo.
+* **Numero de Comprobante:** Ingresar el número del comprobante asociado al cargo.
+* **Código de Autorización Electrónica:** Ingresar el código de autorización electrónica asociado al cargo.
+* **Fecha de expiración:** Ingresar la fecha de expiración del cargo externo.
+* **Moneda:** Seleccionar la moneda del cargo externo.
+* **Monto Neto:** Ingresar el monto neto del cargo externo.
+* **Exento de Impuestos:** Marque esta opción si el cargo es libre de impuestos.
+
+<br>
+
+* **Impuesto:** Ingreasr el impuesto asociado al cargo externo.
+
 Esta vista tiene un flujo de aprobación asociado al mismo, en donde:
 * La Compañía ingresa el cargo externo y queda en estado **Nuevo** (se permite editar o eliminar el mismo).
 * La misma Compañía puede cambiar el estado a **Aprobado por la Compañía** ó **Rechazado por la Compañía**.
 
-Si el cargo es rechazado, el flujo termina. En cambio si es aprobado, la Network es responsable de revisar el **cargo externo** y puede de igual manera aprobar o rechazar el mismo.
+Si el cargo es rechazado, el flujo termina. En cambio, si es aprobado, la Network es responsable de revisar el **cargo externo** y puede de igual manera aprobar o rechazar el mismo.
 
 ## Documentos de Cargo
 En esta sección podrá ver todos los conceptos aplicados agrupados por estado de cuenta. Si hace clic en el código, le redirigirá al detalle del mismo.
