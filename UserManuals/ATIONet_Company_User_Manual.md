@@ -259,9 +259,13 @@ Los campos a completar son los siguientes:
 * **Cod. Postal:** Introduzca el código postal del conductor.
 * **Calle:** Introduzca la calle principal del conductor.
 * **Calle 2:** Introduzca la calle secundaria del conductor.
+
 <br>
+
 * **Vehículos:** Seleccione el vehículo asociado al conductor.
+
 <br>
+
 * **Reglas:** Seleccione la regla asociada al conductor.
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
@@ -304,7 +308,9 @@ Los campos a completar son los siguientes:
 * **Código:** Introduzca el código único de la flota.
 * **Generado Automáticamente:** Marque esta opción para que el código se genere automáticamente.
 * **Nombre:** Introduzca el nombre asociado a la flota.
+
 <br>
+
 * **Reglas:** Seleccione la regla asociada a la flota.
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
