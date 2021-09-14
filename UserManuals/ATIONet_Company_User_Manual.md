@@ -642,9 +642,7 @@ En esta vista puede ver las transacciones agrupadas por el vehículo que las rea
 ![Transacciones por Vehículo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20por%20Veh%C3%ADculo.PNG)
 
 ## Transacciones Rechazadas
-ATIONet separa las transacciones no autorizadas en 2 secciones: [Excepciones](#excepciones) y **Transacciones Rechazadas**.
-
-Las Transacciones Rechazadas son aquellas que lograron pasar las autenticaciones duras de ATIONet, pero fueron rechazadas por otras validaciones como una regla insatisfecha o una validación de saldo.
+ATIONet separa las transacciones no autorizadas en 2 secciones: [Excepciones](#excepciones) y **Transacciones Rechazadas**. Las Transacciones Rechazadas son aquellas que lograron pasar las autenticaciones duras de ATIONet, pero fueron rechazadas por otras validaciones como una regla insatisfecha o una validación de saldo.
 
 ![Transacciones Rechazadas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Rechazadas.PNG)
 
