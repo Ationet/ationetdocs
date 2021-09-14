@@ -141,7 +141,7 @@ Este widget muestra la actividad de la administración de identificadores, muest
 2. **Disponible:** El número de identificadores que cambiaron al estado **Disponible**.
 3. **Cancelado:** El número de identificaciones que cambiaron al estado **Cancelado**.
 4. **Reportado:** El número de identificaciones que cambiaron al estado **Reportado**.
-5. 5. **Suspendido:** El número de identificaciones que han pasado al estado **Suspendido**.
+5. **Suspendido:** El número de identificaciones que han pasado al estado **Suspendido**.
 
 ![Actualizaciones de identificadores del último mes](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tablero/Actualizaciones%20de%20Identificadores.PNG)
 
@@ -204,11 +204,11 @@ Dentro de este módulo podrá gestionar Compañías, Conductores, Vehículos, Fl
 ## Clases de Vehículos
 En esta sección podrá ver las clases de vehículo existentes con sus detalles, editarlas y/o crear nuevas.
 
-![Clases de Vehículos]()
+![Clases de Vehículos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Clase%20de%20Veh%C3%ADculo.PNG)
 
 Para crear una clase de vehículo, haga click en el botón **Nuevo**.
 
-![Clases de Vehículos Nuevo]()
+![Clases de Vehículos Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Clase%20de%20Veh%C3%ADculo%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 * **Tipo:** Seleccione el tipo de vehículo asociado a la clase de vehículo.
@@ -219,17 +219,17 @@ Los campos a completar son los siguientes:
 * ** Kilometraje máximo:** Introduzca el kilometraje máximo asociado a la clase de vehículo.
 <br>
 * **Combustibles:** Seleccione el combustible asociado a la clase de vehículo.
-	***Capacidad del tanque:** Introduzca la capacidad del tanque para cada combustible agregado.
+	* ***Capacidad del tanque:*** Introduzca la capacidad del tanque para cada combustible agregado.
 
 ## Compañías
 En ATIONet el término compañías se refiere a la entidad propietaria de la flota. En esta sección puedes ver los detalles de su compañía.
 
-![Compañías]()
+![Compañías](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Compa%C3%B1%C3%ADas.PNG)
 
 ## Conductores
 En esta sección podrá ver los conductores existentes con sus detalles, editarlos y/o crear nuevos. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Conductores]()
+![Conductores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Conductores.PNG)
 
 Desde esta vista tiene algunos atajos rápidos bajo la columna **Opciones**:
 * **Asignar Identificadores:** Seleccione el contrato y el identificador a asignar al conductor.
@@ -239,7 +239,7 @@ Desde esta vista tiene algunos atajos rápidos bajo la columna **Opciones**:
 
 Para crear un conductor, haga clic en el botón **Nuevo**.
 
-![Conductores Nuevo]()
+![Conductores Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Conductores%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 * **Código:** Introduzca el código único asociado al conductor.
@@ -261,41 +261,42 @@ Los campos a completar son los siguientes:
 * **Vehículos:** Seleccione el vehículo asociado al conductor.
 <br>
 * **Reglas:** Seleccione la regla asociada al conductor.
+
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 Para creación masiva de Conductores, presione el botón **Importar**. Aquí podrá descargar la planilla a cargar con los datos de conductores, seleccionar **Solicitar Identificaciones** (si necesario) y seleccionar el archivo a importar.
 
-![Conductores Importar]()
+![Conductores Importar](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Condcutores%20Importar.PNG)
 
 Cuando haya terminado de rellenar los campos, presione el botón **Importar**.
 
 ### Solicitud de Identificadores – Conductor
 Desde esta misma vista se puede realizar el proceso de **Solicitud de Identificadores** para conductores. Para ello debe:
 
-1. ***Seleccionar los conductores a los cuales desea realizar el procedimiento de solicitud de identificadores.***
-2. ***Presionar el botón **Acciones en Lote** y escoger **Seleccionado**.
-3. ***En la nueva ventana deberá completar los siguientes datos:***
+1. Seleccionar los conductores a los cuales desea realizar el procedimiento de solicitud de identificadores.
+2. Presionar el botón **Acciones en Lote** y escoger **Seleccionado**.
+3. En la nueva ventana deberá completar los siguientes datos:
 	* **Contrato:** Seleccione el contrato asociado al identificador.
 	* **Tipo:** Seleccione el tipo del identificador.
 	* **Modelo:** Seleccione el modelo del identificador.
 	* **Programa:** Seleccione el programa de flota del identificador.
-4. ***Haga click en **Solicitar Identificadores** y confirme los conductores.
+4. Haga click en **Solicitar Identificadores** y confirme los conductores.
 
 Cuando haya terminado de rellenar los campos, presione el botón **Confirmar**.
 
-![Solicitud de Identificadores - Conductor]()
+![Solicitud de Identificadores - Conductor](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Solicitud%20de%20Identificadores%20-%20Conductor.PNG)
 
-## Dispersión*****
-## Documentos Externos*****
+## Dispersión****
+## Documentos Externos****
 
 ## Flotas
 En ATIONet la flota se refiere al grupo de vehículos dentro de una Compañía. En esta sección podrá ver las flotas existentes, editarlas y/o crear nuevas.
 
-![Flotas]()
+![Flotas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Flotas.PNG)
 
 Para crear una flota, haga click en el botón **Nuevo**.
 
-![Flotas nueva]()
+![Flotas nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Flotas%20Nueva.PNG)
 
 Los campos a completar son los siguientes:
 * **Código:** Introduzca el código único de la flota.
@@ -307,7 +308,8 @@ Los campos a completar son los siguientes:
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 ## Notificaciones
-En esta sección los usuarios de la compañía pueden configurar sus propias notificaciones (dentro de sus perfiles de compañía en ATIONet).
+En esta sección los usuarios de la compañía pueden configurar sus propias notificaciones.
+
 ![Notificaciones Compañía](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20Compa%C3%B1%C3%ADas.PNG)
 
 1. ***Contrato***
@@ -321,7 +323,7 @@ En esta sección los usuarios de la compañía pueden configurar sus propias not
 3. ***Transacciones***
    * **Excepción de transacción:** Recibe una notificación cuando se detecta una excepción.
    * **Autorización de reglas no bloqueantes:** Recibe una notificación cuando se detecta una autorización de regla no bloqueante.
-   * **Identificación habilitada/deshabilitada: Recibe una notificación cuando un identificador fue habilitado/deshabilitado.
+   * **Identificación habilitada/deshabilitada:** Recibe una notificación cuando un identificador fue habilitado/deshabilitado.
    * **Identificadores solicitados:** Recibe una notificación cuando se detecta una solicitud de identificación.
    * **Transacción rechazada:** Recibe una notificación cuando se detecta una transacción rechazada.
    * **Transacciones Disputadas:** Recibe una notificación cuando se detecta una transacción disputada.
@@ -331,11 +333,11 @@ En esta sección los usuarios de la compañía pueden configurar sus propias not
 ## Sitios
 En esta vista se listan los sitios que han sido creados. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Sitios]()
+![Sitios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Sitios.PNG)
 
 Desde aquí también puede visualizar los sitios directamente desde un mapa interactivo. Para ello, haga click en el ícono del **pin**. Esta funcionalidad de búsqueda de sitios abre un mapa interactivo. En este mapa se indica una dirección, lo cual señalará los sitios en un radio cercano a la ubicación seleccionada.
 
-![Sitios Mapa]()
+![Sitios Mapa](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Sitios%20Mapa.PNG)
 
 ## Usuarios
 En esta sección puede ver, crear o editar usuarios para la Compañía. Puede editarlos haciendo click en el ícono del lápiz en la columna de opciones, activar/desactivar un usuario haciendo click en el ícono del candado y restablecer la contraseña con el ícono del asterisco.
@@ -367,7 +369,7 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Vehículos
 En esta sección podrá ver los vehículos existentes con sus detalles, editarlos y/o crear nuevos. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Vehículos]()
+![Vehículos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Veh%C3%ADculos.PNG)
 
 Desde esta vista tiene algunos atajos rápidos bajo la columna **Opciones**:
 * **Asignar Identificadores:** Seleccione el contrato y el identificador a asignar al vehículo.
@@ -377,7 +379,7 @@ Desde esta vista tiene algunos atajos rápidos bajo la columna **Opciones**:
 
 Para crear un vehículo, haga clic en el botón **Nuevo**.
 
-![Vehículos Nuevo]()
+![Vehículos Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Veh%C3%ADculos%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 * **Código:** Introduzca el código único asociado al vehículo.
@@ -396,36 +398,37 @@ Los campos a completar son los siguientes:
 * **Número chasis:**Introduzca el número de chasis del vehículo.
 * **Odómetro inicial:** Introduzca el odómetro inicial del vehículo.
 * **Odómetro actual:** Introduzca el odómetro actual del vehículo.
-* ** Fecha de último odómetro:** Introduzca la fecha del último odómetro del vehículo.
-* ** Horas de motor actuales:** Introduzca las horas de motor actual del vehículo.
-* ** Fecha de última hora de motor:** Introduzca la fecha de las últimas horas de motor del vehículo.
+* **Fecha de último odómetro:** Introduzca la fecha del último odómetro del vehículo.
+* **Horas de motor actuales:** Introduzca las horas de motor actual del vehículo.
+* **Fecha de última hora de motor:** Introduzca la fecha de las últimas horas de motor del vehículo.
 <br>
 * **Conductores:** Seleccione el conductor asociado al vehículo.
 <br>
 * **Reglas:** Seleccione la regla asociada al vehículo.
+
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 Para creación masiva de vehículos, presione el botón **Importar**. Aquí podrá descargar la planilla a cargar con los datos de vehículos, seleccionar **Solicitar Identificaciones** (si necesario) y seleccionar el archivo a importar.
 
-![Vehículos Importar]()
+![Vehículos Importar](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Veh%C3%ADculos%20Importar.PNG)
 
 Cuando haya terminado de rellenar los campos, presione el botón **Importar**.
 
 ### Solicitud de Identificadores – Vehículo
 Desde esta misma vista se puede realizar el proceso de **Solicitud de Identificadores** para vehículos. Para ello debe:
 
-1. ***Seleccionar los vehículos a los cuales desea realizar el procedimiento de solicitud de identificadores.***
-2. ***Presionar el botón **Acciones en Lote** y escoger **Seleccionado**.
-3. ***En la nueva ventana deberá completar los siguientes datos:***
+1. Seleccionar los vehículos a los cuales desea realizar el procedimiento de solicitud de identificadores.
+2. Presionar el botón **Acciones en Lote** y escoger **Seleccionado**.
+3. En la nueva ventana deberá completar los siguientes datos:
 	* **Contrato:** Seleccione el contrato asociado al identificador.
 	* **Tipo:** Seleccione el tipo del identificador.
 	* **Modelo:** Seleccione el modelo del identificador.
 	* **Programa:** Seleccione el programa de flota del identificador.
-4. ***Haga click en **Solicitar Identificadores** y confirme los vehículos.
+4. Haga click en **Solicitar Identificadores** y confirme los vehículos.
 
 Cuando haya terminado de rellenar los campos, presione el botón **Confirmar**.
 
-![Solicitud de Identificadores - Vehículos]()
+![Solicitud de Identificadores - Vehículos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Solicitud%20de%20Identificadores%20-%20Veh%C3%ADculo.PNG)
 
 # Flotas
 Dentro de este módulo se pueden gestionar los Contratos de Compañía, Cuentas Corrientes, Reglas de flota y las Transacciones entre otras cosas.
@@ -465,6 +468,7 @@ Para facilitar las consultas, hay un panel de filtros disponible. La primera opc
 
 ![Cuentas Corrientes de Compañía - Movimientos de Subcuentas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Movimientos%20de%20Subcuentas.PNG)
 
+<br>
 
 Para realizar un movimiento de cuenta corriente, haga click en el botón **Nuevo**.
 
@@ -475,20 +479,20 @@ Los campos a completar son los siguientes:
 * **Tipo:** Seleccione el tipo de movimiento.
   * ***Transferencia de fondos de contrato a subcuenta:*** Indique la subcuenta a la cual se depositará el monto ingresado.
 
-![Cuenta Corriente Movimiento 1]()
+![Cuenta Corriente Movimiento 1](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Flota/Cuenta%20Corriente%20Movimiento%201.PNG)
 
   * ***Transferencia de fondos de subcuenta a contrato:*** Indique la subcuenta a la cual se le retirará el monto ingresado.
 
-![Cuenta Corriente Movimiento 2]()
+![Cuenta Corriente Movimiento 2](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Flota/Cuenta%20Corriente%20Movimiento%202.PNG)
 
   * ***Transferencia de fondos de subcuenta a subcuenta:*** Indique la subcuenta a la cuál se le retirará el monto ingresado y también la subcuenta a la cual se le depositará el monto ingresado.
 
-![Cuenta Corriente Movimiento 3]()
+![Cuenta Corriente Movimiento 3](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Flota/Cuenta%20Corriente%20Movimiento%203.PNG)
 
 ## Cuotas por Vehículo / Conductor
 En esta vista se listan los vehículos/conductores de la Compañía y sus respectivas cuotas. Para facilitar las consultas, hay un panel de filtros en la parte superior
 
-![Cuotas por Vehículo/Conductor]()
+![Cuotas por Vehículo/Conductor](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Flota/Cuotas%20por%20veh%C3%ADculo-conductor.PNG)
 
 ## Excepciones
 ATIONet separa las transacciones no autorizadas en 2 secciones: **Excepciones** y [Transacciones Rechazadas] (#transacciones-rechazadas). Las excepciones son aquellas transacciones que no pasaron las validaciones duras del sistema o las que se detectan como posibles fraudes.
@@ -504,7 +508,7 @@ En esta vista, al principio se puede filtrar por el tipo de excepción. Los tipo
 ## Identificaciones Solicitadas
 En este apartado podrá consultar las identificaciones solicitadas. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Identificaciones Solicitadas]()
+![Identificaciones Solicitadas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Flota/Identificaciones%20Solicitadas.PNG)
 
 Desde esta sección podrá confirmar la recepción de las solicitudes de identificadores realizadas, para finalizar el proceso de solicitud. Tenga en consideración que las únicas ordenes que puede confirmar, son las que ya fueron marcadas como **Entregada**.
 Para cambiar el estado de los identificadores solicitados, haga clic en el botón **Acción en Lote** y seleccione la opción **Confirmar la entrega de identificaciones**.
@@ -594,7 +598,7 @@ Si quiere ver el detalle de la transacción, presione sobre el **Código de Auto
 
 Desde esta sección también puede comenzar el proceso de **Disputa** de transacciones. Para ello debe seleccionar la opción de **Desconocer** bajo la columna de **Opciones**. Esto abrirá una ventana emergente en la cual debe seleccionar el motivo e ingresar un comentario sobre la disputa.
 
-![Disputa de Transacciones]()
+![Disputa de Transacciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Flota/Desconocer%20Transacciones.PNG)
 
 ## Transacciones Desconocidas
 En esta sección se pueden consultar las transacciones que fueron desconocidas; listadas por código, fecha, motivo, estado, número de transacción, compañía, sitio. También está el comentario de la compañía, del comercio y de la network.
