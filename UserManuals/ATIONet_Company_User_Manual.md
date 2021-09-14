@@ -56,6 +56,7 @@ ATIONet tiene un menú de acceso rápido situado en la parte izquierda de la web
 
 # Mis Preferencias
 Dentro de esta sección cada usuario puede personalizar sus preferencias del portal.
+
 1. **Rol por Defecto:** Seleccione el rol por defecto al iniciar la sesión.
 
 ![Rol por defecto](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Mis%20Preferencias/Rol%20por%20Defecto.PNG)
@@ -171,8 +172,12 @@ Esta ventana emergente tiene un botón de impresión que al ser pulsado abre la 
 
 ![Conductores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Reports/Driver.PNG)
 
-## Detalle de actividad por Vehículo ****
+## Detalle de actividad por Vehículo
+Este informe muestra la lista de transacciones realizadas, ordenadas por vehículo.
 
+Una vez seleccionada las fechas en el filtro, pulse el botón **Imprimir**, esto mostrará una ventana emergente con la información seleccionada. La información se muestra en un formato listo para imprimir, incluyendo el logotipo de la suscripción y la fecha y hora de generación del informe.
+
+![Detalle de actividad por Vehículo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Reporte%20Actividad%20por%20Vehiculo.PNG)
 
 ## Transacciones
 Este informe muestra la lista de transacciones realizadas, ordenadas por fecha. Este informe tiene varios filtros para ajustar la búsqueda. El primer campo del panel de filtros indica por qué campo se ordenará la lista, el campo seleccionado en esta lista se mostrará en la primera columna.
@@ -292,8 +297,25 @@ Cuando haya terminado de rellenar los campos, presione el botón **Confirmar**.
 
 ![Solicitud de Identificadores - Conductor](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Solicitud%20de%20Identificadores%20-%20Conductor.PNG)
 
-## Dispersión****
-## Documentos Externos****
+## Dispersión
+En esta sección se pueden realizar movimientos de cuenta corriente de manera masiva. En una primera vista se puede filtrar por contrato (siempre y cuando sea modo **Disperso**) y visualizar cuanto saldo tiene el mismo.
+
+![Dispersión](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Dispersion%20Vista.PNG)
+
+Una vez que haya hecho click en el botón **Buscar** tendrá un listado de todas las subcuentas a las cuales puede dispersar saldo. Seleccione las subcuentas correspondientes, haga click en **Acción en Lote** y presione **Dispersar**.
+
+![Dispersión Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Dispersion%20Nuevo.PNG)
+
+Existen 3 maneras de dispersar el saldo de manera masiva:
+* **Equitativo:** Se divide el monto total de manera equitativa entre todas las subcuentas.
+* **Balance A:** Se iguala el balance de la subcuenta al monto ingresado.
+* **Por Monto:** Se dispersa el monto ingresado a cada subcuenta.
+	
+
+## Documentos Externos
+En esta vista están listados todos los documentos externos cargados por la Compañía (mediante APIs) y la posibilidad de descargarlos. Un documento externo es un documento asociado a una operación realizada externamente a ATIONet.
+
+![Documentos Externos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Documentos%20Externos%20Lista.PNG)
 
 ## Flotas
 En ATIONet la flota se refiere al grupo de vehículos dentro de una Compañía. En esta sección podrá ver las flotas existentes, editarlas y/o crear nuevas.
@@ -517,8 +539,6 @@ En esta vista, al principio se puede filtrar por el tipo de excepción. Los tipo
 
 ![Excepciones Filtros](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Excepciones%20Filtros.PNG)
 
-## Facturas****
-
 ## Identificaciones Solicitadas
 En este apartado podrá consultar las identificaciones solicitadas. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
@@ -574,7 +594,17 @@ Después de configurar cualquier tipo de regla, el último paso es asociar la re
 
 ![Reglas - Asociación](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Aplicacion.PNG)
 
-## Rendimiento por Transacción****
+## Rendimiento por Transacción
+Esta sección muestra un listado de transacciones con su respectivo rendimiento, exclusivamente para vehículos. El cálculo depende directamente del vehículo, y se tienen que cumplir las siguientes condiciones para que se actualice el valor:
+
+* **La transacción tiene que tener un vehículo asociado.**
+* **Se tiene que informar odómetro y no ser nulo.**
+* **El odómetro actual del vehículo no tiene que ser nulo.**
+* **El volumen dispensado no tiene que ser nulo y mayor a cero.**
+
+![Rendimiento por Transaccion](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Flota/Rendimiento%20por%20Transacci%C3%B3n.PNG)
+
+Si las condiciones se cumplen, el cálculo es realizado en base a kilómetros recorridos por la unidad que representa el volumen. Si la diferencia de odómetro da 100 km (kilómetros recorridos), y carga 20 litros, entonces queda 100km / 20L, lo que da 5km por litro.
 
 ## Rendimiento por Vehículo****
 
@@ -652,7 +682,14 @@ En esta vista, al principio se puede filtrar por el tipo de rechazo. Los tipos d
 
 # Liquidaciones
 
-## Cargos Externos****
+## Cargos Externos
+En esta sección podrá subir un comprobante asociado a un documento externo. El comprobante toma el importe informado en el documento y se debe adjuntar un archivo/comprobante que respalde la información cargada.
+
+Esta vista tiene un flujo de aprobación asociado al mismo, en donde:
+* La Compañía ingresa el cargo externo y queda en estado **Nuevo** (se permite editar o eliminar el mismo).
+* La misma Compañía puede cambiar el estado a **Aprobado por la Compañía** ó **Rechazado por la Compañía**.
+
+Si el cargo es rechazado, el flujo termina. En cambio si es aprobado, la Network es responsable de revisar el **cargo externo** y puede de igual manera aprobar o rechazar el mismo.
 
 ## Documentos de Cargo
 En esta sección podrá ver todos los conceptos aplicados agrupados por estado de cuenta. Si hace clic en el código, le redirigirá al detalle del mismo.
