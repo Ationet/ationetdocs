@@ -368,7 +368,9 @@ Los campos a completar son los siguientes:
 * **Código postal:** El código postal de la localidad donde reside el usuario.
 * **Número de teléfono 1:** El teléfono del usuario.
 * **Número de teléfono 2:** El otro teléfono del usuario si está disponible.
+
 <br>
+
 * **Rol:** El rol que asumirá el nuevo usuario.
 * **Entidad:** La entidad asignada al usuario.
 
@@ -409,9 +411,13 @@ Los campos a completar son los siguientes:
 * **Fecha de último odómetro:** Introduzca la fecha del último odómetro del vehículo.
 * **Horas de motor actuales:** Introduzca las horas de motor actual del vehículo.
 * **Fecha de última hora de motor:** Introduzca la fecha de las últimas horas de motor del vehículo.
+
 <br>
+
 * **Conductores:** Seleccione el conductor asociado al vehículo.
+
 <br>
+
 * **Reglas:** Seleccione la regla asociada al vehículo.
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
