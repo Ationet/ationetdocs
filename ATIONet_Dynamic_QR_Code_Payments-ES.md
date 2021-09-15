@@ -37,6 +37,7 @@
 		- [Formato de solicitud](#Formato-de-solicitud)
 		- [Formato de respuesta](#Formato-de-respuesta)
 		- [Solicitud de ejemplo del metodo venta](#Solicitud-de-ejemplo-del-metodo-venta)
+- [Transaction Sequence Number](#Transaction-Sequence-Number)
 - [Manejo de errores](#Manejo-de-errores)
 - [Mensajes de ejemplo](#Mensajes-de-ejemplo)
 	- [Ejemplo obtener una venta](#Ejemplo-Obtener-una-venta)
@@ -160,7 +161,7 @@ Importante: La trama debe estar en formato JSON. La imagen del código QR debe s
 			 	<p align="center">Site controller</p>
 			 </td>
 			<td>
-				<p>Consulte Número de secuencia de transacción en la sección <a href="AN-Native_Transaction_Protocol-Spec.md#transaction-sequence-number">Descripción del campo.</a></p>
+				<p>Consulte Número de secuencia de transacción en la sección <a href="#Transaction-Sequence-Number">Transaction Sequence Number.</a></p>
 			</td>
 		 </tr>
 		<tr valign="top">
@@ -665,6 +666,12 @@ Body {
     "ProductQuantity": 99
 }
 ```
+
+### Transaction Sequence Number
+
+El número de transacción es un valor entero de longitud fija de 1 a 999999 y se asigna e incrementa para cada transacción enviada al host, independientemente del resultado. Debe restablecerse a 1 cada vez que alcance el límite.
+
+
 ### Manejo de errores
 
 Las salidas exitosas / fallidas en la API de la interfaz se manejarán a través de códigos de estado HTTP.
