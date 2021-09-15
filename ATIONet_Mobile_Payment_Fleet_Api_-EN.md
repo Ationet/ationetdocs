@@ -808,15 +808,21 @@ Once this is done you will be able to generate the QR code to paste on the pump.
 ![ationetTR](Content/Images/SiteSystemCommander/SiteConfig.PNG)
 
 
->You can read more about QR in the [Static QR Image](#Static-QR-Image) section.
+If you wish, you can generate the image of the QR code on your own on any QR code generation page, we recommend https://www.the-qrcode-generator.com/
 
-If you wish, you can generate the image of the QR code on your own on any QR code generation page, for example we recommend this web page: https://www.qr-code-generator.com/
+<br>
+
 To do your own QR Code Image  you have to enter the site code and the pump number as shown below:
 
 ```
 PumpCode:1 SiteCode:1524
 
 ```
+
+Important: If you make you own QR Code image, you have to enter the text like a `plain text`.
+
+
+>You can read more about QR in the [Static QR Image](#Static-QR-Image) section.
 
 
 ### Terminals or Controllers
