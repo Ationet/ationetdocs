@@ -185,7 +185,7 @@ Hay entidades que pueden requerir un seguimiento diario por parte de ciertos usu
 Una vez dentro de la página de Favoritos, al hacer clic en el enlace de la columna **Tipo**, será redirigido a la vista detallada de esa sección.
 Si desea eliminar una sección de la lista de Favoritos, haga clic en el icono de la derecha con forma de cruz.
 
-![Favoritos]()
+![Favoritos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Favoritos.PNG)
 
 # Reportes
 En ATIONet se consideran reportes aquellos listados de información que van a ser impresos y archivados en formato físico. Cuando se imprimen, ATIONet añade automáticamente una cabecera con el logotipo de la suscripción.
@@ -193,16 +193,16 @@ En ATIONet se consideran reportes aquellos listados de información que van a se
 ## Sitios
 
 ## Transacciones
-Este informe muestra la lista de transacciones realizadas, ordenadas por fecha. Este informe tiene varios filtros para ajustar la búsqueda. El primer campo del panel de filtros indica por qué campo se ordenará la lista, el campo seleccionado en esta lista se mostrará en la primera columna.
+Este informe muestra la lista de transacciones realizadas, ordenadas por fecha. El primer campo del panel de filtros indica por qué campo se ordenará la lista, el campo seleccionado en esta lista se mostrará en la primera columna.
 
-![Transacciones]()
+![Transacciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Reportes/Transacciones%20por%20Sitio.PNG)
 
 Una vez seleccionado el filtro pulse el botón ***Imprimir***, esto mostrará una ventana emergente con la información seleccionada.
 La información se muestra en un formato listo para imprimir, incluyendo el logotipo de la suscripción y la fecha y hora de generación del informe.
 
 Esta ventana emergente tiene un botón de impresión que al ser pulsado abre la ventana de impresión por defecto del navegador de Internet.
 
-![Transacciones]()
+![Transacciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Reportes/Transacciones.PNG)
 
 # Administración
 Dentro de este módulo podrá gestionar Combustibles, Notificaciones, Sitios y Terminales entre otras cosas.
@@ -210,7 +210,7 @@ Dentro de este módulo podrá gestionar Combustibles, Notificaciones, Sitios y T
 ## Combustibles
 Esta vista enumera las asignaciones de combustible y su respectivo código para todos los sitios que tienen activada la opción **Mapeo de Combustible Requerido** (para más información sobre el mapeo de combustible haga clic [aquí](#sitios)). Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Combustibles]()
+![Combustibles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Administraci%C3%B3n/Combustibles.PNG)
 
 ## Documentos Externos
 En esta vista están listados todos los documentos externos cargados por la Compañía (mediante APIs) y la posibilidad de descargarlos. Un documento externo es un documento asociado a una operación realizada externamente a ATIONet.
@@ -220,7 +220,7 @@ En esta vista están listados todos los documentos externos cargados por la Comp
 ## Notificaciones
 En esta sección cada usuario puede seleccionar sus propias notificaciones para recibirlas por correo electrónico o sms.
 
-![Notificaciones]()
+![Notificaciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Administraci%C3%B3n/Notificaciones.PNG)
 
 1. ***Inventario***
    * **Notificación de nueva entrega:** Recibe una notificación por cada recepción detectada.
@@ -233,21 +233,21 @@ En esta sección cada usuario puede seleccionar sus propias notificaciones para 
 ## Sitios
 En ATIONet el sitio representa la estación de servicio. Esta sección muestra los sitios ya creados por la Network. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Sitios]()
+![Sitios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Administraci%C3%B3n/Sitios.PNG)
 
 ## Terminales / Controladores
 En esta sección se listan todos los terminales/controladores creados por la Network. El terminal es el punto de venta del sitio y el controlador gestiona los surtidores. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Terminales]()
+![Terminales](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Administraci%C3%B3n/Terminales-Controladores.PNG)
 
 ## Usuarios
 En esta sección puede ver, crear o editar usuarios para el Comercio. Puede editarlos haciendo clic en el icono del lápiz en la columna de opciones, activar/desactivar un usuario haciendo clic en el icono del candado y restablecer la contraseña con el icono de la estrella.
 
-![Usuarios]()
+![Usuarios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Administraci%C3%B3n/Usuarios.PNG)
 
 Para crear un usuario, haga clic en el botón **Nuevo**.
 
-![Usuarios nuevos]()
+![Usuarios nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Usuarios%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 
