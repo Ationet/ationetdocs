@@ -819,9 +819,9 @@ PumpCode:1 SiteCode:1524
 
 ```
 
-<br>
 Important: If you make you own QR Code image, you have to enter the text like a `plain text`.
-<br>
+
+
 >You can read more about QR in the [Static QR Image](#Static-QR-Image) section.
 
 
