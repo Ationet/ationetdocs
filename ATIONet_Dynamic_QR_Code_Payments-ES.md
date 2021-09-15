@@ -3,7 +3,7 @@
 
 |Document Information||
 |--- |--- |
-|File:|ATIONet - Pagos con código QR dinámico|
+|File:|ATIONET - Pagos con código QR dinámico|
 |Doc Version:|1.0|
 |Release Date:|26, August 2021|
 |Author:|ATIONet LLC|
