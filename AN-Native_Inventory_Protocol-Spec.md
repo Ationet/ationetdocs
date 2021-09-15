@@ -3,7 +3,7 @@
 
 |Document Information||
 |--- |--- |
-|File:|ATIONet-Native_Inventory_Protocol-Spec|
+|File:|ATIONET-Native_Inventory_Protocol-Spec|
 |Doc Version:|1.2|
 |Release Date:|31, August 2020|
 |Author:|ATIONet LLC|
