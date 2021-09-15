@@ -21,12 +21,15 @@
 	- [Entities](#Entities)
 	- [Sequence diagram Pay at Pump with Above Site Payment Authorization](#Sequence-diagram-Pay-at-Pump-with-Above-Site-Payment-Authorization)
 - [Site System Implementation guide](#Site-System-Implementation-guide)
-	- [STEP 1 Site Mobile Configuration](#STEP-1-Site-Mobile-Configuration)
-	- [STEP 2 Host Mobile Configuation](#STEP2-Host-Mobile-Configuation)
-	- [Values descriptions](#Values-descriptions)
-	- [Status Codes and Messages](#Status-Codes-and-Messages)
-	- [Static QR Image](#Static-QR-Image)
-	- [How to generate QR Code Image](#How-to-generate-QR-Code-Image)
+	- [Commander implementation guide](#Commander-implementation-guide)
+		- [STEP 1 Site Mobile Configuration](#STEP-1-Site-Mobile-Configuration)
+		- [STEP 2 Host Mobile Configuation](#STEP2-Host-Mobile-Configuation)
+			- [Values descriptions](#Values-descriptions)
+			- [Status Codes and Messages](#Status-Codes-and-Messages)
+		- [ATIONet Configuration](#ATIONet-Configuration)
+			- [Sites](#Sites)
+			- [Terminals/Controllers](#Terminals-or-Controllers)
+			- [Static QR Image](#Static-QR-Image)
 - [ATIONet PFEP Fleet Mobile Payment Api](#ATIONet-PFEP-Fleet-Mobile-Payment-Api)
 	- [Description](#description)
 	- [Details](#api-details)	
@@ -48,10 +51,6 @@
 		- [Cancel ](#cancel)
 - [EXTERNAL PFEP Fleet Mobile Payment Api](EXTERNAL_Mobile_Payment_Fleet_Api_-EN.md)
 </br>
-
-
-
-><h3>IMPORTANT: The following document is only valid for the COMMANDER configuration.</h3>
 
 
 ## Overview
@@ -123,13 +122,13 @@ need to regenerate the receipt information.</li>
 
 
 
-
 # Site System Implementation guide
+
+# Commander implementation guide 
 
 ```Commander``` will provide a ConfigClient screen for configuration of Mobile Payments. These details will be provided by MPPA to commander. The screen will provide for configuration options for Site Details, and host configurations and connectivity parameters. The image below is an example. Some Mobile Payments
 Processing Applications might require more information than others.
 </br>
->You have to request de configuration values to ATIONet.
 
 ## STEP 1 Site Mobile Configuration
 
@@ -147,13 +146,23 @@ Note: The values in the image are for example. You must request the correspondin
 
 </br>
 
-```
-Note: The values in the image are for example. You must request the corresponding values from ATIONet.
-```
+
+><h3>IMPORTANT: You have to request de configuration values to ATIONet.</h3>
+
 </br>
 
-
 ![ationetTR](Content/Images/SiteSystemCommander/configB.PNG)
+
+>We recommended check the conection status after complete configuration.
+
+### Check Status
+
+After completing the configuration, if all the entered values are correct, you should see the status of the site created `online`.
+
+To be able to check this, go to the menu Tools -> Helpdesk Diagnostic -> Payment
+
+![ationetTR](Content/Images/SiteSystemCommander/paymentStatus.PNG)
+
 
 ### Values descriptions
 
@@ -788,6 +797,34 @@ The first two digits of the response code identify the message pair type. The la
 		</tbody>
 </table>
 
+## ATIONet Configuration
+
+### Sites
+
+In the Sites menu, in the site that you want to start operating with Mobile Payments, you must update the information of the cell phone payment mode and add the FullyIntegraded type.
+
+Once this is done you will be able to generate the QR code to paste on the pump. It should generate one per pump and each one must create introducing the Pump Code.
+
+![ationetTR](Content/Images/SiteSystemCommander/SiteConfig.PNG)
+
+
+>You can read more about QR in the [Static QR Image](#Static-QR-Image) section.
+
+If you wish, you can generate the image of the QR code on your own on any QR code generation page, for example we recommend this web page: https://www.qr-code-generator.com/
+To do your own QR Code Image  you have to enter the site code and the pump number as shown below:
+
+```
+PumpCode:1 SiteCode:1524
+
+```
+
+
+### Terminals or Controllers
+
+In the Terminals/Cotrollers menu You have to create a new Terminal of the type AN-MobilePayment.
+
+![ationetTR](Content/Images/SiteSystemCommander/terminalConfiguration.PNG)
+
 ### Static QR Image
 
 Static QR Image is a photo that is pasted in the Pump and contains the pump Number and the Site code, it's mandatory data to do a Transacction.
@@ -816,10 +853,6 @@ Using the ATIONet Mobile Driver App, the Customer can read the Imagen QR and do 
 
 ![ationetTR](Content/Images/SiteSystemCommander/qrexample.PNG)
 
-### How to generate QR Code Image 
-
-You must request the QR Code Image to ATIONet.
-
 # ATIONet PFEP Fleet Mobile Payment Api
 
 ### Introduction
@@ -835,7 +868,7 @@ ATIONet’s fleet Mobile Payment API It is responsible for creating pre-authoriz
 
 ### API Details
 
-API URI: *ationetmobilepayment-appshost-test.azurewebsites.net/*
+API URI: *https://ationetmobilepayment-appshost.azurewebsites.net/*
 
 ### Supported Transactions
 

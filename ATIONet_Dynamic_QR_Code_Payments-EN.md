@@ -37,6 +37,7 @@
 		- [Request Format](#Request-Format)
 		- [Response Format](#Request-Format)
 		- [Request Example](#Request-Example-of-Sale-method)
+- [Transaction Sequence Number](#Transaction-Sequence-Number)
 - [Error handling](#Error-handling)
 - [Messages samples](#Messages-samples)
 	- [Get Sale Method](#Get-Sale-method-sample)
@@ -671,6 +672,10 @@ Body {
     "ProductQuantity": 99
 }
 ```
+### Transaction Sequence Number
+
+The Transaction number is a fixed-length integer value from 1 to 999999 and it is assigned and incremented for each transaction sent to the Host, regardless of the result. It must be reset back to 1 every time it reaches the limit.
+
 ### Error handling
 
 Success/failure exits on the Interface API will be handled via HTTP status codes.
