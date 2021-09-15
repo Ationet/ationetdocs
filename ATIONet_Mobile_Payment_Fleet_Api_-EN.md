@@ -161,7 +161,7 @@ After completing the configuration, if all the entered values are correct, you s
 
 To be able to check this, go to the menu Tools -> Helpdesk Diagnostic -> Payment
 
-![ationetTR](Content/Images/SiteSystemCommander/status.PNG)
+![ationetTR](Content/Images/SiteSystemCommander/paymentStatus.PNG)
 
 
 ### Values descriptions
