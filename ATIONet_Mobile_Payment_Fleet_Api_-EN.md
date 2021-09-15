@@ -808,7 +808,7 @@ Once this is done you will be able to generate the QR code to paste on the pump.
 ![ationetTR](Content/Images/SiteSystemCommander/SiteConfig.PNG)
 
 
-If you wish, you can generate the image of the QR code on your own on any QR code generation page, we recommend this web page: https://www.qr-code-generator.com/
+If you wish, you can generate the image of the QR code on your own on any QR code generation page, we recommend https://www.the-qrcode-generator.com/
 
 <br>
 
