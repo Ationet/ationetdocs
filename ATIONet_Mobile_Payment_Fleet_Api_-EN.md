@@ -147,7 +147,23 @@ Note: The values in the image are for example. You must request the correspondin
 </br>
 
 
-><h3>IMPORTANT: You have to request de configuration values to ATIONet.</h3>
+><h3>IMPORTANT: the values in the image are illustrative, please use these values:</h3>
+
+Values to set:
+
+`
+Adapter: VFI_Mobile_V2
+Program Name: The name of the Host configuration, we recomend use MPPA_PBL
+Merchant ID: 1277
+Store ID: The Site code from Ationet
+Adress(IPv4 Format/Domain Name): 13.83.129.106
+Port: 5560
+Heartbeat Frecuency: 45
+Hearbeat Time Unit: Seconds
+
+Outdoor PreAuthorization Timeout (In Secs) 180
+Site initiated Loyalty: Never Allow Site Entered Loyalty
+`
 
 </br>
 
