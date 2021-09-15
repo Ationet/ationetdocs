@@ -26,7 +26,7 @@
 		- [STEP 2 Host Mobile Configuation](#STEP2-Host-Mobile-Configuation)
 			- [Values descriptions](#Values-descriptions)
 			- [Status Codes and Messages](#Status-Codes-and-Messages)
-		- [STEP 3 ATIONet Configuration](#STEP-3-ATIONet-Configuration)
+		- [ATIONet Configuration](#ATIONet-Configuration)
 			- [Sites](#Sites)
 			- [Terminals/Controllers](#Terminals-or-Controllers)
 			- [Static QR Image](#Static-QR-Image)
@@ -797,7 +797,7 @@ The first two digits of the response code identify the message pair type. The la
 		</tbody>
 </table>
 
-## STEP 3 ATIONet Configuration
+## ATIONet Configuration
 
 ### Sites
 
