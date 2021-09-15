@@ -151,7 +151,7 @@ Note: The values in the image are for example. You must request the correspondin
 
 Values to set:
 
-`
+```
 Adapter: VFI_Mobile_V2
 Program Name: The name of the Host configuration, we recomend use MPPA_PBL
 Merchant ID: 1277
@@ -163,7 +163,7 @@ Hearbeat Time Unit: Seconds
 
 Outdoor PreAuthorization Timeout (In Secs) 180
 Site initiated Loyalty: Never Allow Site Entered Loyalty
-`
+```
 
 </br>
 
