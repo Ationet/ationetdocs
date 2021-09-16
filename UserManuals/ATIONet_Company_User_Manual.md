@@ -807,7 +807,7 @@ En esta sección se pueden ver todos los estados de registro de los documentos d
 ![Documentos de Liquidaciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Liquidaciones/Documentos%20de%20Liquidaciones.PNG)
 
 ## Estados de Cuenta
-En esta sección podrá ver y descargar los estados de cuenta de su Network. También puede generar los estados de cuenta en .pdf uno a uno, o dentro de la **Acción en Lote** generar un paquete.
+En esta sección podrá ver y descargar los estados de cuenta de su Compañía. También puede generar los estados de cuenta en .pdf uno a uno, o dentro de la **Acción en Lote** generar un paquete.
 
 ![Estados de Cuenta](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Liquidaciones/Estados%20de%20Cuenta.PNG)
 
