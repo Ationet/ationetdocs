@@ -2,16 +2,16 @@
 
 |**Información del Documento**|.|
 |--- |--- |
-|**Archivo:**|ATIONet_Merchant_User_Manual-ES.md|
+|**Archivo:**|ATIONET_Merchant_User_Manual-ES.md|
 |**Versión Doc:**|1.0|
 |**Fecha Liberación:**|17, Sep 2021|
-|**Autor:**|ATIONet LLC|
+|**Autor:**|ATIONET LLC|
 
 
 |**Bitácora de Cambios**|.|.|
 |--- |--- |--- |
 |**Ver.**|**Fecha**|**Resumen de Cambios**|
-|1.0|17/Sep/2021|- Versión Inicial  
+|1.0|17/Sep/2021|- Versión Inicial
 
 # Contenido
 
@@ -43,11 +43,11 @@
 
 
 # Resumen
-ATIONet se basa en la premisa de que las comunicaciones en línea entre los sitios y el portal web son posibles, sin embargo, proporciona sólidos procedimientos de contingencia en caso de un error de comunicación.
-La plataforma ATIONet es un servicio de gestión de flotas con una oferta innovadora y única en el mercado. Procesamiento en la nube, 100% basado en la web, acceso multiusuario, disponibilidad y compartición de datos, actualizaciones instantáneas, seguridad, copia de seguridad automática y reducción del papeleo.
-ATIONet es un portal web para empresas de servicios de flotas que permite el procesamiento de transacciones desde cualquier aplicación de punto de venta a través de una interfaz sencilla y fiable. 
-ATIONet puede instalarse en cualquier estación de servicio con uno o varios programas de servicio de flotas. El portal web permite a los gestores de flotas un acceso completo a la información de sus vehículos.
-ATIONet hace posible que el gestor de la flota opere, supervise, cambie y edite la información de la flota en tiempo real.
+ATIONET se basa en la premisa de que las comunicaciones en línea entre los sitios y el portal web son posibles, sin embargo, proporciona sólidos procedimientos de contingencia en caso de un error de comunicación.
+La plataforma ATIONET es un servicio de gestión de flotas con una oferta innovadora y única en el mercado. Procesamiento en la nube, 100% basado en la web, acceso multiusuario, disponibilidad y compartición de datos, actualizaciones instantáneas, seguridad, copia de seguridad automática y reducción del papeleo.
+ATIONET es un portal web para empresas de servicios de flotas que permite el procesamiento de transacciones desde cualquier aplicación de punto de venta a través de una interfaz sencilla y fiable. 
+ATIONET puede instalarse en cualquier estación de servicio con uno o varios programas de servicio de flotas. El portal web permite a los gestores de flotas un acceso completo a la información de sus vehículos.
+ATIONET hace posible que el gestor de la flota opere, supervise, cambie y edite la información de la flota en tiempo real.
 
 
 # Definiciones
@@ -60,10 +60,10 @@ Cada vez que se asocia un identificador a un vehículo o conductor, se crea una 
 Las subcuentas dependen jerárquicamente del contrato.
 
 ## Compañía
-En ATIONet la compañía se refiere a la entidad propietaria de la flota. Es la que gestiona los vehículos, los conductores y las reglas de la flota.
+En ATIONET la compañía se refiere a la entidad propietaria de la flota. Es la que gestiona los vehículos, los conductores y las reglas de la flota.
 
 ## Identificador
-El identificador es el medio físico utilizado por ATIONet para identificar un vehículo o conductor. ATIONet soporta varios tipos de identificadores, como tarjeta, TAG, chip, tarjeta ATIONet, entrada manual, código de barras e iButton. Cuando se asocia un identificador a un vehículo o conductor, se crea una subcuenta.
+El identificador es el medio físico utilizado por ATIONET para identificar un vehículo o conductor. ATIONET soporta varios tipos de identificadores, como tarjeta, TAG, chip, tarjeta ATIONET, entrada manual, código de barras e iButton. Cuando se asocia un identificador a un vehículo o conductor, se crea una subcuenta.
 
 ## Sitio
 El Sitio representa la estación de servicio. A un sitio se le asigna un terminal/controlador y también puede tener reglas de localización asociadas.
@@ -72,14 +72,14 @@ El Sitio representa la estación de servicio. A un sitio se le asigna un termina
 Los vehículos pueden estar asociados o agrupados por una flota, pueden tener reglas asociadas y en el momento de relacionarse con un identificador se crea una subcuenta. También pueden tener un conductor asociado.
 
 ## Conductor
-El conductor en ATIONet es la persona que se identifica como chófer. Si a este conductor se le asigna un identificador, se crea una subcuenta. Los conductores también pueden tener reglas asociadas.
+El conductor en ATIONET es la persona que se identifica como chófer. Si a este conductor se le asigna un identificador, se crea una subcuenta. Los conductores también pueden tener reglas asociadas.
 
 ## Terminal
-El terminal (o controlador) es la representación del controlador del dispensador, que debe ser parametrizado de forma particular según el tipo de terminal. Los terminales que maneja ATIONet son: ATIO-NanoCPI, ATIO-Standalone, ATIO-CG, VF-Sapphire, VF-Commander, VF-Ruby, ControlGas, entre otros.
+El terminal (o controlador) es la representación del controlador del dispensador, que debe ser parametrizado de forma particular según el tipo de terminal. Los terminales que maneja ATIONET son: ATIO-NanoCPI, ATIO-Standalone, ATIO-CG, VF-Sapphire, VF-Commander, VF-Ruby, ControlGas, entre otros.
 
 
 # Menú Navegación
-ATIONet tiene un menú de acceso rápido situado en la parte izquierda de la web. Desde este menú se puede acceder a diferentes opciones. El menú está dividido en: Tablero, Favoritos, Reportes, Administración, Flotas, Liquidación, Configuración y Bitácora de Auditoria.
+ATIONET tiene un menú de acceso rápido situado en la parte izquierda de la web. Desde este menú se puede acceder a diferentes opciones. El menú está dividido en: Tablero, Favoritos, Reportes, Administración, Flotas, Liquidación, Configuración y Bitácora de Auditoria.
 
 # Mis Preferencias
 Dentro de esta sección cada usuario puede personalizar sus preferencias del portal.
@@ -143,7 +143,7 @@ Las pre-autorizaciones pendientes deben ser despachos en curso, si hay registros
 ![Lista de autorizaciones pendientes](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tablero/Lista%20de%20Pre-Autorizaciones%20Pendientes.PNG)
 
 ## Transacciones Marcadas en el Mes Actual
-A continuación se muestran todas las transacciones que fueron rechazadas por alguna de las validaciones realizadas por ATIONet en el proceso de autorización. Ya sea por falta de saldo o por reglas entre otras validaciones.
+A continuación se muestran todas las transacciones que fueron rechazadas por alguna de las validaciones realizadas por ATIONET en el proceso de autorización. Ya sea por falta de saldo o por reglas entre otras validaciones.
 
 ![Transacciones marcadas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tablero/Transacciones%20Marcadas%20en%20el%20Mes%20Actual.PNG)
 
@@ -174,7 +174,7 @@ Este widget muestra la actividad de la administración de identificadores, muest
 ![Actualizaciones de identificadores del último mes](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tablero/Actualizaciones%20de%20Identificadores.PNG)
 
 ## Estado de Terminales
-Todos los terminales que están conectados de forma nativa a ATIONet envían un mensaje regular indicando que están activos. Si el terminal informó del estado en las últimas 5 horas, el terminal se mostrará con el icono verde, si no informó en las últimas 5 horas el icono será rojo.
+Todos los terminales que están conectados de forma nativa a ATIONET envían un mensaje regular indicando que están activos. Si el terminal informó del estado en las últimas 5 horas, el terminal se mostrará con el icono verde, si no informó en las últimas 5 horas el icono será rojo.
 La columna **Edad** muestra el número de minutos transcurridos desde la última vez que se informó del terminal. 
 
 ![Estado del terminal](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tablero/Estado%20Terminales.PNG)
@@ -188,7 +188,7 @@ Si desea eliminar una sección de la lista de Favoritos, haga clic en el icono d
 ![Favoritos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Favoritos.PNG)
 
 # Reportes
-En ATIONet se consideran reportes aquellos listados de información que van a ser impresos y archivados en formato físico. Cuando se imprimen, ATIONet añade automáticamente una cabecera con el logotipo de la suscripción.
+En ATIONET se consideran reportes aquellos listados de información que van a ser impresos y archivados en formato físico. Cuando se imprimen, ATIONET añade automáticamente una cabecera con el logotipo de la suscripción.
 
 ## Sitios
 
@@ -213,7 +213,7 @@ Esta vista enumera las asignaciones de combustible y su respectivo código para 
 ![Combustibles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Administraci%C3%B3n/Combustibles.PNG)
 
 ## Documentos Externos
-En esta vista están listados todos los documentos externos cargados por la Compañía (mediante APIs) y la posibilidad de descargarlos. Un documento externo es un documento asociado a una operación realizada externamente a ATIONet.
+En esta vista están listados todos los documentos externos cargados por la Compañía (mediante APIs) y la posibilidad de descargarlos. Un documento externo es un documento asociado a una operación realizada externamente a ATIONET.
 
 ![Documentos Externos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Documentos%20Externos%20Lista.PNG)
 
@@ -231,7 +231,7 @@ En esta sección cada usuario puede seleccionar sus propias notificaciones para 
    * **Cargos externos:** Recibe una notificación cuando se detectan cargos externos.
 
 ## Sitios
-En ATIONet el sitio representa la estación de servicio. Esta sección muestra los sitios ya creados por la Network. Para facilitar las consultas, hay un panel de filtros en la parte superior.
+En ATIONET el sitio representa la estación de servicio. Esta sección muestra los sitios ya creados por la Network. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
 ![Sitios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Administraci%C3%B3n/Sitios.PNG)
 
