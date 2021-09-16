@@ -2,16 +2,16 @@
 
 |**Información del Documento**|.|
 |--- |--- |
-|**Archivo:**|ATIONet_Company_User_Manual-ES.md|
+|**Archivo:**|ATIONET_Company_User_Manual-ES.md|
 |**Versión Doc:**|1.0|
 |**Fecha Liberación:**|14, Sep 2021|
-|**Autor:**|ATIONet LLC|
+|**Autor:**|ATIONET LLC|
 
 
 |**Bitácora de Cambios**|.|.|
 |--- |--- |--- |
 |**Ver.**|**Fecha**|**Resumen de Cambios**|
-|1.0|14/Sep/2021|- Versión Inicial  
+|1.0|14/Sep/2021|- Versión Inicial
 
 # Contenido
 
@@ -85,11 +85,11 @@
 	- [Bitácora de Auditoría](#bitácora-de-auditoría)
 
 # Resumen
-ATIONet se basa en la premisa de que las comunicaciones en línea entre los sitios y el portal web son posibles, sin embargo, proporciona sólidos procedimientos de contingencia en caso de un error de comunicación.
-La plataforma ATIONet es un servicio de gestión de flotas con una oferta innovadora y única en el mercado. Procesamiento en la nube, 100% basado en la web, acceso multiusuario, disponibilidad y compartición de datos, actualizaciones instantáneas, seguridad, copia de seguridad automática y reducción del papeleo.
-ATIONet es un portal web para empresas de servicios de flotas que permite el procesamiento de transacciones desde cualquier aplicación de punto de venta a través de una interfaz sencilla y fiable. 
-ATIONet puede instalarse en cualquier estación de servicio con uno o varios programas de servicio de flotas. El portal web permite a los gestores de flotas un acceso completo a la información de sus vehículos.
-ATIONet hace posible que el gestor de la flota opere, supervise, cambie y edite la información de la flota en tiempo real.
+ATIONET se basa en la premisa de que las comunicaciones en línea entre los sitios y el portal web son posibles, sin embargo, proporciona sólidos procedimientos de contingencia en caso de un error de comunicación.
+La plataforma ATIONET es un servicio de gestión de flotas con una oferta innovadora y única en el mercado. Procesamiento en la nube, 100% basado en la web, acceso multiusuario, disponibilidad y compartición de datos, actualizaciones instantáneas, seguridad, copia de seguridad automática y reducción del papeleo.
+ATIONET es un portal web para empresas de servicios de flotas que permite el procesamiento de transacciones desde cualquier aplicación de punto de venta a través de una interfaz sencilla y fiable. 
+ATIONET puede instalarse en cualquier estación de servicio con uno o varios programas de servicio de flotas. El portal web permite a los gestores de flotas un acceso completo a la información de sus vehículos.
+ATIONET hace posible que el gestor de la flota opere, supervise, cambie y edite la información de la flota en tiempo real.
 
 
 # Definiciones
@@ -102,10 +102,10 @@ Cada vez que se asocia un identificador a un vehículo o conductor, se crea una 
 Las subcuentas dependen jerárquicamente del contrato.
 
 ## Compañía
-En ATIONet la compañía se refiere a la entidad propietaria de la flota. Es la que gestiona los vehículos, los conductores y las reglas de la flota.
+En ATIONET la compañía se refiere a la entidad propietaria de la flota. Es la que gestiona los vehículos, los conductores y las reglas de la flota.
 
 ## Identificador
-El identificador es el medio físico utilizado por ATIONet para identificar un vehículo o conductor. ATIONet soporta varios tipos de identificadores, como tarjeta, TAG, chip, tarjeta ATIONet, entrada manual, código de barras e iButton. Cuando se asocia un identificador a un vehículo o conductor, se crea una subcuenta.
+El identificador es el medio físico utilizado por ATIONET para identificar un vehículo o conductor. ATIONET soporta varios tipos de identificadores, como tarjeta, TAG, chip, tarjeta ATIONET, entrada manual, código de barras e iButton. Cuando se asocia un identificador a un vehículo o conductor, se crea una subcuenta.
 
 ## Sitio
 El Sitio representa la estación de servicio. A un sitio se le asigna un terminal/controlador y también puede tener reglas de localización asociadas.
@@ -114,10 +114,10 @@ El Sitio representa la estación de servicio. A un sitio se le asigna un termina
 Los vehículos pueden estar asociados o agrupados por una flota, pueden tener reglas asociadas y en el momento de relacionarse con un identificador se crea una subcuenta. También pueden tener un conductor asociado.
 
 ## Conductor
-El conductor en ATIONet es la persona que se identifica como chófer. Si a este conductor se le asigna un identificador, se crea una subcuenta. Los conductores también pueden tener reglas asociadas.
+El conductor en ATIONET es la persona que se identifica como chófer. Si a este conductor se le asigna un identificador, se crea una subcuenta. Los conductores también pueden tener reglas asociadas.
 
 ## Terminal
-El terminal (o controlador) es la representación del controlador del dispensador, que debe ser parametrizado de forma particular según el tipo de terminal. Los terminales que maneja ATIONet son: ATIO-NanoCPI, ATIO-Standalone, ATIO-CG, VF-Sapphire, VF-Commander, VF-Ruby, ControlGas, entre otros.
+El terminal (o controlador) es la representación del controlador del dispensador, que debe ser parametrizado de forma particular según el tipo de terminal. Los terminales que maneja ATIONET son: ATIO-NanoCPI, ATIO-Standalone, ATIO-CG, VF-Sapphire, VF-Commander, VF-Ruby, ControlGas, entre otros.
 
 
 # Menú Navegación
@@ -185,7 +185,7 @@ Las pre-autorizaciones pendientes deben ser despachos en curso, si hay registros
 ![Lista de autorizaciones pendientes](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tablero/Lista%20de%20Pre-Autorizaciones%20Pendientes.PNG)
 
 ## Transacciones Marcadas en el Mes Actual
-A continuación se muestran todas las transacciones que fueron rechazadas por alguna de las validaciones realizadas por ATIONet en el proceso de autorización. Ya sea por falta de saldo o por reglas entre otras validaciones.
+A continuación se muestran todas las transacciones que fueron rechazadas por alguna de las validaciones realizadas por ATIONET en el proceso de autorización. Ya sea por falta de saldo o por reglas entre otras validaciones.
 
 ![Transacciones marcadas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tablero/Transacciones%20Marcadas%20en%20el%20Mes%20Actual.PNG)
 
@@ -216,7 +216,7 @@ Este widget muestra la actividad de la administración de identificadores, muest
 ![Actualizaciones de identificadores del último mes](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tablero/Actualizaciones%20de%20Identificadores.PNG)
 
 ## Estado de Terminales
-Todos los terminales que están conectados de forma nativa a ATIONet envían un mensaje regular indicando que están activos. Si el terminal informó del estado en las últimas 5 horas, el terminal se mostrará con el icono verde, si no informó en las últimas 5 horas el icono será rojo.
+Todos los terminales que están conectados de forma nativa a ATIONET envían un mensaje regular indicando que están activos. Si el terminal informó del estado en las últimas 5 horas, el terminal se mostrará con el icono verde, si no informó en las últimas 5 horas el icono será rojo.
 La columna **Edad** muestra el número de minutos transcurridos desde la última vez que se informó del terminal. 
 
 ![Estado del terminal](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tablero/Estado%20Terminales.PNG)
@@ -230,7 +230,7 @@ Si desea eliminar una sección de la lista de Favoritos, haga clic en el icono d
 ![Favoritos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Favoritos.PNG)
 
 # Reportes
-En ATIONet se consideran reportes aquellos listados de información que van a ser impresos y archivados en formato físico. Cuando se imprimen, ATIONet añade automáticamente una cabecera con el logotipo de la suscripción.
+En ATIONET se consideran reportes aquellos listados de información que van a ser impresos y archivados en formato físico. Cuando se imprimen, ATIONET añade automáticamente una cabecera con el logotipo de la suscripción.
 
 ## Conductor
 El informe de Conductores se puede filtrar por nombre/código del conductor o por identificador.
@@ -298,7 +298,7 @@ Los campos a completar son los siguientes:
 	* ***Capacidad del tanque:*** Introduzca la capacidad del tanque para cada combustible agregado.
 
 ## Compañías
-En ATIONet el término compañías se refiere a la entidad propietaria de la flota. En esta sección puede ver los detalles de su compañía.
+En ATIONET el término compañías se refiere a la entidad propietaria de la flota. En esta sección puede ver los detalles de su compañía.
 
 ![Compañías](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Compa%C3%B1%C3%ADas.PNG)
 
@@ -310,7 +310,7 @@ En esta sección podrá ver los conductores existentes con sus detalles, editarl
 Desde esta vista tiene algunos atajos rápidos bajo la columna **Opciones**:
 * **Asignar Identificadores:** Seleccione el contrato y el identificador a asignar al conductor.
 * **Asignar Regla:** Asigne o cree una regla de flota al conductor.
-* **Eliminar:** Solo se pueden eliminar conductores que no tienen ningún tipo de actividad dentro ATIONet.
+* **Eliminar:** Solo se pueden eliminar conductores que no tienen ningún tipo de actividad dentro ATIONET.
 * **Habilitar/Deshabilitar:** Confirme si desea habilitar/deshabilitar el conductor.
 
 Para crear un conductor, haga clic en el botón **Nuevo**.
@@ -382,12 +382,12 @@ Existen 3 maneras de dispersar el saldo de manera masiva:
 	
 
 ## Documentos Externos
-En esta vista están listados todos los documentos externos cargados por la Compañía (mediante APIs) y la posibilidad de descargarlos. Un documento externo es un documento asociado a una operación realizada externamente a ATIONet.
+En esta vista están listados todos los documentos externos cargados por la Compañía (mediante APIs) y la posibilidad de descargarlos. Un documento externo es un documento asociado a una operación realizada externamente a ATIONET.
 
 ![Documentos Externos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Documentos%20Externos%20Lista.PNG)
 
 ## Flotas
-En ATIONet la flota se refiere al grupo de vehículos dentro de una Compañía. En esta sección podrá ver las flotas existentes, editarlas y/o crear nuevas.
+En ATIONET la flota se refiere al grupo de vehículos dentro de una Compañía. En esta sección podrá ver las flotas existentes, editarlas y/o crear nuevas.
 
 ![Flotas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Flotas.PNG)
 
@@ -475,7 +475,7 @@ En esta sección podrá ver los vehículos existentes con sus detalles, editarlo
 Desde esta vista tiene algunos atajos rápidos bajo la columna **Opciones**:
 * **Asignar Identificadores:** Seleccione el contrato y el identificador a asignar al vehículo.
 * **Asignar Regla:** Asigne o cree una regla de flota al vehículo.
-* **Eliminar:** Solo se pueden eliminar vehículos que no tienen ningún tipo de actividad dentro ATIONet.
+* **Eliminar:** Solo se pueden eliminar vehículos que no tienen ningún tipo de actividad dentro ATIONET.
 * **Habilitar/Deshabilitar:** Confirme si desea habilitar/deshabilitar el vehículo.
 
 Para crear un vehículo, haga clic en el botón **Nuevo**.
@@ -539,14 +539,14 @@ Cuando haya terminado de rellenar los campos, presione el botón **Confirmar**.
 Dentro de este módulo se pueden gestionar los Contratos de Compañía, Cuentas Corrientes, Reglas de flota y las Transacciones entre otras cosas.
 
 ## Autorizaciones Pendientes
-En ATIONet las autorizaciones pendientes son aquellas operaciones que aún no han recibido la transacción de finalización, pero que han sido preautorizadas. La información que se ve en esta vista son los despachos que están actualmente en curso. Si por alguna razón hay preautorizaciones antiguas, es probable que el TPV no haya enviado la transacción de finalización o la transacción de cancelación si el despacho no se ha completado.
+En ATIONET las autorizaciones pendientes son aquellas operaciones que aún no han recibido la transacción de finalización, pero que han sido preautorizadas. La información que se ve en esta vista son los despachos que están actualmente en curso. Si por alguna razón hay preautorizaciones antiguas, es probable que el TPV no haya enviado la transacción de finalización o la transacción de cancelación si el despacho no se ha completado.
 
-Tenga en cuenta que, en el momento de la preautorización, ATIONet congeló el importe de la autorización de la cuenta corriente para la subcuenta asociada. Esta vista presenta todos los campos necesarios para identificar la transacción y la subcuenta. Si necesita ver más detalles, al hacer clic en el código de autorización accederá a la vista de detalles de la transacción.
+Tenga en cuenta que, en el momento de la preautorización, ATIONET congeló el importe de la autorización de la cuenta corriente para la subcuenta asociada. Esta vista presenta todos los campos necesarios para identificar la transacción y la subcuenta. Si necesita ver más detalles, al hacer clic en el código de autorización accederá a la vista de detalles de la transacción.
 
 ![Autorización pendiente](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Autorizaciones%20Pendientes.PNG)
 
 ## Contratos de Compañía
-En ATIONet el término compañía se refiere a la entidad que gestiona la flota. En esta sección podrá consultar todos los contratos de su compañía. Para facilitar las consultas, hay un panel de filtros en la parte superior.
+En ATIONET el término compañía se refiere a la entidad que gestiona la flota. En esta sección podrá consultar todos los contratos de su compañía. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
 ![Contratos de Compañía](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Compa%C3%B1%C3%ADa.PNG)
 
@@ -600,7 +600,7 @@ En esta vista se listan los vehículos/conductores de la Compañía y sus respec
 ![Cuotas por Vehículo/Conductor](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Flota/Cuotas%20por%20veh%C3%ADculo-conductor.PNG)
 
 ## Excepciones
-ATIONet separa las transacciones no autorizadas en 2 secciones: **Excepciones** y [Transacciones Rechazadas](#transacciones-rechazadas). Las excepciones son aquellas transacciones que no pasaron las validaciones duras del sistema o las que se detectan como posibles fraudes.
+ATIONET separa las transacciones no autorizadas en 2 secciones: **Excepciones** y [Transacciones Rechazadas](#transacciones-rechazadas). Las excepciones son aquellas transacciones que no pasaron las validaciones duras del sistema o las que se detectan como posibles fraudes.
 
 ![Excepciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Excepciones.PNG)
 
@@ -617,9 +617,9 @@ Desde esta sección podrá confirmar la recepción de las solicitudes de identif
 Para cambiar el estado de los identificadores solicitados, haga clic en el botón **Acción en Lote** y seleccione la opción **Confirmar la entrega de identificaciones**.
 
 ## Reglas
-En ATIONet las reglas se refieren a los límites que pueden ser configurados. Dentro de esta vista se pueden consultar, crear o editar reglas. Existen diferentes tipos de reglas: Cuota, Rango de Fechas, Ubicación, Combustible, Límite por Transacciones, DíasHora, Solicitud, Límite de Transacciones Secas y Límite de Cuotas Secas.
+En ATIONET las reglas se refieren a los límites que pueden ser configurados. Dentro de esta vista se pueden consultar, crear o editar reglas. Existen diferentes tipos de reglas: Cuota, Rango de Fechas, Ubicación, Combustible, Límite por Transacciones, DíasHora, Solicitud, Límite de Transacciones Secas y Límite de Cuotas Secas.
 
-Tenga en cuenta que todas las reglas pueden ser **No Bloqueantes**, lo que significa que ATIONet no rechazará la transacción, aunque se cumplan los parámetros configurados.
+Tenga en cuenta que todas las reglas pueden ser **No Bloqueantes**, lo que significa que ATIONET no rechazará la transacción, aunque se cumplan los parámetros configurados.
 
 ![Reglas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas.PNG)
 
@@ -688,7 +688,7 @@ Esta sección muestra un listado de vehículos con su respectivo rendimiento. El
 Si las condiciones se cumplen, el cálculo es realizado en base al recorrido teórico calculado por la diferencia de odómetro en un periodo sobre el volumen teórico consumido en el mismo periodo. Esto reflecta cuánto recorre el vehículo por la unidad del volumen.
 
 ## Transacciones
-La vista de transacciones es una de las más importantes en ATIONet. En esta vista puede ver todas las transacciones exitosas.
+La vista de transacciones es una de las más importantes en ATIONET. En esta vista puede ver todas las transacciones exitosas.
 
 El panel de filtro tiene todos estos campos disponibles:
 
@@ -734,7 +734,7 @@ En esta sección puede ver todas las transacciones en las que hubo combustible d
 ![Transacciones Despachadas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Despachadas.PNG)
  
 ## Transacciones ERP
-En esta vista puede ver las transacciones que fueron modificadas por un ERP y enviadas a ATIONet para su debida correción dentro del portal. Haciendo click en el **Código de Autorización** podrá ver los detalles de la misma.
+En esta vista puede ver las transacciones que fueron modificadas por un ERP y enviadas a ATIONET para su debida correción dentro del portal. Haciendo click en el **Código de Autorización** podrá ver los detalles de la misma.
 
 ![Transacciones ERP](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Flota/Transacciones%20ERP.PNG)
 
@@ -754,7 +754,7 @@ En esta vista puede ver las transacciones agrupadas por el vehículo que las rea
 ![Transacciones por Vehículo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20por%20Veh%C3%ADculo.PNG)
 
 ## Transacciones Rechazadas
-ATIONet separa las transacciones no autorizadas en 2 secciones: [Excepciones](#excepciones) y **Transacciones Rechazadas**. Las Transacciones Rechazadas son aquellas que lograron pasar las autenticaciones duras de ATIONet, pero fueron rechazadas por otras validaciones como una regla insatisfecha o una validación de saldo.
+ATIONET separa las transacciones no autorizadas en 2 secciones: [Excepciones](#excepciones) y **Transacciones Rechazadas**. Las Transacciones Rechazadas son aquellas que lograron pasar las autenticaciones duras de ATIONET, pero fueron rechazadas por otras validaciones como una regla insatisfecha o una validación de saldo.
 
 ![Transacciones Rechazadas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Rechazadas.PNG)
 
