@@ -675,7 +675,17 @@ Esta sección muestra un listado de transacciones con su respectivo rendimiento,
 
 Si las condiciones se cumplen, el cálculo es realizado en base a kilómetros recorridos por la unidad que representa el volumen. Si la diferencia de odómetro da 100 km (kilómetros recorridos), y carga 20 litros, entonces queda 100km / 20L, lo que da 5km por litro.
 
-## Rendimiento por Vehículo****
+## Rendimiento por Vehículo
+Esta sección muestra un listado de vehículos con su respectivo rendimiento. El cálculo depende directamente del vehículo, y se tienen que cumplir las siguientes condiciones pra que se actualice el valor:
+
+* **La transaccion tiene que ser de tipo Venta o Finalización de Venta con estado: Confirmada, Completada o Autorizada Manualmente.**
+* **La primera transacción del periodo contenga odómetro.**
+* **La última transacción del periodo contenga odómetro.**
+* **El volumen no puede ser nulo y mayor a cero.**
+
+![Rendimiento por Vehículo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Flota/Rendimiento%20por%20Veh%C3%ADculo.PNG)
+
+Si las condiciones se cumplen, el cálculo es realizado en base al recorrido teórico calculado por la diferencia de odómetro en un periodo sobre el volumen teórico consumido en el mismo periodo. Esto reflecta cuánto recorre el vehículo por la unidad del volumen.
 
 ## Transacciones
 La vista de transacciones es una de las más importantes en ATIONet. En esta vista puede ver todas las transacciones exitosas.
