@@ -269,6 +269,185 @@ Los campos a completar son los siguientes:
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
+## Autorizaciones Pendientes
+En ATIONET las autorizaciones pendientes son aquellas operaciones que aún no han recibido la transacción de finalización, pero que han sido preautorizadas. La información que se ve en esta vista son los despachos que están actualmente en curso. Si por alguna razón hay preautorizaciones antiguas, es probable que el TPV no haya enviado la transacción de finalización o la transacción de cancelación si el despacho no se ha completado.
 
+Tenga en cuenta que en el momento de la preautorización, ATIONET congeló el importe de la autorización de la cuenta corriente para la subcuenta asociada. Esta vista presenta todos los campos necesarios para identificar la transacción y la subcuenta. Si necesita ver más detalles, al hacer clic en el código de autorización accederá a la vista de detalles de la transacción.
+
+![Autorización pendiente](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Autorizaciones%20Pendientes.PNG)
+
+## Contingencia
+En ATIONET una contingencia es una operación introducida manualmente. En esta sección puede consultar y crear contingencias. Tenga en cuenta que las contingencias son transacciones sin autorización previa.
+
+![Contingencia](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contingencias.PNG)
+
+Para crear una contingencia, haga click en el botón **Nuevo**.
+
+![Contingencias Nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contingencias%20Nueva.PNG)
+
+Los campos a completar son los siguientes:
+
+* **Motivo:** Seleccione el motivo de la contingencia.
+* **Fecha:** Introduzca la fecha de la contingencia.
+* **Hora:** Introduzca la hora de la contingencia.
+* **Sitio:** Seleccione el sitio asociado a la contingencia.
+* **Terminal/Controlador:** Seleccione el terminal/controlador asociado a la contingencia.
+* **Cuenta primaria:** Seleccione la subcuenta primaria asociada a la contingencia.
+* **Cuenta secundaria:** Seleccione la subcuenta secundaria asociada a la contingencia.
+* **Combustible:** Seleccione el combustible asociado a la contingencia.
+* **Volumen Despachado:** Introduzca el volumen asociado a la contingencia.
+* **Precio Unitario:** Introduzca el precio unitario asociado a la contingencia.
+* **Monto Despachado:** Introduzca el monto asociado a la contingencia.
+* **Turno:** Introduzca el turno asociado a la contingencia.
+* **Surtidor:** Introduzca la bomba asociada a la contingencia.
+* **Odómetro:** Introduzca el odómetro del vehículo asociado a la contingencia.
+* **Horas de Motor:** Introduzca las horas de motor del vehículo asociado a la contingencia.
+* **Id Conductor:** Introduzca el identificador del conductor asociado a la contingencia.
+* **Id Vehículo:** Introduzca el identificador del vehículo asociado a la contingencia.
+* **Encargado:** Introduzca el encargado asociado a la contingencia.
+* **Lado de la Bomba:** Introduzca el lado de la bomba asociado a la contingencia.
+* **Misceláneos:** Introduzca el misceláneos del vehículo asociados a la contingencia.
+* **Número de Comprobante:** Introduzca el número de comprobante asociado a la contingencia.
+* **Número de Orden de Compra:** Introduzca el número de orden de compra asociado a la contingencia.
+
+Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
+
+## Excepciones
+ATIONET separa las transacciones no autorizadas en 2 secciones: **Excepciones** y [Transacciones Rechazadas] (#transacciones-rechazadas). Las excepciones son aquellas transacciones que no pasaron las validaciones duras del sistema o las que se detectan como posibles fraudes.
+
+![Excepciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Excepciones.PNG)
+
+En esta vista, al principio se puede filtrar por el tipo de excepción. Los tipos de excepciones disponibles son los siguientes:
+
+![Excepciones Filtros](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Excepciones%20Filtros.PNG)
+
+## Transacciones
+La vista de transacciones es una de las más importantes en ATIONET. En esta vista puede ver todas las transacciones exitosas.
+
+El panel de filtro tiene todos estos campos disponibles:
+
+![Trasacciones - Filtro]()
+
+* **Sitio:** Seleccione el sitio asociado a la transacción.
+* **Terminal/Controlador:** Seleccione la terminal asociada a la transacción.
+* **Combustible:** Seleccione el combustible asociado a la transacción.
+* **Surtidor:** Introduzca el número de surtidor asociado a la transacción.
+* **Fecha Desde/Hasta:** Introduzca las fechas de inicio y finalización asociadas a la transacción.
+* **Hora Desde/Hasta:** Introduzca las horas de inicio y finalización asociadas a la transacción.
+* **Modo:** Seleccione el modo de transacción (Contingencia, Fuera de línea o Estándar).
+
+Una vez que haya filtrado, haga clic en ***Buscar*** y se listarán las transacciones que cumplen con el filtro.
+
+![Transacciones]()
+
+Si quiere ver el detalle de la transacción, presione sobre el **Número de Transacción** y esto le llevará a una vista detallada de la misma.
+
+![Transacciones Detalles]()
+
+## Transacciones Desconocidas
+Las transacciones desconocidas son aquellas que la Compañía dice desconocer. En esta sección se pueden consultar las transacciones desconocidas, listadas por código, fecha, motivo, estado, número de transacción, compañía, sitio. También está el comentario de la compañía, del comercio y de la network.
+
+![Transacciones desconocidas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Desconocidas.PNG)
+
+## Transacciones por Sitio
+En esta vista se pueden ver las transacciones agrupadas por el sitio donde se realizaron. Los botones de la parte superior izquierda sirven para imprimir la tabla o crear un archivo Excel a partir de ella, respectivamente.
+
+![Transacciones por Sitio](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20por%20Sitio.PNG)
+
+## Transacciones Rechazadas
+ATIONET separa las transacciones no autorizadas en 2 secciones: [Excepciones](#excepciones) y **Transacciones Rechazadas**.
+
+Las Transacciones Rechazadas son aquellas que lograron pasar las autenticaciones duras de ATIONET, pero fueron rechazadas por otras validaciones como una regla insatisfecha o una validación de saldo.
+
+![Transacciones Rechazadas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Rechazadas.PNG)
+
+En esta vista, al principio se puede filtrar por el tipo de rechazo. Los tipos de rechazo disponibles son los siguientes:
+
+![Transacciones Rechazadas Filtros](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Rechazadas%20Filtros.PNG)
+
+# Liquidaciones
+
+## Cargos Externos
+En esta sección podrá subir un comprobante asociado a un documento externo. El comprobante toma el importe informado en el documento y se debe adjuntar un archivo/comprobante que respalde la información cargada.
+
+![Cargos Externos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Liquidaci%C3%B3n/Cargos%20Externos.PNG)
+
+Para crear un cargo externo, haga click en el botón **Nuevo**.
+
+![Cargos Externos Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Liquidaci%C3%B3n/Cargos%20Externos%20Nuevo.PNG)
+
+Los campos a completar son los siguientes:
+
+* **Fecha:** Ingresar la fecha del cargo externo.
+* **Documento Externo:** Seleccionar el documento externo asociado al cargo.
+* **Descripción:** Ingresar la descripción del cargo externo.
+* **Tipo de Comprobante:** Seleccionar el tipo de comprobante asociado al cargo.
+* **Numero de Comprobante:** Ingresar el número del comprobante asociado al cargo.
+* **Código de Autorización Electrónica:** Ingresar el código de autorización electrónica asociado al cargo.
+* **Fecha de expiración:** Ingresar la fecha de expiración del cargo externo.
+* **Moneda:** Seleccionar la moneda del cargo externo.
+* **Monto Neto:** Ingresar el monto neto del cargo externo.
+* **Exento de Impuestos:** Marque esta opción si el cargo es libre de impuestos.
+
+<br>
+
+* **Impuesto:** Ingreasr el impuesto asociado al cargo externo.
+
+Esta vista tiene un flujo de aprobación asociado al mismo, en donde:
+* La Compañía ingresa el cargo externo y queda en estado **Nuevo** (se permite editar o eliminar el mismo).
+* La misma Compañía puede cambiar el estado a **Aprobado por la Compañía** ó **Rechazado por la Compañía**.
+
+Si el cargo es rechazado, el flujo termina. En cambio, si es aprobado, la Network es responsable de revisar el **cargo externo** y puede de igual manera aprobar o rechazar el mismo.
+
+## Comprobantes de Comisión
+En esta sección podrá subir un comprobante asociado a un documento de cargo (un concepto de tipo comisión aplicado al contrato de comercio). El comprobante toma el importe informado en el documento y se debe adjuntar un archivo/comprobante que respalde la información cargada.
+
+![Comprobantes de Comisión]()
+
+Para crear un comprobante de comisión, haga click en el botón **Nuevo**.
+
+![Comprobantes de Comisión Nuevo]()
+
+Los campos a completar son los siguientes:
+
+* **Fecha:** Ingresar la fecha del comprobante de comisión.
+* **Número de Liquidación:** Seleccionar el número de liquidación asociado al comprobante.
+* **Documento de Cargo:** Seleccionar el documento de cargo asociado al comprobante.
+* **Descripción:** Ingresar la descripción del comprobante de comisión.
+* **Tipo de Comprobante:** Seleccionar el tipo de comprobante.
+* **Numero de Comprobante:** Ingresar el número del comprobante.
+* **Código de Autorización Electrónica:** Ingresar el código de autorización electrónica asociado al comprobante.
+* **Monto Neto:** Ingresar el monto neto del comprobante de comisión.
+* **Exento de Impuestos:** Marque esta opción si el comprobante es libre de impuestos.
+
+<br>
+
+* **Impuesto:** Ingreasr el impuesto asociado al comprobante de comisión.
+
+Esta vista tiene un flujo de aprobación asociado al mismo, en donde:
+* El Comercio ingresa el comprobante de comisión y queda en estado **Nuevo** (se permite editar o eliminar el mismo).
+* El mismo Comercio puede cambiar el estado a **Aprobado por el Comercio** ó **Rechazado por el Comercio**.
+
+Si el comprobante es rechazado, el flujo termina. En cambio, si es aprobado, la Network es responsable de revisar el **comprobante de comisión** y puede de igual manera aprobar o rechazar el mismo.
+
+## Documentos de Cargo
+En esta sección podrá ver todos los conceptos aplicados agrupados por estado de cuenta. Si hace clic en el código, le redirigirá al detalle del mismo.
+
+![Documentos de Cargo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Liquidaciones/Documentos%20de%20Cargo.PNG)
+
+## Documentos de Liquidaciones
+En esta sección se pueden ver todos los estados de registro de los documentos de liquidación solicitados. Los estados posibles son: Pendiente, Procesando, Finalizado o Finalizado con errores.
+
+![Documentos de Liquidaciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Liquidaciones/Documentos%20de%20Liquidaciones.PNG)
+
+## Estados de Cuenta
+En esta sección podrá ver y descargar los estados de cuenta de su Comercio. También puede generar los estados de cuenta en .pdf uno a uno, o dentro de la **Acción en Lote** generar un paquete.
+
+![Estados de Cuenta](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Liquidaciones/Estados%20de%20Cuenta.PNG)
+
+## Items Liquidados
+En esta sección puede ver los conceptos aplicados para cada estado de cuenta.
+
+![Liquidación](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Liquidaciones/Items%20Liquidados.PNG)
 
 
