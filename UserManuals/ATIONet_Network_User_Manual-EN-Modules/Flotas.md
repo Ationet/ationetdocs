@@ -270,10 +270,6 @@ Una vez completada la información general, tiene diferentes pestañas para conf
 * ***Fecha Desde:*** Introduzca la fecha de inicio del sobregiro.
 * ***Fecha Hasta:*** Introduzca la fecha de finalización del sobregiro.
 
-10. **Programas:**
-11. **Subsidios:**
-12. **Campos Personalizados:**
-
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 ## Cuentas Corrientes de Comercio
@@ -491,7 +487,7 @@ Si quiere ver el detalle de la transacción, presione sobre el **Código de Auto
 ![Transacciones Detalles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Detalles.PNG)
 
 ## Transacciones Desconocidas
-Las transacciones desconocidas son aquellas que cualquiera de las partes (Comercio o Compañía) dice desconocer.
+Las transacciones desconocidas son aquellas que la Compañía dice desconocer.
 
 En esta sección se pueden consultar las transacciones desconocidas, listadas por código, fecha, motivo, estado, número de transacción, compañía, sitio. También está el comentario de la compañía, del comercio y de la network.
 
