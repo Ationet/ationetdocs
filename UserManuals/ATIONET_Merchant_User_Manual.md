@@ -40,7 +40,35 @@
 	- [Estado de Terminales](#estado-de-terminales)
 - [Favoritos](#favoritos)
 - [Reportes](#reportes)
-
+	- [Sitios](#sitios)
+	- [Transacciones](#transacciones)
+- [Administración](#administración)
+	- [Combustibles] (#combustibles)
+	- [Documentos Externos](#documentos-externos)
+	- [Notificaciones](#notificaciones)
+	- [Sitios](#sitios-1)
+	- [Terminales/Controladores](#terminales--controladores)
+	- [Usuarios](#usuarios)
+- [Flotas](#flotas)
+	- [Autorizaciones Pendientes](#autorizaciones-pendientes)
+	- [Contingencia](#contingencia)
+	- [Excepciones](#excepciones)
+	- [Transacciones](#transacciones-1)
+	- [Transacciones Desconocidas](#transacciones-desconocidas)
+	- [Transacciones por Sitio](#transacciones-por-sitio)
+	- [Transacciones Rechazadas](#transacciones-rechazadas)
+- [Liquidaciones](#liquidaciones)
+	- [Cargos Externos](#cargos-externos)
+	- [Comprobantes de Comisión](#comprobantes-de-comisión)
+	- [Documentos de Cargo](#documentos-de-cargo)
+	- [Documentos de Liquidación](#documentos-de-liquidaciones)
+	- [Estados de Cuenta](#estados-de-cuenta)
+	- [Items Liquidados](#items-liquidados)
+- [Inventario](#inventario)
+	- [Graficos de Inventario](#graficos-de-inventario)
+	- [Inventarios](#inventarios)
+	- [Recepciones](#recepciones)
+	- [Reconciliación Inventario](#reconciliación-inventario)
 
 # Resumen
 ATIONET se basa en la premisa de que las comunicaciones en línea entre los sitios y el portal web son posibles, sin embargo, proporciona sólidos procedimientos de contingencia en caso de un error de comunicación.
@@ -269,6 +297,9 @@ Los campos a completar son los siguientes:
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
+# Flotas
+Dentro de este módulo se pueden gestionar Contingencias, Transacciones, Excepciones y Rechazos entre otras cosas.
+
 ## Autorizaciones Pendientes
 En ATIONET las autorizaciones pendientes son aquellas operaciones que aún no han recibido la transacción de finalización, pero que han sido preautorizadas. La información que se ve en esta vista son los despachos que están actualmente en curso. Si por alguna razón hay preautorizaciones antiguas, es probable que el TPV no haya enviado la transacción de finalización o la transacción de cancelación si el despacho no se ha completado.
 
@@ -450,4 +481,13 @@ En esta sección puede ver los conceptos aplicados para cada estado de cuenta.
 
 ![Liquidación](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Liquidaciones/Items%20Liquidados.PNG)
 
+# Inventario
+
+## Graficos de Inventario
+
+## Inventarios
+
+## Recepciones
+
+## Reconciliación Inventario
 
