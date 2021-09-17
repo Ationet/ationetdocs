@@ -43,7 +43,7 @@
 	- [Sitios](#sitios)
 	- [Transacciones](#transacciones)
 - [Administración](#administración)
-	- [Combustibles] (#combustibles)
+	- [Combustibles](#combustibles)
 	- [Documentos Externos](#documentos-externos)
 	- [Notificaciones](#notificaciones)
 	- [Sitios](#sitios-1)
