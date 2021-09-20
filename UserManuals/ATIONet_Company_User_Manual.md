@@ -132,7 +132,7 @@ Dentro de esta sección cada usuario puede personalizar sus preferencias del por
 
 2. **Imagen de Perfil:** Cambia la imagen de perfil de tu usuario.
 
-![Imagen de perfil](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Mis%20Preferencias/Foto%20de%20Perfil.PNG)
+![Imagen de perfil](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Mis%20Preferencias/Fotos%20de%20Perfil.PNG)
 
 3. **Cambiar la Contraseña:** Cambia la contraseña de tu usuario.
 
