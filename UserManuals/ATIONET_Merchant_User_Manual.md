@@ -241,7 +241,7 @@ Esta ventana emergente tiene un botón de impresión que al ser pulsado abre la 
 Dentro de este módulo podrá gestionar Combustibles, Notificaciones, Sitios y Terminales entre otras cosas.
 
 ## Combustibles
-Esta vista enumera las asignaciones de combustible y su respectivo código para todos los sitios que tienen activada la opción **Mapeo de Combustible Requerido** (esta opción se utiliza si se requieren utilizar códigos específicos de combustible, sino ATIONET validará contra los [Códigos de Combustible Maestro](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/C%C3%B3digos%20Maestros%20de%20Combustible.PNG). Para facilitar las consultas, hay un panel de filtros en la parte superior.
+Esta vista enumera las asignaciones de combustible y su respectivo código para todos los sitios que tienen activada la opción **Mapeo de Combustible Requerido** (esta opción se utiliza si se requieren utilizar códigos específicos de combustible, sino ATIONET validará contra los [Códigos de Combustible Maestro](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/C%C3%B3digos%20Maestros%20de%20Combustible.PNG)). Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
 ![Combustibles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Administraci%C3%B3n/Combustibles.PNG)
 
