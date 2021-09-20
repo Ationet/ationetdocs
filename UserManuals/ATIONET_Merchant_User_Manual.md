@@ -531,7 +531,7 @@ El portal también le permite la generación de una recepción manual, en caso d
 
 Para crear un inventario manual, presione el botón **Nuevo**.
 
-![Inventarios Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Inventario/Inventarios%20Nuevo.PNG)
+![Recepciones Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Inventario/Recepciones%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 
