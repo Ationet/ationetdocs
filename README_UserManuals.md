@@ -13,7 +13,7 @@
 - [ATIONET Company User Manual (Spanish)](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Company_User_Manual.md)
 
 ### Merchant 
-- [ATIONET Merchant User Manual (Spanish)]()
+- [ATIONET Merchant User Manual (Spanish)](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONET_Merchant_User_Manual.md)
 
 <br>
 
