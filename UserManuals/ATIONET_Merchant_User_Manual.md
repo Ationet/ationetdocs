@@ -4,14 +4,14 @@
 |--- |--- |
 |**Archivo:**|ATIONET_Merchant_User_Manual-ES.md|
 |**Versión Doc:**|1.0|
-|**Fecha Liberación:**|17, Sep 2021|
+|**Fecha Liberación:**|20, Sep 2021|
 |**Autor:**|ATIONET LLC|
 
 
 |**Bitácora de Cambios**|.|.|
 |--- |--- |--- |
 |**Ver.**|**Fecha**|**Resumen de Cambios**|
-|1.0|17/Sep/2021|- Versión Inicial
+|1.0|20/Sep/2021|- Versión Inicial
 
 # Contenido
 
