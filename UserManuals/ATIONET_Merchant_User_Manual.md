@@ -552,7 +552,7 @@ Los campos a completar son los siguientes:
 * **Temperatura Final:** Ingrese la temperatura del combustible al final de la recepción.
 * **Altura de Combustible Inicial:** Ingrese la altura del combustible al inicio de la recepción.
 * **Altura de Combustible Final:** Ingrese la altura del combustible al final de la recepción.
-* **Comentario:** Ingrese un comentario.
+* **Comentario:** Ingrese un comentario asociado a la recepción.
 * **Numero de Comprobante:** Ingrese el número de comprobante asociado a la recepción.
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
