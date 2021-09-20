@@ -219,6 +219,11 @@ Si desea eliminar una sección de la lista de Favoritos, haga clic en el icono d
 En ATIONET se consideran reportes aquellos listados de información que van a ser impresos y archivados en formato físico. Cuando se imprimen, ATIONET añade automáticamente una cabecera con el logotipo de la suscripción.
 
 ## Sitios
+Este informe muestra la lista de sitios creados por la Network, ordenados por código. En la parte superior se puede filtrar por sitio, o sino presionar el botón de ***Imprimir*** y sacar un listado completo de todos los sitios del Comercio.
+
+![Sitios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Reportes/Sitios.PNG)
+
+Esta ventana emergente tiene un botón de impresión que al ser pulsado abre la ventana de impresión por defecto del navegador de Internet.
 
 ## Transacciones
 Este informe muestra la lista de transacciones realizadas, ordenadas por fecha. El primer campo del panel de filtros indica por qué campo se ordenará la lista, el campo seleccionado en esta lista se mostrará en la primera columna.
@@ -357,7 +362,7 @@ La vista de transacciones es una de las más importantes en ATIONET. En esta vis
 
 El panel de filtro tiene todos estos campos disponibles:
 
-![Trasacciones - Filtro]()
+![Trasacciones - Filtro](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Flotas/Transacciones%20Filtro.PNG)
 
 * **Sitio:** Seleccione el sitio asociado a la transacción.
 * **Terminal/Controlador:** Seleccione la terminal asociada a la transacción.
@@ -369,11 +374,11 @@ El panel de filtro tiene todos estos campos disponibles:
 
 Una vez que haya filtrado, haga clic en ***Buscar*** y se listarán las transacciones que cumplen con el filtro.
 
-![Transacciones]()
+![Transacciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Flotas/Transacciones.PNG)
 
 Si quiere ver el detalle de la transacción, presione sobre el **Número de Transacción** y esto le llevará a una vista detallada de la misma.
 
-![Transacciones Detalles]()
+![Transacciones Detalles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Flotas/Transacciones%20Detalles.PNG)
 
 ## Transacciones Desconocidas
 Las transacciones desconocidas son aquellas que la Compañía dice desconocer. En esta sección se pueden consultar las transacciones desconocidas, listadas por código, fecha, motivo, estado, número de transacción, compañía, sitio. También está el comentario de la compañía, del comercio y de la network.
@@ -433,11 +438,11 @@ Si el cargo es rechazado, el flujo termina. En cambio, si es aprobado, la Networ
 ## Comprobantes de Comisión
 En esta sección podrá subir un comprobante asociado a un documento de cargo (un concepto de tipo comisión aplicado al contrato de comercio). El comprobante toma el importe informado en el documento y se debe adjuntar un archivo/comprobante que respalde la información cargada.
 
-![Comprobantes de Comisión]()
+![Comprobantes de Comisión](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Flotas/Comprobante%20de%20Comisi%C3%B3n.PNG)
 
 Para crear un comprobante de comisión, haga click en el botón **Nuevo**.
 
-![Comprobantes de Comisión Nuevo]()
+![Comprobantes de Comisión Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Flotas/Comprobante%20de%20Comisi%C3%B3n%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -482,12 +487,77 @@ En esta sección puede ver los conceptos aplicados para cada estado de cuenta.
 ![Liquidación](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Liquidaciones/Items%20Liquidados.PNG)
 
 # Inventario
+En ATIONET inventario se refiere a los combustibles disponibles en los distintos tanques en las estaciones. Cuando una estación posee un sistema de telemedición, el mismo podría ser configurado para que reporte a ATIONET y así poder visualizar el nivel de combustible y agua de los tanques directamente desde el portal.
 
 ## Graficos de Inventario
+En esta sección podrá ver en gráficos el inventario de los tanques, filtrando primeramente por sitio en el panel de filtros. Una vez filtrado por sitio, haga click en el botón **Buscar**. Esto le traerá un gráfico de todos los tanques para el sitio filtrado.
+
+![Gráfico de Inventario](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Inventario/Graficos%20de%20Inventarios.PNG)
 
 ## Inventarios
+En esta sección podrá encontrar un listado de todos los tanques y sus respectivos combustibles. Existe un panel de filtros en la parte superior para facilitar la búsqueda de información.
+
+![Inventarios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Inventario/Inventarios.PNG)
+
+El portal también le permite la generación de un inventario manual, en caso de cualquier inconveniente que haya ocasionado la falta de reporte de inventario de un sitio/tanque.
+
+Para crear un inventario manual, presione el botón **Nuevo**.
+
+![Inventarios Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Inventario/Inventarios%20Nuevo.PNG)
+
+Los campos a completar son los siguientes:
+
+* **Sitio:** Seleccione el sitio asociado al inventario.
+* **Combustible:** Seleccione el combustible asociado al inventario.
+* **Tanque:** Seleccione el tanque asociado al inventario.
+* **Fecha:** Ingrese la fecha del inventario.
+* **Hora:** Ingrese la hora del inventario.
+* **Volumen:** Ingrese el volumen del combustible asociado al inventario.
+* **Volumen TC:** Ingese el el volumen compensado por temperatura asociado al inventario.
+* **Merma:** Ingrese el nivel de merma asociado al inventario.
+* **Volumen de Agua:** Ingrese el volumen de agua asociado al inventario.
+* **Altura de Combustible:** Ingrese la altura de combustible asociado al inventario.
+* **Temperatura:** Ingrese la temperatura asociada al inventario.
+* **Altura de Agua:** Ingrese la altura de agua asociada al inventario.
+
+Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 ## Recepciones
+En ATIONET una recepción es cuando un tanque es rellenado de combustible. En esta sección podrá encontrar un listado de todas las recepciones de los tanques. Existe un panel de filtros en la parte superior para facilitar la búsqueda de información.
+
+![Recepciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Inventario/Recepciones.PNG)
+
+El portal también le permite la generación de una recepción manual, en caso de cualquier inconveniente que haya ocasionado la falta de reporte de recepción de un sitio/tanque.
+
+Para crear un inventario manual, presione el botón **Nuevo**.
+
+![Inventarios Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Inventario/Inventarios%20Nuevo.PNG)
+
+Los campos a completar son los siguientes:
+
+* **Sitio:** Seleccione el sitio asociado a la recepción.
+* **Combustible:** Seleccione el combustible asociado a la recepción.
+* **Tanque:** Seleccione el tanque asociado a la recepción.
+* **Fecha:** Ingrese la fecha de la recepción.
+* **Hora:** Ingrese la hora de la recepción.
+* **Volumen Recibido:** Ingrese el volumen obtenido en la recepción.
+* **Precio de Recepción:** Ingese el precio de la recepción.
+* **Volumen Inicial:** Ingrese el volumen de combustible al inicio de la recepción.
+* **Volumen Final:** Ingrese el volumen de combustible al final de la recepción.
+* **Volumen TC Inicial:** Ingrese el volumen compensado por temperatura al inicio de la recepción.
+* **Volumen TC Final:** Ingrese el volumen compensado por temperatura al final de la recepción.
+* **Volumen de Agua Inicial:** Ingrese el volumen de agua al inicio de la recepción.
+* **Volumen de Agua Final:** Ingrese el volumen de agua dal final de la recepción.
+* **Temperatura Inicial:** Ingrese la temperatura del combustible al inicio de la recepción.
+* **Temperatura Final:** Ingrese la temperatura del combustible al final de la recepción.
+* **Altura de Combustible Inicial:** Ingrese la altura del combustible al inicio de la recepción.
+* **Altura de Combustible Final:** Ingrese la altura del combustible al final de la recepción.
+* **Comentario:** Ingrese un comentario.
+* **Numero de Comprobante:** Ingrese el número de comprobante asociado a la recepción.
+
+Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 ## Reconciliación Inventario
 
+
+![Reconciliación Inventario](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Inventario/Reconciliaci%C3%B3n%20Inventario.PNG)
