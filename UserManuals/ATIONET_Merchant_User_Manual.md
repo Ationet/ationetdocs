@@ -558,6 +558,6 @@ Los campos a completar son los siguientes:
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 ## Reconciliación Inventario
-
+En esta sección se puede visualizar un reporte de ingresos (***recepciones***), egresos (***transacciones***) y el balance (una suma de todas las recepciones menos todas las transacciones hasta la fecha).
 
 ![Reconciliación Inventario](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Inventario/Reconciliaci%C3%B3n%20Inventario.PNG)
