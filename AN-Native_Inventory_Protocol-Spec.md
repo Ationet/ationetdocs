@@ -1,5 +1,5 @@
 ![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
-# ATIONet - FMS Protocol Specification v1.0 #
+# ATIONET - FMS Protocol Specification v1.0 #
 
 |Document Information||
 |--- |--- |
