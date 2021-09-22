@@ -15,8 +15,8 @@
 ## Fleet Mobile Payment Fully Integrated (NEW !)
 - [English](ATIONet_Mobile_Payment_Fleet_Api_-EN.md)
 
-## Inventory API (NEW !)
-- [Inventory API Specifications](AN-Native_Inventory_Protocol-Spec.md)
+## FMS API (NEW !)
+- [FMS API Specifications](AN-Native_Inventory_Protocol-Spec.md)
 
 ## Wallet API (NEW !)
 - [Wallet API Specifications](AN-Native_Wallet_Protocol-Spec.md)
