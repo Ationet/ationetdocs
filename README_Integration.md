@@ -1,6 +1,6 @@
 ![ationetlogo](Content/Images/ATIOnetLogo_250x70.png) 
 
-# ATIONET Integration Help Centers
+# ATIONET Integration Help Center
 
 
 
