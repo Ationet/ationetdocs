@@ -509,7 +509,7 @@ Obtiene el estado de una venta.
 #### Formato de solicitud
 
 *URL: /api/QR/GetTransactionStatus* </br>
-*Method: POST* </br>
+*Method: GET* </br>
 
 ```
 Body { "actionCode": "string", "subscriberCode": "string", "idDispatch": "string" }
