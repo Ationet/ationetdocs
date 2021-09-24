@@ -74,7 +74,7 @@ escanearlo y generar la venta.
 
 ## Secuencia de pagos con código QR
 
-![ationetTR](Content/Images/DynamicQRPayments/seq_darklight-sp.svg)
+![ationetTR](Content/Images/DynamicQRPayments/sp_flow_vs.png)
 
 ## Implementación de pagos con código QR dinámico
 
@@ -148,20 +148,6 @@ Importante: La trama debe estar en formato JSON. La imagen del código QR debe s
 			 </td>
 			<td>
 				<p>“00”-“99”</p>
-			</td>
-		 </tr>
-		 <tr valign="top">
-			<td>
-				<p align="left">TransactionSequenceNumber</p>
-			</td>
-			<td>
-				<p align="center">integer</p>
-			</td>
-			<td>
-			 	<p align="center">Site controller</p>
-			 </td>
-			<td>
-				<p>Consulte Número de secuencia de transacción en la sección <a href="#Transaction-Sequence-Number">Transaction Sequence Number.</a></p>
 			</td>
 		 </tr>
 		<tr valign="top">
@@ -287,12 +273,10 @@ Importante: La trama debe estar en formato JSON. La imagen del código QR debe s
 Ejemplo completo de una de trama en formato JSON:
 
 {
-    "IDDispatch": "dc152309-6b50-45cc-939c-a43d69ec817a",
+    "IdDispatch":"16e8f1e0-4969-4836-817a-7426a3b2fdc1",    
     "PumpNumber": "1",
-    "TransactionSequenceNumber": 808,
-    "LocalTransactionDate": 20210812, 
-    "LocalTransactionTime": 113152, 
     "TerminalIdentification": "S2G321",
+    "PrimaryTrack": "0000000000001",
     "TransactionAmount": 99,
     "ProductCode": "1",
     "ProductUnitPrice": 1,
@@ -303,17 +287,17 @@ Ejemplo completo de una de trama en formato JSON:
 ```
 #### Ejemplo de imagen QR
 
-![ationetTR](Content/Images/DynamicQRPayments/miniQr3.png)
+![ationetTR](Content/Images/DynamicQRPayments/dynamic_v2.png)
 
 ### PASO 3 Confirmar el estado de la Transacción
 
-Cuando se genera el código QR para una Transacción específica, el backend del POS obtiene el estado de la transacción con un proceso de sondeo mediante la [Api de estado de una Transaccion](#Método-obtener-Venta).
+Cuando se genera el código QR para una Transacción específica, el backend del POS obtiene el estado de la transacción con un proceso de sondeo mediante la [Api de estado de una Transaccion](#Método-obtener-Venta). `Este sondeo se realiza utilizando el IdDispatch.`
 
-```
-Sondeo: Configure un proceso de sondeo en intervalos regulares utilizando la API de estado de transacción.
-Para obtener los mejores resultados de una consulta de estado, debe verificar el estado 8 veces por minuto.
 
-```
+>Sondeo: Configure un proceso de sondeo en intervalos regulares utilizando la API de estado de transacción.
+>Para obtener los mejores resultados de una consulta de estado, debe verificar el estado 8 veces por minuto.
+
+
 
 ### PASO 4 El cliente escanea el código QR dinámico
 
@@ -340,20 +324,236 @@ Una vez finalizada la integración en su entorno de ensayo, es obligatorio proba
 
 *URL:  ationetmobilepayment-appshost-test.azurewebsites.net* </br>
 
+### Método Crear
+
+#### Descripción
+
+Recibe la información de la venta. Devuelve en la respuesta el Id de Transaccion, el tipo de Imagen de código QR, la url para generar la venta, y una imagen del código QR generado codificada en base 64.
+
+#### Formato de solicitud
+
+*URL: /api/QR/Create* </br>
+*Method: POST* </br>
+
+```
+body {
+  "sale": {
+    "IdDispatch":"string",    
+    "PumpNumber": "string",
+    "TerminalIdentification": "string",
+    "PrimaryTrack": "string",
+    "TransactionAmount": double,
+    "ProductCode": "string",
+    "ProductUnitPrice": double,
+    "ProductAmount": double,
+    "ProductQuantity": double
+  },
+  "imageRequired": bool
+}
+
+```
+
+<table>
+	<thead>
+		<tr valign="center">
+			<th rowspan="2"  align="left">
+				Nombre
+			</th>
+			<th rowspan="2"  align="left">
+				Tipo
+			</th>
+			<th rowspan="8" align="left">
+				Descripción
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">IdDispatch</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p>Es el id de despacho.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PumpNumber</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p>Es el número de bomba.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TerminalIdentification</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p>Es la identificacion de la terminal</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PrimaryTrack</p>
+			</td>
+			<td>
+				<p>string</p>
+			</td>
+			<td>
+				<p align="left">Es el primary track.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TransactionAmount</p>
+			</td>
+			<td>
+				<p align="left">double</p>
+			</td>
+			<td>
+				<p>Es el monto de la transacción.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductCode</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p>Es el código del producto.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductUnitPrice</p>
+			</td>
+			<td>
+				<p align="left">double</p>
+			</td>
+			<td>
+				<p>Es el precio unitario del producto.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductAmount</p>
+			</td>
+			<td>
+				<p align="left">double</p>
+			</td>
+			<td>
+				<p>Es el monto del producto</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductQuantity</p>
+			</td>
+			<td>
+				<p align="left">double</p>
+			</td>
+			<td>
+				<p>Es la cantidad del producto.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">imageRequired</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p>Si la solicitud requiere en la respuesta la imagen</p>
+			</td>
+		 </tr>
+		</tbody>
+</table>
+
+
+#### Formato de respuesta
+
+Header:
+```
+Content-Type: application/json; charset=utf-8
+content-encoding: gzip 
+```
+
+```
+body { 
+	"transactionId":"80ab2f6c-e4a3-4c5c-8729-d10c1059a511",
+	"qrData":"https://localhost:44317/api/QR/ProccessSale/ProccessSale/80ab2f6c-e4a3-4c5c-8729-d10c1059a511",
+	"image":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAADi5JREFUeF7tndF24zYMRJ3//+j0NK1bJSuZl4+/E8ERGAXgQ8FGAXgQ8FGAXgQ8FIjNE",
+	"mpqrType":2
+}
+```
+
+
 ### Método obtener Venta
 
 #### Descripción
 
-Devuelve la informacion de una venta.
+Obtiene el estado de una venta.
 
 #### Formato de solicitud
 
-*URL: /api/ContactlessPayment/GetSale* </br>
+*URL: /api/QR/GetTransactionStatus* </br>
 *Method: POST* </br>
 
 ```
-Body {"IDDispatch": "string"}
+Body { "actionCode": "string", "subscriberCode": "string", "idDispatch": "string" }
+
 ```
+
+<table>
+	<thead>
+		<tr valign="center">
+			<th rowspan="2"  align="left">
+				Nombre
+			</th>
+			<th rowspan="8" align="left">
+				Descripción
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">actionCode</p>
+			</td>
+			<td>
+				<p>Deberá ser 949 para QR Dinámico.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">subscriberCode</p>
+			</td>
+			<td>
+				<p>Es el código de subscripción.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">idDispatch</p>
+			</td>
+			<td>
+				<p>Es el identificador de la transacción</p>
+			</td>
+		 </tr>
+		</tbody>
+</table>
 
 #### Formato de respuesta
 Header:
@@ -362,230 +562,47 @@ Content-Type: application/json; charset=utf-8
 content-encoding: gzip 
 ```
 ```
-body [
-
-    {
-        "TransactionId": "string",
-        "SubscriberCode": "string",
-        "TransactionSequenceNumber": "string",
-        "AuthorizationCode": "string",
-        "ResponseCode": "string",
-        "ResponseMessage": "string",
-        "Status": 3,
-        "Mode": 0,
-        "StatusDescription": "string",
-        "HostDateTime": "string",
-        "SubscriberDateTime": "string",
-        "SubscriberTimeZone": "string",
-        "SiteDateTime": "string",
-        "SiteTimeZone": "string",
-        "DateTime": "string",
-        "MerchantCode": "string",
-        "MerchantContractCode": "string",
-        "MerchantName": "string",
-        "MerchantCustomField0": null,
-        "MerchantCustomField1": null,
-        "MerchantCustomField2": null,
-        "MerchantCustomField3": null,
-        "SiteCode": "string",
-        "SiteName": "string",
-        "SiteShortName": "string",
-        "TerminalCode": "string",
-        "TerminalType": "string",
-        "TerminalId": "string",
-        "TerminalTypeId": "string",
-        "SubAccountId": "string",
-        "SecondarySubAccountId": null,
-        "AccountTypeDescription": "string",
-        "VehicleCode": "string",
-        "DriverCode": null,
-        "TransactionNetAmount": null,
-        "ProductUnitPriceRequested": double,
-        "ProductVolumeRequested": double,
-        "ProductAmountRequested": double,
-        "TransactionAmountRequested": double,
-        "ProductUnitPriceAuthorized": double,
-        "ProductVolumeAuthorized": double,
-        "ProductAmountAuthorized": double,
-        "TransactionAmountAuthorized": double,
-        "ProductUnitPriceDispensed": double,
-        "ProductVolumeDispensed": double,
-        "ProductAmountDispensed": double,
-        "ProductNetAmountDispensed": null,
-        "TransactionAmountDispensed": double,
-        "ProductUnitPriceCompany": double,
-        "ProductUnitPriceMerchant": double,
-        "ProductAmountCompany": double,
-        "ProductAmountMerchant": double,
-        "TransactionAmountCompany": double,
-        "TransactionAmountMerchant": double,
-        "MeasurementUnitCode": null,
-        "CurrencyCode": "string",
-        "FuelCode": "string",
-        "FuelMasterCode": "string",
-        "FuelMasterDescription": "string",
-        "InvoiceNumber": null,
-        "BatchNumber": null,
-        "ShiftNumber": null,
-        "PumpNumber": "string",
-        "EntryMethod": "string",
-        "CompanyCode": "string",
-        "CompanyName": "string",
-        "CompanyCustomField0": null,
-        "CompanyCustomField1": null,
-        "CompanyCustomField2": null,
-        "CompanyCustomField3": null,
-        "CompaniesGroupCode": "",
-        "ClassificationLabel1": "string",
-        "ClassificationLabel2": "string",
-        "ClassificationLabel3": "string",
-        "ClassificationLabel4": "string",
-        "ContractCode": "string",
-        "CompanyContractClassificationValue1": "string",
-        "CompanyContractClassificationValue2": "string",
-        "CompanyContractClassificationValue3": "string",
-        "CompanyContractClassificationValue4": "string",
-        "CompanyContractCustomField0": null,
-        "CompanyContractCustomField1": null,
-        "CompanyContractCustomField2": null,
-        "CompanyContractCustomField3": null,
-        "SubContractCode": "string",
-        "PrimaryIdentificationTrack": "string",
-        "SecondaryIdentificationTrack": null,
-        "PrimaryIdentificationPAN": "string",
-        "SecondaryIdentificationPAN": null,
-        "PrimaryIdentificationLabel": "string",
-        "SecondaryIdentificationLabel": null,
-        "PrimaryIdentificationModelDescription": "string",
-        "SecondaryIdentificationModelDescription": null,
-        "FleetCode": "string",
-        "FleetName": "string",
-        "VehiclePlate": "string",
-        "VehicleClassDescription": null,
-        "VehicleClassificationValue1": null,
-        "VehicleClassificationValue2": null,
-        "VehicleClassificationValue3": null,
-        "VehicleClassificationValue4": null,
-        "DriverName": null,
-        "DriverClassificationValue1": null,
-        "DriverClassificationValue2": null,
-        "DriverClassificationValue3": null,
-        "DriverClassificationValue4": null,
-        "CustomerData": {},
-        "FastTrackData": {},
-        "TaxesData": {},
-        "FeesData": [
-            {
-                "Name": "string",
-                "Value": double,
-                "Id": "string"
-            }
-        ],
-        "CompanyTaxpayerId": "string",
-        "ApplicationCode": null,
-        "DisputeDate": null,
-        "Reason": null,
-        "State": null,
-        "DisputeCommentCompany": null,
-        "ResolvedDate": null,
-        "DisputeResolveNetworkComment": null,
-        "Odometer": null,
-        "SiteCountryId": "string",
-        "SiteCountry": "string",
-        "SiteAddress": "string",
-        "SiteStateId": "string",
-        "SiteState": "string",
-        "SiteCity": "string",
-        "SiteZipCode": null,
-        "SiteClassificationValue1": "string",
-        "SiteClassificationValue2": null,
-        "SiteClassificationValue3": null,
-        "SiteClassificationValue4": null,
-        "SiteCustomField0": null,
-        "SiteCustomField1": null,
-        "SiteCustomField2": null,
-        "SiteCustomField3": null,
-        "DriverFirstName": null,
-        "DriverLastName": null,
-        "GPSVirtualOdometer": null,
-        "GPSDistance": null,
-        "GPSAddress": null,
-        "GPSComment": null,
-        "DriverCustomField0": null,
-        "DriverCustomField1": null,
-        "DriverCustomField2": null,
-        "DriverCustomField3": null,
-        "VehicleCustomField0": null,
-        "VehicleCustomField1": null,
-        "VehicleCustomField2": null,
-        "VehicleCustomField3": null,
-        "IdProgram": "string",
-        "ProgramDescription": "string",
-        "LatitudeStart": null,
-        "LongitudeStart": null,
-        "AltitudeStart": null,
-        "LatitudeEnd": null,
-        "LongitudeEnd": null,
-        "AltitudeEnd": null,
-        "ContingencyReason": null,
-        "AuthorizationType": 0,
-        "AttendantCode": null,
-        "PumpSide": null,
-        "VehicleBrand": "string",
-        "VehicleModel": null,
-        "Subsidized": null,
-        "SiteCountryCode": "string",
-        "CompanyContractCustomInterface0": bool,
-        "CompanyContractCustomInterface1": bool,
-        "CompanyContractCustomInterface2": bool,
-        "CompanyContractCustomInterface3": bool,
-        "CompanyContractCustomInterface4": bool,
-        "CompanyContractCustomOperation0": bool,
-        "CompanyContractCustomOperation1": bool,
-        "CompanyContractCustomOperation2": bool,
-        "CompanyContractCustomOperation3": bool,
-        "CompanyContractCustomOperation4": bool,
-        "ProductsData": [],
-        "ModifiersData": []
-    }
-]
-```
-
-#### Solicitud de ejemplo del metodo Obtener una venta 
+body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage":  "string" }
 
 ```
-{
-    "IDDispatch": "d27a1c89-ab2f-469e-91aa-3a20943ab79c"
-}
-```
 
-### Método Venta
+### Método Procesar una venta
 
 #### Descripción
 
-Crea una venta. Recibe  un Dispatch ID que deberá ser único.
+Crea una venta. Recibe el Id de Transacción.
+
+>Éste método requiere autenticacion a través del encabezado. Deberá ser de tipo basica. ejemplo: `Basic usuario:clave`
 
 #### Formato de solicitud
 
-*URL: /api/ContactlessPayment/ProcessSale* </br>
+*URL: /api/QR/ProccessSale/{id}* </br>
 *Method: POST* </br>
-```
-Body { 
-	"IDDispatch": "string",
-	"PumpNumber": "string", 
-	"TransactionSequenceNumber": integer,
-	"LocalTransactionDate": integer,
-	"LocalTransactionTime": integer,
-	"TerminalIdentification": "string",
-	"PrimaryTrack": "string", 
-	"TransactionAmount": integer, 
-	"ProductCode": "string",
-	"ProductUnitPrice": double, 
-	"ProductAmount": double, 
-	"ProductQuantity": double,
-	
-}
-```
+
+<table>
+	<thead>
+		<tr valign="center">
+			<th rowspan="2"  align="left">
+				Nombre
+			</th>
+			<th rowspan="8" align="left">
+				Descripción
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">id</p>
+			</td>
+			<td>
+				<p>Es el Id de la transacción devuelto por el metodo Create.</p>
+			</td>
+		 </tr>
+		</tbody>
+</table>
+
+
 #### Formato de respuesta
 
 Header:
@@ -595,76 +612,7 @@ content-encoding: gzip
 ```
 
 ```
-Body {
-    "ApplicationType": "string",
-    "ProcessingMode": "string",
-    "MessageFormatVersion": "string",
-    "TerminalIdentification": "string",
-    "DeviceTypeIdentifier": "string",
-    "TransactionCode": "string",
-    "AccountType": "string",
-    "EntryMethod": "string",
-    "PumpNumber": "string",
-    "ProductCode": string,
-    "ProductUnitPrice": double,
-    "ProductAmount": double,
-    "ProductQuantity": double,
-    "ProductData": [],
-    "TransactionAmount": double,
-    "UnitCode": string,
-    "CurrencyCode": string,
-    "BatchNumber": integerer,
-    "ShiftNumber": string,
-    "TransactionSequenceNumber": integer,
-    "LocalTransactionDate": integerr,
-    "LocalTransactionTime": integer,
-    "CustomerData": {
-        "ContractMode": "string"
-    },
-    "AuthorizationCode": "string",
-    "InvoiceNumber": string,
-    "ResponseCode": "string",
-    "ResponseText": "string",
-    "ReceiptData": "{ "CustomerName":"string", 
-    		      "CustomerIdentification":"string", 
-		      "CustomerPlate":"string", 
-		      "CustomerPAN":"string", 
-		      "CustomerLabel":"string",
-		      "CompanyName":"string",
-		      "CompanyCode":"string",
-		      "TransactionId":"string",
-		      "AuthorizationType":integer,
-		      "CustomerVehiclePlate":"string",
-		      "CustomerVehicleCode":"string",
-		      "CustomerVehicleModel":"string",
-		      "CustomerVehicleBrand":"string",
-		      "CustomerTruckUnitNumber":"string",
-		      "CustomerOdometer":"string", 
-		      "CustomerDriverId":"string", 
-		      "ContractCode":"string",
-		      "CompanyTaxPayerId":"string",
-		      "CompanyStreet1":"string",
-		      "CompanyStreet2":"string",
-		      "ContractBalanceMode":"string" }",
-    "LongResponseText": "Autorizado"
-}
-```
-
-#### Solicitud de ejemplo del método venta
-
-```
-{
-    "IDDispatch": "d27a1c89-ab2f-469e-91aa-3a20943ab79c",
-    "PumpNumber": "1",
-    "TransactionSequenceNumber": 123,
-    "TerminalIdentification": "S2G321",
-    "PrimaryTrack": "0000000000001",
-    "TransactionAmount": 99,
-    "ProductCode": "1",
-    "ProductUnitPrice": 1,
-    "ProductAmount": 99,
-    "ProductQuantity": 99
-}
+body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage":  "string", "TransactionIdMobile": "string" }
 ```
 
 ### Transaction Sequence Number
