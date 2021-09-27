@@ -466,7 +466,7 @@ body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage
 
 ```
 
-### Error handling
+## Error handling
 
 Success/failure exits on the Interface API will be handled via HTTP status codes.
 
