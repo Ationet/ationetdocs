@@ -75,7 +75,7 @@ escanearlo y generar la venta.
 
 ## Secuencia de pagos con código QR
 
-![ationetTR](Content/Images/DynamicQRPayments/sp_flow_vs.png)
+![ationetTR](Content/Images/DynamicQRPayments/dinamicQrFlow-sp.drawio.png)
 
 ## Implementación de pagos con código QR dinámico
 
