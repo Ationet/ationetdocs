@@ -42,6 +42,7 @@
 - [Messages samples](#Messages-samples)
 	- [Get Sale Method](#Get-Sale-method-sample)
 	- [Sale Method](#Sale-method-sample)
+	- [Create method](#create-method)
 
 
 
@@ -84,9 +85,9 @@ scan it and generate the sale.
 The section describes the integration steps required to integrate ATIONet's Dynamic QR Code Payments with billing POS to accept contactless payment from your customer using the Ationet Driver App payment.
 
 ### STEP 1 Get your authentication keys
-```
-Important: Pending/In progress. Ignore this step.
-```
+
+>You must required your keys from ATIONET
+
 <ul>
 	<li>POS's Backend Key: A unique secret key used to secure encryption of every request. This needs to be kept on server-side and should not be shared with anyone.</li>
 </ul>
@@ -101,7 +102,7 @@ Note: Never share your secret POS's Backend Key with anyone.
 POS's Backend only encodes the minimum sale information in QR, it is the one that comes from site controller when generating a sale. The rest of the plot information is completed by the POS's Backend. The following table describes each field in the table, its description and its origin.
 
 ```
-Important: Plot have to be in JSON format. QR image must be free text type.
+Important: the request body have to be in JSON format. QR image must be free text type.
 
 ```
 
@@ -149,48 +150,6 @@ Important: Plot have to be in JSON format. QR image must be free text type.
 			 </td>
 			<td>
 				<p>“00”-“99”</p>
-			</td>
-		 </tr>
-		 <tr valign="top">
-			<td>
-				<p align="left">TransactionSequenceNumber</p>
-			</td>
-			<td>
-				<p align="center">integer</p>
-			</td>
-			<td>
-			 	<p align="center">Site controller</p>
-			 </td>
-			<td>
-				<p>Refer to Transaction Sequence Number in <a href="AN-Native_Transaction_Protocol-Spec.md#transaction-sequence-number">Field Description section.</a></p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">LocalTransactionDate</p>
-			</td>
-			<td>
-				<p align="center">integer</p>
-			</td>
-			<td>
-			 	<p align="center">Site controller</p>
-			 </td>
-			<td>
-				<p>Local Transaction Date: yyyymmdd</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">LocalTransactionTime</p>
-			</td>
-			<td>
-				<p align="center">integer</p>
-			</td>
-			<td>
-			 	<p align="center">Site controller</p>
-			 </td>
-			<td>
-				<p>Local Transaction Time: hhmmss</p>
 			</td>
 		 </tr>
 		<tr valign="top">
@@ -282,30 +241,11 @@ Important: Plot have to be in JSON format. QR image must be free text type.
 
 ### Examples
 
-#### Plot example
-
-```
-Complete Plot example in JSON Format:
-
-{
-    "IDDispatch": "dc152309-6b50-45cc-939c-a43d69ec817a",
-    "PumpNumber": "1",
-    "TransactionSequenceNumber": 808,
-    "LocalTransactionDate": 20210812, 
-    "LocalTransactionTime": 113152, 
-    "TerminalIdentification": "S2G321",
-    "TransactionAmount": 99,
-    "ProductCode": "1",
-    "ProductUnitPrice": 1,
-    "ProductAmount": 99,
-    "ProductQuantity": 99
-}
-	
-```
+In [Create method](#create-method) section you can find a request body sample in `Json` format.
 
 #### QR Image example
 
-![ationetTR](Content/Images/DynamicQRPayments/miniQr3.png)
+![ationetTR](Content/Images/DynamicQRPayments/dynamic_v4.png)
 
 ### STEP 3 Confirm the Transaction Status
 
@@ -342,6 +282,65 @@ Post completion of integration in your staging environment, it is mandatory to t
 
 *URL:  ationetmobilepayment-appshost-test.azurewebsites.net* </br>
 
+### Create method
+
+#### Description
+
+Receive the sale's information. Returns the Transaction's Id, the QR Type, the URL to do the Sale and the QR Code Image encode in base 64 format.
+
+#### Request Format
+
+URL: /api/QR/Create
+Method: HttpPost
+
+```
+body {
+  "sale": {
+    "IdDispatch":"string",    
+    "PumpNumber": "string",
+    "TerminalIdentification": "string",
+    "TransactionAmount": double,
+    "ProductCode": "string",
+    "ProductUnitPrice": double,
+    "ProductAmount": double,
+    "ProductQuantity": double
+  },
+  "imageRequired": bool
+}
+
+```
+imageRequired: If you send it in true, the response will return the property `image` with the QR Image enconde in base 64. By default is false.
+
+>You can check the description values in [STEP 2 Create Dynamic QR Code](#STEP-2-Create-Dynamic-QR-Code) section.
+
+#### Response Format
+
+Header:
+```
+Content-Type: application/json; charset=utf-8
+content-encoding: gzip
+
+```
+
+```
+body { 
+	"transactionId":"string",
+	"qrData":"string",
+	"image":"string",
+	"mpqrType":int
+}
+```
+
+Response properties description
+	
+```
+"transactionId": The transaction Id.
+"qrData": Contais the url to do the sale.
+"image": If imageRequired was sent true, contaSi el campo imageRequired fue enviado en verdadero contiene la imagen del código QR codificada en base 64. Por defecto es un campo vacio.
+"mpqrType": Es el tipo de Imagen de codigo QR. Por defecto es 2, indicando que se trata de una Imagen de Código QR Dinámica.
+
+```
+
 ### Get Sale Method
 
 #### Description
@@ -351,11 +350,53 @@ Return a Sale information.
 #### Request Format
 
 *URL: /api/ContactlessPayment/GetSale* </br>
-*Method: POST* </br>
+*Method: HttpPost* </br>
 
 ```
-Body {"IDDispatch": "string"}
+Body { "actionCode": "string", "subscriberCode": "string", "idDispatch": "string" }
+
 ```
+
+##### Properties description
+
+<table>
+	<thead>
+		<tr valign="center">
+			<th rowspan="2"  align="left">
+				Name
+			</th>
+			<th rowspan="8" align="left">
+				Description
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">actionCode</p>
+			</td>
+			<td>
+				<p>It must be 949 for Dynamic Qr.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">subscriberCode</p>
+			</td>
+			<td>
+				<p>Is the subscription code.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">idDispatch</p>
+			</td>
+			<td>
+				<p>Is the Transaccion Id</p>
+			</td>
+		 </tr>
+		</tbody>
+</table>
 
 #### Response Format
 
@@ -366,232 +407,54 @@ content-encoding: gzip
 ```
 
 ```
-body [
-
-    {
-        "TransactionId": "string",
-        "SubscriberCode": "string",
-        "TransactionSequenceNumber": "string",
-        "AuthorizationCode": "string",
-        "ResponseCode": "string",
-        "ResponseMessage": "string",
-        "Status": 3,
-        "Mode": 0,
-        "StatusDescription": "string",
-        "HostDateTime": "string",
-        "SubscriberDateTime": "string",
-        "SubscriberTimeZone": "string",
-        "SiteDateTime": "string",
-        "SiteTimeZone": "string",
-        "DateTime": "string",
-        "MerchantCode": "string",
-        "MerchantContractCode": "string",
-        "MerchantName": "string",
-        "MerchantCustomField0": null,
-        "MerchantCustomField1": null,
-        "MerchantCustomField2": null,
-        "MerchantCustomField3": null,
-        "SiteCode": "string",
-        "SiteName": "string",
-        "SiteShortName": "string",
-        "TerminalCode": "string",
-        "TerminalType": "string",
-        "TerminalId": "string",
-        "TerminalTypeId": "string",
-        "SubAccountId": "string",
-        "SecondarySubAccountId": null,
-        "AccountTypeDescription": "string",
-        "VehicleCode": "string",
-        "DriverCode": null,
-        "TransactionNetAmount": null,
-        "ProductUnitPriceRequested": double,
-        "ProductVolumeRequested": double,
-        "ProductAmountRequested": double,
-        "TransactionAmountRequested": double,
-        "ProductUnitPriceAuthorized": double,
-        "ProductVolumeAuthorized": double,
-        "ProductAmountAuthorized": double,
-        "TransactionAmountAuthorized": double,
-        "ProductUnitPriceDispensed": double,
-        "ProductVolumeDispensed": double,
-        "ProductAmountDispensed": double,
-        "ProductNetAmountDispensed": null,
-        "TransactionAmountDispensed": double,
-        "ProductUnitPriceCompany": double,
-        "ProductUnitPriceMerchant": double,
-        "ProductAmountCompany": double,
-        "ProductAmountMerchant": double,
-        "TransactionAmountCompany": double,
-        "TransactionAmountMerchant": double,
-        "MeasurementUnitCode": null,
-        "CurrencyCode": "string",
-        "FuelCode": "string",
-        "FuelMasterCode": "string",
-        "FuelMasterDescription": "string",
-        "InvoiceNumber": null,
-        "BatchNumber": null,
-        "ShiftNumber": null,
-        "PumpNumber": "string",
-        "EntryMethod": "string",
-        "CompanyCode": "string",
-        "CompanyName": "string",
-        "CompanyCustomField0": null,
-        "CompanyCustomField1": null,
-        "CompanyCustomField2": null,
-        "CompanyCustomField3": null,
-        "CompaniesGroupCode": "",
-        "ClassificationLabel1": "string",
-        "ClassificationLabel2": "string",
-        "ClassificationLabel3": "string",
-        "ClassificationLabel4": "string",
-        "ContractCode": "string",
-        "CompanyContractClassificationValue1": "string",
-        "CompanyContractClassificationValue2": "string",
-        "CompanyContractClassificationValue3": "string",
-        "CompanyContractClassificationValue4": "string",
-        "CompanyContractCustomField0": null,
-        "CompanyContractCustomField1": null,
-        "CompanyContractCustomField2": null,
-        "CompanyContractCustomField3": null,
-        "SubContractCode": "string",
-        "PrimaryIdentificationTrack": "string",
-        "SecondaryIdentificationTrack": null,
-        "PrimaryIdentificationPAN": "string",
-        "SecondaryIdentificationPAN": null,
-        "PrimaryIdentificationLabel": "string",
-        "SecondaryIdentificationLabel": null,
-        "PrimaryIdentificationModelDescription": "string",
-        "SecondaryIdentificationModelDescription": null,
-        "FleetCode": "string",
-        "FleetName": "string",
-        "VehiclePlate": "string",
-        "VehicleClassDescription": null,
-        "VehicleClassificationValue1": null,
-        "VehicleClassificationValue2": null,
-        "VehicleClassificationValue3": null,
-        "VehicleClassificationValue4": null,
-        "DriverName": null,
-        "DriverClassificationValue1": null,
-        "DriverClassificationValue2": null,
-        "DriverClassificationValue3": null,
-        "DriverClassificationValue4": null,
-        "CustomerData": {},
-        "FastTrackData": {},
-        "TaxesData": {},
-        "FeesData": [
-            {
-                "Name": "string",
-                "Value": double,
-                "Id": "string"
-            }
-        ],
-        "CompanyTaxpayerId": "string",
-        "ApplicationCode": null,
-        "DisputeDate": null,
-        "Reason": null,
-        "State": null,
-        "DisputeCommentCompany": null,
-        "ResolvedDate": null,
-        "DisputeResolveNetworkComment": null,
-        "Odometer": null,
-        "SiteCountryId": "string",
-        "SiteCountry": "string",
-        "SiteAddress": "string",
-        "SiteStateId": "string",
-        "SiteState": "string",
-        "SiteCity": "string",
-        "SiteZipCode": null,
-        "SiteClassificationValue1": "string",
-        "SiteClassificationValue2": null,
-        "SiteClassificationValue3": null,
-        "SiteClassificationValue4": null,
-        "SiteCustomField0": null,
-        "SiteCustomField1": null,
-        "SiteCustomField2": null,
-        "SiteCustomField3": null,
-        "DriverFirstName": null,
-        "DriverLastName": null,
-        "GPSVirtualOdometer": null,
-        "GPSDistance": null,
-        "GPSAddress": null,
-        "GPSComment": null,
-        "DriverCustomField0": null,
-        "DriverCustomField1": null,
-        "DriverCustomField2": null,
-        "DriverCustomField3": null,
-        "VehicleCustomField0": null,
-        "VehicleCustomField1": null,
-        "VehicleCustomField2": null,
-        "VehicleCustomField3": null,
-        "IdProgram": "string",
-        "ProgramDescription": "string",
-        "LatitudeStart": null,
-        "LongitudeStart": null,
-        "AltitudeStart": null,
-        "LatitudeEnd": null,
-        "LongitudeEnd": null,
-        "AltitudeEnd": null,
-        "ContingencyReason": null,
-        "AuthorizationType": 0,
-        "AttendantCode": null,
-        "PumpSide": null,
-        "VehicleBrand": "string",
-        "VehicleModel": null,
-        "Subsidized": null,
-        "SiteCountryCode": "string",
-        "CompanyContractCustomInterface0": bool,
-        "CompanyContractCustomInterface1": bool,
-        "CompanyContractCustomInterface2": bool,
-        "CompanyContractCustomInterface3": bool,
-        "CompanyContractCustomInterface4": bool,
-        "CompanyContractCustomOperation0": bool,
-        "CompanyContractCustomOperation1": bool,
-        "CompanyContractCustomOperation2": bool,
-        "CompanyContractCustomOperation3": bool,
-        "CompanyContractCustomOperation4": bool,
-        "ProductsData": [],
-        "ModifiersData": [],
-	"IdDispatch": "string"
-    }
-]
-```
-
-#### Request Example of Get Sale method
+body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage":  "string" }
 
 ```
-{
-    "IDDispatch": "d27a1c89-ab2f-469e-91aa-3a20943ab79c"
-}
-```
 
-### Sale Method
+### Process Sale Method
 
 #### Description
 
-Create a Sale. The sale creation recibes a Dispatch ID. It's must be unique.
+Create a Sale. The sale creation receive the Transaction Id and the driver's primaryTrack.
 
 #### Request Format
 
-*URL: /api/ContactlessPayment/ProcessSale* </br>
-*Method: POST* </br>
+*URL: /api/QR/ProccessSale/{id}/{primaryTrack}* </br>
+*Method: HttpGet* </br>
 
-```
-Body { 
-	"IDDispatch": "string",
-	"PumpNumber": "string", 
-	"TransactionSequenceNumber": integer,
-	"LocalTransactionDate": integer,
-	"LocalTransactionTime": integer,
-	"TerminalIdentification": "string",
-	"PrimaryTrack": "string", 
-	"TransactionAmount": integer, 
-	"ProductCode": "string",
-	"ProductUnitPrice": double, 
-	"ProductAmount": double, 
-	"ProductQuantity": double,
-	
-}
-```
+##### Parameters description
+
+<table>
+	<thead>
+		<tr valign="center">
+			<th rowspan="2"  align="left">
+				Name
+			</th>
+			<th rowspan="8" align="left">
+				Description
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">id</p>
+			</td>
+			<td>
+				<p>Is the Transaccion Id</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">primaryTrack</p>
+			</td>
+			<td>
+				<p>The driver identifier</p>
+			</td>
+		 </tr>
+		</tbody>
+</table>
+
 #### Response Format 
 
 Header:
@@ -601,80 +464,9 @@ content-encoding: gzip
 ```
 
 ```
-Body {
-    "ApplicationType": "string",
-    "ProcessingMode": "string",
-    "MessageFormatVersion": "string",
-    "TerminalIdentification": "string",
-    "DeviceTypeIdentifier": "string",
-    "TransactionCode": "string",
-    "AccountType": "string",
-    "EntryMethod": "string",
-    "PumpNumber": "string",
-    "ProductCode": string,
-    "ProductUnitPrice": double,
-    "ProductAmount": double,
-    "ProductQuantity": double,
-    "ProductData": [],
-    "TransactionAmount": double,
-    "UnitCode": string,
-    "CurrencyCode": string,
-    "BatchNumber": integerer,
-    "ShiftNumber": string,
-    "TransactionSequenceNumber": integer,
-    "LocalTransactionDate": integerr,
-    "LocalTransactionTime": integer,
-    "CustomerData": {
-        "ContractMode": "string"
-    },
-    "AuthorizationCode": "string",
-    "InvoiceNumber": string,
-    "ResponseCode": "string",
-    "ResponseText": "string",
-    "ReceiptData": "{ "CustomerName":"string", 
-    		      "CustomerIdentification":"string", 
-		      "CustomerPlate":"string", 
-		      "CustomerPAN":"string", 
-		      "CustomerLabel":"string",
-		      "CompanyName":"string",
-		      "CompanyCode":"string",
-		      "TransactionId":"string",
-		      "AuthorizationType":integer,
-		      "CustomerVehiclePlate":"string",
-		      "CustomerVehicleCode":"string",
-		      "CustomerVehicleModel":"string",
-		      "CustomerVehicleBrand":"string",
-		      "CustomerTruckUnitNumber":"string",
-		      "CustomerOdometer":"string", 
-		      "CustomerDriverId":"string", 
-		      "ContractCode":"string",
-		      "CompanyTaxPayerId":"string",
-		      "CompanyStreet1":"string",
-		      "CompanyStreet2":"string",
-		      "ContractBalanceMode":"string" }",
-    "LongResponseText": "Autorizado"
-}
-```
-
-#### Request Example of Sale method
+body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage":  "string", "TransactionIdMobile": "string" }
 
 ```
-{
-    "IDDispatch": "d27a1c89-ab2f-469e-91aa-3a20943ab79c",
-    "PumpNumber": "1",
-    "TransactionSequenceNumber": 123,
-    "TerminalIdentification": "S2G321",
-    "PrimaryTrack": "0000000000001",
-    "TransactionAmount": 99,
-    "ProductCode": "1",
-    "ProductUnitPrice": 1,
-    "ProductAmount": 99,
-    "ProductQuantity": 99
-}
-```
-### Transaction Sequence Number
-
-The Transaction number is a fixed-length integer value from 1 to 999999 and it is assigned and incremented for each transaction sent to the Host, regardless of the result. It must be reset back to 1 every time it reaches the limit.
 
 ### Error handling
 
@@ -682,268 +474,86 @@ Success/failure exits on the Interface API will be handled via HTTP status codes
 
 Successful request will get a HTTP 200 and the resulting response.
 
-Actions intended to return data, for example the Transactions Downloads group may return many records, just a single record or even no records at all and even though will be considered successful if the requests met the validation criteria. These Actions will always return a JSON-formatted list of records, enclosed in curly brackets “[…]”. An empty response will contain [] as body.
-
-Actions intended to post a command, for example the Statement Charges group will return a single JSON-formatted item with the “ResponseCode”, “ResponseMessage” and “ResponseError” fields. The body of these responses will never be empty.
-
 Failure to process the request will be indicated by an HTTP 400’s range status code. The body will contain a single JSON-formatted item with the “ResponseCode”, “ResponseMessage” and “ResponseError” fields.
 
 
 ## Messages samples
 
-### Get sale method sample
-
-#### Get Request example
-
-```
-{ "IDDispatch": "d27a1c89-ab2f-469e-91aa-3a20943ab79c" }
-```
-
-#### Response example
-
-```
-[
-    {
-        "TransactionId": "d27a1c89-ab2f-469e-91aa-3a20943ab79c",
-        "SubscriberCode": "S2G",
-        "TransactionSequenceNumber": "120",
-        "AuthorizationCode": "075532151",
-        "ResponseCode": "00000",
-        "ResponseMessage": "Autorizado",
-        "Status": 3,
-        "Mode": 0,
-        "StatusDescription": "Confirmed",
-        "HostDateTime": "2021/08/06 15:31:52",
-        "SubscriberDateTime": "2021/08/06 12:31:52",
-        "SubscriberTimeZone": "Argentina Standard Time",
-        "SiteDateTime": "2021/08/06 12:31:52",
-        "SiteTimeZone": "Argentina Standard Time",
-        "DateTime": "2021/08/06 12:31:52",
-        "MerchantCode": "04012",
-        "MerchantContractCode": "123",
-        "MerchantName": "fuel company ",
-        "MerchantCustomField0": null,
-        "MerchantCustomField1": null,
-        "MerchantCustomField2": null,
-        "MerchantCustomField3": null,
-        "SiteCode": "1524",
-        "SiteName": "lomas",
-        "SiteShortName": "lomas",
-        "TerminalCode": "S2G321",
-        "TerminalType": "ATIONET Mobile Payment",
-        "TerminalId": "09c5e5fa-af46-49a3-a0ba-041535f5e870",
-        "TerminalTypeId": "70e808d3-47d2-4ba8-893a-20babab46f91",
-        "SubAccountId": "1200318c-1a25-4263-b75b-291ac3d28853",
-        "SecondarySubAccountId": null,
-        "AccountTypeDescription": "Vehicle",
-        "VehicleCode": "5924",
-        "DriverCode": null,
-        "TransactionNetAmount": null,
-        "ProductUnitPriceRequested": 1.000000,
-        "ProductVolumeRequested": 99.000000,
-        "ProductAmountRequested": 99.000000,
-        "TransactionAmountRequested": 99.000000,
-        "ProductUnitPriceAuthorized": 0.000000,
-        "ProductVolumeAuthorized": 0.000000,
-        "ProductAmountAuthorized": 0.000000,
-        "TransactionAmountAuthorized": 0.000000,
-        "ProductUnitPriceDispensed": 1.000000,
-        "ProductVolumeDispensed": 99.000000,
-        "ProductAmountDispensed": 99.000000,
-        "ProductNetAmountDispensed": null,
-        "TransactionAmountDispensed": 99.000000,
-        "ProductUnitPriceCompany": 1.000000,
-        "ProductUnitPriceMerchant": 1.000000,
-        "ProductAmountCompany": 99.000000,
-        "ProductAmountMerchant": 99.000000,
-        "TransactionAmountCompany": 99.000000,
-        "TransactionAmountMerchant": 99.000000,
-        "MeasurementUnitCode": null,
-        "CurrencyCode": "ARS",
-        "FuelCode": "1",
-        "FuelMasterCode": "022",
-        "FuelMasterDescription": "Compressed Natural Gas",
-        "InvoiceNumber": null,
-        "BatchNumber": null,
-        "ShiftNumber": null,
-        "PumpNumber": "1",
-        "EntryMethod": "S",
-        "CompanyCode": "40206",
-        "CompanyName": "CON'AUTO",
-        "CompanyCustomField0": null,
-        "CompanyCustomField1": null,
-        "CompanyCustomField2": null,
-        "CompanyCustomField3": null,
-        "CompaniesGroupCode": "",
-        "ClassificationLabel1": "Clasificador 1 Departamentos",
-        "ClassificationLabel2": "Classification 2",
-        "ClassificationLabel3": "Classification 3",
-        "ClassificationLabel4": "Classification 4",
-        "ContractCode": "40206",
-        "CompanyContractClassificationValue1": "",
-        "CompanyContractClassificationValue2": "",
-        "CompanyContractClassificationValue3": "",
-        "CompanyContractClassificationValue4": "",
-        "CompanyContractCustomField0": null,
-        "CompanyContractCustomField1": null,
-        "CompanyContractCustomField2": null,
-        "CompanyContractCustomField3": null,
-        "SubContractCode": "40206",
-        "PrimaryIdentificationTrack": "0000000000001",
-        "SecondaryIdentificationTrack": null,
-        "PrimaryIdentificationPAN": "004",
-        "SecondaryIdentificationPAN": null,
-        "PrimaryIdentificationLabel": "Identification1 ATIONet",
-        "SecondaryIdentificationLabel": null,
-        "PrimaryIdentificationModelDescription": "Card",
-        "SecondaryIdentificationModelDescription": null,
-        "FleetCode": "4210",
-        "FleetName": "CONAUTO Fleet",
-        "VehiclePlate": "HAL180",
-        "VehicleClassDescription": null,
-        "VehicleClassificationValue1": null,
-        "VehicleClassificationValue2": null,
-        "VehicleClassificationValue3": null,
-        "VehicleClassificationValue4": null,
-        "DriverName": null,
-        "DriverClassificationValue1": null,
-        "DriverClassificationValue2": null,
-        "DriverClassificationValue3": null,
-        "DriverClassificationValue4": null,
-        "CustomerData": {},
-        "FastTrackData": {},
-        "TaxesData": {},
-        "FeesData": [
-            {
-                "Name": "descuentos",
-                "Value": 496.366000,
-                "Id": "715a7981-84f1-477f-9360-626bf6addb41"
-            }
-        ],
-        "CompanyTaxpayerId": "15024",
-        "ApplicationCode": null,
-        "DisputeDate": null,
-        "Reason": null,
-        "State": null,
-        "DisputeCommentCompany": null,
-        "ResolvedDate": null,
-        "DisputeResolveNetworkComment": null,
-        "Odometer": null,
-        "SiteCountryId": "e8812e4f-406c-49dc-8b99-d985361af691",
-        "SiteCountry": "Argentina",
-        "SiteAddress": "Av. Muñiz 366, () (Martinez) Buenos Aires Argentina",
-        "SiteStateId": "785f7886-3429-4f2e-b633-049e802a4ece",
-        "SiteState": "Buenos Aires",
-        "SiteCity": "Martinez",
-        "SiteZipCode": null,
-        "SiteClassificationValue1": "ZONA GOBIERNO 2",
-        "SiteClassificationValue2": null,
-        "SiteClassificationValue3": null,
-        "SiteClassificationValue4": null,
-        "SiteCustomField0": null,
-        "SiteCustomField1": null,
-        "SiteCustomField2": null,
-        "SiteCustomField3": null,
-        "DriverFirstName": null,
-        "DriverLastName": null,
-        "GPSVirtualOdometer": null,
-        "GPSDistance": null,
-        "GPSAddress": null,
-        "GPSComment": null,
-        "DriverCustomField0": null,
-        "DriverCustomField1": null,
-        "DriverCustomField2": null,
-        "DriverCustomField3": null,
-        "VehicleCustomField0": null,
-        "VehicleCustomField1": null,
-        "VehicleCustomField2": null,
-        "VehicleCustomField3": null,
-        "IdProgram": "d112c23a-4bdb-4c68-9bde-43cd334627c5",
-        "ProgramDescription": "Classic",
-        "LatitudeStart": null,
-        "LongitudeStart": null,
-        "AltitudeStart": null,
-        "LatitudeEnd": null,
-        "LongitudeEnd": null,
-        "AltitudeEnd": null,
-        "ContingencyReason": null,
-        "AuthorizationType": 0,
-        "AttendantCode": null,
-        "PumpSide": null,
-        "VehicleBrand": "TOYOTA",
-        "VehicleModel": null,
-        "Subsidized": null,
-        "SiteCountryCode": "ARG",
-        "CompanyContractCustomInterface0": false,
-        "CompanyContractCustomInterface1": false,
-        "CompanyContractCustomInterface2": false,
-        "CompanyContractCustomInterface3": false,
-        "CompanyContractCustomInterface4": false,
-        "CompanyContractCustomOperation0": false,
-        "CompanyContractCustomOperation1": false,
-        "CompanyContractCustomOperation2": false,
-        "CompanyContractCustomOperation3": false,
-        "CompanyContractCustomOperation4": false,
-        "ProductsData": [],
-        "ModifiersData": [],
-	"IdDispatch": "f39382c9-5efe-4c48-9d16-23eb4427e861"
-    }
-]
-```
-
-### Sale method sample
+### Create method
 
 #### Request example
 
 ```
 {
-    "IDDispatch": "d27a1c89-ab2f-469e-91aa-3a20943ab79c",
+  "sale": {
+    "IdDispatch":"16e8f1e0-4969-4836-817a-7426a3b2fdc1",    
     "PumpNumber": "1",
-    "TransactionSequenceNumber": 123,
     "TerminalIdentification": "S2G321",
-    "PrimaryTrack": "0000000000001",
     "TransactionAmount": 99,
     "ProductCode": "1",
     "ProductUnitPrice": 1,
     "ProductAmount": 99,
     "ProductQuantity": 99
+  },
+  "imageRequired": true
 }
+
+```
+
+#### Response example
+
+```
+{ 
+	"transactionId":"80ab2f6c-e4a3-4c5c-8729-d10c1059a511",
+	"qrData":"https://localhost:44317/api/QR/ProccessSale/ProccessSale/80ab2f6c-e4a3-4c5c-8729-d10c1059a511",
+	"image":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAADi5JREFUeF7tndF24zYMRJ3//+j0NK1bJSuZl4+/E8ERGAXgQ8FGAXgQ8FGAXgQ8FIjNE",
+	"mpqrType":2
+}
+
+```
+
+### Get sale method 
+
+#### Request example
+
+```
+{
+  "actionCode": "949",
+  "subscriberCode": "S2G",
+  "idDispatch": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+}
+
 ```
 
 #### Response example
 
 ```
 {
-    "ApplicationType": "FCS",
-    "ProcessingMode": "1",
-    "MessageFormatVersion": "1.3",
-    "TerminalIdentification": "S2G321",
-    "DeviceTypeIdentifier": "4",
-    "TransactionCode": "210",
-    "AccountType": "1",
-    "EntryMethod": "S",
-    "PumpNumber": "1",
-    "ProductCode": null,
-    "ProductUnitPrice": null,
-    "ProductAmount": null,
-    "ProductQuantity": null,
-    "ProductData": [],
-    "TransactionAmount": null,
-    "UnitCode": null,
-    "CurrencyCode": null,
-    "BatchNumber": null,
-    "ShiftNumber": null,
-    "TransactionSequenceNumber": 296,
-    "LocalTransactionDate": 20210827,
-    "LocalTransactionTime": 125346,
-    "CustomerData": {
-        "ContractMode": "1"
-    },
-    "AuthorizationCode": "052554144",
-    "InvoiceNumber": null,
-    "ResponseCode": "00000",
-    "ResponseText": "Autorizado",
-    "ReceiptData": "{\"CustomerName\":\"5924 - HAL180\",\"CustomerIdentification\":\"5924\",\"CustomerPlate\":\"HAL180\",\"CustomerPAN\":\"004\",\"CustomerLabel\":\"Identification1 ATIONet\",\"CompanyName\":\"CON'AUTO\",\"CompanyCode\":\"40206\",\"TransactionId\":\"00e49ed2-210f-4d0d-8093-dd80996c05e7\",\"AuthorizationType\":0,\"CustomerVehiclePlate\":\"HAL180\",\"CustomerVehicleCode\":\"5924\",\"CustomerVehicleModel\":null,\"CustomerVehicleBrand\":\"TOYOTA\",\"CustomerTruckUnitNumber\":null,\"CustomerOdometer\":\"\",\"CustomerDriverId\":null,\"ContractCode\":\"40206\",\"CompanyTaxPayerId\":\"15024\",\"CompanyStreet1\":\"Av. Conauto\",\"CompanyStreet2\":null,\"ContractBalanceMode\":\"4\"}",
-    "LongResponseText": "Autorizado"
+  "authorizationCode": "072613127",
+  "responseCode": "00000",
+  "responseMessage": "Autorizado"
 }
+
+
+```
+
+### Process Sale method
+
+#### Request example
+
+```
+api/QR/ProccessSale/3fa85f64-5717-4562-b3fc-2c963f66afa6/00000001
+
+```
+
+#### Response example
+
+```
+{
+  "authorizationCode": "072613127",
+  "responseCode": "00000",
+  "responseMessage": "Autorizado",
+  "TransactionIdMobile": 3fa85f64-5717-4562-b3fc-2c963f66afa6
+}
+
 ```
