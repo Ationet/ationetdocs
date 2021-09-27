@@ -309,7 +309,7 @@ body {
 
 ```
 
-imageRequired: Si manda la propiedad en Verdadero, la respuesta devolverá el campo `image` con  la imagen del código QR codificada en base 64.
+imageRequired: Si manda la propiedad en Verdadero, la respuesta devolverá el campo `image` con  la imagen del código QR codificada en base 64. Por defecto devolvera un valor vacio.
 
 >Puede consultar la descripcion de los valores en la sección [PASO 2 Crear código QR dinámico](#PASO-2-Crear-código-QR-dinámico)
 
