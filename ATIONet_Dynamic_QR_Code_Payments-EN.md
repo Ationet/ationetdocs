@@ -40,12 +40,10 @@
 - [Transaction Sequence Number](#Transaction-Sequence-Number)
 - [Error handling](#Error-handling)
 - [Messages samples](#Messages-samples)
-	- [Get Sale Method](#Get-Sale-method-sample)
-	- [Sale Method](#Sale-method-sample)
 	- [Create method](#create-method)
-
-
-
+	- [Get Sale Method](#Get-Sale-method)
+	- [Process Sale method](#Process-Sale-method)
+	
 ## Overview
 
 ![ationetTR](Content/Images/DynamicQRPayments/schemaDarkLight.png)
@@ -512,7 +510,7 @@ Failure to process the request will be indicated by an HTTP 400’s range status
 
 ```
 
-### Get sale method 
+### Get sale method
 
 #### Request example
 
