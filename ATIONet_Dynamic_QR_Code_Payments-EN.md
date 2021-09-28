@@ -74,7 +74,7 @@ scan it and generate the sale.
 
 ## QR code Payments squence
 
-![ationetTR](Content/Images/DynamicQRPayments/dinamicQrFlow-en.drawio.png)
+![ationetTR](Content/Images/DynamicQRPayments/dinamicQrFlow2-en.drawio.png)
 
 ## Dynamic QR Code Payments Implementation
 
@@ -278,7 +278,8 @@ Post completion of integration in your staging environment, it is mandatory to t
 
 ## API Documentation
 
-*URL:  ationetmobilepayment-appshost-test.azurewebsites.net* </br>
+*Production URL:  ationetmobilepayment-appshost.azurewebsites.net* </br>
+*QA URL:  ationetmobilepayment-appshost-test.azurewebsites.net* </br>
 
 ### Create method
 
@@ -293,7 +294,7 @@ Method: HttpPost
 
 ```
 body {
-  "sale": {
+  "Sale": {
     "IdDispatch":"string",    
     "PumpNumber": "string",
     "TerminalIdentification": "string",
@@ -303,7 +304,7 @@ body {
     "ProductAmount": double,
     "ProductQuantity": double
   },
-  "imageRequired": bool
+  "ImageRequired": bool
 }
 
 ```
@@ -333,13 +334,13 @@ Response properties description
 	
 ```
 "transactionId": The transaction Id.
-"qrData": Contais the url to do the sale.
-"image": If imageRequired was sent true, contaSi el campo imageRequired fue enviado en verdadero contiene la imagen del código QR codificada en base 64. Por defecto es un campo vacio.
-"mpqrType": Es el tipo de Imagen de codigo QR. Por defecto es 2, indicando que se trata de una Imagen de Código QR Dinámica.
+"qrData": Contais the data to be enconde in a QR Image.
+"image": If imageRequired was sent true, contaSi el campo imageRequired fue enviado en verdadero contiene la imagen del código QR codificada en base 64. By default is empty.
+"mpqrType": Is the QR Image type. By default the number 2 indicates that image is for Dynamic QR.
 
 ```
 
-### Get Sale Method
+### Get Transaction status
 
 #### Description
 
@@ -347,11 +348,11 @@ Return a Sale information.
 
 #### Request Format
 
-*URL: /api/ContactlessPayment/GetSale* </br>
+*URL: /api/QR/GetTransactionStatus* </br>
 *Method: HttpPost* </br>
 
 ```
-Body { "actionCode": "string", "subscriberCode": "string", "idDispatch": "string" }
+Body { "idDispatch": "string" }
 
 ```
 
@@ -369,22 +370,6 @@ Body { "actionCode": "string", "subscriberCode": "string", "idDispatch": "string
 		</tr>
 	</thead>
 	<tbody>
-		<tr valign="top">
-			<td>
-				<p align="left">actionCode</p>
-			</td>
-			<td>
-				<p>It must be 949 for Dynamic Qr.</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">subscriberCode</p>
-			</td>
-			<td>
-				<p>Is the subscription code.</p>
-			</td>
-		 </tr>
 		<tr valign="top">
 			<td>
 				<p align="left">idDispatch</p>
@@ -483,7 +468,7 @@ Failure to process the request will be indicated by an HTTP 400’s range status
 
 ```
 {
-  "sale": {
+  "Sale": {
     "IdDispatch":"16e8f1e0-4969-4836-817a-7426a3b2fdc1",    
     "PumpNumber": "1",
     "TerminalIdentification": "S2G321",
@@ -493,7 +478,7 @@ Failure to process the request will be indicated by an HTTP 400’s range status
     "ProductAmount": 99,
     "ProductQuantity": 99
   },
-  "imageRequired": true
+  "ImageRequired": true
 }
 
 ```
@@ -503,23 +488,19 @@ Failure to process the request will be indicated by an HTTP 400’s range status
 ```
 { 
 	"transactionId":"80ab2f6c-e4a3-4c5c-8729-d10c1059a511",
-	"qrData":"https://localhost:44317/api/QR/ProccessSale/ProccessSale/80ab2f6c-e4a3-4c5c-8729-d10c1059a511",
+	"qrData":"https://ationetmobilepayment-appshost-test.azurewebsites.net/api/QR/ProccessSale/ProccessSale/80ab2f6c-e4a3-4c5c-8729-d10c1059a511",
 	"image":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAADi5JREFUeF7tndF24zYMRJ3//+j0NK1bJSuZl4+/E8ERGAXgQ8FGAXgQ8FGAXgQ8FIjNE",
 	"mpqrType":2
 }
 
 ```
 
-### Get sale method
+### Get Transaction status
 
 #### Request example
 
 ```
-{
-  "actionCode": "949",
-  "subscriberCode": "S2G",
-  "idDispatch": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
-}
+{ "idDispatch": "3fa85f64-5717-4562-b3fc-2c963f66afa6" }
 
 ```
 
