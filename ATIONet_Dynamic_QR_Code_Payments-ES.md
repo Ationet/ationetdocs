@@ -66,7 +66,7 @@ escanearlo y generar la venta.
 	<li>El cajero crea un pedido con el monto de la factura y un Dispatch ID único en el sistema POS.</li>
 	<li>El servidor backend de POS crea un código QR y se lo muestra al cliente en la pantalla de cara al consumidor.</li>
 	<li>El cliente escanea el codigo QR usando Ationet Driver App.</li>
-	<li>El servidor de backend de POS comienza a sondear automáticamente el estado de la transacción cada 8 veces/minuto utilizando el Dispatch ID.</li>
+	<li>El servidor de backend de POS comienza a sondear automáticamente el estado de la transacción 8 veces por minuto utilizando el Dispatch ID.</li>
 </ol>
 
 
@@ -279,7 +279,8 @@ Una vez finalizada la integración en su entorno de ensayo, es obligatorio proba
 
 ## Documentación de API 
 
-*URL:  ationetmobilepayment-appshost-test.azurewebsites.net* </br>
+*URL Productiva:  ationetmobilepayment-appshost.azurewebsites.net* </br>
+*URL QA:  ationetmobilepayment-appshost-test.azurewebsites.net* </br>
 
 ### Método Crear
 
@@ -294,7 +295,7 @@ Recibe la información de la venta. Devuelve en la respuesta el Id de Transaccio
 
 ```
 body {
-  "sale": {
+  "Sale": {
     "IdDispatch":"string",    
     "PumpNumber": "string",
     "TerminalIdentification": "string",
@@ -304,7 +305,7 @@ body {
     "ProductAmount": double,
     "ProductQuantity": double
   },
-  "imageRequired": bool
+  "ImageRequired": bool
 }
 
 ```
@@ -335,7 +336,7 @@ Descripcion de las propiedades de respuesta
 
 ```
 "transactionId": Es el Id de la Transacción.
-"qrData": Contieniene la url para procesar una venta.
+"qrData": Contieniene la información a ser codificada en la imagen de código QR.
 "image": Si el campo imageRequired fue enviado en verdadero contiene la imagen del código QR codificada en base 64. Por defecto es un campo vacio.
 "mpqrType": Es el tipo de Imagen de codigo QR. Por defecto es 2, indicando que se trata de una Imagen de Código QR Dinámica.
 ```
@@ -346,13 +347,15 @@ Descripcion de las propiedades de respuesta
 
 Obtiene el estado de una venta.
 
+>Éste método requiere autenticacion a través del encabezado. Deberá ser de tipo basica. ejemplo: `Basic usuario:clave`
+
 #### Formato de solicitud
 
 *URL: /api/QR/GetTransactionStatus* </br>
 *Method: HTTPost* </br>
 
 ```
-Body { "actionCode": "string", "subscriberCode": "string", "idDispatch": "string" }
+Body { "idDispatch": "string" }
 
 ```
 
@@ -370,22 +373,6 @@ Body { "actionCode": "string", "subscriberCode": "string", "idDispatch": "string
 		</tr>
 	</thead>
 	<tbody>
-		<tr valign="top">
-			<td>
-				<p align="left">actionCode</p>
-			</td>
-			<td>
-				<p>Deberá ser 949 para QR Dinámico.</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">subscriberCode</p>
-			</td>
-			<td>
-				<p>Es el código de subscripción.</p>
-			</td>
-		 </tr>
 		<tr valign="top">
 			<td>
 				<p align="left">idDispatch</p>
