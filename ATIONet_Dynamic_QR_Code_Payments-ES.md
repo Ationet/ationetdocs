@@ -500,15 +500,13 @@ Si no se procesa la solicitud, se indicará mediante un código de estado de ran
 
 ```
 
-### Ejemplo método Obtener una venta
+### Ejemplo método Obtener estado de una Transacción
 
 #### Formato de solicitud
 
 
 ```
 {
-  "actionCode": "949",
-  "subscriberCode": "S2G",
   "idDispatch": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
 }
 ```
