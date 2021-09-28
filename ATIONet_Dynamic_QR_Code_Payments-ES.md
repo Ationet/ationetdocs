@@ -288,6 +288,8 @@ Una vez finalizada la integración en su entorno de ensayo, es obligatorio proba
 
 Recibe la información de la venta. Devuelve en la respuesta el Id de Transaccion, el tipo de Imagen de código QR, la url para generar la venta, y una imagen del código QR generado codificada en base 64.
 
+>Éste método requiere autenticacion a través del encabezado. Deberá ser de tipo basica. ejemplo: `Basic usuario:clave`
+
 #### Formato de solicitud
 
 *URL: /api/QR/Create* </br>
