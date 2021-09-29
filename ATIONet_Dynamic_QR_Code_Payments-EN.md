@@ -287,6 +287,9 @@ Post completion of integration in your staging environment, it is mandatory to t
 
 Receive the sale's information. Returns the Transaction's Id, the QR Type, the URL to do the Sale and the QR Code Image encode in base 64 format.
 
+>`WARNING`: you have 120 secs to confirm the payment. After that the Transaction won't available. 
+>This method require basic auth through header. Example `Basic user:pass`.
+
 #### Request Format
 
 URL: /api/QR/Create
@@ -346,6 +349,8 @@ Response properties description
 
 Return a Sale information.
 
+>This method require basic auth through header. Example `Basic user:pass`.
+
 #### Request Format
 
 *URL: /api/QR/GetTransactionStatus* </br>
@@ -399,6 +404,8 @@ body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage
 #### Description
 
 Create a Sale. The sale creation receive the Transaction Id and the driver's primaryTrack.
+
+>This method require basic auth through header. Example `Basic user:pass`.
 
 #### Request Format
 
