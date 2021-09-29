@@ -288,6 +288,7 @@ Post completion of integration in your staging environment, it is mandatory to t
 Receive the sale's information. Returns the Transaction's Id, the QR Type, the URL to do the Sale and the QR Code Image encode in base 64 format.
 
 >`WARNING`: you have 120 secs to confirm the payment. After that the Transaction won't available. 
+
 >This method require basic auth through header. Example `Basic user:pass`.
 
 #### Request Format
