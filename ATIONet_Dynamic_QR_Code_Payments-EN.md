@@ -26,7 +26,7 @@
 	- [STEP 3 Customer scans Dynamic QR code](#STEP-3-Customer-scans-Dynamic-QR-code)
 	- [STEP 4 Confirm the Transaction Status](#STEP-4-Confirm-the-Transaction-Status)
 	- [Integration Checklist](#Integration-Checklist)
-- [API Documentation](#API-Documentatio)
+- [API Documentation](#API-Documentation)
 	- [Create method](#Create-method)
 	- [Get Transaction status](#Get-Transaction-status)
 	- [Sale Payment Request Method](#Sale-Payment-Request-Method)
