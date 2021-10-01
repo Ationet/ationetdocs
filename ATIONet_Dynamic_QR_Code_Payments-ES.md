@@ -27,7 +27,7 @@
 	- [PASO 4 El cliente escanea el código QR dinámico](#PASO-4-El-cliente-escanea-el-código-QR-dinámico)
 	- [Lista de verificación de integración](#Lista-de-verificación-de-integración)
 - [Documentación de API](#Documentación-de-API)
-	 -[Método Crear](#Método-Crear)
+	- [Método Crear](#Método-Crear)
 	- [Método Obtener el estado de una Transacción](#Método-Obtener-el-estado-de-una-Transacción)
 	- [Método Solicitud de pago de una venta](#Método-Solicitud-de-pago-de-una-venta)
 	- [Método Proceso de pago de venta](#Método-Proceso-de-pago-de-venta)
