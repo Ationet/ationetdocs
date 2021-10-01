@@ -615,7 +615,7 @@ api/QR/ProccessSale/3fa85f64-5717-4562-b3fc-2c963f66afa6
 #### Request example
 
 ```
-api/QR/ProcessSalePayment/3fa85f64-5717-4562-b3fc-2c963f66afa6/00000001
+{ "idDispatch": "3fa85f64-5717-4562-b3fc-2c963f66afa6", "primaryTrack": "00000001" }
 
 ```
 
