@@ -237,10 +237,10 @@ Importante: La trama debe estar en formato JSON. La imagen del código QR debe s
 				<p align="center">bool</p>
 			</td>
 			<td>
-			 	<p align="center">Si se verdadero la respuesta devolverá el campo image con la imagen de código Qr codificada en base 64. Por defecto es 					falso</p>
+			 	<p align="center">Site controller or POS Backend</p>
 			 </td>
 			<td>
-				<p>true</p>
+				<p>Si se verdadero la respuesta devolverá el campo image con la imagen de código Qr codificada en base 64. Por defecto es 					falso</p>
 			</td>
 		 </tr>
 		</tbody>
@@ -613,7 +613,7 @@ api/QR/SalePaymentRequest/3fa85f64-5717-4562-b3fc-2c963f66afa6
 #### Formato de solicitud 
 
 ```
-api/QR/ProcessSalePayment/3fa85f64-5717-4562-b3fc-2c963f66afa6/00000001
+{ "idDispatch": "3fa85f64-5717-4562-b3fc-2c963f66afa6", "primaryTrack": "00000001" }
 
 ```
 
