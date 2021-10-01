@@ -27,22 +27,28 @@
 	- [PASO 4 El cliente escanea el código QR dinámico](#PASO-4-El-cliente-escanea-el-código-QR-dinámico)
 	- [Lista de verificación de integración](#Lista-de-verificación-de-integración)
 - [Documentación de API](#Documentación-de-API)
-	 - [Método obtener Venta](#Método-obtener-Venta)
+	 - [Método Crear](#Método-Crear)
 		- [Descripción](#Descripción)
 		- [Formato de solicitud](#Formato-de-solicitud)
 		- [Formato de respuesta](#Formato-de-respuesta)
-		- [Solicitud de ejemplo del metodo Obtener una venta](#Solicitud-de-ejemplo-del-metodo-Obtener-una-venta)
-	- [Metodo Venta](#Metodo-Venta)
+	- [Método Obtener el estado de una Transacción](#Método-Obtener-el-estado-de-una-Transacción)
 		- [Descripción](#Descripción)
 		- [Formato de solicitud](#Formato-de-solicitud)
 		- [Formato de respuesta](#Formato-de-respuesta)
-		- [Solicitud de ejemplo del metodo venta](#Solicitud-de-ejemplo-del-metodo-venta)
-- [Transaction Sequence Number](#Transaction-Sequence-Number)
+	- [Método Solicitud de pago de una venta](#Método-Solicitud-de-pago-de-una-venta)
+		- [Descripción](#Descripción)
+		- [Formato de solicitud](#Formato-de-solicitud)
+		- [Formato de respuesta](#Formato-de-respuesta)
+	- [Método Proceso de pago de venta a](#Método-Proceso-de-pago-de-venta)
+		- [Descripción](#Descripción)
+		- [Formato de solicitud](#Formato-de-solicitud)
+		- [Formato de respuesta](#Formato-de-respuesta)
 - [Manejo de errores](#Manejo-de-errores)
 - [Mensajes de ejemplo](#Mensajes-de-ejemplo)
 	 - [Ejemplo método Crear](#Ejemplo-método-crear)
- 	 - [Ejemplo método Obtener una venta](#Ejemplo-método-Obtener-una-venta)
-	 - [Ejemplo método Procesar una venta](#Ejemplo-método-Procesar-una-venta)
+ 	 - [Ejemplo método Obtener estado de una Transacción](#Ejemplo-métodoObtener-estado-de-una-Transacción)
+ 	 - [Ejemplo método Solicitud de pago de venta](#Ejemplo-método-Solicitud-de-pago-de-venta)
+	 - [Ejemplo método Proceso de pago de venta](#Ejemplo-método-Proceso-de-pago-de-venta)
 	
 
 ## Visión general
@@ -235,6 +241,20 @@ Importante: La trama debe estar en formato JSON. La imagen del código QR debe s
 				<p>xxxxxxx.xx</p>
 			</td>
 		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ImageRequired</p>
+			</td>
+			<td>
+				<p align="center">bool</p>
+			</td>
+			<td>
+			 	<p align="center">Si se verdadero la respuesta devolverá el campo image con la imagen de código Qr codificada en base 64. Por defecto es 					falso</p>
+			 </td>
+			<td>
+				<p>true</p>
+			</td>
+		 </tr>
 		</tbody>
 </table>
 
@@ -286,7 +306,9 @@ Una vez finalizada la integración en su entorno de ensayo, es obligatorio proba
 
 #### Descripción
 
-Recibe la información de la venta. Devuelve en la respuesta el Id de Transaccion, el tipo de Imagen de código QR, la url para generar la venta, y una imagen del código QR generado codificada en base 64.
+Recibe la información de la venta. Devuelve en la respuesta el Id de Transaccion, el tipo de Imagen de código QR, la url para generar la venta, y una imagen del código QR codificada en base 64.
+
+El IdDispatch enviado deberá ser único.
 
 >`ADVERTENCIA`: usted tiene 120 segundos desde el momento de la creacion de la transaccion para confirmar la venta. Pasado este tiempo la transacción no estara disponible para realizar el pago. 
 
@@ -314,8 +336,6 @@ body {
 
 ```
 
-imageRequired: Si manda la propiedad en Verdadero, la respuesta devolverá el campo `image` con  la imagen del código QR codificada en base 64. Por defecto es falso.
-
 >Puede consultar la descripcion de los valores en la sección [PASO 2 Crear código QR dinámico](#PASO-2-Crear-código-QR-dinámico)
 
 
@@ -341,15 +361,15 @@ Descripcion de las propiedades de respuesta
 ```
 "transactionId": Es el Id de la Transacción.
 "qrData": Contieniene la información a ser codificada en la imagen de código QR.
-"image": Si el campo imageRequired fue enviado en verdadero contiene la imagen del código QR codificada en base 64. Por defecto es un campo vacio.
+"image": La imagén de codigo Qr codificada en base 64 o un valor vacio.
 "mpqrType": Es el tipo de Imagen de codigo QR. Por defecto es 2, indicando que se trata de una Imagen de Código QR Dinámica.
 ```
 
-### Método obtener Venta
+### Método Obtener el estado de una Transacción
 
 #### Descripción
 
-Obtiene el estado de una venta.
+Obtiene el estado de una Transacción.
 
 >Éste método requiere autenticacion a través del encabezado. Deberá ser de tipo basica. ejemplo: `Basic usuario:clave`
 
@@ -399,17 +419,17 @@ body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage
 
 ```
 
-### Método Procesar una venta
+### Método Solicitud de pago de una venta
 
 #### Descripción
 
-Crea una venta. Recibe el Id de Transacción y el primaryTrack del conductor.
+Recibe el id de la Transacción. Devuelve la informacion completa de la venta
 
 >Éste método requiere autenticacion a través del encabezado. Deberá ser de tipo basica. ejemplo: `Basic usuario:clave`
 
 #### Formato de solicitud
 
-*URL: /api/QR/ProccessSale/{id}/{primaryTrack}* </br>
+*URL: /api/QR/SalePaymentRequest/{id}* </br>
 *Method: HTTPGet* </br>
 
 ##### Descripción de los parámetros
@@ -431,17 +451,9 @@ Crea una venta. Recibe el Id de Transacción y el primaryTrack del conductor.
 				<p align="left">id</p>
 			</td>
 			<td>
-				<p>Es el Id de la transacción devuelto por el metodo Create.</p>
+				<p>Es el Id de la transacción.</p>
 			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">primaryTrack</p>
-			</td>
-			<td>
-				<p>Es la identificación del conductor.</p>
-			</td>
-		 </tr>
+		 </tr>		
 		</tbody>
 </table>
 
@@ -455,7 +467,72 @@ content-encoding: gzip
 ```
 
 ```
-body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage":  "string", "TransactionIdMobile": "string" }
+body { "TransactionId": "string", "Content": "string" }
+```
+
+### Método Proceso de pago de venta 
+
+#### Descripción
+
+Crea una venta. Recibe el Id de Transacción y el primaryTrack del conductor.
+
+>Éste método requiere autenticacion a través del encabezado. Deberá ser de tipo basica. ejemplo: `Basic usuario:clave`
+
+#### Formato de solicitud
+
+*URL: /api/QR/ProcessSalePayment* </br>
+*Method: HTTPPost* </br>
+
+```
+Body { "idDispatch": "string", "primaryTrack": "string" }
+
+```
+
+##### Descripción de los parámetros
+
+<table>
+	<thead>
+		<tr valign="center">
+			<th rowspan="2"  align="left">
+				Nombre
+			</th>
+			<th rowspan="8" align="left">
+				Descripción
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">id</p>
+			</td>
+			<td>
+				<p>Es el Id de la transacción.</p>
+			</td>
+		 </tr>	
+		<tr valign="top">
+			<td>
+				<p align="left">primaryTrack</p>
+			</td>
+			<td>
+				<p>Es el identificador del conductor.</p>
+			</td>
+		 </tr>	
+		</tbody>
+</table>
+
+
+#### Formato de respuesta
+
+Header:
+```
+Content-Type: application/json; charset=utf-8
+content-encoding: gzip 
+```
+
+```
+body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage":  "string", "TransactionId": "string" }
+
 ```
 
 ### Manejo de errores
@@ -524,15 +601,35 @@ Si no se procesa la solicitud, se indicará mediante un código de estado de ran
 
 ```
 
-### Ejemplo método Procesar una venta
+### Ejemplo método Solicitud de pago de venta
 
-#### formato de solicitud 
+#### Formato de solicitud 
 
 ```
-api/QR/ProccessSale/3fa85f64-5717-4562-b3fc-2c963f66afa6/00000001
+api/QR/SalePaymentRequest/3fa85f64-5717-4562-b3fc-2c963f66afa6
 ```
 
-#### formato de respuesta
+#### Formato de respuesta
+
+```
+{
+    "transactionId": "6768d700-f463-4842-b74f-2ab169a87d95",
+    "content": "    {\"ProcessingMode\":\"1\",\"SystemModel\":\"MOBILE\",\"SystemVersion\":\"NB\",\"TransactionCode\":\"200\",\"EntryMethod\":\"S\",\"ApplicationType\":\"FCS\",\"AccountType\":\"1\",\"MessageFormatVersion\":1.3,\"CurrencyCode\":\"ARS\",\"DeviceTypeIdentifier\":4,\"TransactionSequenceNumber\":0,\"LocalTransactionDate\":20210930,\"LocalTransactionTime\":162432,\"SiteCode\":null,\"IdDispatch\":\"5a021e37-9d61-4545-990c-177f4c8f7b38\",\"PumpNumber\":\"1\",\"TerminalIdentification\":\"S2G321\",\"PrimaryTrack\":null,\"TransactionAmount\":99,\"ProductCode\":\"1\",\"ProductUnitPrice\":1,\"ProductAmount\":99,\"ProductQuantity\":99}"
+}
+
+```
+
+
+### Ejemplo método Proceso de pago de venta
+
+#### Formato de solicitud 
+
+```
+api/QR/ProcessSalePayment/3fa85f64-5717-4562-b3fc-2c963f66afa6/00000001
+
+```
+
+#### Formato de respuesta
 
 ```
 {
@@ -541,5 +638,5 @@ api/QR/ProccessSale/3fa85f64-5717-4562-b3fc-2c963f66afa6/00000001
   "responseMessage": "Autorizado",
   "TransactionIdMobile": 3fa85f64-5717-4562-b3fc-2c963f66afa6
 }
-```
 
+```
