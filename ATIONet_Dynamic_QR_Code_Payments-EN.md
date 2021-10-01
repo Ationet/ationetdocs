@@ -27,22 +27,16 @@
 	- [STEP 4 Confirm the Transaction Status](#STEP-4-Confirm-the-Transaction-Status)
 	- [Integration Checklist](#Integration-Checklist)
 - [API Documentation](#API-Documentatio)
-	 - [Get Sale Method](#Get-Sale-Method)
-		- [Description](#Description)
-		- [Request Format](#Request-Format)
-		- [Response Format](#Request-Format)
-		- [Request Example](#Request-Example-of-Get-Sale-method)
-	- [Sale Method](#Sale-Method)
-		- [Description](#Description)
-		- [Request Format](#Request-Format)
-		- [Response Format](#Request-Format)
-		- [Request Example](#Request-Example-of-Sale-method)
-- [Transaction Sequence Number](#Transaction-Sequence-Number)
+	- [Create method](#Create-method)
+	- [Get Transaction status](#Get-Transaction-status)
+	- [Sale Payment Request Method](#Sale-Payment-Request-Method)
+	- [Process Sale Payment Method](#Process-Sale-Payment-Method)
 - [Error handling](#Error-handling)
 - [Messages samples](#Messages-samples)
-	- [Create method](#create-method)
-	- [Get Sale Method](#Get-Sale-method)
-	- [Process Sale method](#Process-Sale-method)
+	- [Create method sample](#Create-method-sample)
+	- [Get Transaction status sample](#Get-Transaction-status-sample)
+	- [Sale Payment Request Method sample](#Sale-Payment-Request-Method-sample)
+	- [Process Sale Payment Method sample](#Process-Sale-Payment-Method-sample)
 	
 ## Overview
 
@@ -234,6 +228,20 @@ Important: the request body have to be in JSON format. QR image must be free tex
 				<p>xxxxxxx.xx</p>
 			</td>
 		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ImageRequired</p>
+			</td>
+			<td>
+				<p align="center">bool</p>
+			</td>
+			<td>
+			 	<p align="center">If you send it true, the response will return the property `image` with the QR Image enconde in base 64. By default is 					false.</p>
+			 </td>
+			<td>
+				<p>true</p>
+			</td>
+		 </tr>
 		</tbody>
 </table>
 
@@ -287,6 +295,8 @@ Post completion of integration in your staging environment, it is mandatory to t
 
 Receive the sale's information. Returns the Transaction's Id, the QR Type, the URL to do the Sale and the QR Code Image encode in base 64 format.
 
+The IdDispatch sent should be unique.
+
 >`WARNING`: you have 120 secs to confirm the payment. After that the Transaction won't available. 
 
 >This method require basic auth through header. Example `Basic user:pass`.
@@ -312,7 +322,6 @@ body {
 }
 
 ```
-imageRequired: If you send it in true, the response will return the property `image` with the QR Image enconde in base 64. By default is false.
 
 >You can check the description values in [STEP 2 Create Dynamic QR Code](#STEP-2-Create-Dynamic-QR-Code) section.
 
@@ -338,8 +347,8 @@ Response properties description
 	
 ```
 "transactionId": The transaction Id.
-"qrData": Contais the data to be enconde in a QR Image.
-"image": If imageRequired was sent true, contaSi el campo imageRequired fue enviado en verdadero contiene la imagen del código QR codificada en base 64. By default is empty.
+"qrData": Contains the data to be enconde in a QR Image.
+"image": The Qr Image enconde in base 64 or a empty value.
 "mpqrType": Is the QR Image type. By default the number 2 indicates that image is for Dynamic QR.
 
 ```
@@ -348,7 +357,7 @@ Response properties description
 
 #### Description
 
-Return a Sale information.
+Return a Transaction information.
 
 >This method require basic auth through header. Example `Basic user:pass`.
 
@@ -400,17 +409,17 @@ body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage
 
 ```
 
-### Process Sale Method
+### Sale Payment Request Method
 
 #### Description
 
-Create a Sale. The sale creation receive the Transaction Id and the driver's primaryTrack.
+Receive the Transaction Id. Returns the Sale information.
 
 >This method require basic auth through header. Example `Basic user:pass`.
 
 #### Request Format
 
-*URL: /api/QR/ProccessSale/{id}/{primaryTrack}* </br>
+*URL: /api/QR/SalePaymentRequest/{id}* </br>
 *Method: HttpGet* </br>
 
 ##### Parameters description
@@ -434,15 +443,7 @@ Create a Sale. The sale creation receive the Transaction Id and the driver's pri
 			<td>
 				<p>Is the Transaccion Id</p>
 			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
-				<p align="left">primaryTrack</p>
-			</td>
-			<td>
-				<p>The driver identifier</p>
-			</td>
-		 </tr>
+		 </tr>		
 		</tbody>
 </table>
 
@@ -455,9 +456,74 @@ content-encoding: gzip
 ```
 
 ```
-body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage":  "string", "TransactionIdMobile": "string" }
+body { "TransactionId": "string", "Content": "string" }
+```
+
+### Process Sale Payment Method
+
+#### Description
+
+Create a Sale. Receive  the transaction id and the primaryTrack from driver.
+
+>This method require basic auth through header. Example `Basic user:pass`.
+
+#### Request format
+
+*URL: /api/QR/ProcessSalePayment* </br>
+*Method: HTTPPost* </br>
 
 ```
+Body { "idDispatch": "string", "primaryTrack": "string" }
+
+```
+
+##### Properties description
+
+<table>
+	<thead>
+		<tr valign="center">
+			<th rowspan="2"  align="left">
+				Name
+			</th>
+			<th rowspan="8" align="left">
+				Description
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">id</p>
+			</td>
+			<td>
+				<p>The transacction Id.</p>
+			</td>
+		 </tr>	
+		<tr valign="top">
+			<td>
+				<p align="left">primaryTrack</p>
+			</td>
+			<td>
+				<p>The driver identifier</p>
+			</td>
+		 </tr>	
+		</tbody>
+</table>
+
+
+#### Response format
+
+Header:
+```
+Content-Type: application/json; charset=utf-8
+content-encoding: gzip 
+```
+
+```
+body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage":  "string", "TransactionId": "string" }
+
+```
+
 
 ## Error handling
 
@@ -470,7 +536,7 @@ Failure to process the request will be indicated by an HTTP 400’s range status
 
 ## Messages samples
 
-### Create method
+### Create method sample
 
 #### Request example
 
@@ -503,7 +569,7 @@ Failure to process the request will be indicated by an HTTP 400’s range status
 
 ```
 
-### Get Transaction status
+### Get Transaction status sample
 
 #### Request example
 
@@ -524,12 +590,32 @@ Failure to process the request will be indicated by an HTTP 400’s range status
 
 ```
 
-### Process Sale method
+### Sale Payment Request sample
 
 #### Request example
 
 ```
-api/QR/ProccessSale/3fa85f64-5717-4562-b3fc-2c963f66afa6/00000001
+api/QR/ProccessSale/3fa85f64-5717-4562-b3fc-2c963f66afa6
+
+```
+
+#### Response example
+
+```
+{
+    "transactionId": "6768d700-f463-4842-b74f-2ab169a87d95",
+    "content": "    {\"ProcessingMode\":\"1\",\"SystemModel\":\"MOBILE\",\"SystemVersion\":\"NB\",\"TransactionCode\":\"200\",\"EntryMethod\":\"S\",\"ApplicationType\":\"FCS\",\"AccountType\":\"1\",\"MessageFormatVersion\":1.3,\"CurrencyCode\":\"ARS\",\"DeviceTypeIdentifier\":4,\"TransactionSequenceNumber\":0,\"LocalTransactionDate\":20210930,\"LocalTransactionTime\":162432,\"SiteCode\":null,\"IdDispatch\":\"5a021e37-9d61-4545-990c-177f4c8f7b38\",\"PumpNumber\":\"1\",\"TerminalIdentification\":\"S2G321\",\"PrimaryTrack\":null,\"TransactionAmount\":99,\"ProductCode\":\"1\",\"ProductUnitPrice\":1,\"ProductAmount\":99,\"ProductQuantity\":99}"
+}
+
+```
+
+
+### Process Sale Payment sample
+
+#### Request example
+
+```
+api/QR/ProcessSalePayment/3fa85f64-5717-4562-b3fc-2c963f66afa6/00000001
 
 ```
 
