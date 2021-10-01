@@ -236,10 +236,10 @@ Important: the request body have to be in JSON format. QR image must be free tex
 				<p align="center">bool</p>
 			</td>
 			<td>
-			 	<p align="center">If you send it true, the response will return the property `image` with the QR Image enconde in base 64. By default is 					false.</p>
+			 	<p align="center">Site controller or POS Backend</p>
 			 </td>
 			<td>
-				<p>true</p>
+				<p>If you send it true, the response will return the property `image` with the QR Image enconde in base 64. By default is 					false.</p>
 			</td>
 		 </tr>
 		</tbody>
@@ -297,7 +297,7 @@ Receive the sale's information. Returns the Transaction's Id, the QR Type, the U
 
 The IdDispatch sent should be unique.
 
->`WARNING`: you have 120 secs to confirm the payment. After that the Transaction won't available. 
+>`WARNING`: You have 120 secs to confirm the payment. After that the Transaction won't available. 
 
 >This method require basic auth through header. Example `Basic user:pass`.
 
