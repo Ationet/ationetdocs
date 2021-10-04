@@ -20,16 +20,16 @@
 	- [Introduction](#introduction)
 	- [Entities](#Entities)
 	- [Sequence diagram Pay at Pump with Above Site Payment Authorization](#Sequence-diagram-Pay-at-Pump-with-Above-Site-Payment-Authorization)
+- [ATIONet Configuration](#ATIONet-Configuration)
+	- [Sites](#Sites)
+	- [Terminals/Controllers](#Terminals-or-Controllers)
+	- [Static QR Image](#Static-QR-Image)
 - [Site System Implementation guide](#Site-System-Implementation-guide)
 	- [Commander implementation guide](#Commander-implementation-guide)
 		- [STEP 1 Site Mobile Configuration](#STEP-1-Site-Mobile-Configuration)
 		- [STEP 2 Host Mobile Configuation](#STEP2-Host-Mobile-Configuation)
 			- [Values descriptions](#Values-descriptions)
 			- [Status Codes and Messages](#Status-Codes-and-Messages)
-- [ATIONet Configuration](#ATIONet-Configuration)
-	- [Sites](#Sites)
-	- [Terminals/Controllers](#Terminals-or-Controllers)
-	- [Static QR Image](#Static-QR-Image)
 - [ATIONet PFEP Fleet Mobile Payment Api](#ATIONet-PFEP-Fleet-Mobile-Payment-Api)
 	- [Description](#description)
 	- [Details](#api-details)	
@@ -122,6 +122,68 @@ need to regenerate the receipt information.</li>
 
 
 
+## ATIONet Configuration
+
+### Sites
+
+In the Sites menu, in the site that you want to start operating with Mobile Payments, you must update the information of the cell phone payment mode and add the FullyIntegraded type.
+
+Once this is done you will be able to generate the QR code to paste on the pump. It should generate one per pump and each one must create introducing the Pump Code.
+
+![ationetTR](Content/Images/SiteSystemCommander/SiteConfig.PNG)
+
+
+If you wish, you can generate the image of the QR code on your own on any QR code generation page, we recommend https://www.the-qrcode-generator.com/
+
+<br>
+
+To do your own QR Code Image  you have to enter the site code and the pump number as shown below:
+
+```
+PumpCode:1 SiteCode:1524
+
+```
+
+Important: If you make you own QR Code image, you have to enter the text like a `plain text`.
+
+
+>You can read more about QR in the [Static QR Image](#Static-QR-Image) section.
+
+
+### Terminals or Controllers
+
+In the Terminals/Cotrollers menu You have to create a new Terminal of the type AN-MobilePayment.
+
+![ationetTR](Content/Images/SiteSystemCommander/terminalConfiguration.PNG)
+
+### Static QR Image
+
+Static QR Image is a photo that is pasted in the Pump and contains the pump Number and the Site code, it's mandatory data to do a Transacction.
+Below is an image as an example
+
+![ationetTR](Content/Images/SiteSystemCommander/siteqr2.jpeg)
+
+```
+
+Using the ATIONet Mobile Driver App, the Customer can read the Imagen QR and do a Transaction more easier.
+
+```
+
+![ationetTR](Content/Images/SiteSystemCommander/demo_staticQR.gif)
+
+<ol>
+	<li>The customer arrives at the service station and chooses a free pump</li>
+	<li>Customer open the ATIONet mobile driver app and select Pay</li>
+	<li>Choses Scan the QR code using his cell phone option</li>
+	<li>Customer scans the QR code and get the site info</li>
+	<li>Finally, chooses Fuel and amount and touch confirm to approve Transaction</li>
+</ol>
+
+
+>Note: The QR code Image must be of the type free text.
+
+![ationetTR](Content/Images/SiteSystemCommander/qrexample.PNG)
+
 # Site System Implementation guide
 
 # Commander implementation guide 
@@ -157,7 +219,7 @@ Program Name: The name of the Host configuration, we recomend use MPPA_PBL
 Merchant ID: 1277
 Store ID: The Site code from Ationet
 
-Adress(IPv4 Format/Domain Name): 13.83.129.106
+Adress(IPv4 Format/Domain Name): 137.135.40.113
 Port: 5560
 Heartbeat Frecuency: 45
 Hearbeat Time Unit: Seconds
@@ -813,68 +875,6 @@ The first two digits of the response code identify the message pair type. The la
 		 </tr>
 		</tbody>
 </table>
-
-## ATIONet Configuration
-
-### Sites
-
-In the Sites menu, in the site that you want to start operating with Mobile Payments, you must update the information of the cell phone payment mode and add the FullyIntegraded type.
-
-Once this is done you will be able to generate the QR code to paste on the pump. It should generate one per pump and each one must create introducing the Pump Code.
-
-![ationetTR](Content/Images/SiteSystemCommander/SiteConfig.PNG)
-
-
-If you wish, you can generate the image of the QR code on your own on any QR code generation page, we recommend https://www.the-qrcode-generator.com/
-
-<br>
-
-To do your own QR Code Image  you have to enter the site code and the pump number as shown below:
-
-```
-PumpCode:1 SiteCode:1524
-
-```
-
-Important: If you make you own QR Code image, you have to enter the text like a `plain text`.
-
-
->You can read more about QR in the [Static QR Image](#Static-QR-Image) section.
-
-
-### Terminals or Controllers
-
-In the Terminals/Cotrollers menu You have to create a new Terminal of the type AN-MobilePayment.
-
-![ationetTR](Content/Images/SiteSystemCommander/terminalConfiguration.PNG)
-
-### Static QR Image
-
-Static QR Image is a photo that is pasted in the Pump and contains the pump Number and the Site code, it's mandatory data to do a Transacction.
-Below is an image as an example
-
-![ationetTR](Content/Images/SiteSystemCommander/siteqr2.jpeg)
-
-```
-
-Using the ATIONet Mobile Driver App, the Customer can read the Imagen QR and do a Transaction more easier.
-
-```
-
-![ationetTR](Content/Images/SiteSystemCommander/demo_staticQR.gif)
-
-<ol>
-	<li>The customer arrives at the service station and chooses a free pump</li>
-	<li>Customer open the ATIONet mobile driver app and select Pay</li>
-	<li>Choses Scan the QR code using his cell phone option</li>
-	<li>Customer scans the QR code and get the site info</li>
-	<li>Finally, chooses Fuel and amount and touch confirm to approve Transaction</li>
-</ol>
-
-
->Note: The QR code Image must be of the type free text.
-
-![ationetTR](Content/Images/SiteSystemCommander/qrexample.PNG)
 
 # ATIONet PFEP Fleet Mobile Payment Api
 
