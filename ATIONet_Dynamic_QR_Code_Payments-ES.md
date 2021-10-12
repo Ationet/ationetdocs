@@ -417,7 +417,7 @@ Recibe el id de la Transacción. Devuelve la informacion completa de la venta
 
 #### Formato de solicitud
 
-*URL: /api/QR/SalePaymentRequest/{id}* </br>
+*URL: /api/QR/SalePaymentRequest/{IdDispatch}* </br>
 *Method: HTTPGet* </br>
 
 ##### Descripción de los parámetros
@@ -439,7 +439,7 @@ Recibe el id de la Transacción. Devuelve la informacion completa de la venta
 				<p align="left">id</p>
 			</td>
 			<td>
-				<p>Es el Id de la transacción.</p>
+				<p>Es el Id de despacho.</p>
 			</td>
 		 </tr>		
 		</tbody>
@@ -560,7 +560,7 @@ Si no se procesa la solicitud, se indicará mediante un código de estado de ran
 ```
 { 
 	"transactionId":"80ab2f6c-e4a3-4c5c-8729-d10c1059a511",
-	"qrData":"https://ationetmobilepayment-appshost-test.azurewebsites.net/api/QR/ProccessSale/ProccessSale/80ab2f6c-e4a3-4c5c-8729-d10c1059a511",
+	"qrData":"https://ationetmobilepayment-appshost-test.azurewebsites.net/api/QR/SalePaymentRequest/80ab2f6c-e4a3-4c5c-8729-d10c1059a511",
 	"image":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAADi5JREFUeF7tndF24zYMRJ3//+j0NK1bJSuZl4+/E8ERGAXgQ8FGAXgQ8FGAXgQ8FIjNE",
 	"mpqrType":2
 }
