@@ -411,7 +411,7 @@ body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage
 
 #### Descripción
 
-Recibe el id de la Transacción. Devuelve la informacion completa de la venta
+Recibe el id el Id dispatch. Devuelve la informacion completa de la venta
 
 >Éste método requiere autenticacion a través del encabezado. Deberá ser de tipo basica. ejemplo: `Basic usuario:clave`
 
@@ -560,7 +560,7 @@ Si no se procesa la solicitud, se indicará mediante un código de estado de ran
 ```
 { 
 	"transactionId":"80ab2f6c-e4a3-4c5c-8729-d10c1059a511",
-	"qrData":"https://ationetmobilepayment-appshost-test.azurewebsites.net/api/QR/SalePaymentRequest/80ab2f6c-e4a3-4c5c-8729-d10c1059a511",
+	"qrData":"https://ationetmobilepayment-appshost-test.azurewebsites.net/api/QR/SalePaymentRequest/?IdDispatch=a11be318-07dd-4318-bcc3-41704c54c995",
 	"image":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAADi5JREFUeF7tndF24zYMRJ3//+j0NK1bJSuZl4+/E8ERGAXgQ8FGAXgQ8FGAXgQ8FIjNE",
 	"mpqrType":2
 }
@@ -594,7 +594,7 @@ Si no se procesa la solicitud, se indicará mediante un código de estado de ran
 #### Formato de solicitud 
 
 ```
-api/QR/SalePaymentRequest/3fa85f64-5717-4562-b3fc-2c963f66afa6
+api/QR/SalePaymentRequest/?IdDispatch=a11be318-07dd-4318-bcc3-41704c54c995
 ```
 
 #### Formato de respuesta
