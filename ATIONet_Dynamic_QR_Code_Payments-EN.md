@@ -255,7 +255,7 @@ In [Create method](#create-method) section you can find a request body sample in
 
 ### STEP 3 Confirm the Transaction Status
 
-When the QR code is generated for an specific transaction, the POS's Backend Get The Transaction status with a polling process using the [Transaction status API](#Get-Sale-Method).
+When the QR code is generated for an specific transaction, the POS's Backend Get The Transaction status with a polling process using the [Transaction status API](#Get-Sale-Method). `You have to do the polling  ussing IdDispatch`.
 
 ```
 Polling : Setup a polling process after regular intervals using the Transaction Status API. 
@@ -303,8 +303,8 @@ The IdDispatch sent should be unique.
 
 #### Request Format
 
-URL: /api/QR/Create
-Method: HttpPost
+*URL: /api/QR/Create* <br>
+*Method: HttpPost*
 
 ```
 body {
@@ -419,7 +419,7 @@ Receive the Transaction Id. Returns the Sale information.
 
 #### Request Format
 
-*URL: /api/QR/SalePaymentRequest/{id}* </br>
+*URL: /api/QR/SalePaymentRequest/{IdDispatch}* </br>
 *Method: HttpGet* </br>
 
 ##### Parameters description
@@ -441,7 +441,7 @@ Receive the Transaction Id. Returns the Sale information.
 				<p align="left">id</p>
 			</td>
 			<td>
-				<p>Is the Transaccion Id</p>
+				<p>Is the Dispatch Id</p>
 			</td>
 		 </tr>		
 		</tbody>
@@ -562,7 +562,7 @@ Failure to process the request will be indicated by an HTTP 400’s range status
 ```
 { 
 	"transactionId":"80ab2f6c-e4a3-4c5c-8729-d10c1059a511",
-	"qrData":"https://ationetmobilepayment-appshost-test.azurewebsites.net/api/QR/ProccessSale/ProccessSale/80ab2f6c-e4a3-4c5c-8729-d10c1059a511",
+	"qrData":"https://ationetmobilepayment-appshost-test.azurewebsites.net/api/QR/SalePaymentRequest/80ab2f6c-e4a3-4c5c-8729-d10c1059a511",
 	"image":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAADi5JREFUeF7tndF24zYMRJ3//+j0NK1bJSuZl4+/E8ERGAXgQ8FGAXgQ8FGAXgQ8FIjNE",
 	"mpqrType":2
 }
