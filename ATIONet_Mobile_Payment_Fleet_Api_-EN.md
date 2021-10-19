@@ -121,6 +121,54 @@ need to regenerate the receipt information.</li>
 </ol>
 
 
+## Rules
+
+In ATIONet rules refer to limits that can be configured by the company and associated to different entities. Inside this view you can consult, create or edit rules. When the entiti have a request rule, if the Customer send a Pre authorization, ATIONET will respond by requesting additional information in order to approve it. <a href='https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md#rules'> Here </a> you can read more about Rules.
+
+The flow is similar to the one described above, the client sends a pre-authorization, the Payment Processor responds requesting additional information, The client sends the requested information, In case the Payment Processor responds successfully, A Mobile Auth Response will be sent, the flow continues normally from this point .. (point 7 of the sequence described above).
+
+In case the PFEP requires additional information, the Transaction will be left with the status of `Prompting Needed` waiting for the client to send the required information, which should be sent to the PromptPreauthorizations endPoint. You can find the information requested by the PFEP using the `[GetTransaction](#getTransaction)` endpoint, it will be found in the PaymentProcessorMessage property.
+
+>WARNING: The time to send the response is 300 seconds (5 minutes). After this time the transaction will NOT be available.
+
+
+A example of the list of Rules that the PaymentProcessorMessage property can contain is detailed below. In some cases, like the `Odometer` or` EngineHours`, the rule may request a minimum and / or a range of values.
+
+>The requested rules can be as many as the client has configured in his Network or Company.
+
+```
+	"PromptPrimaryPin": "true",
+        "PromptSecondaryTrack": "true",
+        "PromptOdometer": "true",
+        "LastOdometer": "140",
+        "MinOdometer": "2",
+        "MaxOdometer": "1000",
+        "PromptDriverId": "true",
+        "PromptVehicleId": "true",
+        "PromptTruckUnitNumber": "true",
+        "PromptTrailerNumber": "true",
+        "PromptEngineHours": "true",
+        "LastEngineHours": "5",
+        "MinEngineHours": "11",
+        "MaxEngineHours": "500",
+        "PromptMiscellaneous": "true"
+```
+
+For each rule, you should respond with the name of the rule and its respective value.
+
+
+```
+        "PrimaryPin": "string",
+        "SecondaryTrack": "string",
+        "Odometer": "string",
+        "DriverId": "string",
+        "VehicleId": "string",
+        "TruckUnitNumber": "string",
+        "TrailerNumber": "string",
+        "EngineHours": "string",
+        "Miscellaneous": "string"
+```
+
 
 ## ATIONet Configuration
 
