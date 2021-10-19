@@ -709,7 +709,7 @@ api/QR/ProccessSale/?IdDispatch=a11be318-07dd-4318-bcc3-41704c54c995
 
 ```
 
-### Refuse Payment Method
+### Refuse Payment Method sample
 
 #### Request example
 
