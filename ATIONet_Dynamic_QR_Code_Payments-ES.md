@@ -200,7 +200,7 @@ Importante: La trama debe estar en formato JSON. La imagen del código QR debe s
 			 	<p align="center">Site controller</p>
 			 </td>
 			<td>
-				<p>(OPCIONAL) xxxxxxx.xx</p>
+				<p>xxxxxxx.xx</p>
 			</td>
 		 </tr>
 		<tr valign="top">
@@ -215,6 +215,20 @@ Importante: La trama debe estar en formato JSON. La imagen del código QR debe s
 			 </td>
 			<td>
 				<p>xxxxxxx.xx</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductDescription</p>
+			</td>
+			<td>
+				<p align="center">string</p>
+			</td>
+			<td>
+			 	<p align="center">Site controller</p>
+			 </td>
+			<td>
+				<p>(OPCIONAL) La descripción del producto.</p>
 			</td>
 		 </tr>
 		<tr valign="top">
@@ -424,7 +438,7 @@ Recibe el id el Id dispatch. Devuelve la informacion completa de la venta
 	<tbody>
 		<tr valign="top">
 			<td>
-				<p align="left">id</p>
+				<p align="left">IdDispatch</p>
 			</td>
 			<td>
 				<p>Es el Id de despacho.</p>
@@ -470,7 +484,7 @@ Crea una venta. Recibe el Id de Transacción y el primaryTrack del conductor.
 *Method: HTTPPost* </br>
 
 ```
-Body { "idDispatch": "string", "primaryTrack": "string" }
+Body { "idTransaction": "string", "primaryTrack": "string" }
 
 ```
 
@@ -490,7 +504,7 @@ Body { "idDispatch": "string", "primaryTrack": "string" }
 	<tbody>
 		<tr valign="top">
 			<td>
-				<p align="left">id</p>
+				<p align="left">idTransaction</p>
 			</td>
 			<td>
 				<p>Es el Id de la transacción.</p>
@@ -555,7 +569,7 @@ Body { "idTransaction": "string" }
 	<tbody>
 		<tr valign="top">
 			<td>
-				<p align="left">id</p>
+				<p align="left">idTransaction</p>
 			</td>
 			<td>
 				<p>Es el Id de la transacción.</p>
