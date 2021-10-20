@@ -793,6 +793,7 @@ This section brings together the code tables and reference values used in messag
 |13045|Merchant not enabled|Merchant not enabled||
 |13046|Invalid sec ident|Invalid secondary identification||
 |13047|Invalid sec ident|Invalid secondary identification||
+|13048|Debtor Network|Debtor Network||
 |**Current Account Validations**||||
 |14000|CA movement declined|Current account movement declined||
 |14001|Merchant CA mov dec|Merchant current account movement declined||
