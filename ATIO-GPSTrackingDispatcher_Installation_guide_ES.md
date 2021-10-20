@@ -7,9 +7,6 @@
 - [Requisitos](#Requisitos)
 - [Instalación](#Instalación)
 - [Configuración del servicio](#Configuración-del-servicio)
-- [Documentacion Visual](#Documentación-visual)
-	- [Archivos utilizados durante la instalación y configuración del servicio](#Archivos-utilizados-durante-la-instalación-y-configuración-del-servicio)
-	- [Guia de como abrir el archivo appsettings](#Guia-de-como-abrir-el-archivo-appsettings)
 
 ### Sobre este documento
 
@@ -17,7 +14,7 @@ Este documento detalla la forma de  instalación del servicio en el Local Agent 
 
 ### Requisitos
 
-Este servicio depende del servicio ATIO Nano StoreAndForward para su correcto funcionamiento. Adicionalmente se requerirá que por primera vez, previo a su uso, se configure un archivo donde se configurarán todas las variables de entorno necesarias para su correcto funcionamiento.
+Este servicio depende del servicio ATIO Nano StoreAndForward para su correcto funcionamiento. Adicionalmente se requerirá que por primera vez, previo a su uso, se configure un archivo donde se colocaran los valores de las variables de entorno necesarias para su correcto funcionamiento.
 
 ### Instalación
 
@@ -28,9 +25,14 @@ Luego, deberemos ingresar a la carpeta que acabamos de crear, buscar nuestro arc
 Nota: Nuestro servicio se instalará para ejecutarse de manera automática cuando inicie nuestro agente local.
 ``` 
 
+![ationetTR](Content/Images/GPSTrackingDispatcher/installT1.PNG)
+
 ### Configuración del servicio
 
-Previo a poder utilizar nuestro servicio deberemos realizar algunos cambios en nuestro archivo de configuración,para ello, deberemos dirigirnos a la carpeta desde donde ejecutamos el archivo de instalación, buscar un archivo llamado ‘appsettings’ y abrirlo con un editor de texto.
+Previo a poder utilizar nuestro servicio deberemos realizar algunos cambios en nuestro archivo de configuración, para ello, deberemos dirigirnos a la carpeta desde donde ejecutamos el archivo de instalación, buscar un archivo llamado ‘appsettings’ y abrirlo con un editor de texto.
+
+![ationetTR](Content/Images/GPSTrackingDispatcher/appsettings.PNG)
+
 Dentro de la misma encontraremos los siguientes aspectos configurables:
 
 * **IP:** Será la dirección ip que utilizaremos para conectarnos al servicio ‘ATIO Nano StoreAndForward’.
@@ -39,15 +41,23 @@ Dentro de la misma encontraremos los siguientes aspectos configurables:
 Nota: Si ambos servicios se encuentran instalados en nuestro agente local, la ip debería quedar configurada como 127.0.0.1
 ```
 
-* **Port:** Al igual que la ip, será el puerto que utilizará para obtener las coordenadas GPS enviadas por request desde el servicio encargado de esto.
+* **Port:** Sera el puerto encargado de escuchar al servicio de 'ATIO Nano StoreAndForward' para obtener las coordenadas GPS enviadas por este.
 
 * **TrackingInterval:** Será el intervalo de tiempo entre cada request. El mismo se encuentra expresado en milisegundos. Por ejemplo, si queremos que espere un minuto entre cada petición, este campo deberá ser configurado en 60000
 
-* **Url:** Será la dirección en la cual enviaremos nuestros request’s con la información obtenida para almacenarla.
+* **Url:** Será la dirección de la API de Ationet a la cual enviaremos nuestros request’s con la información obtenida para almacenarla.
 
 * **Authorization:** Este campo se enviará en los request del punto anterior para poder autenticar la información del usuario que se encuentra realizando las peticiones.
 
+```
+Nota: Estos datos deberán ser solicitados al área de ingeniería de Ationet.
+```
+
 * **DeviceID:** Este punto contendrá el número de identificación del dispositivo vinculado a este servicio.
+
+```
+Nota: Estos datos deberán ser solicitados al área de ingeniería de Ationet.
+```
 
 Ejemplo de un archivo appsettings
 
@@ -62,25 +72,13 @@ Ejemplo de un archivo appsettings
   },
   "AllowedHosts": "*",
 
-  "ip": "127.0.0.1",
-  "port": "5666",
-  "trackingInvertal": 60000,
-  "url": "http://native-beta.ationet.com/v1/tracking",
-  "authorization": "Basic usuario@dominio.com:clave",
-  "DeviceID": "55prueb"
+  "ip": "127.0.0.1", //IP para conectarnos al servicio 'ATIO Nano StoreAndForward'
+  "port": "5666", //Puerto para establecer la conexión con 'ATIO Nano StoreAndForward'
+  "trackingInvertal": 5000, //Intervalo de tiempo entre cada request.
+  "url": "http://native-beta.ationet.com/v1/tracking", //Direccion de la API de ationet para almacenar la información.
+  "authorization": "Basic usuario@dominio.com:clave", //Autenticador de información de usuario que realiza las peticiones a la API de Ationet
+  "DeviceID": "55prueb" //Identificación del dispositivo vinculado al servicio.
 }
 ```
 
->Nota: Usted deberia solicitar su usuario y clave a Ationet.
-
-### Documentación visual
-
-#### Archivos utilizados durante la instalación y configuración del servicio
-
-![ationetTR](Content/Images/GPSTrackingDispatcher/Atio.GPSTrackingDispatcher.Service-content-folder.PNG)
-
-#### Guia de como abrir el archivo appsettings
-
-![ationetTR](Content/Images/GPSTrackingDispatcher/OpenAppsettings.png)
-![ationetTR](Content/Images/GPSTrackingDispatcher/OpenAppsettingsDialogBox.png)
-![ationetTR](Content/Images/GPSTrackingDispatcher/OpenAppsettingsSelectProgram.png)
+>Nota: Usted deberá solicitar su usuario y clave a Ationet.
