@@ -7,6 +7,9 @@
 - [Requirements](#Requirements)
 - [Installation](#Installation)
 - [Service configuration](#Service-configuration)
+- [Use of the service](#Use-of-the-service)
+	- [Starting or stopping the service](#Starting-or-stopping-the-service)
+	- [Service processing verification](#Service-processing-verification)
 
 ### About this document
 
@@ -46,6 +49,11 @@ Note: If both are installed on the same local agent, the IP address will be 127.
 
 * **Url:** It will be the address of the Ationet API to which we will send our requests with the information obtained to store it.
 
+```
+The address to send the information to BETA is: https://native-beta.ationet.com/v1/tracking
+The address to send the information to PRODUCCIÓN is: https://native.ationet.com/v1/tracking
+```
+
 * **Authorization:** This field will be sent in the requests of the previous point in order to authenticate the information of the user who is making the requests.
 
 ```
@@ -81,3 +89,36 @@ Example of appsettings file
 ```
 
 >Note: You should request your username and password from Ationet.
+
+### Use of the service
+
+#### Starting or stopping the service.
+
+The service will start automatically when our local agent starts, but in addition to this, it can be stopped or started again at any time you want to do so.
+To access the services section, we must open our start bar, write 'Services' in it and open our services window.
+
+![ationetTR](Content/Images/GPSTrackingDispatcher/Services.png)
+
+Once inside our services section, we must look for the service named ‘Atio.GPSTrackingDispatcher’. Once located, we can see its status, which can be 'Started' or be blank indicating that it is off.
+
+![ationetTR](Content/Images/GPSTrackingDispatcher/SelectedService.png)
+
+If our service is off, we can make it start in the left panel, clicking the button that says 'Start she service'.
+
+![ationetTR](Content/Images/GPSTrackingDispatcher/StartService.png)
+
+On the contrary, if it is turned on, we can turn it off from the same panel located on the left, clicking the 'Stop the service' button.
+
+![ationetTR](Content/Images/GPSTrackingDispatcher/StopService.png)
+
+#### Service processing verification
+
+While our service is on, it will generate records with the information of all the processes that it is carrying out, as well as errors that may occur during its execution.
+
+In order to access these logs, we must go to the folder where our services are installed and we will look for files of the type that begin with the prefix 'nlog-all' followed by the date from which we want to check their execution.
+
+![ationetTR](Content/Images/GPSTrackingDispatcher/LogPreview.png)
+
+Once we have found the record that we want to consult, we must open it with a text editor to view all the information that the service was generating in it.
+
+![ationetTR](Content/Images/GPSTrackingDispatcher/LogInside.png)
