@@ -79,7 +79,7 @@ Ejemplo de un archivo appsettings
 
 ![ationetTR](Content/Images/GPSTrackingDispatcher/Atio.GPSTrackingDispatcher.Service-content-folder.PNG)
 
-### Guia de como abrir el archivo appsettings
+#### Guia de como abrir el archivo appsettings
 
 ![ationetTR](Content/Images/GPSTrackingDispatcher/OpenAppsettings.png)
 ![ationetTR](Content/Images/GPSTrackingDispatcher/OpenAppsettingsDialogBox.png)
