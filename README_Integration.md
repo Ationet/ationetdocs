@@ -41,3 +41,6 @@
 
 ## .NET SDK
 - [.NET SDK Reference](AN-SDK-Reference.md)
+
+## GPS Tracking Dispatcher installation guide
+- [Spanish](ATIO-GPSTrackingDispatcher_Installation_guide_ES.md)
