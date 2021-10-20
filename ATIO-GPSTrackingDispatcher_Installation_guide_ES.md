@@ -7,6 +7,10 @@
 - [Requisitos](#Requisitos)
 - [Instalación](#Instalación)
 - [Configuración del servicio](#Configuración-del-servicio)
+- [Uso del servicio](#Uso-del-servicio)
+	- [Inicio o detención del servicio](#Inicio-o-detención-del-servicio)
+	- [Verificación de procesamiento del servicio](#Verificación-de-procesamiento-del-servicio)
+
 
 ### Sobre este documento
 
@@ -47,6 +51,11 @@ Nota: Si ambos servicios se encuentran instalados en nuestro agente local, la ip
 
 * **Url:** Será la dirección de la API de Ationet a la cual enviaremos nuestros request’s con la información obtenida para almacenarla.
 
+```
+La dirección para enviar la información a BETA es: https://native-beta.ationet.com/v1/tracking
+La dirección para enviar la información a PRODUCCIÓN es: https://native.ationet.com/v1/tracking
+```
+
 * **Authorization:** Este campo se enviará en los request del punto anterior para poder autenticar la información del usuario que se encuentra realizando las peticiones.
 
 ```
@@ -82,3 +91,37 @@ Ejemplo de un archivo appsettings
 ```
 
 >Nota: Usted deberá solicitar su usuario y clave a Ationet.
+
+### Uso del servicio
+
+#### Inicio o detención del servicio.
+
+El servicio iniciará automáticamente cuando nuestro agente local inicie, pero adicionalmente a esto, este podrá ser detenido o iniciado nuevamente en cualquier momento que se desee hacerlo. 
+Para acceder al apartado de servicios deberemos abrir nuestra barra de inicio, escribir en ella ‘Services’ y abrir nuestra ventana de servicios.
+
+![ationetTR](Content/Images/GPSTrackingDispatcher/Services.png)
+
+Una vez dentro de nuestro apartado de servicios, deberemos buscar el servicio de nombre ‘Atio.GPSTrackingDispatcher’. Una vez localizado, podremos ver el estado del mismo, el cual puede ser ‘Started’ o estar en blanco indicando que el mismo se encuentra apagado.
+
+![ationetTR](Content/Images/GPSTrackingDispatcher/SelectedService.png)
+
+Si nuestro servicio se encuentra apagado, podremos hacer que inicie en el panel izquierdo, clickeando el botón que dice ‘Start she service’.
+
+![ationetTR](Content/Images/GPSTrackingDispatcher/StartService.png)
+
+Por el contrario, si el mismo se encontrara encendido, podremos apagarlo desde el mismo panel ubicado a la izquierda, clickeando el botón ‘Stop the service’.
+
+![ationetTR](Content/Images/GPSTrackingDispatcher/StopService.png)
+
+#### Verificación de procesamiento del servicio
+
+Mientras nuestro servicio se encuentre encendido, irá generando registros con la información de todos los procesos que se encuentra realizando, como así también errores que puedan ocurrir durante su ejecución.
+
+Para poder acceder a estos registros, deberemos dirigirnos a la carpeta donde se encuentra instalado nuestro servicios y buscaremos los archivos del tipo que comiencen con el prefijo ‘nlog-all” seguido de la fecha de la cual queremos consultar su ejecución.
+
+![ationetTR](Content/Images/GPSTrackingDispatcher/LogPreview.png)
+
+Una vez encontrado el registro que deseamos consultar, deberemos abrirlo con un editor de texto para visualizar toda la información que el servicio fue generando en el.
+
+![ationetTR](Content/Images/GPSTrackingDispatcher/LogInside.png)
+
