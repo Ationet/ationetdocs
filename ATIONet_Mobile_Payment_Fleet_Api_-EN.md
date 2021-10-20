@@ -20,6 +20,7 @@
 	- [Introduction](#introduction)
 	- [Entities](#Entities)
 	- [Sequence diagram Pay at Pump with Above Site Payment Authorization](#Sequence-diagram-Pay-at-Pump-with-Above-Site-Payment-Authorization)
+	- [Rules](#Rules)
 - [ATIONet Configuration](#ATIONet-Configuration)
 	- [Sites](#Sites)
 	- [Terminals/Controllers](#Terminals-or-Controllers)
@@ -123,8 +124,6 @@ need to regenerate the receipt information.</li>
 
 
 ## Rules
-
-
 
 In ATIONet rules refer to limits that can be configured by the company and associated to different entities. Inside this view you can consult, create or edit rules. When the entiti have a request rule, if the Customer send a Pre authorization, ATIONET will respond by requesting additional information in order to approve it. <a href='https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md#rules'> Here </a> you can read more about Rules.
 
