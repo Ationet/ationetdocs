@@ -1,7 +1,15 @@
-# ATIONET - GPS Tracking Dispatcher
+![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
+# ATIONET - GPS Tracking Dispatcher: Guia de instalación y configuración del servicio.
 
-## Guia de instalación y configuración del servicio.
+## Contenido ##
 
+- [Sobre este documento](#Sobre-este-documento)
+- [Requisitos](#Requisitos)
+- [Instalación](#Instalación)
+- [Configuración del servicio](#Configuración-del-servicio)
+- [Documentacion Visual](#Documentación-visual)
+	- [Archivos utilizados durante la instalación y configuración del servicio](#Archivos-utilizados-durante-la-instalación-y-configuración-del-servicio)
+	- [Guia de como abrir el archivo appsettings](#Guia-de-como-abrir-el-archivo-appsettings)
 
 ### Sobre este documento
 
@@ -40,3 +48,39 @@ Nota: Si ambos servicios se encuentran instalados en nuestro agente local, la ip
 * **Authorization:** Este campo se enviará en los request del punto anterior para poder autenticar la información del usuario que se encuentra realizando las peticiones.
 
 * **DeviceID:** Este punto contendrá el número de identificación del dispositivo vinculado a este servicio.
+
+Ejemplo de un archivo appsettings
+
+```
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*",
+
+  "ip": "127.0.0.1",
+  "port": "5666",
+  "trackingInvertal": 60000,
+  "url": "http://native-beta.ationet.com/v1/tracking",
+  "authorization": "Basic usuario@dominio.com:clave",
+  "DeviceID": "55prueb"
+}
+```
+
+>Nota: Usted deberia solicitar su usuario y clave a Ationet.
+
+### Documentación visual
+
+#### Archivos utilizados durante la instalación y configuración del servicio
+
+![ationetTR](Content/Images/GPSTrackingDispatcher/Atio.GPSTrackingDispatcher.Service-content-folder.PNG)
+
+### Guia de como abrir el archivo appsettings
+
+![ationetTR](Content/Images/GPSTrackingDispatcher/OpenAppsettings.png)
+![ationetTR](Content/Images/GPSTrackingDispatcher/OpenAppsettingsDialogBox.png)
+![ationetTR](Content/Images/GPSTrackingDispatcher/OpenAppsettingsSelectProgram.png)
