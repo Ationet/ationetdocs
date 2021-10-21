@@ -59,6 +59,7 @@ La dirección para enviar la información a PRODUCCIÓN es: https://native.ation
 * **Authorization:** Este campo se enviará en los request del punto anterior para poder autenticar la información del usuario que se encuentra realizando las peticiones.
 
 ```
+Importante: Es necesario que el rol que tenga asignado el usuario sea el de 'GPSInterfaceAPI' para que las peticiones no sean rechazadas.
 Nota: Estos datos deberán ser solicitados al área de ingeniería de Ationet.
 ```
 
