@@ -57,7 +57,7 @@ The address to send the information to PRODUCCIÓN is: https://native.ationet.co
 * **Authorization:** This field will be sent in the requests of the previous point in order to authenticate the information of the user who is making the requests.
 
 ```
-Important: It is necessary that the role assigned to the user is that of 'GPSInterfaceAPI' so that requests are not rejected.
+Important: It is necessary that the role assigned to the user is that of 'CPInterfaceAPI' so that requests are not rejected.
 Note: These data must be requested from the Ationet engineering area.
 ```
 
