@@ -25,6 +25,7 @@
 	- [PASO 2 Crear código QR dinámico](#PASO-2-Crear-código-QR-dinámico)
 	- [PASO 3 Confirmar el estado de la Transacción](#PASO-3-Confirmar-el-estado-de-la-Transacción)
 	- [PASO 4 El cliente escanea el código QR dinámico](#PASO-4-El-cliente-escanea-el-código-QR-dinámico)
+	- [Posibles estados  de las Transacciones de QR Dinámico](#Posibles-estados--de-las-Transacciones-de-QR-Dinámico)
 	- [Lista de verificación de integración](#Lista-de-verificación-de-integración)
 - [Documentación de API](#Documentación-de-API)
 	- [Método Crear](#Método-Crear)
@@ -254,7 +255,7 @@ En la seccion  [Ejemplo método Crear](#Ejemplo-método-crear) puede encontrar u
 
 #### Ejemplo de imagen QR
 
-![ationetTR](Content/Images/DynamicQRPayments/dynamic_v4.png)
+![ationetTR](Content/Images/DynamicQRPayments/DynamicQr5.png)
 
 ### PASO 3 Confirmar el estado de la Transacción
 
@@ -275,6 +276,70 @@ Cuando se genera el código QR para una transacción específica, el cliente esc
 Nota: Los clientes no pueden cambiar el monto de la transacción en su aplicación al escanear el código QR del pedido en particular.
 ```
 
+### Posibles estados  de las Transacciones de QR Dinámico
+
+<table>
+	<thead>
+		<tr valign="center">
+			<th rowspan="2"  align="left">
+				Nombre
+			</th>
+			<th rowspan="8" align="left">
+				Descripción
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">QR Created</p>
+			</td>
+			<td>
+				<p>Se reciben los datos de la venta y se crea la Transacción</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">QR Read</p>
+			</td>
+			<td>
+				<p>El Cliente escanea el código QR</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">QR Confirmed</p>
+			</td>
+			<td>
+				<p>El Cliente confirma el código QR y la transacción es aprobada</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">QR Cancelled</p>
+			</td>
+			<td>
+				<p>El Cliente rechaza el pago</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Transaction Refused</p>
+			</td>
+			<td>
+				<p>La Transaccion es rechazada por el Procesador de pagos</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Cancelled By MPPA</p>
+			</td>
+			<td>
+				<p>La Transaccion se vence por time out</p>
+			</td>
+		 </tr>
+		</tbody>
+</table>
 
 ### Lista de verificación de integración
 
@@ -405,7 +470,17 @@ Content-Type: application/json; charset=utf-8
 content-encoding: gzip 
 ```
 ```
-body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage":  "string" }
+body 
+{ 
+	"AuthorizationCode": "string", 
+	"ResponseCode": "string", 
+	"ResponseMessage":  "string", 
+	"TransactionStatus":
+		{
+			"name":"string",
+			"id": int
+		} 
+}
 
 ```
 
@@ -696,10 +771,13 @@ api/QR/SalePaymentRequest/?IdDispatch=a11be318-07dd-4318-bcc3-41704c54c995
 
 ```
 {
-  "authorizationCode": "072613127",
-  "responseCode": "00000",
-  "responseMessage": "Autorizado",
-  "TransactionIdMobile": 3fa85f64-5717-4562-b3fc-2c963f66afa6
+    "authorizationCode": "030744119",
+    "responseCode": "00000",
+    "responseMessage": "Autorizado",
+    "transactionStatus": {
+        "name": "QR Confirmed",
+        "id": 22
+    }
 }
 
 ```
