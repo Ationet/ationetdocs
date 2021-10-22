@@ -253,7 +253,7 @@ In [Create method](#create-method) section you can find a request body sample in
 
 #### QR Image example
 
-![ationetTR](Content/Images/DynamicQRPayments/dynamic_v4.png)
+![ationetTR](Content/Images/DynamicQRPayments/DynamicQr5.png)
 
 ### STEP 3 Confirm the Transaction Status
 
@@ -274,6 +274,70 @@ When the QR code is generated for an specific transaction, the customer scans th
 Note: Customers cannot change the Transaction amount in their app on scanning the particular order QR code.
 ```
 
+### Dynamic QR Transaction States
+
+<table>
+	<thead>
+		<tr valign="center">
+			<th rowspan="2" align="left">
+				Name
+			</th>
+			<th rowspan="8" align="left">
+				Description
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">QR Created</p>
+			</td>
+			<td>
+				<p>The sale data is received and the Transaction is created</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">QR Read</p>
+			</td>
+			<td>
+				<p>The Customer scan the QR Code image</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">QR Confirmed</p>
+			</td>
+			<td>
+				<p>The Customer confirm the QR Payment and the Transaction is approved</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">QR Cancelled</p>
+			</td>
+			<td>
+				<p>The Customer refuse the QR Payments</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Transaction Refused</p>
+			</td>
+			<td>
+				<p>The Transaction is refuse by Payment processor</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Cancelled By MPPA</p>
+			</td>
+			<td>
+				<p>The Transaction es cancelled by time out</p>
+			</td>
+		 </tr>
+		</tbody>
+</table>
 
 ### Integration Checklist
 
@@ -407,7 +471,17 @@ content-encoding: gzip
 ```
 
 ```
-body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage":  "string" }
+body 
+{ 
+	"AuthorizationCode": "string", 
+	"ResponseCode": "string", 
+	"ResponseMessage":  "string", 
+	"TransactionStatus":
+		{
+			"name":"string",
+			"id": int
+		} 
+}
 
 ```
 
@@ -653,10 +727,15 @@ body:
 
 ```
 {
-  "authorizationCode": "072613127",
-  "responseCode": "00000",
-  "responseMessage": "Autorizado"
+    "authorizationCode": "030744119",
+    "responseCode": "00000",
+    "responseMessage": "Autorizado",
+    "transactionStatus": {
+        "name": "QR Confirmed",
+        "id": 22
+    }
 }
+
 
 
 ```
