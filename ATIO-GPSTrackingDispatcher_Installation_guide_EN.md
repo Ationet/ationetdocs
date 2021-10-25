@@ -10,6 +10,7 @@
 - [Use of the service](#Use-of-the-service)
 	- [Starting or stopping the service](#Starting-or-stopping-the-service)
 	- [Service processing verification](#Service-processing-verification)
+- [Uninstalling the service](#Uninstalling-the-service)
 
 ### About this document
 
@@ -126,3 +127,12 @@ In order to access these logs, we must go to the folder where our services are i
 Once we have found the record that we want to consult, we must open it with a text editor to view all the information that the service was generating in it.
 
 ![ationetTR](Content/Images/GPSTrackingDispatcher/LogInside.png)
+
+### Uninstalling the service.
+
+To proceed to uninstall the service, we must go to the folder where our service is installed and look for the file called 'uninstallT1.bat'. Once located we must run it as administrator and our service will be removed from the system.
+
+Note: The service's containing folder will continue to exist, keeping all its files and allowing the service to be reinstalled again in the same way as we did the first time.
+
+![ationetTR](Content/Images/GPSTrackingDispatcher/uninstallService.PNG)
+
