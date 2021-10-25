@@ -10,6 +10,7 @@
 - [Uso del servicio](#Uso-del-servicio)
 	- [Inicio o detención del servicio](#Inicio-o-detención-del-servicio)
 	- [Verificación de procesamiento del servicio](#Verificación-de-procesamiento-del-servicio)
+- [Desinstalación del servicio](#Desinstalación-del-servicio)
 
 
 ### Sobre este documento
@@ -129,3 +130,10 @@ Una vez encontrado el registro que deseamos consultar, deberemos abrirlo con un 
 
 ![ationetTR](Content/Images/GPSTrackingDispatcher/LogInside.png)
 
+### Desinstalación del servicio.
+
+Para proceder a desinstalar el servicio, debemos dirigirnos a la carpeta donde se encuentra instalado nuestro servicio y buscar el archivo llamado ‘uninstallT1.bat’. Una vez localizado debemos ejecutarlo como administrador y nuestro servicio será removido del sistema.
+
+Nota: La carpeta contenedora del servicio seguirá existiendo, conservando todos sus archivos y permitiendo que se haga la reinstalación del servicio nuevamente del mismo modo que lo hicimos la primera vez.
+
+![ationetTR](Content/Images/GPSTrackingDispatcher/uninstallService.PNG)
