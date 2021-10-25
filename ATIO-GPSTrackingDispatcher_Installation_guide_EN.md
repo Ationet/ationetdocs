@@ -67,6 +67,8 @@ Note: These data must be requested from the Ationet engineering area.
 Note: These data must be requested from the Ationet engineering area.
 ```
 
+* **DemoMode:** If our file contains this variable defined and it is set to true, the GPS coordinates that are sent will be randomly generated, otherwise, those provided by our local agent will be used.
+
 Example of appsettings file
 
 ```
@@ -85,7 +87,8 @@ Example of appsettings file
   "trackingInvertal": 5000, //Time interval between each request.
   "url": "http://native-beta.ationet.com/v1/tracking", /Address of the ationet API to store the information.
   "authorization": "Basic usuario@dominio.com:clave", //User information authenticator that makes requests to the Ationet API.
-  "DeviceID": "55prueb" //Identification of the device linked to the service.
+  "DeviceID": "55prueb", //Identification of the device linked to the service.
+  DemoMode: true //If it is found in the configuration file with a true value, it will send random coordinates, otherwise those of the local agent.
 }
 ```
 
