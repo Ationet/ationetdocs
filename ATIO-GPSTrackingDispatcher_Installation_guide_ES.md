@@ -11,6 +11,7 @@
 	- [Inicio o detención del servicio](#Inicio-o-detención-del-servicio)
 	- [Verificación de procesamiento del servicio](#Verificación-de-procesamiento-del-servicio)
 - [Desinstalación del servicio](#Desinstalación-del-servicio)
+- [Descargas](#Descargas)
 
 
 ### Sobre este documento
@@ -23,7 +24,7 @@ Este servicio depende del servicio ATIO Nano StoreAndForward para su correcto fu
 
 ### Instalación
 
-Para la instalación de este servicio, lo primero que necesitaremos será copiar la carpeta contenedora del mismo en nuestro Local Agent.
+Para la instalación de este servicio, lo primero que necesitaremos será copiar la [carpeta contenedora](https://drive.google.com/file/d/1HYPbBm_1mbLLf2iris3G3IhlWiMxNsQq/view?usp=sharing) del mismo en nuestro Local Agent.
 Luego, deberemos ingresar a la carpeta que acabamos de crear, buscar nuestro archivo de instalación llamado ‘installT1.bat’ y ejecutarlo para que realice la instalación del servicio.
 
 ``` 
@@ -137,3 +138,7 @@ Para proceder a desinstalar el servicio, debemos dirigirnos a la carpeta donde s
 Nota: La carpeta contenedora del servicio seguirá existiendo, conservando todos sus archivos y permitiendo que se haga la reinstalación del servicio nuevamente del mismo modo que lo hicimos la primera vez.
 
 ![ationetTR](Content/Images/GPSTrackingDispatcher/uninstallService.PNG)
+
+### Descargas
+
+Descargue la carpeta contenedora del servicio en este [enalce](https://drive.google.com/file/d/1HYPbBm_1mbLLf2iris3G3IhlWiMxNsQq/view?usp=sharing)
