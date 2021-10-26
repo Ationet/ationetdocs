@@ -11,6 +11,7 @@
 	- [Starting or stopping the service](#Starting-or-stopping-the-service)
 	- [Service processing verification](#Service-processing-verification)
 - [Uninstalling the service](#Uninstalling-the-service)
+- [Downloads](#Downloads)
 
 ### About this document
 
@@ -22,7 +23,7 @@ This service depends on the ATIO Nano StoreAndForward service for its correct fu
 
 ### Installation
 
-For installation, we first need to copy the content folder of the service to the local agent. Next, we need to navigate to the recently copied folder, find the installation file called ‘installT1.bat’ and run it.
+For installation, we first need to copy the [content folder](https://drive.google.com/file/d/1HYPbBm_1mbLLf2iris3G3IhlWiMxNsQq/view?usp=sharing) of the service to the local agent. Next, we need to navigate to the recently copied folder, find the installation file called ‘installT1.bat’ and run it.
 
 ``` 
 Note: The service will be installed to run automatically when the local agent starts.
@@ -136,3 +137,6 @@ Note: The service's containing folder will continue to exist, keeping all its fi
 
 ![ationetTR](Content/Images/GPSTrackingDispatcher/uninstallService.PNG)
 
+### Downloads
+
+Download the folder containing the service in this [link](https://drive.google.com/file/d/1HYPbBm_1mbLLf2iris3G3IhlWiMxNsQq/view?usp=sharing)
