@@ -20,6 +20,7 @@
 	- [Introduction](#introduction)
 	- [Entities](#Entities)
 	- [Sequence diagram Pay at Pump with Above Site Payment Authorization](#Sequence-diagram-Pay-at-Pump-with-Above-Site-Payment-Authorization)
+	- [Rules](#Rules)
 - [ATIONet Configuration](#ATIONet-Configuration)
 	- [Sites](#Sites)
 	- [Terminals/Controllers](#Terminals-or-Controllers)
@@ -36,6 +37,7 @@
 	- [Supported Transactions](#supported-transactions)
 	- [Message Structure](#message-structure)
 		- [MobilePayments](#mobilePayments)
+		- [PromptPreauthorizations](#PromptPreauthorizations)
 		- [GetTransaction](#getTransaction)
 		- [Cancel](#cancel)
 	- [Field Descriptions](#field-descriptions)
@@ -45,10 +47,10 @@
 		- [Transaction states sequence diagram on Cancelation Request](#transaction-states-sequence-diagram-on-cancelation-request)
 	- [Response Codes](#response-codes)
 	- [Message Samples](#message-samples)
-		- [MobilePayments ](#mobilePayments)
-		- [PreAuthorizedPayments ](#preAuthorizedpayments)
-		- [GetTransaction ](#gettransaction)
-		- [Cancel ](#cancel)
+		- [MobilePayments sample](#mobilePayments-sample)
+		- [PreAuthorizedPayments sample](#preAuthorizedpayments-sample)
+		- [GetTransaction sample](#gettransaction-sample)
+		- [Cancel sample](#cancel-sample)
 - [EXTERNAL PFEP Fleet Mobile Payment Api](EXTERNAL_Mobile_Payment_Fleet_Api_-EN.md)
 </br>
 
@@ -121,7 +123,95 @@ need to regenerate the receipt information.</li>
 </ol>
 
 
+## Rules
 
+In ATIONet rules refer to limits that can be configured by the company and associated to different entities. Inside this view you can consult, create or edit rules. When the entiti have a request rule, if the Customer send a Pre authorization, ATIONET will respond by requesting additional information in order to approve it. <a href='https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md#rules'> Here </a> you can read more about Rules.
+
+### Flow 
+
+In case the PFEP requires additional information, the Transaction will be left with the status of `Prompting Needed` waiting for the client to send the required information, which should be sent to the  [PromptPreauthorizations](#PromptPreauthorizations) endPoint. You can find the information requested by the PFEP using the [GetTransaction](#getTransaction) endpoint, it will be found in the `PaymentProcessorMessage` property.
+
+>WARNING: The time to send the response is 300 seconds (5 minutes). After this time the transaction will NOT be available.
+>
+![ationetTR](Content/Images/MobilePaymentFleet/promptStateFlow.png)
+
+<ol>
+	<li>Customer sends an Authorization Request</li>
+	<li>Pump Reserve is sended</li>
+	<li>Pump Reserve accepted</li>
+	<li>Authorization Requested is send to PFEP</li>
+	<li>PFEP response requesting Prompts</li>
+	<li>Customer complete the Prompts</li>
+	<li>The PFEP accept the Prompts</li>
+	<li>Fuel point at site is Authorized</li>
+	<li>Fueling starts</li>
+	<li>Complete</li>
+</ol>
+
+
+
+### Rules Requested
+
+The requested rules can be as many as the client has configured in his Network or Company. Next you have the available keys that could be requested.
+
+```
+	"PromptPrimaryPin": "string",
+        "PromptSecondaryTrack": "string",
+        "PromptOdometer": "string",
+        "PromptDriverId": "string",
+        "PromptVehicleId": "string",
+        "PromptTruckUnitNumber": "string",
+        "PromptTrailerNumber": "string",
+        "PromptEngineHours": "string",
+        "PromptMiscellaneous": "string"
+```
+
+>Note: The value always be "true"
+
+### Special cases 
+
+In some cases, like the `Odometer` or` EngineHours`, the rule may request a minimum and / or a range of values. For example: 
+
+```
+	"PromptOdometer": "true",
+        "LastOdometer": "140",
+        "MinOdometer": "150",
+        "MaxOdometer": "1000",
+```
+
+### How to answer the rules
+
+PromptPreauthorizations endpoint should be consumed in order to response the Rule Request. The Transaction Id must be included in addition to the requested rules.
+
+For each rule, you should respond with the name of the rule and its respective value. The Response Names are:
+
+
+```
+        "PrimaryPin": "string",
+        "SecondaryTrack": "string",
+        "Odometer": "string",
+        "DriverId": "string",
+        "VehicleId": "string",
+        "TruckUnitNumber": "string",
+        "TrailerNumber": "string",
+        "EngineHours": "string",
+        "Miscellaneous": "string"
+```
+
+### Implementation Guide
+
+<ol>
+	<li>Send a Preauthorization request using MobilePayments endPoint</li>
+	<li>Yo will Receive the Transaction ID</li>
+	<li>Get Transaction status using GetTransaction endPoint</li>
+	<li>The Transaction status is Prompting Needed</li>
+	<li>Check the paymentProcessorMessage property. It contains the Prompt Request information</li>
+	<li>Send a PromptPreauthorizations request using PromptPreauthorizations endPoint</li>
+	<li>Check the Transaction status again.</li>
+	<li>Transaction status now is Authorization accepted</li>
+</ol>
+
+		
 ## ATIONet Configuration
 
 ### Sites
@@ -930,6 +1020,18 @@ API URI: *https://ationetmobilepayment-appshost.azurewebsites.net/*
 				<p align="left">Used to validate a sale request, return the Transaction ID. If the Sale already exists, returns the ID.</p>
 			</td>
 		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PromptPreauthorizations</p>
+			</td>
+			<td>
+				<p align="center">1.0</p>
+			</td>
+			<td></td>
+			<td>
+				<p align="left">Used to send Prompts when MobilePayments required it.</p>
+			</td>
+		 </tr>
 		 <tr valign="top">
 			<td>
 				<p align="left">PreAuthorizedPayments</p>
@@ -995,6 +1097,43 @@ Create a Sale with Ationet authorization. The sale creation recibes an ID, if th
 
 *Body:	{ “TransactionId”:”StringValue” }*
 
+### PromptPreauthorizations 
+
+Receive a Transaction ID and a CustomerData that contais the Prompts required to approve a PreAuthorization.
+
+
+#### Request Format
+
+*URL: /api/MobilePayments/PromptPreauthorizations* </br>
+*Method: POST* </br>
+
+*Body:
+{
+  "idTransaction": "string",
+  "customerData": {
+    	"PrimaryPin": "string",
+        "SecondaryTrack": "string",
+        "Odometer": "string",
+        "DriverId": "string",
+        "VehicleId": "string",
+        "TruckUnitNumber": "string",
+        "TrailerNumber": "string",
+        "EngineHours": "string",
+        "Miscellaneous": "string"
+  }
+}* </br>
+
+>Note: customerData only must contains Prompts Requested.
+
+#### Response Format
+
+*Header:*
+
+	Content-Type: application/json; charset=utf-8
+	content-encoding: gzip 
+
+*Body:	{ }*
+
 
 ### GetTransaction
 
@@ -1035,6 +1174,7 @@ Create a Sale with Ationet authorization. The sale creation recibes an ID, if th
   "unitMeasure":"string",</br>
   "createDateTime":"string",</br>
   "updateDateTime":"string"</br>
+  "idDispatch":"string"</br>
 }*
 
 ### Cancel 
@@ -1217,13 +1357,27 @@ This section describe through a table  all parameters from request.
 				<p align="left">GetTransaction | Cancel</p>
 			</td>
 			<td>
-				<p align="left">transactionId</p>
+				<p align="left">id</p>
 			</td>
 			<td>
 			 	<p align="left">string</p>
 			 </td>
 			<td>
 				<p align="left">Transaction ID</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PromptPreauthorizations</p>
+			</td>
+			<td>
+				<p align="left">customerData</p>
+			</td>
+			<td>
+			 	<p align="left">Object</p>
+			 </td>
+			<td>
+				<p align="left">Contains the Prompt Rules</p>
 			</td>
 		 </tr>
 </table>
@@ -1467,13 +1621,35 @@ This section describe through a table  all  states that a sale can have.
 				<p align="left">Cancelled By MPPA</p>
 			</td>
 		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PromptingNeeded</p>
+			</td>
+			<td>
+				<p align="center">25</p>
+			</td>
+			<td>
+				<p align="left">Prompting Needed</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PromptingSuccess</p>
+			</td>
+			<td>
+				<p align="center">26</p>
+			</td>
+			<td>
+				<p align="left">Prompting Success</p>
+			</td>
+		 </tr>
 </table>
 
 
 ### Transaction states sequence diagram on Pre authorization Request
 
 
-![ationetTR](Content/Images/MobilePaymentFleet/secuencia.PNG)
+![ationetTR](Content/Images/MobilePaymentFleet/TransactionStatesFlowUpdated.PNG)
 
 
 ### Transaction states sequence diagram on Cancelation Request
@@ -1741,7 +1917,7 @@ Both methos response the same codes.
 
 ```
 	
-### GetTransaction
+### GetTransaction sample
 
 >Request Example
 >
@@ -1781,7 +1957,7 @@ Both methos response the same codes.
 }
 ```
 
-### Cancel
+### Cancel sample
 
 >Request Example
 
@@ -1800,5 +1976,25 @@ Both methos response the same codes.
   "responseCode": "0",
   "responseMessage": "Successfully Canceled"
 }
+
+```
+
+### PromptPreauthorizations sample
+
+>Request Example
+
+```
+{
+  "idTransaction": "e0593f2d-e54a-4153-829e-ecdafb3f96055",
+  "customerData": {
+    "EngineHours": "5"
+  }
+}
+```
+
+>Response Example
+
+```
+{ }
 
 ```

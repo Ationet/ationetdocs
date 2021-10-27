@@ -25,18 +25,21 @@
 	- [PASO 2 Crear código QR dinámico](#PASO-2-Crear-código-QR-dinámico)
 	- [PASO 3 Confirmar el estado de la Transacción](#PASO-3-Confirmar-el-estado-de-la-Transacción)
 	- [PASO 4 El cliente escanea el código QR dinámico](#PASO-4-El-cliente-escanea-el-código-QR-dinámico)
+	- [Posibles estados  de las Transacciones de QR Dinámico](#Posibles-estados--de-las-Transacciones-de-QR-Dinámico)
 	- [Lista de verificación de integración](#Lista-de-verificación-de-integración)
 - [Documentación de API](#Documentación-de-API)
 	- [Método Crear](#Método-Crear)
 	- [Método Obtener el estado de una Transacción](#Método-Obtener-el-estado-de-una-Transacción)
 	- [Método Solicitud de pago de una venta](#Método-Solicitud-de-pago-de-una-venta)
 	- [Método Proceso de pago de venta](#Método-Proceso-de-pago-de-venta)
+	- [Método Rechazo de solicitud de Pago](#Método-Rechazo-de-solicitud-de-Pago)
 - [Manejo de errores](#Manejo-de-errores)
 - [Mensajes de ejemplo](#Mensajes-de-ejemplo)
 	 - [Ejemplo método Crear](#Ejemplo-método-crear)
  	 - [Ejemplo método Obtener estado de una Transacción](#Ejemplo-métodoObtener-estado-de-una-Transacción)
  	 - [Ejemplo método Solicitud de pago de venta](#Ejemplo-método-Solicitud-de-pago-de-venta)
 	 - [Ejemplo método Proceso de pago de venta](#Ejemplo-método-Proceso-de-pago-de-venta)
+	 - [Ejemplo método Rechazo de solicitud de Pago](#Ejemplo-método-Rechazo-de-solicitud-de-Pago)
 	
 
 ## Visión general
@@ -161,20 +164,6 @@ Importante: La trama debe estar en formato JSON. La imagen del código QR debe s
 		 </tr>
 		<tr valign="top">
 			<td>
-				<p align="left">TransactionAmount</p>
-			</td>
-			<td>
-				<p align="center">double</p>
-			</td>
-			<td>
-			 	<p align="center">Site controller</p>
-			 </td>
-			<td>
-				<p>xxxxxxx.xx</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
 				<p align="left">ProductCode</p>
 			</td>
 			<td>
@@ -231,6 +220,20 @@ Importante: La trama debe estar en formato JSON. La imagen del código QR debe s
 		 </tr>
 		<tr valign="top">
 			<td>
+				<p align="left">ProductDescription</p>
+			</td>
+			<td>
+				<p align="center">string</p>
+			</td>
+			<td>
+			 	<p align="center">Site controller</p>
+			 </td>
+			<td>
+				<p>(OPCIONAL) La descripción del producto.</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
 				<p align="left">ImageRequired</p>
 			</td>
 			<td>
@@ -252,7 +255,7 @@ En la seccion  [Ejemplo método Crear](#Ejemplo-método-crear) puede encontrar u
 
 #### Ejemplo de imagen QR
 
-![ationetTR](Content/Images/DynamicQRPayments/dynamic_v4.png)
+![ationetTR](Content/Images/DynamicQRPayments/DynamicQr5.png)
 
 ### PASO 3 Confirmar el estado de la Transacción
 
@@ -273,6 +276,70 @@ Cuando se genera el código QR para una transacción específica, el cliente esc
 Nota: Los clientes no pueden cambiar el monto de la transacción en su aplicación al escanear el código QR del pedido en particular.
 ```
 
+### Posibles estados  de las Transacciones de QR Dinámico
+
+<table>
+	<thead>
+		<tr valign="center">
+			<th rowspan="2"  align="left">
+				Nombre
+			</th>
+			<th rowspan="8" align="left">
+				Descripción
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">QR Created</p>
+			</td>
+			<td>
+				<p>Se reciben los datos de la venta y se crea la Transacción</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">QR Read</p>
+			</td>
+			<td>
+				<p>El Cliente escanea el código QR</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">QR Confirmed</p>
+			</td>
+			<td>
+				<p>El Cliente confirma el código QR y la transacción es aprobada</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">QR Cancelled</p>
+			</td>
+			<td>
+				<p>El Cliente rechaza el pago</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Transaction Refused</p>
+			</td>
+			<td>
+				<p>La Transaccion es rechazada por el Procesador de pagos</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Cancelled By MPPA</p>
+			</td>
+			<td>
+				<p>La Transaccion se vence por time out</p>
+			</td>
+		 </tr>
+		</tbody>
+</table>
 
 ### Lista de verificación de integración
 
@@ -313,11 +380,11 @@ body {
     "IdDispatch":"string",    
     "PumpNumber": "string",
     "TerminalIdentification": "string",
-    "TransactionAmount": double,
     "ProductCode": "string",
     "ProductUnitPrice": double,
     "ProductAmount": double,
-    "ProductQuantity": double
+    "ProductQuantity": double,
+    "ProductDescription": "string"
   },
   "ImageRequired": bool
 }
@@ -337,7 +404,7 @@ content-encoding: gzip
 
 ```
 body { 
-	"transactionId":"string",
+	"IdTransaction":"string",
 	"qrData":"string",
 	"image":"string",
 	"mpqrType":int
@@ -347,7 +414,7 @@ body {
 Descripcion de las propiedades de respuesta
 
 ```
-"transactionId": Es el Id de la Transacción.
+"IdTransaction": Es el Id de la Transacción.
 "qrData": Contieniene la información a ser codificada en la imagen de código QR.
 "image": La imagén de codigo Qr codificada en base 64 o un valor vacio.
 "mpqrType": Es el tipo de Imagen de codigo QR. Por defecto es 2, indicando que se trata de una Imagen de Código QR Dinámica.
@@ -403,7 +470,17 @@ Content-Type: application/json; charset=utf-8
 content-encoding: gzip 
 ```
 ```
-body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage":  "string" }
+body 
+{ 
+	"AuthorizationCode": "string", 
+	"ResponseCode": "string", 
+	"ResponseMessage":  "string", 
+	"TransactionStatus":
+		{
+			"name":"string",
+			"id": int
+		} 
+}
 
 ```
 
@@ -411,13 +488,13 @@ body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage
 
 #### Descripción
 
-Recibe el id de la Transacción. Devuelve la informacion completa de la venta
+Recibe el id el Id dispatch. Devuelve la informacion completa de la venta
 
 >Éste método requiere autenticacion a través del encabezado. Deberá ser de tipo basica. ejemplo: `Basic usuario:clave`
 
 #### Formato de solicitud
 
-*URL: /api/QR/SalePaymentRequest/{id}* </br>
+*URL: /api/QR/SalePaymentRequest/{IdDispatch}* </br>
 *Method: HTTPGet* </br>
 
 ##### Descripción de los parámetros
@@ -436,10 +513,10 @@ Recibe el id de la Transacción. Devuelve la informacion completa de la venta
 	<tbody>
 		<tr valign="top">
 			<td>
-				<p align="left">id</p>
+				<p align="left">IdDispatch</p>
 			</td>
 			<td>
-				<p>Es el Id de la transacción.</p>
+				<p>Es el Id de despacho.</p>
 			</td>
 		 </tr>		
 		</tbody>
@@ -455,7 +532,17 @@ content-encoding: gzip
 ```
 
 ```
-body { "TransactionId": "string", "Content": "string" }
+{
+    "idTransaction": "string",
+    "saleContent": {
+        "productCode": "string",
+        "productAmout": double,
+        "productUnitPrice": double,
+        "productQuantity": double,
+        "productDescription": "string"
+    },
+    "content": "string"
+}
 ```
 
 ### Método Proceso de pago de venta 
@@ -472,7 +559,7 @@ Crea una venta. Recibe el Id de Transacción y el primaryTrack del conductor.
 *Method: HTTPPost* </br>
 
 ```
-Body { "idDispatch": "string", "primaryTrack": "string" }
+Body { "idTransaction": "string", "primaryTrack": "string" }
 
 ```
 
@@ -492,7 +579,7 @@ Body { "idDispatch": "string", "primaryTrack": "string" }
 	<tbody>
 		<tr valign="top">
 			<td>
-				<p align="left">id</p>
+				<p align="left">idTransaction</p>
 			</td>
 			<td>
 				<p>Es el Id de la transacción.</p>
@@ -519,9 +606,63 @@ content-encoding: gzip
 ```
 
 ```
-body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage":  "string", "TransactionId": "string" }
+body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage":  "string", "IdTransaction": "string" }
 
 ```
+
+### Método Rechazo de solicitud de Pago 
+
+#### Descripción
+
+Rechaza la solicitud de Pago de una venta siempre y cuando el estado de la misma sea `QR Leido`. Recibe el Id de la Transaccion
+
+>Éste método requiere autenticacion a través del encabezado. Deberá ser de tipo basica. ejemplo: `Basic usuario:clave`
+
+#### Formato de solicitud
+
+*URL: /api/QR/RefusePaymentRequest* </br>
+*Method: HTTPPost* </br>
+
+```
+Body { "idTransaction": "string" }
+
+```
+
+##### Descripción de los parámetros
+
+<table>
+	<thead>
+		<tr valign="center">
+			<th rowspan="2"  align="left">
+				Nombre
+			</th>
+			<th rowspan="8" align="left">
+				Descripción
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">idTransaction</p>
+			</td>
+			<td>
+				<p>Es el Id de la transacción.</p>
+			</td>
+		 </tr>	
+		</tbody>
+</table>
+
+
+#### Formato de respuesta
+
+Header:
+```
+Content-Type: application/json; charset=utf-8
+content-encoding: gzip 
+```
+
+Éste metodo devuelve  una respuesta satisfactoria si pudo cancelar la venta (200 Ok). Devuelve Bad Request indicando en el campo `message` el motivo por el cual no pudo cancelar la transaccion.
 
 ### Manejo de errores
 
@@ -539,17 +680,19 @@ Si no se procesa la solicitud, se indicará mediante un código de estado de ran
 #### Formato de solicitud
 
 ```
+body:
+
 {
   "sale": {
-    "IdDispatch":"16e8f1e0-4969-4836-817a-7426a3b2fdc1",    
+    "IdDispatch":"de1ae20c-858c-4989-a334-43992df5c45c",
     "PumpNumber": "1",
     "TerminalIdentification": "S2G321",
-    "TransactionAmount": 99,
     "ProductCode": "1",
     "ProductUnitPrice": 1,
-    "ProductAmount": 99,
-    "ProductQuantity": 99
-  },
+    "ProductAmount": 10,
+    "ProductDescription": "SUPER",
+    "productQuantity": 299
+},
   "imageRequired": true
 }
 
@@ -558,11 +701,11 @@ Si no se procesa la solicitud, se indicará mediante un código de estado de ran
 #### Formato de respuesta
 
 ```
-{ 
-	"transactionId":"80ab2f6c-e4a3-4c5c-8729-d10c1059a511",
-	"qrData":"https://ationetmobilepayment-appshost-test.azurewebsites.net/api/QR/ProccessSale/ProccessSale/80ab2f6c-e4a3-4c5c-8729-d10c1059a511",
-	"image":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAADi5JREFUeF7tndF24zYMRJ3//+j0NK1bJSuZl4+/E8ERGAXgQ8FGAXgQ8FGAXgQ8FIjNE",
-	"mpqrType":2
+{
+    "idTransaction": "9e19d7a7-34c3-400e-8fb6-d7fe9ff5d55e",
+    "qrData": "https://ationetmobilepayment-appshost-test.azurewebsites.net/api/QR/SalePaymentRequest/?IdDispatch=de1ae20c-858c-4989-a334-43992df5c45c",
+    "image": "iVBORw0KGgoAAAANSUhEUgAABRQAAAUUCAYAAACu5p7oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAP+lSURBVHhe7NhRqizZtiPR1/9OV3XADvjGxA3lXC",
+    "mpqrType": 2
 }
 
 ```
@@ -594,15 +737,22 @@ Si no se procesa la solicitud, se indicará mediante un código de estado de ran
 #### Formato de solicitud 
 
 ```
-api/QR/SalePaymentRequest/3fa85f64-5717-4562-b3fc-2c963f66afa6
+api/QR/SalePaymentRequest/?IdDispatch=a11be318-07dd-4318-bcc3-41704c54c995
 ```
 
 #### Formato de respuesta
 
 ```
 {
-    "transactionId": "6768d700-f463-4842-b74f-2ab169a87d95",
-    "content": "    {\"ProcessingMode\":\"1\",\"SystemModel\":\"MOBILE\",\"SystemVersion\":\"NB\",\"TransactionCode\":\"200\",\"EntryMethod\":\"S\",\"ApplicationType\":\"FCS\",\"AccountType\":\"1\",\"MessageFormatVersion\":1.3,\"CurrencyCode\":\"ARS\",\"DeviceTypeIdentifier\":4,\"TransactionSequenceNumber\":0,\"LocalTransactionDate\":20210930,\"LocalTransactionTime\":162432,\"SiteCode\":null,\"IdDispatch\":\"5a021e37-9d61-4545-990c-177f4c8f7b38\",\"PumpNumber\":\"1\",\"TerminalIdentification\":\"S2G321\",\"PrimaryTrack\":null,\"TransactionAmount\":99,\"ProductCode\":\"1\",\"ProductUnitPrice\":1,\"ProductAmount\":99,\"ProductQuantity\":99}"
+    "idTransaction": "624b8dc0-dfd5-46d3-b13a-61a4aac784af",
+    "saleContent": {
+        "productCode": "1",
+        "productAmout": 10.00,
+        "productUnitPrice": 1.00,
+        "productQuantity": 299.00,
+        "productDescription": "SUPER"
+    },
+    "content": "{\"ProcessingMode\":\"1\",\"SystemModel\":\"MOBILE\",\"SystemVersion\":\"NB\",\"TransactionCode\":\"200\",\"EntryMethod\":\"S\",\"ApplicationType\":\"FCS\",\"AccountType\":\"1\",\"MessageFormatVersion\":1.3,\"CurrencyCode\":\"ARS\",\"DeviceTypeIdentifier\":4,\"TransactionSequenceNumber\":0,\"LocalTransactionDate\":20211019,\"LocalTransactionTime\":140632,\"SiteCode\":null,\"TransactionAmount\":10,\"PrimaryTrack\":null,\"IdDispatch\":\"c421eea9-5b04-40ff-b857-67dfc71866d0\",\"PumpNumber\":\"1\",\"TerminalIdentification\":\"S2G321\",\"ProductCode\":\"1\",\"ProductUnitPrice\":1,\"ProductAmount\":10,\"ProductQuantity\":10,\"ProductDescription\":null}"
 }
 
 ```
@@ -621,10 +771,31 @@ api/QR/SalePaymentRequest/3fa85f64-5717-4562-b3fc-2c963f66afa6
 
 ```
 {
-  "authorizationCode": "072613127",
-  "responseCode": "00000",
-  "responseMessage": "Autorizado",
-  "TransactionIdMobile": 3fa85f64-5717-4562-b3fc-2c963f66afa6
+    "authorizationCode": "030744119",
+    "responseCode": "00000",
+    "responseMessage": "Autorizado",
+    "transactionStatus": {
+        "name": "QR Confirmed",
+        "id": 22
+    }
 }
+
+```
+
+### Ejemplo método Rechazo de solicitud de Pago
+
+#### Formato de solicitud 
+
+```
+{
+  "idTransaction": "480ba3a1-ea50-48c8-911a-e0474af9a3da"
+}
+
+```
+
+#### Formato de respuesta
+
+```
+{}
 
 ```

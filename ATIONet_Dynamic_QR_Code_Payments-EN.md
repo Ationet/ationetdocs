@@ -31,12 +31,14 @@
 	- [Get Transaction status](#Get-Transaction-status)
 	- [Sale Payment Request Method](#Sale-Payment-Request-Method)
 	- [Process Sale Payment Method](#Process-Sale-Payment-Method)
+	- [Refuse Payment Method](#Refuse-Payment-Method)
 - [Error handling](#Error-handling)
 - [Messages samples](#Messages-samples)
 	- [Create method sample](#Create-method-sample)
 	- [Get Transaction status sample](#Get-Transaction-status-sample)
 	- [Sale Payment Request Method sample](#Sale-Payment-Request-Method-sample)
 	- [Process Sale Payment Method sample](#Process-Sale-Payment-Method-sample)
+	- [Refuse Payment Method sample](#Refuse-Payment-Method-sample)
 	
 ## Overview
 
@@ -160,20 +162,6 @@ Important: the request body have to be in JSON format. QR image must be free tex
 		 </tr>
 		<tr valign="top">
 			<td>
-				<p align="left">TransactionAmount</p>
-			</td>
-			<td>
-				<p align="center">double</p>
-			</td>
-			<td>
-			 	<p align="center">Site controller</p>
-			 </td>
-			<td>
-				<p>xxxxxxx.xx</p>
-			</td>
-		 </tr>
-		<tr valign="top">
-			<td>
 				<p align="left">ProductCode</p>
 			</td>
 			<td>
@@ -230,6 +218,20 @@ Important: the request body have to be in JSON format. QR image must be free tex
 		 </tr>
 		<tr valign="top">
 			<td>
+				<p align="left">ProductDescription</p>
+			</td>
+			<td>
+				<p align="center">string</p>
+			</td>
+			<td>
+			 	<p align="center">Site controller</p>
+			 </td>
+			<td>
+				<p>(OPCIONAL) Is the product description</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
 				<p align="left">ImageRequired</p>
 			</td>
 			<td>
@@ -251,11 +253,11 @@ In [Create method](#create-method) section you can find a request body sample in
 
 #### QR Image example
 
-![ationetTR](Content/Images/DynamicQRPayments/dynamic_v4.png)
+![ationetTR](Content/Images/DynamicQRPayments/DynamicQr5.png)
 
 ### STEP 3 Confirm the Transaction Status
 
-When the QR code is generated for an specific transaction, the POS's Backend Get The Transaction status with a polling process using the [Transaction status API](#Get-Sale-Method).
+When the QR code is generated for an specific transaction, the POS's Backend Get The Transaction status with a polling process using the [Transaction status API](#Get-Sale-Method). `You have to do the polling  ussing IdDispatch`.
 
 ```
 Polling : Setup a polling process after regular intervals using the Transaction Status API. 
@@ -272,6 +274,70 @@ When the QR code is generated for an specific transaction, the customer scans th
 Note: Customers cannot change the Transaction amount in their app on scanning the particular order QR code.
 ```
 
+### Dynamic QR Transaction States
+
+<table>
+	<thead>
+		<tr valign="center">
+			<th rowspan="2" align="left">
+				Name
+			</th>
+			<th rowspan="8" align="left">
+				Description
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">QR Created</p>
+			</td>
+			<td>
+				<p>The sale data is received and the Transaction is created</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">QR Read</p>
+			</td>
+			<td>
+				<p>The Customer scan the QR Code image</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">QR Confirmed</p>
+			</td>
+			<td>
+				<p>The Customer confirm the QR Payment and the Transaction is approved</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">QR Cancelled</p>
+			</td>
+			<td>
+				<p>The Customer refuse the QR Payments</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Transaction Refused</p>
+			</td>
+			<td>
+				<p>The Transaction is refuse by Payment processor</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Cancelled By MPPA</p>
+			</td>
+			<td>
+				<p>The Transaction es cancelled by time out</p>
+			</td>
+		 </tr>
+		</tbody>
+</table>
 
 ### Integration Checklist
 
@@ -303,8 +369,8 @@ The IdDispatch sent should be unique.
 
 #### Request Format
 
-URL: /api/QR/Create
-Method: HttpPost
+*URL: /api/QR/Create* <br>
+*Method: HttpPost*
 
 ```
 body {
@@ -312,11 +378,11 @@ body {
     "IdDispatch":"string",    
     "PumpNumber": "string",
     "TerminalIdentification": "string",
-    "TransactionAmount": double,
     "ProductCode": "string",
     "ProductUnitPrice": double,
     "ProductAmount": double,
-    "ProductQuantity": double
+    "ProductQuantity": double,
+    "ProductDescription": "string"
   },
   "ImageRequired": bool
 }
@@ -346,7 +412,7 @@ body {
 Response properties description
 	
 ```
-"transactionId": The transaction Id.
+"IdTransaction": The transaction Id.
 "qrData": Contains the data to be enconde in a QR Image.
 "image": The Qr Image enconde in base 64 or a empty value.
 "mpqrType": Is the QR Image type. By default the number 2 indicates that image is for Dynamic QR.
@@ -405,7 +471,17 @@ content-encoding: gzip
 ```
 
 ```
-body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage":  "string" }
+body 
+{ 
+	"AuthorizationCode": "string", 
+	"ResponseCode": "string", 
+	"ResponseMessage":  "string", 
+	"TransactionStatus":
+		{
+			"name":"string",
+			"id": int
+		} 
+}
 
 ```
 
@@ -413,13 +489,13 @@ body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage
 
 #### Description
 
-Receive the Transaction Id. Returns the Sale information.
+Receive the idDispatch. Returns the Sale information.
 
 >This method require basic auth through header. Example `Basic user:pass`.
 
 #### Request Format
 
-*URL: /api/QR/SalePaymentRequest/{id}* </br>
+*URL: /api/QR/SalePaymentRequest/{IdDispatch}* </br>
 *Method: HttpGet* </br>
 
 ##### Parameters description
@@ -438,10 +514,10 @@ Receive the Transaction Id. Returns the Sale information.
 	<tbody>
 		<tr valign="top">
 			<td>
-				<p align="left">id</p>
+				<p align="left">IdDispatch</p>
 			</td>
 			<td>
-				<p>Is the Transaccion Id</p>
+				<p>Is the Dispatch Id</p>
 			</td>
 		 </tr>		
 		</tbody>
@@ -456,7 +532,17 @@ content-encoding: gzip
 ```
 
 ```
-body { "TransactionId": "string", "Content": "string" }
+{
+    "idTransaction": "string",
+    "saleContent": {
+        "productCode": "string",
+        "productAmout": double,
+        "productUnitPrice": double,
+        "productQuantity": double,
+        "productDescription": "string"
+    },
+    "content": "string"
+}
 ```
 
 ### Process Sale Payment Method
@@ -473,7 +559,7 @@ Create a Sale. Receive  the transaction id and the primaryTrack from driver.
 *Method: HTTPPost* </br>
 
 ```
-Body { "idDispatch": "string", "primaryTrack": "string" }
+Body { "idTransaction": "string", "primaryTrack": "string" }
 
 ```
 
@@ -525,6 +611,63 @@ body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage
 ```
 
 
+### Refuse Payment Method
+
+#### Description
+
+Refuse the payment request for a sale as long as its status is `QR Read`. Receive the Transaction ID
+
+>This method require basic auth through header. Example `Basic user:pass`.
+
+#### Request format
+
+*URL: /api/QR/RefusePaymentRequest* </br>
+*Method: HTTPPost* </br>
+
+```
+Body { "idTransaction": "string" }
+
+```
+
+##### Properties description
+
+<table>
+	<thead>
+		<tr valign="center">
+			<th rowspan="2"  align="left">
+				Name
+			</th>
+			<th rowspan="8" align="left">
+				Description
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">idTransaction</p>
+			</td>
+			<td>
+				<p>The transacction Id.</p>
+			</td>
+		 </tr>	
+		</tbody>
+</table>
+
+
+#### Response format
+
+Header:
+```
+Content-Type: application/json; charset=utf-8
+content-encoding: gzip 
+```
+
+```
+body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage":  "string", "TransactionId": "string" }
+
+```
+
 ## Error handling
 
 Success/failure exits on the Interface API will be handled via HTTP status codes.
@@ -541,18 +684,20 @@ Failure to process the request will be indicated by an HTTP 400’s range status
 #### Request example
 
 ```
+body:
+
 {
-  "Sale": {
-    "IdDispatch":"16e8f1e0-4969-4836-817a-7426a3b2fdc1",    
+  "sale": {
+    "IdDispatch":"de1ae20c-858c-4989-a334-43992df5c45c",
     "PumpNumber": "1",
     "TerminalIdentification": "S2G321",
-    "TransactionAmount": 99,
     "ProductCode": "1",
     "ProductUnitPrice": 1,
-    "ProductAmount": 99,
-    "ProductQuantity": 99
-  },
-  "ImageRequired": true
+    "ProductAmount": 10,
+    "ProductDescription": "SUPER",
+    "productQuantity": 299
+},
+  "imageRequired": true
 }
 
 ```
@@ -560,11 +705,11 @@ Failure to process the request will be indicated by an HTTP 400’s range status
 #### Response example
 
 ```
-{ 
-	"transactionId":"80ab2f6c-e4a3-4c5c-8729-d10c1059a511",
-	"qrData":"https://ationetmobilepayment-appshost-test.azurewebsites.net/api/QR/ProccessSale/ProccessSale/80ab2f6c-e4a3-4c5c-8729-d10c1059a511",
-	"image":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAADi5JREFUeF7tndF24zYMRJ3//+j0NK1bJSuZl4+/E8ERGAXgQ8FGAXgQ8FGAXgQ8FIjNE",
-	"mpqrType":2
+{
+    "idTransaction": "9e19d7a7-34c3-400e-8fb6-d7fe9ff5d55e",
+    "qrData": "https://ationetmobilepayment-appshost-test.azurewebsites.net/api/QR/SalePaymentRequest/?IdDispatch=de1ae20c-858c-4989-a334-43992df5c45c",
+    "image": "iVBORw0KGgoAAAANSUhEUgAABRQAAAUUCAYAAACu5p7oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAP+lSURBVHhe7NhRqizZtiPR1/9OV3XADvjGxA3lXC",
+    "mpqrType": 2
 }
 
 ```
@@ -582,10 +727,15 @@ Failure to process the request will be indicated by an HTTP 400’s range status
 
 ```
 {
-  "authorizationCode": "072613127",
-  "responseCode": "00000",
-  "responseMessage": "Autorizado"
+    "authorizationCode": "030744119",
+    "responseCode": "00000",
+    "responseMessage": "Autorizado",
+    "transactionStatus": {
+        "name": "QR Confirmed",
+        "id": 22
+    }
 }
+
 
 
 ```
@@ -595,7 +745,7 @@ Failure to process the request will be indicated by an HTTP 400’s range status
 #### Request example
 
 ```
-api/QR/ProccessSale/3fa85f64-5717-4562-b3fc-2c963f66afa6
+api/QR/ProccessSale/?IdDispatch=a11be318-07dd-4318-bcc3-41704c54c995
 
 ```
 
@@ -603,8 +753,15 @@ api/QR/ProccessSale/3fa85f64-5717-4562-b3fc-2c963f66afa6
 
 ```
 {
-    "transactionId": "6768d700-f463-4842-b74f-2ab169a87d95",
-    "content": "    {\"ProcessingMode\":\"1\",\"SystemModel\":\"MOBILE\",\"SystemVersion\":\"NB\",\"TransactionCode\":\"200\",\"EntryMethod\":\"S\",\"ApplicationType\":\"FCS\",\"AccountType\":\"1\",\"MessageFormatVersion\":1.3,\"CurrencyCode\":\"ARS\",\"DeviceTypeIdentifier\":4,\"TransactionSequenceNumber\":0,\"LocalTransactionDate\":20210930,\"LocalTransactionTime\":162432,\"SiteCode\":null,\"IdDispatch\":\"5a021e37-9d61-4545-990c-177f4c8f7b38\",\"PumpNumber\":\"1\",\"TerminalIdentification\":\"S2G321\",\"PrimaryTrack\":null,\"TransactionAmount\":99,\"ProductCode\":\"1\",\"ProductUnitPrice\":1,\"ProductAmount\":99,\"ProductQuantity\":99}"
+    "idTransaction": "624b8dc0-dfd5-46d3-b13a-61a4aac784af",
+    "saleContent": {
+        "productCode": "1",
+        "productAmout": 10.00,
+        "productUnitPrice": 1.00,
+        "productQuantity": 299.00,
+        "productDescription": "SUPER"
+    },
+    "content": "{\"ProcessingMode\":\"1\",\"SystemModel\":\"MOBILE\",\"SystemVersion\":\"NB\",\"TransactionCode\":\"200\",\"EntryMethod\":\"S\",\"ApplicationType\":\"FCS\",\"AccountType\":\"1\",\"MessageFormatVersion\":1.3,\"CurrencyCode\":\"ARS\",\"DeviceTypeIdentifier\":4,\"TransactionSequenceNumber\":0,\"LocalTransactionDate\":20211019,\"LocalTransactionTime\":140632,\"SiteCode\":null,\"TransactionAmount\":10,\"PrimaryTrack\":null,\"IdDispatch\":\"c421eea9-5b04-40ff-b857-67dfc71866d0\",\"PumpNumber\":\"1\",\"TerminalIdentification\":\"S2G321\",\"ProductCode\":\"1\",\"ProductUnitPrice\":1,\"ProductAmount\":10,\"ProductQuantity\":10,\"ProductDescription\":null}"
 }
 
 ```
@@ -628,5 +785,22 @@ api/QR/ProccessSale/3fa85f64-5717-4562-b3fc-2c963f66afa6
   "responseMessage": "Autorizado",
   "TransactionIdMobile": 3fa85f64-5717-4562-b3fc-2c963f66afa6
 }
+
+```
+
+### Refuse Payment Method sample
+
+#### Request example
+
+```
+{
+  "idTransaction": "480ba3a1-ea50-48c8-911a-e0474af9a3da"
+}
+```
+
+#### Response example
+
+```
+{}
 
 ```
