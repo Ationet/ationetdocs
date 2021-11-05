@@ -68,7 +68,8 @@ Nota: Estos datos deberán ser solicitados al área de ingeniería de Ationet.
 * **DeviceID:** Este punto contendrá el número de identificación del dispositivo vinculado a este servicio.
 
 ```
-Nota: Estos datos deberán ser solicitados al área de ingeniería de Ationet.
+Nota: Este dato será el 'ID Dispositivo GPS' que usted configuró a la hora de crear un nuevo vehículo en el portal de ationet. 
+Usted siempre podrá consultar este dato ingresando al módulo de seguimiento > vehículos y seleccionar el vehículo del cual quiere visualizar el id de dispositivo GPS.
 ```
 
 * **DemoMode:** Si nuestro archivo contiene definida esta variable y la misma se encuentra configurada en verdadero, las coordenadas de GPS que se envien seran generadas aleatoriamente, de lo contrario, se utilizaran las proporcionadas por nuestro agente local.
