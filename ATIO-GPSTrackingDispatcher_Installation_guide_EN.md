@@ -66,7 +66,8 @@ Note: These data must be requested from the Ationet engineering area.
 * **DeviceID:** This field will contain the identification number of the device linked to this service.
 
 ```
-Note: These data must be requested from the Ationet engineering area.
+Note: This data will be the 'GPS Device ID' that you configured when creating a new vehicle in the ationet portal.
+You can always consult this data by entering the tracking module > vehicles and selecting the vehicle for which you want to view the GPS device id.
 ```
 
 * **DemoMode:** If our file contains this variable defined and it is set to true, the GPS coordinates that are sent will be randomly generated, otherwise, those provided by our local agent will be used.
