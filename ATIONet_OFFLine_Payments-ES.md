@@ -53,7 +53,7 @@ el cliente obtiene los datos del Sitio y la bomba seleccionando de forma manual 
 	<li>El cliente con la APP Driver escanea QR o selecciona manualmente el Sitio y la Bomba, solicita a ATIONET la informacion que devuelve indicando los datos correspondientes.</li>
 	<li>Se habilita la pantalla en la APP Driver para Cargar los campos Indicados en el ticket de despacho.</li>
 	<li>Se confirma la venta, se envia la Transaccion a ATIONET que confirma o rechaza la Venta, o en un tercer caso de ser necesario solicita verificación de reglas.</li>
-	<li>Si ATIONET solicita verificación de reglas, estas solicitadas al cliente y una vez enviadas, ATIONET confirma o rechaza la venta.</li>
+	<li>Si ATIONET solicita verificación de reglas, estas son solicitadas al cliente y una vez enviadas, ATIONET confirma o rechaza la venta.</li>
 	<li>Si el cliente ingreso un valor diferente al valor despachado, si el valor ingresado fue menor, el playero le solicitará que ingrese un nuevo pago, y si el valor ingresado fue mayor, el cliente deberá comunicarse con el Company Admin.</li>
 </ol>
 
@@ -65,7 +65,7 @@ el cliente obtiene los datos del Sitio y la bomba seleccionando de forma manual 
 
 ### Introducción
 
-La sección describe los pasos de integración necesarios para integrar los pagos con modo OFF Line de ATIONet con el punto de venta de facturación para aceptar pagos mediante la aplicación Ationet Driver.
+La sección describe los pasos necesarios para integrar los pagos con modo OFF Line de ATIONet con el punto de venta de facturación para aceptar pagos mediante la aplicación Ationet Driver.
 
 ### PASO 1 Obtener sus claves de autenticación
 
@@ -82,7 +82,7 @@ Nota: Nunca comparta la clave secreta de backend de su POS con nadie.
 
 ### PASO 2 Crear solicitud de pago en modo OFF Line
 
-El playero entrega ticket con los datos del despacho, luego el cliente selecciona si quiere escanear el QR de la bomba o quiere seleccionar el sitio y bomba de manera manual desde la aplicación, luego ingresa manualmente los datos del ticket y envía los datos.
+El playero entrega el ticket con los datos del despacho, luego el cliente selecciona si quiere escanear el QR de la bomba o quiere seleccionar el sitio y bomba de manera manual desde la aplicación, luego ingresa manualmente la información del ticket y la envía.
 Los datos enviados a Mobile Payment API son:
 
 <table>
@@ -256,7 +256,7 @@ En la seccion [Ejemplo método crear y procesar](#Ejemplo-método-crear-y-proces
 
 ### PASO 3 Confirmar el estado de la Transacción
 
-Una vez enviado el request del [Método Crear y procesar](#Método-Crear-y-procesar) la app driver debera verificar utilizando el [Método Obtener el estado de una Transacción](#Método-Obtener-el-estado-de-una-Transacción) el estado de la venta
+Una vez enviado el request del [método Crear y procesar](#Método-Crear-y-procesar) la app driver deberá verificar el estado de la venta utilizando el [método Obtener el estado de una Transacción](#Método-Obtener-el-estado-de-una-Transacción) 
 
 ### Posibles estados  de las Transacciones de modo OFF Line
 
