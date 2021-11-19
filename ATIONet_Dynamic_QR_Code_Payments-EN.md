@@ -606,8 +606,27 @@ content-encoding: gzip
 ```
 
 ```
-body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage":  "string", "TransactionId": "string" }
-
+body 
+{ 
+	"AuthorizationCode": "string", 
+	"ResponseCode": "string", 
+	"ResponseMessage":  "string", 
+    	"IdTransaction": "string",
+  	"CustomerData": {
+		"PromptPrimaryPin": "string",
+		"PromptSecondaryTrack": "string",
+		"PromptOdometer": "string",
+		"LastOdometer": "string",
+		"MinOdometer": "string",
+		"MaxOdometer": "string"
+		"PromptDriverId": "string",
+		"PromptVehicleId": "string",
+		"PromptTruckUnitNumber": "string",
+		"PromptTrailerNumber": "string",
+		"PromptEngineHours": "string",
+		"PromptMiscellaneous": "string"
+	}
+}
 ```
 
 
@@ -780,12 +799,16 @@ api/PostPaid/ProccessSale/?IdDispatch=a11be318-07dd-4318-bcc3-41704c54c995
 
 ```
 {
-  "authorizationCode": "072613127",
-  "responseCode": "00000",
-  "responseMessage": "Autorizado",
-  "TransactionIdMobile": 3fa85f64-5717-4562-b3fc-2c963f66afa6
+    "idTransaction": "3f34bdf9-15e2-4ef4-9134-f5a53ac360a8",
+    "authorizationCode": "035657109",
+    "responseCode": "40500",
+    "responseMessage": "Solicitud requerida",
+    "customerData": {
+        "PromptEngineHours": "true",
+        "MinEngineHours": "66",
+        "ContractMode": "2"
+    }
 }
-
 ```
 
 ### Refuse Payment Method sample
