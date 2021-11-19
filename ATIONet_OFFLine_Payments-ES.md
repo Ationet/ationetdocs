@@ -111,7 +111,7 @@ Los datos enviados a Mobile Payment API son:
 				<p align="center">(string) Guid</p>
 			</td>
 			<td>
-			 	<p align="center">El cliente lo ingresa por QR o seleccionando en lista de opciones</p>
+			 	<p align="center">Completado por la app</p>
 			 </td>
 			<td>
 				<p>XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</p>
@@ -139,7 +139,7 @@ Los datos enviados a Mobile Payment API son:
 				<p align="center">string</p>
 			</td>
 			<td>
-			 	<p align="center">El cliente lo ingresa por QR o seleccionando en lista de opciones</p>
+			 	<p align="center">Completado por la app</p>
 			 </td>
 			<td>
 				<p>Debe solicitarse a ATIONet</p>
@@ -195,7 +195,7 @@ Los datos enviados a Mobile Payment API son:
 				<p align="center">decimal</p>
 			</td>
 			<td>
-			 	<p align="center">El cliente lo ingresa manualmente</p>
+			 	<p align="center">Completado por la app</p>
 			 </td>
 			<td>
 				<p>xxxxxxx.xx</p>
@@ -223,7 +223,7 @@ Los datos enviados a Mobile Payment API son:
 				<p align="center">integer</p>
 			</td>
 			<td>
-			 	<p align="center">Completado por la app</p>
+			 	<p align="center">Completado por la app con formato yyyymmdd</p>
 			 </td>
 			<td>
 				<p></p>
@@ -237,7 +237,7 @@ Los datos enviados a Mobile Payment API son:
 				<p align="center">integer</p>
 			</td>
 			<td>
-			 	<p align="center">Completado por la app</p>
+			 	<p align="center">Completado por la app con formato hhmmss</p>
 			 </td>
 			<td>
 				<p></p>
@@ -377,7 +377,7 @@ Obtiene el estado de una Transacción.
 
 #### Formato de solicitud
 
-*URL: /api/QR/GetTransactionStatus* </br>
+*URL: /api/PostPaid/GetTransactionStatus* </br>
 *Method: HTTPost* </br>
 
 ```
@@ -487,10 +487,10 @@ body:
     "ProductAmount": 10,
     "ProductDescription": "SUPER",
     "productQuantity": 299
-    "localTransactionDate": integer, ??????
-    "localTransactionTime": integer ??????
+    "localTransactionDate": 20211117
+    "localTransactionTime": 141414
   },
-  "primaryTrack": "2222222042482930556=3606=000000"
+  "primaryTrack": "2456722042482930556=3606=000000""
 }
 
 ```
@@ -532,8 +532,10 @@ body:
 
 ```
 {
-  "idTransaction": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-  "customerData": {} ??????
+  "idTransaction": "f6f80f9a-7fb6-4d7c-9dca-18662d2147d0",
+  "customerData": {
+    "Odometer":"88"
+  }
 }
 ```
 
