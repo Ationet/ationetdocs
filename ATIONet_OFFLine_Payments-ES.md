@@ -311,6 +311,8 @@ Una vez enviado el request del [método Crear y procesar](#Método-Crear-y-proce
 
 Si el [método Crear y procesar](#Método-Crear-y-procesar) responde con el estado Prompting needed, el usuario deberá validar reglas adicionales al endPoint del [Método Validar reglas](#Método-Validar-reglas), y luego la app driver deberá verificar el estado de la transacción utilizando el [método Obtener el estado de una Transacción](#Método-Obtener-el-estado-de-una-Transacción) continuamente hasta que le responda un estado diferente al Prompting needed
 
+>Nota: Se recomienda consultar el estado de transacción 8 veces por minuto.
+
 ### Reglas
 
 En ATIONet las reglas se refieren a límites que pueden ser configurados por la empresa y asociados a distintas entidades. Cuando la entidad tenga una regla de solicitud, ATIONET responderá solicitando información adicional para aprobarla.
@@ -329,7 +331,7 @@ Las reglas solicitadas pueden ser una o varias de las siguientes:
         "PromptMiscellaneous": "string"
 ```
 
->Note: El valor siempre será "true"
+>Nota: El valor siempre será "true"
 
 ### Casos especiales
 
@@ -417,13 +419,8 @@ body
 	"AuthorizationCode": "string", 
 	"ResponseCode": "string", 
 	"ResponseMessage":  "string", 
-    	"idTransaction": "string",
-	"TransactionStatus":
-		{
-			"name":"string",
-			"id": int
-		} 
-  	"customerData": {
+    	"IdTransaction": "string",
+  	"CustomerData": {
 		"PromptPrimaryPin": "string",
 		"PromptSecondaryTrack": "string",
 		"PromptOdometer": "string",
@@ -581,12 +578,15 @@ body:
 
 ```
 {
-  "authorizationCode": "072613127",
-  "responseCode": "00000",
-  "responseMessage": "Autorizado",
-  "customerData": {
-    "Odometer":"88"
-  }
+    "idTransaction": "3f34bdf9-15e2-4ef4-9134-f5a53ac360a8",
+    "authorizationCode": "035657109",
+    "responseCode": "40500",
+    "responseMessage": "Solicitud requerida",
+    "customerData": {
+        "PromptEngineHours": "true",
+        "MinEngineHours": "66",
+        "ContractMode": "2"
+    }
 }
 
 ```
