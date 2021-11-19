@@ -53,13 +53,13 @@ el cliente obtiene los datos del Sitio y la bomba seleccionando de forma manual 
 	<li>El cliente con la APP Driver escanea QR o selecciona manualmente el Sitio y la Bomba, solicita a ATIONET la informacion que devuelve indicando los datos correspondientes.</li>
 	<li>Se habilita la pantalla en la APP Driver para Cargar los campos Indicados en el ticket de despacho.</li>
 	<li>Se confirma la venta, se envia la Transaccion a ATIONET que confirma o rechaza la Venta, o en un tercer caso de ser necesario solicita verificación de reglas.</li>
-	<li>Si ATIONET solicita verificación de reglas, estas son solicitadas al cliente y una vez enviadas, ATIONET confirma o rechaza la venta.</li>
+	<li>Si ATIONET solicita verificación de reglas, estas son solicitadas al cliente y una vez enviadas, se deberá consultar el estado de la transacción hasta que ATIONET confirme o rechaze la venta.</li>
 	<li>Si el cliente ingreso un valor diferente al valor despachado, si el valor ingresado fue menor, el playero le solicitará que ingrese un nuevo pago, y si el valor ingresado fue mayor, el cliente deberá comunicarse con el Company Admin.</li>
 </ol>
 
 ## Secuencia de pagos con modo OFF Line
 
-![ationetTR](Content/Images/OFFLinePayments/flow.jpeg)
+![ationetTR](Content/Images/OFFLinePayments/flow.jpg)
 
 ## Implementación de pagos con modo OFF Line
 
@@ -256,7 +256,7 @@ En la seccion [Ejemplo método crear y procesar](#Ejemplo-método-crear-y-proces
 
 ### PASO 3 Confirmar el estado de la Transacción
 
-Una vez enviado el request del [método Crear y procesar](#Método-Crear-y-procesar) la app driver deberá verificar el estado de la venta utilizando el [método Obtener el estado de una Transacción](#Método-Obtener-el-estado-de-una-Transacción) 
+Una vez enviado el request del [método Crear y procesar](#Método-Crear-y-procesar), responderá con el estado de la transacción
 
 ### Posibles estados  de las Transacciones de modo OFF Line
 
@@ -309,7 +309,7 @@ Una vez enviado el request del [método Crear y procesar](#Método-Crear-y-proce
 
 ### PASO 4(opcional) El cliente envía las reglas
 
-Si el [Método Obtener el estado de una Transacción](#Método-Obtener-el-estado-de-una-Transacción) envía el estado Prompting needed, el usuario deberá validar reglas adicionales al endPoint del [Método Validar reglas](#Método-Validar-reglas)
+Si el [método Crear y procesar](#Método-Crear-y-procesar) responde con el estado Prompting needed, el usuario deberá validar reglas adicionales al endPoint del [Método Validar reglas](#Método-Validar-reglas), y luego la app driver deberá verificar el estado de la transacción utilizando el [método Obtener el estado de una Transacción](#Método-Obtener-el-estado-de-una-Transacción) continuamente hasta que le responda un estado diferente al Prompting needed
 
 ### Reglas
 
@@ -364,8 +364,19 @@ Header:
 Content-Type: application/json; charset=utf-8
 content-encoding: gzip 
 ```
-
-Éste metodo devuelve una respuesta satisfactoria si pudo crear y procesar la transacción (200 Ok). Devuelve Bad Request indicando en el campo `message` el motivo por el cual no pudo crear y procesar la transacción.
+body 
+{ 
+	"AuthorizationCode": "string", 
+	"ResponseCode": "string", 
+	"ResponseMessage":  "string", 
+    	"idTransaction": "string",
+	"TransactionStatus":
+		{
+			"name":"string",
+			"id": int
+		} 
+  	"customerData": {}
+}
 
 ### Método Obtener el estado de una Transacción
 
@@ -498,7 +509,14 @@ body:
 #### Formato de respuesta
 
 ```
-{}
+{
+  "authorizationCode": "072613127",
+  "responseCode": "00000",
+  "responseMessage": "Autorizado",
+  "customerData": {
+    "Odometer":"88"
+  }
+}
 
 ```
 
