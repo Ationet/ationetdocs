@@ -315,6 +315,53 @@ Si el [método Crear y procesar](#Método-Crear-y-procesar) responde con el esta
 
 En ATIONet las reglas se refieren a límites que pueden ser configurados por la empresa y asociados a distintas entidades. Cuando la entidad tenga una regla de solicitud, ATIONET responderá solicitando información adicional para aprobarla.
 
+Las reglas solicitadas pueden ser una o varias de las siguientes:
+
+```
+	"PromptPrimaryPin": "string",
+        "PromptSecondaryTrack": "string",
+        "PromptOdometer": "string",
+        "PromptDriverId": "string",
+        "PromptVehicleId": "string",
+        "PromptTruckUnitNumber": "string",
+        "PromptTrailerNumber": "string",
+        "PromptEngineHours": "string",
+        "PromptMiscellaneous": "string"
+```
+
+>Note: El valor siempre será "true"
+
+### Casos especiales
+
+En algunos casos, como el de `Odometer` o ` EngineHours`, la regla puede solicitar un mínimo y/o un rango de valores. Por ejemplo: 
+
+```
+	"PromptOdometer": "true",
+        "LastOdometer": "140",
+        "MinOdometer": "150",
+        "MaxOdometer": "1000",
+```
+
+### Como responder a las reglas
+
+Se responden consumiento el endPoint del [Método Validar reglas](#Método-Validar-reglas), debe incluirse el ID de la transacción y las reglas solicitadas.
+
+Para cada regla, debe responder con el nombre de la regla y su valor respectivo. Los nombres de respuesta son:
+
+
+```
+        "PrimaryPin": "string",
+        "SecondaryTrack": "string",
+        "Odometer": "string",
+        "DriverId": "string",
+        "VehicleId": "string",
+        "TruckUnitNumber": "string",
+        "TrailerNumber": "string",
+        "EngineHours": "string",
+        "Miscellaneous": "string"
+```
+
+
 ## Documentación de API 
 
 *URL Productiva:  ationetmobilepayment-appshost.azurewebsites.net* </br>
@@ -376,7 +423,20 @@ body
 			"name":"string",
 			"id": int
 		} 
-  	"customerData": {}
+  	"customerData": {
+		"PromptPrimaryPin": "string",
+		"PromptSecondaryTrack": "string",
+		"PromptOdometer": "string",
+		"LastOdometer": "string",
+		"MinOdometer": "string",
+		"MaxOdometer": "string"
+		"PromptDriverId": "string",
+		"PromptVehicleId": "string",
+		"PromptTruckUnitNumber": "string",
+		"PromptTrailerNumber": "string",
+		"PromptEngineHours": "string",
+		"PromptMiscellaneous": "string"
+	}
 }
 ```
 
@@ -457,7 +517,17 @@ Valida las reglas adicionales.
 ```
 Body {
   "idTransaction": "string",
-  "customerData": {}
+  "customerData": {
+  	"PrimaryPin": "string",
+        "SecondaryTrack": "string",
+        "Odometer": "string",
+        "DriverId": "string",
+        "VehicleId": "string",
+        "TruckUnitNumber": "string",
+        "TrailerNumber": "string",
+        "EngineHours": "string",
+        "Miscellaneous": "string"
+	}
 }
 
 ```
