@@ -292,7 +292,7 @@ Nota: Los clientes no pueden cambiar el monto de la transacción en su aplicaci�
 	<tbody>
 		<tr valign="top">
 			<td>
-				<p align="left">QR Created</p>
+				<p align="left">Post Paid Created</p>
 			</td>
 			<td>
 				<p>Se reciben los datos de la venta y se crea la Transacción</p>
@@ -300,7 +300,7 @@ Nota: Los clientes no pueden cambiar el monto de la transacción en su aplicaci�
 		 </tr>
 		<tr valign="top">
 			<td>
-				<p align="left">QR Read</p>
+				<p align="left">Post Paid Read</p>
 			</td>
 			<td>
 				<p>El Cliente escanea el código QR</p>
@@ -308,7 +308,7 @@ Nota: Los clientes no pueden cambiar el monto de la transacción en su aplicaci�
 		 </tr>
 		<tr valign="top">
 			<td>
-				<p align="left">QR Confirmed</p>
+				<p align="left">Post Paid Confirmed</p>
 			</td>
 			<td>
 				<p>El Cliente confirma el código QR y la transacción es aprobada</p>
@@ -316,7 +316,7 @@ Nota: Los clientes no pueden cambiar el monto de la transacción en su aplicaci�
 		 </tr>
 		<tr valign="top">
 			<td>
-				<p align="left">QR Cancelled</p>
+				<p align="left">Post Paid Cancelled</p>
 			</td>
 			<td>
 				<p>El Cliente rechaza el pago</p>
@@ -371,7 +371,7 @@ El IdDispatch enviado deberá ser único.
 
 #### Formato de solicitud
 
-*URL: /api/QR/Create* </br>
+*URL: /api/PostPaid/Create* </br>
 *Method: HTTPost* </br>
 
 ```
@@ -430,7 +430,7 @@ Obtiene el estado de una Transacción.
 
 #### Formato de solicitud
 
-*URL: /api/QR/GetTransactionStatus* </br>
+*URL: /api/PostPaid/GetTransactionStatus* </br>
 *Method: HTTPost* </br>
 
 ```
@@ -494,7 +494,7 @@ Recibe el id el Id dispatch. Devuelve la informacion completa de la venta
 
 #### Formato de solicitud
 
-*URL: /api/QR/SalePaymentRequest/{IdDispatch}* </br>
+*URL: /api/PostPaid/SalePaymentRequest/{IdDispatch}* </br>
 *Method: HTTPGet* </br>
 
 ##### Descripción de los parámetros
@@ -555,7 +555,7 @@ Crea una venta. Recibe el Id de Transacción y el primaryTrack del conductor.
 
 #### Formato de solicitud
 
-*URL: /api/QR/ProcessSalePayment* </br>
+*URL: /api/PostPaid/ProcessSalePayment* </br>
 *Method: HTTPPost* </br>
 
 ```
@@ -606,21 +606,40 @@ content-encoding: gzip
 ```
 
 ```
-body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage":  "string", "IdTransaction": "string" }
-
+body 
+{ 
+	"AuthorizationCode": "string", 
+	"ResponseCode": "string", 
+	"ResponseMessage":  "string", 
+    	"IdTransaction": "string",
+  	"CustomerData": {
+		"PromptPrimaryPin": "string",
+		"PromptSecondaryTrack": "string",
+		"PromptOdometer": "string",
+		"LastOdometer": "string",
+		"MinOdometer": "string",
+		"MaxOdometer": "string"
+		"PromptDriverId": "string",
+		"PromptVehicleId": "string",
+		"PromptTruckUnitNumber": "string",
+		"PromptTrailerNumber": "string",
+		"PromptEngineHours": "string",
+		"PromptMiscellaneous": "string"
+	}
+}
 ```
 
 ### Método Rechazo de solicitud de Pago 
 
 #### Descripción
 
-Rechaza la solicitud de Pago de una venta siempre y cuando el estado de la misma sea `QR Leido`. Recibe el Id de la Transaccion
+Rechaza la solicitud de Pago de una venta siempre y cuando el estado de la misma sea `Post Paid Read`. Recibe el Id de la Transaccion
 
 >Éste método requiere autenticacion a través del encabezado. Deberá ser de tipo basica. ejemplo: `Basic usuario:clave`
 
 #### Formato de solicitud
 
-*URL: /api/QR/RefusePaymentRequest* </br>
+*URL: /api/PostPaid/RefusePaymentRequest* </br>
 *Method: HTTPPost* </br>
 
 ```
@@ -703,7 +722,7 @@ body:
 ```
 {
     "idTransaction": "9e19d7a7-34c3-400e-8fb6-d7fe9ff5d55e",
-    "qrData": "https://ationetmobilepayment-appshost-test.azurewebsites.net/api/QR/SalePaymentRequest/?IdDispatch=de1ae20c-858c-4989-a334-43992df5c45c",
+    "qrData": "https://ationetmobilepayment-appshost-test.azurewebsites.net/api/PostPaid/SalePaymentRequest/?IdDispatch=de1ae20c-858c-4989-a334-43992df5c45c",
     "image": "iVBORw0KGgoAAAANSUhEUgAABRQAAAUUCAYAAACu5p7oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAP+lSURBVHhe7NhRqizZtiPR1/9OV3XADvjGxA3lXC",
     "mpqrType": 2
 }
@@ -737,7 +756,7 @@ body:
 #### Formato de solicitud 
 
 ```
-api/QR/SalePaymentRequest/?IdDispatch=a11be318-07dd-4318-bcc3-41704c54c995
+api/PostPaid/SalePaymentRequest/?IdDispatch=a11be318-07dd-4318-bcc3-41704c54c995
 ```
 
 #### Formato de respuesta
@@ -771,15 +790,16 @@ api/QR/SalePaymentRequest/?IdDispatch=a11be318-07dd-4318-bcc3-41704c54c995
 
 ```
 {
-    "authorizationCode": "030744119",
-    "responseCode": "00000",
-    "responseMessage": "Autorizado",
-    "transactionStatus": {
-        "name": "QR Confirmed",
-        "id": 22
+    "idTransaction": "3f34bdf9-15e2-4ef4-9134-f5a53ac360a8",
+    "authorizationCode": "035657109",
+    "responseCode": "40500",
+    "responseMessage": "Solicitud requerida",
+    "customerData": {
+        "PromptEngineHours": "true",
+        "MinEngineHours": "66",
+        "ContractMode": "2"
     }
 }
-
 ```
 
 ### Ejemplo método Rechazo de solicitud de Pago
