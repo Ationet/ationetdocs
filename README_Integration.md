@@ -15,6 +15,9 @@
 ## Fleet Mobile Payment Fully Integrated (NEW !)
 - [English](ATIONet_Mobile_Payment_Fleet_Api_-EN.md)
 
+## Fleet Mobile Payment - OFF Line (NEW !)
+- [Spanish](ATIONet_OFFLine_Payments-ES.md)
+- 
 ## FMS API (NEW !)
 - [FMS API Specifications](AN-Native_Inventory_Protocol-Spec.md)
 
