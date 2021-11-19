@@ -400,7 +400,6 @@ body {
   },
   "primaryTrack": "string"
 }
-
 ```
 
 >Puede consultar la descripcion de los valores en la sección [PASO 2 Crear solicitud de pago en modo OFF Line](#PASO-2-Crear-solicitud-de-pago-en-modo-OFF-Line)
@@ -452,7 +451,6 @@ Obtiene el estado de una Transacción.
 
 ```
 Body { "idDispatch": "string" }
-
 ```
 
 ##### Descripción de los propiedades
@@ -526,7 +524,6 @@ Body {
         "Miscellaneous": "string"
 	}
 }
-
 ```
 
 #### Formato de respuesta
@@ -571,7 +568,6 @@ body:
   },
   "primaryTrack": "2456722042482930556=3606=000000""
 }
-
 ```
 
 #### Formato de respuesta
@@ -588,7 +584,6 @@ body:
         "ContractMode": "2"
     }
 }
-
 ```
 
 ### Ejemplo método Obtener estado de una Transacción
@@ -610,7 +605,6 @@ body:
   "responseCode": "00000",
   "responseMessage": "Autorizado"
 }
-
 ```
 
 
@@ -632,5 +626,4 @@ body:
 
 ```
 {}
-
 ```
