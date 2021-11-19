@@ -274,7 +274,7 @@ Una vez enviado el request del [método Crear y procesar](#Método-Crear-y-proce
 	<tbody>
 		<tr valign="top">
 			<td>
-				<p align="left">Confirmed</p>
+				<p align="left">Post Paid Confirmed</p>
 			</td>
 			<td>
 				<p>La transacción fue aprobada</p>
