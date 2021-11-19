@@ -364,6 +364,7 @@ Header:
 Content-Type: application/json; charset=utf-8
 content-encoding: gzip 
 ```
+```
 body 
 { 
 	"AuthorizationCode": "string", 
@@ -377,6 +378,7 @@ body
 		} 
   	"customerData": {}
 }
+```
 
 ### Método Obtener el estado de una Transacción
 
@@ -439,7 +441,6 @@ body
 			"id": int
 		} 
 }
-
 ```
 
 ### Método Validar reglas
