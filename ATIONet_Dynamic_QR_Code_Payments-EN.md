@@ -290,7 +290,7 @@ Note: Customers cannot change the Transaction amount in their app on scanning th
 	<tbody>
 		<tr valign="top">
 			<td>
-				<p align="left">QR Created</p>
+				<p align="left">Post Paid Created</p>
 			</td>
 			<td>
 				<p>The sale data is received and the Transaction is created</p>
@@ -298,7 +298,7 @@ Note: Customers cannot change the Transaction amount in their app on scanning th
 		 </tr>
 		<tr valign="top">
 			<td>
-				<p align="left">QR Read</p>
+				<p align="left">Post Paid Read</p>
 			</td>
 			<td>
 				<p>The Customer scan the QR Code image</p>
@@ -306,7 +306,7 @@ Note: Customers cannot change the Transaction amount in their app on scanning th
 		 </tr>
 		<tr valign="top">
 			<td>
-				<p align="left">QR Confirmed</p>
+				<p align="left">Post Paid Confirmed</p>
 			</td>
 			<td>
 				<p>The Customer confirm the QR Payment and the Transaction is approved</p>
@@ -314,7 +314,7 @@ Note: Customers cannot change the Transaction amount in their app on scanning th
 		 </tr>
 		<tr valign="top">
 			<td>
-				<p align="left">QR Cancelled</p>
+				<p align="left">Post Paid Cancelled</p>
 			</td>
 			<td>
 				<p>The Customer refuse the QR Payments</p>
@@ -369,7 +369,7 @@ The IdDispatch sent should be unique.
 
 #### Request Format
 
-*URL: /api/QR/Create* <br>
+*URL: /api/PostPaid/Create* <br>
 *Method: HttpPost*
 
 ```
@@ -429,7 +429,7 @@ Return a Transaction information.
 
 #### Request Format
 
-*URL: /api/QR/GetTransactionStatus* </br>
+*URL: /api/PostPaid/GetTransactionStatus* </br>
 *Method: HttpPost* </br>
 
 ```
@@ -495,7 +495,7 @@ Receive the idDispatch. Returns the Sale information.
 
 #### Request Format
 
-*URL: /api/QR/SalePaymentRequest/{IdDispatch}* </br>
+*URL: /api/PostPaid/SalePaymentRequest/{IdDispatch}* </br>
 *Method: HttpGet* </br>
 
 ##### Parameters description
@@ -555,7 +555,7 @@ Create a Sale. Receive  the transaction id and the primaryTrack from driver.
 
 #### Request format
 
-*URL: /api/QR/ProcessSalePayment* </br>
+*URL: /api/PostPaid/ProcessSalePayment* </br>
 *Method: HTTPPost* </br>
 
 ```
@@ -606,8 +606,27 @@ content-encoding: gzip
 ```
 
 ```
-body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage":  "string", "TransactionId": "string" }
-
+body 
+{ 
+	"AuthorizationCode": "string", 
+	"ResponseCode": "string", 
+	"ResponseMessage":  "string", 
+    	"IdTransaction": "string",
+  	"CustomerData": {
+		"PromptPrimaryPin": "string",
+		"PromptSecondaryTrack": "string",
+		"PromptOdometer": "string",
+		"LastOdometer": "string",
+		"MinOdometer": "string",
+		"MaxOdometer": "string"
+		"PromptDriverId": "string",
+		"PromptVehicleId": "string",
+		"PromptTruckUnitNumber": "string",
+		"PromptTrailerNumber": "string",
+		"PromptEngineHours": "string",
+		"PromptMiscellaneous": "string"
+	}
+}
 ```
 
 
@@ -615,13 +634,13 @@ body { "AuthorizationCode": "string", "ResponseCode": "string", "ResponseMessage
 
 #### Description
 
-Refuse the payment request for a sale as long as its status is `QR Read`. Receive the Transaction ID
+Refuse the payment request for a sale as long as its status is `Post Paid Read`. Receive the Transaction ID
 
 >This method require basic auth through header. Example `Basic user:pass`.
 
 #### Request format
 
-*URL: /api/QR/RefusePaymentRequest* </br>
+*URL: /api/PostPaid/RefusePaymentRequest* </br>
 *Method: HTTPPost* </br>
 
 ```
@@ -707,7 +726,7 @@ body:
 ```
 {
     "idTransaction": "9e19d7a7-34c3-400e-8fb6-d7fe9ff5d55e",
-    "qrData": "https://ationetmobilepayment-appshost-test.azurewebsites.net/api/QR/SalePaymentRequest/?IdDispatch=de1ae20c-858c-4989-a334-43992df5c45c",
+    "qrData": "https://ationetmobilepayment-appshost-test.azurewebsites.net/api/PostPaid/SalePaymentRequest/?IdDispatch=de1ae20c-858c-4989-a334-43992df5c45c",
     "image": "iVBORw0KGgoAAAANSUhEUgAABRQAAAUUCAYAAACu5p7oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAP+lSURBVHhe7NhRqizZtiPR1/9OV3XADvjGxA3lXC",
     "mpqrType": 2
 }
@@ -731,7 +750,7 @@ body:
     "responseCode": "00000",
     "responseMessage": "Autorizado",
     "transactionStatus": {
-        "name": "QR Confirmed",
+        "name": "Post Paid Confirmed",
         "id": 22
     }
 }
@@ -745,7 +764,7 @@ body:
 #### Request example
 
 ```
-api/QR/ProccessSale/?IdDispatch=a11be318-07dd-4318-bcc3-41704c54c995
+api/PostPaid/ProccessSale/?IdDispatch=a11be318-07dd-4318-bcc3-41704c54c995
 
 ```
 
@@ -780,12 +799,16 @@ api/QR/ProccessSale/?IdDispatch=a11be318-07dd-4318-bcc3-41704c54c995
 
 ```
 {
-  "authorizationCode": "072613127",
-  "responseCode": "00000",
-  "responseMessage": "Autorizado",
-  "TransactionIdMobile": 3fa85f64-5717-4562-b3fc-2c963f66afa6
+    "idTransaction": "3f34bdf9-15e2-4ef4-9134-f5a53ac360a8",
+    "authorizationCode": "035657109",
+    "responseCode": "40500",
+    "responseMessage": "Solicitud requerida",
+    "customerData": {
+        "PromptEngineHours": "true",
+        "MinEngineHours": "66",
+        "ContractMode": "2"
+    }
 }
-
 ```
 
 ### Refuse Payment Method sample
