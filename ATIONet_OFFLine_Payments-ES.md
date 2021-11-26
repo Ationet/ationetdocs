@@ -226,7 +226,7 @@ Los datos enviados a Mobile Payment API son:
 			 	<p align="center">Completado por la app con formato yyyymmdd</p>
 			 </td>
 			<td>
-				<p></p>
+				<p>Es la fecha local de la Transacción</p>
 			</td>
 		 </tr>
 		<tr valign="top">
@@ -240,7 +240,7 @@ Los datos enviados a Mobile Payment API son:
 			 	<p align="center">Completado por la app con formato hhmmss</p>
 			 </td>
 			<td>
-				<p></p>
+				<p>Es la hora local de la de la Transacción</p>
 			</td>
 		 </tr>
 		</tbody>
@@ -435,6 +435,7 @@ body
 	}
 }
 ```
+>Atención: El Objeto CustomerData sólo contendra información en caso de que se soliciten reglas.
 
 ### Método Obtener el estado de una Transacción
 
