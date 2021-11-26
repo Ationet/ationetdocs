@@ -1649,7 +1649,7 @@ This section describe through a table  all  states that a sale can have.
 ### Transaction states sequence diagram on Pre authorization Request
 
 
-![ationetTR](Content/Images/MobilePaymentFleet/TransactionStatesFlowUpdated.PNG)
+![ationetTR](Content/Images/MobilePaymentFleet/FullyIntegratedTransactionStates.drawio.png)
 
 
 ### Transaction states sequence diagram on Cancelation Request
