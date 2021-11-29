@@ -114,6 +114,14 @@ The action code specifies what type of action will be executed when you enter a 
 			<p>Insert Tracking data request code</p>
 		</td>
 	</tr>
+	<tr valign="top">
+		<td>
+			<p>Allowed for:</p>
+		</td>
+		<td>
+			<p>CPInterfaceAPI</p>
+		</td>
+	</tr>
 	
 </table>
 
