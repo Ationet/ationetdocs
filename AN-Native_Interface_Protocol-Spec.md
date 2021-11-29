@@ -1371,6 +1371,34 @@ transactions to download.
 		</tr>
 		<tr valign="top">
 			<td>
+				<p>Mode</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>Type</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
 				<p>StatusDescription</p>
 			</td>
 			<td>
@@ -1491,6 +1519,20 @@ transactions to download.
 		</tr>
 		<tr valign="top">
 			<td>
+				<p>MerchantContractCode</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
 				<p>MerchantName</p>
 			</td>
 			<td>
@@ -1502,6 +1544,62 @@ transactions to download.
 			<td>
 				<p>Name of the company who owns the site</p>
 				<p>N/A to Homebase subscriber</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>MerchantCustomField0</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>MerchantCustomField1</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>MerchantCustomField2</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>MerchantCustomField3</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1534,6 +1632,20 @@ transactions to download.
 		</tr>
 		<tr valign="top">
 			<td>
+				<p>SiteShortName</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
 				<p>TerminalCode</p>
 			</td>
 			<td>
@@ -1545,6 +1657,48 @@ transactions to download.
 			<td>
 				<p>Site&rsquo;s Terminal identification code.</p>
 				<p>A Terminal is the device or system that captures the transaction at the site, depending on the controller (system) type at the site, it may be the actual terminal (for example the specific OPT) or the whole system (several OPTs served by a single controller).</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>TerminalType</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>TerminalId</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>TerminalTypeId</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1563,16 +1717,16 @@ transactions to download.
 		</tr>
 		<tr valign="top">
 			<td>
-				<p>SubAccountExternalCode</p>
+				<p>SecondarySubAccountId</p>
 			</td>
 			<td>
-				<p>50</p>
+				<p>FILL</p>
 			</td>
 			<td>
-				<p>A/N</p>
+				<p>FILL</p>
 			</td>
 			<td>
-				<p>SubAccount&rsquo;s external code</p>
+				<p>FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1617,6 +1771,34 @@ transactions to download.
 			</td>
 			<td>
 				<p>Driver Code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>TransactionNetAmount</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>ProductUnitPriceRequested</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1707,21 +1889,6 @@ transactions to download.
 		</tr>
 		<tr valign="top">
 			<td>
-				<p>ProductUnitPrice</p>
-			</td>
-			<td>
-				<p>10</p>
-			</td>
-			<td>
-				<p>N</p>
-			</td>
-			<td>
-				<p>PUP on a single-product transaction.</p>
-				<p>xxx.xxx</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
 				<p>TransactionAmountRequested</p>
 			</td>
 			<td>
@@ -1732,6 +1899,20 @@ transactions to download.
 			</td>
 			<td>
 				<p>Transaction amount requested on the pre-authorization. xxxxxxx.xx</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>ProductUnitPriceAuthorized</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1747,6 +1928,118 @@ transactions to download.
 			<td>
 				<p>Transaction amount authorized.
 				<br>xxxxxxx.xx</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>ProductUnitPriceDispensed</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>ProductNetAmountDispensed</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>ProductUnitPriceCompany</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>ProductUnitPriceMerchant</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>ProductAmountCompany</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>ProductAmountMerchant</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>TransactionAmountCompany</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>TransactionAmountMerchant</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1938,6 +2231,76 @@ transactions to download.
 		</tr>
 		<tr valign="top">
 			<td>
+				<p>CompanyCustomField0</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyCustomField1</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyCustomField2</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyCustomField3</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompaniesGroupCode</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
 				<p>ClassificationLabel1</p>
 			</td>
 			<td>
@@ -2004,6 +2367,118 @@ transactions to download.
 		</tr>
 		<tr valign="top">
 			<td>
+				<p>CompanyContractClassificationValue1</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyContractClassificationValue2</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyContractClassificationValue3</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyContractClassificationValue4</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyContractCustomField0</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyContractCustomField1</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyContractCustomField2</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyContractCustomField3</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
 				<p>SubContractCode</p>
 			</td>
 			<td>
@@ -2015,6 +2490,62 @@ transactions to download.
 			<td>
 				<p>SubContract code</p>
 				<p>Not meaningful for Homebase subscribers</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>PrimaryIdentificationTrack</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>SecondaryIdentificationTrack</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>PrimaryIdentificationPAN</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>SecondaryIdentificationPAN</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2043,6 +2574,34 @@ transactions to download.
 			</td>
 			<td>
 				<p>Public ID of the secondary identification device (chipkey ID, account number on a mag card, RFID serial number, etc.)</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>PrimaryIdentificationModelDescription</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>SecondaryIdentificationModelDescription</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2177,48 +2736,6 @@ transactions to download.
 		</tr>
 		<tr valign="top">
 			<td>
-				<p>DriverLicenceState</p>
-			</td>
-			<td>
-				<p>50</p>
-			</td>
-			<td>
-				<p>A/N</p>
-			</td>
-			<td>
-				<p>Driver licence jurisdiction</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p>DriverLicenceNumber</p>
-			</td>
-			<td>
-				<p>50</p>
-			</td>
-			<td>
-				<p>A/N</p>
-			</td>
-			<td>
-				<p>Driver licence</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p>DriverID</p>
-			</td>
-			<td>
-				<p>50</p>
-			</td>
-			<td>
-				<p>N</p>
-			</td>
-			<td>
-				<p>DriverID prompt result</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
 				<p>DriverClassificationValue1</p>
 			</td>
 			<td>
@@ -2279,16 +2796,170 @@ transactions to download.
 		</tr>
 		<tr valign="top">
 			<td>
-				<p>EngineHours</p>
+				<p>CustomerData</p>
 			</td>
 			<td>
-				<p>10</p>
+				<p>FILL</p>
 			</td>
 			<td>
-				<p>N</p>
+				<p>FILL</p>
 			</td>
 			<td>
-				<p>Engine hours prompt result</p>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>FastTrackData</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>TaxesData</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>FeesData</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyTaxpayerId</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>ApplicationCode</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>DisputeDate</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>Reason</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>State</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>DisputeCommentCompany</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>ResolvedDate</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>DisputeResolveNetworkComment</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2307,100 +2978,1523 @@ transactions to download.
 		</tr>
 		<tr valign="top">
 			<td>
-				<p>LastOdometer</p>
+				<p>SiteCountryId</p>
 			</td>
 			<td>
-				<p>10</p>
+				<p>FILL</p>
 			</td>
 			<td>
-				<p>N</p>
+				<p>FILL</p>
 			</td>
 			<td>
-				<p>Previous odometer value</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p>LastEngineHours</p>
-			</td>
-			<td>
-				<p>10</p>
-			</td>
-			<td>
-				<p>N</p>
-			</td>
-			<td>
-				<p>Previous engine hours value</p>
+				<p>FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
-				<p>TrailerHourMeterReading</p>
+				<p>SiteCountry</p>
 			</td>
 			<td>
-				<p>10</p>
+				<p>FILL</p>
 			</td>
 			<td>
-				<p>N</p>
+				<p>FILL</p>
 			</td>
 			<td>
-				<p>Trailer hours prompt result</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p>TruckUnitNumber</p>
-			</td>
-			<td>
-				<p>50</p>
-			</td>
-			<td>
-				<p>A/N</p>
-			</td>
-			<td>
-				<p>Truck Unit ID prompt result</p>
+				<p>FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
-				<p>TrailerNumber</p>
+				<p>SiteAddress</p>
 			</td>
 			<td>
-				<p>50</p>
+				<p>FILL</p>
 			</td>
 			<td>
-				<p>A/N</p>
+				<p>FILL</p>
 			</td>
 			<td>
-				<p>Trailer ID prompt result</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p>TripNumber</p>
-			</td>
-			<td>
-				<p>50</p>
-			</td>
-			<td>
-				<p>A/N</p>
-			</td>
-			<td>
-				<p>Trip/Guide/Route prompt result</p>
+				<p>FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
-				<p>PurchaseOrderNumber</p>
+				<p>SiteStateId</p>
 			</td>
 			<td>
-				<p>50</p>
+				<p>FILL</p>
 			</td>
 			<td>
-				<p>A/N</p>
+				<p>FILL</p>
 			</td>
 			<td>
-				<p>PO prompt result</p>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>SiteState</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>SiteCity</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>SiteZipCode</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>SiteClassificationValue1</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>SiteClassificationValue2</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>SiteClassificationValue3</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>SiteClassificationValue4</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>SiteCustomField0</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>SiteCustomField1</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>SiteCustomField2</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>SiteCustomField3</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>DriverFirstName</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>DriverLastName</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>GPSVirtualOdometer</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>GPSDistance</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>GPSAddress</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>GPSComment</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>DriverCustomField0</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>DriverCustomField1</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>DriverCustomField2</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>DriverCustomField3</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>VehicleCustomField0</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>VehicleCustomField1</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>VehicleCustomField2</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>VehicleCustomField3</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>IdProgram</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>ProgramDescription</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>LatitudeStart</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>LongitudeStart</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>AltitudeStart</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>LatitudeEnd</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>LongitudeEnd</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>AltitudeEnd</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>ContingencyReason</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>AuthorizationType</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>AttendantCode</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>PumpSide</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>VehicleBrand</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>VehicleModel</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>Subsidized</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>SiteCountryCode</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyContractCustomInterface0</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyContractCustomInterface1</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyContractCustomInterface2</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyContractCustomInterface3</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyContractCustomInterface4</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyContractCustomOperation0</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyContractCustomOperation1</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyContractCustomOperation2</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyContractCustomOperation3</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>CompanyContractCustomOperation4</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>ProductsData</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>ModifiersData</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>ERPData</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>FuelERPCode</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p>TransactionCurrency</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+			<td>
+				<p>FILL</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+**TransactionCurrency Response fields**
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>			
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">IdCurrencySite</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCurrencyCode</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCurrencyFactor</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteProductAmountDispensed</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteProductAmountAuthorized</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteProductAmountRequested</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteProductAmountCompany</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteProductAmountMerchant</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteProductUnitPriceDispensed</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteProductUnitPriceAuthorized</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteProductUnitPriceRequested</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteProductUnitPriceMerchant</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteProductUnitPriceCompany</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteTransactionAmountDispensed</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteTransactionAmountAuthorized</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteTransactionAmountRequested</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteTransactionAmountCompany</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteTransactionAmountMerchant</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">IdCurrencyConversion</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConversionCurrencyCode</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConversionProductAmountDispensed</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConversionProductAmountAuthorized</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConversionProductAmountRequested</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConversionProductAmountCompany</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConversionProductAmountMerchant</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConversionProductUnitPriceDispensed</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConversionProductUnitPriceAuthorized</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConversionProductUnitPriceRequested</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConversionProductUnitPriceMerchant</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConversionProductUnitPriceCompany</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConversionTransactionAmountDispensed</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConversionTransactionAmountAuthorized</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConversionTransactionAmountRequested</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConversionTransactionAmountCompany</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConversionTransactionAmountMerchant</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">IdCurrencyConciliation</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConciliationCurrencyCode</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConciliationCurrencyFactor</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConciliationProductAmountDispensed</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConciliationProductAmountAuthorized</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConciliationProductAmountRequested</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConciliationProductAmountMerchant</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConciliationProductAmountCompany</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConciliationProductUnitPriceDispensed</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConciliationProductUnitPriceAuthorized</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConciliationProductUnitPriceRequested</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConciliationProductUnitPriceMerchant</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConciliationProductUnitPriceCompany</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConciliationTransactionAmountDispensed</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConciliationTransactionAmountAuthorized</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConciliationTransactionAmountRequested</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConciliationTransactionAmountCompany</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ConciliationTransactionAmountMerchant</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">IdCurrencyMerchant</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantCurrencyCode</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantCurrencyFactor</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantProductAmountDispensed</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantProductAmountAuthorized</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantProductAmountRequested</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantProductAmount</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantProductUnitPriceDispensed</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantProductUnitPriceAuthorized</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantProductUnitPriceRequested</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantProductUnitPrice</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantTransactionAmountDispensed</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantTransactionAmountAuthorized</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantTransactionAmountRequested</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantTransactionAmount</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">IdCurrencyCompany</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyCurrencyCode</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyCurrencyFactor</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyProductAmountDispensed</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyProductAmountAuthorized</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyProductAmountRequested</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyProductAmount</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyProductUnitPriceDispensed</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyProductUnitPriceAuthorized</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyProductUnitPriceRequested</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyProductUnitPrice</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyTransactionAmountDispensed</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyTransactionAmountAuthorized</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyTransactionAmountRequested</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyTransactionAmount</p>
+			</td>
+			<td>
+				<p align="left">FILL</p>
 			</td>
 		</tr>
 	</tbody>
