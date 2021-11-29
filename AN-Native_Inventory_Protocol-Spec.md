@@ -164,6 +164,12 @@ The action code specifies what type of action will be executed when you enter a 
 |EndingFuelHeight|The ending fuel height|
 |TotalVolumeTC|The total volume TC|
 |InvoiceNumber|The invoice number|
+|InvoiceItem|Invoice description|
+|InvoiceDate|Invoice date ("yyyy/MM/dd hh:mm:ss")|
+|CompensatedAmountRemitted|Compensated amount remitted|
+|RealTemperature|The actual and exact temperature of the product when it is loaded into the truck|
+|ReferenceTemperature|It is for a calendar month and the average temperature of the place of delivery is taken. It is obtained from the national meteorological services of each country and it is with which the amount of the invoice is corrected|
+|Density|The density of the product at the time of being loaded into the truck|
 |Comments|Delivery Comments|
 |GPSData|GPS Values - see below|
 
