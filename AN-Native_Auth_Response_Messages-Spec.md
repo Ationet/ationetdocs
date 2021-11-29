@@ -6,20 +6,20 @@
 		<th colspan="2" align="left">Document Information</th>
 	</tr>
 	<tr>
-		<td>Archivo:</td>
+		<td align="right">File:</td>
 		<td>AN-Native_Auth_Response_Messages-Spec</td>
 	</tr>
 	<tr>
-		<td>Version documento:</td>
-		<td>1.0</td>
+		<td align="right">Doc. Version:</td>
+		<td>1.1</td>
 	</tr>
 	<tr>
-		<td>Date:</td>
-		<td>February 3rd 2016</td>
+		<td align="right">Date:</td>
+		<td>Novemeber 29th 2021</td>
 	</tr>
 	<tr>
-		<td>Autor:</td>
-		<td>ATIO International LLC</td>
+		<td align="right">Author:</td>
+		<td>ATIONET LLC</td>
 	</tr>
 </table>
 
@@ -37,6 +37,11 @@
 		<td>February 3rd 2016</td>
 		<td>Initial version.</td>
 	</tr>
+	<tr valign="top">
+		<td>1.1</td>
+		<td>November 29th 2021</td>
+		<td>New responses and Reason fields added</td>
+	</tr>
 </table>
 
 <table>
@@ -50,14 +55,14 @@
 <tr><td>00000</td>	<td>Authorized</td><td>Authorized</td><td>The transaction has been authorized</td></tr>
 <tr><td>10000</td>	<td>Invalid Date</td><td>Invalid Date </td><td>One of the provided dates is invalid or has an invalid format</td></tr>
 <tr><td>10001</td>	<td>Invalid Time</td><td>Invalid Time </td><td>One of the provided times is invalid or has an invalid format</td></tr>
-<tr><td>10002</td>	<td>Invalid Seq num</td><td>Invalid Sequence num</td><td></td></tr>
-<tr><td>10003</td>	<td>Invalid Acc type</td><td>Invalid Account type</td><td></td></tr>
-<tr><td>10004</td>	<td>Invalid App type</td><td>Invalid Application type</td><td></td></tr>
-<tr><td>10005</td>	<td>Invalid Proc mode</td><td>Invalid Processing mode</td><td></td></tr>
+<tr><td>10002</td>	<td>Invalid Seq num</td><td>Invalid Sequence num</td><td>The Transaction Sequence Number field is missing or invalid</td></tr>
+<tr><td>10003</td>	<td>Invalid Acc type</td><td>Invalid Account type</td><td>The Account Type field is missing or invalid</td></tr>
+<tr><td>10004</td>	<td>Invalid App type</td><td>Invalid Application type</td><td>The Application Type field is missing or invalid</td></tr>
+<tr><td>10005</td>	<td>Invalid Proc mode</td><td>Invalid Processing mode</td><td>The Processing Mode field is missing or invalid</td></tr>
 <tr><td>10006</td>	<td>Invalid Mess format</td><td>Invalid Message format</td><td></td></tr>
 <tr><td>10007</td>	<td>Invalid Dev type</td><td>Invalid Device type</td><td></td></tr>
 <tr><td>10008</td>	<td>Invalid Sys model</td><td>Invalid System model</td><td></td></tr>
-<tr><td>10009</td>	<td>Invalid Sys ver	Invalid</td><td> System version</td><td></td></tr>
+<tr><td>10009</td>	<td>Invalid Sys ver	</td><td>Invalid System version</td><td></td></tr>
 <tr><td>10010</td>	<td>Invalid Entry method</td><td>Invalid Entry method</td><td></td></tr>
 <tr><td>10011</td>	<td>Invalid Unit code</td><td>Invalid Unit code</td><td></td></tr>
 <tr><td>10012</td>	<td>Invalid DateTime</td><td>Invalid DateTime</td><td></td></tr>
@@ -66,7 +71,7 @@
 <tr><td>10015</td>	<td>Prod data req</td><td>Product Data Required</td><td></td></tr>
 <tr><td>10016</td>	<td>Invalid Batch number</td><td>Invalid Batch number</td><td></td></tr>
 <tr><td>10017</td>	<td>Invalid Respone code</td><td>Invalid Respone code</td><td></td></tr>
-<tr><td>10018</td>	<td>Invalid Terminal</td><td>Invalid Terminal </td><td></td></tr>
+<tr><td>10018</td>	<td>Invalid Terminal</td><td>Invalid Terminal </td><td>The Terminal Identification field is missing or invalid</td></tr>
 <tr><td>11000</td>	<td>Merch not found</td><td>Merchant not found</td><td></td></tr>
 <tr><td>11001</td>	<td>NetMerch not found</td><td>Network Merchant not found</td><td></td></tr>
 <tr><td>11002</td>	<td>Site not found</td><td>Site not found</td><td></td></tr>
@@ -100,7 +105,7 @@
 <tr><td>13002</td>	<td>Id does not exist</td><td>Id does not exist</td><td></td></tr>
 <tr><td>13003</td>	<td>SecId does not exist</td><td>Secondary Id does not exist</td><td></td></tr>
 <tr><td>13004</td>	<td>Both veh ids</td><td>Both are vehicle identifications</td><td></td></tr>
-<tr><td>13005</td>	<td>Both driv ids</td><td>  	Both are driver identifications</td><td></td></tr>
+<tr><td>13005</td>	<td>Both driv ids</td><td>Both are driver identifications</td><td></td></tr>
 <tr><td>13006</td>	<td>Subacc in diff cont</td><td>Sub account in different contract</td><td></td></tr>
 <tr><td>13007</td>	<td>Id is not active</td><td>Identification is not active</td><td></td></tr>
 <tr><td>13008</td>	<td>Id has expired</td><td>Identification has expired</td><td></td></tr>
@@ -245,7 +250,7 @@
 <tr><td>40812</td>	<td>DaysTime not auth</td><td>Day not authorized</td><td></td></tr>
 <tr><td>40813</td>	<td>DaysTime not auth</td><td>Day not authorized</td><td></td></tr>
 <tr><td>40814</td>	<td>DaysTime not auth</td><td>Day not authorized</td><td></td></tr>
-<tr><td>20900</td>	<td>Quota Not Set</td><td>Quota Not Set</td><td></td></tr>
+<tr><td>20900</td>	<td>Quota Not Set</td><td>Quota Not Set</td><td>One of the quota rules asociated to the transaction is missing configurations</td></tr>
 <tr><td>40900</td>	<td>Veh money exceeded</td><td>Vehicle money exceeded</td><td></td></tr>
 <tr><td>40901</td>	<td>Driv money exceeded</td><td>Driver money exceeded</td><td></td></tr>
 <tr><td>40902</td>	<td>Site money exceeded</td><td>Site money exceeded</td><td></td></tr>
@@ -255,5 +260,5 @@
 <tr><td>41001</td>	<td>Driv money exceeded</td><td>Driver money exceeded</td><td></td></tr>
 <tr><td>41002</td>	<td>Site money exceeded</td><td>Site money exceeded</td><td></td></tr>
 <tr><td>41003</td>	<td>Fleet money exceeded</td><td>Fleet money exceeded</td><td></td></tr>
-<tr><td>50000</td>	<td>App Error</td><td>Application Error</td><td></td></tr>
+<tr><td>50000</td>	<td>App Error</td><td>Application Error</td><td>Internal Server Error</td></tr>
 </table>

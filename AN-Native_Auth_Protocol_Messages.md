@@ -1,6 +1,6 @@
 ![ationetlogo](Content/Images/ATIOnetLogo_250x70.png) 
 # ATIONet Native Authorization Protocol Messages 
-> **About:** This document describes each messages from the Authorization protocol, stating which field is optional and which one isn't.	
+> **About:** This document describes each messages from the Authorization protocol, stating which field is optional and which one isn't.
 
 </br>
 
@@ -17,15 +17,15 @@
 		</tr>
 		<tr>
 			<td align="right">Doc. Version:</td>
-			<td>1.0</td>
+			<td>1.4</td>
 		</tr>
 		<tr>
 			<td align="right">Release Date:</td>
-			<td>17, January 2019</td>
+			<td>29, November 2021</td>
 		</tr>
 		<tr>
 			<td align="right">Author:</td>
-			<td>ATIONet LLC</td>
+			<td>ATIONET LLC</td>
 		</tr>
 	</tbody>
 </table>
@@ -45,9 +45,14 @@
         <!-- Insert a table row like this for each version -->
         <tr>
           	<td>1.0</td>
-          	<td>17/January/2019</td>
+          	<td>January 17th 2019</td>
           	<td>Initial version</td>
         </tr>
+        <tr>
+          	<td>1.4</td>
+          	<td>November 29th 2021</td>
+          	<td>Document updated to current protocol version</td>
+		</tr>
         <!-- End of version table row -->
      </tbody>
 </table>
@@ -69,6 +74,7 @@
 The ATIONet authorization engine exposes an API with a set of commands to perform any operation available in the platform. The table below describes field by field, what should be sent and what is expected to be received.
 
 ## Authorization Protocol messages
+
 <table border="1">
 	<thead>
 		<tr valign="top">
@@ -939,54 +945,7 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 			<td>
 				<p align="left"></p>
 			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ProductTaxes</p>
-			</td>
-			<td>
-				<p align="left">Var</p>
-			</td>
-			<td>
-				<p align="left">Dictionary[string, decimal]</p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">0</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-		</tr>
+		</tr>		
 		<tr valign="top">
 			<td>
 				<p align="left">ProductAmount</p>
@@ -1127,54 +1086,7 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 			<td>
 				<p align="left"></p>
 			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ProductData</p>
-			</td>
-			<td>
-				<p align="left">Var</p>
-			</td>
-			<td>
-				<p align="left">List[AtionetProduct]</p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-		</tr>
+		</tr>		
 		<tr valign="top">
 			<td>
 				<p align="left">TransactionAmount</p>
@@ -1739,53 +1651,7 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 				<p align="left"></p>
 			</td>
 		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">CustomerData</p>
-			</td>
-			<td>
-				<p align="left">Var</p>
-			</td>
-			<td>
-				<p align="left">Dictionary[string, string]</p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left">C</p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-		</tr>
+		
 		<tr valign="top">
 			<td>
 				<p align="left">TransactionExtendedData</p>
@@ -1832,171 +1698,7 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 			<td>
 				<p align="left"></p>
 			</td>
-		</tr>
-		<tr valign="top">
-			<td valign="middle" rowspan="4">
-				<p align="left">OriginalData</p>
-				<p align="left">---> TransactionCode</p>
-				<p align="left">---> LocalTransactionDate</p>
-				<p align="left">---> LocalTransactionTime</p>
-			</td>
-			<td valign="top" rowspan="4">
-				<p align="left">Var</p>
-			</td>
-			<td valign="top" rowspan="4">
-				<p align="left">Dictionary[string, string]</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">M1</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">M1</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">C3</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">C3</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">C3</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">C3</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-		</tr>
+		</tr>		
 		<tr valign="top">
 			<td>
 				<p align="left">AuthorizationCode</p>
