@@ -12,66 +12,17 @@
 |--- |--- |--- |
 |Ver.|Date|Change Summary|
 |1.0|31/Aug/2020|Initial version. Covers inventory and delivery messages.|
+|1.1|26/Nov/2021|Update document <br> - Response Code's <br> - Deliveries insert request <br> - Inventories insert request|
 
 ## Contents ##
 
 - [1 ATIOnet Integration Documentation Scope](#1-ationet-integration-documentation-scope)
-
-- [2 Scope](#2-scope)
-	- [2.1 Scope Details](#21-scope-details)
-	- [2.2 Supported Transactions](#22-supported-transactions)
-
-- [3 Data Security](#3-data-security)
-
-- [4 Message Structure](#4-message-structure)
-	- [Request Format](#request-format)
-	- [Response Format](#response-format)
-
-- [5 Error Handling](#5-error-handling)
-
-- [6 Field descriptions](#6-field-descriptions)
-	- [System Model and System Version](#system-model-and-system-version)
-	- [Pump Authorization Values](#pump-authorization-values)
-	- [Terminal Identification](#terminal-identification)
-	- [Device Type Identifier](#device-type-identifier)
-	- [Transaction Sequence Number](#transaction-sequence-number)
-	- [Entry Method](#entry-method)
-	- [Processing Mode](#processing-mode)
-	- [Track Data](#track-data)
-	- [Batch Number](#batch-number)
-	- [Shift Number](#shift-number)
-	- [Product Fields](#product-fields)
-	- [Customer Data](#customer-data)
-	- [Re-prompting & Dual-Card Identification](#re-prompting--dual-card-identification)
-	- [Authorization Code](#authorization-code)
-	- [PIN Block](#pin-block)
-	- [Original Data](#original-data)
-
-- [7 Transaction Request (TREQ) Message Format](#7-transaction-request-treq-message-format)
-
-- [8 Transaction Response (TRESP) Message Format](#8-transaction-response-tresp-message-format)
-
-- [9 Satellite TAG Validation Request (VREQ) Message Format](#9-satellite-tag-validation-request-vreq-message-format)
-
-- [10 Satellite TAG Validation Response (VRESP) Message Format](#10-satellite-tag-validation-response-vresp-message-format)
-
-- [11 Identification Pin Change Request (PREQ) Message Format](#11-identification-pin-change-request-preq-message-format)
-
-- [12 Identification Pin Change Response (PRESP) Message Format](#12-identification-pin-change-response-presp-message-format)
-
-- [13 Reference Tables](#11-reference-tables)
-	- [13.1 Transaction Codes](#111-transaction-codes)
-	- [13.2 Response Codes](#112-response-codes)	
-	- [13.3 Account Types](#113-account-type)
-	- [13.4 Product Data Structure](#114-product-data-structure)
-	- [13.5 Customer Data](#115-customer-data)
-	- [13.6 Measurement Unit Codes](#116-measurement-unit-codes)
-	- [13.7 Currency Codes](#117-currency-codes)
-	- [13.8 Original Data](#118-original-data)
-- [14 Message Samples](#12-message-samples)
-	- [14.1 Pre Authorization Sample](#121-pre-authorization-samples)
-	- [14.2 Completion Sample](#122-completion-sample)
-- [Appendix A - Native Authorization Protocol Messages](#appendix-a---native-authorization-protocol-messages)
+- [2 Action Codes](#2-Action-Codes)
+- [3 Deliveries Insert (POST) - Body Section Format Request](#3-Deliveries-Insert-POST--Body-Section-Format-Request)
+	- [3.1 Trama Body Format](#31-Trama-Body-Format)
+		- [3.2 GPS Body Format](#32-GPS-Body-Format)
+- [4 Inventories Insert (POST) - Body Section Format Request](#4-Inventories-Insert-POST--Body-Section-Format-Request)
+	- [4.1 Trama Body Format](#41-Trama-Body-Format)
 
 ## Overview
 
@@ -107,3 +58,149 @@ Covers financial transactions for transaction capture systems (payment terminals
 #### ATIOnet Administrative Transactions Protocol Specification: 
 Describes a set of functions complementing the transaction-capture business, for example Batch or Shift Close. These functions enhance the capabilities of the integration but their implementation is not mandatory.
 
+## 1 ATIOnet Integration Documentation Scope
+
+Third-party systems integrate with ATIOnet via a set of APIs (Application Programming Interfaces). Each ATIOnet’s API is described on a separate Protocol Specification. The complete documentation of ATIOnet API’s is comprised of:
+
+#### ATIOnet Native Transactions Protocol Specification: 
+Covers financial transactions for transaction capture systems (payment terminals, site controllers and point of sale systems), including sales and refunds.
+
+#### ATIOnet Administrative Transactions Protocol Specification: 
+Describes a set of functions complementing the transaction-capture business, for example Batch or Shift Close. These functions enhance the capabilities of the integration but their implementation is not mandatory.
+
+## 2 Action Codes
+
+The action code specifies what type of action will be executed when you enter a new request in the FMS.
+
+<table>
+	<tr valign="top">
+		<th align="left">
+			Action Code
+		</th>
+		<th colspan="2" align="left">
+			Description
+		</th>
+	</tr>
+	<tr valign="top">
+		<td rowspan="3">
+			<p>701</p>
+		</td>
+		<td>
+			<p>Title:</p>
+		</td>
+		<td>
+			<p>Deliveries</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Function:</p>
+		</td>
+		<td>
+			<p>Insert Deliveries request code</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Allowed for:</p>
+		</td>
+		<td>
+			<p>FILL</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td rowspan="3">
+			<p>702</p>
+		</td>
+		<td>
+			<p>Title:</p>
+		</td>
+		<td>
+			<p>Inventories</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Function:</p>
+		</td>
+		<td>
+			<p>Insert Inventories request code</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Allowed for:</p>
+		</td>
+		<td>
+			<p>FILL</p>
+		</td>
+	</tr>
+</table>
+
+## 3 Deliveries Insert (POST) – Body Section Format *Request*
+|Field Name|Condition|Descriptions/Field Value(s)|
+|--- |--- |---
+|ActionCode|Required|See Action Codes section above|
+|TerminalCode|Required|Site’s Terminal identification code.|
+|Trama|Required|Delivery values|
+
+
+### 3.1 Trama Body Format 
+|Field Name|Descriptions/Field Value(s)|
+|--- |---
+|TankNumber|The tank number|
+|ProductCode|The fuel code. It is associated with the site|
+|CreatedDateTime|Delivery creation date time ("yyyy/MM/dd hh:mm:ss")|
+|StartingDateTime|Delivery start date time ("yyyy/MM/dd hh:mm:ss")|
+|EndingDateTime|Delivery end date time ("yyyy/MM/dd hh:mm:ss")|
+|StartingVolume|The starting volume|
+|StartingVolumeTC|The starting volume TC|
+|StartingWaterVolume|The starting water volume|
+|StartingTemperature|The starting temperature|
+|EndingVolumeTC|The ending volume TC|
+|EndingWaterVolume|The ending water volume|
+|EndingTemperature|The ending temperature|
+|StartingFuelHeight|The starting fuel height|
+|EndingFuelHeight|The ending fuel height|
+|TotalVolumeTC|The total volume TC|
+|InvoiceNumber|The invoice number|
+|Comments|Delivery Comments|
+|GPSData|GPS Values - see below|
+
+### 3.2 GPS Body Format 
+|Field Name|Descriptions/Field Value(s)|
+|--- |---
+|LatitudeStart|Start location: Latitude|
+|LongitudeStart|Start location: Longitude|
+|AltitudeStart|Start location: Altitude|
+|StartingGPSDate|Start date of delivery location ("yyyy/MM/dd hh:mm:ss")|
+|LatitudeEnd|End location: Latitude|
+|LongitudeEnd|End location: Longitude|
+|AltitudeEnd|End location: Altitude|
+|EndingGPSDate|End date of delivery location ("yyyy/MM/dd hh:mm:ss")|
+
+## 4 Inventories Insert (POST) – Body Section Format *Request*
+|Field Name|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |
+|ActionCode|Required|See Action Codes section above|
+|TerminalCode|Required|Site’s Terminal identification code.|
+|Trama|Required|Inventory values|
+
+
+### 4.1 Trama Body Format 
+|Field Name|Descriptions/Field Value(s)|
+|--- |---
+|TankNumber|The tank number|
+|ProductCode|The fuel code. It is associated with the site|
+|DateTime|Inventory date time ("yyyy/MM/dd hh:mm:ss")|
+|Volume|The volume|
+|VolumeTC|The volume TC|
+|Ullage|The ullage|
+|WaterVolume|The water volume|
+|FuelHeight|the fuel height|
+|Temperature|The temperature|
+|WaterHeight|The water height|
+|Latitude|Location: Latitude|
+|Longitude|Location: Longitude|
+|Altitude|Location: Altitude|
+|Date|Location date ("yyyy/MM/dd hh:mm:ss")|
