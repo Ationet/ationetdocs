@@ -8,9 +8,9 @@
 - [Native Transaction Protocol API Specifications](AN-Native_Transaction_Protocol-Spec.md)
 - [Native Transaction Protocol API messages](AN-Native_Auth_Protocol_Messages.md)
 
-## Fleet Mobile Payment 
+## Fleet Mobile Payment (NEW !) 
 
-- [Documentation Center](FleetMobilePayment.md)
+- [Mobile Payment APIs Specifications](FleetMobilePayment.md)
 
 ## FMS API (NEW !)
 - [FMS API Specifications](AN-Native_Inventory_Protocol-Spec.md)
