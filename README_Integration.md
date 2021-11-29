@@ -10,7 +10,7 @@
 
 ## Fleet Mobile Payment (NEW !) 
 
-- [Mobile Payment APIs Specifications](FleetMobilePayment.md)
+- [Fleet Mobile Payment APIs Specifications](FleetMobilePayment.md)
 
 ## FMS API (NEW !)
 - [FMS API Specifications](AN-Native_Inventory_Protocol-Spec.md)
