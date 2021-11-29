@@ -4,7 +4,7 @@
 |Document Information|.|
 |--- |--- |
 |File:|ATIONet-Native_Interface_Protocol-Spec|
-|Doc Version:|1.5|
+|Doc Version:|1.6|
 |Release Date:|29, March 2021|
 |Author:|ATIONet LLC|
 
@@ -19,6 +19,7 @@
 |1.4|27/11/2018|**FastTrack** <br> - Added Action 971 Request insertion of new FastTrack <br> - Added Action 972 Request FastTrack list download|
 |1.5|29/03/2021|**API Interface Messages** <br> - Updated lists of Action Codes|
 |1.5|13/07/2021|**Inventory Interface Messages** <br> - Updated lists of Action Codes|
+|1.6|29/11/2021|**Inventory & Delivery Interface Update** <br> - Update Inventory Download Response <br> - Update Delivery Download Response <br>|
 
 ## Contents
 
@@ -63,8 +64,16 @@
 	- [10.2 Account Download (POST) – Body Section Format Request](#102-account-download-post--body-section-format-request)
 	- [10.3 Account Download (POST) – Body Section Format Response](#103-account-download-post--body-section-format-response)
 
-- [11 Examples](#11-examples)
-	- [11.1 C# example](#111-c-example)
+- [11 Inventory and deliveries Downloads](#11-Inventory-and-deliveries-Downloads)
+	- [11.1 Action Codes](#111-Action-Codes)
+	- [11.2 Deliveries Download (POST) – Body Section Format Request](#112-Deliveries-Download-POST--Body-Section-Format-Request)
+	- [11.3 Deliveries Download (POST) – Body Section Format *Response*](#113-Deliveries-Download-POST--Body-Section-Format-Response)
+	- [11.4 Delivery GPS Download - Body Section Format *Response*](#114-Delivery-GPS-Download--Body-Section-Format-Response)
+	- [11.5 Inventories Download (POST) – Body Section Format *Request*](#115-Inventories-Download-POST--Body-Section-Format-Request)
+	- [11.6 Inventories Download (POST) – Body Section Format *Response*](#116-Inventories-Download-POST--Body-Section-Format-Response)
+
+- [12 Examples](#12-Examples)
+	- [12.1 C# example](#121-C-example)
 
 ## Overview
 
@@ -6499,30 +6508,47 @@ transactions to download.
 
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |
-|Id|36|A/N|Current account’s UID|
-|MovementId|36|A/N|Movements’s UID|
-|SubscriberCode|3|A/N|Code of the subscriber who owns the transaction|
-|HostDateTime|19|A/N|ATIONet’s transaction date time “yyyy/mm/dd hh:mm:ss”. (ATIONet Host date time is UCT)|
-|DateTime|19|A/N|movement date expressed in subscriber time zone ("yyyy/mm/dd hh:mm:ss")|
-|SubscriberTimeZone|50|A/N|TimeZone code of the subscriber (abbreviation)|
-|Type|1|N|Internal ATIOnet movement type code|
-|TypeDescription|50|A/N|Movement type description|
-|Origin|1|N|Internal ATIOnet code for the origin of the movement|
-|OriginDescription|50|A/N|Description for the origin of the movement|
-|Description|1000|A/N|Movement description|
-|SubAccountId|36|A/N|SubAccount’s UID|
-|SubAccountExternalCode|50|A/N|SubAccount’s external code|
-|CompanyCode|30|A/N|Company code (Not meaningful for Homebase subscribers)|
-|CompanyName|250|A/N|Company name (Not meaningful for Homebase subscribers)|
-|ContractCode|20|A/N|Contract code (Not meaningful for Homebase subscribers)|
-|SubContractCode|50|A/N|SubContract code (Not meaningful for Homebase subscribers)|
-|IsDebit|1|N|Indicates that’s a debit or credit movement (1 = “True”, 2= “False”)|
+|DeliveryId|36|A/N|Delivery UID|
+|MerchantName|250|A/N|Name of the company who owns the site|
+|SiteCode|50|A/N|Site Code|
+|SiteShortName|50|A/N|The short name of the site|
+|TerminalCode|50|A/N|Site’s Terminal identification code.|
+|TerminalDescription|50|A/N|Terminal description.|
 |FuelMasterCode|50|A/N|Standardized product code. Helps to identify a fuel product category across multiple Merchant brands and site’s product codes|
 |FuelMasterDescription|100|A/N|Standardized product description. Helps to identify a fuel product category across multiple Merchant brands and site’s product codes|
-|CurrencyCode|50|A/N|Currency of the amount fields|
-|Amount|10|N|Amount balance for the sub-account. (xxxxxxx.xx)|
+|ProductCode|3|A/N|The fuel code. It is associated with the site|
+|TankNumber|3|A/N|The tank number|
+|CreatedDateTime|3|A/N|The creation date time ("yyyy/MM/dd hh:mm:ss")|
+|StartingDateTime|3|A/N|The starting date time ("yyyy/MM/dd hh:mm:ss")|
+|EndingDateTime|3|A/N|the ending date time ("yyyy/MM/dd hh:mm:ss")|
+|StartingVolume|3|A/N|The starting volume|
+|StartingVolumeTC|3|A/N|The starting volume TC|
+|StartingWaterVolume|3|A/N|The starting water volume|
+|StartingTemperature|3|A/N|The starting temperature|
+|StartingFuelHeight|3|A/N|The starting fuel height|
+|EndingVolume|3|A/N|The ending volume|
+|EndingVolumeTC|3|A/N|The ending volume TC|
+|EndingWaterVolume|3|A/N|The ending water volume|
+|EndingTemperature|3|A/N|the ending temperature|
+|EndingFuelHeight|3|A/N|The ending fuel height|
+|TotalVolume|3|A/N|The total volume|
+|TotalVolumeTC|3|A/N|The total volume TC|
+|GPSData|3|A/N|GPS Values - see below|
 
-### 11.4 Inventories Download (POST) – Body Section Format *Request*
+### 11.4 Delivery GPS Download – Body Section Format *Response*
+
+|Field Name|Descriptions/Field Value(s)|
+|--- |---
+|StartingGPSDate|The starting delivery GPS date ("yyyy/MM/dd hh:mm:ss")|
+|EndingGPSDate |The ending delivery GPS date ("yyyy/MM/dd hh:mm:ss")|
+|LatitudeStart|Start location: Latitude|
+|LongitudeStart|Start location: Longitude|
+|AltitudeStart|Start location: Altitude|
+|LatitudeEnd|End location: Latitude|
+|LongitudeEnd|End location: Longitude|
+|AltitudeEnd|End location: Altitude|
+
+### 11.5 Inventories Download (POST) – Body Section Format *Request*
 
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
@@ -6532,32 +6558,32 @@ transactions to download.
 |DateFrom|19|A/N|Required|From date to filter movements ("yyyy/MM/dd hh:mm:ss")|
 |DateTo|19|A/N|Optional|To date to filter movements ("yyyy/MM/dd hh:mm:ss")|
 
-### 11.5 Inventories Download (POST) – Body Section Format *Response*
+### 11.6 Inventories Download (POST) – Body Section Format *Response*
 
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |
-|Id|36|A/N|Current account’s UID|
-|MovementId|36|A/N|Movements’s UID|
-|SubscriberCode|3|A/N|Code of the subscriber who owns the transaction|
-|HostDateTime|19|A/N|ATIONet’s transaction date time “yyyy/mm/dd hh:mm:ss”. (ATIONet Host date time is UCT)|
-|DateTime|19|A/N|movement date expressed in subscriber time zone ("yyyy/mm/dd hh:mm:ss")|
-|SubscriberTimeZone|50|A/N|TimeZone code of the subscriber (abbreviation)|
-|Type|1|N|Internal ATIOnet movement type code|
-|TypeDescription|50|A/N|Movement type description|
-|Origin|1|N|Internal ATIOnet code for the origin of the movement|
-|OriginDescription|50|A/N|Description for the origin of the movement|
-|Description|1000|A/N|Movement description|
-|SubAccountId|36|A/N|SubAccount’s UID|
-|SubAccountExternalCode|50|A/N|SubAccount’s external code|
-|CompanyCode|30|A/N|Company code (Not meaningful for Homebase subscribers)|
-|CompanyName|250|A/N|Company name (Not meaningful for Homebase subscribers)|
-|ContractCode|20|A/N|Contract code (Not meaningful for Homebase subscribers)|
-|SubContractCode|50|A/N|SubContract code (Not meaningful for Homebase subscribers)|
-|IsDebit|1|N|Indicates that’s a debit or credit movement (1 = “True”, 2= “False”)|
+|InventoryId|36|A/N|Delivery UID|
+|MerchantName|250|A/N|Name of the company who owns the site|
+|SiteCode|50|A/N|Site Code|
+|SiteShortName|50|A/N|The short name of the site|
+|TerminalCode|50|A/N|Site’s Terminal identification code.|
+|TerminalDescription|50|A/N|Terminal description.|
 |FuelMasterCode|50|A/N|Standardized product code. Helps to identify a fuel product category across multiple Merchant brands and site’s product codes|
 |FuelMasterDescription|100|A/N|Standardized product description. Helps to identify a fuel product category across multiple Merchant brands and site’s product codes|
-|CurrencyCode|50|A/N|Currency of the amount fields|
-|Amount|10|N|Amount balance for the sub-account. (xxxxxxx.xx)|
+|ProductCode|3|A/N|The fuel code. It is associated with the site|
+|TankNumber|3|A/N|The tank number|
+|DateTime|3|A/N|Date time of the Inventory ("yyyy/MM/dd hh:mm:ss")|
+|Volume|3|A/N|The volume|
+|VolumeTC|3|A/N|The volume TC|
+|Ullage|3|A/N|The ullage|
+|WaterVolume|3|A/N|The water Volume|
+|Temperature|3|A/N|The temperature|
+|FuelHeight|3|A/N|The fuel height|
+|WaterHeight|3|A/N|The water height|
+|GPSDateTime|3|A/N|The inventory GPS date time ("yyyy/MM/dd hh:mm:ss")|
+|Longitude|3|A/N|Location: Longitude|
+|Latitude|3|A/N|Location: Latitude|
+|Altitude|3|A/N|Location: Altitude|
 
 ## 12 Examples
 
