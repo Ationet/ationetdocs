@@ -138,19 +138,19 @@ The event type specifies what type of tracking event will be associated with the
 
 ## 4 Tracking Insert (POST) – Body Section Format *Request*
 
-|Field Name|Condition|Descriptions/Field Value(s)|
-|--- |--- |---
-|ActionCode|Required|See Action Codes section above|
-|SystemModel|Required|Internal value. Must be set to 1|
-|SystemVersion|Required|Internal value. Must be set to 1.3|
-|DeviceVolts|Required|Internal value. Must be set to 12.4|
-|MessageFormatVersion|Required|Internal value. Must be set to 1|
-|DeviceId|Required|This field will contain the identification number of the device linked to this service|
-|EventType|Required|Event Type's Codes section above|
-|HostDateTime|Required|The host date time ("yyyy/MM/dd HH:mm:ss")|
-|DeviceDateTime|Required|The device date time ("yyyy/MM/dd HH:mm:ss")|
-|Speed|Required|Vehicle speed|
-|Odometer|Required|Vehicle odometer|
-|Orientation|Required|Location: Orientation|
-|Latitude|Required|Location: Latitude|
-|Longitude|Required|Location: Longitude|
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |---
+|ActionCode|X|X|Required|See Action Codes section above|
+|SystemModel|X|X|Required|Internal value. Must be set to 1|
+|SystemVersion|X|X|Required|Internal value. Must be set to 1.3|
+|DeviceVolts|X|X|Required|Internal value. Must be set to 12.4|
+|MessageFormatVersion|X|X|Required|Internal value. Must be set to 1|
+|DeviceId|X|X|Required|This field will contain the identification number of the device linked to this service|
+|EventType|X|X|Required|Event Type's Codes section above|
+|HostDateTime|X|X|Required|The host date time ("yyyy/MM/dd HH:mm:ss")|
+|DeviceDateTime|X|X|Required|The device date time ("yyyy/MM/dd HH:mm:ss")|
+|Speed|X|X|Required|Vehicle speed|
+|Odometer|X|X|Required|Vehicle odometer|
+|Orientation|X|X|Required|Location: Orientation|
+|Latitude|X|X|Required|Location: Latitude|
+|Longitude|X|X|Required|Location: Longitude|
