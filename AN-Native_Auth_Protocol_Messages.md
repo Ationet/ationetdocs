@@ -1651,7 +1651,6 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 				<p align="left"></p>
 			</td>
 		</tr>
-		
 		<tr valign="top">
 			<td>
 				<p align="left">TransactionExtendedData</p>
