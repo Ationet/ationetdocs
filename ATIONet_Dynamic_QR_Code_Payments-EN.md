@@ -314,6 +314,22 @@ Note: Customers cannot change the Transaction amount in their app on scanning th
 		 </tr>
 		<tr valign="top">
 			<td>
+				<p align="left">Prompting Needed</p>
+			</td>
+			<td>
+				<p>Validation rules are required</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Prompting Sent</p>
+			</td>
+			<td>
+				<p>Rules are sent</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
 				<p align="left">Post Paid Cancelled</p>
 			</td>
 			<td>
