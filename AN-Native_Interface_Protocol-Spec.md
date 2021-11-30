@@ -6521,27 +6521,27 @@ transactions to download.
 |CreatedDateTime|X|A/N|The creation date time ("yyyy/MM/dd hh:mm:ss")|
 |StartingDateTime|X|A/N|The starting date time ("yyyy/MM/dd hh:mm:ss")|
 |EndingDateTime|X|A/N|the ending date time ("yyyy/MM/dd hh:mm:ss")|
-|StartingVolume|X|A/N|The starting volume|
-|StartingVolumeTC|X|A/N|The starting volume TC|
-|StartingWaterVolume|X|A/N|The starting water volume|
-|StartingTemperature|X|A/N|The starting temperature|
-|StartingFuelHeight|X|A/N|The starting fuel height|
-|EndingVolume|X|A/N|The ending volume|
-|EndingVolumeTC|X|A/N|The ending volume TC|
-|EndingWaterVolume|X|A/N|The ending water volume|
-|EndingTemperature|X|A/N|the ending temperature|
-|EndingFuelHeight|X|A/N|The ending fuel height|
-|TotalVolume|X|A/N|The total volume|
-|TotalVolumeTC|X|A/N|The total volume TC|
+|StartingVolume|X|N|The starting volume|
+|StartingVolumeTC|X|N|The starting volume TC|
+|StartingWaterVolume|X|N|The starting water volume|
+|StartingTemperature|X|N|The starting temperature|
+|StartingFuelHeight|X|N|The starting fuel height|
+|EndingVolume|X|N|The ending volume|
+|EndingVolumeTC|X|N|The ending volume TC|
+|EndingWaterVolume|X|N|The ending water volume|
+|EndingTemperature|X|N|the ending temperature|
+|EndingFuelHeight|X|N|The ending fuel height|
+|TotalVolume|X|N|The total volume|
+|TotalVolumeTC|X|N|The total volume TC|
 |InvoiceNumber|X|A/N|Delivery invoice Number|
 |InvoiceItem|X|A/N|Invoice description|
 |InvoiceDateTime|X|A/N|Invoice date ("yyyy/MM/dd hh:mm:ss")|
-|PhysicalAmountRemitted|X|A/N|Physical amount remitted on invoice|
-|CompensatedAmountRemitted|X|A/N|Compensated amount remitted on invoice|
-|RealTemperature|X|A/N|The actual and exact temperature of the product when it is loaded into the truck|
-|ReferenceTemperature|X|A/N|It is for a calendar month and the average temperature of the place of delivery is taken. It is obtained from the national meteorological services of each country and it is with which the amount of the invoice is corrected|
-|Density|X|A/N|The density of the product at the time of being loaded into the truck|
-|GPSData|X|A/N|GPS Values - see below|
+|PhysicalAmountRemitted|X|N|Physical amount remitted on invoice|
+|CompensatedAmountRemitted|X|N|Compensated amount remitted on invoice|
+|RealTemperature|X|N|The actual and exact temperature of the product when it is loaded into the truck|
+|ReferenceTemperature|X|N|It is for a calendar month and the average temperature of the place of delivery is taken. It is obtained from the national meteorological services of each country and it is with which the amount of the invoice is corrected|
+|Density|X|N|The density of the product at the time of being loaded into the truck|
+|GPSData|X|X|GPS Values - see below|
 
 ### 11.4 Delivery GPS Download – Body Section Format *Response*
 
