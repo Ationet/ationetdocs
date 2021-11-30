@@ -6545,16 +6545,16 @@ transactions to download.
 
 ### 11.4 Delivery GPS Download – Body Section Format *Response*
 
-|Field Name|Descriptions/Field Value(s)|
-|--- |---
-|StartingGPSDate|The starting delivery GPS date ("yyyy/MM/dd hh:mm:ss")|
-|EndingGPSDate |The ending delivery GPS date ("yyyy/MM/dd hh:mm:ss")|
-|LatitudeStart|Start location: Latitude|
-|LongitudeStart|Start location: Longitude|
-|AltitudeStart|Start location: Altitude|
-|LatitudeEnd|End location: Latitude|
-|LongitudeEnd|End location: Longitude|
-|AltitudeEnd|End location: Altitude|
+|Field Name|Size|Type|Descriptions/Field Value(s)|
+|--- |--- |--- |---
+|StartingGPSDate|X|A/N|The starting delivery GPS date ("yyyy/MM/dd hh:mm:ss")|
+|EndingGPSDate|X|A/N|The ending delivery GPS date ("yyyy/MM/dd hh:mm:ss")|
+|LatitudeStart|X|N|Start location: Latitude|
+|LongitudeStart|X|N|Start location: Longitude|
+|AltitudeStart|X|N|Start location: Altitude|
+|LatitudeEnd|X|N|End location: Latitude|
+|LongitudeEnd|X|N|End location: Longitude|
+|AltitudeEnd|X|N|End location: Altitude|
 
 ### 11.5 Inventories Download (POST) – Body Section Format *Request*
 
