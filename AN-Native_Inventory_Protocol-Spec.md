@@ -181,11 +181,11 @@ The action code specifies what type of action will be executed when you enter a 
 |LatitudeStart|X|N|Conditional|Start location: Latitude|
 |LongitudeStart|X|N|Conditional|Start location: Longitude|
 |AltitudeStart|X|N|Conditional|Start location: Altitude|
-|StartingGPSDate|X|A/N|Conditional to Location Start|Start date of delivery location ("yyyy/MM/dd hh:mm:ss")|
+|StartingGPSDate|X|A/N|Conditional|Start date of delivery location ("yyyy/MM/dd hh:mm:ss")|
 |LatitudeEnd|X|N|Conditional|End location: Latitude|
 |LongitudeEnd|X|N|Conditional|End location: Longitude|
 |AltitudeEnd|X|N|Conditional|End location: Altitude|
-|EndingGPSDate|X|A/N|Conditional to Location End|End date of delivery location ("yyyy/MM/dd hh:mm:ss")|
+|EndingGPSDate|X|A/N|Conditional|End date of delivery location ("yyyy/MM/dd hh:mm:ss")|
 
 ``` 
 Note: The values aare conditioned to whether there is a value associated with it. For example, if you have a value for 
