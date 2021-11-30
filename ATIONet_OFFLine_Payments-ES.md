@@ -290,6 +290,14 @@ Una vez enviado el request del [método Crear y procesar](#Método-Crear-y-proce
 		 </tr>
 		<tr valign="top">
 			<td>
+				<p align="left">Prompting sent</p>
+			</td>
+			<td>
+				<p>Se le solicita al cliente la verificación de reglas</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
 				<p align="left">Refused</p>
 			</td>
 			<td>
