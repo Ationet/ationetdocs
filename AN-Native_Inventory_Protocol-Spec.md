@@ -146,34 +146,34 @@ The action code specifies what type of action will be executed when you enter a 
 
 
 ### 3.1 Trama Body Format 
-|Field Name|Descriptions/Field Value(s)|
-|--- |---
-|TankNumber|The tank number|
-|ProductCode|The fuel code. It is associated with the site|
-|CreatedDateTime|Delivery creation date time ("yyyy/MM/dd hh:mm:ss")|
-|StartingDateTime|Delivery start date time ("yyyy/MM/dd hh:mm:ss")|
-|EndingDateTime|Delivery end date time ("yyyy/MM/dd hh:mm:ss")|
-|StartingVolume|The starting volume|
-|StartingVolumeTC|The starting volume TC|
-|StartingWaterVolume|The starting water volume|
-|StartingTemperature|The starting temperature|
-|EndingVolumeTC|The ending volume TC|
-|EndingWaterVolume|The ending water volume|
-|EndingTemperature|The ending temperature|
-|StartingFuelHeight|The starting fuel height|
-|EndingFuelHeight|The ending fuel height|
-|TotalVolume|The total volume|
-|TotalVolumeTC|The total volume TC|
-|InvoiceNumber|The invoice number|
-|InvoiceItem|Invoice description|
-|InvoiceDate|Invoice date ("yyyy/MM/dd hh:mm:ss")|
-|PhysicalAmountRemitted|Physical amount remitted on invoice|
-|CompensatedAmountRemitted|Compensated amount remitted on invoice|
-|RealTemperature|The actual and exact temperature of the product when it is loaded into the truck|
-|ReferenceTemperature|It is for a calendar month and the average temperature of the place of delivery is taken. It is obtained from the national meteorological services of each country and it is with which the amount of the invoice is corrected|
-|Density|The density of the product at the time of being loaded into the truck|
-|Comments|Delivery Comments|
-|GPSData|GPS Values - see below|
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |---
+|TankNumber|X|A/N|Required|The tank number|
+|ProductCode|X|A/N|Required|The fuel code. It is associated with the site|
+|CreatedDateTime|X|A/N|Required|Delivery creation date time ("yyyy/MM/dd hh:mm:ss")|
+|StartingDateTime|X|A/N|Optional|Delivery start date time ("yyyy/MM/dd hh:mm:ss")|
+|EndingDateTime|X|A/N|Optional|Delivery end date time ("yyyy/MM/dd hh:mm:ss")|
+|StartingVolume|X|N|Optional|The starting volume|
+|StartingVolumeTC|X|N|Optional|The starting volume TC|
+|StartingWaterVolume|X|N|Optional|The starting water volume|
+|StartingTemperature|X|N|Optional|The starting temperature|
+|EndingVolumeTC|X|N|Optional|The ending volume TC|
+|EndingWaterVolume|X|N|Optional|The ending water volume|
+|EndingTemperature|X|N|Optional|The ending temperature|
+|StartingFuelHeight|X|N|Optional|The starting fuel height|
+|EndingFuelHeight|X|N|Optional|The ending fuel height|
+|TotalVolume|X|N|Required|The total volume|
+|TotalVolumeTC|X|N|Optional|The total volume TC|
+|InvoiceNumber|X|N|Optional|The invoice number|
+|InvoiceItem|X|A/N|Optional|Invoice description|
+|InvoiceDate|X|A/N|Optional|Invoice date ("yyyy/MM/dd hh:mm:ss")|
+|PhysicalAmountRemitted|X|N|Optional|Physical amount remitted on invoice|
+|CompensatedAmountRemitted|X|N|Optional|Compensated amount remitted on invoice|
+|RealTemperature|X|N|Optional|The actual and exact temperature of the product when it is loaded into the truck|
+|ReferenceTemperature|X|N|Optional|It is for a calendar month and the average temperature of the place of delivery is taken. It is obtained from the national meteorological services of each country and it is with which the amount of the invoice is corrected|
+|Density|X|N|Optional|The density of the product at the time of being loaded into the truck|
+|Comments|X|A/N|Optional|Delivery Comments|
+|GPSData|X|X|Optional|GPS Values - see below|
 
 ### 3.2 GPS Body Format 
 |Field Name|Descriptions/Field Value(s)|
