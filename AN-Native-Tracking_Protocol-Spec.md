@@ -140,17 +140,17 @@ The event type specifies what type of tracking event will be associated with the
 
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |---
-|ActionCode|X|X|Required|See Action Codes section above|
-|SystemModel|X|X|Required|Internal value. Must be set to 1|
-|SystemVersion|X|X|Required|Internal value. Must be set to 1.3|
-|DeviceVolts|X|X|Required|Internal value. Must be set to 12.4|
-|MessageFormatVersion|X|X|Required|Internal value. Must be set to 1|
-|DeviceId|X|X|Required|This field will contain the identification number of the device linked to this service|
-|EventType|X|X|Required|Event Type's Codes section above|
-|HostDateTime|X|X|Required|The host date time ("yyyy/MM/dd HH:mm:ss")|
-|DeviceDateTime|X|X|Required|The device date time ("yyyy/MM/dd HH:mm:ss")|
-|Speed|X|X|Required|Vehicle speed|
-|Odometer|X|X|Required|Vehicle odometer|
-|Orientation|X|X|Required|Location: Orientation|
-|Latitude|X|X|Required|Location: Latitude|
-|Longitude|X|X|Required|Location: Longitude|
+|ActionCode|X|A/N|Required|See Action Codes section above|
+|SystemModel|X|A/N|Required|Internal value. Must be set to 1|
+|SystemVersion|X|A/N|Required|Internal value. Must be set to 1.3|
+|DeviceVolts|X|A/N|Required|Internal value. Must be set to 12.4|
+|MessageFormatVersion|X|A/N|Required|Internal value. Must be set to 1|
+|DeviceId|X|A/N|Required|This field will contain the identification number of the device linked to this service|
+|EventType|X|N|Required|Event Type's Codes section above|
+|HostDateTime|X|A/N|Required|The host date time ("yyyy/MM/dd HH:mm:ss")|
+|DeviceDateTime|X|A/N|Required|The device date time ("yyyy/MM/dd HH:mm:ss")|
+|Speed|X|N|Required|Vehicle speed|
+|Odometer|X|N|Required|Vehicle odometer|
+|Orientation|X|A/N|Required|Location: Orientation|
+|Latitude|X|N|Required|Location: Latitude|
+|Longitude|X|N|Required|Location: Longitude|
