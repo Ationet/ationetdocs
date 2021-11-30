@@ -6581,17 +6581,17 @@ transactions to download.
 |ProductCode|X|A/N|The fuel code. It is associated with the site|
 |TankNumber|X|A/N|The tank number|
 |DateTime|X|A/N|Date time of the Inventory ("yyyy/MM/dd hh:mm:ss")|
-|Volume|X|A/N|The volume|
-|VolumeTC|X|A/N|The volume TC|
-|Ullage|3|A/N|The ullage|
-|WaterVolume|X|A/N|The water Volume|
-|Temperature|X|A/N|The temperature|
-|FuelHeight|X|A/N|The fuel height|
-|WaterHeight|X|A/N|The water height|
+|Volume|X|N|The volume|
+|VolumeTC|X|N|The volume TC|
+|Ullage|3|N|The ullage|
+|WaterVolume|X|N|The water Volume|
+|Temperature|X|N|The temperature|
+|FuelHeight|X|N|The fuel height|
+|WaterHeight|X|N|The water height|
 |GPSDateTime|X|A/N|The inventory GPS date time ("yyyy/MM/dd hh:mm:ss")|
-|Longitude|X|A/N|Location: Longitude|
-|Latitude|X|A/N|Location: Latitude|
-|Altitude|X|A/N|Location: Altitude|
+|Longitude|X|N|Location: Longitude|
+|Latitude|X|N|Location: Latitude|
+|Altitude|X|N|Location: Altitude|
 
 ## 12 Examples
 
