@@ -10,7 +10,7 @@ communicating with the MPPA protocol (conexxus).
 
 ## Fleet Mobile Payment - Dynamic QR
 
-A method that allows third-party Points of Sale (POS( to generate dynamic QR codes (following an ATIONET standard) containing the transaction's data.
+A method that allows third-party Points of Sale (POS) to generate dynamic QR codes (following an ATIONET standard) containing the transaction's data.
 
 [English version](ATIONet_Dynamic_QR_Code_Payments-EN.md)<br>
 [Spanish version](ATIONet_Dynamic_QR_Code_Payments-ES.md)
