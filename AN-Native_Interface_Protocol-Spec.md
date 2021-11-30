@@ -6499,7 +6499,7 @@ transactions to download.
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
 |SubscriberCode|3|A/N|Required|Fixed. To be assigned by ATIONet|
-|ActionCode|3|N|Required|See Action Codes section above|
+|ActionCode|3|A/N|Required|See Action Codes section above|
 |CompanyCode|30|A/N|Conditional|See Action Codes section above|
 |DateFrom|19|A/N|Required|From date to filter movements ("yyyy/MM/dd hh:mm:ss")|
 |DateTo|19|A/N|Optional|To date to filter movements ("yyyy/MM/dd hh:mm:ss")|
@@ -6561,7 +6561,7 @@ transactions to download.
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
 |SubscriberCode|3|A/N|Required|Fixed. To be assigned by ATIONet|
-|ActionCode|3|N|Required|See Action Codes section above|
+|ActionCode|3|A/N|Required|See Action Codes section above|
 |CompanyCode|30|A/N|Conditional|See Action Codes section above|
 |DateFrom|19|A/N|Required|From date to filter movements ("yyyy/MM/dd hh:mm:ss")|
 |DateTo|19|A/N|Optional|To date to filter movements ("yyyy/MM/dd hh:mm:ss")|
