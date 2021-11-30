@@ -105,7 +105,7 @@ The action code specifies what type of action will be executed when you enter a 
 			<p>Allowed for:</p>
 		</td>
 		<td>
-			<p>FILL</p>
+			<p>FMSAPI</p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -132,17 +132,17 @@ The action code specifies what type of action will be executed when you enter a 
 			<p>Allowed for:</p>
 		</td>
 		<td>
-			<p>FILL</p>
+			<p>FMSAPI</p>
 		</td>
 	</tr>
 </table>
 
 ## 3 Deliveries Insert (POST) – Body Section Format *Request*
-|Field Name|Condition|Descriptions/Field Value(s)|
-|--- |--- |---
-|ActionCode|Required|See Action Codes section above|
-|TerminalCode|Required|Site’s Terminal identification code.|
-|Trama|Required|Delivery values|
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |---
+|ActionCode|3|A/N|Required|See Action Codes section above|
+|TerminalCode|50|A/N|Required|Site’s Terminal identification code.|
+|Trama|X|X|Required|Delivery values|
 
 
 ### 3.1 Trama Body Format 
