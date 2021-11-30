@@ -176,16 +176,21 @@ The action code specifies what type of action will be executed when you enter a 
 |GPSData|X|X|Optional|GPS Values - see below|
 
 ### 3.2 GPS Body Format 
-|Field Name|Descriptions/Field Value(s)|
-|--- |---
-|LatitudeStart|Start location: Latitude|
-|LongitudeStart|Start location: Longitude|
-|AltitudeStart|Start location: Altitude|
-|StartingGPSDate|Start date of delivery location ("yyyy/MM/dd hh:mm:ss")|
-|LatitudeEnd|End location: Latitude|
-|LongitudeEnd|End location: Longitude|
-|AltitudeEnd|End location: Altitude|
-|EndingGPSDate|End date of delivery location ("yyyy/MM/dd hh:mm:ss")|
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |---
+|LatitudeStart|X|N|Conditional|Start location: Latitude|
+|LongitudeStart|X|N|Conditional|Start location: Longitude|
+|AltitudeStart|X|N|Conditional|Start location: Altitude|
+|StartingGPSDate|X|A/N|Conditional to Location Start|Start date of delivery location ("yyyy/MM/dd hh:mm:ss")|
+|LatitudeEnd|X|N|Conditional|End location: Latitude|
+|LongitudeEnd|X|N|Conditional|End location: Longitude|
+|AltitudeEnd|X|N|Conditional|End location: Altitude|
+|EndingGPSDate|X|A/N|Conditional to Location End|End date of delivery location ("yyyy/MM/dd hh:mm:ss")|
+
+``` 
+Note: The values aare conditioned to whether there is a value associated with it. For example, if you have a value for 
+the initial latitude, the values for the end and the date must be present.
+``` 
 
 ## 4 Inventories Insert (POST) – Body Section Format *Request*
 |Field Name|Condition|Descriptions/Field Value(s)|
