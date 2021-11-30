@@ -193,27 +193,27 @@ the initial latitude, the values for the end and the date must be present.
 ``` 
 
 ## 4 Inventories Insert (POST) – Body Section Format *Request*
-|Field Name|Condition|Descriptions/Field Value(s)|
-|--- |--- |--- |
-|ActionCode|Required|See Action Codes section above|
-|TerminalCode|Required|Site’s Terminal identification code.|
-|Trama|Required|Inventory values|
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |---
+|ActionCode|3|A/N|Required|See Action Codes section above|
+|TerminalCode|50|A/N|Required|Site’s Terminal identification code.|
+|Trama|X|X|Required|Delivery values|
 
 
 ### 4.1 Trama Body Format 
-|Field Name|Descriptions/Field Value(s)|
-|--- |---
-|TankNumber|The tank number|
-|ProductCode|The fuel code. It is associated with the site|
-|DateTime|Inventory date time ("yyyy/MM/dd hh:mm:ss")|
-|Volume|The volume|
-|VolumeTC|The volume TC|
-|Ullage|The ullage|
-|WaterVolume|The water volume|
-|FuelHeight|the fuel height|
-|Temperature|The temperature|
-|WaterHeight|The water height|
-|Latitude|Location: Latitude|
-|Longitude|Location: Longitude|
-|Altitude|Location: Altitude|
-|Date|Location date ("yyyy/MM/dd hh:mm:ss")|
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |---
+|TankNumber|X|A/N|Required|The tank number|
+|ProductCode|X|A/N|Required|The fuel code. It is associated with the site|
+|DateTime|X|A/N|Required|Inventory date time ("yyyy/MM/dd hh:mm:ss")|
+|Volume|X|N|Optional|The volume|
+|VolumeTC|X|N|Optional|The volume TC|
+|Ullage|X|N|Optional|The ullage|
+|WaterVolume|X|N|Optional|The water volume|
+|FuelHeight|X|N|Optional|the fuel height|
+|Temperature|X|N|Optional|The temperature|
+|WaterHeight|X|N|Optional|The water height|
+|Latitude|X|N|Optional|Location: Latitude|
+|Longitude|X|N|Optional|Location: Longitude|
+|Altitude|X|N|Optional|Location: Altitude|
+|Date|X|A/N|Optional|Location date ("yyyy/MM/dd hh:mm:ss")|
