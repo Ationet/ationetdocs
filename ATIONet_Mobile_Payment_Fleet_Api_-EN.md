@@ -1634,13 +1634,35 @@ This section describe through a table  all  states that a sale can have.
 		 </tr>
 		<tr valign="top">
 			<td>
+				<p align="left">PromptingSent</p>
+			</td>
+			<td>
+				<p align="center">27</p>
+			</td>
+			<td>
+				<p align="left">Prompting Sent</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
 				<p align="left">PromptingSuccess</p>
 			</td>
 			<td>
-				<p align="center">26</p>
+				<p align="center">28</p>
 			</td>
 			<td>
 				<p align="left">Prompting Success</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TransactionRefused</p>
+			</td>
+			<td>
+				<p align="center">28</p>
+			</td>
+			<td>
+				<p align="left">Transaction Refused</p>
 			</td>
 		 </tr>
 </table>
@@ -1649,7 +1671,7 @@ This section describe through a table  all  states that a sale can have.
 ### Transaction states sequence diagram on Pre authorization Request
 
 
-![ationetTR](Content/Images/MobilePaymentFleet/FullyIntegratedTransactionStates.drawio.png)
+![ationetTR](Content/Images/MobilePaymentFleet/FullyIntegratedTransactionStates20213011.jpg)
 
 
 ### Transaction states sequence diagram on Cancelation Request
