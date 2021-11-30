@@ -316,6 +316,22 @@ Nota: Los clientes no pueden cambiar el monto de la transacci√≥n en su aplicaci√
 		 </tr>
 		<tr valign="top">
 			<td>
+				<p align="left">Prompting Needed</p>
+			</td>
+			<td>
+				<p>Se deben enviar reglas adicionales</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Prompting Sent</p>
+			</td>
+			<td>
+				<p>Se han enviado las reglas</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
 				<p align="left">Post Paid Cancelled</p>
 			</td>
 			<td>
