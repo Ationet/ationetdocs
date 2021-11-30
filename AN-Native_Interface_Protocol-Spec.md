@@ -6536,7 +6536,8 @@ transactions to download.
 |InvoiceNumber|X|A/N|Delivery invoice Number|
 |InvoiceItem|X|A/N|Invoice description|
 |InvoiceDateTime|X|A/N|Invoice date ("yyyy/MM/dd hh:mm:ss")|
-|CompensatedAmountRemitted|X|A/N|Compensated amount remitted|
+|PhysicalAmountRemitted|X|A/N|Physical amount remitted on invoice|
+|CompensatedAmountRemitted|X|A/N|Compensated amount remitted on invoice|
 |RealTemperature|X|A/N|The actual and exact temperature of the product when it is loaded into the truck|
 |ReferenceTemperature|X|A/N|It is for a calendar month and the average temperature of the place of delivery is taken. It is obtained from the national meteorological services of each country and it is with which the amount of the invoice is corrected|
 |Density|X|A/N|The density of the product at the time of being loaded into the truck|
