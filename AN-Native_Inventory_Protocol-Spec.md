@@ -148,44 +148,44 @@ The action code specifies what type of action will be executed when you enter a 
 ### 3.1 Trama Body Format 
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |---
-|TankNumber|X|A/N|Required|The tank number|
-|ProductCode|X|A/N|Required|The fuel code. It is associated with the site|
-|CreatedDateTime|X|A/N|Required|Delivery creation date time ("yyyy/MM/dd hh:mm:ss")|
-|StartingDateTime|X|A/N|Optional|Delivery start date time ("yyyy/MM/dd hh:mm:ss")|
-|EndingDateTime|X|A/N|Optional|Delivery end date time ("yyyy/MM/dd hh:mm:ss")|
-|StartingVolume|X|N|Optional|The starting volume|
-|StartingVolumeTC|X|N|Optional|The starting volume TC|
-|StartingWaterVolume|X|N|Optional|The starting water volume|
-|StartingTemperature|X|N|Optional|The starting temperature|
-|EndingVolumeTC|X|N|Optional|The ending volume TC|
-|EndingWaterVolume|X|N|Optional|The ending water volume|
-|EndingTemperature|X|N|Optional|The ending temperature|
-|StartingFuelHeight|X|N|Optional|The starting fuel height|
-|EndingFuelHeight|X|N|Optional|The ending fuel height|
-|TotalVolume|X|N|Required|The total volume|
-|TotalVolumeTC|X|N|Optional|The total volume TC|
-|InvoiceNumber|X|N|Optional|The invoice number|
-|InvoiceItem|X|A/N|Optional|Invoice description|
-|InvoiceDate|X|A/N|Optional|Invoice date ("yyyy/MM/dd hh:mm:ss")|
-|PhysicalAmountRemitted|X|N|Optional|Physical amount remitted on invoice|
-|CompensatedAmountRemitted|X|N|Optional|Compensated amount remitted on invoice|
-|RealTemperature|X|N|Optional|The actual and exact temperature of the product when it is loaded into the truck|
-|ReferenceTemperature|X|N|Optional|It is for a calendar month and the average temperature of the place of delivery is taken. It is obtained from the national meteorological services of each country and it is with which the amount of the invoice is corrected|
-|Density|X|N|Optional|The density of the product at the time of being loaded into the truck|
-|Comments|X|A/N|Optional|Delivery Comments|
+|TankNumber|50|A/N|Required|The tank number|
+|ProductCode|50|A/N|Required|The fuel code. It is associated with the site|
+|CreatedDateTime|19|A/N|Required|Delivery creation date time ("yyyy/MM/dd hh:mm:ss")|
+|StartingDateTime|19|A/N|Optional|Delivery start date time ("yyyy/MM/dd hh:mm:ss")|
+|EndingDateTime|19|A/N|Optional|Delivery end date time ("yyyy/MM/dd hh:mm:ss")|
+|StartingVolume|10|N|Optional|The starting volume|
+|StartingVolumeTC|10|N|Optional|The starting volume TC|
+|StartingWaterVolume|10|N|Optional|The starting water volume|
+|StartingTemperature|10|N|Optional|The starting temperature|
+|EndingVolumeTC|10|N|Optional|The ending volume TC|
+|EndingWaterVolume|10|N|Optional|The ending water volume|
+|EndingTemperature|10|N|Optional|The ending temperature|
+|StartingFuelHeight|10|N|Optional|The starting fuel height|
+|EndingFuelHeight|10|N|Optional|The ending fuel height|
+|TotalVolume|10|N|Required|The total volume|
+|TotalVolumeTC|10|N|Optional|The total volume TC|
+|InvoiceNumber|50|A/N|Optional|The invoice number|
+|InvoiceItem|50|A/N|Optional|Invoice description|
+|InvoiceDate|19|A/N|Optional|Invoice date ("yyyy/MM/dd hh:mm:ss")|
+|PhysicalAmountRemitted|10|N|Optional|Physical amount remitted on invoice|
+|CompensatedAmountRemitted|10|N|Optional|Compensated amount remitted on invoice|
+|RealTemperature|10|N|Optional|The actual and exact temperature of the product when it is loaded into the truck|
+|ReferenceTemperature|10|N|Optional|It is for a calendar month and the average temperature of the place of delivery is taken. It is obtained from the national meteorological services of each country and it is with which the amount of the invoice is corrected|
+|Density|10|N|Optional|The density of the product at the time of being loaded into the truck|
+|Comments|350|A/N|Optional|Delivery Comments|
 |GPSData|X|X|Optional|GPS Values - see below|
 
 ### 3.2 GPS Body Format 
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |---
-|LatitudeStart|X|N|Conditional|Start location: Latitude|
-|LongitudeStart|X|N|Conditional|Start location: Longitude|
-|AltitudeStart|X|N|Conditional|Start location: Altitude|
-|StartingGPSDate|X|A/N|Conditional|Start date of delivery location ("yyyy/MM/dd hh:mm:ss")|
-|LatitudeEnd|X|N|Conditional|End location: Latitude|
-|LongitudeEnd|X|N|Conditional|End location: Longitude|
-|AltitudeEnd|X|N|Conditional|End location: Altitude|
-|EndingGPSDate|X|A/N|Conditional|End date of delivery location ("yyyy/MM/dd hh:mm:ss")|
+|LatitudeStart|10|N|Conditional|Start location: Latitude|
+|LongitudeStart|10|N|Conditional|Start location: Longitude|
+|AltitudeStart|10|N|Conditional|Start location: Altitude|
+|StartingGPSDate|19|A/N|Conditional|Start date of delivery location ("yyyy/MM/dd hh:mm:ss")|
+|LatitudeEnd|10|N|Conditional|End location: Latitude|
+|LongitudeEnd|10|N|Conditional|End location: Longitude|
+|AltitudeEnd|10|N|Conditional|End location: Altitude|
+|EndingGPSDate|19|A/N|Conditional|End date of delivery location ("yyyy/MM/dd hh:mm:ss")|
 
 ``` 
 Note: The values aare conditioned to whether there is a value associated with it. For example, if you have a value for 
@@ -203,17 +203,17 @@ the initial latitude, the values for the end and the date must be present.
 ### 4.1 Trama Body Format 
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |---
-|TankNumber|X|A/N|Required|The tank number|
-|ProductCode|X|A/N|Required|The fuel code. It is associated with the site|
-|DateTime|X|A/N|Required|Inventory date time ("yyyy/MM/dd hh:mm:ss")|
-|Volume|X|N|Optional|The volume|
-|VolumeTC|X|N|Optional|The volume TC|
-|Ullage|X|N|Optional|The ullage|
-|WaterVolume|X|N|Optional|The water volume|
-|FuelHeight|X|N|Optional|the fuel height|
-|Temperature|X|N|Optional|The temperature|
-|WaterHeight|X|N|Optional|The water height|
-|Latitude|X|N|Optional|Location: Latitude|
-|Longitude|X|N|Optional|Location: Longitude|
-|Altitude|X|N|Optional|Location: Altitude|
-|Date|X|A/N|Optional|Location date ("yyyy/MM/dd hh:mm:ss")|
+|TankNumber|50|A/N|Required|The tank number|
+|ProductCode|50|A/N|Required|The fuel code. It is associated with the site|
+|DateTime|19|A/N|Required|Inventory date time ("yyyy/MM/dd hh:mm:ss")|
+|Volume|10|N|Optional|The volume|
+|VolumeTC|10|N|Optional|The volume TC|
+|Ullage|10|N|Optional|The ullage|
+|WaterVolume|10|N|Optional|The water volume|
+|FuelHeight|10|N|Optional|the fuel height|
+|Temperature|10|N|Optional|The temperature|
+|WaterHeight|10|N|Optional|The water height|
+|Latitude|10|N|Optional|Location: Latitude|
+|Longitude|10|N|Optional|Location: Longitude|
+|Altitude|10|N|Optional|Location: Altitude|
+|Date|19|A/N|Optional|Location date ("yyyy/MM/dd hh:mm:ss")|
