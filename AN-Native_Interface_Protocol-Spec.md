@@ -6516,45 +6516,45 @@ transactions to download.
 |TerminalDescription|50|A/N|Terminal description.|
 |FuelMasterCode|50|A/N|Standardized product code. Helps to identify a fuel product category across multiple Merchant brands and site’s product codes|
 |FuelMasterDescription|100|A/N|Standardized product description. Helps to identify a fuel product category across multiple Merchant brands and site’s product codes|
-|ProductCode|X|A/N|The fuel code. It is associated with the site|
-|TankNumber|X|A/N|The tank number|
-|CreatedDateTime|X|A/N|The creation date time ("yyyy/MM/dd hh:mm:ss")|
-|StartingDateTime|X|A/N|The starting date time ("yyyy/MM/dd hh:mm:ss")|
-|EndingDateTime|X|A/N|the ending date time ("yyyy/MM/dd hh:mm:ss")|
-|StartingVolume|X|N|The starting volume|
-|StartingVolumeTC|X|N|The starting volume TC|
-|StartingWaterVolume|X|N|The starting water volume|
-|StartingTemperature|X|N|The starting temperature|
-|StartingFuelHeight|X|N|The starting fuel height|
-|EndingVolume|X|N|The ending volume|
-|EndingVolumeTC|X|N|The ending volume TC|
-|EndingWaterVolume|X|N|The ending water volume|
-|EndingTemperature|X|N|the ending temperature|
-|EndingFuelHeight|X|N|The ending fuel height|
-|TotalVolume|X|N|The total volume|
-|TotalVolumeTC|X|N|The total volume TC|
-|InvoiceNumber|X|A/N|Delivery invoice Number|
-|InvoiceItem|X|A/N|Invoice description|
-|InvoiceDateTime|X|A/N|Invoice date ("yyyy/MM/dd hh:mm:ss")|
-|PhysicalAmountRemitted|X|N|Physical amount remitted on invoice|
-|CompensatedAmountRemitted|X|N|Compensated amount remitted on invoice|
-|RealTemperature|X|N|The actual and exact temperature of the product when it is loaded into the truck|
-|ReferenceTemperature|X|N|It is for a calendar month and the average temperature of the place of delivery is taken. It is obtained from the national meteorological services of each country and it is with which the amount of the invoice is corrected|
-|Density|X|N|The density of the product at the time of being loaded into the truck|
+|ProductCode|50|A/N|The fuel code. It is associated with the site|
+|TankNumber|50|A/N|The tank number|
+|CreatedDateTime|19|A/N|The creation date time ("yyyy/MM/dd hh:mm:ss")|
+|StartingDateTime|19|A/N|The starting date time ("yyyy/MM/dd hh:mm:ss")|
+|EndingDateTime|19|A/N|the ending date time ("yyyy/MM/dd hh:mm:ss")|
+|StartingVolume|10|N|The starting volume|
+|StartingVolumeTC|10|N|The starting volume TC|
+|StartingWaterVolume|10|N|The starting water volume|
+|StartingTemperature|10|N|The starting temperature|
+|StartingFuelHeight|10|N|The starting fuel height|
+|EndingVolume|10|N|The ending volume|
+|EndingVolumeTC|10|N|The ending volume TC|
+|EndingWaterVolume|10|N|The ending water volume|
+|EndingTemperature|10|N|the ending temperature|
+|EndingFuelHeight|10|N|The ending fuel height|
+|TotalVolume|10|N|The total volume|
+|TotalVolumeTC|10|N|The total volume TC|
+|InvoiceNumber|50|A/N|Delivery invoice Number|
+|InvoiceItem|50|A/N|Invoice description|
+|InvoiceDateTime|19|A/N|Invoice date ("yyyy/MM/dd hh:mm:ss")|
+|PhysicalAmountRemitted|10|N|Physical amount remitted on invoice|
+|CompensatedAmountRemitted|10|N|Compensated amount remitted on invoice|
+|RealTemperature|10|N|The actual and exact temperature of the product when it is loaded into the truck|
+|ReferenceTemperature|10|N|It is for a calendar month and the average temperature of the place of delivery is taken. It is obtained from the national meteorological services of each country and it is with which the amount of the invoice is corrected|
+|Density|10|N|The density of the product at the time of being loaded into the truck|
 |GPSData|X|X|GPS Values - see below|
 
 ### 11.4 Delivery GPS Download – Body Section Format *Response*
 
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |---
-|StartingGPSDate|X|A/N|The starting delivery GPS date ("yyyy/MM/dd hh:mm:ss")|
-|EndingGPSDate|X|A/N|The ending delivery GPS date ("yyyy/MM/dd hh:mm:ss")|
-|LatitudeStart|X|N|Start location: Latitude|
-|LongitudeStart|X|N|Start location: Longitude|
-|AltitudeStart|X|N|Start location: Altitude|
-|LatitudeEnd|X|N|End location: Latitude|
-|LongitudeEnd|X|N|End location: Longitude|
-|AltitudeEnd|X|N|End location: Altitude|
+|StartingGPSDate|19|A/N|The starting delivery GPS date ("yyyy/MM/dd hh:mm:ss")|
+|EndingGPSDate|19|A/N|The ending delivery GPS date ("yyyy/MM/dd hh:mm:ss")|
+|LatitudeStart|10|N|Start location: Latitude|
+|LongitudeStart|10|N|Start location: Longitude|
+|AltitudeStart|10|N|Start location: Altitude|
+|LatitudeEnd|10|N|End location: Latitude|
+|LongitudeEnd|10|N|End location: Longitude|
+|AltitudeEnd|10|N|End location: Altitude|
 
 ### 11.5 Inventories Download (POST) – Body Section Format *Request*
 
@@ -6578,20 +6578,20 @@ transactions to download.
 |TerminalDescription|50|A/N|Terminal description.|
 |FuelMasterCode|50|A/N|Standardized product code. Helps to identify a fuel product category across multiple Merchant brands and site’s product codes|
 |FuelMasterDescription|100|A/N|Standardized product description. Helps to identify a fuel product category across multiple Merchant brands and site’s product codes|
-|ProductCode|X|A/N|The fuel code. It is associated with the site|
-|TankNumber|X|A/N|The tank number|
-|DateTime|X|A/N|Date time of the Inventory ("yyyy/MM/dd hh:mm:ss")|
-|Volume|X|N|The volume|
-|VolumeTC|X|N|The volume TC|
-|Ullage|3|N|The ullage|
-|WaterVolume|X|N|The water Volume|
-|Temperature|X|N|The temperature|
-|FuelHeight|X|N|The fuel height|
-|WaterHeight|X|N|The water height|
-|GPSDateTime|X|A/N|The inventory GPS date time ("yyyy/MM/dd hh:mm:ss")|
-|Longitude|X|N|Location: Longitude|
-|Latitude|X|N|Location: Latitude|
-|Altitude|X|N|Location: Altitude|
+|ProductCode|50|A/N|The fuel code. It is associated with the site|
+|TankNumber|50|A/N|The tank number|
+|DateTime|19|A/N|Date time of the Inventory ("yyyy/MM/dd hh:mm:ss")|
+|Volume|10|N|The volume|
+|VolumeTC|10|N|The volume TC|
+|Ullage|10|N|The ullage|
+|WaterVolume|10|N|The water Volume|
+|Temperature|10|N|The temperature|
+|FuelHeight|10|N|The fuel height|
+|WaterHeight|10|N|The water height|
+|GPSDateTime|19|A/N|The inventory GPS date time ("yyyy/MM/dd hh:mm:ss")|
+|Longitude|10|N|Location: Longitude|
+|Latitude|10|N|Location: Latitude|
+|Altitude|10|N|Location: Altitude|
 
 ## 12 Examples
 
