@@ -164,6 +164,7 @@ The action code specifies what type of action will be executed when you enter a 
 |EndingFuelHeight|10|N|Optional|The ending fuel height|
 |TotalVolume|10|N|Required|The total volume|
 |TotalVolumeTC|10|N|Optional|The total volume TC|
+|InvoiceNumber|50|A/N|Optional|The invoice number|
 |Comments|350|A/N|Optional|Delivery Comments|
 |DeliveryNotesData|X|X|Optional|Delivery receipt values - see below|
 |GPSData|X|X|Optional|GPS Values - see below|
