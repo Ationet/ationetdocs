@@ -6354,7 +6354,6 @@ transactions to download.
 </table>
 
 ### 10.2 Account Download (POST) – Body Section Format *Request*
-
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
 |SubscriberCode|3|A/N|Required|Fixed. To be assigned by ATIONet|
@@ -6364,7 +6363,6 @@ transactions to download.
 |DateTo|19|A/N|Optional|To date to filter movements "yyyy/MM/dd hh:mm:ss"|
 
 ### 10.3 Account Download (POST) – Body Section Format *Response*
-
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |
 |Id|36|A/N|Current account’s UID|
@@ -6392,7 +6390,6 @@ transactions to download.
 
 
 ## 11 Inventory and deliveries Downloads
-
 The Inventory and Delivery Download messages are POST actions to recover all the
 transactions processed by ATIONET for a given Merchant or the complete Subscriber
 Code depending on the particular Action Code.
@@ -6496,7 +6493,6 @@ transactions to download.
 </table>
 
 ### 11.2 Deliveries Download (POST) – Body Section Format *Request*
-
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
 |SubscriberCode|3|A/N|Required|Fixed. To be assigned by ATIONet|
@@ -6506,7 +6502,6 @@ transactions to download.
 |DateTo|19|A/N|Optional|To date to filter movements ("yyyy/MM/dd hh:mm:ss")|
 
 ### 11.3 Deliveries Download (POST) – Body Section Format *Response*
-
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |
 |DeliveryId|36|A/N|Delivery UID|
@@ -6538,7 +6533,7 @@ transactions to download.
 |DeliveryNotesData|X|X|Delivery receipt values - see below - see below|
 |GPSData|X|X|GPS Values - see below|
 
-### 11.4 Delivery DeliveryNotesData Download - Body Section Format *Response*
+### 11.4 Delivery DeliveryNotesData Download – Body Section Format *Response*
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |
 |InvoiceNumber|50|A/N|Delivery invoice Number|
@@ -6563,7 +6558,6 @@ transactions to download.
 |AltitudeEnd|10|N|End location: Altitude|
 
 ### 11.6 Inventories Download (POST) – Body Section Format *Request*
-
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
 |SubscriberCode|3|A/N|Required|Fixed. To be assigned by ATIONet|
@@ -6573,7 +6567,6 @@ transactions to download.
 |DateTo|19|A/N|Optional|To date to filter movements ("yyyy/MM/dd hh:mm:ss")|
 
 ### 11.7 Inventories Download (POST) – Body Section Format *Response*
-
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |
 |InventoryId|36|A/N|Delivery UID|
