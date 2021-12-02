@@ -68,7 +68,7 @@
 	- [11.1 Action Codes](#111-Action-Codes)
 	- [11.2 Deliveries Download (POST) – Body Section Format Request](#112-Deliveries-Download-POST--Body-Section-Format-Request)
 	- [11.3 Deliveries Download (POST) – Body Section Format *Response*](#113-Deliveries-Download-POST--Body-Section-Format-Response)
-	- [11.4 Delivery DeliveryNotesData Download - Body Section Format *Response*](#115-Delivery-DeliveryNotesData-Download--Body-Section-Format-Response)
+	- [11.4 Delivery DeliveryNotesData Download - Body Section Format *Response*](#114-Delivery-DeliveryNotesData-Download--Body-Section-Format-Response)
 	- [11.5 Delivery GPS Download - Body Section Format *Response*](#115-Delivery-GPS-Download--Body-Section-Format-Response)
 	- [11.6 Inventories Download (POST) – Body Section Format *Request*](#116-Inventories-Download-POST--Body-Section-Format-Request)
 	- [11.7 Inventories Download (POST) – Body Section Format *Response*](#117-Inventories-Download-POST--Body-Section-Format-Response)
@@ -6538,7 +6538,7 @@ transactions to download.
 |DeliveryNotesData|X|X|Delivery receipt values - see below - see below|
 |GPSData|X|X|GPS Values - see below|
 
-### 11.4 Delivery DeliveryNotesData Download – Body Section Format *Response*
+### 11.4 Delivery DeliveryNotesData Download - Body Section Format *Response*
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |
 |InvoiceNumber|50|A/N|Delivery invoice Number|
