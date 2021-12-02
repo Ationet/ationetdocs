@@ -6533,17 +6533,22 @@ transactions to download.
 |EndingFuelHeight|10|N|The ending fuel height|
 |TotalVolume|10|N|The total volume|
 |TotalVolumeTC|10|N|The total volume TC|
+|DeliveryNotesData|X|X|Delivery receipt values - see below - see below|
+|GPSData|X|X|GPS Values - see below|
+
+### 11.4 Delivery GPS Download – DeliveryNotesData Body Section Format *Response*
+|Field Name|Size|Type|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |
 |InvoiceNumber|50|A/N|Delivery invoice Number|
 |InvoiceItem|50|A/N|Invoice description|
-|InvoiceDateTime|19|A/N|Invoice date ("yyyy/MM/dd hh:mm:ss")|
+|InvoiceDate|19|A/N|Invoice date time ("yyyy/MM/dd hh:mm:ss")|
 |PhysicalAmountRemitted|10|N|Physical amount remitted on invoice|
 |CompensatedAmountRemitted|10|N|Compensated amount remitted on invoice|
 |RealTemperature|10|N|The actual and exact temperature of the product when it is loaded into the truck|
 |ReferenceTemperature|10|N|It is for a calendar month and the average temperature of the place of delivery is taken. It is obtained from the national meteorological services of each country and it is with which the amount of the invoice is corrected|
 |Density|10|N|The density of the product at the time of being loaded into the truck|
-|GPSData|X|X|GPS Values - see below|
 
-### 11.4 Delivery GPS Download – Body Section Format *Response*
+### 11.5 Delivery GPS Download – GPS Body Section Format *Response*
 
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |---
@@ -6556,7 +6561,7 @@ transactions to download.
 |LongitudeEnd|10|N|End location: Longitude|
 |AltitudeEnd|10|N|End location: Altitude|
 
-### 11.5 Inventories Download (POST) – Body Section Format *Request*
+### 11.6 Inventories Download (POST) – Body Section Format *Request*
 
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
@@ -6566,7 +6571,7 @@ transactions to download.
 |DateFrom|19|A/N|Required|From date to filter movements ("yyyy/MM/dd hh:mm:ss")|
 |DateTo|19|A/N|Optional|To date to filter movements ("yyyy/MM/dd hh:mm:ss")|
 
-### 11.6 Inventories Download (POST) – Body Section Format *Response*
+### 11.7 Inventories Download (POST) – Body Section Format *Response*
 
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |
