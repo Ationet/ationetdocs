@@ -20,12 +20,12 @@
 - [2 Action Codes](#2-Action-Codes)
 - [3 Deliveries Insert (POST) - Body Section Format Request](#3-Deliveries-Insert-POST--Body-Section-Format-Request)
 	- [3.1 Trama Body Format](#31-Trama-Body-Format)
-		- [3.2 GPS Body Format](#32-GPS-Body-Format)
+		- [3.2 DeliveryNotesData Body Format](#32-DeliveryNotesData-Body-Format)
+		- [3.3 GPS Body Format](#33-GPS-Body-Format)
 - [4 Inventories Insert (POST) - Body Section Format Request](#4-Inventories-Insert-POST--Body-Section-Format-Request)
 	- [4.1 Trama Body Format](#41-Trama-Body-Format)
 
 ## Overview
-
 
 ### Introduction
 
@@ -164,6 +164,13 @@ The action code specifies what type of action will be executed when you enter a 
 |EndingFuelHeight|10|N|Optional|The ending fuel height|
 |TotalVolume|10|N|Required|The total volume|
 |TotalVolumeTC|10|N|Optional|The total volume TC|
+|Comments|350|A/N|Optional|Delivery Comments|
+|DeliveryNotesData|X|X|Optional|Delivery receipt values - see below|
+|GPSData|X|X|Optional|GPS Values - see below|
+
+### 3.2 DeliveryNotesData Body Format
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |---
 |InvoiceNumber|50|A/N|Optional|The invoice number|
 |InvoiceItem|50|A/N|Optional|Invoice description|
 |InvoiceDate|19|A/N|Optional|Invoice date ("yyyy/MM/dd hh:mm:ss")|
@@ -172,10 +179,8 @@ The action code specifies what type of action will be executed when you enter a 
 |RealTemperature|10|N|Optional|The actual and exact temperature of the product when it is loaded into the truck|
 |ReferenceTemperature|10|N|Optional|It is for a calendar month and the average temperature of the place of delivery is taken. It is obtained from the national meteorological services of each country and it is with which the amount of the invoice is corrected|
 |Density|10|N|Optional|The density of the product at the time of being loaded into the truck|
-|Comments|350|A/N|Optional|Delivery Comments|
-|GPSData|X|X|Optional|GPS Values - see below|
 
-### 3.2 GPS Body Format 
+### 3.3 GPS Body Format 
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |---
 |LatitudeStart|10|N|Conditional|Start location: Latitude|
@@ -191,7 +196,6 @@ The action code specifies what type of action will be executed when you enter a 
 Note: The values aare conditioned to whether there is a value associated with it. For example, if you have a value for 
 the initial latitude, the values for the end and the date must be present.
 ``` 
-
 ## 4 Inventories Insert (POST) – Body Section Format *Request*
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |---
