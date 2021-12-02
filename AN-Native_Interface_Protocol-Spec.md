@@ -6533,6 +6533,7 @@ transactions to download.
 |EndingFuelHeight|10|N|The ending fuel height|
 |TotalVolume|10|N|The total volume|
 |TotalVolumeTC|10|N|The total volume TC|
+|InvoiceNumber|50|A/N|Delivery invoice Number|
 |DeliveryNotesData|X|X|Delivery receipt values - see below - see below|
 |GPSData|X|X|GPS Values - see below|
 
