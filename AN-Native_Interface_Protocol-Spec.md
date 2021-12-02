@@ -68,9 +68,10 @@
 	- [11.1 Action Codes](#111-Action-Codes)
 	- [11.2 Deliveries Download (POST) – Body Section Format Request](#112-Deliveries-Download-POST--Body-Section-Format-Request)
 	- [11.3 Deliveries Download (POST) – Body Section Format *Response*](#113-Deliveries-Download-POST--Body-Section-Format-Response)
-	- [11.4 Delivery GPS Download - Body Section Format *Response*](#114-Delivery-GPS-Download--Body-Section-Format-Response)
-	- [11.5 Inventories Download (POST) – Body Section Format *Request*](#115-Inventories-Download-POST--Body-Section-Format-Request)
-	- [11.6 Inventories Download (POST) – Body Section Format *Response*](#116-Inventories-Download-POST--Body-Section-Format-Response)
+	- [11.4 Delivery DeliveryNotesData Download - Body Section Format *Response*](#115-Delivery-DeliveryNotesData-Download--Body-Section-Format-Response)
+	- [11.5 Delivery GPS Download - Body Section Format *Response*](#115-Delivery-GPS-Download--Body-Section-Format-Response)
+	- [11.6 Inventories Download (POST) – Body Section Format *Request*](#116-Inventories-Download-POST--Body-Section-Format-Request)
+	- [11.7 Inventories Download (POST) – Body Section Format *Response*](#117-Inventories-Download-POST--Body-Section-Format-Response)
 
 - [12 Examples](#12-Examples)
 	- [12.1 C# example](#121-C-example)
@@ -6537,7 +6538,7 @@ transactions to download.
 |DeliveryNotesData|X|X|Delivery receipt values - see below - see below|
 |GPSData|X|X|GPS Values - see below|
 
-### 11.4 Delivery GPS Download – DeliveryNotesData Body Section Format *Response*
+### 11.4 Delivery DeliveryNotesData Download – Body Section Format *Response*
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |
 |InvoiceNumber|50|A/N|Delivery invoice Number|
@@ -6549,7 +6550,7 @@ transactions to download.
 |ReferenceTemperature|10|N|It is for a calendar month and the average temperature of the place of delivery is taken. It is obtained from the national meteorological services of each country and it is with which the amount of the invoice is corrected|
 |Density|10|N|The density of the product at the time of being loaded into the truck|
 
-### 11.5 Delivery GPS Download – GPS Body Section Format *Response*
+### 11.5 Delivery GPS Download – Body Section Format *Response*
 
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |---
