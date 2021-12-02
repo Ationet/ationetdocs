@@ -6551,7 +6551,6 @@ transactions to download.
 |Density|10|N|The density of the product at the time of being loaded into the truck|
 
 ### 11.5 Delivery GPS Download – Body Section Format *Response*
-
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |---
 |StartingGPSDate|19|A/N|The starting delivery GPS date ("yyyy/MM/dd hh:mm:ss")|
