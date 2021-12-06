@@ -499,6 +499,7 @@ body
 	"AuthorizationCode": "string", 
 	"ResponseCode": "string", 
 	"ResponseMessage":  "string", 
+	"customerData": {},
 	"TransactionStatus":
 		{
 			"name":"string",
@@ -610,9 +611,17 @@ body:
 
 ```
 {
-  "authorizationCode": "072613127",
-  "responseCode": "00000",
-  "responseMessage": "Autorizado"
+    "authorizationCode": "050808166",
+    "responseCode": "40500",
+    "responseMessage": "Solicitud requerida",
+    "customerData": {
+        "PromptOdometer": "true",
+        "ContractMode": "2"
+    },
+    "transactionStatus": {
+        "name": "Post Paid Prompting Needed",
+        "id": 26
+    }
 }
 ```
 
