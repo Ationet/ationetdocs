@@ -935,6 +935,59 @@ transactions to download.
 			<p>Terminal Code (Optional, if included will act as a filter)</p>
 		</td>
 	</tr>
+	
+	
+	
+	<tr valign="top">
+		<td rowspan="4">
+			<p>948</p>
+		</td>
+		<td>
+			<p>Title:</p>
+		</td>
+		<td>
+			<p>Transactions Custom Fields Download</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Function:</p>
+		</td>
+		<td>
+			<p>Download partial information of transactions records</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Allowed for:</p>
+		</td>
+		<td>
+			<p>Subscribers and Fleet Companies</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Identification:</p>
+		</td>
+		<td>
+			<p>Subscriber Code</p>
+			<p>Merchant Code (Optional, if included will act as a filter)</p>
+			<p>Company Code (Optional, if included will act as a filter)</p>
+			<p>Terminal Code(Optional, if included will act as a filter)</p>
+			<p>Contract Code (Optional, if included will act as a filter)</p>
+			<p>Identification ID (Optional, if included will act as a filter)</p>
+			<p>Track Number (Optional, if included will act as a filter)</p>
+			<p>PAN (Optional, if included will act as a filter)</p>
+			<p>Company Group ID (Optional, if included will act as a filter)</p>
+			<p>Company Group Code (Optional, if included will act as a filter)</p>
+			<p>Transaction Modes (Optional, if included will act as a filter)</p>
+			<p>Authorization Code (Optional, if included will act as a filter)</p>
+			<p>Program Id(Optional, if included will act as a filter)</p>
+			<p>Date From (Optional, if included will act as a filter)</p>
+			<p>Date To (Optional, if included will act as a filter)</p>
+		</td>
+	</tr>
+	
 </table>
 
 ### 7.2 Transactions Download (POST) – Body Section Format *Request*
