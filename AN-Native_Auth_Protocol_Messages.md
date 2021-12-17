@@ -1,13 +1,13 @@
 ![ationetlogo](Content/Images/ATIOnetLogo_250x70.png) 
 # ATIONet Native Authorization Protocol Messages 
-> **About:** This document describes each messages from the Authorization protocol, stating which field is optional and which one isn't.	
+> **About:** This document describes each messages from the Authorization protocol, stating which field is optional and which one isn't.
 
 </br>
 
 <table>
 	<thead>
 		<tr>
-			<td colspan="2" class="tablehead">Document Information</td>
+			<th colspan="2" class="tablehead">Document Information</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -17,15 +17,15 @@
 		</tr>
 		<tr>
 			<td align="right">Doc. Version:</td>
-			<td>1.0</td>
+			<td>1.4</td>
 		</tr>
 		<tr>
 			<td align="right">Release Date:</td>
-			<td>17, January 2019</td>
+			<td>29, November 2021</td>
 		</tr>
 		<tr>
 			<td align="right">Author:</td>
-			<td>ATIONet LLC</td>
+			<td>ATIONET LLC</td>
 		</tr>
 	</tbody>
 </table>
@@ -33,7 +33,7 @@
 <table>
      <thead>
           <tr>
-          	<td colspan="3">Change Log</td>
+          	<th colspan="3">Change Log</th>
           </tr>
      </thead>
      <tbody>
@@ -45,9 +45,14 @@
         <!-- Insert a table row like this for each version -->
         <tr>
           	<td>1.0</td>
-          	<td>17/January/2019</td>
+          	<td>January 17th 2019</td>
           	<td>Initial version</td>
         </tr>
+        <tr>
+          	<td>1.4</td>
+          	<td>November 29th 2021</td>
+          	<td>Document updated to current protocol version</td>
+		</tr>
         <!-- End of version table row -->
      </tbody>
 </table>
@@ -61,14 +66,18 @@
 
 - [Introduction](#introduction)
 
-- [Authorization Protocol messages](#authorization-protocol-messages)
+- [ATIONet Native Authorization Protocol Messages](#ationet-native-authorization-protocol-messages)
+	- [Contents](#contents)
+	- [Introduction](#introduction)
+	- [Authorization Protocol messages](#authorization-protocol-messages)
 
 <!-- /MarkdownTOC -->
 
 ## Introduction
-The ATIONet authorization engine exposes an API with a set of commands to perform any operation available in the platform. The table below describes field by field, what should be sent and what is expected to be received.
+The ATIONET authorization engine exposes an API with a set of commands to perform any operation available in the platform. The table below describes field by field, what should be sent and what is expected to be received.
 
 ## Authorization Protocol messages
+
 <table border="1">
 	<thead>
 		<tr valign="top">
@@ -163,7 +172,9 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 		</tr>
 	</tbody>
 </table>
-</br>	
+
+</br>
+	
 <table border="1">
 	<thead>
 		<tr valign="top">
@@ -939,54 +950,7 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 			<td>
 				<p align="left"></p>
 			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ProductTaxes</p>
-			</td>
-			<td>
-				<p align="left">Var</p>
-			</td>
-			<td>
-				<p align="left">Dictionary[string, decimal]</p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">0</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-		</tr>
+		</tr>		
 		<tr valign="top">
 			<td>
 				<p align="left">ProductAmount</p>
@@ -1127,54 +1091,7 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 			<td>
 				<p align="left"></p>
 			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ProductData</p>
-			</td>
-			<td>
-				<p align="left">Var</p>
-			</td>
-			<td>
-				<p align="left">List[AtionetProduct]</p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-		</tr>
+		</tr>		
 		<tr valign="top">
 			<td>
 				<p align="left">TransactionAmount</p>
@@ -1741,53 +1658,6 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 		</tr>
 		<tr valign="top">
 			<td>
-				<p align="left">CustomerData</p>
-			</td>
-			<td>
-				<p align="left">Var</p>
-			</td>
-			<td>
-				<p align="left">Dictionary[string, string]</p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left">C</p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">O</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
 				<p align="left">TransactionExtendedData</p>
 			</td>
 			<td>
@@ -1832,171 +1702,7 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 			<td>
 				<p align="left"></p>
 			</td>
-		</tr>
-		<tr valign="top">
-			<td valign="middle" rowspan="4">
-				<p align="left">OriginalData</p>
-				<p align="left">---> TransactionCode</p>
-				<p align="left">---> LocalTransactionDate</p>
-				<p align="left">---> LocalTransactionTime</p>
-			</td>
-			<td valign="top" rowspan="4">
-				<p align="left">Var</p>
-			</td>
-			<td valign="top" rowspan="4">
-				<p align="left">Dictionary[string, string]</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">M1</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">M1</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">C3</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">C3</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">C3</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-			<td>
-				<p align="left">C3</p>
-			</td>
-			<td>
-				<p align="left"></p>
-			</td>
-		</tr>
+		</tr>		
 		<tr valign="top">
 			<td>
 				<p align="left">AuthorizationCode</p>
@@ -2187,6 +1893,276 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 		</tr>
 		<tr valign="top">
 			<td>
+				<p align="left">OriginalData</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+				<td>Dictionary[string, string]</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CustomerData</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+				<td>Dictionary[string, string]</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DealerData</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+				<td>Dictionary[string, string]</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">FuelTaxes</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+				<td>List[AuthTaxes]</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TransactionTaxes</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+				<td>List[AuthTaxes]</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductData</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+				<td>List[AuthProduct]</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
 				<p align="left">ReceiptData</p>
 			</td>
 			<td>
@@ -2232,7 +2208,9 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 		</tr>
 	</tbody>
 </table>	
+
 </br>	
+
 <table border="1">
 	<thead>
 		<tr valign="top">
@@ -4020,6 +3998,712 @@ The ATIONet authorization engine exposes an API with a set of commands to perfor
 			</td>
 			<td>
 				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>
+	</tbody>
+</table>  
+
+</br>	
+
+<table border="1">
+	<thead>
+		<tr valign="top">
+			<th align="left" rowspan="2" valign="middle">
+				Field Name
+			</th>
+			<th align="left" rowspan="2" valign="middle">
+				Size
+			</th>
+			<th align="left" rowspan="2" valign="middle">
+				Type
+			</th>
+			<th align="left" colspan="2">
+				Refund
+			</th>
+			<th align="left" colspan="2">
+				Cancellation
+			</th>
+		</tr>
+		<tr valign="top">
+			<th align="left">
+				Request
+			</th>
+			<th align="left">
+				Response
+			</th>
+			<th align="left">
+				Request
+			</th>
+			<th align="left">
+				Response
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">ApplicationType</p>
+			</td>
+			<td>
+				<p align="left">3</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">E</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">E</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProcessingMode</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">E</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">E</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MessageFormatVersion</p>
+			</td>
+			<td>
+				<p align="left">3</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">E</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">E</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TerminalIdentification</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">E</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">E</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DeviceTypeIdentifier</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">E</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">E</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SystemModel</p>
+			</td>
+			<td>
+				<p align="left">10</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SystemVersion</p>
+			</td>
+			<td>
+				<p align="left">10</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TransactionCode</p>
+			</td>
+			<td>
+				<p align="left">3</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left">240</p>
+			</td>
+			<td>
+				<p align="left">250</p>
+			</td>
+			<td>
+				<p align="left">400</p>
+			</td>
+			<td>
+				<p align="left">410</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">AccountType</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">E</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">E</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">EntryMethod</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">E</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">E</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ServiceCode</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>	
+		<tr valign="top">
+			<td>
+				<p align="left">BatchNumber</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">int</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ShiftNumber</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TransactionSequenceNumber</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">int</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">E</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">E</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">LocalTransactionDate</p>
+			</td>
+			<td>
+				<p align="left">8</p>
+			</td>
+			<td>
+				<p align="left">int</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">E</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">E</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">LocalTransactionTime</p>
+			</td>
+			<td>
+				<p align="left">6</p>
+			</td>
+			<td>
+				<p align="left">int</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">E</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">E</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PrimaryTrack</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PrimaryPIN</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left">O</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">O</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SecondaryTrack</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left">O</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">O</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SecondaryPIN</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left">O</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">O</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CustomerData</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">Dictionary[string, string]</p>
+			</td>
+			<td>
+				<p align="left">O</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">O</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td valign="middle" rowspan="4">
+				<p align="left">OriginalData</p>
+				<p align="left">---> TransactionCode</p>
+				<p align="left">---> LocalTransactionDate</p>
+				<p align="left">---> LocalTransactionTime</p>
+			</td>
+			<td valign="top" rowspan="4">
+				<p align="left">Var</p>
+			</td>
+			<td valign="top" rowspan="4">
+				<p align="left">Dictionary[string, string]</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">M1</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">M1</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">C3</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">C3</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">C3</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">C3</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">AuthorizationCode</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">InvoiceNumber</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ResponseCode</p>
+			</td>
+			<td>
+				<p align="left">5</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ResponseText</p>
+			</td>
+			<td>
+				<p align="left">20</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ReceiptData</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">Dictionary[string, string]</p>
 			</td>
 			<td>
 				<p align="left"></p>

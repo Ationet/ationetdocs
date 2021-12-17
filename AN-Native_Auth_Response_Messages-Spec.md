@@ -6,20 +6,20 @@
 		<th colspan="2" align="left">Document Information</th>
 	</tr>
 	<tr>
-		<td>Archivo:</td>
+		<td align="right">File:</td>
 		<td>AN-Native_Auth_Response_Messages-Spec</td>
 	</tr>
 	<tr>
-		<td>Version documento:</td>
-		<td>1.0</td>
+		<td align="right">Doc. Version:</td>
+		<td>1.1</td>
 	</tr>
 	<tr>
-		<td>Date:</td>
-		<td>February 3rd 2016</td>
+		<td align="right">Date:</td>
+		<td>Novemeber 29th 2021</td>
 	</tr>
 	<tr>
-		<td>Autor:</td>
-		<td>ATIO International LLC</td>
+		<td align="right">Author:</td>
+		<td>ATIONET LLC</td>
 	</tr>
 </table>
 
@@ -37,10 +37,14 @@
 		<td>February 3rd 2016</td>
 		<td>Initial version.</td>
 	</tr>
+	<tr valign="top">
+		<td>1.1</td>
+		<td>November 29th 2021</td>
+		<td>New responses and Reason fields added</td>
+	</tr>
 </table>
 
 <table>
-
 <tr>
 	<th align="center">Code</th>
 	<th align="center">Short Message</th>
@@ -50,57 +54,55 @@
 <tr><td>00000</td>	<td>Authorized</td><td>Authorized</td><td>The transaction has been authorized</td></tr>
 <tr><td>10000</td>	<td>Invalid Date</td><td>Invalid Date </td><td>One of the provided dates is invalid or has an invalid format</td></tr>
 <tr><td>10001</td>	<td>Invalid Time</td><td>Invalid Time </td><td>One of the provided times is invalid or has an invalid format</td></tr>
-<tr><td>10002</td>	<td>Invalid Seq num</td><td>Invalid Sequence num</td><td></td></tr>
-<tr><td>10003</td>	<td>Invalid Acc type</td><td>Invalid Account type</td><td></td></tr>
-<tr><td>10004</td>	<td>Invalid App type</td><td>Invalid Application type</td><td></td></tr>
-<tr><td>10005</td>	<td>Invalid Proc mode</td><td>Invalid Processing mode</td><td></td></tr>
-<tr><td>10006</td>	<td>Invalid Mess format</td><td>Invalid Message format</td><td></td></tr>
-<tr><td>10007</td>	<td>Invalid Dev type</td><td>Invalid Device type</td><td></td></tr>
-<tr><td>10008</td>	<td>Invalid Sys model</td><td>Invalid System model</td><td></td></tr>
-<tr><td>10009</td>	<td>Invalid Sys ver	Invalid</td><td> System version</td><td></td></tr>
-<tr><td>10010</td>	<td>Invalid Entry method</td><td>Invalid Entry method</td><td></td></tr>
-<tr><td>10011</td>	<td>Invalid Unit code</td><td>Invalid Unit code</td><td></td></tr>
-<tr><td>10012</td>	<td>Invalid DateTime</td><td>Invalid DateTime</td><td></td></tr>
-<tr><td>10013</td>	<td>Invalid Pri track</td><td>Invalid Primary track</td><td></td></tr>
-<tr><td>10014</td>	<td>Invalid Prod data</td><td>Invalid Product data</td><td></td></tr>
-<tr><td>10015</td>	<td>Prod data req</td><td>Product Data Required</td><td></td></tr>
-<tr><td>10016</td>	<td>Invalid Batch number</td><td>Invalid Batch number</td><td></td></tr>
-<tr><td>10017</td>	<td>Invalid Respone code</td><td>Invalid Respone code</td><td></td></tr>
-<tr><td>10018</td>	<td>Invalid Terminal</td><td>Invalid Terminal </td><td></td></tr>
-<tr><td>11000</td>	<td>Merch not found</td><td>Merchant not found</td><td></td></tr>
-<tr><td>11001</td>	<td>NetMerch not found</td><td>Network Merchant not found</td><td></td></tr>
-<tr><td>11002</td>	<td>Site not found</td><td>Site not found</td><td></td></tr>
-<tr><td>11003</td>	<td>Prot not found</td><td>Protocol not found</td><td></td></tr>
-<tr><td>11004</td>	<td>TType not found</td><td>Terminal Type not found</td><td></td></tr>
-<tr><td>11005</td>	<td>Fuel mapping needed</td><td>Fuel mapping needed</td><td></td></tr>
-<tr><td>11006</td>	<td>Fuel not found</td><td>Fuel not found</td><td></td></tr>
-<tr><td>11007</td>	<td>Comp not found</td><td>Company not found</td><td></td></tr>
-<tr><td>11008</td>	<td>NetComp not found</td><td>Network Company not found</td><td></td></tr>
-<tr><td>11009</td>	<td>Contr not found</td><td>Contract not found</td><td></td></tr>
-<tr><td>11010</td>	<td>Subacc not found</td><td>Sub account not found</td><td></td></tr>
-<tr><td>11011</td>	<td>SecSubacc not found</td><td>Secondary Sub account not found</td><td></td></tr>
-<tr><td>11012</td>	<td>Veh or dri not found</td><td>Vehicle or driver not found</td><td></td></tr>
-<tr><td>11013</td>	<td>Empty subaccount</td><td>Empty sub account</td><td></td></tr>
-<tr><td>11014</td>	<td>Empty sec subaccount</td><td>Empty secondary sub account</td><td></td></tr>
-<tr><td>11015</td>	<td>Fuel needed</td><td>Fuel needed</td><td></td></tr>
-<tr><td>11016</td>	<td>Fuel not in contr</td><td>Fuel not in contract</td><td></td></tr>
-<tr><td>11017</td>	<td>Fuel not in vehclas</td><td>Fuel not in vehicle class</td><td></td></tr>
-<tr><td>11018</td>	<td>Comp money needed</td><td>Company money needed</td><td></td></tr>
-<tr><td>11019</td>	<td>Merch money needed</td><td>Merchant money needed</td><td></td></tr>
-<tr><td>11020</td>	<td>Comp qty needed</td><td>Company quantity needed</td><td></td></tr>
-<tr><td>11021</td>	<td>Merch qty needed</td><td>Merchant quantity needed</td><td></td></tr>
-<tr><td>11022</td>	<td>Fleet not found</td><td>Fleet not found</td><td></td></tr>
-<tr><td>11023</td>	<td>Trans not found</td><td>Transaction not found</td><td></td></tr>
-<tr><td>12000</td>	<td>Auth amount exceeded</td><td>Authorized amount exceeded</td><td></td></tr>
-<tr><td>12001</td>	<td>Auth qty exceeded</td><td>Authorized quantity exceeded</td><td></td></tr>
-<tr><td>12002</td>	<td>Auth with diff PPU</td><td>Authorization with different PPU</td><td></td></tr>
-<tr><td>12003</td>	<td>Tr amount exceeded</td><td>Transaction amount exceeded</td><td></td></tr>
+<tr><td>10002</td>	<td>Invalid Seq num</td><td>Invalid Sequence num</td><td>The Transaction Sequence Number field is missing or invalid</td></tr>
+<tr><td>10003</td>	<td>Invalid Acc type</td><td>Invalid Account type</td><td>The Account Type field is missing or invalid</td></tr>
+<tr><td>10004</td>	<td>Invalid App type</td><td>Invalid Application type</td><td>The Application Type field is missing or invalid</td></tr>
+<tr><td>10005</td>	<td>Invalid Proc mode</td><td>Invalid Processing mode</td><td>The Processing Mode field is missing or invalid</td></tr>
+<tr><td>10006</td>	<td>Invalid Mess format</td><td>Invalid Message format</td><td>The Message Format field is missing</td></tr>
+<tr><td>10007</td>	<td>Invalid Dev type</td><td>Invalid Device type</td><td>The Device Type Identifier field is missing or invalid</td></tr>
+<tr><td>10008</td>	<td>Invalid Sys model</td><td>Invalid System model</td><td>The System Model field is missing</td></tr>
+<tr><td>10009</td>	<td>Invalid Sys ver	</td><td>Invalid System version</td><td>The System Version field is missing</td></tr>
+<tr><td>10010</td>	<td>Invalid Entry method</td><td>Invalid Entry method</td><td>The Entry Method field is missing or invalid</td></tr>
+<tr><td>10011</td>	<td>Invalid Unit code</td><td>Invalid Unit code</td><td>The Unit Code field is invalid</td></tr>
+<tr><td>10012</td>	<td>Invalid DateTime</td><td>Invalid DateTime</td><td>The difference in local date and site date is more than 26 hours</td></tr>
+<tr><td>10013</td>	<td>Invalid Pri track</td><td>Invalid Primary track</td><td>The primary track field is missing or does not comply with protocol standards</td></tr>
+<tr><td>10014</td>	<td>Invalid Prod data</td><td>Invalid Product data</td><td>The dry products data has missing fields or its numbers do not match</td></tr>
+<tr><td>10015</td>	<td>Prod data req</td><td>Product Data Required</td><td>The dry products data is required</td></tr>
+<tr><td>10016</td>	<td>Invalid Batch number</td><td>Invalid Batch number</td><td>The Batch Number field is missing</td></tr>
+<tr><td>10017</td>	<td>Invalid Respone code</td><td>Invalid Respone code</td><td>The Response Code field is missing</td></tr>
+<tr><td>10018</td>	<td>Invalid Terminal</td><td>Invalid Terminal </td><td>The Terminal Identification field is missing or invalid</td></tr>
+<tr><td>11000</td>	<td>Merch not found</td><td>Merchant not found</td><td>The Merchant entity was not found</td></tr>
+<tr><td>11001</td>	<td>NetMerch not found</td><td>Network Merchant not found</td><td>The Network-Merchant relationship was not found</td></tr>
+<tr><td>11002</td>	<td>Site not found</td><td>Site not found</td><td>The Site entity was not found</td></tr>
+<tr><td>11003</td>	<td>Prot not found</td><td>Protocol not found</td><td>The Protocol entity was not found</td></tr>
+<tr><td>11004</td>	<td>TType not found</td><td>Terminal Type not found</td><td>The Terminal Type entity was not found</td></tr>
+<tr><td>11005</td>	<td>Fuel mapping needed</td><td>Fuel mapping needed</td><td>The Site is marked to use custom fuel codes and no code was found</td></tr>
+<tr><td>11006</td>	<td>Fuel not found</td><td>Fuel not found</td><td>Incorrect fuel code recieved</td></tr>
+<tr><td>11007</td>	<td>Comp not found</td><td>Company not found</td><td>The Company entity was not found</td></tr>
+<tr><td>11008</td>	<td>NetComp not found</td><td>Network Company not found</td><td>The Network-Company relationship was not found</td></tr>
+<tr><td>11009</td>	<td>Contr not found</td><td>Contract not found</td><td>The Contract entity was not found</td></tr>
+<tr><td>11010</td>	<td>Subacc not found</td><td>Sub account not found</td><td>The primary identification has no sub-account</td></tr>
+<tr><td>11011</td>	<td>SecSubacc not found</td><td>Secondary Sub account not found</td><td>The secondary identification has no sub-account</td></tr>
+<tr><td>11012</td>	<td>Veh or dri not found</td><td>Vehicle or driver not found</td><td>No vehicle or driver was found for the primary identification</td></tr>
+<tr><td>11015</td>	<td>Fuel needed</td><td>Fuel needed</td><td>The Fuel is required due to a business rule and no fuel was found</td></tr>
+<tr><td>11016</td>	<td>Fuel not in contr</td><td>Fuel not in contract</td><td>The identified fuel is not allowed for that Company Contract</td></tr>
+<tr><td>11017</td>	<td>Fuel not in vehclas</td><td>Fuel not in vehicle class</td><td>The identified fuel is not allowed for that Vehicle Class</td></tr>
+<tr><td>11018</td>	<td>Comp money needed</td><td>Company money needed</td><td>The Company amount is required due to a business rule</td></tr>
+<tr><td>11019</td>	<td>Merch money needed</td><td>Merchant money needed</td><td>The Merchant amount is required due to a business rule</td></tr>
+<tr><td>11020</td>	<td>Comp qty needed</td><td>Company quantity needed</td><td>The Product Quantity field is required and missing</td></tr>
+<tr><td>11021</td>	<td>Merch qty needed</td><td>Merchant quantity needed</td><td>The Product Quantity field is required and missing</td></tr>
+<tr><td>11022</td>	<td>Fleet not found</td><td>Fleet not found</td><td>No <em>Fleet</em> was found for the identified <em>Vehicle</em></td></tr>
+<tr><td>11023</td>	<td>Trans not found</td><td>Transaction not found</td><td>The Original Data provided matches no Transaction</td></tr>
+<tr><td>12000</td>	<td>Auth amount exceeded</td><td>Authorized amount exceeded</td><td>The Product Amount sent in Completion request is greater than the Product Amount in Pre-Authorization response</td></tr>
+<tr><td>12001</td>	<td>Auth qty exceeded</td><td>Authorized quantity exceeded</td><td>The Product Quantity sent in Completion request is greater than the Product Quantity in Pre-Authorization response</td></tr>
+<tr><td>12002</td>	<td>Auth with diff PPU</td><td>Authorization with different PPU</td><td>The Product Unit Price sent in Completion request is different than the Product Unit Price in Pre-Authorization response</td></tr>
+<tr><td>12003</td>	<td>Tr amount exceeded</td><td>Transaction amount exceeded</td><td>The Transaction Amount sent in Completion request is greater than the Transaction Amount in Pre-Authorization response</td></tr>
 <tr><td>13000</td>	<td>Term does not exist</td><td>Terminal does not exist</td><td></td></tr>
 <tr><td>13001</td>	<td>Netw does not exist</td><td>Network does not exist</td><td></td></tr>
 <tr><td>13002</td>	<td>Id does not exist</td><td>Id does not exist</td><td></td></tr>
 <tr><td>13003</td>	<td>SecId does not exist</td><td>Secondary Id does not exist</td><td></td></tr>
 <tr><td>13004</td>	<td>Both veh ids</td><td>Both are vehicle identifications</td><td></td></tr>
-<tr><td>13005</td>	<td>Both driv ids</td><td>  	Both are driver identifications</td><td></td></tr>
+<tr><td>13005</td>	<td>Both driv ids</td><td>Both are driver identifications</td><td></td></tr>
 <tr><td>13006</td>	<td>Subacc in diff cont</td><td>Sub account in different contract</td><td></td></tr>
 <tr><td>13007</td>	<td>Id is not active</td><td>Identification is not active</td><td></td></tr>
 <tr><td>13008</td>	<td>Id has expired</td><td>Identification has expired</td><td></td></tr>
@@ -245,15 +247,15 @@
 <tr><td>40812</td>	<td>DaysTime not auth</td><td>Day not authorized</td><td></td></tr>
 <tr><td>40813</td>	<td>DaysTime not auth</td><td>Day not authorized</td><td></td></tr>
 <tr><td>40814</td>	<td>DaysTime not auth</td><td>Day not authorized</td><td></td></tr>
-<tr><td>20900</td>	<td>Quota Not Set</td><td>Quota Not Set</td><td></td></tr>
+<tr><td>20900</td>	<td>Quota Not Set</td><td>Quota Not Set</td><td>One of the Quota Rules asociated to the Transaction is missing configurations</td></tr>
 <tr><td>40900</td>	<td>Veh money exceeded</td><td>Vehicle money exceeded</td><td></td></tr>
 <tr><td>40901</td>	<td>Driv money exceeded</td><td>Driver money exceeded</td><td></td></tr>
 <tr><td>40902</td>	<td>Site money exceeded</td><td>Site money exceeded</td><td></td></tr>
 <tr><td>40903</td>	<td>Fleet money exceeded</td><td>Fleet money exceeded</td><td></td></tr>
-<tr><td>21000</td>	<td>Quota not set</td><td>Quota not set</td><td></td></tr>
+<tr><td>21000</td>	<td>Quota not set</td><td>Quota not set</td><td>One of the Dry Quota Rules asociated to the Transaction is missing configurations</td></tr>
 <tr><td>41000</td>	<td>Veh money exceeded</td><td>Vehicle money exceeded</td><td></td></tr>
 <tr><td>41001</td>	<td>Driv money exceeded</td><td>Driver money exceeded</td><td></td></tr>
 <tr><td>41002</td>	<td>Site money exceeded</td><td>Site money exceeded</td><td></td></tr>
 <tr><td>41003</td>	<td>Fleet money exceeded</td><td>Fleet money exceeded</td><td></td></tr>
-<tr><td>50000</td>	<td>App Error</td><td>Application Error</td><td></td></tr>
+<tr><td>50000</td>	<td>App Error</td><td>Application Error</td><td>Internal Server Error</td></tr>
 </table>
