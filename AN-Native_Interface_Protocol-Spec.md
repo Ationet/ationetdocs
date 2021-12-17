@@ -935,9 +935,6 @@ transactions to download.
 			<p>Terminal Code (Optional, if included will act as a filter)</p>
 		</td>
 	</tr>
-	
-	
-	
 	<tr valign="top">
 		<td rowspan="4">
 			<p>948</p>
@@ -987,7 +984,6 @@ transactions to download.
 			<p>Date To (Optional, if included will act as a filter)</p>
 		</td>
 	</tr>
-	
 </table>
 
 ### 7.2 Transactions Download (POST) – Body Section Format *Request*
