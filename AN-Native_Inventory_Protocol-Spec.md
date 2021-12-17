@@ -12,69 +12,20 @@
 |--- |--- |--- |
 |Ver.|Date|Change Summary|
 |1.0|31/Aug/2020|Initial version. Covers inventory and delivery messages.|
+|1.1|26/Nov/2021|Update document <br> - Response Code's <br> - Deliveries insert request <br> - Inventories insert request|
 
 ## Contents ##
 
 - [1 ATIOnet Integration Documentation Scope](#1-ationet-integration-documentation-scope)
-
-- [2 Scope](#2-scope)
-	- [2.1 Scope Details](#21-scope-details)
-	- [2.2 Supported Transactions](#22-supported-transactions)
-
-- [3 Data Security](#3-data-security)
-
-- [4 Message Structure](#4-message-structure)
-	- [Request Format](#request-format)
-	- [Response Format](#response-format)
-
-- [5 Error Handling](#5-error-handling)
-
-- [6 Field descriptions](#6-field-descriptions)
-	- [System Model and System Version](#system-model-and-system-version)
-	- [Pump Authorization Values](#pump-authorization-values)
-	- [Terminal Identification](#terminal-identification)
-	- [Device Type Identifier](#device-type-identifier)
-	- [Transaction Sequence Number](#transaction-sequence-number)
-	- [Entry Method](#entry-method)
-	- [Processing Mode](#processing-mode)
-	- [Track Data](#track-data)
-	- [Batch Number](#batch-number)
-	- [Shift Number](#shift-number)
-	- [Product Fields](#product-fields)
-	- [Customer Data](#customer-data)
-	- [Re-prompting & Dual-Card Identification](#re-prompting--dual-card-identification)
-	- [Authorization Code](#authorization-code)
-	- [PIN Block](#pin-block)
-	- [Original Data](#original-data)
-
-- [7 Transaction Request (TREQ) Message Format](#7-transaction-request-treq-message-format)
-
-- [8 Transaction Response (TRESP) Message Format](#8-transaction-response-tresp-message-format)
-
-- [9 Satellite TAG Validation Request (VREQ) Message Format](#9-satellite-tag-validation-request-vreq-message-format)
-
-- [10 Satellite TAG Validation Response (VRESP) Message Format](#10-satellite-tag-validation-response-vresp-message-format)
-
-- [11 Identification Pin Change Request (PREQ) Message Format](#11-identification-pin-change-request-preq-message-format)
-
-- [12 Identification Pin Change Response (PRESP) Message Format](#12-identification-pin-change-response-presp-message-format)
-
-- [13 Reference Tables](#11-reference-tables)
-	- [13.1 Transaction Codes](#111-transaction-codes)
-	- [13.2 Response Codes](#112-response-codes)	
-	- [13.3 Account Types](#113-account-type)
-	- [13.4 Product Data Structure](#114-product-data-structure)
-	- [13.5 Customer Data](#115-customer-data)
-	- [13.6 Measurement Unit Codes](#116-measurement-unit-codes)
-	- [13.7 Currency Codes](#117-currency-codes)
-	- [13.8 Original Data](#118-original-data)
-- [14 Message Samples](#12-message-samples)
-	- [14.1 Pre Authorization Sample](#121-pre-authorization-samples)
-	- [14.2 Completion Sample](#122-completion-sample)
-- [Appendix A - Native Authorization Protocol Messages](#appendix-a---native-authorization-protocol-messages)
+- [2 Action Codes](#2-Action-Codes)
+- [3 Deliveries Insert (POST) - Body Section Format Request](#3-Deliveries-Insert-POST--Body-Section-Format-Request)
+	- [3.1 Trama Body Format](#31-Trama-Body-Format)
+		- [3.2 DeliveryNotesData Body Format](#32-DeliveryNotesData-Body-Format)
+		- [3.3 GPS Body Format](#33-GPS-Body-Format)
+- [4 Inventories Insert (POST) - Body Section Format Request](#4-Inventories-Insert-POST--Body-Section-Format-Request)
+	- [4.1 Trama Body Format](#41-Trama-Body-Format)
 
 ## Overview
-
 
 ### Introduction
 
@@ -107,3 +58,167 @@ Covers financial transactions for transaction capture systems (payment terminals
 #### ATIOnet Administrative Transactions Protocol Specification: 
 Describes a set of functions complementing the transaction-capture business, for example Batch or Shift Close. These functions enhance the capabilities of the integration but their implementation is not mandatory.
 
+## 1 ATIOnet Integration Documentation Scope
+
+Third-party systems integrate with ATIOnet via a set of APIs (Application Programming Interfaces). Each ATIOnet’s API is described on a separate Protocol Specification. The complete documentation of ATIOnet API’s is comprised of:
+
+#### ATIOnet Native Transactions Protocol Specification: 
+Covers financial transactions for transaction capture systems (payment terminals, site controllers and point of sale systems), including sales and refunds.
+
+#### ATIOnet Administrative Transactions Protocol Specification: 
+Describes a set of functions complementing the transaction-capture business, for example Batch or Shift Close. These functions enhance the capabilities of the integration but their implementation is not mandatory.
+
+## 2 Action Codes
+
+The action code specifies what type of action will be executed when you enter a new request in the FMS.
+
+<table>
+	<tr valign="top">
+		<th align="left">
+			Action Code
+		</th>
+		<th colspan="2" align="left">
+			Description
+		</th>
+	</tr>
+	<tr valign="top">
+		<td rowspan="3">
+			<p>701</p>
+		</td>
+		<td>
+			<p>Title:</p>
+		</td>
+		<td>
+			<p>Deliveries</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Function:</p>
+		</td>
+		<td>
+			<p>Insert Deliveries request code</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Allowed for:</p>
+		</td>
+		<td>
+			<p>FMSAPI</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td rowspan="3">
+			<p>702</p>
+		</td>
+		<td>
+			<p>Title:</p>
+		</td>
+		<td>
+			<p>Inventories</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Function:</p>
+		</td>
+		<td>
+			<p>Insert Inventories request code</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Allowed for:</p>
+		</td>
+		<td>
+			<p>FMSAPI</p>
+		</td>
+	</tr>
+</table>
+
+## 3 Deliveries Insert (POST) – Body Section Format *Request*
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |---
+|ActionCode|3|A/N|Required|See Action Codes section above|
+|TerminalCode|50|A/N|Required|Site’s Terminal identification code.|
+|Trama|X|X|Required|Delivery values|
+
+
+### 3.1 Trama Body Format 
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |---
+|TankNumber|50|A/N|Required|The tank number|
+|ProductCode|50|A/N|Required|The fuel code. It is associated with the site|
+|CreatedDateTime|19|A/N|Required|Delivery creation date time ("yyyy/MM/dd hh:mm:ss")|
+|StartingDateTime|19|A/N|Optional|Delivery start date time ("yyyy/MM/dd hh:mm:ss")|
+|EndingDateTime|19|A/N|Optional|Delivery end date time ("yyyy/MM/dd hh:mm:ss")|
+|StartingVolume|10|N|Optional|The starting volume|
+|StartingVolumeTC|10|N|Optional|The starting volume TC|
+|StartingWaterVolume|10|N|Optional|The starting water volume|
+|StartingTemperature|10|N|Optional|The starting temperature|
+|EndingVolumeTC|10|N|Optional|The ending volume TC|
+|EndingWaterVolume|10|N|Optional|The ending water volume|
+|EndingTemperature|10|N|Optional|The ending temperature|
+|StartingFuelHeight|10|N|Optional|The starting fuel height|
+|EndingFuelHeight|10|N|Optional|The ending fuel height|
+|TotalVolume|10|N|Required|The total volume|
+|TotalVolumeTC|10|N|Optional|The total volume TC|
+|InvoiceNumber|50|A/N|Optional|The invoice number|
+|Comments|350|A/N|Optional|Delivery Comments|
+|DeliveryNotesData|X|X|Optional|Delivery receipt values - see below|
+|GPSData|X|X|Optional|GPS Values - see below|
+
+### 3.2 DeliveryNotesData Body Format
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |---
+|InvoiceNumber|50|A/N|Optional|The invoice number|
+|InvoiceItem|50|A/N|Optional|Invoice description|
+|InvoiceDate|19|A/N|Optional|Invoice date ("yyyy/MM/dd hh:mm:ss")|
+|PhysicalAmountRemitted|10|N|Optional|Physical amount remitted on invoice|
+|CompensatedAmountRemitted|10|N|Optional|Compensated amount remitted on invoice|
+|RealTemperature|10|N|Optional|The actual and exact temperature of the product when it is loaded into the truck|
+|ReferenceTemperature|10|N|Optional|It is for a calendar month and the average temperature of the place of delivery is taken. It is obtained from the national meteorological services of each country and it is with which the amount of the invoice is corrected|
+|Density|10|N|Optional|The density of the product at the time of being loaded into the truck|
+
+### 3.3 GPS Body Format 
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |---
+|LatitudeStart|10|N|Conditional|Start location: Latitude|
+|LongitudeStart|10|N|Conditional|Start location: Longitude|
+|AltitudeStart|10|N|Conditional|Start location: Altitude|
+|StartingGPSDate|19|A/N|Conditional|Start date of delivery location ("yyyy/MM/dd hh:mm:ss")|
+|LatitudeEnd|10|N|Conditional|End location: Latitude|
+|LongitudeEnd|10|N|Conditional|End location: Longitude|
+|AltitudeEnd|10|N|Conditional|End location: Altitude|
+|EndingGPSDate|19|A/N|Conditional|End date of delivery location ("yyyy/MM/dd hh:mm:ss")|
+
+``` 
+Note: The values aare conditioned to whether there is a value associated with it. For example, if you have a value for 
+the initial latitude, the values for the end and the date must be present.
+``` 
+## 4 Inventories Insert (POST) – Body Section Format *Request*
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |---
+|ActionCode|3|A/N|Required|See Action Codes section above|
+|TerminalCode|50|A/N|Required|Site’s Terminal identification code.|
+|Trama|X|X|Required|Delivery values|
+
+
+### 4.1 Trama Body Format 
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |---
+|TankNumber|50|A/N|Required|The tank number|
+|ProductCode|50|A/N|Required|The fuel code. It is associated with the site|
+|DateTime|19|A/N|Required|Inventory date time ("yyyy/MM/dd hh:mm:ss")|
+|Volume|10|N|Optional|The volume|
+|VolumeTC|10|N|Optional|The volume TC|
+|Ullage|10|N|Optional|The ullage|
+|WaterVolume|10|N|Optional|The water volume|
+|FuelHeight|10|N|Optional|the fuel height|
+|Temperature|10|N|Optional|The temperature|
+|WaterHeight|10|N|Optional|The water height|
+|Latitude|10|N|Optional|Location: Latitude|
+|Longitude|10|N|Optional|Location: Longitude|
+|Altitude|10|N|Optional|Location: Altitude|
+|Date|19|A/N|Optional|Location date ("yyyy/MM/dd hh:mm:ss")|

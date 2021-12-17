@@ -4,7 +4,7 @@
 |Document Information|.|
 |--- |--- |
 |File:|ATIONet-Native_Interface_Protocol-Spec|
-|Doc Version:|1.5|
+|Doc Version:|1.6|
 |Release Date:|29, March 2021|
 |Author:|ATIONet LLC|
 
@@ -19,6 +19,7 @@
 |1.4|27/11/2018|**FastTrack** <br> - Added Action 971 Request insertion of new FastTrack <br> - Added Action 972 Request FastTrack list download|
 |1.5|29/03/2021|**API Interface Messages** <br> - Updated lists of Action Codes|
 |1.5|13/07/2021|**Inventory Interface Messages** <br> - Updated lists of Action Codes|
+|1.6|29/11/2021|**Inventory & Delivery Interface Update** <br> - Update Inventory Download Response <br> - Update Delivery Download Response <br>|
 
 ## Contents
 
@@ -63,8 +64,17 @@
 	- [10.2 Account Download (POST) – Body Section Format Request](#102-account-download-post--body-section-format-request)
 	- [10.3 Account Download (POST) – Body Section Format Response](#103-account-download-post--body-section-format-response)
 
-- [11 Examples](#11-examples)
-	- [11.1 C# example](#111-c-example)
+- [11 Inventory and deliveries Downloads](#11-Inventory-and-deliveries-Downloads)
+	- [11.1 Action Codes](#111-Action-Codes)
+	- [11.2 Deliveries Download (POST) – Body Section Format Request](#112-Deliveries-Download-POST--Body-Section-Format-Request)
+	- [11.3 Deliveries Download (POST) – Body Section Format *Response*](#113-Deliveries-Download-POST--Body-Section-Format-Response)
+	- [11.4 Delivery DeliveryNotesData Download - Body Section Format *Response*](#114-Delivery-DeliveryNotesData-Download--Body-Section-Format-Response)
+	- [11.5 Delivery GPS Download - Body Section Format *Response*](#115-Delivery-GPS-Download--Body-Section-Format-Response)
+	- [11.6 Inventories Download (POST) – Body Section Format *Request*](#116-Inventories-Download-POST--Body-Section-Format-Request)
+	- [11.7 Inventories Download (POST) – Body Section Format *Response*](#117-Inventories-Download-POST--Body-Section-Format-Response)
+
+- [12 Examples](#12-Examples)
+	- [12.1 C# example](#121-C-example)
 
 ## Overview
 
@@ -6344,7 +6354,6 @@ transactions to download.
 </table>
 
 ### 10.2 Account Download (POST) – Body Section Format *Request*
-
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
 |SubscriberCode|3|A/N|Required|Fixed. To be assigned by ATIONet|
@@ -6354,7 +6363,6 @@ transactions to download.
 |DateTo|19|A/N|Optional|To date to filter movements "yyyy/MM/dd hh:mm:ss"|
 
 ### 10.3 Account Download (POST) – Body Section Format *Response*
-
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |
 |Id|36|A/N|Current account’s UID|
@@ -6382,7 +6390,6 @@ transactions to download.
 
 
 ## 11 Inventory and deliveries Downloads
-
 The Inventory and Delivery Download messages are POST actions to recover all the
 transactions processed by ATIONET for a given Merchant or the complete Subscriber
 Code depending on the particular Action Code.
@@ -6486,78 +6493,104 @@ transactions to download.
 </table>
 
 ### 11.2 Deliveries Download (POST) – Body Section Format *Request*
-
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
 |SubscriberCode|3|A/N|Required|Fixed. To be assigned by ATIONet|
-|ActionCode|3|N|Required|See Action Codes section above|
+|ActionCode|3|A/N|Required|See Action Codes section above|
 |CompanyCode|30|A/N|Conditional|See Action Codes section above|
 |DateFrom|19|A/N|Required|From date to filter movements ("yyyy/MM/dd hh:mm:ss")|
 |DateTo|19|A/N|Optional|To date to filter movements ("yyyy/MM/dd hh:mm:ss")|
 
 ### 11.3 Deliveries Download (POST) – Body Section Format *Response*
-
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |
-|Id|36|A/N|Current account’s UID|
-|MovementId|36|A/N|Movements’s UID|
-|SubscriberCode|3|A/N|Code of the subscriber who owns the transaction|
-|HostDateTime|19|A/N|ATIONet’s transaction date time “yyyy/mm/dd hh:mm:ss”. (ATIONet Host date time is UCT)|
-|DateTime|19|A/N|movement date expressed in subscriber time zone ("yyyy/mm/dd hh:mm:ss")|
-|SubscriberTimeZone|50|A/N|TimeZone code of the subscriber (abbreviation)|
-|Type|1|N|Internal ATIOnet movement type code|
-|TypeDescription|50|A/N|Movement type description|
-|Origin|1|N|Internal ATIOnet code for the origin of the movement|
-|OriginDescription|50|A/N|Description for the origin of the movement|
-|Description|1000|A/N|Movement description|
-|SubAccountId|36|A/N|SubAccount’s UID|
-|SubAccountExternalCode|50|A/N|SubAccount’s external code|
-|CompanyCode|30|A/N|Company code (Not meaningful for Homebase subscribers)|
-|CompanyName|250|A/N|Company name (Not meaningful for Homebase subscribers)|
-|ContractCode|20|A/N|Contract code (Not meaningful for Homebase subscribers)|
-|SubContractCode|50|A/N|SubContract code (Not meaningful for Homebase subscribers)|
-|IsDebit|1|N|Indicates that’s a debit or credit movement (1 = “True”, 2= “False”)|
+|DeliveryId|36|A/N|Delivery UID|
+|MerchantName|250|A/N|Name of the company who owns the site|
+|SiteCode|50|A/N|Site Code|
+|SiteShortName|50|A/N|The short name of the site|
+|TerminalCode|50|A/N|Site’s Terminal identification code.|
+|TerminalDescription|50|A/N|Terminal description.|
 |FuelMasterCode|50|A/N|Standardized product code. Helps to identify a fuel product category across multiple Merchant brands and site’s product codes|
 |FuelMasterDescription|100|A/N|Standardized product description. Helps to identify a fuel product category across multiple Merchant brands and site’s product codes|
-|CurrencyCode|50|A/N|Currency of the amount fields|
-|Amount|10|N|Amount balance for the sub-account. (xxxxxxx.xx)|
+|ProductCode|50|A/N|The fuel code. It is associated with the site|
+|TankNumber|50|A/N|The tank number|
+|CreatedDateTime|19|A/N|The creation date time ("yyyy/MM/dd hh:mm:ss")|
+|StartingDateTime|19|A/N|The starting date time ("yyyy/MM/dd hh:mm:ss")|
+|EndingDateTime|19|A/N|the ending date time ("yyyy/MM/dd hh:mm:ss")|
+|StartingVolume|10|N|The starting volume|
+|StartingVolumeTC|10|N|The starting volume TC|
+|StartingWaterVolume|10|N|The starting water volume|
+|StartingTemperature|10|N|The starting temperature|
+|StartingFuelHeight|10|N|The starting fuel height|
+|EndingVolume|10|N|The ending volume|
+|EndingVolumeTC|10|N|The ending volume TC|
+|EndingWaterVolume|10|N|The ending water volume|
+|EndingTemperature|10|N|the ending temperature|
+|EndingFuelHeight|10|N|The ending fuel height|
+|TotalVolume|10|N|The total volume|
+|TotalVolumeTC|10|N|The total volume TC|
+|InvoiceNumber|50|A/N|Delivery invoice Number|
+|DeliveryNotesData|X|X|Delivery receipt values - see below - see below|
+|GPSData|X|X|GPS Values - see below|
 
-### 11.4 Inventories Download (POST) – Body Section Format *Request*
+### 11.4 Delivery DeliveryNotesData Download – Body Section Format *Response*
+|Field Name|Size|Type|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |
+|InvoiceNumber|50|A/N|Delivery invoice Number|
+|InvoiceItem|50|A/N|Invoice description|
+|InvoiceDate|19|A/N|Invoice date time ("yyyy/MM/dd hh:mm:ss")|
+|PhysicalAmountRemitted|10|N|Physical amount remitted on invoice|
+|CompensatedAmountRemitted|10|N|Compensated amount remitted on invoice|
+|RealTemperature|10|N|The actual and exact temperature of the product when it is loaded into the truck|
+|ReferenceTemperature|10|N|It is for a calendar month and the average temperature of the place of delivery is taken. It is obtained from the national meteorological services of each country and it is with which the amount of the invoice is corrected|
+|Density|10|N|The density of the product at the time of being loaded into the truck|
 
+### 11.5 Delivery GPS Download – Body Section Format *Response*
+|Field Name|Size|Type|Descriptions/Field Value(s)|
+|--- |--- |--- |---
+|StartingGPSDate|19|A/N|The starting delivery GPS date ("yyyy/MM/dd hh:mm:ss")|
+|EndingGPSDate|19|A/N|The ending delivery GPS date ("yyyy/MM/dd hh:mm:ss")|
+|LatitudeStart|10|N|Start location: Latitude|
+|LongitudeStart|10|N|Start location: Longitude|
+|AltitudeStart|10|N|Start location: Altitude|
+|LatitudeEnd|10|N|End location: Latitude|
+|LongitudeEnd|10|N|End location: Longitude|
+|AltitudeEnd|10|N|End location: Altitude|
+
+### 11.6 Inventories Download (POST) – Body Section Format *Request*
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
 |SubscriberCode|3|A/N|Required|Fixed. To be assigned by ATIONet|
-|ActionCode|3|N|Required|See Action Codes section above|
+|ActionCode|3|A/N|Required|See Action Codes section above|
 |CompanyCode|30|A/N|Conditional|See Action Codes section above|
 |DateFrom|19|A/N|Required|From date to filter movements ("yyyy/MM/dd hh:mm:ss")|
 |DateTo|19|A/N|Optional|To date to filter movements ("yyyy/MM/dd hh:mm:ss")|
 
-### 11.5 Inventories Download (POST) – Body Section Format *Response*
-
+### 11.7 Inventories Download (POST) – Body Section Format *Response*
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |
-|Id|36|A/N|Current account’s UID|
-|MovementId|36|A/N|Movements’s UID|
-|SubscriberCode|3|A/N|Code of the subscriber who owns the transaction|
-|HostDateTime|19|A/N|ATIONet’s transaction date time “yyyy/mm/dd hh:mm:ss”. (ATIONet Host date time is UCT)|
-|DateTime|19|A/N|movement date expressed in subscriber time zone ("yyyy/mm/dd hh:mm:ss")|
-|SubscriberTimeZone|50|A/N|TimeZone code of the subscriber (abbreviation)|
-|Type|1|N|Internal ATIOnet movement type code|
-|TypeDescription|50|A/N|Movement type description|
-|Origin|1|N|Internal ATIOnet code for the origin of the movement|
-|OriginDescription|50|A/N|Description for the origin of the movement|
-|Description|1000|A/N|Movement description|
-|SubAccountId|36|A/N|SubAccount’s UID|
-|SubAccountExternalCode|50|A/N|SubAccount’s external code|
-|CompanyCode|30|A/N|Company code (Not meaningful for Homebase subscribers)|
-|CompanyName|250|A/N|Company name (Not meaningful for Homebase subscribers)|
-|ContractCode|20|A/N|Contract code (Not meaningful for Homebase subscribers)|
-|SubContractCode|50|A/N|SubContract code (Not meaningful for Homebase subscribers)|
-|IsDebit|1|N|Indicates that’s a debit or credit movement (1 = “True”, 2= “False”)|
+|InventoryId|36|A/N|Delivery UID|
+|MerchantName|250|A/N|Name of the company who owns the site|
+|SiteCode|50|A/N|Site Code|
+|SiteShortName|50|A/N|The short name of the site|
+|TerminalCode|50|A/N|Site’s Terminal identification code.|
+|TerminalDescription|50|A/N|Terminal description.|
 |FuelMasterCode|50|A/N|Standardized product code. Helps to identify a fuel product category across multiple Merchant brands and site’s product codes|
 |FuelMasterDescription|100|A/N|Standardized product description. Helps to identify a fuel product category across multiple Merchant brands and site’s product codes|
-|CurrencyCode|50|A/N|Currency of the amount fields|
-|Amount|10|N|Amount balance for the sub-account. (xxxxxxx.xx)|
+|ProductCode|50|A/N|The fuel code. It is associated with the site|
+|TankNumber|50|A/N|The tank number|
+|DateTime|19|A/N|Date time of the Inventory ("yyyy/MM/dd hh:mm:ss")|
+|Volume|10|N|The volume|
+|VolumeTC|10|N|The volume TC|
+|Ullage|10|N|The ullage|
+|WaterVolume|10|N|The water Volume|
+|Temperature|10|N|The temperature|
+|FuelHeight|10|N|The fuel height|
+|WaterHeight|10|N|The water height|
+|GPSDateTime|19|A/N|The inventory GPS date time ("yyyy/MM/dd hh:mm:ss")|
+|Longitude|10|N|Location: Longitude|
+|Latitude|10|N|Location: Latitude|
+|Altitude|10|N|Location: Altitude|
 
 ## 12 Examples
 
