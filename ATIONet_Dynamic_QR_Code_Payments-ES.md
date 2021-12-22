@@ -357,6 +357,8 @@ Nota: Los clientes no pueden cambiar el monto de la transacci처n en su aplicaci�
 		</tbody>
 </table>
 
+![ationetTR](Content/Images/DynamicQRPayments/FleetMobilePaymentDynamicQRFlow.png)
+
 ### Lista de verificaci처n de integraci처n
 
 Una vez finalizada la integraci처n en su entorno de ensayo, es obligatorio probar la integraci처n antes de pasar a un entorno en producci처n. Los siguientes puntos deben tenerse en cuenta durante el flujo integraci처n:
