@@ -355,6 +355,9 @@ Note: Customers cannot change the Transaction amount in their app on scanning th
 		</tbody>
 </table>
 
+
+![ationetTR](Content/Images/DynamicQRPayments/FleetMobilePaymentDynamicQRFlow.png)
+
 ### Integration Checklist
 
 Post completion of integration in your staging environment, it is mandatory to test the integration before moving into the live environment with production. Below points should be taken care of during the integration of the flow:
