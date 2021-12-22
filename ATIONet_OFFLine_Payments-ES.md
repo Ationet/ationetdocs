@@ -290,6 +290,14 @@ Una vez enviado el request del [método Crear y procesar](#Método-Crear-y-proce
 		 </tr>
 		<tr valign="top">
 			<td>
+				<p align="left">Prompting Sent</p>
+			</td>
+			<td>
+				<p>Las reglas son enviadas</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
 				<p align="left">TransactionRefused</p>
 			</td>
 			<td>
@@ -308,7 +316,7 @@ Una vez enviado el request del [método Crear y procesar](#Método-Crear-y-proce
 </table>
 
 
-![ationetTR](Content/Images/OFFLinePayments/Offlinepaymentstatesflow.drawio.png)
+![ationetTR](Content/Images/OFFLinePayments/Offlinepaymentstatesflow.png)
 
 ### PASO 4(opcional) El cliente envía las reglas
 
