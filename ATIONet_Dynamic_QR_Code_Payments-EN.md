@@ -314,6 +314,22 @@ Note: Customers cannot change the Transaction amount in their app on scanning th
 		 </tr>
 		<tr valign="top">
 			<td>
+				<p align="left">Prompting Needed</p>
+			</td>
+			<td>
+				<p>Validation rules are required</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Prompting Sent</p>
+			</td>
+			<td>
+				<p>Rules are sent</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
 				<p align="left">Post Paid Cancelled</p>
 			</td>
 			<td>
@@ -338,6 +354,9 @@ Note: Customers cannot change the Transaction amount in their app on scanning th
 		 </tr>
 		</tbody>
 </table>
+
+
+![ationetTR](Content/Images/DynamicQRPayments/FleetMobilePaymentDynamicQRFlow.png)
 
 ### Integration Checklist
 
@@ -476,6 +495,7 @@ body
 	"AuthorizationCode": "string", 
 	"ResponseCode": "string", 
 	"ResponseMessage":  "string", 
+	"customerData": {},
 	"TransactionStatus":
 		{
 			"name":"string",
@@ -746,12 +766,17 @@ body:
 
 ```
 {
-    "authorizationCode": "030744119",
-    "responseCode": "00000",
-    "responseMessage": "Autorizado",
+    "authorizationCode": "050808166",
+    "responseCode": "40500",
+    "responseMessage": "Solicitud requerida",
+    "customerData": {
+        "PromptEngineHours": "true",
+        "MinEngineHours": "66",
+        "ContractMode": "2"
+    },
     "transactionStatus": {
-        "name": "Post Paid Confirmed",
-        "id": 22
+        "name": "Post Paid Prompting Needed",
+        "id": 26
     }
 }
 

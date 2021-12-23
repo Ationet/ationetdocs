@@ -316,6 +316,22 @@ Nota: Los clientes no pueden cambiar el monto de la transacción en su aplicaci�
 		 </tr>
 		<tr valign="top">
 			<td>
+				<p align="left">Prompting Needed</p>
+			</td>
+			<td>
+				<p>Se deben enviar reglas adicionales</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Prompting Sent</p>
+			</td>
+			<td>
+				<p>Se han enviado las reglas</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
 				<p align="left">Post Paid Cancelled</p>
 			</td>
 			<td>
@@ -340,6 +356,8 @@ Nota: Los clientes no pueden cambiar el monto de la transacción en su aplicaci�
 		 </tr>
 		</tbody>
 </table>
+
+![ationetTR](Content/Images/DynamicQRPayments/FleetMobilePaymentDynamicQRFlow.png)
 
 ### Lista de verificación de integración
 
@@ -475,6 +493,7 @@ body
 	"AuthorizationCode": "string", 
 	"ResponseCode": "string", 
 	"ResponseMessage":  "string", 
+	"customerData": {},
 	"TransactionStatus":
 		{
 			"name":"string",
@@ -744,11 +763,18 @@ body:
 
 ```
 {
-  "authorizationCode": "072613127",
-  "responseCode": "00000",
-  "responseMessage": "Autorizado"
+    "authorizationCode": "050808166",
+    "responseCode": "40500",
+    "responseMessage": "Solicitud requerida",
+    "customerData": {
+        "PromptOdometer": "true",
+        "ContractMode": "2"
+    },
+    "transactionStatus": {
+        "name": "Post Paid Prompting Needed",
+        "id": 26
+    }
 }
-
 ```
 
 ### Ejemplo método Solicitud de pago de venta
