@@ -73,6 +73,7 @@
 	- Transaction object Description
 - Change Card Status
 - Update User profile
+- Create Movement
 
 
 <!-- /MarkdownTOC -->
@@ -1015,4 +1016,57 @@ If you do not want to change the user's password, these two fields must be null
 		{
 			UserAtionet object
 		}
+	}
+	
+## Create Movement
+This service is used to create movements.
+
+*Create Movement Request*
+
+	Endpoint: https://consumercardapi.ationet.com/api/ConsumerCardClient/createMovement
+	Method: POST
+	Body Content: {movementDto:<ConsumerCardMovementDto>}
+
+
+#### MovementDto object Description
+This json object contains the movement information.
+
+<table>
+	<thead>
+		<tr valign="center">
+			<th rowspan="2" width="250" align="left">Name</th>
+			<th rowspan="2" width="250" align="center">Type</th>
+			<th rowspan="2" align="left">Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td align="left">Type</td>
+			<td align="center">int</td>
+			<td align="left">Type of movement (for now we only create movements of the type transfer funds between cards)</td>
+		 </tr>
+		 <tr valign="top">
+			<td align="left">ConsumerCardClientId</td>
+			<td align="center">String</td>
+			<td align="left">Unique identifier of the origin Consumer Card Client in Guid format</td>
+		 </tr>
+		 <tr valign="top">
+			<td align="left">DestinationConsumerCardClientId</td>
+			<td align="center">string</td>
+			<td align="left">Unique identifier of the destination Consumer Card Client in Guid format</td>
+		 </tr>
+		<tr valign="top">
+			<td align="left">Amount</td>
+			<td align="center">decimal</td>
+			<td align="left">The amount of the movement</td>
+		 </tr>
+	</tbody>
+</table>
+				
+*Get Movements Response*
+
+	{
+		"success": true,
+		"message": "",
+		"data": true		
 	}
