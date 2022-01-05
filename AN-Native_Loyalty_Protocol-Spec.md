@@ -13,6 +13,7 @@
 |--- |--- |--- |
 |Ver.|Date|Change Summary|
 |1.0|04/Nov/2014|Initial version.|
+|2.0|05/Jan/2022|Added Messages samples.|
 
 
 ## Contents
