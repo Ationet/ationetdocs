@@ -30,6 +30,7 @@
 - [Message Structure](#message-structure)
 	- [Request Format](#request-format)
 	- [Response](#response)
+	- [Messages samples](#messages-samples)
 - [Error Handling](#error-handling)
 - [Field Descriptions](#field-descriptions)
 - [Loyalty Transaction Request (LREQ) Message Format](#loyalty-transaction-request-lreq-message-format)
@@ -224,6 +225,193 @@ Only one request is accepted on each message.
 	{“Fieldname”:”StringValue”,”FieldName”:”StringValue”,”FieldName”:Value}
 
 Note: Alphanumeric fields, stated as Type “A/N” in record format tables below show the maximum possible length as the Size, although in JSON-formatted strings they will be represented with trailing spaces trimmed.
+
+
+### Messages samples
+
+#### POST Accumulation sample
+
+Return a Accumulation information.
+
+##### Request example
+
+```
+body:
+
+{
+    "ProcessingMode": "1",
+    "SystemModel": "POSTMAN",
+    "SystemVersion": "NB",
+    "TransactionCode": "510",
+    "EntryMethod": "S",
+    "ApplicationType": "LTY",
+    "AccountType": "5",
+    "MessageFormatVersion": "1.0",
+    "CurrencyCode": "ARS",
+    "DeviceTypeIdentifier": "4",
+    "UnitCode": "l",
+    "PumpNumber": "1",
+    "TransactionSequenceNumber": {{34}},
+    "LocalTransactionDate": {{LOCAL_DATE}},
+    "LocalTransactionTime": {{LOCAL_TIME}},
+    "TerminalIdentification": "{{TERMINAL}}",
+    "InvoiceNumber": "{{PBL}}{{LOCAL_DATE}}{{LOCAL_TIME}}",
+    "PrimaryTrack": "8080078974962",
+    //"IdentityData": {
+    //"IdentityNumber": "80806448"
+    //  },
+    "TransactionAmount": 1,
+    "LoyaltyTransactionData": {
+        "Products": [
+            {
+                "UnitCode": "l",
+                "ProductCode": "9",
+                "ProductUnitPrice": 1,
+                "ProductAmount": 1,
+                "ProductQuantity": 1,
+                "ProductTotalAmount": 1,
+                "ProductTotalQuantity": 1
+            }
+        ]
+    },
+    "PrimaryPin": null,
+    "SecondaryTrack": null,
+    "SecondaryPin": null,
+    "OriginalData": {},
+    "ProductNetAmount": null,
+    "ProductTaxes": null,
+    "TransactionNetAmount": null,
+    "AuthorizationCode": null,
+    "ServiceCode": null,
+    "BatchNumber": null,
+    "ShiftNumber": null,
+    "TransactionExtendedData": null,
+    "ResponseCode": null,
+    "ResponseText": null,
+    "ReceiptData": null
+}
+
+```
+
+#### Response example
+
+```
+{"ApplicationType":"LTY","ProcessingMode":"1","MessageFormatVersion":"1.0","TerminalIdentification":"CHL15069401","DeviceTypeIdentifier":"4","TransactionCode":"511","AccountType":"5","EntryMethod":"S","TransactionAmount":1.0,"TransactionAmountTotal":1.0,"TransactionSequenceNumber":34,"LocalTransactionDate":20220105,"LocalTransactionTime":170524,"AuthorizationCode":"052008265","InvoiceNumber":"20000020220105170524","LoyaltyPoints":1.0,"AfterBalance":20295.0,"ReceiptData":"{\"OperationMode\":\"Online\",\"OperationProduct\":\"Quantium\",\"CustomerName\":\"LAURA INES PSZEMIAROWER\",\"CustomerIdentification\":\"8080078974962\",\"CustomerLabel\":\"18522520\",\"LoyaltyProgramBalance\":\"20295\",\"LoyaltyProgramPoints\":\"1\",\"LoyaltyProgram\":\"Jumbo+\",\"LoyaltyProgramSupportPhone\":\"0810-333-58626\"}","ResponseCode":"0","ResponseText":"Operacion Exitosa","LoyaltyTransactionData":{"Products":[{"ProductCode":"2","ProductUnitPrice":1.0,"ProductAmount":1.0,"ProductQuantity":1.0,"ProductTotalAmount":1.0,"ProductTotalQuantity":1.0}],"PaymentsMethods":[]},"CustomerData":{},"ExternalHostData":{"State":"0","OperationCode":"4afd090a-ce0f-46ef-b8c2-783d2dec9094","Voided":"false"}}
+
+```
+
+#### POST Void Accumulation sample
+
+Return a Void Accumulation information.
+
+##### Request example
+
+```
+body:
+
+{
+    "ProcessingMode": "1",
+    "TransactionSequenceNumber": {{TSN}},
+    "LocalTransactionDate": {{LOCAL_DATE}},
+    "LocalTransactionTime": {{LOCAL_TIME}},
+    "TerminalIdentification": "{{TERMINAL}}",
+    "InvoiceNumber": "0{{PBL}}{{LOCAL_DATE}}{{LOCAL_TIME}}",
+    "TerminalCode": "{{TERMINAL}}",
+    "SystemModel": "AtionetStandAloneTerminal",
+    "SystemVersion": "3.0.0007 AXION",
+    "TransactionCode": "514",
+    "EntryMethod": "S",
+    "CurrencyCode": "ARS",
+    "UnitCode": "l",
+    "ApplicationType": "LTY",
+    "AccountType": "6",
+    "MessageFormatVersion": "1.0",
+    "DeviceTypeIdentifier": "4",
+    "PrimaryTrack": null,
+    "SecondaryTrack": null,
+    "LoyaltyPoints": null,
+    "LoyaltyTransactionData": {},
+    "IdentityData": {
+        "EntryMethod": "M",
+        "IdentityNumber": "38952296",
+        "Country": null,
+        "FirstName": null,
+        "LastName": null,
+        "Sex": null,
+        "BirthDate": null,
+        "IssueDate": null,
+        "ProcedureNumber": null,
+        "Copy": null
+    },
+    "OriginalData": {
+        "TransactionCode": "570",
+        "LocalTransactionDate": 20210928,
+        "LocalTransactionTime": 181625,
+        "AuthorizationCode": "064117266"
+    }
+}
+
+```
+
+#### Response example
+
+```
+{"ApplicationType":"LTY","ProcessingMode":"1","MessageFormatVersion":"1.0","TerminalIdentification":"CHL15069401","DeviceTypeIdentifier":"4","TransactionCode":"511","AccountType":"5","EntryMethod":"S","TransactionSequenceNumber":36,"LocalTransactionDate":20220105,"LocalTransactionTime":175018,"AuthorizationCode":"012054200","InvoiceNumber":"020000020220105175018","ReceiptData":"{\"OperationMode\":\"Online\",\"CustomerName\":\"BRAIAN PAZ MARTINEZ\",\"CustomerIdentification\":\"8018434864534\",\"CustomerLabel\":\"38952296\",\"LoyaltyProgramBalance\":\"0\",\"LoyaltyProgramPoints\":\"0\",\"LoyaltyProgram\":\"Jumbo+\",\"LoyaltyProgramSupportPhone\":\"0810-333-58626\"}","ResponseCode":"11022","ResponseText":"Transaccion inexistente","LoyaltyTransactionData":{"Products":[],"PaymentsMethods":[]},"CustomerData":{},"ExternalHostData":{"State":"0","OperationCode":"3f0eb59d-26cf-41f8-9b4d-5d572f615219","Voided":"false"}}
+
+```
+
+
+#### POST Balance Enquiry sample
+
+Return a Balance Enquiry information.
+
+##### Request example
+
+```
+body:
+
+{
+    "ProcessingMode": "1",
+    "TransactionSequenceNumber": {{TSN}},
+    "LocalTransactionDate": {{LOCAL_DATE}},
+    "LocalTransactionTime": {{LOCAL_TIME}},
+    "TerminalIdentification": "{{TERMINAL}}",
+    "InvoiceNumber": "0{{PBL}}{{LOCAL_DATE}}{{LOCAL_TIME}}",
+    "TerminalCode": "{{TERMINAL}}",
+    "SystemModel": "POSTMAN",
+    "SystemVersion": "NB",
+    "TransactionCode": "530",
+    "EntryMethod": "S",
+    "CurrencyCode": "ARS",
+    "UnitCode": "l",
+    "ApplicationType": "LTY",
+    "AccountType": "5",
+    "MessageFormatVersion": "1.0",
+    "DeviceTypeIdentifier": "4",
+    "PrimaryTrack": 8040003480012,
+    "SecondaryTrack": null,
+    "IdentityData": {
+        "EntryMethod": null,
+        "IdentityNumber": null,
+        "Country": null,
+        "FirstName": null,
+        "LastName": null,
+        "Sex": null,
+        "BirthDate": null,
+        "IssueDate": null,
+        "ProcedureNumber": null,
+        "Copy":null
+    }
+}
+
+```
+
+#### Response example
+
+```
+{"ApplicationType":"LTY","ProcessingMode":"1","MessageFormatVersion":"1.0","TerminalIdentification":"CHL15069401","DeviceTypeIdentifier":"4","TransactionCode":"531","AccountType":"5","EntryMethod":"S","TransactionAmount":null,"CurrencyCode":null,"BatchNumber":null,"ShiftNumber":null,"TransactionSequenceNumber":35,"LocalTransactionDate":20220105,"LocalTransactionTime":174814,"CustomerData":{"CredentialIssuer":"Jumbo+","loyaltyProgramId":"81025F6C-A90B-4F8E-B62F-817D33358F61"},"AuthorizationCode":null,"InvoiceNumber":null,"LoyaltyPoints":16139.0,"AfterBalance":16139.0,"ReceiptData":"{\"OperationMode\":\"Online\",\"CustomerName\":\"DEMIAN ALBERTO ESPINOZA\",\"CustomerIdentification\":\"8040003480012\",\"CustomerLabel\":\"25257586\",\"LoyaltyProgramBalance\":\"16139\",\"LoyaltyProgramPoints\":\"16139\",\"Custom0Label\":\"Super\",\"Custom0Value\":\"$ 1428,23\",\"Custom1Label\":\"Quantium\",\"Custom1Value\":\"$ 1428,23\",\"Custom2Label\":\"Diesel\",\"Custom2Value\":\"$ 1428,23\",\"Custom3Label\":\"Quantium Diesel\",\"Custom3Value\":\"$ 1428,23\",\"Custom4Label\":\"1500 Diesel\",\"Custom4Value\":\"$ 14,28\"}","ResponseCode":"0","ResponseText":"Operacion Exitosa","ExternalHostData":{}}
+
+```
 
 ## Error Handling
 
