@@ -5,3 +5,4 @@
 - [Integrations](README_Integration.md)
 - [User Manuals](README_UserManuals.md)
 - [Technical documentation](README_TechnicalDocumentation.md)
+- [Functional documentation](README_FunctionalDocumentation.md)
