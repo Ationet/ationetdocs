@@ -3,23 +3,21 @@
 |**Información del Documento**|.|
 |--- |--- |
 |**Archivo:**|ATIONet_Network_User_Manual-ES.md|
-|**Versión Doc:**|2.0|
-|**Fecha Liberación:**|22, Jun 2021|
+|**Versión Doc:**|1.0|
+|**Fecha Liberación:**|05, Ene 2022|
 |**Autor:**|ATIONet LLC|
 
 
 |**Bitácora de Cambios**|||
 |--- |--- |--- |
 |**Ver.**|**Fecha**|**Resumen de Cambios**|
-|1.0|02/Ago/2017|- Versión Inicial
-|2.0|22/Jun/2021|- Actualización de Manual
-|3.0|04/Ene/2022|- Funcionalidad Multimoneda
+|1.0|05/Ene/2022|- Funcionalidad Multimoneda
 
 # Contenido
 
 - [Funcionalidades Destacadas](#funcionalidades-destacadas)
     - [Multimoneda](#multimoneda) 	
-    - [Anexo](#anexo) 
+        - [Anexo](#anexo) 
 
 # Funcionalidades destacadas
 
