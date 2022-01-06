@@ -18,7 +18,7 @@
 # Contenido
 
 - [Multimoneda](#multimoneda) 	
-    - [Anexo](#anexo) 
+    - [Configuraciones](#configuraciones) 
 
 <br>
 
@@ -185,7 +185,7 @@ En la vista de widget de pre autorizaciones pendientes se puede visualizar el c√
 <br>
 
 
-## Anexo
+## Configuraciones
 
 Las configuraciones necesarias para habilitar la funcionalidad de Multimoneda son las siguientes:
 
