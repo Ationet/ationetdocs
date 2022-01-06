@@ -46,11 +46,11 @@ Intervienen 4 monedas:
 
 
 ### Flujo de configuración inicial requerida
+*En la sección Configuraciones del documento podrá encontrar el detalle de las configuraciones necesarias para habilitar la funcionalidad de Multimoneda.
 
-![Flujomultimoneda](ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/flujomultimoneda.PNG)
-*En el anexo del documento podrá encontrar el detalle de las configuraciones necesarias para habilitar la funcionalidad de Multimoneda.
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/flujomultimoneda.png)
 
-<br>
+
 
 
 ### Vistas impactadas
@@ -82,17 +82,30 @@ Dentro de las vistas de transacciones se ven afectadas por la funcionalidad de m
 
 ##### Vista Transacciones
 
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Vista%20Transacciones.png)
+
+<br>
 
 ##### Vista Detalle (Esta sección es igual en todas Transacciones y Excepciones)
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Vista%20Detalle.png)
 
+<br>
 
 ##### Vista Transacciones Despachadas
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Vista%20Transacciones%20Despachadas.png)
+
+<br>
 
 
 ##### Vista Transacciones ERP
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Vista%20Transacciones%20ERP.png)
+
+<br>
 
 
 ##### Vista Transacciones Rechazadas
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Vista%20Transacciones%20Rechazadas.png)
+
 
 
 <br>
@@ -104,14 +117,27 @@ Se pueden visualizar las monedas que interactúan en el circuito de autorizació
 
 
 ##### Vista Transacciones por conductor
-
-##### Vista Transacciones por vehículo
-
-##### Vista Transacciones por flota
-
-##### Vista Transacciones por sitio
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Vista%20Transacciones%20por%20conductor.png)
 
 <br>
+
+
+##### Vista Transacciones por vehículo
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Vista%20Transacciones%20por%20veh%C3%ADculo.png)
+
+<br>
+
+##### Vista Transacciones por flota
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Vista%20Transacciones%20por%20flota.png)
+
+<br>
+
+
+##### Vista Transacciones por sitio
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Vista%20Transacciones%20por%20sitio.png)
+
+<br>
+
 
 
 ### Cotización en transacción
@@ -129,11 +155,23 @@ La columna Moneda se puede visualizar en la grilla de Cuenta corriente de Compa�
 
 <br>
 
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Vista%20de%20Cuenta%20Corriente%20de%20Compa%C3%B1%C3%ADa.png)
 
-##### Archivo Excel de movimiento Cuenta corriente de Compañía
+<br>
 
+##### Reporte Excel de movimiento Cuenta corriente de Compañía
+
+<br>
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Archivo%20Excel%20de%20movimiento%20Cuenta%20corriente%20de%20Compa%C3%B1%C3%ADa.png)
+
+<br>
 
 ##### Nuevo movimiento de Cuenta Corriente de Compañía
+
+<br>
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Nuevo%20movimiento%20de%20Cuenta%20Corriente%20de%20Compa%C3%B1%C3%ADa.png)
 
 <br>
 
@@ -142,11 +180,19 @@ La columna Moneda se puede visualizar en la grilla de Cuenta corriente de Compa�
 La columna Moneda se puede visualizar en la grilla de Cuentas corrientes de Comercio, así como en la exportación a Excel de movimientos. La moneda se visualizará siempre y cuando el contrato sea en importe.
 
 
-##### Archivo Excel de movimiento Cuentas corrientes de Comercio
+##### Reporte Excel de movimiento Cuentas corrientes de Comercio
 
+<br>
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Archivo%20Excel%20de%20movimiento%20Cuentas%20corrientes%20de%20Comercio.png)
+
+<br>
 
 ##### Nuevo movimiento de Cuenta corriente de Comercio
 
+<br>
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Nuevo%20movimiento%20de%20Cuenta%20corriente%20de%20Comercio.png)
 
 <br>
 
@@ -156,9 +202,25 @@ La funcionalidad de Multimoneda impacta en el proceso de generación de estados 
 
 <br>
 
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Valores%20en%20estados%20de%20cuenta.png)
+
+<br>
+
 
 ### Vista Sitio y configuración
 La configuración de moneda a nivel de Sitio es utilizada en el cálculo de conversiones de moneda en caso de que haya una moneda del Sitio, y una moneda de un Contrato de Compañía/Comercio. Es parte de la funcionalidad de multimoneda para transacciones internacionales u operaciones de contratos en monedas distintas.
+
+<br>
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Vista%20Sitio%20y%20configuraci%C3%B3n.png)
+
+<br>
+
+#### Detalle Sitio
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Detalle%20Sitio.png)
+
+<br>
 
 Cabe aclarar, que el campo Moneda es obligatorio en la configuración de un Sitio, asimismo se incorporó una columna Moneda en el documento Excel que se descarga al exportar los sitios desde el portal de ATIONET.
 
@@ -171,9 +233,17 @@ El campo de moneda del sitio se puede encontrar en la vista de listado, detalles
 
 <br>
 
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Moneda%20en%20contingencia.png)
+
+<br>
+
 
 ### Moneda en widget de pre-autorización manual
 Al momento de querer generar una pre autorización por medio del widget, se indicará la moneda automáticamente una vez cargado el sitio donde se desea pre-autorizar una transacción.
+
+<br>
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Moneda%20en%20widget%20de%20pre-autorizaci%C3%B3n%20manual.png)
 
 <br>
 
@@ -183,20 +253,26 @@ En la vista de widget de pre autorizaciones pendientes se puede visualizar el c�
 
 <br>
 
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Moneda%20en%20widget%20de%20pre%20autorizaciones%20pendientes.png)
+
+<br>
+
 
 ## Configuraciones
 
 Las configuraciones necesarias para habilitar la funcionalidad de Multimoneda son las siguientes:
 
 
-<br>
-
-
 ### Configuración de monedas en Network
 
 En esta sección dentro de la configuración de la red se pueden configurar tres tipos de monedas (Contable, Conversión, Conciliación), como parte de la funcionalidad de multimoneda para transacciones internacionales.
 
-##### Agregar Imagen
+<br>
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Anexo/Configuraci%C3%B3n%20de%20monedas%20en%20Network.png)
+
+<br>
+
 
 En las tres opciones seleccionar la moneda con la que va a gestionar la Network.
 
@@ -210,12 +286,19 @@ Este paso es muy importante para poder operar con monedas diferentes:
 
 En Administración / Crear cotización de la moneda seleccionada en configuraciones con la otra moneda con la que se va gestionar:
 
-##### Agregar Imagen
+<br>
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Anexo/Crear%20y%20configurar%20Cotizaci%C3%B3n.png)
+
+<br>
 
 Toda moneda que no sea la contable se tiene que agregar como cotización.
 
 Tener en cuenta que en la grilla por defecto se ven las cotizaciones vigentes, en caso de requerir visualizar cotizaciones con vigencias Futuras o Pasadas se puede usar el filtro de Vigencia.
-##### Agregar Imagen
+
+<br>
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Anexo/Crear%20y%20configurar%20Cotizaci%C3%B3n2.png)
 
 <br>
 
@@ -226,15 +309,28 @@ Tener en cuenta que en la grilla por defecto se ven las cotizaciones vigentes, e
 
 
 En esta vista al crear o editar un Sitio se puede configurar la moneda de operación.
-##### Agregar Imagen
+
+<br>
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Anexo/Configuraci%C3%B3n%20de%20monedas%20en%20Sitio.png)
+
+<br>
 
 #### Editar Sitio
 
 Al seleccionar la opción Editar se puede configurar la moneda en un sitio en que se requiera:
-##### Agregar Imagen
+
+<br>
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Anexo/Editar%20Sitio.png)
+
+<br>
 
 Se habilita el detalle y en el campo Moneda seleccionar la que corresponda:
-##### Agregar Imagen
+
+<br>
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Anexo/Se%20habilita%20el%20detalle.png)
 
 <br>
 
@@ -242,6 +338,10 @@ Se habilita el detalle y en el campo Moneda seleccionar la que corresponda:
 #### Nuevo Sitio
 Al crear un nuevo Sitio, en el campo Moneda se debe seleccionar la moneda que utilizará en el mismo.
 
-##### Agregar Imagen
+<br>
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Anexo/Nuevo%20Sitio.png)
+
+<br>
 
 La incorporación de configuración de moneda a nivel de Sitio tiene la finalidad de ser usada en el cálculo de conversiones de moneda si fuese el caso entre moneda del sitio y moneda de un contrato de compañía/comercio. Parte de la funcionalidad de operación multimoneda para transacciones internacionales u operaciones de contratos en monedas distintas.
