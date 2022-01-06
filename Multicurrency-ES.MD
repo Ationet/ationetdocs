@@ -348,4 +348,4 @@ La incorporación de configuración de moneda a nivel de Sitio tiene la finalida
 
 <br>
 
-[Volver al inicio](#contenido) 	
+[Volver al inicio](#contenido) 	:arrow_up:
