@@ -4,7 +4,7 @@
 
 <br>
 
-## Functional
+## Functional Documnetation
 
 ### Multimoneda
 - [ATIONET Multicurrency (Spanish)](https://github.com/nuchavez/ationetdocs/blob/master/Multicurrency-ES.MD)
