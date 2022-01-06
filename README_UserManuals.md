@@ -15,6 +15,9 @@
 ### Merchant 
 - [ATIONET Merchant User Manual (Spanish)](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONET_Merchant_User_Manual.md)
 
+### Functional documentation
+- [Functional documentation](FunctionalDocumentation.MD)
+
 <br>
 
 ## ATIONET Local Agent
