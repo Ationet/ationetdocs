@@ -346,5 +346,6 @@ Al crear un nuevo Sitio, en el campo Moneda se debe seleccionar la moneda que ut
 
 La incorporación de configuración de moneda a nivel de Sitio tiene la finalidad de ser usada en el cálculo de conversiones de moneda si fuese el caso entre moneda del sitio y moneda de un contrato de compañía/comercio. Parte de la funcionalidad de operación multimoneda para transacciones internacionales u operaciones de contratos en monedas distintas.
 
+<br>
 
 [Volver al inicio](#contenido) 	
