@@ -1,247 +1,251 @@
 ![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
 
-|**Información del Documento**|.|
+|**Document Information**|.|
 |--- |--- |
-|**Archivo:**|Multicurrency-ES.MD|
-|**Versión Doc:**|1.0|
-|**Fecha Liberación:**|05, Ene 2022|
-|**Autor:**|ATIONet LLC|
+|**File:**|Multicurrency-ES.MD|
+|**Doc Version:**|1.0|
+|**Release Date:**|05, Jan 2022|
+|**Author:**|ATIONet LLC|
 
 
-|**Bitácora de Cambios**|||
+|**Change Log**|||
 |--- |--- |--- |
-|**Ver.**|**Fecha**|**Resumen de Cambios**|
-|1.0|05/Ene/2022|- Version Inicial
-<br>
+|**Ver.**|**Date**|**Change Summary**|
+|1.0|05/Jan/2022|- Initial version
 
-# Contenido
 
-- [Multimoneda](#multimoneda) 	
-    - [Configuraciones](#configuraciones) 
+# Contents
 
-<br>
-
-# Multimoneda
-
-### Objetivo
-El propósito del documento es detallar cómo la funcionalidad de Multimoneda ayuda en la gestión diaria de combustible en ATIONET cuando se generan transacciones en diferentes monedas, buscando reducir procesos manuales que puedan realizar nuestros usuarios.
+- [Multicurrency](#multicurrency) 	
+    - [Configurations](#configurations) 
 
 <br>
 
-### Introducción
-En los países o regiones en los cuales circulan varias monedas, la funcionalidad de multimoneda es estratégica e imprescindible. Proporciona la posibilidad de que sus clientes puedan abonar con distintas monedas de acuerdo al sitio o región donde se encuentren.
+# Multicurrency
+
+### Objetive
+The purpose of the document is to detail how the Multicurrency functionality helps in the daily management of fuel in ATIONET when transactions are generated in different currencies, seeking to reduce manual processes that our users may carry out.
 
 <br>
 
-### Descripción
-La funcionalidad de Multimoneda permite operar con diferentes divisas dentro del portal. Para poder utilizar esta funcionalidad es necesario realizar algunas configuraciones en la plataforma que permitirán realizar las conversiones requeridas en cada operación.
+### Introduction
+In countries or regions in which several currencies circulate, the multi-currency functionality is strategic and essential. Provides the possibility that your customers can pay with different currencies according to the site or region where they are.
 
-Intervienen 4 monedas:
-- Moneda de operación: es la moneda de ocurrencia, en una transacción es la moneda configurada en el sitio, en un movimiento de cuenta corriente es la moneda elegida para el pago.
-- Moneda de conversión: es la moneda pivot, utilizada para toda conversión desde la moneda de operación hacia cualquier otra moneda.
-- Moneda de cuenta corriente: es la moneda en la que se administran los contratos, y por lo tanto la cuenta corriente.
-- Moneda de conciliación: es la moneda utilizada para conciliar todas las cuentas corrientes, si la Network quisiera conciliar todos sus contratos. Si bien hoy se realizan estas conversiones, no se muestra este valor en ningún lado, en ningún reporte.
+<br>
+
+### Description
+The Multicurrency functionality allows you to operate with different currencies within the portal. In order to use this functionality, it is necessary to make some configurations on the platform that will allow the required conversions to be made in each operation.
+
+Four different types of currencies are involved:
+- Operation currency: it is the currency of occurrence, in a transaction it is the currency configured on the site, in a current account movement it is the currency chosen for payment.
+- Conversion currency: it is the pivot currency, used for any conversion from the currency of operation to any other currency.
+- Current account currency: it is the currency in which the contracts are administered, and therefore the current account.
+- Reconciliation currency: it is the currency used to reconcile all current accounts, if the Network wants to reconcile all its contracts. Although these conversions are being made today, this value is not shown anywhere, in any report.
 
 <br>
 
 
-### Flujo de configuración inicial requerida
+### Initial setup flow required
 
 ![Flujomultimoneda](ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/flujomultimoneda.PNG)
-*En el anexo del documento podrá encontrar el detalle de las configuraciones necesarias para habilitar la funcionalidad de Multimoneda.
+
+* In the section Configuration you can find the details of the settings necessary to enable Multicurrency functionality.
 
 <br>
 
 
-### Vistas impactadas
-A continuación, se detallan las vistas que se ven impactadas por la funcionalidad de Multimoneda:  
-- Transacciones
-- Movimientos de Cuenta Corriente
-- Estado de Cuenta
-- Configuración de Procesos de Liquidación
-- Contrato de Comercio.
-- Configuración de Red
-- Sitio y Configuración
+### Impacted views
+The views that are impacted by the Multicurrency functionality are detailed below:
+- Transactions
+- Current Account Movements
+- Account status
+- Billing Process Configuration
+- Merchant Contract.
+- Network Configuration
+- Site and Settings
 
 <br>
 
 
-#### Vistas de transacciones
-Se pueden identificar las monedas que interactúan en el circuito de autorización de una transacción como dato complementario en los campos que representan el valor monetario de la misma. 
-Dentro de las vistas de transacciones se ven afectadas por la funcionalidad de multimoneda las siguientes:
+#### Transaction views
+The currencies that interact in the authorization circuit of a transaction can be identified as complementary data in the fields that represent the monetary value of the same.
+Within the transaction views, the following are affected by the multi-currency functionality:
 
-- Transacciones
-- Detalle de Transacciones
-- Detalle de Excepciones
-- Transacciones Despachadas
-- Transacciones ERP
-- Transacciones Rechazadas
-
-<br>
-
-
-##### Vista Transacciones
-
-
-##### Vista Detalle (Esta sección es igual en todas Transacciones y Excepciones)
-
-
-##### Vista Transacciones Despachadas
-
-
-##### Vista Transacciones ERP
-
-
-##### Vista Transacciones Rechazadas
-
+- Transactions
+- Details of Transactions
+- Detail of Exceptions
+- Dispatched Transactions
+- ERP transactions
+- Declined Transactions
 
 <br>
 
-### Vistas de transacciones agrupadas
+
+##### Transaction views
+
+
+##### Detail View (This section is the same in all Transactions and Exceptions)
+
+
+##### Dispensed Transactions View
+
+
+##### ERP Transactions view
+
+
+##### Declined Transactions View
+
+
+<br>
+
+### Grouped transaction views
 
 Se pueden visualizar las monedas que interactúan en el circuito de autorización de una transacción como dato complementario en los campos que representan valor monetario de la misma. Las vistas en las que se ven reflejadas son las siguientes:
 
 
 
-##### Vista Transacciones por conductor
+##### Transactions by Driver views
 
-##### Vista Transacciones por vehículo
+##### Transactions by Vehicle views
 
-##### Vista Transacciones por flota
+##### Transactions by Fleet views
 
-##### Vista Transacciones por sitio
-
-<br>
-
-
-### Cotización en transacción
-El motor de autorizaciones posee la lógica para considerar el cálculo de cotizaciones configuradas vigentes en los montos autorizados, y en la validación de disponible para transaccionar de los clientes, así como el impacto de los montos correspondientes en la moneda del contrato en la cuenta corriente del mismo. 
-
-<br>
-
-### Cotización en Cuenta Corriente
-Permite realizar movimientos de Cuenta Corriente (depósitos) en Contratos de Compañía y/o Comercio y en subcuentas, en moneda distintas a las del contrato referido.
-
-<br>
-
-### Vista de Cuenta Corriente de Compañía
-La columna Moneda se puede visualizar en la grilla de Cuenta corriente de Compañía, así como en la exportación a Excel de movimientos e impresión de los mismos. La moneda se visualizará siempre y cuando el contrato sea en importe.
+##### Transactions by Site viewss
 
 <br>
 
 
-##### Archivo Excel de movimiento Cuenta corriente de Compañía
+### Quote in transaction
+The authorization engine has the logic to consider the calculation of current configured quotes in the authorized amounts, and in the validation of customers' availability to transact, as well as the impact of the corresponding amounts in the currency of the contract on the current account of the same.
 
+<br>
 
-##### Nuevo movimiento de Cuenta Corriente de Compañía
+### Current Account Quote
+Allows you to carry out Current Account movements (deposits) in Company and / or Commerce Contracts and in subaccounts, in currencies other than those of the referred contract.
+
+<br>
+
+### Company Checking Account View
+The Currency column can be viewed in the Company Current Account grid, as well as in the export of movements and printing of them to Excel. The currency will be displayed as long as the contract is in amount.
 
 <br>
 
 
-### Vista de Cuentas corrientes de Comercio
-La columna Moneda se puede visualizar en la grilla de Cuentas corrientes de Comercio, así como en la exportación a Excel de movimientos. La moneda se visualizará siempre y cuando el contrato sea en importe.
+##### Excel file of movement Company Current Account
 
 
-##### Archivo Excel de movimiento Cuentas corrientes de Comercio
-
-
-##### Nuevo movimiento de Cuenta corriente de Comercio
-
+##### New movement of Company Current Account
 
 <br>
 
 
-### Valores en estados de cuenta
-La funcionalidad de Multimoneda impacta en el proceso de generación de estados de cuenta lo que hace considerar los valores registrados de las transacciones basadas en las monedas involucradas para realizar los cálculos correspondientes y reflejarlos en el estado de cuenta.
-
-<br>
+### View of Trade Current Accounts
+The Currency column can be viewed in the Commercial Current Accounts grid, as well as in the export of movements to Excel. The currency will be displayed as long as the contract is in amount.
 
 
-### Vista Sitio y configuración
-La configuración de moneda a nivel de Sitio es utilizada en el cálculo de conversiones de moneda en caso de que haya una moneda del Sitio, y una moneda de un Contrato de Compañía/Comercio. Es parte de la funcionalidad de multimoneda para transacciones internacionales u operaciones de contratos en monedas distintas.
-
-Cabe aclarar, que el campo Moneda es obligatorio en la configuración de un Sitio, asimismo se incorporó una columna Moneda en el documento Excel que se descarga al exportar los sitios desde el portal de ATIONET.
-
-<br>
+##### Excel file of movement Merchant Current Accounts
 
 
-
-### Moneda en contingencia
-El campo de moneda del sitio se puede encontrar en la vista de listado, detalles, creación y edición de Contingencia. En la vista de creación y edición la moneda se carga automáticamente al elegir el sitio de ocurrencia de la transacción.
-
-<br>
-
-
-### Moneda en widget de pre-autorización manual
-Al momento de querer generar una pre autorización por medio del widget, se indicará la moneda automáticamente una vez cargado el sitio donde se desea pre-autorizar una transacción.
-
-<br>
-
-
-### Moneda en widget de pre autorizaciones pendientes 
-En la vista de widget de pre autorizaciones pendientes se puede visualizar el código de la moneda del Sitio.
-
-<br>
-
-
-## Configuraciones
-
-Las configuraciones necesarias para habilitar la funcionalidad de Multimoneda son las siguientes:
+##### New movement of Merchant Current Account
 
 
 <br>
 
 
-### Configuración de monedas en Network
+### Values in account statements
+The Multicurrency functionality impacts on the account statement generation process, which makes it consider the recorded values of the transactions based on the currencies involved to perform the corresponding calculations and reflect them in the account statement.
 
-En esta sección dentro de la configuración de la red se pueden configurar tres tipos de monedas (Contable, Conversión, Conciliación), como parte de la funcionalidad de multimoneda para transacciones internacionales.
+<br>
 
-##### Agregar Imagen
 
-En las tres opciones seleccionar la moneda con la que va a gestionar la Network.
+### Site view and configuration
+The currency configuration at the Site level is used in the calculation of currency conversions in case there is a currency of the Site, and a currency of a Company / Merchant Agreement. It is part of the multi-currency functionality for international transactions or contract operations in different currencies.
+
+It should be clarified that the Currency field is mandatory in the configuration of a Site, a Currency column was also incorporated in the Excel document that is downloaded when the sites are exported from the ATIONET portal.
+
+<br>
+
+
+
+### Currency in contingency
+The site currency field can be found in Contingency listing, details, creation and editing view. In the creation and edition view, the currency is automatically loaded when choosing the place of occurrence of the transaction.
+
+<br>
+
+
+### Currency in manual pre-authorization widget
+When you want to generate a pre-authorization through the widget, the currency will be indicated automatically once the site where you want to pre-authorize a transaction is loaded.
+
+<br>
+
+
+### Currency in pending pre authorization widget
+In the widget view of pending pre-authorizations you can see the currency code of the Site.
+
+<br>
+
+
+## Configurations
+
+The necessary settings to enable Multicurrency functionality are the following:
 
 
 <br>
 
 
-### Crear y configurar Cotización
+### Currency configuration in Network
 
-Este paso es muy importante para poder operar con monedas diferentes: 
+In this section, within the network configuration, three types of currencies can be configured (Accounting, Conversion, Reconciliation), as part of the multi-currency functionality for international transactions.
 
-En Administración / Crear cotización de la moneda seleccionada en configuraciones con la otra moneda con la que se va gestionar:
+##### Add Image
 
-##### Agregar Imagen
+In the three options select the currency with which you are going to manage the Network.
 
-Toda moneda que no sea la contable se tiene que agregar como cotización.
-
-Tener en cuenta que en la grilla por defecto se ven las cotizaciones vigentes, en caso de requerir visualizar cotizaciones con vigencias Futuras o Pasadas se puede usar el filtro de Vigencia.
-##### Agregar Imagen
 
 <br>
 
 
-### Configuración de monedas en Sitio
+### Create and configure Quote
+
+This step is very important to be able to operate with different currencies:
+
+In Administration / Create quote of the selected currency in configurations with the other currency with which it will be managed:
+
+##### Add Image
+
+Any currency other than accounting has to be added as a quote.
+
+Take into account that in the default grid you see the current prices, in case you need to view quotes with Future or Past validities, you can use the Validity filter.
+
+##### Add Image
 
 <br>
 
 
-En esta vista al crear o editar un Sitio se puede configurar la moneda de operación.
-##### Agregar Imagen
-
-#### Editar Sitio
-
-Al seleccionar la opción Editar se puede configurar la moneda en un sitio en que se requiera:
-##### Agregar Imagen
-
-Se habilita el detalle y en el campo Moneda seleccionar la que corresponda:
-##### Agregar Imagen
+### Currency Settings on Site
 
 <br>
 
 
-#### Nuevo Sitio
-Al crear un nuevo Sitio, en el campo Moneda se debe seleccionar la moneda que utilizará en el mismo.
+In this view, when creating or editing a Site, the currency of operation can be configured.
+##### Add Image
 
-##### Agregar Imagen
+<br>
 
-La incorporación de configuración de moneda a nivel de Sitio tiene la finalidad de ser usada en el cálculo de conversiones de moneda si fuese el caso entre moneda del sitio y moneda de un contrato de compañía/comercio. Parte de la funcionalidad de operación multimoneda para transacciones internacionales u operaciones de contratos en monedas distintas.
+#### Edit Site
+
+By selecting the Edit option, the currency can be configured in a place where it is required:
+##### Add Image
+
+The detail is enabled and in the Currency field select the one that corresponds:
+##### Add Image
+
+<br>
+
+
+#### New Site
+When creating a new Site, in the Currency field you must select the currency that will be used in it.
+
+##### Add Image
+
+The incorporation of currency configuration at the Site level is intended to be used in the calculation of currency conversions if it were the case between the site currency and the currency of a company / trade contract. Part of the multi-currency operation functionality for international transactions or contract operations in different currencies.
