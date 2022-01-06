@@ -11,8 +11,7 @@
 |**Bitácora de Cambios**|||
 |--- |--- |--- |
 |**Ver.**|**Fecha**|**Resumen de Cambios**|
-|1.0|05/Ene/2022|- Funcionalidad Multimoneda
-
+|1.0|05/Ene/2022|- Version Inicial
 <br>
 
 # Contenido
