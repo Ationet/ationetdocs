@@ -2,7 +2,7 @@
 
 |**Información del Documento**|.|
 |--- |--- |
-|**Archivo:**|Multimoneda-ES.MD|
+|**Archivo:**|Multicurrency-ES.MD|
 |**Versión Doc:**|1.0|
 |**Fecha Liberación:**|05, Ene 2022|
 |**Autor:**|ATIONet LLC|
