@@ -21,7 +21,7 @@
 
 <br>
 
-# Multimoneda
+# Multimoneda 
 
 ### Objetivo
 El propósito del documento es detallar cómo la funcionalidad de Multimoneda ayuda en la gestión diaria de combustible en ATIONET cuando se generan transacciones en diferentes monedas, buscando reducir procesos manuales que puedan realizar nuestros usuarios.
