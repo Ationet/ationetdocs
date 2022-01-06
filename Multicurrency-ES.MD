@@ -50,7 +50,7 @@ Intervienen 4 monedas:
 
 ![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/flujomultimoneda.png)
 
-
+<br>
 
 
 ### Vistas impactadas
