@@ -8,5 +8,5 @@
 
 ### Multimoneda
 - [ATIONET Multimoneda (Spanish)](https://github.com/nuchavez/ationetdocs/blob/master/Multicurrency-ES.MD)
-- [ATIONET Multimoneda (English)](https://github.com/nuchavez/ationetdocs/blob/master/Multicurrency-EN.MD)
+- [ATIONET Multicurrency (English)](https://github.com/nuchavez/ationetdocs/blob/master/Multicurrency-EN.MD)
 
