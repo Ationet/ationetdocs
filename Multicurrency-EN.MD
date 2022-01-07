@@ -328,6 +328,10 @@ If required, new Company Contracts and Merchant Contracts must be configured. It
 
 <br>
 
+As mentioned above, once these settings have been made, the Multicurrency functionality is enabled.
+
+<br>
+
 [Back to top](#contents)  :arrow_up:
 
 
