@@ -358,4 +358,8 @@ En caso de requerir se deberán configurar nuevos Contratos de Compañía y Cont
 
 <br>
 
+Como se comento anteriormente, una vez realizadas estas configuraciones se habilita la funcionalidad Multimoneda.
+
+<br>
+
 [Volver al inicio](#contenido) 	:arrow_up:
