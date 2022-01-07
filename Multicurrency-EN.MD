@@ -46,10 +46,9 @@ Four different types of currencies are involved:
 
 
 ### Initial setup flow required
+*In the section Configuration you can find the details of the settings necessary to enable Multicurrency functionality.
 
-![Flujomultimoneda](ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/flujomultimoneda.PNG)
-
-* In the section Configuration you can find the details of the settings necessary to enable Multicurrency functionality.
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/1.png)
 
 <br>
 
@@ -83,18 +82,27 @@ Within the transaction views, the following are affected by the multi-currency f
 
 ##### Transaction views
 
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/2.png)
+
+<br>
 
 ##### Detail View (This section is the same in all Transactions and Exceptions)
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/3.png)
 
+<br>
 
 ##### Dispensed Transactions View
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/4.png)
 
+<br>
 
 ##### ERP Transactions view
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/5.png)
 
+<br>
 
 ##### Declined Transactions View
-
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/6.png)
 
 <br>
 
@@ -105,12 +113,23 @@ Se pueden visualizar las monedas que interactúan en el circuito de autorizació
 
 
 ##### Transactions by Driver views
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/7.png)
+
+<br>
 
 ##### Transactions by Vehicle views
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/8.png)
+
+<br>
 
 ##### Transactions by Fleet views
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/9.png)
+
+<br>
 
 ##### Transactions by Site viewss
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/10.png)
 
 <br>
 
