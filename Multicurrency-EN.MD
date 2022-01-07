@@ -146,27 +146,36 @@ Allows you to carry out Current Account movements (deposits) in Company and / or
 
 ### Company Checking Account View
 The Currency column can be viewed in the Company Current Account grid, as well as in the export of movements and printing of them to Excel. The currency will be displayed as long as the contract is in amount.
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/11.png)
 
 <br>
 
 
 ##### Excel file of movement Company Current Account
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/12.png)
 
+<br>
 
 ##### New movement of Company Current Account
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/13.png)
 
 <br>
 
 
 ### View of Trade Current Accounts
 The Currency column can be viewed in the Commercial Current Accounts grid, as well as in the export of movements to Excel. The currency will be displayed as long as the contract is in amount.
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/14.png)
 
+<br>
 
 ##### Excel file of movement Merchant Current Accounts
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/15.png)
 
+<br>
 
 ##### New movement of Merchant Current Account
 
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/16.png)
 
 <br>
 
@@ -174,13 +183,30 @@ The Currency column can be viewed in the Commercial Current Accounts grid, as we
 ### Values in account statements
 The Multicurrency functionality impacts on the account statement generation process, which makes it consider the recorded values of the transactions based on the currencies involved to perform the corresponding calculations and reflect them in the account statement.
 
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/17.png)
+
 <br>
 
 
 ### Site view and configuration
 The currency configuration at the Site level is used in the calculation of currency conversions in case there is a currency of the Site, and a currency of a Company / Merchant Agreement. It is part of the multi-currency functionality for international transactions or contract operations in different currencies.
 
+<br>
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/18.png)
+
+<br>
+
+#### Site Details
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/19.png)
+
+<br>
+
+
 It should be clarified that the Currency field is mandatory in the configuration of a Site, a Currency column was also incorporated in the Excel document that is downloaded when the sites are exported from the ATIONET portal.
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/20.png)
 
 <br>
 
@@ -189,17 +215,23 @@ It should be clarified that the Currency field is mandatory in the configuration
 ### Currency in contingency
 The site currency field can be found in Contingency listing, details, creation and editing view. In the creation and edition view, the currency is automatically loaded when choosing the place of occurrence of the transaction.
 
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/21.png)
+
 <br>
 
 
 ### Currency in manual pre-authorization widget
 When you want to generate a pre-authorization through the widget, the currency will be indicated automatically once the site where you want to pre-authorize a transaction is loaded.
 
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/22.png)
+
 <br>
 
 
 ### Currency in pending pre authorization widget
 In the widget view of pending pre-authorizations you can see the currency code of the Site.
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/23.png)
 
 <br>
 
@@ -208,7 +240,6 @@ In the widget view of pending pre-authorizations you can see the currency code o
 
 The necessary settings to enable Multicurrency functionality are the following:
 
-
 <br>
 
 
@@ -216,7 +247,11 @@ The necessary settings to enable Multicurrency functionality are the following:
 
 In this section, within the network configuration, three types of currencies can be configured (Accounting, Conversion, Reconciliation), as part of the multi-currency functionality for international transactions.
 
-##### Add Image
+<br>
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/24.png)
+
+<br>
 
 In the three options select the currency with which you are going to manage the Network.
 
@@ -230,15 +265,20 @@ This step is very important to be able to operate with different currencies:
 
 In Administration / Create quote of the selected currency in configurations with the other currency with which it will be managed:
 
-##### Add Image
+<br>
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/25.png)
+
+<br>
 
 Any currency other than accounting has to be added as a quote.
 
 Take into account that in the default grid you see the current prices, in case you need to view quotes with Future or Past validities, you can use the Validity filter.
 
-##### Add Image
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/26.png)
 
 <br>
+
 
 
 ### Currency Settings on Site
@@ -247,17 +287,23 @@ Take into account that in the default grid you see the current prices, in case y
 
 
 In this view, when creating or editing a Site, the currency of operation can be configured.
-##### Add Image
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/27.png)
 
 <br>
+
 
 #### Edit Site
 
 By selecting the Edit option, the currency can be configured in a place where it is required:
-##### Add Image
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/28.png)
+
+<br>
 
 The detail is enabled and in the Currency field select the one that corresponds:
-##### Add Image
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/29.png)
 
 <br>
 
@@ -265,6 +311,23 @@ The detail is enabled and in the Currency field select the one that corresponds:
 #### New Site
 When creating a new Site, in the Currency field you must select the currency that will be used in it.
 
-##### Add Image
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/30.png)
+
+<br>
 
 The incorporation of currency configuration at the Site level is intended to be used in the calculation of currency conversions if it were the case between the site currency and the currency of a company / trade contract. Part of the multi-currency operation functionality for international transactions or contract operations in different currencies.
+
+
+#### Company and Merchant Contracts
+
+If required, new Company Contracts and Merchant Contracts must be configured. It should only be modified and or created if the contracts have to be in a currency other than the one handled by the Network, there is no inconsistency between the currencies of the sites and the currencies of the contracts while a quote has been created.
+
+<br>
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Multicurrency/30.png)
+
+<br>
+
+[Back to top](#contents)  :arrow_up:
+
+
