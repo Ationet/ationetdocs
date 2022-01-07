@@ -348,4 +348,18 @@ La incorporación de configuración de moneda a nivel de Sitio tiene la finalida
 
 <br>
 
+#### Contratos de Compañía y Comercio
+
+En caso de requerir se deberán configurar nuevos Contratos de Compañía y Contratos de Comercio. Solo se debe modificar y o crear en caso de que los contratos tengan que ser en otra moneda distinta a la que maneja la Network, no se genera inconsistencia entre las monedas de los sitios y las monedas de los contratos mientras se haya creado una cotización
+
+<br>
+
+![](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Functional%20Documentation/Multimoneda/Anexo/Nuevo%20contrato%20de%20comercio.png)
+
+<br>
+
+Como se comento anteriormente, una vez realizadas estas configuraciones tendrán habilita la funcionalidad de Multimoneda.
+
+<br>
+
 [Volver al inicio](#contenido) 	:arrow_up:
