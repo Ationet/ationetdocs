@@ -276,31 +276,37 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 La vista de cuentas corrientes de los comercios es donde se consultan los saldos y movimientos de todos los comercios.
 
 Para facilitar las consultas se dispone de un panel de filtros y la primera opción del panel es el tipo de informe que se quiere ver (Lista de Contratos, Movimientos de Contratos, Lista de Sitios y Movimientos de Sitios).
+En la columna Moneda de la grilla puede ver en que moneda se realiza cada movimiento. Sí se tienen configurada la funcionalidad de Multimoneda, puede ver las diferentes divisas en cada movimiento.
 
-![Cuentas Corrientes de Comercio](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Comercio.PNG)
+![Cuentas Corrientes de Comercio](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Comercio.PNG)
 
 ## Cuentas Corrientes de Compañía
 La sección de Cuentas Corrientes de Compañía es la vista del saldo disponible de las subcuentas y/o contratos, y también la vista de todos los movimientos de las subcuentas y/o contratos.
+En la columna Moneda de la grilla puede ver en que moneda se realiza cada movimiento. Sí se tienen configurada la funcionalidad de Multimoneda, puede ver las diferentes divisas en cada movimiento.
 
 Para facilitar las consultas, hay un panel de filtros disponible. La primera opción del panel de filtros es el tipo de informe:
 
-![Cuentas Corrientes de la Compañía](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa.PNG)
+![Cuentas Corrientes de la Compañía](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa.PNG)
 
 1. **Lista de Contratos:** Esta opción lista todos los contratos con sus respectivos saldos, pero no da detalles de los movimientos.
 
-![Cuentas Corrientes de Compañía - Lista de Contratos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Lista%20de%20Contratos.PNG)
+![Cuentas Corrientes de Compañía - Lista de Contratos](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Lista%20de%20Contratos.PNG)
 
 2. **Movimientos de Contratos:** Esta opción muestra todos los movimientos de los contratos.
 
-![Cuentas Corrientes de Compañía - Movimientos de Contratos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Movimientos%20de%20Contratos.PNG)
+![Cuentas Corrientes de Compañía - Movimientos de Contratos](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Movimientos%20de%20Contratos.PNG)
 
 3. **Lista de Subcuentas:** Esta opción lista todas las subcuentas con sus respectivos saldos, pero no da detalles de los movimientos.
 
-![Cuentas Corrientes de Compañía - Lista de Subcuentas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Lista%20de%20Subcuentas.PNG)
+![Cuentas Corrientes de Compañía - Lista de Subcuentas](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Lista%20de%20Subcuentas.PNG)
 
 4. **Movimientos de Subcuentas:** Esta vista lista todos los movimientos de las subcuentas.  
 
-![Cuentas Corrientes de Compañía - Movimientos de Subcuentas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Movimientos%20de%20Subcuentas.PNG)
+![Cuentas Corrientes de Compañía - Movimientos de Subcuentas](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Movimientos%20de%20Subcuentas.PNG)
+
+5. **Recargas de Subcuentas:** Esta vista lista todass las recargas de las subcuentas.  
+
+![Cuentas Corrientes de Compañía - Recargas de Subcuentas](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Recargas%20de%20Subcuentas.PNG)
 
 ## Encargados
 En ATIONet el término encargado se refiere a la persona responsable de hacer el despacho, el que opera las bombas. En esta sección se pueden ver, crear y editar todos los encargados. Para facilitar las consultas, hay un panel de filtros en la parte superior.
@@ -459,7 +465,7 @@ La vista de transacciones es una de las más importantes en ATIONet. En esta vis
 
 El panel de filtro tiene todos estos campos disponibles:
 
-![Trasacciones - Filtro](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Filtros.PNG)
+![Trasacciones - Filtro](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Filtros.PNG)
 
 * **Código de Autorización:** Introduzca el código de autorización asociado a la transacción.
 * **Turno:** Introduzca el número de turno asociado a la transacción.
@@ -477,14 +483,17 @@ El panel de filtro tiene todos estos campos disponibles:
 * **Hora Desde/Hasta:** Introduzca las horas de inicio y finalización asociadas a la transacción.
 * **Modo:** Seleccione el modo de transacción (Contingencia, Fuera de línea o Estándar).
 * **Mostrar Transacciones Completadas en Cero:** Marque esta opción para ver las transacciones en las que no se despachó combustible.
+* **Valores Subsidiados:** Seleccione la opción correspondiente a la transacción (Si/No).
 
 Una vez que haya filtrado, haga clic en ***Búsqueda*** y se listarán las transacciones que cumplen con el filtro.
 
-![Transacciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones.PNG)
+![Transacciones](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones.PNG)
 
 Si quiere ver el detalle de la transacción, presione sobre el **Código de Autorización** y esto le llevará a una vista detallada de la transacción.
 
-![Transacciones Detalles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Detalles.PNG)
+![Transacciones Detalles](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Detalles.PNG)
+
+Con la incorporación de Multineda, dentro de Detalles de Transacción encontrara tres nuevas secciones: Moneda del Sitio, Moneda de la Compañía y Moneda de Comercio, las cuales son configurables como se explica en el documento de [Multimoneda](https://github.com/nuchavez/ationetdocs/blob/master/Multicurrency-ES.MD). 
 
 ## Transacciones Desconocidas
 Las transacciones desconocidas son aquellas que la Compañía dice desconocer.
@@ -494,34 +503,39 @@ En esta sección se pueden consultar las transacciones desconocidas, listadas po
 ![Transacciones desconocidas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Desconocidas.PNG)
 
 ## Transacciones Despachadas
-En esta sección puede ver todas las transacciones que han sido dispensadas.
+En esta sección puede ver todas las transacciones que han sido dispensadas. Con la incorporación de la funcionalidad de Multimoneda, en la columna Monto despachado se podrá visualizar la moneda con que se realizó cada transacción. 
 
-![Transacciones Despachadas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Despachadas.PNG)
+![Transacciones Despachadas](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Despachadas.PNG)
  
 ## Transacciones por Conductor
 En esta vista puede ver las transacciones agrupadas por el conductor que las realizó. Los botones de la parte superior izquierda sirven para imprimir la tabla o crear un archivo Excel a partir de la misma, respectivamente.
+Dentro de la grilla en la columna Moneda puede ver en que divisa se realiza cada transacción. En caso de tener habilitada la funcionalidad Multimoneda, en el listado de transacciones se indicarán las diferentes divisas de acuerdo a cada una de ellas.
 
-![Transacciones por Conductor](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20por%20Conductor.PNG)
+![Transacciones por Conductor](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20por%20Conductor.PNG)
 
 ## Transacciones por Flota
 En esta vista puede ver las transacciones agrupadas por la flota que las realizó. Los botones de la parte superior izquierda sirven para imprimir la tabla o crear un archivo Excel a partir de la misma, respectivamente.
+Dentro de la grilla en la columna Moneda puede ver en que divisa se realiza cada transacción. En caso de tener habilitada la funcionalidad Multimoneda, en el listado de transacciones se indicarán las diferentes divisas de acuerdo a cada una de ellas.
 
-![Transacciones por Flota](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20por%20Flota.PNG)
+![Transacciones por Flota](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20por%20Flota.PNG)
 
 ## Transacciones por Sitio
 En esta vista se pueden ver las transacciones agrupadas por el sitio donde se realizaron. Los botones de la parte superior izquierda sirven para imprimir la tabla o crear un archivo Excel a partir de ella, respectivamente.
+Dentro de la grilla en la columna Moneda puede ver en que divisa se realiza cada transacción. En caso de tener habilitada la funcionalidad Multimoneda, en el listado de transacciones se indicarán las diferentes divisas de acuerdo a cada una de ellas.
 
-![Transacciones por Sitio](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20por%20Sitio.PNG)
+![Transacciones por Sitio](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20por%20Sitio.PNG)
 
 ## Transacciones por Vehículo
 En esta vista puede ver las transacciones agrupadas por el vehículo que las realizó. Los botones de la parte superior izquierda sirven para imprimir la tabla o crear un archivo Excel a partir de la misma, respectivamente.
+Dentro de la grilla en la columna Moneda puede ver en que divisa se realiza cada transacción. En caso de tener habilitada la funcionalidad Multimoneda, en el listado de transacciones se indicarán las diferentes divisas de acuerdo a cada una de ellas.
 
-![Transacciones por Vehículo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20por%20Veh%C3%ADculo.PNG)
+![Transacciones por Vehículo](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20por%20Veh%C3%ADculo.PNG)
 
 ## Transacciones Rechazadas
 ATIONet separa las transacciones no autorizadas en 2 secciones: [Excepciones](#excepciones) y **Transacciones Rechazadas**.
 
 Las Transacciones Rechazadas son aquellas que lograron pasar las autenticaciones duras de ATIONet, pero fueron rechazadas por otras validaciones como una regla insatisfecha o una validación de saldo.
+En las columnas Volumen Despachado, Precio unitario Despachado, Monto Despachado, Precio unitario de Contrato, Monto de Contrato puede ver con que moneda fue realizada la transacción rechazada.
 
 ![Transacciones Rechazadas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Rechazadas.PNG)
 
