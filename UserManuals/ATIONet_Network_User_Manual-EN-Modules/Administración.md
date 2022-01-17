@@ -491,6 +491,8 @@ Para crear un sitio, haga clic en el botón **Nuevo**.
 
 Los campos a completar son los siguientes:
 
+**Información**
+
 * **Comercio:** Seleccione el comercio asociado al sitio.
 * **Código:** Introduzca el código único asociado al sitio.
 * **Zona:** Seleccione la zona asociada al sitio.
@@ -517,10 +519,14 @@ Los campos a completar son los siguientes:
 
 <br>
 
+**Notificación - Regla de Alerta**
+
 * **Notificación de inventario bajo:** Introduzca la cantidad de inventario bajo. Cuando se alcance, los contactos en **correos electrónicos del destinatario** recibirán una notificación.
 * **Alerta de notificación de volumen de agua:** Introduzca el volumen de agua bajo. Cuando se alcance, los contactos en **los correos electrónicos de los destinatarios** recibirán una notificación.
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
+
+
 
 ## SKUs
 Las Unidades de Mantenimiento de Stock (SKUs - Stock Keeping Units) son productos no combustibles. En esta sección puede consultar los SKUs creados, editarlos y también crear nuevos. Para facilitar las consultas, hay un panel de filtros en la parte superior. 
