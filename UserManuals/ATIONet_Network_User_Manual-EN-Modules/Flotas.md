@@ -97,11 +97,11 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Contingencia
 En ATIONet una contingencia es una operación introducida manualmente. En esta sección puede consultar y crear contingencias. Tenga en cuenta que las contingencias son transacciones sin autorización previa.
 
-![Contingencia](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contingencias.PNG)
+![Contingencia](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contingencias.PNG)
 
 Para crear una contingencia, haga click en el botón **Nuevo**.
 
-![Contingencias Nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contingencias%20Nueva.PNG)
+![Contingencias Nueva](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contingencias%20Nueva.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -112,6 +112,7 @@ Los campos a completar son los siguientes:
 * **Cuenta primaria:** Seleccione la subcuenta primaria asociada a la contingencia.
 * **Cuenta secundaria:** Seleccione la subcuenta secundaria asociada a la contingencia.
 * **Combustible:** Seleccione el combustible asociado a la contingencia.
+* **Moneda:** Introduzca la moneda de la contingencia.
 * **Volumen Despachado:** Introduzca el volumen asociado a la contingencia.
 * **Precio Unitario:** Introduzca el precio unitario asociado a la contingencia.
 * **Monto Despachado:** Introduzca el monto asociado a la contingencia.
@@ -132,11 +133,11 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Contratos de Comercio
 En ATIONet el término comercio se refiere a la entidad propietaria de los sitios. En esta sección puede consultar, editar y crear contratos de comercio. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Contratos de Comerio](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Comercio.PNG)
+![Contratos de Comerio](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Comercio.PNG)
 
 Para crear un contrato de comercio, haga clic en el botón **Nuevo**.
 
-![Contrato de Comercio Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Comercio%20Nuevo.PNG)
+![Contrato de Comercio Nuevo](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Comercio%20Nuevo.PNG)
 
 Los campos a rellenar son los siguientes:
 
@@ -148,8 +149,9 @@ Los campos a rellenar son los siguientes:
 * **Fecha de inicio:** Introduzca la fecha de inicio del contrato.
 * **Duración:** Introduzca la duración del contrato.
 * **Modo de Cuenta Corriente:** Seleccione la modalidad de cuenta corriente (Producto o Dinero).
+* **Lista de Precios de Distribución:** Seleccione la lista de precios del contrato.
 
-Después de rellenar estos campos, debe introducir el combustible asignado al contrato y rellenar los campos de Volumen, Límite de seguridad, Sobregiro, Fechas de Inicio y Fin del sobregiro, Moneda en la que se encuentra el valor del combustible y el Precio del combustible.
+Después de rellenar estos campos, debe completar las pestañas Sitio, Combustible, Liquidaciones y Conceptos. En Combustible introducir el combustible asignado al contrato y rellenar los campos de Volumen, Límite de seguridad, Sobregiro, Fechas de Inicio y Fin del sobregiro, Moneda en la que se encuentra el valor del combustible y el Precio del combustible.
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
@@ -547,3 +549,7 @@ En esta vista, al principio se puede filtrar por el tipo de rechazo. Los tipos d
 Las transacciones sin control son aquellas que se generan porque el controlador detecta una diferencia en los indicadores y envía una transacción por la diferencia. Estas transacciones no contienen datos sobre la identificación, ya que se generaron automáticamente y no se iniciaron con la presentación de un identificador. Al no tener un identificador asignado, no tienen impacto en ninguna cuenta corriente ni cuentan para el cálculo de las reglas.
 
 ![Transacciones sin control](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Sin%20Control.PNG)
+
+<br>
+
+[Volver al inicio](#contenido) 	:arrow_up:
