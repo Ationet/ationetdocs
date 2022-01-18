@@ -151,7 +151,7 @@ Los campos a rellenar son los siguientes:
 * **Modo de Cuenta Corriente:** Seleccione la modalidad de cuenta corriente (Producto o Dinero).
 * **Lista de Precios de Distribución:** Seleccione la lista de precios del contrato.
 
-Después de rellenar estos campos, debe completar las pestañas Sitio, Combustible, Liquidaciones y Conceptos. En Combustible introducir el combustible asignado al contrato y rellenar los campos de Volumen, Límite de seguridad, Sobregiro, Fechas de Inicio y Fin del sobregiro, Moneda en la que se encuentra el valor del combustible y el Precio del combustible.
+Después de rellenar estos campos, debe completar las nuevas pestañas que estarán próximamente disponibles de Sitio, Combustible, Liquidaciones y Conceptos. En Combustible introducir el combustible asignado al contrato y rellenar los campos de Volumen, Límite de seguridad, Sobregiro, Fechas de Inicio y Fin del sobregiro, Moneda en la que se encuentra el valor del combustible y el Precio del combustible.
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
