@@ -90,7 +90,7 @@ Dentro de esta sección puede personalizar su Network (cambiar el logo, añadir 
 
 1. **Logo**
 
-![Logotipo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Configuraci%C3%B3n/Network%20-%20Logo.PNG)
+![Logotipo](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Configuraci%C3%B3n/Network%20-%20Logo.PNG)
 
 2. **Correos**
 
@@ -128,6 +128,11 @@ Dentro de esta sección puede personalizar su Network (cambiar el logo, añadir 
 
 ![Otros](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Configuraci%C3%B3n/Network%20-%20Otros.PNG)
 
+11. **Moneda**
+
+![Otros](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Configuraci%C3%B3n/Network%20-%20Moneda.PNG)
+
+
 ## Tipos de Documentos Externos
 
 
@@ -143,3 +148,7 @@ En esta sección puede ver una lista de todas las acciones realizadas por todos 
 En esta sección puede ver una lista de todos los procesos ejecutados.
 
 ![Bitácora de Procesos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Bitacora/Bitacora%20de%20Procesos.PNG)
+
+<br>
+
+[Volver al inicio](#contenido) 	:arrow_up:

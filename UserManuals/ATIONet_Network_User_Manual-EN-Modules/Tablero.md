@@ -13,6 +13,7 @@
 	- [Listado de Contratos con Bajo Saldo](#listado-de-contratos-con-bajo-saldo)
 	- [Actualizaciones de Identificadores del Último Mes](#actualizaciones-de-identificadores-del-último-mes)
 	- [Estado de Terminales](#estado-de-terminales)
+	- [Pre Autorización Asistida por Operador](#pre-autorización-asistida-por-operador)
 
 
 # Tablero
@@ -100,3 +101,17 @@ Todos los terminales que están conectados de forma nativa a ATIONet envían un 
 La columna **Edad** muestra el número de minutos transcurridos desde la última vez que se informó del terminal. 
 
 ![Estado del terminal](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tablero/Estado%20Terminales.PNG)
+
+
+## Pre Autorización Asistida por Operador
+
+Este widget permite crear una pre autorización asistida. Se tienen que cargar los campos de Sitio, Terminal/ Controlador, Vehículo / Conductor, Identificacion, Combustible, Volumen, Monto, Precio unitario. El campo Moneda se completa automáticamente una vez cargado el sitio donde se desea pre-autorizar la transacción.
+
+![Estado del terminal](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tablero/Pre-Autorizaciones%20Asistida.PNG)
+
+<br>
+
+[Volver al inicio](#contenido) 	:arrow_up:
+
+
+
