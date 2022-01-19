@@ -5921,9 +5921,6 @@ additional parameters are needed for the request to be fulfilled.
 				<p align="left">A/N</p>
 			</td>
 			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
 				<p align="left">Date since FastTrack is enabled</p>
 				<p align="left">&ldquo;yyyy/MM/dd hh:mm:ss&rdquo;</p>
 			</td>
@@ -5937,9 +5934,6 @@ additional parameters are needed for the request to be fulfilled.
 			</td>
 			<td>
 				<p align="left">A/N</p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
 			</td>
 			<td>
 				<p align="left">Date until FastTrack is disabled</p>
@@ -5957,9 +5951,6 @@ additional parameters are needed for the request to be fulfilled.
 				<p align="left">A/N</p>
 			</td>
 			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
 				<p align="left">Date when FastTrack was created (UTC)</p>
 				<p align="left">&ldquo;yyyy/MM/dd hh:mm:ss&rdquo;</p>
 			</td>
@@ -5975,9 +5966,6 @@ additional parameters are needed for the request to be fulfilled.
 				<p align="left">A/N</p>
 			</td>
 			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
 				<p align="left">Date when FastTrack was created (Network's timezone)</p>
 				<p align="left">&ldquo;yyyy/MM/dd hh:mm:ss&rdquo;</p>
 			</td>
@@ -5991,9 +5979,6 @@ additional parameters are needed for the request to be fulfilled.
 			</td>
 			<td>
 				<p align="left">A/N</p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
 			</td>
 			<td>
 				<p align="left">Additional parameters set by user</p>
