@@ -12,6 +12,7 @@
 |--- |--- |--- |
 |**Ver.**|**Fecha**|**Resumen de Cambios**|
 |1.0|14/Sep/2021|- Versión Inicial
+|2.0|19/Ene/2022|- Actualización de Manual
 
 # Contenido
 
