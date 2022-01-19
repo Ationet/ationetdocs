@@ -63,8 +63,8 @@
 
 - [10 Account Downloads](#10-account-downloads)
 	- [10.1 Action Codes](#101-action-codes)
-	- [10.2 Account Download (POST) – Body Section Format Request](#102-account-download-post--body-section-format-request)
-	- [10.3 Account Download (POST) – Body Section Format Response](#103-account-download-post--body-section-format-response)
+	- [10.2 Company Movements Download (POST) – Body Section Format Request](#102-company-movements-download-post--body-section-format-request)
+	- [10.3 Company Movements Download (POST) – Body Section Format Response](#103-company-movements-download-post--body-section-format-response)
 
 - [11 Inventory and deliveries Downloads](#11-Inventory-and-deliveries-Downloads)
 	- [11.1 Action Codes](#111-Action-Codes)
@@ -6551,7 +6551,7 @@ transactions to download.
 	</tr>
 </table>
 
-### 10.2 Account Download (POST) – Body Section Format *Request*
+### 10.2 Company Movements Download (POST) – Body Section Format *Request*
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
 |SubscriberCode|3|A/N|Required|Fixed. To be assigned by ATIONet|
@@ -6562,7 +6562,7 @@ transactions to download.
 |Types||N|Optional|List of types to filter movements|
 |Origins||N|Optional|List of origin to filter movements|
 
-### 10.3 Account Download (POST) – Body Section Format *Response*
+### 10.3 Company Movements Download (POST) – Body Section Format *Response*
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |
 |Id|36|A/N|Current account’s UID|
