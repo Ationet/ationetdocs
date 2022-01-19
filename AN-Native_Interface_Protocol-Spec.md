@@ -6559,6 +6559,8 @@ transactions to download.
 |CompanyCode|30|A/N|Conditional|See Action Codes section above|
 |DateFrom|19|A/N|Required|From date to filter movements "yyyy/MM/dd hh:mm:ss"|
 |DateTo|19|A/N|Optional|To date to filter movements "yyyy/MM/dd hh:mm:ss"|
+|Types||N|Optional|List of types to filter movements|
+|Origins||N|Optional|List of origin to filter movements|
 
 ### 10.3 Account Download (POST) – Body Section Format *Response*
 |Field Name|Size|Type|Descriptions/Field Value(s)|
