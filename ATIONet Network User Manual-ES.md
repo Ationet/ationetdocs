@@ -13,6 +13,7 @@
 |**Ver.**|**Fecha**|**Resumen de Cambios**|
 |1.0|02/Ago/2017|- Versión Inicial
 |2.0|22/Jun/2021|- Actualización de Manual
+|3.0|18/Ene/2022|- Actualización incorporación Multimoneda
 
 # Contenido
 
@@ -40,6 +41,7 @@
 	- [Listado de Contratos con Bajo Saldo](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Tablero.md)
 	- [Actualizaciones de Identificadores del Último Mes](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Tablero.md)
 	- [Estado de Terminales](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Tablero.md)
+	- [Pre Autorización Asistida por Operador](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Tablero.md)
   - [Favoritos](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Favoritos%20%26%20Reportes.md)
   - [Reportes](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Favoritos%20%26%20Reportes.md)
 	- [Conductor](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Favoritos%20%26%20Reportes.md)

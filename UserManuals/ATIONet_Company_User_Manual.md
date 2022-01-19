@@ -12,6 +12,7 @@
 |--- |--- |--- |
 |**Ver.**|**Fecha**|**Resumen de Cambios**|
 |1.0|14/Sep/2021|- Versión Inicial
+|2.0|19/Ene/2022|- Actualización de Manual
 
 # Contenido
 
@@ -239,7 +240,7 @@ La información se muestra en un formato listo para imprimir, incluyendo el logo
 
 Esta ventana emergente tiene un botón de impresión que al ser pulsado abre la ventana de impresión por defecto del navegador de Internet.
 
-![Conductores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Reports/Driver.PNG)
+![Conductores](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Reportes/Conductor%20Company.PNG)
 
 ## Detalle de actividad por Vehículo
 Este informe muestra la lista de transacciones realizadas, ordenadas por vehículo.
@@ -251,14 +252,14 @@ Una vez seleccionada las fechas en el filtro, pulse el botón **Imprimir**, esto
 ## Transacciones
 Este informe muestra la lista de transacciones realizadas, ordenadas por fecha. Este informe tiene varios filtros para ajustar la búsqueda. El primer campo del panel de filtros indica por qué campo se ordenará la lista, el campo seleccionado en esta lista se mostrará en la primera columna.
 
-![Transacciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Reportes/Transacciones%20Filtro.PNG)
+![Transacciones](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Reportes/Transacciones%20Filtro%20Company.PNG)
 
 Una vez seleccionado el filtro pulse el botón ***Imprimir***, esto mostrará una ventana emergente con la información seleccionada.
 La información se muestra en un formato listo para imprimir, incluyendo el logotipo de la suscripción y la fecha y hora de generación del informe.
 
 Esta ventana emergente tiene un botón de impresión que al ser pulsado abre la ventana de impresión por defecto del navegador de Internet.
 
-![Transacciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Reportes/Transacciones.PNG)
+![Transacciones](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Reportes/Transacciones%20Company.PNG)
 
 ## Vehículo
 Este informe muestra la lista de vehículos. Este informe dispone de varios filtros para ajustar la búsqueda. El primer campo del panel de filtros indica por qué campo se ordenará la lista, el campo seleccionado en esta lista se mostrará en la primera columna.
@@ -270,7 +271,7 @@ La información se muestra en un formato listo para imprimir, incluyendo el logo
 
 Esta ventana emergente tiene un botón de impresión que al ser pulsado abre la ventana de impresión por defecto del navegador de Internet.
 
-![Vehículos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Reportes/Veh%C3%ADculo.PNG)
+![Vehículos](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Reportes/Veh%C3%ADculo%20Company.PNG)
 
 # Administración
 Dentro de este módulo podrá gestionar Compañías, Conductores, Vehículos, Flotas y Notificaciones entre otras cosas.
