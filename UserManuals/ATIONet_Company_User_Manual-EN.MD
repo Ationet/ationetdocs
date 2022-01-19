@@ -58,22 +58,22 @@
 		- [Vehicle](#vehicle)
 		- [Vehicle classes](#vehicle-classes)
 		- [Vouchers](#vouchers)				
-	- [Fleets](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md)
-		- [Company Contracts](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md)
-		- [Company Current Accounts](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md)
-		- [Declined Transactions](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md)
-		- [Dispensed Transactions](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md)
-		- [Disputed Transactions](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md)
-		- [Exceptions](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md)
-		- [Fast Track Configuration](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md)
-		- [Outstanding Authorizations](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md)
-		- [Requested Identifications](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md)
-		- [Rules](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md)
-		- [Transactions](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md)
-		- [Transactions by Driver](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md)
-		- [Transactions by Fleet](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md)
-		- [Transactions by Site](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md)
-		- [Transactions by Vehicle](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md)
+	- [Fleets](#fleets)
+		- [Company Contracts](#company-contracts)
+		- [Company Current Accounts](#company-current-accounts)
+		- [Declined Transactions](#declined-transactions)
+		- [Dispensed Transactions](#dispensed-transactions)
+		- [Disputed Transactions](#disputed-transactions)
+		- [Exceptions](#exceptions)
+		- [Fast Track Configuration](#fast-track-configuration)
+		- [Outstanding Authorizations](#outstanding-authorizations)
+		- [Requested Identifications](#requested-identifications)
+		- [Rules](#rules)
+		- [Transactions](#transactions)
+		- [Transactions by Driver](#transactions-by-driver)
+		- [Transactions by Fleet](#transactions-by-fleet)
+		- [Transactions by Site](#transactions-by-site)
+		- [Transactions by Vehicle](#transactions-by-vehicle)
 	- [Billing](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Billing%20%26%20Configuration%20%26%20Logs.md)
 		- [Billed Items](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Billing%20%26%20Configuration%20%26%20Logs.md)
 		- [Billing Processes](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Billing%20%26%20Configuration%20%26%20Logs.md)
@@ -498,4 +498,211 @@ The fields to complete are the following:
 Inside this section you can view a list of all vouchers created by companies. To make queries easier, there is a panel of filters at the top.
 
 ![Vouchers](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Vouchers.PNG)
+
+# Fleets
+Inside this module you can manage Company and Merchant Contracts, Concepts, Contingencies and Transactions among other things.
+
+
+## Company Contracts
+In ATIONet the term company refers to the entity that manages the fleet. In this section you can create, edit or consult all company contracts. To make queries easier, there is a panel of filters at the top.
+
+![Company Contracts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts.PNG)
+
+To create a company contract, click the **New** button.
+
+![Company Contracts New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New.PNG)
+
+The first step to create a new contract is filling out the general information:
+
+* **Active:** Checkmark this option to enable/disable the contract.
+* **Code:** Input the code associated to the contract.
+* **Company:** Select the company associated to the contract
+* **Reactivation amount:** Input the minimum amount required for automatic reactivation (if the contract is disabled and a deposit was made for that amount or higher).
+* **Description:** Input the description of the contract.
+* **Start Date:** Input the starting date of the contract.
+* **Duration:** Input the duration of the contract.
+* **Current Account Mode:** Select the current account mode associated to the contract (Product or Money).
+* **Currency:** Select the currency associated to the contract (this option is only enabled if the **current account mode** is **Money**).
+* **Mode:** Select the contract mode (Credit, Debir or Cash).
+* **Limit:** Input the credit limit associated to the contract.
+* **Balance Mode:** Select the balance mode associated to the contract:
+	* ***Disperse:*** The balance is managed on a sub-account level.
+	* ***Do not Disperse:*** The balace is managed on a contract level.
+	* ***Auto Fill:*** There is no balance.
+* **Site Validation:** Checkmark this option to enable/disable site validation (the contract can only operate within the sites assigned).
+* **Validate Fuels:** Checkmark this option to enable/disable fuel validation (the contract can only operate with fuels assigned).
+* **Use Rack Prices:** Checkmark this option to enable/disable the usage of rack prices (the contract will only use rack prices when there are no prices configured in the contract).
+* **Validate Programs:**
+* **Subsidized Values:**
+
+Once the general information is completed, you have different tabs to configure:
+
+1. **Fuels:** Select the fuels associated to the contract.
+
+![Company Contract New - Fuels](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Fuels.PNG)
+
+2. **Sites:** Select the sites associated to the contract.
+
+![Company Contract New - Sites](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Sites.PNG)
+
+3. **Prices:** Configure prices associated to the contract.
+
+![Company Contract New - Prices](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Prices.PNG)
+
+* ***Fuel:*** Select the fuel associated to the price.
+* ***Value:*** Input the price value.
+* ***Site:*** Select the site associated to the price.
+* ***Date From:*** Input the starting date of the price.
+* ***Time From:*** Input the starting time of the price.
+* ***Date To:***  Input the ending date of the price.
+* ***Time To:*** Input the ending time of the price.
+
+4. **Modifiers:** Configure modifiers associated to the contract.
+
+![Company Contract New - Modifiers](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Modifiers.PNG)
+
+* ***Description:*** Input the modifier description.
+* ***Class:*** Select the modifier class (Discount or Recharge).
+* ***Type:*** Select the modifier type (Percentual, Fixed per Transaction or Fixed per Unit).
+* ***Value:*** Input the modifier value.
+* ***Fuel:*** Select the fuel associated to the modifier.
+* ***Site:*** Select the site associated to the modifier.
+* ***Date From:*** Input the starting date of the modifier.
+* ***Time From:*** Input the starting time of the modifier.
+* ***Date To:***  Input the ending date of the modifier.
+* ***Time To:*** Input the ending time of the modifier.
+
+5. **Billing:** Configure the billing process associated to the contract.
+
+![Company Contract New - Billing](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Billing.PNG)
+
+* ***Process Billing Type:*** Select the process billing type associated to the contract (EdiFactMx is for Mexico client only)
+* ***Active:*** Checkmark this option to enable/disble the billing process.
+* ***Due Days:*** Input the amount of expiration days associated to the statement.
+* ***Periodicity:*** Input the frequency in which statements are generated.
+* ***Manual:*** Checkmarck this option to enable/disable the manual process of the billing process.
+* ***Charges Deduct Balance from Accounts:*** Checkmark this option to enable/disable ATIONet from automatically substracting concepts from accounts balances.
+* ***Separate Charges Document:*** Checkmark this option to enable/disable ATIONet from separating each concept associated to the statement.
+* ***Recipient Emails:*** Input the emails addresses that will receive the statements.
+* ***Tax Payer Id:*** Input the tax payer id associated to the statement.
+* ***Name:*** Input the name associated to the statement.
+* ***Street 1:*** Input the primary street associated to the statement.
+* ***Street 2:*** Input the secobndary street associated to the statement.
+* ***Zip Code:*** Input the zip code associated to the statement.
+* ***City:*** Input the city associated to the statement.
+* ***Country:*** Input the country associated to the statement.
+* ***State:*** Input the state associated to the statement.
+
+6. **Concepts:** Select the concept associated to the contract. For more information on concepts access [here]().
+
+![Company Contracts New - Concepts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Concepts.PNG)
+	
+7. **Documents:** Upload any document associated to the contract (for example: a pdf of the actual physical contract).
+
+![Company Contracts New - Documents](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Documents.PNG)
+
+8. **Blocks:** Configure the blocks associated to the contract
+
+![Company Contracts New - Blocks](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Blocks.PNG)
+
+* ***Type:*** Select **Fixed** to block operation on specific dates, or select **Fixed** to block operation on specific days of every month. 
+* ***Date From:*** Input the starting date of the block.
+* ***Date To:*** Input the ending date of the block.
+* ***Day From:*** Input the starting day of every month for the block.
+* ***Day To:*** Input the ending day of every moth for the block.
+
+9. **Over Limit:** Configure the overlimits associated to the contract.
+
+![Company Contracts New - Over Limit](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20-%20Over%20Limit.PNG)
+
+* ***Type:*** Select the over limit type (Percent or Amount).
+* ***Value:*** Input the value associated to the over limit.
+* ***Date From:*** Input the starting date of the over limit.
+* ***Date To:*** Input the ending date of the over limit.
+
+10. **Programs:**
+11. **Subsidies:**
+12. **Custom Fields:**
+
+When you have finished filling in the fields, click the **Save** button.
+
+## Company Current Accounts
+The Company Current Accounts section is the view of available balance of sub-account and/or contracts, and also the view of all movements of sub-accounts and/or contracts.
+
+For easier quieries, there is a filter panel available. The first option in the filter panel is the type of report:
+
+![Company Current Accounts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts.PNG)
+
+1. **Contract List:** This option lists all contracts with their respective balance, but does not give details of the movements.
+
+![Company Current Accounts - Contract List](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20-%20Contract%20List.PNG)
+
+2. **Contract Movements:** This option lists all contract movements.
+
+![Company Current Accounts - Contract Movements](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20-%20Contract%20Movements.PNG)
+
+3. **Sub-account List:** This option lists all sub-accounts with their respective balances, but does not give details of the movements.
+
+![Company Current Accounts - Sub-Account List](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20-%20Sub-Account%20List.PNG)
+
+4. **Sub-account Movements:** This view lists all sub-account movements.  
+
+![Company Current Accounts - Sub-Account Movements](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20-%20Sub-Account%20Movements.PNG)
+
+## Declined Transactions
+ATIONet separates unauthorized transactions into 2 sections: [Exceptions](#exceptions) and **Declined Transactions**.
+
+Declined Transactions are those that managed to pass ATIONet's hard authentications, but were rejected by other validations such as an unsatisfied rule or balance validation.
+
+![Declined Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Declined%20Transactions.PNG)
+
+In this view, at the start you can filter by the type of rejection. The types of rejections available are as follows:
+
+![Declined Transactions Filters](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Declined%20Transactions%20Filters.PNG)
+
+## Dispensed Transactions
+In this section you can view all transactions that had fuel dispensed.
+
+![Dispensed Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Dispensed%20Transactions.PNG)
+
+## Disputed Transactions
+Disputed transactions are those that either party (Merchant or Company) claims to be unaware of.
+
+In this section you can consult the disputed transactions, listed by code, date, reason, state, transaction number, company, site. There is also the commentary of the company, the merchant and the network.
+
+![Disputed Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Disputed%20Transactions.PNG)
+
+## Exceptions
+ATIONet separates unauthorized transactions into 2 sections: **Exceptions** and [Declined transactions](#declined-transactions). Exceptions are those transactions that did not pass the hard validations of the system or those that are detected as possible frauds.
+
+![Exceptions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Exceptions.PNG)
+
+In this view, at the start you can filter by the type of exception. The types of exceptions available are as follows:
+
+![Exceptions Filters](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Exceptions%20Filters.PNG)
+
+Some transactions remain in **Review** status in some situations, such as when more than authorized is sent (due to a controller or POS error). In these cases it is necessary to approve or reject the transaction using one of the two icons to the right of each record.
+
+## Fast Track Configuration
+A Fast Track in ATIONet is a way to configure a one-use-only authorization for an specific amount to an already existing fleet sub-account. In this sections you can configure up to 10 Custom Fields for Fast Tracks.
+
+![Fast Track Configuration](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Fast%20Track%20Configuration.PNG)
+
+When you have finished filling in the fields, click the **Save** button.
+
+## Outstanding Authorizations
+In ATIONet outstanding authorizations are those transactions that have not yet received the completion transaction, but have been pre-authorized. The information seen in this view are dispatches that are currently underway. If for some reason there are old pre-authorizations, it is likely that the POS did not send the completion transaction or the cancellation transaction if the dispatch was not completed.
+
+Please note that at the time of pre-authorization, ATIONet froze the amount of the authorization of the current account for the sub-account associated. This view presents all the fields necessary to identify the transaction and the sub-account. If you need to see more details, clicking on the authorization code will take you to the transaction details view.
+
+![Outstanding Authorization](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Outstanding%20Authorization.PNG)
+
+If old pending transactions appear and you are sure it is not an ongoing dispatch, you may cancel them and return the balance to the current account.
+To do so there are 2 ways: individually, by clicking on the **X** icon to the right side of the grid, or massively by selecting the transactions, displaying the **Batch Actions** menu and selecting **Cancel**. This will cancel the transactions and return the balance reserved to each of the current accounts. (for more details on the transaction flow refer to this [document](AN-Transaction_Flows-TechGuide.md))
+
+
+## Requested Identifications
+
+From this section you will be able to confirm receipt of requests for identifiers made, to complete the request process. Please note that the only orders you can confirm are those that have already been marked as **Delivered**.
+To change the status of the requested badges, click the **Bulk Action** button and select the option **Confirm badge delivery**.
 
