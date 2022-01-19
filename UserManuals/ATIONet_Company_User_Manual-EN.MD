@@ -842,3 +842,7 @@ In this section you can configure custom company contract classifications.
 In this section you can view a list of all actions made by all users. There is a filter panel on the top to make queries easier.
 
 ![Audit Log](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Audit%20Log.PNG)
+
+<br>
+
+[Back to top](#contents)  :arrow_up:
