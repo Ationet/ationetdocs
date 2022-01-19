@@ -826,4 +826,4 @@ En esta sección puede ver una lista de todas las acciones realizadas por todos 
 
 <br>
 
-[Inicio](#contents)  :arrow_up:
+[Inicio](#contenido)  :arrow_up:
