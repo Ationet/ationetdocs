@@ -2,10 +2,10 @@
 
 |**Document Information**|.|
 |--- |--- |
-|**File:**|ATIONet_Network_User_Manual-EN.md|
+|**File:**|ATIONET_Company_User_Manual-EN.MD|
 |**Doc Version:**|1.0|
 |**Release Date:**|19, Jan 2022|
-|**Author:**|ATIONet LLC|
+|**Author:**|ATIONET LLC|
 
 
 |**Change Log**|||
@@ -47,7 +47,7 @@
 		- [Transactions](#transactions)
 		- [Vehicle](#vehicle)
 	- [Administration](#administration)
-		- [Companies]](#companies)
+		- [Companies](#companies)
 		- [Dispersion](#dispersion)
 		- [Drivers](#drivers)
 		- [External Documentation](#external-documentation)
@@ -74,27 +74,27 @@
 		- [Transactions by Fleet](#transactions-by-fleet)
 		- [Transactions by Site](#transactions-by-site)
 		- [Transactions by Vehicle](#transactions-by-vehicle)
-	- [Billing](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Billing%20%26%20Configuration%20%26%20Logs.md)
-		- [Billed Items](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Billing%20%26%20Configuration%20%26%20Logs.md)
-		- [Billing Processes](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Billing%20%26%20Configuration%20%26%20Logs.md)
-		- [Charges Documents](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Billing%20%26%20Configuration%20%26%20Logs.md)
-		- [Statements](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Billing%20%26%20Configuration%20%26%20Logs.md)
-	- [Configuration](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Billing%20%26%20Configuration%20%26%20Logs.md)
-		- [Company Contracts Classifications](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Billing%20%26%20Configuration%20%26%20Logs.md)		
-	- [Logs](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Billing%20%26%20Configuration%20%26%20Logs.md)
+	- [Billing](#billing)
+		- [Billed Items](#billing)-items)
+		- [Charges Documents](#changes-documents)
+		- [Billing Processes](#billing)-processes)
+		- [Statements](#statements)
+	- [Configuration](#configuration)
+		- [Company Contracts Classifications](#company-contracts-classifications)		
+	- [Logs](#logs)
 		- [Audit Log](#audit-log)
 		
 # Overview
 
-ATIONet is based on the premise that online communications between sites and the web portal are possible, however, it provides solid contingency procedures in the event of a communication error.
+ATIONET is based on the premise that online communications between sites and the web portal are possible, however, it provides solid contingency procedures in the event of a communication error.
 
-The ATIONet platform is a fleet management service with an innovative and unique market offer. Cloud processing, 100% web-based, multi-user access, data availability and sharing, instant updates, security, automatic back-up and paperwork reduction.
+The ATIONET platform is a fleet management service with an innovative and unique market offer. Cloud processing, 100% web-based, multi-user access, data availability and sharing, instant updates, security, automatic back-up and paperwork reduction.
 
-ATIONet is a web portal for fleet service companies that allows the processing of transactions from any point of sale application through a simple and reliable interface. 
+ATIONET is a web portal for fleet service companies that allows the processing of transactions from any point of sale application through a simple and reliable interface. 
 
-ATIONet can be installed at any service station with one or multiple fleet service programs. The web portal allows fleet managers full access to their vehicle information.
+ATIONET can be installed at any service station with one or multiple fleet service programs. The web portal allows fleet managers full access to their vehicle information.
 
-ATIONet makes it possible for the fleet manager to operate, monitor, change and edit fleet information in real time.
+ATIONET makes it possible for the fleet manager to operate, monitor, change and edit fleet information in real time.
 
 
 # Definitions
@@ -111,11 +111,11 @@ The sub-accounts are hierarchically dependent on the contract.
 
 ## Company
 
-In ATIONet the company refers to the entity that owns the fleet. It is the one that manages the vehicles, drivers and fleet rules.
+In ATIONET the company refers to the entity that owns the fleet. It is the one that manages the vehicles, drivers and fleet rules.
 
 ## Identification
 
-The identification is the physical means used by ATIONet to identify a vehicle or driver. ATIONet supports various types of identifications, such as card, TAG, chip, ATIONet card, manual entry, barcode and iButton. When an identification is associated to a Vehicle or Driver, a sub-account is created.
+The identification is the physical means used by ATIONET to identify a vehicle or driver. ATIONET supports various types of identifications, such as card, TAG, chip, ATIONET card, manual entry, barcode and iButton. When an identification is associated to a Vehicle or Driver, a sub-account is created.
 
 ## Site 
 
@@ -127,19 +127,19 @@ The vehicles can be associated or grouped by a fleet, they can have associated r
 
 ## Driver 
 
-The driver in ATIONet is the person who is identified as a chauffeur. If this driver is assigned an identification, a sub-account is created. Drivers may also have associated rules.
+The driver in ATIONET is the person who is identified as a chauffeur. If this driver is assigned an identification, a sub-account is created. Drivers may also have associated rules.
 
 ## Offline module 
 
-ATIONet's offline module is automatically activated when the service station has no Internet connection and the authorizations cannot be processed online. At this point the offline module comes into play. For the terminal/controller it is completely transparent. When the offline module recovers the connectivity it sends all the information processed locally and also downloads any updates. As long as there is connectivity, the offline module is continuously downloading ATIONet updates (balances, identifications, rules, etc).
+ATIONET's offline module is automatically activated when the service station has no Internet connection and the authorizations cannot be processed online. At this point the offline module comes into play. For the terminal/controller it is completely transparent. When the offline module recovers the connectivity it sends all the information processed locally and also downloads any updates. As long as there is connectivity, the offline module is continuously downloading ATIONET updates (balances, identifications, rules, etc).
 
 ## Terminal
 
-The terminal (or controller) is the representation of the dispenser controller, which needs to be parameterized in a particular way according to the type of terminal. The terminals handled by ATIONet are ATIO-NanoCPI, ATIO-Standalone, ATIO-CG, VF-Sapphire, VF-Commander, VF-Ruby, ControlGas, among others. 
+The terminal (or controller) is the representation of the dispenser controller, which needs to be parameterized in a particular way according to the type of terminal. The terminals handled by ATIONET are ATIO-NanoCPI, ATIO-Standalone, ATIO-CG, VF-Sapphire, VF-Commander, VF-Ruby, ControlGas, among others. 
 
 # Navigation Menu
 
-ATIONet has a quick access menu located on the left side of the website. From this menu you can access different options. The menu is divided into 9 sections. (Dashboard, Favorites, Reports, Administration, Fleets, Billing, Notifications, Configuration and Logbook).
+ATIONET has a quick access menu located on the left side of the website. From this menu you can access different options. The menu is divided into 9 sections. (Dashboard, Favorites, Reports, Administration, Fleets, Billing, Notifications, Configuration and Logbook).
 
 # My Preferences
 Inside this section each user can customize their portal preferences.
@@ -210,7 +210,7 @@ The pending pre-authorizations should be dispatches in progress, if there are re
 
 ## Flagged Transactions Current Month
 
-The following shows all transactions that were rejected by any of the validations made by ATIONet in the authorization process. Either due to lack of balance or rules among other validations.
+The following shows all transactions that were rejected by any of the validations made by ATIONET in the authorization process. Either due to lack of balance or rules among other validations.
 
 ![Flagged Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Dashboard/Flagged%20Transactions.PNG)
 
@@ -263,7 +263,7 @@ This widget shows the activity of the administration of identifications, shows t
 
 ## Terminal status
 
-All terminals that are natively connected to ATIONet send a regular message indicating that they are active. If the terminal reported the status in the last 5 hours, the terminal will be shown with the green icon, if not reported in the last 5 hours the icon will be red.
+All terminals that are natively connected to ATIONET send a regular message indicating that they are active. If the terminal reported the status in the last 5 hours, the terminal will be shown with the green icon, if not reported in the last 5 hours the icon will be red.
 The column **Age** shows the number of minutes since the last time the terminal was reported. 
 
 ![Terminal Status](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Dashboard/Terminal%20Status.PNG)
@@ -279,7 +279,7 @@ If you want to remove a section from the list of Favorites, click on the icon on
 ![Favorites](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Favorites.PNG)
 
 # Reports
-In ATIONet the reports are considered those lists of information that are going to be printed and filed in physical format. When they are printed, ATIONet adds a header with the logo of the subscription automatically.
+In ATIONET the reports are considered those lists of information that are going to be printed and filed in physical format. When they are printed, ATIONET adds a header with the logo of the subscription automatically.
 
 ## Driver
 The Driver report can be filtered by driver name/code or by identification.
@@ -318,7 +318,7 @@ This popup has a print button that when pressed opens the default print window o
 Inside this module you can manage Companies, Merchants, Sites, Identifications, Payment Methods and Users among other things.
 
 ## Companies
-In ATIONet the term company refers to the entity that owns the fleet. In this section you can see the existing companies with their details, edit them and/or create new companies. To make queries easier, there is a panel of filters at the top.
+In ATIONET the term company refers to the entity that owns the fleet. In this section you can see the existing companies with their details, edit them and/or create new companies. To make queries easier, there is a panel of filters at the top.
 
 ![Companies](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Companies.PNG)
 
@@ -415,7 +415,7 @@ In this section company users can configure their own notifications (inside thei
    * **Vehicle Odometer Limit:** Get a notification when a vehicle odometer is reached (click the **Vehicle List** button to configure the odometer and select the vehicle associated to the notification).
 
 ## Sites
-In ATIONet the site represents the service station. This section lists the sites already created, edit them and also create new ones. You can also add taxes to sites directly from the **Options** column. To make queries easier, there is a panel of filters at the top.
+In ATIONET the site represents the service station. This section lists the sites already created, edit them and also create new ones. You can also add taxes to sites directly from the **Options** column. To make queries easier, there is a panel of filters at the top.
 
 ![Sites](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Sites.PNG)
 
@@ -504,7 +504,7 @@ Inside this module you can manage Company and Merchant Contracts, Concepts, Cont
 
 
 ## Company Contracts
-In ATIONet the term company refers to the entity that manages the fleet. In this section you can create, edit or consult all company contracts. To make queries easier, there is a panel of filters at the top.
+In ATIONET the term company refers to the entity that manages the fleet. In this section you can create, edit or consult all company contracts. To make queries easier, there is a panel of filters at the top.
 
 ![Company Contracts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts.PNG)
 
@@ -652,7 +652,7 @@ For easier quieries, there is a filter panel available. The first option in the 
 ## Declined Transactions
 ATIONet separates unauthorized transactions into 2 sections: [Exceptions](#exceptions) and **Declined Transactions**.
 
-Declined Transactions are those that managed to pass ATIONet's hard authentications, but were rejected by other validations such as an unsatisfied rule or balance validation.
+Declined Transactions are those that managed to pass ATIONET's hard authentications, but were rejected by other validations such as an unsatisfied rule or balance validation.
 
 ![Declined Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Declined%20Transactions.PNG)
 
@@ -691,9 +691,9 @@ A Fast Track in ATIONet is a way to configure a one-use-only authorization for a
 When you have finished filling in the fields, click the **Save** button.
 
 ## Outstanding Authorizations
-In ATIONet outstanding authorizations are those transactions that have not yet received the completion transaction, but have been pre-authorized. The information seen in this view are dispatches that are currently underway. If for some reason there are old pre-authorizations, it is likely that the POS did not send the completion transaction or the cancellation transaction if the dispatch was not completed.
+In ATIONET outstanding authorizations are those transactions that have not yet received the completion transaction, but have been pre-authorized. The information seen in this view are dispatches that are currently underway. If for some reason there are old pre-authorizations, it is likely that the POS did not send the completion transaction or the cancellation transaction if the dispatch was not completed.
 
-Please note that at the time of pre-authorization, ATIONet froze the amount of the authorization of the current account for the sub-account associated. This view presents all the fields necessary to identify the transaction and the sub-account. If you need to see more details, clicking on the authorization code will take you to the transaction details view.
+Please note that at the time of pre-authorization, ATIONET froze the amount of the authorization of the current account for the sub-account associated. This view presents all the fields necessary to identify the transaction and the sub-account. If you need to see more details, clicking on the authorization code will take you to the transaction details view.
 
 ![Outstanding Authorization](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Outstanding%20Authorization.PNG)
 
@@ -805,3 +805,40 @@ In this view you can see the transactions grouped by the vehicle who made them. 
 
 ![Transactions by Vehicle](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Vehicle.PNG)
 
+# Billing
+
+## Billed Items
+In this section you can view concepts applied for each statement.
+
+![Billed Items](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Billing/Billed%20Items.PNG)
+
+## Billing Documents
+In this section you can view all register status for billing documents requested. Possible status are: Pending, Processing, Finished or Finished with errors.
+
+![Billing Documents](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Billing/Billing%20Documents.PNG)
+
+## Billing Processes
+In this section you can manually execute a billing process or view all billing processes status. Possible processing status are: Pending, Confirmed, Error or Confirmed With Errors.
+
+![Billing Processes](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Billing/Billing%20Processes.PNG)
+
+To manually execute a billing process, click the **Run Process** button. This will automatically generate a billing process register. Take into consideration that this will only impact contracts that have the billing process configured as **Manual**.
+
+## Statements
+In this section you can view and download statements from your Network. You can also generate the .pdf statements one by one, or inside the **Bulk Action** generate a .pdf package.
+
+![Statements](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Billing/Statements.PNG)
+
+# Configuration
+
+## Company Contracts Classifications
+In this section you can configure custom company contract classifications.
+
+![Company Contracts Classifications](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Configuration/Company%20Contracts%20Classifications.PNG)
+
+# Logs
+
+## Audit Log
+In this section you can view a list of all actions made by all users. There is a filter panel on the top to make queries easier.
+
+![Audit Log](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Audit%20Log.PNG)
