@@ -706,3 +706,50 @@ To do so there are 2 ways: individually, by clicking on the **X** icon to the ri
 From this section you will be able to confirm receipt of requests for identifiers made, to complete the request process. Please note that the only orders you can confirm are those that have already been marked as **Delivered**.
 To change the status of the requested badges, click the **Bulk Action** button and select the option **Confirm badge delivery**.
 
+## Rules
+In ATIONET the rules refer to the limits that can be configured. Within this view you can consult, create or edit rules. There are different types of rules: Fee, Date Range, Location, Fuel, Transaction Limit, Days-Hour, Request, Dry Transaction Limit and Dry Fee Limit.
+
+Note that all the rules can be **Non-Blocking**, which means that ATIONET will not reject the transaction, even if the configured parameters are met.
+
+![Rules](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas.PNG)
+
+1. **Quota:** In this rule you can limit the number of transactions, volume and/or money on a specific frequency.
+
+![Rules - Quota](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Cuota.PNG)
+
+2. **Date Range:** In this rule you can limit the transactions to be made in specific date and time ranges.
+
+![Rules - Date Range](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Rango%20de%20Fechas.PNG)
+
+3. **Location:** In this rule you can limit transactions to specific sites and zones.
+
+![Rules - Location](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Ubicaci%C3%B3n.PNG)
+
+4. **Fuel:** In this rule you can limit the transactions to be made for specific fuels and fuel master groups.
+
+![Rules - Fuel](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Combustible.PNG)
+
+5. **Limit per Transactions:** In this rule you can limit the volume of each transaction and/or the money.
+
+![Rules - Limit per Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Limite%20por%20Transacci%C3%B3n.PNG)
+
+6. **Days/Time:** In this rule you can limit transactions to specific days and hours of the week.
+
+![Rules - Days/Time](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20D%C3%ADaHora.PNG)
+
+7. **Prompting:** In this rule you can configure the request for information for transactions, such as driver/vehicle ID, driver/vehicle PIN, etc.
+
+![Rules - Prompting](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Solicitudes.PNG)
+
+8. **Dry Transaction Limit:** In this rule you can limit the money of the transactions of each SKU.
+
+![Rules - Dry Transaction Limit](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Limite%20de%20Producto%20por%20Transacci%C3%B3n.PNG)
+
+9. **Dry Quota Limit:** In this rule you can limit the transaction money in a specific frequency.
+
+![Rules - Dry Quota Limit](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Cuota%20por%20Producto.PNG)
+
+After configuring any type of rule, the last step is to associate the rule with an entity. Rules can be applied to: Fleets, Vehicles, Drivers, Sites and Fuels.
+
+![Reglas - Asociación](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Aplicacion.PNG)
+
