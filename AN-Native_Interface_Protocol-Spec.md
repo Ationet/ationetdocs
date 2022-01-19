@@ -20,7 +20,7 @@
 |1.5|29/03/2021|**API Interface Messages** <br> - Updated lists of Action Codes|
 |1.5|13/07/2021|**Inventory Interface Messages** <br> - Updated lists of Action Codes|
 |1.6|29/11/2021|**Inventory & Delivery Interface Update** <br> - Update Inventory Download Response <br> - Update Delivery Download Response <br>|
-|1.7|19/01/2022|**Document Update** <br> - <br> - <br> -|
+|1.7|19/01/2022|**Document Update** <br> - Update Current Account Action Codes <br> - <br> -|
 
 ## Contents
 
@@ -166,7 +166,7 @@ Availability of this message and the type of actions allowed depend on the subsc
 </thead>
 <tbody>
   <tr>
-    <td class="tg-rjo2" rowspan="12">Current Accounts</td>
+    <td class="tg-rjo2" rowspan="19">Current Accounts</td>
     <td class="tg-eygw">901</td>
     <td class="tg-eygw">Balance transfer to a sub-account</td>
   </tr>
@@ -193,6 +193,38 @@ Availability of this message and the type of actions allowed depend on the subsc
   <tr>
     <td class="tg-eygw">907</td>
     <td class="tg-eygw">Balance withdrawal from contract</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">908</td>
+    <td class="tg-eygw">Balance credit transfer to contract</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">909</td>
+    <td class="tg-eygw">Balance credit withdraw from contract</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">911</td>
+    <td class="tg-eygw">Merchant balance transfer to contract</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">912</td>
+    <td class="tg-eygw">Merchant balance withdraw from contract</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">913</td>
+    <td class="tg-eygw">Balance transfer to companies group</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">914</td>
+    <td class="tg-eygw">Balance withdraw from companies group</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">915</td>
+    <td class="tg-eygw">Recharge to sub account</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">916</td>
+    <td class="tg-eygw">Quotation Insert</td>
   </tr>
   <tr>
     <td class="tg-eygw">941</td>
@@ -418,6 +450,46 @@ subscription types but also on contract terms with ATIONet.
     <td class="tg-eygw">907</td>
     <td class="tg-dqd0">Balance withdrawal from contract</td>
     <td class="tg-eygw">Withdraws a given value from a contract.</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">908</td>
+    <td class="tg-dqd0">Balance credit transfer to contract</td>
+    <td class="tg-eygw">Transfer a given value from credit balance to a contract</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">909</td>
+    <td class="tg-dqd0">Balance credit withdraw from contract</td>
+    <td class="tg-eygw">Withdraws a given value from credit balance to a contract</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">911</td>
+    <td class="tg-dqd0">Merchant balance transfer to contract</td>
+    <td class="tg-eygw">Transfer a given value from merchant balance to a contract</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">912</td>
+    <td class="tg-dqd0">Merchant balance withdraw to contract</td>
+    <td class="tg-eygw">Withdraws a given value from merchant balance to a contract</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">913</td>
+    <td class="tg-dqd0">Balance transfer to companies group</td>
+    <td class="tg-eygw">Transfer a given value to a company group</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">914</td>
+    <td class="tg-dqd0">Balance withdraw to companies group</td>
+    <td class="tg-eygw">Withdraws a given value to a company group</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">915</td>
+    <td class="tg-dqd0">Recharge to sub account</td>
+    <td class="tg-eygw">Recharge a given value to a sub account</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">916</td>
+    <td class="tg-dqd0">Quotation insert</td>
+    <td class="tg-eygw">Adds or update a quote to the network using the configured conversion currency.</td>
   </tr>
   <tr>
     <td class="tg-gvcd">941</td>
