@@ -20,7 +20,7 @@
 |1.5|29/03/2021|**API Interface Messages** <br> - Updated lists of Action Codes|
 |1.5|13/07/2021|**Inventory Interface Messages** <br> - Updated lists of Action Codes|
 |1.6|29/11/2021|**Inventory & Delivery Interface Update** <br> - Update Inventory Download Response <br> - Update Delivery Download Response <br>|
-|1.7|19/01/2022|**Document Update** <br> - Update Current Account Action Codes <br> - <br> -|
+|1.7|19/01/2022|**Document Update** <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes<br> -|
 
 ## Contents
 
@@ -257,7 +257,7 @@ Availability of this message and the type of actions allowed depend on the subsc
 </thead>
 <tbody>
   <tr>
-    <td class="tg-rjo2" rowspan="11">Transactions</td>
+    <td class="tg-rjo2" rowspan="17">Transactions</td>
     <td class="tg-eygw">931</td>
     <td class="tg-eygw">Transactions download</td>
   </tr>
@@ -294,12 +294,36 @@ Availability of this message and the type of actions allowed depend on the subsc
     <td class="tg-eygw">GiftCard exceptions download</td>
   </tr>
   <tr>
+    <td class="tg-eygw">940</td>
+    <td class="tg-eygw">ERP Transaction insert</td>
+  </tr>
+  <tr>
     <td class="tg-gvcd">943</td>
     <td class="tg-gvcd">ConsumerCard transactions download</td>
   </tr>
   <tr>
     <td class="tg-eygw">944</td>
     <td class="tg-eygw">ConsumerCard exceptions download</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">949</td>
+    <td class="tg-eygw">Mobile payment fleet transactions download</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">961</td>
+    <td class="tg-eygw">Retail transactions download</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">962</td>
+    <td class="tg-eygw">Retail barch close download</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">993</td>
+    <td class="tg-eygw">Loyalty transactions download</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">994</td>
+    <td class="tg-eygw">Transaction invoice update</td>
   </tr>
 </tbody>
 </table>
