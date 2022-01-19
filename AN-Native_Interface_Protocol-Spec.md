@@ -20,7 +20,7 @@
 |1.5|29/03/2021|**API Interface Messages** <br> - Updated lists of Action Codes|
 |1.5|13/07/2021|**Inventory Interface Messages** <br> - Updated lists of Action Codes|
 |1.6|29/11/2021|**Inventory & Delivery Interface Update** <br> - Update Inventory Download Response <br> - Update Delivery Download Response <br>|
-|1.7|19/01/2022|**Document Update** <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes<br> -|
+|1.7|19/01/2022|**Document Update** <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes<br> - Update Interface API Messages|
 
 ## Contents
 
@@ -31,6 +31,7 @@
 	- [2.1 Interface API Messages](#21-interface-api-messages)
 		- [2.1.1 Current Account Messages](#211-current-account-messages)
 		- [2.1.2 Transaction Messages](#212-transaction-messages)
+		- [2.1.3 FMS Messages](#213-fms-messages)
 
 - [3 Data security](#3-data-security)
 
@@ -324,6 +325,29 @@ Availability of this message and the type of actions allowed depend on the subsc
   <tr>
     <td class="tg-eygw">994</td>
     <td class="tg-eygw">Transaction invoice update</td>
+  </tr>
+</tbody>
+</table>
+
+#### 2.1.3 FMS Messages
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-gvcd"><span style="font-weight:bold">Type</span></th>
+    <th class="tg-gvcd"><span style="font-weight:bold">Action Code</span></th>
+    <th class="tg-gvcd"><span style="font-weight:bold">Description</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-rjo2" rowspan="2">FMS</td>
+    <td class="tg-eygw">981</td>
+    <td class="tg-eygw">Deliveries download</td>
+  </tr>
+  <tr>
+    <td class="tg-gvcd">982</td>
+    <td class="tg-gvcd">Inventories download</td>
   </tr>
 </tbody>
 </table>
