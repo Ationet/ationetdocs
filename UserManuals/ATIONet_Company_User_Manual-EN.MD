@@ -46,18 +46,18 @@
 		- [Driver](#driver)
 		- [Transactions](#transactions)
 		- [Vehicle](#vehicle)
-	- [Administration](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administration.md)
-		- [Companies](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administration.md)
-		- [Dispersion](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administration.md)
-		- [Drivers](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administration.md)
-		- [External Documentation](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administration.md)
-		- [Fleet](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administration.md)
-		- [Notifications](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administration.md)
-		- [Sites](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administration.md)
-		- [Users](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administration.md)
-		- [Vehicle](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administration.md)
-		- [Vehicle classes](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administration.md)
-		- [Vouchers](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Administration.md)				
+	- [Administration](#administration)
+		- [Companies]](#companies)
+		- [Dispersion](#dispersion)
+		- [Drivers](#drivers)
+		- [External Documentation](#external-documentation)
+		- [Fleet](#fleet)
+		- [Notifications](#notifications)
+		- [Sites](#sites)
+		- [Users](#users)
+		- [Vehicle](#vehicle)
+		- [Vehicle classes](#vehicle-classes)
+		- [Vouchers](#vouchers)				
 	- [Fleets](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md)
 		- [Company Contracts](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md)
 		- [Company Current Accounts](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Fleets.md)
@@ -313,4 +313,189 @@ The information is displayed in a print-ready format, including the subscription
 This popup has a print button that when pressed opens the default print window of the Internet browser.
 
 ![Vehicles](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Reports/Vehicle.PNG)
+
+# Administration
+Inside this module you can manage Companies, Merchants, Sites, Identifications, Payment Methods and Users among other things.
+
+## Companies
+In ATIONet the term company refers to the entity that owns the fleet. In this section you can see the existing companies with their details, edit them and/or create new companies. To make queries easier, there is a panel of filters at the top.
+
+![Companies](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Companies.PNG)
+
+To create a Company, click the **New** button.
+
+![Companies New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Companies%20New.PNG)
+
+The fields to complete are the following:
+
+* **Tax Payer Id:** Input the company taxpayer identification.
+* **Active:** Checkmark to enable/disable the group company.
+* **Code:** Input the company unique code.
+* **Name:** Input the company name.
+* **Automatically Generated:** Checkmark this option to have the **code** automatically generated.
+* **Industry:** Select the industry associated to the company.
+* **Street 1:** Input the company primary street.
+* **Street 2:** Input the company secondary street (if applicable).
+* **Zip Code:** Input the company zip code.
+* **City:** Input the company city.
+* **Country:** Input the company country.
+* **State:** Input the company state.
+* **Taxpayer Category:** Select the company taxpayer category (if applicable).
+* **Contact Name:** Input the company contact name.
+* **Contact Email:** Input the company contact email.
+* **Phone Number 1:** Input the company primary phone number.
+* **Phone Number 2:** Input the company secondary phone number (if applicable).
+
+When you have finished filling in the fields, click the **Save** button.
+
+## Dispersion
+In this section you can make current account movements in bulk. In a first view you can filter by contract (as long as it is **Disperse** mode) and see how much balance it has.
+
+![Dispersion](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Dispersion%20Vista.PNG)
+
+Once you have clicked on the **Search** button you will have a list of all the subaccounts to which you can disperse balance. Select the corresponding subaccounts, click on **Bulk Action** and press **Disperse**.
+
+![New Dispersion](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Dispersion%20Nuevo.PNG)
+
+There are 3 ways to massively disperse the balance:
+* **Equitable:** The total amount is divided equally among all subaccounts.
+* **Balance A:** The balance of the subaccount is equal to the amount deposited.
+* **By Amount:** The amount entered into each subaccount is dispersed.
+
+## Drivers
+This view lists drivers that have been created. To make queries easier, there is a panel of filters at the top.
+
+![Drivers](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Drivers.PNG)
+
+## External Documentation
+This view lists all the external documents uploaded by the Company (through APIs) and the possibility of downloading them. An external document is a document associated with an operation performed externally to ATIONET.
+
+![External Documentation](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Documentos%20Externos%20Lista.PNG)
+
+## Fleet
+At ATIONET, the fleet refers to the group of vehicles within a Company. In this section you can see the existing fleets, edit them and/or create new ones.
+
+![Fleet](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Flotas.PNG)
+
+To create a fleet, click the **New** button.
+
+![New Fleet](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Flotas%20Nueva.PNG)
+
+The fields to complete are the following:
+* **Code:** Enter the unique code of the fleet.
+* **Automatically Generated:** Check this option to have the code generated automatically.
+* **Name:** Enter the name associated with the fleet.
+
+<br>
+
+## Notifications
+In this section each user can select their own notifications to be received either by email or sms.
+
+### Company Notifications
+In this section company users can configure their own notifications (inside their company profiles in ATIONet).
+
+![Notification Company](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notification%20Company.PNG)
+
+1. ***Contract***
+   * **Contract balance low notification:** Get a notification when a contract balance is low.
+   * **Contract balance empty notification:** Get a notification when a contract has no balance.
+   * **Percent Credit Notification:** Get a notification when a percent credit is reached (click on the pencil to configure the percent).
+   * **Low amount balance:** Get a notification when a balance amount is reached (click on the pencil to configure the amount).
+   * **Company Contract Deposit:** Get a notification when a deposit to a contract is detected.
+2. ***Billing***
+   * **External Charges:** Get a notification when external charges were detected.
+3. ***Transactions***
+   * **Transaction Exception:** Get a notification when an exception is detected.
+   * **Non-Blocking Rules Authorization:** Get a notification when a non-blocking rule authorization was detected.
+   * **Identification Enabled/Disabled:** Get a notification when an identification was enabled/disabled.
+   * **Requested Identifications:** Get a notification when an identification request was detected.
+   * **Transaction Rejected:** Get a notification when a rejected transaction was detected.
+   * **Disputed Transactions:** Get a notification when a disputed transaction was detected.
+4. ***Fleet***
+   * **Vehicle Odometer Limit:** Get a notification when a vehicle odometer is reached (click the **Vehicle List** button to configure the odometer and select the vehicle associated to the notification).
+
+## Sites
+In ATIONet the site represents the service station. This section lists the sites already created, edit them and also create new ones. You can also add taxes to sites directly from the **Options** column. To make queries easier, there is a panel of filters at the top.
+
+![Sites](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Sites.PNG)
+
+To create a site, click the **New** button.
+
+![Sites New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Sites%20New.PNG)
+
+The fields to complete are the following:
+
+* **Merchant:** Select the merchant associated to the site.
+* **Code:** Input the unique code associated to the site.
+* **Zone:** Select the zone associated to the site.
+* **Automatically Generated:** Checkmark this option to have the **code** automatically generated.
+* **Brand:** Select the brand associated to the site.
+* **Language:** Select the language associated to the site.
+* **Short Name:** Input the short name of the site.
+* **Full Name:** Input the full name of the site
+* **Street 1:** Input the site primary street.
+* **Street 2:** Input the site secondary street.
+* **Industry:** Select the industry associated to the site.
+* **Time Zone:** Select the time zone associated to the site.
+* **Zip Code:** Input the site zip code.
+* **City:** Input the site city.
+* **Country:** Input the site country.
+* **State:** Input the site state.
+* **Phone Number 1:** Input the site primary phone number.
+* **Phone Number 2:** Input the site secondary phone number.
+* **Require Fuel Mapping:** Checkmark this option if specific fuel codes need to be configured for the site (if not, [ATIONet Master Fuel Codes](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/C%C3%B3digos%20Maestros%20de%20Combustible.PNG) will be used).
+* **Recipient Emails:** Input the email addresses associated to the site (they will receive the billing statements for the site).
+* **Latitude:** Input the latitude of the site.
+* **Longitude:** Input the longitude of the site.
+* **Currency:** Select the currency associated to the site.
+
+<br>
+
+## Users
+In this section you can view, create or edit users for the Network. You can edit them by clicking on the pencil icon in the options column, enable/disable a user by clicking on the padlock icon and reset the password with the star icon.
+
+![Users](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Users.PNG)
+
+To create a User, click the **New** button.
+
+![Users New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Users%20New.PNG)
+
+The fields to complete are the following:
+
+* **User Mail:** The user's email address.
+* **Name:** The user's name.
+* **Social Security:** The user's document.
+* **Street 1:** The street where the user resides.
+* **Street 2:** Another street of reference, as it can be the one of the corner.
+* **Country:** The user's country.
+* **State:** The state of the user's country.
+* **Zip Code:** The postal code of the locality where the user resides.
+* **Phone Number 1:** The user's phone.
+* **Phone Number 2:** The user's other phone if available.
+
+## Vehicle
+This view lists all vehicles that have been created. Remember that it is not mandatory to load vehicles in order to operate, it is only necessary if you decide to associate the identifications to vehicles. To make queries easier, there is a panel of filters at the top.
+
+![Vehicles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Vehicles.PNG)
+
+Under the **Options** column you can:
+
+* **Assign Identification:** Assign/Unassign identifications to the vehicle.  
+* **Renew Identification:** Renew the identification associated to the vehicle.
+* **Favorites:** Add the vehicle to the **favorites** module.
+
+## Vehicle Classes
+
+The fields to complete are the following:
+* **Type:** Select the vehicle type associated with the vehicle class.
+* **Theoretical consumption (Distance * Volume):** Enter the theoretical consumption associated with the vehicle class.
+* **Make:** Enter the make associated with the vehicle class.
+* **Model:** Enter the model associated with the vehicle class.
+* **Minimum Mileage:** Enter the minimum mileage associated with the vehicle class.
+* **Maximum mileage:** Enter the maximum mileage associated with the vehicle class
+
+## Vouchers
+Inside this section you can view a list of all vouchers created by companies. To make queries easier, there is a panel of filters at the top.
+
+![Vouchers](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Vouchers.PNG)
 
