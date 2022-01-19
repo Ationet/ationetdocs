@@ -65,8 +65,8 @@
 	- [10.1 Action Codes](#101-action-codes)
 	- [10.2 Company Movements Download (POST) – Body Section Format Request](#102-company-movements-download-post--body-section-format-request)
 	- [10.3 Company Movements Download (POST) – Body Section Format Response](#103-company-movements-download-post--body-section-format-response)
-	- [10.4 Company Group Movements Download (POST) – Body Section Format Request](#103-company-group-movements-download-post--body-section-format-response)
-	- [10.5 Company Group Movements Download (POST) – Body Section Format Response](#103-company-group-movements-download-post--body-section-format-response)
+	- [10.4 Company Group Movements Download (POST) – Body Section Format Request](#104-company-group-movements-download-post--body-section-format-request)
+	- [10.5 Company Group Movements Download (POST) – Body Section Format Response](#105-company-group-movements-download-post--body-section-format-response)
 
 - [11 Inventory and deliveries Downloads](#11-Inventory-and-deliveries-Downloads)
 	- [11.1 Action Codes](#111-Action-Codes)
