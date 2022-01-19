@@ -20,7 +20,7 @@
 |1.5|29/03/2021|**API Interface Messages** <br> - Updated lists of Action Codes|
 |1.5|13/07/2021|**Inventory Interface Messages** <br> - Updated lists of Action Codes|
 |1.6|29/11/2021|**Inventory & Delivery Interface Update** <br> - Update Inventory Download Response <br> - Update Delivery Download Response <br>|
-|1.7|19/01/2022|**Document Update** <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages <br> - Update Account download request parameters|
+|1.7|19/01/2022|**Document Update** <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages <br> - Update company movements download request parameters <br> - Add CompanyGroups movements download: Request/Response|
 
 ## Contents
 
@@ -65,6 +65,8 @@
 	- [10.1 Action Codes](#101-action-codes)
 	- [10.2 Company Movements Download (POST) – Body Section Format Request](#102-company-movements-download-post--body-section-format-request)
 	- [10.3 Company Movements Download (POST) – Body Section Format Response](#103-company-movements-download-post--body-section-format-response)
+	- [10.4 Company Group Movements Download (POST) – Body Section Format Request](#103-company-group-movements-download-post--body-section-format-response)
+	- [10.5 Company Group Movements Download (POST) – Body Section Format Response](#103-company-group-movements-download-post--body-section-format-response)
 
 - [11 Inventory and deliveries Downloads](#11-Inventory-and-deliveries-Downloads)
 	- [11.1 Action Codes](#111-Action-Codes)
@@ -6529,7 +6531,7 @@ transactions to download.
 			<p>Function:</p>
 		</td>
 		<td>
-			<p>Download complete current account movements records</p>
+			<p>Download complete current account movements records from a company</p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -6547,6 +6549,42 @@ transactions to download.
 		<td>
 			<p>Subscriber Code</p>
 			<p>Company Code (Optional, if included will act as a filter)</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td rowspan="4">
+			<p>952</p>
+		</td>
+		<td>
+			<p>Title:</p>
+		</td>
+		<td>
+			<p>Company Group Movements Download</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Function:</p>
+		</td>
+		<td>
+			<p>Download complete current account movements records from a company group</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Allowed for:</p>
+		</td>
+		<td>
+			<p>NWInterfaceApi and CGInterfaceAPI </p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Identification:</p>
+		</td>
+		<td>
+			<p>Subscriber Code</p>
+			<p>Companies Group Id (Optional, if included will act as a filter)</p>
 		</td>
 	</tr>
 </table>
@@ -6588,6 +6626,35 @@ transactions to download.
 |CurrencyCode|50|A/N|Currency of the amount fields|
 |Amount|10|N|Amount balance for the sub-account. (xxxxxxx.xx)|
 
+### 10.4 Company Group Movements Download (POST) – Body Section Format *Request*
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |--- |
+|SubscriberCode|3|A/N|Required|Fixed. To be assigned by ATIONet|
+|ActionCode|3|N|Required|See Action Codes section above|
+|CompanyCode|30|A/N|Conditional|See Action Codes section above|
+|CompaniesGroupCode|30|A/N|Optional|Use to filter for company group|
+|DateFrom|19|A/N|Required|From date to filter movements "yyyy/MM/dd hh:mm:ss"|
+|DateTo|19|A/N|Optional|To date to filter movements "yyyy/MM/dd hh:mm:ss"|
+|AmountFrom|10|N|Optional|To filter movements from an amount|
+|AmountTo|10|N|Optional|To filter movements up to an amount|
+|Types|1|N|Optional|Types to filter movements|
+|Origins|1|N|Optional|Origin to filter movements|
+
+### 10.5 Company Group Movements Download (POST) – Body Section Format *Response*
+|Field Name|Size|Type|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |
+|MovementId|36|A/N|Movements’s UID|
+|CompaniesGroupId|36|A/N|Company group UID|
+|CompaniesGoupName|250|A/N|Company group name|
+|HostDateTime|19|A/N|ATIONet’s transaction date time "yyyy/mm/dd hh:mm:ss" (ATIONet Host date time is UCT)|
+|SubscriberDateTime|19|A/N|movement date expressed in subscriber time zone (yyyy/mm/dd hh:mm:ss)|
+|Amount|10|N|Amount of the movement|
+|Type|1|N|Internal ATIOnet movement type code|
+|TypeDescription|50|A/N|Movement type description|
+|MovementDescription|50|A/N|Movement description|
+|IsDebit|1|N|Indicates that’s a debit or credit movement (1 = "True", 2= "False")|
+|Origin|1|N|Internal ATIOnet code for the origin of the movement|
+|OriginDescription|50|A/N|Description for the origin of the movement|
 
 ## 11 Inventory and deliveries Downloads
 The Inventory and Delivery Download messages are POST actions to recover all the
