@@ -5054,7 +5054,8 @@ additional parameters are needed for the request to be fulfilled.
 				<p align="left">Sets whether FastTrack amount corresponds</p>
 				<p align="left">to fuel volume, and which one</p>
 			</td>
-		</tr><tr valign="top">
+		</tr>
+		<tr valign="top">
 			<td>
 				<p align="left">CurrencyCode</p>
 			</td>
@@ -5161,7 +5162,6 @@ additional parameters are needed for the request to be fulfilled.
 				<p align="left">&ldquo;yyyy/MM/dd hh:mm:ss&rdquo;</p>
 			</td>
 		</tr>
-		
 	</tbody>
 </table>
 
@@ -5532,8 +5532,6 @@ additional parameters are needed for the request to be fulfilled.
 				<p align="left">&ldquo;yyyy/MM/dd hh:mm:ss&rdquo;</p>
 			</td>
 		</tr>
-		
-		
 	</tbody>
 </table>
 
@@ -5985,7 +5983,6 @@ additional parameters are needed for the request to be fulfilled.
 				<p align="left">&ldquo;yyyy/MM/dd hh:mm:ss&rdquo;</p>
 			</td>
 		</tr>
-		
 	</tbody>
 </table>
 
