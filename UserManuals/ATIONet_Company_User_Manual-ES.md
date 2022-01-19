@@ -3,8 +3,8 @@
 |**Información del Documento**|.|
 |--- |--- |
 |**Archivo:**|ATIONET_Company_User_Manual-ES.md|
-|**Versión Doc:**|1.0|
-|**Fecha Liberación:**|14, Sep 2021|
+|**Versión Doc:**|2.0|
+|**Fecha Liberación:**|19, Ene 2022|
 |**Autor:**|ATIONET LLC|
 
 
