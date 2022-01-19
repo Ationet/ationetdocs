@@ -715,41 +715,93 @@ Note that all the rules can be **Non-Blocking**, which means that ATIONET will n
 
 1. **Quota:** In this rule you can limit the number of transactions, volume and/or money on a specific frequency.
 
-![Rules - Quota](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Cuota.PNG)
+![Rules - Quota](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Quota.PNG)
 
 2. **Date Range:** In this rule you can limit the transactions to be made in specific date and time ranges.
 
-![Rules - Date Range](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Rango%20de%20Fechas.PNG)
+![Rules - Date Range](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Date%20Range.PNG)
 
 3. **Location:** In this rule you can limit transactions to specific sites and zones.
 
-![Rules - Location](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Ubicaci%C3%B3n.PNG)
+![Rules - Location](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Location.PNG)
 
 4. **Fuel:** In this rule you can limit the transactions to be made for specific fuels and fuel master groups.
 
-![Rules - Fuel](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Combustible.PNG)
+![Rules - Fuel](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Fuel.PNG)
 
 5. **Limit per Transactions:** In this rule you can limit the volume of each transaction and/or the money.
 
-![Rules - Limit per Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Limite%20por%20Transacci%C3%B3n.PNG)
+![Rules - Limit Per Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Limit%20Per%20Transaction.PNG)
 
-6. **Days/Time:** In this rule you can limit transactions to specific days and hours of the week.
+6. **DaysTime:** In this rule you can limit transactions to specific days and hours of the week.
 
-![Rules - Days/Time](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20D%C3%ADaHora.PNG)
+![Rules - DaysTime](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20DaysTime.PNG)
 
 7. **Prompting:** In this rule you can configure the request for information for transactions, such as driver/vehicle ID, driver/vehicle PIN, etc.
 
-![Rules - Prompting](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Solicitudes.PNG)
+![Rules - Prompting](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Prompting.PNG)
 
 8. **Dry Transaction Limit:** In this rule you can limit the money of the transactions of each SKU.
 
-![Rules - Dry Transaction Limit](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Limite%20de%20Producto%20por%20Transacci%C3%B3n.PNG)
+![Rules - Dry Transaction Limit](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Dry%20Transaction%20Limit.PNG)
 
 9. **Dry Quota Limit:** In this rule you can limit the transaction money in a specific frequency.
 
-![Rules - Dry Quota Limit](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Cuota%20por%20Producto.PNG)
+![Rules - Dry Quota Limit](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20-%20Dry%20Quota%20Limit.PNG)
 
 After configuring any type of rule, the last step is to associate the rule with an entity. Rules can be applied to: Fleets, Vehicles, Drivers, Sites and Fuels.
 
 ![Reglas - Asociación](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Aplicacion.PNG)
+
+## Transactions
+The transaction view is one of the most important in ATIONet. In this view you can see all successful transactions.
+
+The filter panel has all these fields available:
+
+![Trasactions - Filter](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20-%20Filter.PNG)
+
+* **Authorization Code:** Input the authorization code associated to the transaction.
+* **Shift Number:** Input the shift number associated to the transaction.
+* **Vehicle:** Select the vehicle associated to the transaction.
+* **Driver:** Select the driver associated to the transaction.
+* **Merchant:** Select the merchant associated to the transaction.
+* **Site:** Select the site associated to the transaction.
+* **Terminal/Controller:** Select the terminal associated to the transaction.
+* **Fuel:** Select the fuel associated to the transaction.
+* **Program:** Select the fleet program associated to the transaction.
+* **Contract:** Select the company contract associated to the transaction.
+* **Invoice Number:** Input the invoice number associated to the transaction.
+* **Date Type:** Select the date type associated to the transaction (Controller, Host, Subscription or Site).
+* **Date From / Date To:** Input the starting and ending dates associated to the transaction.
+* **Time From / Time To:** Input the starting and ending times associated to the transaction.
+* **Mode:** Select the transaction mode (Contingency, Offline or Standard).
+* **Show Zero Completions:** Checkmark this option to view transactions that no fuel was dispatched.
+
+Once you have filtered, press ***Search*** and it will list the transactions that comply with the filter.
+
+![Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions.PNG)
+
+If you want to see the transaction detail, click on the **Authorization Code** and this will take you to a detail view of the transaction.
+
+![Transaction Details](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transaction%20Details.PNG)
+ 
+## Transactions by Driver
+In this view you can see the transactions grouped by the driver who made them. The buttons at the top left are for printing the table or creating an Excel file from the table, respectively.
+
+![Transactions by Driver](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Driver.PNG)
+
+## Transactions by Fleet
+In this view you can see the transactions grouped by the fleet who made them. The buttons at the top left are for printing the table or creating an Excel file from the table, respectively.
+
+![Transactions by Fleet](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Fleet.PNG)
+
+## Transactions by Site
+In this view you can see the transactions grouped by the site where they were made. The buttons at the top left are for printing the table or creating an Excel file from the table, respectively.
+
+![Transactions by Site](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Site.PNG)
+
+## Transactions by Vehicle
+In this view you can see the transactions grouped by the vehicle who made them. The buttons at the top left are for printing the table or creating an Excel file from the table, respectively.
+
+![Transactions by Vehicle](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Vehicle.PNG)
 
