@@ -823,3 +823,7 @@ En esta sección puede ver los conceptos aplicados para cada estado de cuenta.
 En esta sección puede ver una lista de todas las acciones realizadas por todos los usuarios. Hay un panel de filtros en la parte superior para facilitar las consultas.
 
 ![Bitácora de Auditoría](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Bitacora/Bitacora%20de%20Auditoria.PNG)
+
+<br>
+
+[Back to top](#contents)  :arrow_up:
