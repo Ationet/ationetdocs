@@ -122,7 +122,7 @@ El terminal (o controlador) es la representación del controlador del dispensado
 
 
 # Menú Navegación
-ATIONet tiene un menú de acceso rápido situado en la parte izquierda de la web. Desde este menú se puede acceder a diferentes opciones. El menú está dividido en: Tablero, Favoritos, Reportes, Administración, Flotas, Liquidación, Configuración y Bitácora de Auditoria.
+ATIONET tiene un menú de acceso rápido situado en la parte izquierda de la web. Desde este menú se puede acceder a diferentes opciones. El menú está dividido en: Tablero, Favoritos, Reportes, Administración, Flotas, Liquidación, Configuración y Bitácora de Auditoria.
 
 # Mis Preferencias
 Dentro de esta sección cada usuario puede personalizar sus preferencias del portal.
