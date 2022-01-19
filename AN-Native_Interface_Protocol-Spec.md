@@ -167,7 +167,7 @@ Availability of this message and the type of actions allowed depend on the subsc
 </thead>
 <tbody>
   <tr>
-    <td class="tg-rjo2" rowspan="19">Current Accounts</td>
+    <td class="tg-rjo2" rowspan="24">Current Accounts</td>
     <td class="tg-eygw">901</td>
     <td class="tg-eygw">Balance transfer to a sub-account</td>
   </tr>
@@ -228,12 +228,32 @@ Availability of this message and the type of actions allowed depend on the subsc
     <td class="tg-eygw">Quotation Insert</td>
   </tr>
   <tr>
+    <td class="tg-eygw">922</td>
+    <td class="tg-eygw">Merchant charges comissions download</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">925</td>
+    <td class="tg-eygw">Company Insert</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">926</td>
+    <td class="tg-eygw">Company contract credit limit update</td>
+  </tr>
+  <tr>
     <td class="tg-eygw">941</td>
     <td class="tg-eygw">Balance download of sub-account</td>
   </tr>
   <tr>
     <td class="tg-gvcd">942</td>
     <td class="tg-gvcd">Balance download of contract</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">945</td>
+    <td class="tg-eygw">Merchant contract balance download</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">946</td>
+    <td class="tg-eygw">Merchant movements download</td>
   </tr>
   <tr>
     <td class="tg-eygw">951</td>
@@ -539,6 +559,22 @@ subscription types but also on contract terms with ATIONet.
     <td class="tg-dqd0">Quotation insert</td>
     <td class="tg-eygw">Adds or update a quote to the network using the configured conversion currency.</td>
   </tr>
+	
+  <tr>
+    <td class="tg-eygw">922</td>
+    <td class="tg-dqd0">Merchant charges comissions download</td>
+    <td class="tg-eygw">Downloads the merchant charges commissions</td>
+  </tr>	
+  <tr>
+    <td class="tg-eygw">925</td>
+    <td class="tg-dqd0">Company insert</td>
+    <td class="tg-eygw">Adds or update a company related to the user network</td>
+  </tr>	
+  <tr>
+    <td class="tg-eygw">926</td>
+    <td class="tg-dqd0">Company contract credit limit update</td>
+    <td class="tg-eygw">Update the credit limit related to the given company</td>
+  </tr>
   <tr>
     <td class="tg-gvcd">941</td>
     <td class="tg-bthj">Balance download of sub-account</td>
@@ -548,6 +584,16 @@ subscription types but also on contract terms with ATIONet.
     <td class="tg-eygw">942</td>
     <td class="tg-dqd0">Balance download of contract</td>
     <td class="tg-eygw">Downloads the balance of all contracts related to the network.</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">945</td>
+    <td class="tg-dqd0">Merchant contract balance download</td>
+    <td class="tg-eygw">Downloads the the balance of the given merchant contract</td>
+  </tr>	
+  <tr>
+    <td class="tg-eygw">946</td>
+    <td class="tg-dqd0">Merchant movements download</td>
+    <td class="tg-eygw">Downloads the movements of a determined merchant</td>
   </tr>
   <tr>
     <td class="tg-gvcd">951</td>
