@@ -6517,6 +6517,42 @@ transactions to download.
 	</tr>
 	<tr valign="top">
 		<td rowspan="4">
+			<p>922</p>
+		</td>
+		<td>
+			<p>Title:</p>
+		</td>
+		<td>
+			<p>Merchant charges commissions download</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Function:</p>
+		</td>
+		<td>
+			<p>Download merchant charges comissions</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Allowed for:</p>
+		</td>
+		<td>
+			<p></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Identification:</p>
+		</td>
+		<td>
+			<p>Subscriber Code</p>
+			<p>Company Code (Optional, if included will act as a filter)</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td rowspan="4">
 			<p>951</p>
 		</td>
 		<td>
@@ -6588,6 +6624,44 @@ transactions to download.
 		</td>
 	</tr>
 </table>
+
+### 10.2 Merchant Charges Comissions Download (POST) – Body Section Format *Request*
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |--- |
+|SubscriberCode|3|A/N|Required|Fixed. To be assigned by ATIONet|
+|ActionCode|3|N|Required|See Action Codes section above|
+|CompanyCode|30|A/N|Conditional|See Action Codes section above|
+|State|1|N|Optional|The state of the charge <br> 0 = New <br> 1 = Cancelled by merchant <br> 2 = Confirmed by merchant <br> 3 = Rejected by network <br> 4 = Aproved by network|
+|DateType|1|N|Optional|The type of the date time of comission charge <br> 0 = Creation date <br> 1 = Aproved by network <br> 2 = Rejected by network <br> 3 = Invoice date|
+|DateFrom|19|A/N|Optional|From date to filter charges comissions "yyyy/MM/dd hh:mm:ss"|
+|DateTo|19|A/N|Optional|To date to filter charges comissions "yyyy/MM/dd hh:mm:ss"|
+|InvoiceNumber|50|A/N|Optional|Invoice number to filter charges comissions|
+
+### 10.3 Merchant Charges Comissions Download (POST) – Body Section Format *Response*
+|Field Name|Size|Type|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |
+|Id|36|A/N|Current account’s UID|
+|MovementId|36|A/N|Movements’s UID|
+|SubscriberCode|3|A/N|Code of the subscriber who owns the transaction|
+|HostDateTime|19|A/N|ATIONet’s transaction date time "yyyy/mm/dd hh:mm:ss" (ATIONet Host date time is UCT)|
+|DateTime|19|A/N|movement date expressed in subscriber time zone (yyyy/mm/dd hh:mm:ss)|
+|SubscriberTimeZone|50|A/N|TimeZone code of the subscriber (abbreviation)|
+|Type|1|N|Internal ATIOnet movement type code|
+|TypeDescription|50|A/N|Movement type description|
+|Origin|1|N|Internal ATIOnet code for the origin of the movement|
+|OriginDescription|50|A/N|Description for the origin of the movement|
+|Description|1000|A/N|Movement description|
+|SubAccountId|36|A/N|SubAccount’s UID|
+|SubAccountExternalCode|50|A/N|SubAccount’s external code|
+|CompanyCode|30|A/N|Company code (Not meaningful for Homebase subscribers)|
+|CompanyName|250|A/N|Company name (Not meaningful for Homebase subscribers)|
+|ContractCode|20|A/N|Contract code (Not meaningful for Homebase subscribers)|
+|SubContractCode|50|A/N|SubContract code (Not meaningful for Homebase subscribers)|
+|IsDebit|1|N|Indicates that’s a debit or credit movement (1 = "True", 2= "False")|
+|FuelMasterCode|50|A/N|Standardized product code. Helps to identify a fuel product category across multiple Merchant brands and site’s product codes|
+|FuelMasterDescription|100|A/N|Standardized product description. Helps to identify a fuel product category across multiple Merchant brands and site’s product codes|
+|CurrencyCode|50|A/N|Currency of the amount fields|
+|Amount|10|N|Amount balance for the sub-account. (xxxxxxx.xx)|
 
 ### 10.2 Company Movements Download (POST) – Body Section Format *Request*
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
