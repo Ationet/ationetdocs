@@ -6555,6 +6555,43 @@ transactions to download.
 	</tr>
 	<tr valign="top">
 		<td rowspan="4">
+			<p>941/942</p>
+		</td>
+		<td>
+			<p>Title:</p>
+		</td>
+		<td>
+			<p>Balance download of Sub-account (941) / Contract (942)</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Function:</p>
+		</td>
+		<td>
+			<p>Download balance for sub-account/contract</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Allowed for:</p>
+		</td>
+		<td>
+			<p>Subscribers and Fleet Companies</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Identification:</p>
+		</td>
+		<td>
+			<p>Subscriber Code</p>
+			<p>Company Code</p>
+			<p>Contract Code</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td rowspan="4">
 			<p>951</p>
 		</td>
 		<td>
@@ -6744,6 +6781,37 @@ transactions to download.
 |IsDebit|1|N|Indicates that’s a debit or credit movement (1 = "True", 2= "False")|
 |Origin|1|N|Internal ATIOnet code for the origin of the movement|
 |OriginDescription|50|A/N|Description for the origin of the movement|
+
+### 10.8 Balance Download (POST) – Body Section Format *Request*
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |--- |
+|SubscriberCode|3|A/N|Required|Fixed. To be assigned by ATIONet|
+|ActionCode|3|N|Required|See Action Codes section above|
+|CompanyCode|50|A/N|Conditional|See Action Codes section above|
+|ContractCode|50|A/N|Relative to any other code|See identification section|
+|DriverCode|50|A/N|Relative to any other code|See identification section|
+|VehicleCode|50|A/N|Relative to any other code|See identification section|
+|VehiclePlate|50|A/N|Relative to any other code|See identification section|
+|Identifier|50|A/N|Relative to any other code|Public ID of the identification device (chipkey ID, account number on a mag card, RFID serial number, etc) <br> See identification section|
+|SubAccountId|36|A/N|Relative to any other code|SubAccount UID|
+
+### 10.9 Sub-Account Balance Download (POST) – Body Section Format *Response*
+|Field Name|Size|Type|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |
+|SubscriberCode|3|A/N|Fixed. To be assigned by ATIONet|
+|CompanyCode|50|A/N|See Action Codes section above|
+|CompanyName|50|A/N|Company name|
+|ContractCode|50|A/N|See identification section|
+|SubContractCode|50|A/N|See identification section|
+|SubAccountId|36|A/N|SubAccount UID|
+|DriverCode|50|A/N|See identification section|
+|VehicleCode|50|A/N|See identification section|
+|VehiclePlate|50|A/N|See identification section|
+|Identifier|50|A/N|Public ID of the identification device (chipkey ID, account number on a mag card, RFID serial number, etc) <br> See identification section|
+|FuelMasterCode|50|A/N|See identification section|
+|FuelMasterDescription|50|A/N|Fuel master description|
+|CurrencyCode|50|A/N|See identification section|
+|Amount|10|N|The balance of the sub-account|
 
 ## 11 Inventory and deliveries Downloads
 The Inventory and Delivery Download messages are POST actions to recover all the
