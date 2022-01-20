@@ -20,7 +20,7 @@
 |1.5|29/03/2021|**API Interface Messages** <br> - Updated lists of Action Codes|
 |1.5|13/07/2021|**Inventory Interface Messages** <br> - Updated lists of Action Codes|
 |1.6|29/11/2021|**Inventory & Delivery Interface Update** <br> - Update Inventory Download Response <br> - Update Delivery Download Response <br>|
-|1.7|19/01/2022|**Document Update** <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages <br> - Update company movements download request parameters <br> - Add CompanyGroups movements download: Request/Response|
+|1.7|19/01/2022|**Document Update** <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages <br> - Update company movements download request parameters <br> - Add CompanyGroups movements download: Request/Response <br> - Add Merchant Charges Comissions Download: Request/Response|
 
 ## Contents
 
@@ -63,10 +63,12 @@
 
 - [10 Account Downloads](#10-account-downloads)
 	- [10.1 Action Codes](#101-action-codes)
-	- [10.2 Company Movements Download (POST) – Body Section Format Request](#102-company-movements-download-post--body-section-format-request)
-	- [10.3 Company Movements Download (POST) – Body Section Format Response](#103-company-movements-download-post--body-section-format-response)
-	- [10.4 Company Group Movements Download (POST) – Body Section Format Request](#104-company-group-movements-download-post--body-section-format-request)
-	- [10.5 Company Group Movements Download (POST) – Body Section Format Response](#105-company-group-movements-download-post--body-section-format-response)
+	- [10.2 Merchant Charges Comissions Download (POST) – Body Section Format Request](#102-merchant-charges-comissions-download-post--body-section-format-request)
+	- [10.3 Merchant Charges Comissions Download (POST) – Body Section Format Response](#103-merchant-charges-comissions-download-post--body-section-format-response)
+	- [10.4 Company Movements Download (POST) – Body Section Format Request](#104-company-movements-download-post--body-section-format-request)
+	- [10.5 Company Movements Download (POST) – Body Section Format Response](#105-company-movements-download-post--body-section-format-response)
+	- [10.6 Company Group Movements Download (POST) – Body Section Format Request](#106-company-group-movements-download-post--body-section-format-request)
+	- [10.7 Company Group Movements Download (POST) – Body Section Format Response](#107-company-group-movements-download-post--body-section-format-response)
 
 - [11 Inventory and deliveries Downloads](#11-Inventory-and-deliveries-Downloads)
 	- [11.1 Action Codes](#111-Action-Codes)
@@ -6640,30 +6642,43 @@ transactions to download.
 ### 10.3 Merchant Charges Comissions Download (POST) – Body Section Format *Response*
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |
-|Id|36|A/N|Current account’s UID|
-|MovementId|36|A/N|Movements’s UID|
-|SubscriberCode|3|A/N|Code of the subscriber who owns the transaction|
-|HostDateTime|19|A/N|ATIONet’s transaction date time "yyyy/mm/dd hh:mm:ss" (ATIONet Host date time is UCT)|
-|DateTime|19|A/N|movement date expressed in subscriber time zone (yyyy/mm/dd hh:mm:ss)|
-|SubscriberTimeZone|50|A/N|TimeZone code of the subscriber (abbreviation)|
-|Type|1|N|Internal ATIOnet movement type code|
-|TypeDescription|50|A/N|Movement type description|
-|Origin|1|N|Internal ATIOnet code for the origin of the movement|
-|OriginDescription|50|A/N|Description for the origin of the movement|
-|Description|1000|A/N|Movement description|
-|SubAccountId|36|A/N|SubAccount’s UID|
-|SubAccountExternalCode|50|A/N|SubAccount’s external code|
-|CompanyCode|30|A/N|Company code (Not meaningful for Homebase subscribers)|
-|CompanyName|250|A/N|Company name (Not meaningful for Homebase subscribers)|
-|ContractCode|20|A/N|Contract code (Not meaningful for Homebase subscribers)|
-|SubContractCode|50|A/N|SubContract code (Not meaningful for Homebase subscribers)|
-|IsDebit|1|N|Indicates that’s a debit or credit movement (1 = "True", 2= "False")|
-|FuelMasterCode|50|A/N|Standardized product code. Helps to identify a fuel product category across multiple Merchant brands and site’s product codes|
-|FuelMasterDescription|100|A/N|Standardized product description. Helps to identify a fuel product category across multiple Merchant brands and site’s product codes|
+|IdProcessBillingStatement|36|A/N|Process billing statement UID|
+|IdProcessBillingCharge|36|A/N|Process billing charge UID|
+|IdMerchant|36|A/N|Merchant UID|
+|MerchantCode|50|A/N|Code of the merchant|
+|MerchantName|50|A/N|Name of the merchant|
+|TypeCode|50|A/N|Invoice code|
+|TypeName|50|A/N|Invoice name|
+|TypeDescription|50|A/N|Invoice description|
+|InvoiceDate|19|A/N|Invoice date time "yyyy/mm/dd|
+|InvoiceNumber|50|A/N|Invoice number|
+|Description|50|A/N|The charge comission description|
+|ElectronicAuthorizationCode|50|A/N|Electronic authorization code|
+|ElectronicAuthorizationCodeExpirationDate|19|A/N|Electronic authorization code expiration date "yyyy/mm/dd"|
+|IdCurrency|36|A/N|Currency UID|
 |CurrencyCode|50|A/N|Currency of the amount fields|
-|Amount|10|N|Amount balance for the sub-account. (xxxxxxx.xx)|
+|MerchantCustomField0|50|A/N|Merchant custom field 0|
+|MerchantCustomField1|50|A/N|Merchant custom field 1|
+|MerchantCustomField2|50|A/N|Merchant custom field 2|
+|MerchantCustomField3|50|A/N|Merchant custom field 3|
+|ContractCode|20|A/N|Contract identification|
+|NetAmount|10|N|Charge amount|
+|TotalAmount|10|N|The total amount of the charge|
+|TaxExempt|1|N|Tax Exempt <br> 0 = false <br> 1 = true|
+|State|1|N|State of the charge <br> 0 = New <br> 1 = Cancelled by Merchant <br> 2 = Confirmed by merchant <br> 3 = Rejected by network <br> 4 = Aproved by network|
+|Taxes||A/N|List of taxes applied to the charge|
+|CreationDate|19|A/N|Creation date "yyyy/mm/dd|
+|CreationRealDate|19|A/N|Creation real date "yyyy/mm/dd|
+|UpdateDate|19|A/N|Update date "yyyy/mm/dd|
+|AprovedDate|19|A/N|Aproved date "yyyy/mm/dd|
+|AprovedRealDate|19|A/N|Aproved real date "yyyy/mm/dd|
+|RejectDate|19|A/N|Reject date "yyyy/mm/dd|
+|RejectRealDate|19|A/N|Reject real date "yyyy/mm/dd|
+|NetworkTimeZone|19|A/N|TimeZone code of the network (abbreviation)|
+|FileId|36|A/N|File UID|
+|FileEntityId|1|N|File entity id|
 
-### 10.2 Company Movements Download (POST) – Body Section Format *Request*
+### 10.4 Company Movements Download (POST) – Body Section Format *Request*
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
 |SubscriberCode|3|A/N|Required|Fixed. To be assigned by ATIONet|
@@ -6674,7 +6689,7 @@ transactions to download.
 |Types||N|Optional|List of types to filter movements|
 |Origins||N|Optional|List of origin to filter movements|
 
-### 10.3 Company Movements Download (POST) – Body Section Format *Response*
+### 10.5 Company Movements Download (POST) – Body Section Format *Response*
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |
 |Id|36|A/N|Current account’s UID|
@@ -6700,7 +6715,7 @@ transactions to download.
 |CurrencyCode|50|A/N|Currency of the amount fields|
 |Amount|10|N|Amount balance for the sub-account. (xxxxxxx.xx)|
 
-### 10.4 Company Group Movements Download (POST) – Body Section Format *Request*
+### 10.6 Company Group Movements Download (POST) – Body Section Format *Request*
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
 |SubscriberCode|3|A/N|Required|Fixed. To be assigned by ATIONet|
@@ -6714,14 +6729,14 @@ transactions to download.
 |Types|1|N|Optional|Types to filter movements|
 |Origins|1|N|Optional|Origin to filter movements|
 
-### 10.5 Company Group Movements Download (POST) – Body Section Format *Response*
+### 10.7 Company Group Movements Download (POST) – Body Section Format *Response*
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |
 |MovementId|36|A/N|Movements’s UID|
 |CompaniesGroupId|36|A/N|Company group UID|
 |CompaniesGoupName|250|A/N|Company group name|
 |HostDateTime|19|A/N|ATIONet’s transaction date time "yyyy/mm/dd hh:mm:ss" (ATIONet Host date time is UCT)|
-|SubscriberDateTime|19|A/N|movement date expressed in subscriber time zone (yyyy/mm/dd hh:mm:ss)|
+|SubscriberDateTime|19|A/N|Movement date expressed in subscriber time zone (yyyy/mm/dd hh:mm:ss)|
 |Amount|10|N|Amount of the movement|
 |Type|1|N|Internal ATIOnet movement type code|
 |TypeDescription|50|A/N|Movement type description|
