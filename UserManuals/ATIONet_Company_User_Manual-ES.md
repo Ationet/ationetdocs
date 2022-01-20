@@ -3,8 +3,8 @@
 |**Información del Documento**|.|
 |--- |--- |
 |**Archivo:**|ATIONET_Company_User_Manual-ES.md|
-|**Versión Doc:**|1.0|
-|**Fecha Liberación:**|14, Sep 2021|
+|**Versión Doc:**|2.0|
+|**Fecha Liberación:**|19, Ene 2022|
 |**Autor:**|ATIONET LLC|
 
 
@@ -122,7 +122,7 @@ El terminal (o controlador) es la representación del controlador del dispensado
 
 
 # Menú Navegación
-ATIONet tiene un menú de acceso rápido situado en la parte izquierda de la web. Desde este menú se puede acceder a diferentes opciones. El menú está dividido en: Tablero, Favoritos, Reportes, Administración, Flotas, Liquidación, Configuración y Bitácora de Auditoria.
+ATIONET tiene un menú de acceso rápido situado en la parte izquierda de la web. Desde este menú se puede acceder a diferentes opciones. El menú está dividido en: Tablero, Favoritos, Reportes, Administración, Flotas, Liquidación, Configuración y Bitácora de Auditoria.
 
 # Mis Preferencias
 Dentro de esta sección cada usuario puede personalizar sus preferencias del portal.
@@ -549,30 +549,30 @@ Tenga en cuenta que, en el momento de la preautorización, ATIONET congeló el i
 ## Contratos de Compañía
 En ATIONET el término compañía se refiere a la entidad que gestiona la flota. En esta sección podrá consultar todos los contratos de su compañía. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Contratos de Compañía](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Compa%C3%B1%C3%ADa.PNG)
+![Contratos de Compañía](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Compa%C3%B1%C3%ADa-Company.PNG)
 
 ## Cuentas Corrientes de Compañía
 La sección de Cuentas Corrientes de Compañía es la vista del saldo disponible de las subcuentas y/o contratos, y también la vista de todos los movimientos de las subcuentas y/o contratos.
 
 Para facilitar las consultas, hay un panel de filtros disponible. La primera opción del panel de filtros es el tipo de informe:
 
-![Cuentas Corrientes de la Compañía](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa.PNG)
+![Cuentas Corrientes de la Compañía](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa-Company.PNG)
 
 1. **Lista de Contratos:** Esta opción lista todos los contratos con sus respectivos saldos, pero no da detalles de los movimientos.
 
-![Cuentas Corrientes de Compañía - Lista de Contratos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Lista%20de%20Contratos.PNG)
+![Cuentas Corrientes de Compañía - Lista de Contratos](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Lista%20de%20Contratos-Company.PNG)
 
 2. **Movimientos de Contratos:** Esta opción muestra todos los movimientos de los contratos.
 
-![Cuentas Corrientes de Compañía - Movimientos de Contratos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Movimientos%20de%20Contratos.PNG)
+![Cuentas Corrientes de Compañía - Movimientos de Contratos](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Movimientos%20de%20Contratos-Company.PNG)
 
 3. **Lista de Subcuentas:** Esta opción lista todas las subcuentas con sus respectivos saldos, pero no da detalles de los movimientos.
 
-![Cuentas Corrientes de Compañía - Lista de Subcuentas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Lista%20de%20Subcuentas.PNG)
+![Cuentas Corrientes de Compañía - Lista de Subcuentas](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Lista%20de%20Subcuentas-Company.PNG)
 
 4. **Movimientos de Subcuentas:** Esta vista lista todos los movimientos de las subcuentas.  
 
-![Cuentas Corrientes de Compañía - Movimientos de Subcuentas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Movimientos%20de%20Subcuentas.PNG)
+![Cuentas Corrientes de Compañía - Movimientos de Subcuentas](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Compa%C3%B1%C3%ADa%20-%20Movimientos%20de%20Subcuentas-%20Company.PNG)
 
 <br>
 
@@ -823,3 +823,7 @@ En esta sección puede ver los conceptos aplicados para cada estado de cuenta.
 En esta sección puede ver una lista de todas las acciones realizadas por todos los usuarios. Hay un panel de filtros en la parte superior para facilitar las consultas.
 
 ![Bitácora de Auditoría](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Bitacora/Bitacora%20de%20Auditoria.PNG)
+
+<br>
+
+[Inicio](#contenido)  :arrow_up:

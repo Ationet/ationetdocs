@@ -63,7 +63,7 @@ Inside this section you can customize your Network (change the logo, add custom 
 
 1. **Logo**
 
-![Logo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Configuration/Network%20-%20Logo.PNG)
+![Logo](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Configuration/Network%20-%20Logo.PNG)
 
 2. **Emails**
 
@@ -131,3 +131,7 @@ In this section you can view a list of all actions made by all users. There is a
 In this section you can view a list of all processes executed.
 
 ![Process History](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Process%20History.PNG)
+
+<br>
+
+[Back to top](#contents)  :arrow_up:
