@@ -193,7 +193,40 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |--- |--- |--- |--- |
 |GetLogs|List&lt;Guid>  userIds <BR> List&lt;int>  categories <BR> string dateFrom <BR> string dateTo = null <BR> Guid? idCompany = null<BR> int page = 1 <BR>int pageSize = 50 <BR>int? action = null <BR>int? subCategory = null <BR>string timeFrom = null <BR>string timeTo = null|AuditLogDto|Get list of the AuditLogDto|
 |GetLogsAsync|List&lt;Guid>  userIds <BR>List&lt;int>  categories<BR> string dateFrom <BR>string dateTo = null <BR>Guid? idCompany = null <BR>int page = 1 <BR>int pageSize = 50 <BR>int? action = null <BR>int? subCategory = null <BR>string timeFrom = null <BR>string timeTo = null|AuditLogDto|Get list of the AuditLogDto|
+	
+#### BrandFuelMasterDto
+|Type|Name|Description|
+|--- |--- |--- |
+|Guid |Id||
+|Guid |FuelMasterId||
+|string |FuelMasterName||
+|string |Name||
 
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetBrandFuels|Guid brandId <BR> string searchText|BrandFuelMasterDto|Get Brand Fuels|
+|GetBrandFuelsAsync|Guid brandId <BR> string searchText|BrandFuelMasterDto|Get Brand Fuels|
+	
+#### BrandDto
+|Type|Name|Description|
+|--- |--- |--- |
+|Guid |Id||
+|Guid |NetworkId||
+|string |Name||
+|List BrandFuelMasterDto |BrandFuelMasters||
+|string |BrandFuelMastersNames||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetBrands|int page = 1 <BR>int pageSize = 50 <BR>string orderField = "name" <BR>string orderType = "asc"|BrandDto|Get list of the BrandDto|
+|GetBrandsAsync|int page = 1 <BR>int pageSize = 50 <BR>string orderField = "name" <BR>string orderType = "asc"|BrandDto|Get list of the BrandDto|
+|GetBrand|Guid id|BrandDto|Get individual BrandDto|
+|GetBrandAsync|Guid id|BrandDto|Get individual BrandDto|
+|CreateBrand|BrandDto data|BrandDto|Create BrandDto|
+|CreateBrandAsync|BrandDto data|BrandDto|Create BrandDto|
+|UpdateBrand|BrandDto data|string|Update BrandDto|
+|UpdateBrandAsync|BrandDto data|string|Update BrandDto|
+	
 #### CompanyDto
 |Type|Name|Description|
 |--- |--- |--- |
@@ -248,7 +281,6 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |CreateCompanyAsync|CompanyDto data|CompanyDto|Create CompanyDto|
 |UpdateCompany|Guid id <BR>CompanyDto data|string|Update CompanyDto|
 |UpdateCompanyAsync|Guid id <BR>CompanyDto data|string|Update CompanyDto|
-
 
 #### CompanyClassificationsConfigurationDto
 |Data|Description|
@@ -351,8 +383,6 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |DeleteCompaniesClassification4|Guid id|string|delete CompanyClassificationDto|
 |DeleteCompaniesClassification4Async|Guid id|string|delete CompanyClassificationDto|
 
-
-
 #### CompanyContractDto
 |Type|Name|Description|
 |--- |--- |--- |
@@ -421,7 +451,44 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |CreateContractAsync|CompanyContractDto data|CompanyContractDto|Create CompanyContractDto|
 |UpdateContract|CompanyContractDto data|CompanyContractDto|Update CompanyContractDto|
 |UpdateContractAsync|CompanyContractDto data|CompanyContractDto|Update CompanyContractDto|
+	
+#### CompanyContractsClassificationDto
+|Data|Description|
+|--- |--- |
+|Guid Id||
+|Guid IdNetwork||
+|string Code||
+|string Description||
 
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetCompanyContractsClassifications|int index int page = 1 int pageSize = 50 string orderType = "asc"|CompanyContractsClassificationDto|Get list of the CompanyContractsClassificationDto|
+|GetCompanyContractsClassificationsAsync|int index int page = 1 int pageSize = 50 string orderType = "asc"|CompanyContractsClassificationDto|Get list of the CompanyContractsClassificationDto|
+|CreateCompanyContractsClassification|CompanyContractsClassificationDto data|CompanyContractsClassificationDto|Get individual CompanyContractsClassificationDto|
+|CreateCompanyContractsClassificationAsync|CompanyContractsClassificationDto data|CompanyContractsClassificationDto|Get individual CompanyContractsClassificationDto|
+|UpdateCompanyContractsClassification|Guid id CompanyContractsClassificationDto data|CompanyContractsClassificationDto|Update CompanyContractsClassificationDto|
+|UpdateCompanyContractsClassificationAsync|Guid id CompanyContractsClassificationDto data|CompanyContractsClassificationDto|Update CompanyContractsClassificationDto|
+	
+#### CompanyContractsClassificationsConfigurationDto
+|Data|Description|
+|--- |--- |
+|Guid IdNetwork||
+|bool EnableClassification0||
+|string Classification0||
+|bool EnableClassification1||
+|string Classification1||
+|bool EnableClassification2||
+|string Classification2||
+|bool EnableClassification3||
+|string Classification3||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetCompanyContractsClassificationsConfiguration|Guid id|CompanyContractsClassificationsConfigurationDto|Get individual CompanyContractsClassificationsConfigurationDto|
+|GetCompanyContractsClassificationsConfigurationAsync|Guid id|CompanyContractsClassificationsConfigurationDto|Get individual CompanyContractsClassificationsConfigurationDto|
+|UpdateCompanyContractsClassificationsConfiguration|Guid id CompanyContractsClassificationsConfigurationDto data|string|Update CompanyContractsClassificationsConfigurationDto|
+|UpdateCompanyContractsClassificationsConfigurationAsync|Guid id CompanyContractsClassificationsConfigurationDto data|string|Update CompanyContractsClassificationsConfigurationDto|
+	
 #### CompanyContractOverLimitDto
 |Data|Description|
 |--- |--- |
@@ -476,6 +543,55 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |CreateInvoiceAsync|CompanyInvoiceDto data|CompanyInvoiceDto|Create CompanyInvoiceDto|
 |UpdateInvoice|CompanyInvoiceDto data|string|Update CompanyInvoiceDto|
 |UpdateInvoiceAsync|CompanyInvoiceDto data|string|Update CompanyInvoiceDto|
+	
+#### ConsumerCardClientDto
+|Data|Description|
+|--- |--- |
+| string Street1 ||
+| string Street2 ||
+| string PhoneNumber1 ||
+| string PhoneNumber2 ||
+| short Type ||
+| Guid TypeModelId ||
+| string TypeModelDescription ||
+| string ZipCode ||
+| Guid NetworkId ||
+| string PIN ||
+| bool RequiresPINChange ||
+| bool RequiresPIN ||
+| bool IdentificationActive ||
+| string IdentificationExpirationDate ||
+| string TrackNumber ||
+| string CompleteName { get; }
+| string PAN ||
+| string TypeDescription { get; }
+| string City ||
+| Guid? StateId ||
+| Guid Id ||
+| decimal? Balance ||
+| byte IdentificationState ||
+| string IdentificationDescription ||
+| Guid ConsumerCardProgramId ||
+| Guid ConsumerCardIdentificationId ||
+| Guid ConsumerCardSubAccountId ||
+| string StateDescription ||
+| string ConsumerCardProgramName ||
+| string UserAtionetEmail ||
+| string LastName ||
+| string FirstName ||
+| string Birthdate ||
+| DateTime CreationDate ||
+| Guid? CountryId ||
+| string CountryDescription ||
+| string Email ||
+| string NetworkLogo ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetConsumerCardClients|Guid? programId = null string pan = null string name = null int page = 1 int pageSize = 50 string orderField = "label" string orderType = "asc"|ConsumerCardClientDto|Get list of the ConsumerCardClientDto|
+|GetConsumerCardClientsAsync|Guid? programId = null string pan = null string name = null int page = 1 int pageSize = 50 string orderField = "label" string orderType = "asc"|ConsumerCardClientDto|Get list of the ConsumerCardClientDto|
+|GetConsumerCardClient|Guid id|ConsumerCardClientDto|Get individual ConsumerCardClientDto|
+|GetConsumerCardClientAsync|Guid id|ConsumerCardClientDto|Get individual ConsumerCardClientDto|
 
 #### CurrentAccountReportDto
 |Data|Description|
