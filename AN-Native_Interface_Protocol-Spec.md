@@ -20,7 +20,7 @@
 |1.5|29/03/2021|**API Interface Messages** <br> - Updated lists of Action Codes|
 |1.5|13/07/2021|**Inventory Interface Messages** <br> - Updated lists of Action Codes|
 |1.6|29/11/2021|**Inventory & Delivery Interface Update** <br> - Update Inventory Download Response <br> - Update Delivery Download Response <br>|
-|1.7|19/01/2022|**Document Update** <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages <br> - Update company movements download request parameters <br> - Add CompanyGroups movements download: Request/Response <br> - Add Merchant Charges Comissions Download: Request/Response|
+|1.7|19/01/2022|**Document Update** <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages <br> - Update company movements download request parameters <br> - Add CompanyGroups movements download: Request/Response <br> - Add Merchant Charges Comissions Download: Request/Response <br> - Add Sub-Account/Contract Balance Download: Request/Response|
 
 ## Contents
 
@@ -69,6 +69,8 @@
 	- [10.5 Company Movements Download (POST) – Body Section Format Response](#105-company-movements-download-post--body-section-format-response)
 	- [10.6 Company Group Movements Download (POST) – Body Section Format Request](#106-company-group-movements-download-post--body-section-format-request)
 	- [10.7 Company Group Movements Download (POST) – Body Section Format Response](#107-company-group-movements-download-post--body-section-format-response)
+	- [10.8 Sub-Account/Contract Balance Download (POST) – Body Section Format Request](#108-sub-account/contract-balance-download-post--body-section-format-request)
+	- [10.9 Sub-Account/Contract Balance Download (POST) – Body Section Format Response](#109-sub-cccount/contract-balance-download-post--body-section-format-response)
 
 - [11 Inventory and deliveries Downloads](#11-Inventory-and-deliveries-Downloads)
 	- [11.1 Action Codes](#111-Action-Codes)
@@ -6782,7 +6784,7 @@ transactions to download.
 |Origin|1|N|Internal ATIOnet code for the origin of the movement|
 |OriginDescription|50|A/N|Description for the origin of the movement|
 
-### 10.8 Balance Download (POST) – Body Section Format *Request*
+### 10.8 Sub-Account/Contract Balance Download (POST) – Body Section Format *Request*
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
 |SubscriberCode|3|A/N|Required|Fixed. To be assigned by ATIONet|
@@ -6795,7 +6797,7 @@ transactions to download.
 |Identifier|50|A/N|Relative to any other code|Public ID of the identification device (chipkey ID, account number on a mag card, RFID serial number, etc) <br> See identification section|
 |SubAccountId|36|A/N|Relative to any other code|SubAccount UID|
 
-### 10.9 Sub-Account Balance Download (POST) – Body Section Format *Response*
+### 10.9 Sub-Account/Contract Balance Download (POST) – Body Section Format *Response*
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |
 |SubscriberCode|3|A/N|Fixed. To be assigned by ATIONet|
