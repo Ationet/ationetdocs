@@ -20,7 +20,7 @@
 |1.5|29/03/2021|**API Interface Messages** <br> - Updated lists of Action Codes|
 |1.5|13/07/2021|**Inventory Interface Messages** <br> - Updated lists of Action Codes|
 |1.6|29/11/2021|**Inventory & Delivery Interface Update** <br> - Update Inventory Download Response <br> - Update Delivery Download Response <br>|
-|1.7|19/01/2022|**Document Update** <br> - Add CompanyGroups movements download: Request/Response <br> - Add Merchant Charges Comissions Download: Request/Response <br> - Add Sub-Account/Contract Balance Download: Request/Response <br> - Update Transaction Download Response <br> - Update company movements download request parameters <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages <br> - Update Transaction Currency Response Fields <br> - Add Transaction product format response <br> - Add Transaction Product Taxes Format Response <br> - Add Transaction Modifiers Format Response|
+|1.7|19/01/2022|**Document Update** <br> - Add CompanyGroups movements download: Request/Response <br> - Add Merchant Charges Comissions Download: Request/Response <br> - Add Sub-Account/Contract Balance Download: Request/Response <br> - Update Transaction Download Response <br> - Update company movements download request parameters <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages <br> - Update Transaction Currency Response Fields <br> - Add Transaction product format response <br> - Add Transaction Product Taxes Format Response <br> - Add Transaction Modifiers Format Response <br> - Add Transaction Movement ERP Format Response|
 
 ## Contents
 
@@ -52,6 +52,7 @@
 		- [7.3.2 Transaction Product Format Response](#732-transaction-product-format-response)
 			- [7.3.2.1 Transaction Product Taxes Format Response](#7321-transaction-product-taxes-format-response)
 		- [7.3.3 Transaction Modifiers Format Response](#733-transaction-modifiers-format-response)
+		- [7.3.4 Transaction Movement ERP Format Response](#734-transaction-movement-erp-format-response)
 
 - [8 FastTrack Interface](#8-fasttrack-interface)
 	- [8.1 Action Codes](#81-action-codes)
@@ -5640,6 +5641,224 @@ transactions to download.
 			</td>
 			<td>
 				<p align="left">Modifier description</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+#### 7.3.4 Transaction Movement ERP Format Response
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">ERPDate</p>
+			</td>
+			<td>
+				<p align="left">19<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">ERP Date "yyyy/MM/dd HH:mm:ss"</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ERPInvoicedDate</p>
+			</td>
+			<td>
+				<p align="left">19<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">ERP invoice Date "yyyy/MM/dd HH:mm:ss"</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">NetPrice</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Net price</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">NetAmount</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Net amount</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TaxAmount0</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Tax amount 0</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TaxAmount1</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Tax amount 1</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TaxAmount2</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Tax amount 2</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TaxAmount3</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Tax amount 3</p>
+		</td>
+		<tr valign="top">
+			<td>
+				<p align="left">TaxAmount4</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Tax amount 4</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TaxAmount5</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Tax amount 5</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">OrderTotalAmount</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Order total amount</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">InvoiceTotalAmount</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Invoice total amount</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ERPState</p>
+			</td>
+			<td>
+				<p align="left">1<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">The ERP State <br> 0 = DailyOrder <br> 1 = Billed <br> 2 = Settled <br> 3 = VoidedWithAffectation <br> 4 = VoidedWithoutAffectation</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ERPInvoiceNumber</p>
+			</td>
+			<td>
+				<p align="left">50<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">ERP Invoice number5</p>
 			</td>
 		</tr>
 	</tbody>
