@@ -3080,10 +3080,10 @@ transactions to download.
 				<p></p>
 			</td>
 			<td>
-				<p>M</p>
+				<p>L</p>
 			</td>
 			<td>
-				<p>Map of fees data</p>
+				<p>List of fees data</p>
 			</td>
 		</tr>
 		<tr valign="top">
