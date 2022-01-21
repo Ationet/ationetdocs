@@ -1606,13 +1606,13 @@ transactions to download.
 				<p>Mode</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Transaction mode <br> 0 = Standard <br> 1 = Offline <br> 2 = Contingecy</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1620,13 +1620,13 @@ transactions to download.
 				<p>Type</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Type of transaction <br> 0 = PreAuthorization <br> 1 = Completion <br> 2 = Sale <br> 3 = Refund <br> 4 = Disputed <br> 5 = Cancellation <br> 6 = Voided <br> 7 = BalanceInquiry</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1754,13 +1754,13 @@ transactions to download.
 				<p>MerchantContractCode</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>30</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>The merchant contract code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1783,13 +1783,13 @@ transactions to download.
 				<p>MerchantCustomField0</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Merchat custom field 0</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1797,13 +1797,13 @@ transactions to download.
 				<p>MerchantCustomField1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Merchat custom field 1</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1811,13 +1811,13 @@ transactions to download.
 				<p>MerchantCustomField2</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Merchat custom field 2</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1825,13 +1825,13 @@ transactions to download.
 				<p>MerchantCustomField3</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Merchat custom field 3</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1867,13 +1867,13 @@ transactions to download.
 				<p>SiteShortName</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site short name</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1896,13 +1896,13 @@ transactions to download.
 				<p>TerminalType</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Type of terminal</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1910,13 +1910,13 @@ transactions to download.
 				<p>TerminalId</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>36</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Termianl&rsquo; UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1924,13 +1924,13 @@ transactions to download.
 				<p>TerminalTypeId</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>36</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>TerminalType&rsquo; UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1952,13 +1952,13 @@ transactions to download.
 				<p>SecondarySubAccountId</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>36</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Secondary Sub-Account UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2010,13 +2010,13 @@ transactions to download.
 				<p>TransactionNetAmount</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Transaction net amount</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2024,13 +2024,13 @@ transactions to download.
 				<p>ProductUnitPriceRequested</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Rquested fuel price</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2138,13 +2138,13 @@ transactions to download.
 				<p>ProductUnitPriceAuthorized</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Authozized fuel price</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2167,13 +2167,13 @@ transactions to download.
 				<p>ProductUnitPriceDispensed</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Dispensed fuel price</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2181,13 +2181,13 @@ transactions to download.
 				<p>ProductNetAmountDispensed</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Net amount of fuel dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2195,13 +2195,13 @@ transactions to download.
 				<p>ProductUnitPriceCompany</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company fuel price</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2209,13 +2209,13 @@ transactions to download.
 				<p>ProductUnitPriceMerchant</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Merchant fuel price</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2223,13 +2223,13 @@ transactions to download.
 				<p>ProductAmountCompany</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company fuel amount</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2237,13 +2237,13 @@ transactions to download.
 				<p>ProductAmountMerchant</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Merchant fuel amount</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2251,13 +2251,13 @@ transactions to download.
 				<p>TransactionAmountCompany</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company transaction amount</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2265,13 +2265,13 @@ transactions to download.
 				<p>TransactionAmountMerchant</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Merchant transaction amount</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2466,13 +2466,13 @@ transactions to download.
 				<p>CompanyCustomField0</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company custom field 0</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2480,13 +2480,13 @@ transactions to download.
 				<p>CompanyCustomField1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company custom field 1</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2494,13 +2494,13 @@ transactions to download.
 				<p>CompanyCustomField2</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company custom field 2</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2508,13 +2508,13 @@ transactions to download.
 				<p>CompanyCustomField3</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company custom field 3</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2522,13 +2522,13 @@ transactions to download.
 				<p>CompaniesGroupCode</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>30</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company group code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2602,13 +2602,13 @@ transactions to download.
 				<p>CompanyContractClassificationValue1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company Contract classification 1</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2616,13 +2616,13 @@ transactions to download.
 				<p>CompanyContractClassificationValue2</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company Contract classification 2</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2630,13 +2630,13 @@ transactions to download.
 				<p>CompanyContractClassificationValue3</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company Contract classification 3</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2644,13 +2644,13 @@ transactions to download.
 				<p>CompanyContractClassificationValue4</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company Contract classification 4</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2658,13 +2658,13 @@ transactions to download.
 				<p>CompanyContractCustomField0</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract customizable field 0</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2672,13 +2672,13 @@ transactions to download.
 				<p>CompanyContractCustomField1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract customizable field 1</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2686,13 +2686,13 @@ transactions to download.
 				<p>CompanyContractCustomField2</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract customizable field 2</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2700,13 +2700,13 @@ transactions to download.
 				<p>CompanyContractCustomField3</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract customizable field 3</p>
 			</td>
 		</tr>
 		<tr valign="top">
