@@ -50,7 +50,7 @@
 	- [7.3 Transactions Download (POST) – Body Section Format Response](#73-transactions-download-post--body-section-format-response)
 		- [7.3.1 Transaction Currency Format Response](#731-transaction-currency-format-response)
 		- [7.3.2 Transaction Product Format Response](#732-transaction-product-format-response)
-			- [7.3.2.1 Transaction Product Taxes Format Response](#7321-transacion-product-taxes-format-response) 
+			- [7.3.2.1 Transaction Product Taxes Format Response](#7321-transaction-product-taxes-format-response) 
 
 - [8 FastTrack Interface](#8-fasttrack-interface)
 	- [8.1 Action Codes](#81-action-codes)
