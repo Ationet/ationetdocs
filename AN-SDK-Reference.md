@@ -1076,6 +1076,138 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |UpdateMerchant|Guid id MerchantDto data|string|Update MerchantDto|
 |UpdateMerchantAsync|Guid id MerchantDto data|string|Update MerchantDto|
 
+# Merchants Contracts
+
+#### **MerchantsContractsDto**
+|Data Type|Name|Description|
+|---|---|---|
+|Guid|Id|Unique identifier of the Merchant Contract|
+|Guid|MerchantId|Unique identifier of the Merchant related to this contract|
+|bool|Active||
+|string|MerchantUser|User responsible for the contract (will be granted the Merchant Admin role)|
+|string|Code||
+|string|Description||
+|Guid?|CurrencyId|Unique identifier of the Currency used by the contract (only for Money)|
+|DateTime|StartDate||
+|byte|Periodicity||
+|short|Duration||
+|ContractCurrentAccountModeEnum|CurrentAccountMode|Determines whether the contract is Money or Products|
+|bool|IsCodeAutomaticallyGenerated|Automatically generates a code for the contract if not provided|
+|Guid?|IdRackPricesList|Unique identifier for the Rack Price List to be used by the contract|
+|MerchantContractBillingDto|Billing||
+|List\<MerchantContractFuelDto>|Fuels||
+|List\<MerchantContractSiteDto>|Sites||
+|List\<MerchantContractProductDto>|Products||
+|IEnumerable\<MerchantContractModifierDto>|Modifiers||
+
+#### **MerchantContractBillingDto**
+|Data Type|Name|Description|
+|---|---|---|
+|bool|Active||
+|string|RecepientEmails|All emails that will recieve a copy of the statement generated in the billing process. Each email must be separated by a semi-colon ";"|
+|string|Name|Name to be shown as recipient in the statement|
+|string|City|Statement address|
+|string|Street1|Statement address|
+|string|Street2|Statement address|
+|string|ZipCode|Statement address|
+|Guid?|CountryId|Statement address|
+|Guid?|StateId|Statement address|
+|string|TaxPayerId||
+|BillingProcessTypeEnum|Type|Determines whether the billing process is only ATIONET or EdiFact|
+|bool|Manual||
+|BillingPeriodicityEnum?|PeriodicityMode||
+|short?|PeriodicityValue||
+|string|CutTime||
+|byte?|CutDay||
+|byte?|CutMonth||
+|short|DueDays||
+|bool|DeductChargesFromBalance|All extra charges from the statement generation will impact the contract current account|    
+|bool|SeparateChargesDocument|All extra charges will be processed in their own statement|    
+|EdifactContractFiscalConfigurationDto|EdifactConfiguration||
+
+#### **MerchantContractFuelDto**
+|Data Type|Name|Description|
+|---|---|---|
+|Guid|FuelMasterId|Unique identifier of the Fuel Master|
+
+#### **MerchantContractSiteDto**
+|Data Type|Name|Description|
+|---|---|---|
+|Guid|SiteId|Unique identifier of the Site|
+
+#### **MerchantContractProductDto**
+|Data Type|Name|Description|
+|---|---|---|
+|Guid|Id|Unique identifier of the relationship Product-Contract|
+|Guid|ProductId|Unique identifier of the Product|
+|decimal|Quantity||
+|byte|ApplicationType||
+|byte?|ApplicationTypeLimit||
+|decimal?|ApplicationMinLimit||
+|decimal?|ApplicationMaxLimit||
+|decimal?|Threshold||
+|decimal?|Ceiling||
+|bool|RollUp||
+|bool|Enabled||
+|Guid?|ZoneId|Unique identifier of the Zone|
+|Guid?|SiteClassification0Id|Unique identifier of the SiteClassification0|
+|Guid?|SiteClassification1Id|Unique identifier of the SiteClassification1|
+|Guid?|SiteClassification2Id|Unique identifier of the SiteClassification2|
+|Guid?|SiteClassification3Id|Unique identifier of the SiteClassification3|
+|List\<MerchantContractProductModifierDto>|Modifiers||
+|MerchantContractProductBillingDto|BillingData||
+
+#### **MerchantContractProductModifierDto**
+|Data Type|Name|Description|
+|---|---|---|
+|Guid|Id|Unique identifier of the Product modifier|
+|byte|Class||
+|byte|Type||
+|byte?|RangeType||
+|byte?|CeilingType||
+|decimal?|Ceiling||
+|bool|Included||
+|bool|Stepped||
+|List\<MerchantContractProductModifierDto.Step>|Steps||
+
+#### **MerchantContractProductModifierDto.Step**
+|Data Type|Name|Description|
+|---|---|---|
+|Guid|Id|Unique identifier of the Step|
+|decimal?|RangeFrom||
+|decimal?|RangeTo||
+|decimal|Value||
+
+#### **MerchantContractProductBillingDto**
+|Data Type|Name|Description|
+|---|---|---|
+|byte|Event||
+|byte?|PeriodicityMode||
+|short?|PeriodicityValue||
+|string|CutTime||
+|byte?|CutDay||
+|byte?|CutMonth||
+
+#### **MerchantContractModifierDto**
+|Data Type|Name|Description|
+|---|---|---|
+|Guid|Id|Unique identifier of the modifier|
+|bool|Delete|Marks the modifier for deletion|
+|Guid?|FuelMasterId|Unique identifier of the Fuel Master|
+|Guid?|SiteId|Unique identifier of the Site|
+|ModifierTypeEnum|Type||
+|ModifierClassEnum|Class||
+|decimal|Value||
+|string|Description||
+|DateTime|DateTimeFrom||
+|DateTime?|DateTimeTo||
+|IEnumerable\<MerchantContractModifierCompanyDto>|Companies||
+
+#### **MerchantContractModifierCompanyDto**
+|Data Type|Name|Description|
+|---|---|---|
+|Guid|CompanyId|Unique identifier of the Company|
+
 #### MovementDto
 |Data|Description|
 |--- |--- |
