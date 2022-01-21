@@ -20,7 +20,7 @@
 |1.5|29/03/2021|**API Interface Messages** <br> - Updated lists of Action Codes|
 |1.5|13/07/2021|**Inventory Interface Messages** <br> - Updated lists of Action Codes|
 |1.6|29/11/2021|**Inventory & Delivery Interface Update** <br> - Update Inventory Download Response <br> - Update Delivery Download Response <br>|
-|1.7|19/01/2022|**Document Update** <br> - Add CompanyGroups movements download: Request/Response <br> - Add Merchant Charges Comissions Download: Request/Response <br> - Add Sub-Account/Contract Balance Download: Request/Response <br> - Update Transaction Download Response <br> - Update company movements download request parameters <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages|
+|1.7|19/01/2022|**Document Update** <br> - Add CompanyGroups movements download: Request/Response <br> - Add Merchant Charges Comissions Download: Request/Response <br> - Add Sub-Account/Contract Balance Download: Request/Response <br> - Update Transaction Download Response <br> - Update company movements download request parameters <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages <br> - Update Transaction Currency Response Fields|
 
 ## Contents
 
@@ -48,6 +48,7 @@
 	- [7.1 Action Codes](#71-action-codes)
 	- [7.2 Transactions Download (POST) – Body Section Format Request](#72-transactions-download-post--body-section-format-request)
 	- [7.3 Transactions Download (POST) – Body Section Format Response](#73-transactions-download-post--body-section-format-response)
+		- [7.3.1 TransactionCurrency Response Fields](#731-transactioncurrency-response-fields)
 
 - [8 FastTrack Interface](#8-fasttrack-interface)
 	- [8.1 Action Codes](#81-action-codes)
@@ -4051,14 +4052,20 @@ transactions to download.
 	</tbody>
 </table>
 
-**TransactionCurrency Response fields**
+#### 7.3.1 TransactionCurrency Response Fields
 
 <table>
 	<thead>
 		<tr valign="top">
 			<th align="left">
 				Field Name
-			</th>			
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
 			<th align="left">
 				Descriptions/Field Value(s)
 			</th>
@@ -4070,12 +4077,24 @@ transactions to download.
 				<p align="left">IdCurrencySite</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">SiteCurrencyCode</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4086,12 +4105,24 @@ transactions to download.
 				<p align="left">SiteCurrencyFactor</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">SiteProductAmountDispensed</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4102,12 +4133,24 @@ transactions to download.
 				<p align="left">SiteProductAmountAuthorized</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">SiteProductAmountRequested</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4118,12 +4161,24 @@ transactions to download.
 				<p align="left">SiteProductAmountCompany</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">SiteProductAmountMerchant</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4134,12 +4189,24 @@ transactions to download.
 				<p align="left">SiteProductUnitPriceDispensed</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">SiteProductUnitPriceAuthorized</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4150,12 +4217,24 @@ transactions to download.
 				<p align="left">SiteProductUnitPriceRequested</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">SiteProductUnitPriceMerchant</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4166,12 +4245,24 @@ transactions to download.
 				<p align="left">SiteProductUnitPriceCompany</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">SiteTransactionAmountDispensed</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4182,12 +4273,24 @@ transactions to download.
 				<p align="left">SiteTransactionAmountAuthorized</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">SiteTransactionAmountRequested</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4198,12 +4301,24 @@ transactions to download.
 				<p align="left">SiteTransactionAmountCompany</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">SiteTransactionAmountMerchant</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4214,12 +4329,24 @@ transactions to download.
 				<p align="left">IdCurrencyConversion</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">ConversionCurrencyCode</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4230,12 +4357,24 @@ transactions to download.
 				<p align="left">ConversionProductAmountDispensed</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">ConversionProductAmountAuthorized</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4246,12 +4385,24 @@ transactions to download.
 				<p align="left">ConversionProductAmountRequested</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">ConversionProductAmountCompany</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4262,12 +4413,24 @@ transactions to download.
 				<p align="left">ConversionProductAmountMerchant</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">ConversionProductUnitPriceDispensed</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4278,12 +4441,24 @@ transactions to download.
 				<p align="left">ConversionProductUnitPriceAuthorized</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">ConversionProductUnitPriceRequested</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4294,12 +4469,24 @@ transactions to download.
 				<p align="left">ConversionProductUnitPriceMerchant</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">ConversionProductUnitPriceCompany</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4310,12 +4497,24 @@ transactions to download.
 				<p align="left">ConversionTransactionAmountDispensed</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">ConversionTransactionAmountAuthorized</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4326,12 +4525,24 @@ transactions to download.
 				<p align="left">ConversionTransactionAmountRequested</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">ConversionTransactionAmountCompany</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4342,12 +4553,24 @@ transactions to download.
 				<p align="left">ConversionTransactionAmountMerchant</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">IdCurrencyConciliation</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4358,12 +4581,24 @@ transactions to download.
 				<p align="left">ConciliationCurrencyCode</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">ConciliationCurrencyFactor</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4374,12 +4609,24 @@ transactions to download.
 				<p align="left">ConciliationProductAmountDispensed</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">ConciliationProductAmountAuthorized</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4390,12 +4637,24 @@ transactions to download.
 				<p align="left">ConciliationProductAmountRequested</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">ConciliationProductAmountMerchant</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4406,12 +4665,24 @@ transactions to download.
 				<p align="left">ConciliationProductAmountCompany</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">ConciliationProductUnitPriceDispensed</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4422,12 +4693,24 @@ transactions to download.
 				<p align="left">ConciliationProductUnitPriceAuthorized</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">ConciliationProductUnitPriceRequested</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4438,12 +4721,24 @@ transactions to download.
 				<p align="left">ConciliationProductUnitPriceMerchant</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">ConciliationProductUnitPriceCompany</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4454,12 +4749,24 @@ transactions to download.
 				<p align="left">ConciliationTransactionAmountDispensed</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">ConciliationTransactionAmountAuthorized</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4470,12 +4777,24 @@ transactions to download.
 				<p align="left">ConciliationTransactionAmountRequested</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">ConciliationTransactionAmountCompany</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4486,12 +4805,24 @@ transactions to download.
 				<p align="left">ConciliationTransactionAmountMerchant</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">IdCurrencyMerchant</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4502,12 +4833,24 @@ transactions to download.
 				<p align="left">MerchantCurrencyCode</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">MerchantCurrencyFactor</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4518,12 +4861,24 @@ transactions to download.
 				<p align="left">MerchantProductAmountDispensed</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">MerchantProductAmountAuthorized</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4534,12 +4889,24 @@ transactions to download.
 				<p align="left">MerchantProductAmountRequested</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">MerchantProductAmount</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4550,12 +4917,24 @@ transactions to download.
 				<p align="left">MerchantProductUnitPriceDispensed</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">MerchantProductUnitPriceAuthorized</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4566,12 +4945,24 @@ transactions to download.
 				<p align="left">MerchantProductUnitPriceRequested</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">MerchantProductUnitPrice</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4582,12 +4973,24 @@ transactions to download.
 				<p align="left">MerchantTransactionAmountDispensed</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">MerchantTransactionAmountAuthorized</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4598,12 +5001,24 @@ transactions to download.
 				<p align="left">MerchantTransactionAmountRequested</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">MerchantTransactionAmount</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4614,12 +5029,24 @@ transactions to download.
 				<p align="left">IdCurrencyCompany</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">CompanyCurrencyCode</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4630,12 +5057,24 @@ transactions to download.
 				<p align="left">CompanyCurrencyFactor</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">CompanyProductAmountDispensed</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4646,12 +5085,24 @@ transactions to download.
 				<p align="left">CompanyProductAmountAuthorized</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">CompanyProductAmountRequested</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4662,12 +5113,24 @@ transactions to download.
 				<p align="left">CompanyProductAmount</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">CompanyProductUnitPriceDispensed</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4678,12 +5141,24 @@ transactions to download.
 				<p align="left">CompanyProductUnitPriceAuthorized</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">CompanyProductUnitPriceRequested</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4694,12 +5169,24 @@ transactions to download.
 				<p align="left">CompanyProductUnitPrice</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">CompanyTransactionAmountDispensed</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
@@ -4710,6 +5197,12 @@ transactions to download.
 				<p align="left">CompanyTransactionAmountAuthorized</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
@@ -4718,12 +5211,24 @@ transactions to download.
 				<p align="left">CompanyTransactionAmountRequested</p>
 			</td>
 			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
 				<p align="left">FILL</p>
 			</td>
 		</tr>
 		<tr valign="top">
 			<td>
 				<p align="left">CompanyTransactionAmount</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left"><p>
 			</td>
 			<td>
 				<p align="left">FILL</p>
