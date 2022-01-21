@@ -2729,13 +2729,13 @@ transactions to download.
 				<p>PrimaryIdentificationTrack</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Primary track</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2743,13 +2743,13 @@ transactions to download.
 				<p>SecondaryIdentificationTrack</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Secondary track</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2757,13 +2757,13 @@ transactions to download.
 				<p>PrimaryIdentificationPAN</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Primary PAN</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2771,13 +2771,13 @@ transactions to download.
 				<p>SecondaryIdentificationPAN</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Secondary PAN</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2813,13 +2813,13 @@ transactions to download.
 				<p>PrimaryIdentificationModelDescription</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Primary identifier model</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2827,13 +2827,13 @@ transactions to download.
 				<p>SecondaryIdentificationModelDescription</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Secondary identifier model</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3087,13 +3087,13 @@ transactions to download.
 				<p>CompanyTaxpayerId</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>36</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company taxpayer UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3101,13 +3101,13 @@ transactions to download.
 				<p>ApplicationCode</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>30</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Application code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3115,13 +3115,13 @@ transactions to download.
 				<p>DisputeDate</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>19</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Duspte date time "yyyy/MM/dd HH:mm:ss"</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3129,13 +3129,13 @@ transactions to download.
 				<p>Reason</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Dispute reason</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3143,13 +3143,13 @@ transactions to download.
 				<p>State</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Dispute state</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3157,13 +3157,13 @@ transactions to download.
 				<p>DisputeCommentCompany</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company dispute comments</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3171,13 +3171,13 @@ transactions to download.
 				<p>ResolvedDate</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>19</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Dispute resolved date "yyyy/MM/dd HH:mm:ss"</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3185,13 +3185,13 @@ transactions to download.
 				<p>DisputeResolveNetworkComment</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Network dispute resolved comments</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3213,13 +3213,13 @@ transactions to download.
 				<p>SiteCountryId</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>36</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site country UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3227,13 +3227,13 @@ transactions to download.
 				<p>SiteCountry</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>The site country</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3241,13 +3241,13 @@ transactions to download.
 				<p>SiteAddress</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site address</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3255,13 +3255,13 @@ transactions to download.
 				<p>SiteStateId</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>36</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site state UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3269,13 +3269,13 @@ transactions to download.
 				<p>SiteState</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site state</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3283,13 +3283,13 @@ transactions to download.
 				<p>SiteCity</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site city</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3297,13 +3297,13 @@ transactions to download.
 				<p>SiteZipCode</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site zip code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3311,13 +3311,13 @@ transactions to download.
 				<p>SiteClassificationValue1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site classification value 1</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3325,13 +3325,13 @@ transactions to download.
 				<p>SiteClassificationValue2</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site classification value 2</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3339,13 +3339,13 @@ transactions to download.
 				<p>SiteClassificationValue3</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site classification value 3</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3353,13 +3353,13 @@ transactions to download.
 				<p>SiteClassificationValue4</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site classification value 4</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3367,13 +3367,13 @@ transactions to download.
 				<p>SiteCustomField0</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site custom field 0</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3381,13 +3381,13 @@ transactions to download.
 				<p>SiteCustomField1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site custom field 1</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3395,13 +3395,13 @@ transactions to download.
 				<p>SiteCustomField2</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site custom field 2</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3409,13 +3409,13 @@ transactions to download.
 				<p>SiteCustomField3</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site custom field 3</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3423,13 +3423,13 @@ transactions to download.
 				<p>DriverFirstName</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Driver first name</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3437,13 +3437,13 @@ transactions to download.
 				<p>DriverLastName</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Driver last name</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3451,13 +3451,13 @@ transactions to download.
 				<p>GPSVirtualOdometer</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>GPS virtual odometer</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3465,13 +3465,13 @@ transactions to download.
 				<p>GPSDistance</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>GPS distance</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3479,13 +3479,13 @@ transactions to download.
 				<p>GPSAddress</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>GPS address</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3493,13 +3493,13 @@ transactions to download.
 				<p>GPSComment</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>GPS comments</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3507,13 +3507,13 @@ transactions to download.
 				<p>DriverCustomField0</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Driver custom field 0</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3521,13 +3521,13 @@ transactions to download.
 				<p>DriverCustomField1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Driver custom field 1</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3535,13 +3535,13 @@ transactions to download.
 				<p>DriverCustomField2</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Driver custom field 2</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3549,13 +3549,13 @@ transactions to download.
 				<p>DriverCustomField3</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Driver custom field 3</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3563,13 +3563,13 @@ transactions to download.
 				<p>VehicleCustomField0</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Vehicle custom field 0</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3577,13 +3577,13 @@ transactions to download.
 				<p>VehicleCustomField1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Vehicle custom field 1</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3591,13 +3591,13 @@ transactions to download.
 				<p>VehicleCustomField2</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Vehicle custom field 2</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3605,13 +3605,13 @@ transactions to download.
 				<p>VehicleCustomField3</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Vehicle custom field 3</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3619,13 +3619,13 @@ transactions to download.
 				<p>IdProgram</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>36</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Program UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3633,13 +3633,13 @@ transactions to download.
 				<p>ProgramDescription</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Program description</p>
 			</td>
 		</tr>
 		<tr valign="top">
