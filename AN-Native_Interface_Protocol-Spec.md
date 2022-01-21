@@ -48,7 +48,7 @@
 	- [7.1 Action Codes](#71-action-codes)
 	- [7.2 Transactions Download (POST) – Body Section Format Request](#72-transactions-download-post--body-section-format-request)
 	- [7.3 Transactions Download (POST) – Body Section Format Response](#73-transactions-download-post--body-section-format-response)
-		- [7.3.1 TransactionCurrency Response Fields](#731-transactioncurrency-response-fields)
+		- [7.3.1 Transaction Currency Format Response](#731-transaction-currency-format-response-fields)
 
 - [8 FastTrack Interface](#8-fasttrack-interface)
 	- [8.1 Action Codes](#81-action-codes)
@@ -4052,7 +4052,7 @@ transactions to download.
 	</tbody>
 </table>
 
-#### 7.3.1 TransactionCurrency Response Fields
+#### 7.3.1 Transaction Currency Format Response
 
 <table>
 	<thead>
