@@ -20,7 +20,7 @@
 |1.5|29/03/2021|**API Interface Messages** <br> - Updated lists of Action Codes|
 |1.5|13/07/2021|**Inventory Interface Messages** <br> - Updated lists of Action Codes|
 |1.6|29/11/2021|**Inventory & Delivery Interface Update** <br> - Update Inventory Download Response <br> - Update Delivery Download Response <br>|
-|1.7|19/01/2022|**Document Update** <br> - Add CompanyGroups movements download: Request/Response <br> - Add Merchant Charges Comissions Download: Request/Response <br> - Add Sub-Account/Contract Balance Download: Request/Response <br> - Update Transaction Download Response <br> - Update company movements download request parameters <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages <br> - Update Transaction Currency Response Fields <br> - Add Transaction product format response <br> - Add Transaction Product Taxes Format Response|
+|1.7|19/01/2022|**Document Update** <br> - Add CompanyGroups movements download: Request/Response <br> - Add Merchant Charges Comissions Download: Request/Response <br> - Add Sub-Account/Contract Balance Download: Request/Response <br> - Update Transaction Download Response <br> - Update company movements download request parameters <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages <br> - Update Transaction Currency Response Fields <br> - Add Transaction product format response <br> - Add Transaction Product Taxes Format Response <br> - Add Transaction Modifiers Format Response|
 
 ## Contents
 
@@ -50,7 +50,8 @@
 	- [7.3 Transactions Download (POST) – Body Section Format Response](#73-transactions-download-post--body-section-format-response)
 		- [7.3.1 Transaction Currency Format Response](#731-transaction-currency-format-response)
 		- [7.3.2 Transaction Product Format Response](#732-transaction-product-format-response)
-			- [7.3.2.1 Transaction Product Taxes Format Response](#7321-transaction-product-taxes-format-response) 
+			- [7.3.2.1 Transaction Product Taxes Format Response](#7321-transaction-product-taxes-format-response)
+		- [7.3.3 Transaction Modifiers Format Response](#733-transaction-modifiers-format-response)
 
 - [8 FastTrack Interface](#8-fasttrack-interface)
 	- [8.1 Action Codes](#81-action-codes)
@@ -5518,6 +5519,127 @@ transactions to download.
 			</td>
 			<td>
 				<p align="left">Included <br> 0 = false <br> 1 = true</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+#### 7.3.3 Transaction Modifiers Format Response
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">ModifierClass</p>
+			</td>
+			<td>
+				<p align="left">1<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Modifier class <br> 0 = Discount <br> 1 = Recharge</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ModifierType</p>
+			</td>
+			<td>
+				<p align="left">1<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Modifier type <br> 0 = Percentual <br> 1 = FixedPerTransaction <br> 2 = FixedPerUnit</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ModifierValue</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Modifier value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ModifierAmount</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Modifier amount</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ModifierTotal</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Modifier total</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BaseValue</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Base value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Description</p>
+			</td>
+			<td>
+				<p align="left">50<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Modifier description</p>
 			</td>
 		</tr>
 	</tbody>
