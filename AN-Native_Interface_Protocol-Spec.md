@@ -5858,7 +5858,7 @@ transactions to download.
 				<p align="left">A/N<p>
 			</td>
 			<td>
-				<p align="left">ERP Invoice number5</p>
+				<p align="left">ERP Invoice number</p>
 			</td>
 		</tr>
 	</tbody>
