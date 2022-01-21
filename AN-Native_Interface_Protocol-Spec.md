@@ -69,8 +69,8 @@
 	- [10.5 Company Movements Download (POST) – Body Section Format Response](#105-company-movements-download-post--body-section-format-response)
 	- [10.6 Company Group Movements Download (POST) – Body Section Format Request](#106-company-group-movements-download-post--body-section-format-request)
 	- [10.7 Company Group Movements Download (POST) – Body Section Format Response](#107-company-group-movements-download-post--body-section-format-response)
-	- [10.8 Sub-Account/Contract Balance Download (POST) – Body Section Format Request](#108-sub-account/contract-balance-download-post--body-section-format-request)
-	- [10.9 Sub-Account/Contract Balance Download (POST) – Body Section Format Response](#109-sub-cccount/contract-balance-download-post--body-section-format-response)
+	- [10.8 Sub-Account/Contract Balance Download (POST) – Body Section Format Request](#108-sub-accountcontract-balance-download-post--body-section-format-request)
+	- [10.9 Sub-Account/Contract Balance Download (POST) – Body Section Format Response](#109-sub-accountcontract-balance-download-post--body-section-format-response)
 
 - [11 Inventory and deliveries Downloads](#11-Inventory-and-deliveries-Downloads)
 	- [11.1 Action Codes](#111-Action-Codes)
