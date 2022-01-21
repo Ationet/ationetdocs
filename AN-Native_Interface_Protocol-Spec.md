@@ -20,7 +20,7 @@
 |1.5|29/03/2021|**API Interface Messages** <br> - Updated lists of Action Codes|
 |1.5|13/07/2021|**Inventory Interface Messages** <br> - Updated lists of Action Codes|
 |1.6|29/11/2021|**Inventory & Delivery Interface Update** <br> - Update Inventory Download Response <br> - Update Delivery Download Response <br>|
-|1.7|19/01/2022|**Document Update** <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages <br> - Update company movements download request parameters <br> - Add CompanyGroups movements download: Request/Response <br> - Add Merchant Charges Comissions Download: Request/Response <br> - Add Sub-Account/Contract Balance Download: Request/Response|
+|1.7|19/01/2022|**Document Update** <br> - Add CompanyGroups movements download: Request/Response <br> - Add Merchant Charges Comissions Download: Request/Response <br> - Add Sub-Account/Contract Balance Download: Request/Response <br> - Update Transaction Download Response <br> - Update company movements download request parameters <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages|
 
 ## Contents
 
@@ -2903,7 +2903,7 @@ transactions to download.
 				<p>A/N</p>
 			</td>
 			<td>
-				<p><br>
+				<p>Vehicle clasiffication value 1<br>
 				</p>
 			</td>
 		</tr>
@@ -2918,7 +2918,7 @@ transactions to download.
 				<p>A/N</p>
 			</td>
 			<td>
-				<p><br>
+				<p>Vehicle clasiffication value 2<br>
 				</p>
 			</td>
 		</tr>
@@ -2933,7 +2933,7 @@ transactions to download.
 				<p>A/N</p>
 			</td>
 			<td>
-				<p><br>
+				<p>Vehicle clasiffication value 3<br>
 				</p>
 			</td>
 		</tr>
@@ -2948,7 +2948,7 @@ transactions to download.
 				<p>A/N</p>
 			</td>
 			<td>
-				<p><br>
+				<p>Vehicle clasiffication value 4<br>
 				</p>
 			</td>
 		</tr>
@@ -2977,7 +2977,7 @@ transactions to download.
 				<p>A/N</p>
 			</td>
 			<td>
-				<p><br>
+				<p>Driver classification value 1<br>
 				</p>
 			</td>
 		</tr>
@@ -2992,7 +2992,7 @@ transactions to download.
 				<p>A/N</p>
 			</td>
 			<td>
-				<p><br>
+				<p>Driver classification value 2<br>
 				</p>
 			</td>
 		</tr>
@@ -3007,7 +3007,7 @@ transactions to download.
 				<p>A/N</p>
 			</td>
 			<td>
-				<p><br>
+				<p>Driver classification value 3<br>
 				</p>
 			</td>
 		</tr>
@@ -3022,7 +3022,7 @@ transactions to download.
 				<p>A/N</p>
 			</td>
 			<td>
-				<p><br>
+				<p>Driver classification value 4<br>
 				</p>
 			</td>
 		</tr>
@@ -3031,13 +3031,13 @@ transactions to download.
 				<p>CustomerData</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p></p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>M</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Map of customer data</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3045,13 +3045,13 @@ transactions to download.
 				<p>FastTrackData</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p></p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>M</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Map of fas track data</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3059,13 +3059,13 @@ transactions to download.
 				<p>TaxesData</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p></p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>M</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Map of taxes data</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3073,13 +3073,13 @@ transactions to download.
 				<p>FeesData</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p></p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>M</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Map of fees data</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3647,13 +3647,13 @@ transactions to download.
 				<p>LatitudeStart</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Location Start: Latitude</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3661,13 +3661,13 @@ transactions to download.
 				<p>LongitudeStart</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Location Start: Longitude</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3675,13 +3675,13 @@ transactions to download.
 				<p>AltitudeStart</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Location Start: Altitude</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3689,13 +3689,13 @@ transactions to download.
 				<p>LatitudeEnd</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Location End: Latitude</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3703,13 +3703,13 @@ transactions to download.
 				<p>LongitudeEnd</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Location End: Longitude</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3717,13 +3717,13 @@ transactions to download.
 				<p>AltitudeEnd</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Location End: Altitude</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3731,13 +3731,13 @@ transactions to download.
 				<p>ContingencyReason</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Contingecy reason</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3745,13 +3745,13 @@ transactions to download.
 				<p>AuthorizationType</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Type of Authorization <br> 0 = Fleet (default) <br> 1 = Voucher <br> 2 = FastTrack</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3759,13 +3759,13 @@ transactions to download.
 				<p>AttendantCode</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>30</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Attendant code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3773,13 +3773,13 @@ transactions to download.
 				<p>PumpSide</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Pump side</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3787,13 +3787,13 @@ transactions to download.
 				<p>VehicleBrand</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Vehicle Brand</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3801,13 +3801,13 @@ transactions to download.
 				<p>VehicleModel</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Vehicle model</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3815,13 +3815,13 @@ transactions to download.
 				<p>Subsidized</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Subsidized <br> 0 = false <br> 1 = true</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3829,13 +3829,13 @@ transactions to download.
 				<p>SiteCountryCode</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>30</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site country code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3843,13 +3843,13 @@ transactions to download.
 				<p>CompanyContractCustomInterface0</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract custom interface 0</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3857,13 +3857,13 @@ transactions to download.
 				<p>CompanyContractCustomInterface1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract custom interface 1</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3871,13 +3871,13 @@ transactions to download.
 				<p>CompanyContractCustomInterface2</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract custom interface 2</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3885,13 +3885,13 @@ transactions to download.
 				<p>CompanyContractCustomInterface3</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract custom interface 3</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3899,13 +3899,13 @@ transactions to download.
 				<p>CompanyContractCustomInterface4</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract custom interface 4</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3913,13 +3913,13 @@ transactions to download.
 				<p>CompanyContractCustomOperation0</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract custom operation 0</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3927,13 +3927,13 @@ transactions to download.
 				<p>CompanyContractCustomOperation1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract custom operation 1</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3941,13 +3941,13 @@ transactions to download.
 				<p>CompanyContractCustomOperation2</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract custom operation 2</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3955,13 +3955,13 @@ transactions to download.
 				<p>CompanyContractCustomOperation3</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract custom operation 3</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3969,13 +3969,13 @@ transactions to download.
 				<p>CompanyContractCustomOperation4</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract custom operation 4</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3983,13 +3983,13 @@ transactions to download.
 				<p>ProductsData</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p></p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>List</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>List of products data</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3997,13 +3997,13 @@ transactions to download.
 				<p>ModifiersData</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p></p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>List</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>List of modifiers data</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4011,13 +4011,13 @@ transactions to download.
 				<p>ERPData</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p></p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>C</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Transaction movement ERP data</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4025,13 +4025,13 @@ transactions to download.
 				<p>FuelERPCode</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>30</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Fuel ERP code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4039,13 +4039,13 @@ transactions to download.
 				<p>TransactionCurrency</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p></p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>C</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Transaction currency data</p>
 			</td>
 		</tr>
 	</tbody>
