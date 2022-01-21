@@ -4077,13 +4077,13 @@ transactions to download.
 				<p align="left">IdCurrencySite</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">36<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">A/N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Currency site UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4091,13 +4091,13 @@ transactions to download.
 				<p align="left">SiteCurrencyCode</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">50<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">A/N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Site currency code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4105,13 +4105,13 @@ transactions to download.
 				<p align="left">SiteCurrencyFactor</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Site currency factor</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4119,13 +4119,13 @@ transactions to download.
 				<p align="left">SiteProductAmountDispensed</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Amout of product dispensed by the site</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4133,13 +4133,13 @@ transactions to download.
 				<p align="left">SiteProductAmountAuthorized</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Amount of product authorized by the site</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4147,13 +4147,13 @@ transactions to download.
 				<p align="left">SiteProductAmountRequested</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Amount of product requested by the site</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4161,13 +4161,13 @@ transactions to download.
 				<p align="left">SiteProductAmountCompany</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Site product amount company</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4175,13 +4175,13 @@ transactions to download.
 				<p align="left">SiteProductAmountMerchant</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Site product amount merchant</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4189,13 +4189,13 @@ transactions to download.
 				<p align="left">SiteProductUnitPriceDispensed</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Site product unit price dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4203,13 +4203,13 @@ transactions to download.
 				<p align="left">SiteProductUnitPriceAuthorized</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Site product unit price authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4217,13 +4217,13 @@ transactions to download.
 				<p align="left">SiteProductUnitPriceRequested</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Site product unit price requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4231,13 +4231,13 @@ transactions to download.
 				<p align="left">SiteProductUnitPriceMerchant</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Site product unit price merchant</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4245,13 +4245,13 @@ transactions to download.
 				<p align="left">SiteProductUnitPriceCompany</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Site product unit price company</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4259,13 +4259,13 @@ transactions to download.
 				<p align="left">SiteTransactionAmountDispensed</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Site transaction amount dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4273,13 +4273,13 @@ transactions to download.
 				<p align="left">SiteTransactionAmountAuthorized</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Site transaction amount authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4287,13 +4287,13 @@ transactions to download.
 				<p align="left">SiteTransactionAmountRequested</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Site transacion amount requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4301,13 +4301,13 @@ transactions to download.
 				<p align="left">SiteTransactionAmountCompany</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Site transaction amount company</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4315,13 +4315,13 @@ transactions to download.
 				<p align="left">SiteTransactionAmountMerchant</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Site transaction amount merchant</p>
 			</td>
 		</tr>
 		<tr valign="top">
