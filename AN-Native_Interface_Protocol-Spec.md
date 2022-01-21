@@ -4329,13 +4329,13 @@ transactions to download.
 				<p align="left">IdCurrencyConversion</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">36<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">A/N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Currency Conversion UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4343,13 +4343,13 @@ transactions to download.
 				<p align="left">ConversionCurrencyCode</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">30<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">A/N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Currency conversion code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4357,13 +4357,13 @@ transactions to download.
 				<p align="left">ConversionProductAmountDispensed</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conversion product amount dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4371,13 +4371,13 @@ transactions to download.
 				<p align="left">ConversionProductAmountAuthorized</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conversion product amount authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4385,13 +4385,13 @@ transactions to download.
 				<p align="left">ConversionProductAmountRequested</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conversion product amount requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4399,13 +4399,13 @@ transactions to download.
 				<p align="left">ConversionProductAmountCompany</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conversion product amount company</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4413,13 +4413,13 @@ transactions to download.
 				<p align="left">ConversionProductAmountMerchant</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conversion product amount merchant</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4427,13 +4427,13 @@ transactions to download.
 				<p align="left">ConversionProductUnitPriceDispensed</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conversion product unit price dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4441,13 +4441,13 @@ transactions to download.
 				<p align="left">ConversionProductUnitPriceAuthorized</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conversion product unit price authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4455,13 +4455,13 @@ transactions to download.
 				<p align="left">ConversionProductUnitPriceRequested</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conversion product unit price requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4469,13 +4469,13 @@ transactions to download.
 				<p align="left">ConversionProductUnitPriceMerchant</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conversion product unit price merchant</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4483,13 +4483,13 @@ transactions to download.
 				<p align="left">ConversionProductUnitPriceCompany</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conversion product unit price company</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4497,13 +4497,13 @@ transactions to download.
 				<p align="left">ConversionTransactionAmountDispensed</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conversion transaction amount dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4511,13 +4511,13 @@ transactions to download.
 				<p align="left">ConversionTransactionAmountAuthorized</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conversion transaction amount authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4525,13 +4525,13 @@ transactions to download.
 				<p align="left">ConversionTransactionAmountRequested</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conversion transaction amount requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4539,13 +4539,13 @@ transactions to download.
 				<p align="left">ConversionTransactionAmountCompany</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conversion transaction amount company</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4553,13 +4553,13 @@ transactions to download.
 				<p align="left">ConversionTransactionAmountMerchant</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conversion transaction amount merchant</p>
 			</td>
 		</tr>
 		<tr valign="top">
