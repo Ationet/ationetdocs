@@ -20,7 +20,7 @@
 |1.5|29/03/2021|**API Interface Messages** <br> - Updated lists of Action Codes|
 |1.5|13/07/2021|**Inventory Interface Messages** <br> - Updated lists of Action Codes|
 |1.6|29/11/2021|**Inventory & Delivery Interface Update** <br> - Update Inventory Download Response <br> - Update Delivery Download Response <br>|
-|1.7|19/01/2022|**Document Update** <br> - Add CompanyGroups movements download: Request/Response <br> - Add Merchant Charges Comissions Download: Request/Response <br> - Add Sub-Account/Contract Balance Download: Request/Response <br> - Update Transaction Download Response <br> - Update company movements download request parameters <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages <br> - Update Transaction Currency Response Fields|
+|1.7|19/01/2022|**Document Update** <br> - Add CompanyGroups movements download: Request/Response <br> - Add Merchant Charges Comissions Download: Request/Response <br> - Add Sub-Account/Contract Balance Download: Request/Response <br> - Update Transaction Download Response <br> - Update company movements download request parameters <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages <br> - Update Transaction Currency Response Fields <br> - Add Transaction product format response|
 
 ## Contents
 
@@ -49,6 +49,7 @@
 	- [7.2 Transactions Download (POST) – Body Section Format Request](#72-transactions-download-post--body-section-format-request)
 	- [7.3 Transactions Download (POST) – Body Section Format Response](#73-transactions-download-post--body-section-format-response)
 		- [7.3.1 Transaction Currency Format Response](#731-transaction-currency-format-response)
+		- [7.3.2 Transaction Product Format Response](#732-transaction-product-format-response)
 
 - [8 FastTrack Interface](#8-fasttrack-interface)
 	- [8.1 Action Codes](#81-action-codes)
@@ -5236,6 +5237,170 @@ transactions to download.
 		</tr>
 	</tbody>
 </table>
+
+#### 7.3.2 Transaction Product Format Response
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">Product Code</p>
+			</td>
+			<td>
+				<p align="left">30<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">The fuel code. It is associated with the site</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Product unit price</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Fuel unit price</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Product net price</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Fuel net price</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductNetAmount</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Fuel net amountX</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductAmount</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Fuel amount</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductQuantity</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Fuel quantity</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">UnitCode</p>
+			</td>
+			<td>
+				<p align="left">30<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Unit code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CategoryCode</p>
+			</td>
+			<td>
+				<p align="left">30<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Category code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Taxes</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left">L<p>
+			</td>
+			<td>
+				<p align="left">List of taxes applied</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductPosCode</p>
+			</td>
+			<td>
+				<p align="left">30<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Fuel post code</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
 
 ## 8 FastTrack Interface
 
