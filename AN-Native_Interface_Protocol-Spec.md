@@ -4567,13 +4567,13 @@ transactions to download.
 				<p align="left">IdCurrencyConciliation</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">36<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">A/N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Currency conciliation UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4581,13 +4581,13 @@ transactions to download.
 				<p align="left">ConciliationCurrencyCode</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">30<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">A/N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Currency Conciliation Code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4595,13 +4595,13 @@ transactions to download.
 				<p align="left">ConciliationCurrencyFactor</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conciliation currency factor</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4609,13 +4609,13 @@ transactions to download.
 				<p align="left">ConciliationProductAmountDispensed</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conciliation product amount dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4623,13 +4623,13 @@ transactions to download.
 				<p align="left">ConciliationProductAmountAuthorized</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conciliation product amount authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4637,13 +4637,13 @@ transactions to download.
 				<p align="left">ConciliationProductAmountRequested</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conciliation product amount requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4651,13 +4651,13 @@ transactions to download.
 				<p align="left">ConciliationProductAmountMerchant</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conciliation product amount merchant</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4665,13 +4665,13 @@ transactions to download.
 				<p align="left">ConciliationProductAmountCompany</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conciliation product amount company</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4679,13 +4679,13 @@ transactions to download.
 				<p align="left">ConciliationProductUnitPriceDispensed</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conciliation product unit price dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4693,13 +4693,13 @@ transactions to download.
 				<p align="left">ConciliationProductUnitPriceAuthorized</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conciliation product unit price authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4707,13 +4707,13 @@ transactions to download.
 				<p align="left">ConciliationProductUnitPriceRequested</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conciliation product unit price requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4721,13 +4721,13 @@ transactions to download.
 				<p align="left">ConciliationProductUnitPriceMerchant</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conciliation product unit price merchant</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4735,13 +4735,13 @@ transactions to download.
 				<p align="left">ConciliationProductUnitPriceCompany</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conciliation product unit price company</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4749,13 +4749,13 @@ transactions to download.
 				<p align="left">ConciliationTransactionAmountDispensed</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conciliation transaction amount dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4763,13 +4763,13 @@ transactions to download.
 				<p align="left">ConciliationTransactionAmountAuthorized</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conciliation transaction amount authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4777,13 +4777,13 @@ transactions to download.
 				<p align="left">ConciliationTransactionAmountRequested</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conciliation transaction amount requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4791,13 +4791,13 @@ transactions to download.
 				<p align="left">ConciliationTransactionAmountCompany</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conciliation transaction amount company</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4805,13 +4805,13 @@ transactions to download.
 				<p align="left">ConciliationTransactionAmountMerchant</p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">10<p>
 			</td>
 			<td>
-				<p align="left"><p>
+				<p align="left">N<p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">Conciliation transaction amount merchant</p>
 			</td>
 		</tr>
 		<tr valign="top">
