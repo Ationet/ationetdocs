@@ -20,6 +20,7 @@
 |1.5|29/03/2021|**API Interface Messages** <br> - Updated lists of Action Codes|
 |1.5|13/07/2021|**Inventory Interface Messages** <br> - Updated lists of Action Codes|
 |1.6|29/11/2021|**Inventory & Delivery Interface Update** <br> - Update Inventory Download Response <br> - Update Delivery Download Response <br>|
+|1.7|19/01/2022|**Document Update** <br> - Add CompanyGroups movements download: Request/Response <br> - Add Merchant Charges Comissions Download: Request/Response <br> - Add Sub-Account/Contract Balance Download: Request/Response <br> - Update Transaction Download Response <br> - Update company movements download request parameters <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages <br> - Update Transaction Currency Response Fields <br> - Add Transaction product format response <br> - Add Transaction Product Taxes Format Response <br> - Add Transaction Modifiers Format Response <br> - Add Transaction Movement ERP Format Response <br> - Add Transaction Fee Format Response|
 
 ## Contents
 
@@ -30,6 +31,7 @@
 	- [2.1 Interface API Messages](#21-interface-api-messages)
 		- [2.1.1 Current Account Messages](#211-current-account-messages)
 		- [2.1.2 Transaction Messages](#212-transaction-messages)
+		- [2.1.3 FMS Messages](#213-fms-messages)
 
 - [3 Data security](#3-data-security)
 
@@ -46,6 +48,12 @@
 	- [7.1 Action Codes](#71-action-codes)
 	- [7.2 Transactions Download (POST) – Body Section Format Request](#72-transactions-download-post--body-section-format-request)
 	- [7.3 Transactions Download (POST) – Body Section Format Response](#73-transactions-download-post--body-section-format-response)
+		- [7.3.1 Transaction Fee Format Response](#731-transaction-fee-format-response)
+		- [7.3.2 Transaction Currency Format Response](#732-transaction-currency-format-response)
+		- [7.3.3 Transaction Product Format Response](#733-transaction-product-format-response)
+			- [7.3.3.1 Transaction Product Taxes Format Response](#7331-transaction-product-taxes-format-response)
+		- [7.3.4 Transaction Modifiers Format Response](#734-transaction-modifiers-format-response)
+		- [7.3.5 Transaction Movement ERP Format Response](#735-transaction-movement-erp-format-response)
 
 - [8 FastTrack Interface](#8-fasttrack-interface)
 	- [8.1 Action Codes](#81-action-codes)
@@ -61,8 +69,14 @@
 
 - [10 Account Downloads](#10-account-downloads)
 	- [10.1 Action Codes](#101-action-codes)
-	- [10.2 Account Download (POST) – Body Section Format Request](#102-account-download-post--body-section-format-request)
-	- [10.3 Account Download (POST) – Body Section Format Response](#103-account-download-post--body-section-format-response)
+	- [10.2 Merchant Charges Comissions Download (POST) – Body Section Format Request](#102-merchant-charges-comissions-download-post--body-section-format-request)
+	- [10.3 Merchant Charges Comissions Download (POST) – Body Section Format Response](#103-merchant-charges-comissions-download-post--body-section-format-response)
+	- [10.4 Company Movements Download (POST) – Body Section Format Request](#104-company-movements-download-post--body-section-format-request)
+	- [10.5 Company Movements Download (POST) – Body Section Format Response](#105-company-movements-download-post--body-section-format-response)
+	- [10.6 Company Group Movements Download (POST) – Body Section Format Request](#106-company-group-movements-download-post--body-section-format-request)
+	- [10.7 Company Group Movements Download (POST) – Body Section Format Response](#107-company-group-movements-download-post--body-section-format-response)
+	- [10.8 Sub-Account/Contract Balance Download (POST) – Body Section Format Request](#108-sub-accountcontract-balance-download-post--body-section-format-request)
+	- [10.9 Sub-Account/Contract Balance Download (POST) – Body Section Format Response](#109-sub-accountcontract-balance-download-post--body-section-format-response)
 
 - [11 Inventory and deliveries Downloads](#11-Inventory-and-deliveries-Downloads)
 	- [11.1 Action Codes](#111-Action-Codes)
@@ -165,7 +179,7 @@ Availability of this message and the type of actions allowed depend on the subsc
 </thead>
 <tbody>
   <tr>
-    <td class="tg-rjo2" rowspan="12">Current Accounts</td>
+    <td class="tg-rjo2" rowspan="24">Current Accounts</td>
     <td class="tg-eygw">901</td>
     <td class="tg-eygw">Balance transfer to a sub-account</td>
   </tr>
@@ -194,12 +208,64 @@ Availability of this message and the type of actions allowed depend on the subsc
     <td class="tg-eygw">Balance withdrawal from contract</td>
   </tr>
   <tr>
+    <td class="tg-eygw">908</td>
+    <td class="tg-eygw">Balance credit transfer to contract</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">909</td>
+    <td class="tg-eygw">Balance credit withdraw from contract</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">911</td>
+    <td class="tg-eygw">Merchant balance transfer to contract</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">912</td>
+    <td class="tg-eygw">Merchant balance withdraw from contract</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">913</td>
+    <td class="tg-eygw">Balance transfer to companies group</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">914</td>
+    <td class="tg-eygw">Balance withdraw from companies group</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">915</td>
+    <td class="tg-eygw">Recharge to sub account</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">916</td>
+    <td class="tg-eygw">Quotation Insert</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">922</td>
+    <td class="tg-eygw">Merchant charges comissions download</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">925</td>
+    <td class="tg-eygw">Company Insert</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">926</td>
+    <td class="tg-eygw">Company contract credit limit update</td>
+  </tr>
+  <tr>
     <td class="tg-eygw">941</td>
     <td class="tg-eygw">Balance download of sub-account</td>
   </tr>
   <tr>
     <td class="tg-gvcd">942</td>
     <td class="tg-gvcd">Balance download of contract</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">945</td>
+    <td class="tg-eygw">Merchant contract balance download</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">946</td>
+    <td class="tg-eygw">Merchant movements download</td>
   </tr>
   <tr>
     <td class="tg-eygw">951</td>
@@ -224,7 +290,7 @@ Availability of this message and the type of actions allowed depend on the subsc
 </thead>
 <tbody>
   <tr>
-    <td class="tg-rjo2" rowspan="11">Transactions</td>
+    <td class="tg-rjo2" rowspan="17">Transactions</td>
     <td class="tg-eygw">931</td>
     <td class="tg-eygw">Transactions download</td>
   </tr>
@@ -261,12 +327,59 @@ Availability of this message and the type of actions allowed depend on the subsc
     <td class="tg-eygw">GiftCard exceptions download</td>
   </tr>
   <tr>
+    <td class="tg-eygw">940</td>
+    <td class="tg-eygw">ERP Transaction insert</td>
+  </tr>
+  <tr>
     <td class="tg-gvcd">943</td>
     <td class="tg-gvcd">ConsumerCard transactions download</td>
   </tr>
   <tr>
     <td class="tg-eygw">944</td>
     <td class="tg-eygw">ConsumerCard exceptions download</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">949</td>
+    <td class="tg-eygw">Mobile payment fleet transactions download</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">961</td>
+    <td class="tg-eygw">Retail transactions download</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">962</td>
+    <td class="tg-eygw">Retail barch close download</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">993</td>
+    <td class="tg-eygw">Loyalty transactions download</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">994</td>
+    <td class="tg-eygw">Transaction invoice update</td>
+  </tr>
+</tbody>
+</table>
+
+#### 2.1.3 FMS Messages
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-gvcd"><span style="font-weight:bold">Type</span></th>
+    <th class="tg-gvcd"><span style="font-weight:bold">Action Code</span></th>
+    <th class="tg-gvcd"><span style="font-weight:bold">Description</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-rjo2" rowspan="2">FMS</td>
+    <td class="tg-eygw">981</td>
+    <td class="tg-eygw">Deliveries download</td>
+  </tr>
+  <tr>
+    <td class="tg-gvcd">982</td>
+    <td class="tg-gvcd">Inventories download</td>
   </tr>
 </tbody>
 </table>
@@ -419,6 +532,62 @@ subscription types but also on contract terms with ATIONet.
     <td class="tg-eygw">Withdraws a given value from a contract.</td>
   </tr>
   <tr>
+    <td class="tg-eygw">908</td>
+    <td class="tg-dqd0">Balance credit transfer to contract</td>
+    <td class="tg-eygw">Transfer a given value from credit balance to a contract</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">909</td>
+    <td class="tg-dqd0">Balance credit withdraw from contract</td>
+    <td class="tg-eygw">Withdraws a given value from credit balance to a contract</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">911</td>
+    <td class="tg-dqd0">Merchant balance transfer to contract</td>
+    <td class="tg-eygw">Transfer a given value from merchant balance to a contract</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">912</td>
+    <td class="tg-dqd0">Merchant balance withdraw to contract</td>
+    <td class="tg-eygw">Withdraws a given value from merchant balance to a contract</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">913</td>
+    <td class="tg-dqd0">Balance transfer to companies group</td>
+    <td class="tg-eygw">Transfer a given value to a company group</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">914</td>
+    <td class="tg-dqd0">Balance withdraw to companies group</td>
+    <td class="tg-eygw">Withdraws a given value to a company group</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">915</td>
+    <td class="tg-dqd0">Recharge to sub account</td>
+    <td class="tg-eygw">Recharge a given value to a sub account</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">916</td>
+    <td class="tg-dqd0">Quotation insert</td>
+    <td class="tg-eygw">Adds or update a quote to the network using the configured conversion currency.</td>
+  </tr>
+	
+  <tr>
+    <td class="tg-eygw">922</td>
+    <td class="tg-dqd0">Merchant charges comissions download</td>
+    <td class="tg-eygw">Downloads the merchant charges commissions</td>
+  </tr>	
+  <tr>
+    <td class="tg-eygw">925</td>
+    <td class="tg-dqd0">Company insert</td>
+    <td class="tg-eygw">Adds or update a company related to the user network</td>
+  </tr>	
+  <tr>
+    <td class="tg-eygw">926</td>
+    <td class="tg-dqd0">Company contract credit limit update</td>
+    <td class="tg-eygw">Update the credit limit related to the given company</td>
+  </tr>
+  <tr>
     <td class="tg-gvcd">941</td>
     <td class="tg-bthj">Balance download of sub-account</td>
     <td class="tg-gvcd">Downloads the balance of all sub-accounts related to the vehicle or driver of a determined contract.</td>
@@ -427,6 +596,16 @@ subscription types but also on contract terms with ATIONet.
     <td class="tg-eygw">942</td>
     <td class="tg-dqd0">Balance download of contract</td>
     <td class="tg-eygw">Downloads the balance of all contracts related to the network.</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">945</td>
+    <td class="tg-dqd0">Merchant contract balance download</td>
+    <td class="tg-eygw">Downloads the the balance of the given merchant contract</td>
+  </tr>	
+  <tr>
+    <td class="tg-eygw">946</td>
+    <td class="tg-dqd0">Merchant movements download</td>
+    <td class="tg-eygw">Downloads the movements of a determined merchant</td>
   </tr>
   <tr>
     <td class="tg-gvcd">951</td>
@@ -1433,13 +1612,13 @@ transactions to download.
 				<p>Mode</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Transaction mode <br> 0 = Standard <br> 1 = Offline <br> 2 = Contingecy</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1447,13 +1626,13 @@ transactions to download.
 				<p>Type</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Type of transaction <br> 0 = PreAuthorization <br> 1 = Completion <br> 2 = Sale <br> 3 = Refund <br> 4 = Disputed <br> 5 = Cancellation <br> 6 = Voided <br> 7 = BalanceInquiry</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1581,13 +1760,13 @@ transactions to download.
 				<p>MerchantContractCode</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>30</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>The merchant contract code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1610,13 +1789,13 @@ transactions to download.
 				<p>MerchantCustomField0</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Merchat custom field 0</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1624,13 +1803,13 @@ transactions to download.
 				<p>MerchantCustomField1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Merchat custom field 1</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1638,13 +1817,13 @@ transactions to download.
 				<p>MerchantCustomField2</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Merchat custom field 2</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1652,13 +1831,13 @@ transactions to download.
 				<p>MerchantCustomField3</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Merchat custom field 3</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1694,13 +1873,13 @@ transactions to download.
 				<p>SiteShortName</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site short name</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1723,13 +1902,13 @@ transactions to download.
 				<p>TerminalType</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Type of terminal</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1737,13 +1916,13 @@ transactions to download.
 				<p>TerminalId</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>36</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Termianl&rsquo; UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1751,13 +1930,13 @@ transactions to download.
 				<p>TerminalTypeId</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>36</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>TerminalType&rsquo; UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1779,13 +1958,13 @@ transactions to download.
 				<p>SecondarySubAccountId</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>36</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Secondary Sub-Account UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1837,13 +2016,13 @@ transactions to download.
 				<p>TransactionNetAmount</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Transaction net amount</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1851,13 +2030,13 @@ transactions to download.
 				<p>ProductUnitPriceRequested</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Rquested fuel price</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1965,13 +2144,13 @@ transactions to download.
 				<p>ProductUnitPriceAuthorized</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Authozized fuel price</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1994,13 +2173,13 @@ transactions to download.
 				<p>ProductUnitPriceDispensed</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Dispensed fuel price</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2008,13 +2187,13 @@ transactions to download.
 				<p>ProductNetAmountDispensed</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Net amount of fuel dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2022,13 +2201,13 @@ transactions to download.
 				<p>ProductUnitPriceCompany</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company fuel price</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2036,13 +2215,13 @@ transactions to download.
 				<p>ProductUnitPriceMerchant</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Merchant fuel price</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2050,13 +2229,13 @@ transactions to download.
 				<p>ProductAmountCompany</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company fuel amount</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2064,13 +2243,13 @@ transactions to download.
 				<p>ProductAmountMerchant</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Merchant fuel amount</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2078,13 +2257,13 @@ transactions to download.
 				<p>TransactionAmountCompany</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company transaction amount</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2092,13 +2271,13 @@ transactions to download.
 				<p>TransactionAmountMerchant</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Merchant transaction amount</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2293,13 +2472,13 @@ transactions to download.
 				<p>CompanyCustomField0</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company custom field 0</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2307,13 +2486,13 @@ transactions to download.
 				<p>CompanyCustomField1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company custom field 1</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2321,13 +2500,13 @@ transactions to download.
 				<p>CompanyCustomField2</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company custom field 2</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2335,13 +2514,13 @@ transactions to download.
 				<p>CompanyCustomField3</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company custom field 3</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2349,13 +2528,13 @@ transactions to download.
 				<p>CompaniesGroupCode</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>30</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company group code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2429,13 +2608,13 @@ transactions to download.
 				<p>CompanyContractClassificationValue1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company Contract classification 1</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2443,13 +2622,13 @@ transactions to download.
 				<p>CompanyContractClassificationValue2</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company Contract classification 2</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2457,13 +2636,13 @@ transactions to download.
 				<p>CompanyContractClassificationValue3</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company Contract classification 3</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2471,13 +2650,13 @@ transactions to download.
 				<p>CompanyContractClassificationValue4</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company Contract classification 4</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2485,13 +2664,13 @@ transactions to download.
 				<p>CompanyContractCustomField0</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract customizable field 0</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2499,13 +2678,13 @@ transactions to download.
 				<p>CompanyContractCustomField1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract customizable field 1</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2513,13 +2692,13 @@ transactions to download.
 				<p>CompanyContractCustomField2</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract customizable field 2</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2527,13 +2706,13 @@ transactions to download.
 				<p>CompanyContractCustomField3</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract customizable field 3</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2556,13 +2735,13 @@ transactions to download.
 				<p>PrimaryIdentificationTrack</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Primary track</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2570,13 +2749,13 @@ transactions to download.
 				<p>SecondaryIdentificationTrack</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Secondary track</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2584,13 +2763,13 @@ transactions to download.
 				<p>PrimaryIdentificationPAN</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Primary PAN</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2598,13 +2777,13 @@ transactions to download.
 				<p>SecondaryIdentificationPAN</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Secondary PAN</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2640,13 +2819,13 @@ transactions to download.
 				<p>PrimaryIdentificationModelDescription</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Primary identifier model</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2654,13 +2833,13 @@ transactions to download.
 				<p>SecondaryIdentificationModelDescription</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Secondary identifier model</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2730,7 +2909,7 @@ transactions to download.
 				<p>A/N</p>
 			</td>
 			<td>
-				<p><br>
+				<p>Vehicle clasiffication value 1<br>
 				</p>
 			</td>
 		</tr>
@@ -2745,7 +2924,7 @@ transactions to download.
 				<p>A/N</p>
 			</td>
 			<td>
-				<p><br>
+				<p>Vehicle clasiffication value 2<br>
 				</p>
 			</td>
 		</tr>
@@ -2760,7 +2939,7 @@ transactions to download.
 				<p>A/N</p>
 			</td>
 			<td>
-				<p><br>
+				<p>Vehicle clasiffication value 3<br>
 				</p>
 			</td>
 		</tr>
@@ -2775,7 +2954,7 @@ transactions to download.
 				<p>A/N</p>
 			</td>
 			<td>
-				<p><br>
+				<p>Vehicle clasiffication value 4<br>
 				</p>
 			</td>
 		</tr>
@@ -2804,7 +2983,7 @@ transactions to download.
 				<p>A/N</p>
 			</td>
 			<td>
-				<p><br>
+				<p>Driver classification value 1<br>
 				</p>
 			</td>
 		</tr>
@@ -2819,7 +2998,7 @@ transactions to download.
 				<p>A/N</p>
 			</td>
 			<td>
-				<p><br>
+				<p>Driver classification value 2<br>
 				</p>
 			</td>
 		</tr>
@@ -2834,7 +3013,7 @@ transactions to download.
 				<p>A/N</p>
 			</td>
 			<td>
-				<p><br>
+				<p>Driver classification value 3<br>
 				</p>
 			</td>
 		</tr>
@@ -2849,7 +3028,7 @@ transactions to download.
 				<p>A/N</p>
 			</td>
 			<td>
-				<p><br>
+				<p>Driver classification value 4<br>
 				</p>
 			</td>
 		</tr>
@@ -2858,13 +3037,13 @@ transactions to download.
 				<p>CustomerData</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p></p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>M</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Map of customer data</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2872,13 +3051,13 @@ transactions to download.
 				<p>FastTrackData</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p></p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>M</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Map of fas track data</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2886,13 +3065,13 @@ transactions to download.
 				<p>TaxesData</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p></p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>M</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Map of taxes data</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2900,13 +3079,13 @@ transactions to download.
 				<p>FeesData</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p></p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>L</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>List of fees data</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2914,13 +3093,13 @@ transactions to download.
 				<p>CompanyTaxpayerId</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>36</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company taxpayer UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2928,13 +3107,13 @@ transactions to download.
 				<p>ApplicationCode</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>30</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Application code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2942,13 +3121,13 @@ transactions to download.
 				<p>DisputeDate</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>19</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Duspte date time "yyyy/MM/dd HH:mm:ss"</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2956,13 +3135,13 @@ transactions to download.
 				<p>Reason</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Dispute reason</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2970,13 +3149,13 @@ transactions to download.
 				<p>State</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Dispute state</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2984,13 +3163,13 @@ transactions to download.
 				<p>DisputeCommentCompany</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company dispute comments</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2998,13 +3177,13 @@ transactions to download.
 				<p>ResolvedDate</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>19</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Dispute resolved date "yyyy/MM/dd HH:mm:ss"</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3012,13 +3191,13 @@ transactions to download.
 				<p>DisputeResolveNetworkComment</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Network dispute resolved comments</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3040,13 +3219,13 @@ transactions to download.
 				<p>SiteCountryId</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>36</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site country UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3054,13 +3233,13 @@ transactions to download.
 				<p>SiteCountry</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>The site country</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3068,13 +3247,13 @@ transactions to download.
 				<p>SiteAddress</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site address</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3082,13 +3261,13 @@ transactions to download.
 				<p>SiteStateId</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>36</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site state UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3096,13 +3275,13 @@ transactions to download.
 				<p>SiteState</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site state</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3110,13 +3289,13 @@ transactions to download.
 				<p>SiteCity</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site city</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3124,13 +3303,13 @@ transactions to download.
 				<p>SiteZipCode</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site zip code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3138,13 +3317,13 @@ transactions to download.
 				<p>SiteClassificationValue1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site classification value 1</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3152,13 +3331,13 @@ transactions to download.
 				<p>SiteClassificationValue2</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site classification value 2</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3166,13 +3345,13 @@ transactions to download.
 				<p>SiteClassificationValue3</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site classification value 3</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3180,13 +3359,13 @@ transactions to download.
 				<p>SiteClassificationValue4</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site classification value 4</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3194,13 +3373,13 @@ transactions to download.
 				<p>SiteCustomField0</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site custom field 0</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3208,13 +3387,13 @@ transactions to download.
 				<p>SiteCustomField1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site custom field 1</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3222,13 +3401,13 @@ transactions to download.
 				<p>SiteCustomField2</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site custom field 2</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3236,13 +3415,13 @@ transactions to download.
 				<p>SiteCustomField3</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site custom field 3</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3250,13 +3429,13 @@ transactions to download.
 				<p>DriverFirstName</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Driver first name</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3264,13 +3443,13 @@ transactions to download.
 				<p>DriverLastName</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Driver last name</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3278,13 +3457,13 @@ transactions to download.
 				<p>GPSVirtualOdometer</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>GPS virtual odometer</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3292,13 +3471,13 @@ transactions to download.
 				<p>GPSDistance</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>GPS distance</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3306,13 +3485,13 @@ transactions to download.
 				<p>GPSAddress</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>GPS address</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3320,13 +3499,13 @@ transactions to download.
 				<p>GPSComment</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>GPS comments</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3334,13 +3513,13 @@ transactions to download.
 				<p>DriverCustomField0</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Driver custom field 0</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3348,13 +3527,13 @@ transactions to download.
 				<p>DriverCustomField1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Driver custom field 1</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3362,13 +3541,13 @@ transactions to download.
 				<p>DriverCustomField2</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Driver custom field 2</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3376,13 +3555,13 @@ transactions to download.
 				<p>DriverCustomField3</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Driver custom field 3</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3390,13 +3569,13 @@ transactions to download.
 				<p>VehicleCustomField0</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Vehicle custom field 0</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3404,13 +3583,13 @@ transactions to download.
 				<p>VehicleCustomField1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Vehicle custom field 1</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3418,13 +3597,13 @@ transactions to download.
 				<p>VehicleCustomField2</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Vehicle custom field 2</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3432,13 +3611,13 @@ transactions to download.
 				<p>VehicleCustomField3</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Vehicle custom field 3</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3446,13 +3625,13 @@ transactions to download.
 				<p>IdProgram</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>36</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Program UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3460,13 +3639,13 @@ transactions to download.
 				<p>ProgramDescription</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Program description</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3474,13 +3653,13 @@ transactions to download.
 				<p>LatitudeStart</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Location Start: Latitude</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3488,13 +3667,13 @@ transactions to download.
 				<p>LongitudeStart</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Location Start: Longitude</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3502,13 +3681,13 @@ transactions to download.
 				<p>AltitudeStart</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Location Start: Altitude</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3516,13 +3695,13 @@ transactions to download.
 				<p>LatitudeEnd</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Location End: Latitude</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3530,13 +3709,13 @@ transactions to download.
 				<p>LongitudeEnd</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Location End: Longitude</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3544,13 +3723,13 @@ transactions to download.
 				<p>AltitudeEnd</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>10</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Location End: Altitude</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3558,13 +3737,13 @@ transactions to download.
 				<p>ContingencyReason</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Contingecy reason</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3572,13 +3751,13 @@ transactions to download.
 				<p>AuthorizationType</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Type of Authorization <br> 0 = Fleet (default) <br> 1 = Voucher <br> 2 = FastTrack</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3586,13 +3765,13 @@ transactions to download.
 				<p>AttendantCode</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>30</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Attendant code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3600,13 +3779,13 @@ transactions to download.
 				<p>PumpSide</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Pump side</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3614,13 +3793,13 @@ transactions to download.
 				<p>VehicleBrand</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Vehicle Brand</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3628,13 +3807,13 @@ transactions to download.
 				<p>VehicleModel</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Vehicle model</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3642,13 +3821,13 @@ transactions to download.
 				<p>Subsidized</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Subsidized <br> 0 = false <br> 1 = true</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3656,13 +3835,13 @@ transactions to download.
 				<p>SiteCountryCode</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>30</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Site country code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3670,13 +3849,13 @@ transactions to download.
 				<p>CompanyContractCustomInterface0</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract custom interface 0</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3684,13 +3863,13 @@ transactions to download.
 				<p>CompanyContractCustomInterface1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract custom interface 1</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3698,13 +3877,13 @@ transactions to download.
 				<p>CompanyContractCustomInterface2</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract custom interface 2</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3712,13 +3891,13 @@ transactions to download.
 				<p>CompanyContractCustomInterface3</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract custom interface 3</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3726,13 +3905,13 @@ transactions to download.
 				<p>CompanyContractCustomInterface4</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract custom interface 4</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3740,13 +3919,13 @@ transactions to download.
 				<p>CompanyContractCustomOperation0</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract custom operation 0</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3754,13 +3933,13 @@ transactions to download.
 				<p>CompanyContractCustomOperation1</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract custom operation 1</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3768,13 +3947,13 @@ transactions to download.
 				<p>CompanyContractCustomOperation2</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract custom operation 2</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3782,13 +3961,13 @@ transactions to download.
 				<p>CompanyContractCustomOperation3</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract custom operation 3</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3796,13 +3975,13 @@ transactions to download.
 				<p>CompanyContractCustomOperation4</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>50</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Company contract custom operation 4</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3810,13 +3989,13 @@ transactions to download.
 				<p>ProductsData</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p></p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>List</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>List of products data</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3824,13 +4003,13 @@ transactions to download.
 				<p>ModifiersData</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p></p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>List</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>List of modifiers data</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3838,13 +4017,13 @@ transactions to download.
 				<p>ERPData</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p></p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>C</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Transaction movement ERP data</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3852,13 +4031,13 @@ transactions to download.
 				<p>FuelERPCode</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>30</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>A/N</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Fuel ERP code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3866,26 +4045,97 @@ transactions to download.
 				<p>TransactionCurrency</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p></p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>C</p>
 			</td>
 			<td>
-				<p>FILL</p>
+				<p>Transaction currency data</p>
 			</td>
 		</tr>
 	</tbody>
 </table>
 
-**TransactionCurrency Response fields**
+#### 7.3.1 Transaction Fee Format Response
 
 <table>
 	<thead>
 		<tr valign="top">
 			<th align="left">
 				Field Name
-			</th>			
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">Name</p>
+			</td>
+			<td>
+				<p align="left">50<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Fee name</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Value</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Fee value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Id</p>
+			</td>
+			<td>
+				<p align="left">36<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Fee UID</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+#### 7.3.2 Transaction Currency Format Response
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
 			<th align="left">
 				Descriptions/Field Value(s)
 			</th>
@@ -3897,7 +4147,13 @@ transactions to download.
 				<p align="left">IdCurrencySite</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">36<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Currency site UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3905,7 +4161,13 @@ transactions to download.
 				<p align="left">SiteCurrencyCode</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">50<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Site currency code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3913,7 +4175,13 @@ transactions to download.
 				<p align="left">SiteCurrencyFactor</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Site currency factor</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3921,7 +4189,13 @@ transactions to download.
 				<p align="left">SiteProductAmountDispensed</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Amout of product dispensed by the site</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3929,7 +4203,13 @@ transactions to download.
 				<p align="left">SiteProductAmountAuthorized</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Amount of product authorized by the site</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3937,7 +4217,13 @@ transactions to download.
 				<p align="left">SiteProductAmountRequested</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Amount of product requested by the site</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3945,7 +4231,13 @@ transactions to download.
 				<p align="left">SiteProductAmountCompany</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Site product amount company</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3953,7 +4245,13 @@ transactions to download.
 				<p align="left">SiteProductAmountMerchant</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Site product amount merchant</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3961,7 +4259,13 @@ transactions to download.
 				<p align="left">SiteProductUnitPriceDispensed</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Site product unit price dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3969,7 +4273,13 @@ transactions to download.
 				<p align="left">SiteProductUnitPriceAuthorized</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Site product unit price authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3977,7 +4287,13 @@ transactions to download.
 				<p align="left">SiteProductUnitPriceRequested</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Site product unit price requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3985,7 +4301,13 @@ transactions to download.
 				<p align="left">SiteProductUnitPriceMerchant</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">Site product unit price merchant</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -3993,7 +4315,13 @@ transactions to download.
 				<p align="left">SiteProductUnitPriceCompany</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Site product unit price company</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4001,7 +4329,13 @@ transactions to download.
 				<p align="left">SiteTransactionAmountDispensed</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Site transaction amount dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4009,7 +4343,13 @@ transactions to download.
 				<p align="left">SiteTransactionAmountAuthorized</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Site transaction amount authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4017,7 +4357,13 @@ transactions to download.
 				<p align="left">SiteTransactionAmountRequested</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Site transacion amount requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4025,7 +4371,13 @@ transactions to download.
 				<p align="left">SiteTransactionAmountCompany</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Site transaction amount company</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4033,7 +4385,13 @@ transactions to download.
 				<p align="left">SiteTransactionAmountMerchant</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Site transaction amount merchant</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4041,7 +4399,13 @@ transactions to download.
 				<p align="left">IdCurrencyConversion</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">36<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Currency Conversion UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4049,7 +4413,13 @@ transactions to download.
 				<p align="left">ConversionCurrencyCode</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">30<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Currency conversion code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4057,7 +4427,13 @@ transactions to download.
 				<p align="left">ConversionProductAmountDispensed</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conversion product amount dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4065,7 +4441,13 @@ transactions to download.
 				<p align="left">ConversionProductAmountAuthorized</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conversion product amount authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4073,7 +4455,13 @@ transactions to download.
 				<p align="left">ConversionProductAmountRequested</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conversion product amount requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4081,7 +4469,13 @@ transactions to download.
 				<p align="left">ConversionProductAmountCompany</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conversion product amount company</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4089,7 +4483,13 @@ transactions to download.
 				<p align="left">ConversionProductAmountMerchant</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conversion product amount merchant</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4097,7 +4497,13 @@ transactions to download.
 				<p align="left">ConversionProductUnitPriceDispensed</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conversion product unit price dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4105,7 +4511,13 @@ transactions to download.
 				<p align="left">ConversionProductUnitPriceAuthorized</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conversion product unit price authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4113,7 +4525,13 @@ transactions to download.
 				<p align="left">ConversionProductUnitPriceRequested</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conversion product unit price requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4121,7 +4539,13 @@ transactions to download.
 				<p align="left">ConversionProductUnitPriceMerchant</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conversion product unit price merchant</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4129,7 +4553,13 @@ transactions to download.
 				<p align="left">ConversionProductUnitPriceCompany</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conversion product unit price company</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4137,7 +4567,13 @@ transactions to download.
 				<p align="left">ConversionTransactionAmountDispensed</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conversion transaction amount dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4145,7 +4581,13 @@ transactions to download.
 				<p align="left">ConversionTransactionAmountAuthorized</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conversion transaction amount authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4153,7 +4595,13 @@ transactions to download.
 				<p align="left">ConversionTransactionAmountRequested</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conversion transaction amount requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4161,7 +4609,13 @@ transactions to download.
 				<p align="left">ConversionTransactionAmountCompany</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conversion transaction amount company</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4169,7 +4623,13 @@ transactions to download.
 				<p align="left">ConversionTransactionAmountMerchant</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conversion transaction amount merchant</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4177,7 +4637,13 @@ transactions to download.
 				<p align="left">IdCurrencyConciliation</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">36<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Currency conciliation UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4185,7 +4651,13 @@ transactions to download.
 				<p align="left">ConciliationCurrencyCode</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">30<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Currency Conciliation Code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4193,7 +4665,13 @@ transactions to download.
 				<p align="left">ConciliationCurrencyFactor</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conciliation currency factor</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4201,7 +4679,13 @@ transactions to download.
 				<p align="left">ConciliationProductAmountDispensed</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conciliation product amount dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4209,7 +4693,13 @@ transactions to download.
 				<p align="left">ConciliationProductAmountAuthorized</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conciliation product amount authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4217,7 +4707,13 @@ transactions to download.
 				<p align="left">ConciliationProductAmountRequested</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conciliation product amount requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4225,7 +4721,13 @@ transactions to download.
 				<p align="left">ConciliationProductAmountMerchant</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conciliation product amount merchant</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4233,7 +4735,13 @@ transactions to download.
 				<p align="left">ConciliationProductAmountCompany</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conciliation product amount company</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4241,7 +4749,13 @@ transactions to download.
 				<p align="left">ConciliationProductUnitPriceDispensed</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conciliation product unit price dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4249,7 +4763,13 @@ transactions to download.
 				<p align="left">ConciliationProductUnitPriceAuthorized</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conciliation product unit price authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4257,7 +4777,13 @@ transactions to download.
 				<p align="left">ConciliationProductUnitPriceRequested</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conciliation product unit price requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4265,7 +4791,13 @@ transactions to download.
 				<p align="left">ConciliationProductUnitPriceMerchant</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conciliation product unit price merchant</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4273,7 +4805,13 @@ transactions to download.
 				<p align="left">ConciliationProductUnitPriceCompany</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conciliation product unit price company</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4281,7 +4819,13 @@ transactions to download.
 				<p align="left">ConciliationTransactionAmountDispensed</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conciliation transaction amount dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4289,7 +4833,13 @@ transactions to download.
 				<p align="left">ConciliationTransactionAmountAuthorized</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conciliation transaction amount authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4297,7 +4847,13 @@ transactions to download.
 				<p align="left">ConciliationTransactionAmountRequested</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conciliation transaction amount requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4305,7 +4861,13 @@ transactions to download.
 				<p align="left">ConciliationTransactionAmountCompany</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conciliation transaction amount company</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4313,7 +4875,13 @@ transactions to download.
 				<p align="left">ConciliationTransactionAmountMerchant</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Conciliation transaction amount merchant</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4321,7 +4889,13 @@ transactions to download.
 				<p align="left">IdCurrencyMerchant</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">36<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Currency Merchant UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4329,7 +4903,13 @@ transactions to download.
 				<p align="left">MerchantCurrencyCode</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">30<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Merchant currency code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4337,7 +4917,13 @@ transactions to download.
 				<p align="left">MerchantCurrencyFactor</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Merchant currency factor</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4345,7 +4931,13 @@ transactions to download.
 				<p align="left">MerchantProductAmountDispensed</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Merchant product amount dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4353,7 +4945,13 @@ transactions to download.
 				<p align="left">MerchantProductAmountAuthorized</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Merchant product amount authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4361,7 +4959,13 @@ transactions to download.
 				<p align="left">MerchantProductAmountRequested</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Merchant product amount requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4369,7 +4973,13 @@ transactions to download.
 				<p align="left">MerchantProductAmount</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Merchant product amount</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4377,7 +4987,13 @@ transactions to download.
 				<p align="left">MerchantProductUnitPriceDispensed</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Merchant product unit price dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4385,7 +5001,13 @@ transactions to download.
 				<p align="left">MerchantProductUnitPriceAuthorized</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Merchant product unit price authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4393,7 +5015,13 @@ transactions to download.
 				<p align="left">MerchantProductUnitPriceRequested</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Merchant product unit price requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4401,7 +5029,13 @@ transactions to download.
 				<p align="left">MerchantProductUnitPrice</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Merchant product unit price</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4409,7 +5043,13 @@ transactions to download.
 				<p align="left">MerchantTransactionAmountDispensed</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Merchant transacion amount dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4417,7 +5057,13 @@ transactions to download.
 				<p align="left">MerchantTransactionAmountAuthorized</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Merchant transacion amount authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4425,7 +5071,13 @@ transactions to download.
 				<p align="left">MerchantTransactionAmountRequested</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Merchant transacion amount requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4433,7 +5085,13 @@ transactions to download.
 				<p align="left">MerchantTransactionAmount</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Merchant transacion amount</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4441,7 +5099,13 @@ transactions to download.
 				<p align="left">IdCurrencyCompany</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">36<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Currency company UID</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4449,7 +5113,13 @@ transactions to download.
 				<p align="left">CompanyCurrencyCode</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">30<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Currency company code</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4457,7 +5127,13 @@ transactions to download.
 				<p align="left">CompanyCurrencyFactor</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Company currency factor</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4465,7 +5141,13 @@ transactions to download.
 				<p align="left">CompanyProductAmountDispensed</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Company product amount dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4473,7 +5155,13 @@ transactions to download.
 				<p align="left">CompanyProductAmountAuthorized</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Company product amount authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4481,7 +5169,13 @@ transactions to download.
 				<p align="left">CompanyProductAmountRequested</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Company product amount requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4489,7 +5183,13 @@ transactions to download.
 				<p align="left">CompanyProductAmount</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Company product amount</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4497,7 +5197,13 @@ transactions to download.
 				<p align="left">CompanyProductUnitPriceDispensed</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Company product unit price dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4505,7 +5211,13 @@ transactions to download.
 				<p align="left">CompanyProductUnitPriceAuthorized</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Company product unit price authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4513,7 +5225,13 @@ transactions to download.
 				<p align="left">CompanyProductUnitPriceRequested</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Company product unit price requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4521,7 +5239,13 @@ transactions to download.
 				<p align="left">CompanyProductUnitPrice</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Company product unit price</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4529,7 +5253,13 @@ transactions to download.
 				<p align="left">CompanyTransactionAmountDispensed</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Company transaction amount dispensed</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4537,7 +5267,13 @@ transactions to download.
 				<p align="left">CompanyTransactionAmountAuthorized</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Company transaction amount authorized</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4545,7 +5281,13 @@ transactions to download.
 				<p align="left">CompanyTransactionAmountRequested</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Company transaction amount requested</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -4553,7 +5295,636 @@ transactions to download.
 				<p align="left">CompanyTransactionAmount</p>
 			</td>
 			<td>
-				<p align="left">FILL</p>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Company transaction amount</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+#### 7.3.3 Transaction Product Format Response
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">Product Code</p>
+			</td>
+			<td>
+				<p align="left">30<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">The fuel code. It is associated with the site</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Product unit price</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Fuel unit price</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Product net price</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Fuel net price</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductNetAmount</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Fuel net amountX</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductAmount</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Fuel amount</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductQuantity</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Fuel quantity</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">UnitCode</p>
+			</td>
+			<td>
+				<p align="left">30<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Unit code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CategoryCode</p>
+			</td>
+			<td>
+				<p align="left">30<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Category code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Taxes</p>
+			</td>
+			<td>
+				<p align="left"><p>
+			</td>
+			<td>
+				<p align="left">L<p>
+			</td>
+			<td>
+				<p align="left">List of taxes applied</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductPosCode</p>
+			</td>
+			<td>
+				<p align="left">30<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Fuel post code</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+#### 7.3.3.1 Transaction Product Taxes Format Response
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">Code</p>
+			</td>
+			<td>
+				<p align="left">30<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Tax code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Description</p>
+			</td>
+			<td>
+				<p align="left">50<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Tax description</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Factor</p>
+			</td>
+			<td>
+				<p align="left">50<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Factor applied to the tax</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Amount</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Tax amount</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Value</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Tax value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">FactorValue</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Factor value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Included</p>
+			</td>
+			<td>
+				<p align="left">1<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Included <br> 0 = false <br> 1 = true</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+#### 7.3.4 Transaction Modifiers Format Response
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">ModifierClass</p>
+			</td>
+			<td>
+				<p align="left">1<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Modifier class <br> 0 = Discount <br> 1 = Recharge</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ModifierType</p>
+			</td>
+			<td>
+				<p align="left">1<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Modifier type <br> 0 = Percentual <br> 1 = FixedPerTransaction <br> 2 = FixedPerUnit</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ModifierValue</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Modifier value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ModifierAmount</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Modifier amount</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ModifierTotal</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Modifier total</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BaseValue</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">A<p>
+			</td>
+			<td>
+				<p align="left">Base value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Description</p>
+			</td>
+			<td>
+				<p align="left">50<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">Modifier description</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+#### 7.3.5 Transaction Movement ERP Format Response
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">ERPDate</p>
+			</td>
+			<td>
+				<p align="left">19<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">ERP Date "yyyy/MM/dd HH:mm:ss"</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ERPInvoicedDate</p>
+			</td>
+			<td>
+				<p align="left">19<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">ERP invoice Date "yyyy/MM/dd HH:mm:ss"</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">NetPrice</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Net price</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">NetAmount</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Net amount</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TaxAmount0</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Tax amount 0</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TaxAmount1</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Tax amount 1</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TaxAmount2</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Tax amount 2</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TaxAmount3</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Tax amount 3</p>
+		</td>
+		<tr valign="top">
+			<td>
+				<p align="left">TaxAmount4</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Tax amount 4</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TaxAmount5</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Tax amount 5</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">OrderTotalAmount</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Order total amount</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">InvoiceTotalAmount</p>
+			</td>
+			<td>
+				<p align="left">10<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Invoice total amount</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ERPState</p>
+			</td>
+			<td>
+				<p align="left">1<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">The ERP State <br> 0 = DailyOrder <br> 1 = Billed <br> 2 = Settled <br> 3 = VoidedWithAffectation <br> 4 = VoidedWithoutAffectation</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ERPInvoiceNumber</p>
+			</td>
+			<td>
+				<p align="left">50<p>
+			</td>
+			<td>
+				<p align="left">A/N<p>
+			</td>
+			<td>
+				<p align="left">ERP Invoice number</p>
 			</td>
 		</tr>
 	</tbody>
@@ -4887,7 +6258,8 @@ additional parameters are needed for the request to be fulfilled.
 				<p align="left">Sets whether FastTrack amount corresponds</p>
 				<p align="left">to fuel volume, and which one</p>
 			</td>
-		</tr><tr valign="top">
+		</tr>
+		<tr valign="top">
 			<td>
 				<p align="left">CurrencyCode</p>
 			</td>
@@ -4994,7 +6366,6 @@ additional parameters are needed for the request to be fulfilled.
 				<p align="left">&ldquo;yyyy/MM/dd hh:mm:ss&rdquo;</p>
 			</td>
 		</tr>
-		
 	</tbody>
 </table>
 
@@ -5365,8 +6736,6 @@ additional parameters are needed for the request to be fulfilled.
 				<p align="left">&ldquo;yyyy/MM/dd hh:mm:ss&rdquo;</p>
 			</td>
 		</tr>
-		
-		
 	</tbody>
 </table>
 
@@ -5754,9 +7123,6 @@ additional parameters are needed for the request to be fulfilled.
 				<p align="left">A/N</p>
 			</td>
 			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
 				<p align="left">Date since FastTrack is enabled</p>
 				<p align="left">&ldquo;yyyy/MM/dd hh:mm:ss&rdquo;</p>
 			</td>
@@ -5770,9 +7136,6 @@ additional parameters are needed for the request to be fulfilled.
 			</td>
 			<td>
 				<p align="left">A/N</p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
 			</td>
 			<td>
 				<p align="left">Date until FastTrack is disabled</p>
@@ -5790,9 +7153,6 @@ additional parameters are needed for the request to be fulfilled.
 				<p align="left">A/N</p>
 			</td>
 			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
 				<p align="left">Date when FastTrack was created (UTC)</p>
 				<p align="left">&ldquo;yyyy/MM/dd hh:mm:ss&rdquo;</p>
 			</td>
@@ -5806,9 +7166,6 @@ additional parameters are needed for the request to be fulfilled.
 			</td>
 			<td>
 				<p align="left">A/N</p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
 			</td>
 			<td>
 				<p align="left">Date when FastTrack was created (Network's timezone)</p>
@@ -5826,14 +7183,10 @@ additional parameters are needed for the request to be fulfilled.
 				<p align="left">A/N</p>
 			</td>
 			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
 				<p align="left">Additional parameters set by user</p>
 				<p align="left">&ldquo;yyyy/MM/dd hh:mm:ss&rdquo;</p>
 			</td>
 		</tr>
-		
 	</tbody>
 </table>
 
@@ -6366,6 +7719,79 @@ transactions to download.
 	</tr>
 	<tr valign="top">
 		<td rowspan="4">
+			<p>922</p>
+		</td>
+		<td>
+			<p>Title:</p>
+		</td>
+		<td>
+			<p>Merchant charges commissions download</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Function:</p>
+		</td>
+		<td>
+			<p>Download merchant charges comissions</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Allowed for:</p>
+		</td>
+		<td>
+			<p></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Identification:</p>
+		</td>
+		<td>
+			<p>Subscriber Code</p>
+			<p>Company Code (Optional, if included will act as a filter)</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td rowspan="4">
+			<p>941/942</p>
+		</td>
+		<td>
+			<p>Title:</p>
+		</td>
+		<td>
+			<p>Balance download of Sub-account (941) / Contract (942)</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Function:</p>
+		</td>
+		<td>
+			<p>Download balance for sub-account/contract</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Allowed for:</p>
+		</td>
+		<td>
+			<p>Subscribers and Fleet Companies</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Identification:</p>
+		</td>
+		<td>
+			<p>Subscriber Code</p>
+			<p>Company Code</p>
+			<p>Contract Code</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td rowspan="4">
 			<p>951</p>
 		</td>
 		<td>
@@ -6380,7 +7806,7 @@ transactions to download.
 			<p>Function:</p>
 		</td>
 		<td>
-			<p>Download complete current account movements records</p>
+			<p>Download complete current account movements records from a company</p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -6400,9 +7826,96 @@ transactions to download.
 			<p>Company Code (Optional, if included will act as a filter)</p>
 		</td>
 	</tr>
+	<tr valign="top">
+		<td rowspan="4">
+			<p>952</p>
+		</td>
+		<td>
+			<p>Title:</p>
+		</td>
+		<td>
+			<p>Company Group Movements Download</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Function:</p>
+		</td>
+		<td>
+			<p>Download complete current account movements records from a company group</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Allowed for:</p>
+		</td>
+		<td>
+			<p>NWInterfaceApi and CGInterfaceAPI </p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Identification:</p>
+		</td>
+		<td>
+			<p>Subscriber Code</p>
+			<p>Companies Group Id (Optional, if included will act as a filter)</p>
+		</td>
+	</tr>
 </table>
 
-### 10.2 Account Download (POST) – Body Section Format *Request*
+### 10.2 Merchant Charges Comissions Download (POST) – Body Section Format *Request*
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |--- |
+|SubscriberCode|3|A/N|Required|Fixed. To be assigned by ATIONet|
+|ActionCode|3|N|Required|See Action Codes section above|
+|CompanyCode|30|A/N|Conditional|See Action Codes section above|
+|State|1|N|Optional|The state of the charge <br> 0 = New <br> 1 = Cancelled by merchant <br> 2 = Confirmed by merchant <br> 3 = Rejected by network <br> 4 = Aproved by network|
+|DateType|1|N|Optional|The type of the date time of comission charge <br> 0 = Creation date <br> 1 = Aproved by network <br> 2 = Rejected by network <br> 3 = Invoice date|
+|DateFrom|19|A/N|Optional|From date to filter charges comissions "yyyy/MM/dd hh:mm:ss"|
+|DateTo|19|A/N|Optional|To date to filter charges comissions "yyyy/MM/dd hh:mm:ss"|
+|InvoiceNumber|50|A/N|Optional|Invoice number to filter charges comissions|
+
+### 10.3 Merchant Charges Comissions Download (POST) – Body Section Format *Response*
+|Field Name|Size|Type|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |
+|IdProcessBillingStatement|36|A/N|Process billing statement UID|
+|IdProcessBillingCharge|36|A/N|Process billing charge UID|
+|IdMerchant|36|A/N|Merchant UID|
+|MerchantCode|50|A/N|Code of the merchant|
+|MerchantName|50|A/N|Name of the merchant|
+|TypeCode|50|A/N|Invoice code|
+|TypeName|50|A/N|Invoice name|
+|TypeDescription|50|A/N|Invoice description|
+|InvoiceDate|19|A/N|Invoice date time "yyyy/mm/dd|
+|InvoiceNumber|50|A/N|Invoice number|
+|Description|50|A/N|The charge comission description|
+|ElectronicAuthorizationCode|50|A/N|Electronic authorization code|
+|ElectronicAuthorizationCodeExpirationDate|19|A/N|Electronic authorization code expiration date "yyyy/mm/dd"|
+|IdCurrency|36|A/N|Currency UID|
+|CurrencyCode|50|A/N|Currency of the amount fields|
+|MerchantCustomField0|50|A/N|Merchant custom field 0|
+|MerchantCustomField1|50|A/N|Merchant custom field 1|
+|MerchantCustomField2|50|A/N|Merchant custom field 2|
+|MerchantCustomField3|50|A/N|Merchant custom field 3|
+|ContractCode|20|A/N|Contract identification|
+|NetAmount|10|N|Charge amount|
+|TotalAmount|10|N|The total amount of the charge|
+|TaxExempt|1|N|Tax Exempt <br> 0 = false <br> 1 = true|
+|State|1|N|State of the charge <br> 0 = New <br> 1 = Cancelled by Merchant <br> 2 = Confirmed by merchant <br> 3 = Rejected by network <br> 4 = Aproved by network|
+|Taxes||A/N|List of taxes applied to the charge|
+|CreationDate|19|A/N|Creation date "yyyy/mm/dd|
+|CreationRealDate|19|A/N|Creation real date "yyyy/mm/dd|
+|UpdateDate|19|A/N|Update date "yyyy/mm/dd|
+|AprovedDate|19|A/N|Aproved date "yyyy/mm/dd|
+|AprovedRealDate|19|A/N|Aproved real date "yyyy/mm/dd|
+|RejectDate|19|A/N|Reject date "yyyy/mm/dd|
+|RejectRealDate|19|A/N|Reject real date "yyyy/mm/dd|
+|NetworkTimeZone|19|A/N|TimeZone code of the network (abbreviation)|
+|FileId|36|A/N|File UID|
+|FileEntityId|1|N|File entity id|
+
+### 10.4 Company Movements Download (POST) – Body Section Format *Request*
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
 |SubscriberCode|3|A/N|Required|Fixed. To be assigned by ATIONet|
@@ -6410,8 +7923,10 @@ transactions to download.
 |CompanyCode|30|A/N|Conditional|See Action Codes section above|
 |DateFrom|19|A/N|Required|From date to filter movements "yyyy/MM/dd hh:mm:ss"|
 |DateTo|19|A/N|Optional|To date to filter movements "yyyy/MM/dd hh:mm:ss"|
+|Types||N|Optional|List of types to filter movements|
+|Origins||N|Optional|List of origin to filter movements|
 
-### 10.3 Account Download (POST) – Body Section Format *Response*
+### 10.5 Company Movements Download (POST) – Body Section Format *Response*
 |Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |
 |Id|36|A/N|Current account’s UID|
@@ -6437,6 +7952,66 @@ transactions to download.
 |CurrencyCode|50|A/N|Currency of the amount fields|
 |Amount|10|N|Amount balance for the sub-account. (xxxxxxx.xx)|
 
+### 10.6 Company Group Movements Download (POST) – Body Section Format *Request*
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |--- |
+|SubscriberCode|3|A/N|Required|Fixed. To be assigned by ATIONet|
+|ActionCode|3|N|Required|See Action Codes section above|
+|CompanyCode|30|A/N|Conditional|See Action Codes section above|
+|CompaniesGroupCode|30|A/N|Optional|Use to filter for company group|
+|DateFrom|19|A/N|Required|From date to filter movements "yyyy/MM/dd hh:mm:ss"|
+|DateTo|19|A/N|Optional|To date to filter movements "yyyy/MM/dd hh:mm:ss"|
+|AmountFrom|10|N|Optional|To filter movements from an amount|
+|AmountTo|10|N|Optional|To filter movements up to an amount|
+|Types|1|N|Optional|Types to filter movements|
+|Origins|1|N|Optional|Origin to filter movements|
+
+### 10.7 Company Group Movements Download (POST) – Body Section Format *Response*
+|Field Name|Size|Type|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |
+|MovementId|36|A/N|Movements’s UID|
+|CompaniesGroupId|36|A/N|Company group UID|
+|CompaniesGoupName|250|A/N|Company group name|
+|HostDateTime|19|A/N|ATIONet’s transaction date time "yyyy/mm/dd hh:mm:ss" (ATIONet Host date time is UCT)|
+|SubscriberDateTime|19|A/N|Movement date expressed in subscriber time zone (yyyy/mm/dd hh:mm:ss)|
+|Amount|10|N|Amount of the movement|
+|Type|1|N|Internal ATIOnet movement type code|
+|TypeDescription|50|A/N|Movement type description|
+|MovementDescription|50|A/N|Movement description|
+|IsDebit|1|N|Indicates that’s a debit or credit movement (1 = "True", 2= "False")|
+|Origin|1|N|Internal ATIOnet code for the origin of the movement|
+|OriginDescription|50|A/N|Description for the origin of the movement|
+
+### 10.8 Sub-Account/Contract Balance Download (POST) – Body Section Format *Request*
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |--- |
+|SubscriberCode|3|A/N|Required|Fixed. To be assigned by ATIONet|
+|ActionCode|3|N|Required|See Action Codes section above|
+|CompanyCode|50|A/N|Conditional|See Action Codes section above|
+|ContractCode|50|A/N|Relative to any other code|See identification section|
+|DriverCode|50|A/N|Relative to any other code|See identification section|
+|VehicleCode|50|A/N|Relative to any other code|See identification section|
+|VehiclePlate|50|A/N|Relative to any other code|See identification section|
+|Identifier|50|A/N|Relative to any other code|Public ID of the identification device (chipkey ID, account number on a mag card, RFID serial number, etc) <br> See identification section|
+|SubAccountId|36|A/N|Relative to any other code|SubAccount UID|
+
+### 10.9 Sub-Account/Contract Balance Download (POST) – Body Section Format *Response*
+|Field Name|Size|Type|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |
+|SubscriberCode|3|A/N|Fixed. To be assigned by ATIONet|
+|CompanyCode|50|A/N|See Action Codes section above|
+|CompanyName|50|A/N|Company name|
+|ContractCode|50|A/N|See identification section|
+|SubContractCode|50|A/N|See identification section|
+|SubAccountId|36|A/N|SubAccount UID|
+|DriverCode|50|A/N|See identification section|
+|VehicleCode|50|A/N|See identification section|
+|VehiclePlate|50|A/N|See identification section|
+|Identifier|50|A/N|Public ID of the identification device (chipkey ID, account number on a mag card, RFID serial number, etc) <br> See identification section|
+|FuelMasterCode|50|A/N|See identification section|
+|FuelMasterDescription|50|A/N|Fuel master description|
+|CurrencyCode|50|A/N|See identification section|
+|Amount|10|N|The balance of the sub-account|
 
 ## 11 Inventory and deliveries Downloads
 The Inventory and Delivery Download messages are POST actions to recover all the
