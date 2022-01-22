@@ -326,8 +326,8 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
 |GetCompaniesGroupsMovements||CompaniesGroupsMovementDto|Get list of the CompaniesGroupsMovementDto|
-|GetCompaniesGroupsMovements|Guid? companiesGroupId = null string companiesGroupCode = null string dateFrom = null string dateTo = null decimal? amountFrom = null decimal? amountTo = null byte? type = null byte? origin = null int page = 1 int pageSize = 50 string orderField = "networkDate" string orderType = "asc"|CompaniesGroupsMovementDto|Get list of the CompaniesGroupsMovementDto|
-|GetCompaniesGroupsMovementsAsync|Guid? companiesGroupId = null string companiesGroupCode = null string dateFrom = null string dateTo = null decimal? amountFrom = null decimal? amountTo = null byte? type = null byte? origin = null int page = 1 int pageSize = 50 string orderField = "networkDate" string orderType = "asc"|CompaniesGroupsMovementDto|Get list of the CompaniesGroupsMovementDto|
+|GetCompaniesGroupsMovements|Guid? companiesGroupId = null <BR>string companiesGroupCode = null <BR>string dateFrom = null <BR>string dateTo = null <BR>decimal? amountFrom = null <BR>decimal? amountTo = null <BR>byte? type = null <BR>byte? origin = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "networkDate" <BR>string orderType = "asc"|CompaniesGroupsMovementDto|Get list of the CompaniesGroupsMovementDto|
+|GetCompaniesGroupsMovementsAsync|Guid? companiesGroupId = null <BR>string companiesGroupCode = null <BR>string dateFrom = null <BR>string dateTo = null <BR>decimal? amountFrom = null <BR>decimal? amountTo = null <BR>byte? type = null <BR>byte? origin = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "networkDate" <BR>string orderType = "asc"|CompaniesGroupsMovementDto|Get list of the CompaniesGroupsMovementDto|
 |GetCompaniesGroupsMovementAsync|Guid id|CompaniesGroupsMovementDto|Get individual CompaniesGroupsMovementDto|
 |CreateCompaniesGroupsMovement|CompanyClassificationsConfigurationDto data|string|Create a CompaniesGroupsMovement|
 |CreateCompaniesGroupsMovementAsync|CompanyClassificationsConfigurationDto data|string|Create a CompaniesGroupsMovement|
@@ -342,14 +342,14 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetCompaniesClassifications1|int page = 1 int pageSize = 50 string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
-|GetCompaniesClassifications1Async|int page = 1 int pageSize = 50 string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
-|GetCompaniesClassifications2|int page = 1 int pageSize = 50 string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
-|GetCompaniesClassifications2Async|int page = 1 int pageSize = 50 string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
-|GetCompaniesClassifications3|int page = 1 int pageSize = 50 string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
-|GetCompaniesClassifications3Async|int page = 1 int pageSize = 50 string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
-|GetCompaniesClassifications4|int page = 1 int pageSize = 50 string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
-|GetCompaniesClassifications4Async|int page = 1 int pageSize = 50 string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
+|GetCompaniesClassifications1|string code = null <BR>string description = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
+|GetCompaniesClassifications1Async|string code = null <BR>string description = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
+|GetCompaniesClassifications2|string code = null <BR>string description = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
+|GetCompaniesClassifications2Async|string code = null <BR>string description = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
+|GetCompaniesClassifications3|string code = null <BR>string description = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
+|GetCompaniesClassifications3Async|string code = null <BR>string description = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
+|GetCompaniesClassifications4|string code = null <BR>string description = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
+|GetCompaniesClassifications4Async|string code = null <BR>string description = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderType = "asc"|CompanyClassificationDto|Get list of the CompanyClassificationDto|
 |GetCompanyClassifications1|Guid id|CompanyClassificationDto|Get individual CompanyClassificationDto|
 |GetCompanyClassifications1Async|Guid id|CompanyClassificationDto|Get individual CompanyClassificationDto|
 |GetCompanyClassifications2|Guid id|CompanyClassificationDto|Get individual CompanyClassificationDto|
@@ -443,8 +443,8 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetContracts|string companyCode = null List Guid contractIds = null string code = null int page = 1 int pageSize = 50 string orderField = "description" string orderType = "asc"|CompanyContractDto|Get list of the CompanyContractDto|
-|GetContractsAsync|string companyCode = null List Guid contractIds = null string code = null int page = 1 int pageSize = 50 string orderField = "description" string orderType = "asc"|CompanyContractDto|Get list of the CompanyContractDto|
+|GetContracts|string companyCode = null <BR>List Guid contractIds = null <BR>string code = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "description" <BR>string orderType = "asc"|CompanyContractDto|Get list of the CompanyContractDto|
+|GetContractsAsync|string companyCode = null <BR>List Guid contractIds = null <BR>string code = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "description" <BR>string orderType = "asc"|CompanyContractDto|Get list of the CompanyContractDto|
 |GetContract|Guid id|CompanyContractDto|Get individual CompanyContractDto|
 |GetContractAsync|Guid id|CompanyContractDto|Get individual CompanyContractDto|
 |CreateContract|CompanyContractDto data|CompanyContractDto|Create CompanyContractDto|
@@ -462,12 +462,12 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetCompanyContractsClassifications|int index int page = 1 int pageSize = 50 string orderType = "asc"|CompanyContractsClassificationDto|Get list of the CompanyContractsClassificationDto|
-|GetCompanyContractsClassificationsAsync|int index int page = 1 int pageSize = 50 string orderType = "asc"|CompanyContractsClassificationDto|Get list of the CompanyContractsClassificationDto|
+|GetCompanyContractsClassifications|int index <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderType = "asc"|CompanyContractsClassificationDto|Get list of the CompanyContractsClassificationDto|
+|GetCompanyContractsClassificationsAsync|int index <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderType = "asc"|CompanyContractsClassificationDto|Get list of the CompanyContractsClassificationDto|
 |CreateCompanyContractsClassification|CompanyContractsClassificationDto data|CompanyContractsClassificationDto|Get individual CompanyContractsClassificationDto|
 |CreateCompanyContractsClassificationAsync|CompanyContractsClassificationDto data|CompanyContractsClassificationDto|Get individual CompanyContractsClassificationDto|
-|UpdateCompanyContractsClassification|Guid id CompanyContractsClassificationDto data|CompanyContractsClassificationDto|Update CompanyContractsClassificationDto|
-|UpdateCompanyContractsClassificationAsync|Guid id CompanyContractsClassificationDto data|CompanyContractsClassificationDto|Update CompanyContractsClassificationDto|
+|UpdateCompanyContractsClassification|Guid id <BR>CompanyContractsClassificationDto data|CompanyContractsClassificationDto|Update CompanyContractsClassificationDto|
+|UpdateCompanyContractsClassificationAsync|Guid id <BR>CompanyContractsClassificationDto data|CompanyContractsClassificationDto|Update CompanyContractsClassificationDto|
 	
 #### CompanyContractsClassificationsConfigurationDto
 |Data|Description|
@@ -486,8 +486,8 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |--- |--- |--- |--- |
 |GetCompanyContractsClassificationsConfiguration|Guid id|CompanyContractsClassificationsConfigurationDto|Get individual CompanyContractsClassificationsConfigurationDto|
 |GetCompanyContractsClassificationsConfigurationAsync|Guid id|CompanyContractsClassificationsConfigurationDto|Get individual CompanyContractsClassificationsConfigurationDto|
-|UpdateCompanyContractsClassificationsConfiguration|Guid id CompanyContractsClassificationsConfigurationDto data|string|Update CompanyContractsClassificationsConfigurationDto|
-|UpdateCompanyContractsClassificationsConfigurationAsync|Guid id CompanyContractsClassificationsConfigurationDto data|string|Update CompanyContractsClassificationsConfigurationDto|
+|UpdateCompanyContractsClassificationsConfiguration|Guid id <BR>CompanyContractsClassificationsConfigurationDto data|string|Update CompanyContractsClassificationsConfigurationDto|
+|UpdateCompanyContractsClassificationsConfigurationAsync|Guid id <BR>CompanyContractsClassificationsConfigurationDto data|string|Update CompanyContractsClassificationsConfigurationDto|
 	
 #### CompanyContractOverLimitDto
 |Data|Description|
@@ -509,14 +509,14 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetCompanyContractOverLimits|Guid? idCompany = null Guid? idCompanyContract = null string dateFrom = null string dateTo = null string creationDate = null byte? filterType = null int page = 1 int pageSize = 50 string orderField = "idFuelMaster" string orderType = "asc"|CompanyContractOverLimitDto|Get list of the CompanyContractOverLimitDto|
-|GetCompanyContractOverLimitsAsync|Guid? idCompany = null Guid? idCompanyContract = null string dateFrom = null string dateTo = null string creationDate = null byte? filterType = null int page = 1 int pageSize = 50 string orderField = "idFuelMaster" string orderType = "asc"|CompanyContractOverLimitDto|Get list of the CompanyContractOverLimitDto|
+|GetCompanyContractOverLimits|Guid? idCompany = null <BR>Guid? idCompanyContract = null <BR>string dateFrom = null <BR>string dateTo = null <BR>string creationDate = null <BR>byte? filterType = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "idFuelMaster" <BR>string orderType = "asc"|CompanyContractOverLimitDto|Get list of the CompanyContractOverLimitDto|
+|GetCompanyContractOverLimitsAsync|Guid? idCompany = null <BR>Guid? idCompanyContract = null <BR>string dateFrom = null <BR>string dateTo = null <BR>string creationDate = null <BR>byte? filterType = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "idFuelMaster" <BR>string orderType = "asc"|CompanyContractOverLimitDto|Get list of the CompanyContractOverLimitDto|
 |GetCompanyContractOverLimit|Guid id|CompanyContractOverLimitDto|Get individual CompanyContractOverLimitDto|
 |GetCompanyContractOverLimitAsync|Guid id|CompanyContractOverLimitDto|Get individual CompanyContractOverLimitDto|
 |CreateCompanyContractOverLimit|CompanyContractOverLimitDto data|CompanyContractOverLimitDto|Create CompanyContractOverLimitDto|
 |CreateCompanyContractOverLimitAsync|CompanyContractOverLimitDto data|CompanyContractOverLimitDto|Create CompanyContractOverLimitDto|
-|UpdateCompanyContractOverLimit|Guid id CompanyContractOverLimitDto data|CompanyContractOverLimitDto|Update CompanyContractOverLimitDto|
-|UpdateCompanyContractOverLimitAsync|Guid id CompanyContractOverLimitDto data|CompanyContractOverLimitDto|Update CompanyContractOverLimitDto|
+|UpdateCompanyContractOverLimit|Guid id <BR>CompanyContractOverLimitDto data|CompanyContractOverLimitDto|Update CompanyContractOverLimitDto|
+|UpdateCompanyContractOverLimitAsync|Guid id <BR>CompanyContractOverLimitDto data|CompanyContractOverLimitDto|Update CompanyContractOverLimitDto|
 
 #### CompanyInvoiceDto
 |Data|Description|
@@ -535,8 +535,8 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetInvoices|string companyCode = null List Guid companyIds = null string invoiceNumber = null byte? invoiceType = null DateTime? dateFrom = null DateTime? dateTo = null int page = 1 int pageSize = 50 string orderField = "description" string orderType = "asc"|CompanyInvoiceDto|Get list of the CompanyInvoiceDto|
-|GetInvoicesAsync|string companyCode = null List Guid companyIds = null string invoiceNumber = null byte? invoiceType = null DateTime? dateFrom = null DateTime? dateTo = null int page = 1 int pageSize = 50 string orderField = "description" string orderType = "asc"|CompanyInvoiceDto|Get list of the CompanyInvoiceDto|
+|GetInvoices|string companyCode = null <BR>List Guid companyIds = null <BR>string invoiceNumber = null <BR>byte? invoiceType = null <BR>DateTime? dateFrom = null <BR>DateTime? dateTo = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "description" <BR>string orderType = "asc"|CompanyInvoiceDto|Get list of the CompanyInvoiceDto|
+|GetInvoicesAsync|string companyCode = null <BR>List Guid companyIds = null <BR>string invoiceNumber = null <BR>byte? invoiceType = null <BR>DateTime? dateFrom = null <BR>DateTime? dateTo = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "description" <BR>string orderType = "asc"|CompanyInvoiceDto|Get list of the CompanyInvoiceDto|
 |GetInvoice|Guid id|CompanyInvoiceDto|Get individual CompanyInvoiceDto|
 |GetInvoiceAsync|Guid id|CompanyInvoiceDto|Get individual CompanyInvoiceDto|
 |CreateInvoice|CompanyInvoiceDto data|CompanyInvoiceDto|Create CompanyInvoiceDto|
@@ -588,10 +588,85 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetConsumerCardClients|Guid? programId = null string pan = null string name = null int page = 1 int pageSize = 50 string orderField = "label" string orderType = "asc"|ConsumerCardClientDto|Get list of the ConsumerCardClientDto|
-|GetConsumerCardClientsAsync|Guid? programId = null string pan = null string name = null int page = 1 int pageSize = 50 string orderField = "label" string orderType = "asc"|ConsumerCardClientDto|Get list of the ConsumerCardClientDto|
+|GetConsumerCardClients|Guid? programId = null <BR>string pan = null <BR>string name = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "label" <BR>string orderType = "asc"|ConsumerCardClientDto|Get list of the ConsumerCardClientDto|
+|GetConsumerCardClientsAsync|Guid? programId = null <BR>string pan = null <BR>string name = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "label" <BR>string orderType = "asc"|ConsumerCardClientDto|Get list of the ConsumerCardClientDto|
 |GetConsumerCardClient|Guid id|ConsumerCardClientDto|Get individual ConsumerCardClientDto|
 |GetConsumerCardClientAsync|Guid id|ConsumerCardClientDto|Get individual ConsumerCardClientDto|
+	
+#### ConsumerCardMovementDto
+|Data|Description|
+|--- |--- |
+| Guid? ConsumerCardProgramId ||
+| Guid ConsumerCardClientId ||
+| Guid? DestinationConsumerCardClientId ||
+| Guid? SiteId ||
+| ConsumerCardMovementTypeEnum Type ||
+| decimal Amount ||
+| string Description ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|CreateMovement|ConsumerCardMovementDto data|ConsumerCardMovementDto|Create a ConsumerCardMovementDto|
+|CreateMovementAsync|ConsumerCardMovementDto data|ConsumerCardMovementDto|Create a ConsumerCardMovementDto|
+	
+#### ConsumerCardTransactionsContingencyDto
+|Data|Description|
+|--- |--- |
+| decimal UnitPrice ||
+| decimal Amount ||
+| string ShiftNumber ||
+| string PumpNumber ||
+| int? Odometer ||
+| int? EngineHours ||
+| string DriverId ||
+| string VehicleId ||
+| string Miscellaneous ||
+| byte State ||
+| string ResponseCode ||
+| string ResponseMessage ||
+| string Comments ||
+| string ImageFileName ||
+| Guid? ReasonId ||
+| decimal Volume ||
+| string FuelName ||
+| Guid FuelMasterId ||
+| string TerminalCode ||
+| Guid Id ||
+| Guid? TransactionId ||
+| Guid NetworkId ||
+| string NetworkName ||
+| Guid ConsumerCardProgramId ||
+| string ConsumerCardProgramName ||
+| Guid ConsumerCardClientId ||
+| string ReasonName ||
+| string ConsumerCardClientPAN ||
+| string Date ||
+| string Time ||
+| Guid MerchantId ||
+| string MerchantName ||
+| Guid SiteId ||
+| string SiteName ||
+| Guid TerminalId ||
+| string AuthorizationCode ||
+| ConsumerCardTransactionsContingencyImageDto Image ||
+	
+#### ConsumerCardTransactionsContingencyImageDto
+|Data|Description|
+|--- |--- |
+| string FileExtension ||
+| byte[] FileContent ||
+| ChangeTypeEnum ChangeType ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetConsumerCardTransactionsContingencies|Guid? idConsumerCardClient = null<BR> Guid? idProgram = null<BR> Guid? idSite = null<BR> Guid? idTerminal = null<BR> Guid? idFuelMaster = null<BR> string dateFrom = null<BR> string timeFrom = null<BR> string dateTo = null<BR> string timeTo = null<BR> string authorizationCode = null<BR>byte? state = null<BR> Guid? idReason = null<BR> string order = "desc"<BR> int page = 1<BR> int pageSize = 50|ConsumerCardTransactionsContingencyDto|Get list of the ConsumerCardTransactionsContingencyDto|
+|GetConsumerCardTransactionsContingenciesAsync|Guid? idConsumerCardClient = null<BR> Guid? idProgram = null<BR> Guid? idSite = null<BR> Guid? idTerminal = null<BR> Guid? idFuelMaster = null<BR> string dateFrom = null<BR> string timeFrom = null<BR> string dateTo = null<BR> string timeTo = null<BR> string authorizationCode = null<BR>byte? state = null<BR> Guid? idReason = null<BR> string order = "desc"<BR> int page = 1<BR> int pageSize = 50|ConsumerCardTransactionsContingencyDto|Get list of the ConsumerCardTransactionsContingencyDto|
+|GetConsumerCardTransactionsContingency|Guid id|ConsumerCardTransactionsContingencyDto|Get individual ConsumerCardTransactionsContingencyDto|
+|GetConsumerCardTransactionsContingencyAsync|Guid id|ConsumerCardTransactionsContingencyDto|Get individual ConsumerCardTransactionsContingencyDto|
+|CreateConsumerCardTransactionsContingency|ConsumerCardTransactionsContingencyDto dto|ConsumerCardTransactionsContingencyDto|Create ConsumerCardTransactionsContingencyDto|
+|CreateConsumerCardTransactionsContingencyAsync|ConsumerCardTransactionsContingencyDto dto|ConsumerCardTransactionsContingencyDto|Create ConsumerCardTransactionsContingencyDto|
+|UpdateConsumerCardTransactionsContingency|ConsumerCardTransactionsContingencyDto dto|string|Update ConsumerCardTransactionsContingencyDto|
+|UpdateConsumerCardTransactionsContingency|ConsumerCardTransactionsContingencyDto dto|string|Update ConsumerCardTransactionsContingencyDto|
 
 #### CurrentAccountReportDto
 |Data|Description|
@@ -652,14 +727,14 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetContractsBalance|Guid? idContract string dateFrom = null string dateTo = null string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
-|GetContractsBalanceAsync|Guid? idContract string dateFrom = null string dateTo = null string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the rentAccountReportDto|
-|GetContractsMovements|Guid idContract string dateFrom = null string dateTo = null string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
-|GetContractsMovementsAsync|Guid idContract string dateFrom = null string dateTo = null string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
-|GetSubAccountsBalance|Guid? idContract=nullGuid? idSubAccount=null string dateFrom = null string dateTo = null  string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
-|GetSubAccountsBalanceAsync|Guid? idContract=nullGuid? idSubAccount=null string dateFrom = null string dateTo = null string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
-|GetSubAccountsMovements|Guid? idContract=nullGuid? idSubAccount=null string dateFrom = null string dateTo = null string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
-|GetSubAccountsMovementsAsync|Guid? idContract=nullGuid? idSubAccount=null string dateFrom = null string dateTo = null string order = "desc" int page = 1 int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
+|GetContractsBalance|Guid? idContract <BR>string dateFrom = null <BR>string dateTo = null <BR>string order = "desc" <BR>int page = 1 <BR>int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
+|GetContractsBalanceAsync|Guid? idContract <BR>string dateFrom = null <BR>string dateTo = null <BR>string order = "desc" <BR>int page = 1 <BR>int pageSize = 50|CurrentAccountReportDto|Get list of the rentAccountReportDto|
+|GetContractsMovements|Guid idContract <BR>string dateFrom = null <BR>string dateTo = null <BR>string order = "desc" <BR>int page = 1 <BR>int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
+|GetContractsMovementsAsync|Guid idContract <BR>string dateFrom = null <BR>string dateTo = null <BR>string order = "desc" <BR>int page = 1 <BR>int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
+|GetSubAccountsBalance|Guid? idContract=null <BR>Guid? idSubAccount=null <BR>string dateFrom = null <BR>string dateTo = null <BR>string order = "desc" <BR>int page = 1 <BR>int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
+|GetSubAccountsBalanceAsync|Guid? idContract=null <BR>Guid? idSubAccount=null <BR>string dateFrom = null <BR>string dateTo = null <BR>string order = "desc" <BR>int page = 1 <BR>int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
+|GetSubAccountsMovements|Guid? idContract=null <BR>Guid? idSubAccount=null <BR>string dateFrom = null <BR>string dateTo = null <BR>string order = "desc" <BR>int page = 1 <BR>int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
+|GetSubAccountsMovementsAsync|Guid? idContract=null <BR>Guid? idSubAccount=null <BR>string dateFrom = null <BR>string dateTo = null <BR>string order = "desc" <BR>int page = 1 <BR>int pageSize = 50|CurrentAccountReportDto|Get list of the CurrentAccountReportDto|
 
 #### CountryDto
 |Data|Description|
@@ -669,9 +744,53 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetCountries|int page = 1 int pageSize = 50|CompanyInvoiceDto|Get list of the CountryDto|
-|GetCountriesAsync|int page = 1 int pageSize = 50|CountryDto|Get list of the CountryDto|
+|GetCountries|int page = 1 <BR>int pageSize = 50|CompanyInvoiceDto|Get list of the CountryDto|
+|GetCountriesAsync|int page = 1 <BR>int pageSize = 50|CountryDto|Get list of the CountryDto|
+	
+#### DispersionDto
+|Data|Description|
+|--- |--- |
+|Guid ContractId||
+|Guid? FuelMasterId||
+|List<DispersionSubAccountDto> DispersionSubAccounts||
+|string Description||
+|decimal Balance||
+|byte DispersionMode||
+	
+#### DispersionSubAccountDto
+|Data|Description|
+|--- |--- |
+|Guid SubAccountId||
+|decimal? Amount||
 
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|Disperse|DispersionDto data|DispersionDto|Create DispersionDto|
+|DisperseAsync|DispersionDto data|DispersionDto|Create DispersionDto|
+
+#### DocumentTypeAcceptedDto
+|Data|Description|
+|--- |--- |
+|Guid Id||
+|Guid IdNetwork||
+|string Code||
+|string Description||
+|bool Validator||
+|bool Active||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetDocumentTypesAccepted|string code = null<BR> string description = null<BR> bool? validator = null<BR> bool? active = null<BR>int page = 1<BR> int pageSize = 50<BR> string orderField = "code"<BR> string orderType = "asc"|DocumentTypeAcceptedDto|Get list of the DocumentTypeAcceptedDto|
+|GetDocumentTypesAcceptedAsync|string code = null<BR> string description = null<BR> bool? validator = null<BR> bool? active = null<BR>int page = 1<BR> int pageSize = 50<BR> string orderField = "code"<BR> string orderType = "asc"|DocumentTypeAcceptedDto|Get list of the DocumentTypeAcceptedDto|	
+|GetDocumentTypeAccepted|Guid id|DocumentTypeAcceptedDto|Get individual DocumentTypeAcceptedDto|
+|GetDocumentTypeAcceptedAsync|Guid id|DocumentTypeAcceptedDto|Get individual DocumentTypeAcceptedDto|
+|CreateDocumentTypeAccepted|DocumentTypeAcceptedDto data|DocumentTypeAcceptedDto|Create DocumentTypeAcceptedDto|
+|CreateDocumentTypeAcceptedAsync|DocumentTypeAcceptedDto data|DocumentTypeAcceptedDto|Create DocumentTypeAcceptedDto|
+|UpdateDocumentTypeAccepted|Guid id <BR>DocumentTypeAcceptedDto data|string|Update DocumentTypeAcceptedDto|
+|UpdateDocumentTypeAcceptedAsync|Guid id <BR>DocumentTypeAcceptedDto data|string|Update DocumentTypeAcceptedDto|
+|DeleteDocumentTypeAccepted|Guid id|string|Delete DocumentTypeAcceptedDto|
+|DeleteDocumentTypeAcceptedAsync|Guid id|string|Delete DocumentTypeAcceptedDto|
+	
 #### DriverDto
 |Data|Description|
 |--- |--- |
