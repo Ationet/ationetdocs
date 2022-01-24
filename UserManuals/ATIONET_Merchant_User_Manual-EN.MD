@@ -229,8 +229,37 @@ The column **Age** shows the number of minutes since the last time the terminal 
 ![Terminal Status](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Dashboard/Terminal%20Status.PNG)
 
 
+# Favorites
 
+Vehicles, Drivers, Sites and Fleets are entities that may require daily monitoring by certain users. To facilitate this task you can add some of these sections to the list of **Favorites**. Once entered a section to this list, the access is faster and direct, without the need to enter filters each time you want to search.
 
+Once inside the Favorites page, by clicking on the link in the **Type** column, you will be redirected to the detailed view of that section.
+
+If you want to remove a section from the list of Favorites, click on the icon on the right side with the shape of a cross.
+
+![Favorites](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Favorites.PNG)
+
+# Reports
+In ATIONET the reports are considered those lists of information that are going to be printed and filed in physical format. When they are printed, ATIONET adds a header with the logo of the subscription automatically.
+
+## Sites
+This report shows the list of sites created by the Network, sorted by code. At the top you can filter by site, or press the ***Print*** button and get a complete list of all Merchant sites.
+
+![Sites](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Reportes/Sitios.PNG)
+
+This pop-up window has a print button that when clicked opens the default print window of the Internet browser.
+
+## Transactions report
+This report shows the list of transactions made, sorted by date. This report has several filters to adjust the search. The first field of the filter panel indicates why the field will sort the list, the field selected in this list will be shown in the first column.
+
+![Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Reports/Transaction%20Filter.PNG)
+
+Once the filter is selected press the ***Print*** button, this will display a popup with the selected information.
+The information is displayed in a print-ready format, including the subscription logo and the date and time of report generation.
+
+This popup has a print button that when pressed opens the default print window of the Internet browser.
+
+![Transactions](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Reports/Transaction.PNG)
 
 <br>
 
