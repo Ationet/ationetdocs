@@ -1047,6 +1047,57 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |--- |--- |--- |--- |
 |GetDriverImportTemplate||ImportDriversTemplateDto|Get individual ImportDriversTemplateDto|
 |GetDriverImportTemplateAsync||ImportDriversTemplateDto|Get individual ImportDriversTemplateDto|
+	
+#### ExternalDocumentDto
+|Data|Description|
+|--- |--- |
+| Dictionary<string, string> Data ||
+| string Number ||
+| string DocumentDateString ||
+| DateTime DocumentDate ||
+| string DocumentTypeCode ||
+| Guid DocumentTypeId ||
+| string NetworkTimeZone ||
+| string RealDateString ||
+| DateTime RealDate ||
+| string DateString ||
+| DateTime Date ||
+| string MerchantCode ||
+| string MerchantName ||
+| Guid? MerchantId ||
+| string CompanyCode ||
+| string CompanyName ||
+| Guid? CompanyId ||
+| Guid NetworkId ||
+| Guid Id ||
+| decimal? Amount ||
+| FileStorageDto File ||
+	
+#### FileStorageDto
+|Data|Description|
+|--- |--- |
+| Guid Id ||
+| Guid IdFile ||
+| Guid IdNetwork ||
+| Guid? IdCompany ||
+| Guid? IdMerchant ||
+| byte IdEntity ||
+| Guid IdUser ||
+| DateTime UploadDate ||
+| DateTime UploadRealDate ||
+| string NetworkTimeZone ||
+| string FileName ||
+| string FileExtension ||
+| string FileFullUrl ||
+| byte[] FileContent ||
+| DocumentStatusEnum DocumentStatus ||
+	
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetExternalDocuments|string companyId = null <BR>string merchantId = null <BR>string dateFrom = null <BR>string dateTo = null <BR>string documentNumber = null <BR>string documentTypeCode = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc"|ExternalDocumentDto|Get list of the  ExternalDocumentDto|
+|GetExternalDocumentsAsync|string companyId = null <BR>string merchantId = null <BR>string dateFrom = null <BR>string dateTo = null <BR>string documentNumber = null <BR>string documentTypeCode = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc"|ExternalDocumentDto|Get list of the  ExternalDocumentDto|
+|GetExternalDocument|Guid id|ExternalDocumentDto|Get individual ExternalDocumentDto|
+|GetExternalDocumentAsync|Guid id|ExternalDocumentDto|Get individual ExternalDocumentDto|
 
 #### FleetDto
 |Data|Description|
@@ -1072,18 +1123,58 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |Guid IdCompany||
 |Guid Id||
 |List EntityRuleDto  Rules||
+	
+#### EntityRuleDto
+|Data|Description|
+|--- |--- |
+| Guid Id ||
+| string Description ||
+| short? RuleType ||
+| string RuleTypeDescription ||
+| string Value ||
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetFleets|string code = null string name = null int page = 1 int pageSize = 50 string orderField = "name" string orderType = "asc"|FleetDto|Get list of the FleetDto|
-|GetFleetsAsync|string code = null string name = null int page = 1 int pageSize = 50 string orderField = "name" string orderType = "asc"|FleetDto|Get list of the FleetDto|
+|GetFleets|List<Guid> ruleIds = null <BR>List<Guid> classification1Ids = null <BR>List<Guid> classification2Ids = null <BR>List<Guid> classification3Ids = null <BR>List<Guid> classification4Ids = null <BR>string code = null <BR>string searchText = null <BR>string name = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "name" <BR>string orderType = "asc"|FleetDto|Get list of the FleetDto|
+|GetFleetsAsync|List<Guid> ruleIds = null <BR>List<Guid> classification1Ids = null <BR>List<Guid> classification2Ids = null <BR>List<Guid> classification3Ids = null <BR>List<Guid> classification4Ids = null <BR>string code = null <BR>string searchText = null <BR>string name = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "name" <BR>string orderType = "asc"|FleetDto|Get list of the FleetDto|
 |GetFleet|Guid id|FleetDto|Get individual FleetDto|
 |GetFleetAsync|Guid id|FleetDto|Get individual FleetDto|
 |CreateFleet|FleetDto data|FleetDto|Create FleetDto|
 |CreateFleetAsync|FleetDto data|FleetDto|Create FleetDto|
-|UpdateFleet|Guid id FleetDto data|string|Update FleetDto|
-|UpdateFleetAsync|Guid id FleetDto data|string|Update FleetDto|
+|UpdateFleet|Guid id <BR>FleetDto data|string|Update FleetDto|
+|UpdateFleetAsync|Guid id <BR>FleetDto data|string|Update FleetDto|
 
+#### FraudAlertConfigurationDto
+|Data|Description|
+|--- |--- |
+| Guid Id ||
+| Guid NetworkId ||
+| byte Type ||
+| string TypeDescription ||
+| byte Periodicity ||
+| short PeriodicityValue ||
+| int? TransactionsQuantity ||
+| decimal? Amount ||
+| decimal? Volume ||
+| int? Distance ||
+| bool Active ||
+| string Description ||
+| byte? TransactionMode ||
+| byte? SubAccountOwner ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetFraudAlertsConfigurations|string code = null<BR>string name = null <BR>int page = 1<BR> int pageSize = 50<BR> string orderField = "name"<BR> string orderType = "asc"|FraudAlertConfigurationDto|Get list of the FraudAlertConfigurationDto|
+|GetFraudAlertsConfigurationsAsync|string code = null<BR>string name = null <BR>int page = 1<BR> int pageSize = 50<BR> string orderField = "name"<BR> string orderType = "asc"|FraudAlertConfigurationDto|Get list of the FraudAlertConfigurationDto|	
+|GetFraudAlertsConfiguration|Guid id|FraudAlertConfigurationDto|Get individual FraudAlertConfigurationDto|
+|GetFraudAlertsConfigurationAsync|Guid id|FraudAlertConfigurationDto|Get individual FraudAlertConfigurationDto|
+|CreateFraudAlertsConfiguration|FraudAlertConfigurationDto data|FraudAlertConfigurationDto|Create FraudAlertConfigurationDto|
+|CreateFraudAlertsConfigurationAsync|FraudAlertConfigurationDto data|FraudAlertConfigurationDto|Create FraudAlertConfigurationDto|
+|UpdateFraudAlertsConfigurationAsync|Guid id <BR>FraudAlertConfigurationDto data|string|Update FraudAlertConfigurationDto|
+|UpdateFraudAlertsConfigurationAsyncAsync|Guid id <BR>FraudAlertConfigurationDto data|string|Update FraudAlertConfigurationDto|
+|DeleteFraudAlertsConfiguration|Guid id|string|Delete FraudAlertConfigurationDto|
+|DeleteFraudAlertsConfigurationAsync|Guid id|string|Delete FraudAlertConfigurationDto|	
+	
 #### FuelDto
 |Data|Description|
 |--- |--- |
@@ -1100,8 +1191,8 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetFuels|int page = 1 int pageSize = 50 string orderField = "code" string orderType = "asc"|FuelDto|Get list of the FuelDto|
-|GetFuelsAsync|int page = 1 int pageSize = 50 string orderField = "code" string orderType = "asc"|FuelDto|Get list of the FuelDto|
+|GetFuels|int page = 1 <BR>int pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc"|FuelDto|Get list of the FuelDto|
+|GetFuelsAsync|int page = 1 <BR>int pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc"|FuelDto|Get list of the FuelDto|
 |GetFuel|Guid id|FuelDto|Get individual FuelDto|
 |GetFuelAsync|Guid id|FuelDto|Get individual FuelDto|
 |CreateFuel|FuelDto data|FuelDto|Create FuelDto|
@@ -1120,10 +1211,37 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetFuelsMasters|int page = 1 int pageSize = 50 string orderField = "code" string orderType = "asc"|FuelsMasterDto|Get list of the FuelsMasterDto|
-|GetFuelsMastersAsync|int page = 1 int pageSize = 50 string orderField = "code" string orderType = "asc"|FuelsMasterDto|Get list of the FuelsMasterDto|
+|GetFuelsMasters|string code = null <BR>string description = null <BR>string searchText = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc"|FuelsMasterDto|Get list of the FuelsMasterDto|
+|GetFuelsMastersAsync|string code = null <BR>string description = null <BR>string searchText = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc"|FuelsMasterDto|Get list of the FuelsMasterDto|
 |GetFuelsMaster|Guid id|FuelsMasterDto|Get individual FuelsMasterDto|
 |GetFuelsMasterAsync|Guid id|FuelsMasterDto|Get individual FuelsMasterDto|
+	
+####FuelsMastersGroupDto
+|Data|Description|
+|--- |--- |
+| Guid Id ||
+| string Code ||
+| string Name ||
+| string Description ||
+| decimal CO2EmissionCoefficient ||
+| List<FuelsMasterDto>FuelsMastersDto ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetFuelsMastersGroups|string code = null <BR>string name = null <BR>string description = null <BR>string searchText = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc"|FuelsMastersGroupDto|Get list of FuelsMastersGroupDto|
+|GetFuelsMastersGroupsAsync|string code = null <BR>string name = null <BR>string description = null <BR>string searchText = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc"|FuelsMastersGroupDto|Get list of FuelsMastersGroupDto|
+|GetFuelsMastersGroup|Guid id|FuelsMastersGroupDto|Get individual FuelsMastersGroupDto|
+|GetFuelsMastersGroupAsync|Guid id|FuelsMastersGroupDto|Get individual FuelsMastersGroupDto|	
+		
+####GenerateCodeDto
+|Data|Description|
+|--- |--- |
+| string Code ||
+	
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetGenerateCode|byte type <BR>Guid? idCompany = null <BR>Guid? idMerchant = null <BR>string siteName = null|GenerateCodeDto|Get individual GenerateCodeDto|
+|GetGenerateCodeAsync|byte type <BR>Guid? idCompany = null <BR>Guid? idMerchant = null <BR>string siteName = null|GenerateCodeDto|Get individual GenerateCodeDto|
 
 #### GiftCardClientDto
 |Data|Description|
@@ -1155,14 +1273,14 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetGiftCardClients|Guid? programId = null byte? cardState = null DateTime? CreatedFrom = null DateTime? CreatedTo = null decimal? BalanceFrom = null decimal? BalanceTo = null bool? active = null int page = 1 int pageSize = 50 string orderField = "label" string orderType = "asc" string pan = ""|GiftCardClientDto|Get list of the GiftCardClientDto|
-|GetGiftCardClientsAsync|Guid? programId = null byte? cardState = null DateTime? CreatedFrom = null DateTime? CreatedTo = null decimal? BalanceFrom = null decimal? BalanceTo = null bool? active = null int page = 1 int pageSize = 50 string orderField = "label" string orderType = "asc" string pan = ""|GiftCardClientDto|Get list of the GiftCardClientDto|
+|GetGiftCardClients|Guid? programId = null <BR>byte? cardState = null <BR>DateTime? CreatedFrom = null <BR>DateTime? CreatedTo = null <BR>decimal? BalanceFrom = null <BR>decimal? BalanceTo = null <BR>bool? active = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "label" <BR>string orderType = "asc" <BR>string pan = ""|GiftCardClientDto|Get list of the GiftCardClientDto|
+|GetGiftCardClientsAsync|Guid? programId = null <BR>byte? cardState = null <BR>DateTime? CreatedFrom = null <BR>DateTime? CreatedTo = null <BR>decimal? BalanceFrom = null <BR>decimal? BalanceTo = null <BR>bool? active = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "label" <BR>string orderType = "asc" <BR>string pan = ""|GiftCardClientDto|Get list of the GiftCardClientDto|
 |GetGiftCardClient|Guid id|GiftCardClientDto|Get individual GiftCardClientDto|
 |GetGiftCardClientAsync|Guid id|GiftCardClientDto|Get individual GiftCardClientDto|
 |CreateGiftCardClient|GiftCardClientDto data|GiftCardClientDto|Create GiftCardClientDto|
 |CreateGiftCardClientAsync|GiftCardClientDto data|GiftCardClientDto|Create GiftCardClientDto|
-|UpdateGiftCardClient|GiftCardClientDto data|string|Update GiftCardClientDto|
-|UpdateGiftCardClientAsync|GiftCardClientDto data|string|Update GiftCardClientDto|
+|UpdateGiftCardClient|Guid id <BR>GiftCardClientDto data|string|Update GiftCardClientDto|
+|UpdateGiftCardClientAsync|Guid id <BR>GiftCardClientDto data|string|Update GiftCardClientDto|
 
 #### GiftCardProgramDto
 |Data|Description|
