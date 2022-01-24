@@ -552,4 +552,4 @@ Las transacciones sin control son aquellas que se generan porque el controlador 
 
 <br>
 
-[Back to top](#contenido) 	:arrow_up:
+[Volver al inicio](#contenido) 	:arrow_up:
