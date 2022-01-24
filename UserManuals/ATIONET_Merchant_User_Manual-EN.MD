@@ -486,6 +486,91 @@ In this section you can view and download statements from your Network. You can 
 ![Statements](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Billing/Statements.PNG)
 
 
+# Inventory
+In ATIONET, inventory refers to the fuels available in the different tanks at the stations. When a station has a remote measurement system, it could be configured to report to ATIONET and thus be able to view the level of fuel and water in the tanks directly from the portal.
+
+## Inventory Charts
+In this section you will be able to see the inventory of the tanks in graphs, first filtering by site in the filter panel. Once filtered by site, click the **Search** button. This will bring you a graph of all the tanks for the filtered site.
+
+![Gráfico de Inventario](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Inventario/Graficos%20de%20Inventarios.PNG)
+
+## Inventories
+In this section you will find a list of all the tanks and their respective fuels. There is a filter panel at the top to facilitate the search for information.
+
+
+![Inventarios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Inventario/Inventarios.PNG)
+
+The portal also allows you to generate a manual inventory, in case of any inconvenience caused by the lack of inventory reporting of a site/tank.
+
+To create a manual inventory, press the **New** button.
+
+![Inventarios Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Inventario/Inventarios%20Nuevo.PNG)
+
+The fields to complete are the following:
+
+* **Site:** Select the site associated with the inventory.
+* **Fuel:** Select the fuel associated with the inventory.
+* **Tank:** Select the tank associated with the inventory.
+* **Date:** Enter the inventory date.
+* **Time:** Enter the inventory time.
+* **Volume:** Enter the volume of the fuel associated with the inventory.
+* **Volume TC:** Enter the temperature compensated volume associated with the inventory.
+* **Ullage:** Enter the shrink level associated with the inventory.
+* **Water Volume:** Enter the volume of water associated with the inventory.
+* **Fuel Height:** Enter the fuel height associated with the inventory.
+* **Temperature:** Enter the temperature associated with the inventory.
+* **Water Height:** Enter the water height associated with the inventory.
+
+When you have finished filling in the fields, press the **Save** button.
+
+**Location**
+
+* **Latitude:** Enter the latitude coordinates associated with the inventory.
+* **Longitude:** Enter the longitude coordinates associated with the inventory.
+* **Date Location:** Enter the date of the latitude coordinates associated with the inventory.
+* **Time Location** Enter the time of the latitude coordinates associated with the inventory.
+
+When you have finished filling in the fields, press the **Save** button.
+
+<br>
+
+## Deliveries
+En ATIONET una recepción es cuando un tanque está lleno de combustible. En esta sección podrá encontrar un listado de todas las recepciones de los tanques. Existe un panel de filtros en la parte superior para facilitar la búsqueda de información.
+
+![Recepciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Inventario/Recepciones.PNG)
+
+The portal also allows the generation of a manual reception, in case of any inconvenience that has caused the lack of reception report of a site/tank.
+
+To create a manual inventory, press the **New** button.
+
+![Recepciones Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Inventario/Recepciones%20Nuevo.PNG)
+
+The fields to complete are the following:
+
+* **Site:** Select the site associated with the delivery.
+* **Fuel:** Select the fuel associated with the delivery.
+* **Tank:** Select the tank associated with the delivery.
+* **Date:** Enter the date of delivery.
+* **Time:** Enter the time of the delivery.
+* **Delivered Volume:** Enter the volume obtained at the delivery.
+* **Delivery Price:** Enter the price of the delivery.
+* **Starting Volume:** Enter the volume of fuel at the beginning of the delivery.
+* **Ending Volume:** Enter the volume of fuel at the end of the delivery.
+* **Starting Volume TC:** Enter the temperature compensated volume at the start of the delivery.
+* **Ending Volume TC:** Enter the temperature compensated volume at the end of the delivery.
+* **Starting Water Volume:** Enter the volume of water at the beginning of the delivery.
+* **Ending Water Volume:** Enter the volume of water at the end of the delivery.
+* **Starting Temperature:** Enter the temperature of the fuel at the beginning of the delivery.
+* **Ending Temperature:** Enter the temperature of the fuel at the end of the delivery.
+* **Starting Fuel Height:** Enter the height of the fuel at the beginning of the delivery.
+* **Ending Fuel Height:** Enter the height of the fuel at the end of the delivery.
+* **Comment:** Enter a comment associated with the delivery.
+* **Receipt Number:** Enter the receipt number associated with the delivery.
+
+
+When you have finished filling in the fields, press the **Save** button.
+
+
 <br>
 
 [Back to top](#contents)  :arrow_up:
