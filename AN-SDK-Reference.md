@@ -794,63 +794,259 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 #### DriverDto
 |Data|Description|
 |--- |--- |
-|string CompanyContractDuration||
-|string Clasification2Description||
-|Guid? Clasification3Id||
-|string Clasification3Description||
-|Guid? Clasification4Id||
-|string Clasification4Description||
-|List DriverRuleDto  Rules||
-|List DriverVehicleDto2> Vehicles||
-|List DriverIdentificationDto Identifications||
-|List DriverLoyaltyIdentificationDto LoyaltyIdentifications||
-|string Balance||
-|string Consumption||
-|string IdentificationsDescription||
-|string LoyaltyProgramsDescription||
-|string LoyaltyIdentificationsDescription||
-|List DriverVehicleDto VehiclesDrivers||
-|string Custom0||
-|string Custom1||
-|string Custom2||
-|string Custom3||
-|Guid? Clasification2Id||
-|string Clasification1Description||
-|Guid? Clasification1Id||
-|string Email||
-|Guid Id||
-|Guid CompanyId||
-|string CompanyName||
-|string Code||
-|string LastName||
-|string FirstName||
-|string CompleteName||
-|string Birthdate||
-|string LicenseNumber||
-|decimal? AvaliableAmount||
-|bool Enabled||
-|string CountryName||
-|Guid? StateId||
-|string StateName||
-|string City||
-|string Street1||
-|string Street2||
-|string ZipCode||
-|string PhoneNumber1||
-|string PhoneNumber2||
-|Guid? CountryId||
-|decimal? AvaliableVolume||
-
+| string Clasification3Description ||
+| Guid? Clasification4Id ||
+| string Clasification4Description ||
+| List<DriverRuleDto> Rules ||
+| List<DriverVehicleDto2> Vehicles ||
+| List<DriverIdentificationDto> Identifications ||
+| List<DriverLoyaltyIdentificationDto> LoyaltyIdentifications ||
+| List<SystemNotificationDto> Notifications ||
+| string Balance ||
+| string Consumption ||
+| Guid? Clasification3Id ||
+| string IdentificationsDescription ||
+| string LoyaltyIdentificationsDescription ||
+| List<DriverVehicleDto> VehiclesDrivers ||
+| string Custom0 ||
+| string Custom1 ||
+| string Custom2 ||
+| string Custom3 ||
+| decimal? AvaliableAmount ||
+| decimal? AvaliableVolume ||
+| IEnumerable<DriverBalanceDto> Balances ||
+| IEnumerable<DriverQuotaRuleBalanceDto> QuotaRules ||
+| string LoyaltyProgramsDescription ||
+| string Clasification2Description ||
+| Guid? Clasification2Id ||
+| string Clasification1Description ||
+| Guid Id ||
+| Guid CompanyId ||
+| string CompanyName ||
+| string Code ||
+| string LastName ||
+| string FirstName ||
+| string CompleteName ||
+| string Birthdate ||
+| string LicenseNumber ||
+| bool Enabled ||
+| bool IsCodeAutomaticallyGenerated ||
+| Guid? CountryId ||
+| string CountryName ||
+| Guid? StateId ||
+| string StateName ||
+| string City ||
+| string Street1 ||
+| string Street2 ||
+| string ZipCode ||
+| string PhoneNumber1 ||
+| string PhoneNumber2 ||
+| string Email ||
+| Guid? Clasification1Id ||
+| decimal? AverageCost ||
+| List<SubAccountDto> SubAccounts ||
+	
+#### DriverRuleDto
+|Data|Description|
+|--- |--- |
+| Guid RuleId ||
+| string RuleName ||
+| short RuleType ||
+| string RuleTypeDescription ||
+| Guid DriverId ||
+| string DriverName ||
+| string Description ||
+	
+#### DriverVehicleDto2
+|Data|Description|
+|--- |--- |
+| Guid VehicleId ||
+| string VehicleCode ||
+| string VehiclePlate ||
+| Guid DriverId ||
+| string DriverName ||
+| bool RequireVehicleIdentification ||
+| bool RequireDriverIdentification ||
+| bool IsLoyalty ||
+		
+#### DriverIdentificationDto
+|Data|Description|
+|--- |--- |
+| Guid IdentificationId ||
+| string IdentificationLabel ||
+| string IdentificationTypeModel ||
+| byte IdentificationStatus ||
+| Guid ContractId ||
+| string PIN ||
+| string PAN ||
+| bool Active ||
+| string CompanyContractDescription ||
+| string ExpirationDate ||
+		
+#### DriverLoyaltyIdentificationDto
+|Data|Description|
+|--- |--- |
+| Guid LoyaltyIdentificationId ||
+| string LoyaltyIdentificationLabel ||
+| string LoyaltyIdentificationTypeModel ||
+| Guid DriverId ||
+| string DriverName ||
+			
+#### SystemNotificationDto
+|Data|Description|
+|--- |--- |
+| Guid? VehicleId ||
+| string Payload ||
+| byte? UserState ||
+| string UserAtionetDestination ||
+| string UserAtionetCreated ||
+| Guid? IdMerchant ||
+| Guid? IdCompany ||
+| object Message ||
+| string Subject ||
+| Guid? DriverId ||
+| byte State ||
+| Guid? UserAtionetDestinationId ||
+| Guid? UserAtionetCreatedId ||
+| DateTime CreatedDate ||
+| string DestinationAddresses ||
+| string Origin ||
+| byte Channel ||
+| Guid? NotificationFormatId ||
+| Guid? NetworkId ||
+| Guid Id ||
+| byte Type ||
+| string CreatedDateString ||
+			
+#### DriverVehicleDto
+|Data|Description|
+|--- |--- |
+| bool RequireVehicleIdentification ||
+| string VehicleClasification4Description ||
+| Guid? VehicleClasification4Id ||
+| string VehicleClasification3Description ||
+| Guid? VehicleClasification3Id ||
+| string VehicleClasification2Description ||
+| Guid? VehicleClasification2Id ||
+| string VehicleClasification1Description ||
+| Guid? VehicleClasification1Id ||
+| string VehicleVehiclesClassDescription ||
+| Guid VehicleVehiclesClassId ||
+| string VehicleFleetDescription ||
+| bool RequireDriverIdentification ||
+| Guid VehicleFleetId ||
+| short VehicleServiceType ||
+| string VehicleServiceDescription ||
+| int? VehicleCurrentEngineHours ||
+| string VehicleChassisNumber ||
+| string VehicleEngineNumber ||
+| int? VehicleCurrentOdometer ||
+| int? VehicleYear ||
+| bool VehicleEnabled ||
+| string VehiclePlate ||
+| string VehicleCode ||
+| Guid VehicleId ||
+| Guid Id ||
+| int? VehicleInitialOdometer ||
+| bool IsLoyalty ||
+			
+#### SubAccountDto
+|Data|Description|
+|--- |--- |
+| int? VehicleEngineHours ||
+| int? VehicleOdometer ||
+| int? VehicleYear ||
+| string VehicleCode ||
+| Guid? VehicleId ||
+| string DriverLastName ||
+| string DriverFirstName ||
+| string DriverCode ||
+| Guid? DriverId ||
+| List<Guid> IdentificationIds ||
+| decimal Limit ||
+| decimal Consumption ||
+| decimal PreviousBalance ||
+| decimal CurrentBalance ||
+| DateTime BalanceDate ||
+| string ContractDescription ||
+| string IdentificationsDescription ||
+| string Description ||
+| Guid Id ||
+| decimal VehicleConsumption ||
+| string FleetDescription ||
+	
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetDrivers|List Guid identificationIds = null List Guid ruleIds = null List Guid classification1Ids = null List Guid classification2Ids = null List Guid classification3Ids = null List Guid classification4Ids = null string code = null string name = null string custom0 = null string custom1 = null string custom2 = null string custom3 = null int page = 1 int pageSize = 50 string orderField = "code" string orderType = "asc"|DriverDto|Get list of the DriverDto|
-|GetDriversAsync|List Guid identificationIds = null List Guid ruleIds = null List Guid classification1Ids = null List Guid classification2Ids = null List Guid classification3Ids = null List Guid classification4Ids = null string code = null string name = null string custom0 = null string custom1 = null string custom2 = null string custom3 = null int page = 1 int pageSize = 50 string orderField = "code" string orderType = "asc"|DriverDto|Get list of the DriverDto|
+|GetDrivers|List<Guid> identificationIds = null <BR> List<Guid> ruleIds = null <BR> List<Guid> classification1Ids = null <BR> List<Guid> classification2Ids = null <BR> List<Guid> classification3Ids = null <BR> List<Guid> classification4Ids = null <BR> List<Guid> contractIds = null <BR> string code = null <BR> string searchText = null <BR> string name = null <BR> string custom0 = null <BR> string custom1 = null <BR> string custom2 = null <BR> string custom3 = null <BR> int page = 1 <BR> int pageSize = 50 <BR> string orderField = "code" <BR> string orderType = "asc" <BR> bool paginate = true|DriverDto|Get list of the DriverDto|
+|GetDriversAsync|List<Guid> identificationIds = null <BR> List<Guid> ruleIds = null <BR> List<Guid> classification1Ids = null <BR> List<Guid> classification2Ids = null <BR> List<Guid> classification3Ids = null <BR> List<Guid> classification4Ids = null <BR> List<Guid> contractIds = null <BR> string code = null <BR> string searchText = null <BR> string name = null <BR> string custom0 = null <BR> string custom1 = null <BR> string custom2 = null <BR> string custom3 = null <BR> int page = 1 <BR> int pageSize = 50 <BR> string orderField = "code" <BR> string orderType = "asc" <BR> bool paginate = true|DriverDto|Get list of the DriverDto|
 |GetDriver|Guid id|DriverDto|Get individual DriverDto|
 |GetDriverAsync|Guid id|DriverDto|Get individual DriverDto|
 |CreateDriver|DriverDto data|DriverDto|Create DriverDto|
 |CreateDriverAsync|DriverDto data|DriverDto|Create DriverDto|
-|UpdateDriver|Guid id DriverDto data|string|Update DriverDto|
-|UpdateDriverAsync|Guid id DriverDto data|string|Update DriverDto|
+|UpdateDriver|Guid id <BR>DriverDto data|string|Update DriverDto|
+|UpdateDriverAsync|Guid id <BR>DriverDto data|string|Update DriverDto|
+			
+#### ImportDriversDto
+|Data|Description|
+|--- |--- |
+| byte[] File ||
+| bool NeedIdentification ||
+| Guid? IdCompanyContract ||
+| short? IdentificationsType ||
+| Guid? IdIdentificationsTypeModel ||
+| Guid? IdProgram ||
+| Guid? IdLoyaltyProgram ||
+| ImportDto ImportResult ||
+				
+#### ImportDto
+|Data|Description|
+|--- |--- |
+| List<ImportItemDto> listItemError ||
+| long correctProcessedQuantity ||
+| long errorProcessedQuantity ||
+| long totalProcessedQuantity ||
+| bool withErrors ||
+| string successfullyImportedTotal ||
+| string failedToBeImportedTotal ||
+| string totalProcessed ||
+| bool needIdentification ||
+| bool IdentificationResult ||
+| string identificationOrderNumber ||
+| string identificationErrorText ||
+| string identificationMessageResult ||
+					
+#### ImportItemDto
+|Data|Description|
+|--- |--- |
+| long row ||
+| List<string> errorList ||
+	
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|ImportDrivers|ImportDriversDto data|ImportDriversDto|Import ImportDriversDto|
+|ImportDriversAsync|ImportDriversDto data|ImportDriversDto|Import ImportDriversDto|
+
+#### ImportDriversBatchDto
+|Data|Description|
+|--- |--- |
+| List<DriverBatchDto> Drivers ||
+	
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|ImportDriversBatch|ImportDriversBatchDto data|ImportDriversBatchDto|Import ImportDriversBatchDto|
+|ImportDriversBatchAsync|ImportDriversBatchDto data|ImportDriversBatchDto|Import ImportDriversBatchDto|
+
+#### ImportDriversTemplateDto
+|Data|Description|
+|--- |--- |
+| string FileExtension ||
+| string FileName ||
+| byte[] FileContents ||
+	
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetDriverImportTemplate||ImportDriversTemplateDto|Get individual ImportDriversTemplateDto|
+|GetDriverImportTemplateAsync||ImportDriversTemplateDto|Get individual ImportDriversTemplateDto|
 
 #### FleetDto
 |Data|Description|
