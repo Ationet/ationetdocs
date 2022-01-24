@@ -43,9 +43,9 @@
 		- [Terminal status](#terminal-status)
 	- [Favorites](#favorites)
 	- [Reports](#reports)
-		- [Driver](#driver)
-		- [Transactions](#transactions)
-		- [Vehicle](#vehicle)
+		- [Driver](#driver-report)
+		- [Transactions](#transactions-report)
+		- [Vehicle](#vehicle-report)
 	- [Administration](#administration)
 		- [Companies](#companies)
 		- [Dispersion](#dispersion)
@@ -281,7 +281,7 @@ If you want to remove a section from the list of Favorites, click on the icon on
 # Reports
 In ATIONET the reports are considered those lists of information that are going to be printed and filed in physical format. When they are printed, ATIONET adds a header with the logo of the subscription automatically.
 
-## Driver
+## Driver report
 The Driver report can be filtered by driver name/code or by identification.
 Once the filter is selected press the ***Print*** button, this will display a popup with the selected information.
 The information is displayed in a print-ready format, including the subscription logo and the date and time of report generation.
@@ -290,7 +290,7 @@ This popup has a print button that when pressed opens the default print window o
 
 ![Drivers](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Reports/Driver.PNG)
 
-## Transactions
+## Transactions report
 This report shows the list of transactions made, sorted by date. This report has several filters to adjust the search. The first field of the filter panel indicates why the field will sort the list, the field selected in this list will be shown in the first column.
 
 ![Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Reports/Transaction%20Filter.PNG)
@@ -302,7 +302,7 @@ This popup has a print button that when pressed opens the default print window o
 
 ![Transactions](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Reports/Transaction.PNG)
 
-## Vehicle
+## Vehicle report
 This report shows the list of vehicles. This report has several filters to adjust the search. The first field of the filter panel indicates why the field will sort the list, the field selected in this list will be shown in the first column.
 
 ![Vehicles](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Reports/Vehicle%20Filter.PNG)
