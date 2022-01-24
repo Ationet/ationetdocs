@@ -261,6 +261,231 @@ This popup has a print button that when pressed opens the default print window o
 
 ![Transactions](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Reports/Transaction.PNG)
 
+
+# Administration
+Within this module you will be able to manage Fuels, Notifications, Sites and Terminals among other things.
+
+## External Documentation
+This view lists all the external documents uploaded by the Company (through APIs) and the possibility of downloading them. An external document is a document associated with an operation performed externally to ATIONET.
+
+![External Documentation](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Administraci%C3%B3n/Documentos%20Externos%20Lista.PNG)
+
+## Fuels
+This view lists the fuel allocations and their respective code for all sites that have the **Fuel Required Mapping** option enabled (this option is used if specific fuel codes are required to be used, otherwise ATIONET will validate against the [Fuel Codes Master Fuel](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/C%C3%B3digos%20Maestros%20de%20Fuel.PNG)). To facilitate queries, there is a filter panel at the top.
+
+
+## Notifications
+In this section each user can select their own notifications to be received either by email or sms.
+
+## Sites
+In ATIONET the site represents the service station. This section lists the sites already created, edit them and also create new ones. You can also add taxes to sites directly from the **Options** column. To make queries easier, there is a panel of filters at the top.
+
+![Sites](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Sites.PNG)
+
+## Terminals / Controllers
+This section lists all the terminals/controllers created by the Network. The terminal is the site's point of sale and the controller manages the dispensers. To facilitate queries, there is a filter panel at the top.
+
+![Terminales](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Administraci%C3%B3n/Terminales-Controladores.PNG)
+
+
+## Users
+In this section you can view, create or edit users for the Network. You can edit them by clicking on the pencil icon in the options column, enable/disable a user by clicking on the padlock icon and reset the password with the star icon.
+
+![Users](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Users.PNG)
+
+To create a User, click the **New** button.
+
+![Users New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Users%20New.PNG)
+
+* **User Mail:** The user's email address.
+* **Name:** The user's name.
+* **Social Security:** The user's document.
+* **Street 1:** The street where the user resides.
+* **Street 2:** Another street of reference, as it can be the one of the corner.
+* **Country:** The user's country.
+* **State:** The state of the user's country.
+* **Zip Code:** The postal code of the locality where the user resides.
+* **Phone Number 1:** The user's phone.
+* **Phone Number 2:** The user's other phone if available.
+
+<br>
+
+* **Role:** The role that the new user will assume.
+* **Entity:** The entity assigned to the user.
+
+When you have finished filling in the fields, press the **Save** button.
+
+# Fleets
+Within this module you can manage Contingencies, Transactions, Exceptions and Rejections among other things.
+
+## Contingency
+In ATIONet a contingency is a manually entered transaction. In this section you can consult and create contingencies. Take into account that contingencies are transactions without a pre-authorization.
+
+![Contingency](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Contingencies.PNG)
+
+To create a contingency, click the **New** button.
+
+![Contingencies New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Contingencies%20New.PNG)
+
+The fields to complete are the following:
+
+* **Date:** Input the date of the contingency.
+* **Time:** Input the time of the contingency.
+* **Site:** Select the site associated to the contingency.
+* **Terminal/Controller:** Select the terminal/controller associated to the contingency.
+* **Primary Account:** Select the primary sub-account associated to the contingency.
+* **Secondary Account:** Select the secondary sub-account associated to the contingency.
+* **Fuel:** Select the fuel associated to the contingency.
+* **Dispensed Volume:** Input the volume associated to the contingency.
+* **Unit Price:** Input the unit price associated to the contingency.
+* **Dispensed Amount:** Input the amount associated to the contingency.
+* **Shift Number:** Input the shift associated to the contingency.
+* **Pump Number:** Input the pump associated to the contingency.
+* **Odometer:** Input the vehicle's odometer associated to the contingency.
+* **Engine Hours:** Input the vehicle's engine hours associated to the contingency.
+* **Driver Id:** Input the the driver's identifier associated to the contingency.
+* **Vehicle Id:** Input the vehicle's identifier associated to the contingency.
+* **Attendant:** Input the attendant associated to the contingency.
+* **Pump Side:** Input the pump side associated to the contingency.
+* **Miscellaneous:** Input the vehicle's miscellaneous associated to the contingency.
+* **Invoice Number:** Input the invoice number associated to the contingency.
+* **Purchase Order Number:** Input the purchase orden number associated to the contingency.
+
+When you have finished filling in the fields, click the **Save** button.
+
+
+## Declined Transactions
+ATIONet separates unauthorized transactions into 2 sections: [Exceptions](#exceptions) and **Declined Transactions**.
+
+Declined Transactions are those that managed to pass ATIONET's hard authentications, but were rejected by other validations such as an unsatisfied rule or balance validation.
+
+![Declined Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Declined%20Transactions.PNG)
+
+In this view, at the start you can filter by the type of rejection. The types of rejections available are as follows:
+
+![Declined Transactions Filters](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Declined%20Transactions%20Filters.PNG)
+
+## Disputed Transactions
+Disputed transactions are those that either party (Merchant or Company) claims to be unaware of.
+
+In this section you can consult the disputed transactions, listed by code, date, reason, state, transaction number, company, site. There is also the commentary of the company, the merchant and the network.
+
+![Disputed Transactions](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Disputed%20Transactions.PNG)
+
+## Exceptions
+ATIONet separates unauthorized transactions into 2 sections: **Exceptions** and [Declined transactions](#declined-transactions). Exceptions are those transactions that did not pass the hard validations of the system or those that are detected as possible frauds.
+
+![Exceptions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Exceptions.PNG)
+
+In this view, at the start you can filter by the type of exception. The types of exceptions available are as follows:
+
+![Exceptions Filters](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Exceptions%20Filters.PNG)
+
+Some transactions remain in **Review** status in some situations, such as when more than authorized is sent (due to a controller or POS error). In these cases it is necessary to approve or reject the transaction using one of the two icons to the right of each record.
+
+## Outstanding Authorizations
+In ATIONET outstanding authorizations are those transactions that have not yet received the completion transaction, but have been pre-authorized. The information seen in this view are dispatches that are currently underway. If for some reason there are old pre-authorizations, it is likely that the POS did not send the completion transaction or the cancellation transaction if the dispatch was not completed.
+
+Please note that at the time of pre-authorization, ATIONET froze the amount of the authorization of the current account for the sub-account associated. This view presents all the fields necessary to identify the transaction and the sub-account. If you need to see more details, clicking on the authorization code will take you to the transaction details view.
+
+![Outstanding Authorization](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Outstanding%20Authorization.PNG)
+
+## Transactions
+The transaction view is one of the most important in ATIONet. In this view you can see all successful transactions.
+
+The filter panel has all these fields available:
+
+![Trasactions - Filter](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20-%20Filter.PNG)
+
+* **Site:** Select the site associated to the transaction.
+* **Terminal/Controller:** Select the terminal associated to the transaction.
+* **Fuel:** Select the fuel associated to the transaction.
+* 
+* **Date Type:** Select the date type associated to the transaction (Controller, Host, Subscription or Site).
+* **Date From / Date To:** Input the starting and ending dates associated to the transaction.
+* **Time From / Time To:** Input the starting and ending times associated to the transaction.
+* **Mode:** Select the transaction mode (Contingency, Offline or Standard).
+
+Once you have filtered, press ***Search*** and it will list the transactions that comply with the filter.
+
+![Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions.PNG)
+
+If you want to see the transaction detail, click on the **Authorization Code** and this will take you to a detail view of the transaction.
+
+![Transaction Details](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transaction%20Details.PNG)
+
+With the incorporation of Multicurrency, within Transaction Details you will find three new sections: Site Currency, Company Currency and Merchant Currency, which are configurable as explained in the transaction document. [Multicurrency](https://github.com/nuchavez/ationetdocs/blob/master/Multicurrency-EN.MD). 
+ 
+
+## Transactions by Site
+In this view you can see the transactions grouped by the site where they were made. The buttons at the top left are for printing the table or creating an Excel file from the table, respectively.
+Within the grid in the Currency column you can see in which currency each transaction is made. If the Multicurrency functionality is enabled, the different currencies will be indicated in the list of transactions according to each one of them.
+
+![Transactions by Site](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Site.PNG)
+
+# Billing
+
+## Billed Items
+In this section you can view concepts applied for each statement.
+
+![Billed Items](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Billing/Billed%20Items.PNG)
+
+## Billing Documents
+In this section you can view all register status for billing documents requested. Possible status are: Pending, Processing, Finished or Finished with errors.
+
+![Billing Documents](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Billing/Billing%20Documents.PNG)
+
+
+## Charges Documents
+In this section you can view all concepts applied grouped up by statement. If you click on the statement code, it will redirect you to the statement details.
+
+![Charges Documents](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Billing/Charges%20Documents.PNG)
+
+## External Charges
+In this section you can upload a receipt associated with an external document. The receipt takes the amount informed in the document and a file/receipt must be attached that supports the information uploaded.
+
+![Cargos Externos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Liquidaci%C3%B3n/Cargos%20Externos.PNG)
+
+To create an external charge, click the **New** button.
+
+![Cargos Externos Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Company%20ATIONet/Liquidaci%C3%B3n/Cargos%20Externos%20Nuevo.PNG)
+
+The fields to complete are the following:
+
+* **Date:** Enter the date of the external position.
+* **External Document:** Select the external document associated with the position.
+* **Description:** Enter the description of the external position.
+* **Type of Invoice:** Select the type of receipt associated with the charge.
+* **Invoice Number:** Enter the receipt number associated with the charge.
+* **Electronic Authorization Code:** Enter the electronic authorization code associated with the charge.
+* **Expiration date:** Enter the expiration date of the external charge.
+* **Currency:** Select the currency of the external charge.
+* **Net Amount:** Enter the net amount of the external charge.
+* **Tax Exempt:** Check this option if the charge is tax free.
+
+<br>
+
+**Taxes**
+
+* **Tax:** Enter the code or name of the corresponding tax.
+* **Type** Enter the corresponding tax type.
+* **Amount:** Enter the amouth of the corresponding tax.
+* **Mode:** Enter the mode of the corresponding tax.
+* **Value:** Enter the value of the corresponding tax.
+
+This view has an approval flow associated with it, where:
+* The Company enters the external position and it remains in **New** status (it is allowed to edit or delete it).
+* The same Company can change the status to **Approved by the Company** or **Rejected by the Company**.
+
+If the charge is rejected, the flow ends. Instead, if approved, the Network is responsible for reviewing the **external charge** and may likewise approve or reject it.
+
+
+## Statements
+In this section you can view and download statements from your Network. You can also generate the .pdf statements one by one, or inside the **Bulk Action** generate a .pdf package.
+
+![Statements](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Billing/Statements.PNG)
+
+
 <br>
 
 [Back to top](#contents)  :arrow_up:
