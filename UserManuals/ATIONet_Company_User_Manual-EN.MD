@@ -776,6 +776,7 @@ The filter panel has all these fields available:
 * **Time From / Time To:** Input the starting and ending times associated to the transaction.
 * **Mode:** Select the transaction mode (Contingency, Offline or Standard).
 * **Show Zero Completions:** Checkmark this option to view transactions that no fuel was dispatched.
+* **Subsidized Values:** Select the option corresponding to the transaction (Yes/No).
 
 Once you have filtered, press ***Search*** and it will list the transactions that comply with the filter.
 
