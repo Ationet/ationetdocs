@@ -168,27 +168,27 @@ Once the general information is completed, you have different tabs to configure:
 When you have finished filling in the fields, click the **Save** button.
 
 ## Company Current Accounts
-The Company Current Accounts section is the view of available balance of sub-account and/or contracts, and also the view of all movements of sub-accounts and/or contracts.
+The Company Current Accounts section is the view of available balance of sub-account and/or contracts, and also the view of all movements of sub-accounts and/or contracts. In the Currency column of the grid you can see in which currency each movement is made. If the Multicurrency functionality is configured, you can see the different currencies in each movement.
 
 For easier quieries, there is a filter panel available. The first option in the filter panel is the type of report:
 
-![Company Current Accounts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts.PNG)
+![Company Current Accounts](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts.PNG)
 
 1. **Contract List:** This option lists all contracts with their respective balance, but does not give details of the movements.
 
-![Company Current Accounts - Contract List](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20-%20Contract%20List.PNG)
+![Company Current Accounts - Contract List](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20-%20Contract%20List.PNG)
 
 2. **Contract Movements:** This option lists all contract movements.
 
-![Company Current Accounts - Contract Movements](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20-%20Contract%20Movements.PNG)
+![Company Current Accounts - Contract Movements](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20-%20Contract%20Movements.PNG)
 
 3. **Sub-account List:** This option lists all sub-accounts with their respective balances, but does not give details of the movements.
 
-![Company Current Accounts - Sub-Account List](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20-%20Sub-Account%20List.PNG)
+![Company Current Accounts - Sub-Account List](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20-%20Sub-Account%20List.PNG)
 
 4. **Sub-account Movements:** This view lists all sub-account movements.  
 
-![Company Current Accounts - Sub-Account Movements](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20-%20Sub-Account%20Movements.PNG)
+![Company Current Accounts - Sub-Account Movements](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20-%20Sub-Account%20Movements.PNG)
 
 ## Concepts
 Concepts in ATIONet refer to taxes or commission fees that can be added to company or merchant contracts. In this section you can consult, create and edit concepts.
