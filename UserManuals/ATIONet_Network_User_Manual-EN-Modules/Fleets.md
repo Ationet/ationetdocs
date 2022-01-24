@@ -268,6 +268,7 @@ When you have finished filling in the fields, click the **Save** button.
 ATIONet separates unauthorized transactions into 2 sections: [Exceptions](#exceptions) and **Declined Transactions**.
 
 Declined Transactions are those that managed to pass ATIONet's hard authentications, but were rejected by other validations such as an unsatisfied rule or balance validation.
+In the Volume Dispensed, Unit Price Dispensed, Amount Dispensed, Contract Unit Price, Contract Amount columns, you can see with which currency the rejected transaction was made.
 
 ![Declined Transactions](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Declined%20Transactions.PNG)
 
@@ -276,7 +277,7 @@ In this view, at the start you can filter by the type of rejection. The types of
 ![Declined Transactions Filters](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Declined%20Transactions%20Filters.PNG)
 
 ## Dispensed Transactions
-In this section you can view all transactions that had fuel dispensed.
+In this section you can view all transactions that had fuel dispensed. With the incorporation of the Multicurrency functionality, in the Amount Dispensed column it will be possible to view the currency with which each transaction was made.
 
 ![Dispensed Transactions](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Dispensed%20Transactions.PNG)
 
@@ -504,6 +505,7 @@ The filter panel has all these fields available:
 * **Time From / Time To:** Input the starting and ending times associated to the transaction.
 * **Mode:** Select the transaction mode (Contingency, Offline or Standard).
 * **Show Zero Completions:** Checkmark this option to view transactions that no fuel was dispatched.
+* **Subsidized Values:** Select the option corresponding to the transaction (Yes/No).
 
 Once you have filtered, press ***Search*** and it will list the transactions that comply with the filter.
 
@@ -512,24 +514,31 @@ Once you have filtered, press ***Search*** and it will list the transactions tha
 If you want to see the transaction detail, click on the **Authorization Code** and this will take you to a detail view of the transaction.
 
 ![Transaction Details](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transaction%20Details.PNG)
+
+With the incorporation of Multicurrency, within Transaction Details you will find three new sections: Site Currency, Company Currency and Merchant Currency, which are configurable as explained in the transaction document. [Multicurrency](https://github.com/nuchavez/ationetdocs/blob/master/Multicurrency-EN.MD). 
+
  
 ## Transactions by Driver
-In this view you can see the transactions grouped by the driver who made them. The buttons at the top left are for printing the table or creating an Excel file from the table, respectively.
+In this view you can see the transactions grouped by the driver who made them. The buttons at the top left are for printing the table or creating an Excel file from the table, respectively. 
+Within the grid in the Currency column you can see in which currency each transaction is made. If the Multicurrency functionality is enabled, the different currencies will be indicated in the list of transactions according to each one of them.
 
 ![Transactions by Driver](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Driver.PNG)
 
 ## Transactions by Fleet
 In this view you can see the transactions grouped by the fleet who made them. The buttons at the top left are for printing the table or creating an Excel file from the table, respectively.
+Within the grid in the Currency column you can see in which currency each transaction is made. If the Multicurrency functionality is enabled, the different currencies will be indicated in the list of transactions according to each one of them.
 
 ![Transactions by Fleet](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Fleet.PNG)
 
 ## Transactions by Site
 In this view you can see the transactions grouped by the site where they were made. The buttons at the top left are for printing the table or creating an Excel file from the table, respectively.
+Within the grid in the Currency column you can see in which currency each transaction is made. If the Multicurrency functionality is enabled, the different currencies will be indicated in the list of transactions according to each one of them.
 
 ![Transactions by Site](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Site.PNG)
 
 ## Transactions by Vehicle
 In this view you can see the transactions grouped by the vehicle who made them. The buttons at the top left are for printing the table or creating an Excel file from the table, respectively.
+Within the grid in the Currency column you can see in which currency each transaction is made. If the Multicurrency functionality is enabled, the different currencies will be indicated in the list of transactions according to each one of them.
 
 ![Transactions by Vehicle](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Vehicle.PNG)
 
@@ -537,3 +546,8 @@ In this view you can see the transactions grouped by the vehicle who made them. 
 Uncontrolled transactions are those that are generated because the controller detects a difference in gauges and sends a transaction for the difference. These transactions do not contain data about the identification, since they were generated automatically and were not initiated with the presentation of an identification. As they do not have an identification assigned, they are not impacted in any current account nor do they count for the calculation of rules.
 
 ![Uncontrolled Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Uncontrolled%20Transactions.PNG)
+
+<br>
+
+[Volver al inicio](#contents) 	:arrow_up:
+
