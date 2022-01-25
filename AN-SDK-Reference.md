@@ -1309,16 +1309,174 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |GiftCardProgramIdentificationTypeModelDto IdentificationsTypesModel||
 |GiftCardProgramRuleDto Rule||
 
+#### GiftCardProgramValueDto
+|Data|Description|
+|--- |--- |
+| Guid Id ||
+| Guid GiftCardProgramId ||
+| decimal Value ||
+		
+#### GiftCardProgramSiteDto
+|Data|Description|
+|--- |--- |
+| Guid SiteId ||
+| string SiteName ||
+| string SiteCode ||
+| List<GiftCardProgramFuelDto> Fuels ||
+		
+#### GiftCardProgramFuelDto
+|Data|Description|
+|--- |--- |
+| Guid FuelMasterId ||
+| string FuelMasterName ||
+| decimal? Price ||
+		
+#### GiftCardProgramFuelDto
+|Data|Description|
+|--- |--- |
+| Guid FuelMasterId ||
+| string FuelMasterName ||
+| decimal? Price ||
+		
+#### GiftCardProgramDiscountDto
+|Data|Description|
+|--- |--- |
+| Guid Id ||
+| Guid? SiteId ||
+| string SiteName ||
+| Guid? FuelId ||
+| string FuelName ||
+| byte Type ||
+| string TypeName ||
+| decimal Value ||
+| string DateFrom ||
+| string TimeFrom ||
+| string DateTo ||
+| string TimeTo ||
+| byte State ||
+		
+#### GiftCardProgramIdentificationTypeModelDto
+|Data|Description|
+|--- |--- |
+| Guid Id ||
+| Guid? NetworkId ||
+| bool IgnoreTerminalVehicleIdBehavior ||
+| bool RequirePin ||
+| int? PinDigits ||
+| bool RequiresPINChange ||
+		
+#### GiftCardProgramRuleDto
+|Data|Description|
+|--- |--- |
+| string ProgramDescription ||
+| Guid? ProgramId ||
+| string RuleTypeDescription ||
+| byte Owner ||
+| bool TrailerNumberReprompt ||
+| bool TruckUnitNumberReprompt ||
+| bool DriverPINReprompt ||
+| bool DriverIdReprompt ||
+| string Description ||
+| short? RuleType ||
+| int? EngineHoursMaxVariation ||
+| int? EngineHoursMinVariation ||
+| bool EngineHoursReprompt ||
+| int? OdometerMaxVariation ||
+| int? OdometerMinVariation ||
+| bool OdometerReprompt ||
+| bool MiscellaneousReprompt ||
+| bool SecondaryTrackReprompt ||
+| bool VehiclePINReprompt ||
+| int? Retries ||
+| string NetworkName ||
+| Guid? NetworkId ||
+| Guid Id ||
+| bool VehicleIdReprompt ||
+| bool SecondaryTrack ||
+
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetGiftCardPrograms|Guid? NetworkId Guid? IdSite string name = null int page = 1 int pageSize = 50 string orderField = "label" string orderType = "asc"|GiftCardProgramDto|Get list of the GiftCardProgramDto|
-|GetGiftCardProgramsAsync|Guid? NetworkId Guid? IdSite string name = null int page = 1 int pageSize = 50 string orderField = "label" string orderType = "asc"|GiftCardProgramDto|Get list of the GiftCardProgramDto|
+|GetGiftCardPrograms|Guid? NetworkId <BR>Guid? IdSite <BR>string name = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "label" <BR>string orderType = "asc"|GiftCardProgramDto|Get list of the GiftCardProgramDto|
+|GetGiftCardProgramsAsync|Guid? NetworkId <BR>Guid? IdSite <BR>string name = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "label" <BR>string orderType = "asc"|GiftCardProgramDto|Get list of the GiftCardProgramDto|
 |GetGiftCardProgram|Guid id|GiftCardProgramDto|Get individual GiftCardProgramDto|
 |GetGiftCardProgramAsync|Guid id|GiftCardProgramDto|Get individual GiftCardProgramDto|
 |CreateGiftCardProgram|GiftCardProgramDto data|GiftCardProgramDto|Create GiftCardProgramDto|
 |CreateGiftCardProgramAsync|GiftCardProgramDto data|GiftCardProgramDto|Create GiftCardProgramDto|
-|UpdateGiftCardProgram|Guid id GiftCardProgramDto data|string|Update GiftCardProgramDto|
-|UpdateGiftCardProgramAsync|Guid id GiftCardProgramDto data|string|Update GiftCardProgramDto|
+|UpdateGiftCardProgram|Guid id <BR>GiftCardProgramDto data|string|Update GiftCardProgramDto|
+|UpdateGiftCardProgramAsync|Guid id <BR>GiftCardProgramDto data|string|Update GiftCardProgramDto|
+
+#### GiftCardTransactionsContingencyDto
+|Data|Description|
+|--- |--- |
+| decimal UnitPrice ||
+| decimal Amount ||
+| string ShiftNumber ||
+| string PumpNumber ||
+| int? Odometer ||
+| int? EngineHours ||
+| string DriverId ||
+| string VehicleId ||
+| string Miscellaneous ||
+| byte State ||
+| string ResponseCode ||
+| string ResponseMessage ||
+| string Comments ||
+| string ImageFileName ||
+| Guid? ReasonId ||
+| decimal Volume ||
+| string FuelName ||
+| Guid FuelMasterId ||
+| string TerminalCode ||
+| Guid Id ||
+| Guid? TransactionId ||
+| Guid NetworkId ||
+| string NetworkName ||
+| Guid GiftCardProgramId ||
+| string GiftCardProgramName ||
+| Guid GiftCardClientId ||
+| string ReasonName ||
+| string GiftCardClientPAN ||
+| string Date ||
+| string Time ||
+| Guid MerchantId ||
+| string MerchantName ||
+| Guid SiteId ||
+| string SiteName ||
+| Guid TerminalId ||
+| string AuthorizationCode ||
+| GiftCardTransactionsContingencyImageDto Image ||
+
+#### GiftCardTransactionsContingencyImageDto
+|Data|Description|
+|--- |--- |
+| string FileExtension ||
+| byte[] FileContent ||
+| ChangeTypeEnum ChangeType ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetGiftCardTransactionsContingencies| Guid? idGiftCardClient = null <BR>Guid? idProgram = null <BR>Guid? idSite = null <BR>Guid? idTerminal = null <BR>Guid? idFuelMaster = null <BR>string dateFrom = null <BR>string timeFrom = null <BR>string dateTo = null <BR>string timeTo = null <BR>string authorizationCode = null <BR>byte? state = null <BR>Guid? idReason = null <BR>string order = "desc" <BR>int page = 1 <BR>int pageSize = 50|GiftCardTransactionsContingencyDto|Get list of the GiftCardTransactionsContingencyDto|
+|GetGiftCardTransactionsContingenciesAsync|Guid? idGiftCardClient = null <BR>Guid? idProgram = null <BR>Guid? idSite = null <BR>Guid? idTerminal = null <BR>Guid? idFuelMaster = null <BR>string dateFrom = null <BR>string timeFrom = null <BR>string dateTo = null <BR>string timeTo = null <BR>string authorizationCode = null <BR>byte? state = null <BR>Guid? idReason = null <BR>string order = "desc" <BR>int page = 1 <BR>int pageSize = 50|GiftCardTransactionsContingencyDto|Get list of the GiftCardTransactionsContingencyDto|
+|GetGiftCardTransactionsContingency|Guid id|GiftCardTransactionsContingencyDto|Get individual GiftCardTransactionsContingencyDto|
+|GetGiftCardTransactionsContingencyAsync|Guid id|GiftCardTransactionsContingencyDto|Get individual GiftCardTransactionsContingencyDto|
+|CreateGiftCardTransactionsContingency|GiftCardTransactionsContingencyDto data|GiftCardTransactionsContingencyDto|Create GiftCardTransactionsContingencyDto|
+|CreateGiftCardTransactionsContingencyAsync|GiftCardTransactionsContingencyDto data|GiftCardTransactionsContingencyDto|Create GiftCardTransactionsContingencyDto|
+|UpdateGiftCardTransactionsContingency|GiftCardTransactionsContingencyDto data|string|Update GiftCardTransactionsContingencyDto|
+|UpdateGiftCardTransactionsContingencyAsync|GiftCardTransactionsContingencyDto data|string|Update GiftCardTransactionsContingencyDto|
+
+#### GlobalSearchDto
+|Data|Description|
+|--- |--- |
+| Guid Id ||
+| int Type ||
+| int? SubType ||
+| string Title ||
+| string Description ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetGlobalSearch|string searchText|GlobalSearchDto|Get individual GlobalSearchDto|
+|GetGlobalSearchAsync|string searchText|GlobalSearchDto|Get individual GlobalSearchDto|
 
 #### IdentificationDto
 |Data|Description|
