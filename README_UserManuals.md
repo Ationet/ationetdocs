@@ -10,11 +10,12 @@
 - [ATIONET Network User Manual (English)](https://github.com/Ationet/ationetdocs/blob/master/ATIONet%20Network%20User%20Manual-EN.md)
 
 ### Company
-- [ATIONET Company User Manual (Spanish)](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Company_User_Manual.md)
+- [ATIONET Company User Manual (Spanish)](https://github.com/nuchavez/ationetdocs/blob/master/UserManuals/ATIONet_Company_User_Manual-ES.md)
 - [ATIONET Company User Manual (English)](https://github.com/nuchavez/ationetdocs/blob/master/UserManuals/ATIONet_Company_User_Manual-EN.MD)
 
 ### Merchant 
 - [ATIONET Merchant User Manual (Spanish)](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONET_Merchant_User_Manual.md)
+- [ATIONET Merchant User Manual (English)](https://github.com/nuchavez/ationetdocs/blob/master/UserManuals/ATIONET_Merchant_User_Manual-EN.MD)
 
 ### Functional documentation
 - [Functional documentation](FunctionalDocumentation.MD)

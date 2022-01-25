@@ -43,9 +43,9 @@
 		- [Terminal status](#terminal-status)
 	- [Favorites](#favorites)
 	- [Reports](#reports)
-		- [Driver](#driver)
-		- [Transactions](#transactions)
-		- [Vehicle](#vehicle)
+		- [Driver](#driver-report)
+		- [Transactions](#transactions-report)
+		- [Vehicle](#vehicle-report)
 	- [Administration](#administration)
 		- [Companies](#companies)
 		- [Dispersion](#dispersion)
@@ -281,7 +281,7 @@ If you want to remove a section from the list of Favorites, click on the icon on
 # Reports
 In ATIONET the reports are considered those lists of information that are going to be printed and filed in physical format. When they are printed, ATIONET adds a header with the logo of the subscription automatically.
 
-## Driver
+## Driver report
 The Driver report can be filtered by driver name/code or by identification.
 Once the filter is selected press the ***Print*** button, this will display a popup with the selected information.
 The information is displayed in a print-ready format, including the subscription logo and the date and time of report generation.
@@ -290,7 +290,7 @@ This popup has a print button that when pressed opens the default print window o
 
 ![Drivers](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Reports/Driver.PNG)
 
-## Transactions
+## Transactions report
 This report shows the list of transactions made, sorted by date. This report has several filters to adjust the search. The first field of the filter panel indicates why the field will sort the list, the field selected in this list will be shown in the first column.
 
 ![Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Reports/Transaction%20Filter.PNG)
@@ -302,7 +302,7 @@ This popup has a print button that when pressed opens the default print window o
 
 ![Transactions](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Reports/Transaction.PNG)
 
-## Vehicle
+## Vehicle report
 This report shows the list of vehicles. This report has several filters to adjust the search. The first field of the filter panel indicates why the field will sort the list, the field selected in this list will be shown in the first column.
 
 ![Vehicles](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Reports/Vehicle%20Filter.PNG)
@@ -663,14 +663,14 @@ In this view, at the start you can filter by the type of rejection. The types of
 ## Dispensed Transactions
 In this section you can view all transactions that had fuel dispensed.
 
-![Dispensed Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Dispensed%20Transactions.PNG)
+![Dispensed Transactions](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Dispensed%20Transactions.PNG)
 
 ## Disputed Transactions
 Disputed transactions are those that either party (Merchant or Company) claims to be unaware of.
 
 In this section you can consult the disputed transactions, listed by code, date, reason, state, transaction number, company, site. There is also the commentary of the company, the merchant and the network.
 
-![Disputed Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Disputed%20Transactions.PNG)
+![Disputed Transactions](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Disputed%20Transactions.PNG)
 
 ## Exceptions
 ATIONet separates unauthorized transactions into 2 sections: **Exceptions** and [Declined transactions](#declined-transactions). Exceptions are those transactions that did not pass the hard validations of the system or those that are detected as possible frauds.
@@ -758,7 +758,7 @@ The transaction view is one of the most important in ATIONet. In this view you c
 
 The filter panel has all these fields available:
 
-![Trasactions - Filter](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20-%20Filter.PNG)
+![Trasactions - Filter](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20-%20Filter.PNG)
 
 * **Authorization Code:** Input the authorization code associated to the transaction.
 * **Shift Number:** Input the shift number associated to the transaction.
@@ -776,6 +776,7 @@ The filter panel has all these fields available:
 * **Time From / Time To:** Input the starting and ending times associated to the transaction.
 * **Mode:** Select the transaction mode (Contingency, Offline or Standard).
 * **Show Zero Completions:** Checkmark this option to view transactions that no fuel was dispatched.
+* **Subsidized Values:** Select the option corresponding to the transaction (Yes/No).
 
 Once you have filtered, press ***Search*** and it will list the transactions that comply with the filter.
 
@@ -783,27 +784,33 @@ Once you have filtered, press ***Search*** and it will list the transactions tha
 
 If you want to see the transaction detail, click on the **Authorization Code** and this will take you to a detail view of the transaction.
 
-![Transaction Details](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transaction%20Details.PNG)
+![Transaction Details](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transaction%20Details.PNG)
+
+With the incorporation of Multicurrency, within Transaction Details you will find three new sections: Site Currency, Company Currency and Merchant Currency, which are configurable as explained in the transaction document. [Multicurrency](https://github.com/nuchavez/ationetdocs/blob/master/Multicurrency-EN.MD). 
  
 ## Transactions by Driver
 In this view you can see the transactions grouped by the driver who made them. The buttons at the top left are for printing the table or creating an Excel file from the table, respectively.
+Within the grid in the Currency column you can see in which currency each transaction is made. If the Multicurrency functionality is enabled, the different currencies will be indicated in the list of transactions according to each one of them.
 
-![Transactions by Driver](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Driver.PNG)
+![Transactions by Driver](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Driver.PNG)
 
 ## Transactions by Fleet
 In this view you can see the transactions grouped by the fleet who made them. The buttons at the top left are for printing the table or creating an Excel file from the table, respectively.
+Within the grid in the Currency column you can see in which currency each transaction is made. If the Multicurrency functionality is enabled, the different currencies will be indicated in the list of transactions according to each one of them.
 
-![Transactions by Fleet](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Fleet.PNG)
+![Transactions by Fleet](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Fleet.PNG)
 
 ## Transactions by Site
 In this view you can see the transactions grouped by the site where they were made. The buttons at the top left are for printing the table or creating an Excel file from the table, respectively.
+Within the grid in the Currency column you can see in which currency each transaction is made. If the Multicurrency functionality is enabled, the different currencies will be indicated in the list of transactions according to each one of them.
 
-![Transactions by Site](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Site.PNG)
+![Transactions by Site](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Site.PNG)
 
 ## Transactions by Vehicle
 In this view you can see the transactions grouped by the vehicle who made them. The buttons at the top left are for printing the table or creating an Excel file from the table, respectively.
+Within the grid in the Currency column you can see in which currency each transaction is made. If the Multicurrency functionality is enabled, the different currencies will be indicated in the list of transactions according to each one of them.
 
-![Transactions by Vehicle](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Vehicle.PNG)
+![Transactions by Vehicle](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Vehicle.PNG)
 
 # Billing
 

@@ -495,7 +495,7 @@ Si quiere ver el detalle de la transacción, presione sobre el **Código de Auto
 
 ![Transacciones Detalles](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Detalles.PNG)
 
-Con la incorporación de Multineda, dentro de Detalles de Transacción encontrara tres nuevas secciones: Moneda del Sitio, Moneda de la Compañía y Moneda de Comercio, las cuales son configurables como se explica en el documento de [Multimoneda](https://github.com/nuchavez/ationetdocs/blob/master/Multicurrency-ES.MD). 
+Con la incorporación de Multimoneda, dentro de Detalles de Transacción encontrara tres nuevas secciones: Moneda del Sitio, Moneda de la Compañía y Moneda de Comercio, las cuales son configurables como se explica en el documento de [Multimoneda](https://github.com/nuchavez/ationetdocs/blob/master/Multicurrency-ES.MD). 
 
 ## Transacciones Desconocidas
 Las transacciones desconocidas son aquellas que la Compañía dice desconocer.
@@ -536,7 +536,7 @@ Dentro de la grilla en la columna Moneda puede ver en que divisa se realiza cada
 ## Transacciones Rechazadas
 ATIONet separa las transacciones no autorizadas en 2 secciones: [Excepciones](#excepciones) y **Transacciones Rechazadas**.
 
-Las Transacciones Rechazadas son aquellas que lograron pasar las autenticaciones duras de ATIONet, pero fueron rechazadas por otras validaciones como una regla insatisfecha o una validación de saldo.
+Las Transacciones Rechazadas son aquellas que lograron pasar las autenticaciones duras de ATIONET, pero fueron rechazadas por otras validaciones como una regla insatisfecha o una validación de saldo.
 En las columnas Volumen Despachado, Precio unitario Despachado, Monto Despachado, Precio unitario de Contrato, Monto de Contrato puede ver con que moneda fue realizada la transacción rechazada.
 
 ![Transacciones Rechazadas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Rechazadas.PNG)
