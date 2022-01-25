@@ -571,6 +571,12 @@ The fields to complete are the following:
 When you have finished filling in the fields, press the **Save** button.
 
 
+## Physical Reconciliations
+
+In this section you can view a report of income (***delivery***), expenses (***transactions***) and the balance (a sum of all receipts minus all transactions to date).
+
+![Reconciliación Inventario](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20Merchant%20ATIONet/Inventario/Reconciliaci%C3%B3n%20Inventario.PNG)
+
 <br>
 
 [Back to top](#contents)  :arrow_up:
