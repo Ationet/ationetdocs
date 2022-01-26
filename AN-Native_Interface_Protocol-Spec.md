@@ -21,6 +21,7 @@
 |1.5|13/07/2021|**Inventory Interface Messages** <br> - Updated lists of Action Codes|
 |1.6|29/11/2021|**Inventory & Delivery Interface Update** <br> - Update Inventory Download Response <br> - Update Delivery Download Response <br>|
 |1.7|19/01/2022|**Document Update** <br> - Add CompanyGroups movements download: Request/Response <br> - Add Merchant Charges Comissions Download: Request/Response <br> - Add Sub-Account/Contract Balance Download: Request/Response <br> - Update Transaction Download Response <br> - Update company movements download request parameters <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages <br> - Update Transaction Currency Response Fields <br> - Add Transaction product format response <br> - Add Transaction Product Taxes Format Response <br> - Add Transaction Modifiers Format Response <br> - Add Transaction Movement ERP Format Response <br> - Add Transaction Fee Format Response|
+|1.8|26/01/2022|**Document Update** <br> - Add Transaction custom fields download Request|
 
 ## Contents
 
@@ -54,6 +55,7 @@
 			- [7.3.3.1 Transaction Product Taxes Format Response](#7331-transaction-product-taxes-format-response)
 		- [7.3.4 Transaction Modifiers Format Response](#734-transaction-modifiers-format-response)
 		- [7.3.5 Transaction Movement ERP Format Response](#735-transaction-movement-erp-format-response)
+	- [7.4 Transacionts Custom Fields Download (POST) – Body Section Format Request](#74-transactions-custom-fields-download-post--body-section-format-request)
 
 - [8 FastTrack Interface](#8-fasttrack-interface)
 	- [8.1 Action Codes](#81-action-codes)
@@ -1168,166 +1170,6 @@ transactions to download.
 ### 7.2 Transactions Download (POST) – Body Section Format *Request*
 
 <table>
-	<thead>
-		<tr valign="top">
-			<th align="left">
-				Field Name
-			</th>
-			<th align="left">
-				Size
-			</th>
-			<th align="left">
-				Type
-			</th>
-			<th align="left">
-				Condition
-			</th>
-			<th align="left">
-				Descriptions/Field Value(s)
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr valign="top">
-			<td>
-				<p align="left">SubscriberCode</p>
-			</td>
-			<td>
-				<p align="left">3</p>
-			</td>
-			<td>
-				<p align="left">A/N</p>
-			</td>
-			<td>
-				<p align="left">Required</p>
-			</td>
-			<td>
-				<p align="left">Fixed. To be assigned by ATIONet</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ActionCode</p>
-			</td>
-			<td>
-				<p align="left">3</p>
-			</td>
-			<td>
-				<p align="left">N</p>
-			</td>
-			<td>
-				<p align="left">Required</p>
-			</td>
-			<td>
-				<p align="left">See Action Codes section above</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">MerchantCode</p>
-			</td>
-			<td>
-				<p align="left">30</p>
-			</td>
-			<td>
-				<p align="left">A/N</p>
-			</td>
-			<td>
-				<p align="left">Conditional</p>
-			</td>
-			<td>
-				<p align="left">See Action Codes section above</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">CompanyCode</p>
-			</td>
-			<td>
-				<p align="left">30</p>
-			</td>
-			<td>
-				<p align="left">A/N</p>
-			</td>
-			<td>
-				<p align="left">Conditional</p>
-			</td>
-			<td>
-				<p align="left">See Action Codes section above</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ContractCode</p>
-			</td>
-			<td>
-				<p align="left">20</p>
-			</td>
-			<td>
-				<p align="left">A/N</p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
-				<p align="left">See Action Codes section above</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">TerminalCode</p>
-			</td>
-			<td>
-				<p align="left">50</p>
-			</td>
-			<td>
-				<p align="left">A/N</p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
-				<p align="left">See Action Codes section above</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">DateFrom</p>
-			</td>
-			<td>
-				<p align="left">19</p>
-			</td>
-			<td>
-				<p align="left">A/N</p>
-			</td>
-			<td>
-				<p align="left">Required</p>
-			</td>
-			<td>
-				<p align="left">From date to filter transactions</p>
-				<p align="left">&ldquo;yyyy/MM/dd hh:mm:ss&rdquo;</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">DateTo</p>
-			</td>
-			<td>
-				<p align="left">19</p>
-			</td>
-			<td>
-				<p align="left">A/N</p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
-				<p align="left">To date to filter transactions</p>
-				<p align="left">&ldquo;yyyy/MM/dd hh:mm:ss&rdquo;</p>
-			</td>
-		</tr>
-	</tbody>
-</table><table>
 	<thead>
 		<tr valign="top">
 			<th align="left">
@@ -5929,6 +5771,395 @@ transactions to download.
 		</tr>
 	</tbody>
 </table>
+
+### 7.4 Transacionts Custom Fields Download (POST) – Body Section Format Request
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Condition
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">SubscriberCode</p>
+			</td>
+			<td>
+				<p align="left">3</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Required</p>
+			</td>
+			<td>
+				<p align="left">Fixed. To be assigned by ATIONet</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ActionCode</p>
+			</td>
+			<td>
+				<p align="left">3</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Required</p>
+			</td>
+			<td>
+				<p align="left">See Action Codes section above</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantCode</p>
+			</td>
+			<td>
+				<p align="left">30</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Conditional</p>
+			</td>
+			<td>
+				<p align="left">See Action Codes section above</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyCode</p>
+			</td>
+			<td>
+				<p align="left">30</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Conditional</p>
+			</td>
+			<td>
+				<p align="left">See Action Codes section above</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ContractCode</p>
+			</td>
+			<td>
+				<p align="left">20</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">See Action Codes section above</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TerminalCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">See Action Codes section above</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DateFrom</p>
+			</td>
+			<td>
+				<p align="left">19</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Required</p>
+			</td>
+			<td>
+				<p align="left">From date to filter transactions</p>
+				<p align="left">&ldquo;yyyy/MM/dd hh:mm:ss&rdquo;</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DateTo</p>
+			</td>
+			<td>
+				<p align="left">19</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">To date to filter transactions</p>
+				<p align="left">&ldquo;yyyy/MM/dd hh:mm:ss&rdquo;</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">IdentificationId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Identification UID to filter transactions</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TrackNumber</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">TrackNumber to filter transactions</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PAN</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">PAN to filter transactions</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">AuthorizationCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Authorization code to filter transactions</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyGroupId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Company group UID to filter transactions</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyGroupCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Company group code to filter transactions</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyGroupCode</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Program UID to filter transactions</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TransactionModes</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">L</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">List of transacion modes to filter transactions <br> 0 = Standard <br> 1 = Offline <br> 2 = Contingency</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TransactionDateType</p>
+			</td>
+			<td>
+				<p align="left">10</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Transaction date type to filter transactions <br> 0 = RealDate <br> 1 = LocalTransactionDate <br> 2 = NetworkDate <br> 3 = CorrectedDate</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Fields</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">L</p>
+			</td>
+			<td>
+				<p align="left">Required</p>
+			</td>
+			<td>
+				<p align="left">List of transactions fields to be download</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Paginate</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Indicates if the query result will be paginated <br> 0 = false <br> 1 = true</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PageSize</p>
+			</td>
+			<td>
+				<p align="left">10</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Conditional</p>
+			</td>
+			<td>
+				<p align="left">Indicates the number of records to download in case the query is paginated.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Page</p>
+			</td>
+			<td>
+				<p align="left">10</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Conditional</p>
+			</td>
+			<td>
+				<p align="left">Indicates the page to be download</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+## 7.4 Transacionts Custom Fields Download (POST) – Body Section Format Response
+
+
 
 ## 8 FastTrack Interface
 
