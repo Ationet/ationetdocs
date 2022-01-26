@@ -55,7 +55,7 @@
 			- [7.3.3.1 Transaction Product Taxes Format Response](#7331-transaction-product-taxes-format-response)
 		- [7.3.4 Transaction Modifiers Format Response](#734-transaction-modifiers-format-response)
 		- [7.3.5 Transaction Movement ERP Format Response](#735-transaction-movement-erp-format-response)
-	- [7.4 Transacionts Custom Fields Download (POST) – Body Section Format Request](#74-transactions-custom-fields-download-post--body-section-format-request)
+	- [7.4 Transacionts Custom Fields Download (POST) – Body Section Format Request](#74-transacionts-custom-fields-download-post--body-section-format-request)
 
 - [8 FastTrack Interface](#8-fasttrack-interface)
 	- [8.1 Action Codes](#81-action-codes)
@@ -6157,7 +6157,7 @@ transactions to download.
 	</tbody>
 </table>
 
-## 7.4 Transacionts Custom Fields Download (POST) – Body Section Format Response
+## 7.5 Transacionts Custom Fields Download (POST) – Body Section Format Response
 
 
 
