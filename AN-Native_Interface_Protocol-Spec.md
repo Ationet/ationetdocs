@@ -6157,6 +6157,267 @@ transactions to download.
 	</tbody>
 </table>
 
+### 7.4.1 Transacionts Custom Fields
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">State</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Dispute state</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteStateDescription</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">the site state description</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCountryId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site country UID</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCountry</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">The site country</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteAddress</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site address</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteStateId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site state UID</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCityDescription</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site city description</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteZipCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site zip code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCustomField0</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site custom field 0</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCustomField1</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site custom field 1</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCustomField2</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site custom field 2</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCustomField3</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site custom field 3</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyTaxpayerId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Company taxpayer UID</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverClassificationCode2</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver classification code 2</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverClassificationCode4</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver classification code 4</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PrimaryIdentificationPAN</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Primary PAN</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SecondaryIdentificationTrack</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Secondary track</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
 ## 7.5 Transacionts Custom Fields Download (POST) – Body Section Format Response
 
 
