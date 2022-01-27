@@ -6415,11 +6415,457 @@ transactions to download.
 				<p align="left">Secondary track</p>
 			</td>
 		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SecondaryIdentificationPAN</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Secondary PAN</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PrimaryIdentificationLabel</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Public ID of the primary identification device (chipkey ID, account number on a mag card, RFID serial number, etc.)</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SecondaryIdentificationLabel</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Public ID of the secondary identification device (chipkey ID, account number on a mag card, RFID serial number, etc.)</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PrimaryIdentificationModelDescription</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Primary identifier model</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SecondaryIdentificationModelDescription</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Secondary identifier model</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">FleetCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Fleet code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">FleetName</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Fleet name</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PrimaryIdentificationTrack</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Primary identification track</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SecondaryIdentificationTrack</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Secondary track</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehiclePlate</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle plate</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleBrand</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle brand</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleModel</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle model</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleCustomField0</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle custom field 0</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleCustomField1</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle custom field 1</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleCustomField2</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle custom field 2</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleCustomField3</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle custom field 3</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleClassDescription</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle class</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleClassificationCode1</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle classifcation code 1</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleClassificationCode2</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle classifcation code 2</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleClassificationCode3</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle classifcation code 3</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleClassificationCode4</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle classifcation code 4</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverName</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver name</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverFirstName</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver first name</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverLastName</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver last name</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverCustomField0</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver custom field 0</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverCustomField1</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver custom field 1</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverCustomField2</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver custom field 2</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverCustomField3</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver custom field 3</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverClassificationCode1</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver classification code 1</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverClassificationCode3</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver classification code 3</p>
+			</td>
+		</tr>
+		
 	</tbody>
 </table>
-
-## 7.5 Transacionts Custom Fields Download (POST) – Body Section Format Response
-
 
 
 ## 8 FastTrack Interface
