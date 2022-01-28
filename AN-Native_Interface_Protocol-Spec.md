@@ -6863,7 +6863,6 @@ transactions to download.
 				<p align="left">Driver classification code 3</p>
 			</td>
 		</tr>
-		
 	</tbody>
 </table>
 
