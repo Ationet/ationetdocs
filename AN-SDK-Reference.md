@@ -3305,15 +3305,347 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |GetTransaction|Guid id|TransactionDto|Get individual TransactionDto|
 |GetTransactionAsync|Guid id|TransactionDto|Get individual TransactionDto|
 
+#### TransactionContingencyDto
+|Data|Description|
+|--- |--- |
+| string AttendantCode ||
+| bool Reject ||
+| bool Approve ||
+| string SecondarySubAccountValue ||
+| string PrimarySubAccountValue ||
+| bool HasDriver ||
+| bool HasVehicle ||
+| string DriverCompleteName ||
+| string MerchantName ||
+| string VehicleFleetDescription ||
+| string SecondaryIdentificationLabel ||
+| string SecondarySubAccountDescription ||
+| Guid? SecondarySubAccountId ||
+| string PrimaryIdentificationLabel ||
+| string PrimarySubAccountDescription ||
+| Guid PrimarySubAccountId ||
+| string FuelsMasterCode ||
+| IEnumerable<TerminalDto> Terminals ||
+| string VehiclePlate ||
+| Guid MerchantId ||
+| string NetworkName ||
+| Guid NetworkId ||
+| string CompanyDescription ||
+| string SiteCurrencyCode ||
+| string SiteDescription ||
+| string BrandedFuelMasterDescription ||
+| string CompanyContractDescription ||
+| string PrimaryIdentificationDescription ||
+| string ResponseMessage ||
+| string ResponseCode ||
+| string LocalDateShortString ||
+| byte State ||
+| int? EngineHours ||
+| int? Odometer ||
+| string ShiftNumber ||
+| decimal ProductAmountDispensed ||
+| decimal ProductUnitPriceDispensed ||
+| decimal ProductVolumeDispensed ||
+| string AuthorizationCode ||
+| Guid Id ||
+| string Miscellaneous ||
+| string PumpSide ||
+| string LocalTimeString ||
+| int LocalTransactionDate ||
+| string TransactionProductCode ||
+| Guid? TransactionId ||
+| Guid FuelId ||
+| Guid SiteId ||
+| Guid TerminalId ||
+| string Time ||
+| string Date ||
+| Guid? SecondaryIdentificationId ||
+| int LocalTransactionTime ||
+| Guid? SecondaryAccountEntityId ||
+| Guid PrimaryAccountEntityId ||
+| string ReasonName ||
+| Guid? ReasonId ||
+| string TerminalIdentification ||
+| string DriverDescription ||
+| string VehicleDescription ||
+| bool SecondaryVehicle ||
+| bool PrimaryVehicle ||
+| Guid PrimaryIdentificationId ||
+| string PurchaseOrderNumber ||
+		
+#### TransactionContingencyDto
+|Data|Description|
+|--- |--- |
+| string FileExtension ||
+| byte[] FileContent ||
+| ChangeTypeEnum ChangeType ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetTransactionContingencies|List<Guid> idsIdentification = null <BR>List<Guid> idsSubAccount = null <BR>List<Guid> idsDriver = null <BR>List<Guid> idsFleet = null <BR>List<Guid> idsVehicle = null <BR>List<Guid> idsSite = null <BR>List<Guid> idsTerminal = null <BR>List<Guid> idsFuelMaster = null <BR>string terminalCode = null <BR>string authorizationCode = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null <BR>Guid? idCompany = null <BR>Guid? idMerchant = null <BR>Guid? idProgram = null <BR>string order = "desc" <BR>int page = 1 <BR>int pageSize = 50|TransactionContingencyDto|Get list TransactionContingencyDto|
+|GetTransactionContingenciesAsync|List<Guid> idsIdentification = null <BR>List<Guid> idsSubAccount = null <BR>List<Guid> idsDriver = null <BR>List<Guid> idsFleet = null <BR>List<Guid> idsVehicle = null <BR>List<Guid> idsSite = null <BR>List<Guid> idsTerminal = null <BR>List<Guid> idsFuelMaster = null <BR>string terminalCode = null <BR>string authorizationCode = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null <BR>Guid? idCompany = null <BR>Guid? idMerchant = null <BR>Guid? idProgram = null <BR>string order = "desc" <BR>int page = 1 <BR>int pageSize = 50|TransactionContingencyDto|Get list TransactionContingencyDto|
+|GetTransactionContingency|Guid id|TransactionContingencyDto|Get individual TransactionContingencyDto|
+|GetTransactionContingencyAsync|Guid id|TransactionContingencyDto|Get individual TransactionContingencyDto|
+|CreateTransactionContingency|TransactionContingencyDto data|TransactionContingencyDto|Create TransactionContingencyDto|
+|CreateTransactionContingencyAsync|TransactionContingencyDto data|TransactionContingencyDto|Create TransactionContingencyDto|
+|UpdateTransactionContingencyDto|TransactionContingencyDto data|string|Update TransactionContingencyDto|
+|UpdateTransactionContingencyDtoAsync|TransactionContingencyDto data|string|Update TransactionContingencyDto|
+
+#### TransactionsCostReportDto
+|Data|Description|
+|--- |--- |
+| Guid? FuelMasterId ||
+| string FuelName ||
+| List<TransactionsCostReportItemDto> Periods ||
+| decimal Total ||
+| decimal Average ||
+		
+#### TransactionsCostReportItemDto
+|Data|Description|
+|--- |--- |
+| decimal? Amount ||
+| short? DateGroupValue ||
+| string DateGroupValueDescription { get; }
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetTransactionsCostReport|Guid idContract <BR>List<Guid> idsDriver = null <BR>List<Guid> idsFleet = null <BR>List<Guid> idsVehicle = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null|TransactionsCostReportDto|Get list TransactionsCostReportDto|
+|GetTransactionsCostReportAsync|Guid idContract <BR>List<Guid> idsDriver = null <BR>List<Guid> idsFleet = null <BR>List<Guid> idsVehicle = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null|TransactionsCostReportDto|Get list TransactionsCostReportDto|
+
+#### TransactionDisputeDto
+|Data|Description|
+|--- |--- |
+| bool Reject ||
+| bool Approve ||
+| string StateDescription ||
+| string ReasonDescription ||
+| string SiteDescription ||
+| string MerchantName ||
+| string CompanyName ||
+| string TimeString ||
+| string DateString ||
+| TransactionDto Transaction ||
+| string SystemDate ||
+| string CommentCompanySystemDate ||
+| string CommentMerchantSystemDate ||
+| string CommentNetworkSystemDate ||
+| string NetworkTimeZoneCode ||
+| string HostResponse ||
+| string CommentNetworkDateTime ||
+| string CommentNetwork ||
+| string CommentMerchantDateTime ||
+| string CommentMerchant ||
+| string CommentCompanyDateTime ||
+| string CommentCompany ||
+| short State ||
+| short Reason ||
+| string DateTime ||
+| string ApplicationCode ||
+| Guid Id ||
+| Guid TransactionId ||
+| string ContingencyReason ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetTransactionsDisputes|List<Guid> idsDriver = null <BR>List<Guid> idsFleet = null <BR>List<Guid> idsVehicle = null <BR>List<Guid> idsSite = null <BR>List<Guid> idsTerminal = null <BR>Guid? idIdentification = null <BR>Guid? idCompany = null <BR>Guid? idMerchant = null <BR>string applicationCode = null <BR>int? state = null <BR>int? type = null <BR>string authorizationCode = null <BR>string dateFromRequest = null <BR>string dateToRequest = null <BR>string dateFromClosed = null <BR>string dateToClosed = null <BR>string order = "desc" <BR>int page = 1 <BR>int pageSize = 50|TransactionDisputeDto|Get list TransactionDisputeDto|
+|GetTransactionsDisputesAsync|List<Guid> idsDriver = null <BR>List<Guid> idsFleet = null <BR>List<Guid> idsVehicle = null <BR>List<Guid> idsSite = null <BR>List<Guid> idsTerminal = null <BR>Guid? idIdentification = null <BR>Guid? idCompany = null <BR>Guid? idMerchant = null <BR>string applicationCode = null <BR>int? state = null <BR>int? type = null <BR>string authorizationCode = null <BR>string dateFromRequest = null <BR>string dateToRequest = null <BR>string dateFromClosed = null <BR>string dateToClosed = null <BR>string order = "desc" <BR>int page = 1 <BR>int pageSize = 50|TransactionDisputeDto|Get list TransactionDisputeDto|
+|GetTransactionDispute|Guid id|TransactionDisputeDto|Get individual TransactionDisputeDto|
+|GetTransactionDisputeAsync|Guid id|TransactionDisputeDto|Get individual TransactionDisputeDto|
+|CreateTransactionDispute|TransactionDisputeDto data|TransactionDisputeDto|Create TransactionDisputeDto|
+|CreateTransactionDisputeAsync|TransactionDisputeDto data|TransactionDisputeDto|Create TransactionDisputeDto|
+|UpdateTransactionDisputeDto|TransactionDisputeDto data|string|Update TransactionDisputeDto|
+|UpdateTransactionDisputeDtoAsync|TransactionDisputeDto data|string|Update TransactionDisputeDto|
+
+#### TransactionsGroupDto
+|Data|Description|
+|--- |--- |
+| byte? DateGroupType ||
+| string FuelName ||
+| Guid? FuelMasterId ||
+| string SiteCode ||
+| string SiteName ||
+| Guid? SiteId ||
+| string VehicleCode ||
+| string VehiclePlate ||
+| Guid? VehicleId ||
+| string FleetCode ||
+| string FleetName ||
+| Guid? FleetId ||
+| string DriverCode ||
+| string DriverFirstName ||
+| string DriverLastName ||
+| Guid? DriverId ||
+| string ContractCode ||
+| string ContractDescription ||
+| Guid? ContractId ||
+| string CompanyCode ||
+| string CompanyName ||
+| Guid? CompanyId ||
+| string MerchantCode ||
+| string MerchantName ||
+| Guid? MerchantId ||
+| decimal? Price ||
+| decimal? Volume ||
+| decimal? Amount ||
+| int Count ||
+| short? DateGroupValue ||
+| byte? ReportType ||
+		
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetTransactionsGroups|Guid? idMerchant = null <BR>List<Guid> idsSite = null <BR>List<Guid> idsFuelMaster = null <BR>bool groupMerchant = false <BR>bool groupSite = false <BR>bool groupFuel = false <BR>Guid? idCompany = null <BR>Guid? idContract = null <BR>List<Guid> idsDriver = null <BR>List<Guid> idsFleet = null <BR>List<Guid> idsVehicle = null <BR>bool groupCompany = false <BR>bool groupContract = false <BR>bool groupDriver = false <BR>bool groupFleet = false <BR>bool groupVehicle = false <BR>List<byte?> subAccountType = null <BR>byte reportType = (byte)TransactionReportTypeEnum.Approved <BR>bool groupReportType = false <BR>byte? dateType = null <BR>byte? groupDatePeriod = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null <BR>string order = "asc" <BR>int page = 1 <BR>int pageSize = 50|TransactionsGroupDto|Get list TransactionsGroupDto|
+|GetTransactionsGroupsAsync|Guid? idMerchant = null <BR>List<Guid> idsSite = null <BR>List<Guid> idsFuelMaster = null <BR>bool groupMerchant = false <BR>bool groupSite = false <BR>bool groupFuel = false <BR>Guid? idCompany = null <BR>Guid? idContract = null <BR>List<Guid> idsDriver = null <BR>List<Guid> idsFleet = null <BR>List<Guid> idsVehicle = null <BR>bool groupCompany = false <BR>bool groupContract = false <BR>bool groupDriver = false <BR>bool groupFleet = false <BR>bool groupVehicle = false <BR>List<byte?> subAccountType = null <BR>byte reportType = (byte)TransactionReportTypeEnum.Approved <BR>bool groupReportType = false <BR>byte? dateType = null <BR>byte? groupDatePeriod = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null <BR>string order = "asc" <BR>int page = 1 <BR>int pageSize = 50|TransactionsGroupDto|Get list TransactionsGroupDto|
+
+#### TransactionPerformanceDto
+|Data|Description|
+|--- |--- |
+| string VehicleClassificationDescription2 ||
+| string VehicleClassificationDescription3 ||
+| string VehicleClassificationDescription4 ||
+| string DriverClassificationDescription1 ||
+| string DriverClassificationDescription2 ||
+| string DriverClassificationDescription3 ||
+| string DriverClassificationDescription4 ||
+| string PrimaryClassification1 ||
+| string PrimaryClassification2 ||
+| string PrimaryClassification3 ||
+| string PrimaryClassification4 ||
+| int? Odometer ||
+| int? EngineHours ||
+| string CompanyContractDescription ||
+| string ShiftNumber ||
+| string VehicleClassificationDescription1 ||
+| string SecondaryIdentificationLabel ||
+| string PeriodPerformanceFormated ||
+| decimal? PeriodPerformance ||
+| Guid Id ||
+| bool PrimaryVehicle ||
+| string SubAccountDescription ||
+| string LocalDate ||
+| string LocalTime ||
+| string SiteDescription ||
+| string TerminalTranNumber ||
+| Guid? IdVehicle ||
+| string NetworkFuelName ||
+| string IdentificationSecundaryLabel ||
+| decimal? ProductVolumeDispensed ||
+| string ProductVolumeDispensedFormated ||
+| decimal? ProductAmountDispensed ||
+| string ProductAmountDispensedFormated ||
+| decimal? Performance ||
+| string PerformanceFormated ||
+| string IdentificationPrimaryLabel ||
+| string AuthorizationCode ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetTransactionsPerformances|List<Guid> idsIdentification = null <BR>List<Guid> idsDriver = null <BR>List<Guid> idsVehicle = null <BR>List<Guid> idsSite = null <BR>List<Guid> idsTerminal = null <BR>List<Guid> idsFuelMaster = null <BR>List<Guid> idsContract = null <BR>List<Guid> idsClassification1 = null <BR>List<Guid> idsClassification2 = null <BR>List<Guid> idsClassification3 = null <BR>List<Guid> idsClassification4 = null <BR>string authrizationCode = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null <BR>string shiftNumber = null <BR>bool performanceByPeriod = false <BR>bool performanceExceptions = false <BR>string order = "desc" <BR>int page = 1 <BR>int pageSize = 50|TransactionPerformanceDto|Get list TransactionPerformanceDto|
+|GetTransactionsPerformancesAsync|List<Guid> idsIdentification = null <BR>List<Guid> idsDriver = null <BR>List<Guid> idsVehicle = null <BR>List<Guid> idsSite = null <BR>List<Guid> idsTerminal = null <BR>List<Guid> idsFuelMaster = null <BR>List<Guid> idsContract = null <BR>List<Guid> idsClassification1 = null <BR>List<Guid> idsClassification2 = null <BR>List<Guid> idsClassification3 = null <BR>List<Guid> idsClassification4 = null <BR>string authrizationCode = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null <BR>string shiftNumber = null <BR>bool performanceByPeriod = false <BR>bool performanceExceptions = false <BR>string order = "desc" <BR>int page = 1 <BR>int pageSize = 50|TransactionPerformanceDto|Get list TransactionPerformanceDto|
+
+#### UserAtionetProfilePictureDto
+|Data|Description|
+|--- |--- |
+| Guid UserId ||
+| UserAtionetImageDto Image ||
+		
+#### UserAtionetImageDto
+|Data|Description|
+|--- |--- |
+| string FileExtension ||
+| string FileFullUrl ||
+| byte[] Content ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetUserAtionetProfilePicture||UserAtionetProfilePictureDto|Get UserAtionetProfilePictureDto|
+|GetUserAtionetProfilePictureAsync||UserAtionetProfilePictureDto|Get UserAtionetProfilePictureDto|
+|UpdateUserAtionetProfilePicture|Guid id <BR>UserAtionetProfilePictureDto data|string|Update UserAtionetProfilePictureDto|
+|UpdateUserAtionetProfilePictureAsync|Guid id <BR>UserAtionetProfilePictureDto data|string|Update UserAtionetProfilePictureDto|
+
+#### UserAtionetProfileWidgetDto
+|Data|Description|
+|--- |--- |
+| Guid UserId ||
+| List<UserAtionetWidgetDto> Widgets ||
+		
+#### UserAtionetWidgetDto
+|Data|Description|
+|--- |--- |
+| byte Widget ||
+| string Name ||
+| bool Selected ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetUserAtionetProfileWidget||UserAtionetProfileWidgetDto|Get list UserAtionetProfileWidgetDto|
+|GetUserAtionetProfileWidgetAsync||UserAtionetProfileWidgetDto|Get list UserAtionetProfileWidgetDto|
+|UpdateUserAtionetProfileWidget|Guid id <BR>UserAtionetProfileWidgetDto data|string|Update UserAtionetProfileWidgetDto|
+|UpdateUserAtionetProfileWidgetAsync|Guid id <BR>UserAtionetProfileWidgetDto data|string|Update UserAtionetProfileWidgetDto|
+
+#### UserAtionetProfileDto
+|Data|Description|
+|--- |--- |
+| List<RolesStruct> ConsumerCardClients ||
+| List<RolesStruct> Sites ||
+| List<RolesStruct> Merchants ||
+| List<RolesStruct> Fleets ||
+| List<RolesStruct> Companies ||
+| List<RolesStruct> Networks ||
+| string ProfilePicture ||
+| string SocialSecurity ||
+| List<RolesStruct> CompaniesGroups ||
+| string PhoneNumber2 ||
+| string ZipCode ||
+| Guid StateId ||
+| Guid CountryId ||
+| string Street2 ||
+| string Street1 ||
+| string Name ||
+| string UserName ||
+| Guid Id ||
+| string PhoneNumber1 ||
+| RolesStruct? Driver ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetUserAtionetProfile|Guid id|UserAtionetProfileDto|Get UserAtionetProfileDto|
+|GetUserAtionetProfileAsync|Guid id|UserAtionetProfileDto|Get UserAtionetProfileDto|
+
+#### AvailableEntity
+|Data|Description|
+|--- |--- |
+| Guid Id ||
+| string Name ||
+| string Type ||
+| string RoleName ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|UpdateUserAtionetProfilePreference|AvailableEntity data|string|Update AvailableEntity|
+|UpdateUserAtionetProfilePreferenceAsync|AvailableEntity data|string|Update AvailableEntity|
+
+#### UserChangePasswordDto
+|Data|Description|
+|--- |--- |
+| string OldPassword ||
+| string NewPassword ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|UpdateUserAtionetProfileChangePassword|UserChangePasswordDto data|string|Change Password|
+|UpdateUserAtionetProfileChangePasswordAsync|UserChangePasswordDto data|string|Change Password|
+
 #### UsersAtionetDto 
 |Type|Name|Description|
 |--- |--- |--- |
+|bool |IsApproved||
 |bool? |isLockedOut||
 |bool |IsOnlyApiUser||
 |string |Provider||
 |string |ConsumerCarClientNewPassword||
 |string |ConsumerCarClientPassword||
 |string |ConsumerCarClientPANNumber||
+|RolesStruct? |Driver||
 |List&lt;RolesStruct> |CompaniesGroups||
 |List&lt;RolesStruct> |ConsumerCardClients||
 |List&lt;RolesStruct> |Sites||
@@ -3362,7 +3694,6 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |LockedUser|Guid - id - - Identification of User|string|Locked User|
 |LockedUserAsync|Guid - id - - Identification of User|string|Locked User|	
 	
-	
 #### GlobalSearch 
 |Type|Name|Description|
 |--- |--- |--- |
@@ -3375,14 +3706,11 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |--- |--- |--- |--- |
 |GetGlobalSearch|string - searchText - - TBD|List&lt;GlobalSearchDto>|Get List GlobalSearchDto|
 |GetGlobalSearchAsync|string - searchText - - TBD<|List&lt;GlobalSearchDto>|Get List GlobalSearchDto|
-	
-	
-	
+		
 #### UsersAtionetNotificationsSubscriptionDto 
 |Type|Name|Description|
 |--- |--- |--- |
 |List&lt;NotificationSubscriptionDto> |NotificationSuscriptionDto||
-
 
 #### NotificationSubscriptionDto 
 |Type|Name|Description|
