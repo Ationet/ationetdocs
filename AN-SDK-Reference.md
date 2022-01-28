@@ -2928,12 +2928,382 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetSystemNotifications|List<byte> userStates = null, string dateTimeFrom = null, string dateTimeTo = null, int page = 1, int pageSize = 50, bool paginate = true, byte? state = null, byte? type = null, string subject = null, byte? userState = null, byte? channel = null, List<Guid> idsDrivers = null, List<Guid> idsVehicles = null|SystemNotificationDto|Get list SystemNotificationDto|
-|GetSystemNotificationsAsync|List<byte> userStates = null, string dateTimeFrom = null, string dateTimeTo = null, int page = 1, int pageSize = 50, bool paginate = true, byte? state = null, byte? type = null, string subject = null, byte? userState = null, byte? channel = null, List<Guid> idsDrivers = null, List<Guid> idsVehicles = null|SystemNotificationDto|Get list SystemNotificationDto|
+|GetSystemNotifications|List<byte> userStates = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null <BR>int page = 1 <BR>int pageSize = 50 <BR>bool paginate = true <BR>byte? state = null <BR>byte? type = null <BR>string subject = null <BR>byte? userState = null <BR>byte? channel = null <BR>List<Guid> idsDrivers = null <BR>List<Guid> idsVehicles = null|SystemNotificationDto|Get list SystemNotificationDto|
+|GetSystemNotificationsAsync|List<byte> userStates = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null <BR>int page = 1 <BR>int pageSize = 50 <BR>bool paginate = true <BR>byte? state = null <BR>byte? type = null <BR>string subject = null <BR>byte? userState = null <BR>byte? channel = null <BR>List<Guid> idsDrivers = null <BR>List<Guid> idsVehicles = null|SystemNotificationDto|Get list SystemNotificationDto|
 |GeSystemNotification|Guid id|SystemNotificationDto|Get individual SystemNotificationDto|
 |GetSystemNotificationAsync|Guid id|SystemNotificationDto|Get individual SystemNotificationDto|
 |UpdateSystemNotification|SystemNotificationDto data|string|Update SystemNotificationDto|
 |UpdateSystemNotificationAsync|SystemNotificationDto data|string|Update SystemNotificationDto|
+	
+#### TaxDto
+|Data|Description|
+|--- |--- |
+| short? UseMode ||
+| string CurrentValueString ||
+| string TypeDescription ||
+| string CodeDescription ||
+| TaxesBillingConfigurationDto TaxBillingConfiguration ||
+| List<TaxesValidityDto> TaxValidities ||
+| bool Included ||
+| bool Active ||
+| string UseModeDescription ||
+| short? Mode ||
+| short? Type ||
+| string Description ||
+| string Code ||
+| Guid NetworkId ||
+| Guid Id ||
+| string ModeDescription ||
+		
+#### TaxesBillingConfigurationDto
+|Data|Description|
+|--- |--- |
+| Guid Id ||
+| Guid? TaxId ||
+| byte? BillingType ||
+| byte? Factor ||
+| string Code ||
+| string Description ||
+		
+#### TaxesValidityDto
+|Data|Description|
+|--- |--- |
+| Guid Id ||
+| Guid NetworkId ||
+| Guid TaxId ||
+| decimal Amount ||
+| DateTime DateFrom ||
+| DateTime? DateTo ||
+| string DisplayDateFrom ||
+| string DisplayDateTo ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetTaxes|List<Guid> taxIds = null <BR>Guid? networkId = null <BR>string code = null <BR>string description = null <BR>short? type = null <BR>short? mode = null <BR>short? useMode = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc"|TaxDto|Get list TaxDto|
+|GetTaxesAsync|List<Guid> taxIds = null <BR>Guid? networkId = null <BR>string code = null <BR>string description = null <BR>short? type = null <BR>short? mode = null <BR>short? useMode = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc"|TaxDto|Get list TaxDto|
+|GetTax|Guid id|TaxDto|Get individual TaxDto|
+|GetTaxAsync|Guid id|TaxDto|Get individual TaxDto|
+|CreateTax|TaxDto data|TaxDto|Create TaxDto|
+|CreateTaxAsync|TaxDto data|TaxDto|Create TaxDto|
+|UpdateTaxDto|Guid id <BR>TaxDto data|string|Update TaxDto|
+|UpdateTaxDtoAsync|Guid id <BR>TaxDto data|string|Update TaxDto|
+	
+#### TerminalDto
+|Data|Description|
+|--- |--- |
+| bool Active ||
+| byte VehicleIdUsage ||
+| int? LastTSN ||
+| string FuelsMasterDescription ||
+| Guid? FuelsMasterId ||
+| int? MaxVolumeCutOff ||
+| byte DriverIdUsage ||
+| bool TagReader ||
+| string Description ||
+| string Code ||
+| string ProtocolName ||
+| Guid ProtocolId ||
+| string TerminalTypeName ||
+| Guid TerminalTypeId ||
+| string SiteShortName ||
+| Guid SiteId ||
+| string MerchantName ||
+| Guid MerchantId ||
+| Guid Id ||
+| int? InvoiceNumberInContingencySequence ||
+| List<TerminalConfigurationDto> Configurations ||
+		
+#### TerminalConfigurationDto
+|Data|Description|
+|--- |--- |
+| MessageTypeEnum MessageType ||
+| TransactionTypeEnum TransactionType ||
+| List<AuthorizerPropertiesConfigurationDto> AuthorizerPropertiesConfigurations ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetTerminals|List<Guid> merchantIds = null <BR>List<Guid> siteIds = null <BR>string code = null <BR>string description = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc"|TerminalDto|Get list TerminalDto|
+|GetTerminalsAsync|List<Guid> merchantIds = null <BR>List<Guid> siteIds = null <BR>string code = null <BR>string description = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc"|TerminalDto|Get list TerminalDto|
+|GetTerminal|Guid id|TerminalDto|Get individual TerminalDto|
+|GetTerminalAsync|Guid id|TerminalDto|Get individual TerminalDto|
+|CreateTerminal|TerminalDto data|TerminalDto|Create TerminalDto|
+|CreateTerminalAsync|TerminalDto data|TerminalDto|Create TerminalDto|
+|UpdateTerminalDto|Guid id <BR>TerminalDto data|string|Update TerminalDto|
+|UpdateTerminalDtoAsync|Guid id <BR>TerminalDto data|string|Update TerminalDto|
+
+#### TransactionDto
+|Data|Description|
+|--- |--- |
+| decimal? ConciliationProductUnitPriceMerchant ||
+| decimal? ConciliationProductUnitPriceCompany ||
+| decimal? ConciliationTransactionAmountDispensed ||
+| decimal? ConciliationTransactionAmountAuthorized ||
+| decimal? ConciliationTransactionAmountRequested ||
+| decimal? ConciliationTransactionAmountCompany ||
+| decimal? ConciliationTransactionAmountMerchant ||
+| Guid? IdCurrencyMerchant ||
+| string MerchantCurrencyCode ||
+| decimal? MerchantCurrencyFactor ||
+| decimal? ConciliationProductUnitPriceRequested ||
+| decimal? MerchantProductAmountDispensed ||
+| decimal? MerchantProductAmountRequested ||
+| decimal? MerchantProductAmount ||
+| decimal? MerchantProductUnitPriceDispensed ||
+| decimal? MerchantProductUnitPriceAuthorized ||
+| decimal? MerchantProductUnitPriceRequested ||
+| decimal? MerchantProductUnitPrice ||
+| decimal? MerchantTransactionAmountDispensed ||
+| decimal? MerchantTransactionAmountAuthorized ||
+| decimal? MerchantTransactionAmountRequested ||
+| decimal? MerchantTransactionAmount ||
+| decimal? MerchantProductAmountAuthorized ||
+| Guid? IdCurrencyCompany ||
+| decimal? ConciliationProductUnitPriceAuthorized ||
+| decimal? ConciliationProductAmountCompany ||
+| decimal? ConversionProductAmountDispensed ||
+| decimal? ConversionProductAmountAuthorized ||
+| decimal? ConversionRequestedCurrencyAmount ||
+| decimal? ConversionCurrencyAmountCompany ||
+| decimal? ConversionCurrencyAmountMerchant ||
+| decimal? ConversionProductUnitPriceDispensed ||
+| decimal? ConversionProductUnitPriceAuthorized ||
+| decimal? ConversionProductUnitPriceRequested ||
+| decimal? ConversionProductUnitPriceMerchant ||
+| decimal? ConversionProductUnitPriceCompany ||
+| decimal? ConciliationProductUnitPriceDispensed ||
+| decimal? ConversionTransactionAmountDispensed ||
+| decimal? ConversionTransactionAmountRequested ||
+| decimal? ConversionTransactionAmountCompany ||
+| decimal? ConversionTransactionAmountMerchant ||
+| Guid? IdCurrencyConciliation ||
+| string ConciliationCurrencyCode ||
+| decimal? ConciliationCurrencyFactor ||
+| decimal? ConciliationProductAmountDispensed ||
+| decimal? ConciliationProductAmountAuthorized ||
+| decimal? ConciliationProductAmountRequested ||
+| decimal? ConciliationProductAmountMerchant ||
+| decimal? ConversionTransactionAmountAuthorized ||
+| string CompanyCurrencyCode ||
+| decimal? CompanyCurrencyFactor ||
+| decimal? CompanyProductAmountDispensed ||
+| string ClassificationLabel4 ||
+| string VehicleClassDescription ||
+| string VehicleClassificationValue1 ||
+| string VehicleClassificationValue2 ||
+| string VehicleClassificationValue3 ||
+| string VehicleClassificationValue4 ||
+| string DriverClassificationValue1 ||
+| string DriverClassificationValue2 ||
+| string DriverClassificationValue3 ||
+| string DriverClassificationValue4 ||
+| string ClassificationLabel3 ||
+| string ContingencyReason ||
+| List<TransactionModifierDto> Modifiers ||
+| Dictionary<string <BR>string> CustomerData ||
+| Dictionary<string <BR>string> FastTrackData ||
+| Dictionary<string <BR>decimal> TaxesData ||
+| decimal? LocationStartLatitude ||
+| decimal? LocationStartLongitude ||
+| decimal? LocationStartAltitude ||
+| decimal? LocationEndLatitude ||
+| decimal? LocationEndLongitude ||
+| decimal? LocationEndAltitude ||
+| TransactionCustomerDataDto CustomerDataDto ||
+| string ClassificationLabel2 ||
+| string ClassificationLabel1 ||
+| string EntryMethod ||
+| decimal? CompanyProductAmountAuthorized ||
+| decimal? CompanyProductAmountRequested ||
+| decimal? CompanyProductAmount ||
+| decimal? CompanyProductUnitPriceDispensed ||
+| decimal? CompanyProductUnitPriceAuthorized ||
+| decimal? CompanyProductUnitPriceRequested ||
+| decimal? CompanyProductUnitPrice ||
+| decimal? CompanyTransactionAmountDispensed ||
+| decimal? CompanyTransactionAmountAuthorized ||
+| decimal? CompanyTransactionAmountRequested ||
+| decimal? CompanyTransactionAmount ||
+| string MeasurementUnitCode ||
+| string CurrencyCode ||
+| string FuelCode ||
+| string FuelNetworkName ||
+| string FuelSiteName ||
+| Guid? FuelMasterId ||
+| string FuelMasterCode ||
+| string FuelMasterDescription ||
+| string InvoiceNumber ||
+| int? BatchNumber ||
+| string ShiftNumber ||
+| string PumpNumber ||
+| decimal? SiteCurrencyFactor ||
+| string ConversionCurrencyCode ||
+| Guid? IdCurrencyConversion ||
+| decimal? SiteTransactionAmountMerchant ||
+| string SiteCode ||
+| string SiteName ||
+| Guid? TerminalId ||
+| string TerminalCode ||
+| Guid? CompanyId ||
+| string CompanyCode ||
+| string CompanyName ||
+| string CompanyTaxpayerId ||
+| Guid? CompanyContractId ||
+| string CompanyContractCode ||
+| Guid? SiteId ||
+| string CompanyContractDescription ||
+| string SubContractDescription ||
+| string PrimaryIdentificationTrack ||
+| string SecondaryIdentificationTrack ||
+| Guid? PrimaryIdentificationId ||
+| string PrimaryIdentificationLabel ||
+| string PrimaryIdentificationPAN ||
+| string PrimaryIdentificationTypeDescription ||
+| string PrimaryIdentificationExpirationDate ||
+| Guid? SecondaryIdentificationId ||
+| string SecondaryIdentificationLabel ||
+| string SubContractCode ||
+| string MerchantTaxPayerId ||
+| string MerchantName ||
+| string MerchantCode ||
+| Guid Id ||
+| Guid? SubscriberId ||
+| string SubscriberCode ||
+| string SubscriberName ||
+| string TransactionequenceNumber ||
+| string AuthorizationCode ||
+| string ResponseCode ||
+| string ResponseMessage ||
+| short Type ||
+| string TypeDescription ||
+| short Mode ||
+| string ModeDescription ||
+| short Status ||
+| short DisputeStatus ||
+| string StatusDescription ||
+| byte State ||
+| string HostDateTime ||
+| string SubscriberDateTime ||
+| string SubscriberTimeZone ||
+| string SiteDateTime ||
+| string SiteTimeZone ||
+| string DateTime ||
+| Guid? MerchantId ||
+| string SecondaryIdentificationPAN ||
+| TransactionMovementsERPDto TransactionMovementERPDto ||
+| Guid? PrimarySubAccountId ||
+| bool IsPrimarySubAccountVehicle ||
+| decimal? ProductUnitPriceCompany ||
+| decimal? ProductUnitPriceMerchant ||
+| decimal? ProductAmountCompany ||
+| decimal? ProductAmountMerchant ||
+| decimal? TransactionAmountCompany ||
+| decimal? TransactionAmountMerchant ||
+| Guid? IdCurrencySite ||
+| string SiteCurrencyCode ||
+| decimal? SiteProductAmountDispensed ||
+| decimal? SiteProductAmountAuthorized ||
+| decimal? TransactionAmountDispensed ||
+| decimal? SiteProductAmountRequested ||
+| decimal? SiteProductAmountMerchant ||
+| decimal? SiteProductUnitPriceDispensed ||
+| decimal? SiteProductUnitPriceAuthorized ||
+| decimal? SiteProductUnitPriceRequested ||
+| decimal? SiteProductUnitPriceMerchant ||
+| decimal? SiteProductUnitPriceCompany ||
+| decimal? SiteTransactionAmountDispensed ||
+| decimal? SiteTransactionAmountAuthorized ||
+| decimal? SiteTransactionAmountRequested ||
+| decimal? SiteTransactionAmountCompany ||
+| decimal? SiteProductAmountCompany ||
+| decimal? ProductNetAmountDispensed ||
+| decimal? ProductAmountDispensed ||
+| decimal? ProductVolumeDispensed ||
+| Guid? SecondarySubAccountId ||
+| string SecondarySubAccountDescription ||
+| bool IsSecondarySubAccountVehicle ||
+| Guid? FleetId ||
+| string FleetCode ||
+| string FleetName ||
+| Guid? VehicleId ||
+| string VehicleCode ||
+| string VehiclePlate ||
+| Guid? DriverId ||
+| string DriverCode ||
+| decimal? TransactionNetAmount ||
+| string DriverCompleteName ||
+| string AccountTypeDescription ||
+| decimal? ProductUnitPriceRequested ||
+| decimal? ProductVolumeRequested ||
+| decimal? ProductAmountRequested ||
+| decimal? TransactionAmountRequested ||
+| decimal? ProductUnitPriceAuthorized ||
+| decimal? ProductVolumeAuthorized ||
+| decimal? ProductAmountAuthorized ||
+| decimal? TransactionAmountAuthorized ||
+| decimal? ProductUnitPriceDispensed ||
+| string PrimarySubAccountDescription ||
+| string FuelERPCode ||
+		
+#### TransactionModifierDto
+|Data|Description|
+|--- |--- |
+| Guid TransactionId ||
+| byte ModifierClass ||
+| string ModifierClassDescription ||
+| byte ModifierType ||
+| string ModifierTypeDescription ||
+| decimal ModifierValue ||
+| decimal ModifierTotal ||
+| decimal? BaseValue ||
+		
+#### TransactionCustomerDataDto
+|Data|Description|
+|--- |--- |
+| int? MinOdometer ||
+| int? Odometer ||
+| int? LastEngineHours ||
+| int? MaxEngineHours ||
+| int? MinEngineHours ||
+| int? EngineHours ||
+| string Miscellaneous ||
+| int? MaxOdometer ||
+| string TruckUnitNumber ||
+| string PurchaseOrderNumber ||
+| string TripNumber ||
+| string DriverLicenseNumber ||
+| string DriverLicenseState ||
+| string DriverId ||
+| decimal? TrailerHourMeterReading ||
+| string TrailerNumber ||
+| string VehicleId ||
+| int? LastOdometer ||
+		
+#### TransactionsMovementsERPDto
+|Data|Description|
+|--- |--- |
+| decimal? InvoiceTotalAmount ||
+| decimal? OrderTotalAmount ||
+| decimal? TaxAmount5 ||
+| decimal? TaxAmount4 ||
+| decimal? TaxAmount3 ||
+| decimal? TaxAmount2 ||
+| short ERPState ||
+| decimal? TaxAmount1 ||
+| decimal NetAmount ||
+| decimal NetPrice ||
+| string ERPInvoicedDateString ||
+| DateTime? ERPInvoicedDate ||
+| string ERPDateString ||
+| DateTime ERPDate ||
+| decimal? TaxAmount0 ||
+| string ERPInvoiceNumber ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetTransactions|List<Guid> idsIdentification = null <BR>List<Guid> idsSubAccount = null <BR>List<Guid> idsDriver = null <BR>List<Guid> idsFleet = null <BR>List<Guid> idsVehicle = null <BR>List<Guid> idsSite = null <BR>List<Guid> idsTerminal = null <BR>List<Guid> idsFuelMaster = null <BR>List<Guid> idsContract = null <BR>List<Guid> idsClassification1 = null <BR>List<Guid> idsClassification2 = null <BR>List<Guid> idsClassification3 = null <BR>List<Guid> idsClassification4 = null <BR>List<byte?> subAccountType = null <BR>List<byte> modes = null <BR>List<byte> states = null <BR>string terminalCode = null <BR>string authrizationCode = null <BR>string localTransactionDateFrom = null <BR>string LocalTransactionDateTo = null <BR>byte reportType = (byte)TransactionReportTypeEnum.Approved <BR>byte? declinedType = null <BR>byte? exceptionType = null <BR>byte? dateType = null <BR>byte timeIntervalType = (byte)TimeIntervalTypeEnum.Fixed <BR>byte timePeriod = (byte)TimePeriodEnum.Year <BR>bool fuelOut = true <BR>string dateTimeFrom = null <BR>string dateTimeTo = null <BR>string shiftNumber = null <BR>string invoiceNumber = null <BR>Guid? idCompany = null <BR>Guid? idMerchant = null <BR>Guid? idProgram = null <BR>string order = "desc" <BR>int page = 1 <BR>int pageSize = 50 <BR>bool paginate = true|TransactionDto|Get list TransactionDto|
+|GetTransactionsAsync|List<Guid> idsIdentification = null <BR>List<Guid> idsSubAccount = null <BR>List<Guid> idsDriver = null <BR>List<Guid> idsFleet = null <BR>List<Guid> idsVehicle = null <BR>List<Guid> idsSite = null <BR>List<Guid> idsTerminal = null <BR>List<Guid> idsFuelMaster = null <BR>List<Guid> idsContract = null <BR>List<Guid> idsClassification1 = null <BR>List<Guid> idsClassification2 = null <BR>List<Guid> idsClassification3 = null <BR>List<Guid> idsClassification4 = null <BR>List<byte?> subAccountType = null <BR>List<byte> modes = null <BR>List<byte> states = null <BR>string terminalCode = null <BR>string authrizationCode = null <BR>string localTransactionDateFrom = null <BR>string LocalTransactionDateTo = null <BR>byte reportType = (byte)TransactionReportTypeEnum.Approved <BR>byte? declinedType = null <BR>byte? exceptionType = null <BR>byte? dateType = null <BR>byte timeIntervalType = (byte)TimeIntervalTypeEnum.Fixed <BR>byte timePeriod = (byte)TimePeriodEnum.Year <BR>bool fuelOut = true <BR>string dateTimeFrom = null <BR>string dateTimeTo = null <BR>string shiftNumber = null <BR>string invoiceNumber = null <BR>Guid? idCompany = null <BR>Guid? idMerchant = null <BR>Guid? idProgram = null <BR>string order = "desc" <BR>int page = 1 <BR>int pageSize = 50 <BR>bool paginate = true|TransactionDto|Get list TransactionDto|
+|GetTransaction|Guid id|TransactionDto|Get individual TransactionDto|
+|GetTransactionAsync|Guid id|TransactionDto|Get individual TransactionDto|
 
 #### UsersAtionetDto 
 |Type|Name|Description|
