@@ -949,31 +949,6 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 | Guid Id ||
 | int? VehicleInitialOdometer ||
 | bool IsLoyalty ||
-			
-#### SubAccountDto
-|Data|Description|
-|--- |--- |
-| int? VehicleEngineHours ||
-| int? VehicleOdometer ||
-| int? VehicleYear ||
-| string VehicleCode ||
-| Guid? VehicleId ||
-| string DriverLastName ||
-| string DriverFirstName ||
-| string DriverCode ||
-| Guid? DriverId ||
-| List<Guid> IdentificationIds ||
-| decimal Limit ||
-| decimal Consumption ||
-| decimal PreviousBalance ||
-| decimal CurrentBalance ||
-| DateTime BalanceDate ||
-| string ContractDescription ||
-| string IdentificationsDescription ||
-| string Description ||
-| Guid Id ||
-| decimal VehicleConsumption ||
-| string FleetDescription ||
 	
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
@@ -2362,76 +2337,346 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |CreateRackPricesListAsync|RackPricesListDto data|RackPricesListDto|Create RackPricesListDto|
 |UpdateRackPricesList|RackPricesListDto data|string|Update RackPricesListDto|
 |UpdateRackPricesListAsync|RackPricesListDto data|string|Update RackPricesListDto|
+	
+#### IdentificationsRequestStatusDto
+|Data|Description|
+|--- |--- |
+|Guid Id||
+|string Description||
+|string StatusMessage||
+|bool Error||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetIdentificationRequestStatus|short type <BR>short origin <BR>Guid idCompanyContract <BR>Guid idProgram <BR>List<Guid> idsList <BR>Guid? idLoyaltyProgram = null|IdentificationsRequestStatusDto|Get list of the IdentificationsRequestStatusDto|
+|GetIdentificationRequestStatusAsync|short type <BR>short origin <BR>Guid idCompanyContract <BR>Guid idProgram <BR>List<Guid> idsList <BR>Guid? idLoyaltyProgram = null|IdentificationsRequestStatusDto|Get list of the IdentificationsRequestStatusDto|
+	
+#### IdentificationOrderDto
+|Data|Description|
+|--- |--- |
+|Guid IdCompanyContract||
+|Guid? IdProgram||
+|Guid? IdLoyaltyProgram||
+|Guid? IdIdentificationsTypesModel||
+|List Guid EntityIds||
+|short Type||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|CreateRequestIdentificationVehicle|IdentificationOrderDto data|IdentificationOrderDto|Create Request Identification Vehicle|
+|CreateRequestIdentificationVehicleAsync|IdentificationOrderDto data|IdentificationOrderDto|Create Request Identification Vehicle|
+|CreateRequestIdentificationDriver|IdentificationOrderDto data|IdentificationOrderDto|Create Request Identification Driver|
+|CreateRequestIdentificationDriverAsync|IdentificationOrderDto data|IdentificationOrderDto|Create Request Identification Driver|
+|CreateRequestIdentificationDriver|IdentificationOrderDto data|IdentificationOrderDto|Create Request Identification Driver|
+|CreateRequestIdentificationDriverAsync|IdentificationOrderDto data|IdentificationOrderDto|Create Request Identification Driver|
+	
+#### IdentificationsRequestChangeStatusDto
+|Data|Description|
+|--- |--- |
+|List Guid Ids||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|SetRequestIdentificationDelivery|IdentificationsRequestChangeStatusDto data|string|Set IdentificationsRequestChangeStatusDto|
+|SetRequestIdentificationDeliveryAsync|IdentificationsRequestChangeStatusDto data|string|Set IdentificationsRequestChangeStatusDto|
+	
+#### IdentificationsRequestDto
+|Data|Description|
+|--- |--- |
+| int RequestedQuantity ||
+| int RequestOrder ||
+| string UseTypeDescription ||
+| byte UseType ||
+| string StateDescription ||
+| short State ||
+| string ReceptionDate ||
+| Guid? IdCountryDelivery ||
+| string CountryDelivery ||
+| Guid? IdStateDelivery ||
+| string StateDelivery ||
+| string CityDelivery ||
+| string ZipCodeDelivery ||
+| int RequestedValue ||
+| string Street2Delivery ||
+| string DeliveryDate ||
+| string RequestDate ||
+| string LoyaltyProgramName ||
+| Guid? LoyaltyProgramId ||
+| string ProgramName ||
+| Guid? ProgramId ||
+| Guid? CompanyContractId ||
+| string CompanyName ||
+| Guid? CompanyId ||
+| string NetworkName ||
+| Guid NetworkId ||
+| short? Type ||
+| Guid Id ||
+| string Street1Delivery ||
+| IEnumerable<IdentificationDto> IdentificationsList ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetIdentificationsRequests|List<Guid> idsCompanyContract = null <BR>int? orderNumber = null <BR>byte? state = null <BR>Guid? idProgram = null <BR>Guid? idLoyaltyProgram = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "label" <BR>string orderType = "asc"|IdentificationsRequestDto|Get list of the IdentificationsRequestDto|
+|GetIdentificationsRequestsAsync|List<Guid> idsCompanyContract = null <BR>int? orderNumber = null <BR>byte? state = null <BR>Guid? idProgram = null <BR>Guid? idLoyaltyProgram = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "label" <BR>string orderType = "asc"|IdentificationsRequestDto|Get list of the IdentificationsRequestDto|
+|GetIdentificationsRequest|Guid id|IdentificationsRequestDto|Get individual IdentificationsRequestDto|
+|GetIdentificationsRequestAsync|Guid id|IdentificationsRequestDto|Get individual IdentificationsRequestDto|
+	
+#### IdentificationExportDto
+|Data|Description|
+|--- |--- |
+| byte[] File ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetIdentificationsRequestExport|Guid id|IdentificationExportDto|Get individual IdentificationExportDto|
+|GetIdentificationsRequestExportAsync|Guid id|IdentificationExportDto|Get individual IdentificationExportDto|
 
 #### RuleDto
 |Data|Description|
 |--- |--- |
-|int? OdometerMaxVariation||
-|bool EngineHoursReprompt||
-|int? EngineHoursMinVariation||
-|int? EngineHoursMaxVariation||
-|bool DriverIdReprompt||
-|bool DriverPINReprompt||
-|bool TruckUnitNumberReprompt||
-|bool TrailerNumberReprompt||
-|decimal? ContingencyLimit||
-|decimal? OfflineLimit||
-|List SitesIds||
-|byte Owner||
-|List DaysTimeRuleType||
-|string RuleTypeDescription||
-|string RuleValues||
-|Guid? ProgramId||
-|string ProgramDescription||
-|bool ExactDateTime||
-|bool VehicleIdReprompt||
-|bool SecondaryTrack||
-|List FuelsIds||
-|List Fuels||
-|List Drivers||
-|int? OdometerMinVariation||
-|List Vehicles||
-|bool OdometerReprompt||
-|bool SecondaryTrackReprompt||
-|Guid Id||
-|Guid? NetworkId||
-|string NetworkName||
-|Guid? CompanyId||
-|string CompanyName||
-|Guid? MerchantId||
-|string MerchantName||
-|Guid? CompanyContractId||
-|string ContractDescription||
-|short? RuleType||
-|string Description||
-|byte? Periodicity||
-|short? PeriodicityAmount||
-|decimal? MoneyQuota||
-|decimal? VolumeQuota||
-|int? TimeFrom||
-|int? TimeTo||
-|int? DateFrom||
-|int? DateTo||
-|decimal? SecurityLimit||
-|int? TransactionsQuantity||
-|int? Retries||
-|bool VehiclePINReprompt||
-|bool MiscellaneousReprompt||
-|List RuleFleetDto  Fleets||
+| bool PINBlock ||
+| int? PINRetriesLimit ||
+| bool TruckUnitNumberReprompt ||
+| bool TrailerNumberReprompt ||
+| decimal? ContingencyLimit ||
+| decimal? OfflineLimit ||
+| List<Guid> SitesIds ||
+| byte Owner ||
+| string OwnerDescription ||
+| List<DaysTimeRuleTypeDto> DaysTimeRuleType ||
+| string RuleTypeDescription ||
+| string RuleValues ||
+| Guid? ProgramId ||
+| bool DriverPINReprompt ||
+| string ProgramDescription ||
+| bool VehicleIdReprompt ||
+| bool SecondaryTrack ||
+| List<Guid> FuelsIds ||
+| List<RuleFuelDto> Fuels ||
+| List<RuleDriverDto> Drivers ||
+| List<RuleVehicleDto> Vehicles ||
+| List<RuleFleetDto> Fleets ||
+| List<RuleZoneDto> Zones ||
+| List<RuleFuelGroupDto> FuelGroups ||
+| List<RuleSiteDto> Sites ||
+| bool NonBlocking ||
+| List<Guid> FuelGroupsIds ||
+| List<Guid> ZonesIds ||
+| bool ExactDateTime ||
+| bool DriverIdReprompt ||
+| int? EngineHoursMaxVariation ||
+| int? EngineHoursMinVariation ||
+| Guid Id ||
+| Guid? NetworkId ||
+| string NetworkName ||
+| Guid? CompanyId ||
+| string CompanyName ||
+| Guid? MerchantId ||
+| string MerchantName ||
+| Guid? CompanyContractId ||
+| string ContractDescription ||
+| short? RuleType ||
+| string Description ||
+| byte? Periodicity ||
+| short? PeriodicityAmount ||
+| decimal? MoneyQuota ||
+| decimal? VolumeQuota ||
+| int? TimeFrom ||
+| int? TimeTo ||
+| int? DateFrom ||
+| int? DateTo ||
+| decimal? SecurityLimit ||
+| int? TransactionsQuantity ||
+| int? Retries ||
+| bool VehiclePINReprompt ||
+| bool SecondaryTrackReprompt ||
+| bool MiscellaneousReprompt ||
+| bool OdometerReprompt ||
+| int? OdometerMinVariation ||
+| int? OdometerMaxVariation ||
+| bool EngineHoursReprompt ||
+| Guid? SKUCategoryId ||
+| string SKUCategoryDescription ||
+	
+#### DaysTimeRuleTypeDto
+|Data|Description|
+|--- |--- |
+| byte Day ||
+| List<TimeRangesDto> TimeRanges ||
+
+#### TimeRangesDto
+|Data|Description|
+|--- |--- |
+| string TimeFrom ||
+| string TimeTo ||
+| int TimeFromInt { get; }
+| int TimeToInt { get; }
+
+#### RuleFuelDto
+|Data|Description|
+|--- |--- |
+| Guid IdRule ||
+| string RuleName ||
+| short RuleType ||
+| Guid IdFuel ||
+| string FuelName ||
+| string FuelCode ||
+
+#### RuleDriverDto
+|Data|Description|
+|--- |--- |		
+		public Guid IdRule ||
+| string RuleName ||
+| short RuleType ||
+| Guid IdDriver ||
+| string DriverName ||
+| string DriverCode ||
+
+#### RuleVehicleDto
+|Data|Description|
+|--- |--- |		
+| Guid IdRule ||
+| string RuleName ||
+| short RuleType ||
+| string RuleTypeDescription ||
+| Guid IdVehicle ||
+| string VehicleCode ||
+| string VehiclePlate ||
+| string Description ||
+
+#### RuleFleetDto
+|Data|Description|
+|--- |--- |	
+| Guid IdRule ||
+| string RuleName ||
+| short RuleType ||
+| string RuleTypeDescription ||
+| Guid IdFleet ||
+| string FleetName ||
+| string FleetCode ||
+| string Description ||	
+
+#### RuleZoneDto
+|Data|Description|
+|--- |--- |
+| Guid ZoneId ||
+| string ZoneName ||
+| string ZoneCode ||
+
+#### RuleFuelGroupDto
+|Data|Description|
+|--- |--- |
+| Guid FuelGroupId ||
+| string FuelGroupsName ||
+| string FuelGroupsCode ||
+
+#### RuleSiteDto
+|Data|Description|
+|--- |--- |
+| Guid SiteId ||
+| string SiteName ||
+| string SiteDescription ||
+| string SiteCode ||
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetRules|string rule = null</br> short? ruleType = null</br> Guid? idVehicle = null</br> Guid? idDriver = null</br> Guid? idFleet = null</br> string customer = null</br> string company = null</br> string contract = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "description"</br> string orderType = "asc"|List&lt;RuleDto>|Get list of the RuleDto|
-|GetRulesAsync|string rule = null</br> short? ruleType = null</br> Guid? idVehicle = null</br> Guid? idDriver = null</br> Guid? idFleet = null</br> string customer = null</br> string company = null</br> string contract = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "description"</br> string orderType = "asc"|List&lt;RuleDto>|Get list of the RuleDto|
+|GetRules|string rule = null</br> short? ruleType = null</br> Guid? idVehicle = null</br> Guid? idDriver = null</br> Guid? idFleet = null</br> string customer = null</br> string company = null</br> string contract = null</br> bool? nonBlocking = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "description"</br> string orderType = "asc"|List&lt;RuleDto>|Get list of the RuleDto|
+|GetRulesAsync|string rule = null</br> short? ruleType = null</br> Guid? idVehicle = null</br> Guid? idDriver = null</br> Guid? idFleet = null</br> string customer = null</br> string company = null</br> string contract = null</br> bool? nonBlocking = null</br> int page = 1</br> int pageSize = 50</br> string orderField = "description"</br> string orderType = "asc"|List&lt;RuleDto>|Get list of the RuleDto|
 |GetRule|Guid id|RuleDto|Get individual RuleDto|
 |GetRuleAsync|Guid id|RuleDto|Get individual RuleDto|
 |CreateRule|RuleDto data|RuleDto|Create RuleDto|
 |CreateRuleAsync|RuleDto data|RuleDto|Create RuleDto|
-|UpdateRule|Guid id RuleDto data|string|Update RuleDto|
-|UpdateRuleAsync|Guid id RuleDto data|string|Update RuleDto|
+|UpdateRule|Guid id <BR>RuleDto data|string|Update RuleDto|
+|UpdateRuleAsync|Guid id <BR>RuleDto data|string|Update RuleDto|
 |DeleteRule|Guid id|string|Get individual RuleDto|
 |DeleteRuleAsync|Guid id|string|Get individual RuleDto|
+	
+#### RuleQuotaUpdateDto
+|Data|Description|
+|--- |--- |
+| List<Guid> Ids ||
+| bool Increase ||
+| bool IsPercentage ||
+| decimal Value ||
+| bool TransactionEnabled ||
+| bool MoneyEnabled ||
+| bool VolumeEnabled ||
 
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|UpdateRuleQuotaBulk|Guid id <BR>RuleQuotaUpdateDto data|string|Update RuleQuotaUpdateDto|
+|UpdateRuleQuotaBulkAsync|Guid id <BR>RuleQuotaUpdateDto data|string|Update RuleQuotaUpdateDto|
+	
+#### SalesOrderDto
+|Data|Description|
+|--- |--- |
+| int? QuantityIdentifications ||
+| string PaymentReference ||
+| decimal? RequestedTotalAmount ||
+| decimal? RequestedTaxesAmount ||
+| decimal? RequestedNetAmount ||
+| decimal? RequestedCommisionAmount ||
+| decimal? RequestedAmount ||
+| string NetworkDateTimeZone ||
+| DateTime? UpdateRealDate ||
+| DateTime? UpdateDate ||
+| DateTime? RequestRealDate ||
+| DateTime? RequestDate ||
+| byte State ||
+| byte Type ||
+| Guid? RquestIdentificationId ||
+| Guid CompanyContractId ||
+| Guid CompanyId ||
+| Guid NetworkId ||
+| Guid Id ||
+| int? OrderNumber ||
+| string ContractDescription ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetSalesOrders|Guid? companyContractId = null <BR>Guid? identificationRequestId = null <BR>byte? type = null <BR>byte? state = null <BR>string paymentReference = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "PaymentReference" <BR>string orderType = "asc"|SalesOrderDto|Get list of the SalesOrderDto|
+|GetSalesOrdersAsync|Guid? companyContractId = null <BR>Guid? identificationRequestId = null <BR>byte? type = null <BR>byte? state = null <BR>string paymentReference = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "PaymentReference" <BR>string orderType = "asc"|SalesOrderDto|Get list of the SalesOrderDto|
+|GetSalesOrder|Guid id|SalesOrderDto|Get individual SalesOrderDto|
+|GetSalesOrderAsync|Guid id|SalesOrderDto|Get individual SalesOrderDto|
+|ConfirmSalesOrder|SalesOrderDto data|string|Confirm SalesOrderDto|
+|ConfirmSalesOrderAsync|SalesOrderDto data|string|Confirm SalesOrderDto|
+|CancelSalesOrder|SalesOrderDto data|string|Cancel SalesOrderDto|
+|CancelSalesOrderAsync|SalesOrderDto data|string|Cancel SalesOrderDto|
+|PaidSalesOrderAsync|SalesOrderDto data|string|Paid SalesOrderDto|
+|PaidSalesOrderAsyncAsync|SalesOrderDto data|string|Paid SalesOrderDto|
+	
+#### SalesOrderBalanceRechargeDto
+|Data|Description|
+|--- |--- |
+| Guid CompanyContractId ||
+| decimal RequestedAmount ||
+| decimal RequestedCommisionAmount ||
+| decimal RequestedNetAmount ||
+| decimal RequestedTaxesAmount ||
+| decimal RequestedTotalAmount ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|CreateSalesOrderBalanceRecharge|SalesOrderBalanceRechargeDto data|SalesOrderBalanceRechargeDto|Create SalesOrderBalanceRechargeDto|
+|CreateSalesOrderBalanceRechargeAsync|SalesOrderBalanceRechargeDto data|SalesOrderBalanceRechargeDto|Create SalesOrderBalanceRechargeDto|
+	
+#### IdentificationOrderDto
+|Data|Description|
+|--- |--- |
+| Guid IdCompanyContract ||
+| Guid? IdProgram ||
+| Guid? IdLoyaltyProgram ||
+| Guid? IdIdentificationsTypesModel ||
+| List<Guid> EntityIds ||
+| short Type ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|CreateSalesOrderIdentificationsSalesVehicles|IdentificationOrderDto data|IdentificationOrderDto|Create Sales Order Identifications Sales Vehicles|
+|CreateSalesOrderIdentificationsSalesVehiclesAsync|IdentificationOrderDto data|IdentificationOrderDto|Create Sales Order Identifications Sales Vehicles|
+|CreateSalesOrderIdentificationsSalesDrivers|IdentificationOrderDto data|IdentificationOrderDto|Create Sales Order Identifications Sales Drivers|
+|CreateSalesOrderIdentificationsSalesDriversAsync|IdentificationOrderDto data|IdentificationOrderDto|Create Sales Order Identifications Sales Drivers|
+	
 #### ServiceFileEntryDto
 |Data|Description|
 |--- |--- |
@@ -2469,8 +2714,8 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetServiceFileEntries|List Guid  loyaltyPrograms = null List identifications = null List drivers = null List vehicles = null List groups = null List types = null List products = null string memberDate = null string dateFrom = null string dateTo = null int page = 1 int pageSize = 50|List&lt;ServiceFileEntryDto>|Get list of the ServiceFileEntryDto|
-|GetServiceFileEntriesAsync|List Guid  loyaltyPrograms = null List identifications = null List drivers = null List vehicles = null List groups = null List types = null List products = null string memberDate = null string dateFrom = null string dateTo = null int page = 1 int pageSize = 50|List&lt;ServiceFileEntryDto>|Get list of the ServiceFileEntryDto|
+|GetServiceFileEntries|List Guid loyaltyPrograms = null <BR>List identifications = null <BR>List drivers = null <BR>List vehicles = null <BR>List groups = null <BR>List types = null <BR>List products = null <BR>string memberDate = null <BR>string dateFrom = null <BR>string dateTo = null <BR>int page = 1 <BR>int pageSize = 50|List&lt;ServiceFileEntryDto>|Get list of the ServiceFileEntryDto|
+|GetServiceFileEntriesAsync|List Guid loyaltyPrograms = null <BR>List identifications = null <BR>List drivers = null <BR>List vehicles = null <BR>List groups = null <BR>List types = null <BR>List products = null <BR>string memberDate = null <BR>string dateFrom = null <BR>string dateTo = null <BR>int page = 1 <BR>int pageSize = 50|List&lt;ServiceFileEntryDto>|Get list of the ServiceFileEntryDto|
 |GetServiceFileEntry|Guid id|ServiceFileEntryDto|Get individual ServiceFileEntryDto|
 |GetServiceFileEntryAsync|Guid id|ServiceFileEntryDto|Get individual ServiceFileEntryDto|
 |CreateServiceFileEntry|ServiceFileEntryDto data|ServiceFileEntryDto|Create ServiceFileEntryDto|
@@ -2479,44 +2724,48 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 #### SiteDto
 |Type|Name|Description|
 |--- |--- |--- |
-|string|City||
-|string|Code||
-|double?|Latitude||
-|double?|Longitude||
-|string|TimeZone||
-|decimal?|MaxDiffVolume||
-|decimal?|MaxDiffAmount||
-|byte?|SiteType||
-|Guid?|IdSiteClassification0||
-|Guid?|IdSiteClassification2||
-|Guid?|IdSiteClassification3||
-|string|SiteClassification0Description||
-|string|SiteClassification1Description||
-|string|SiteClassification2Description||
-|string|SiteClassification3Description||
-|Guid?|IdZone||
-|Guid?|IdSiteClassification1||
-|string|ZoneName||
-|bool|RequiresFuelMapping||
-|string|PhoneNumber1||
-|Guid|Id||
-|string|ShortName||
-|string|FullName||
-|string|Street1||
-|string|Street2||
-|Guid?|CountryId||
-|string|CountryDescription||
-|string|PhoneNumber2||
-|Guid?|StateId||
-|Guid?|LanguageId||
-|string|LanguageDescription||
-|Guid|MerchantId||
-|string|MerchantName||
-|Guid|BrandId||
-|string|BrandName||
-|string|ZipCode||
-|string|StateDescription||
-|string|ZoneCode||
+| double? Latitude ||
+| double? Longitude ||
+| string TimeZone ||
+| decimal? MaxDiffVolume ||
+| decimal? MaxDiffAmount ||
+| Guid? IdSiteClassification0 ||
+| Guid? IdSiteClassification1 ||
+| Guid? IdSiteClassification2 ||
+| string Code ||
+| Guid? IdSiteClassification3 ||
+| string SiteClassification1Description ||
+| string SiteClassification2Description ||
+| string SiteClassification3Description ||
+| Guid? IdZone ||
+| string ZoneName ||
+| string ZoneCode ||
+| Guid CurrencyId ||
+| string CurrencyCode ||
+| string SiteClassification0Description ||
+| bool IsCodeAutomaticallyGenerated ||
+| string City ||
+| bool RequiresFuelMapping ||
+| Guid Id ||
+| string ShortName ||
+| string FullName ||
+| string Street1 ||
+| string Street2 ||
+| Guid? CountryId ||
+| string CountryDescription ||
+| Guid? StateId ||
+| byte? SiteType ||
+| string StateDescription ||
+| string LanguageDescription ||
+| Guid MerchantId ||
+| string MerchantName ||
+| Guid BrandId ||
+| string BrandName ||
+| string ZipCode ||
+| string PhoneNumber1 ||
+| string PhoneNumber2 ||
+| Guid? LanguageId ||
+| int MobilePaymentMethod ||
 
 
 |Method|Parameters (Type - Name - Default Value - Description)|Response|Description|
@@ -2570,7 +2819,7 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 
 |Method|Parameters (Type - Name - Default Value - Description)|Response|Description|
 |--- |--- |--- |--- |
-|GetSku|List&lt;Guid> - skuIds - null - TBD<br> string - code - null - TBD<br> bool - isPos - false - TBD<br> bool - isLoyalty - false - TBD<br> bool - isFleetDry - false - TBD<br> bool - isReward - false - TBD<br> bool - isService - false - TBD<br> string descriptionShort - null - TBD<br> DateTime? updateDate - null - TBD<br> int - page - 1 - TBD<br> int - pageSize - 50 - TBD<br> string - orderField - "code" - TBD<br> string - orderType - "asc"|List&lt;SiteDto>|Get List SiteDto|
+|GetSku|List&lt;Guid> - skuIds - null - TBD<br> string - code - null - TBD<br> bool - isPos - false - TBD<br> bool - isLoyalty - false - TBD<br> bool - isFleetDry - false - TBD<br> bool - isReward - false - TBD<br> bool - isService - false - TBD<br> string descriptionShort - null - TBD<br> DateTime? updateDate - null - TBD<br> int - page - 1 - TBD<br> int - pageSize - 50 - TBD<br> string - orderField - "code" - TBD<br> string - orderType - "asc"|List&lt;SkuDto>|Get List SkuDto|
 |GetSkuAsync|List&lt;Guid> - skuIds - null - TBD<br> string - code - null - TBD<br> bool - isPos - false - TBD<br> bool - isLoyalty - false - TBD<br> bool - isFleetDry - false - TBD<br> bool - isReward - false - TBD<br> bool - isService - false - TBD<br> string descriptionShort - null - TBD<br> DateTime? updateDate - null - TBD<br> int - page - 1 - TBD<br> int - pageSize - 50 - TBD<br> string - orderField - "code" - TBD<br> string - orderType - "asc"|List&lt;SkuDto>|Get List SkuDto|
 |GetSku|Guid - id - Identification of Sku|SkuDto|Get individual SkuDto|
 |GetSkuAsync|Guid - id - Identification of Sku|SiteDto|Get individual SkuDto|
@@ -2578,6 +2827,113 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |CreateSkuAsync|SiteDto - data - - Represent a Sku entity to Create|SkuDto|Create SkuDto|
 |UpdateSku|Guid - id - - Identification of Sku<BR>SiteDto - data - - Represent a Sku entity to Update|string|Update SkuDto|
 |UpdateSkuAsync|Guid - id - - Identification of Sku<BR>SiteDto - data - Represent a Sku entity to Update|string|Update SkuDto|
+
+#### SkuCategoryDto
+|Type|Name|Description|
+|--- |--- |--- |
+| Guid Id ||
+| Guid NetworkId ||
+| string Code ||
+| string Name ||
+| string Abbreviation ||
+| bool IsPos ||
+| bool IsFleetDry ||
+| bool IsReward ||
+| bool IsService ||
+| bool IsLoyalty ||
+| Guid? StockKeepingUnitsCategory1Id ||
+| SkuCategoryDto StockKeepingUnitsCategoryParent ||
+| DateTime UpdateDate ||
+
+|Method|Parameters (Type - Name - Default Value - Description)|Response|Description|
+|--- |--- |--- |--- |
+|GetSkuCategories|List<Guid> skuCategoryIds = null <BR>string code = null <BR>string name = null <BR>DateTime? updateDate = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "level1code" <BR>string orderType = "asc"|List&lt;SkuCategoryDto>|Get List SkuCategoryDto|
+|GetSkuCategoriesAsync|List<Guid> skuCategoryIds = null <BR>string code = null <BR>string name = null <BR>DateTime? updateDate = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "level1code" <BR>string orderType = "asc"|List&lt;SkuCategoryDto>|Get List SkuCategoryDto|
+|GetSkuCategory|Guid - id - Identification of Sku Category|SkuCategoryDto|Get individual SkuCategoryDto|
+|GetSkuCategoryAsync|Guid - id - Identification of Sku Category|SkuCategoryDto|Get individual SkuCategoryDto|
+|CreateSkuCategory|SkuCategoryDto - data - - Represent a Sku Category entity to Create|SkuCategoryDto|Create SkuCategoryDto|
+|CreateSkuCategoryAsync|SkuCategoryDto - data - - Represent a Sku Category entity to Create|SkuCategoryDto|Create SkuCategoryDto|
+|UpdateSkuCategory|Guid - id - - Identification of Sku<BR>SkuCategoryDto - data - - Represent a Sku Category entity to Update|string|Update SkuCategoryDto|
+|UpdateSkuCategoryAsync|Guid - id - - Identification of Sku<BR>SkuCategoryDto - data - Represent a Sku Category entity to Update|string|Update SkuCategoryDto|
+	
+#### StateDto
+|Data|Description|
+|--- |--- |
+| Guid Id ||
+| Guid IdCountry ||
+| string Description ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetStates|Guid idCountry <BR>int page = 1 <BR>int pageSize = 50|StateDto|Get list StateDto|
+|GetStatesAsync|Guid idCountry <BR>int page = 1 <BR>int pageSize = 50|StateDto|Get list StateDto|
+			
+#### SubAccountDto
+|Data|Description|
+|--- |--- |
+| int? VehicleEngineHours ||
+| int? VehicleOdometer ||
+| int? VehicleYear ||
+| string VehicleCode ||
+| Guid? VehicleId ||
+| string DriverLastName ||
+| string DriverFirstName ||
+| string DriverCode ||
+| Guid? DriverId ||
+| List<Guid> IdentificationIds ||
+| decimal Limit ||
+| decimal Consumption ||
+| decimal PreviousBalance ||
+| decimal CurrentBalance ||
+| DateTime BalanceDate ||
+| string ContractDescription ||
+| string IdentificationsDescription ||
+| string Description ||
+| Guid Id ||
+| decimal VehicleConsumption ||
+| string FleetDescription ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetSubAccounts|List<Guid> idsSubAccount = null, List<Guid> idsClassification1 = null, List<Guid> idsClassification2 = null, List<Guid> idsClassification3 = null, List<Guid> idsClassification4 = null, List<string> vehicleCodes = null, List<string> driverCodes = null, Guid? idCompany = null, Guid? idIdentification = null, Guid? idDriver = null, Guid? idVehicle = null, Guid? idFleet = null, Guid? idContract = null, byte subAccountOwner = (byte)SubAccountOwnerEnum.Both, string identificationLabel = null, string identificationPAN = null, string identificationTrack = null, string vehicleCode = null, string vehiclePlate = null, string description = null, string driverCode = null, string driverName = null, string searchText = null, string order = "asc", int page = 1, int pageSize = 50|SubAccountDto|Get list SubAccountDto|
+|GetSubAccountsAsync|List<Guid> idsSubAccount = null, List<Guid> idsClassification1 = null, List<Guid> idsClassification2 = null, List<Guid> idsClassification3 = null, List<Guid> idsClassification4 = null, List<string> vehicleCodes = null, List<string> driverCodes = null, Guid? idCompany = null, Guid? idIdentification = null, Guid? idDriver = null, Guid? idVehicle = null, Guid? idFleet = null, Guid? idContract = null, byte subAccountOwner = (byte)SubAccountOwnerEnum.Both, string identificationLabel = null, string identificationPAN = null, string identificationTrack = null, string vehicleCode = null, string vehiclePlate = null, string description = null, string driverCode = null, string driverName = null, string searchText = null, string order = "asc", int page = 1, int pageSize = 50|SubAccountDto|Get list SubAccountDto|
+|GetSubAccount|Guid id|SubAccountDto|Get individual SubAccountDto|
+|GetSubAccountAsync|Guid id|SubAccountDto|Get individual SubAccountDto|
+			
+#### SystemNotificationDto
+|Data|Description|
+|--- |--- |
+| Guid? VehicleId ||
+| string Payload ||
+| byte? UserState ||
+| string UserAtionetDestination ||
+| string UserAtionetCreated ||
+| Guid? IdMerchant ||
+| Guid? IdCompany ||
+| object Message ||
+| string Subject ||
+| Guid? DriverId ||
+| byte State ||
+| Guid? UserAtionetDestinationId ||
+| Guid? UserAtionetCreatedId ||
+| DateTime CreatedDate ||
+| string DestinationAddresses ||
+| string Origin ||
+| byte Channel ||
+| Guid? NotificationFormatId ||
+| Guid? NetworkId ||
+| Guid Id ||
+| byte Type ||
+| string CreatedDateString ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetSystemNotifications|List<byte> userStates = null, string dateTimeFrom = null, string dateTimeTo = null, int page = 1, int pageSize = 50, bool paginate = true, byte? state = null, byte? type = null, string subject = null, byte? userState = null, byte? channel = null, List<Guid> idsDrivers = null, List<Guid> idsVehicles = null|SystemNotificationDto|Get list SystemNotificationDto|
+|GetSystemNotificationsAsync|List<byte> userStates = null, string dateTimeFrom = null, string dateTimeTo = null, int page = 1, int pageSize = 50, bool paginate = true, byte? state = null, byte? type = null, string subject = null, byte? userState = null, byte? channel = null, List<Guid> idsDrivers = null, List<Guid> idsVehicles = null|SystemNotificationDto|Get list SystemNotificationDto|
+|GeSystemNotification|Guid id|SystemNotificationDto|Get individual SystemNotificationDto|
+|GetSystemNotificationAsync|Guid id|SystemNotificationDto|Get individual SystemNotificationDto|
+|UpdateSystemNotification|SystemNotificationDto data|string|Update SystemNotificationDto|
+|UpdateSystemNotificationAsync|SystemNotificationDto data|string|Update SystemNotificationDto|
 
 #### UsersAtionetDto 
 |Type|Name|Description|
