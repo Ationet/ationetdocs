@@ -21,6 +21,7 @@
 |1.5|13/07/2021|**Inventory Interface Messages** <br> - Updated lists of Action Codes|
 |1.6|29/11/2021|**Inventory & Delivery Interface Update** <br> - Update Inventory Download Response <br> - Update Delivery Download Response <br>|
 |1.7|19/01/2022|**Document Update** <br> - Add CompanyGroups movements download: Request/Response <br> - Add Merchant Charges Comissions Download: Request/Response <br> - Add Sub-Account/Contract Balance Download: Request/Response <br> - Update Transaction Download Response <br> - Update company movements download request parameters <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages <br> - Update Transaction Currency Response Fields <br> - Add Transaction product format response <br> - Add Transaction Product Taxes Format Response <br> - Add Transaction Modifiers Format Response <br> - Add Transaction Movement ERP Format Response <br> - Add Transaction Fee Format Response|
+|1.8|26/01/2022|**Document Update** <br> - Add Transaction custom fields download Request|
 
 ## Contents
 
@@ -54,6 +55,7 @@
 			- [7.3.3.1 Transaction Product Taxes Format Response](#7331-transaction-product-taxes-format-response)
 		- [7.3.4 Transaction Modifiers Format Response](#734-transaction-modifiers-format-response)
 		- [7.3.5 Transaction Movement ERP Format Response](#735-transaction-movement-erp-format-response)
+	- [7.4 Transacionts Custom Fields Download (POST) – Body Section Format Request](#74-transacionts-custom-fields-download-post--body-section-format-request)
 
 - [8 FastTrack Interface](#8-fasttrack-interface)
 	- [8.1 Action Codes](#81-action-codes)
@@ -1168,166 +1170,6 @@ transactions to download.
 ### 7.2 Transactions Download (POST) – Body Section Format *Request*
 
 <table>
-	<thead>
-		<tr valign="top">
-			<th align="left">
-				Field Name
-			</th>
-			<th align="left">
-				Size
-			</th>
-			<th align="left">
-				Type
-			</th>
-			<th align="left">
-				Condition
-			</th>
-			<th align="left">
-				Descriptions/Field Value(s)
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr valign="top">
-			<td>
-				<p align="left">SubscriberCode</p>
-			</td>
-			<td>
-				<p align="left">3</p>
-			</td>
-			<td>
-				<p align="left">A/N</p>
-			</td>
-			<td>
-				<p align="left">Required</p>
-			</td>
-			<td>
-				<p align="left">Fixed. To be assigned by ATIONet</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ActionCode</p>
-			</td>
-			<td>
-				<p align="left">3</p>
-			</td>
-			<td>
-				<p align="left">N</p>
-			</td>
-			<td>
-				<p align="left">Required</p>
-			</td>
-			<td>
-				<p align="left">See Action Codes section above</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">MerchantCode</p>
-			</td>
-			<td>
-				<p align="left">30</p>
-			</td>
-			<td>
-				<p align="left">A/N</p>
-			</td>
-			<td>
-				<p align="left">Conditional</p>
-			</td>
-			<td>
-				<p align="left">See Action Codes section above</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">CompanyCode</p>
-			</td>
-			<td>
-				<p align="left">30</p>
-			</td>
-			<td>
-				<p align="left">A/N</p>
-			</td>
-			<td>
-				<p align="left">Conditional</p>
-			</td>
-			<td>
-				<p align="left">See Action Codes section above</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">ContractCode</p>
-			</td>
-			<td>
-				<p align="left">20</p>
-			</td>
-			<td>
-				<p align="left">A/N</p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
-				<p align="left">See Action Codes section above</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">TerminalCode</p>
-			</td>
-			<td>
-				<p align="left">50</p>
-			</td>
-			<td>
-				<p align="left">A/N</p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
-				<p align="left">See Action Codes section above</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">DateFrom</p>
-			</td>
-			<td>
-				<p align="left">19</p>
-			</td>
-			<td>
-				<p align="left">A/N</p>
-			</td>
-			<td>
-				<p align="left">Required</p>
-			</td>
-			<td>
-				<p align="left">From date to filter transactions</p>
-				<p align="left">&ldquo;yyyy/MM/dd hh:mm:ss&rdquo;</p>
-			</td>
-		</tr>
-		<tr valign="top">
-			<td>
-				<p align="left">DateTo</p>
-			</td>
-			<td>
-				<p align="left">19</p>
-			</td>
-			<td>
-				<p align="left">A/N</p>
-			</td>
-			<td>
-				<p align="left">Optional</p>
-			</td>
-			<td>
-				<p align="left">To date to filter transactions</p>
-				<p align="left">&ldquo;yyyy/MM/dd hh:mm:ss&rdquo;</p>
-			</td>
-		</tr>
-	</tbody>
-</table><table>
 	<thead>
 		<tr valign="top">
 			<th align="left">
@@ -5929,6 +5771,2779 @@ transactions to download.
 		</tr>
 	</tbody>
 </table>
+
+### 7.4 Transactions Custom Fields Download (POST) – Body Section Format Request
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Condition
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">SubscriberCode</p>
+			</td>
+			<td>
+				<p align="left">3</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Required</p>
+			</td>
+			<td>
+				<p align="left">Fixed. To be assigned by ATIONet</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ActionCode</p>
+			</td>
+			<td>
+				<p align="left">3</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Required</p>
+			</td>
+			<td>
+				<p align="left">See Action Codes section above</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantCode</p>
+			</td>
+			<td>
+				<p align="left">30</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Merchant code to filter transactions by</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyCode</p>
+			</td>
+			<td>
+				<p align="left">30</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Company code to filter transactions by</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ContractCode</p>
+			</td>
+			<td>
+				<p align="left">20</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Company contract code to filter transactions by</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TerminalCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Terminal code to filter transactions by</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DateFrom</p>
+			</td>
+			<td>
+				<p align="left">19</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Required</p>
+			</td>
+			<td>
+				<p align="left">From date to filter transactions</p>
+				<p align="left">&ldquo;yyyy/MM/dd hh:mm:ss&rdquo;</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DateTo</p>
+			</td>
+			<td>
+				<p align="left">19</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">To date to filter transactions</p>
+				<p align="left">&ldquo;yyyy/MM/dd hh:mm:ss&rdquo;</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">IdentificationId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Identification UID to filter transactions</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TrackNumber</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">TrackNumber to filter transactions</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PAN</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">PAN to filter transactions</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">AuthorizationCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Authorization code to filter transactions</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyGroupId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Company group UID to filter transactions</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyGroupCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Company group code to filter transactions</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProgramId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Program UID to filter transactions</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProcessBillingStatementCompanyId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Company process billing statement UID to filter transactions by</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProcessBillingStatementMerchantId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Merchant process billing statement UID to filter transactions by</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Site UID to filter transactions by</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TransactionModes</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">L</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">List of transacion modes to filter transactions <br> 0 = Standard <br> 1 = Offline <br> 2 = Contingency</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SubAccountTypes</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">L</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">List of subaccount types to filter transactions by <br> 0 = Fleet <br> 1 = Old Gift Card <br> 2 = Consumer Card <br> 3 = Gift Card</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TransactionDateType</p>
+			</td>
+			<td>
+				<p align="left">10</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Transaction date type to filter transactions <br> 0 = RealDate <br> 1 = LocalTransactionDate <br> 2 = NetworkDate <br> 3 = CorrectedDate</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Fields</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">L</p>
+			</td>
+			<td>
+				<p align="left">Required</p>
+			</td>
+			<td>
+				<p align="left">List of transactions fields to be download</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Paginate</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Indicates if the query result will be paginated <br> 0 = false <br> 1 = true</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PageSize</p>
+			</td>
+			<td>
+				<p align="left">10</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Conditional</p>
+			</td>
+			<td>
+				<p align="left">Indicates the number of records to download in case the query is paginated.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Page</p>
+			</td>
+			<td>
+				<p align="left">10</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Conditional</p>
+			</td>
+			<td>
+				<p align="left">Indicates the page to be download</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+### 7.4.1 Transactions Custom Fields
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">State</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Dispute state</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteStateDescription</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">the site state description</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCountryId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site country UID</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCountry</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">The site country</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteAddress</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site address</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteStateId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site state UID</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCityDescription</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site city description</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteZipCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site zip code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCustomField0</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site custom field 0</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCustomField1</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site custom field 1</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCustomField2</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site custom field 2</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCustomField3</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site custom field 3</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyTaxpayerId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Company taxpayer UID</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverClassificationCode2</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver classification code 2</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverClassificationCode4</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver classification code 4</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PrimaryIdentificationPAN</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Primary PAN</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SecondaryIdentificationTrack</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Secondary track</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SecondaryIdentificationPAN</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Secondary PAN</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PrimaryIdentificationLabel</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Public ID of the primary identification device (chipkey ID, account number on a mag card, RFID serial number, etc.)</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SecondaryIdentificationLabel</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Public ID of the secondary identification device (chipkey ID, account number on a mag card, RFID serial number, etc.)</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PrimaryIdentificationModelDescription</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Primary identifier model</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SecondaryIdentificationModelDescription</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Secondary identifier model</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">FleetCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Fleet code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">FleetName</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Fleet name</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PrimaryIdentificationTrack</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Primary identification track</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SecondaryIdentificationTrack</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Secondary track</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehiclePlate</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle plate</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleBrand</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle brand</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleModel</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle model</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleCustomField0</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle custom field 0</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleCustomField1</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle custom field 1</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleCustomField2</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle custom field 2</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleCustomField3</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle custom field 3</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleClassDescription</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle class</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleClassificationCode1</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle classifcation code 1</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleClassificationCode2</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle classifcation code 2</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleClassificationCode3</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle classifcation code 3</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VehicleClassificationCode4</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Vehicle classifcation code 4</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverName</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver name</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverFirstName</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver first name</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverLastName</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver last name</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverCustomField0</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver custom field 0</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverCustomField1</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver custom field 1</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverCustomField2</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver custom field 2</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverCustomField3</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver custom field 3</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverClassificationCode1</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver classification code 1</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DriverClassificationCode3</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Driver classification code 3</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Subsidized</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction subsidized active status <br> 0 = false <br> 1 = true</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCountrySatCode</p>
+			</td>
+			<td>
+				<p align="left">3</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site country SAT Code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCountryDescription</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site country description</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyContractCustomInterface0</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Company contract custom interface 0 active status <br> 0 = false <br> 1 = true</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyContractCustomInterface1</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Company contract custom interface 1 active status <br> 0 = false <br> 1 = true</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyContractCustomInterface2</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Company contract custom interface 2 active status <br> 0 = false <br> 1 = true</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyContractCustomInterface3</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Company contract custom interface 3 active status <br> 0 = false <br> 1 = true</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyContractCustomInterface4</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Company contract custom interface 4 active status <br> 0 = false <br> 1 = true</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyContractCustomOperation0</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Company contract custom operation 0 active status <br> 0 = false <br> 1 = true</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyContractCustomOperation1</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Company contract custom operation 1 active status <br> 0 = false <br> 1 = true</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyContractCustomOperation2</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Company contract custom operation 2 active status <br> 0 = false <br> 1 = true</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyContractCustomOperation3</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Company contract custom operation 3 active status <br> 0 = false <br> 1 = true</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyContractCustomOperation4</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Company contract custom operation 4 active status <br> 0 = false <br> 1 = true</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Odometer</p>
+			</td>
+			<td>
+				<p align="left">10</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's customer data odometer value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">FastTrack</p>
+			</td>
+			<td>
+				<p align="left">Varies</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">Transaction's fast track data mapped</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CustomerData</p>
+			</td>
+			<td>
+				<p align="left">Varies</p>
+			</td>
+			<td>
+				<p align="left">M</p>
+			</td>
+			<td>
+				<p align="left">Transaction's customer data mapped</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">AuthorizationType</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's authorization type <br> 0 = fleet <br> 1 = voucher <br> 2 = fast track</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProgramId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Identification program UID</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProgramDescription</p>
+			</td>
+			<td>
+				<p align="left">100</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Identification program description</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">GiftCardProgramId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Identification gift card program UID</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">GiftCardProgramName</p>
+			</td>
+			<td>
+				<p align="left">100</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Identification program name</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">GiftCardProgramDescription</p>
+			</td>
+			<td>
+				<p align="left">100</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Identification program description</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">GPSVirtualOdometer</p>
+			</td>
+			<td>
+				<p align="left">10</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's GPS data virtual odometer value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">GPSDistance</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's GPS data distance value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">GPSAddress</p>
+			</td>
+			<td>
+				<p align="left">100</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's GPS data adress</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">GPSComment</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's GPS data commentaries</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">GPSLatitudeStart</p>
+			</td>
+			<td>
+				<p align="left">17</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's GPS data starting latitude</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">GPSLongitudeStart</p>
+			</td>
+			<td>
+				<p align="left">17</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's GPS data starting longitude</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">GPSAltitudeStart</p>
+			</td>
+			<td>
+				<p align="left">17</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's GPS data starting altitude</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Modifiers</p>
+			</td>
+			<td>
+				<p align="left">Varies</p>
+			</td>
+			<td>
+				<p align="left">L</p>
+			</td>
+			<td>
+				<p align="left">A list of transaction's modifiers data</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyContractCustomField0</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Company contract custom field 0 value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyContractCustomField1</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Company contract custom field 1 value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyContractCustomField2</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Company contract custom field 2 value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyContractCustomField3</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Company contract custom field 3 value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantCustomField0</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Merchant custom field 0 value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantCustomField1</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Merchant custom field 1 value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantCustomField2</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Merchant custom field 2 value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantCustomField3</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Merchant custom field 3 value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's site code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteName</p>
+			</td>
+			<td>
+				<p align="left">100</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's site full name</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteShortName</p>
+			</td>
+			<td>
+				<p align="left">100</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's site short name</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TerminalCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's terminal code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TerminalId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's terminal UID</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TerminalType</p>
+			</td>
+			<td>
+				<p align="left">100</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's terminal type description</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TerminalTypeId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's terminal type UID</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SubAccountId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's primary subaccount UID</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SecondarySubAccountId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's secondary subaccount UID</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">AccountTypeDescription</p>
+			</td>
+			<td>
+				<p align="left">7</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's account type description:<br> - Vehicle <br> - Driver <br></p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TransactionNetAmount</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's net amount value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductUnitPriceRequested</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's requested unit price value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantName</p>
+			</td>
+			<td>
+				<p align="left">250</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Merchant name</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantContractCode</p>
+			</td>
+			<td>
+				<p align="left">20</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Merchant contract code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DateTime</p>
+			</td>
+			<td>
+				<p align="left">19</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Local transaction date and time value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TransactionId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's UID</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SubscriberId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Subscriber's UID</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SubscriberCode</p>
+			</td>
+			<td>
+				<p align="left">3</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Subscriber's code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SubscriberName</p>
+			</td>
+			<td>
+				<p align="left">250</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Subscriber's name</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TransactionSequenceNumber</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's sequence number value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">AuthorizationCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's authorization code value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ResponseCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's response code value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ResponseMessage</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's response message value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Status</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction status value:<br> 0 = Ok <br> 1 = Processing <br>2 = PendingRetry <br>3 = PendingReprompt <br>4 = Dirty <br>5 = Error</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">StatusDescription</p>
+			</td>
+			<td>
+				<p align="left">11</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction status description</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Mode</p>
+			</td>
+			<td>
+				<p align="left">1</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction mode value:<br> 0 = Standard <br> 1 = Offline <br>2 = Contingency</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">HostDateTime</p>
+			</td>
+			<td>
+				<p align="left">19</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">UTC transaction date and time value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SubscriberDateTime</p>
+			</td>
+			<td>
+				<p align="left">19</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Subscriber date and time value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SubscriberTimeZone</p>
+			</td>
+			<td>
+				<p align="left">150</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Subscriber time zone</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteDateTime</p>
+			</td>
+			<td>
+				<p align="left">19</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site date and time value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteTimeZone</p>
+			</td>
+			<td>
+				<p align="left">150</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Site time zone</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantCode</p>
+			</td>
+			<td>
+				<p align="left">30</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Merchant code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductVolumeRequested</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's product volume requested</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TransactionAmountRequested</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's amount requested</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BatchNumber</p>
+			</td>
+			<td>
+				<p align="left">10</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's batch number</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ShiftNumber</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's shift number</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PumpNumber</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's pump number</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">EntryMethod</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's entry method</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyCode</p>
+			</td>
+			<td>
+				<p align="left">30</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Company code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyName</p>
+			</td>
+			<td>
+				<p align="left">250</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Company name</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyCustomField0</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Company custom field 0 value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyCustomField1</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Company custom field 1 value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyCustomField2</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Company custom field 2 value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyCustomField3</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Company custom field 3 value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompaniesGroupCode</p>
+			</td>
+			<td>
+				<p align="left">30</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Companies group code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ClassificationLabel1</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Company's classification 1 value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ClassificationLabel2</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Company's classification 2 value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ClassificationLabel3</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Company's classification 3 value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ClassificationLabel4</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Company's classification 4 value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyContractCode</p>
+			</td>
+			<td>
+				<p align="left">20</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Company contract's code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyContractCustomField0</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Company contract's custom field 0 value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyContractCustomField1</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Company contract's custom field 1 value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyContractCustomField2</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Company contract's custom field 2 value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyContractCustomField3</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Company contract's custom field 3 value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">InvoiceNumber</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's invoice number value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductAmountRequested</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's product amount requested value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">FuelMasterDescription</p>
+			</td>
+			<td>
+				<p align="left">100</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's fuel master description</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">FuelCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's fuel master code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductUnitPriceAuthorized</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's product unit prize authorized value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductVolumeAuthorized</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's product volume authorized value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductAmountAuthorized</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's product amount authorized value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TransactionAmountAuthorized</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's amount authorized value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductUnitPriceDispensed</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's product unit price dispensed value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductVolumeDispensed</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's product volume dispensed value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductAmountDispensed</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's product amount dispensed value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductNetAmountDispensed</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's product net amount dispensed value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TransactionAmountDispensed</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's amount dispensed value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductUnitPriceCompany</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's company product unit price value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductUnitPriceMerchant</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's merchant product unit price value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductAmountCompany</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's company product amount value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ProductAmountMerchant</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's merchant product amount value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TransactionAmountCompany</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's company amount value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TransactionAmountMerchant</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's merchant amount value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">UnitOfMeasurementCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's unit of measurement code value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CurrencyCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's currency code value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">FuelMasterCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Transaction's fuel master code value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingChargesItems</p>
+			</td>
+			<td>
+				<p align="left">Varies</p>
+			</td>
+			<td>
+				<p align="left">L</p>
+			</td>
+			<td>
+				<p align="left">A list of the transaction's realted billing charges items</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
 
 ## 8 FastTrack Interface
 
