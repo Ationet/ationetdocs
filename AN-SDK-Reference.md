@@ -3933,6 +3933,233 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |--- |--- |--- |--- |
 |GetVehiclesCo2Report|Guid? idContract = null <BR>Guid? idFleet = null <BR>Guid? idVehicle = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null <BR>byte? dateType = null <BR>int page = 1 <BR>int pageSize = 50 <BR>bool paginate = true|VehiclesCo2ReportDto|Get list VehiclesCo2ReportDto|
 |GetVehiclesCo2ReportAsync|Guid? idContract = null <BR>Guid? idFleet = null <BR>Guid? idVehicle = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null <BR>byte? dateType = null <BR>int page = 1 <BR>int pageSize = 50 <BR>bool paginate = true|VehiclesCo2ReportDto|Get list VehiclesCo2ReportDto|
+
+#### VehiclesConsumptionReportDto
+|Data|Description|
+|--- |--- |
+| Guid VehicleId ||
+| string VehiclePlate ||
+| string VehicleCode ||
+| Guid FleetId ||
+| string FleetCode ||
+| string FleetName ||
+| List VehicleConsumptionReportItemDto Periods ||
+
+#### VehicleConsumptionReportItemDto
+|Data|Description|
+|--- |--- |
+| decimal TotalVolume ||
+| decimal Traveled ||
+| decimal Average ||
+| decimal MaxOdometer ||
+| int YearGroup ||
+| int MonthGroup ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetVehiclesConsumptionReport|Guid? idContract = null <BR>Guid? idFleet = null <BR>Guid? idVehicle = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null <BR>byte? dateType = null|VehiclesConsumptionReportDto|Get list VehiclesConsumptionReportDto|
+|GetVehiclesConsumptionReportAsync|Guid? idContract = null <BR>Guid? idFleet = null <BR>Guid? idVehicle = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null <BR>byte? dateType = null|VehiclesConsumptionReportDto|Get list VehiclesConsumptionReportDto|
+
+#### VehiclePerformanceDto
+|Data|Description|
+|--- |--- |
+| string IdentificationsDescription ||
+| string Brand ||
+| string Custom3 ||
+| string Custom2 ||
+| string Custom1 ||
+| string Custom0 ||
+| string Clasification4Description ||
+| Guid? Clasification4Id ||
+| string Clasification3Description ||
+| Guid? Clasification3Id ||
+| string Clasification2Description ||
+| Guid? Clasification2Id ||
+| decimal? Performance ||
+| string Clasification1Description ||
+| decimal? Consumption ||
+| int? CurrentEngineHours ||
+| string ChassisNumber ||
+| string EngineNumber ||
+| int? CurrentOdometer ||
+| string FleetName ||
+| string CompanyName ||
+| int? Year ||
+| bool Enabled ||
+| string Plate ||
+| string Code ||
+| Guid Id ||
+| Guid? Clasification1Id ||
+| string PerformanceFormated ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetVehiclesPerformance|List<Guid> fleetIds = null <BR>List<Guid> identificationIds = null <BR> List<Guid> classification1Ids = null <BR>List<Guid> classification2Ids = null <BR>List<Guid> classification3Ids = null <BR>List<Guid> classification4Ids = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null <BR>bool exceptions = false <BR> string code = null <BR>string searchText = null <BR>string plate = null <BR>string custom0 = null <BR>string custom1 = null <BR>string custom2 = null <BR>string custom3 = null <BR>int? page = 1 <BR>int? pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc" <BR>bool paginate = true|VehiclePerformanceDto|Get list VehiclePerformanceDto|
+|GetVehiclesPerformanceAsync|List<Guid> fleetIds = null <BR>List<Guid> identificationIds = null <BR> List<Guid> classification1Ids = null <BR>List<Guid> classification2Ids = null <BR>List<Guid> classification3Ids = null <BR>List<Guid> classification4Ids = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null <BR>bool exceptions = false <BR> string code = null <BR>string searchText = null <BR>string plate = null <BR>string custom0 = null <BR>string custom1 = null <BR>string custom2 = null <BR>string custom3 = null <BR>int? page = 1 <BR>int? pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc" <BR>bool paginate = true|VehiclePerformanceDto|Get list VehiclePerformanceDto|
+
+#### VehiclesTypeDto
+|Data|Description|
+|--- |--- |
+| Guid Id ||
+| string Code ||
+| string Description ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetVehiclesType|string culture = null|VehiclesTypeDto|Get list VehiclesTypeDto|
+|GetVehiclesTypeAsync|string culture = null|VehiclesTypeDto|Get list VehiclesTypeDto|
+
+#### LitersWidgetDto
+|Data|Description|
+|--- |--- |
+| List<string> Categories ||
+| List<List<decimal>> Liters ||
+| int CategoriesCount ||
+| int DaysCount ||
+| int StartYear ||
+| int StartMonth ||
+| int StartDay ||
+| string Series ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetLitersWidget|int entityType = -1 <BR>Guid? idEntity = null|LitersWidgetDto|Get LitersWidgetDto|
+|GetLitersWidgetAsync|int entityType = -1 <BR>Guid? idEntity = null|LitersWidgetDto|Get LitersWidgetDto|
+
+#### BalanceWidgetDto
+|Data|Description|
+|--- |--- |
+| Guid? IdCompany ||
+| Guid? IdCompanyContract ||
+| string CompanyName ||
+| string CompanyCode ||
+| string CompanyContractCode ||
+| int RemainingOperatingDays ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetBalanceWidget|Guid? idCompany = null <BR>Guid? idCompanyContract = null|BalanceWidgetDto|Get BalanceWidgetDto|
+|GetBalanceWidgetAsync|Guid? idCompany = null <BR>Guid? idCompanyContract = null|BalanceWidgetDto|Get BalanceWidgetDto|
+
+#### HealthWidgetDto
+|Data|Description|
+|--- |--- |
+| List<HealthWidgetItemDto> HealthItems ||
+
+#### HealthWidgetItemDto
+|Data|Description|
+|--- |--- |
+| HealthWidgetStatusEnum Status ||
+| string Mesagge ||
+| HealthWidgetEntitiesEnum Entity ||
+| string ActionMesagge ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetHealthWidget||HealthWidgetDto|Get HealthWidgetDto|
+|GetHealthWidgetAsync||HealthWidgetDto|Get HealthWidgetDto|
+
+#### CompanyContractStatusWidgetDto
+|Data|Description|
+|--- |--- |
+| Guid Id ||
+| ContractModeEnum Mode ||
+| decimal AvailableBalance ||
+| decimal ConsumedBalance ||
+| decimal AvailableBalancePercent ||
+| decimal ConsumedBalancePercent ||
+| decimal Balance ||
+| string Name ||
+| string Code ||
+| DateTime? StartDate ||
+| DateTime? ExpirationDate ||
+| int? DaysToExpirationDate ||
+| int DaysToNextCuteBillingDate ||
+| DateTime? NextCuteBillingDate ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetCompanyContractStatusWidget|List<Guid> contractIds = null|CompanyContractStatusWidgetDto|Get CompanyContractStatusWidgetDto|
+|GetCompanyContractStatusWidgetAsync|List<Guid> contractIds = null|CompanyContractStatusWidgetDto|Get CompanyContractStatusWidgetDto|
+
+#### CO2EmissionsDto
+|Data|Description|
+|--- |--- |
+| string FuelsMasterGroupsCode ||
+| string FuelsMasterGroupsDescription ||
+| int PeriodNumber ||
+| decimal CO2Emissions ||
+| int CountVehicles ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetCO2Emissions|Guid? idCompanyContract = null <BR>Guid? idFleet = null <BR>Guid? idVehicle = null <BR>Guid? idDriver = null <BR>DateTime? startDate = null|CO2EmissionsDto|Get CO2EmissionsDto|
+|GetCO2EmissionsAsync|Guid? idCompanyContract = null <BR>Guid? idFleet = null <BR>Guid? idVehicle = null <BR>Guid? idDriver = null <BR>DateTime? startDate = null|CO2EmissionsDto|Get CO2EmissionsDto|
+
+#### VehiclesCo2WidgetDto
+|Data|Description|
+|--- |--- |
+| Guid VehicleId ||
+| string VehiclePlate ||
+| string VehicleCode ||
+| Guid FleetId ||
+| string FleetCode ||
+| string FleetName ||
+| List<VehiclesCo2WidgetFuelEmissionDto> EmissionByFuel ||
+| decimal TotalAverage ||
+		
+#### VehiclesCo2WidgetFuelEmissionDto
+|Data|Description|
+|--- |--- |
+| Guid FuelMasterId ||
+| string FuelMasterDescription ||
+| decimal Amount ||
+| decimal Average ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetVehiclesCo2Widget|Guid? idContract = null <BR>Guid? idFleet = null <BR>Guid? idVehicle = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null <BR>byte? dateType = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "totalCo2Emission" <BR>string orderType = "asc"|VehiclesCo2WidgetDto|Get VehiclesCo2WidgetDto|
+|GetVehiclesCo2WidgetAsync|Guid? idContract = null <BR>Guid? idFleet = null <BR>Guid? idVehicle = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null <BR>byte? dateType = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "totalCo2Emission" <BR>string orderType = "asc"|VehiclesCo2WidgetDto|Get VehiclesCo2WidgetDto|
+		
+#### FlaggedTransactionsWidgetDto
+|Data|Description|
+|--- |--- |
+| Guid Id ||
+| byte State ||
+| string StateDescription ||
+| int? LocalTransactionDate ||
+| int? LocalTransactionTime ||
+| string LocalDateTimeString ||
+| string AuthorizationCode ||
+| string TerminalDescription ||
+| string ResponseMessage ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetFlaggedTransactionsWidget|Guid? idCompany = null|FlaggedTransactionsWidgetDto|Get FlaggedTransactionsWidgetDto|
+|GetFlaggedTransactionsWidgetAsync|Guid? idCompany = null|FlaggedTransactionsWidgetDto|Get FlaggedTransactionsWidgetDto|
+
+#### ZoneDto
+|Data|Description|
+|--- |--- |
+| Guid Id ||
+| Guid IdNetwork ||
+| string Code ||
+| string Name ||
+| string Description ||
+| string ContactEmails ||
+| string TerritoryManager ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetZones|string code = null <BR>string name = null <BR>string searchText = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc"|ZoneDto|Get list ZoneDto|
+|GetZonesAsync|string code = null <BR>string name = null <BR>string searchText = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc"|ZoneDto|Get list ZoneDto|
+|GetZone|Guid id|ZoneDto|Get individual ZoneDto|
+|GetZoneAsync|Guid id|ZoneDto|Get individual ZoneDto|
+|CreateZone|ZoneDto data|ZoneDto|Create ZoneDto|
+|CreateZoneAsync|ZoneDto data|ZoneDto|Create ZoneDto|
+|UpdateZoneDto|Guid id <BR>ZoneDto data|string|Update ZoneDto|
+|UpdateZoneDtoAsync|Guid id <BR>ZoneDto data|string|Update ZoneDto|
 	
 #### GlobalSearch 
 |Type|Name|Description|
