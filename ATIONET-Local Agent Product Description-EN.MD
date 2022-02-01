@@ -43,7 +43,11 @@ In the case of having connectivity, ATIONET will be in charge of processing the 
 
 Below is an explanatory graphic of the flow that Local Agent performs when determining how the transaction will be processed:
 
-![Procesamiento de Transacciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Procesamiento%20Transacciones.png)
+</br>
+
+![Procesamiento de Transacciones](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Local%20Agent/Transaction%20Processing.png)
+
+</br>
 
 1. The frame arrives from the terminal/controller to the Local Agent.
 2. The connection to ATIONET is validated
