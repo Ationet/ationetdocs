@@ -562,9 +562,9 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 | bool IdentificationActive ||
 | string IdentificationExpirationDate ||
 | string TrackNumber ||
-| string CompleteName { get; }
+| string CompleteName ||
 | string PAN ||
-| string TypeDescription { get; }
+| string TypeDescription ||
 | string City ||
 | Guid? StateId ||
 | Guid Id ||
@@ -1191,7 +1191,7 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |GetFuelsMaster|Guid id|FuelsMasterDto|Get individual FuelsMasterDto|
 |GetFuelsMasterAsync|Guid id|FuelsMasterDto|Get individual FuelsMasterDto|
 	
-####FuelsMastersGroupDto
+#### FuelsMastersGroupDto
 |Data|Description|
 |--- |--- |
 | Guid Id ||
@@ -1208,7 +1208,7 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |GetFuelsMastersGroup|Guid id|FuelsMastersGroupDto|Get individual FuelsMastersGroupDto|
 |GetFuelsMastersGroupAsync|Guid id|FuelsMastersGroupDto|Get individual FuelsMastersGroupDto|	
 		
-####GenerateCodeDto
+#### GenerateCodeDto
 |Data|Description|
 |--- |--- |
 | string Code ||
@@ -2043,6 +2043,7 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 
 #### CurrentAccountMovementDto
 |Data|Description|
+|--- |--- |
 | Guid Id ||
 | Guid CompanyContractId ||
 | Guid? SubAccountIdFrom ||
