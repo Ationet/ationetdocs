@@ -2510,8 +2510,8 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |--- |--- |
 | string TimeFrom ||
 | string TimeTo ||
-| int TimeFromInt { get; }
-| int TimeToInt { get; }
+| int TimeFromInt ||
+| int TimeToInt ||
 
 #### RuleFuelDto
 |Data|Description|
@@ -2526,7 +2526,7 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 #### RuleDriverDto
 |Data|Description|
 |--- |--- |		
-		public Guid IdRule ||
+| Guid IdRule ||
 | string RuleName ||
 | short RuleType ||
 | Guid IdDriver ||
@@ -3406,7 +3406,7 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |--- |--- |
 | decimal? Amount ||
 | short? DateGroupValue ||
-| string DateGroupValueDescription { get; }
+| string DateGroupValueDescription ||
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
