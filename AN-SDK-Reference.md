@@ -3692,7 +3692,247 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |UnlockedUser|Guid - id - - Identification of User|string|Unlocked User|
 |UnlockedUserAsync|Guid - id - - Identification of User|string|Unlocked User|
 |LockedUser|Guid - id - - Identification of User|string|Locked User|
-|LockedUserAsync|Guid - id - - Identification of User|string|Locked User|	
+|LockedUserAsync|Guid - id - - Identification of User|string|Locked User|
+
+#### VehicleDto
+|Data|Description|
+|--- |--- |
+| string LabelCustom3 ||
+| string LabelCustom2 ||
+| string LabelCustom1 ||
+| bool EnableCustom4 ||
+| bool EnableCustom3 ||
+| bool EnableCustom2 ||
+| string LabelCustom4 ||
+| bool EnableCustom1 ||
+| string Custom2 ||
+| string Custom1 ||
+| string Custom0 ||
+| string SubModel ||
+| string Model ||
+| string Brand ||
+| string Custom3 ||
+| IEnumerable<RuleVehicleDto> Rules ||
+| IEnumerable<RuleFleetDto> FleetRules ||
+| decimal? AvaliableAmount ||
+| decimal? TotalCO2 ||
+| decimal? AverageCost ||
+| decimal? AverageTravel ||
+| decimal? AverageConsumption ||
+| List<SystemNotificationDto> Notifications ||
+| IEnumerable<VehicleServiceFileEntriesDto> ServiceFileEntries ||
+| List<VehicleRuleDto> ExclusiveRules ||
+| List<VehicleIdentificationDto> Identifications ||
+| string Colour ||
+| string VehicleTypeCode ||
+| Guid VehicleTypeId ||
+| IEnumerable<FleetQuotaRuleBalanceDto> FleetQuotaRules ||
+| IEnumerable<VehicleQuotaRuleBalanceDto> QuotaRules ||
+| IEnumerable<VehicleBalanceDto> Balances ||
+| decimal? AvaliableVolume ||
+| List<VehicleDriverDto> VehiclesDrivers ||
+| decimal? TotalTravel ||
+| string Clasification4Label ||
+| string Clasification2Label ||
+| int? InitialOdometer ||
+| short ServiceType ||
+| string ServiceDescription ||
+| int? CurrentEngineHours ||
+| string ChassisNumber ||
+| string EngineNumber ||
+| Guid FleetId ||
+| DateTime? LastEngineHoursDate ||
+| int? CurrentOdometer ||
+| int? Year ||
+| bool Enabled ||
+| string Plate ||
+| string Code ||
+| Guid Id ||
+| DateTime? LastOdometerDate ||
+| string FleetDescription ||
+| Guid CompanyId ||
+| string CompanyName ||
+| string Clasification1Label ||
+| bool EnableClasification4 ||
+| bool EnableClasification3 ||
+| bool EnableClasification2 ||
+| bool EnableClasification1 ||
+| string Clasification4Description ||
+| Guid? Clasification4Id ||
+| string Clasification3Description ||
+| Guid? Clasification3Id ||
+| string Clasification2Description ||
+| Guid? Clasification2Id ||
+| string Clasification1Description ||
+| Guid? Clasification1Id ||
+| string VehiclesClassDescription ||
+| Guid VehiclesClassId ||
+| string Clasification3Label ||
+| List<SubAccountDto> SubAccounts ||
+		
+#### VehicleServiceFileEntriesDto
+|Data|Description|
+|--- |--- |
+| string EntryDate ||
+| string ServiceFileEntryTypeDescription ||
+| string TypeDescription ||
+| string RecordDate ||
+		
+#### VehicleRuleDto
+|Data|Description|
+|--- |--- |
+| Guid RuleId ||
+| string RuleName ||
+| byte RuleType ||
+		
+#### VehicleIdentificationDto
+|Data|Description|
+|--- |--- |
+| Guid IdentificationId ||
+| string IdentificationLabel ||
+| string IdentificationTypeModel ||
+| byte IdentificationStatus ||
+| Guid ContractId ||
+| string PIN ||
+| string PAN ||
+| bool Active ||
+| string CompanyContractDescription ||
+| string ExpirationDate ||
+		
+#### FleetQuotaRuleBalanceDto
+|Data|Description|
+|--- |--- |
+| Guid FleetId ||
+| string FleetName ||
+		
+#### VehicleDriverDto
+|Data|Description|
+|--- |--- |
+| Guid DriverId ||
+| string DriverCode ||
+| string DriverLastName ||
+| string DriverFirstName ||
+| bool RequireDriverIdentification ||
+| bool RequireVehicleIdentification ||
+| bool IsLoyalty ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetVehicles|List<Guid> fleetIds = null <BR>List<Guid> identificationIds = null <BR>List<Guid> ruleIds = null <BR>List<Guid> classification1Ids = null <BR>List<Guid> classification2Ids = null <BR>List<Guid> classification3Ids = null <BR>List<Guid> classification4Ids = null <BR>List<Guid> contractIds = null <BR>string code = null <BR>string searchText = null <BR>string plate = null <BR>string custom0 = null <BR>string custom1 = null <BR>string custom2 = null <BR>string custom3 = null <BR>int? page = 1 <BR>int? pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc" <BR>bool paginate = true|VehicleDto|Get list VehicleDto|
+|GetVehiclesAsync|List<Guid> fleetIds = null <BR>List<Guid> identificationIds = null <BR>List<Guid> ruleIds = null <BR>List<Guid> classification1Ids = null <BR>List<Guid> classification2Ids = null <BR>List<Guid> classification3Ids = null <BR>List<Guid> classification4Ids = null <BR>List<Guid> contractIds = null <BR>string code = null <BR>string searchText = null <BR>string plate = null <BR>string custom0 = null <BR>string custom1 = null <BR>string custom2 = null <BR>string custom3 = null <BR>int? page = 1 <BR>int? pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc" <BR>bool paginate = true|VehicleDto|Get list VehicleDto|
+|GetVehicle|Guid id|VehicleDto|Get individual VehicleDto|
+|GetVehicleAsync|Guid id|VehicleDto|Get individual VehicleDto|
+|CreateVehicle|VehicleDto data|VehicleDto|Create VehicleDto|
+|CreateVehicleAsync|VehicleDto data|VehicleDto|Create VehicleDto|
+|UpdateVehicleDto|Guid id <BR>VehicleDto data|string|Update VehicleDto|
+|UpdateVehicleDtoAsync|Guid id <BR>VehicleDto data|string|Update VehicleDto|
+|DeleteVehicleDto|Guid id |string|Delete VehicleDto|
+|DeleteVehicleDtoAsync|Guid id|string|Delete VehicleDto|
+
+#### ImportVehiclesDto
+|Data|Description|
+|--- |--- |
+| byte[] File ||
+| bool NeedIdentification ||
+| Guid? IdCompanyContract ||
+| short? IdentificationsType ||
+| Guid? IdIdentificationsTypeModel ||
+| Guid? IdProgram ||
+| Guid? IdLoyaltyProgram ||
+| ImportDto ImportResult ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|ImportVehicles|ImportVehiclesDto data|ImportVehiclesDto|Import Vehicles|
+|ImportVehiclesAsync|ImportVehiclesDto data|ImportVehiclesDto|Import Vehicles|
+
+#### ImportBatchVehiclesDto
+|Data|Description|
+|--- |--- |
+| List VehicleBatchDto Vehicles ||
+
+#### VehicleBatchDto
+|Data|Description|
+|--- |--- |
+| VehicleDto VehicleDto ||
+| bool Success ||
+| string Message ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|ImportVehiclesBatch|ImportBatchVehiclesDto data|ImportBatchVehiclesDto|Import batch Vehicles|
+|ImportVehiclesBatchAsync|ImportBatchVehiclesDto data|ImportBatchVehiclesDto|Import batch Vehicles|
+
+#### ImportVehiclesTemplateDto
+|Data|Description|
+|--- |--- |
+| string FileExtension ||
+| string FileName ||
+| byte[] FileContents ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetVehicleImportTemplate||ImportVehiclesTemplateDto|Get ImportVehiclesTemplateDto|
+|GetVehicleImportTemplateAsync||ImportVehiclesTemplateDto|Get ImportVehiclesTemplateDto|
+
+#### VehiclesClassDto
+|Data|Description|
+|--- |--- |
+| Guid Id ||
+| Guid IdVehicleType ||
+| string VehicleTypeDescription ||
+| string Brand ||
+| string Model ||
+| decimal TheoricalConsumption ||
+| Guid IdCompany ||
+| int? MinMileage ||
+| int? MaxMileage ||
+| List VehiclesClassesFuelsMasterDto VehiclesClassesFuelsMaster ||
+		
+#### VehiclesClassesFuelsMasterDto
+|Data|Description|
+|--- |--- |
+| Guid Id ||
+| Guid IdFuelMaster ||
+| decimal VolumeLimit ||
+| string Description ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetVehiclesClasses||VehiclesClassDto|Get list VehiclesClassDto|
+|GetVehiclesClassesAsync||VehiclesClassDto|Get list VehiclesClassDto|
+|GetVehiclesClass|Guid id|VehiclesClassDto|Get individual VehiclesClassDto|
+|GetVehiclesClassAsync|Guid id|VehiclesClassDto|Get individual VehiclesClassDto|
+|CreateVehiclesClass|VehiclesClassDto data|VehiclesClassDto|Create VehiclesClassDto|
+|CreateVehiclesClassAsync|VehiclesClassDto data|VehiclesClassDto|Create VehiclesClassDto|
+|UpdateVehiclesClassDto|Guid id <BR>VehiclesClassDto data|string|Update VehiclesClassDto|
+|UpdateVehiclesClassDtoAsync|Guid id <BR>VehiclesClassDto data|string|Update VehiclesClassDto|
+
+#### VehiclesCo2ReportDto
+|Data|Description|
+|--- |--- |
+| DateTime? PreviousLastTransactionDate ||
+| DateTime? CurrentLastTransactionDate ||
+| int MonthGroup ||
+| int YearGroup ||
+| string FuelMasterDescription ||
+| Guid? FuelMasterId ||
+| string ContractDescription ||
+| string ContractCode ||
+| Guid? ContractId ||
+| string FleetName ||
+| string FleetCode ||
+| Guid FleetId ||
+| string VehicleCode ||
+| string VehiclePlate ||
+| Guid VehicleId ||
+| decimal CO2Emissions ||
+| int Traveled ||
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|GetVehiclesCo2Report|Guid? idContract = null <BR>Guid? idFleet = null <BR>Guid? idVehicle = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null <BR>byte? dateType = null <BR>int page = 1 <BR>int pageSize = 50 <BR>bool paginate = true|VehiclesCo2ReportDto|Get list VehiclesCo2ReportDto|
+|GetVehiclesCo2ReportAsync|Guid? idContract = null <BR>Guid? idFleet = null <BR>Guid? idVehicle = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null <BR>byte? dateType = null <BR>int page = 1 <BR>int pageSize = 50 <BR>bool paginate = true|VehiclesCo2ReportDto|Get list VehiclesCo2ReportDto|
 	
 #### GlobalSearch 
 |Type|Name|Description|
