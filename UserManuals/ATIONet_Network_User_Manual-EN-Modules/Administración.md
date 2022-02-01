@@ -35,11 +35,11 @@
 Dentro de este módulo podrá gestionar Compañías, Comercios, Sitios, Identificadores, Métodos de Pago y Usuarios entre otras cosas.
 
 ## Banderas
-En ATIONet el término bandera se refiere al nombre de cada combustible maestro disponible en ATIONet. En esta sección se pueden consultar y crear banderas.
+En ATIONET el término bandera se refiere al nombre de cada combustible maestro disponible en ATIONET. En esta sección se pueden consultar y crear banderas.
 
 ![Banderas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Banderas.PNG)
 
-Para cada Network ATIONet ya tiene una bandera **DEFAULT** creada con los siguientes combustibles:
+Para cada Network ATIONET ya tiene una bandera **DEFAULT** creada con los siguientes combustibles:
 
 ![Bandera DEFAULT](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Banderas%20DEFAULT.PNG)
 
