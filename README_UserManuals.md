@@ -24,6 +24,8 @@
 
 ## ATIONET Local Agent
 - [Local Agent Product Description (Spanish)](https://github.com/Ationet/ationetdocs/blob/master/ATIONet-Local%20Agent%20Product%20Description-ES.md)
+- [Local Agent Product Description (English)](https://github.com/nuchavez/ationetdocs/blob/master/ATIONET-Local%20Agent%20Product%20Description-EN.MD)
+
 
 <br>
 
