@@ -185,7 +185,7 @@ El primer paso para crear un nuevo contrato es completar la información general
 * **Validar Combustibles:** Marque esta opción para activar/desactivar la validación de combustible (el contrato sólo puede operar con los combustibles asignados).
 * **Utilizar Precios de Distribución:** Marque esta opción para activar/desactivar el uso de precios de distribución (el contrato sólo utilizará los precios de distribución cuando no haya precios configurados en el contrato).
 * **Validar Programas:**
-* **Valores Subsidiados:**
+* **Valores Subsidiados:** Marcar esta opción para indicar que el contrato se genera con Subsidio.
 
 Una vez completada la información general, tiene diferentes pestañas para configurar:
 
