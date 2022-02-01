@@ -89,11 +89,11 @@ The rules that are applied in the Local Agent are detailed below:
 - ***TransactionsLimit:*** Limits transaction maximums in volume or amount.
 - ***DaysTime:*** Validate that the transaction is made between the established times and days. It still has the old format, which limits the same hours regardless of the day.
 - ***Quota:***
-  - **Diaria/Semanal/Mensuales/Quincenal:** The value of the rule loaded in ATIONET is used, equally distributed among the periodicity units. Example, 10 pesos spread over 5 days, results in a rule of 2 pesos per day.
-  - **Días / Horas:** The rule of days / hours is applied to enable fuel dispatch.
-  - **Actuales y próximos:** The value resulting from the calculation mentioned in the previous point is downloaded, and it is placed as current and next. The current value is subtracted from what was consumed during the designated period. If you remain offline long enough to meet the quota times, the next value will start to be used.
-  - **Anuales:** Annual fees are actually considered monthly fees spread evenly over 12 months.
-  - **Globales:** Offline there is the concept of a global quota (without periodicity) that is always validated first before the other quotas. Currently in ATIONET there is no way to charge a quota without periodicity, for which this concept is deprecated.
+  - **Days/Weeks/Months/Fortnight:** The value of the rule loaded in ATIONET is used, equally distributed among the periodicity units. Example, 10 dolars spread over 5 days, results in a rule of 2 dolars per day.
+  - **Days / Times:** The rule of days / hours is applied to enable fuel dispatch.
+  - **Current and upcoming:** The value resulting from the calculation mentioned in the previous point is downloaded, and it is placed as current and next. The current value is subtracted from what was consumed during the designated period. If you remain offline long enough to meet the quota times, the next value will start to be used.
+  - **Annuals:** Annual fees are actually considered monthly fees spread evenly over 12 months.
+  - **Global:** Offline there is the concept of a global quota (without periodicity) that is always validated first before the other quotas. Currently in ATIONET there is no way to charge a quota without periodicity, for which this concept is deprecated.
 - ***Prompting:***
   - VehiclePIN, DriverPIN, DriverId, VehicleId, Miscellaneous, Odometer, EngineHours, TruckUnitNumber, TrailerNumber.
   - Odometer variation is validated, but not Engine Hours.
