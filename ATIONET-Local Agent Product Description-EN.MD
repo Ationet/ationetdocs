@@ -67,7 +67,7 @@ When recovering connection with ATIONET, the Local Agent performs two processes:
 
 Below is an explanatory graphic of the flow that Local Agent performs when recovering the connection:
 
-![Reconexión a ATIONet](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Reconexi%C3%B3n%20ATIONet.png)
+![Reconnection to ATIONET](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Local%20Agent/Reconnection%20to%20ATIONET.png)
 
 1. The Local Agent executes a process that evaluates the connection status with ATIONET
   1. If you continue offline, you maintain your Offline status and continue to trade offline.
@@ -121,7 +121,7 @@ The rules that are applied in the Local Agent are detailed below:
 <br>
 
 
-# **Funcionalidades no contempladas**
+# **Features not covered**
 
 - **Subsidies**: does not support subsidies.
 - **Keep pin lock**: when the pin entry attempts expire, the id is locked, but when returning to online mode it does not remain locked.
