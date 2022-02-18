@@ -598,6 +598,7 @@ Los campos a completar son los siguientes:
 * **Modelo:** Seleccione el modelo de terminal/controlador.
 * **Código:** Introduzca el código del terminal/controlador (ATIONET genera uno automáticamente, pero puede editarlo. Excepto los 3 primeros caracteres, ya que representan el código de suscripción a la red).
 * **Descripción:** Introduzca la descripción del terminal/controlador.
+* **Solo Pre Autorizaciones Asistidas:** Marque la casilla para activar que la terminal este habilitada para realizar preautorizaciones asistidas.
 * **Lector de TAGs presente:** Marque esta opción si el terminal es capaz de leer TAGs.
 * **Uso del Id. del Conductor:** Seleccione la acción que ATIONet tomará asociada al Id. del Conductor de las transacciones (Ninguna, Track Secundaria o Validación de Código).
 * **Uso de la Identificación del Vehículo:** Seleccione la acción que ATIONet tomará asociada al Id. del Vehículo de las transacciones (Ninguna, Track Secundaria o Validación de Código).
