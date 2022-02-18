@@ -133,6 +133,29 @@ Dentro de esta sección puede personalizar su Network (cambiar el logo, añadir 
 ![Otros](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Configuraci%C3%B3n/Network%20-%20Moneda.PNG)
 
 
+12. **Configuraciones Edifact**
+
+![Configuración Edifact](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Configuraci%C3%B3n/Configuraciones%20de%20Edifact.PNG)
+
+</br>
+
+Marcar el check para habilitar la configuración para Edifact.
+
+</br>
+
+
+**Datos del Emisor**
+
+![Datos del Emisor](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Configuraci%C3%B3n/Configuraciones%20de%20Edifact%20-%20Datos%20de%20Emisor.PNG)
+
+</br>
+
+**Configuraciones de Combustible para Edifact**
+
+![Configuraciones de Combustible para Edifact](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Configuraci%C3%B3n/Configuraciones%20de%20Combustible%20para%20Edifact.PNG)
+
+</br>
+
 ## Tipos de Documentos Externos
 
 
