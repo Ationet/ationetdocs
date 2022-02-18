@@ -403,7 +403,15 @@ También dispone de un panel para filtrar las identificaciones solicitadas y as�
 
 ![Identificadores solicitados](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Identificadores%20Solicitados.PNG)
 
+</br>
+
+En la vista detallada se podrá visualizar la dirección de entrega que se haya configurado para la compañía.
+![Identificadores solicitados vista detallada](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Identificadores%20Solicitados%20-%20Vista%20detallada.PNG)
+
+</br>
+
 Para solicitar una identificación de flota, haga clic en el botón **Nueva solicitud** y seleccione **Solicitar identificadores de flota**. Al hacerlo, se abrirá un formulario.
+
 
 ![Identificadores solicitados - Nueva flota](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Identificadores%20Solicitados%20Nuevo.PNG)
 
