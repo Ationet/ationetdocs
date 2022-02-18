@@ -577,6 +577,9 @@ Cuando haya terminado de rellenar estos dos campos, presione el botón **Añadir
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
+</br>
+
+
 ## Terminales / Controladores
 Dentro de esta sección puede ver, crear y editar todos los terminales/controladores. El terminal es el punto de venta del sitio y el controlador gestiona los surtidores. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
@@ -603,7 +606,18 @@ Los campos a completar son los siguientes:
 * **Sistema operativo:** Introduzca el sistema operativo del terminal/controlador.
 * **Número de serie:** Introduzca el número de serie del terminal/controlador.
 
-Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
+</br>
+
+**Configuración**
+
+En esta sección se puede indicar que la terminal operará en el modo fuera línea (con el Local Agent) con la misma configuración que posee estando en línea. Campos a completar: Mensaje, Nombre de la Propiedad, Configuración Factor, Configuración Modificador, Tipo de transacción.
+
+![Terminales configuración](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Terminales%20-%20Controladores%20Nuevo%20-%20Configuracion.PNG)
+
+
+Cuando haya terminado de rellenar los campos, presione el botón **Alta** en caso de completar la configuración, y para finalizar **Guardar**.
+
+</br>
 
 ## Usuarios
 En esta sección puede ver, crear o editar usuarios para la Network. Puede editarlos haciendo clic en el icono del lápiz en la columna de opciones, activar/desactivar un usuario haciendo clic en el icono del candado y restablecer la contraseña con el icono de la estrella.
