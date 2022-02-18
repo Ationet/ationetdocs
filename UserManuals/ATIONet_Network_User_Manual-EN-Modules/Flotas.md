@@ -38,6 +38,8 @@ Dentro de esta sección puede ver una lista de todos los fraudes realizados por 
 
 ![Alertas de fraude](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Alertas%20de%20Fraude.PNG)
 
+</br>
+
 ## Autorizaciones Pendientes
 En ATIONet las autorizaciones pendientes son aquellas operaciones que aún no han recibido la transacción de finalización, pero que han sido preautorizadas. La información que se ve en esta vista son los despachos que están actualmente en curso. Si por alguna razón hay preautorizaciones antiguas, es probable que el TPV no haya enviado la transacción de finalización o la transacción de cancelación si el despacho no se ha completado.
 
@@ -47,6 +49,8 @@ Tenga en cuenta que en el momento de la preautorización, ATIONet congeló el im
 
 Si aparecen transacciones pendientes antiguas y está seguro de que no se trata de un envío en curso, puede cancelarlas y devolver el saldo a la cuenta corriente.
 Para ello hay 2 formas: de forma individual, pulsando el icono **X** a la derecha, o de forma masiva, seleccionando las transacciones, desplegando el menú **Acciones en Lote** y seleccionando **Cancelar**. Esto cancelará las transacciones y devolverá el saldo reservado a cada una de las cuentas corrientes. (para más detalles sobre el flujo de transacciones consulte este [documento](AN-Transaction_Flows-TechGuide.md))
+
+</br>
 
 ## Conceptos
 Los conceptos en ATIONet hacen referencia a los impuestos o comisiones que se pueden añadir a los contratos de compañía o del comercio. En esta sección puede consultar, crear y editar conceptos.
@@ -76,6 +80,8 @@ En la sección del lista de precios rellene los siguientes campos:
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
+</br>
+
 ## Configuración de Alertas de Fraude
 En esta sección puede consultar y configurar cómo y cuándo se activan las alertas de fraude para la Network.
 
@@ -87,12 +93,16 @@ Para crear una configuración, haga clic en el botón **Nuevo**.
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
+</br>
+
 ## Configuración de Fast Track
 Un Fast Track en ATIONet es una forma de configurar una autorización de un solo uso para una cantidad específica a una subcuenta de flota ya existente. En esta sección puede configurar hasta 10 campos personalizados para Fast Tracks.
 
 ![Configuración de Fast Track](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Configuraci%C3%B3n%20de%20Fast%20Track.PNG)
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
+
+</br>
 
 ## Contingencia
 En ATIONet una contingencia es una operación introducida manualmente. En esta sección puede consultar y crear contingencias. Tenga en cuenta que las contingencias son transacciones sin autorización previa.
@@ -130,6 +140,8 @@ Los campos a completar son los siguientes:
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
+</br>
+
 ## Contratos de Comercio
 En ATIONet el término comercio se refiere a la entidad propietaria de los sitios. En esta sección puede consultar, editar y crear contratos de comercio. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
@@ -151,9 +163,40 @@ Los campos a rellenar son los siguientes:
 * **Modo de Cuenta Corriente:** Seleccione la modalidad de cuenta corriente (Producto o Dinero).
 * **Lista de Precios de Distribución:** Seleccione la lista de precios del contrato.
 
-Después de rellenar estos campos, debe completar las nuevas pestañas que estarán próximamente disponibles de Sitio, Combustible, Liquidaciones y Conceptos. En Combustible introducir el combustible asignado al contrato y rellenar los campos de Volumen, Límite de seguridad, Sobregiro, Fechas de Inicio y Fin del sobregiro, Moneda en la que se encuentra el valor del combustible y el Precio del combustible.
+Después de rellenar estos campos, debe configurar las pestañas de Sitio, Combustible, Precios, Modficadores, Liquidaciones y Conceptos. 
+
+1. **Sitios:** Seleccione los sitios asociados al contrato.
+
+![Contrato Comercio Nuevo - Sitios](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Comercio%20Nuevo%20-%20Sitio.PNG)
+
+
+2. **Combustibles:** Seleccione los combustibles asociados al contrato.
+
+![Contrato Comercio Nuevo - Combustible](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Comercio%20Nuevo%20-%20Combustibles.PNG)
+
+
+3. **Precios:** Seleccione los precios asociados al contrato.
+
+![Contrato Comercio Nuevo - Precios](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Comercio%20Nuevo%20-%20Precios.PNG)
+
+
+3. **Modificadores:** Seleccione los modificadores asociados al contrato.
+
+![Contrato Comercio Nuevo - Modificadores](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Comercio%20Nuevo%20-%20Modificadores.PNG)
+
+
+4. **Liquidaciones:** Seleccione los modificadores asociados al contrato.
+
+![Contrato Comercio Nuevo - Liquidaciones](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Comercio%20Nuevo%20-%20Liquidaciones.PNG)
+
+
+5. **Conceptos:** Seleccione los modificadores asociados al contrato.
+
+![Contrato Comercio Nuevo - Conceptos](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Comercio%20Nuevo%20-%20Conceptos.PNG)
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
+
+</br>
 
 ## Contratos de Compañía
 En ATIONet el término compañía se refiere a la entidad que gestiona la flota. En esta sección podrá crear, editar o consultar todos los contratos de compañía. Para facilitar las consultas, hay un panel de filtros en la parte superior.
@@ -274,6 +317,8 @@ Una vez completada la información general, tiene diferentes pestañas para conf
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
+</br>
+
 ## Cuentas Corrientes de Comercio
 La vista de cuentas corrientes de los comercios es donde se consultan los saldos y movimientos de todos los comercios.
 
@@ -281,6 +326,8 @@ Para facilitar las consultas se dispone de un panel de filtros y la primera opci
 En la columna Moneda de la grilla puede ver en que moneda se realiza cada movimiento. Sí se tienen configurada la funcionalidad de Multimoneda, puede ver las diferentes divisas en cada movimiento.
 
 ![Cuentas Corrientes de Comercio](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuentas%20Corrientes%20de%20Comercio.PNG)
+
+</br>
 
 ## Cuentas Corrientes de Compañía
 La sección de Cuentas Corrientes de Compañía es la vista del saldo disponible de las subcuentas y/o contratos, y también la vista de todos los movimientos de las subcuentas y/o contratos.
@@ -321,6 +368,8 @@ Para crear un encargado, haga clic en el botón **Nuevo**.
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
+</br>
+
 ## Excepciones
 ATIONet separa las transacciones no autorizadas en 2 secciones: **Excepciones** y [Transacciones Rechazadas] (#transacciones-rechazadas). Las excepciones son aquellas transacciones que no pasaron las validaciones duras del sistema o las que se detectan como posibles fraudes.
 
@@ -332,6 +381,8 @@ En esta vista, al principio se puede filtrar por el tipo de excepción. Los tipo
 
 Algunas transacciones permanecen en estado de **Revisión** en algunas situaciones, como cuando se envía más de lo autorizado (debido a un error del controlador o del TPV). En estos casos es necesario aprobar o rechazar la transacción utilizando uno de los dos iconos a la derecha de cada registro.
 
+</br>
+
 ## Familias de Conceptos
 Las familias de conceptos en ATIONet son una forma de agrupar varios conceptos. En esta sección puedes consultar, crear o editar conceptos de familias.
 
@@ -342,6 +393,8 @@ Para crear una familia de conceptos, haz clic en el botón **Nuevo**.
 ![Familias de Conceptos Nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Famlia%20de%20Conceptos%20Nuevo.PNG)
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
+
+</br>
 
 ## Identificadores Solicitados
 En este apartado podrá consultar las identificaciones solicitadas por la compañía y solicitar la identificación de la flota y/o fidelidad. También puede realizar acciones como establecer las identificaciones como en producción o como entregadas.
@@ -364,6 +417,8 @@ Para solicitar una identificación de flota, haga clic en el botón **Nueva soli
 Cuando haya terminado de rellenar los campos, presione el botón **Solicitar Identificadores**.
 
 Para cambiar el estado de los identificadores solicitados, haga clic en el botón **Acción en Lote** y seleccione la opción **Poner en Producción** o **Poner como Entregado**. Puede hacer que **Todas** las solicitudes cambien el estado o sólo las **Seleccionadas**.
+
+</br>
 
 ## Programas
 Dentro de esta sección puede consultar, editar o crear programas de flota. Para cada Network ATIONet ya tiene un programa CLÁSICO creado por defecto. Un programa de flota en ATIONet permite a los identificadores ignorar algunos de sus comportamientos, como por ejemplo Modo de Balance, Soporte de Contingencia, Soporte Offline, etc.
@@ -394,6 +449,8 @@ Una vez completada la información general, también puede configurar las reglas
 Para más información sobre las reglas vaya [aquí](#reglas).
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
+
+</br>
 
 ## Reglas
 En ATIONet las reglas se refieren a los límites que pueden ser configurados por la compañía y asociados a diferentes entidades. Dentro de esta vista se pueden consultar, crear o editar reglas. Existen diferentes tipos de reglas: Cuota, Rango de Fechas, Ubicación, Combustible, Límite por Transacciones, DíasHora, Solicitud, Límite de Transacciones Secas y Límite de Cuotas Secas.
@@ -442,6 +499,8 @@ Después de configurar cualquier tipo de regla, el último paso es asociar la re
 
 ![Reglas - Asociación](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Reglas%20-%20Aplicacion.PNG)
 
+</br>
+
 ## Sobregiro
 En esta sección puede consultar o crear sobregiros para los contratos de compañía. El sobregiro en ATIONet se refiere a una cantidad que las subcuentas pueden sobrepasar de sus saldos.
 
@@ -461,6 +520,8 @@ Los campos a completar son los siguientes:
 * **Valor:** Introduzca el valor del sobregiro.
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
+
+</br>
 
 ## Transacciones
 La vista de transacciones es una de las más importantes en ATIONet. En esta vista puede ver todas las transacciones exitosas.
