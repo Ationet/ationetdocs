@@ -292,27 +292,55 @@ La tabla de impuestos muestra:
 * **Código:** Código del impuesto.
 * **Descripción:** Descripción del impuesto.
 * **Tipo:** Tipo de impuesto (Puede ser un impuesto fijo, un impuesto porcentual o un impuesto fijo por unidad).
-* **Importe:** El importe del impuesto (En el caso del impuesto porcentual, el porcentaje).
+* **Monto:** El monto del impuesto (En el caso del impuesto porcentual, el porcentaje).
 * **Fecha Desde / Fecha Hasta:** Rango de fechas.
+* **Modo:** Modo del impuesto (puede ser un impuestos, percepcioes, retenciones, otras).
+* **Modo de Uso:** Modo de uso que corresponde al impuesto.
+* **Incluido:** Indica si esta incluido con "Si" o "No".
+* **Activo:** MIndica si esta activo con "Si" o "No".
 * **Opciones:** Editar el impuesto.
 
-![Impuestos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Impuestos.PNG)
+![Impuestos](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Impuestos.PNG)
 
 Para crear un impuesto, haga clic en el botón **Nuevo**.
 
-![Impuestos nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Impuestos%20Nuevo.PNG) 
+![Impuestos nuevo](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Impuestos%20Nuevo.PNG) 
 
 Los campos a completar son los siguientes:
 
 * **Código:** El código del nuevo impuesto.
 * **Descripción:** La descripción del nuevo impuesto.
 * **Tipo:** Tipo de impuesto (Puede ser un impuesto fijo, un impuesto porcentual o un impuesto fijo por unidad).
-* **Fecha a partir de:** La fecha en que el impuesto entra en vigor.
+* **Modo:** Seleccionar el modo (impuestos, percepcioes, retenciones, otras).
+* **Modo de Uso:** Seleccionar el modo de uso que corresponda al impuesto.
+* **Activo:** Marcar para activar el impuesto.
+* **Incluido:** Marcar para incluir el impuesto.
+
+</br>
+
+**Vigencias:**
+
+* **Fecha desde:** La fecha en que el impuesto entra en vigor.
+* **Hora desde:** La hora en que el impuesto entra en vigor.
 * **Importe:** El importe del impuesto (En el caso del impuesto porcentual, el porcentaje).
 
-Después de rellenar los campos **Fecha desde** e **Importe**, presione el botón **Añadir**. 
+Después de rellenar los campos **Fecha desde**. **Hora desde** e **Importe**, presione el botón **Alta**. 
+
+</br>
+
+**Configuración del Impuesto para Edifact** 
+
+Si en configuraciones de red esta habilitada esta opciòn se visualizarà la secciòn **Configuración del Impuesto para Edifact**
+
+![Configuraciòn Edifacto](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Impuestos%20Nuevo%20-%20Configuraci%C3%B3n%20Edifact%20.PNG) 
+
+
+
+</br>
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
+
+</br>
 
 ## Instalaciones
 En ATIONET el hecho de que los identificadores deban ser colocados por un técnico se conoce como **Instalaciones**.
