@@ -35,11 +35,11 @@
 Dentro de este módulo podrá gestionar Compañías, Comercios, Sitios, Identificadores, Métodos de Pago y Usuarios entre otras cosas.
 
 ## Banderas
-En ATIONet el término bandera se refiere al nombre de cada combustible maestro disponible en ATIONet. En esta sección se pueden consultar y crear banderas.
+En ATIONET el término bandera se refiere al nombre de cada combustible maestro disponible en ATIONET. En esta sección se pueden consultar y crear banderas.
 
 ![Banderas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Banderas.PNG)
 
-Para cada Network ATIONet ya tiene una bandera **DEFAULT** creada con los siguientes combustibles:
+Para cada Network ATIONET ya tiene una bandera **DEFAULT** creada con los siguientes combustibles:
 
 ![Bandera DEFAULT](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Banderas%20DEFAULT.PNG)
 
@@ -50,7 +50,7 @@ Para crear una bandera, haga clic en el botón **Nuevo**:
 Los campos a completar son los siguientes:
 
 * **Nombre:** El nombre de la nueva bandera.
-* **Combustible:** Seleccione el combustible maestro de ATIONet al que desea cambiar el nombre.
+* **Combustible:** Seleccione el combustible maestro de ATIONET al que desea cambiar el nombre.
 * **Nombre del combustible:** Introduzca el nuevo nombre de su combustible.
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
@@ -96,7 +96,7 @@ Los campos a completar son los siguientes:
 Cuando haya terminado de rellenar los campos, pulse el botón **Guardar**.
 
 ## Comercios
-En ATIONet el término comercio se refiere a la empresa propietaria de los sitios. En esta sección puede ver, crear y editar todos los comercios. Para facilitar las consultas, hay un panel de filtros en la parte superior.
+En ATIONET el término comercio se refiere a la empresa propietaria de los sitios. En esta sección puede ver, crear y editar todos los comercios. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
 ![Comercios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Comercios.PNG)
 
@@ -124,7 +124,7 @@ Los campos a completar son los siguientes:
 Cuando haya terminado de rellenar los campos, haga clic en el botón **Guardar**.
 
 ## Compañías
-En ATIONet el término compañías se refiere a la entidad propietaria de la flota. En esta sección puedes ver las compañías existentes con sus detalles, editarlas y/o crear nuevas. Para facilitar las consultas, hay un panel de filtros en la parte superior.
+En ATIONET el término compañías se refiere a la entidad propietaria de la flota. En esta sección puedes ver las compañías existentes con sus detalles, editarlas y/o crear nuevas. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
 ![Compañías](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Compa%C3%B1%C3%ADas.PNG)
 
@@ -261,7 +261,7 @@ Los campos a completar son los siguientes:
 Cuando haya terminado de rellenar los campos, pulse el botón **Crear**.
 
 ## Identificadores
-El identificador es el medio físico utilizado por ATIONet para identificar un vehículo o conductor. El identificador es compatible con varios tipos de identificación, tales como tarjeta, TAG, chip, tarjeta ATIONet, entrada manual, código de barras y iButton. Cuando se asocia un identificador a un Vehículo o Conductor, se crea una subcuenta.
+El identificador es el medio físico utilizado por ATIONET para identificar un vehículo o conductor. El identificador es compatible con varios tipos de identificación, tales como tarjeta, TAG, chip, tarjeta ATIONET, entrada manual, código de barras y iButton. Cuando se asocia un identificador a un Vehículo o Conductor, se crea una subcuenta.
 
 En esta sección aparecerán los identificadores ya creados. En la columna de opciones se puede editar el identificador, activarlo o desactivarlo y liberarlo. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
@@ -273,7 +273,7 @@ Para crear un identificador, haga clic en el botón **Nuevo**.
 
 Los campos a completar son los siguientes:
 
-* **Tipo:** Puede ser Tarjeta, TAG, Chipkey, Entrada Manual, Tarjeta ATIOnet o TAG ATIOnet.
+* **Tipo:** Puede ser Tarjeta, TAG, Chipkey, Entrada Manual, Tarjeta ATIONET o TAG ATIONET.
 * **Modelo:** El modelo del tipo de identificador seleccionado en **Tipo**.
 * **Tipo de uso:** Puede ser flota, fidelidad o dual.
 * **Programa:** El programa al que se asignará esta identificación.
@@ -292,30 +292,58 @@ La tabla de impuestos muestra:
 * **Código:** Código del impuesto.
 * **Descripción:** Descripción del impuesto.
 * **Tipo:** Tipo de impuesto (Puede ser un impuesto fijo, un impuesto porcentual o un impuesto fijo por unidad).
-* **Importe:** El importe del impuesto (En el caso del impuesto porcentual, el porcentaje).
+* **Monto:** El monto del impuesto (En el caso del impuesto porcentual, el porcentaje).
 * **Fecha Desde / Fecha Hasta:** Rango de fechas.
+* **Modo:** Modo del impuesto (puede ser un impuestos, percepcioes, retenciones, otras).
+* **Modo de Uso:** Modo de uso que corresponde al impuesto.
+* **Incluido:** Indica si esta incluido con "Si" o "No".
+* **Activo:** MIndica si esta activo con "Si" o "No".
 * **Opciones:** Editar el impuesto.
 
-![Impuestos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Impuestos.PNG)
+![Impuestos](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Impuestos.PNG)
 
 Para crear un impuesto, haga clic en el botón **Nuevo**.
 
-![Impuestos nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Impuestos%20Nuevo.PNG) 
+![Impuestos nuevo](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Impuestos%20Nuevo.PNG) 
 
 Los campos a completar son los siguientes:
 
 * **Código:** El código del nuevo impuesto.
 * **Descripción:** La descripción del nuevo impuesto.
 * **Tipo:** Tipo de impuesto (Puede ser un impuesto fijo, un impuesto porcentual o un impuesto fijo por unidad).
-* **Fecha a partir de:** La fecha en que el impuesto entra en vigor.
+* **Modo:** Seleccionar el modo (impuestos, percepcioes, retenciones, otras).
+* **Modo de Uso:** Seleccionar el modo de uso que corresponda al impuesto.
+* **Activo:** Marcar para activar el impuesto.
+* **Incluido:** Marcar para incluir el impuesto.
+
+</br>
+
+**Vigencias:**
+
+* **Fecha desde:** La fecha en que el impuesto entra en vigor.
+* **Hora desde:** La hora en que el impuesto entra en vigor.
 * **Importe:** El importe del impuesto (En el caso del impuesto porcentual, el porcentaje).
 
-Después de rellenar los campos **Fecha desde** e **Importe**, presione el botón **Añadir**. 
+Después de rellenar los campos **Fecha desde**. **Hora desde** e **Importe**, presione el botón **Alta**. 
+
+</br>
+
+**Configuración del Impuesto para Edifact** 
+
+Si en configuraciones de red esta habilitada esta opciòn se visualizarà la secciòn **Configuración del Impuesto para Edifact**
+
+![Configuraciòn Edifacto](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Impuestos%20Nuevo%20-%20Configuraci%C3%B3n%20Edifact%20.PNG) 
+
+
+
+</br>
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
+</br>
+
 ## Instalaciones
-En ATIONet el hecho de que los identificadores deban ser colocados por un técnico se conoce como **Instalaciones**.
+En ATIONET el hecho de que los identificadores deban ser colocados por un técnico se conoce como **Instalaciones**.
 
 En este apartado podrá consultar todas las instalaciones realizadas, listadas por Fecha, Orden de Trabajo, los identificadores instalados, el vehículo en el que se instaló el identificador, el depósito del que se retiró el identificador y el técnico que lo instaló.
 
@@ -420,7 +448,7 @@ En esta sección cada usuario puede seleccionar sus propias notificaciones para 
    * **Transacciones impugnadas:** Recibe una notificación cuando se detecta una transacción impugnada.
 
 ### Notificaciones de compañía
-En esta sección los usuarios de la compañía pueden configurar sus propias notificaciones (dentro de sus perfiles de compañía en ATIONet).
+En esta sección los usuarios de la compañía pueden configurar sus propias notificaciones (dentro de sus perfiles de compañía en ATIONET).
 
 ![Notificaciones Compañía](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20Compa%C3%B1%C3%ADas.PNG)
 
@@ -481,7 +509,7 @@ Los campos a completar son los siguientes:
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 ## Sitios
-En ATIONet el sitio representa la estación de servicio. Esta sección muestra los sitios ya creados, editarlos y también crear nuevos. También puede añadir impuestos a los sitios directamente desde la columna **Opciones**. Para facilitar las consultas, hay un panel de filtros en la parte superior.
+En ATIONET el sitio representa la estación de servicio. Esta sección muestra los sitios ya creados, editarlos y también crear nuevos. También puede añadir impuestos a los sitios directamente desde la columna **Opciones**. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
 ![Sitios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Sitios.PNG)
 
@@ -577,6 +605,9 @@ Cuando haya terminado de rellenar estos dos campos, presione el botón **Añadir
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
+</br>
+
+
 ## Terminales / Controladores
 Dentro de esta sección puede ver, crear y editar todos los terminales/controladores. El terminal es el punto de venta del sitio y el controlador gestiona los surtidores. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
@@ -584,7 +615,7 @@ Dentro de esta sección puede ver, crear y editar todos los terminales/controlad
 
 Para crear un Terminal/Controlador, haga clic en el botón **Nuevo**.
 
-![Terminales nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Terminales%20-%20Controladores%20Nuevo.PNG)
+![Terminales nuevos](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Terminales%20-%20Controladores%20Nuevo.PNG)
 
 Los campos a completar son los siguientes:
 
@@ -593,8 +624,9 @@ Los campos a completar son los siguientes:
 * **Activo:** Marque la casilla para activar/desactivar el terminal/controlador.
 * **Tipo de terminal/controlador:** Seleccione el tipo de terminal/controlador (ATIO-ControlGas, ATIO-NanoCPI, ATIO StandAlone, VF-Commander, etc.).
 * **Modelo:** Seleccione el modelo de terminal/controlador.
-* **Código:** Introduzca el código del terminal/controlador (ATIONet genera uno automáticamente, pero puede editarlo. Excepto los 3 primeros caracteres, ya que representan el código de suscripción a la red).
+* **Código:** Introduzca el código del terminal/controlador (ATIONET genera uno automáticamente, pero puede editarlo. Excepto los 3 primeros caracteres, ya que representan el código de suscripción a la red).
 * **Descripción:** Introduzca la descripción del terminal/controlador.
+* **Solo Pre Autorizaciones Asistidas:** Marque la casilla para activar que la terminal este habilitada para realizar preautorizaciones asistidas.
 * **Lector de TAGs presente:** Marque esta opción si el terminal es capaz de leer TAGs.
 * **Uso del Id. del Conductor:** Seleccione la acción que ATIONet tomará asociada al Id. del Conductor de las transacciones (Ninguna, Track Secundaria o Validación de Código).
 * **Uso de la Identificación del Vehículo:** Seleccione la acción que ATIONet tomará asociada al Id. del Vehículo de las transacciones (Ninguna, Track Secundaria o Validación de Código).
@@ -603,7 +635,18 @@ Los campos a completar son los siguientes:
 * **Sistema operativo:** Introduzca el sistema operativo del terminal/controlador.
 * **Número de serie:** Introduzca el número de serie del terminal/controlador.
 
-Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
+</br>
+
+**Configuración**
+
+En esta sección se puede indicar que la terminal operará en el modo fuera línea (con el Local Agent) con la misma configuración que posee estando en línea. Campos a completar: Mensaje, Nombre de la Propiedad, Configuración Factor, Configuración Modificador, Tipo de transacción.
+
+![Terminales configuración](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Terminales%20-%20Controladores%20Nuevo%20-%20Configuracion.PNG)
+
+
+Cuando haya terminado de rellenar los campos, presione el botón **Alta** en caso de completar la configuración, y para finalizar **Guardar**.
+
+</br>
 
 ## Usuarios
 En esta sección puede ver, crear o editar usuarios para la Network. Puede editarlos haciendo clic en el icono del lápiz en la columna de opciones, activar/desactivar un usuario haciendo clic en el icono del candado y restablecer la contraseña con el icono de la estrella.
@@ -660,3 +703,7 @@ Para crear una zona, haga clic en el botón **Nuevo**.
 ![Zonas nuevas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Zonas%20Nueva.PNG)
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
+
+<br>
+
+[Volver al inicio](#contenido) 	:arrow_up:
