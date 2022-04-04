@@ -91,7 +91,17 @@
 	- [11.7 Inventories Download (POST) – Body Section Format *Response*](#117-Inventories-Download-POST--Body-Section-Format-Response)
 
 - [12 Company Inserts](#12-Company-Inserts)
-	- [12.1 Action Codes](#121-Action-Codes)
+	- [12.1 Native Api Request](#121-Native-Api-Request)
+	- [12.2 Base Interface Request](#122-Base-Interface-Request)
+	- [12.3 Interface Company Request](#123-Interface-Company-Request)
+	- [12.4 Interface Company Contract](#124-Interface-Company-Contract)
+	- [12.5 Interface Fuel Contract](#125-Interface-Fuel-Contract)
+	- [12.6 Interface Site Contract](#126-Interface-Site-Contract)
+	- [12.7 Interface Price Contract](#127-Interface-Price-Contract)
+	- [12.8 Interface Modifier Contract](#128-Interface-Modifier-Contract)
+	- [12.9 Interface Concept Contract](#129-Interface-Concept-Contract)
+	- [12.10 Interface Block Contract](#1210-Interface-Block-Contract)
+	- [12.11 Interface Overlimit Contract](#1211-Interface-Overlimit-Contract)
 
 - [13 Examples](#13-Examples)
 	- [13.1 C# example](#131-C-example)
@@ -13777,7 +13787,7 @@ To edit a company there's no need to send the contract information. However, whe
 	</tbody>
 </table>
 
-### 12.10 InterfaceConceptContract
+### 12.10 InterfaceBlockContract
 
 <table>
     <thead>
@@ -13899,7 +13909,7 @@ To edit a company there's no need to send the contract information. However, whe
     </tbody>
 </table>
 
-### 12.11 InterfaceOverLimitContract
+### 12.11 InterfaceOverlimitContract
 
 <table>
     <thead>
