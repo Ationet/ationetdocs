@@ -22,6 +22,7 @@
 |1.6|29/11/2021|**Inventory & Delivery Interface Update** <br> - Update Inventory Download Response <br> - Update Delivery Download Response <br>|
 |1.7|19/01/2022|**Document Update** <br> - Add CompanyGroups movements download: Request/Response <br> - Add Merchant Charges Comissions Download: Request/Response <br> - Add Sub-Account/Contract Balance Download: Request/Response <br> - Update Transaction Download Response <br> - Update company movements download request parameters <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages <br> - Update Transaction Currency Response Fields <br> - Add Transaction product format response <br> - Add Transaction Product Taxes Format Response <br> - Add Transaction Modifiers Format Response <br> - Add Transaction Movement ERP Format Response <br> - Add Transaction Fee Format Response|
 |1.8|26/01/2022|**Document Update** <br> - Add Transaction custom fields download Request|
+|1.9|04/04/2022|**Document Update** <br> - Company inserts addition|
 
 ## Contents
 
@@ -89,8 +90,11 @@
 	- [11.6 Inventories Download (POST) – Body Section Format *Request*](#116-Inventories-Download-POST--Body-Section-Format-Request)
 	- [11.7 Inventories Download (POST) – Body Section Format *Response*](#117-Inventories-Download-POST--Body-Section-Format-Response)
 
-- [12 Examples](#12-Examples)
-	- [12.1 C# example](#121-C-example)
+- [12 Company Inserts](#12-Company-Inserts)
+	- [12.1 Action Codes](#121-Action-Codes)
+
+- [13 Examples](#13-Examples)
+	- [13.1 C# example](#131-C-example)
 
 ## Overview
 
@@ -10831,9 +10835,3256 @@ transactions to download.
 |Latitude|10|N|Location: Latitude|
 |Altitude|10|N|Location: Altitude|
 
-## 12 Examples
+## 12 Company Inserts
+The Company Inserts messages are POST actions to create or edit a company, a company contract or both.
 
-### 12.1 C# example
+To edit a company there's no need to send the contract information. However, when editing a company contract, the information of the company that the contract belongs to is required.
+
+### 12.1 NativeApiRequest
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Required
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">SystemModel</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">System Model</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SystemVersion</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">System Version</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MessageFormatVersion</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">MessageFormatVersion</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+### 12.2 BaseInterfaceRequest
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Required
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">ActionCode</p>
+			</td>
+			<td>
+				<p align="left">4</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Action Code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SubscriberCode</p>
+			</td>
+			<td>
+				<p align="left">3</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Subscriber Code. To be assigned by ATIONet.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CompanyCode</p>
+			</td>
+			<td>
+				<p align="left">30</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Company Code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MerchantCode</p>
+			</td>
+			<td>
+				<p align="left">30</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Merchant Code</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+
+### 12.3 InterfaceCompanyRequest
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Required
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+    <tbody>
+      <tr valign="top">
+         <td>
+            <p align="left">TaxPayerId</p>
+         </td>
+         <td>
+            <p align="left">50</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Taxpayer Id</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">Type</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">tinyint</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Company type</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">Active</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">bool</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Indicates if the company can operate</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">DesactivationType</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">byte</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Company deactivation type<br/>
+               0: Cancellation by the client<br/>
+               1: Cancellation by the user<br/>
+               2: Cancellation by the ERP
+            </p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">Code</p>
+         </td>
+         <td>
+            <p align="left">30</p>
+         </td>
+         <td>
+            <p align="left">varchar</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Company code</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">Name</p>
+         </td>
+         <td>
+            <p align="left">250</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Company name</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">IndustryId</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">Guid</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Industry type Id. To be assigned by ATIONet.</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">Plan</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">byte</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Plan to which the company belongs.<br/>
+               0: Silver<br/>
+               1: Gold<br/>
+               2: Platinum
+            </p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">Street1</p>
+         </td>
+         <td>
+            <p align="left">200</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Address</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">Street2</p>
+         </td>
+         <td>
+            <p align="left">200</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Additional address infromation</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">ZipCode</p>
+         </td>
+         <td>
+            <p align="left">50</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">ZIP code</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">City</p>
+         </td>
+         <td>
+            <p align="left">100</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">City</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">CountryId</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">Guid</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Country Id. To be assigned by ATIONet.</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">StateId</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">Guid</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">State/Province Id. To be assigned by ATIONet.</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">Street1Delivery</p>
+         </td>
+         <td>
+            <p align="left">200</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Delivery address</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">Street2Delivery</p>
+         </td>
+         <td>
+            <p align="left">200</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Additional delivery address infromation</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">ZipCodeDelivery</p>
+         </td>
+         <td>
+            <p align="left">50</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Delivery ZIP code</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">CityDelivery</p>
+         </td>
+         <td>
+            <p align="left">100</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Delivery city</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">CountryDeliveryId</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">Guid</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Delivery country Id. To be assigned by ATIONet.</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">StateDeliveryId</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">Guid</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Delivery state/province Id. To be assigned by ATIONet.</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">TaxPayerCategoryId</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">Guid</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Taxpayer Category Id. To be assigned by ATIONet.</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">ContactName</p>
+         </td>
+         <td>
+            <p align="left">250</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Contact name</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">ContactEmail</p>
+         </td>
+         <td>
+            <p align="left">50</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Contact E-mail<br/>
+               Used for creating the admin user and it is where the access credentials will be sent during the company creation.
+            </p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">Phone1</p>
+         </td>
+         <td>
+            <p align="left">50</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Contact main phone number</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">Phone2</p>
+         </td>
+         <td>
+            <p align="left">50</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Contact secondary phone number</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">Custom0</p>
+         </td>
+         <td>
+            <p align="left">200</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Custom field number 1 value</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">Custom1</p>
+         </td>
+         <td>
+            <p align="left">200</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Custom field number 2 value</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">Custom2</p>
+         </td>
+         <td>
+            <p align="left">200</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Custom field number 3 value</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">Custom3</p>
+         </td>
+         <td>
+            <p align="left">200</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Custom field number 4 value</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">CompanyGroupId</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">Guid</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Company Group Id.<br/>Relevant only if the company belongs to a group.
+            </p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">PermissionsType</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">smallint</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Data edition permissions type.<br/>Used for locking the company's data edition through the ATIONet portal.<br/>
+               1: Data edition unlocked.<br/>
+               2: Data edition permitted only through the API.
+            </p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">Contracts</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">
+               List
+               <InterfaceCompanyContract>
+            </p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Company contracts list</p>
+         </td>
+      </tr>
+    </tbody>
+</table>
+
+### 12.4 InterfaceCompanyContract
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Required
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+    <tbody>		
+		<tr valign="top">
+			<td>
+				<p align="left">Id</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">Guid</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Contract Id.<br/>Used for updating contracts.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Active</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Indicates if the contract is able to operate</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ReactivationAmount</p>
+			</td>
+			<td>
+				<p align="left">28</p>
+			</td>
+			<td>
+				<p align="left">decimal</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Reactivation amount.<br/>
+								When money is credited to the contract, if that amount is greater than or equal to this reference value, the contract will be reactivated if it wasn't active</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DesactivationType</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">byte</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Contract deactivation type<br/>
+								0: Cancellation by the client<br/>
+								1: Cancellation by the user<br/>
+								2: Cancellation by the ERP</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Code</p>
+			</td>
+			<td>
+				<p align="left">20</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Contract code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Description</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Contract description</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">StartDate</p>
+			</td>
+			<td>
+				<p align="left">10</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Initial operations date.<br/>
+								yyyy/MM/dd format</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Duration</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">short</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Contract length.<br/>
+					Represents an amount of days, weeks, months or years</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Periodicity</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">byte</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Contract length periodicity<br/>
+								0: Days<br/>
+								1: Weeks<br/>
+								2: Months<br/>
+								3: Years</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CurrentAccountMode</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">byte</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Current acount mode<br/>
+								0: Product<br/>
+								1: Money</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CurrencyId</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">Guid</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Currency Id.<br/>
+								To be assigned by ATIONet.<br/>
+								If the selected CurrentAccountMode is ""Money"", either this value or the currency code value must be sent.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CurrenyCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Currency code.<br/>
+								To be assigned by ATIONet.<br/>
+								If the selected CurrentAccountMode is ""Money"", either this value or the currency Id value must be sent.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Mode</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">byte</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Contract mode<br/>
+								0: Credit<br/>
+								1: Debit<br/>
+								2: Cash</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CreditLimit</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">numeric</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Credit limit.<br/>
+								Only relevant if the selected ContractMode is "Credit".</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BalanceMode</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">byte</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Balance mode.<br/>
+								1: Disperse<br/>
+								2: Not Disperse<br/>
+								4: Autofill</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ValidateSites</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Indicates if the contract must validate sites</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ValidateFuels</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Indicates if the contract must validate fuels</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">IdRackPricesList</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">Guid</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Rack prices list Id.<br/>
+								This value should only be sent if the contract will operate with a rack prices list. If the current account mode is set as ""Money"" both the contract currency and the rack prices list currency must be the same.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ValidatePrograms</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Indicates if the contract must validate programs</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Type</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">tinyint</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Contract type.<br/>
+								0: Fleet<br/>
+								1: Gift Card (legacy version)<br/>
+								2: Consumer Card<br/>
+								3: Gift Card</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Subsidized</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Indicates if the contract handles subsidized amounts</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Classification1Id</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">Guid</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Contract classification 1 configured Id.<br/>
+								To add this classification to the contract, either the classification Id or the classification code should be sent, but not both.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Classification1Code</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Contract classification 1 configured code.<br/>
+								To add this classification to the contract, either the classification Id or the classification code should be sent, but not both.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Classification2Id</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">Guid</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Contract classification 2 configured Id.<br/>
+								To add this classification to the contract, either the classification Id or the classification code should be sent, but not both.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Classification2Code</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Contract classification 2 configured code.<br/>
+								To add this classification to the contract, either the classification Id or the classification code should be sent, but not both.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Classification3Id</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">Guid</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Contract classification 3 configured Id.<br/>
+								To add this classification to the contract, either the classification Id or the classification code should be sent, but not both.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Classification3Code</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Contract classification 3 configured code.<br/>
+								To add this classification to the contract, either the classification Id or the classification code should be sent, but not both.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Classification4Id</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">Guid</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Contract classification 4 configured Id.<br/>
+								To add this classification to the contract, either the classification Id or the classification code should be sent, but not both.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Classification4Code</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Contract classification 4 configured code.<br/>
+								To add this classification to the contract, either the classification Id or the classification code should be sent, but not both.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Custom0</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Custom text field used for identifying a required contract value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Custom1</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Custom text field used for identifying a required contract value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Custom2</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Custom text field used for identifying a required contract value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Custom3</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Custom text field used for identifying a required contract value</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CustomInterface0</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Custom parameter configured by the network to be used in the interface operations.<br/>
+								Only relevant for ERPs interfaces integrations.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CustomInterface1</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Custom parameter configured by the network to be used in the interface operations.<br/>
+								Only relevant for ERPs interfaces integrations.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CustomInterface2</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Custom parameter configured by the network to be used in the interface operations.<br/>
+								Only relevant for ERPs interfaces integrations.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CustomInterface3</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Custom parameter configured by the network to be used in the interface operations.<br/>
+								Only relevant for ERPs interfaces integrations.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CustomInterface4</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Custom parameter configured by the network to be used in the interface operations.<br/>
+								Only relevant for ERPs interfaces integrations.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CustomOperation0</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Custom parameter configured by the network to be used in external operations.<br/>
+								Only relevant for ERPs interfaces integrations.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CustomOperation1</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Custom parameter configured by the network to be used in external operations.<br/>
+								Only relevant for ERPs interfaces integrations.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CustomOperation2</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Custom parameter configured by the network to be used in external operations.<br/>
+								Only relevant for ERPs interfaces integrations.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CustomOperation3</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Custom parameter configured by the network to be used in external operations.<br/>
+								Only relevant for ERPs interfaces integrations.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">CustomOperation4</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Custom parameter configured by the network to be used in external operations.<br/>
+								Only relevant for ERPs interfaces integrations.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">PermissionsType</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">smallint</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Data edition permissions type.<br/>
+								Used for locking the contract's data edition through the ATIONet portal.<br/>
+								1: Data edition unlocked.<br/>
+								2: Data edition permitted only through the API.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingActive</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Indicates if the contract movements will be billed, activating the billing process.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingDueDays</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">short</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Billing due days.<br/>
+								Relevant only if the billing process is activated.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingPeriodicity</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">Byte</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Billing periodicity.<br/>
+								Relevant only if the billing process is activated.<br/>
+								0: Days<br/>
+								1: Weeks<br/>
+								2: Months<br/>
+								3: Years</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingPeriodicityValue</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">short</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Billing Periodicity Value.<br/>
+								Relevant only if the billing process is activated.
+								Represents the amount of days, weeks, months or years.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingManual</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Indicates if the billing process will be runned manually instead of automatically.<br/>
+								Relevant only if the billing process is activated.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingCutTime</p>
+			</td>
+			<td>
+				<p align="left">5</p>
+			</td>
+			<td>
+				<p align="left">varchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Billing Cut Time.<br/>
+								Relevant only if the billing process is activated.
+								Must be established if the billing periodicity is set to ""Days"", using HH:mm format.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingCutDay</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">byte</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Billing Cut Day.<br/>
+								Relevant only if the billing process is activated.
+								Must be established with a value from 0 to 7 if the billing periodicity is set to ""Weeks"", or from 1 to 31 if the billing periodicity is set to ""Months"" or ""Years"".</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingCutMonth</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">byte</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Billing Cut Month.<br/>
+								Relevant only if the billing process is activated.
+								Must be established with a value from 1 to 12 if the billing periodicity is set to ""Years"".</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DocumentChargesFromBalance</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Indicates if the charges are deducted from the account balance</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SeparateChargesDocument</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Indicates if the charges are reflected in a separate document</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">RecepientEmails</p>
+			</td>
+			<td>
+				<p align="left">max</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">The E-mail addresses to where the statements generated by the billing process will be sent.<br/>
+								Relevant only if the billing process is activated.
+								Multiple emails addresses can be sent separated by a semicolon "";""</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingTaxPayerId</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Taxpayer Id that will appear on the statement</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingCompanyName</p>
+			</td>
+			<td>
+				<p align="left">250</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Company name that will appear on the statement</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingCompanyStreet1</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Company address that will appear on the statement</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingCompanyStreet2</p>
+			</td>
+			<td>
+				<p align="left">200</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Additional company address information that will appear on the statement</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingCompanyZipCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">ZIP code that will appear on the statement</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingCompanyCity</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">City name that will appear on the statement</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingCompanyCountryId</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">Guid</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Country name that will appear on the statement</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingCompanyStateId</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">Guid</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">State/province name that will appear on the statement</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Fuels</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">List<InterfaceFuelContract>
+				</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Fuels list available to the contract.<br/>
+				If no list is sent, all the fuels will be available for the contract.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Sites</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">List<InterfaceSiteContract>
+				</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Sites list where the contract sub accounts can operate.<br/>
+				If no list is sent, the sub accounts will be allowed to operate in all the sites.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Prices</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">List<InterfacePriceContract>
+				</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Price list that will be applied to the contract.<br/>
+								If no list is sent, the contract will operate with the controller prices.
+								It is possible to set prices for specific sites and dates.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Modifiers</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">List<InterfaceModifierContract>
+				</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Modifiers list that will be applied to the contract (discounts/markups)</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Concepts</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">List<InterfaceConceptContract>
+				</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Concepts list. Used to links concepts with the contract</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Blocks</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">List<InterfaceBlockContract>
+				</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Blocks list.<br/>
+								If no list is sent, no blocks will be applied to the contract. Contract blocks can be applied continuously or intermittently by dates.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">OverLimits</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">List<InterfaceOverLimitContract>
+				</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Overlimits list.<br/>
+								Used for establishing overlimits. If not list is sent, no overlimits will be applied.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Programs</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">List<Guid>
+				</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Programs Ids list.<br/>
+								Used for establishing which programs can be used with the contract.</p>
+			</td>
+		</tr>
+    </tbody>
+</table>
+
+### 12.5 InterfaceFuelContract
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Required
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+    <tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">FuelMasterId</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">Guid</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Mandatory if no fuel master code is sent.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">FuelMasterCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Mandatory if no fuel master id is sent.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">VolumeLimit</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">numeric</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Used for establishing a consumption limit to the contract.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">MoneyLimit</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">numeric</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Used for establishing a consumption limit to the contract.</p>
+			</td>
+		</tr>
+    </tbody>
+</table>
+
+### 12.6 InterfaceSiteContract
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Required
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+    <tbody>
+			<tr valign="top">
+			<td>
+				<p align="left">SiteId</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">Guid</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">"Site Id.<br/>
+								Required if no site code is sent."	</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Code</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">Nvarchar(50)</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Site code.<br/>
+								Required if no site Id is sent.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Fuels</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">List<InterfaceFuelContractRequest></p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Fuels list.<br/>
+								If is it sent, only the fuel master codes or Ids should be sent. If no list is setn, only the site will be identified.</p>
+			</td>
+		</tr>
+    </tbody>
+</table>
+
+### 12.7 InterfacePriceContract
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Required
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>	
+	<tbody>		
+		<tr valign="top">
+			<td>
+				<p align="left">FuelMasterId</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">Guid</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Required if no fuel master code is sent.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">FuelMasterCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Required if no fuel master id is sent.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Value</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">numeric</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteId</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">Guid</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Required if the price should be applied to a specific site.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Required if the price should be applied to a specific site.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DateFrom</p>
+			</td>
+			<td>
+				<p align="left">10</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">yyyy/MM/dd format</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TimeFrom</p>
+			</td>
+			<td>
+				<p align="left">5</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Relevant only if a time from is defined. HH:mm format.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DateTo</p>
+			</td>
+			<td>
+				<p align="left">10</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">yyyy/MM/dd format.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TimeTo</p>
+			</td>
+			<td>
+				<p align="left">5</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Relevant only if a time to is defined. HH:mm format.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+### 12.8 InterfaceModifierContract
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Required
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>			
+		<tr valign="top">
+			<td>
+				<p align="left">Class</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">byte</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Modifier class.<br/>
+								0: Discount<br/>
+								1: Increase</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Type</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">byte</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Tipo de modificador.<br/>
+								0: Percentual<br/>
+								1: Fixed per transaction<br/>
+								2: Fixed per unit</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Value</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">numeric</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Modifier value.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">FuelMasterId</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">Guid</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Fuel master Id.<br/>
+								Required if a modifier should be applied to a fuel's price and the associated fuel master code wasn't sent.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">FuelMasterCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Fuel master code.<br/>
+								Required if a modifier should be applied to a fuel's price and the associated fuel master Id wasn't sent.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteId</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">Guid</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Site Id.<br/>
+								Required if a modifier should be applied to a site and the associated site code wasn't sent.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Site code.<br/>
+								Required if a modifier should be applied to a site and the associated site Id wasn't sent.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DateFrom</p>
+			</td>
+			<td>
+				<p align="left">10</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Date from which the modifier will be applied.
+								yyyy/MM/dd format.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TimeFrom</p>
+			</td>
+			<td>
+				<p align="left">5</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Time from which the modifier will be applied.<br/>
+								Relevant only if a dete from is defined. HH:mm format.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DateTo</p>
+			</td>
+			<td>
+				<p align="left">10</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Date until the modifier will be applied.<br/>
+								yyyy/MM/dd format.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">TimeTo</p>
+			</td>
+			<td>
+				<p align="left">5</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Time until the modifier will be applied.<br/>
+								Relevant only if a dete to is defined. HH:mm format.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+### 12.9 InterfaceConceptContract
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Required
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>			
+		<tr valign="top">
+			<td>
+				<p align="left">ConceptId</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">Guid</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Concept Id</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Quantity</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">Numeric</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Applied concept amount.<br/>
+								Depends on the concept type selected.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingEvent</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">smallint</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Billing event.<br/>
+								0: Contract period<br/>
+								1: Next billing process run<br/>
+								2: Summary period</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingEventPeriodicity</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">tinyint</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Billing event periodicity.<br/>
+								Depends on that the selected billing event is "Summary period" (2).<br/>
+								0: Daily<br/>
+								1: Weekly<br/>
+								2: Monthly<br/>
+								3: Yearly</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingEventDuration</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">smallint</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Value of the selected periodicity.<br/>
+								Depends on that the selected billing event is "Summary period" (2).</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingEventCutTime</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">smallint</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Limit time of the billing event.<br/>
+								Depends on that the selected billing event is "Summary period" (2). 'HHmm' format.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingEventCutDay</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">tinyint</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Limit date.<br/>
+								Depends on that the selected billing event is "Summary period" (2) and on that the selected periodicity is "Weekly" (1), "Monthly" (2) or "Yearly" (3).<br/>
+								If "Weekly" is selected, the value must be between 0 and 7 reflecting the day of the week; if  "Monthly" or "Yearly" is selected, the value must be between 1 and 31 reflecting the day of the month.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">BillingEventCutMonth</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">tinyint</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Limit month.<br/>
+								Depends on that the selected billing event is "Summary period" (2) and on that the selected periodicity is "Yearly" (3). Admits values between 1 y 12.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Application</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">smallint</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Application type.<br/>
+								To be assigned by ATIONet.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ApplicationThreshold</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">Numeric</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Application threshold.<br/>
+								Depends on the application type.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ApplicationCeiling</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">Numeric</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Application ceiling.<br/>
+								Depends on the application type.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">IdentificationType</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">smallint</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Identification type.<br/>
+								Depends on the application type.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Enabled</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">RollUp</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">
+				</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+### 12.10 InterfaceConceptContract
+
+<table>
+    <thead>
+      <tr valign="top">
+         <th align="left">
+            Field Name
+         </th>
+         <th align="left">
+            Size
+         </th>
+         <th align="left">
+            Type
+         </th>
+         <th align="left">
+            Required
+         </th>
+         <th align="left">
+            Descriptions/Field Value(s)
+         </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr valign="top">
+         <td>
+            <p align="left">Type</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">byte</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Contract block type.<br/>
+               0: Fixed<br/>
+               1: Recurrent
+            </p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">DateFrom</p>
+         </td>
+         <td>
+            <p align="left">10</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Contract block starting date.<br/>
+               Required if the selected contract block type is "Fixed". yyyy/MM/dd format.
+            </p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">DateTo</p>
+         </td>
+         <td>
+            <p align="left">10</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Contract block finishing date.<br/>
+               Required if the selected contract block type is "Fixed". yyyy/MM/dd format.
+            </p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">DayFrom</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">int</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Contract block starting day of the month.<br/>
+               Required if the selected contract block type is "Recurrent".
+            </p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">DayTo</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">int</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Contract block finishing day of the month.<br/>
+               Required if the selected contract block type is "Recurrent".
+            </p>
+         </td>
+      </tr>
+    </tbody>
+</table>
+
+### 12.11 InterfaceOverLimitContract
+
+<table>
+    <thead>
+      <tr valign="top">
+         <th align="left">
+            Field Name
+         </th>
+         <th align="left">
+            Size
+         </th>
+         <th align="left">
+            Type
+         </th>
+         <th align="left">
+            Required
+         </th>
+         <th align="left">
+            Descriptions/Field Value(s)
+         </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr valign="top">
+         <td>
+            <p align="left">Type</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">byte</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">"Overlimit type.<br/>
+               1: Percent<br/>
+               2: Amount
+            </p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">Value</p>
+         </td>
+         <td>
+            <p align="left">18</p>
+         </td>
+         <td>
+            <p align="left">numeric</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Overlimit value.</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">DateFrom</p>
+         </td>
+         <td>
+            <p align="left">10</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Starting date of the overlimit application.</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">DateTo</p>
+         </td>
+         <td>
+            <p align="left">10</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Finishing date of the overlimit application.</p>
+         </td>
+      </tr>
+    </tbody>
+</table>
+
+### 12.12 InterfaceOverLimitContract
+
+Basic company and company contract creation/update Json example:<br/>
+{<br/> 
+&emsp;"ActionCode":"925",<br/> 
+&emsp;"SubscriberCode":"46Z",<br/> 
+&emsp;"SystemModel":"Sistema",<br/> 
+&emsp;"SystemVerion":"vP",<br/>
+&emsp;"TaxPayerId":"544323356-Y",<br/> 
+&emsp;"Active":true,<br/> 
+&emsp;"DesactivationType":null,<br/> 
+&emsp;"Code":"37268",<br/> 
+&emsp;"Name":"Company Name",<br/> 
+&emsp;"IndustryId":"705BB43A-EACB-459D-87EA-88297C7C04C5",<br/> 
+&emsp;"Plan":null,<br/> 
+&emsp;"Street1":"calle 1",<br/> 
+&emsp;"Street2":null,<br/>
+&emsp;"ZipCode":"1426E",<br/> 
+&emsp;"City":"Panama city",<br/>
+&emsp;"CountryId":"2BF0C7A2-0971-4616-B453-F8260F161778",<br/> 
+&emsp;"StateId":"A2546B86-0971-4689-BB0A-025A259ABEEA",<br/> 
+&emsp;"TaxPayerCategoryId":null,<br/> 
+&emsp;"ContactName":"Company Contact",<br/> 
+&emsp;"ContactEmail":"corporatemail@company.com",<br/> 
+&emsp;"Phone1":"47367-28371",<br/> 
+&emsp;"Phone2":null,<br/> 
+&emsp;"Custom0":"7078010206393333",<br/> 
+&emsp;"Custom1":"10008319",<br/> 
+&emsp;"Custom2":"30",<br/> 
+&emsp;"Custom3":null,<br/> 
+&emsp;"CompanyGroupId":null,<br/> 
+&emsp;"Contracts":[<br/> 
+&emsp;&emsp;{<br/> 
+&emsp;&emsp;"Id":null,<br/> 
+&emsp;&emsp;"Active":true,<br/> 
+&emsp;&emsp;"ReactivationAmount":1000.00,<br/> 
+&emsp;&emsp;"DesactivationType":null,<br/> 
+&emsp;&emsp;"Code":"CODE21",<br/> 
+&emsp;&emsp;"Description":"Company contract 21",<br/> 
+&emsp;&emsp;"StartDate":"2020/09/05",<br/>
+&emsp;&emsp;"Duration":10,<br/> 
+&emsp;&emsp;"Periodicity":3,<br/>
+&emsp;&emsp;"CurrentAccountMode":1,<br/> 
+&emsp;&emsp;"CurrencyId":null,<br/> 
+&emsp;&emsp;"CurrenyCode":"USD",<br/> 
+&emsp;&emsp;"Mode":0,<br/> 
+&emsp;&emsp;"BalanceMode":2,<br/> 
+&emsp;&emsp;"ValidateSites":false,<br/> 
+&emsp;&emsp;"ValidateFuels":false,<br/> 
+&emsp;&emsp;"Plate":null,<br/> 
+&emsp;&emsp;"CostCenter":null,<br/> 
+&emsp;&emsp;"Site":null,<br/> 
+&emsp;&emsp;"Voucher":null,<br/> 
+&emsp;&emsp;"Miscellaneous":null,<br/> 
+&emsp;&emsp;"BillingActive":true,<br/> 
+&emsp;&emsp;"BillingDueDays":30,<br/> 
+&emsp;&emsp;"BillingPeriodicity":2,<br/> 
+&emsp;&emsp;"BillingPeriodicityValue":1,<br/> 
+&emsp;&emsp;"BillingManual":false,<br/> 
+&emsp;&emsp;"BillingCutTime":23:59,<br/> 
+&emsp;&emsp;"BillingCutDay":31,<br/> 
+&emsp;&emsp;"BillingCutMonth":null,<br/> 
+&emsp;&emsp;"DocumentChargesFromBalance":null,<br/> 
+&emsp;&emsp;"SeparateChargesDocument":null,<br/> 
+&emsp;&emsp;"RecepientEmails":null,<br/> 
+&emsp;&emsp;"BillingTaxPayerId":null,<br/> 
+&emsp;&emsp;"BillingCompanyName":null,<br/> 
+&emsp;&emsp;"BillingCompanyStreet1":null,<br/> 
+&emsp;&emsp;"BillingCompanyStreet2":null,<br/> 
+&emsp;&emsp;"BillingCompanyZipCode":null,<br/> 
+&emsp;&emsp;"BillingCompanyCity":null,<br/> 
+&emsp;&emsp;"BillingCompanyCountryId":null,<br/> 
+&emsp;&emsp;"BillingCompanyStateId":null,<br/> 
+&emsp;&emsp;"Fuels":[],<br/> 
+&emsp;&emsp;"Sites":[],<br/> 
+&emsp;&emsp;"Prices":[],<br/> 
+&emsp;&emsp;"Modifiers":[],<br/>
+&emsp;&emsp;"Concepts":[],<br/>  
+&emsp;&emsp;"Blocks":[],<br/> 
+&emsp;&emsp;"OverLimits":[],<br/>
+&emsp;&emsp;"Programs":[]<br/> 
+&emsp;&emsp;}<br/> 
+&emsp;]<br/> 
+}
+
+
+## 13 Examples
+
+### 13.1 C# example
 
 ```C#
 using System.IO;

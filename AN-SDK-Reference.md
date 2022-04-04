@@ -16,6 +16,7 @@
 |--- |--- |--- |
 |Ver.|Date|Change summary|
 |1.0|10/July/2016|Initial version|
+|1.1|04/April/2022|Driver and vehicle Id usage addition into programs|
 
 </br>
 
@@ -1340,6 +1341,9 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |Guid Id||
 |byte Type||
 |ProgramRuleDto Rule||
+|ProgramRuleDto RuleLocation||
+|byte DriverIdUsage||
+|byte VehicleIdUsage||
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
