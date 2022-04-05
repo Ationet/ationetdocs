@@ -16,6 +16,7 @@
 |--- |--- |--- |
 |Ver.|Date|Change summary|
 |1.0|10/July/2016|Initial version|
+|1.1|04/April/2022|Driver and vehicle Id usage addition into programs|
 
 </br>
 
@@ -2338,6 +2339,29 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 #### ProgramDto
 |Data|Description|
 |--- |--- |
+<<<<<<< HEAD
+|bool SupportsDryProducts||
+|string BINRange||
+|decimal? GiftCardAmount||
+|bool IsRechargeable||
+|byte SupportsOffline||
+|byte SupportsContingency||
+|byte ApplyContractsSites||
+|bool ValidateExpDate||
+|byte BalanceMode||
+|string Description||
+|string CompanyName||
+|Guid? CompanyId||
+|string NetworkName||
+|Guid NetworkId||
+|string InternalCode||
+|Guid Id||
+|byte Type||
+|ProgramRuleDto Rule||
+|ProgramRuleDto RuleLocation||
+|byte DriverIdUsage||
+|byte VehicleIdUsage||
+=======
 | string VoucherAmounts ||
 | short? Duration ||
 | byte? Periodicity ||
@@ -2392,6 +2416,7 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 | Guid Id ||
 | List<Guid> SitesIds ||
 | List<Guid> ZonesIds ||
+>>>>>>> 0a10bbd0d350a013fdcc77eda7a1e7c4927c07ee
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
