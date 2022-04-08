@@ -103,6 +103,7 @@
 	- [12.9 Interface Concept Contract](#129-interfaceconceptcontract)
 	- [12.10 Interface Block Contract](#1210-interfaceblockcontract)
 	- [12.11 Interface Overlimit Contract](#1211-interfaceoverlimitcontract)
+	- [12.12 Interface Program Contract](#1212-InterfaceProgramContract)
 
 - [13 Examples](#13-Examples)
 	- [13.1 C# example](#131-C-example)
@@ -14025,90 +14026,65 @@ To edit a company there's no need to send the contract information. However, whe
     </tbody>
 </table>
 
-### 12.12 InterfaceOverLimitContract
+### 12.12 InterfaceProgramContract
 
-Basic company and company contract creation/update Json example:<br/>
-{<br/> 
-&emsp;"ActionCode":"925",<br/> 
-&emsp;"SubscriberCode":"46Z",<br/> 
-&emsp;"SystemModel":"Sistema",<br/> 
-&emsp;"SystemVerion":"vP",<br/>
-&emsp;"TaxPayerId":"544323356-Y",<br/> 
-&emsp;"Active":true,<br/> 
-&emsp;"DesactivationType":null,<br/> 
-&emsp;"Code":"37268",<br/> 
-&emsp;"Name":"Company Name",<br/> 
-&emsp;"IndustryId":"705BB43A-EACB-459D-87EA-88297C7C04C5",<br/> 
-&emsp;"Plan":null,<br/> 
-&emsp;"Street1":"calle 1",<br/> 
-&emsp;"Street2":null,<br/>
-&emsp;"ZipCode":"1426E",<br/> 
-&emsp;"City":"Panama city",<br/>
-&emsp;"CountryId":"2BF0C7A2-0971-4616-B453-F8260F161778",<br/> 
-&emsp;"StateId":"A2546B86-0971-4689-BB0A-025A259ABEEA",<br/> 
-&emsp;"TaxPayerCategoryId":null,<br/> 
-&emsp;"ContactName":"Company Contact",<br/> 
-&emsp;"ContactEmail":"corporatemail@company.com",<br/> 
-&emsp;"Phone1":"47367-28371",<br/> 
-&emsp;"Phone2":null,<br/> 
-&emsp;"Custom0":"7078010206393333",<br/> 
-&emsp;"Custom1":"10008319",<br/> 
-&emsp;"Custom2":"30",<br/> 
-&emsp;"Custom3":null,<br/> 
-&emsp;"CompanyGroupId":null,<br/> 
-&emsp;"Contracts":[<br/> 
-&emsp;&emsp;{<br/> 
-&emsp;&emsp;"Id":null,<br/> 
-&emsp;&emsp;"Active":true,<br/> 
-&emsp;&emsp;"ReactivationAmount":1000.00,<br/> 
-&emsp;&emsp;"DesactivationType":null,<br/> 
-&emsp;&emsp;"Code":"CODE21",<br/> 
-&emsp;&emsp;"Description":"Company contract 21",<br/> 
-&emsp;&emsp;"StartDate":"2020/09/05",<br/>
-&emsp;&emsp;"Duration":10,<br/> 
-&emsp;&emsp;"Periodicity":3,<br/>
-&emsp;&emsp;"CurrentAccountMode":1,<br/> 
-&emsp;&emsp;"CurrencyId":null,<br/> 
-&emsp;&emsp;"CurrenyCode":"USD",<br/> 
-&emsp;&emsp;"Mode":0,<br/> 
-&emsp;&emsp;"BalanceMode":2,<br/> 
-&emsp;&emsp;"ValidateSites":false,<br/> 
-&emsp;&emsp;"ValidateFuels":false,<br/> 
-&emsp;&emsp;"Plate":null,<br/> 
-&emsp;&emsp;"CostCenter":null,<br/> 
-&emsp;&emsp;"Site":null,<br/> 
-&emsp;&emsp;"Voucher":null,<br/> 
-&emsp;&emsp;"Miscellaneous":null,<br/> 
-&emsp;&emsp;"BillingActive":true,<br/> 
-&emsp;&emsp;"BillingDueDays":30,<br/> 
-&emsp;&emsp;"BillingPeriodicity":2,<br/> 
-&emsp;&emsp;"BillingPeriodicityValue":1,<br/> 
-&emsp;&emsp;"BillingManual":false,<br/> 
-&emsp;&emsp;"BillingCutTime":23:59,<br/> 
-&emsp;&emsp;"BillingCutDay":31,<br/> 
-&emsp;&emsp;"BillingCutMonth":null,<br/> 
-&emsp;&emsp;"DocumentChargesFromBalance":null,<br/> 
-&emsp;&emsp;"SeparateChargesDocument":null,<br/> 
-&emsp;&emsp;"RecepientEmails":null,<br/> 
-&emsp;&emsp;"BillingTaxPayerId":null,<br/> 
-&emsp;&emsp;"BillingCompanyName":null,<br/> 
-&emsp;&emsp;"BillingCompanyStreet1":null,<br/> 
-&emsp;&emsp;"BillingCompanyStreet2":null,<br/> 
-&emsp;&emsp;"BillingCompanyZipCode":null,<br/> 
-&emsp;&emsp;"BillingCompanyCity":null,<br/> 
-&emsp;&emsp;"BillingCompanyCountryId":null,<br/> 
-&emsp;&emsp;"BillingCompanyStateId":null,<br/> 
-&emsp;&emsp;"Fuels":[],<br/> 
-&emsp;&emsp;"Sites":[],<br/> 
-&emsp;&emsp;"Prices":[],<br/> 
-&emsp;&emsp;"Modifiers":[],<br/>
-&emsp;&emsp;"Concepts":[],<br/>  
-&emsp;&emsp;"Blocks":[],<br/> 
-&emsp;&emsp;"OverLimits":[],<br/>
-&emsp;&emsp;"Programs":[]<br/> 
-&emsp;&emsp;}<br/> 
-&emsp;]<br/> 
-}
+<table>
+    <thead>
+      <tr valign="top">
+         <th align="left">
+            Field Name
+         </th>
+         <th align="left">
+            Size
+         </th>
+         <th align="left">
+            Type
+         </th>
+         <th align="left">
+            Required
+         </th>
+         <th align="left">
+            Descriptions/Field Value(s)
+         </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr valign="top">
+         <td>
+            <p align="left">Id</p>
+         </td>
+         <td>
+            <p align="left">36</p>
+         </td>
+         <td>
+            <p align="left">Guid</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Unique identifier of the program. If this value is not sent, the identification of the program will be through the code</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">Code</p>
+         </td>
+         <td>
+            <p align="left">20</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Code identification of the program. If this value is not sent, the identification of the program will be through by the Id</p>
+         </td>
+      </tr>
+    </tbody>
+</table>
 
 ### 12.13 Response messages
 
