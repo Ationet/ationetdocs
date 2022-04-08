@@ -12803,7 +12803,8 @@ To edit a company there's no need to send the contract information. However, whe
 			</td>
 			<td>
 				<p align="left">Fuels list available to the contract.<br/>
-				If no list is sent, all the fuels will be available for the contract.</p>
+				If no list is sent, all the fuels will be available for the contract.<br/>
+				"Fuels": [<br/>{<br/>"FuelMasterID": "389dee96-c6af-4161-8e3a-fa7835994102",<br/>"FuelMasterCode": "002",<br/>"VolumeLimit": 0.00,				  <br/>"MoneyLimit": 0.00<br/>}</p>
 			</td>
 		</tr>
 		<tr valign="top">
