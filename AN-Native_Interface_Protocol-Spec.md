@@ -14246,7 +14246,7 @@ using Newtonsoft.Json;
 
 ```C#
 // Create Json object
-object requestObject = new { ActionCode = "941", SubscriberCode = "{YourSubscriberCode}", Identifier = "{YourIdentifier}" };
+object requestObject = new { ActionCode = "925", SubscriberCode = "{YourSubscriberCode}", Identifier = "{YourIdentifier}" };
 
 // Serialize Json object
 string request = JsonConvert.SerializeObject(requestObject);
