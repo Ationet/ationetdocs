@@ -14112,140 +14112,34 @@ Basic company and company contract creation/update Json example:<br/>
 
 ### 12.13 Response messages
 
-When the operation is succesful, ATIONet response will be the serialized company and its contracts:
-
-{<br/>
-&emsp;"Id": "133b5bb7-84f4-4429-a918-0c73def46617",<br/>
-&emsp;"TaxPayerId": "123458",<br/>
-&emsp;"Type": 0,<br/>
-&emsp;"Active": true,<br/>
-&emsp;"DesactivationType": null,<br/>
-&emsp;"Code": "HKTest238",<br/>
-&emsp;"Name": "SyncAgent PersonaNormal de Credito HK8",<br/>
-&emsp;"IndustryId": "b5f7a09f-dcbc-4321-9fdb-fe063698a1a3",<br/>
-&emsp;"Plan": null,<br/>
-&emsp;"Street1": "Av. Pisiga",<br/>
-&emsp;"Street2": "Villa Pagador",<br/>
-&emsp;"ZipCode": null,<br/>
-&emsp;"City": "Cochabamba",<br/>
-&emsp;"CountryId": "b672078c-53c5-4889-8d65-ef1c652a8f96",<br/>
-&emsp;"CountryDescription": "Bolivia",<br/>
-&emsp;"StateId": "20f4271c-fb35-424e-9369-21b6ed3d846a",<br/>
-&emsp;"StateDescription": "Cochabamba",<br/>
-&emsp;"Street1Delivery": null,<br/>
-&emsp;"Street2Delivery": null,<br/>
-&emsp;"ZipCodeDelivery": null,<br/>
-&emsp;"CityDelivery": null,<br/>
-&emsp;"StateDeliveryDescription": null,<br/>
-&emsp;"StateDeliveryId": null,<br/>
-&emsp;"CountryDeliveryId": null,<br/>
-&emsp;"CountryDeliveryDescription": null,<br/>
-&emsp;"TaxPayerCategoryId": null,<br/>
-&emsp;"TaxpayerCategoryDescription": null,<br/>
-&emsp;"ContactName": "SyncAgent PersonaNormal de Credito",<br/>
-&emsp;"ContactEmail": "dgeisser@ationet.com",<br/>
-&emsp;"Phone1": "59176422846",<br/>
-&emsp;"Phone2": null,<br/>
-&emsp;"Custom0": null,<br/>
-&emsp;"Custom1": null,<br/>
-&emsp;"Custom2": null,<br/>
-&emsp;"Custom3": null,<br/>
-&emsp;"CompanyGroupID": null,<br/>
-&emsp;"PermissionsType": null,<br/>
-&emsp;"Contracts": [<br/>
-&emsp;{<br/>
-&emsp;&emsp;"Id": "46ea44d9-86c7-4806-97e3-d8265e0adb10",<br/>
-&emsp;&emsp;"Active": true,<br/>
-&emsp;&emsp;"ReactivationAmount": null,<br/>
-&emsp;&emsp;"DesactivationType": null,<br/>
-&emsp;&emsp;"Code": " HkTest348",<br/>
-&emsp;&emsp;"Description": "SyncAgent PersonaNormal de Credito HK18",<br/>
-&emsp;&emsp;"StartDate": "04/04/2022 0:00:00",<br/>
-&emsp;&emsp;"Duration": 99,<br/>
-&emsp;&emsp;"Periodicity": 3,<br/>
-&emsp;&emsp;"CurrentAccountMode": 73,<br/>
-&emsp;&emsp;"CurrencyID": "00000000-0000-0000-0000-000000000000",<br/>
-&emsp;&emsp;"CurrencyCode": null,<br/>
-&emsp;&emsp;"Mode": 0,<br/>
-&emsp;&emsp;"CreditLimit": null,<br/>
-&emsp;&emsp;"BalanceMode": 2,<br/>
-&emsp;&emsp;"ValidateSites": false,<br/>
-&emsp;&emsp;"ValidateFuels": false,<br/>
-&emsp;&emsp;"IdRackPricesList": null,<br/>
-&emsp;&emsp;"ValidatePrograms": false,<br/>
-&emsp;&emsp;"Type": 0,<br/>
-&emsp;&emsp;"Subsidized": false,<br/>
-&emsp;&emsp;"Classification1Id": "00000000-0000-0000-0000-000000000000",<br/>
-&emsp;&emsp;"Classification1Code": null,<br/>
-&emsp;&emsp;"Classification2Id": "00000000-0000-0000-0000-000000000000",<br/>
-&emsp;&emsp;"Classification2Code": null,<br/>
-&emsp;&emsp;"Classification3Id": "00000000-0000-0000-0000-000000000000",<br/>
-&emsp;&emsp;"Classification3Code": null,<br/>
-&emsp;&emsp;"Classification4Id": null,<br/>
-&emsp;&emsp;"Classification4Code": null,<br/>
-&emsp;&emsp;"Custom0": null,<br/>
-&emsp;&emsp;"Custom1": null,<br/>
-&emsp;&emsp;"Custom2": null,<br/>
-&emsp;&emsp;"Custom3": null,<br/>
-&emsp;&emsp;"CustomInterface0": null,<br/>
-&emsp;&emsp;"CustomInterface1": null,<br/>
-&emsp;&emsp;"CustomInterface2": null,<br/>
-&emsp;&emsp;"CustomInterface3": null,<br/>
-&emsp;&emsp;"CustomInterface4": null,<br/>
-&emsp;&emsp;"CustomOperation0": null,<br/>
-&emsp;&emsp;"CustomOperation1": null,<br/>
-&emsp;&emsp;"CustomOperation2": null,<br/>
-&emsp;&emsp;"CustomOperation3": null,<br/>
-&emsp;&emsp;"CustomOperation4": null,<br/>
-&emsp;&emsp;"PermissionsType": null,<br/>
-&emsp;&emsp;"BillingActive": false,<br/>
-&emsp;&emsp;"BillingDueDays": 0,<br/>
-&emsp;&emsp;"BillingPeriodicity": null,<br/>
-&emsp;&emsp;"BillingPeriodicityValue": null,<br/>
-&emsp;&emsp;"BillingManual": false,<br/>
-&emsp;&emsp;"BillingCutTime": "",<br/>
-&emsp;&emsp;"BillingCutDay": null,<br/>
-&emsp;&emsp;"BillingCutMonth": null,<br/>
-&emsp;&emsp;"DocumentChargesFromBalance": null,<br/>
-&emsp;&emsp;"SeparateChargesDocument": false,<br/>
-&emsp;&emsp;"RecepientEmails": null,<br/>
-&emsp;&emsp;"BillingTaxPayerId": null,<br/>
-&emsp;&emsp;"BillingCompanyName": null,<br/>
-&emsp;&emsp;"BillingCompanyStreet1": null,<br/>
-&emsp;&emsp;"BillingCompanyStreet2": null,<br/>
-&emsp;&emsp;"BillingCompanyZipCode": null,<br/>
-&emsp;&emsp;"BillingCompanyCity": null,<br/>
-&emsp;&emsp;"BillingCompanyCountryId": "00000000-0000-0000-0000-000000000000",<br/>
-&emsp;&emsp;"BillingCompanyStateId": "00000000-0000-0000-0000-000000000000",<br/>
-&emsp;&emsp;"Fuels": null,<br/>
-&emsp;&emsp;"Sites": null,<br/>
-&emsp;&emsp;"Prices": null,<br/>
-&emsp;&emsp;"Modifiers": null,<br/>
-&emsp;&emsp;"Concepts": null,<br/>
-&emsp;&emsp;"Blocks": null,<br/>
-&emsp;&emsp;"OverLimits": null,<br/>
-&emsp;&emsp;"Programs": null<br/>
-&emsp;&emsp;}<br/>
-&emsp;]<br/>
-}<br/>
-
-Validation error message:
-
-In the case of a validation error, the error message will inform the field that caused it:
-
-{<br/>
-&emsp;"ResponseCode": "51007",<br/>
-&emsp;"ResponseMessage": "Invalid Contract Code",<br/>
-&emsp;"ResponseError": null<br/>
-}
-
-In the case of an authentication error, ATIONet will responde with a 52501 code:
-
-{<br/>
-&emsp;"ResponseCode": "52501",<br/>
-&emsp;"ResponseMessage": "User Not Allowed",<br/>
-&emsp;"ResponseError": ""<br/>
-}
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-gvcd"><span style="font-weight:bold"></span></th>
+    <th class="tg-gvcd"><span style="font-weight:bold">HttpStatusCode</span></th>
+    <th class="tg-gvcd"><span style="font-weight:bold">ATIONet Response</span></th>
+    <th class="tg-gvcd"><span style="font-weight:bold">Description</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-rjo2" rowspan="3">Response's</td>
+    <td class="tg-eygw">200</td>
+    <td class="tg-eygw">"ResponseCode": "00000",<br/>"ResponseMessage": "Ok",<br/>"ResponseError": null<br/></td>
+    <td class="tg-eygw">Operation success.</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">400</td>
+    <td class="tg-eygw">"ResponseCode": "51007",<br/>"ResponseMessage": "Invalid Contract Code",<br/>"ResponseError": null<br/></td>
+	<td class="tg-eygw">In the case of a validation error, the response message indicate the wrong field.</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">401</td>
+    <td class="tg-eygw">"ResponseCode": "52501",<br/>"ResponseMessage": "User Not Allowed",<br/>"ResponseError": null<br/></td>
+	<td class="tg-eygw">In the case of an authentication error</td>
+  </tr>
+</tbody>
+</table>
 
 
 
