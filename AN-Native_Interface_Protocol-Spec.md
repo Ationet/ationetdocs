@@ -23,6 +23,7 @@
 |1.7|19/01/2022|**Document Update** <br> - Add CompanyGroups movements download: Request/Response <br> - Add Merchant Charges Comissions Download: Request/Response <br> - Add Sub-Account/Contract Balance Download: Request/Response <br> - Update Transaction Download Response <br> - Update company movements download request parameters <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages <br> - Update Transaction Currency Response Fields <br> - Add Transaction product format response <br> - Add Transaction Product Taxes Format Response <br> - Add Transaction Modifiers Format Response <br> - Add Transaction Movement ERP Format Response <br> - Add Transaction Fee Format Response|
 |1.8|26/01/2022|**Document Update** <br> - Add Transaction custom fields download Request|
 |1.9|04/04/2022|**Document Update** <br> - Company inserts addition|
+|2.0|11/04/2022|**Document Update** <br> - Company inserts update|
 
 ## Contents
 
