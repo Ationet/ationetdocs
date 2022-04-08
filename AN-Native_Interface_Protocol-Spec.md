@@ -12917,8 +12917,8 @@ To edit a company there's no need to send the contract information. However, whe
 				<p align="left">No</p>
 			</td>
 			<td>
-				<p align="left">Programs Ids list.<br/>
-								Used for establishing which programs can be used with the contract.</p>
+				<p align="left"> Used for establishing which programs can be used with the contract.<br/>
+						 It's composed by Id and Code. Only one of the values is needed to identify the program. If both values are present, the Id field take the priority.<br/> "Programs": [<br/> {<br/>"Id": "06df1b02-4de2-40d3-ba2f-af03f622c73d",<br/>"Code": "PRG001"<br/> }]</p>
 			</td>
 		</tr>
     </tbody>
