@@ -11965,6 +11965,23 @@ To edit a company there's no need to send the contract information. However, whe
 		</tr>
 		<tr valign="top">
 			<td>
+				<p align="left">RackPricesListCode</p>
+			</td>
+			<td>
+				<p align="left">20</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Like IdRackPricesList, this value it's used to identify the RackPricesList. If IdRackPricesList and RackPricesListCode are present, IdRackPricesList take priority.</p>
+			</td>
+		</tr>
+	        <tr valign="top">
+			<td>
 				<p align="left">ValidatePrograms</p>
 			</td>
 			<td>
