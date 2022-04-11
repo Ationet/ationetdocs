@@ -108,7 +108,7 @@
 
 - [13 Examples](#13-Examples)
 	- [13.1 C# example](#131-C-example)
-	- [13.2 HTML Example (Method POST)](#132-html-example-method-post)
+	- [13.2 Example](#132-example)
 
 ## Overview
 
@@ -12946,7 +12946,7 @@ To edit a company there's no need to send the contract information. However, whe
 			</td>
 			<td>
 				<p align="left"> Used for establishing which programs can be used with the contract.<br/>
-						 It's composed by Id and Code. Only one of the values is needed to identify the program. If both values are present, the Id field take the priority.<br/> "Programs":[<br/>{<br/>"Id": "06df1b02-4de2-40d3-ba2f-af03f622c73d"<br/>},<br/>{<br/>"Code": "PRG001"<br/>}<br/>]<br/></p>
+						 It's composed by Id and Code. Only one of the values is needed to identify the program. If both values are present, the Id field take the priority.<br/> "Programs":[<br/>{<br/>"Id": "06df1b02-4de2-40d3-ba2f-af03f622c73d"<br/>}<br/> Or<br/>"Programs":[<br/>{<br/>"Code": "PRG001"<br/>}</p>
 			</td>
 		</tr>
     </tbody>
@@ -14187,7 +14187,7 @@ using (WebResponse webResponse = webRequest.GetResponse())
 	}
 }
 ```
-### 13.2 HTML Example (Method POST)
+### Example
 
 ```
 {
