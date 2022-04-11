@@ -12825,7 +12825,8 @@ To edit a company there's no need to send the contract information. However, whe
 			</td>
 			<td>
 				<p align="left">Sites list where the contract sub accounts can operate.<br/>
-				If no list is sent, the sub accounts will be allowed to operate in all the sites.</p>
+				If no list is sent, the sub accounts will be allowed to operate in all the sites.
+<br/>"Sites": [<br/>{<br/>"SiteId":"16431f38-c140-41be-8235-b6fdfed5739d",<br/>"Code":"ABC",<br/>"Fuels":[<br/>{<br/>"FuelMasterId": "389dee96-c6af-4161-8e3a-fa7835994102",<br/>"FuelMasterCode": "002",<br/>"VolumeLimit": 0.00,<br/>"MoneyLimit": 0.00<br/>}<br/>]<br/>}<br/>]<br/></p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -12845,7 +12846,8 @@ To edit a company there's no need to send the contract information. However, whe
 			<td>
 				<p align="left">Price list that will be applied to the contract.<br/>
 								If no list is sent, the contract will operate with the controller prices.
-								It is possible to set prices for specific sites and dates.</p>
+								It is possible to set prices for specific sites and dates.
+<br/>"Prices": [<br/>{<br/>"FuelMasterId": "577a92fa-cbb3-43d1-bb31-d54d8ff4a74a",<br/>"FuelMasterCode":"BCA",<br/>"Value": 5,<br/>"SiteId":"16431f38-c140-41be-8235-b6fdfed5739d",<br/>"SiteCode":"ABC",<br/>"DateFrom":"2022/04/07",<br/>"DateTo":"2023/04/01",<br/>"TimeFrom":"00:00",<br/>"TimeTo":"23:59"<br/>}<br/>]<br/></p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -12863,7 +12865,8 @@ To edit a company there's no need to send the contract information. However, whe
 				<p align="left">No</p>
 			</td>
 			<td>
-				<p align="left">Modifiers list that will be applied to the contract (discounts/markups)</p>
+				<p align="left">Modifiers list that will be applied to the contract (discounts/markups)<br/>
+"Modifiers": [<br/>{<br/>"Class": 0,<br/>"Type":1,<br/>"Value":0.15,<br/>"FuelMasterId": "577a92fa-cbb3-43d1-bb31-d54d8ff4a74a",<br/>"SiteId": "16431f38-c140-41be-8235-b6fdfed5739d",<br/>"SiteCode": "ABC",<br/>"DateFrom":"2022/04/07",<br/>"TimeFrom":"2023/04/01",<br/>"DateTo":"00:00",<br/>"TimeTo":"23:59"<br/>}<br/>]<br/></p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -12881,7 +12884,8 @@ To edit a company there's no need to send the contract information. However, whe
 				<p align="left">No</p>
 			</td>
 			<td>
-				<p align="left">Concepts list. Used to links concepts with the contract</p>
+				<p align="left">Concepts list. Used to links concepts with the contract<br/>
+"Concepts": [<br/>{<br/>"ConceptId":"ca0adaf6-3325-4886-ae2d-eb9d187e6c7b",<br/>"Quantity": 12,<br/>"BillingEvent":0,<br/>"BillingEventPeriodicity":1,<br/>"BillingEventDuration":2,<br/>"BillingEventCutTime":2,<br/>"BillingEventCutDay":7,<br/>"BillingEventCutMonth":1,<br/>"Application":0,<br/>"ApplicationThreshold":0,<br/>"ApplicationCeiling":0,<br/>"IdentificationType":0,<br/>"Enabled":true,<br/>"RollUp":true<br/>}<br/>]<br/></p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -12900,7 +12904,8 @@ To edit a company there's no need to send the contract information. However, whe
 			</td>
 			<td>
 				<p align="left">Blocks list.<br/>
-								If no list is sent, no blocks will be applied to the contract. Contract blocks can be applied continuously or intermittently by dates.</p>
+								If no list is sent, no blocks will be applied to the contract. Contract blocks can be applied continuously or intermittently by dates.<br/>
+"Blocks": [<br/>{<br/>"Type": 0,<br/>"DateFrom": "2022/04/07",<br/>"DateTo": "2023/04/01",<br/>"DayFrom": 7,<br/>"DayTo": 1<br/>}<br/></p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -12919,7 +12924,9 @@ To edit a company there's no need to send the contract information. However, whe
 			</td>
 			<td>
 				<p align="left">Overlimits list.<br/>
-								Used for establishing overlimits. If not list is sent, no overlimits will be applied.</p>
+								Used for establishing overlimits. If not list is sent, no overlimits will be applied.<br/>
+				"OverLimits": [<br/>{<br/>"Type": 1,<br/>"Value": 0.00,<br/>"DateFrom": "2022/04/07",<br/>"DateTo": "2023/04/07"<br/>}<br/>
+				</p>
 			</td>
 		</tr>
 		<tr valign="top">
