@@ -108,6 +108,7 @@
 
 - [13 Examples](#13-Examples)
 	- [13.1 C# example](#131-C-example)
+	- [13.2 HTML Example (Method POST)](#132-html-example-method-post)
 
 ## Overview
 
@@ -14186,3 +14187,175 @@ using (WebResponse webResponse = webRequest.GetResponse())
 	}
 }
 ```
+### 13.2 HTML Example (Method POST)
+
+```
+{
+    "TaxPayerId": "0000040",
+    "Type": 0,
+    "Active": true,
+    "DesactivationType": null,
+    "Code": "YourCode",
+    "Name": "Name",
+    "IndustryId": "08e9a648-606d-413d-be33-81a5ff380678",
+    "Plan": null,
+    "Street1": "Av. Street",
+    "Street2": "Villa Street",
+    "ZipCode": null,
+    "City": "Cochabamba",
+    "CountryId": "876cc6d9-485f-46f8-8bae-d7d5fdb52077",
+    "StateId": "aa46446a-3796-43fe-af44-76071c913b3d",
+    "Street1Delivery": "Av. Street",
+    "Street2Delivery": "Villa Street",
+    "ZipCodeDelivery": null,
+    "CityDelivery": "Cochabamba",
+    "StateDeliveryId": "aa46446a-3796-43fe-af44-76071c913b3d",
+    "CountryDeliveryId": "876cc6d9-485f-46f8-8bae-d7d5fdb52077",
+    "TaxPayerCategoryId": null,
+    "ContactName": "ConcatName",
+    "ContactEmail": "corporatemail@company.com",
+    "Phone1": "11111111111",
+    "Phone2": null,
+    "Custom0": null,
+    "Custom1": null,
+    "Custom2": null,
+    "Custom3": null,
+    "CompanyGroupID": null,
+    "PermissionsType": null,
+    "Contracts": [
+        {
+            "Active": true,
+            "ReactivationAmount": null,
+            "DesactivationType": null,
+            "Code": " ContractCode",
+            "Description": "ContractDescription",
+            "StartDate": "2022/04/07",
+            "Duration": 99,
+            "Periodicity": 3,
+            "CurrentAccountMode": 1,
+            "CurrencyID": null,
+            "CurrencyCode": "USD",
+            "Mode": 0,
+            "CreditLimit": 100000,
+            "BalanceMode": 2,
+            "ValidateSites": false,
+            "ValidateFuels": false,
+            "ValidatePrograms": false,
+            "Type": 0,
+            "Subsidized": false,
+            "Classification1Id": null,
+            "Classification1Code": null,
+            "Classification2Id": null,
+            "Classification2Code": null,
+            "Classification3Id": null,
+            "Classification3Code": null,
+            "Classification4Id": null,
+            "Classification4Code": null,
+            "Custom0": null,
+            "Custom1": null,
+            "Custom2": null,
+            "Custom3": null,
+            "CustomInterface0": null,
+            "CustomInterface1": null,
+            "CustomInterface2": null,
+            "CustomInterface3": null,
+            "CustomInterface4": null,
+            "CustomOperation0": null,
+            "CustomOperation1": null,
+            "CustomOperation2": null,
+            "CustomOperation3": null,
+            "CustomOperation4": null,
+            "PermissionsType": null,
+            "BillingActive": false,
+            "BillingDueDays": null,
+            "BillingPeriodicity": null,
+            "BillingPeriodicityValue": null,
+            "BillingManual": null,
+            "BillingCutTime": null,
+            "BillingCutDay": null,
+            "BillingCutMonth": null,
+            "DocumentChargesFromBalance": null,
+            "SeparateChargesDocument": null,
+            "RecepientEmails": null,
+            "BillingTaxPayerId": null,
+            "BillingCompanyName": null,
+            "BillingCompanyStreet1": null,
+            "BillingCompanyStreet2": null,
+            "BillingCompanyZipCode": null,
+            "BillingCompanyCity": null,
+            "BillingCompanyCountryId": null,
+            "BillingCompanyStateId": null,
+            "IdRackPricesList": null,
+            "RackPricesListCode": null,
+            "Fuels": [
+                {
+                    "FuelMasterId": "389dee96-c6af-4161-8e3a-fa7835994102",
+                    "FuelMasterCode": "002",
+                    "VolumeLimit": 0.00,
+                    "MoneyLimit": 0.00
+                }
+            ],
+            "Concepts": [],
+            "Sites": [
+                {
+                    "SiteId":"16431f38-c140-41be-8235-b6fdfed5739d",
+                    "Code":"ABC",
+                    "Fuels":[
+                        {
+                            "FuelMasterId": "389dee96-c6af-4161-8e3a-fa7835994102",
+                            "FuelMasterCode": "002",
+                            "VolumeLimit": 0.00,
+                            "MoneyLimit": 0.00
+                        }
+                    ]
+                }
+            ],
+            "Prices": [
+                {
+                    "FuelMasterId": "577a92fa-cbb3-43d1-bb31-d54d8ff4a74a",
+                    "FuelMasterCode":"002",
+                    "Value": 5,
+                    "SiteId":"16431f38-c140-41be-8235-b6fdfed5739d",
+                    "SiteCode":"ABC",
+                    "DateFrom":"2022/04/07",
+                    "DateTo":"2023/04/01",
+                    "TimeFrom":"00:00",
+                    "TimeTo":"23:59"
+                }
+            ],
+            "Modifiers": [
+                {
+                    "Class": 0,
+                    "Type":1,
+                    "Value":0.15,
+                    "FuelMasterId": "577a92fa-cbb3-43d1-bb31-d54d8ff4a74a",
+                    "SiteId": "16431f38-c140-41be-8235-b6fdfed5739d",
+                    "SiteCode": "ABC",
+                    "DateFrom":"2022/04/07",
+                    "TimeFrom":"2023/04/01",
+                    "DateTo":"00:00",
+                    "TimeTo":"23:59"
+                }
+            ],
+            "Blocks": [],
+            "OverLimits": [],
+            "Programs": [
+                {
+                    "Id": "8E5E3376-50BC-462C-BC21-666596220663",
+                    "Code": "S2G1014"
+                },
+                {
+                    "Code": "S2G1014"
+                },
+                {
+                    "Id": "48A77FE4-FE48-4D13-BA4D-ACD3E38214D2"
+                }
+            ]
+        }
+    ],
+    "ActionCode": "925",
+    "SubscriberCode": "S2G",
+    "SystemModel": "AtionetStandAloneTerminal"
+}
+```
+
