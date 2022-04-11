@@ -14187,7 +14187,7 @@ using (WebResponse webResponse = webRequest.GetResponse())
 	}
 }
 ```
-### Example
+### 13.2 Example
 
 ```
 {
