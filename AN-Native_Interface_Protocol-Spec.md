@@ -23,6 +23,7 @@
 |1.7|19/01/2022|**Document Update** <br> - Add CompanyGroups movements download: Request/Response <br> - Add Merchant Charges Comissions Download: Request/Response <br> - Add Sub-Account/Contract Balance Download: Request/Response <br> - Update Transaction Download Response <br> - Update company movements download request parameters <br> - Update Current Account Action Codes <br> - Update Transaction Action Codes <br> - Update Interface API Messages <br> - Update Transaction Currency Response Fields <br> - Add Transaction product format response <br> - Add Transaction Product Taxes Format Response <br> - Add Transaction Modifiers Format Response <br> - Add Transaction Movement ERP Format Response <br> - Add Transaction Fee Format Response|
 |1.8|26/01/2022|**Document Update** <br> - Add Transaction custom fields download Request|
 |1.9|04/04/2022|**Document Update** <br> - Company inserts addition|
+|2.0|11/04/2022|**Document Update** <br> - Company inserts update|
 
 ## Contents
 
@@ -91,20 +92,23 @@
 	- [11.7 Inventories Download (POST) – Body Section Format *Response*](#117-Inventories-Download-POST--Body-Section-Format-Response)
 
 - [12 Company Inserts](#12-Company-Inserts)
-	- [12.1 Native Api Request](#121-Native-Api-Request)
-	- [12.2 Base Interface Request](#122-Base-Interface-Request)
-	- [12.3 Interface Company Request](#123-Interface-Company-Request)
-	- [12.4 Interface Company Contract](#124-Interface-Company-Contract)
-	- [12.5 Interface Fuel Contract](#125-Interface-Fuel-Contract)
-	- [12.6 Interface Site Contract](#126-Interface-Site-Contract)
-	- [12.7 Interface Price Contract](#127-Interface-Price-Contract)
-	- [12.8 Interface Modifier Contract](#128-Interface-Modifier-Contract)
-	- [12.9 Interface Concept Contract](#129-Interface-Concept-Contract)
-	- [12.10 Interface Block Contract](#1210-Interface-Block-Contract)
-	- [12.11 Interface Overlimit Contract](#1211-Interface-Overlimit-Contract)
+	- [12.1 Native Api Request](#121-nativeapirequest)
+	- [12.2 Base Interface Request](#122-baseinterfacerequest)
+	- [12.3 Interface Company Request](#123-interfacecompanyrequest)
+	- [12.4 Interface Company Contract](#124-interfacecompanycontract)
+	- [12.5 Interface Fuel Contract](#125-interfacefuelcontract)
+	- [12.6 Interface Site Contract](#126-interfacesitecontract)
+	- [12.7 Interface Price Contract](#127-interfacepricecontract)
+	- [12.8 Interface Modifier Contract](#128-interfacemodifiercontract)
+	- [12.9 Interface Concept Contract](#129-interfaceconceptcontract)
+	- [12.10 Interface Block Contract](#1210-interfaceblockcontract)
+	- [12.11 Interface Overlimit Contract](#1211-interfaceoverlimitcontract)
+	- [12.12 Interface Program Contract](#1212-InterfaceProgramContract)
+	- [12.13 Response Messages](#1213-response-messages)
 
 - [13 Examples](#13-Examples)
 	- [13.1 C# example](#131-C-example)
+	- [13.2 Example](#132-example)
 
 ## Overview
 
@@ -11964,6 +11968,23 @@ To edit a company there's no need to send the contract information. However, whe
 		</tr>
 		<tr valign="top">
 			<td>
+				<p align="left">RackPricesListCode</p>
+			</td>
+			<td>
+				<p align="left">20</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Like IdRackPricesList, this value it's used to identify the RackPricesList. If IdRackPricesList and RackPricesListCode are present, IdRackPricesList take priority.</p>
+			</td>
+		</tr>
+	        <tr valign="top">
+			<td>
 				<p align="left">ValidatePrograms</p>
 			</td>
 			<td>
@@ -12785,7 +12806,8 @@ To edit a company there's no need to send the contract information. However, whe
 			</td>
 			<td>
 				<p align="left">Fuels list available to the contract.<br/>
-				If no list is sent, all the fuels will be available for the contract.</p>
+				If no list is sent, all the fuels will be available for the contract.<br/>
+				"Fuels": [<br/>{<br/>"FuelMasterID": "389dee96-c6af-4161-8e3a-fa7835994102",<br/>"FuelMasterCode": "002",<br/>"VolumeLimit": 0.00,				  <br/>"MoneyLimit": 0.00<br/>}</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -12804,7 +12826,8 @@ To edit a company there's no need to send the contract information. However, whe
 			</td>
 			<td>
 				<p align="left">Sites list where the contract sub accounts can operate.<br/>
-				If no list is sent, the sub accounts will be allowed to operate in all the sites.</p>
+				If no list is sent, the sub accounts will be allowed to operate in all the sites.
+<br/>"Sites": [<br/>{<br/>"SiteId":"16431f38-c140-41be-8235-b6fdfed5739d",<br/>"Code":"ABC",<br/>"Fuels":[<br/>{<br/>"FuelMasterId": "389dee96-c6af-4161-8e3a-fa7835994102",<br/>"FuelMasterCode": "002",<br/>"VolumeLimit": 0.00,<br/>"MoneyLimit": 0.00<br/>}<br/>]<br/>}<br/>]<br/></p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -12824,7 +12847,8 @@ To edit a company there's no need to send the contract information. However, whe
 			<td>
 				<p align="left">Price list that will be applied to the contract.<br/>
 								If no list is sent, the contract will operate with the controller prices.
-								It is possible to set prices for specific sites and dates.</p>
+								It is possible to set prices for specific sites and dates.
+<br/>"Prices": [<br/>{<br/>"FuelMasterId": "577a92fa-cbb3-43d1-bb31-d54d8ff4a74a",<br/>"FuelMasterCode":"BCA",<br/>"Value": 5,<br/>"SiteId":"16431f38-c140-41be-8235-b6fdfed5739d",<br/>"SiteCode":"ABC",<br/>"DateFrom":"2022/04/07",<br/>"DateTo":"2023/04/01",<br/>"TimeFrom":"00:00",<br/>"TimeTo":"23:59"<br/>}<br/>]<br/></p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -12842,7 +12866,8 @@ To edit a company there's no need to send the contract information. However, whe
 				<p align="left">No</p>
 			</td>
 			<td>
-				<p align="left">Modifiers list that will be applied to the contract (discounts/markups)</p>
+				<p align="left">Modifiers list that will be applied to the contract (discounts/markups)<br/>
+"Modifiers": [<br/>{<br/>"Class": 0,<br/>"Type":1,<br/>"Value":0.15,<br/>"FuelMasterId": "577a92fa-cbb3-43d1-bb31-d54d8ff4a74a",<br/>"SiteId": "16431f38-c140-41be-8235-b6fdfed5739d",<br/>"SiteCode": "ABC",<br/>"DateFrom":"2022/04/07",<br/>"TimeFrom":"2023/04/01",<br/>"DateTo":"00:00",<br/>"TimeTo":"23:59"<br/>}<br/>]<br/></p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -12860,7 +12885,8 @@ To edit a company there's no need to send the contract information. However, whe
 				<p align="left">No</p>
 			</td>
 			<td>
-				<p align="left">Concepts list. Used to links concepts with the contract</p>
+				<p align="left">Concepts list. Used to links concepts with the contract<br/>
+"Concepts": [<br/>{<br/>"ConceptId":"ca0adaf6-3325-4886-ae2d-eb9d187e6c7b",<br/>"Quantity": 12,<br/>"BillingEvent":0,<br/>"BillingEventPeriodicity":1,<br/>"BillingEventDuration":2,<br/>"BillingEventCutTime":2,<br/>"BillingEventCutDay":7,<br/>"BillingEventCutMonth":1,<br/>"Application":0,<br/>"ApplicationThreshold":0,<br/>"ApplicationCeiling":0,<br/>"IdentificationType":0,<br/>"Enabled":true,<br/>"RollUp":true<br/>}<br/>]<br/></p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -12879,7 +12905,8 @@ To edit a company there's no need to send the contract information. However, whe
 			</td>
 			<td>
 				<p align="left">Blocks list.<br/>
-								If no list is sent, no blocks will be applied to the contract. Contract blocks can be applied continuously or intermittently by dates.</p>
+								If no list is sent, no blocks will be applied to the contract. Contract blocks can be applied continuously or intermittently by dates.<br/>
+"Blocks": [<br/>{<br/>"Type": 0,<br/>"DateFrom": "2022/04/07",<br/>"DateTo": "2023/04/01",<br/>"DayFrom": 7,<br/>"DayTo": 1<br/>}<br/></p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -12898,7 +12925,9 @@ To edit a company there's no need to send the contract information. However, whe
 			</td>
 			<td>
 				<p align="left">Overlimits list.<br/>
-								Used for establishing overlimits. If not list is sent, no overlimits will be applied.</p>
+								Used for establishing overlimits. If not list is sent, no overlimits will be applied.<br/>
+				"OverLimits": [<br/>{<br/>"Type": 1,<br/>"Value": 0.00,<br/>"DateFrom": "2022/04/07",<br/>"DateTo": "2023/04/07"<br/>}<br/>
+				</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -12916,8 +12945,8 @@ To edit a company there's no need to send the contract information. However, whe
 				<p align="left">No</p>
 			</td>
 			<td>
-				<p align="left">Programs Ids list.<br/>
-								Used for establishing which programs can be used with the contract.</p>
+				<p align="left"> Used for establishing which programs can be used with the contract.<br/>
+						 It's composed by Id and Code. Only one of the values is needed to identify the program. If both values are present, the Id field take the priority.<br/> "Programs":[<br/>{<br/>"Id": "06df1b02-4de2-40d3-ba2f-af03f622c73d"<br/>}<br/> Or<br/>"Programs":[<br/>{<br/>"Code": "PRG001"<br/>}</p>
 			</td>
 		</tr>
     </tbody>
@@ -14006,227 +14035,96 @@ To edit a company there's no need to send the contract information. However, whe
     </tbody>
 </table>
 
-### 12.12 InterfaceOverLimitContract
+### 12.12 InterfaceProgramContract
 
-Basic company and company contract creation/update Json example:<br/>
-{<br/> 
-&emsp;"ActionCode":"925",<br/> 
-&emsp;"SubscriberCode":"46Z",<br/> 
-&emsp;"SystemModel":"Sistema",<br/> 
-&emsp;"SystemVerion":"vP",<br/>
-&emsp;"TaxPayerId":"544323356-Y",<br/> 
-&emsp;"Active":true,<br/> 
-&emsp;"DesactivationType":null,<br/> 
-&emsp;"Code":"37268",<br/> 
-&emsp;"Name":"Company Name",<br/> 
-&emsp;"IndustryId":"705BB43A-EACB-459D-87EA-88297C7C04C5",<br/> 
-&emsp;"Plan":null,<br/> 
-&emsp;"Street1":"calle 1",<br/> 
-&emsp;"Street2":null,<br/>
-&emsp;"ZipCode":"1426E",<br/> 
-&emsp;"City":"Panama city",<br/>
-&emsp;"CountryId":"2BF0C7A2-0971-4616-B453-F8260F161778",<br/> 
-&emsp;"StateId":"A2546B86-0971-4689-BB0A-025A259ABEEA",<br/> 
-&emsp;"TaxPayerCategoryId":null,<br/> 
-&emsp;"ContactName":"Company Contact",<br/> 
-&emsp;"ContactEmail":"corporatemail@company.com",<br/> 
-&emsp;"Phone1":"47367-28371",<br/> 
-&emsp;"Phone2":null,<br/> 
-&emsp;"Custom0":"7078010206393333",<br/> 
-&emsp;"Custom1":"10008319",<br/> 
-&emsp;"Custom2":"30",<br/> 
-&emsp;"Custom3":null,<br/> 
-&emsp;"CompanyGroupId":null,<br/> 
-&emsp;"Contracts":[<br/> 
-&emsp;&emsp;{<br/> 
-&emsp;&emsp;"Id":null,<br/> 
-&emsp;&emsp;"Active":true,<br/> 
-&emsp;&emsp;"ReactivationAmount":1000.00,<br/> 
-&emsp;&emsp;"DesactivationType":null,<br/> 
-&emsp;&emsp;"Code":"CODE21",<br/> 
-&emsp;&emsp;"Description":"Company contract 21",<br/> 
-&emsp;&emsp;"StartDate":"2020/09/05",<br/>
-&emsp;&emsp;"Duration":10,<br/> 
-&emsp;&emsp;"Periodicity":3,<br/>
-&emsp;&emsp;"CurrentAccountMode":1,<br/> 
-&emsp;&emsp;"CurrencyId":null,<br/> 
-&emsp;&emsp;"CurrenyCode":"USD",<br/> 
-&emsp;&emsp;"Mode":0,<br/> 
-&emsp;&emsp;"BalanceMode":2,<br/> 
-&emsp;&emsp;"ValidateSites":false,<br/> 
-&emsp;&emsp;"ValidateFuels":false,<br/> 
-&emsp;&emsp;"Plate":null,<br/> 
-&emsp;&emsp;"CostCenter":null,<br/> 
-&emsp;&emsp;"Site":null,<br/> 
-&emsp;&emsp;"Voucher":null,<br/> 
-&emsp;&emsp;"Miscellaneous":null,<br/> 
-&emsp;&emsp;"BillingActive":true,<br/> 
-&emsp;&emsp;"BillingDueDays":30,<br/> 
-&emsp;&emsp;"BillingPeriodicity":2,<br/> 
-&emsp;&emsp;"BillingPeriodicityValue":1,<br/> 
-&emsp;&emsp;"BillingManual":false,<br/> 
-&emsp;&emsp;"BillingCutTime":23:59,<br/> 
-&emsp;&emsp;"BillingCutDay":31,<br/> 
-&emsp;&emsp;"BillingCutMonth":null,<br/> 
-&emsp;&emsp;"DocumentChargesFromBalance":null,<br/> 
-&emsp;&emsp;"SeparateChargesDocument":null,<br/> 
-&emsp;&emsp;"RecepientEmails":null,<br/> 
-&emsp;&emsp;"BillingTaxPayerId":null,<br/> 
-&emsp;&emsp;"BillingCompanyName":null,<br/> 
-&emsp;&emsp;"BillingCompanyStreet1":null,<br/> 
-&emsp;&emsp;"BillingCompanyStreet2":null,<br/> 
-&emsp;&emsp;"BillingCompanyZipCode":null,<br/> 
-&emsp;&emsp;"BillingCompanyCity":null,<br/> 
-&emsp;&emsp;"BillingCompanyCountryId":null,<br/> 
-&emsp;&emsp;"BillingCompanyStateId":null,<br/> 
-&emsp;&emsp;"Fuels":[],<br/> 
-&emsp;&emsp;"Sites":[],<br/> 
-&emsp;&emsp;"Prices":[],<br/> 
-&emsp;&emsp;"Modifiers":[],<br/>
-&emsp;&emsp;"Concepts":[],<br/>  
-&emsp;&emsp;"Blocks":[],<br/> 
-&emsp;&emsp;"OverLimits":[],<br/>
-&emsp;&emsp;"Programs":[]<br/> 
-&emsp;&emsp;}<br/> 
-&emsp;]<br/> 
-}
+<table>
+    <thead>
+      <tr valign="top">
+         <th align="left">
+            Field Name
+         </th>
+         <th align="left">
+            Size
+         </th>
+         <th align="left">
+            Type
+         </th>
+         <th align="left">
+            Required
+         </th>
+         <th align="left">
+            Descriptions/Field Value(s)
+         </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr valign="top">
+         <td>
+            <p align="left">Id</p>
+         </td>
+         <td>
+            <p align="left">36</p>
+         </td>
+         <td>
+            <p align="left">Guid</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Unique identifier of the program. If this value is not sent, the identification of the program will be through the code</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">Code</p>
+         </td>
+         <td>
+            <p align="left">20</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Code identification of the program. If this value is not sent, the identification of the program will be through by the Id</p>
+         </td>
+      </tr>
+    </tbody>
+</table>
 
 ### 12.13 Response messages
 
-When the operation is succesful, ATIONet response will be the serialized company and its contracts:
-
-{<br/>
-&emsp;"Id": "133b5bb7-84f4-4429-a918-0c73def46617",<br/>
-&emsp;"TaxPayerId": "123458",<br/>
-&emsp;"Type": 0,<br/>
-&emsp;"Active": true,<br/>
-&emsp;"DesactivationType": null,<br/>
-&emsp;"Code": "HKTest238",<br/>
-&emsp;"Name": "SyncAgent PersonaNormal de Credito HK8",<br/>
-&emsp;"IndustryId": "b5f7a09f-dcbc-4321-9fdb-fe063698a1a3",<br/>
-&emsp;"Plan": null,<br/>
-&emsp;"Street1": "Av. Pisiga",<br/>
-&emsp;"Street2": "Villa Pagador",<br/>
-&emsp;"ZipCode": null,<br/>
-&emsp;"City": "Cochabamba",<br/>
-&emsp;"CountryId": "b672078c-53c5-4889-8d65-ef1c652a8f96",<br/>
-&emsp;"CountryDescription": "Bolivia",<br/>
-&emsp;"StateId": "20f4271c-fb35-424e-9369-21b6ed3d846a",<br/>
-&emsp;"StateDescription": "Cochabamba",<br/>
-&emsp;"Street1Delivery": null,<br/>
-&emsp;"Street2Delivery": null,<br/>
-&emsp;"ZipCodeDelivery": null,<br/>
-&emsp;"CityDelivery": null,<br/>
-&emsp;"StateDeliveryDescription": null,<br/>
-&emsp;"StateDeliveryId": null,<br/>
-&emsp;"CountryDeliveryId": null,<br/>
-&emsp;"CountryDeliveryDescription": null,<br/>
-&emsp;"TaxPayerCategoryId": null,<br/>
-&emsp;"TaxpayerCategoryDescription": null,<br/>
-&emsp;"ContactName": "SyncAgent PersonaNormal de Credito",<br/>
-&emsp;"ContactEmail": "dgeisser@ationet.com",<br/>
-&emsp;"Phone1": "59176422846",<br/>
-&emsp;"Phone2": null,<br/>
-&emsp;"Custom0": null,<br/>
-&emsp;"Custom1": null,<br/>
-&emsp;"Custom2": null,<br/>
-&emsp;"Custom3": null,<br/>
-&emsp;"CompanyGroupID": null,<br/>
-&emsp;"PermissionsType": null,<br/>
-&emsp;"Contracts": [<br/>
-&emsp;{<br/>
-&emsp;&emsp;"Id": "46ea44d9-86c7-4806-97e3-d8265e0adb10",<br/>
-&emsp;&emsp;"Active": true,<br/>
-&emsp;&emsp;"ReactivationAmount": null,<br/>
-&emsp;&emsp;"DesactivationType": null,<br/>
-&emsp;&emsp;"Code": " HkTest348",<br/>
-&emsp;&emsp;"Description": "SyncAgent PersonaNormal de Credito HK18",<br/>
-&emsp;&emsp;"StartDate": "04/04/2022 0:00:00",<br/>
-&emsp;&emsp;"Duration": 99,<br/>
-&emsp;&emsp;"Periodicity": 3,<br/>
-&emsp;&emsp;"CurrentAccountMode": 73,<br/>
-&emsp;&emsp;"CurrencyID": "00000000-0000-0000-0000-000000000000",<br/>
-&emsp;&emsp;"CurrencyCode": null,<br/>
-&emsp;&emsp;"Mode": 0,<br/>
-&emsp;&emsp;"CreditLimit": null,<br/>
-&emsp;&emsp;"BalanceMode": 2,<br/>
-&emsp;&emsp;"ValidateSites": false,<br/>
-&emsp;&emsp;"ValidateFuels": false,<br/>
-&emsp;&emsp;"IdRackPricesList": null,<br/>
-&emsp;&emsp;"ValidatePrograms": false,<br/>
-&emsp;&emsp;"Type": 0,<br/>
-&emsp;&emsp;"Subsidized": false,<br/>
-&emsp;&emsp;"Classification1Id": "00000000-0000-0000-0000-000000000000",<br/>
-&emsp;&emsp;"Classification1Code": null,<br/>
-&emsp;&emsp;"Classification2Id": "00000000-0000-0000-0000-000000000000",<br/>
-&emsp;&emsp;"Classification2Code": null,<br/>
-&emsp;&emsp;"Classification3Id": "00000000-0000-0000-0000-000000000000",<br/>
-&emsp;&emsp;"Classification3Code": null,<br/>
-&emsp;&emsp;"Classification4Id": null,<br/>
-&emsp;&emsp;"Classification4Code": null,<br/>
-&emsp;&emsp;"Custom0": null,<br/>
-&emsp;&emsp;"Custom1": null,<br/>
-&emsp;&emsp;"Custom2": null,<br/>
-&emsp;&emsp;"Custom3": null,<br/>
-&emsp;&emsp;"CustomInterface0": null,<br/>
-&emsp;&emsp;"CustomInterface1": null,<br/>
-&emsp;&emsp;"CustomInterface2": null,<br/>
-&emsp;&emsp;"CustomInterface3": null,<br/>
-&emsp;&emsp;"CustomInterface4": null,<br/>
-&emsp;&emsp;"CustomOperation0": null,<br/>
-&emsp;&emsp;"CustomOperation1": null,<br/>
-&emsp;&emsp;"CustomOperation2": null,<br/>
-&emsp;&emsp;"CustomOperation3": null,<br/>
-&emsp;&emsp;"CustomOperation4": null,<br/>
-&emsp;&emsp;"PermissionsType": null,<br/>
-&emsp;&emsp;"BillingActive": false,<br/>
-&emsp;&emsp;"BillingDueDays": 0,<br/>
-&emsp;&emsp;"BillingPeriodicity": null,<br/>
-&emsp;&emsp;"BillingPeriodicityValue": null,<br/>
-&emsp;&emsp;"BillingManual": false,<br/>
-&emsp;&emsp;"BillingCutTime": "",<br/>
-&emsp;&emsp;"BillingCutDay": null,<br/>
-&emsp;&emsp;"BillingCutMonth": null,<br/>
-&emsp;&emsp;"DocumentChargesFromBalance": null,<br/>
-&emsp;&emsp;"SeparateChargesDocument": false,<br/>
-&emsp;&emsp;"RecepientEmails": null,<br/>
-&emsp;&emsp;"BillingTaxPayerId": null,<br/>
-&emsp;&emsp;"BillingCompanyName": null,<br/>
-&emsp;&emsp;"BillingCompanyStreet1": null,<br/>
-&emsp;&emsp;"BillingCompanyStreet2": null,<br/>
-&emsp;&emsp;"BillingCompanyZipCode": null,<br/>
-&emsp;&emsp;"BillingCompanyCity": null,<br/>
-&emsp;&emsp;"BillingCompanyCountryId": "00000000-0000-0000-0000-000000000000",<br/>
-&emsp;&emsp;"BillingCompanyStateId": "00000000-0000-0000-0000-000000000000",<br/>
-&emsp;&emsp;"Fuels": null,<br/>
-&emsp;&emsp;"Sites": null,<br/>
-&emsp;&emsp;"Prices": null,<br/>
-&emsp;&emsp;"Modifiers": null,<br/>
-&emsp;&emsp;"Concepts": null,<br/>
-&emsp;&emsp;"Blocks": null,<br/>
-&emsp;&emsp;"OverLimits": null,<br/>
-&emsp;&emsp;"Programs": null<br/>
-&emsp;&emsp;}<br/>
-&emsp;]<br/>
-}<br/>
-
-Validation error message:
-
-In the case of a validation error, the error message will inform the field that caused it:
-
-{<br/>
-&emsp;"ResponseCode": "51007",<br/>
-&emsp;"ResponseMessage": "Invalid Contract Code",<br/>
-&emsp;"ResponseError": null<br/>
-}
-
-In the case of an authentication error, ATIONet will responde with a 52501 code:
-
-{<br/>
-&emsp;"ResponseCode": "52501",<br/>
-&emsp;"ResponseMessage": "User Not Allowed",<br/>
-&emsp;"ResponseError": ""<br/>
-}
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-gvcd"><span style="font-weight:bold"></span></th>
+    <th class="tg-gvcd"><span style="font-weight:bold">HttpStatusCode</span></th>
+    <th class="tg-gvcd"><span style="font-weight:bold">ATIONet Response</span></th>
+    <th class="tg-gvcd"><span style="font-weight:bold">Description</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-rjo2" rowspan="3">Response's</td>
+    <td class="tg-eygw">200</td>
+    <td class="tg-eygw">"ResponseCode": "00000",<br/>"ResponseMessage": "Ok",<br/>"ResponseError": null<br/></td>
+    <td class="tg-eygw">Operation success.</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">400</td>
+    <td class="tg-eygw">"ResponseCode": "51007",<br/>"ResponseMessage": "Invalid Contract Code",<br/>"ResponseError": null<br/></td>
+	<td class="tg-eygw">In the case of a validation error, the response message indicate the wrong field.</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">401</td>
+    <td class="tg-eygw">"ResponseCode": "52501",<br/>"ResponseMessage": "User Not Allowed",<br/>"ResponseError": null<br/></td>
+	<td class="tg-eygw">In the case of an authentication error</td>
+  </tr>
+</tbody>
+</table>
 
 
 
@@ -14245,7 +14143,7 @@ using Newtonsoft.Json;
 
 ```C#
 // Create Json object
-object requestObject = new { ActionCode = "941", SubscriberCode = "{YourSubscriberCode}", Identifier = "{YourIdentifier}" };
+object requestObject = new { ActionCode = "925", SubscriberCode = "{YourSubscriberCode}", Identifier = "{YourIdentifier}" };
 
 // Serialize Json object
 string request = JsonConvert.SerializeObject(requestObject);
@@ -14289,3 +14187,175 @@ using (WebResponse webResponse = webRequest.GetResponse())
 	}
 }
 ```
+### 13.2 Example
+
+```
+{
+    "TaxPayerId": "0000040",
+    "Type": 0,
+    "Active": true,
+    "DesactivationType": null,
+    "Code": "YourCode",
+    "Name": "Name",
+    "IndustryId": "08e9a648-606d-413d-be33-81a5ff380678",
+    "Plan": null,
+    "Street1": "Av. Street",
+    "Street2": "Villa Street",
+    "ZipCode": null,
+    "City": "Cochabamba",
+    "CountryId": "876cc6d9-485f-46f8-8bae-d7d5fdb52077",
+    "StateId": "aa46446a-3796-43fe-af44-76071c913b3d",
+    "Street1Delivery": "Av. Street",
+    "Street2Delivery": "Villa Street",
+    "ZipCodeDelivery": null,
+    "CityDelivery": "Cochabamba",
+    "StateDeliveryId": "aa46446a-3796-43fe-af44-76071c913b3d",
+    "CountryDeliveryId": "876cc6d9-485f-46f8-8bae-d7d5fdb52077",
+    "TaxPayerCategoryId": null,
+    "ContactName": "ConcatName",
+    "ContactEmail": "corporatemail@company.com",
+    "Phone1": "11111111111",
+    "Phone2": null,
+    "Custom0": null,
+    "Custom1": null,
+    "Custom2": null,
+    "Custom3": null,
+    "CompanyGroupID": null,
+    "PermissionsType": null,
+    "Contracts": [
+        {
+            "Active": true,
+            "ReactivationAmount": null,
+            "DesactivationType": null,
+            "Code": " ContractCode",
+            "Description": "ContractDescription",
+            "StartDate": "2022/04/07",
+            "Duration": 99,
+            "Periodicity": 3,
+            "CurrentAccountMode": 1,
+            "CurrencyID": null,
+            "CurrencyCode": "USD",
+            "Mode": 0,
+            "CreditLimit": 100000,
+            "BalanceMode": 2,
+            "ValidateSites": false,
+            "ValidateFuels": false,
+            "ValidatePrograms": false,
+            "Type": 0,
+            "Subsidized": false,
+            "Classification1Id": null,
+            "Classification1Code": null,
+            "Classification2Id": null,
+            "Classification2Code": null,
+            "Classification3Id": null,
+            "Classification3Code": null,
+            "Classification4Id": null,
+            "Classification4Code": null,
+            "Custom0": null,
+            "Custom1": null,
+            "Custom2": null,
+            "Custom3": null,
+            "CustomInterface0": null,
+            "CustomInterface1": null,
+            "CustomInterface2": null,
+            "CustomInterface3": null,
+            "CustomInterface4": null,
+            "CustomOperation0": null,
+            "CustomOperation1": null,
+            "CustomOperation2": null,
+            "CustomOperation3": null,
+            "CustomOperation4": null,
+            "PermissionsType": null,
+            "BillingActive": false,
+            "BillingDueDays": null,
+            "BillingPeriodicity": null,
+            "BillingPeriodicityValue": null,
+            "BillingManual": null,
+            "BillingCutTime": null,
+            "BillingCutDay": null,
+            "BillingCutMonth": null,
+            "DocumentChargesFromBalance": null,
+            "SeparateChargesDocument": null,
+            "RecepientEmails": null,
+            "BillingTaxPayerId": null,
+            "BillingCompanyName": null,
+            "BillingCompanyStreet1": null,
+            "BillingCompanyStreet2": null,
+            "BillingCompanyZipCode": null,
+            "BillingCompanyCity": null,
+            "BillingCompanyCountryId": null,
+            "BillingCompanyStateId": null,
+            "IdRackPricesList": null,
+            "RackPricesListCode": null,
+            "Fuels": [
+                {
+                    "FuelMasterId": "389dee96-c6af-4161-8e3a-fa7835994102",
+                    "FuelMasterCode": "002",
+                    "VolumeLimit": 0.00,
+                    "MoneyLimit": 0.00
+                }
+            ],
+            "Concepts": [],
+            "Sites": [
+                {
+                    "SiteId":"16431f38-c140-41be-8235-b6fdfed5739d",
+                    "Code":"ABC",
+                    "Fuels":[
+                        {
+                            "FuelMasterId": "389dee96-c6af-4161-8e3a-fa7835994102",
+                            "FuelMasterCode": "002",
+                            "VolumeLimit": 0.00,
+                            "MoneyLimit": 0.00
+                        }
+                    ]
+                }
+            ],
+            "Prices": [
+                {
+                    "FuelMasterId": "577a92fa-cbb3-43d1-bb31-d54d8ff4a74a",
+                    "FuelMasterCode":"002",
+                    "Value": 5,
+                    "SiteId":"16431f38-c140-41be-8235-b6fdfed5739d",
+                    "SiteCode":"ABC",
+                    "DateFrom":"2022/04/07",
+                    "DateTo":"2023/04/01",
+                    "TimeFrom":"00:00",
+                    "TimeTo":"23:59"
+                }
+            ],
+            "Modifiers": [
+                {
+                    "Class": 0,
+                    "Type":1,
+                    "Value":0.15,
+                    "FuelMasterId": "577a92fa-cbb3-43d1-bb31-d54d8ff4a74a",
+                    "SiteId": "16431f38-c140-41be-8235-b6fdfed5739d",
+                    "SiteCode": "ABC",
+                    "DateFrom":"2022/04/07",
+                    "TimeFrom":"2023/04/01",
+                    "DateTo":"00:00",
+                    "TimeTo":"23:59"
+                }
+            ],
+            "Blocks": [],
+            "OverLimits": [],
+            "Programs": [
+                {
+                    "Id": "8E5E3376-50BC-462C-BC21-666596220663",
+                    "Code": "S2G1014"
+                },
+                {
+                    "Code": "S2G1014"
+                },
+                {
+                    "Id": "48A77FE4-FE48-4D13-BA4D-ACD3E38214D2"
+                }
+            ]
+        }
+    ],
+    "ActionCode": "925",
+    "SubscriberCode": "S2G",
+    "SystemModel": "AtionetStandAloneTerminal"
+}
+```
+
