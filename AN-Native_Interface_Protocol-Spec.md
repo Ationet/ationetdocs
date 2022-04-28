@@ -24,6 +24,7 @@
 |1.8|26/01/2022|**Document Update** <br> - Add Transaction custom fields download Request|
 |1.9|04/04/2022|**Document Update** <br> - Company inserts addition|
 |2.0|11/04/2022|**Document Update** <br> - Company inserts update|
+|2.1|28/04/2022|**Document Update** <br> - Company inserts update fuel reference|
 
 ## Contents
 
