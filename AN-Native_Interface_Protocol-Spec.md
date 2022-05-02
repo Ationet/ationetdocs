@@ -1167,6 +1167,7 @@ transactions to download.
 		</td>
 		<td>
 			<p>Subscriber Code</p>
+			<p>Fields (Required)</p>
 			<p>Merchant Code (Optional, if included will act as a filter)</p>
 			<p>Company Code (Optional, if included will act as a filter)</p>
 			<p>Terminal Code(Optional, if included will act as a filter)</p>
