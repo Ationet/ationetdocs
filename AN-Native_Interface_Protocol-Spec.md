@@ -24,6 +24,7 @@
 |1.8|26/01/2022|**Document Update** <br> - Add Transaction custom fields download Request|
 |1.9|04/04/2022|**Document Update** <br> - Company inserts addition|
 |2.0|11/04/2022|**Document Update** <br> - Company inserts update|
+|2.1|28/04/2022|**Document Update** <br> - Company inserts update fuel reference|
 
 ## Contents
 
@@ -12807,8 +12808,8 @@ To edit a company there's no need to send the contract information. However, whe
 			</td>
 			<td>
 				<p align="left">Fuels list available to the contract.<br/>
-				If no list is sent, all the fuels will be available for the contract.<br/>
-				"Fuels": [<br/>{<br/>"FuelMasterID": "389dee96-c6af-4161-8e3a-fa7835994102",<br/>"FuelMasterCode": "002",<br/>"VolumeLimit": 0.00,				  <br/>"MoneyLimit": 0.00<br/>}</p>
+				If no list is sent, all the fuels will be available for the contract.<br/>The FuelMasterID/FuelMasterCode corresponds always to FuelMaster reference.<br/>The request accepts that only one of the fields that identify the fuel (FuelMasterID/FuelMasterCode) is present. If both are present, the FuelMasterID field will take priority.<br/><br/>
+				"Fuels": [<br/>{<br/>"FuelMasterID": "389dee96-c6af-4161-8e3a-fa7835994102",<br/>"FuelMasterCode": "002",<br/>"VolumeLimit": 0.00,				  <br/>"MoneyLimit": 0.00<br/>}<br/></p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -12827,8 +12828,7 @@ To edit a company there's no need to send the contract information. However, whe
 			</td>
 			<td>
 				<p align="left">Sites list where the contract sub accounts can operate.<br/>
-				If no list is sent, the sub accounts will be allowed to operate in all the sites.
-<br/>"Sites": [<br/>{<br/>"SiteId":"16431f38-c140-41be-8235-b6fdfed5739d",<br/>"Code":"ABC",<br/>"Fuels":[<br/>{<br/>"FuelMasterId": "389dee96-c6af-4161-8e3a-fa7835994102",<br/>"FuelMasterCode": "002",<br/>"VolumeLimit": 0.00,<br/>"MoneyLimit": 0.00<br/>}<br/>]<br/>}<br/>]<br/></p>
+				If no list is sent, the sub accounts will be allowed to operate in all the sites.The request accepts that only one of the fields that identify the site (SiteId/Code) is present. If both are present, the SiteId field will take priority.<br/><br/><b>Fuels</b><br/>If 'require fuel mapping' is enabled on the site, the FuelMasterID/FuelMasterCode sent corresponds to a Fuel, otherwise the values corresponds to a Fuel Master.<br/>The request accepts that only one of the fields that identify the fuel (FuelMasterID/FuelMasterCode) is present. If both are present, the FuelMasterID field will take priority.<br/><br/>"Sites": [<br/>{<br/>"SiteId":"16431f38-c140-41be-8235-b6fdfed5739d",<br/>"Code":"ABC",<br/>"Fuels":[<br/>{<br/>"FuelMasterId": "389dee96-c6af-4161-8e3a-fa7835994102",<br/>"FuelMasterCode": "002",<br/>"VolumeLimit": 0.00,<br/>"MoneyLimit": 0.00<br/>}<br/>]<br/>}<br/>]<br/></p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -12848,8 +12848,8 @@ To edit a company there's no need to send the contract information. However, whe
 			<td>
 				<p align="left">Price list that will be applied to the contract.<br/>
 								If no list is sent, the contract will operate with the controller prices.
-								It is possible to set prices for specific sites and dates.
-<br/>"Prices": [<br/>{<br/>"FuelMasterId": "577a92fa-cbb3-43d1-bb31-d54d8ff4a74a",<br/>"FuelMasterCode":"BCA",<br/>"Value": 5,<br/>"SiteId":"16431f38-c140-41be-8235-b6fdfed5739d",<br/>"SiteCode":"ABC",<br/>"DateFrom":"2022/04/07",<br/>"DateTo":"2023/04/01",<br/>"TimeFrom":"00:00",<br/>"TimeTo":"23:59"<br/>}<br/>]<br/></p>
+					It is possible to set prices for specific sites and dates.<br/>The request accepts that only one of the fields that identify the site (SiteId/Code) is present. If both are present, the SiteId field will take priority.<br/><br/><b>Fuels</b><br/>If site is sent on the price and has 'require fuel mapping' enabled, the FuelMasterID/FuelMasterCode sent corresponds to a Fuel, otherwise the values corresponds to a Fuel Master.<br/>The request accepts that only one of the fields that identify the fuel (FuelMasterID/FuelMasterCode) is present. If both are present, the FuelMasterID field will take priority.
+<br/><br/>"Prices": [<br/>{<br/>"FuelMasterId": "577a92fa-cbb3-43d1-bb31-d54d8ff4a74a",<br/>"FuelMasterCode":"BCA",<br/>"Value": 5,<br/>"SiteId":"16431f38-c140-41be-8235-b6fdfed5739d",<br/>"SiteCode":"ABC",<br/>"DateFrom":"2022/04/07",<br/>"DateTo":"2023/04/01",<br/>"TimeFrom":"00:00",<br/>"TimeTo":"23:59"<br/>}<br/>]</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -12867,8 +12867,8 @@ To edit a company there's no need to send the contract information. However, whe
 				<p align="left">No</p>
 			</td>
 			<td>
-				<p align="left">Modifiers list that will be applied to the contract (discounts/markups)<br/>
-"Modifiers": [<br/>{<br/>"Class": 0,<br/>"Type":1,<br/>"Value":0.15,<br/>"FuelMasterId": "577a92fa-cbb3-43d1-bb31-d54d8ff4a74a",<br/>"SiteId": "16431f38-c140-41be-8235-b6fdfed5739d",<br/>"SiteCode": "ABC",<br/>"DateFrom":"2022/04/07",<br/>"TimeFrom":"2023/04/01",<br/>"DateTo":"00:00",<br/>"TimeTo":"23:59"<br/>}<br/>]<br/></p>
+				<p align="left">Modifiers list that will be applied to the contract (discounts/markups)<br/>The request accepts that only one of the fields that identify the site (SiteId/Code) is present. If both are present, the SiteId field will take priority.<br/><br/><b>Fuels</b><br/>If site is sent on the modifier and has 'require fuel mapping' enabled, the FuelMasterID/FuelMasterCode sent corresponds to a Fuel, otherwise the values corresponds to a Fuel Master.<br/>The request accepts that only one of the fields that identify the fuel (FuelMasterID/FuelMasterCode) is present. If both are present, the FuelMasterID field will take priority.<br/><br/>
+"Modifiers": [<br/>{<br/>"Class": 0,<br/>"Type":1,<br/>"Value":0.15,<br/>"FuelMasterId": "577a92fa-cbb3-43d1-bb31-d54d8ff4a74a",<br/>"SiteId": "16431f38-c140-41be-8235-b6fdfed5739d",<br/>"SiteCode": "ABC",<br/>"DateFrom":"2022/04/07",<br/>"TimeFrom":"2023/04/01",<br/>"DateTo":"00:00",<br/>"TimeTo":"23:59"<br/>}<br/>]</p>
 			</td>
 		</tr>
 		<tr valign="top">
