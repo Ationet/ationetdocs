@@ -34,38 +34,6 @@ of the messages themselves, the expected behaviour for each supported
 action type and a common ground for the functionality of each relevant
 item.
 
-### Definitions
-
-#### Subscriber
-ATIONet’s subscription owner. The person or company who
-runs the service.
-
-#### Homebase
-A type of ATIONet subscription where the subscriber owns
-the site(s) but also the fleet(s) of vehicles.
-
-#### Network
-A type of ATIONet subscription where the subscriber enrolls
-Fleet Companies and retail or commercial sites to operate with its own
-method-of-payment. The Network company doesn’t own the site(s) or the
-vehicles.
-
-#### Retail
-A type of ATIONet subscription where the subscriber owns the
-sites and enrolls Fleet Companies to operate with its own
-method-of-payment.
-
-#### Merchant
-On a Network type subscription, the Merchant is the
-company who own the sites.
-
-#### Company
-On a Network or Retail type subscription, the Company is
-the company who own the fleet.
-
-#### Terminal
-Transaction capture device at the site.
-
 ## 1 Scope
 
 Version 1.0 of this document covers a particular version of ATIONet’s
