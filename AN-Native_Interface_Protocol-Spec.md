@@ -4,7 +4,7 @@
 |Document Information|.|
 |--- |--- |
 |File:|ATIONet-Native_Interface_Protocol-Spec|
-|Doc Version:|1.6|
+|Doc Version:|2.2|
 |Release Date:|29, March 2021|
 |Author:|ATIONet LLC|
 
@@ -25,6 +25,7 @@
 |1.9|04/04/2022|**Document Update** <br> - Company inserts addition|
 |2.0|11/04/2022|**Document Update** <br> - Company inserts update|
 |2.1|28/04/2022|**Document Update** <br> - Company inserts update fuel reference|
+|2.2|26/05/2022|**Document Update** <br> - Add Company Contract Offline Balance Update Request|
 
 ## Contents
 
@@ -271,6 +272,10 @@ Availability of this message and the type of actions allowed depend on the subsc
   <tr>
     <td class="tg-eygw">926</td>
     <td class="tg-eygw">Company contract credit limit update</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">928</td>
+    <td class="tg-eygw">Company contract offline balance update</td>
   </tr>
   <tr>
     <td class="tg-eygw">941</td>
@@ -607,6 +612,11 @@ subscription types but also on contract terms with ATIONet.
     <td class="tg-eygw">926</td>
     <td class="tg-dqd0">Company contract credit limit update</td>
     <td class="tg-eygw">Update the credit limit related to the given company</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">928</td>
+    <td class="tg-dqd0">Company contract offline balanc update</td>
+    <td class="tg-eygw">Update the offline balance related to the given company contract.</td>
   </tr>
   <tr>
     <td class="tg-gvcd">941</td>
