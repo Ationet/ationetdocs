@@ -13342,6 +13342,23 @@ To edit a company there's no need to send the contract information. However, whe
 	<tbody>			
 		<tr valign="top">
 			<td>
+				<p align="left">Description</p>
+			</td>
+			<td>
+				<p align="left">30</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Modifier description.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
 				<p align="left">Class</p>
 			</td>
 			<td>
