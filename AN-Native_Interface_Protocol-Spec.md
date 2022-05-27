@@ -1182,7 +1182,7 @@ the message:
   </tr>
 </tbody>
 </table>
-#### 6.4.2 Examples
+#### 6.4.3 Examples
 ```
 {
     "ActionCode": "929",
