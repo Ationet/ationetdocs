@@ -1153,7 +1153,9 @@ the message:
 		</tr>
 	</tbody>
 </table>
+
 #### 6.4.2 Response Messages
+
 <table class="tg">
 <thead>
   <tr>
@@ -1182,7 +1184,9 @@ the message:
   </tr>
 </tbody>
 </table>
+
 #### 6.4.3 Examples
+
 ```
 {
     "ActionCode": "929",
