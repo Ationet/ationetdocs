@@ -48,7 +48,7 @@
 	- [6.1 Action Codes](#61-action-codes)
 	- [6.2 Identification](#62-identification)
 	- [6.3 Current Account Movements (POST) – Body Section Record Format](#63-current-account-movements-post--body-section-record-format)
-	- [6.4 Company Contract Offline Balance Update (PUT) – Body Section Record Format](#64-company-contract-offline-balance-update-put--body-section-record-format)
+	- [6.4 Company Contract Offline Balance Update (POST) – Body Section Record Format](#64-company-contract-offline-balance-update-put--body-section-record-format)
 - [7 Transactions Download Interface](#7-transactions-download-interface)
 	- [7.1 Action Codes](#71-action-codes)
 	- [7.2 Transactions Download (POST) – Body Section Format Request](#72-transactions-download-post--body-section-format-request)
@@ -1039,8 +1039,8 @@ the message:
 	</tbody>
 </table>
 
-### 6.4 Company Contract Offline Balance Update (PUT) – Body Section Record Format
-
+### 6.4 Company Contract Offline Balance Update (POST)
+#### 6.4.1 Body Section Record Format
 <table>
 	<thead>
 		<tr valign="top">
@@ -1153,6 +1153,47 @@ the message:
 		</tr>
 	</tbody>
 </table>
+#### 6.4.2 Response Messages
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-gvcd"><span style="font-weight:bold"></span></th>
+    <th class="tg-gvcd"><span style="font-weight:bold">HttpStatusCode</span></th>
+    <th class="tg-gvcd"><span style="font-weight:bold">ATIONet Response</span></th>
+    <th class="tg-gvcd"><span style="font-weight:bold">Description</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-rjo2" rowspan="3">Response's</td>
+    <td class="tg-eygw">200</td>
+    <td class="tg-eygw">"ResponseCode": "00000",<br/>"ResponseMessage": "Ok",<br/>"ResponseError": null<br/></td>
+    <td class="tg-eygw">Operation success.</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">401</td>
+    <td class="tg-eygw">"ResponseCode": "52501",<br/>"ResponseMessage": "User Not Allowed",<br/>"ResponseError": null<br/></td>
+	<td class="tg-eygw">In the case of an authentication error</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">400</td>
+    <td class="tg-eygw">"ResponseCode": "53058",<br/>"ResponseMessage": "Invalid Subscriber",<br/>"ResponseError": null<br/></td>
+	<td class="tg-eygw">In the case of a validation error, the response message indicate the wrong field.</td>
+  </tr>
+</tbody>
+</table>
+#### 6.4.2 Examples
+```
+{
+    "ActionCode": "929",
+    "SystemModel": "AtionetStandAloneTerminal",
+    "SubscriberCode": "DUG",
+    "SubscriberId": "99C58319-125B-4674-B534-64C3CCF9F25A",
+    "ContractId": "6F9E2033-0CE3-4212-BB92-079917640242",
+    "ContractCode": "0003",
+    "OfflineBalance": 8700
+ }
+```
 
 ## 7 Transactions Download Interface
 
