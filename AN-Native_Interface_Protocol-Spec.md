@@ -25,7 +25,7 @@
 |1.9|04/04/2022|**Document Update** <br> - Company inserts addition|
 |2.0|11/04/2022|**Document Update** <br> - Company inserts update|
 |2.1|28/04/2022|**Document Update** <br> - Company inserts update fuel reference|
-|2.2|26/05/2022|**Document Update** <br> - Add Company Contract Offline Balance Update Request|
+|2.2|26/05/2022|**Document Update** <br> - Add Company Contract Offline Balance Update Request| Company inserts update
 
 ## Contents
 
