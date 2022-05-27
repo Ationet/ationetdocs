@@ -25,7 +25,7 @@
 |1.9|04/04/2022|**Document Update** <br> - Company inserts addition|
 |2.0|11/04/2022|**Document Update** <br> - Company inserts update|
 |2.1|28/04/2022|**Document Update** <br> - Company inserts update fuel reference|
-|2.2|26/05/2022|**Document Update** <br> - Add Company Contract Offline Balance Update Request| Company inserts update
+|2.2|26/05/2022|**Document Update** <br> - Add Company Contract Offline Balance Update Request <br> - Company inserts update 
 
 ## Contents
 
@@ -48,7 +48,10 @@
 	- [6.1 Action Codes](#61-action-codes)
 	- [6.2 Identification](#62-identification)
 	- [6.3 Current Account Movements (POST) – Body Section Record Format](#63-current-account-movements-post--body-section-record-format)
-	- [6.4 Company Contract Offline Balance Update (POST) – Body Section Record Format](#64-company-contract-offline-balance-update-put--body-section-record-format)
+	- [6.4 Company Contract Offline Balance Update (POST)](#64-company-contract-offline-balance-update-post)       
+		- [6.4.1 Body Section Record Format](#641-body-section-record-format)
+		- [6.4.2 Response Messages](#642-response-messages)
+		- [6.4.3 Examples](#643-examples)
 - [7 Transactions Download Interface](#7-transactions-download-interface)
 	- [7.1 Action Codes](#71-action-codes)
 	- [7.2 Transactions Download (POST) – Body Section Format Request](#72-transactions-download-post--body-section-format-request)
@@ -326,7 +329,8 @@ Availability of this message and the type of actions allowed depend on the subsc
   </tr>
   <tr>
     <td class="tg-eygw">933</td>
-    <td class="tg-eygw">Exceptions download</td>
+    <td class="tg-eygw">Exceptions download</td>![image](https://user-images.githubusercontent.com/26742775/170762868-169c1fff-bc00-4951-83eb-aeb1cbdf30b5.png)
+
   </tr>
   <tr>
     <td class="tg-gvcd">934</td>
@@ -14300,6 +14304,11 @@ To edit a company there's no need to send the contract information. However, whe
     <td class="tg-eygw">200</td>
     <td class="tg-eygw">"ResponseCode": "00000",<br/>"ResponseMessage": "Ok",<br/>"ResponseError": null<br/></td>
     <td class="tg-eygw">Operation success.</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">200</td>
+    <td class="tg-eygw">"ResponseCode": "10000",<br/>"ResponseMessage": "Operation Succeeded with Warnings",<br/>"ResponseError": {\"ContractsResponse\":[{\"ContractCode\":\"0003\",\"Warnings\":[{\"Operation\":\"ProcessModifier\",\"Message\":\"The following entry could not be processed: ${\\\"Class\\\":0,\\\"Type\\\":0,\\\"Value\\\":15.0,\\\"FuelMasterId\\\":\\\"ddf3f3b3-9f56-4792-b7e0-0df3f6218ad7\\\",\\\"FuelMasterCode\\\":\\\"REGDIESEL\\\",\\\"SiteId\\\":\\\"7cf5b0f2-1e2c-49a8-a0b8-472efd7b1b56\\\",\\\"SiteCode\\\":null,\\\"DateFrom\\\":\\\"2022/05/20\\\",\\\"TimeFrom\\\":\\\"12:00\\\",\\\"DateTo\\\":\\\"2022/05/30\\\",\\\"TimeTo\\\":\\\"23:59\\\",\\\"Description\\\":\\\"MODIFICADOR 1\\\"} Fecha desde no puede ser menor a Fecha Actual\"},{\"Operation\":\"ProcessModifier\",\"Message\":\"The following entry could not be processed: ${\\\"Class\\\":0,\\\"Type\\\":0,\\\"Value\\\":30.0,\\\"FuelMasterId\\\":\\\"ddf3f3b3-9f56-4792-b7e0-0df3f6218ad7\\\",\\\"FuelMasterCode\\\":null,\\\"SiteId\\\":null,\\\"SiteCode\\\":null,\\\"DateFrom\\\":\\\"2022/05/20\\\",\\\"TimeFrom\\\":\\\"12:00\\\",\\\"DateTo\\\":\\\"2022/05/30\\\",\\\"TimeTo\\\":\\\"23:59\\\",\\\"Description\\\":\\\"MODIFICADOR 2\\\"} Fecha desde no puede ser menor a Fecha Actual\"}<br/></td>
+    <td class="tg-eygw">Operation success with Warning errors. The response message indicates what entries has failed. The operation completed but those entries where not processed.</td>
   </tr>
   <tr>
     <td class="tg-eygw">400</td>
