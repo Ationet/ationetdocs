@@ -48,7 +48,7 @@
 	- [6.1 Action Codes](#61-action-codes)
 	- [6.2 Identification](#62-identification)
 	- [6.3 Current Account Movements (POST) – Body Section Record Format](#63-current-account-movements-post--body-section-record-format)
-        - [6.4 Company Contract Offline Balance Update (PUT) – Body Section Record Format]
+        - [6.4 Company Contract Offline Balance Update (PUT) – Body Section Record Format](#64-company-contract-offline-balance-update-put--body-section-record-format)
 - [7 Transactions Download Interface](#7-transactions-download-interface)
 	- [7.1 Action Codes](#71-action-codes)
 	- [7.2 Transactions Download (POST) – Body Section Format Request](#72-transactions-download-post--body-section-format-request)
