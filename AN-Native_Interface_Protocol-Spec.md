@@ -13348,7 +13348,7 @@ To edit a company there's no need to send the contract information. However, whe
 				<p align="left">30</p>
 			</td>
 			<td>
-				<p align="left">string</p>
+				<p align="left">nvarchar</p>
 			</td>
 			<td>
 				<p align="left">Yes</p>
