@@ -48,7 +48,7 @@
 	- [6.1 Action Codes](#61-action-codes)
 	- [6.2 Identification](#62-identification)
 	- [6.3 Current Account Movements (POST) – Body Section Record Format](#63-current-account-movements-post--body-section-record-format)
-
+        - [6.4 Company Contract Offline Balance Update (PUT) – Body Section Record Format]
 - [7 Transactions Download Interface](#7-transactions-download-interface)
 	- [7.1 Action Codes](#71-action-codes)
 	- [7.2 Transactions Download (POST) – Body Section Format Request](#72-transactions-download-post--body-section-format-request)
@@ -1034,6 +1034,121 @@ the message:
 			</td>
 			<td>
 				<p align="left">A description for the current account movement</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+### 6.4 Company Contract Offline Balance Update (PUT) – Body Section Record Format
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Condition
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">SubscriberCode</p>
+			</td>
+			<td>
+				<p align="left">3</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Required</p>
+			</td>
+			<td>
+				<p align="left">Fixed. To be assigned by ATIONet</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SubscriberId</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">Subscriber/Network Id. Use optionally instead of SubscriberCode  
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ContractCode</p>
+			</td>
+			<td>
+				<p align="left">20</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">The Company Contract Code. Use optionally instead of Company Contract Id.  
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ContractId</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">The Company Contract Id. Use optionally instead of Company Contract Code.  
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">OfflineBalance</p>
+			</td>
+			<td>
+				<p align="left">18.6</p>
+			</td>
+			<td>
+				<p align="left">numeric</p>
+			</td>
+			<td>
+				<p align="left">Required</p>
+			</td>
+			<td>
+				<p align="left">The Company Contract Offline Balance that's going to be updated.  
+				</p>
 			</td>
 		</tr>
 	</tbody>
