@@ -1073,10 +1073,10 @@ the message:
 				<p align="left">A/N</p>
 			</td>
 			<td>
-				<p align="left">Required</p>
+				<p align="left">Optional</p>
 			</td>
 			<td>
-				<p align="left">Fixed. To be assigned by ATIONet</p>
+				<p align="left">The Subscriber Code. Use  instead of SubscriberId. A subscriber Id/Code is required.</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -1084,7 +1084,7 @@ the message:
 				<p align="left">SubscriberId</p>
 			</td>
 			<td>
-				<p align="left">A/N</p>
+				<p align="left">36</p>
 			</td>
 			<td>
 				<p align="left">A/N</p>
@@ -1093,7 +1093,7 @@ the message:
 				<p align="left">Optional</p>
 			</td>
 			<td>
-				<p align="left">Subscriber/Network Id. Use optionally instead of SubscriberCode  
+				<p align="left">The Subscriber UID. Use instead of SubscriberCode. A subscriber Id/Code is required. 
 				</p>
 			</td>
 		</tr>
@@ -1111,7 +1111,7 @@ the message:
 				<p align="left">Optional</p>
 			</td>
 			<td>
-				<p align="left">The Company Contract Code. Use optionally instead of Company Contract Id.  
+				<p align="left">The Company Contract Code. Use instead of Company Contract Id. A Company Contract Id/Code is required.  
 				</p>
 			</td>
 		</tr>
@@ -1120,7 +1120,7 @@ the message:
 				<p align="left">ContractId</p>
 			</td>
 			<td>
-				<p align="left">A/N</p>
+				<p align="left">36</p>
 			</td>
 			<td>
 				<p align="left">A/N</p>
@@ -1129,7 +1129,7 @@ the message:
 				<p align="left">Optional</p>
 			</td>
 			<td>
-				<p align="left">The Company Contract Id. Use optionally instead of Company Contract Code.  
+				<p align="left">The Company Contract UID. Use instead of Company Contract Code. A Company Contract Id/Code is required. 
 				</p>
 			</td>
 		</tr>
