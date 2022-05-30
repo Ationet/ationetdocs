@@ -4,7 +4,7 @@
 |Document Information|.|
 |--- |--- |
 |File:|ATIONet-Native_Interface_Protocol-Spec|
-|Doc Version:|1.6|
+|Doc Version:|2.2|
 |Release Date:|29, March 2021|
 |Author:|ATIONet LLC|
 
@@ -25,6 +25,7 @@
 |1.9|04/04/2022|**Document Update** <br> - Company inserts addition|
 |2.0|11/04/2022|**Document Update** <br> - Company inserts update|
 |2.1|28/04/2022|**Document Update** <br> - Company inserts update fuel reference|
+|2.2|26/05/2022|**Document Update** <br> - Add Company Contract Offline Balance Update Request <br> - Company inserts update 
 
 ## Contents
 
@@ -47,7 +48,10 @@
 	- [6.1 Action Codes](#61-action-codes)
 	- [6.2 Identification](#62-identification)
 	- [6.3 Current Account Movements (POST) – Body Section Record Format](#63-current-account-movements-post--body-section-record-format)
-
+	- [6.4 Company Contract Offline Balance Update (POST)](#64-company-contract-offline-balance-update-post)       
+		- [6.4.1 Body Section Record Format](#641-body-section-record-format)
+		- [6.4.2 Response Messages](#642-response-messages)
+		- [6.4.3 Examples](#643-examples)
 - [7 Transactions Download Interface](#7-transactions-download-interface)
 	- [7.1 Action Codes](#71-action-codes)
 	- [7.2 Transactions Download (POST) – Body Section Format Request](#72-transactions-download-post--body-section-format-request)
@@ -273,6 +277,10 @@ Availability of this message and the type of actions allowed depend on the subsc
     <td class="tg-eygw">Company contract credit limit update</td>
   </tr>
   <tr>
+    <td class="tg-eygw">928</td>
+    <td class="tg-eygw">Company contract offline balance update</td>
+  </tr>
+  <tr>
     <td class="tg-eygw">941</td>
     <td class="tg-eygw">Balance download of sub-account</td>
   </tr>
@@ -321,7 +329,8 @@ Availability of this message and the type of actions allowed depend on the subsc
   </tr>
   <tr>
     <td class="tg-eygw">933</td>
-    <td class="tg-eygw">Exceptions download</td>
+    <td class="tg-eygw">Exceptions download</td>![image](https://user-images.githubusercontent.com/26742775/170762868-169c1fff-bc00-4951-83eb-aeb1cbdf30b5.png)
+
   </tr>
   <tr>
     <td class="tg-gvcd">934</td>
@@ -607,6 +616,11 @@ subscription types but also on contract terms with ATIONet.
     <td class="tg-eygw">926</td>
     <td class="tg-dqd0">Company contract credit limit update</td>
     <td class="tg-eygw">Update the credit limit related to the given company</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">928</td>
+    <td class="tg-dqd0">Company contract offline balanc update</td>
+    <td class="tg-eygw">Update the offline balance related to the given company contract.</td>
   </tr>
   <tr>
     <td class="tg-gvcd">941</td>
@@ -1028,6 +1042,166 @@ the message:
 		</tr>
 	</tbody>
 </table>
+
+### 6.4 Company Contract Offline Balance Update (POST)
+#### 6.4.1 Body Section Record Format
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Condition
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">SubscriberCode</p>
+			</td>
+			<td>
+				<p align="left">3</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">The Subscriber Code. Use  instead of SubscriberId. A subscriber Id/Code is required.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SubscriberId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">The Subscriber UID. Use instead of SubscriberCode. A subscriber Id/Code is required. 
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ContractCode</p>
+			</td>
+			<td>
+				<p align="left">20</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">The Company Contract Code. Use instead of Company Contract Id. A Company Contract Id/Code is required.  
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ContractId</p>
+			</td>
+			<td>
+				<p align="left">36</p>
+			</td>
+			<td>
+				<p align="left">A/N</p>
+			</td>
+			<td>
+				<p align="left">Optional</p>
+			</td>
+			<td>
+				<p align="left">The Company Contract UID. Use instead of Company Contract Code. A Company Contract Id/Code is required. 
+				</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">OfflineBalance</p>
+			</td>
+			<td>
+				<p align="left">18.6</p>
+			</td>
+			<td>
+				<p align="left">numeric</p>
+			</td>
+			<td>
+				<p align="left">Required</p>
+			</td>
+			<td>
+				<p align="left">The Company Contract Offline Balance that's going to be updated.  
+				</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+#### 6.4.2 Response Messages
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-gvcd"><span style="font-weight:bold"></span></th>
+    <th class="tg-gvcd"><span style="font-weight:bold">HttpStatusCode</span></th>
+    <th class="tg-gvcd"><span style="font-weight:bold">ATIONet Response</span></th>
+    <th class="tg-gvcd"><span style="font-weight:bold">Description</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-rjo2" rowspan="3">Response's</td>
+    <td class="tg-eygw">200</td>
+    <td class="tg-eygw">"ResponseCode": "00000",<br/>"ResponseMessage": "Ok",<br/>"ResponseError": null<br/></td>
+    <td class="tg-eygw">Operation success.</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">401</td>
+    <td class="tg-eygw">"ResponseCode": "52501",<br/>"ResponseMessage": "User Not Allowed",<br/>"ResponseError": null<br/></td>
+	<td class="tg-eygw">In the case of an authentication error</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">400</td>
+    <td class="tg-eygw">"ResponseCode": "53058",<br/>"ResponseMessage": "Invalid Subscriber",<br/>"ResponseError": null<br/></td>
+	<td class="tg-eygw">In the case of a validation error, the response message indicate the wrong field.</td>
+  </tr>
+</tbody>
+</table>
+
+#### 6.4.3 Examples
+
+```
+{
+    "ActionCode": "929",
+    "SystemModel": "AtionetStandAloneTerminal",
+    "SubscriberCode": "DUG",
+    "SubscriberId": "99C58319-125B-4674-B534-64C3CCF9F25A",
+    "ContractId": "6F9E2033-0CE3-4212-BB92-079917640242",
+    "ContractCode": "0003",
+    "OfflineBalance": 8700
+ }
+```
 
 ## 7 Transactions Download Interface
 
@@ -13332,6 +13506,23 @@ To edit a company there's no need to send the contract information. However, whe
 	<tbody>			
 		<tr valign="top">
 			<td>
+				<p align="left">Description</p>
+			</td>
+			<td>
+				<p align="left">30</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Modifier description.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
 				<p align="left">Class</p>
 			</td>
 			<td>
@@ -14113,6 +14304,11 @@ To edit a company there's no need to send the contract information. However, whe
     <td class="tg-eygw">200</td>
     <td class="tg-eygw">"ResponseCode": "00000",<br/>"ResponseMessage": "Ok",<br/>"ResponseError": null<br/></td>
     <td class="tg-eygw">Operation success.</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">200</td>
+    <td class="tg-eygw">"ResponseCode": "10000",<br/>"ResponseMessage": "Operation Succeeded with Warnings",<br/>"ResponseError": {\"ContractsResponse\":[{\"ContractCode\":\"0003\",\"Warnings\":[{\"Operation\":\"ProcessModifier\",\"Message\":\"The following entry could not be processed: ${\\\"Class\\\":0,\\\"Type\\\":0,\\\"Value\\\":15.0,\\\"FuelMasterId\\\":\\\"ddf3f3b3-9f56-4792-b7e0-0df3f6218ad7\\\",\\\"FuelMasterCode\\\":\\\"REGDIESEL\\\",\\\"SiteId\\\":\\\"7cf5b0f2-1e2c-49a8-a0b8-472efd7b1b56\\\",\\\"SiteCode\\\":null,\\\"DateFrom\\\":\\\"2022/05/20\\\",\\\"TimeFrom\\\":\\\"12:00\\\",\\\"DateTo\\\":\\\"2022/05/30\\\",\\\"TimeTo\\\":\\\"23:59\\\",\\\"Description\\\":\\\"MODIFICADOR 1\\\"} Fecha desde no puede ser menor a Fecha Actual\"},{\"Operation\":\"ProcessModifier\",\"Message\":\"The following entry could not be processed: ${\\\"Class\\\":0,\\\"Type\\\":0,\\\"Value\\\":30.0,\\\"FuelMasterId\\\":\\\"ddf3f3b3-9f56-4792-b7e0-0df3f6218ad7\\\",\\\"FuelMasterCode\\\":null,\\\"SiteId\\\":null,\\\"SiteCode\\\":null,\\\"DateFrom\\\":\\\"2022/05/20\\\",\\\"TimeFrom\\\":\\\"12:00\\\",\\\"DateTo\\\":\\\"2022/05/30\\\",\\\"TimeTo\\\":\\\"23:59\\\",\\\"Description\\\":\\\"MODIFICADOR 2\\\"} Fecha desde no puede ser menor a Fecha Actual\"}<br/></td>
+    <td class="tg-eygw">Operation success with Warning errors. The response message indicates what entries has failed. The operation completed but those entries where not processed.</td>
   </tr>
   <tr>
     <td class="tg-eygw">400</td>
