@@ -4543,6 +4543,16 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
             <td></td>
             <td>This method downloads the balance of the sub accounts</td>
         </tr>
+	     <tr>
+		<td>UpdateCompanyContractOfflineBalance</td>
+		<td></td>
+		<td>This methods updates the company contract offline balance.</td>
+	     </tr>
+	     <tr>
+		<td>InsertTransactionMovementERP</td>
+		<td></td>
+		<td>This methods inserts the Transaction ERP Movements, also it can create Current Account Movements for deltas and update the Transaction depending on the parameters provided.</td>
+	     </tr>
      </tbody>
 </table>
 
