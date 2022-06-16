@@ -26,6 +26,7 @@
 |2.0|11/04/2022|**Document Update** <br> - Company inserts update|
 |2.1|28/04/2022|**Document Update** <br> - Company inserts update fuel reference|
 |2.2|26/05/2022|**Document Update** <br> - Add Company Contract Offline Balance Update Request <br> - Company inserts update 
+|2.3|16/06/2022|**Document Update** <br> - Update TransactionMovementERPInsert Request <br> - Add CompanyContractOfflineBalanceUpdate
 
 ## Contents
 
@@ -5961,6 +5962,23 @@ transactions to download.
 			</td>
 			<td>
 				<p align="left">ERP Invoice number</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">NoCurrentAccountAdjustment</p>
+			</td>
+			<td>
+				<p align="left">1<p>
+			</td>
+			<td>
+				<p align="left">N<p>
+			</td>
+			<td>
+				<p align="left">Indicates that no current account adjusments/movements will be performed.<br/>
+					0 = "false"<br />
+					1 = "true"<br />
+				</p>
 			</td>
 		</tr>
 	</tbody>
