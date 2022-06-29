@@ -8,7 +8,7 @@
 |Document Information||
 |--- |--- |
 |File:|AN-SDK-Reference|
-|Doc. Version:|1.0|
+|Doc. Version:|1.2|
 |Release Date:|10, July 2016|
 |Author:|ATIOnet LLC|
 
@@ -17,6 +17,7 @@
 |Ver.|Date|Change summary|
 |1.0|10/July/2016|Initial version|
 |1.1|04/April/2022|Driver and vehicle Id usage addition into programs|
+|1.2|29/June/2022|Contingency add ApplyContingencyPrice into TransactionContingencyDto|
 
 </br>
 
@@ -3530,7 +3531,8 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 | bool PrimaryVehicle ||
 | Guid PrimaryIdentificationId ||
 | string PurchaseOrderNumber ||
-		
+| Bool ApplyContingencyPrice ||
+			
 #### TransactionContingencyDto
 |Data|Description|
 |--- |--- |

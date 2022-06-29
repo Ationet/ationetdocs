@@ -1,5 +1,5 @@
 ![ATIONET Logo](Content/Images/ATIOnetLogo_250x70.png)
-# ATIONET - Native Transaction Protocol Specification v1.4 # <!-- omit in toc -->
+# ATIONET - Native Transaction Protocol Specification v1.5 # <!-- omit in toc -->
 
 <table>
 	<tr>
@@ -12,7 +12,7 @@
 			File:
 		</td>
 		<td>
-			ATIONET-Native_Transaction_Protocol-Spec-v1.4
+			ATIONET-Native_Transaction_Protocol-Spec-v1.5
 		</td>
 	</tr>
 	<tr>
@@ -20,7 +20,7 @@
 			Doc Version:
 		</td>
 		<td>
-			1.4
+			1.5
 		</td>
 	</tr>
 	<tr>
@@ -124,6 +124,18 @@
 		</td>
 		<td>
 			<p>1.4  Protocol version changes
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>1.5</p>
+		</td>
+		<td>
+			<p>29/Jun/2022</p>
+		</td>
+		<td>
+			<p>1.5  Protocol version changes
+			<br> - Add IdTransactionContingency request</p>
 		</td>
 	</tr>
 </table>
@@ -595,6 +607,7 @@ Refer to [Original Data](./Annexes/AN-Native-OriginalData-Annex.md) annex for a 
 | OldPin                    | 200  | string                     | Conditional | Only used when sending a 300 Transaction Code                                                                                                |
 | NewPin                    | 200  | string                     | Conditional | Only used when sending a 300 Transaction Code                                                                                                |
 | ConfirmationPin           | 200  | string                     | Conditional | Only used when sending a 300 Transaction Code                                                                                                |
+| IdTransactionContingency  |  -   | Guid                       | Conditional | Only used when sending a 126 Transaction Code. Use to send contingency id                                                                    |
 
 
 ## 8 Transaction Response (TRESP) Message Format
@@ -731,7 +744,8 @@ Refer to [Original Data](./Annexes/AN-Native-OriginalData-Annex.md) annex for a 
     "InvoiceNumber": null,
     "ResponseCode": null,
     "ResponseText": null,
-    "ReceiptData": null
+    "ReceiptData": null,
+    "IdTransactionContingency": "A220B4CD-1C5A-4C51-9BF5-5BE43BE3B1F6"
 }
 ```
 
