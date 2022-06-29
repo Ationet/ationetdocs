@@ -20,7 +20,7 @@
 			Doc Version:
 		</td>
 		<td>
-			1.4
+			1.5
 		</td>
 	</tr>
 	<tr>
