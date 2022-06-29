@@ -75,6 +75,7 @@ Failure to process the request will be indicated by an HTTP 400’s range status
 Possible values for ResponseCode:
 
 |ResponseCode|ResponseMessage|
+|---|---|
 |0|Received command is not a valid POS Protocol command|
 |1|Site Id is null or empty|
 |2|Unable to confirm transaction due to invalid parameters or status|
@@ -92,7 +93,7 @@ Possible values for ResponseCode:
 ## Architecture
 This cloud module contains 2 main components, the one that talks to the controllers and the one that talks to Mercado Pago. Both are HTTPS web APIs.
 
-![ationetlogo](Content/Images/architecturePOS.png)
+![ationetlogo](Content/Images/architecturePOS.PNG)
 
 ### Controllers API
 #### Supported Commands 
@@ -130,9 +131,7 @@ Response Body:
 |---|---|
 |pump_id|The pump where the sale was done|
 |external_reference|The sale number provided by the controller in the command "C"|
-|action|If the response does not have Action, it indicates that the payment was not processed
-if “P”, the transaction has been paid
-If “E”, the controller needs to set pump as in ERROR in the cloud and controlles must avoid sending any command until it is fixed. Same error must be returned as a response to every GetStatus request until it is fixed.|
+|action|If the response does not have Action, it indicates that the payment was not processed. if “P”, the transaction has been paid. If “E”, the controller needs to set pump as in ERROR in the cloud and controlles must avoid sending any command until it is fixed. Same error must be returned as a response to every GetStatus request until it is fixed.|
 |payment_type|It will be present only if action is “P”. It is the payment type used to pay. See table below for possible values.|
 |paymentObject|It will be present only if action is “P”. It is a serialized string representation of the Payment Object provided by Mercado Pago.|
 |error_code|It will be present only if action is “E”. It is an error code that represent a particular error on a particular pump. Note: Same error_code must be returned by the cloud as a response to every GetStatus request until it is fixed.|
