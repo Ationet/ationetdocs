@@ -1,18 +1,18 @@
 ![ationetlogo](Content/Images/ATIOnetLogo_250x70.png)
-# ATIONet - Mercado Pago Transaction Protocol Specification v1.1 #
+# ATIONet - POS - Mercado Pago Transaction Protocol Specification v1.1 #
 
 |Document Information||
 |--- |--- |
-|File:|AN-MercadoPago_Transaction_Protocol-Spec|
+|File:|AN-POS_Transaction_Protocol-Spec|
 |Doc Version:|1.1|
-|Release Date:|10, August 2019|
+|Release Date:|28, June 2022|
 |Author:|ATIONet LLC|
 
 
 |Change Log|||
 |--- |--- |--- |
 |Ver.|Date|Change Summary|
-|1.1|10, August 2019|Initial version. Covers POST and GET Transactions|
+|1.1|28, June 2022|Initial version.|
 
 
 ## Contents
@@ -38,7 +38,7 @@
 
 ### Introduction
 
-This specification is intended to document ATIONet’s Mercado Pago Protocol messaging format and related features required for the systems applying for integration with ATIONet. The following sections provide descriptions of the messages themselves, the expected behavior for each supported transaction type and a common ground for the functionality of each relevant item.
+This specification is intended to document ATIONet’s POS Protocol with Mercado Pago integration messaging format and related features required for the systems applying for integration with ATIONet. The following sections provide descriptions of the messages themselves, the expected behavior for each supported transaction type and a common ground for the functionality of each relevant item.
 
 ## Scope
 
@@ -50,13 +50,13 @@ description paragraph.
 
 To validate the source of transactions and data encryption, the ATIONet Native Transaction Protocol relies on a SSL connection between the Site’s Terminal or Site’s Controller and the ATIONet Host. The SSL connection is established for each request/response pair, using a certificate property of ATIONet, meaning that each request must include a system-type user and password on the Header. The user will be matched against the related ATIONet actor for each message.
 
-Users to be used on the Transaction Protocol messaging will be created by authorized users via ATIONet Console, with the role “Controller/Terminal”.
+Users to be used on the Transaction Protocol messaging will be created by authorized users via ATIONet Console.
 
 At this time there is no provisioning to distribute or update certificates or thumbprints thru a system interface. This information will be provided at request of the Controller’s vendor during the integration project.
 
 ## Error Handling
 
-Success/failure exits on the Mercado Pago Transaction Protocol will be handled via HTTP status codes.
+Success/failure exits on the POS Transaction Protocol will be handled via HTTP status codes.
 
 Successful request will get a HTTP 200 and the resulting response.
 
@@ -72,12 +72,27 @@ Failure to process the request will be indicated by an HTTP 400’s range status
 
 	{“ResponseCode”:”40001”,”ResponseMessage”:”Site not Found”,”ResponseError”:""}
 
-Refer to [Response Codes](#112-response-codes) Table in the Reference Tables section for a complete list of supported codes.
+Possible values for ResponseCode:
+
+|ResponseCode|ResponseMessage|
+|0|Received command is not a valid POS Protocol command|
+|1|Site Id is null or empty|
+|2|Unable to confirm transaction due to invalid parameters or status|
+|3|Action given for transaction code is invalid|
+|4|Transaction amount is zero or negative|
+|5|Missing parameters for transaction creation request|
+|6|Error during serialization/processing of request. Trace is sent as part of message|
+|7|Given parameters are invalid for request|
+|8|Unable to confirm order payment|
+|9|Site has no Access Token and it's required for operation|
+|10|Order has no aproved payments.|
+|100|Requested Site Id was not found|
+|102|The given site has a refund pending on one of it's fuel points|
 
 ## Architecture
 This cloud module contains 2 main components, the one that talks to the controllers and the one that talks to Mercado Pago. Both are HTTPS web APIs.
 
-![ationetlogo](Content/Images/architecture.png)
+![ationetlogo](Content/Images/architecturePOS.png)
 
 ### Controllers API
 #### Supported Commands 
@@ -87,10 +102,11 @@ This cloud module contains 2 main components, the one that talks to the controll
 |A|Get Status|This is the message that the controller sends to get news|
 |B|Confirm Status|This is the message that the controller sends to confirm that the received status in message A was processed OK|
 |C|Send Transaction|Message sent by the controller containing new sales generated at the POS|
+|U|Update Transaction|Message sent from the POS to clear or cancel transactions|
 
 **Verb**: POST
 
-**URL**: https://mercadopago.ationet.com/v1/controllers
+**URL**: https://mobilepaymentapi.ationet.com/v1/PointOfSale 
 
 **Headers**:
 - Accept-Encoding: gzip
@@ -98,7 +114,7 @@ This cloud module contains 2 main components, the one that talks to the controll
 
 
 #### Commands Flow
-![ationetlogo](Content/Images/mercadoPagoFlow.jpeg)
+![ationetlogo](Content/Images/POSSequence.png)
 
 #### Get Status (A)
 Request Body:
@@ -107,19 +123,32 @@ Request Body:
 
 Response Body:
 
-	[{"pump_id":"2","external_reference":"974423","action":"L"},
-	{"pump_id":"7","external_reference":"975321","action":"P"}]
+	[{“pump_id":"7","external_reference":"975321", “action”: “P”, “payment_type”: “Mercado Pago”, “paymentObject”:”<serializedobject>”},
+	{“pump_id”:”10”, ”action”:”E”,“error_code”:”102”}]
 
 |Field|Description|
 |---|---|
 |pump_id|The pump where the sale was done|
 |external_reference|The sale number provided by the controller in the command "C"|
-|action|If "L" the controller needs to lock the transaction, if "P", the controller needs to pay the transaction. Both actions needs to be done with "B" command|
+|action|If the response does not have Action, it indicates that the payment was not processed
+if “P”, the transaction has been paid
+If “E”, the controller needs to set pump as in ERROR in the cloud and controlles must avoid sending any command until it is fixed. Same error must be returned as a response to every GetStatus request until it is fixed.|
+|payment_type|It will be present only if action is “P”. It is the payment type used to pay. See table below for possible values.|
+|paymentObject|It will be present only if action is “P”. It is a serialized string representation of the Payment Object provided by Mercado Pago.|
+|error_code|It will be present only if action is “E”. It is an error code that represent a particular error on a particular pump. Note: Same error_code must be returned by the cloud as a response to every GetStatus request until it is fixed.|
+
+
+Possible values for payment_type:
+
+|Payment_type|Description|
+|---|---|
+|Mercado Pago|Transaction was paid through Mercado Pago.|
+
 
 #### Confirm Status (B)
 Request Body:
 
-	{"transaction_code":"B","site_id":"123456","pump_id":"7", "external_reference":"974423", "action":"L"}
+	{"transaction_code":"B","site_id":"123456","pump_id":"7", "external_reference":"974423", “status”:”OK}
 
 Response Body:
 
@@ -127,6 +156,14 @@ If the HTTP response code is different than 200, then the following structure is
 
 	{“ResponseCode”:”StringValue”,”ResponseMessage”:”StringValue”,”ResponseError”:"StringValue"}
 
+
+Special Case 1: 
+
+If pump is in a particular error (for instance reverse pending), a particular and specific ResponseCode (same error_code returned in GetStatus) must be returned. See Error Handling section for more details. 
+
+Special Case 2: 
+
+If the POS receives a “P” action requiring Payment of sale but Payment Object status is not approved, the POS will not send ConfirmStatus because it must not pay the sale. Instead, it will unlock the sale and notify the cloud by sending Update Transaction (U) with Clear (C) action to make the sale available for future QR scanning.
 
 #### Send Transaction (C)
 Request Body:
@@ -158,7 +195,7 @@ If the HTTP response code is different than 200, then the following structure is
 	{“ResponseCode”:”StringValue”,”ResponseMessage”:”StringValue”,”ResponseError”:"StringValue"}
 
 
-**Note**: If a transaction is confirmed by Fusion as PAID  and then the payment cleared, Fusion will send the transaction again using the command "C", only if this is the latest sale on Fusion (OLD SALES doesn’t require this behavior).
+**Note**: If pump is in a particular error (for instance reverse pending), a particular and specific ResponseCode (same error_code returned in GetStatus) must be returned. See Error Handling section for more details.
 	
 
 ### Mercado Pago API
