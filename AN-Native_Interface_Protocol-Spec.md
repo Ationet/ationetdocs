@@ -116,6 +116,7 @@
 - [13 Statements Downloads](#13-Statements-Download)
 	- [13.1 Action Codes](#131-action-codes)
 	- [13.2 Statements Header Download (POST) - Body Section Format Request](#132-statements-header-download-post---body-section-format-request)
+	- [13.3 Statements Header Download (POST) - Body Section Format Response](#133-statements-header-download-post---body-section-format-response)
 
 - [14 Examples](#14-Examples)
 	- [14.1 C# example](#141-C-example)
@@ -14403,6 +14404,27 @@ The download will be limited by dates (from and to), which must be included in t
 |DateTo|19|nvarchar|Required|To date to filter charges comissions "yyyy/MM/dd hh:mm:ss"|
 |StatementsHeaderReportTypeEnum|3|tinyint|Optional|Define the type of Statments to be download.</br> 0 = ALL</br> 1 = Company</br> 2 = Merchant</br> If is not present in the request, ALL is the default behaviour|
 |CustomOperation0|3|bool|Optional|If the type of the report is type 1 (Company), the request can be filtered by CustomOperation0 true or false. If this field is not sent, it will not be taken in the consult.|
+
+### 13.3 Statements Header Download (POST) - Body Section Format Response
+
+|Field Name|Size|Type|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |
+|StatementId|36|Guid|Statment UID|
+|ProcessId|36|Guid|Process UID|
+|Number|100|nvarchar|The Statment number.|
+|Date|19|nvarchar|The Statment datetime “yyyy/mm/dd hh:mm:ss”|
+|CompanyId|36|Guid|Company UID|
+|CompanyContractId|36|Guid|Company Contract UID|
+|CompanyContractCode|20|nvarchar|Company Contract code|
+|MerchantId|36|Guid|Merchant UID|
+|MerchantSubContractId|36|Guid|Merchant SubContract UID|
+|MerchantContractId|36|Guid|Merchant Contract UID|
+|MerchantContractCode|20|nvarchar|Merchant Contract code|
+|BillingProcessType|4|byte|The type of the billing process.|
+|CompanyContractBillingPeriodicity|4|byte|The Billing periodicity configured on Company Contract|
+|MerchantContractBillingPeriodicity|4|byte|The billing Periodicity configured on Merchant Contract|
+|StatementCompanyTransactionsCount|8|tinyint|The count of the Transactions when the statment is the company.|
+
 
 ## 14 Examples
 
