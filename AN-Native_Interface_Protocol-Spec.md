@@ -113,9 +113,13 @@
 	- [12.12 Interface Program Contract](#1212-InterfaceProgramContract)
 	- [12.13 Response Messages](#1213-response-messages)
 
-- [13 Examples](#13-Examples)
-	- [13.1 C# example](#131-C-example)
-	- [13.2 Example](#132-example)
+- [13 Statements Downloads](#13-Statements-Download)
+	- [14.1 C# example](#141-C-example)
+	- [14.2 Example](#142-example)
+
+- [14 Examples](#14-Examples)
+	- [14.1 C# example](#141-C-example)
+	- [14.2 Example](#142-example)
 
 ## Overview
 
@@ -14343,10 +14347,16 @@ To edit a company there's no need to send the contract information. However, whe
 </table>
 
 
+## 13 Statements Download
 
-## 13 Examples
+The Statements Download messages are POST actions to recover all the statments processed by ATIONet for a given Network depending on the particular Action Code.
+The Action Code is validated against the type of network of the authenticated user. Request not passing this validation will be rejected.
+The download will be limited by dates (from and to), which must be included in the request
 
-### 13.1 C# example
+
+## 14 Examples
+
+### 14.1 C# example
 
 ```C#
 using System.IO;
@@ -14403,7 +14413,7 @@ using (WebResponse webResponse = webRequest.GetResponse())
 	}
 }
 ```
-### 13.2 Example
+### 14.2 Example
 
 ```
 {
