@@ -115,7 +115,7 @@
 
 - [13 Statements Downloads](#13-Statements-Download)
 	- [13.1 Action Codes](#131-action-codes)
-	- [13.2 Statements Header Download (POST) - Body Section Format Request](#112-Statements-Header-Download-POST--Body-Section-Format-Request)
+	- [13.2 Statements Header Download (POST) - Body Section Format Request](#132-statements-header-download-post---body-section-format-request)
 
 - [14 Examples](#14-Examples)
 	- [14.1 C# example](#141-C-example)
