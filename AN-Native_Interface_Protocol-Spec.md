@@ -14353,6 +14353,46 @@ The Statements Download messages are POST actions to recover all the statments p
 The Action Code is validated against the type of network of the authenticated user. Request not passing this validation will be rejected.
 The download will be limited by dates (from and to), which must be included in the request
 
+### 13.1 Action Codes
+
+<table>
+	<tr valign="top">
+		<th align="left">
+			Action Code
+		</th>
+		<th colspan="2" align="left">
+			Description
+		</th>
+	</tr>
+	<tr valign="top">
+		<td rowspan="4">
+			<p>920</p>
+		</td>
+		<td>
+			<p>Title:</p>
+		</td>
+		<td>
+			<p>Statements download</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Function:</p>
+		</td>
+		<td>
+			<p>Download Statment headers</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Allowed for:</p>
+		</td>
+		<td>
+			<p></p>
+		</td>
+	</tr>
+</table>
+
 
 ## 14 Examples
 
