@@ -115,7 +115,7 @@
 
 - [13 Statements Downloads](#13-Statements-Download)
 	- [13.1 Action Codes](#131-action-codes)
-	- [14.2 Example](#142-example)
+	- [13.2 Statements Header Download (POST) - Body Section Format Request](#112-Statements-Header-Download-POST--Body-Section-Format-Request)
 
 - [14 Examples](#14-Examples)
 	- [14.1 C# example](#141-C-example)
@@ -14393,6 +14393,16 @@ The download will be limited by dates (from and to), which must be included in t
 	</tr>
 </table>
 
+### 13.2 Statements Header Download (POST) - Body Section Format Request
+
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |--- |
+|ActionCode|4|nvarchar|Required|See Action Codes section above|
+|SubscriberCode|3|nvarchar|Required|Fixed. To be assigned by ATIONet|
+|DateFrom|19|nvarchar|Required|From date to filter charges comissions "yyyy/MM/dd hh:mm:ss"|
+|DateTo|19|nvarchar|Required|To date to filter charges comissions "yyyy/MM/dd hh:mm:ss"|
+|StatementsHeaderReportTypeEnum|3|tinyint|Optional|Define the type of Statments to be download.</br> 0 = ALL</br> 1 = Company</br> 2 = Merchant</br> If is not present in the request, ALL is the default behaviour|
+|CustomOperation0|3|bool|Optional|If the type of the report is type 1 (Company), the request can be filtered by CustomOperation0 true or false. If this field is not sent, it will not be taken in the consult.|
 
 ## 14 Examples
 
