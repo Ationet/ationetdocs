@@ -18,6 +18,7 @@
 |1.0|10/July/2016|Initial version|
 |1.1|04/April/2022|Driver and vehicle Id usage addition into programs|
 |1.2|29/June/2022|Contingency add ApplyContingencyPrice into TransactionContingencyDto|
+|1.3|01/Aug/2022|Statments Header|
 
 </br>
 
@@ -4510,10 +4511,15 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
             <td></td>
             <td>This method downloads retail transactions</td>
         </tr>
+	<tr>
+		<td>GetStatmentsHeader</td>
+		<td></td>
+		<td>This method downloads the statments header</td>
+	</tr>
         <tr>
           	<td>GetStatements</td>
-            <td></td>
-            <td>This method downloads the statements</td>
+		<td>subscriberCode (string) </br> systemModel (string) </br> systemVersion (string) </br> dateFrom (DateTime 'yyyy/mm/dd hh:mm:ss') </br> dateTo (DateTime 'yyyy/mm/dd hh:mm:ss') </br> reportType (int 0 = ALL (default), 1 = Company, 2 = Merchant) </br> CustomOperation0 (bool? only available for report type = 2)</td>
+            	<td>This method downloads the statements</td>
         </tr>
         <tr>
           	<td>GetTransactions</td>
