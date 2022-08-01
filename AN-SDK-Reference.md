@@ -4513,12 +4513,12 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
         </tr>
 	<tr>
 		<td>GetStatmentsHeader</td>
-		<td></td>
+		<td>subscriberCode (string) </br> systemModel (string) </br> systemVersion (string) </br> dateFrom (DateTime 'yyyy/mm/dd hh:mm:ss') </br> dateTo (DateTime 'yyyy/mm/dd hh:mm:ss') </br> reportType (int 0 = ALL (default), 1 = Company, 2 = Merchant) </br> CustomOperation0 (bool? only available for report type = 2)</td>
 		<td>This method downloads the statments header</td>
 	</tr>
         <tr>
           	<td>GetStatements</td>
-		<td>subscriberCode (string) </br> systemModel (string) </br> systemVersion (string) </br> dateFrom (DateTime 'yyyy/mm/dd hh:mm:ss') </br> dateTo (DateTime 'yyyy/mm/dd hh:mm:ss') </br> reportType (int 0 = ALL (default), 1 = Company, 2 = Merchant) </br> CustomOperation0 (bool? only available for report type = 2)</td>
+		<td></td>
             	<td>This method downloads the statements</td>
         </tr>
         <tr>
