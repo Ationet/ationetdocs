@@ -27,6 +27,7 @@
 |2.1|28/04/2022|**Document Update** <br> - Company inserts update fuel reference|
 |2.2|26/05/2022|**Document Update** <br> - Add Company Contract Offline Balance Update Request <br> - Company inserts update 
 |2.3|16/06/2022|**Document Update** <br> - Update TransactionMovementERPInsert Request <br> - Add CompanyContractOfflineBalanceUpdate
+|2.4|29/07/2022|**Document Update** <br> - Add Statements Download Request| 
 
 ## Contents
 
@@ -112,9 +113,14 @@
 	- [12.12 Interface Program Contract](#1212-InterfaceProgramContract)
 	- [12.13 Response Messages](#1213-response-messages)
 
-- [13 Examples](#13-Examples)
-	- [13.1 C# example](#131-C-example)
-	- [13.2 Example](#132-example)
+- [13 Statements Downloads](#13-Statements-Download)
+	- [13.1 Action Codes](#131-action-codes)
+	- [13.2 Statements Header Download (POST) - Body Section Format Request](#132-statements-header-download-post---body-section-format-request)
+	- [13.3 Statements Header Download (POST) - Body Section Format Response](#133-statements-header-download-post---body-section-format-response)
+
+- [14 Examples](#14-Examples)
+	- [14.1 C# example](#141-C-example)
+	- [14.2 Example](#142-example)
 
 ## Overview
 
@@ -14342,10 +14348,87 @@ To edit a company there's no need to send the contract information. However, whe
 </table>
 
 
+## 13 Statements Download
 
-## 13 Examples
+The Statements Download messages are POST actions to recover all the statments processed by ATIONet for a given Network depending on the particular Action Code.
+The Action Code is validated against the type of network of the authenticated user. Request not passing this validation will be rejected.
+The download will be limited by dates (from and to), which must be included in the request
 
-### 13.1 C# example
+### 13.1 Action Codes
+
+<table>
+	<tr valign="top">
+		<th align="left">
+			Action Code
+		</th>
+		<th colspan="2" align="left">
+			Description
+		</th>
+	</tr>
+	<tr valign="top">
+		<td rowspan="4">
+			<p>920</p>
+		</td>
+		<td>
+			<p>Title:</p>
+		</td>
+		<td>
+			<p>Statements download</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Function:</p>
+		</td>
+		<td>
+			<p>Download Statment headers</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Allowed for:</p>
+		</td>
+		<td>
+			<p></p>
+		</td>
+	</tr>
+</table>
+
+### 13.2 Statements Header Download (POST) - Body Section Format Request
+
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |--- |
+|ActionCode|4|nvarchar|Required|See Action Codes section above|
+|SubscriberCode|3|nvarchar|Required|Fixed. To be assigned by ATIONet|
+|DateFrom|19|nvarchar|Required|From date to filter charges comissions "yyyy/MM/dd hh:mm:ss"|
+|DateTo|19|nvarchar|Required|To date to filter charges comissions "yyyy/MM/dd hh:mm:ss"|
+|StatementsHeaderReportTypeEnum|3|tinyint|Optional|Define the type of Statments to be download.</br> 0 = ALL</br> 1 = Company</br> 2 = Merchant</br> If is not present in the request, ALL is the default behaviour|
+|CustomOperation0|3|bool|Optional|If the type of the report is type 1 (Company), the request can be filtered by CustomOperation0 true or false. If this field is not sent, it will not be taken in the consult.|
+
+### 13.3 Statements Header Download (POST) - Body Section Format Response
+
+|Field Name|Size|Type|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |
+|StatementId|36|Guid|Statment UID|
+|ProcessId|36|Guid|Process UID|
+|Number|100|nvarchar|The Statment number.|
+|Date|19|nvarchar|The Statment datetime “yyyy/mm/dd hh:mm:ss”|
+|CompanyId|36|Guid|Company UID|
+|CompanyContractId|36|Guid|Company Contract UID|
+|CompanyContractCode|20|nvarchar|Company Contract code|
+|MerchantId|36|Guid|Merchant UID|
+|MerchantSubContractId|36|Guid|Merchant SubContract UID|
+|MerchantContractId|36|Guid|Merchant Contract UID|
+|MerchantContractCode|20|nvarchar|Merchant Contract code|
+|BillingProcessType|4|byte|The type of the billing process.|
+|CompanyContractBillingPeriodicity|4|byte|The Billing periodicity configured on Company Contract|
+|MerchantContractBillingPeriodicity|4|byte|The billing Periodicity configured on Merchant Contract|
+|StatementCompanyTransactionsCount|8|tinyint|The count of the Transactions when the statment is the company.|
+
+
+## 14 Examples
+
+### 14.1 C# example
 
 ```C#
 using System.IO;
@@ -14402,7 +14485,7 @@ using (WebResponse webResponse = webRequest.GetResponse())
 	}
 }
 ```
-### 13.2 Example
+### 14.2 Example
 
 ```
 {
