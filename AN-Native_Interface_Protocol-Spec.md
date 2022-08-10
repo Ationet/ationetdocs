@@ -14326,7 +14326,7 @@ To edit a company there's no need to send the contract information. However, whe
   <tr>
     <td class="tg-rjo2" rowspan="3">Response's</td>
     <td class="tg-eygw">200</td>
-    <td class="tg-eygw">"ResponseCode": "00000",<br/>"ResponseMessage": "Ok",<br/>"ResponseError": null<br/></td>
+    <td class="tg-eygw">"ResponseCode": "00000",<br/>"ResponseMessage": "Operation Succeeded",<br/>"ResponseError": null<br/></td>
     <td class="tg-eygw">Operation success.</td>
   </tr>
   <tr>
