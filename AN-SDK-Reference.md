@@ -19,6 +19,7 @@
 |1.1|04/April/2022|Driver and vehicle Id usage addition into programs|
 |1.2|29/June/2022|Contingency add ApplyContingencyPrice into TransactionContingencyDto|
 |1.3|01/Aug/2022|Statments Header|
+|1.4|22/Aug/2022|CompanyInsertAndUpdate, RackPricesListInsertAndUpdate and QuotationsInsertAndUpdate addition to InterfaceOperations|
 
 </br>
 
@@ -43,6 +44,7 @@
 	  -  [Api Methods](#api-methods)
 	  -  [FMS Methods](#fms-methods)
 	  -  [Interface Methods](#interface-methods)
+	  -  [Interface Methods Examples](#interface-methods-examples)
 	  -  [Loyalty Methods](#loyalty-methods)
 	  -  [Retail Methods](#retail-methods)
 - [Appendix A - Native Authorization Protocol Messages](#appendix-a---native-authorization-protocol-messages)
@@ -4560,18 +4562,40 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
             <td></td>
             <td>This method downloads the balance of the sub accounts</td>
         </tr>
-	     <tr>
-		<td>UpdateCompanyContractOfflineBalance</td>
-		<td></td>
-		<td>This methods updates the company contract offline balance.</td>
-	     </tr>
-	     <tr>
-		<td>InsertTransactionMovementERP</td>
-		<td></td>
-		<td>This methods inserts the Transaction ERP Movements, also it can create Current Account Movements for deltas and update the Transaction depending on the parameters provided.</td>
-	     </tr>
+	    <tr>
+			<td>UpdateCompanyContractOfflineBalance</td>
+			<td></td>
+			<td>This methods updates the company contract offline balance.</td>
+	    </tr>
+	    <tr>
+			<td>InsertTransactionMovementERP</td>
+			<td></td>
+			<td>This methods inserts the Transaction ERP Movements, also it can create Current Account Movements for deltas and update the Transaction depending on the parameters provided.</td>
+	    </tr>
+	    <tr>
+			<td>CompanyInsertAndUpdate</td>
+			<td>subscriberCode (string) </br> systemModel (string) </br> systemVersion (string) </br> companyGroupID (Guid?) </br> custom0 (string) </br> custom1 (string) </br> custom2 (string) </br> custom3 (string) </br> phone1 (string) </br> phone2 (string) </br> contactEmail (string) </br> contactName (string) </br> taxPayerCategoryId (Guid?) </br> countryDeliveryId (Guid?) </br> stateDeliveryId (Guid?) </br> cityDelivery (string) </br> zipCodeDelivery (string) </br> permissionsType (short?) </br> street1Delivery (string) </br> street2Delivery (string) </br> stateId (Guid) </br> countryId (Guid) </br> city (string) </br> zipCode (string) </br> street1 (string) </br> street2 (string) </br> plan (byte?) </br> industryId (Guid) </br> name (string) </br> code (string) </br> desactivationType (byte?) </br> active (bool) </br> type (byte) </br> taxPayerId (string) </br> contracts (List &#60;InterfaceCompanyContract&#62;) </br>
+			</td>
+			<td>This methods inserts and updates a company and its contracts.</td>
+	    </tr>
+	    <tr>
+			<td>RackPricesListInsertAndUpdate</td>
+			<td>subscriberCode (string) </br> code (string rack prices list code) </br> name (string rack prices list name) </br> active (bool) </br> currencyCodeId (Guid?) </br> currencyCode (string) </br> groupingType (short? 0 = Zones, 1 = SitesClassifications0, 2 = 
+        SitesClassifications1, 3 = 
+        SitesClassifications2, 4 = 
+        SitesClassifications3) </br> rackPrices (List &#60;InterfaceRackPriceRequest&#62;) </br> List &#60;string&#62; companyContracts (List &#60;string&#62; optional company contracts codes) </br> merchantContracts (List&#60;string&#62; optional merchant contracts codes) </br>
+			</td>
+			<td>This methods inserts a quotation between two currencies for the entire subscription.</td>
+	    </tr>
+	    <tr>
+			<td>QuotationsInsertAndUpdate</td>
+			<td>subscriberCode (string) </br> targetCurrencyCode  (string) </br> targetCurrencyId (Guid?) </br> dateFrom (string 'yyyy/mm/dd hh:mm') </br> value (decimal)</td>
+			<td>This methods inserts a quotation between two currencies for the entire subscription.</td>
+	    </tr>
      </tbody>
 </table>
+
+### Interface Methods Examples
 
 ### Loyalty Methods
 <table>
