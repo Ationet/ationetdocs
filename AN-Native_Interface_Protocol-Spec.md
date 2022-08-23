@@ -27,7 +27,8 @@
 |2.1|28/04/2022|**Document Update** <br> - Company inserts update fuel reference|
 |2.2|26/05/2022|**Document Update** <br> - Add Company Contract Offline Balance Update Request <br> - Company inserts update 
 |2.3|16/06/2022|**Document Update** <br> - Update TransactionMovementERPInsert Request <br> - Add CompanyContractOfflineBalanceUpdate
-|2.4|29/07/2022|**Document Update** <br> - Add Statements Download Request| 
+|2.4|29/07/2022|**Document Update** <br> - Add Statements Download Request
+|2.5|23/08/2022|**Document Update** <br> - Rack Prices List Insert addition| 
 
 ## Contents
 
@@ -277,11 +278,15 @@ Availability of this message and the type of actions allowed depend on the subsc
   </tr>
   <tr>
     <td class="tg-eygw">925</td>
-    <td class="tg-eygw">Company Insert</td>
+    <td class="tg-eygw">Company insert nas update</td>
   </tr>
   <tr>
     <td class="tg-eygw">926</td>
     <td class="tg-eygw">Company contract credit limit update</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">927</td>
+    <td class="tg-eygw">Rack prices list addition and update</td>
   </tr>
   <tr>
     <td class="tg-eygw">928</td>
@@ -617,12 +622,17 @@ subscription types but also on contract terms with ATIONet.
   <tr>
     <td class="tg-eygw">925</td>
     <td class="tg-dqd0">Company insert</td>
-    <td class="tg-eygw">Adds or update a company related to the user network</td>
+    <td class="tg-eygw">Adds or updates a company related to the user network and its contract</td>
   </tr>	
   <tr>
     <td class="tg-eygw">926</td>
     <td class="tg-dqd0">Company contract credit limit update</td>
-    <td class="tg-eygw">Update the credit limit related to the given company</td>
+    <td class="tg-eygw">Updates the credit limit related to the given company</td>
+  </tr>
+  <tr>
+    <td class="tg-eygw">927</td>
+    <td class="tg-dqd0">Rack prices list insert</td>
+    <td class="tg-eygw">Adds or updates a rack prices list to the user network</td>
   </tr>
   <tr>
     <td class="tg-eygw">928</td>
