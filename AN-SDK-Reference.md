@@ -19,7 +19,7 @@
 |1.1|04/April/2022|Driver and vehicle Id usage addition into programs|
 |1.2|29/June/2022|Contingency add ApplyContingencyPrice into TransactionContingencyDto|
 |1.3|01/Aug/2022|Statments Header|
-|1.4|22/Aug/2022|CompanyInsertAndUpdate, RackPricesListInsertAndUpdate and QuotationsInsertAndUpdate addition to InterfaceOperations|
+|1.4|22/Aug/2022|CompanyInsertAndUpdate, RackPricesListInsertAndUpdate and QuotationsInsertAndUpdate addition to InterfaceOperations and Interface Methods Examples|
 
 </br>
 
