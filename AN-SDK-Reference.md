@@ -4597,6 +4597,222 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 
 ### Interface Methods Examples
 
+#### CompanyInsertAndUpdate Example
+
+##### Related Entities Instancing
+
+	List<InterfaceCompanyContract> companyContractsList = new List<InterfaceCompanyContract>();
+	List<InterfaceModifierContract> companyContractModifiers = new List<InterfaceModifierContract>();
+	
+	InterfaceModifierContract companyContractModifier = new InterfaceModifierContract();
+	
+	companyContractModifier.Class = (byte)ModifierClassEnum.Discount;
+	companyContractModifier.Type = (byte)ModifierTypeEnum.Percentual;
+	companyContractModifier.Value = 10;
+	companyContractModifier.FuelMasterId = null;
+	companyContractModifier.FuelMasterCode = "002";
+	companyContractModifier.SiteId = null;
+	companyContractModifier.SiteCode = string.Empty;
+	companyContractModifier.DateFrom = "2022/08/22";
+	companyContractModifier.TimeFrom = "14:30:00";
+	companyContractModifier.DateTo = null;
+	companyContractModifier.TimeTo = null;
+	companyContractModifier.Description = "Modifier Description";
+	
+	companyContractModifiers.Add(companyContractModifier);
+	
+	InterfaceCompanyContract companyContract = new InterfaceCompanyContract();
+	
+	companyContract.Id = null;
+	companyContract.Active = true;
+	companyContract.ReactivationAmount = null;
+	companyContract.DesactivationType = null;
+	companyContract.Code = "CCC001";
+	companyContract.Description = "Company Contract Description";
+	companyContract.StartDate = "2022/08/22";
+	companyContract.Duration = 5;
+	companyContract.Periodicity = (byte)PeriodicityEnum.Yearly;
+	companyContract.CurrentAccountMode = (byte)ContractCurrentAccountModeEnum.Money;
+	companyContract.CurrencyID = null;
+	companyContract.CurrencyCode = "USD";
+	companyContract.Mode = (byte)ContractModeEnum.Debit;
+	companyContract.CreditLimit = null;
+	companyContract.BalanceMode = (byte)BalanceModeEnum.Disperse;
+	companyContract.ValidateSites = false;
+	companyContract.ValidateFuels = false;
+	companyContract.IdRackPricesList = null;
+	companyContract.RackPricesListCode = string.Empty;
+	companyContract.ValidatePrograms = false;
+	companyContract.Type = (byte)ContractTypeEnum.Fleet;
+	companyContract.Subsidized = false;
+	companyContract.Classification1Id = null;
+	companyContract.Classification1Code = string.Empty;
+	companyContract.Classification2Id = null;
+	companyContract.Classification2Code = string.Empty;
+	companyContract.Classification3Id = null;
+	companyContract.Classification3Code = string.Empty;
+	companyContract.Classification4Id = null;
+	companyContract.Classification4Code = string.Empty;
+	companyContract.Custom0 = string.Empty;
+	companyContract.Custom1 = string.Empty;
+	companyContract.Custom2 = string.Empty;
+	companyContract.Custom3 = string.Empty;
+	companyContract.CustomInterface0 = null;
+	companyContract.CustomInterface1 = null;
+	companyContract.CustomInterface2 = null;
+	companyContract.CustomInterface3 = null;
+	companyContract.CustomInterface4 = null;
+	companyContract.CustomOperation0 = null;
+	companyContract.CustomOperation1 = null;
+	companyContract.CustomOperation2 = null;
+	companyContract.CustomOperation3 = null;
+	companyContract.CustomOperation4 = null;
+	companyContract.PermissionsType = null;
+	companyContract.BillingActive = true;
+	companyContract.BillingDueDays = null;
+	companyContract.BillingPeriodicity = null;
+	companyContract.BillingPeriodicityValue = null;
+	companyContract.BillingManual = true;
+	companyContract.BillingCutTime = null;
+	companyContract.BillingCutDay = null;
+	companyContract.BillingCutMonth = null;
+	companyContract.StartingBillingDate = null;
+	companyContract.DocumentChargesFromBalance = null;
+	companyContract.SeparateChargesDocument = null;
+	companyContract.RecepientEmails = string.Empty;
+	companyContract.BillingTaxPayerId = string.Empty;
+	companyContract.BillingCompanyName = string.Empty;
+	companyContract.BillingCompanyStreet1 = string.Empty;
+	companyContract.BillingCompanyStreet2 = string.Empty;
+	companyContract.BillingCompanyZipCode = string.Empty;
+	companyContract.BillingCompanyCity = string.Empty;
+	companyContract.BillingCompanyCountryId = null;
+	companyContract.BillingCompanyStateId = null;
+	companyContract.Fuels = new List<InterfaceFuelContract>();
+	companyContract.Sites = new List<InterfaceSiteContract>();
+	companyContract.Prices = null;
+	companyContract.Modifiers = companyContractModifiers;
+	companyContract.Concepts = new List<InterfaceConceptContract>();
+	companyContract.Blocks = new List<InterfaceBlockContract>();
+	companyContract.OverLimits = new List<InterfaceOverLimitContract>();
+	companyContract.Programs = new List<InterfaceProgramContract>();
+	
+	companyContractsList.Add(companyContract);
+
+##### Calling the Interface Method and Evaluating the Result
+
+	SdkResponse<InterfaceCompanyResponse> result = this.ationetInterface.CompanyInsertAndUpdate
+	(subscriberCode: "TTL",
+	 systemModel: "Example Model",
+	 systemVersion: "1.0.0.0",
+	 companyGroupID: null,
+	 custom0: string.Empty,
+	 custom1: string.Empty,
+	 custom2: string.Empty,
+	 custom3: string.Empty,
+	 phone1: "11 058 021458",
+	 phone2: string.Empty,
+	 contactEmail: "companyAdminEmail@example.com",
+	 contactName: "Company Admin Name",
+	 taxPayerCategoryId: null,
+	 countryDeliveryId: null,
+	 stateDeliveryId: null,
+	 cityDelivery: "Buenos Aires",
+	 zipCodeDelivery: "8957",
+	 permissionsType: null,
+	 street1Delivery: "Corrientes 7214",
+	 street2Delivery: string.Empty,
+	 stateId: Guid.Parse("CDA171F6-A790-4D02-A492-11425B977C9A"),
+	 countryId: Guid.Parse("CDA171F6-A790-4D02-A492-11425B977C9A"),
+	 city: "Buenos Aires",
+	 zipCode: "8957",
+	 street1: "Corrientes 7214",
+	 street2: string.Empty,
+	 plan: null,
+	 industryId: Guid.Parse("E256DFC7-D428-4394-B6C5-6F93FA65A35D"),
+	 name: "Company Name",
+	 code: "Company Code",
+	 desactivationType: null,
+	 active: true,
+	 type: (byte)CompanyTypeEnum.Fleet,
+	 taxPayerId: "Company Taxpayer ID",
+	 contracts: companyContractsList
+	);
+
+	if (result.Status != SdkResponseStatus.Ok)
+	{
+    	throw new Exception(result.ErrorMessage);
+	}
+
+	return result.Content;
+
+#### RackPricesListInsertAndUpdate Example
+
+##### Related Entities Instancing
+
+	List<InterfaceRackPriceRequest> rackPrices = new List<InterfaceRackPriceRequest>();
+
+	InterfaceRackPriceRequest rackPrice = new InterfaceRackPriceRequest {FuelMasterId =   Guid.Parse("E256DFC7-D428-4394-B6C5-6F93FA65A35D"),
+	 FuelMasterCode = null,
+	 FuelERPCode = null,
+	 Value = 51,
+	 DateFrom = "2022/08/22 15:30:00",
+	 DateTo = null,
+	 SiteId = null,
+	 SiteCode = null,
+	 SiteClassification0Id = null,
+	 SiteClassification0Code = null,
+	 SiteClassification1Id = null,
+	 SiteClassification1Code = null,
+	 SiteClassification2Id = null,
+	 SiteClassification2Code = null,
+	 SiteClassification3Id = null,
+	 SiteClassification3Code = null,
+	 ZoneId = null,
+	 ZoneCode = null,
+	};
+
+	rackPrices.Add(rackPrice);
+
+##### Calling the Interface Method and Evaluating the Result
+
+	SdkResponse<string> result = this.ationetInterface.RackPricesListInsertAndUpdate(subscriberCode: "TTL",
+	 code: "RPL001",
+	 name:"Rack Prices List Name",
+	 active: true,
+	 currencyCodeId: Guid.Parse("E256DFC7-D428-4394-B6C5-6F93FA65A35D"),
+	 currencyCode: null,
+	 groupingType: null,
+	 rackPrices: rackPrices,
+	 companyContracts: new List<string>(),
+	 merchantContracts: new List<string>()
+	);
+
+	if (result.Status != SdkResponseStatus.Ok)
+	{
+    	throw new Exception(result.ErrorMessage);
+	}
+
+	return result.Content;
+
+#### QuotationsInsertAndUpdate Example
+
+##### Calling the Interface Method and Evaluating the Result
+
+	SdkResponse<string> result =  this.ationetInterface.QuotationsInsertAndUpdate(subscriberCode: "TTL",
+	 targetCurrencyCode: "USD",
+	 targetCurrencyId: null,
+	 dateFrom: "2022/08/22 16:30",
+	 value: 10.5
+	);
+
+	if (result.Status != SdkResponseStatus.Ok)
+	{
+    	throw new Exception(result.ErrorMessage);
+	}
+
+	return result.Content;
+
 ### Loyalty Methods
 <table>
      <thead>
