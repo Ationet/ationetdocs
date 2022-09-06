@@ -4,7 +4,7 @@
 |Document Information|.|
 |--- |--- |
 |File:|ATIONet-Native_Interface_Protocol-Spec|
-|Doc Version:|2.2|
+|Doc Version:|2.6|
 |Release Date:|29, March 2021|
 |Author:|ATIONet LLC|
 
@@ -29,6 +29,7 @@
 |2.3|16/06/2022|**Document Update** <br> - Update TransactionMovementERPInsert Request <br> - Add CompanyContractOfflineBalanceUpdate
 |2.4|29/07/2022|**Document Update** <br> - Add Statements Download Request
 |2.5|23/08/2022|**Document Update** <br> - Rack Prices List Insert addition| 
+|2.6|16/06/2022|**Document Update** <br> - Update TransactionMovementERPInsert Request <br>
 
 ## Contents
 
@@ -5786,6 +5787,73 @@ transactions to download.
 	</thead>
 	<tbody>
 		<tr valign="top">
+			<td>
+				<p align="left">TransactionId</p>
+			</td>
+			<td>
+				<p align="left"></p>
+			</td>
+			<td>
+				<p align="left">Guid</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Ationet Transaction Id. Required if ERPInvoiceNumber, SiteCode and LocalTransactionDate is not defined.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">ERPinvoiceNumber</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">String</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Used to identify the transaction, it is required if TransactionId is not informed. It has to be informed with SiteCode and LocalTransactionDate parameters.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">LocalTransactionDate</p>
+			</td>
+			<td>
+				<p align="left">19</p>
+			</td>
+			<td>
+				<p align="left">String Date Time Format (aaaa/mm/dd hh:mm:ss)</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Used to identify the transaction, it is required if TransactionId is not informed. It has to be informed with SiteCode and InvoiceNumber parameters.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">SiteCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">String</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Used to identify the transaction, it is required if TransactionId is not informed. It has to be informed with LocalTransactionDate and InvoiceNumber parameters.</p>
+			</td>
+		</tr>		<tr valign="top">
 			<td>
 				<p align="left">ERPDate</p>
 			</td>
