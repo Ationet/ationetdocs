@@ -421,7 +421,9 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |bool |MoneyBalance||
 |string |CompanyName||
 |string |CurrencyCode||
-
+|bool| |IsBlockedByERP||
+|decimal?| |BalanceAvailable||
+	
 #### CompanyContractBillingDto
 |Type|Name|Description|
 |--- |--- |--- |
