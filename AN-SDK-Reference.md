@@ -421,7 +421,9 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |bool |MoneyBalance||
 |string |CompanyName||
 |string |CurrencyCode||
-
+|bool| |IsBlockedByERP||
+|decimal?| |BalanceAvailable||
+	
 #### CompanyContractBillingDto
 |Type|Name|Description|
 |--- |--- |--- |
@@ -3452,6 +3454,9 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 #### TransactionsMovementsERPDto
 |Data|Description|
 |--- |--- |
+| DateTime? ControllerDate ||
+| string SiteCode ||
+| string InvoiceNumber ||
 | decimal? InvoiceTotalAmount ||
 | decimal? OrderTotalAmount ||
 | decimal? TaxAmount5 ||
@@ -3468,6 +3473,7 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 | DateTime ERPDate ||
 | decimal? TaxAmount0 ||
 | string ERPInvoiceNumber ||
+| bool NoCurrentAccountAdjustment ||
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
