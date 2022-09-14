@@ -4,7 +4,7 @@
 |Document Information|.|
 |--- |--- |
 |File:|ATIONet-Native_Interface_Protocol-Spec|
-|Doc Version:|2.6|
+|Doc Version:|2.7|
 |Release Date:|29, March 2021|
 |Author:|ATIONet LLC|
 
@@ -30,6 +30,7 @@
 |2.4|29/07/2022|**Document Update** <br> - Add Statements Download Request
 |2.5|23/08/2022|**Document Update** <br> - Rack Prices List Insert addition| 
 |2.6|16/06/2022|**Document Update** <br> - Update TransactionMovementERPInsert Request <br>
+|2.7|13/09/2022|**Document Update** <br> - Update StatementsHeaderDownload Response <br>
 
 ## Contents
 
@@ -14474,34 +14475,190 @@ The download will be limited by dates (from and to), which must be included in t
 
 ### 13.2 Statements Header Download (POST) - Body Section Format Request
 
-|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
-|--- |--- |--- |--- |--- |
-|ActionCode|4|nvarchar|Required|See Action Codes section above|
-|SubscriberCode|3|nvarchar|Required|Fixed. To be assigned by ATIONet|
-|DateFrom|19|nvarchar|Required|From date to filter charges comissions "yyyy/MM/dd hh:mm:ss"|
-|DateTo|19|nvarchar|Required|To date to filter charges comissions "yyyy/MM/dd hh:mm:ss"|
-|StatementsHeaderReportTypeEnum|3|tinyint|Optional|Define the type of Statments to be download.</br> 0 = ALL</br> 1 = Company</br> 2 = Merchant</br> If is not present in the request, ALL is the default behaviour|
-|CustomOperation0|3|bool|Optional|If the type of the report is type 1 (Company), the request can be filtered by CustomOperation0 true or false. If this field is not sent, it will not be taken in the consult.|
+<table>
+	<tr valign="top">
+		<th colspan="2" align="left">
+			Field Name
+		</th>
+		<th colspan="2" align="left">
+			Size
+		</th>
+		<th colspan="2" align="left">
+			Type
+		</th>
+		<th colspan="2" align="left">
+			Condition
+		</th>
+		<th colspan="2" align="left">
+			Descriptions/Field Value(s)
+		</th>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">
+			<p>ActionCode</p>
+		</td>
+		<td colspan="2">
+			<p>4</p>
+		</td>
+		<td colspan="2">
+			<p>nvarchar</p>
+		</td>
+		<td colspan="2">
+			<p>Required</p>
+		</td>
+		<td colspan="2">
+			<p>See Action Codes section above</p>
+		</td>
+	<tr valign="top">
+		<td colspan="2">SubscriberCode</td>
+		<td colspan="2">3</td>
+		<td colspan="2">nvarchar</td>
+		<td colspan="2">Required</td>
+		<td colspan="2">Fixed. To be assigned by ATIONET</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">DateFrom</td>
+		<td colspan="2">19</td>
+		<td colspan="2">nvarchar</td>
+		<td colspan="2">Required</td>
+		<td colspan="2">From date to filter charges comissions "yyyy/MM/dd hh:mm:ss"</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">DateTo</td>
+		<td colspan="2">19</td>
+		<td colspan="2">nvarchar</td>
+		<td colspan="2">Required</td>
+		<td colspan="2">To date to filter charges comissions "yyyy/MM/dd hh:mm:ss"</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">StatementsHeaderReportTypeEnum</td>
+		<td colspan="2">3</td>
+		<td colspan="2">tinyint</td>
+		<td colspan="2">Optional</td>
+		<td colspan="2">Define the type of Statments to be download.</br> 0 = ALL</br> 1 = Company</br> 2 = Merchant</br> If is not present in the request, ALL is the default behaviour.</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">CustomOperation0</td>
+		<td colspan="2">3</td>
+		<td colspan="2">bool</td>
+		<td colspan="2">Optional</td>
+		<td colspan="2">If the type of the report is type 1 (Company), the request can be filtered by CustomOperation0 true or false. If this field is not sent, it will not be taken in the consult.</td>
+	</tr>
+	</tr>
+</table>
 
 ### 13.3 Statements Header Download (POST) - Body Section Format Response
 
-|Field Name|Size|Type|Descriptions/Field Value(s)|
-|--- |--- |--- |--- |
-|StatementId|36|Guid|Statment UID|
-|ProcessId|36|Guid|Process UID|
-|Number|100|nvarchar|The Statment number.|
-|Date|19|nvarchar|The Statment datetime “yyyy/mm/dd hh:mm:ss”|
-|CompanyId|36|Guid|Company UID|
-|CompanyContractId|36|Guid|Company Contract UID|
-|CompanyContractCode|20|nvarchar|Company Contract code|
-|MerchantId|36|Guid|Merchant UID|
-|MerchantSubContractId|36|Guid|Merchant SubContract UID|
-|MerchantContractId|36|Guid|Merchant Contract UID|
-|MerchantContractCode|20|nvarchar|Merchant Contract code|
-|BillingProcessType|4|byte|The type of the billing process.|
-|CompanyContractBillingPeriodicity|4|byte|The Billing periodicity configured on Company Contract|
-|MerchantContractBillingPeriodicity|4|byte|The billing Periodicity configured on Merchant Contract|
-|StatementCompanyTransactionsCount|8|tinyint|The count of the Transactions when the statment is the company.|
+<table>	
+	<tr valign="top">
+		<th colspan="2" align="left">Field Name</th>
+		<th colspan="2" align="left">Size</th>
+		<th colspan="2" align="left">Type</th>
+		<th colspan="2" align="left">Descriptions/Field Value(s)</th>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">StatementId</td>
+		<td colspan="2">36</td>
+		<td colspan="2">Guid</td>
+		<td colspan="2">Statment UID</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">ProcessId</td>
+		<td colspan="2">36</td>
+		<td colspan="2">Guid</td>
+		<td colspan="2">Process UID</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">Number</td>
+		<td colspan="2">100</td>
+		<td colspan="2">nvarchar</td>
+		<td colspan="2">The Statment number</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">Date</td>
+		<td colspan="2">19</td>
+		<td colspan="2">nvarchar</td>
+		<td colspan="2">The Statment datetime “yyyy/mm/dd hh:mm:ss”</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">CompanyId</td>
+		<td colspan="2">36</td>
+		<td colspan="2">Guid</td>
+		<td colspan="2">Company UID</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">CompanyContractId</td>
+		<td colspan="2">36</td>
+		<td colspan="2">Guid</td>
+		<td colspan="2">Company Contract UID</td>
+	</tr>
+	<tr valign="top"
+		<td colspan="2">CompanyContractCode</td>
+		<td colspan="2">20</td>
+		<td colspan="2">nvarchar</td>
+		<td colspan="2">Company Contract code</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">MerchantId</td>
+		<td colspan="2">36</td>
+		<td colspan="2">Guid</td>
+		<td colspan="2">Merchant UID</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">MerchantSubContractId</td>
+		<td colspan="2">36</td>
+		<td colspan="2">Guid</td>
+		<td colspan="2">Merchant SubContract UID</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">MerchantContractId</td>
+		<td colspan="2">36</td>
+		<td colspan="2">Guid</td>
+		<td colspan="2">Merchant Contract UID</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">MerchantContractCode</td>
+		<td colspan="2">20</td>
+		<td colspan="2">nvarchar</td>
+		<td colspan="2">Merchant Contract code.</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">BillingProcessType</td>
+		<td colspan="2">4</td>
+		<td colspan="2">byte</td>
+		<td colspan="2">The type of the billing process.</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">CompanyContractBillingPeriodicity</td>
+		<td colspan="2">4</td>
+		<td colspan="2">byte</td>
+		<td colspan="2">The Billing periodicity configured on Company Contract</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">MerchantContractBillingPeriodicity</td>
+		<td colspan="2">4</td>
+		<td colspan="2">byte</td>
+		<td colspan="2">The billing Periodicity configured on Merchant Contract</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">StatementTotalTransactionsCount</td>
+		<td colspan="2">8</td>
+		<td colspan="2">tinyint</td>
+		<td colspan="2">The count of the Transactions of the statement regardless of its belonging</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">StatementCompanyTransactionsCount</td>
+		<td colspan="2">8</td>
+		<td colspan="2">tinyint</td>
+		<td colspan="2">The count of the Transactions when the statement belongs to a company</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">StatementMerchantTransactionsCount</td>
+		<td colspan="2">8</td>
+		<td colspan="2">tinyint</td>
+		<td colspan="2">The count of the Transactions when the statement belongs to a merchant</td>
+	</tr>
+</table>
 
 
 ## 14 Examples
