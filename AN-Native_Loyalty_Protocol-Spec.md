@@ -14,6 +14,7 @@
 |Ver.|Date|Change Summary|
 |1.0|04/Nov/2014|Initial version.|
 |2.0|05/Jan/2022|Added Messages samples.|
+|2.1|16/Sep/2022|Added message 525, Price Delivery|
 
 
 ## Contents
@@ -184,6 +185,18 @@ API URI: native.ationet.com/v1/loyalty
 			<td></td>
 			<td>
 				<p align="left">Posts a positive or negative (credit or debit) discretionary movement to an affiliate's account</p>
+			</td>
+		 </tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Prize Delivery</p>
+			</td>
+			<td>
+				<p align="center">2.1</p>
+			</td>
+			<td></td>
+			<td>
+				<p align="left">Informs a redeemed prize delivery.</p>
 			</td>
 		 </tr>
 	</tbody>
