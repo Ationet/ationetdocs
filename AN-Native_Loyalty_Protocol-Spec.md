@@ -483,6 +483,196 @@ body:
 
 ```
 
+#### POST Redemption sample
+
+Return a Redemption information.
+
+##### Request example
+
+
+body:
+
+```
+{
+    "ApplicationType":"LTY",
+    "ProcessingMode":"1",
+    "TerminalIdentification":"DUGRSEPQN",
+    "DeviceTypeIdentifier":"1",
+    "TransactionCode":"520",
+    "AccountType":"1",
+    "EntryMethod":"M",
+    "TransactionAmount":1.00,
+    "LocalTransactionDate":20220916,
+    "LocalTransactionTime":111100,
+    "PrimaryTrack":"12345",
+    "SecondaryTrack":"",
+    "Description":"canje de premio",
+    "LoyaltyTransactionData":{
+        "Products":[
+            {"ProductCode":"88888",
+            "ProductUnitPrice":1.0,
+            "ProductNetAmount":1.00,
+            "ProductAmount":1.00,
+            "ProductQuantity":1.000,
+            "ProductTotalAmount":1.00,
+            "ProductTotalQuantity":1.000,
+            "UnitCode":"unit"
+            }
+        ]
+    },
+    "OriginalData":{},
+    "IdentityData":{},
+    "SystemModel":"AN",
+    "SystemVersion":"2.6.3400.0",
+    "MessageFormatVersion":"1.3"
+}
+```
+
+
+#### Response example
+
+```
+{
+    "ApplicationType": "LTY",
+    "ProcessingMode": "1",
+    "MessageFormatVersion": "1.3",
+    "TerminalIdentification": "DUGRSEPQN",
+    "DeviceTypeIdentifier": "1",
+    "TransactionCode": "521",
+    "AccountType": "1",
+    "EntryMethod": "M",
+    "TransactionAmount": 1.0,
+    "TransactionAmountTotal": 1.0,
+    "CurrencyCode": null,
+    "BatchNumber": null,
+    "ShiftNumber": null,
+    "TransactionSequenceNumber": null,
+    "LocalTransactionDate": 20220916,
+    "LocalTransactionTime": 111100,
+    "AuthorizationCode": "022218242",
+    "InvoiceNumber": null,
+    "LoyaltyPoints": 888.00,
+    "AfterBalance": 481356.00,
+    "LoyaltyDiscount": null,
+    "ReceiptData": "{\"CustomerName\":\"perez pedro\",\"CustomerTaxPayerId\":null,\"CustomerPlate\":\"1343\",\"CustomerIdentification\":\"134312\",\"CustomerPAN\":null,\"CompanyName\":\"Network Company\",\"LoyaltyProgram\":\"12345\",\"LoyaltyProgramUnit\":\"Test Unit\",\"LoyaltyProgramPoints\":\"888.00\",\"LoyaltyProgramBalance\":\"481356.00\",\"LoyaltyNextExpirationDate\":null,\"LoyaltyNextExpirationPoints\":null,\"LoyaltyProgramDiscount\":null,\"LoyaltyProgramSupportPhone\":null,\"LoyaltyProgramDiscountLimit\":null,\"LoyaltyProgramDiscountValue\":null,\"LoyaltyProgramEliteStatus\":null,\"WithdrawalCode\":\"68edfe76-2426-43d3-b70b-c7a573584398\",\"SiteName\":\"nombre\",\"SiteAddress\":\"calle 123, (66666) (ciudad) Entre Ríos Argentina\",\"LocalTransactionDateTime\":\"2022/09/16 11:11:00\",\"CustomerLoyaltyCardPAN\":null,\"RedeemedPrizes\":[{\"Code\":\"MOCHILA\",\"Description\":\"mochila\",\"Quantity\":\"1\"}]}",
+    "ResponseCode": "00000",
+    "ResponseText": "Autorizado",
+    "WithdrawalCode": "68edfe76-2426-43d3-b70b-c7a573584398",
+    "LoyaltyTransactionData": {
+        "Products": [
+            {
+                "ServiceCode": null,
+                "EHBenefitId": null,
+                "ProductCode": "88888",
+                "ProductUnitPrice": 1.0,
+                "ProductNetAmount": null,
+                "ProductAmount": 1.0,
+                "ProductQuantity": 1.0,
+                "ProductVolume": null,
+                "ProductTotalAmount": 1.0,
+                "ProductTotalQuantity": 1.0,
+                "ProductDiscount": null,
+                "UnitCode": null,
+                "ProductTaxes": null
+            }
+        ],
+        "PaymentsMethods": []
+    },
+    "CustomerData": {},
+    "ExternalHostData": {}
+}
+
+```
+
+#### POST Prize Delivery sample
+
+Return a Prize delivery information.
+
+##### Request example
+
+
+body:
+
+```
+{
+    "ApplicationType":"LTY",
+    "ProcessingMode":"1",
+    "TerminalIdentification":"DUGRSEPQN",
+    "DeviceTypeIdentifier":"1",
+    "TransactionCode":"525",
+    "AccountType":"1",
+    "EntryMethod":"M",
+    "TransactionAmount":1.00,
+    "LocalTransactionDate":20220916,
+    "LocalTransactionTime":111100,
+    "PrimaryTrack":"12345",
+    "SecondaryTrack":"",
+    "Description":"canje de premio",
+    "WithdrawalCode": "68edfe76-2426-43d3-b70b-c7a573584398",
+    "OriginalData":{},
+    "IdentityData":{},
+    "SystemModel":"AN",
+    "SystemVersion":"2.6.3400.0",
+    "MessageFormatVersion":"1.3"
+}
+```
+
+
+#### Response example
+
+```
+{
+    "ApplicationType": "LTY",
+    "ProcessingMode": "1",
+    "MessageFormatVersion": "1.3",
+    "TerminalIdentification": "DUGRSEPQN",
+    "DeviceTypeIdentifier": "1",
+    "TransactionCode": "526",
+    "AccountType": "1",
+    "EntryMethod": "M",
+    "TransactionAmount": 1.00,
+    "TransactionAmountTotal": 1.00,
+    "CurrencyCode": null,
+    "BatchNumber": null,
+    "ShiftNumber": null,
+    "TransactionSequenceNumber": null,
+    "LocalTransactionDate": null,
+    "LocalTransactionTime": null,
+    "AuthorizationCode": "022218242",
+    "InvoiceNumber": null,
+    "LoyaltyPoints": 888.000000,
+    "AfterBalance": 481356.000000,
+    "LoyaltyDiscount": null,
+    "ReceiptData": "{\"CustomerName\":\"perez pedro\",\"CustomerTaxPayerId\":null,\"CustomerPlate\":\"1343\",\"CustomerIdentification\":\"134312\",\"CustomerPAN\":null,\"CompanyName\":\"Network Company\",\"LoyaltyProgram\":\"12345\",\"LoyaltyProgramUnit\":\"Test Unit\",\"LoyaltyProgramPoints\":\"888.00\",\"LoyaltyProgramBalance\":\"481356.00\",\"LoyaltyNextExpirationDate\":null,\"LoyaltyNextExpirationPoints\":null,\"LoyaltyProgramDiscount\":null,\"LoyaltyProgramSupportPhone\":null,\"LoyaltyProgramDiscountLimit\":null,\"LoyaltyProgramDiscountValue\":null,\"LoyaltyProgramEliteStatus\":null,\"WithdrawalCode\":\"68edfe76-2426-43d3-b70b-c7a573584398\",\"SiteName\":\"nombre\",\"SiteAddress\":\"calle 123, (66666) (ciudad) Entre Ríos Argentina\",\"LocalTransactionDateTime\":\"2022/09/16 11:11:00\",\"CustomerLoyaltyCardPAN\":null,\"RedeemedPrizes\":[{\"Code\":\"MOCHILA\",\"Description\":\"mochila\",\"Quantity\":\"1.000000\"}]}",
+    "ResponseCode": "00000",
+    "ResponseText": "Autorizado",
+    "WithdrawalCode": null,
+    "LoyaltyTransactionData": {
+        "Products": [
+            {
+                "ServiceCode": null,
+                "EHBenefitId": null,
+                "ProductCode": "88888",
+                "ProductUnitPrice": 1.000,
+                "ProductNetAmount": null,
+                "ProductAmount": 1.00,
+                "ProductQuantity": 1.00,
+                "ProductVolume": null,
+                "ProductTotalAmount": 1.00,
+                "ProductTotalQuantity": 1.000,
+                "ProductDiscount": null,
+                "UnitCode": null,
+                "ProductTaxes": null
+            }
+        ],
+        "PaymentsMethods": []
+    },
+    "CustomerData": {},
+    "ExternalHostData": {}
+}
+
+```
+
 ## Error Handling
 
 Success/failure exits on the Native Transaction Protocol will be handled via HTTP status codes.
@@ -985,6 +1175,23 @@ Refer to Authorization Codes Table in the Reference Tables section for a complet
 				<p align="left"></p>
 			</td>
 		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">WithdrawalCode</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left">Required if TransactionCode field is "525"</p>
+			</td>
+			<td>
+				<p align="left">Response of a prize redemption</p>
+			</td>
+		</tr>
 	</tbody>
 </table>	
   
@@ -1385,6 +1592,23 @@ Refer to Authorization Codes Table in the Reference Tables section for a complet
 				<p align="left">Message from the Network</p>
 			</td>
 		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">WithdrawalCode</p>
+			</td>
+			<td>
+				<p align="left">Var</p>
+			</td>
+			<td>
+				<p align="left">string</p>
+			</td>
+			<td>
+				<p align="left">Required if TransactionCode field is "525"</p>
+			</td>
+			<td>
+				<p align="left">Identifies a prize delivery</p>
+			</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1452,6 +1676,28 @@ This section brings together the code tables and reference values used in messag
 			</td>
 			<td>
 				<p align="left">Redepmtion RESP</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">“525”</p>
+			</td>
+			<td>
+				<p align="left">LREQ</p>
+			</td>
+			<td>
+				<p align="left">Redemption Prize Delivery REQ</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">“526”</p>
+			</td>
+			<td>
+				<p align="left">LRESP</p>
+			</td>
+			<td>
+				<p align="left">Redemption Prize Delivery RESP</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -2334,6 +2580,84 @@ Refer to ISO 4217 Currency Codes standard (<http://en.wikipedia.org/wiki/ISO_421
 			</td>
 			<td>
 				<p align="left">Tag PIN Invalid</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left"><b>Delivery prizes</b></p>
+			</td>
+			<td></td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">40002</p>
+			</td>
+			<td>
+				<p align="left">Redemption Not Found</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">40003</p>
+			</td>
+			<td>
+				<p align="left">Redemption products not found</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">40004</p>
+			</td>
+			<td>
+				<p align="left">Sku not a reward</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">40005</p>
+			</td>
+			<td>
+				<p align="left">Redemption already processed</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">40006</p>
+			</td>
+			<td>
+				<p align="left">Not enough stock</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">40007</p>
+			</td>
+			<td>
+				<p align="left">Invalid withdrawal code</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">40008</p>
+			</td>
+			<td>
+				<p align="left">Unsupported loyalty program</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">40009</p>
+			</td>
+			<td>
+				<p align="left">Delivery not found</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">40010</p>
+			</td>
+			<td>
+				<p align="left">Prize already delivered</p>
 			</td>
 		</tr>
 		<tr valign="top">
