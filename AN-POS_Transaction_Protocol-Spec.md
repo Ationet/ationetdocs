@@ -100,9 +100,9 @@ This cloud module contains 2 main components, the one that talks to the controll
 
 |Code|Name|Description|
 |---|---|---|
+|C|Send Transaction|Message sent by the controller containing new sales generated at the POS|
 |A|Get Status|This is the message that the controller sends to get news|
 |B|Confirm Status|This is the message that the controller sends to confirm that the received status in message A was processed OK|
-|C|Send Transaction|Message sent by the controller containing new sales generated at the POS|
 |U|Update Transaction|Message sent from the POS to clear or cancel transactions|
 
 **Verb**: POST
@@ -114,8 +114,47 @@ This cloud module contains 2 main components, the one that talks to the controll
 - Authorization: Basic user:password
 
 
-#### Commands Flow
+#### Command Flow Without Payment Notification URL
 ![ationetlogo](Content/Images/POSSequence.png)
+
+
+#### Command flow with payment notification URL
+![ationetlogo](Content/Images/POSSequence.png)
+
+
+#### Send Transaction (C)
+Request Body:
+
+	{
+	 "transaction_code": "C",
+	 "site_id": "123456",
+	 "pump_id": "7",
+	 "order": {
+	    "collector_id": 178106235,
+	    "items": [
+	      {
+	        "title": " $500.00 de Premium",
+	        "description": "$500.00 de Premium",
+	        "quantity": 1.0,
+	        "unit_price": 500.00,
+		"total_amount": 500.00,
+	      }
+	    ],
+	    "external_reference": "45ea80da",
+	    "url": "pos notification valid url"
+	    "loyalty": null
+	  }
+	}
+
+Response Body:
+
+If the HTTP response code is different than 200, then the following structure is return 
+
+	{“ResponseCode”:”StringValue”,”ResponseMessage”:”StringValue”,”ResponseError”:"StringValue"}
+
+
+**Note**: If pump is in a particular error (for instance reverse pending), a particular and specific ResponseCode (same error_code returned in GetStatus) must be returned. See Error Handling section for more details.
+
 
 #### Get Status (A)
 Request Body:
@@ -164,39 +203,32 @@ Special Case 2:
 
 If the POS receives a “P” action requiring Payment of sale but Payment Object status is not approved, the POS will not send ConfirmStatus because it must not pay the sale. Instead, it will unlock the sale and notify the cloud by sending Update Transaction (U) with Clear (C) action to make the sale available for future QR scanning.
 
-#### Send Transaction (C)
+
+#### Update Transaction (U)
+
 Request Body:
 
-	{
-	 "transaction_code": "C",
-	 "site_id": "123456",
-	 "pump_id": "7",
-	 "order": {
-	    "collector_id": 178106235,
-	    "items": [
-	      {
-	        "title": " $500.00 de Premium",
-	        "description": "$500.00 de Premium",
-	        "quantity": 1.0,
-	        "unit_price": 500.00,
-		"total_amount": 500.00,
-	      }
-	    ],
-	    "external_reference": "45ea80da",
-	    "url": "pos notification valid url"
-	    "loyalty": null
-	  }
-	}
+	{"transaction_code": "U", "site_id": "123456", "pump_id": "7", “action”: <“X” or “C”> }
+
 
 Response Body:
 
 If the HTTP response code is different than 200, then the following structure is return 
 
-	{“ResponseCode”:”StringValue”,”ResponseMessage”:”StringValue”,”ResponseError”:"StringValue"}
+	{“ResponseCode”:”StringValue”,”ResponseMessage”:”StringValue”,”ResponseError”:"StringValue"}	
 
+Cleaning Sale Cache (Action = C)
+	Sale should be cleared on the cloud on the following cases
+	1.	If a new transaction is started in the pump (only with Fueling state)
+	2.	If a sale is paid locally from POS or other application
+	If there are no sales on the cache related to Site_ID + Pump_ID cloud should answer with status 200
 
-**Note**: If pump is in a particular error (for instance reverse pending), a particular and specific ResponseCode (same error_code returned in GetStatus) must be returned. See Error Handling section for more details.
-	
+Cancel Transaction (Action = X)
+	The payment will be cancelled. This sends a refund message to the virtual wallet
+	If there are no sales on the cache related to Site_ID + Pump_ID cloud should answer with status 200
+
+Note: If pump is in a particular error (for instance reverse pending), a particular and specific ResponseCode (same error_code returned in GetStatus) must be returned. See Error Handling section for more details.
+
 
 ### Mercado Pago API
 Mercado Pago API reference: https://www.mercadopago.com.ar/developers/es/guides/instore-payments/qr-payments/qr-gas-station
