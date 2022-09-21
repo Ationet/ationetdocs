@@ -183,6 +183,7 @@ Request Body:
 	      }
 	    ],
 	    "external_reference": "45ea80da",
+	    "url": "pos notification valid url"
 	    "loyalty": null
 	  }
 	}
@@ -207,7 +208,7 @@ Mercado Pago API reference: https://www.mercadopago.com.ar/developers/es/guides/
 |collector_id|Long|Required|Identificador de la cuenta de Mercado Pago a la que se le acreditarán los pagos.|
 |sponsor_id|Long|Required|Identificador de una cuenta de Mercado Pago que integra la solución.|
 |external_reference|String|Required|Referencia para sincronizar con tu sistema.|
-|notification_url|String|Required|URL a la cual se enviarán las notificaciones, definida por el integrador.|
+|url|String|Optional|URL a la cual se enviarán las notificaciones, definida por el integrador. Para utilizar esta opción, será necesario contar con la configuración de la autenticación en la suscripción de la network. En caso de no suministrar la url, se deberá efectuar el GetStatus para obtener la información del pago|
 |items|Array|Required|Lista de los productos, donde cada item es un object con los siguientes campos|
 |loyalty|Object|Required|Datos necesarios para sumar puntos en un determinado programa de fidelización|
 
