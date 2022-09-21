@@ -119,7 +119,7 @@ This cloud module contains 2 main components, the one that talks to the controll
 
 
 #### Command flow with payment notification URL
-![ationetlogo](Content/Images/POSSequence.png)
+![ationetlogo](Content/Images/POSSequenceWithPaymentNotificationURL.png)
 
 
 #### Send Transaction (C)
