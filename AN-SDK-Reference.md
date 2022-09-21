@@ -3594,7 +3594,7 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |Data|Description|
 |--- |--- |
 | Guid Id |The Id of the Transaction Contingency|
-| bool Approve |Aproove = true Reject = False|
+| bool Approve |Flag to approve or reject the Transaction Contingency.<br />Apppove = true<br/>Reject = False|
 			
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
