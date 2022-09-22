@@ -8,7 +8,7 @@
 |Document Information||
 |--- |--- |
 |File:|AN-SDK-Reference|
-|Doc. Version:|1.2|
+|Doc. Version:|1.3|
 |Release Date:|10, July 2016|
 |Author:|ATIOnet LLC|
 
@@ -3590,6 +3590,16 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |GetTransactionsCostReport|Guid idContract <BR>List<Guid> idsDriver = null <BR>List<Guid> idsFleet = null <BR>List<Guid> idsVehicle = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null|TransactionsCostReportDto|Get list TransactionsCostReportDto|
 |GetTransactionsCostReportAsync|Guid idContract <BR>List<Guid> idsDriver = null <BR>List<Guid> idsFleet = null <BR>List<Guid> idsVehicle = null <BR>string dateTimeFrom = null <BR>string dateTimeTo = null|TransactionsCostReportDto|Get list TransactionsCostReportDto|
 
+#### TransactionContingencyApprovalDto
+|Data|Description|
+|--- |--- |
+| Guid Id |The Id of the Transaction Contingency|
+| bool Approve |Flag to approve or reject the Transaction Contingency.<br />Apppove = true<br/>Reject = False|
+			
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|ApproveTransactionsContingency|TransactionContingencyDto dto|string|Approves or rejects a Transaction Contingency|
+	
 #### TransactionDisputeDto
 |Data|Description|
 |--- |--- |
