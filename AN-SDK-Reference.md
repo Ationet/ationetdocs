@@ -3644,6 +3644,17 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |UpdateTransactionDisputeDto|TransactionDisputeDto data|string|Update TransactionDisputeDto|
 |UpdateTransactionDisputeDtoAsync|TransactionDisputeDto data|string|Update TransactionDisputeDto|
 
+#### TransactionDisputeApprovalDto
+|Data|Description|
+|--- |--- |
+| Guid Id |The Id of the Transaction Dispute|
+| bool Approve |Flag to approve or reject the Transaction Contingency.<br />Apppove = true<br/>Reject = False|
+| string Comment |Networks commentary for the approval.<br />
+
+|Method|Parameters|Response|Description|
+|--- |--- |--- |--- |
+|ApproveTransactionsDispute|TransactionContingencyDto dto|string|Approves or rejects a Transaction Dispute|
+	
 #### TransactionsGroupDto
 |Data|Description|
 |--- |--- |
