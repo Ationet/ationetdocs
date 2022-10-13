@@ -1512,7 +1512,8 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 |string AssignmentDateShort||
 |int? RequestOrder||
 |string VehicleDescription||
-
+|string Email||
+	
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
 |GetIdentifications|List<Guid> contractIds = null <BR>List<Guid> subAccount = null <BR>List<byte?> types = null <BR>List<byte?> state = null <BR>byte? subAccountOwner = null <BR>string label = null <BR>Guid? vehicle = null <BR>Guid? driver = null <BR>byte? type = null <BR>Guid? model = null <BR>Guid? program = null <BR>byte? status = null <BR>byte? active = null <BR>string pan = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "label" <BR>string orderType = "asc"|IdentificationDto|Get list of the IdentificationDto|
