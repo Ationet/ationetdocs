@@ -1,5 +1,5 @@
 ![ATIONET Logo](Content/Images/ATIOnetLogo_250x70.png)
-# ATIONET - Native Transaction Protocol Specification v1.5# <!-- omit in toc -->
+# ATIONET - Native Transaction Protocol Specification v1.5 # <!-- omit in toc -->
 
 <table>
 	<tr>
