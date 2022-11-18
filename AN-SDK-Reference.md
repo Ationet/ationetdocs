@@ -2590,8 +2590,7 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetIdentificationsRequests|List<Guid> idsCompanyContract = null <BR>int? orderNumber = null <BR>byte? state = null <BR>Guid? idProgram = null <BR>Guid? idLoyaltyProgram = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "label" <BR>string orderType = "asc"|IdentificationsRequestDto|Get list of the IdentificationsRequestDto|
-|GetIdentificationsRequestsAsync|List<Guid> idsCompanyContract = null <BR>int? orderNumber = null <BR>byte? state = null <BR>Guid? idProgram = null <BR>Guid? idLoyaltyProgram = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "label" <BR>string orderType = "asc"|IdentificationsRequestDto|Get list of the IdentificationsRequestDto|
+|GetIdentificationsRequestsAsync|List<Guid> idsCompanyContract = null <BR>int? orderNumber = null <BR>byte? state = null <BR>Guid? idProgram = null <BR>Guid? idLoyaltyProgram = null <BR>IdentificationsRequestDateTypeEnum? dateType = null <BR>DateTime? dateFrom = null <BR>DateTime? dateTo = null <BR>int page = 1 <BR>int pageSize = 50 <BR>string orderField = "label" <BR>string orderType = "asc"|IdentificationsRequestDto|Get list of the IdentificationsRequestDto|
 |GetIdentificationsRequest|Guid id|IdentificationsRequestDto|Get individual IdentificationsRequestDto|
 |GetIdentificationsRequestAsync|Guid id|IdentificationsRequestDto|Get individual IdentificationsRequestDto|
 	
