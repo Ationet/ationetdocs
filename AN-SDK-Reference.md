@@ -20,6 +20,7 @@
 |1.2|29/June/2022|Contingency add ApplyContingencyPrice into TransactionContingencyDto|
 |1.3|01/Aug/2022|Statments Header|
 |1.4|22/Aug/2022|CompanyInsertAndUpdate, RackPricesListInsertAndUpdate and QuotationsInsertAndUpdate addition to InterfaceOperations and Interface Methods Examples|
+|1.5|01/Dec/2022|GetVehicles, GetVehiclesAsync paramenters addition: active, creationDateFrom, creationDateTo|
 
 </br>
 
@@ -4017,8 +4018,8 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 
 |Method|Parameters|Response|Description|
 |--- |--- |--- |--- |
-|GetVehicles|List<Guid> fleetIds = null <BR>List<Guid> identificationIds = null <BR>List<Guid> ruleIds = null <BR>List<Guid> classification1Ids = null <BR>List<Guid> classification2Ids = null <BR>List<Guid> classification3Ids = null <BR>List<Guid> classification4Ids = null <BR>List<Guid> contractIds = null <BR>string code = null <BR>string searchText = null <BR>string plate = null <BR>string creationDateFrom = null <BR>string creationDateTo = null <BR>string custom0 = null <BR>string custom1 = null <BR>string custom2 = null <BR>string custom3 = null <BR>int? page = 1 <BR>int? pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc" <BR>bool paginate = true|VehicleDto|Get list VehicleDto|
-|GetVehiclesAsync|List<Guid> fleetIds = null <BR>List<Guid> identificationIds = null <BR>List<Guid> ruleIds = null <BR>List<Guid> classification1Ids = null <BR>List<Guid> classification2Ids = null <BR>List<Guid> classification3Ids = null <BR>List<Guid> classification4Ids = null <BR>List<Guid> contractIds = null <BR>string code = null <BR>string searchText = null <BR>string plate = null <BR>string creationDateFrom = null <BR>string creationDateTo = null <BR>string custom0 = null <BR>string custom1 = null <BR>string custom2 = null <BR>string custom3 = null <BR>int? page = 1 <BR>int? pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc" <BR>bool paginate = true|VehicleDto|Get list VehicleDto|
+|GetVehicles|List<Guid> fleetIds = null <BR>List<Guid> identificationIds = null <BR>List<Guid> ruleIds = null <BR>List<Guid> classification1Ids = null <BR>List<Guid> classification2Ids = null <BR>List<Guid> classification3Ids = null <BR>List<Guid> classification4Ids = null <BR>List<Guid> contractIds = null <BR>string code = null <BR>string active = null<BR>string searchText = null <BR>string plate = null <BR>string creationDateFrom = null <BR>string creationDateTo = null <BR>string custom0 = null <BR>string custom1 = null <BR>string custom2 = null <BR>string custom3 = null <BR>int? page = 1 <BR>int? pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc" <BR>bool paginate = true|VehicleDto|Get list VehicleDto|
+|GetVehiclesAsync|List<Guid> fleetIds = null <BR>List<Guid> identificationIds = null <BR>List<Guid> ruleIds = null <BR>List<Guid> classification1Ids = null <BR>List<Guid> classification2Ids = null <BR>List<Guid> classification3Ids = null <BR>List<Guid> classification4Ids = null <BR>List<Guid> contractIds = null <BR>string code = null <BR> string active = null <BR>string searchText = null <BR>string plate = null <BR>string creationDateFrom = null <BR>string creationDateTo = null <BR>string custom0 = null <BR>string custom1 = null <BR>string custom2 = null <BR>string custom3 = null <BR>int? page = 1 <BR>int? pageSize = 50 <BR>string orderField = "code" <BR>string orderType = "asc" <BR>bool paginate = true|VehicleDto|Get list VehicleDto|
 |GetVehicle|Guid id|VehicleDto|Get individual VehicleDto|
 |GetVehicleAsync|Guid id|VehicleDto|Get individual VehicleDto|
 |CreateVehicle|VehicleDto data|VehicleDto|Create VehicleDto|
