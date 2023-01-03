@@ -31,6 +31,7 @@
 |2.5|23/08/2022|**Document Update** <br> - Rack Prices List Insert addition| 
 |2.6|16/06/2022|**Document Update** <br> - Update TransactionMovementERPInsert Request <br>
 |2.7|13/09/2022|**Document Update** <br> - Update StatementsHeaderDownload Response <br>
+|2.8|03/01/2023|**Document Update** <br> - Update StatementsHeaderDownload Request <br>
 
 ## Contents
 
@@ -14536,6 +14537,13 @@ The download will be limited by dates (from and to), which must be included in t
 		<td colspan="2">tinyint</td>
 		<td colspan="2">Optional</td>
 		<td colspan="2">Define the type of Statments to be download.</br> 0 = ALL</br> 1 = Company</br> 2 = Merchant</br> If is not present in the request, ALL is the default behaviour.</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">StatementsDateType</td>
+		<td colspan="2">3</td>
+		<td colspan="2">tinyint</td>
+		<td colspan="2">Optional</td>
+		<td colspan="2">Define the date use to find the statements.</br> 0 = Host Date</br>1 = Network Date.</br> If is not present in the request, Host Date is the default behaviour.</td>
 	</tr>
 	<tr valign="top">
 		<td colspan="2">CustomOperation0</td>
