@@ -125,7 +125,7 @@ El presente documento del protocolo de la API de Terminals Management especifica
 ### Detalles del alcance
 **Protocolo:** Protocolo de Interfaz de Mantenimiento Terminals Management
 **Versión:** 1.0.0000
-**API URI:** terminalmanagement-api.azurewebsites.net/v1/maintenance
+**API URI:** https://terminalsmanagementapi.ationet.com/v1/maintenance
 
 ### Mensajes
 
