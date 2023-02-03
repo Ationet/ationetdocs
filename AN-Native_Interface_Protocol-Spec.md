@@ -32,6 +32,7 @@
 |2.6|16/06/2022|**Document Update** <br> - Update TransactionMovementERPInsert Request <br>
 |2.7|13/09/2022|**Document Update** <br> - Update StatementsHeaderDownload Response <br>
 |2.8|03/01/2023|**Document Update** <br> - Update StatementsHeaderDownload Request <br>
+|2.9|01/02/2023|**Document Update** <br> - Mark TransactionDownload as Obsolete <br>
 
 ## Contents
 
@@ -60,8 +61,8 @@
 		- [6.4.3 Examples](#643-examples)
 - [7 Transactions Download Interface](#7-transactions-download-interface)
 	- [7.1 Action Codes](#71-action-codes)
-	- [7.2 Transactions Download (POST) – Body Section Format Request](#72-transactions-download-post--body-section-format-request)
-	- [7.3 Transactions Download (POST) – Body Section Format Response](#73-transactions-download-post--body-section-format-response)
+	- [7.2 <del>Transactions Download (POST) – Body Section Format Request</del> Obsolete](#72-transactions-download-post--body-section-format-request-obsolet)
+	- [7.3 <del>Transactions Download (POST) – Body Section Format Response</del> Obsolete](#73-transactions-download-post--body-section-format-response-obsolet)
 		- [7.3.1 Transaction Fee Format Response](#731-transaction-fee-format-response)
 		- [7.3.2 Transaction Currency Format Response](#732-transaction-currency-format-response)
 		- [7.3.3 Transaction Product Format Response](#733-transaction-product-format-response)
@@ -1255,13 +1256,13 @@ transactions to download.
 	</tr>
 	<tr valign="top">
 		<td rowspan="4">
-			<p>931</p>
+			<p><del>931</del></p>
 		</td>
 		<td>
 			<p>Title:</p>
 		</td>
 		<td>
-			<p>Transactions Download</p>
+			<p><del>Transactions Download</del> Obsolet</p>
 		</td>
 	</tr>
 	<tr valign="top">
@@ -1381,7 +1382,7 @@ transactions to download.
 	</tr>
 </table>
 
-### 7.2 Transactions Download (POST) – Body Section Format *Request*
+### 7.2 <del>Transactions Download (POST) – Body Section Format *Request*</del> Obsolet
 
 <table>
 	<thead>
@@ -1545,7 +1546,7 @@ transactions to download.
 	</tbody>
 </table>
 
-### 7.3 Transactions Download (POST) – Body Section Format *Response*
+### 7.3 <del>Transactions Download (POST) – Body Section Format *Response*</del> Obsolet
 
 <table>
 	<thead>
