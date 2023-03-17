@@ -11891,6 +11891,54 @@ To edit a company there's no need to send the contract information. However, whe
             <p align="left">Company contracts list</p>
          </td>
       </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">NoUpdateContactInformation</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">bool</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">
+		    For update only, if this property is true, the update of the following properties will be ignored:
+		    - ContactName
+		    - ContactEmail
+		    - Phone1
+		    - Phone2
+		</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">NoUpdateDeliveryAddress</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">bool</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">
+		    For update only, if this property is true, the update of the following properties will be ignored:
+		    - Street1Delivery
+		    - Street2Delivery
+		    - ZipCodeDelivery
+		    - CityDelivery
+		    - CountryDeliveryId
+		    - StateDeliveryId
+	     </p>
+          </td>
+      	</tr>
     </tbody>
 </table>
 
@@ -13229,6 +13277,288 @@ To edit a company there's no need to send the contract information. However, whe
 						 It's composed by Id and Code. Only one of the values is needed to identify the program. If both values are present, the Id field take the priority.<br/> "Programs":[<br/>{<br/>"Id": "06df1b02-4de2-40d3-ba2f-af03f622c73d"<br/>}<br/> Or<br/>"Programs":[<br/>{<br/>"Code": "PRG001"<br/>}</p>
 			</td>
 		</tr>
+	        <tr valign="top">
+			 <td>
+			    <p align="left">NoUpdateFuels</p>
+			 </td>
+			 <td>
+			    <p align="left">-</p>
+			 </td>
+			 <td>
+			    <p align="left">bool</p>
+			 </td>
+			 <td>
+			    <p align="left">No</p>
+			 </td>
+			 <td>
+			    <p align="left">
+				    For update only, if this property is true, the update of the following properties will be ignored:
+				    - ValidateFuels
+				    - Fuels
+				</p>
+			 </td>
+	        </tr>
+	        <tr valign="top">
+			 <td>
+			    <p align="left">NoUpdatePrices</p>
+			 </td>
+			 <td>
+			    <p align="left">-</p>
+			 </td>
+			 <td>
+			    <p align="left">bool</p>
+			 </td>
+			 <td>
+			    <p align="left">No</p>
+			 </td>
+			 <td>
+			    <p align="left">
+				    For update only, if this property is true, the update of the following properties will be ignored:
+				    - Prices
+				</p>
+			 </td>
+	        </tr>
+	        <tr valign="top">
+			 <td>
+			    <p align="left">NoUpdateSites</p>
+			 </td>
+			 <td>
+			    <p align="left">-</p>
+			 </td>
+			 <td>
+			    <p align="left">bool</p>
+			 </td>
+			 <td>
+			    <p align="left">No</p>
+			 </td>
+			 <td>
+			    <p align="left">
+				    For update only, if this property is true, the update of the following properties will be ignored:
+				    - ValidateSites
+				    - Sites
+				</p>
+			 </td>
+	        </tr>
+	        <tr valign="top">
+			 <td>
+			    <p align="left">NoUpdateModifiers</p>
+			 </td>
+			 <td>
+			    <p align="left">-</p>
+			 </td>
+			 <td>
+			    <p align="left">bool</p>
+			 </td>
+			 <td>
+			    <p align="left">No</p>
+			 </td>
+			 <td>
+			    <p align="left">
+				    For update only, if this property is true, the update of the following properties will be ignored:
+				    - Modifiers
+				</p>
+			 </td>
+	        </tr>
+	        <tr valign="top">
+			 <td>
+			    <p align="left">NoUpdateBillingConfiguration</p>
+			 </td>
+			 <td>
+			    <p align="left">-</p>
+			 </td>
+			 <td>
+			    <p align="left">bool</p>
+			 </td>
+			 <td>
+			    <p align="left">No</p>
+			 </td>
+			 <td>
+			    <p align="left">
+				    For update only, if this property is true, the update of the following properties will be ignored:
+				    - BillingActive
+				    - BillingDueDays
+				    - BillingPeriodicity
+				    - BillingPeriodicityValue
+				    - BillingManual
+				    - BillingCutTime
+				    - BillingCutDay
+				    - BillingCutMonth
+				    - StartingBillingDate
+				    - DocumentChargesFromBalance
+				    - SeparateChargesDocument
+				    - RecepientEmails
+				    - BillingTaxPayerId
+				    - BillingCompanyName
+				    - BillingCompanyStreet1
+				    - BillingCompanyStreet2
+				    - BillingCompanyZipCode
+				    - BillingCompanyCity
+				    - BillingCompanyCountryId
+				    - BillingCompanyStateId
+				</p>
+			 </td>
+	        </tr>
+	        <tr valign="top">
+			 <td>
+			    <p align="left">NoUpdateConcepts</p>
+			 </td>
+			 <td>
+			    <p align="left">-</p>
+			 </td>
+			 <td>
+			    <p align="left">bool</p>
+			 </td>
+			 <td>
+			    <p align="left">No</p>
+			 </td>
+			 <td>
+			    <p align="left">
+				    For update only, if this property is true, the update of the following properties will be ignored:
+				    - Concepts
+				</p>
+			 </td>
+	        </tr>
+	        <tr valign="top">
+			 <td>
+			    <p align="left">NoUpdateBlocks</p>
+			 </td>
+			 <td>
+			    <p align="left">-</p>
+			 </td>
+			 <td>
+			    <p align="left">bool</p>
+			 </td>
+			 <td>
+			    <p align="left">No</p>
+			 </td>
+			 <td>
+			    <p align="left">
+				    For update only, if this property is true, the update of the following properties will be ignored:
+				    - Blocks
+				</p>
+			 </td>
+	        </tr>
+	        <tr valign="top">
+			 <td>
+			    <p align="left">NoUpdateOverlimits</p>
+			 </td>
+			 <td>
+			    <p align="left">-</p>
+			 </td>
+			 <td>
+			    <p align="left">bool</p>
+			 </td>
+			 <td>
+			    <p align="left">No</p>
+			 </td>
+			 <td>
+			    <p align="left">
+				    For update only, if this property is true, the update of the following properties will be ignored:
+				    - OverLimits
+				</p>
+			 </td>
+	        </tr>
+	        <tr valign="top">
+			 <td>
+			    <p align="left">NoUpdatePrograms</p>
+			 </td>
+			 <td>
+			    <p align="left">-</p>
+			 </td>
+			 <td>
+			    <p align="left">bool</p>
+			 </td>
+			 <td>
+			    <p align="left">No</p>
+			 </td>
+			 <td>
+			    <p align="left">
+				    For update only, if this property is true, the update of the following properties will be ignored:
+				    - ValidatePrograms
+				    - Programs
+				</p>
+			 </td>
+	        </tr>
+	        <tr valign="top">
+			 <td>
+			    <p align="left">NoUpdateSubsidies</p>
+			 </td>
+			 <td>
+			    <p align="left">-</p>
+			 </td>
+			 <td>
+			    <p align="left">bool</p>
+			 </td>
+			 <td>
+			    <p align="left">No</p>
+			 </td>
+			 <td>
+			    <p align="left">
+				    For update only, if this property is true, the update of the following properties will be ignored:
+				    - Subsidized
+				</p>
+			 </td>
+	        </tr>
+	        <tr valign="top">
+			 <td>
+			    <p align="left">NoUpdateClassifications</p>
+			 </td>
+			 <td>
+			    <p align="left">-</p>
+			 </td>
+			 <td>
+			    <p align="left">bool</p>
+			 </td>
+			 <td>
+			    <p align="left">No</p>
+			 </td>
+			 <td>
+			    <p align="left">
+				    For update only, if this property is true, the update of the following properties will be ignored:
+				    - Classification1Id
+				    - Classification1Code
+				    - Classification2Id
+				    - Classification2Code
+				    - Classification3Id
+				    - Classification3Code
+				    - Classification4Id
+				    - Classification4Code
+				</p>
+			 </td>
+	        </tr>
+	        <tr valign="top">
+			 <td>
+			    <p align="left">NoUpdateContractCustoms</p>
+			 </td>
+			 <td>
+			    <p align="left">-</p>
+			 </td>
+			 <td>
+			    <p align="left">bool</p>
+			 </td>
+			 <td>
+			    <p align="left">No</p>
+			 </td>
+			 <td>
+			    <p align="left">
+				    For update only, if this property is true, the update of the following properties will be ignored:
+				    - Custom0
+				    - Custom1
+				    - Custom2
+				    - Custom3
+				    - CustomInterface0
+				    - CustomInterface1
+				    - CustomInterface2
+				    - CustomInterface3	
+				    - CustomInterface4			    
+				    - CustomOperation0
+				    - CustomOperation1
+				    - CustomOperation2
+				    - CustomOperation3
+				    - CustomOperation4
+				</p>
+			 </td>
+	        </tr>
     </tbody>
 </table>
 
@@ -14764,6 +15094,8 @@ using (WebResponse webResponse = webRequest.GetResponse())
     "Custom3": null,
     "CompanyGroupID": null,
     "PermissionsType": null,
+    "NoUpdateDeliveryAddress": null,
+    "NoUpdateContactInformation": null,
     "Contracts": [
         {
             "Active": true,
@@ -14829,6 +15161,11 @@ using (WebResponse webResponse = webRequest.GetResponse())
             "BillingCompanyStateId": null,
             "IdRackPricesList": null,
             "RackPricesListCode": null,
+            "NoUpdateBillingConfiguration": null,
+            "NoUpdateSubsidies": null,
+            "NoUpdateClassifications": null,
+            "NoUpdateContractCustoms": null,
+            "NoUpdateFuels": null,
             "Fuels": [
                 {
                     "FuelMasterId": "389dee96-c6af-4161-8e3a-fa7835994102",
@@ -14837,7 +15174,9 @@ using (WebResponse webResponse = webRequest.GetResponse())
                     "MoneyLimit": 0.00
                 }
             ],
+            "NoUpdateConcepts": null,
             "Concepts": [],
+            "NoUpdateSites": null,
             "Sites": [
                 {
                     "SiteId":"16431f38-c140-41be-8235-b6fdfed5739d",
@@ -14852,6 +15191,7 @@ using (WebResponse webResponse = webRequest.GetResponse())
                     ]
                 }
             ],
+            "NoUpdatePrices": null,
             "Prices": [
                 {
                     "FuelMasterId": "577a92fa-cbb3-43d1-bb31-d54d8ff4a74a",
@@ -14865,6 +15205,7 @@ using (WebResponse webResponse = webRequest.GetResponse())
                     "TimeTo":"23:59"
                 }
             ],
+            "NoUpdateModifiers": null,
             "Modifiers": [
                 {
                     "Class": 0,
@@ -14879,8 +15220,11 @@ using (WebResponse webResponse = webRequest.GetResponse())
                     "TimeTo":"23:59"
                 }
             ],
+            "NoUpdateBlocks": null,
             "Blocks": [],
+            "NoUpdateOverlimits": null,
             "OverLimits": [],
+            "NoUpdatePrograms": null,
             "Programs": [
                 {
                     "Id": "8E5E3376-50BC-462C-BC21-666596220663",
