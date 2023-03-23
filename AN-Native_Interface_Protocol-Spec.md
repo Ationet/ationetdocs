@@ -15014,9 +15014,9 @@ The External Document insert are POST actions to store or update a document.
 
 ### 14.2 Accepted formats
 
-### 14.2 External Documents Insert (POST) - Body Section Format Request
+### 14.3 External Documents Insert (POST) - Body Section Format Request
 
-### 14.3 External Documents Insert (POST) - Body Section Format Response
+### 14.4 External Documents Insert (POST) - Body Section Format Response
 
 
 ## 15 Examples
