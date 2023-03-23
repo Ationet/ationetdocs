@@ -126,7 +126,7 @@
 
 - [14 External Documents](#14-External-Documents)
 	- [14.1 Action Codes](#141-action-codes)
-	- [14.2 Accepted Formats](#142-accepted-formats)
+	- [14.2 Supported Formats](#142-supported-formats)
 	- [14.3 Statements Header Download (POST) - Body Section Format Request](#143-External-Documents-Insert-post---body-section-format-request)
 	- [14.4 Statements Header Download (POST) - Body Section Format Response](#144-External-Documents-Insert-post---body-section-format-response)
 
@@ -15012,7 +15012,7 @@ The External Document insert are POST actions to store or update a document.
 
 ### 14.1 Action Codes
 
-### 14.2 Accepted formats
+### 14.2 Supported formats
 
 ### 14.3 External Documents Insert (POST) - Body Section Format Request
 
