@@ -126,8 +126,9 @@
 
 - [14 External Documents](#14-External-Documents)
 	- [14.1 Action Codes](#141-action-codes)
-	- [14.2 Statements Header Download (POST) - Body Section Format Request](#142-External-Documents-Insert-post---body-section-format-request)
-	- [14.3 Statements Header Download (POST) - Body Section Format Response](#143-External-Documents-Insert-post---body-section-format-response)
+	- [14.2 Action Codes](#142-accepted-formats)
+	- [14.3 Statements Header Download (POST) - Body Section Format Request](#143-External-Documents-Insert-post---body-section-format-request)
+	- [14.4 Statements Header Download (POST) - Body Section Format Response](#144-External-Documents-Insert-post---body-section-format-response)
 
 - [15 Examples](#15-Examples)
 	- [15.1 C# example](#151-C-example)
@@ -15007,7 +15008,11 @@ The download will be limited by dates (from and to), which must be included in t
 
 ## 14 External Documents
 
+The External Document insert are POST actions to store or update a document.
+
 ### 14.1 Action Codes
+
+### 14.2 Accepted formats
 
 ### 14.2 External Documents Insert (POST) - Body Section Format Request
 
