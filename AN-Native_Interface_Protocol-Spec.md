@@ -129,9 +129,9 @@
 	- [14.2 Statements Header Download (POST) - Body Section Format Request](#142-External-Documents-Insert-post---body-section-format-request)
 	- [14.3 Statements Header Download (POST) - Body Section Format Response](#143-External-Documents-Insert-post---body-section-format-response)
 
-- [15 Examples](#14-Examples)
-	- [15.1 C# example](#141-C-example)
-	- [15.2 Example](#142-example)
+- [15 Examples](#15-Examples)
+	- [15.1 C# example](#151-C-example)
+	- [15.2 Example](#152-example)
 
 ## Overview
 
