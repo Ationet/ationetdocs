@@ -124,9 +124,14 @@
 	- [13.2 Statements Header Download (POST) - Body Section Format Request](#132-statements-header-download-post---body-section-format-request)
 	- [13.3 Statements Header Download (POST) - Body Section Format Response](#133-statements-header-download-post---body-section-format-response)
 
-- [14 Examples](#14-Examples)
-	- [14.1 C# example](#141-C-example)
-	- [14.2 Example](#142-example)
+- [14 External Documents](#14-External-Documents)
+	- [14.1 Action Codes](#141-action-codes)
+	- [14.2 Statements Header Download (POST) - Body Section Format Request](#142-External-Documents-Insert-post---body-section-format-request)
+	- [14.3 Statements Header Download (POST) - Body Section Format Response](#143-External-Documents-Insert-post---body-section-format-response)
+
+- [15 Examples](#14-Examples)
+	- [15.1 C# example](#141-C-example)
+	- [15.2 Example](#142-example)
 
 ## Overview
 
@@ -15000,10 +15005,18 @@ The download will be limited by dates (from and to), which must be included in t
 	</tr>
 </table>
 
+## 14 External Documents
 
-## 14 Examples
+### 14.1 Action Codes
 
-### 14.1 C# example
+### 14.2 External Documents Insert (POST) - Body Section Format Request
+
+### 14.3 External Documents Insert (POST) - Body Section Format Response
+
+
+## 15 Examples
+
+### 15.1 C# example
 
 ```C#
 using System.IO;
@@ -15060,7 +15073,7 @@ using (WebResponse webResponse = webRequest.GetResponse())
 	}
 }
 ```
-### 14.2 Example
+### 15.2 Example
 
 ```
 {
