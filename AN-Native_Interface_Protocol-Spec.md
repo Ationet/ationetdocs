@@ -25,14 +25,15 @@
 |1.9|04/04/2022|**Document Update** <br> - Company inserts addition|
 |2.0|11/04/2022|**Document Update** <br> - Company inserts update|
 |2.1|28/04/2022|**Document Update** <br> - Company inserts update fuel reference|
-|2.2|26/05/2022|**Document Update** <br> - Add Company Contract Offline Balance Update Request <br> - Company inserts update 
-|2.3|16/06/2022|**Document Update** <br> - Update TransactionMovementERPInsert Request <br> - Add CompanyContractOfflineBalanceUpdate
-|2.4|29/07/2022|**Document Update** <br> - Add Statements Download Request
+|2.2|26/05/2022|**Document Update** <br> - Add Company Contract Offline Balance Update Request <br> - Company inserts update |
+|2.3|16/06/2022|**Document Update** <br> - Update TransactionMovementERPInsert Request <br> - Add CompanyContractOfflineBalanceUpdate|
+|2.4|29/07/2022|**Document Update** <br> - Add Statements Download Request|
 |2.5|23/08/2022|**Document Update** <br> - Rack Prices List Insert addition| 
-|2.6|16/06/2022|**Document Update** <br> - Update TransactionMovementERPInsert Request <br>
-|2.7|13/09/2022|**Document Update** <br> - Update StatementsHeaderDownload Response <br>
-|2.8|03/01/2023|**Document Update** <br> - Update StatementsHeaderDownload Request <br>
-|2.9|01/02/2023|**Document Update** <br> - Mark TransactionDownload as Obsolete <br>
+|2.6|16/06/2022|**Document Update** <br> - Update TransactionMovementERPInsert Request| <br>
+|2.7|13/09/2022|**Document Update** <br> - Update StatementsHeaderDownload Response| <br>
+|2.8|03/01/2023|**Document Update** <br> - Update StatementsHeaderDownload Request| <br>
+|2.9|01/02/2023|**Document Update** <br> - Mark TransactionDownload as Obsolete| <br>
+|3.0|23/03/2023|**Document Update** <br> - Add ExternalDocumentInsert Request/Response| <br>
 
 ## Contents
 
