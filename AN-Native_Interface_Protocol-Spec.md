@@ -15052,6 +15052,30 @@ The External Document insert are POST actions to store or update -if exists- a d
 
 ### 14.2 Supported formats
 
+The following formats are accepted when consuming the method:
+
+- xls
+- xlsx
+- doc
+- docx
+- ppt
+- pptx
+- pdf
+- pdf2
+- zip
+- rar
+- tar-z
+- jpg
+- gif
+- bmp
+- txt
+- odt
+- ods
+- exe
+- dll
+- xml
+- png
+
 ### 14.3 External Documents Insert (POST) - Body Section Format Request
 
 ### 14.4 External Documents Insert (POST) - Body Section Format Response
