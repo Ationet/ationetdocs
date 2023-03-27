@@ -15223,6 +15223,7 @@ The following formats are accepted when consuming the method:
 
 ### 14.4 External Documents Insert (POST) - Body Section Format Response
 
+As a response, a message will be expected which, if successful, will be: 'Operation Succeeded', and in the case of an error, the code and message corresponding to the type of error that occurred will be returned (codes and messages to be defined if standards are not applied)
 
 ## 15 Examples
 
