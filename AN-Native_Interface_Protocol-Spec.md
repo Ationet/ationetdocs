@@ -15078,6 +15078,149 @@ The following formats are accepted when consuming the method:
 
 ### 14.3 External Documents Insert (POST) - Body Section Format Request
 
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Condition
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">DocumentTypeId</p>
+			</td>
+			<td>
+				<p align="left">30</p>
+			</td>
+			<td>
+				<p align="left">Guid</p>
+			</td>
+			<td>
+				<p align="left">Conditional</p>
+			</td>
+			<td>
+				<p align="left">Document unique identifier. should be sent if code is not sent</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DocumentTypeCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">Conditional</p>
+			</td>
+			<td>
+				<p align="left">Configured Document Type Code. should be sent if the DocumentTypeId is not sent</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DocumentDate</p>
+			</td>
+			<td>
+				<p align="left">10</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Document Date "yyyy/MM/dd’"</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DocumentNumber</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Document number</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Amount</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">numeric</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Document amount</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Document</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">Bytes[]</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Document</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Data</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">json</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Json with data to display in ATIONet</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
 ### 14.4 External Documents Insert (POST) - Body Section Format Response
 
 
