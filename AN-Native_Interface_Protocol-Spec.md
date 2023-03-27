@@ -33,7 +33,7 @@
 |2.7|13/09/2022|**Document Update** <br> - Update StatementsHeaderDownload Response| <br>
 |2.8|03/01/2023|**Document Update** <br> - Update StatementsHeaderDownload Request| <br>
 |2.9|01/02/2023|**Document Update** <br> - Mark TransactionDownload as Obsolete| <br>
-|3.0|23/03/2023|**Document Update** <br> - Add ExternalDocumentInsert Request/Response| <br>
+|3.0|27/03/2023|**Document Update** <br> - Add ExternalDocumentInsert Request/Response| <br>
 
 ## Contents
 
@@ -129,6 +129,7 @@
 	- [14.2 Supported Formats](#142-supported-formats)
 	- [14.3 Statements Header Download (POST) - Body Section Format Request](#143-External-Documents-Insert-post---body-section-format-request)
 	- [14.4 Statements Header Download (POST) - Body Section Format Response](#144-External-Documents-Insert-post---body-section-format-response)
+	- [14.5 Json request example](#145-json-request-example)
 
 - [15 Examples](#15-Examples)
 	- [15.1 C# example](#151-C-example)
@@ -15224,6 +15225,31 @@ The following formats are accepted when consuming the method:
 ### 14.4 External Documents Insert (POST) - Body Section Format Response
 
 As a response, a message will be expected which, if successful, will be: 'Operation Succeeded', and in the case of an error, the code and message corresponding to the type of error that occurred will be returned (codes and messages to be defined if standards are not applied)
+
+### 14.5 Json request example
+
+```
+{
+    "ActionCode": "996",
+    "SubscriberCode": "NetworkCode",
+    "CompanyCode": "CompanyCode",
+    "MerchantCode": "MerchantCode",
+    "SystemModel": "SystemModel",
+    "SystemVerion": "SystemVersion",
+    "DocumentTypeId": "GUID",
+    "DocumentTypeCode": "01",
+    "DocumentDate": "2021/04/01",
+    "DocumentNumber": "AB00384282",
+    "Amount": 1763.21,
+    "Document":ArrayBytes[],
+    "Data": {
+        "ClaveA": "ValorA",
+        "ClaveB": "ValorB",
+        "ClaveC": "ValorC",
+        "ClaveZ": "ValorZ"
+    }
+}
+```
 
 ## 15 Examples
 
