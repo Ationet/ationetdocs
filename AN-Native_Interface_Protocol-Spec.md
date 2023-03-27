@@ -15008,9 +15008,47 @@ The download will be limited by dates (from and to), which must be included in t
 
 ## 14 External Documents
 
-The External Document insert are POST actions to store or update a document.
+The External Document insert are POST actions to store or update -if exists- a document.
 
 ### 14.1 Action Codes
+
+<table>
+	<tr valign="top">
+		<th align="left">
+			Action Code
+		</th>
+		<th colspan="2" align="left">
+			Description
+		</th>
+	</tr>
+	<tr valign="top">
+		<td rowspan="4">
+			<p>996</p>
+		</td>
+		<td>
+			<p>Title:</p>
+		</td>
+		<td>
+			<p>External Documents</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Function:</p>
+		</td>
+		<td>
+			<p>Insert or update a document </p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Allowed for:</p>
+		</td>
+		<td>
+			<p>NWInterfaceAPI - CPInterfaceAPI - MCInterfaceAPI</p>
+		</td>
+	</tr>
+</table>
 
 ### 14.2 Supported formats
 
