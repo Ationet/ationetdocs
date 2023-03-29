@@ -168,7 +168,6 @@ operation types.
 ### 2.5 Consumer Card Client Void Recharge – Body Section Format *Response*
 Field Name|Size|Type|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |
-|Balance|18|N|The current balance of the card before the recharge.|
 |ReceiptData|50|json|The information of the receipt related to the related recharge.|
 |ResponseCode|50|A/N|The code representing the status of the operation.|
 |ResponseMessage|50|A/N|The response message after the request has been processed. Here it could be indicated that the recharge was carried out successfully or the error message if it could not be carried out.|
