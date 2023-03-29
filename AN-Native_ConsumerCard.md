@@ -147,11 +147,25 @@ operation types.
 |ResponseCode|50|A/N|The code representing the status of the operation.|
 |ResponseMessage|50|A/N|The response message after the request has been processed. Here it could be indicated that the recharge was carried out successfully or the error message if it could not be carried out.|
 
+### 2.4 Consumer Card Client Void Recharge – Body Section Format *Request*
 
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |--- |
+|ActionCode|3|A/N|Required|See Action Codes section above|
+|SubscriberCode|3|A/N|Required|Fixed. To be assigned by ATIONet|
+|TerminalCode|50|A/N|Required|Site’s Terminal identification code.|
+|SystemModel|50|A/N|Required|System Model|
+|SystemVersion|50|A/N|Required|System Version|
+|MessageFormatVersion|50|A/N|Required|Message Format Version|
+|TrackNumber|50|A/N|Required|The track number to identify the consumer card identification|
 
-
-
-
+### 2.5 Consumer Card Client Recharge/Void – Body Section Format *Response*
+Field Name|Size|Type|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |--- |
+|Balance|18|N|The current balance of the card before the recharge.|
+|ReceiptData|50|json|The information of the receipt related to the related recharge.|
+|ResponseCode|50|A/N|The code representing the status of the operation.|
+|ResponseMessage|50|A/N|The response message after the request has been processed. Here it could be indicated that the recharge was carried out successfully or the error message if it could not be carried out.|
 
 
 
