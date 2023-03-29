@@ -125,3 +125,18 @@ operation types.
 		</td>
 	</tr>
 </table>
+
+### 2.2 Consumer Card Client Recharge/Void – Body Section Format *Request*
+
+As much as to carry out a recharge or a void, the request that must be made is the same, only having to change the action code to be able to differentiate one request from another.
+
+|Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |--- |
+|ActionCode|3|A/N|Required|See Action Codes section above|
+|SubscriberCode|3|A/N|Required|Fixed. To be assigned by ATIONet|
+|TerminalCode|50|A/N|Required|Site’s Terminal identification code.|
+|SystemModel|50|A/N|Required|System Model|
+|SystemVersion|50|A/N|Required|System Version|
+|MessageFormatVersion|50|A/N|Required|Message Format Version|
+|TrackNumber|50|A/N|Required|The track number to identify the consumer card identification|
+|Amount|18|N|Required|The amount of the operation to perform.|
