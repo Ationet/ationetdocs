@@ -139,9 +139,9 @@ operation types.
 |TrackNumber|50|A/N|Required|The track number to identify the consumer card identification|
 |Amount|18|N|Required|The amount of the operation to perform.|
 
-### 2.3 Consumer Card Client Recharge/Void – Body Section Format *Response*
+### 2.3 Consumer Card Client Recharge – Body Section Format *Response*
 |Field Name|Size|Type|Descriptions/Field Value(s)|
-|--- |--- |--- |--- |--- |
+|--- |--- |--- |--- |
 |Balance|18|N|The current balance of the card before the recharge.|
 |ReceiptData|50|json|The information of the receipt related to the related recharge.|
 |ResponseCode|50|A/N|The code representing the status of the operation.|
@@ -159,9 +159,9 @@ operation types.
 |MessageFormatVersion|50|A/N|Required|Message Format Version|
 |TrackNumber|50|A/N|Required|The track number to identify the consumer card identification|
 
-### 2.5 Consumer Card Client Recharge/Void – Body Section Format *Response*
+### 2.5 Consumer Card Client Void Recharge – Body Section Format *Response*
 Field Name|Size|Type|Descriptions/Field Value(s)|
-|--- |--- |--- |--- |--- |
+|--- |--- |--- |--- |
 |Balance|18|N|The current balance of the card before the recharge.|
 |ReceiptData|50|json|The information of the receipt related to the related recharge.|
 |ResponseCode|50|A/N|The code representing the status of the operation.|
