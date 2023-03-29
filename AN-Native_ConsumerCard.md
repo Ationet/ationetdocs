@@ -167,5 +167,11 @@ Field Name|Size|Type|Descriptions/Field Value(s)|
 |ResponseCode|50|A/N|The code representing the status of the operation.|
 |ResponseMessage|50|A/N|The response message after the request has been processed. Here it could be indicated that the recharge was carried out successfully or the error message if it could not be carried out.|
 
-
-
+### 2.6 Receipt Data Format
+Field Name|Size|Type|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |
+|CustomerName|50|A/N|The full name registered on the consumer card|
+|CustomerIdentification|50|A/N|The code associated with the consumer card customer|
+|CustomerPAN|50|A/N|The PAN associated with the consumer card identification.|
+|CustomerLabel|50|A/N|The Label associated with the consumer card identification.|
+|SubscriberName|50|A/N|The name of the network in which the consumer card is associated.|
