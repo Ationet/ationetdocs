@@ -49,4 +49,79 @@ Version: Version 1.4
 
 API URI: native.ationet.com/v1/ConsumerCard
 
+## 2 Consumer Card Client Recharge
 
+The Consumer Card Client Recharge message sends an instruction to ATIONet to apply a
+well-defined action on the consumer card subsystem. The subject of the action will be
+a consumer card identification.
+
+### 2.1 Action Codes
+
+The Action Code specifies the type of recharge requested
+The submitted code must match one of the pre-defined 
+operation types. 
+
+<table>
+	<tr valign="top">
+		<th align="left">
+			Action Code
+		</th>
+		<th colspan="2" align="left">
+			Description
+		</th>
+	</tr>
+	<tr valign="top">
+		<td rowspan="3">
+			<p>820</p>
+		</td>
+		<td>
+			<p>Title:</p>
+		</td>
+		<td>
+			<p>Consumer Card Client Recharge</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Function:</p>
+		</td>
+		<td>
+			<p>Perform a balance recharge to a consumer card type identifier</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Allowed for:</p>
+		</td>
+		<td>
+			<p>ConsumerCardAPI</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td rowspan="3">
+			<p>821</p>
+		</td>
+		<td>
+			<p>Title:</p>
+		</td>
+		<td>
+			<p>Consumer Card Client Recharge Void</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Function:</p>
+		</td>
+		<td>
+			<p>Perform a reverse on the last balance recharge to a consumer card type identifier. The last movement made by the card must have been the balance recharge.</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Allowed for:</p>
+		</td>
+		<td>
+			<p>ConsumerCardAPI</p>
+		</td>
+	</tr>
+</table>
