@@ -25,14 +25,15 @@
 |1.9|04/04/2022|**Document Update** <br> - Company inserts addition|
 |2.0|11/04/2022|**Document Update** <br> - Company inserts update|
 |2.1|28/04/2022|**Document Update** <br> - Company inserts update fuel reference|
-|2.2|26/05/2022|**Document Update** <br> - Add Company Contract Offline Balance Update Request <br> - Company inserts update 
-|2.3|16/06/2022|**Document Update** <br> - Update TransactionMovementERPInsert Request <br> - Add CompanyContractOfflineBalanceUpdate
-|2.4|29/07/2022|**Document Update** <br> - Add Statements Download Request
+|2.2|26/05/2022|**Document Update** <br> - Add Company Contract Offline Balance Update Request <br> - Company inserts update |
+|2.3|16/06/2022|**Document Update** <br> - Update TransactionMovementERPInsert Request <br> - Add CompanyContractOfflineBalanceUpdate|
+|2.4|29/07/2022|**Document Update** <br> - Add Statements Download Request|
 |2.5|23/08/2022|**Document Update** <br> - Rack Prices List Insert addition| 
-|2.6|16/06/2022|**Document Update** <br> - Update TransactionMovementERPInsert Request <br>
-|2.7|13/09/2022|**Document Update** <br> - Update StatementsHeaderDownload Response <br>
-|2.8|03/01/2023|**Document Update** <br> - Update StatementsHeaderDownload Request <br>
-|2.9|01/02/2023|**Document Update** <br> - Mark TransactionDownload as Obsolete <br>
+|2.6|16/06/2022|**Document Update** <br> - Update TransactionMovementERPInsert Request| <br>
+|2.7|13/09/2022|**Document Update** <br> - Update StatementsHeaderDownload Response| <br>
+|2.8|03/01/2023|**Document Update** <br> - Update StatementsHeaderDownload Request| <br>
+|2.9|01/02/2023|**Document Update** <br> - Mark TransactionDownload as Obsolete| <br>
+|3.0|27/03/2023|**Document Update** <br> - Add ExternalDocumentInsert Request/Response| <br>
 
 ## Contents
 
@@ -123,9 +124,16 @@
 	- [13.2 Statements Header Download (POST) - Body Section Format Request](#132-statements-header-download-post---body-section-format-request)
 	- [13.3 Statements Header Download (POST) - Body Section Format Response](#133-statements-header-download-post---body-section-format-response)
 
-- [14 Examples](#14-Examples)
-	- [14.1 C# example](#141-C-example)
-	- [14.2 Example](#142-example)
+- [14 External Documents](#14-External-Documents)
+	- [14.1 Action Codes](#141-action-codes)
+	- [14.2 Supported Formats](#142-supported-formats)
+	- [14.3 Statements Header Download (POST) - Body Section Format Request](#143-External-Documents-Insert-post---body-section-format-request)
+	- [14.4 Statements Header Download (POST) - Body Section Format Response](#144-External-Documents-Insert-post---body-section-format-response)
+	- [14.5 Json request example](#145-json-request-example)
+
+- [15 Examples](#15-Examples)
+	- [15.1 C# example](#151-C-example)
+	- [15.2 Example](#152-example)
 
 ## Overview
 
@@ -14999,10 +15007,253 @@ The download will be limited by dates (from and to), which must be included in t
 	</tr>
 </table>
 
+## 14 External Documents
 
-## 14 Examples
+The External Document insert are POST actions to store or update -if exists- a document.
 
-### 14.1 C# example
+### 14.1 Action Codes
+
+<table>
+	<tr valign="top">
+		<th align="left">
+			Action Code
+		</th>
+		<th colspan="2" align="left">
+			Description
+		</th>
+	</tr>
+	<tr valign="top">
+		<td rowspan="4">
+			<p>996</p>
+		</td>
+		<td>
+			<p>Title:</p>
+		</td>
+		<td>
+			<p>External Documents</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Function:</p>
+		</td>
+		<td>
+			<p>Insert or update a document </p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>
+			<p>Allowed for:</p>
+		</td>
+		<td>
+			<p>NWInterfaceAPI - CPInterfaceAPI - MCInterfaceAPI</p>
+		</td>
+	</tr>
+</table>
+
+### 14.2 Supported formats
+
+The following formats are accepted when consuming the method:
+
+- xls
+- xlsx
+- doc
+- docx
+- ppt
+- pptx
+- pdf
+- pdf2
+- zip
+- rar
+- tar-z
+- jpg
+- gif
+- bmp
+- txt
+- odt
+- ods
+- exe
+- dll
+- xml
+- png
+
+### 14.3 External Documents Insert (POST) - Body Section Format Request
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Condition
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr valign="top">
+			<td>
+				<p align="left">DocumentTypeId</p>
+			</td>
+			<td>
+				<p align="left">30</p>
+			</td>
+			<td>
+				<p align="left">Guid</p>
+			</td>
+			<td>
+				<p align="left">Conditional</p>
+			</td>
+			<td>
+				<p align="left">Document unique identifier. should be sent if code is not sent</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DocumentTypeCode</p>
+			</td>
+			<td>
+				<p align="left">50</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">Conditional</p>
+			</td>
+			<td>
+				<p align="left">Configured Document Type Code. should be sent if the DocumentTypeId is not sent</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DocumentDate</p>
+			</td>
+			<td>
+				<p align="left">10</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Document Date "yyyy/MM/dd’"</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DocumentNumber</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Document number</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Amount</p>
+			</td>
+			<td>
+				<p align="left">18</p>
+			</td>
+			<td>
+				<p align="left">numeric</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Document amount</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Document</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">Bytes[]</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Document</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Data</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">json</p>
+			</td>
+			<td>
+				<p align="left">Yes</p>
+			</td>
+			<td>
+				<p align="left">Json with data to display in ATIONet</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+### 14.4 External Documents Insert (POST) - Body Section Format Response
+
+As a response, a message will be expected which, if successful, will be: 'Operation Succeeded', and in the case of an error, the code and message corresponding to the type of error that occurred will be returned (codes and messages to be defined if standards are not applied)
+
+### 14.5 Json request example
+
+```
+{
+    "ActionCode": "996",
+    "SubscriberCode": "NetworkCode",
+    "CompanyCode": "CompanyCode",
+    "MerchantCode": "MerchantCode",
+    "SystemModel": "SystemModel",
+    "SystemVerion": "SystemVersion",
+    "DocumentTypeId": "GUID",
+    "DocumentTypeCode": "01",
+    "DocumentDate": "2021/04/01",
+    "DocumentNumber": "AB00384282",
+    "Amount": 1763.21,
+    "Document":ArrayBytes[],
+    "Data": {
+        "ClaveA": "ValorA",
+        "ClaveB": "ValorB",
+        "ClaveC": "ValorC",
+        "ClaveZ": "ValorZ"
+    }
+}
+```
+
+## 15 Examples
+
+### 15.1 C# example
 
 ```C#
 using System.IO;
@@ -15059,7 +15310,7 @@ using (WebResponse webResponse = webRequest.GetResponse())
 	}
 }
 ```
-### 14.2 Example
+### 15.2 Example
 
 ```
 {
