@@ -126,9 +126,7 @@ operation types.
 	</tr>
 </table>
 
-### 2.2 Consumer Card Client Recharge/Void – Body Section Format *Request*
-
-As much as to carry out a recharge or a void, the request that must be made is the same, only having to change the action code to be able to differentiate one request from another.
+### 2.2 Consumer Card Client Recharge – Body Section Format *Request*
 
 |Field Name|Size|Type|Condition|Descriptions/Field Value(s)|
 |--- |--- |--- |--- |--- |
@@ -140,3 +138,20 @@ As much as to carry out a recharge or a void, the request that must be made is t
 |MessageFormatVersion|50|A/N|Required|Message Format Version|
 |TrackNumber|50|A/N|Required|The track number to identify the consumer card identification|
 |Amount|18|N|Required|The amount of the operation to perform.|
+
+### 2.3 Consumer Card Client Recharge/Void – Body Section Format *Response*
+|Field Name|Size|Type|Descriptions/Field Value(s)|
+|--- |--- |--- |--- |--- |
+|Balance|18|N|The current balance of the card before the recharge.|
+|ReceiptData|50|json|The information of the receipt related to the related recharge.|
+|ResponseCode|50|A/N|The code representing the status of the operation.|
+|ResponseMessage|50|A/N|The response message after the request has been processed. Here it could be indicated that the recharge was carried out successfully or the error message if it could not be carried out.|
+
+
+
+
+
+
+
+
+
