@@ -19,7 +19,13 @@
 - [1 Scope](#1-scope)
 	- [1.1 Scope details](#11-scope-details)
 
-
+- [2 Consumer Card Client Recharge](#2-consumer-card-client-recharge)
+	- [2.1 Action Codes](#21-action-codes)
+	- [2.2 Consumer Card Client Recharge – Body Section Format *Request*](#22-consumer-card-client-recharge--body-section-format-request)
+	- [2.3 Consumer Card Client Recharge – Body Section Format *Response*](#23-consumer-card-client-recharge--body-section-format-response)
+	- [2.4 Consumer Card Client Void Recharge – Body Section Format *Request*](#24-consumer-card-client-void-recharge--body-section-format-request)
+	- [2.5 Consumer Card Client Void Recharge – Body Section Format *Response*](#25-consumer-card-client-void-recharge--body-section-format-response)
+	- [2.6 Receipt Data Format](#26-receipt-data-format)
 ## Overview
 
 ### Introduction
