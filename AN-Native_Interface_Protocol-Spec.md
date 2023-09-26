@@ -34,6 +34,7 @@
 |2.8|03/01/2023|**Document Update** <br> - Update StatementsHeaderDownload Request| <br>
 |2.9|01/02/2023|**Document Update** <br> - Mark TransactionDownload as Obsolete| <br>
 |3.0|27/03/2023|**Document Update** <br> - Add ExternalDocumentInsert Request/Response| <br>
+|3.1|26/09/2023|**Document Update** <br> - Update StatementsHeaderDownload Response| <br>
 
 ## Contents
 
@@ -14926,6 +14927,18 @@ The download will be limited by dates (from and to), which must be included in t
 		<td colspan="2">19</td>
 		<td colspan="2">nvarchar</td>
 		<td colspan="2">The Statment datetime “yyyy/mm/dd hh:mm:ss”</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">BillingDateFrom</td>
+		<td colspan="2">19</td>
+		<td colspan="2">nvarchar</td>
+		<td colspan="2">The Statment datetime from “yyyy/mm/dd hh:mm:ss”</td>
+	</tr>
+	<tr valign="top">
+		<td colspan="2">BillingDateTo</td>
+		<td colspan="2">19</td>
+		<td colspan="2">nvarchar</td>
+		<td colspan="2">The Statment datetime to “yyyy/mm/dd hh:mm:ss”</td>
 	</tr>
 	<tr valign="top">
 		<td colspan="2">CompanyId</td>
