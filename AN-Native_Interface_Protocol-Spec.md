@@ -35,6 +35,7 @@
 |2.9|01/02/2023|**Document Update** <br> - Mark TransactionDownload as Obsolete| <br>
 |3.0|27/03/2023|**Document Update** <br> - Add ExternalDocumentInsert Request/Response| <br>
 |3.1|26/09/2023|**Document Update** <br> - Update StatementsHeaderDownload Response| <br>
+|3.2|25/10/2023|**Document Update** <br> - Company inserts update| <br>
 
 ## Contents
 
@@ -117,8 +118,9 @@
 	- [12.9 Interface Concept Contract](#129-interfaceconceptcontract)
 	- [12.10 Interface Block Contract](#1210-interfaceblockcontract)
 	- [12.11 Interface Overlimit Contract](#1211-interfaceoverlimitcontract)
-	- [12.12 Interface Program Contract](#1212-InterfaceProgramContract)
-	- [12.13 Response Messages](#1213-response-messages)
+	- [12.12 Interface Program Contract](#1212-nterfaceProgramContract)
+ 	- [12.13 Interface Company Contract Delivery Address](#1213-interfaceCompanyContractDeliveryAddress)
+	- [12.14 Response Messages](#1214-response-messages)
 
 - [13 Statements Downloads](#13-Statements-Download)
 	- [13.1 Action Codes](#131-action-codes)
@@ -11587,108 +11589,6 @@ To edit a company there's no need to send the contract information. However, whe
       </tr>
       <tr valign="top">
          <td>
-            <p align="left">Street1Delivery</p>
-         </td>
-         <td>
-            <p align="left">200</p>
-         </td>
-         <td>
-            <p align="left">nvarchar</p>
-         </td>
-         <td>
-            <p align="left">Yes</p>
-         </td>
-         <td>
-            <p align="left">Delivery address</p>
-         </td>
-      </tr>
-      <tr valign="top">
-         <td>
-            <p align="left">Street2Delivery</p>
-         </td>
-         <td>
-            <p align="left">200</p>
-         </td>
-         <td>
-            <p align="left">nvarchar</p>
-         </td>
-         <td>
-            <p align="left">No</p>
-         </td>
-         <td>
-            <p align="left">Additional delivery address infromation</p>
-         </td>
-      </tr>
-      <tr valign="top">
-         <td>
-            <p align="left">ZipCodeDelivery</p>
-         </td>
-         <td>
-            <p align="left">50</p>
-         </td>
-         <td>
-            <p align="left">nvarchar</p>
-         </td>
-         <td>
-            <p align="left">No</p>
-         </td>
-         <td>
-            <p align="left">Delivery ZIP code</p>
-         </td>
-      </tr>
-      <tr valign="top">
-         <td>
-            <p align="left">CityDelivery</p>
-         </td>
-         <td>
-            <p align="left">100</p>
-         </td>
-         <td>
-            <p align="left">nvarchar</p>
-         </td>
-         <td>
-            <p align="left">Yes</p>
-         </td>
-         <td>
-            <p align="left">Delivery city</p>
-         </td>
-      </tr>
-      <tr valign="top">
-         <td>
-            <p align="left">CountryDeliveryId</p>
-         </td>
-         <td>
-            <p align="left">-</p>
-         </td>
-         <td>
-            <p align="left">Guid</p>
-         </td>
-         <td>
-            <p align="left">Yes</p>
-         </td>
-         <td>
-            <p align="left">Delivery country Id. To be assigned by ATIONet.</p>
-         </td>
-      </tr>
-      <tr valign="top">
-         <td>
-            <p align="left">StateDeliveryId</p>
-         </td>
-         <td>
-            <p align="left">-</p>
-         </td>
-         <td>
-            <p align="left">Guid</p>
-         </td>
-         <td>
-            <p align="left">Yes</p>
-         </td>
-         <td>
-            <p align="left">Delivery state/province Id. To be assigned by ATIONet.</p>
-         </td>
-      </tr>
-      <tr valign="top">
-         <td>
             <p align="left">TaxPayerCategoryId</p>
          </td>
          <td>
@@ -12114,6 +12014,24 @@ To edit a company there's no need to send the contract information. However, whe
 			<td>
 				<p align="left">Contract length.<br/>
 					Represents an amount of days, weeks, months or years</p>
+			</td>
+		</tr>
+	    	<tr valign="top">
+			<td>
+				<p align="left">AddAddressInIdentificationsRequest</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Add address in identification request<br/>
+					Allows you to add new delivery addresses for request identifications</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -13286,6 +13204,25 @@ To edit a company there's no need to send the contract information. However, whe
 						 It's composed by Id and Code. Only one of the values is needed to identify the program. If both values are present, the Id field take the priority.<br/> "Programs":[<br/>{<br/>"Id": "06df1b02-4de2-40d3-ba2f-af03f622c73d"<br/>}<br/> Or<br/>"Programs":[<br/>{<br/>"Code": "PRG001"<br/>}</p>
 			</td>
 		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">DeliveryAddresses</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">List<Guid>
+				</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left"> It is used to establish one or more delivery addresses in the contract.<br/>
+						 Each address is composed of Street1(Required), Street2, ZipCode, City(Required), StateId(Required), CountryId(Required), Active, Order(Required).<br/> "DeliveryAddresses": [<br/>{<br/>"Street1": "Street",<br/>"Street2": "",<br/>"ZipCode": "3307",<br/>"City": "Buenos Aires",<br/>"StateId": "B32DF08F-18EF-46F3-B450-2E21496DDFB3",<br/>"CountryId": "CB5A1CF3-9931-4F73-BBF1-774866BBBC2F",<br/>"Active": true,<br/>"Order": 0<br/>}<br/></p>
+			</td>
+		</tr>
 	        <tr valign="top">
 			 <td>
 			    <p align="left">NoUpdateFuels</p>
@@ -13565,6 +13502,26 @@ To edit a company there's no need to send the contract information. However, whe
 				    - CustomOperation2
 				    - CustomOperation3
 				    - CustomOperation4
+				</p>
+			 </td>
+	        </tr>
+		<tr valign="top">
+			 <td>
+			    <p align="left">NoUpdateDeliveryAddresses</p>
+			 </td>
+			 <td>
+			    <p align="left">-</p>
+			 </td>
+			 <td>
+			    <p align="left">bool</p>
+			 </td>
+			 <td>
+			    <p align="left">No</p>
+			 </td>
+			 <td>
+			    <p align="left">
+				    For update only, if this property is true, the update of the following properties will be ignored: 
+				     - Delivery Addresses
 				</p>
 			 </td>
 	        </tr>
@@ -14731,7 +14688,168 @@ To edit a company there's no need to send the contract information. However, whe
     </tbody>
 </table>
 
-### 12.13 Response messages
+### 12.13 InterfaceCompanyContractDeliveryAddress
+
+<table>
+    <thead>
+      <tr valign="top">
+         <th align="left">
+            Field Name
+         </th>
+         <th align="left">
+            Size
+         </th>
+         <th align="left">
+            Type
+         </th>
+         <th align="left">
+            Required
+         </th>
+         <th align="left">
+            Descriptions/Field Value(s)
+         </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr valign="top">
+         <td>
+            <p align="left">Street1</p>
+         </td>
+         <td>
+            <p align="left">200</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Main address</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">Street2</p>
+         </td>
+         <td>
+            <p align="left">200</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Secondary address</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p align="left">ZipCode</p>
+         </td>
+         <td>
+            <p align="left">200</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Zip Code</p>
+         </td>
+      </tr>
+	<tr valign="top">
+         <td>
+            <p align="left">City</p>
+         </td>
+         <td>
+            <p align="left">100</p>
+         </td>
+         <td>
+            <p align="left">nvarchar</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">City name</p>
+         </td>
+      </tr>
+	<tr valign="top">
+         <td>
+            <p align="left">StateId</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">GUID</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">State ID</p>
+         </td>
+	<tr valign="top">
+         <td>
+            <p align="left">CountryId</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">GUID</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Country ID</p>
+         </td>
+      </tr>
+	<tr valign="top">
+         <td>
+            <p align="left">Active</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">bool</p>
+         </td>
+         <td>
+            <p align="left">No</p>
+         </td>
+         <td>
+            <p align="left">Address active/inactive status</p>
+         </td>
+      </tr>
+	<tr valign="top">
+         <td>
+            <p align="left">Order</p>
+         </td>
+         <td>
+            <p align="left">-</p>
+         </td>
+         <td>
+            <p align="left">short</p>
+         </td>
+         <td>
+            <p align="left">Yes</p>
+         </td>
+         <td>
+            <p align="left">Address Priority Order</p>
+         </td>
+      </tr>
+    </tbody>
+</table>
+
+### 12.14 Response messages
 
 <table class="tg">
 <thead>
