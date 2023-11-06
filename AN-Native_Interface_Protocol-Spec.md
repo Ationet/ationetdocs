@@ -36,7 +36,7 @@
 |3.0|27/03/2023|**Document Update** <br> - Add ExternalDocumentInsert Request/Response| <br>
 |3.1|26/09/2023|**Document Update** <br> - Update StatementsHeaderDownload Response| <br>
 |3.2|25/10/2023|**Document Update** <br> - Company inserts update| <br>
-|3.3|03/11/2023|**Document Update** <br> - Company inserts update - Merchants| <br>
+|3.3|06/11/2023|**Document Update** <br> - Company inserts update - Merchants| <br>
 
 ## Contents
 
@@ -13257,7 +13257,7 @@ To edit a company there's no need to send the contract information. However, whe
 				<p align="left">No</p>
 			</td>
 			<td>
-				<p align="left">Merchants list where the contract sub accounts can operate if the property Validate Merchants is true. If no list is sent, the sub accounts not will be allowed to operate in any merchant.<br/>The request accepts that only one of the fields that identify the merchant (MerchantId/Code) is present. If both are present, the MerchantId field will take priority.<br/><br/>"Merchants": [<br/>{<br/>"MerchantId":"e6ba7705-bb4b-45cb-92fc-da260cb494d9",<br/>"Code":"ABC",<br/>"Name": "Merchant Name"<br/>}<br/></p>
+				<p align="left">Merchants list where the contract sub accounts can operate if the property Validate Merchants is true. If no list is sent, the sub accounts not will be allowed to operate in any merchant.<br/>The request accepts that only one of the fields that identify the merchant (MerchantId/Code) is present. If both fields are present, it is validated that they match the same merchant.<br/><br/>"Merchants": [<br/>{<br/>"MerchantId":"e6ba7705-bb4b-45cb-92fc-da260cb494d9",<br/>"Code":"ABC",<br/>"Name": "Merchant Name"<br/>}<br/></p>
 			</td>
 		</tr>		
 	        <tr valign="top">
