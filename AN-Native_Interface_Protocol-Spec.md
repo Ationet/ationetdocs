@@ -36,6 +36,7 @@
 |3.0|27/03/2023|**Document Update** <br> - Add ExternalDocumentInsert Request/Response| <br>
 |3.1|26/09/2023|**Document Update** <br> - Update StatementsHeaderDownload Response| <br>
 |3.2|25/10/2023|**Document Update** <br> - Company inserts update| <br>
+|3.3|06/11/2023|**Document Update** <br> - Company inserts update - Merchants| <br>
 
 ## Contents
 
@@ -120,7 +121,8 @@
 	- [12.11 Interface Overlimit Contract](#1211-interfaceoverlimitcontract)
 	- [12.12 Interface Program Contract](#1212-InterfaceProgramContract)
  	- [12.13 Interface Company Contract Delivery Address](#1213-interfaceCompanyContractDeliveryAddress)
-	- [12.14 Response Messages](#1214-response-messages)
+	- [12.14 Interface Company Contract Merchants](#1214-interfaceCompanyContractMerchants)
+	- [12.15 Response Messages](#1214-response-messages)
 
 - [13 Statements Downloads](#13-Statements-Download)
 	- [13.1 Action Codes](#131-action-codes)
@@ -356,7 +358,7 @@ Availability of this message and the type of actions allowed depend on the subsc
   </tr>
   <tr>
     <td class="tg-eygw">933</td>
-    <td class="tg-eygw">Exceptions download</td>![image](https://user-images.githubusercontent.com/26742775/170762868-169c1fff-bc00-4951-83eb-aeb1cbdf30b5.png)
+    <td class="tg-eygw">Exceptions download</td>
 
   </tr>
   <tr>
@@ -12181,7 +12183,7 @@ To edit a company there's no need to send the contract information. However, whe
 				<p align="left">bool</p>
 			</td>
 			<td>
-				<p align="left">Yes</p>
+				<p align="left">No</p>
 			</td>
 			<td>
 				<p align="left">Indicates if the contract must validate sites</p>
@@ -12202,6 +12204,23 @@ To edit a company there's no need to send the contract information. However, whe
 			</td>
 			<td>
 				<p align="left">Indicates if the contract must validate fuels</p>
+			</td>
+		</tr>
+	        <tr valign="top">
+			<td>
+				<p align="left">ValidateMerchants</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Indicates if the contract must validate merchants</p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -13082,7 +13101,7 @@ To edit a company there's no need to send the contract information. However, whe
 			</td>
 			<td>
 				<p align="left">Sites list where the contract sub accounts can operate.<br/>
-				If no list is sent, the sub accounts will be allowed to operate in all the sites.The request accepts that only one of the fields that identify the site (SiteId/Code) is present. If both are present, the SiteId field will take priority.<br/><br/><b>Fuels</b><br/>If 'require fuel mapping' is enabled on the site, the FuelMasterID/FuelMasterCode sent corresponds to a Fuel, otherwise the values corresponds to a Fuel Master.<br/>The request accepts that only one of the fields that identify the fuel (FuelMasterID/FuelMasterCode) is present. If both are present, the FuelMasterID field will take priority.<br/><br/>"Sites": [<br/>{<br/>"SiteId":"16431f38-c140-41be-8235-b6fdfed5739d",<br/>"Code":"ABC",<br/>"Fuels":[<br/>{<br/>"FuelMasterId": "389dee96-c6af-4161-8e3a-fa7835994102",<br/>"FuelMasterCode": "002",<br/>"VolumeLimit": 0.00,<br/>"MoneyLimit": 0.00<br/>}<br/>]<br/>}<br/>]<br/></p>
+				If no list is sent, the sub accounts will be allowed to operate in all the sites.The request accepts that only one of the fields that identify the site (SiteId/Code) is present. If both fields are present, it is validated that they match the same site.<br/><br/><b>Fuels</b><br/>If 'require fuel mapping' is enabled on the site, the FuelMasterID/FuelMasterCode sent corresponds to a Fuel, otherwise the values corresponds to a Fuel Master.<br/>The request accepts that only one of the fields that identify the fuel (FuelMasterID/FuelMasterCode) is present. If both are present, the FuelMasterID field will take priority.<br/><br/>"Sites": [<br/>{<br/>"SiteId":"16431f38-c140-41be-8235-b6fdfed5739d",<br/>"Code":"ABC",<br/>"Fuels":[<br/>{<br/>"FuelMasterId": "389dee96-c6af-4161-8e3a-fa7835994102",<br/>"FuelMasterCode": "002",<br/>"VolumeLimit": 0.00,<br/>"MoneyLimit": 0.00<br/>}<br/>]<br/>}<br/>]<br/></p>
 			</td>
 		</tr>
 		<tr valign="top">
@@ -13223,6 +13242,24 @@ To edit a company there's no need to send the contract information. However, whe
 						 Each address is composed of Street1(Required), Street2, ZipCode, City(Required), StateId(Required), CountryId(Required), Active, Order(Required).<br/> "DeliveryAddresses": [<br/>{<br/>"Street1": "Street",<br/>"Street2": "",<br/>"ZipCode": "3307",<br/>"City": "Buenos Aires",<br/>"StateId": "B32DF08F-18EF-46F3-B450-2E21496DDFB3",<br/>"CountryId": "CB5A1CF3-9931-4F73-BBF1-774866BBBC2F",<br/>"Active": true,<br/>"Order": 0<br/>}<br/></p>
 			</td>
 		</tr>
+                <tr valign="top">
+			<td>
+				<p align="left">Merchants</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">List<InterfaceMerchantsContract>
+				</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Merchants list where the contract sub accounts can operate if the property Validate Merchants is true. If no list is sent, the sub accounts not will be allowed to operate in any merchant.<br/>The request accepts that only one of the fields that identify the merchant (MerchantId/Code) is present. If both fields are present, it is validated that they match the same merchant.<br/><br/>"Merchants": [<br/>{<br/>"MerchantId":"e6ba7705-bb4b-45cb-92fc-da260cb494d9",<br/>"Code":"ABC",<br/>"Name": "Merchant Name"<br/>}<br/></p>
+			</td>
+		</tr>		
 	        <tr valign="top">
 			 <td>
 			    <p align="left">NoUpdateFuels</p>
@@ -13522,6 +13559,26 @@ To edit a company there's no need to send the contract information. However, whe
 			    <p align="left">
 				    For update only, if this property is true, the update of the following properties will be ignored: 
 				     - Delivery Addresses
+				</p>
+			 </td>
+	        </tr>
+	 			<tr valign="top">
+			 <td>
+			    <p align="left">NoUpdateMerchants</p>
+			 </td>
+			 <td>
+			    <p align="left">-</p>
+			 </td>
+			 <td>
+			    <p align="left">bool</p>
+			 </td>
+			 <td>
+			    <p align="left">No</p>
+			 </td>
+			 <td>
+			    <p align="left">
+				    For update only, if this property is true, the update of the following properties will be ignored: 
+				     - Merchants
 				</p>
 			 </td>
 	        </tr>
@@ -14849,7 +14906,86 @@ To edit a company there's no need to send the contract information. However, whe
     </tbody>
 </table>
 
-### 12.14 Response messages
+### 12.14 InterfaceMerchantsContract
+
+<table>
+	<thead>
+		<tr valign="top">
+			<th align="left">
+				Field Name
+			</th>
+			<th align="left">
+				Size
+			</th>
+			<th align="left">
+				Type
+			</th>
+			<th align="left">
+				Required
+			</th>
+			<th align="left">
+				Descriptions/Field Value(s)
+			</th>
+		</tr>
+	</thead>
+    <tbody>
+			<tr valign="top">
+			<td>
+				<p align="left">MerchantId</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">Guid</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Merchant Id.<br/>
+								Required if no Merchant Code is sent.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Code</p>
+			</td>
+			<td>
+				<p align="left">30</p>
+			</td>
+			<td>
+				<p align="left">nvarchar(30)</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Merchant code.<br/>
+								Required if no Merchant Id is sent.</p>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td>
+				<p align="left">Name</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">nvarchar</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">Merchant Name.<br/>
+			</td>
+		</tr>
+    </tbody>
+</table>
+
+### 12.15 Response messages
 
 <table class="tg">
 <thead>
