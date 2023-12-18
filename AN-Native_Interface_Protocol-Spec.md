@@ -37,6 +37,7 @@
 |3.1|26/09/2023|**Document Update** <br> - Update StatementsHeaderDownload Response| <br>
 |3.2|25/10/2023|**Document Update** <br> - Company inserts update| <br>
 |3.3|06/11/2023|**Document Update** <br> - Company inserts update - Merchants| <br>
+|3.3|18/12/2023|**Document Update** <br> - Company inserts update - Apply Lower Price| <br>
 
 ## Contents
 
@@ -12294,6 +12295,23 @@ To edit a company there's no need to send the contract information. However, whe
 								1: Gift Card (legacy version)<br/>
 								2: Consumer Card<br/>
 								3: Gift Card</p>
+			</td>
+		</tr>
+	    	<tr valign="top">
+			<td>
+				<p align="left">ApplyLowerPrice</p>
+			</td>
+			<td>
+				<p align="left">-</p>
+			</td>
+			<td>
+				<p align="left">bool</p>
+			</td>
+			<td>
+				<p align="left">No</p>
+			</td>
+			<td>
+				<p align="left">When this configuration is active, the lower price available will be applied on the transaction.</p>
 			</td>
 		</tr>
 		<tr valign="top">
