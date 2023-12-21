@@ -4668,6 +4668,8 @@ You can download a fully functional sample code from here: [ATIONet Auth Sample]
 	companyContract.BalanceMode = (byte)BalanceModeEnum.Disperse;
 	companyContract.ValidateSites = false;
 	companyContract.ValidateFuels = false;
+ 	companyContract.ValidateMerchants = false;
+  	companyContract.ApplyLowerPrice = null;
 	companyContract.IdRackPricesList = null;
 	companyContract.RackPricesListCode = string.Empty;
 	companyContract.ValidatePrograms = false;
