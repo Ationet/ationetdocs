@@ -455,10 +455,38 @@ Return a Balance Enquiry information.
 
 body:
 
-> Note: The request has the same body of the previous sample. Only changes: TransactionCode: `"530"` 
-
-
-
+{
+    "ProcessingMode": "1",
+    "TransactionSequenceNumber": 2154,
+    "LocalTransactionDate": 20240104,
+    "LocalTransactionTime": 152135,
+    "TerminalIdentification": "IISBPQA",
+    "InvoiceNumber": "020000020240104152135",
+    "TerminalCode": "IISBPQA",
+    "SystemModel": "POSTMAN",
+    "SystemVersion": "NB",
+    "TransactionCode": "530",
+    "EntryMethod": "S",
+    "CurrencyCode": "ARS",
+    "UnitCode": "l",
+    "ApplicationType": "LTY",
+    "AccountType": "5",
+    "MessageFormatVersion": "1.0",
+    "DeviceTypeIdentifier": "4",
+    "PrimaryTrack": 12345678,
+    "SecondaryTrack": null,
+    "IdentityData": {
+        "EntryMethod": "M",
+        "IdentityNumber": null,
+        "Country": null,
+        "FirstName": null,
+        "LastName": null,
+        "Sex": null,
+        "BirthDate": null,
+        "IssueDate": null,
+        "ProcedureNumber": null,
+        "Copy": null
+} 
 
 #### Response example
 
