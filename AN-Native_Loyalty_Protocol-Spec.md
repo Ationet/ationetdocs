@@ -455,7 +455,7 @@ Return a Balance Enquiry information.
 
 body:
 
-> Note: The request has the same body of the previous sample. Only changes: TransactionCode: `"531"` 
+> Note: The request has the same body of the previous sample. Only changes: TransactionCode: `"530"` 
 
 
 
