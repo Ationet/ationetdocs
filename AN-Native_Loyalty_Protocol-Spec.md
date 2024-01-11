@@ -454,7 +454,7 @@ Return a Balance Enquiry information.
 
 
 body:
-
+```
 {
     "ProcessingMode": "1",
     "TransactionSequenceNumber": 2154,
@@ -489,7 +489,7 @@ body:
 } 
 
 #### Response example
-
+```
 ```
 {
 	"ApplicationType": "LTY",
