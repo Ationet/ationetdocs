@@ -26,7 +26,7 @@ Esta especificación está destinada a documentar el formato de mensajería para
 ## ATIONET Driver Operaciones ##
 A continuación, se listan las operaciones realizadas por Ationet Driver, en las mismas se asume que la negociación de token es siempre correcta.
 
-###Listado de Transacciones###
+### Listado de Transacciones ###
  
 ![image](https://github.com/Ationet/ationetdocs/assets/96298341/254870a1-28ef-4f02-bab1-935a562a5373)
 
@@ -49,7 +49,7 @@ Detalle del flujo
 4.	Data Lookup: MobileAppsHost API busca el listado de transacciones de tipo preautorización en la base de MobileAppsHost.  Ationet Driver App muestra los datos por pantalla
 
 
-###Listado de identificadores/registro de tarjetas###
+### Listado de identificadores/registro de tarjetas ###
 ![image](https://github.com/Ationet/ationetdocs/assets/96298341/ae3bc073-f768-4eed-a137-e12046ddb518)
 
 Detalle del flujo
@@ -98,14 +98,14 @@ b.	Ingresar manualmente el código de autorización presentado en la aplicación
 20.	End Transaction: En este punto la terminal puede imprimir el ticket del despacho y Ationet Driver muestra por pantalla la finalización del despacho
 
 
-##Mensajería##
+## Mensajería ##
 
-###Estructura de Mensajes###
+### Estructura de Mensajes ###
 
 Todos los Requests soportan los mismos headers, ya sea el de autenticación o el de compresión. El body en aquellos Requests que lo requieran, también deberá incluirse en formato JSON. 
 Como respuesta a cualquier request, ATIONet devolverá un Response totalmente estándar con HTTP, donde el HTTP Response Code es el primer valor que se deberá chequear, donde se toma como respuesta correcta el 200, cualquier otro Response Code, es considerado un error y el cliente deberá actuar en consecuencia. Para mayor información sobre HTTP Response codes puede chequear este link
 
-##Formato Del Request##
+## Formato Del Request ##
 Headers:
 
 Accept-Encoding: gzip
@@ -114,7 +114,7 @@ o
 Authorization: Basic [Credenciales] para el caso de fidelidadnativeprotocol api
 
 
-##Authorize Request##
+## Authorize Request ##
 Paso 2. Ationet Driver App realiza la pre autorización
 
 HTTP Verb: POST
@@ -142,7 +142,7 @@ Body
 }
 
 
-##PreAuth Request (Get Transaction)##
+## PreAuth Request (Get Transaction) ##
 Paso 5. Ationet Driver App obtiene el estado de la pre autorización generada. Esto queda iterando para ir conociendo el estado de la transacción.
 
 HTTP Verb: GET
@@ -159,7 +159,7 @@ Body: Empty
 
 
 
-##Get Pending Auths##
+## Get Pending Auths ##
 Paso 7. Este paso es opcional, se ejecuta si el operador de la terminal decide listar las autorizaciones pendientes para luego seleccionar la que desea presetear.
 Mediante el SiteCode permite listar las autorizaciones pendientes para posteriormente permitir que la Terminal pueda seleccionar la misma para operar.
 
@@ -171,7 +171,7 @@ Formato Request/Body: application/json
 Scope: Native Protocol
 Body: Empty
 
-##Get Auth Detail##
+## Get Auth Detail ##
 Paso 8.  La terminal consulta el detalle de la autorización seleccionada/escaneada o ingresada manualmente en Fidelidad Native protocol. Esto se relaiza de la misma forma que se obtiene el detalle de la transacción ya que se hace una consulta por ID.
 
 HTTP Verb: GET
