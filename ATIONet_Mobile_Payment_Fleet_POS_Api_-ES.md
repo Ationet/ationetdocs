@@ -107,16 +107,20 @@ Como respuesta a cualquier request, ATIONet devolverá un Response totalmente es
 
 ## Formato Del Request ##
 Headers:
-
+<p>
 Accept-Encoding: gzip
+ 
 Authorization: Bearer [Token generado por STS]
+
 o
+
 Authorization: Basic [Credenciales] para el caso de fidelidadnativeprotocol api
 
+</p>
 
 ## Authorize Request ##
 Paso 2. Ationet Driver App realiza la pre autorización
-
+```
 HTTP Verb: POST
 URL: https://{URL}/api/PreAuth/Authorize
 Input: application/json
@@ -140,7 +144,7 @@ Body
     "PotencyKeyId": "{new guid id format string}",
     "ExternalReferenceId": ""
 }
-
+```
 
 ## PreAuth Request (Get Transaction) ##
 Paso 5. Ationet Driver App obtiene el estado de la pre autorización generada. Esto queda iterando para ir conociendo el estado de la transacción.
