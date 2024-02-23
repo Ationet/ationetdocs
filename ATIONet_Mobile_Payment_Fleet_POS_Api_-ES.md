@@ -38,7 +38,7 @@ Detalle del flujo
 4.	Data Lookup: Fidelidad API busca el listado de transacciones en la base de ATIONET (flotas y fidelidad).  Ationet Driver App muestra los datos por pantalla
 
 
-###Listado de pre autorizaciones pendientes###
+### Listado de pre autorizaciones pendientes ###
 ![image](https://github.com/Ationet/ationetdocs/assets/96298341/d04390ff-9b66-4db7-be93-c86efa2fa0ae)
 
 Detalle del flujo
