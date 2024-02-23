@@ -106,17 +106,14 @@ Todos los Requests soportan los mismos headers, ya sea el de autenticación o el
 Como respuesta a cualquier request, ATIONet devolverá un Response totalmente estándar con HTTP, donde el HTTP Response Code es el primer valor que se deberá chequear, donde se toma como respuesta correcta el 200, cualquier otro Response Code, es considerado un error y el cliente deberá actuar en consecuencia. Para mayor información sobre HTTP Response codes puede chequear este link
 
 ## Formato Del Request ##
+```
 Headers:
-<p>
 Accept-Encoding: gzip
- 
 Authorization: Bearer [Token generado por STS]
-
 o
-
 Authorization: Basic [Credenciales] para el caso de fidelidadnativeprotocol api
+```
 
-</p>
 
 ## Authorize Request ##
 Paso 2. Ationet Driver App realiza la pre autorización
