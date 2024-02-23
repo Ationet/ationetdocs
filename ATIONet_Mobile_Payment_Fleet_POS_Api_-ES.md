@@ -92,10 +92,12 @@ b.	Ingresar manualmente el código de autorización presentado en la aplicación
 14.	Authorization Notification: Fusion informa a la terminal el inicio del despacho despacho de combustible
 15.	Authorization Notification: la terminal informa a fidelidad native protocol el inicio del despacho despacho de combustible
 16.	Authorization Notification: fidelidad native protocol informa a mobile app el inicio del despacho despacho de combustible
-17.	Authorization Notification: Fusion informa a la terminal el fin del despacho despacho de combustible
-18.	Authorization Notification: la terminal informa a fidelidad native protocol el fin del despacho despacho de combustible
-19.	Authorization Notification: fidelidad native protocol informa a mobile app el fin del despacho despacho de combustible
-20.	End Transaction: En este punto la terminal puede imprimir el ticket del despacho y Ationet Driver muestra por pantalla la finalización del despacho
+17.	Authorization Notification: la terminal debe informar a fidelidad native protocol que el despacho aún continúa efectuandose a fin de que la transacción no finalice por timeout.
+18.	Authorization Notification: fidelidad native protocol informa a mobile app que el despacho continúa efectuandose a fin de que la transacción no finalice por timeout.
+19.	Authorization Notification: Fusion informa a la terminal el fin del despacho despacho de combustible
+20.	Authorization Notification: la terminal informa a fidelidad native protocol el fin del despacho despacho de combustible
+21.	Authorization Notification: fidelidad native protocol informa a mobile app el fin del despacho despacho de combustible
+22.	End Transaction: En este punto la terminal puede imprimir el ticket del despacho y Ationet Driver muestra por pantalla la finalización del despacho
 
 
 ## Mensajería ##
@@ -187,4 +189,72 @@ Header
 Content-Type: application/json; charset=utf-8
 content-encoding: gzip
 Body: Empty
+```
+
+
+
+## Authorization Notification (Pump Authorized Notification)##
+Paso 12. La terminal informa a fidelidad native protocol autorización del despacho.
+```
+HTTP Verb: POST
+URL: https://{URL}/v1/MobileApps/PumpAuthorizedNotification
+Input: application/json
+Output: application/json
+Formato Request/Body: application/json 
+Scope: Native Protocol
+Body:
+{
+    "TransactionId": "{transactionId}"
+}
+
+```
+
+## Authorization Notification (Begin Fueling Notification)##
+Paso 15. La terminal informa a fidelidad native protocol el inicio del despacho despacho de combustible.
+```
+HTTP Verb: POST
+URL: https://{URL}/v1/MobileApps/BeginFuelingNotification
+Input: application/json
+Output: application/json
+Formato Request/Body: application/json 
+Scope: Native Protocol
+Body:
+{
+    "TransactionId": "{transactionId}"
+}
+
+```
+
+
+## Authorization Notification (Fueling Notification)##
+Paso 15. La terminal debe informar a fidelidad native protocol que el despacho aún continúa efectuandose a fin de que la transacción no finalice por timeout
+```
+HTTP Verb: POST
+URL: https://{URL}/v1/MobileApps/FuelingNotification
+Input: application/json
+Output: application/json
+Formato Request/Body: application/json 
+Scope: Native Protocol
+Body:
+{
+    "TransactionId": "{transactionId}"
+}
+
+```
+
+
+## Authorization Notification (End Fueling Notification)##
+Paso 20. La terminal informa a fidelidad native protocol el fin del despacho despacho de combustible
+```
+HTTP Verb: POST
+URL: https://{URL}/v1/MobileApps/EndFuelingNotification
+Input: application/json
+Output: application/json
+Formato Request/Body: application/json 
+Scope: Native Protocol
+Body:
+{
+    "TransactionId": "{transactionId}"
+}
+
 ```
