@@ -23,10 +23,10 @@ Esta especificación está destinada a documentar el formato de mensajería para
 ![image](https://github.com/Ationet/ationetdocs/assets/96298341/bc1c9001-5762-4f5f-8d4b-86933fc8512e)
 
 
-## ATIONET Driver Operaciones ##
+### ATIONET Driver Operaciones ###
 A continuación, se listan las operaciones realizadas por Ationet Driver, en las mismas se asume que la negociación de token es siempre correcta.
 
-### Listado de Transacciones ###
+## Listado de Transacciones ##
  
 ![image](https://github.com/Ationet/ationetdocs/assets/96298341/254870a1-28ef-4f02-bab1-935a562a5373)
 
