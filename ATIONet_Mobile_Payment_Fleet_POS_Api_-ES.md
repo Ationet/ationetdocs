@@ -14,7 +14,7 @@
 |1.0|22/February/2024|Initial version.|
 
 
-##Objetivo##
+## Objetivo ##
 Esta especificación está destinada a documentar el formato de mensajería para operaciones de autorizaciones de despachos de flotas a través de la aplicación móvil ATIONET Driver. Las siguientes secciones brindan descripciones de los propios mensajes y el comportamiento esperado para cada tipo de transacción admitida en la comunicación entre el ATIONET Driver y el host de ATIONET.
 
 ## Diagrama General de la solución ##
