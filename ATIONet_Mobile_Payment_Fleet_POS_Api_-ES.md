@@ -161,6 +161,27 @@ content-encoding: gzip
 Body: Empty
 ```
 
+## Get Auth Data (Get Transaction by Id) ##
+Paso 6. A. Este paso es opcional, se ejecuta si el operador de la terminal decide ingresar manualmente los datos de la autorización, escaneando el QR que genera la aplicación móvil.
+Para ello, la terminal al escanear el cógido QR obtendrá el ID de la transacción, pudiendo realizar un Get by id para obeter los datos de la transacción, de la misma forma que se detalla en el paso 5.
+
+
+## Get Auth Data (Get Transaction by AuthCode) ##
+Paso 6. B. Este paso es opcional, se ejecuta si el operador de la terminal decide ingresar manualmente los datos de la autorización, ingresando manualmente el código de autorización presentado en la aplicación móvil.
+```
+HTTP Verb: GET
+URL: https://{URL}/v1/MobileApps/List?siteCode={terminalCode}&terminalCode=&authCode={authCode}&trackNumber=
+Input: application/json
+Output: application/json
+Formato Request/Body: application/json 
+Scope: Native Protocol
+
+Header
+Content-Type: application/json; charset=utf-8
+content-encoding: gzip
+Body: Empty
+```
+
 
 ## Get Pending Auths ##
 Paso 7. Este paso es opcional, se ejecuta si el operador de la terminal decide listar las autorizaciones pendientes para luego seleccionar la que desea presetear.
