@@ -98,9 +98,9 @@ b.	Ingresar manualmente el código de autorización presentado en la aplicación
 20.	End Transaction: En este punto la terminal puede imprimir el ticket del despacho y Ationet Driver muestra por pantalla la finalización del despacho
 
 
-#Mensajería#
+##Mensajería##
 
-##Estructura de Mensajes##
+###Estructura de Mensajes###
 
 Todos los Requests soportan los mismos headers, ya sea el de autenticación o el de compresión. El body en aquellos Requests que lo requieran, también deberá incluirse en formato JSON. 
 Como respuesta a cualquier request, ATIONet devolverá un Response totalmente estándar con HTTP, donde el HTTP Response Code es el primer valor que se deberá chequear, donde se toma como respuesta correcta el 200, cualquier otro Response Code, es considerado un error y el cliente deberá actuar en consecuencia. Para mayor información sobre HTTP Response codes puede chequear este link
