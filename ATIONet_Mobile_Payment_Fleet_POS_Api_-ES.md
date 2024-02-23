@@ -148,7 +148,7 @@ Body
 
 ## PreAuth Request (Get Transaction) ##
 Paso 5. Ationet Driver App obtiene el estado de la pre autorización generada. Esto queda iterando para ir conociendo el estado de la transacción.
-
+```
 HTTP Verb: GET
 URL: https://{URL}/v1/MobileApps/?Id={TransactionId}
 Input: application/json
@@ -160,13 +160,13 @@ Header
 Content-Type: application/json; charset=utf-8
 content-encoding: gzip
 Body: Empty
-
+```
 
 
 ## Get Pending Auths ##
 Paso 7. Este paso es opcional, se ejecuta si el operador de la terminal decide listar las autorizaciones pendientes para luego seleccionar la que desea presetear.
 Mediante el SiteCode permite listar las autorizaciones pendientes para posteriormente permitir que la Terminal pueda seleccionar la misma para operar.
-
+```
 HTTP Verb: GET
 URL: https://{URL}/v1/MobileApps/List?siteCode={siteCode}&terminalCode=&authCode=&trackNumber=
 Input: application/json
@@ -174,10 +174,11 @@ Output: application/json
 Formato Request/Body: application/json 
 Scope: Native Protocol
 Body: Empty
+```
 
 ## Get Auth Detail ##
 Paso 8.  La terminal consulta el detalle de la autorización seleccionada/escaneada o ingresada manualmente en Fidelidad Native protocol. Esto se relaiza de la misma forma que se obtiene el detalle de la transacción ya que se hace una consulta por ID.
-
+```
 HTTP Verb: GET
 URL: https://{URL}/v1/MobileApps/?Id={TransactionId}
 Input: application/json
@@ -189,3 +190,4 @@ Header
 Content-Type: application/json; charset=utf-8
 content-encoding: gzip
 Body: Empty
+```
