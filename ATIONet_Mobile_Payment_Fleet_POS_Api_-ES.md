@@ -62,11 +62,11 @@ Detalle del flujo
 
 
 
-## Operaciones de despacho ##
+# Operaciones de despacho #
 
 Nota: Para simplificación del diagrama no se ha incluido la negociación del token, por lo cual esta debe ser tomada en cuenta al momento de realizar la acción.
 
-# Pre Authorizaciones (Inicio en Ationet Driver App) #
+## Pre Authorizaciones (Inicio en Ationet Driver App) ##
 
 ![image](https://github.com/Ationet/ationetdocs/assets/96298341/76541877-fed7-45c6-a9e6-cf3f4e2f1d87)
 
