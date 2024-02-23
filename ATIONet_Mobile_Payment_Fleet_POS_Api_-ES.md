@@ -131,17 +131,22 @@ Header
 Content-Type: application/json; charset=utf-8
 content-encoding: gzip
 
-Body
+Request Body
 {
-    "SiteCode": "{siteCode}",
-    "PumpNumber": {pumpNumber},
-    "FuelCode": "{fuelCode}",
-    "Amount": {amount},
-    "PrimaryTrack": "{primaryTrack}",
-    "TerminalCode":"{terminalCode}",
-    "MobileMode": {mode},
-    "PotencyKeyId": "{new guid id format string}",
-    "ExternalReferenceId": ""
+    "SiteCode": string
+    "PumpNumber": int
+    "FuelCode": string
+    "Amount": decimal
+    "PrimaryTrack": string
+    "TerminalCode": string
+    "MobileMode": int
+    "PotencyKeyId": guid (string)
+    "ExternalReferenceId": string (empty always)
+}
+
+Response Body
+{
+ "TransactionId": "{transactionId}"
 }
 ```
 
@@ -158,7 +163,31 @@ Scope: Native Protocol
 Header
 Content-Type: application/json; charset=utf-8
 content-encoding: gzip
-Body: Empty
+Request Body: Empty
+Response Body:
+
+{
+ Id: guid (string)
+ TransactionSequenceNumber: long
+ State_Name: string
+ State_Id: int
+ PrimaryTrack: string
+ AuthorizationCode: string
+ PaymentProcessorMessage: string
+ ProductUnitPrice: decimal
+ AuthorizedAmount: decimal
+ ProductCode: string
+ ProductDescription: string
+ CreateDate: string
+ CreatedTime: string
+ AuthorizedVolume: decimal
+ SubAccountLabel: string
+ IsDriver: bool
+ PaymentProcessorResponse: string
+ DispatchedQuantity: decimal
+ DispatchedAmount: decimal
+}
+
 ```
 
 ## Get Auth Data (Get Transaction by Id) ##
@@ -179,7 +208,35 @@ Scope: Native Protocol
 Header
 Content-Type: application/json; charset=utf-8
 content-encoding: gzip
-Body: Empty
+Request Body: Empty
+Response Body:
+
+{
+ [
+  {
+   Id: guid (string)
+   TransactionSequenceNumber: long
+   State_Name: string
+   State_Id: int
+   PrimaryTrack: string
+   AuthorizationCode: string
+   PaymentProcessorMessage: string
+   ProductUnitPrice: decimal
+   AuthorizedAmount: decimal
+   ProductCode: string
+   ProductDescription: string
+   CreateDate: string
+   CreatedTime: string
+   AuthorizedVolume: decimal
+   SubAccountLabel: string
+   IsDriver: bool
+   PaymentProcessorResponse: string
+   DispatchedQuantity: decimal
+   DispatchedAmount: decimal
+  }
+ ]
+}
+
 ```
 
 
@@ -193,7 +250,35 @@ Input: application/json
 Output: application/json
 Formato Request/Body: application/json 
 Scope: Native Protocol
-Body: Empty
+Request Body: Empty
+Response Body:
+
+{
+ [
+  {
+   Id: guid (string)
+   TransactionSequenceNumber: long
+   State_Name: string
+   State_Id: int
+   PrimaryTrack: string
+   AuthorizationCode: string
+   PaymentProcessorMessage: string
+   ProductUnitPrice: decimal
+   AuthorizedAmount: decimal
+   ProductCode: string
+   ProductDescription: string
+   CreateDate: string
+   CreatedTime: string
+   AuthorizedVolume: decimal
+   SubAccountLabel: string
+   IsDriver: bool
+   PaymentProcessorResponse: string
+   DispatchedQuantity: decimal
+   DispatchedAmount: decimal
+  }
+ ]
+}
+
 ```
 
 ## Get Auth Detail ##
@@ -209,7 +294,32 @@ Scope: Native Protocol
 Header
 Content-Type: application/json; charset=utf-8
 content-encoding: gzip
-Body: Empty
+Request Body: Empty
+
+Response Body:
+
+{
+ Id: Guid
+ TransactionSequenceNumber: long
+ State_Name: string
+ State_Id: int
+ PrimaryTrack: string
+ AuthorizationCode: string
+ PaymentProcessorMessage: string
+ ProductUnitPrice: decimal
+ AuthorizedAmount: decimal
+ ProductCode: string
+ ProductDescription: string
+ CreateDate: string
+ CreatedTime: string
+ AuthorizedVolume: decimal
+ SubAccountLabel: string
+ IsDriver: bool
+ PaymentProcessorResponse: string
+ DispatchedQuantity: decimal
+ DispatchedAmount: decimal
+}
+
 ```
 
 
@@ -223,9 +333,17 @@ Input: application/json
 Output: application/json
 Formato Request/Body: application/json 
 Scope: Native Protocol
-Body:
+Request Body:
 {
-    "TransactionId": "{transactionId}"
+    "TransactionId": guid (string)
+}
+
+Response Body:
+{
+ "Error": string,
+ "Message": string,
+ "Result": string,
+ "Timestamp": datetime
 }
 
 ```
@@ -239,9 +357,17 @@ Input: application/json
 Output: application/json
 Formato Request/Body: application/json 
 Scope: Native Protocol
-Body:
+Request Body:
 {
-    "TransactionId": "{transactionId}"
+    "TransactionId": guid (string)
+}
+
+Response Body:
+{
+ "Error": string,
+ "Message": string,
+ "Result": string,
+ "Timestamp": datetime
 }
 
 ```
@@ -256,9 +382,17 @@ Input: application/json
 Output: application/json
 Formato Request/Body: application/json 
 Scope: Native Protocol
-Body:
+Request Body:
 {
-    "TransactionId": "{transactionId}"
+    "TransactionId": guid (string)
+}
+
+Response Body:
+{
+ "Error": string,
+ "Message": string,
+ "Result": string,
+ "Timestamp": datetime
 }
 
 ```
@@ -273,9 +407,20 @@ Input: application/json
 Output: application/json
 Formato Request/Body: application/json 
 Scope: Native Protocol
-Body:
+Request Body:
 {
-    "TransactionId": "{transactionId}"
+    "TransactionId": guid (string),
+    "DispatchedAmount": decimal,
+    "ProductCode": string,
+    "UnitPrice": decimal,
+    "Quantity": decimal
+}
+
+Response Body:
+{
+ "IsSuccess": bool,
+ "ResponseCode": string,
+ "Message": string
 }
 
 ```
