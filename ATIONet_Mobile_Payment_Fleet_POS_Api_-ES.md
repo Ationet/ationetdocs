@@ -199,7 +199,7 @@ Para ello, la terminal al escanear el cógido QR obtendrá el ID de la transacci
 Paso 6. B. Este paso es opcional, se ejecuta si el operador de la terminal decide ingresar manualmente los datos de la autorización, ingresando manualmente el código de autorización presentado en la aplicación móvil.
 ```
 HTTP Verb: GET
-URL: https://{URL}/v1/MobileApps/List?siteCode={terminalCode}&terminalCode=&authCode={authCode}&trackNumber=
+URL: https://{URL}/v1/MobileApps/List?siteCode={siteCode}&terminalCode=&authCode={authCode}&trackNumber=
 Input: application/json
 Output: application/json
 Formato Request/Body: application/json 
