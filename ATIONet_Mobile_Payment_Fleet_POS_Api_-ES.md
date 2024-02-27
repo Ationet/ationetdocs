@@ -324,7 +324,7 @@ Response Body:
 
 
 
-## Authorization Notification (Pump Authorized Notification)##
+## Authorization Notification (Pump Authorized Notification)
 Paso 12. La terminal informa a fidelidad native protocol autorización del despacho.
 ```
 HTTP Verb: POST
