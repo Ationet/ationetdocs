@@ -703,7 +703,7 @@ Refer to [Original Data](./Annexes/AN-Native-OriginalData-Annex.md) annex for a 
 
 ## 13 Message Samples
 
-### 13.1 Pre Authorization Sample
+### 13.1 Pre Authorization Request Sample
 
 ```json
 {
