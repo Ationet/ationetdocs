@@ -138,6 +138,18 @@
 			<br> - Add IdTransactionContingency request</p>
 		</td>
 	</tr>
+		<tr valign="top">
+		<td>
+			<p>1.6</p>
+		</td>
+		<td>
+			<p>06/March/2024</p>
+		</td>
+		<td>
+			<p>1.6  Protocol version changes
+			<br> - Add request examples</p>
+		</td>
+	</tr>
 </table>
 
 ## Contents ##
