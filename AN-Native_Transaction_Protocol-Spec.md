@@ -1038,6 +1038,133 @@ Refer to [Original Data](./Annexes/AN-Native-OriginalData-Annex.md) annex for a 
 ```
 
 
+
+### 13.5.1 Void Request Sample
+```json
+{
+   "ApplicationType":"FCS",
+   "ProcessingMode":"1",
+   "TerminalIdentification":"AAA1234",
+   "DeviceTypeIdentifier":"4",
+   "TransactionCode":"220",
+   "AccountType":"1",
+   "EntryMethod":"S",
+   "ServiceCode":null,
+   "PumpNumber":null,
+   "ProductCode":null,
+   "ProductUnitPrice":null,
+   "ProductNetUnitPrice":null,
+   "ProductNetAmount":null,
+   "FuelTaxes":[
+      
+   ],
+   "TransactionTaxes":[
+      
+   ],
+   "ProductAmount":null,
+   "ProductQuantity":null,
+   "TransactionNetAmount":null,
+   "ProductData":[
+      
+   ],
+   "ModifierData":[
+      
+   ],
+   "TransactionAmount":null,
+   "GPSData":{
+      "Date":null,
+      "Distance":null,
+      "VirtualOdometer":null,
+      "Address":null,
+      "Comment":null,
+      "Latitude":null,
+      "Longitude":null,
+      "Altitude":null
+   },
+   "ProductUnitPriceCompany":null,
+   "ProductAmountCompany":null,
+   "TransactionAmountCompany":null,
+   "UnitCode":"l",
+   "CurrencyCode":"ARS",
+   "BatchNumber":null,
+   "ShiftNumber":null,
+   "TransactionSequenceNumber":25173,
+   "LocalTransactionDate":20200304,
+   "LocalTransactionTime":114001,
+   "PrimaryTrack":null,
+   "PrimaryPin":null,
+   "SecondaryTrack":null,
+   "SecondaryPin":null,
+   "CustomerData":{
+      
+   },
+   "DealerData":{
+      
+   },
+   "TransactionExtendedData":null,
+   "OriginalData":{
+      "TransactionCode":"120",
+      "LocalTransactionDate":"20240304",
+      "LocalTransactionTime":"113322"
+   },
+   "TotalizerData":null,
+   "AuthorizationCode":"012349179",
+   "InvoiceNumber":null,
+   "ResponseCode":null,
+   "ResponseText":null,
+   "LongResponseText":null,
+   "IdDispatch":"00000000-0000-0000-0000-000000000000",
+   "IdTransactionContingency":"00000000-0000-0000-0000-000000000000",
+   "SystemModel":"AtionetStandAloneTerminal",
+   "SystemVersion":"v3.7.17",
+   "MessageFormatVersion":"1.3"
+}
+```
+
+
+### 13.5.2 Void Response Sample
+```json
+{
+   "ApplicationType":"FCS",
+   "ProcessingMode":"1",
+   "MessageFormatVersion":"1.3",
+   "TerminalIdentification":"AAA1234",
+   "DeviceTypeIdentifier":"4",
+   "TransactionCode":"230",
+   "AccountType":"1",
+   "EntryMethod":"S",
+   "PumpNumber":"0",
+   "ProductCode":null,
+   "ProductUnitPrice":null,
+   "ProductAmount":null,
+   "ProductQuantity":null,
+   "ProductData":[
+      
+   ],
+   "TransactionAmount":null,
+   "UnitCode":null,
+   "CurrencyCode":null,
+   "BatchNumber":null,
+   "ShiftNumber":null,
+   "TransactionSequenceNumber":25171,
+   "LocalTransactionDate":20200304,
+   "LocalTransactionTime":113322,
+   "CustomerData":{
+      "LastOdometer":"261473",
+      "ContractMode":"1"
+   },
+   "AuthorizationCode":"012349179",
+   "InvoiceNumber":null,
+   "ResponseCode":"00000",
+   "ResponseText":"Authorized",
+   "ReceiptData":null,
+   "LongResponseText":"Authorized",
+   "CompanyPrice":null
+}
+```
+
+
+
 ## Appendix A - Native Authorization Protocol Messages
 
 Check this [document](AN-Native_Auth_Protocol_Messages.md) to have detailed information about each field in each message under the Native Authorization Protocol 
