@@ -870,8 +870,8 @@ Refer to [Original Data](./Annexes/AN-Native-OriginalData-Annex.md) annex for a 
     "ReceiptData": "{\"CustomerName\":\"Driver Driver\",\"CustomerIdentification\":\"0003\",\"CustomerPlate\":\"\",\"CustomerDriverName\":\"Driver Driver\",\"CustomerPAN\":\"0000040006681541713\",\"CustomerLabel\":\"0000040006681541713\",\"CompanyName\":\"Network Company\",\"CompanyCode\":\"002\",\"TransactionId\":\"9afdb073-ffa6-458f-b99b-5fbba5e9bda0\",\"FuelName\":\"Diesel\",\"AuthorizationType\":0,\"CustomerTruckUnitNumber\":null,\"CustomerOdometer\":\"\",\"CustomerDriverId\":null,\"CustomerCustom0Label\":\"Prueba Personalizable 1\",\"CustomerCustom0Value\":null,\"CustomerCustom1Label\":\"prueba de campo embozado\",\"CustomerCustom1Value\":null,\"CustomerCustom2Label\":\"p3\",\"CustomerCustom2Value\":null,\"CustomerCustom3Label\":\"P4\",\"CustomerCustom3Value\":null,\"CustomerCustomOperation0Label\":\"Prueba Operaciones 1\",\"CustomerCustomOperation0Value\":\"false\",\"CustomerCustomOperation1Label\":\"CO2\",\"CustomerCustomOperation1Value\":\"false\",\"CustomerCustomOperation2Label\":\"CO3\",\"CustomerCustomOperation2Value\":\"false\",\"CustomerCustomOperation3Label\":\"CO4\",\"CustomerCustomOperation3Value\":\"false\",\"CustomerCustomOperation4Label\":\"CO5\",\"CustomerCustomOperation4Value\":\"false\",\"ContractCode\":\"6\",\"CompanyTaxPayerId\":\"654321\",\"CompanyTaxPayerCategory\":null,\"CompanyStreet1\":\"villaroel 1730\",\"CompanyStreet2\":null,\"ContractBalanceMode\":\"1\"}",
     "LongResponseText": "Authorized",
     "CompanyPrice": {
-        "ProductUnitPrice": 2,
-        "ProductUnitPriceBase": 2,
+        "ProductUnitPrice": 5,
+        "ProductUnitPriceBase": 5,
         "ProductAmount": 20,
         "TransactionAmount": 20,
         "Modifiers": []
