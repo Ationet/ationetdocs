@@ -964,7 +964,78 @@ Refer to [Original Data](./Annexes/AN-Native-OriginalData-Annex.md) annex for a 
 ```
 
 
+### 13.4.1 Sale Request Sample
+```json
+{
+    "TransactionCode": "200",
+    "TerminalIdentification": "DUGT6JXZ3",
+    "LocalTransactionDate": 20240228,
+    "LocalTransactionTime": 140000,
+    "TerminalCode": "DUGT6JXZ3",
+    "TransactionSequenceNumber": 26,
+    "ProcessingMode": "1",
+    "SystemModel": "AtionetStandAloneTerminal",
+    "SystemVersion": "3.0.0012 AXION",
+    "EntryMethod": "S",
+    "CurrencyCode": "USD",
+    "ApplicationType": "FCS",
+    "AccountType": "1",
+    "MessageFormatVersion": "1.3",
+    "DeviceTypeIdentifier": "4",
+    "TransactionAmount": 10,
+    "ProductCode": "03",
+    "ProductUnitPrice": 1,
+    "ProductAmount": 10,
+    "ProductQuantity": 1,
+    "PrimaryTrack":"0000040006681541713=3902=000000"
+}
 
+```
+
+
+### 13.4.2 Sale Response Sample
+```json
+{
+    "ApplicationType": "FCS",
+    "ProcessingMode": "1",
+    "MessageFormatVersion": "1.3",
+    "TerminalIdentification": "DUGT6JXZ3",
+    "DeviceTypeIdentifier": "4",
+    "TransactionCode": "210",
+    "AccountType": "1",
+    "EntryMethod": "S",
+    "PumpNumber": null,
+    "ProductCode": null,
+    "ProductUnitPrice": null,
+    "ProductAmount": null,
+    "ProductQuantity": null,
+    "ProductData": [],
+    "TransactionAmount": null,
+    "UnitCode": null,
+    "CurrencyCode": null,
+    "BatchNumber": null,
+    "ShiftNumber": null,
+    "TransactionSequenceNumber": 26,
+    "LocalTransactionDate": 20240228,
+    "LocalTransactionTime": 140000,
+    "CustomerData": {
+        "ContractMode": "0"
+    },
+    "AuthorizationCode": "094702193",
+    "InvoiceNumber": null,
+    "ResponseCode": "00000",
+    "ResponseText": "Authorized",
+    "ReceiptData": "{\"CustomerName\":\"Driver Driver\",\"CustomerIdentification\":\"0003\",\"CustomerPlate\":\"\",\"CustomerDriverName\":\"Driver Driver\",\"CustomerPAN\":\"0000040006681541713\",\"CustomerLabel\":\"0000040006681541713\",\"CompanyName\":\"Network Company\",\"CompanyCode\":\"002\",\"TransactionId\":\"fbebb380-de2e-4f78-b128-875587d92927\",\"FuelName\":\"Diesel\",\"AuthorizationType\":0,\"CustomerTruckUnitNumber\":null,\"CustomerOdometer\":\"\",\"CustomerDriverId\":null,\"CustomerCustom0Label\":\"Prueba Personalizable 1\",\"CustomerCustom0Value\":null,\"CustomerCustom1Label\":\"prueba de campo embozado\",\"CustomerCustom1Value\":null,\"CustomerCustom2Label\":\"p3\",\"CustomerCustom2Value\":null,\"CustomerCustom3Label\":\"P4\",\"CustomerCustom3Value\":null,\"CustomerCustomOperation0Label\":\"Prueba Operaciones 1\",\"CustomerCustomOperation0Value\":\"false\",\"CustomerCustomOperation1Label\":\"CO2\",\"CustomerCustomOperation1Value\":\"false\",\"CustomerCustomOperation2Label\":\"CO3\",\"CustomerCustomOperation2Value\":\"false\",\"CustomerCustomOperation3Label\":\"CO4\",\"CustomerCustomOperation3Value\":\"false\",\"CustomerCustomOperation4Label\":\"CO5\",\"CustomerCustomOperation4Value\":\"false\",\"ContractCode\":\"6\",\"CompanyTaxPayerId\":\"654321\",\"CompanyTaxPayerCategory\":null,\"CompanyStreet1\":\"villaroel 1730\",\"CompanyStreet2\":null,\"ContractBalanceMode\":\"1\"}",
+    "LongResponseText": "Authorized",
+    "CompanyPrice": {
+        "ProductUnitPrice": 2.000000,
+        "ProductUnitPriceBase": 2.000000,
+        "ProductAmount": 2.00,
+        "TransactionAmount": 2.00,
+        "Modifiers": []
+    }
+}
+```
 
 
 ## Appendix A - Native Authorization Protocol Messages
