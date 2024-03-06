@@ -897,6 +897,76 @@ Refer to [Original Data](./Annexes/AN-Native-OriginalData-Annex.md) annex for a 
 ```
 
 
+### 13.3.1 Cancellation Request Sample
+```json
+{
+    "ProcessingMode": "1",
+    "SystemModel": "AtionetStandAloneTerminal",
+    "SystemVersion": "3.0.0012 AXION",
+    "TransactionCode": "400",
+    "EntryMethod": "S",
+    "ApplicationType": "FCS",
+    "AccountType": "1",
+    "MessageFormatVersion": "1.3",
+    "DeviceTypeIdentifier": "4",
+    "TransactionSequenceNumber": 18,
+    "LocalTransactionDate": 20240227,
+    "LocalTransactionTime": 141806,    
+    "TerminalIdentification": "DUGT6JXZ3",
+    "PrimaryTrack": "0000040006681541713=3902=000000",
+    "AuthorizationCode":"052008275",
+    "OriginalData": {
+        "TransactionSequenceNumber": 9,
+        "LocalTransactionDate": "20240227",
+        "LocalTransactionTime": "141806",
+        "TerminalIdentification": "DUGT6JXZ3",
+        "AuthorizationCode":"052008275",
+        "TransactionCode":"100"
+    }    
+}
+```
+
+
+### 13.3.1 Cancellation Response Sample
+```json
+{
+    "ApplicationType": "FCS",
+    "ProcessingMode": "1",
+    "MessageFormatVersion": "1.3",
+    "TerminalIdentification": "DUGT6JXZ3",
+    "DeviceTypeIdentifier": "4",
+    "TransactionCode": "410",
+    "AccountType": "1",
+    "EntryMethod": "S",
+    "PumpNumber": "1",
+    "ProductCode": null,
+    "ProductUnitPrice": null,
+    "ProductAmount": null,
+    "ProductQuantity": null,
+    "ProductData": [],
+    "TransactionAmount": null,
+    "UnitCode": null,
+    "CurrencyCode": null,
+    "BatchNumber": null,
+    "ShiftNumber": null,
+    "TransactionSequenceNumber": 9,
+    "LocalTransactionDate": 20240227,
+    "LocalTransactionTime": 141806,
+    "CustomerData": {},
+    "AuthorizationCode": "052008275",
+    "InvoiceNumber": null,
+    "ResponseCode": "00000",
+    "ResponseText": "Authorized",
+    "ReceiptData": null,
+    "LongResponseText": "Authorized",
+    "CompanyPrice": null
+}
+```
+
+
+
+
+
 ## Appendix A - Native Authorization Protocol Messages
 
 Check this [document](AN-Native_Auth_Protocol_Messages.md) to have detailed information about each field in each message under the Native Authorization Protocol 
