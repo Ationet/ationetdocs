@@ -192,8 +192,10 @@
 11. [Identification Pin Change Request (PREQ) Message Format](#11-identification-pin-change-request-preq-message-format)
 12. [Identification Pin Change Response (PRESP) Message Format](#12-identification-pin-change-response-presp-message-format)
 13. [Message Samples](#13-message-samples)
-	18. [Pre Authorization Sample](#131-pre-authorization-sample)
-	19. [Completion Sample](#132-completion-sample)
+	1. [Pre Authorization Request Sample](#131-pre-authorization-sample)
+ 	2. [Pre Authorization Response Sample](#131-pre-authorization-sample)
+	3. [Completion Request Sample](#132-completion-sample)
+ 	4. [Completion Response Sample](#132-completion-sample)
 14. [Appendix A - Native Authorization Protocol Messages](#appendix-a---native-authorization-protocol-messages)
 
 ## Overview
