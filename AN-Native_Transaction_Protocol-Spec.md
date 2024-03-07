@@ -897,7 +897,95 @@ Refer to [Original Data](./Annexes/AN-Native-OriginalData-Annex.md) annex for a 
 ```
 
 
-### 13.3.1 Cancellation Request Sample
+### 13.3.1 Balance Inquiry Request Sample
+
+```json
+{
+    "ProcessingMode": "1",
+    "SystemModel": "",
+    "SystemVersion": "",
+    "TransactionCode": "102",
+    "EntryMethod": "M",
+    "CurrencyCode": "ARS",
+    "UnitCode": "l",
+    "ApplicationType": "FCS",
+    "AccountType": "1",
+    "MessageFormatVersion": "1.3",
+    "DeviceTypeIdentifier": "4",
+    "PumpNumber": "1",
+    "TerminalIdentification": "AN111111",
+    "TransactionSequenceNumber": 1,
+    "LocalTransactionDate": 20190614,
+    "LocalTransactionTime": 121500,
+    "PrimaryTrack": "9532013015986508780=3905=000000",
+    "PrimaryPin": null,
+    "SecondaryTrack": null,
+    "SecondaryPin": null,
+    "ProductCode": "3",
+    "ProductAmount": 20,
+    "ProductQuantity": null,
+    "ProductUnitPrice": 5,
+    "OriginalData": {},
+    "ProductNetAmount": null,
+    "ProductTaxes": null,
+    "TransactionNetAmount": null,
+    "TransactionAmount": null,
+    "AuthorizationCode": null,
+    "ServiceCode": null,
+    "BatchNumber": null,
+    "ShiftNumber": null,
+    "TransactionExtendedData": null,
+    "InvoiceNumber": null,
+    "ResponseCode": null,
+    "ResponseText": null,
+    "ReceiptData": null,
+    "IdTransactionContingency": ""
+}
+
+
+```
+
+### 13.3.2 Balance Inquiry Response Sample
+
+```json
+{
+    "ApplicationType": "FCS",
+    "ProcessingMode": "1",
+    "MessageFormatVersion": "1.3",
+    "TerminalIdentification": "AN111111",
+    "DeviceTypeIdentifier": "4",
+    "TransactionCode": "112",
+    "AccountType": "1",
+    "EntryMethod": "S",
+    "PumpNumber": "1",
+    "ProductCode": "3",
+    "ProductUnitPrice": 5,
+    "ProductAmount": 20,
+    "ProductQuantity": 4,
+    "ProductData": null,
+    "TransactionAmount": null,
+    "UnitCode": "l",
+    "CurrencyCode": "ARS",
+    "BatchNumber": null,
+    "ShiftNumber": null,
+    "TransactionSequenceNumber": 1,
+    "LocalTransactionDate": 20190614,
+    "LocalTransactionTime": 121500,
+    "CustomerData": {
+        "ContractMode": "0"
+    },
+    "AuthorizationCode": "033031219",
+    "InvoiceNumber": null,
+    "ResponseCode": "00000",
+    "ResponseText": "Authorized",
+    "ReceiptData": "",
+    "LongResponseText": "Authorized",
+    "CompanyPrice": null
+}
+```
+
+
+### 13.4.1 Cancellation Request Sample
 ```json
 {
     "ProcessingMode": "1",
@@ -927,7 +1015,7 @@ Refer to [Original Data](./Annexes/AN-Native-OriginalData-Annex.md) annex for a 
 ```
 
 
-### 13.3.1 Cancellation Response Sample
+### 13.4.2 Cancellation Response Sample
 ```json
 {
     "ApplicationType": "FCS",
@@ -964,7 +1052,7 @@ Refer to [Original Data](./Annexes/AN-Native-OriginalData-Annex.md) annex for a 
 ```
 
 
-### 13.4.1 Sale Request Sample
+### 13.5.1 Sale Request Sample
 ```json
 {
     "TransactionCode": "200",
@@ -993,7 +1081,7 @@ Refer to [Original Data](./Annexes/AN-Native-OriginalData-Annex.md) annex for a 
 ```
 
 
-### 13.4.2 Sale Response Sample
+### 13.5.2 Sale Response Sample
 ```json
 {
     "ApplicationType": "FCS",
@@ -1039,7 +1127,7 @@ Refer to [Original Data](./Annexes/AN-Native-OriginalData-Annex.md) annex for a 
 
 
 
-### 13.5.1 Void Request Sample
+### 13.6.1 Void Request Sample
 ```json
 {
    "ApplicationType":"FCS",
@@ -1122,7 +1210,7 @@ Refer to [Original Data](./Annexes/AN-Native-OriginalData-Annex.md) annex for a 
 ```
 
 
-### 13.5.2 Void Response Sample
+### 13.6.2 Void Response Sample
 ```json
 {
    "ApplicationType":"FCS",
