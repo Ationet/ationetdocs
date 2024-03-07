@@ -1252,6 +1252,37 @@ Refer to [Original Data](./Annexes/AN-Native-OriginalData-Annex.md) annex for a 
 ```
 
 
+### 13.7.1 Keep Alive Request Sample
+```json
+{
+    "LastSchedule":null,
+    "GatewayCode": "CHL15069401",
+    "TerminalIdentification": "CHL15069401",
+    "BatteryCharge": "100",
+    "PaperStatus": "OK",
+    "IsLocalAgent": "false",
+    "TransactionCode": "600",
+    "TerminalCode": "CHL15069401",
+    "Ip": "192.168.31.206",
+    "SystemModel": "Postman",
+    "OperatingSystem": "Unix 5.10.63.7",
+    "SystemVersion": "1.2.11-1",
+    "SerialNumber": "N78802734716"
+}
+
+```
+
+### 13.7.2 Keep Alive Response Sample
+```json
+{
+    "TransactionCode": "601",
+    "SiteDateTime": null,
+    "SiteTimeZone": null,
+    "HostDateTime": "2024/03/07 15:06:38",
+    "IdSchedule": null
+}
+
+```
 
 ## Appendix A - Native Authorization Protocol Messages
 
