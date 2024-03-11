@@ -9,7 +9,7 @@ Change Logs
 |**Date Version:**|29/02/2024|
 |||
 
-|**Revision Log**||||
+|**Revision Log**|
 | :- | :- | :- | :- |
 |**Version**|**Date**|**Description**|**Autor**|
 |1\.0|23/02/2024|Initial version|Cabral, Matías|
