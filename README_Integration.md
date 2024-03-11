@@ -5,6 +5,7 @@
 
 
 ## Authorization API
+- [Native Transaction Protocol API](AN-Native_Protocol_Integration.md)
 - [Native Transaction Protocol API Specifications](AN-Native_Transaction_Protocol-Spec.md)
 - [Native Transaction Protocol API messages](AN-Native_Auth_Protocol_Messages.md)
 
