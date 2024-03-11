@@ -7,9 +7,9 @@ Change Logs
 |**Version:**|2\.2|
 |**Version Status:**|Definitive Edition|
 |**Date Version:**|29/02/2024|
-|||
 
-|<td colspan=4>**Revision Log**|||
+
+| **Log**||||
 | :- | :- | :- | :- |
 |**Version**|**Date**|**Description**|**Autor**|
 |1\.0|23/02/2024|Initial version|Cabral, Matías|
@@ -28,104 +28,68 @@ Change Logs
 
 
 
-**Index**
+**Content**
 
-[Introduction	5****](#_toc160812874)**
+- [Introduction](#_toc160812874)
+  
+  - [Purpose](#_toc160812875)
+  - [What is ATIONET?	](#_toc160812876)
 
-[**Purpose	5****](#_toc160812875)
+- [Solution Architecture](#_toc160812877)
 
-[**What is ATIONET?	5****](#_toc160812876)
+  - [Definitions](#_toc160812878)
+  - [Diagram](#_toc160812879)
+  - [Integration with ATIONET](#_toc160812880)
+  - [ATIONET Native Transactions Protocol Specification](#_toc160812881)
+  - [ATIONET Administrative Transactions Protocol Specification](#_toc160812882)
 
-[**Solution Architecture	7****](#_toc160812877)
+- [Environments](#_toc160812883)
 
-[**Definitions	7****](#_toc160812878)
+  - [Test Environment](#_toc160812884)
+  - [Beta Environment](#_toc160812885)
+  - [Productive Environment](#_toc160812886)
 
-[**Diagram	8****](#_toc160812879)
+- [Message Information](#_toc160812887)
 
-[**Integration with ATIONET	9****](#_toc160812880)
+  - [Message Structure](#_toc160812888)
+    - [Body Format Example:](#_toc160812889)
 
-[**ATIONET Native Transactions Protocol Specification	9****](#_toc160812881)
+- [Error Handling](#_toc160812890)
 
-[**ATIONET Administrative Transactions Protocol Specification	9****](#_toc160812882)
+- [Message Sequence](#_toc160812891)
 
-[**Environments	10****](#_toc160812883)
-
-[**Test Environment	10****](#_toc160812884)
-
-[**Beta Environment	10****](#_toc160812885)
-
-[**Productive Environment	10****](#_toc160812886)
-
-[**Message Information	11****](#_toc160812887)
-
-[**Message Structure	11****](#_toc160812888)
-
-[**Body Format Example:	11****](#_toc160812889)
-
-[**Error Handling	12****](#_toc160812890)
-
-[**Message Sequence	13****](#_toc160812891)
-
-[**Normal Authorization Flow	13****](#_toc160812892)
-
-[**Pre-Authorization	15****](#_toc160812893)
-
-[**Sequence Diagram - Normal Flow	16****](#_toc160812894)
-
-[**Sequence Diagram – Re Prompt	17****](#_toc160812895)
-
-[**Sequence Diagram - Communication Problems	19****](#_toc160812896)
-
-[**Message Information	21****](#_toc160812897)
-
-[**Completion	22****](#_toc160812898)
-
-[**Sequence Diagram	23****](#_toc160812899)
-
-[**Sequence Diagram - Communication Problems	24****](#_toc160812900)
-
-[**Sequence Diagram - Conflict Problems	26****](#_toc160812901)
-
-[**Message Information	28****](#_toc160812902)
-
-[**Zero Completion (Pre-Authorization Cancelation)	28****](#_toc160812903)
-
-[**Balance Inquiry	29****](#_toc160812904)
-
-[**Sequence Diagram	30****](#_toc160812905)
-
-[**Message Information	30****](#_toc160812906)
-
-[**Sale	31****](#_toc160812907)
-
-[**Sequence Diagram	31****](#_toc160812908)
-
-[**Sequence Diagram - Communication Problems	32****](#_toc160812909)
-
-[**Message Information	34****](#_toc160812910)
-
-[**Cancellation	35****](#_toc160812911)
-
-[**Sequence Diagram	35****](#_toc160812912)
-
-[**Message Information	36****](#_toc160812913)
-
-[**Void	37****](#_toc160812914)
-
-[**Sequence Diagram	38****](#_toc160812915)
-
-[**Message Information	39****](#_toc160812916)
-
-[**Keep Alive	40****](#_toc160812917)
-
-[**Sequence Diagram	41****](#_toc160812918)
-
-[**Message Information	41****](#_toc160812919)
+  - [Normal Authorization Flow](#_toc160812892)
+  - [Pre-Authorization](#_toc160812893)
+    - [Sequence Diagram - Normal Flow](#_toc160812894)
+    - [Sequence Diagram – Re Prompt](#_toc160812895)
+    - [Sequence Diagram - Communication Problems](#_toc160812896)
+    - [Message Information](#_toc160812897)
+  - [Completion](#_toc160812898)
+    - [Sequence Diagram](#_toc160812899)
+    - [Sequence Diagram - Communication Problems](#_toc160812900)
+    - [Sequence Diagram - Conflict Problems](#_toc160812901)
+    - [Message Information](#_toc160812902)
+    - [Zero Completion (Pre-Authorization Cancelation)](#_toc160812903)
+  - [Balance Inquiry](#_toc160812904)
+    - [Sequence Diagram](#_toc160812905)
+    - [Message Information](#_toc160812906)
+  - [Sale](#_toc160812907)
+    - [Sequence Diagram](#_toc160812908)
+    - [Sequence Diagram - Communication Problems](#_toc160812909)
+    - [Message Information](#_toc160812910)
+  - [Cancellation](#_toc160812911)
+    - [Sequence Diagram](#_toc160812912)
+    - [Message Information](#_toc160812913)
+  - [Void](#_toc160812914)
+    - [Sequence Diagram](#_toc160812915)
+    - [Message Information](#_toc160812916)
+  - [Keep Alive](#_toc160812917)
+    - [Sequence Diagram](#_toc160812918)
+    - [Message Information](#_toc160812919)
 
 
 
-
-# <a name="_toc102571956"></a>**<a name="_toc160193598"></a><a name="_toc265766844"></a><a name="_toc160812874"></a>**Introduction
+# <a name="_toc102571956"></a><a name="_toc160193598"></a><a name="_toc265766844"></a><a name="_toc160812874"></a>Introduction
 
 ## <a name="_toc160193599"></a><a name="_toc160812875"></a>Purpose
 
@@ -167,7 +131,6 @@ Allows the creation and management of fleet programs, loyalty programs, gift car
 ![image](https://github.com/Ationet/ationetdocs/assets/96298341/426e2e12-72aa-4ade-b007-11fb7a48bd46)
 
 
-**
 ## <a name="_toc160193603"></a><a name="_toc160812880"></a>Integration with ATIONET
 
 Third-party systems integrate with ATIONET via a set of APIs (Application Programming Interfaces). Each ATIONET’s API is described on a separate Protocol Specification. The complete documentation of ATIONET API’s is comprised of:
@@ -200,23 +163,20 @@ The productive version of Ationet.
 
 URL Environment: <https://native.ationet.com/>v1/auth
 
-**
+
 # <a name="_toc160193612"></a><a name="_toc160812887"></a>Message Information	
 
 ## <a name="_toc160193613"></a><a name="_toc160812888"></a>Message Structure
 All Transaction API messages share the same base structure with slight modifications depending on which *TransactionCode* you use. All requests must be made with a **POST** method and the body uses a JSON format, as well as their responses.
 
 ### <a name="_toc160193614"></a><a name="_toc160812889"></a>Body Format Example:
+```
 {
-
-`	`"FieldName":"StringValue",
-
-`	`"FieldName":"StringValue",
-
-`	`"FieldName": Value
-
+"FieldName":"StringValue",
+"FieldName":"StringValue",
+"FieldName": Value
 }
-
+```
 Only one request is accepted on each message.
 
 For detailed information about the request structure provided by Ationet, please visit our [technical documentation](https://github.com/Ationet/ationetdocs/blob/master/AN-Native_Transaction_Protocol-Spec.md#7-transaction-request-treq-message-format).
