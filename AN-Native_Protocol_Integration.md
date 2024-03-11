@@ -1,28 +1,4 @@
-﻿![Rectangle
-
-Description automatically generated with medium confidence]
-
-Technical Documentation
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Ationet 
-
-Native Protocol Integration
-
-Version 2.2
+#Ationet Native Protocol Integration Version 2.2
 
 Change Logs
 
@@ -165,14 +141,12 @@ For this purpose, it applies different validations to determine whether the disp
 We can separate the validations as follows:
 
 1) Validation of the request structure.
-1) Ensuring the integrity of the data received, validating that the information submitted by the consumer is valid for our subscription.
-1) Rules validation: this point is closely related to the configuration in the Ationet portal, where the user can determine whether a client must meet certain requirements to perform a dispatch. At the same time, he has the possibility to apply restrictions that allow / prevent fuel dispatching.
-1) Validates the user's current account is validated to determine if he/she has a balance to operate.
+2) Ensuring the integrity of the data received, validating that the information submitted by the consumer is valid for our subscription.
+3) Rules validation: this point is closely related to the configuration in the Ationet portal, where the user can determine whether a client must meet certain requirements to perform a dispatch. At the same time, he has the possibility to apply restrictions that allow / prevent fuel dispatching.
+4) Validates the user's current account is validated to determine if he/she has a balance to operate.
 
+![image](https://github.com/Ationet/ationetdocs/assets/96298341/f879ac7b-d87b-4ac2-a4d8-c32cc9fa8f0d)
 
-![Diagrama
-
-Descripción generada automáticamente](Aspose.Words.70fb6903-b9a9-4c1f-a92f-6c8fa3e6e27a.002.png)
 
 Once the structure and integrity of the information is assured, **the combination of the rules applied, and the balance will result in the client's availability to operate.**
 
@@ -190,11 +164,7 @@ Allows the creation and management of fleet programs, loyalty programs, gift car
 <a name="_toc160193602"></a>
 ## <a name="_toc160812879"></a>Diagram
 
-![Diagrama
-
-Descripción generada automáticamente](Aspose.Words.70fb6903-b9a9-4c1f-a92f-6c8fa3e6e27a.003.png)
-
-
+![image](https://github.com/Ationet/ationetdocs/assets/96298341/426e2e12-72aa-4ade-b007-11fb7a48bd46)
 
 
 **
@@ -282,9 +252,7 @@ This section will detail the sequence of messages that must be followed to integ
 ## <a name="_toc160812892"></a>Normal Authorization Flow
 This diagram shows the complete flow, without alternative paths, to perform a successful transaction against Ationet in a pre-authorization operation.
 
-![Diagrama
-
-Descripción generada automáticamente](Aspose.Words.70fb6903-b9a9-4c1f-a92f-6c8fa3e6e27a.004.png)
+![image](https://github.com/Ationet/ationetdocs/assets/96298341/8b4610ee-d926-4899-9bb0-a72ce73ba652)
 
 
 
@@ -314,18 +282,14 @@ Other important fields to consider would be:
 ### <a name="_toc160812894"></a>Sequence Diagram - Normal Flow
 Corresponds to the case where a pre-authorization is requested and when a response is obtained, the pre-authorization flow ends.
 
-![Diagrama
-
-Descripción generada automáticamente](Aspose.Words.70fb6903-b9a9-4c1f-a92f-6c8fa3e6e27a.005.png)
-
+![image](https://github.com/Ationet/ationetdocs/assets/96298341/322edb50-7e4d-4e28-8dd8-c8dcb38bedc1)
 
 
 ### <a name="_sequence_diagram_–"></a><a name="_toc160193640"></a><a name="_toc160812895"></a>Sequence Diagram – Re Prompt
 Corresponds to the case where a pre-authorization is requested and Ationet requires additional information to authorize or reject it.
 
-![Diagrama
+![image](https://github.com/Ationet/ationetdocs/assets/96298341/2fdebde5-3a94-4074-b86e-7a2207cc82d1)
 
-Descripción generada automáticamente](Aspose.Words.70fb6903-b9a9-4c1f-a92f-6c8fa3e6e27a.006.png)
 
 ###
 In ATIONet rules refer to limits that can be configured by the company and associated to different entities. Inside this view you can consult, create, or edit rules. 
@@ -381,9 +345,8 @@ On the other hand, when initiating a new pre-authorization, it is important that
 
 Please validate the cancellation message in this [section of the document](#_cancellation).
 
-![Diagrama
+![image](https://github.com/Ationet/ationetdocs/assets/96298341/2fed0035-2484-46bd-a914-9a5431a51052)
 
-Descripción generada automáticamente](Aspose.Words.70fb6903-b9a9-4c1f-a92f-6c8fa3e6e27a.007.png)
 ### <a name="_toc160193641"></a><a name="_toc160812897"></a>Message Information
 
 For information on the request, please visit the [following link to the technical documentation](https://github.com/Ationet/ationetdocs/blob/master/AN-Native_Transaction_Protocol-Spec.md#131-pre-authorization-request-sample).
@@ -416,9 +379,8 @@ Upon receiving a response from Ationet for completion, **the flow should be term
 
 ### <a name="_toc160812899"></a>Sequence Diagram
 
-![Diagrama
+![image](https://github.com/Ationet/ationetdocs/assets/96298341/4635cac0-5e8b-4346-9b09-356ec58458ed)
 
-Descripción generada automáticamente](Aspose.Words.70fb6903-b9a9-4c1f-a92f-6c8fa3e6e27a.008.png)
 ###
 
 ### <a name="_toc160812900"></a>Sequence Diagram - Communication Problems
@@ -435,9 +397,7 @@ In case of a response from Ationet**, the flow MUST END**, regardless of whether
 
 Please validate the cancellation message in this [section of the document](#_cancellation).
 
-![Diagrama
-
-Descripción generada automáticamente](Aspose.Words.70fb6903-b9a9-4c1f-a92f-6c8fa3e6e27a.009.png)
+![image](https://github.com/Ationet/ationetdocs/assets/96298341/810246bc-82b0-4e3e-b592-2e3b63f8f770)
 
 
 ### <a name="_toc160812901"></a>Sequence Diagram - Conflict Problems
@@ -456,9 +416,8 @@ What to do, when receiving an HTTP Code 409 when sending a completion, is:
 
 Please validate the cancellation message in this [section of the document](#_cancellation).
 
-![Diagrama
+![image](https://github.com/Ationet/ationetdocs/assets/96298341/471d5f10-edbb-4a51-85b3-7dff1ca455c1)
 
-Descripción generada automáticamente](Aspose.Words.70fb6903-b9a9-4c1f-a92f-6c8fa3e6e27a.010.png)
 ### <a name="_toc160812902"></a>Message Information
 
 For information on the request, please visit the [following link to the technical documentation](https://github.com/Ationet/ationetdocs/blob/master/AN-Native_Transaction_Protocol-Spec.md#1321-completion-request-sample).
@@ -497,11 +456,7 @@ In the case of a communication error, where you do not get a response from the H
 
 ### <a name="_toc160812905"></a>Sequence Diagram
 
-![Diagrama
-
-Descripción generada automáticamente](Aspose.Words.70fb6903-b9a9-4c1f-a92f-6c8fa3e6e27a.011.png)
-
-
+![image](https://github.com/Ationet/ationetdocs/assets/96298341/f083c0d5-b99c-44ec-94c9-5286e4a648cb)
 ### <a name="_toc160812906"></a>Message Information
 
 For information on the request, please visit the [following link to the technical documentation](https://github.com/Ationet/ationetdocs/blob/master/AN-Native_Transaction_Protocol-Spec.md#1331-balance-inquiry-request-sample).
@@ -516,9 +471,8 @@ The terminal will send a sale message, and Ationet will run the rules engine, si
 The sale can be approved or rejected.
 
 ### <a name="_toc160812908"></a>Sequence Diagram
-![Diagrama
+![image](https://github.com/Ationet/ationetdocs/assets/96298341/a387f409-c404-480b-b4a4-e239bd5c5797)
 
-Descripción generada automáticamente](Aspose.Words.70fb6903-b9a9-4c1f-a92f-6c8fa3e6e27a.012.png)
 ### <a name="_toc160812909"></a>Sequence Diagram - Communication Problems
 
 This scenario contemplates communication problems in the request for sale. It contemplates the case where the request did not reach the Ationet Host, and where the response provided by Ationet did not reach its destination. 
@@ -533,9 +487,8 @@ In case of a response from Ationet**, the flow MUST END**, regardless of whether
 
 Please validate the cancellation message in this [section of the document](#_cancellation).
 
-![Diagrama
+![image](https://github.com/Ationet/ationetdocs/assets/96298341/986ed069-a6db-468f-b91b-4431073e4233)
 
-Descripción generada automáticamente](Aspose.Words.70fb6903-b9a9-4c1f-a92f-6c8fa3e6e27a.013.png)
 
 
 ### <a name="_toc160812910"></a>Message Information
@@ -555,9 +508,8 @@ The basic flow is shown here, without considering the particularities detailed a
 ###
 ### <a name="_toc160812912"></a>Sequence Diagram
 
-![Diagrama
+![image](https://github.com/Ationet/ationetdocs/assets/96298341/01c55870-51fd-421a-af90-d9159dfa2450)
 
-Descripción generada automáticamente](Aspose.Words.70fb6903-b9a9-4c1f-a92f-6c8fa3e6e27a.014.png)
 ### <a name="_toc160812913"></a>Message Information
 
 For information on the request, please visit the [following link to the technical documentation](https://github.com/Ationet/ationetdocs/blob/master/AN-Native_Transaction_Protocol-Spec.md#1331-cancellation-request-sample).
@@ -580,9 +532,8 @@ Ationet will provide the following response code if the transaction is billed, a
 
 
 ### <a name="_toc160812915"></a>Sequence Diagram
-![Diagrama
+![image](https://github.com/Ationet/ationetdocs/assets/96298341/a9eabf70-5ebb-4f0e-b385-dd748caa72c0)
 
-Descripción generada automáticamente](Aspose.Words.70fb6903-b9a9-4c1f-a92f-6c8fa3e6e27a.015.png)
 
 
 ### <a name="_toc160812916"></a>Message Information
@@ -606,24 +557,11 @@ Ationet will respond with an HTTP Status Code 200 to indicate that it is active.
 [{URLEnvironment}/](https://native-test.ationet.com/)v1/maintenance
 ###
 ### <a name="_toc160812918"></a>Sequence Diagram
-![Diagrama
+![image](https://github.com/Ationet/ationetdocs/assets/96298341/a373ef51-a739-4724-a9b1-a44e0d92e7e9)
 
-Descripción generada automáticamente](Aspose.Words.70fb6903-b9a9-4c1f-a92f-6c8fa3e6e27a.016.png)
 
 ### <a name="_toc160812919"></a>Message Information
 
 For information on the request, please visit the [following link to the technical documentation](https://github.com/Ationet/ationetdocs/blob/master/AN-Native_Transaction_Protocol-Spec.md#1371-keep-alive-request-sample).
 
 For information on the response, please visit the [following link to the technical documentation](https://github.com/Ationet/ationetdocs/blob/master/AN-Native_Transaction_Protocol-Spec.md#1372-keep-alive-response-sample).
-
-**
-#####
-#####
-#####
-#####
-![](Aspose.Words.70fb6903-b9a9-4c1f-a92f-6c8fa3e6e27a.017.png)![ref1]![](Aspose.Words.70fb6903-b9a9-4c1f-a92f-6c8fa3e6e27a.019.png)
-
-[Rectangle
-
-Description automatically generated with medium confidence]: Aspose.Words.70fb6903-b9a9-4c1f-a92f-6c8fa3e6e27a.001.jpeg
-[ref1]: Aspose.Words.70fb6903-b9a9-4c1f-a92f-6c8fa3e6e27a.018.png
