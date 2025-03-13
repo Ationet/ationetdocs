@@ -166,12 +166,13 @@ En este apartado se puede configurar la cotización de múltiples divisas.
 <br>
 
 ![Cotizaciones Nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Cotizaciones%20Nuevo.PNG)
+
 Las secciones por configurar son las siguientes:
-	Moneda Origen: Seleccione la moneda del país de origen
-	Moneda de Destino: Seleccione la moneda del país de destino
-	Valor de Conversión: Introduzca el valor de conversión de la divisa
-	Fecha de Inicio: Introduzca la fecha en la cual se comenzará a realizar este proceso
-	Hora desde: Introduzca la hora en la cual se comenzará a realizar este proceso
+*	**Moneda Origen:** Seleccione la moneda del país de origen
+*	**Moneda de Destino:** Seleccione la moneda del país de destino
+*	**Valor de Conversión:** Introduzca el valor de conversión de la divisa
+*	**Fecha de Inicio:** Introduzca la fecha en la cual se comenzará a realizar este proceso
+*	**Hora desde:** Introduzca la hora en la cual se comenzará a realizar este proceso
 
 ## Depositos
 En esta sección puede crear/editar depositos. El deposito es donde se almacenan los identificadores instalados.
