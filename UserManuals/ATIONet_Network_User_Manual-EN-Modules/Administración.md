@@ -190,7 +190,7 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Documentos Externos
 
 La vista "Documentos Externos", le permitira a la Network alojar cualquier documentación, o reporteria cuyo origen sea ajeno a procesos del portal ATIONET. Por suparte, las companias o comercios podran visualizar y descargar dichos archivos. 
-Para hacer uso de esta funcion, se requerira una integracion para consumir la API correspondiente.
+ Para hacer uso de esta funcion, se requerira una integracion para consumir la API correspondiente.
 
 ![Documentos Externos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Documentos%20Externos.PNG)
 
