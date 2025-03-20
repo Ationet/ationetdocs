@@ -455,12 +455,14 @@ Cuando haya terminado de rellenar los campos, pulse el botón **Guardar**.
 En esta sección cada usuario puede seleccionar sus propias notificaciones para recibirlas por correo electrónico o sms.
 
 1. **_Inventario_**
+
 ![Notificaciones (Inventario)]((https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(Inventario).PNG))
     - **Notificación de nueva entrega:** Recibe una notificación por cada entrega detectada.
     - **Notificación de inventario bajo:** Recibe una notificación cuando el inventario es bajo.
     - **Alerta de notificación de volumen de agua:** Recibe una notificación cuando el agua está baja.
  
 2. **_Contrato_**
+
  ![Notificaciones (contrato)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(contrato).PNG)
     - **Notificación de saldo de contrato bajo:** Recibe una notificación cuando el saldo de un contrato es bajo.
     - **Notificación de saldo de contrato vacío:** Recibe una notificación cuando un contrato no tiene saldo.
@@ -469,22 +471,26 @@ En esta sección cada usuario puede seleccionar sus propias notificaciones para 
     - **Depósito de contrato de la compañía:** Recibe una notificación cuando se detecta un depósito a un contrato.
       
 3. **_Identificadores_**
+ 
    ![Notificaciones (Identificacion)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(Identificacion).PNG)
     - **Notificación de Identificadores en riesgo de caducidad:** Recibe una notificación cuando un identificador está a punto de caducar.
   
 4. **_Fidelidad_**
+
 ![Notificaciones (fidelidad)]((fidelidad)]https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(fidelidad).PNG)
     - **Notificación de nueva cuenta de fidelidad:** Recibe una notificación cuando se detecta un nuevo programa de fidelidad.
     - **Notificación de acumulación de puntos de fidelidad:** Recibe una notificación cuando se detecta una acumulación.
     - **Notificación de excepciones de fidelidad:** Recibe una notificación cuando se detecta una excepción.
       
 5. **_Liquidación_**
+ 
    ![Notificaciones (liquidaciones)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(liquidaciones).PNG)
     - **Notificación de proceso de liquidación:** Recibe una notificación cuando se detecta un proceso de liquidación.
     - **Cargos del comercio:** Recibe una notificación cuando se detectan cargos del comercio.
     - **Cargos externos:** Recibe una notificación cuando se detectan cargos externos.
  
 6. **_Transacciones_**
+ 
  ![Notificaciones (transacciones)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(transacciones).PNG)
     - **Notificación de nuevas transacciones de contingencia:** Recibe una notificación cuando se detecta una nueva contingencia.
     - **Notificación de transacción a revisar:** Recibe una notificación cuando se detectó una excepción marcada para ser revisada.
@@ -495,15 +501,18 @@ En esta sección cada usuario puede seleccionar sus propias notificaciones para 
     - **Transacciones impugnadas:** Recibe una notificación cuando se detecta una transacción impugnada.
  
 7. **_Compañía_**
+
 ![Notificaciones (compañia)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(compa%C3%B1ia).PNG)
     - **_Activación/Desactivación de Compañía:_** Recibe una notificación cuando se detecta el cambio en el estado de una compañía.
 
 8. **_Comercio:_**
+
 ![Notificaciones (comercio)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(comercio).PNG)
     - **_Activación/ Desactivación de Comercio:_** Recibe una notificación cuando se detecta el cambio en el estado de un Comercio
     - **_Máximo de transacciones Offline del sitio alcanzado:_** Recibe una notificación cuando se detecte que el sitio alcanzo el máximo posible de transacciones Offline.
     - 
 9. **_Workflow de Flota:_**
+
 ![Notificaciones (Workflow de Flota)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(Workflow%20de%20Flota).PNG)
     - **Wrokflow de Flota creado:_** Recibe una notificación cuando se detecte que el workflow de flota a sido creado.
 
