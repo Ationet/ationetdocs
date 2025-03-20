@@ -456,11 +456,11 @@ En esta sección cada usuario puede seleccionar sus propias notificaciones para 
 
 1. **_Inventario_**
 
-![Notificaciones (Inventario)]((https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(Inventario).PNG))
-    - **Notificación de nueva entrega:** Recibe una notificación por cada entrega detectada.
-    - **Notificación de inventario bajo:** Recibe una notificación cuando el inventario es bajo.
-    - **Alerta de notificación de volumen de agua:** Recibe una notificación cuando el agua está baja.
- 
+![Notificaciones]((Inventario)]https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(Inventario).PNG)
+- **Notificación de nueva entrega:** Recibe una notificación por cada entrega detectada.
+- **Notificación de inventario bajo:** Recibe una notificación cuando el inventario es bajo.
+- **Alerta de notificación de volumen de agua:** Recibe una notificación cuando el agua está baja.
+
 2. **_Contrato_**
 
  ![Notificaciones (contrato)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(contrato).PNG)
@@ -469,28 +469,28 @@ En esta sección cada usuario puede seleccionar sus propias notificaciones para 
 - **Notificación de porcentaje de crédito:** Recibe una notificación cuando se alcanza un porcentaje de crédito (haga click en el lápiz para configurar el porcentaje).
 - **Notificación de saldo bajo:** Recibe una notificación cuando se alcanza un monto (haga clic en el lápiz para configurar el monto).
 - **Depósito de contrato de la compañía:** Recibe una notificación cuando se detecta un depósito a un contrato.
-      
+
 3. **_Identificadores_**
- 
+
    ![Notificaciones (Identificacion)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(Identificacion).PNG)
 - **Notificación de Identificadores en riesgo de caducidad:** Recibe una notificación cuando un identificador está a punto de caducar.
-  
+
 4. **_Fidelidad_**
 
-![Notificaciones (fidelidad)]((fidelidad)]https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(fidelidad).PNG)
+![Notificaciones]((fidelidad)]https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(fidelidad).PNG)
 - **Notificación de nueva cuenta de fidelidad:** Recibe una notificación cuando se detecta un nuevo programa de fidelidad.
 - **Notificación de acumulación de puntos de fidelidad:** Recibe una notificación cuando se detecta una acumulación.
 - **Notificación de excepciones de fidelidad:** Recibe una notificación cuando se detecta una excepción.
-      
+
 5. **_Liquidación_**
- 
+
    ![Notificaciones (liquidaciones)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(liquidaciones).PNG)
 - **Notificación de proceso de liquidación:** Recibe una notificación cuando se detecta un proceso de liquidación.
 - **Cargos del comercio:** Recibe una notificación cuando se detectan cargos del comercio.
 - **Cargos externos:** Recibe una notificación cuando se detectan cargos externos.
- 
+
 6. **_Transacciones_**
- 
+
  ![Notificaciones (transacciones)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(transacciones).PNG)
 - **Notificación de nuevas transacciones de contingencia:** Recibe una notificación cuando se detecta una nueva contingencia.
 - **Notificación de transacción a revisar:** Recibe una notificación cuando se detectó una excepción marcada para ser revisada.
@@ -499,7 +499,7 @@ En esta sección cada usuario puede seleccionar sus propias notificaciones para 
 - **PIN incorrecto:** Recibe una notificación cuando se detecta una transacción rechazada por un PIN incorrecto.
 - **Transacción rechazada:** Recibe una notificación cuando se detecta una transacción rechazada.
 - **Transacciones impugnadas:** Recibe una notificación cuando se detecta una transacción impugnada.
- 
+
 7. **_Compañía_**
 
 ![Notificaciones (compañia)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(compa%C3%B1ia).PNG)
