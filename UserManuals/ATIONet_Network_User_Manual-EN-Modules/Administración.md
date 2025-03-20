@@ -523,25 +523,31 @@ En esta sección cada usuario puede seleccionar sus propias notificaciones para 
 ### Notificaciones de compañía
 En esta sección los usuarios de la compañía pueden configurar sus propias notificaciones (dentro de sus perfiles de compañía en ATIONET).
 
-![Notificaciones Compañía](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20Compa%C3%B1%C3%ADas.PNG)
+![Notificaciones Comapañia](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20Comapa%C3%B1ia.PNG)
+**_Notificaciones de compañía_**
 
-1. ***Contrato***
-   * **Notificación de saldo de contrato bajo:** Recibe una notificación cuando el saldo de un contrato es bajo.
-   * **Notificación de saldo de contrato vacío:** Recibe una notificación cuando un contrato no tiene saldo.
-   * **Notificación de porcentaje de crédito:** Recibe una notificación cuando se alcanza un porcentaje de crédito (haga clic en el lápiz para configurar el porcentaje).
-   * **Notificación de saldo bajo:** Recibe una notificación cuando se alcanza un monto (haga clic en el lápiz para configurar el monto).
-   * **Depósito de contrato de la compañía:** Recibe una notificación cuando se detecta un depósito a un contrato.
-2. ***Liquidación***
-   * **Cargos externos:** Recibe una notificación cuando se detectan cargos externos.
-3. ***Transacciones***
-   * **Excepción de transacción:** Recibe una notificación cuando se detecta una excepción.
-   * **Autorización de reglas no bloqueantes:** Recibe una notificación cuando se detecta una autorización de regla no bloqueante.
-   * **Identificación habilitada/deshabilitada:** Recibe una notificación cuando un identificador fue habilitado/deshabilitado.
-   * **Identificadores solicitados:** Recibe una notificación cuando se detecta una solicitud de identificación.
-   * **Transacción rechazada:** Recibe una notificación cuando se detecta una transacción rechazada.
-   * **Transacciones Disputadas:** Recibe una notificación cuando se detecta una transacción disputada.
-4. ***Flota de vehículos***
-   * **Límite de Odómetro del Vehículo:** Recibe una notificación cuando se alcanza el odómetro de un vehículo (haga clic en el botón **Lista de Vehículos** para configurar el odómetro y seleccionar el vehículo asociado a la notificación).
+**_En esta sección los usuarios de la compañía pueden configurar sus propias notificaciones (dentro de sus perfiles de compañía en ATIONET)._**
+
+1. **_Contrato_**
+    - **_Notificación de saldo de contrato bajo:_** Recibe una notificación cuando el saldo de un contrato es bajo.
+    - **_Notificación de saldo de contrato vacío:_** Recibe una notificación cuando un contrato no tiene saldo.
+    - **_Notificación de porcentaje de crédito:_** Recibe una notificación cuando se alcanza un porcentaje de crédito (haga clic en el lápiz para configurar el porcentaje).
+    - **_Notificación de saldo bajo:_** Recibe una notificación cuando se alcanza un monto (haga clic en el lápiz para configurar el monto).
+    - **_Depósito de contrato de la compañía:_** Recibe una notificación cuando se detecta un depósito a un contrato.
+2. **_Liquidación_**
+    - **_Cargos externos:_** Recibe una notificación cuando se detectan cargos externos.
+3. **_Transacciones_**
+    - **_Excepción de transacción:_** Recibe una notificación cuando se detecta una excepción.
+    - **_Autorización de reglas no bloqueantes:_** Recibe una notificación cuando se detecta una autorización de regla no bloqueante.
+    - **_Identificación habilitada/deshabilitada:_** Recibe una notificación cuando un identificador fue habilitado/deshabilitado.
+    - **_Identificadores solicitados:_** Recibe una notificación cuando se detecta una solicitud de identificación.
+    - **_Transacción rechazada:_** Recibe una notificación cuando se detecta una transacción rechazada.
+    - **_Transacciones Disputadas:_** Recibe una notificación cuando se detecta una transacción disputada.
+4. **_Flota de vehículos_**
+    - **_Límite de Odómetro del Vehículo:_** Recibe una notificación cuando se alcanza el odómetro de un vehículo (haga clic en el botón Lista de Vehículos para configurar el odómetro y seleccionar el vehículo asociado a la notificación).
+5. **_Compañía_**
+    - **_Activación/Desactivación de Compañía:_** Recibe una notificación cuando se detecta el cambio en el estado de una compañía.
+
 
 ## Precios de Distribución
 En esta sección puede ver todos los precios de distribución generados. Estos precios se utilizan cuando un contrato de compañía no tiene precios configurados (siempre y cuando la opción de precios de distribución esté habilitada dentro de la configuración del contrato de compañía).
