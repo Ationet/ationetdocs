@@ -421,7 +421,7 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 Los modelos de identificador varían según la necesidad del cliente. 
 **_Estos pueden ser de los siguientes tipos:_**
 - **Card:** Identificadores de tipo tarjeta. La misma puede ser de banda magnetica o de lectura por aproximacion.
-- **TAG:** Identificador el cual es una imagen (comunmente en formato QR) generalmente pegado al parabrisas del vehiculo en formato de Sticker.
+- **TAG:** Identificador del tipo imagen (comunmente en formato QR). Generalmente se utiliza como sticker pegado al parabrisas del vehiculo.
 - **Chipkey:** Identificador de tipo llave, utilizado por un sistema especifico de terminales.
 
 ![Modelo de Identificador (Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Modelo%20de%20Identificador%20(Menu).PNG)
