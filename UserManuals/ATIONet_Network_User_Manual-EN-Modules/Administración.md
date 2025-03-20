@@ -456,7 +456,7 @@ En esta sección cada usuario puede seleccionar sus propias notificaciones para 
 
 1. **_Inventario_**
 
-![Notificaciones]((Inventario)]https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(Inventario).PNG)
+![Notificaciones (Inventario)]((Inventario)]https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(Inventario).PNG)
 - **Notificación de nueva entrega:** Recibe una notificación por cada entrega detectada.
 - **Notificación de inventario bajo:** Recibe una notificación cuando el inventario es bajo.
 - **Alerta de notificación de volumen de agua:** Recibe una notificación cuando el agua está baja.
@@ -477,7 +477,7 @@ En esta sección cada usuario puede seleccionar sus propias notificaciones para 
 
 4. **_Fidelidad_**
 
-![Notificaciones]((fidelidad)]https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(fidelidad).PNG)
+![Notificaciones (fidelidad)]((fidelidad)]https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(fidelidad).PNG)
 - **Notificación de nueva cuenta de fidelidad:** Recibe una notificación cuando se detecta un nuevo programa de fidelidad.
 - **Notificación de acumulación de puntos de fidelidad:** Recibe una notificación cuando se detecta una acumulación.
 - **Notificación de excepciones de fidelidad:** Recibe una notificación cuando se detecta una excepción.
@@ -510,7 +510,7 @@ En esta sección cada usuario puede seleccionar sus propias notificaciones para 
 ![Notificaciones (comercio)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(comercio).PNG)
 - **_Activación/ Desactivación de Comercio:_** Recibe una notificación cuando se detecta el cambio en el estado de un Comercio
 - **_Máximo de transacciones Offline del sitio alcanzado:_** Recibe una notificación cuando se detecte que el sitio alcanzo el máximo posible de transacciones Offline.
-- 
+
 9. **_Workflow de Flota:_**
 
 ![Notificaciones (Workflow de Flota)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(Workflow%20de%20Flota).PNG)
