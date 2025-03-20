@@ -305,7 +305,7 @@ La tabla de impuestos muestra:
 * **Modo:** Modo del impuesto (puede ser un impuestos, percepcioes, retenciones, otras).
 * **Modo de Uso:** Modo de uso que corresponde al impuesto.
 * **Incluido:** Indica si esta incluido con "Si" o "No".
-* **Activo:** MIndica si esta activo con "Si" o "No".
+* **Activo:** Indica si esta activo con "Si" o "No".
 * **Opciones:** Editar el impuesto.
 
 ![Impuestos](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Impuestos.PNG)
@@ -381,6 +381,22 @@ Si tiene OBD, se mostrarán más campos:
 * **Proporción:** Introduzca las proporciones del OBD.
 
 Luego, en la sección de Identificadores seleccione el Identificador. Al terminar, haga clic en el botón **Guardar**.
+
+</br>
+
+![LOCACIONES]
+
+“Locaciones” es un apartado en el cual los usuarios pueden agregar ubicaciones concretas para las cuales se habilite un tipo puntual de identificador
+[](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Recorte%20del%20portal%20(LOCACIONES).PNG)
+
+En la opción de “Nuevo”, se agregan las locaciones, para las cuales se requiere un mínimo de información:
+[](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Recorte%20del%20portal%20(LOCACIONES)%202.PNG)
+
+- **Código:** Se requiere un patrón alfanumérico.
+- **País/Estado/ Ciudad/ Calle:** Se precisa la ubicación semi exacta de el lugar que se desea ingresar.
+- **Teléfono de Contacto:** Se precisa el teléfono/móvil de un referente de dicha locación.
+- **Tipo de Identificador:** Se precisa el tipo de Identificador deseado para dicha locación.
+- **Modelo de Identificador:** Se precisa el modelo de Identificador deseado para dicha locación.
 
 ## Métodos de pago
 Los métodos de pago son las diferentes formas en que se puede pagar una transacción: efectivo, tarjeta de crédito, tarjeta de débito, tarjetas de regalo, etc. Para facilitar las consultas, hay un panel de filtros en la parte superior.
