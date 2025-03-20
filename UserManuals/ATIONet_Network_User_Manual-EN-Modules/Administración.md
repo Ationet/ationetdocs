@@ -278,17 +278,18 @@ Para crear un identificador, haga clic en el botón **Nuevo**.
 
 ![Identificadores Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Identificador%20Nuevo.PNG)
 
-Los campos a completar son los siguientes:
+Los campos por completar son los siguientes:
 
-* **Tipo:** Puede ser Tarjeta, TAG, Chipkey, Entrada Manual, Tarjeta ATIONET o TAG ATIONET.
-* **Modelo:** El modelo del tipo de identificador seleccionado en **Tipo**.
-* **Tipo de uso:** Puede ser flota, fidelidad o dual.
-* **Programa:** El programa al que se asignará esta identificación.
-* **Programa de fidelidad:** El programa de fidelidad al que se asignará este identificador.
-* **Etiqueta:** El nombre de la tarjeta (por ejemplo Pablo Pérez).
-* **Track:** El track es la información que tiene grabada el identificador en su interior. Se divide en tres partes. En este campo se puede editar lo que contiene el segundo campo de la pista.
-* **PAN:** Un número entre 1 y 19 caracteres que se encuentra en el identificador. 
-* **PIN:** El PIN del identificador (esta opción sólo estará disponible si el modelo de identificador tiene activada la opción **PIN**).
+- **Tipo:** Puede ser Tarjeta, TAG, Chipkey, Entrada Manual, Tarjeta ATIONET o TAG ATIONET.
+- **Modelo:** El modelo del tipo de identificador seleccionado en **Tipo**.
+- **Tipo de uso:** Este se divide entre flota, fidelidad o dual.
+- **Programa:** El programa al que se asignará esta identificación en caso de haber elegido “Tipo de uso: Flota/dual”.
+- **Comunidad:** La comunidad al que se asignará este identificador en caso de haber elegido “Tipo de uso: Fidelidad/dual”.
+- **Etiqueta:** El nombre de la tarjeta (por ejemplo, Pablo Pérez).
+- **Track:** El track es la información que tiene grabada el identificador en su interior. Se divide en tres partes. En este campo se puede editar lo que contiene el segundo campo de la pista.
+- **PAN:** Un número entre 1 y 19 caracteres que se encuentra en el identificador.
+- **Generador Automático:** Al marcar esta opción, se generarán automáticamente los campos de **etiqueta**, **track** y **PAN**
+- **PIN:** El PIN del identificador (esta opción sólo estará disponible si el modelo de identificador tiene activada la opción **PIN**).
 
 Cuando haya terminado de rellenar los campos, pulse el botón **Guardar**.
 
