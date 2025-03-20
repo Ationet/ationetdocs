@@ -524,9 +524,6 @@ En esta sección cada usuario puede seleccionar sus propias notificaciones para 
 En esta sección los usuarios de la compañía pueden configurar sus propias notificaciones (dentro de sus perfiles de compañía en ATIONET).
 
 ![Notificaciones Comapañia](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20Comapa%C3%B1ia.PNG)
-**_Notificaciones de compañía_**
-
-**_En esta sección los usuarios de la compañía pueden configurar sus propias notificaciones (dentro de sus perfiles de compañía en ATIONET)._**
 
 1. **_Contrato_**
     - **_Notificación de saldo de contrato bajo:_** Recibe una notificación cuando el saldo de un contrato es bajo.
