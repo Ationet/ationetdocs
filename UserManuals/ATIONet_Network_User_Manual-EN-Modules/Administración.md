@@ -420,23 +420,34 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Modelos de Identificadores
 Los modelos de identificador varían según la necesidad del cliente. Pueden ser del tipo Card (una tarjeta magnética), TAG, Chipkey o Manual Entry (un código introducido a mano). 
 
-![Modelos de identificadores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Modelos%20de%20Identificador.PNG)
-
-Para crear un modelo de identificador, haga clic en el botón **Nuevo**.
-
-![Nuevo modelo de identificadores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Modelos%20de%20Identificador%20Nuevo.PNG)
-
+![Modelo de Identificador (Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Modelo%20de%20Identificador%20(Menu).PNG)
 Los campos a completar son los siguientes:
+![Modelo de Identificador (Nuevo)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Modelo%20de%20Identificador%20(Nuevo).PNG)
+- **Tipo:** Puede ser Tarjeta, TAG, Chipkey o Tipo de entrada manual.
+- **Descripción:** La descripción del nuevo modelo de identificadores.
+- **Instalable:** Los identificadores con esta característica solo pueden ser asignados mediante una instalación.
+- **Personalizado:** Si está personalizado o no.
+- **Reutilizable:** Los identificadores con esta función activa podrán ser reutilizados en caso de ser desasignados (de otro modo quedarían deshabilitados).
+- **Admite múltiples asignaciones:** Esta opción permite al conductor/vehículo tener múltiples identificadores de este modelo.
+- **Fecha de caducidad válida:** Si valida la fecha de caducidad o no.
+- **Ignorar el comportamiento de ID vehículo en la terminal:** Ignorar el comportamiento de la identificación del vehículo en el terminal o no.
+- **Track Personalizado:** Activada esta opción, permite determinar un número de Track a voluntad en lugar de que este se genere automáticamente
+- **Uso único:** Activada esta opción, permite que dicho modelo de identificador no pueda usarse múltiples veces.
+- **Notificar asignación:** Al activar esta función, le llegara un mail a la entidad a la cual se le asigne dicho identificador.
+  - Al activar esta función se habilitará la opción **“Archivo adjunto en notificación”,** la cual permite que el QR llegue adjunto en un archivo PDF
+    - Finalmente, en caso de que se habilite la función anterior, una tercera función se habilitara llamada, **“Archivo adjunto encriptado”.** Esta permitirá que al llegar el archivo se solicitara una contraseña, siendo esta el código del vehículo.
+![Modelo de Identificador (Notificar Asignacion)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Modelo%20de%20Identificador%20(Notificar%20Asignacion).PNG)
+- **No soporta Offline:** Esta función permite que solamente opere cuando el sistema se encuentra en estado Online.
+- **Requiere PIN:** Esta función nos permite determinar si requiere PIN, a su vez que nos exige establecer la cantidad de números solicitados para el PIN
+  - Al activar esta función se habilitará una nueva función llamada **“Requiere cambio de PIN”** la cual es una opción puntual para terminales las cuales permitan establecer un PIN directamente desde la estación.
+![Modelo de Identificador (Requiere PIN)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Modelo%20de%20Identificador%20(Requiere%20PIN).PNG)
+- **Valida periodo de inactividad:** Esta función nos permite evaluar la inactivación automática de un identificador correspondiente a este modelo de acuerdo con el periodo establecido.
+![Modelo de Identificador (Inactividad)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Modelo%20de%20Identificador%20(Inactividad).PNG)
+  - Al activar esta función, se habilitará una caja en la cual se podrá establecer el periodo en cuestión.
+- **Tipo de Track personalizado:** Al habilitar esta función permite establecer un Prefijo y un Sufijo al Track.
+- **Encriptación de Track:** Esta función les otorga a los identificadores de este modelo, la capacidad de ser verificados con un track encriptado y el mismo será reconocido por ATIONET y validado en caso de que exista. Para que aplique la lectura del track encriptado, se deberá configurar la propiedad correspondiente en la terminal.
 
-* **Tipo:** Puede ser Tarjeta, TAG, Chipkey o Tipo de entrada manual.
-* **Descripción:** La descripción del nuevo modelo de identificadores.
-* **Instalable:** Si es instalable o no.
-* **Personalizado:** Si está personalizado o no.
-* **Reutilizable:** Si es reutilizable o no.
-* **Admite múltiples asignaciones:** Si admite múltiples asignaciones o no.
-* **Fecha de caducidad válida:** Si valida la fecha de caducidad o no.
-* **Ignorar el comportamiento de ID vehículo en la terminal:** Ignorar el comportamiento de la identificación del vehículo en el terminal o no.
-* **Requiere PIN:** Si requiere PIN o no.
+![Modelo de Identificador (Track)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Modelo%20de%20Identificador%20(Track).PNG)
 
 Cuando haya terminado de rellenar los campos, pulse el botón **Guardar**.
 
