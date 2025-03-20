@@ -456,7 +456,7 @@ En esta sección cada usuario puede seleccionar sus propias notificaciones para 
 
 1. **_Inventario_**
 
-![Notificaciones (Inventario)]((Inventario)]https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(Inventario).PNG)
+ ![Notificaciones (Inventario)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(Inventario).PNG)
 - **Notificación de nueva entrega:** Recibe una notificación por cada entrega detectada.
 - **Notificación de inventario bajo:** Recibe una notificación cuando el inventario es bajo.
 - **Alerta de notificación de volumen de agua:** Recibe una notificación cuando el agua está baja.
@@ -477,7 +477,7 @@ En esta sección cada usuario puede seleccionar sus propias notificaciones para 
 
 4. **_Fidelidad_**
 
-![Notificaciones (fidelidad)]((fidelidad)]https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(fidelidad).PNG)
+ ![Notificaciones (fidelidad)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(fidelidad).PNG)
 - **Notificación de nueva cuenta de fidelidad:** Recibe una notificación cuando se detecta un nuevo programa de fidelidad.
 - **Notificación de acumulación de puntos de fidelidad:** Recibe una notificación cuando se detecta una acumulación.
 - **Notificación de excepciones de fidelidad:** Recibe una notificación cuando se detecta una excepción.
