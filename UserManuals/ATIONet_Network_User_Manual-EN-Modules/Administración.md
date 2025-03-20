@@ -418,7 +418,11 @@ Los campos a completar son los siguientes:
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 ## Modelos de Identificadores
-Los modelos de identificador varían según la necesidad del cliente. Pueden ser del tipo Card (una tarjeta magnética), TAG, Chipkey o Manual Entry (un código introducido a mano). 
+Los modelos de identificador varían según la necesidad del cliente. 
+**_Estos pueden ser de los siguientes tipos:_**
+- **Card:** Identificadores de tipo tarjeta. La misma puede ser de banda magnetica o de lectura por aproximacion.
+- **TAG:** Identificador el cual es una imagen (comunmente en formato QR) generalmente pegado al parabrisas del vehiculo en formato de Sticker.
+- **Chipkey:** Identificador de tipo llave, utilizado por un sistema especifico de terminales.
 
 ![Modelo de Identificador (Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Modelo%20de%20Identificador%20(Menu).PNG)
 Los campos a completar son los siguientes:
@@ -514,7 +518,7 @@ En esta sección cada usuario puede seleccionar sus propias notificaciones para 
 9. **_Workflow de Flota:_**
 
 ![Notificaciones (Workflow de Flota)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(Workflow%20de%20Flota).PNG)
-- **Wrokflow de Flota creado:_** Recibe una notificación cuando se detecte que el workflow de flota a sido creado.
+- **_Wrokflow de Flota creado:_** Recibe una notificación cuando se detecte que el workflow de flota a sido creado.
 
 ### Notificaciones de compañía
 En esta sección los usuarios de la compañía pueden configurar sus propias notificaciones (dentro de sus perfiles de compañía en ATIONET).
