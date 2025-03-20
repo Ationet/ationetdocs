@@ -440,7 +440,6 @@ Los campos a completar son los siguientes:
 - **Admite múltiples asignaciones:** Esta opción permite al conductor/vehículo tener múltiples identificadores de este modelo.
 - **Fecha de caducidad válida:** Si valida la fecha de caducidad o no.
 - **Ignorar el comportamiento de ID vehículo en la terminal:** Al activar esta opción, se ignorar el comportamiento de la identificación relacionado vehículo en el terminal. Es decir, si para una transacción se fuese a realizar alguna solicitud, esta será omitida.
-
 Una situación donde se pueda aplicar dicha función es para una "Tarjeta de regalo". Estas no poseen ningún ID de vehículo, por lo que si se desease operar en un sitio el cual solicite un ID de vehículo, sin esta función, la Tarjeta de regalo, seria rechazada.
 - **Track Personalizado:** Activada esta opción, permite determinar un número de Track a voluntad en lugar de que este se genere automáticamente
 - **Uso único:** Activada esta opción, permite que dicho modelo de identificador no pueda usarse múltiples veces.
