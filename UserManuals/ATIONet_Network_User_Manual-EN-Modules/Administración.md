@@ -385,14 +385,15 @@ Luego, en la sección de Identificadores seleccione el Identificador. Al termina
 
 </br>
 
-![Locaciones]
+## Locaciones
 
-[[(https://raw.githubusercontent.com/Ationet/ationetdocs/refs/heads/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Recorte%20del%20portal%20(LOCACIONES).PNG)
-](https://raw.githubusercontent.com/Ationet/ationetdocs/refs/heads/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Recorte%20del%20portal%20(LOCACIONES).PNG)]
 “Locaciones” es un apartado en el cual los usuarios pueden agregar ubicaciones concretas para las cuales se habilite un tipo puntual de identificador
+
+![LOCACIONES](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/LOCACIONES.PNG)
 
 En la opción de “Nuevo”, se agregan las locaciones, para las cuales se requiere un mínimo de información:
 
+![LOCACIONES 2](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/LOCACIONES%202.PNG)
 
 - **Código:** Se requiere un patrón alfanumérico.
 - **País/Estado/ Ciudad/ Calle:** Se precisa la ubicación semi exacta de el lugar que se desea ingresar.
