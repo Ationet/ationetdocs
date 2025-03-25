@@ -28,20 +28,21 @@ Este documento describe la operación para efectuar una transacción con una aut
 
 ### Flujo de Inicialización 
 
-<p align="center">
-![image](https://github.com/user-attachments/assets/1a3643c2-3583-4efc-afa3-407f0b6ebfeb)
-</p>
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/1a3643c2-3583-4efc-afa3-407f0b6ebfeb" alt="Diagrama de Secuencia de Conexión SSE">
+</div>
+
+
 ### Connection
 
-Relative URL : /connection
-Method: POST
-Input : application/json
-Output : application/json
-
-Uso : Verificación de conexión y heartbeat. El Site System enviará este mensaje periódicamente cada 45 segundos. En caso de no recibir respuesta, se cerrará la conexión SSE, la cual se establecerá nuevamente tan pronto como el MPPA responda satisfactoriamente a este mensaje.
+<b>Relative URL:</b> /connection </br>
+<b>Method:</b> POST </br>
+<b>Input:</b> application/json </br>
+<b>Output:</b> application/json </br>
+<b>Uso:</b> Verificación de conexión y heartbeat. El Site System enviará este mensaje periódicamente cada 45 segundos. En caso de no recibir respuesta, se cerrará la conexión SSE, la cual se establecerá nuevamente tan pronto como el MPPA responda satisfactoriamente a este mensaje.
 En caso de recibir respuesta y que el Status Code sea un 400 (Bad Request), el Site System cerrará la conexión SSE (en caso de tenerlo abierto) y se establecerá una nueva conexión.
 
-Body:
+<b>Body:</b>
 ```json
 {
   "applicationSender": "{{SiteCode}}",
@@ -50,11 +51,12 @@ Body:
   "interfaceVersion": "1.0"
 }
 ```
-Definición de Campos:
-applicationSender: Debe contener el SiteCode del sitio que se encuentra operando.
-workstationID:  Debe contener el SiteCode del sitio que se encuentra operando.
-timestamp: fecha y hora de la solicitud
-interfaceVersion: valor fijo
+
+<b>Definición de Campos:</b> </br>
+<b>applicationSender:</b> Debe contener el SiteCode del sitio que se encuentra operando.</br>
+<b>workstationID:</b>  Debe contener el SiteCode del sitio que se encuentra operando.</br>
+<b>timestamp:</b> fecha y hora de la solicitud</br>
+<b>interfaceVersion:</b> valor fijo</br>
 
 
 
