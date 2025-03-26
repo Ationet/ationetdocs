@@ -33,7 +33,8 @@
     - [FPReserveCancelRequest](#fpreserveCancelRequest)
   - [Mensajería del SiteSystem al Host](#mensajería-del-SiteSystem-al-Host)
      - [Descripción General](#descripción-general)
-     - [Reserve Notification](#reserve-notification)
+     - [Reserve Notification POST](#reserve-notification-post)
+     - [Reserve Notification DELETE](#reserve-notification-delete)
      - [Transaction Info](#transaction-info)
      - [Authorization Notification](#authorization-notification)
      - [Begin Fueling Notification](#begin-fueling-notification)
@@ -501,8 +502,160 @@ A continuación se detallan todos los mensajes que el SiteSystem podrá recibir 
 #### Descripción General
 Esta mensajería es la que deberá implementar el SiteSystem para actuar en consecuencia a las operaciones que se llevan a cabo en base a los mensajes recibidos en el canal SSE. 
 
-#### Reserve Notification
+#### Reserve Notification (POST)
+
+<b>Relative URL:</b> URLAmbiente/v{{Version}}/SiteSystem/trxs/{{TransactionId}}/FPs/{{FuelPointId}}/reserveNotification</br>
+<b>Method:</b> POST </br>
+<b>Input:</b> application/json </br>
+<b>Output:</b> application/json </br>
+<b>Uso:</b> Permite al SiteSystem notificar al Host que la reserva del FuelPoint fue correcta 
+
+<b>Request Body:</b>
+```json
+{
+    "timestamp": "2023-06-02T12:20:50.311Z",
+    "result": "success",
+    "error": "00000",
+    "message": "THE FUELING POINT WAS RESERVED SUCCESSFULLY",
+    "UMTI": "{{TransactionId}}",
+    "TransactionStatus": "PUMPRESERVED",
+    "FuelingPointId": "{{FuelPointId}}",
+    "MerchantId": "0192-7509",
+    "SiteId": {
+        "Type": "SAP",
+        "Id": "{{SiteCode}}"
+        }
+}
+```
+
+<b>Definición de Campos:</b> </br>
+<b>result:</b> Corresponde al resultado de la operación. Para este caso solo puede ser success</br>
+<b>message:</b>  Descripción del tipo de mensaje.</br>
+<b>timestamp:</b> fecha y hora de la solicitud</br>
+<b>UMTI:</b> Id de la transacción en curso</br>
+<b>FuelingPointId:</b> Posición que se desea liberar</br>
+
+
+<b>Response Body:</b>
+Se obtiene un HTTP Response 200 o 400 dependiendo si se pudo procesar correctamente el request. 
+El Body del response es el siguiente, donde la propiedad error debe contener el valor "ERRCD_OK" el cual indica que la configuración se pudo realizar de forma correcta.
+
+```json
+{
+    "timestamp": "2025-03-21T21:33:23.4991943+00:00",
+    "result": "success",
+    "error": "ERRCD_OK",
+    "message": "Operation completed successfully"
+}
+```
+
+
+#### Reserve Notification (DELETE)
+
+<b>Relative URL:</b> URLAmbiente/v{{Version}}/SiteSystem/trxs/{{TransactionId}}/FPs/{{FuelPointId}}/reserveNotification</br>
+<b>Method:</b> DELETE </br>
+<b>Input:</b> application/json </br>
+<b>Output:</b> application/json </br>
+<b>Uso:</b> Permite al SiteSystem notificar al Host que no pudo procesar la reserva del FuelPoint 
+
+<b>Request Body:</b>
+Vacío
+
+<b>Response Body:</b>
+Se obtiene un HTTP Response 200 o 400 dependiendo si se pudo procesar correctamente el request. 
+El Body del response es el siguiente, donde la propiedad error debe contener el valor "ERRCD_OK" el cual indica que la configuración se pudo realizar de forma correcta.
+
+```json
+{
+    "timestamp": "2025-03-21T21:33:23.4991943+00:00",
+    "result": "success",
+    "error": "ERRCD_OK",
+    "message": "Operation completed successfully"
+}
+```
+
+
 #### Transaction Info
+
+<b>Relative URL:</b> URLAmbiente/v{{Version}}/SiteSystem/trxs/{{TransactionId}}</br>
+<b>Method:</b> GET </br>
+<b>Input:</b> application/json </br>
+<b>Output:</b> application/json </br>
+<b>Uso:</b> Permite al SiteSystem obtener el detalle de una transacción
+
+<b>Request Body:</b>
+Vacío
+
+
+<b>Response Body:</b>
+Se obtiene un HTTP Response 200 o 400 dependiendo si se pudo procesar correctamente el request. 
+El SiteSystem podrá obtener el monto autorizado de la propiedad "value" que se encuentra dentro del objeto "finalAmount". "finalAmount" a su vez se encuentra dentro del objeto "paymentInfo".
+El Body del response en el caso de obtener un 200, es el siguiente:
+
+```json
+{
+    "trxInfo": {
+        "timestamp": "2025-01-30T17:48:53.3941524+00:00",
+        "result": "success",
+        "error": "ERRCD_OK",
+        "message": "Complete",
+        "UMTI": "7a74d97d-d7e0-41d7-871a-bfe89a30babb",
+        "transactionStatus": "authorized",
+        "fuelingPointID": "1",
+        "merchantID": "",
+        "siteID": {
+            "type": "",
+            "id": "15241"
+        }
+    },
+    "paymentInfo": {
+        "paymentMethod": null,
+        "finalAmount": {
+            "value": "3.00",
+            "currency": null
+        },
+        "hostAuthNumber": "004745154",
+        "cardType": null,
+        "cardCircuit": null
+    },
+    "fuelingInfo": {
+        "fuelProducts": [
+            {
+                "productNo": null,
+                "productName": null,
+                "productCode": "1",
+                "prices": null,
+                "fuelPrice": {
+                    "value": "3.00",
+                    "currency": "USD"
+                },
+                "fuelUnitOfMeasurement": null,
+                "gradeAllowed": "yes",
+                "merchandiseCode": null,
+                "taxId": null
+            }
+        ],
+        "fuelingPointID": "1",
+        "fuelAmount": {
+            "value": "3.00",
+            "currency": "USD"
+        },
+        "quantity": {
+            "value": "1",
+            "uom": null
+        },
+        "serviceLevel": "full",
+        "modeNo": "1",
+        "priceTier": "credit"
+    },
+    "customerPreferences": {
+        "receipt": null
+    }
+}
+```
+
+
+
 #### Authorization Notification
 #### Begin Fueling Notification
 #### Finalize Transaction Notification
