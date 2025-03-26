@@ -424,9 +424,9 @@ A continuación se detallan todos los mensajes que el SiteSystem podrá recibir 
 <b>Body:</b>
 ```json
 {
-  id: FPReserveRequest
-  retry: 1
-  event: FPReserveRequest
+  id: FPReserveRequest,
+  retry: 1,
+  event: FPReserveRequest,
   data: {
         "eventMessage": "fueling point reserve request event",
         "timestamp": "2009-11-20T17:30:50",
@@ -451,9 +451,9 @@ A continuación se detallan todos los mensajes que el SiteSystem podrá recibir 
 <b>Body:</b>
 ```json
 {
-  id: authorizeRequest
-  retry: 1
-  event: authorizeRequest
+  id: authorizeRequest,
+  retry: 1,
+  event: authorizeRequest,
   data: {
         "eventMessage": "authorize request event",
         "timestamp": "2009-11-20T17:30:50",
@@ -476,9 +476,9 @@ A continuación se detallan todos los mensajes que el SiteSystem podrá recibir 
 <b>Body:</b>
 ```json
 {
-  id: FPReserveCancelRequest
-  retry: 1
-  event: FPReserveCancelRequest
+  id: FPReserveCancelRequest,
+  retry: 1,
+  event: FPReserveCancelRequest,
   data: {
         "eventMessage": "authorize request event",
         "timestamp": "2009-11-20T17:30:50",
