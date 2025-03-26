@@ -351,7 +351,7 @@ El Body del response es el siguiente, donde la propiedad error debe contener el 
 
 ### Country Settings
 
-<b>Relative URL:</b> URLAmbiente/v{{Version}}/SiteSystem/SSE/{{SiteSessionId}}/modes </br>
+<b>Relative URL:</b> URLAmbiente/v{{Version}}/SiteSystem/SSE/{{SiteSessionId}}/CountrySettings </br>
 <b>Method:</b> POST </br>
 <b>Tipo de Configuración:</b> Opcional </br>
 <b>Input:</b> application/json </br>
