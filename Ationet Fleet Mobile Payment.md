@@ -19,11 +19,11 @@
   - [Flujo de Inicialización](#flujo-de-inicialización)
   - [Connection](#Connection)
   - [Mobile Events](#Mobile_Events)
-  - [Site Data](#Site_Data)
-  - [Products](#Products)
+  - [Site Data](#site-data)
+  - [Products](#products)
   - [Dispensers](#Dispensers)
   - [Modes](#Modes)
-  - [Country Settings](#Country_Settings)
+  - [Country Settings](#country-settings)
 
 
 
