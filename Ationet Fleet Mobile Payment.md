@@ -657,5 +657,214 @@ El Body del response en el caso de obtener un 200, es el siguiente:
 
 
 #### Authorization Notification
+
+<b>Relative URL:</b> URLAmbiente/v{{Version}}/SiteSystem/trxs/{{TransactionId}}/authorizationNotification</br>
+<b>Method:</b> POST </br>
+<b>Input:</b> application/json </br>
+<b>Output:</b> application/json </br>
+<b>Uso:</b> Permite al SiteSystem notificar al Host que la autorización del FuelPoint fue correcta o incorrecta. 
+Para esto deberá modificar el campo "result". 
+1. En el caso de que el valor notificado sea "success", el host interpretará que la autorización fue correcta.
+2. En el caso de que el valor notificado sea "fail", el host interpretará que la autorización no pudo ser efectuada correctamente por el SiteSystem.
+
+
+<b>Request Body:</b>
+```json
+{ 
+    "timestamp": "2023-06-02T15:36:50.311Z", 
+    "result": "success", 
+    "error": "00000", 
+    "message": "the fueling point was approved successfully", 
+    "UMTI": "{{TransactionId}}", 
+    "transactionStatus": "authorized", 
+    "fuelingPointID": "{{FuelPointId}}", 
+    "merchantID": "0192-7509", 
+    "siteID": 
+        { 
+            "type": "SAP", 
+            "id": "{{SiteCode}}" 
+        } 
+}
+```
+
+<b>Definición de Campos:</b> </br>
+<b>result:</b> Corresponde al resultado de la operación. Para este caso, puede ser success o fail</br>
+<b>message:</b>  Descripción del tipo de mensaje.</br>
+<b>timestamp:</b> fecha y hora de la solicitud</br>
+<b>UMTI:</b> Id de la transacción en curso</br>
+<b>FuelingPointId:</b> Posición que se desea liberar</br>
+
+
+<b>Response Body:</b>
+Se obtiene un HTTP Response 200 o 400 dependiendo si se pudo procesar correctamente el request. 
+El Body del response es el siguiente, donde la propiedad error debe contener el valor "ERRCD_OK" el cual indica que la configuración se pudo realizar de forma correcta.
+
+```json
+{
+    "timestamp": "2025-03-21T21:33:23.4991943+00:00",
+    "result": "success",
+    "error": "ERRCD_OK",
+    "message": "Operation completed successfully"
+}
+```
+
+
 #### Begin Fueling Notification
+
+<b>Relative URL:</b> URLAmbiente/v{{Version}}/SiteSystem/trxs/{{TransactionId}}/beginFuelingNotification</br>
+<b>Method:</b> POST </br>
+<b>Input:</b> application/json </br>
+<b>Output:</b> application/json </br>
+<b>Uso:</b> Permite al SiteSystem notificar al Host que el despacho pudo comenzar o que existió algún inconveniente. 
+Para esto deberá modificar el campo "result". 
+1. En el caso de que el valor notificado sea "success", el host interpretará que la autorización fue correcta.
+2. En el caso de que el valor notificado sea "fail", el host interpretará que la autorización no pudo ser efectuada correctamente por el SiteSystem.
+
+
+<b>Request Body:</b>
+```json
+{
+    "timestamp": "2023-06-02T13:36:50.311Z",
+    "result": "success",
+    "error": "00000",
+    "message": "the fueling point is fueling",
+    "UMTI": "{{TransactionId}}",
+    "transactionStatus": "beginFueling",
+    "fuelingPointID": "{{FuelPointId}}",
+    "fuelingPointState": "FUELING",
+    "merchantID": "0192-7509",
+    "siteID": {
+        "type": "SAP",
+        "id": "{{SiteCode}}"
+        }
+}
+```
+
+<b>Definición de Campos:</b> </br>
+<b>result:</b> Corresponde al resultado de la operación. Para este caso, puede ser success o fail</br>
+<b>message:</b>  Descripción del tipo de mensaje.</br>
+<b>timestamp:</b> fecha y hora de la solicitud</br>
+<b>UMTI:</b> Id de la transacción en curso</br>
+<b>FuelingPointId:</b> Posición que se desea liberar</br>
+
+
+<b>Response Body:</b>
+Se obtiene un HTTP Response 200 o 400 dependiendo si se pudo procesar correctamente el request. 
+El Body del response es el siguiente, donde la propiedad error debe contener el valor "ERRCD_OK" el cual indica que la configuración se pudo realizar de forma correcta.
+
+```json
+{
+    "timestamp": "2025-03-21T21:33:23.4991943+00:00",
+    "result": "success",
+    "error": "ERRCD_OK",
+    "message": "Operation completed successfully"
+}
+```
+
+
 #### Finalize Transaction Notification
+
+<b>Relative URL:</b> URLAmbiente/v{{Version}}/SiteSystem/trxs/{{TransactionId}}/finalizeTrxNotification</br>
+<b>Method:</b> POST </br>
+<b>Input:</b> application/json </br>
+<b>Output:</b> application/json </br>
+<b>Uso:</b> Permite al SiteSystem notificar al Host que el despacho pudo comenzar o que existió algún inconveniente. 
+Para esto deberá modificar el campo "result". 
+1. En el caso de que el valor notificado sea "success", el host interpretará que la autorización fue correcta.
+2. En el caso de que el valor notificado sea "fail", el host interpretará que la autorización no pudo ser efectuada correctamente por el SiteSystem.
+
+
+<b>Request Body:</b>
+```json
+{
+    "TrxInfo": { 
+        "timestamp": "2023-06-02T15:36:50.311Z", 
+        "result": "success", 
+        "error": "00000", 
+        "message": "the fueling point was approved successfully", 
+        "UMTI": "{{TransactionId}}", 
+        "transactionStatus": "finalized", 
+        "fuelingPointID": "{{FuelPointId}}", 
+        "merchantID": "0192-7509", 
+        "siteID": 
+            { 
+                "type": "SAP", 
+                "id": "1234" 
+            } 
+    },
+    "paymentInfo": {
+        "cardCircuit": "MCB",
+        "paymentMethod": "credit",
+        "finalAmount": {
+            "value": "1",
+            "currency": null
+        },
+        "hostAuthNumber": "312350",
+        "cardType": "MASTERCARD"
+        },
+    "fuelingInfo": {
+        "fuelProducts": [{
+        "productNo": "{{FuelCode}}",
+        "productName": "{{FuelCode}}",
+        "productCode": "{{FuelCode}}",
+        "fuelPrice": {"value":"{{fuelPrice}}"},
+        "fuelUnitOfMeasurement": "GLL",
+        "gradeAllowed": "true"
+      }],
+        "fuelingPointID": "{{fuelingPointId}}",
+        "fuelAmount": {
+            "value": "{{Amount}}",
+            "currency": null
+        },
+        "quantity": {
+            "value": "{{Quantity}}",
+            "uom": "l"
+        },
+        "serviceLevel": "full",
+        "modeNo": "1"
+        },
+    "receiptInfo": [
+    "WELCOME",
+    "IBERA 2141 CABA",
+    "ORIONTECH S.A.",
+    "CUIT 30-12331129-2",
+    "DATE 09/07/16  12:29",
+    "TRAN# 9030038",
+    "FP# 02",
+    "SERVICE LEVEL: FullServ",
+    "PRODUCT: PLUS",
+    "GALLONS: 0.926",
+    "PRICE/G: $ 2.159",
+    "FUEL SALE  $ 2.00",
+    "THANK YOU",
+    "HAVE A NICE DAY"
+    ]
+}
+```
+
+<b>Definición de Campos:</b> </br>
+<b>result:</b> Corresponde al resultado de la operación. Para este caso, puede ser success o fail</br>
+<b>message:</b>  Descripción del tipo de mensaje.</br>
+<b>timestamp:</b> fecha y hora de la solicitud</br>
+<b>UMTI:</b> Id de la transacción en curso</br>
+<b>FuelingPointId:</b> Posición de carga</br>
+<b>FuelCode:</b> Corresponde al Código de producto despachado</br>
+<b>productName:</b>  Corresponde al nombre de producto despachado</br>
+<b>productCode:</b> Corresponde al Código de producto despachado</br>
+<b>Amount:</b> Es el monto despachado</br>
+<b>Quantity:</b> Es el volumen despachado</br>
+<b>fuelPrice:</b> Es el precio del combustible despachado</br>
+
+<b>Response Body:</b>
+Se obtiene un HTTP Response 200 o 400 dependiendo si se pudo procesar correctamente el request. 
+El Body del response es el siguiente, donde la propiedad error debe contener el valor "ERRCD_OK" el cual indica que la configuración se pudo realizar de forma correcta.
+
+```json
+{
+    "timestamp": "2025-03-21T21:33:23.4991943+00:00",
+    "result": "success",
+    "error": "ERRCD_OK",
+    "message": "Operation completed successfully"
+}
+```
+
