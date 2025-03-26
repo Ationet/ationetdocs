@@ -24,7 +24,20 @@
   - [Dispensers](#Dispensers)
   - [Modes](#Modes)
   - [Country Settings](#country-settings)
-
+- [Mensajería Transaccional](#mensajería-transaccional)
+  - [Flujo Transaccional](#flujo-transaccional)
+  - [Mensajería del Host al SiteSystem](#mensajería-del-host-al-siteSystem)
+    - [Descripción General SSE](#descripción-general-sse)   
+    - [FPReserveRequest](#fpreserveRequest)   
+    - [AuthorizeRequest](#authorizeRequest)    
+    - [FPReserveCancelRequest](#fpreserveCancelRequest)
+  - [Mensajería del SiteSystem al Host](#mensajería-del-SiteSystem-al-Host)
+     - [Descripción General](#descripción-general)
+     - [Reserve Notification](#reserve-notification)
+     - [Transaction Info](#transaction-info)
+     - [Authorization Notification](#authorization-notification)
+     - [Begin Fueling Notification](#begin-fueling-notification)
+     - [Finalize Transaction Notification](#finalize-transaction-notification)
 
 
 ## Introducción
@@ -388,4 +401,108 @@ El Body del response es el siguiente, donde la propiedad error debe contener el 
 ```
 
 
+## Mensajería Transaccional
 
+
+### Flujo Transaccional
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/4e47c24e-3d12-4cfa-9e7d-b6702c0ab355" alt="Diagrama de Secuencia de Operación">
+</div>
+
+
+### Mensajería del Host al SiteSystem
+
+#### Descripción General SSE
+A continuación se detallan todos los mensajes que el SiteSystem podrá recibir mediante el canal SSE (Server-Sent Events), mediante long-lived HTTP connection
+
+#### FPReserveRequest
+
+<b>Output:</b> application/json </br>
+<b>Uso:</b> Mediante este evento el Host le notificará al SiteSystem que debe reservar una posición de carga. 
+<b>Body:</b>
+```json
+{
+  id: FPReserveRequest
+  retry: 1
+  event: FPReserveRequest
+  data: {
+        "eventMessage": "fueling point reserve request event",
+        "timestamp": "2009-11-20T17:30:50",
+        "UMTI": "1af2f8ee-a656-45e6-8e9c-f2659f94be2f",
+        "fuelingPointID": "1"
+        }
+}
+```
+
+<b>Definición de Campos:</b> </br>
+<b>id:</b> Corresponde al tipo de mensaje que el servidor le esta notificando al SiteSystem</br>
+<b>eventMessage:</b>  Descripción del tipo de mensaje.</br>
+<b>timestamp:</b> fecha y hora de la solicitud</br>
+<b>UMTI:</b> Id de la transacción en curso</br>
+<b>fuelingPointID:</b> Posición que se desea reservar</br>
+
+
+#### AuthorizeRequest
+
+<b>Output:</b> application/json </br>
+<b>Uso:</b> Mediante este evento el Host le notificará al SiteSystem que debe authorizar una posición de carga. Para esto el SiteSystem deberá obtener el detalle de la transacción notificada (UMTI) mediante una solicitud GET (Método trxs/{TransactionId}), a fin de obtener el detalle de la transacción y poder determinar el valor de la operación que se debe autorizar. 
+<b>Body:</b>
+```json
+{
+  id: authorizeRequest
+  retry: 1
+  event: authorizeRequest
+  data: {
+        "eventMessage": "authorize request event",
+        "timestamp": "2009-11-20T17:30:50",
+        "UMTI": "1af2f8ee-a656-45e6-8e9c-f2659f94be2f"
+        }
+}
+```
+
+<b>Definición de Campos:</b> </br>
+<b>id:</b> Corresponde al tipo de mensaje que el servidor le esta notificando al SiteSystem</br>
+<b>eventMessage:</b>  Descripción del tipo de mensaje.</br>
+<b>timestamp:</b> fecha y hora de la solicitud</br>
+<b>UMTI:</b> Id de la transacción en curso</br>
+
+
+#### FPReserveCancelRequest
+
+<b>Output:</b> application/json </br>
+<b>Uso:</b> Mediante este evento el Host le notificará al SiteSystem que posterior a la reserva de la posición de carga ocurrió un error y el flujo no puede avanzar. Por tal motivo el SiteSystem deberá liberar la posición de carga que se encontraba reservada.
+<b>Body:</b>
+```json
+{
+  id: FPReserveCancelRequest
+  retry: 1
+  event: FPReserveCancelRequest
+  data: {
+        "eventMessage": "authorize request event",
+        "timestamp": "2009-11-20T17:30:50",
+        "UMTI": "1af2f8ee-a656-45e6-8e9c-f2659f94be2f",
+        "fuelingPointID": "1"
+        }
+}
+```
+
+<b>Definición de Campos:</b> </br>
+<b>id:</b> Corresponde al tipo de mensaje que el servidor le esta notificando al SiteSystem</br>
+<b>eventMessage:</b>  Descripción del tipo de mensaje.</br>
+<b>timestamp:</b> fecha y hora de la solicitud</br>
+<b>UMTI:</b> Id de la transacción en curso</br>
+<b>fuelingPointID:</b> Posición que se desea liberar</br>
+
+
+
+### Mensajería del SiteSystem al Host
+
+#### Descripción General
+Esta mensajería es la que deberá implementar el SiteSystem para actuar en consecuencia a las operaciones que se llevan a cabo en base a los mensajes recibidos en el canal SSE. 
+
+#### Reserve Notification
+#### Transaction Info
+#### Authorization Notification
+#### Begin Fueling Notification
+#### Finalize Transaction Notification
