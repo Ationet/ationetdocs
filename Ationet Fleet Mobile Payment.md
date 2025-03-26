@@ -16,7 +16,7 @@
 ## Contenido ##
 - [Introducción](#Introducción)
 - [Mensajería de Configuración](#MensajeríadeConfiguración)
-  - [Flujo de Inicialización](#flujo-de-inicializacion)
+  - [Flujo de Inicialización](#flujo-de-inicialización)
   - [Connection](#Connection)
   - [Mobile Events](#Mobile_Events)
   - [Site Data](#Site_Data)
