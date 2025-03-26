@@ -16,14 +16,14 @@
 ## Contenido ##
 - [Introducción](#Introducción)
 - [Mensajería de Configuración](#MensajeríadeConfiguración)
-  - [Flujo de Inicialización](#FlujodeInicialización)
-    - [Connection](#Connection)
-    - [Mobile Events](#Mobile_Events)
-    - [Site Data](#Site_Data)
-    - [Products](#Products)
-    - [Dispensers](#Dispensers)
-    - [Modes](#Modes)
-    - [Country Settings](#Country_Settings)
+  - [Flujo de Inicialización](#flujo_de_inicializacion)
+  - [Connection](#Connection)
+  - [Mobile Events](#Mobile_Events)
+  - [Site Data](#Site_Data)
+  - [Products](#Products)
+  - [Dispensers](#Dispensers)
+  - [Modes](#Modes)
+  - [Country Settings](#Country_Settings)
 
 
 
