@@ -154,7 +154,7 @@ El Body del response es el siguiente, donde la propiedad error debe contener el 
 <b>Tipo de Configuración:</b> Obligatoria </br>
 <b>Input:</b> application/json </br>
 <b>Output:</b> application/json </br>
-<b>Uso:</b> Permite configurar en la sesión creada en el MobileEvents, los productos con los cuales operará el sitio. Esto se realiza con el objeto fuelProducts. 
+<b>Uso:</b> Permite configurar en la sesión creada en el MobileEvents, los productos con los cuales operará el sitio. Esto se realiza con el objeto fuelProducts. </br> </br>
 <b>IMPORTANTE: la propiedad fuelPrice que se encuentra dentro del objeto producto que viaja en el array "fuelProducts" es de caracter obligatoria ya que de esta propiedad toma el valor el autorizador de flota para opear</b>
 
 <b>Request Body:</b>
