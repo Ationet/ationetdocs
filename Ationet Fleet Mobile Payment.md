@@ -878,21 +878,21 @@ El Body del response es el siguiente, donde la propiedad error debe contener el 
 
 ## Colección Postman
 
-Link de Descarga
+Link de Descarga </br> </br>
 
-Nota: Para utilizar la colección se debe solicitar a Ationet que envíe y configure:
-URL del ambiente
-Usuario
-Password
-Sitio
+Nota: Para utilizar la colección se debe solicitar a Ationet que envíe y configure: </br>
+URL del ambiente </br>
+Usuario </br>
+Password </br>
+Sitio </br>
 
 
 ## Ejemplo en C#
 
-Link de Descarga
+Link de Descarga </br> </br>
 
-Nota: Para utilizar esta solución se debe solicitar a Ationet que envíe y configure:
-URL del ambiente
-Usuario
-Password
-Sitio
+Nota: Para utilizar esta solución se debe solicitar a Ationet que envíe y configure: </br>
+URL del ambiente </br>
+Usuario </br>
+Password </br>
+Sitio </br>
