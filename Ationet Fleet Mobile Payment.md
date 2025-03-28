@@ -15,6 +15,7 @@
 
 ## Contenido ##
 - [Introducción](#Introducción)
+- [Autenticación](#autenticación)
 - [Mensajería de Configuración](#mensajería-de-configuración)
   - [Flujo de Inicialización](#flujo-de-inicialización)
   - [Connection](#Connection)
@@ -46,6 +47,42 @@
 
 ## Introducción
 Este documento describe la operación para efectuar una transacción con una autorización por medio del autorizador de flota de Ationet a travez de nuestra aplicación móvil.
+
+## Autenticación
+
+Pasos para Configurar la Autenticación Básica
+Codificación de Credenciales:
+
+Combina el nombre de usuario y la contraseña en un solo string, separados por dos puntos (:).
+Codifica este string en Base64.
+Ejemplo:
+
+nombre_de_usuario:contraseña
+
+Codificado en Base64:
+
+bm9tYnJlX2RlX3VzdWFyaW86Y29udHJhc2XDsWE=
+
+
+Agregar el Encabezado de Autorización:
+
+Incluye el string codificado en Base64 en el encabezado de la solicitud HTTP.
+El formato del encabezado es:
+Authorization: Basic <credenciales_codificadas>
+Ejemplo:
+
+Authorization: Basic bm9tYnJlX2RlX3VzdWFyaW86Y29udHJhc2XDsWE=
+Realizar la Solicitud HTTP:
+
+Envía la solicitud HTTP con el encabezado de autorización incluido.
+El servidor decodificará las credenciales y las verificará.
+Ejemplo de Solicitud HTTP
+
+GET /recurso HTTP/1.1
+Host: api.ejemplo.com
+Authorization: Basic bm9tYnJlX2RlX3VzdWFyaW86Y29udHJhc2XDsWE=
+
+
 
 ## Mensajería de Configuración
 
