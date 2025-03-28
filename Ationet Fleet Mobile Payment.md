@@ -878,7 +878,10 @@ El Body del response es el siguiente, donde la propiedad error debe contener el 
 
 ## Colección Postman
 
-Link de Descarga </br>
+[Link de Descarga de Colección](https://github.com/Ationet/ationetdocs/blob/Content/Includes/ANFleetMobilePayment/PrePaid%20-%20Example.postman_collection.json)
+</br>
+[Link de Descarga de Enviroment](https://github.com/Ationet/ationetdocs/blob/Content/Includes/ANFleetMobilePayment/Beta%20-%20MPPAExample.postman_environment.json)
+</br>
 
 Nota: Para utilizar la colección se debe solicitar a Ationet que envíe y configure: </br>
 URL del ambiente </br>
@@ -889,7 +892,8 @@ Sitio </br>
 
 ## Ejemplo en C#
 
-Link de Descarga </br>
+[Link de Descarga]([https://github.com](https://github.com/Ationet/ationetdocs/blob/Content/Includes/ANFleetMobilePayment/AtionetMPPAExample.zip))
+</br>
 
 Nota: Para utilizar esta solución se debe solicitar a Ationet que envíe y configure: </br>
 URL del ambiente </br>
