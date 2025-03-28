@@ -1,0 +1,566 @@
+{
+	"info": {
+		"_postman_id": "5b1d78f6-4815-42a2-9bab-2e9ca0d32615",
+		"name": "PrePaid - Example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14358826"
+	},
+	"item": [
+		{
+			"name": "01 - Connection",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"applicationSender\": \"{{SiteCode}}\",\r\n  \"workstationID\": \"{{SiteCode}}\",\r\n  \"timestamp\": \"2009-11-20T17:30:50\",\r\n  \"interfaceVersion\": \"1.0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}/v{{Version}}/SiteSystem/connection",
+					"host": [
+						"{{FleetMobilePaymentURL}}"
+					],
+					"path": [
+						"v{{Version}}",
+						"SiteSystem",
+						"connection"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02 - MobileEvents",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// var data = JSON.parse(responseBody);\r",
+							"// tests[\"URL: \" + data.url];\r",
+							"// postman.setEnvironmentVariable(\"SiteSessionId\", data.url); \r",
+							"\r",
+							"pm.test(\"response should be okay to process\", function () {\r",
+							"    const responseJson = pm.response.json();\r",
+							"    const URL = responseJson.url;\r",
+							"    const siteId = URL.split('/')[URL.split('/').length - 1];\r",
+							"    postman.setEnvironmentVariable(\"SiteSessionId\", siteId); \r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "ApplicationSender",
+						"value": "{{SiteCode}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}/v{{Version}}/SiteSystem/MobileEvents",
+					"host": [
+						"{{FleetMobilePaymentURL}}"
+					],
+					"path": [
+						"v{{Version}}",
+						"SiteSystem",
+						"MobileEvents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03 - SiteData",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"name\" : \"IFSF/Conexxus Station\",   \r\n     \"siteIDs\" : [\r\n             { \"type\":\"SHIPTO\", \"id\": \"{{SiteCode}}\" } \r\n     ],\r\n     \"addressLines\" : [\r\n       \"Delta 1A, Building L’Aimant\",   \r\n       \"Business Park Ijsseloord 2\"\r\n     ]\r\n   }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}/v{{Version}}/SiteSystem/SSE/{{SiteSessionId}}/siteData",
+					"host": [
+						"{{FleetMobilePaymentURL}}"
+					],
+					"path": [
+						"v{{Version}}",
+						"SiteSystem",
+						"SSE",
+						"{{SiteSessionId}}",
+						"siteData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03 - Products",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"fuelProducts\":[\r\n      {\r\n         \"productNo\":\"1\",\r\n         \"productName\":\"Premium\",\r\n         \"productCode\":\"CODE1\",\r\n         \"prices\":[\r\n            {\r\n               \"fuelUnitPrice\":{\r\n                  \"value\":\"20.00\",\r\n                  \"currency\":\"\"\r\n               },\r\n               \"priceTier\":\"cash\",\r\n               \"modeNo\":\"1\"\r\n            },\r\n            {\r\n               \"fuelUnitPrice\":{\r\n                  \"value\":\"25.00\",\r\n                  \"currency\":\"\"\r\n               },\r\n               \"priceTier\":\"cash\",\r\n               \"modeNo\":\"2\"\r\n            }\r\n         ],\r\n         \"fuelPrice\": {\r\n            \"value\":\"20.00\",\r\n            \"currency\":\"USD\"\r\n         }\r\n      },\r\n      {\r\n         \"productNo\":\"2\",\r\n         \"productName\":\"Diesel\",\r\n         \"productCode\":\"CODE2\",\r\n         \"prices\":[\r\n            {\r\n               \"fuelUnitPrice\":{\r\n                  \"value\":\"30.00\",\r\n                  \"currency\":\"\"\r\n               },\r\n               \"priceTier\":\"cash\",\r\n               \"modeNo\":\"1\"\r\n            },\r\n            {\r\n               \"fuelUnitPrice\":{\r\n                  \"value\":\"35.00\",\r\n                  \"currency\":\"\"\r\n               },\r\n               \"priceTier\":\"cash\",\r\n               \"modeNo\":\"2\"\r\n            }\r\n         ],\r\n         \"fuelPrice\": {\r\n            \"value\":\"10.00\",\r\n            \"currency\":\"USD\"\r\n         }\r\n      }\r\n   ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}/v{{Version}}/SiteSystem/SSE/{{SiteSessionId}}/products",
+					"host": [
+						"{{FleetMobilePaymentURL}}"
+					],
+					"path": [
+						"v{{Version}}",
+						"SiteSystem",
+						"SSE",
+						"{{SiteSessionId}}",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03 - DSPS",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dispensersConfiguration\": [\r\n    {\r\n      \"dispenserID\": \"1\",\r\n      \"fuelingPoints\": [\r\n        {\r\n          \"fuelingPointID\": \"1\",\r\n          \"nozzles\": [\r\n            {\r\n              \"nozzleNo\": \"1\",\r\n              \"productNo\": \"1\",\r\n              \"tankNo1\": \"1\"\r\n            },\r\n            {\r\n              \"nozzleNo\": \"2\",\r\n              \"productNo\": \"2\",\r\n              \"tankNo1\": \"2\"\r\n            },\r\n            {\r\n              \"nozzleNo\": \"3\",\r\n              \"productNo\": \"3\",\r\n              \"tankNo1\": \"3\"\r\n            },\r\n            {\r\n              \"nozzleNo\": \"4\",\r\n              \"productNo\": \"4\",\r\n              \"tankNo1\": \"4\"\r\n            }\r\n          ]\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"dispenserID\": \"2\",\r\n      \"fuelingPoints\": [\r\n        {\r\n          \"fuelingPointID\": \"2\",\r\n          \"nozzles\": [\r\n            {\r\n              \"nozzleNo\": \"1\",\r\n              \"productNo\": \"1\",\r\n              \"tankNo1\": \"1\"\r\n            },\r\n            {\r\n              \"nozzleNo\": \"2\",\r\n              \"productNo\": \"2\",\r\n              \"tankNo1\": \"2\"\r\n            },\r\n            {\r\n              \"nozzleNo\": \"3\",\r\n              \"productNo\": \"3\",\r\n              \"tankNo1\": \"3\"\r\n            },\r\n            {\r\n              \"nozzleNo\": \"4\",\r\n              \"productNo\": \"4\",\r\n              \"tankNo1\": \"4\"\r\n            }\r\n          ]\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}/v{{Version}}/SiteSystem/SSE/{{SiteSessionId}}/dsps",
+					"host": [
+						"{{FleetMobilePaymentURL}}"
+					],
+					"path": [
+						"v{{Version}}",
+						"SiteSystem",
+						"SSE",
+						"{{SiteSessionId}}",
+						"dsps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "04 - SSE",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// var data = JSON.parse(responseBody);\r",
+							"// tests[\"URL: \" + data.url];\r",
+							"// postman.setEnvironmentVariable(\"SiteSessionId\", data.url); \r",
+							"\r",
+							"// pm.test(\"response should be okay to process\", function () {\r",
+							"//     const responseJson = pm.response.json();\r",
+							"//     const URL = responseJson.url;\r",
+							"//     const siteId = URL.split('/')[URL.split('/').length - 1];\r",
+							"//     postman.setEnvironmentVariable(\"SiteSessionId\", siteId); \r",
+							"// });\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/event-stream",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}/v{{Version}}/SiteSystem/SSE/{{SiteSessionId}}",
+					"host": [
+						"{{FleetMobilePaymentURL}}"
+					],
+					"path": [
+						"v{{Version}}",
+						"SiteSystem",
+						"SSE",
+						"{{SiteSessionId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "06 - Reserve Notification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"timestamp\": \"2023-06-02T12:20:50.311Z\",\r\n    \"result\": \"success\",\r\n    \"error\": \"00000\",\r\n    \"message\": \"THE FUELING POINT WAS RESERVED SUCCESSFULLY\",\r\n    \"UMTI\": \"{{TransactionId}}\",\r\n    \"TransactionStatus\": \"PUMPRESERVED\",\r\n    \"FuelingPointId\": \"{{FuelPointId}}\",\r\n    \"MerchantId\": \"0192-7509\",\r\n    \"SiteId\": {\r\n        \"Type\": \"SAP\",\r\n        \"Id\": \"1234\"\r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}/v{{Version}}/SiteSystem/trxs/{{TransactionId}}/FPs/{{PumpNumber}}/reserveNotification",
+					"host": [
+						"{{FleetMobilePaymentURL}}"
+					],
+					"path": [
+						"v{{Version}}",
+						"SiteSystem",
+						"trxs",
+						"{{TransactionId}}",
+						"FPs",
+						"{{PumpNumber}}",
+						"reserveNotification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "06 - Reserve Notification Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"timestamp\": \"2023-06-02T12:20:50.311Z\",\r\n    \"result\": \"success\",\r\n    \"error\": \"00000\",\r\n    \"message\": \"THE FUELING POINT WAS RESERVED SUCCESSFULLY\",\r\n    \"UMTI\": \"{{TransactionId}}\",\r\n    \"TransactionStatus\": \"PUMPRESERVED\",\r\n    \"FuelingPointId\": \"{{FuelPointId}}\",\r\n    \"MerchantId\": \"0192-7509\",\r\n    \"SiteId\": {\r\n        \"Type\": \"SAP\",\r\n        \"Id\": \"1234\"\r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}/v{{Version}}/SiteSystem/trxs/{{TransactionId}}/FPs/{{PumpNumber}}/reserveNotification",
+					"host": [
+						"{{FleetMobilePaymentURL}}"
+					],
+					"path": [
+						"v{{Version}}",
+						"SiteSystem",
+						"trxs",
+						"{{TransactionId}}",
+						"FPs",
+						"{{PumpNumber}}",
+						"reserveNotification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "08 - TransactionInfo (UMTI)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}v{{Version}}/SiteSystem/trxs/{{TransactionId}}",
+					"host": [
+						"{{FleetMobilePaymentURL}}v{{Version}}"
+					],
+					"path": [
+						"SiteSystem",
+						"trxs",
+						"{{TransactionId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "09 - Umti Authorization Notification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"timestamp\": \"2023-06-02T15:36:50.311Z\", \r\n    \"result\": \"success\", \r\n    \"error\": \"00000\", \r\n    \"message\": \"the fueling point was approved successfully\", \r\n    \"UMTI\": \"{{TransactionId}}\", \r\n    \"transactionStatus\": \"authorized\", \r\n    \"fuelingPointID\": \"{{FuelPointId}}\", \r\n    \"merchantID\": \"0192-7509\", \r\n    \"siteID\": \r\n        { \r\n            \"type\": \"SAP\", \r\n            \"id\": \"1234\" \r\n        } \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}/v{{Version}}/SiteSystem/trxs/{{TransactionId}}/authorizationNotification",
+					"host": [
+						"{{FleetMobilePaymentURL}}"
+					],
+					"path": [
+						"v{{Version}}",
+						"SiteSystem",
+						"trxs",
+						"{{TransactionId}}",
+						"authorizationNotification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "09 - Umti Authorization Notification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"timestamp\": \"2023-06-02T15:36:50.311Z\", \r\n    \"result\": \"fail\", \r\n    \"error\": \"00000\", \r\n    \"message\": \"the fueling point was approved successfully\", \r\n    \"UMTI\": \"{{TransactionId}}\", \r\n    \"transactionStatus\": \"authorized\", \r\n    \"fuelingPointID\": \"{{FuelPointId}}\", \r\n    \"merchantID\": \"0192-7509\", \r\n    \"siteID\": \r\n        { \r\n            \"type\": \"SAP\", \r\n            \"id\": \"1234\" \r\n        } \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}/v{{Version}}/SiteSystem/trxs/{{TransactionId}}/authorizationNotification",
+					"host": [
+						"{{FleetMobilePaymentURL}}"
+					],
+					"path": [
+						"v{{Version}}",
+						"SiteSystem",
+						"trxs",
+						"{{TransactionId}}",
+						"authorizationNotification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10 - BeginFuelingNotification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"timestamp\": \"2023-06-02T13:36:50.311Z\",\r\n    \"result\": \"success\",\r\n    \"error\": \"00000\",\r\n    \"message\": \"the fueling point is fueling\",\r\n    \"UMTI\": \"{{TransactionId}}\",\r\n    \"transactionStatus\": \"beginFueling\",\r\n    \"fuelingPointID\": \"{{FuelPointId}}\",\r\n    \"fuelingPointState\": \"FUELING\",\r\n    \"merchantID\": \"0192-7509\",\r\n    \"siteID\": {\r\n        \"type\": \"SAP\",\r\n        \"id\": \"GROC222\"\r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}/v{{Version}}/SiteSystem/trxs/{{TransactionId}}/beginFuelingNotification",
+					"host": [
+						"{{FleetMobilePaymentURL}}"
+					],
+					"path": [
+						"v{{Version}}",
+						"SiteSystem",
+						"trxs",
+						"{{TransactionId}}",
+						"beginFuelingNotification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10 - BeginFuelingNotification Fail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"timestamp\": \"2023-06-02T13:36:50.311Z\",\r\n    \"result\": \"fail\",\r\n    \"error\": \"00000\",\r\n    \"message\": \"the fueling point is fueling\",\r\n    \"UMTI\": \"{{TransactionId}}\",\r\n    \"transactionStatus\": \"beginFueling\",\r\n    \"fuelingPointID\": \"{{FuelPointId}}\",\r\n    \"fuelingPointState\": \"FUELING\",\r\n    \"merchantID\": \"0192-7509\",\r\n    \"siteID\": {\r\n        \"type\": \"SAP\",\r\n        \"id\": \"GROC222\"\r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}v{{Version}}/SiteSystem/trxs/{{TransactionId}}/beginFuelingNotification",
+					"host": [
+						"{{FleetMobilePaymentURL}}v{{Version}}"
+					],
+					"path": [
+						"SiteSystem",
+						"trxs",
+						"{{TransactionId}}",
+						"beginFuelingNotification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11 - FinalizeTransactionNotification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TrxInfo\": { \r\n        \"timestamp\": \"2023-06-02T15:36:50.311Z\", \r\n        \"result\": \"success\", \r\n        \"error\": \"00000\", \r\n        \"message\": \"the fueling point was approved successfully\", \r\n        \"UMTI\": \"{{TransactionId}}\", \r\n        \"transactionStatus\": \"finalized\", \r\n        \"fuelingPointID\": \"{{FuelPointId}}\", \r\n        \"merchantID\": \"0192-7509\", \r\n        \"siteID\": \r\n            { \r\n                \"type\": \"SAP\", \r\n                \"id\": \"1234\" \r\n            } \r\n    },\r\n    \"paymentInfo\": {\r\n        \"cardCircuit\": \"MCB\",\r\n        \"paymentMethod\": \"credit\",\r\n        \"finalAmount\": {\r\n            \"value\": \"1\",\r\n            \"currency\": null\r\n        },\r\n        \"hostAuthNumber\": \"312350\",\r\n        \"cardType\": \"MASTERCARD\"\r\n        },\r\n    \"fuelingInfo\": {\r\n        \"fuelProducts\": [{\r\n        \"productNo\": \"{{FuelCode}}\",\r\n        \"productName\": \"{{FuelCode}}\",\r\n        \"productCode\": \"{{FuelCode}}\",\r\n        \"fuelPrice\": {\"value\":\"2.159\"},\r\n        \"fuelUnitOfMeasurement\": \"GLL\",\r\n        \"gradeAllowed\": \"true\"\r\n      }],\r\n        \"fuelingPointID\": \"{{FuelPointId}}\",\r\n        \"fuelAmount\": {\r\n            \"value\": \"1\",\r\n            \"currency\": null\r\n        },\r\n        \"quantity\": {\r\n            \"value\": \"1\",\r\n            \"uom\": \"l\"\r\n        },\r\n        \"serviceLevel\": \"full\",\r\n        \"modeNo\": \"1\"\r\n        },\r\n    \"receiptInfo\": [\r\n    \"WELCOME\",\r\n    \"IBERA 2141 CABA\",\r\n    \"ORIONTECH S.A.\",\r\n    \"CUIT 30-12331129-2\",\r\n    \"DATE 09/07/16  12:29\",\r\n    \"TRAN# 9030038\",\r\n    \"FP# 02\",\r\n    \"SERVICE LEVEL: FullServ\",\r\n    \"PRODUCT: PLUS\",\r\n    \"GALLONS: 0.926\",\r\n    \"PRICE/G: $ 2.159\",\r\n    \"FUEL SALE  $ 2.00\",\r\n    \"THANK YOU\",\r\n    \"HAVE A NICE DAY\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}/v{{Version}}/SiteSystem/trxs/{{TransactionId}}/finalizeTrxNotification",
+					"host": [
+						"{{FleetMobilePaymentURL}}"
+					],
+					"path": [
+						"v{{Version}}",
+						"SiteSystem",
+						"trxs",
+						"{{TransactionId}}",
+						"finalizeTrxNotification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11 - FinalizeTransactionNotification Fail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TrxInfo\": { \r\n        \"timestamp\": \"2023-06-02T15:36:50.311Z\", \r\n        \"result\": \"fail\", \r\n        \"error\": \"00000\", \r\n        \"message\": \"the fueling point was approved successfully\", \r\n        \"UMTI\": \"{{TransactionId}}\", \r\n        \"transactionStatus\": \"finalized\", \r\n        \"fuelingPointID\": \"{{FuelPointId}}\", \r\n        \"merchantID\": \"0192-7509\", \r\n        \"siteID\": \r\n            { \r\n                \"type\": \"SAP\", \r\n                \"id\": \"1234\" \r\n            } \r\n    },\r\n    \"paymentInfo\": {\r\n        \"cardCircuit\": \"MCB\",\r\n        \"paymentMethod\": \"credit\",\r\n        \"finalAmount\": {\r\n            \"value\": \"1\",\r\n            \"currency\": null\r\n        },\r\n        \"hostAuthNumber\": \"312350\",\r\n        \"cardType\": \"MASTERCARD\"\r\n        },\r\n    \"fuelingInfo\": {\r\n        \"fuelProducts\": [{\r\n        \"productNo\": \"3\",\r\n        \"productName\": \"ULG95\",\r\n        \"fuelPrice\": {\"value\":\"2.159\"},\r\n        \"fuelUnitOfMeasurement\": \"GLL\",\r\n        \"gradeAllowed\": \"true\"\r\n      }],\r\n        \"fuelingPointID\": \"{{TransactionId}}\",\r\n        \"fuelAmount\": {\r\n            \"value\": \"1\",\r\n            \"currency\": null\r\n        },\r\n        \"quantity\": {\r\n            \"value\": \"1\",\r\n            \"uom\": \"l\"\r\n        },\r\n        \"serviceLevel\": \"full\",\r\n        \"modeNo\": \"1\"\r\n        },\r\n    \"receiptInfo\": [\r\n    \"WELCOME\",\r\n    \"IBERA 2141 CABA\",\r\n    \"ORIONTECH S.A.\",\r\n    \"CUIT 30-12331129-2\",\r\n    \"DATE 09/07/16  12:29\",\r\n    \"TRAN# 9030038\",\r\n    \"FP# 02\",\r\n    \"SERVICE LEVEL: FullServ\",\r\n    \"PRODUCT: PLUS\",\r\n    \"GALLONS: 0.926\",\r\n    \"PRICE/G: $ 2.159\",\r\n    \"FUEL SALE  $ 2.00\",\r\n    \"THANK YOU\",\r\n    \"HAVE A NICE DAY\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}v{{Version}}/SiteSystem/trxs/{{TransactionId}}/finalizeTrxNotification",
+					"host": [
+						"{{FleetMobilePaymentURL}}v{{Version}}"
+					],
+					"path": [
+						"SiteSystem",
+						"trxs",
+						"{{TransactionId}}",
+						"finalizeTrxNotification"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "{{Password}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{Username}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
