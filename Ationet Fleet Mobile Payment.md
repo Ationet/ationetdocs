@@ -878,7 +878,7 @@ El Body del response es el siguiente, donde la propiedad error debe contener el 
 
 ## Colección Postman
 
-Link de Descarga </br> </br>
+Link de Descarga </br>
 
 Nota: Para utilizar la colección se debe solicitar a Ationet que envíe y configure: </br>
 URL del ambiente </br>
@@ -889,7 +889,7 @@ Sitio </br>
 
 ## Ejemplo en C#
 
-Link de Descarga </br> </br>
+Link de Descarga </br>
 
 Nota: Para utilizar esta solución se debe solicitar a Ationet que envíe y configure: </br>
 URL del ambiente </br>
