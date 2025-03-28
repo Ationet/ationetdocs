@@ -39,6 +39,9 @@
      - [Authorization Notification](#authorization-notification)
      - [Begin Fueling Notification](#begin-fueling-notification)
      - [Finalize Transaction Notification](#finalize-transaction-notification)
+- [Colección Postman](#colección-postman)
+- [Ejemplo en C#](#ejemplo-en-C#)
+
 
 
 ## Introducción
@@ -871,3 +874,25 @@ El Body del response es el siguiente, donde la propiedad error debe contener el 
 }
 ```
 
+
+
+## Colección Postman
+
+Link de Descarga
+
+Nota: Para utilizar la colección se debe solicitar a Ationet que envíe y configure:
+URL del ambiente
+Usuario
+Password
+Sitio
+
+
+## Ejemplo en C#
+
+Link de Descarga
+
+Nota: Para utilizar esta solución se debe solicitar a Ationet que envíe y configure:
+URL del ambiente
+Usuario
+Password
+Sitio
