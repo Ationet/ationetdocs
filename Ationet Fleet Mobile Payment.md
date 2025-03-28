@@ -892,7 +892,7 @@ Sitio </br>
 
 ## Ejemplo en C#
 
-[Link de Descarga]([https://github.com](https://github.com/Ationet/ationetdocs/blob/Content/Includes/ANFleetMobilePayment/AtionetMPPAExample.zip))
+[Link de Descarga](https://github.com/Ationet/ationetdocs/blob/Content/Includes/ANFleetMobilePayment/AtionetMPPAExample.zip)
 </br>
 
 Nota: Para utilizar esta solución se debe solicitar a Ationet que envíe y configure: </br>
