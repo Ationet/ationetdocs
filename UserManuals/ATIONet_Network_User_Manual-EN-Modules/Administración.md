@@ -557,18 +557,21 @@ En esta sección puede ver todos los precios de distribución generados. Estos p
 ![Precios de distribucion](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Precios%20de%20distribucion.PNG)
 1. **_Nuevo Precio de distribución_**
 ![Precios de distribucion informacion](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Precios%20de%20distribucion%20informacion.PNG)
+
 - **_Nombre:_** Introduzca un nombre para identificar el precio
 - **_Código:_** Introduzca un código para identificar el precio
 - **_Moneda:_** Introduzca la moneda de cambio deseada
 - **_Tipo de agrupamiento:_** Esta opción habilita la posibilidad de configurar también el combustible por **zonas** (estas se crean en el apartado de Administración>Zonas).
 
 2. **_Precios por combustible:_**
+
 ![Precios de distribucion Combustible](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Precios%20de%20distribucion%20Combustible.PNG)
 - **_Combustible:_** Introduzca los combustibles para los cuales se aplicarán dichos precios
 - **_Valor:_** Introduzca el valor de los precios
 - **_Fecha y Hora:_** Introduzca la fecha y hora desde la que se comenzara a aplicar dicho precio. (Es opcional configurar una fecha y hora para la cual se deje de aplicar dicho precio)
 
 3. **_Precios por combustible y sitio:_**
+
 ![Precios de distribucion Combustible y Sitio](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Precios%20de%20distribucion%20Combustible%20y%20Sitio.PNG)
 - **_Combustible:_** Introduzca los combustibles para los cuales se aplicarán dichos precios
 - **_Valor:_** Introduzca el valor de los precios
