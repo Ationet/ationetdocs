@@ -23,6 +23,7 @@
   - [Modelos de Identificadores](#modelos-de-identificadores)
   - [Notificaciones](#notificaciones)
   - [Precios de Distribución](#precios-de-distribución)
+  - [Procesos de renovacion de Identificadores](#Procesos-de-renovacion-de-Identificadores)
   - [Proveedores de Identificadores](#proveedores-de-identificadores)
   - [Sitios](#sitios)
   - [SKUs](#skus)
@@ -580,24 +581,26 @@ En esta sección puede ver todos los precios de distribución generados. Estos p
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
+## Procesos de renovacion de Identificadores
+
+![Proceso de renovacion de identificadores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Proceso%20de%20renovacion%20de%20identificadores.PNG)
+
+- **_Lanzar Proceso:_** Al confirmar este proceso se procederán a renovar identificadores ya existentes de manera masiva.
+
 ## Proveedores de Identificadores
 En este apartado podrá consultar y crear cualquier proveedor que desee para enviar sus identificadores a producción. Para facilitar las consultas, hay un panel de filtros en la parte superior.
-
-![Proveedores de identificaciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Proveedores%20de%20Identificadores.PNG)
-
 Para crear un proveedor, haga click en el botón **Nuevo**.
 
-![Proveedores de identificación nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Proveedores%20de%20Identificadores%20Nuevo.PNG)
+![Proveedores de Identificadores]([https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Proveedores%20de%20Identificadores.PNG])
 
-Los campos a completar son los siguientes:
+Los campos por completar son los siguientes:
 
-* **Nombre:** Introduzca el nombre del proveedor.
-* **Correo electrónico:** Introduzca el correo electrónico de contacto del proveedor.
-* **Plantilla de correo electrónico:** Introduzca el cuerpo del correo electrónico que desea enviar a su proveedor.
-
-<br>
-
-* **Configuración del archivo para la exportación:** Seleccione el formato en el que desea enviar la información de los identificadores a su proveedor. Puede enviarlo como Excel, CSV o Texto. También puede seleccionar qué información enviar en el archivo (Nombre, Apellido, Número de tarjeta, Número de track, etc.).
+- **Nombre:** Introduzca el nombre correspondiente al proveedor.
+- **Correo electrónico:** Introduzca el correo electrónico de contacto del proveedor.
+- **Plantilla de correo electrónico:** Introduzca el cuerpo del correo electrónico que desea enviar a su proveedor.
+- **Etiqueta de entrega:** Este campo es opcional. Al marcarlo como activo, aparecerá una opción para cargar un archivo el cual será usado como plantilla.
+- **Notificar agrupado:** Al marcar este campo como activo, se anexara al principio del cuerpo del mail un resumen de las configuraciones de agrupados que se ejecutaron en el proceso del planificador de identificadores.
+- **Configuración del archivo para la exportación:** Seleccione el formato en el que desea enviar la información de los identificadores a su proveedor. Puede enviarlo como Excel, CSV o Texto. También puede seleccionar qué información enviar en el archivo (Nombre, Apellido, Número de tarjeta, Número de track, etc.).
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
