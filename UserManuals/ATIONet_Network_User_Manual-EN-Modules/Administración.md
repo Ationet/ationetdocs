@@ -582,7 +582,7 @@ En esta sección puede ver todos los precios de distribución generados. Estos p
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 ## Procesos de renovacion de Identificadores
-
+En este apartado se pueden visualizar y realizar la renovación de identificadores. En la opción de filtros, se puede filtrar por los estados de ejecución, estados de proceso y los horarios correspondientes en los que se ejecutó el proceso.
 ![Proceso de renovacion de identificadores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Proceso%20de%20renovacion%20de%20identificadores.PNG)
 
 - **_Lanzar Proceso:_** Al confirmar este proceso se procederán a renovar identificadores ya existentes de manera masiva.
@@ -591,7 +591,7 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 En este apartado podrá consultar y crear cualquier proveedor que desee para enviar sus identificadores a producción. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 Para crear un proveedor, haga click en el botón **Nuevo**.
 
-![Proveedores de Identificadores]([https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Proveedores%20de%20Identificadores.PNG])
+![Proveedores de Identificadores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Proveedores%20de%20Identificadores.PNG)
 
 Los campos por completar son los siguientes:
 
