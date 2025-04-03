@@ -645,7 +645,8 @@ Los campos a completar son los siguientes:
 - **Notificación de inventario bajo:** Introduzca la cantidad de inventario bajo. Cuando se alcance, los contactos en **correos electrónicos del destinatario** recibirán una notificación.
 - **Alerta de notificación de volumen de agua:** Introduzca el volumen de agua bajo. Cuando se alcance, los contactos en **los correos electrónicos de los destinatarios** recibirán una notificación.
 
-**Servicios** 
+**Servicios**
+
 ![Sitios servicios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Sitios%20servicios.PNG)
 Seleccione un Sitio para dar de alta. Tras esto, se asignará la lista de servicios que dicho sitio posee y se eliminara el actual. Por su parte, en la pestaña de “Servicios” se puede seleccionar uno de los servicios habilitados para dicho sitio.
 
