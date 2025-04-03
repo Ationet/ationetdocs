@@ -605,48 +605,49 @@ Los campos por completar son los siguientes:
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 ## Sitios
-En ATIONET el sitio representa la estación de servicio. Esta sección muestra los sitios ya creados, editarlos y también crear nuevos. También puede añadir impuestos a los sitios directamente desde la columna **Opciones**. Para facilitar las consultas, hay un panel de filtros en la parte superior.
+En ATIONET el sitio representa la estación de servicio. Esta sección muestra los sitios ya creados, así como la posibilidad para editarlos y también crear nuevos. A su vez, se pueden añadir impuestos a los sitios directamente desde la columna Opciones. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Sitios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Sitios.PNG)
+![Sitios Menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Sitios%20Menu.PNG)
 
 Para crear un sitio, haga clic en el botón **Nuevo**.
 
-![Sitios nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Sitios%20Nuevo.PNG)
+![Sitios Info](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Sitios%20Info.PNG)
 
 Los campos a completar son los siguientes:
-
 **Información**
 
-* **Comercio:** Seleccione el comercio asociado al sitio.
-* **Código:** Introduzca el código único asociado al sitio.
-* **Zona:** Seleccione la zona asociada al sitio.
-* **Generado automáticamente:** Marque esta opción para que el **código** se genere automáticamente.
-* **Bandera:** Seleccione la bandera asociada al sitio.
-* **Idioma:** Seleccione el idioma asociado al sitio.
-* **Nombre corto:** Introduzca el nombre corto del sitio.
-* **Nombre completo:** Introduzca el nombre completo del sitio.
-* **Calle 1:** Introduzca la calle principal del sitio.
-* **Calle 2:** Introduzca la calle secundaria del sitio.
-* **Industria:** Seleccione la industria asociada al sitio.
-* **Zona horaria:** Seleccione la zona horaria asociada al sitio.
-* **Código postal:** Introduzca el código postal del sitio.
-* **Ciudad:** Introduzca la ciudad del sitio.
-* **País:** Introduzca el país del sitio.
-* **Estado:** Introduzca el estado del sitio.
-* **Número de teléfono 1:** Introduzca el número de teléfono principal del sitio.
-* **Número de teléfono 2:** Introduzca el número de teléfono secundario del sitio.
-* **Requiere mapeo de combustible:** Marque esta opción si es necesario configurar códigos de combustible específicos para el sitio (sino, se utilizará [ATIONet Master Fuel Codes](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/C%C3%B3digos%20Maestros%20de%20Combustible.PNG)).
-* **Emails de los destinatarios:** Introduzca las direcciones de correo electrónico asociadas al sitio (recibirán los estados de cuenta del sitio).
-* **Latitud:** Introduzca la latitud del sitio.
-* **Longitud:** Introduzca la longitud del sitio.
-* **Moneda:** Seleccione la moneda asociada al sitio.
-
-<br>
+- **Comercio:** Seleccione el comercio asociado al sitio.
+- **Código:** Introduzca un código alfanumérico (cuyo limite son 50 caracteres) el cual estará asociado al sitio.
+- **Zona:** Seleccione la zona asociada al sitio.
+- **Generado automáticamente:** Marque esta opción para que el **código** se genere automáticamente.
+- **Bandera:** Seleccione la bandera asociada al sitio.
+- **Idioma:** Seleccione el idioma asociado al sitio.
+- **Nombre corto:** Introduzca el nombre corto del sitio.
+- **Nombre completo:** Introduzca el nombre completo del sitio.
+- **Calle 1:** Introduzca la calle principal del sitio.
+- **Calle 2:** Introduzca la calle secundaria del sitio.
+- **Industria:** Seleccione la industria asociada al sitio.
+- **Zona horaria:** Seleccione la zona horaria correspondiente al sitio.
+- **Código postal:** Introduzca el código postal del sitio.
+- **Ciudad:** Introduzca la ciudad del sitio.
+- **País:** Introduzca el país del sitio.
+- **Estado:** Introduzca el estado del sitio.
+- **Número de teléfono 1:** Introduzca el número de teléfono principal del sitio.
+- **Número de teléfono 2:** Introduzca el número de teléfono secundario del sitio.
+- **Requiere mapeo de combustible:** Marque esta opción si es necesario configurar códigos de combustible específicos para el sitio (sino, se utilizará [ATIONet Master Fuel Codes](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/C%C3%B3digos%20Maestros%20de%20Combustible.PNG)).
+- **Emails de los destinatarios:** Introduzca las direcciones de correo electrónico asociadas al sitio (recibirán los estados de cuenta del sitio).
+- **Latitud:** Introduzca la latitud del sitio.
+- **Longitud:** Introduzca la longitud del sitio.
+- **Moneda:** Seleccione la moneda asociada al sitio.
 
 **Notificación - Regla de Alerta**
 
-* **Notificación de inventario bajo:** Introduzca la cantidad de inventario bajo. Cuando se alcance, los contactos en **correos electrónicos del destinatario** recibirán una notificación.
-* **Alerta de notificación de volumen de agua:** Introduzca el volumen de agua bajo. Cuando se alcance, los contactos en **los correos electrónicos de los destinatarios** recibirán una notificación.
+- **Notificación de inventario bajo:** Introduzca la cantidad de inventario bajo. Cuando se alcance, los contactos en **correos electrónicos del destinatario** recibirán una notificación.
+- **Alerta de notificación de volumen de agua:** Introduzca el volumen de agua bajo. Cuando se alcance, los contactos en **los correos electrónicos de los destinatarios** recibirán una notificación.
+
+**Servicios** 
+![Sitios servicios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Sitios%20servicios.PNG)
+Seleccione un Sitio para dar de alta. Tras esto, se asignará la lista de servicios que dicho sitio posee y se eliminara el actual. Por su parte, en la pestaña de “Servicios” se puede seleccionar uno de los servicios habilitados para dicho sitio.
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
