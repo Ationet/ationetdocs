@@ -648,6 +648,7 @@ Los campos a completar son los siguientes:
 **Servicios**
 
 ![Sitios servicios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Sitios%20servicios.PNG)
+
 Seleccione un Sitio para dar de alta. Tras esto, se asignará la lista de servicios que dicho sitio posee y se eliminara el actual. Por su parte, en la pestaña de “Servicios” se puede seleccionar uno de los servicios habilitados para dicho sitio.
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
