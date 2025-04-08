@@ -706,38 +706,34 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Terminales / Controladores
 Dentro de esta sección puede ver, crear y editar todos los terminales/controladores. El terminal es el punto de venta del sitio y el controlador gestiona los surtidores. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Terminales](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Terminales%20-%20Controladores.PNG)
+![Terminal y Controladores menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Terminal%20y%20Controladores%20menu.PNG)
 
 Para crear un Terminal/Controlador, haga clic en el botón **Nuevo**.
 
-![Terminales nuevos](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Terminales%20-%20Controladores%20Nuevo.PNG)
+![Terminal y Controladores Info](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Terminal%20y%20Controladores%20Info.PNG)
 
 Los campos a completar son los siguientes:
 
-* **Comercio:** Seleccione el comercio asociado al terminal/controlador.
-* **Sitio:** Seleccione el sitio asociado al terminal/controlador.
-* **Activo:** Marque la casilla para activar/desactivar el terminal/controlador.
-* **Tipo de terminal/controlador:** Seleccione el tipo de terminal/controlador (ATIO-ControlGas, ATIO-NanoCPI, ATIO StandAlone, VF-Commander, etc.).
-* **Modelo:** Seleccione el modelo de terminal/controlador.
-* **Código:** Introduzca el código del terminal/controlador (ATIONET genera uno automáticamente, pero puede editarlo. Excepto los 3 primeros caracteres, ya que representan el código de suscripción a la red).
-* **Descripción:** Introduzca la descripción del terminal/controlador.
-* **Solo Pre Autorizaciones Asistidas:** Marque la casilla para activar que la terminal este habilitada para realizar preautorizaciones asistidas.
-* **Lector de TAGs presente:** Marque esta opción si el terminal es capaz de leer TAGs.
-* **Uso del Id. del Conductor:** Seleccione la acción que ATIONet tomará asociada al Id. del Conductor de las transacciones (Ninguna, Track Secundaria o Validación de Código).
-* **Uso de la Identificación del Vehículo:** Seleccione la acción que ATIONet tomará asociada al Id. del Vehículo de las transacciones (Ninguna, Track Secundaria o Validación de Código).
-* **Corte de Volumen Máximo:** Introduzca el volumen máximo que el terminal/controlador autorizará.
-* **Corte de Importe Máximo:** Introduzca el importe máximo que autorizará el terminal/controlador.
-* **Sistema operativo:** Introduzca el sistema operativo del terminal/controlador.
-* **Número de serie:** Introduzca el número de serie del terminal/controlador.
-
-</br>
-
+- **Comercio:** Seleccione el comercio asociado al terminal/controlador.
+- **Sitio:** Seleccione el sitio asociado al terminal/controlador.
+- **Activo:** Marque la casilla para activar/desactivar el terminal/controlador.
+- **Tipo de terminal/controlador:** Seleccione el tipo de terminal/controlador (ATIO-ControlGas, ATIO-NanoCPI, ATIO StandAlone, VF-Commander, etc.).
+- **Modelo:** Seleccione el modelo de terminal/controlador.
+- **Código:** Introduzca el código del terminal/controlador, el cual puede ser un código alfanumérico de hasta 50 caracteres
+- (ATIONET genera uno automáticamente, pero puede editarlo. Excepto los 3 primeros caracteres, ya que representan el código de suscripción a la red).
+- **Descripción:** Introduzca una descripción correspondiente al terminal/controlador.
+- **Solo Pre Autorizaciones Asistidas:** Marque la casilla para activar que la terminal este habilitada para realizar preautorizaciones asistidas.
+- **Lector de TAGs presente:** Marque esta opción si el terminal es capaz de leer TAGs.
+- **Uso del Id. del Conductor:** Seleccione la acción que ATIONet tomará asociada al Id. del Conductor de las transacciones (Ninguna, Track Secundaria o Validación de Código).
+- **Uso de la Identificación del Vehículo:** Seleccione la acción que ATIONet tomará asociada al Id. del Vehículo de las transacciones (Ninguna, Track Secundaria o Validación de Código).
+- **Corte de Volumen Máximo:** Introduzca el volumen máximo que el terminal/controlador autorizará.
+- **Corte de Importe Máximo:** Introduzca el importe máximo que autorizará el terminal/controlador.
+- **Sistema operativo:** Introduzca el sistema operativo del terminal/controlador.
+- **Número de serie:** Introduzca el número de serie del terminal/controlador.
+- **Encriptación de Track:** Al introducir un valor, la terminal será capaz de reconocer un track encriptado y el mismo será reconocido por ATIONET como un valor si existe. (IMPORTANTE: Para que dicha lectura aplique el modelo de identificador deberá ser configurado con la propiedad correspondiente)
 **Configuración**
 
 En esta sección se puede indicar que la terminal operará en el modo fuera línea (con el Local Agent) con la misma configuración que posee estando en línea. Campos a completar: Mensaje, Nombre de la Propiedad, Configuración Factor, Configuración Modificador, Tipo de transacción.
-
-![Terminales configuración](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Terminales%20-%20Controladores%20Nuevo%20-%20Configuracion.PNG)
-
 
 Cuando haya terminado de rellenar los campos, presione el botón **Alta** en caso de completar la configuración, y para finalizar **Guardar**.
 
