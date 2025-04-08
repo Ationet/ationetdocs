@@ -658,49 +658,45 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## SKUs
 Las Unidades de Mantenimiento de Stock (SKUs - Stock Keeping Units) son productos no combustibles. En esta sección puede consultar los SKUs creados, editarlos y también crear nuevos. Para facilitar las consultas, hay un panel de filtros en la parte superior. 
 
-![SKUs](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/SKUs.PNG)
+![SKU menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/SKUs.PNG)
 
 Para crear un SKU, haga clic en el botón **Nuevo**.
 
-![SKUs Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/SKUs%20Nuevo.PNG)
+![SKU info](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/SKU%20info.PNG)
 
-Los campos a completar son los siguientes:
+**Los campos a completar son los siguientes:**
 
-* **Código:** El código del SKU.
-* **Descripción:** La descripción del SKU.
-* **Descripción corta:** Una breve descripción del SKU.
-* **Descripción Extra Corta:** Una descripción muy corta del SKU.
-* **Tipo de producto de la SKU:** Seleccione el tipo de producto.
-* **Producto combustible:** Marque esta opción si el SKU es un producto de combustible.
-* **Categoría SKU:** Introduzca la categoría a la que pertenece el SKU.
-* **Unidad de medida:** Introduzca la unidad en la que se mide el SKU.
-* **Vendible:** Marque esta opción si el SKU es vendible.
-* **Pesable:** Marque esta opción si el SKU es pesable.
-* **Fraccionable:** Marque esta opción si el SKU es fraccionable.
-* **Almacenable:** Marque esta opción si el SKU es almacenable.
-* **Consignación:** Marque esta opción si el SKU está en consignación.
-* **Disponibilidad Desde/Hasta:** Seleccione las fechas entre las que está disponible el SKU.
-* **Es POS:** Marque esta opción si el SKU se vende en el punto de venta.
-* **Flota seca:** Marque esta opción si el SKU es un producto seco.
-* **Recompensa:** Marque esta opción si el SKU puede ser canjeado por puntos de recompensa.
-* **Servicio:** Marque esta opción si el SKU es un servicio.
-* **Fidelidad:** Marque esta opción si el SKU acumula puntos.
+- **Código:** Introduzca un código alfanumérico (cuya capacidad máxima es de 20 caracteres) para el SKU.
+- **Descripción:** La descripción del SKU.
+- **Descripción corta:** Una versión acortada de la descripción del SKU.
+- **Descripción Extra Corta:** Una descripción aún más acortada del del SKU.
+- **Tipo de producto de la SKU:** Seleccione el tipo de producto.
+- **Producto combustible:** Marque esta opción si el SKU es un producto de combustible.
+- **Categoría SKU:** Introduzca la categoría a la que pertenece el SKU.
+- **Unidad de medida:** Introduzca la unidad en la que se mide el SKU (Litros, Metro cubico, galones, etc.)
+- **Valor referencial por unidad:** Indique el valor y moneda por unidad del producto.
+- **Vendible:** Marque esta opción si el SKU es vendible.
+- **Pesable:** Marque esta opción si el SKU es pesable.
+- **Fraccionable:** Marque esta opción si el SKU es fraccionable.
+- **Almacenable:** Marque esta opción si el SKU es almacenable.
+- **Consignación:** Marque esta opción si el SKU está en consignación.
+- **Disponibilidad Desde/Hasta:** Seleccione las fechas entre las que está disponible el SKU.
+- **Es POS:** Marque esta opción si el SKU se vende en el punto de venta.
+- **Flota seca:** Marque esta opción si el SKU es un producto seco.
+- **Recompensa:** Marque esta opción si el SKU puede ser canjeado por puntos de recompensa.
+- **Servicio:** Marque esta opción si el SKU es un servicio.
+- **Fidelidad:** Marque esta opción si el SKU acumula puntos.
 
-Precio:
+**Artículos:**
 
-* **Sitio:** Seleccione el sitio en el que cargará el precio del SKU.
-* **Fecha desde:** Seleccione la fecha de inicio del SKU.
-* **Precio:** Indique el precio del SKU.
-* **Moneda:** Seleccione la moneda en la que se cotiza el SKU.
+![SKU items e impuestos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/SKU%20items%20e%20impuestos.PNG)
 
-Artículos:
-
-* **Formato del código del POS:** Seleccione el formato del código del punto de venta.
-* **Código del POS:** Introduzca un código de punto de venta.
+- **Formato del código del POS:** Seleccione el formato del código del punto de venta.
+- **Código del POS:** Introduzca un código de punto de venta.
 
 Cuando haya terminado de rellenar estos dos campos, presione el botón **Añadir**.
 
-* **Impuestos:** Introduzca el código de impuestos del SKU.
+- **Impuestos:** Introduzca el código de impuestos del SKU.
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
