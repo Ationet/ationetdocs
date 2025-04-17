@@ -1,6 +1,6 @@
 ![ationetlogo](Content/Images/ATIOnetLogo_250x70.png) 
 
-# ATIONet Technical Documentation
+# ATIONET Technical Documentation
 
 ## Local Agent Installation Guide
 - [English](https://github.com/Ationet/ationetdocs/blob/master/Local%20Agent%20Installation%20Guide-EN.md)
