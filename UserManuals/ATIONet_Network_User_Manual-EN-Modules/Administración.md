@@ -710,7 +710,7 @@ Dentro de esta sección puede ver, crear y editar todos los terminales/controlad
 
 Para crear un Terminal/Controlador, haga clic en el botón **Nuevo**.
 
-![Terminal y Controladores Info](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Terminal%20y%20Controladores%20Info.PNG)
+ ![Terminal y Controladores Info](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Terminal%20y%20Controladores%20Info.PNG)
 
 Los campos a completar son los siguientes:
 
