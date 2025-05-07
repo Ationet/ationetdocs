@@ -60,7 +60,9 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Categorías de SKUs
 En esta sección puede consultar las categorías de SKUs (Stock Keeping Units) ya creadas, editarlas o crear nuevas. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
+
 ![Categorías de SKUs](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Categorias%20SKU.PNG)
+
 
 Para crear una categoría SKU, haga clic en el botón **Nuevo**.
 
