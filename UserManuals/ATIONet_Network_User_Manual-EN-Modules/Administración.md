@@ -31,6 +31,7 @@
   - [Usuarios](#usuarios)
   - [Vales](#vales)
   - [Vehículos](#vehículo)
+  - [Workflow de Aprovaciones](#Workflow-de-Aprovaciones)
   - [Zonas](#zonas)
 
 # Administración
@@ -732,9 +733,11 @@ Los campos a completar son los siguientes:
 - **Sistema operativo:** Introduzca el sistema operativo del terminal/controlador.
 - **Número de serie:** Introduzca el número de serie del terminal/controlador.
 - **Encriptación de Track:** Al introducir un valor, la terminal será capaz de reconocer un track encriptado y el mismo será reconocido por ATIONET como un valor si existe. (IMPORTANTE: Para que dicha lectura aplique el modelo de identificador deberá ser configurado con la propiedad correspondiente)
+
 **Configuración**
 
-En esta sección se puede indicar que la terminal operará en el modo fuera línea (con el Local Agent) con la misma configuración que posee estando en línea. Campos a completar: Mensaje, Nombre de la Propiedad, Configuración Factor, Configuración Modificador, Tipo de transacción.
+En esta sección se puede indicar que la terminal operará en el modo fuera línea (con el Local Agent) con la misma configuración que posee estando en línea. 
+Campos a completar: Mensaje, Nombre de la Propiedad, Configuración Factor, Configuración Modificador, Tipo de transacción.
 
 Cuando haya terminado de rellenar los campos, presione el botón **Alta** en caso de completar la configuración, y para finalizar **Guardar**.
 
@@ -783,7 +786,12 @@ En la columna **Opciones** puede:
 
 * **Asignar Identificadores:** Asignar/desasignar identificadores al vehículo.  
 * **Renovación de Identificadores:** Renovar los identificadores asociados al vehículo.
+* **Hoja de Servicio:** Establezca el servicio realizado por el vehiculo correspondiente
 * **Favoritos:** Añadir el vehículo al módulo de **favoritos**.
+
+## Workflow de Aprovaciones
+
+En este apartado se pueden visualizar las contingencias pendientes de Aprovacion de la seccion de fidelidad.
 
 ## Zonas
 En esta sección puede crear/editar zonas. Las zonas son áreas a las que se asocian varios sitios. Generalmente un TM (Territory Manager) está asociado a una(s) zona(s) específica(s). Para facilitar las consultas, hay un panel de filtros en la parte superior.
