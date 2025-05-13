@@ -469,14 +469,14 @@ En esta sección cada usuario puede seleccionar sus propias notificaciones para 
 
 1. **_Inventario_**
 
- ![Notificaciones (Inventario)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(Inventario).PNG)
+![Notificaciones (Inventario)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(Inventario).PNG)
 - **Notificación de nueva entrega:** Recibe una notificación por cada entrega detectada.
 - **Notificación de inventario bajo:** Recibe una notificación cuando el inventario es bajo.
 - **Alerta de notificación de volumen de agua:** Recibe una notificación cuando el agua está baja.
 
 2. **_Contrato_**
 
- ![Notificaciones (contrato)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(contrato).PNG)
+![Notificaciones (contrato)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(contrato).PNG)
 - **Notificación de saldo de contrato bajo:** Recibe una notificación cuando el saldo de un contrato es bajo.
 - **Notificación de saldo de contrato vacío:** Recibe una notificación cuando un contrato no tiene saldo.
 - **Notificación de porcentaje de crédito:** Recibe una notificación cuando se alcanza un porcentaje de crédito (haga click en el lápiz para configurar el porcentaje).
@@ -485,26 +485,26 @@ En esta sección cada usuario puede seleccionar sus propias notificaciones para 
 
 3. **_Identificadores_**
 
-   ![Notificaciones (Identificacion)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(Identificacion).PNG)
+![Notificaciones (Identificacion)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(Identificacion).PNG)
 - **Notificación de Identificadores en riesgo de caducidad:** Recibe una notificación cuando un identificador está a punto de caducar.
 
 4. **_Fidelidad_**
 
- ![Notificaciones (fidelidad)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(fidelidad).PNG)
+![Notificaciones (fidelidad)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(fidelidad).PNG)
 - **Notificación de nueva cuenta de fidelidad:** Recibe una notificación cuando se detecta un nuevo programa de fidelidad.
 - **Notificación de acumulación de puntos de fidelidad:** Recibe una notificación cuando se detecta una acumulación.
 - **Notificación de excepciones de fidelidad:** Recibe una notificación cuando se detecta una excepción.
 
 5. **_Liquidación_**
 
-   ![Notificaciones (liquidaciones)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(liquidaciones).PNG)
+![Notificaciones (liquidaciones)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(liquidaciones).PNG)
 - **Notificación de proceso de liquidación:** Recibe una notificación cuando se detecta un proceso de liquidación.
 - **Cargos del comercio:** Recibe una notificación cuando se detectan cargos del comercio.
 - **Cargos externos:** Recibe una notificación cuando se detectan cargos externos.
 
 6. **_Transacciones_**
 
- ![Notificaciones (transacciones)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(transacciones).PNG)
+![Notificaciones (transacciones)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Notificaciones%20(transacciones).PNG)
 - **Notificación de nuevas transacciones de contingencia:** Recibe una notificación cuando se detecta una nueva contingencia.
 - **Notificación de transacción a revisar:** Recibe una notificación cuando se detectó una excepción marcada para ser revisada.
 - **Excepción de salida de combustible:** Recibe una notificación cuando se detectó una excepción de salida de combustible.
