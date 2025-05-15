@@ -187,7 +187,8 @@ When you have finished filling in the fields, click the **Save** button.
 ## Identifications
 The identification is the physical means used by ATIONet to identify a vehicle or driver. ATIONet supports various types of identification, such as card, TAG, chip, ATIONet card, manual entry, barcode and iButton. When an identification is associated to a Vehicle or Driver, a sub-account is created.
 
-In this section the identification already created will be listed. In the options column you can edit the identification, enable or disable it and release it. To make queries easier, there is a panel of filters at the top.
+In this section the identification already created will be listed. In the options column you can edit the identification, enable or disable it and release it. To facilitate queries, there is a panel of filters at the top.
+
 
 ![Identifications](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identifications.PNG)
 
@@ -198,14 +199,15 @@ To create an identification, click the **New** button.
 The fields to complete are the following:
 
 * **Type:** Can be Card, TAG, Chipkey, Manual Entry, ATIOnet Card or ATIOnet TAG.
-* **Model:** The model of the type of identification selected in **Type**.
-* **Type of use:** Can be fleet, loyalty or dual.
-* **Program:** The program to which this identification will be assigned.
-* **Loyalty program:** The loyalty program to which this identifier will be assigned.
+* **Model:** The model of the type of identification selected in Type.
+* **Type of use:** This is divided between fleet, loyalty or dual.
+* **Program:** The program to which this identification will be assigned in case you have chosen "Type of use: fleet/dual".
+* **Community:** The community to which this identification will be assigned in case you have chosen "Type of use: Loyalty/dual".
 * **Label:** The name on the card (for example Pablo Pérez)
 * **Track:** The track is the information that has the identification engraved inside it. It is divided into three parts. In this field you can edit what the second field of the track contains.
-* **PAN:** A number between 1 and 19 characters found in the identification. 
-* **PIN:** The PIN of the identification (this option will only be available if the identification model has the **PIN** option enabled.
+* **PAN:** A number between 1 and 19 characters found in the identification.
+* **Automatically Generated:** By checking this option, the label, track and PAN fields will be generated automatically.
+* **PIN:** The PIN of the identification (this option will only be available if the identification model has the PIN option enabled).
 
 When you have finished filling in the fields, click the **Save** button.
 
