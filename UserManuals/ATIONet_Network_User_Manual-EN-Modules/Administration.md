@@ -157,7 +157,7 @@ The **External Documents** view will allow the Network to host any documentation
 
 To make use of this feature, an integration will be required to consume the corresponding API.
 
--INSERTAR IMAGEN-
+![External Documents](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/External%20Documents.PNG)
 
 ## Fuels
 This view lists fuel mappings and their respected code for all sites that have **Required Fuel Mapping** option enabled (for more info on fuel mapping click [here](#sites)). To make queries easier, there is a panel of filters at the top.
