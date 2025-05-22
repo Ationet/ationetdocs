@@ -212,7 +212,12 @@ The fields to complete are the following:
 When you have finished filling in the fields, click the **Save** button.
 
 ## Identifications Models
-The models of identification vary according to the necessity of the client. They can be a Card type (a magnetic card), TAG, Chipkey or Manual Entry (a code entered by hand). 
+
+The identifications models vary according to the customer's needs. They can be of the following types:
+
+* **Card:** Card type identifications. It can be of magnetic stripe or reading by approximation.
+* **TAG:** Image type identifications (usually in QR format). It is generally used as a sticker attached to the windshield of the vehicle.
+* **Chipkey:** Key type identifications, used by a specific terminal system.
 
 ![Identification Models](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identifications%20Model.PNG)
 
@@ -222,15 +227,38 @@ To create an identificaiton model, click the **New** button.
 
 The fields to complete are the following:
 
-* **Type:** Can be Card, TAG, Chipkey or Manual Entry type.
-* **Description:** The description of the new identification model.
-* **Installable:** Whether it is installable or not.
-* **Personalized:** Whether it is personalized or not.
-* **Reusable:** Whether it is reusable or not.
-* **Supports multiple assignments:** Whether it supports multiple assignments or not.
-* **Valid expiration date:** Whether it validates the expiration date or not.
-* **Ignore behavior of vehicle id in terminal:** Ignore the behavior of vehicle id in terminal or not.
-* **Requires PIN** If it requires PIN or not.
+* **Type:** Can be Card, TAG, Chipkey or Manual entry type.
+* **Description:** The description of the new identifier model.
+* **Installable:** Identifiers with this feature can only be assigned by means of installation.
+* **Personalized:** If it is personalized or not.
+* **Reusable:** Identifiers with this function active can be reused if they are unassigned (otherwise they would be disabled).
+* **Supports multiple assignments:** This option allows the driver/vehicle to have multiple identifiers of this model.
+* **Valid expiration date:** Whether the expiration date is valid or not.
+* **Ignore the behavior of the vehicle ID in the terminal:** When this option is activated, the behavior of the related vehicle ID in the terminal will be ignored. In other words, if a request were to be made for a transaction, it will be skipped. A situation where this function can be applied is for a "Gift Card". These do not have any vehicle ID, so if you wish to operate on a site that requests a vehicle ID, without this feature, the Gift Card will be rejected.
+* **Custom Track:** If this option is activated, a track number can be determined at will instead of being generated automatically.
+* **Single use:** If this option is activated, this identifier model cannot be used multiple times.
+* **Notify assignment:** When this function is activated, an e-mail will be sent to the entity to which this identifier is assigned.
+	* Enabling this feature will enable the "File attachment in notification" option, which allows the QR to be attached to a PDF file.
+		* Finally, in case the previous function is enabled, a third function will be enabled called, "Encrypted attachment". This will allow that when the file arrives, a password will be requested, being the vehicle code.
+
+-INSERTAR IMAGEN-
+
+* **No Offline support:** This function allows you to operate only when the system is in the Online state.
+* **Require PIN:** This function allows us to determine whether a PIN is required, and also requires us to set the number of numbers requested for the PIN.
+	* Activating this function will enable a new function called "Require PIN change" which is a one-time option for terminals that allow a PIN to be set directly from the station.
+
+-INSERTAR IMAGEN-
+
+* **Validate inactivity period:** This function allows us to evaluate the automatic inactivation of an identifier corresponding to this model according to the established period.
+
+-INSERTAR IMAGEN-
+
+* When this function is activated, a box will be enabled in which the period in question can be set.
+
+* **Custom Track Type:** Enabling this function allows you to set a Prefix and a Suffix to the Track.
+* **Track Encryption:** This function gives the identifiers of this model the capacity to be verified with an encrypted track, which will be recognized by ATIONET and validated if it exists. For the reading of the encrypted track to be applied, the corresponding property must be configured in the terminal.
+
+-INSERTAR IMAGEN-
 
 When you have finished filling in the fields, click the **Save** button.
 
