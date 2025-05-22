@@ -386,7 +386,7 @@ In this section each user can select their own notifications to be received eith
 
 1. ***Inventory***
 
--INSERTAR IMAGEN-
+![Notifications (Inventory)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notifications%20(Inventory).PNG)
 
 * **New Delivery notification:** Receive a notification for each delivery detected.
 * **Low inventory notification:** Receive a notification when the inventory is low.
@@ -394,7 +394,7 @@ In this section each user can select their own notifications to be received eith
 
 2. ***Contract***
 
-  -INSERTAR IMAGEN-
+![Notifications(Contract)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notifications(Contract).PNG)
    
 * **Low contract balance notification:** Receive a notification when the balance of a contract is low.
 * **Notification of empty contract balance:** Receive a notification when a contract has no balance.
@@ -404,13 +404,13 @@ In this section each user can select their own notifications to be received eith
 
 3. ***Identification***
 
--INSERTAR IMAGEN-
+![Notifications (Identification)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notifications%20(Identification).PNG)
 
 * **Notification of Idsentifications at risk of expiration:** Receive a notification when an identification is about to expire.
 
 4. ***Loyalty***
 
-* -INSERTAR IMAGEN-
+![Notifications (Loyalty)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notifications%20(Loyalty).PNG)
 
 * **New Loyalty Account Notification:** Receive a notification when a new loyalty program is detected.
 * **Loyalty point accumulation notification:** Receive a notification when an accumulation is detected.
@@ -418,7 +418,7 @@ In this section each user can select their own notifications to be received eith
 
 5. ***Billing***
 
--INSERTAR IMAGEN-
+![Notifications(Billing)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notifications(Billing).PNG)
 
 * **Notification of Billing process:** You receive a notification when a billing process is detected.
 * **Merchant Charges:** Receive a notification when merchant charges are detected.
@@ -426,7 +426,7 @@ In this section each user can select their own notifications to be received eith
 
 6. ***Transactions***
 
--INSERTAR IMAGEN-
+![Notifications(Transaction)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notifications(Transaction).PNG)
 
 * **Notification of new contingency transactions:** Receive a notification when a new contingency is detected.
 * **Notification of transaction to be reviewed:** Receive a notification when an exception marked for review was detected.
@@ -438,27 +438,27 @@ In this section each user can select their own notifications to be received eith
 
 7. ***Company***
 
--INSERTAR IMAGEN-
+![Notifications (Company)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notifications%20(Company).PNG)
 
 * **Company Activation/Deactivation:** Receive a notification when a change in the status of a company is detected.
 
-8. ***Trade***
+8. ***Merchant***
 
--INSERTAR IMAGEN-
+![Notifications (Merchant)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notifications%20(Merchant).PNG)
 
-* **Trade Activation/Deactivation:** Receive a notification when a change in the status of a trade is detected.
+* **Merchant Activation/Deactivation:** Receive a notification when a change in the status of a merchant is detected.
 * **Site Offline Transaction Maximum Reached:** Receive a notification when it is detected that the site has reached the maximum possible Offline transactions.
 
 9. ***Fleet Workflow***
 
--INSERTAR IMAGEN-
+![Notifications(Fleet Workfow)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notifications(Fleet%20Workfow).PNG)
 
 * **Fleet workflow created:** Receive a notification when it is detected that a fleet workflow has been created.
 
 ### Company Notifications
 In this section company users can configure their own notifications (inside their company profiles in ATIONet).
 
-![Notification Company](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notification%20Company.PNG)
+![Notifications(AdministrationCompany)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notifications(AdministrationCompany).PNG)
 
 1. ***Contract***
 * **Low contract balance notification:** Receive a notification when the balance of a contract is low.
