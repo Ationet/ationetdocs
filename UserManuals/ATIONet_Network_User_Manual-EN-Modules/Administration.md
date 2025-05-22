@@ -8,15 +8,19 @@
 	- [Companies Groups](#companies-groups)
 	- [Companies Groups – Movements](#companies-groups--movements)
 	- [Drivers](#drivers)
+ 	- [External Documents](#External-Documents)
 	- [Fuels](#fuels)
 	- [Fuels Masters Groups](#fuels-masters-groups)
 	- [Identifications](#identifications)
 	- [Identifications Models](#identifications-models)
 	- [Identifications Providers](#identifications-providers)
+	- [Identification Renewal Processes](#Identification-Renewal-Processes)
 	- [Installations](#installations)
+	- [Locations](#Locations)
 	- [Merchants](#merchants)
 	- [Notifications](#notifications)
 	- [Payment Methods](#payment-methods)
+	- [Quotations](#Quotations)
 	- [Rack Prices](#rack-prices)
 	- [Sites](#sites)
 	- [SKUs](#skus)
@@ -25,6 +29,7 @@
 	- [Terminals / Controllers](#terminals--controllers)
 	- [Vehicle](#vehicle)
 	- [Warehouses](#warehouses)
+	- [Workflow Instances](#Workflow-Instances)
 	- [Zones](#zones)
 
 # Administration
@@ -145,6 +150,14 @@ When you have finished filling in the fields, click the **Create** button.
 This view lists drivers that have been created. To make queries easier, there is a panel of filters at the top.
 
 ![Drivers](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Drivers.PNG)
+
+## External Documents
+
+The **External Documents** view will allow the Network to host any documentation or report whose origin is outside the ATIONET portal processes. On the other hand, companies or businesses will be able to view and download these files.
+
+To make use of this feature, an integration will be required to consume the corresponding API.
+
+-INSERTAR IMAGEN-
 
 ## Fuels
 This view lists fuel mappings and their respected code for all sites that have **Required Fuel Mapping** option enabled (for more info on fuel mapping click [here](#sites)). To make queries easier, there is a panel of filters at the top.
@@ -280,6 +293,15 @@ The fields to complete are the following:
 
 When you have finished filling in the fields, click the **Save** button.
 
+## Identification Renewal Processes
+
+In this section you can view and renew identifications. In the filters option, you can filter by execution statuses, process statuses and the corresponding schedules in which the process was executed. 
+
+-INSERTAR IMAGEN-
+
+* ***Launch Process:*** When this process is confirmed, existing identifications will be massively renewed.
+
+
 ## Installations
 In ATIONet the fact that identifications need to be placed by a technician is known as **Installations**.
 
@@ -311,6 +333,22 @@ If you have OBD, more fields will be displayed:
 * **Proportion:** Enter the OBD proportions.
 
 Then, in the Identification section select the Identification. When finished, click the **Save** button.
+
+## Locations
+
+In this section users can add specific locations for which a specific type of identification is enabled.
+
+-INSERTAR IMAGEN-
+
+In the **New** option, locations are added, for which a minimum of information is required:
+
+-INSERTAR IMAGEN-
+
+* **Code:** An alphanumeric pattern is required.
+* **Country/ State/ City/ Street:** The semi-exact location of the place you wish to enter is specified.
+* **Contact Telephone:** The telephone/mobile number of a contact person at the location is required.
+* **Type of Identification:** The type of Identification desired for this location is specified.
+* **Identification Model:** The desired Identification model for that location is specified.
 
 ## Merchants
 In ATIONet the term merchant refers to the company that owns the sites. In this section you can view, create and edit all merchants. To make queries easier, there is a panel of filters at the top.
@@ -462,6 +500,22 @@ The fields to complete are the following:
 * **Description:** The description of the new payment method.
 
 When you have finished filling in the fields, click the **Save** button.
+
+## Quotations
+
+In this section you can configure the quotation of multiple currencies. 
+
+-INSERTAR IMAGEN-
+
+-INSERTAR IMAGEN-
+
+The sections to be configured are as follows:
+* **Currency of Origin:** Select the currency of the country of origin.
+* **Destination Currency:** Select the currency of the destination country.
+* **Conversion Value:** Enter the currency conversion value.
+* **Start Date:** Enter the date on which this process will begin.
+* **Time from:** Enter the time at which this process will start.
+
 
 ## Rack Prices
 In this section you can view all the rack prices generated. These prices are the ones used when a company contract has no prices configured (if the rack prices option is enabled within the company contract configuration). 
@@ -694,6 +748,10 @@ To create a Warehouse, click the **New** button.
 ![Warehouses New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Warehouses%20New.PNG)
 
 When you have finished filling in the fields, click the **Save** button.
+
+## Workflow Instances
+
+In this section you can view the contingencies pending approval of the loyalty section.
 
 ## Zones
 In this section you can create/edit zones. Zones is an area where several sites are associated to it. Generally a Territory Manager is associated to specific zone(s). To make queries easier, there is a panel of filters at the top.
