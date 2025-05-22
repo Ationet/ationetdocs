@@ -166,7 +166,7 @@ This view lists fuel mappings and their respected code for all sites that have *
 
 To create a fuel mapping, click the **New** button.
 
-![Fuels New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Fuels%20New.PNG)
+![Fuel config](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Fuel%20config.PNG)
 
 The fields to complete are the following:
 
