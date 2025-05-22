@@ -59,7 +59,7 @@ When you have finished filling in the fields, click the **Save** button.
 ## Companies
 In ATIONet the term company refers to the entity that owns the fleet. In this section you can see the existing companies with their details, edit them and/or create new companies. To make queries easier, there is a panel of filters at the top.
 
-![Companies](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Companies.PNG)
+![Company Menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Company%20Menu.PNG)
 
 To create a Company, click the **New** button.
 
