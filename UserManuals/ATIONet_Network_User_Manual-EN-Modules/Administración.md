@@ -28,8 +28,6 @@
   - [Sitios](#sitios)
   - [SKUs](#skus)
   - [Terminales/Controladores](#terminales--controladores)
-  - [Usuarios](#usuarios)
-  - [Vales](#vales)
   - [Vehículos](#vehículo)
   - [Workflow de Aprovaciones](#Workflow-de-Aprovaciones)
   - [Zonas](#zonas)
@@ -742,40 +740,6 @@ Campos a completar: Mensaje, Nombre de la Propiedad, Configuración Factor, Conf
 Cuando haya terminado de rellenar los campos, presione el botón **Alta** en caso de completar la configuración, y para finalizar **Guardar**.
 
 </br>
-
-## Usuarios
-En esta sección puede ver, crear o editar usuarios para la Network. Puede editarlos haciendo clic en el icono del lápiz en la columna de opciones, activar/desactivar un usuario haciendo clic en el icono del candado y restablecer la contraseña con el icono de la estrella.
-
-![Usuarios](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Usuarios.PNG)
-
-Para crear un usuario, haga clic en el botón **Nuevo**.
-
-![Usuarios nuevos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Usuarios%20Nuevo.PNG)
-
-Los campos a completar son los siguientes:
-
-* **Correo del usuario:** La dirección de correo electrónico del usuario.
-* **Nombre:** El nombre del usuario.
-* **Seguridad Social:** El documento del usuario.
-* **Calle 1:** La calle donde reside el usuario.
-* **Calle 2:** Otra calle de referencia, como puede ser la de la esquina.
-* **País:** El país del usuario.
-* **Estado:** El estado del país del usuario.
-* **Código postal:** El código postal de la localidad donde reside el usuario.
-* **Número de teléfono 1:** El teléfono del usuario.
-* **Número de teléfono:** El otro teléfono del usuario si está disponible.
-
-<br>
-
-* **Rol:** El rol que asumirá el nuevo usuario.
-* **Entidad:** La entidad asignada al usuario.
-
-Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
-
-## Vales
-Dentro de esta sección se puede ver un listado de todos los vales creados por las compañías. Para facilitar las consultas, hay un panel de filtros en la parte superior.
-
-![Vales](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Administraci%C3%B3n/Vales.PNG)
 
 ## Vehículo
 Esta vista muestra todos los vehículos que han sido creados. Recuerde que no es obligatorio cargar los vehículos para poder operar, sólo es necesario si decide asociar las identificaciones a los vehículos. Para facilitar las consultas, hay un panel de filtros en la parte superior.
