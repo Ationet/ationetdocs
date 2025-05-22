@@ -705,15 +705,15 @@ The fields to complete are the following:
 When you have finished filling in the fields, click the **Save** button.
 
 ## Vehicle
-This view lists all vehicles that have been created. Remember that it is not mandatory to load vehicles in order to operate, it is only necessary if you decide to associate the identifications to vehicles. To make queries easier, there is a panel of filters at the top.
+This view shows all the vehicles that have been created. Remember that it is not mandatory to load the vehicles to be able to operate, it is only necessary if you decide to associate the IDs to the vehicles. To facilitate queries, there is a filter panel at the top.
 
-![Vehicles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Vehicles.PNG)
+-INSERTAR IMAGEN-
 
-Under the **Options** column you can:
-
-* **Assign Identification:** Assign/Unassign identifications to the vehicle.  
-* **Renew Identification:** Renew the identification associated to the vehicle.
-* **Favorites:** Add the vehicle to the **favorites** module.
+In the **Options** column you can:
+* **Assign Identifiers:** Assign/unassign identifiers to the vehicle.
+* **Renewal of Identifiers:** Renew the identifiers associated with the vehicle.
+* **Service Sheet:** Establish the service performed by the corresponding vehicle.
+* **Favorites:** Add the vehicle to the favorites module.
 
 ## Vouchers
 Inside this section you can view a list of all vouchers created by companies. To make queries easier, there is a panel of filters at the top.
