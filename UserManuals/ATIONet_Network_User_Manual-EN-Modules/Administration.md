@@ -162,7 +162,7 @@ To make use of this feature, an integration will be required to consume the corr
 ## Fuels
 This view lists fuel mappings and their respected code for all sites that have **Required Fuel Mapping** option enabled (for more info on fuel mapping click [here](#sites)). To make queries easier, there is a panel of filters at the top.
 
-![Fuels](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Fuels.PNG)
+![Fuel Menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Fuel%20Menu.PNG)
 
 To create a fuel mapping, click the **New** button.
 
