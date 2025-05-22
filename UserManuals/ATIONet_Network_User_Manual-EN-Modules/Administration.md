@@ -23,9 +23,7 @@
 	- [SKUs categories](#skus-categories)
 	- [Taxes](#taxes)
 	- [Terminals / Controllers](#terminals--controllers)
-	- [Users](#users)
 	- [Vehicle](#vehicle)
-	- [Vouchers](#vouchers)
 	- [Warehouses](#warehouses)
 	- [Zones](#zones)
 
@@ -675,35 +673,6 @@ In this section you can indicate that the terminal will operate in offline mode 
 
 When you have finished filling in the fields, press the **Add** button if you have completed the configuration, and finally **Save**.
 
-## Users
-In this section you can view, create or edit users for the Network. You can edit them by clicking on the pencil icon in the options column, enable/disable a user by clicking on the padlock icon and reset the password with the star icon.
-
-![Users](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Users.PNG)
-
-To create a User, click the **New** button.
-
-![Users New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Users%20New.PNG)
-
-The fields to complete are the following:
-
-* **User Mail:** The user's email address.
-* **Name:** The user's name.
-* **Social Security:** The user's document.
-* **Street 1:** The street where the user resides.
-* **Street 2:** Another street of reference, as it can be the one of the corner.
-* **Country:** The user's country.
-* **State:** The state of the user's country.
-* **Zip Code:** The postal code of the locality where the user resides.
-* **Phone Number 1:** The user's phone.
-* **Phone Number 2:** The user's other phone if available.
-
-<br>
-
-* **Role**: The role that the new user will assume.
-* **Entity**: The entity assigned to the user.
-
-When you have finished filling in the fields, click the **Save** button.
-
 ## Vehicle
 This view shows all the vehicles that have been created. Remember that it is not mandatory to load the vehicles to be able to operate, it is only necessary if you decide to associate the IDs to the vehicles. To facilitate queries, there is a filter panel at the top.
 
@@ -714,11 +683,6 @@ In the **Options** column you can:
 * **Renewal of Identifiers:** Renew the identifiers associated with the vehicle.
 * **Service Sheet:** Establish the service performed by the corresponding vehicle.
 * **Favorites:** Add the vehicle to the favorites module.
-
-## Vouchers
-Inside this section you can view a list of all vouchers created by companies. To make queries easier, there is a panel of filters at the top.
-
-![Vouchers](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Vouchers.PNG)
 
 ## Warehouses
 In this section you can create/edit warehouses. Warehouses is where installed identifications are stored.
