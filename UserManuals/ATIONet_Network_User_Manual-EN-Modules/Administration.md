@@ -382,8 +382,6 @@ When you have finished filling in the fields, click the **Save** button.
 ## Notifications
 In this section each user can select their own notifications to be received either by email or sms.
 
-![Notifications](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notification.PNG)
-
 1. ***Inventory***
 
 ![Notifications (Inventory)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notifications%20(Inventory).PNG)
