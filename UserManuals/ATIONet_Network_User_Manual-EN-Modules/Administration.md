@@ -228,16 +228,16 @@ To create an identificaiton model, click the **New** button.
 The fields to complete are the following:
 
 * **Type:** Can be Card, TAG, Chipkey or Manual entry type.
-* **Description:** The description of the new identifier model.
-* **Installable:** Identifiers with this feature can only be assigned by means of installation.
+* **Description:** The description of the new identification model.
+* **Installable:** Identifications with this feature can only be assigned by means of installation.
 * **Personalized:** If it is personalized or not.
-* **Reusable:** Identifiers with this function active can be reused if they are unassigned (otherwise they would be disabled).
-* **Supports multiple assignments:** This option allows the driver/vehicle to have multiple identifiers of this model.
+* **Reusable:** Identifications with this function active can be reused if they are unassigned (otherwise they would be disabled).
+* **Supports multiple assignments:** This option allows the driver/vehicle to have multiple identifications of this model.
 * **Valid expiration date:** Whether the expiration date is valid or not.
 * **Ignore the behavior of the vehicle ID in the terminal:** When this option is activated, the behavior of the related vehicle ID in the terminal will be ignored. In other words, if a request were to be made for a transaction, it will be skipped. A situation where this function can be applied is for a "Gift Card". These do not have any vehicle ID, so if you wish to operate on a site that requests a vehicle ID, without this feature, the Gift Card will be rejected.
 * **Custom Track:** If this option is activated, a track number can be determined at will instead of being generated automatically.
-* **Single use:** If this option is activated, this identifier model cannot be used multiple times.
-* **Notify assignment:** When this function is activated, an e-mail will be sent to the entity to which this identifier is assigned.
+* **Single use:** If this option is activated, this identification's model cannot be used multiple times.
+* **Notify assignment:** When this function is activated, an e-mail will be sent to the entity to which this identification is assigned.
 	* Enabling this feature will enable the "File attachment in notification" option, which allows the QR to be attached to a PDF file.
 		* Finally, in case the previous function is enabled, a third function will be enabled called, "Encrypted attachment". This will allow that when the file arrives, a password will be requested, being the vehicle code.
 
@@ -249,7 +249,7 @@ The fields to complete are the following:
 
 -INSERTAR IMAGEN-
 
-* **Validate inactivity period:** This function allows us to evaluate the automatic inactivation of an identifier corresponding to this model according to the established period.
+* **Validate inactivity period:** This function allows us to evaluate the automatic inactivation of an identification corresponding to this model according to the established period.
 
 -INSERTAR IMAGEN-
 
@@ -263,7 +263,7 @@ The fields to complete are the following:
 When you have finished filling in the fields, click the **Save** button.
 
 ## Identifications Providers
-In this section you can consult and create any provider you wish to send your identifications to production. To make queries easier, there is a panel of filters at the top.
+In this section you can consult and create any supplier you wish to send your identifications to production. To facilitate the queries, there is a filter panel at the top. 
 
 ![Identification Providers](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identification%20Provider.PNG)
 
@@ -273,13 +273,12 @@ To create a provider, click the **New** button.
 
 The fields to complete are the following:
 
-* **Name:** Input the providers name.
-* **Email:** Input the providers contact email
-* **E-mail Template:** Input the email body you wish to send to your provider.
-
-<br>
-
-* **File Settings For Export:** Select the format you wish to send the identification information to your provider. You can either send it as Excel, CSV or Text. You can also select what information to send on the file (First Name, Last Name, Card Number, Track Number, etc.).
+* **Name:** Enter the name corresponding to the supplier.
+* **E-mail:** Enter the supplier's contact e-mail address.
+* **Email Template:** Enter the body of the email you wish to send to your supplier.
+* **Delivery label:** This field is optional. When marked as active, an option will appear to upload a file to be used as a template.
+* **Notify grouping:** By marking this field as active, a summary of the grouping configurations that were executed in the identification scheduler process will be appended to the beginning of the mail body.
+* **Export file configuration:** Select the format in which you want to send the identification information to your supplier. You can send it as Excel, CSV or Text. You can also select what information to send in the file (First Name, Last Name, Card Number, Track Number, etc.).
 
 When you have finished filling in the fields, click the **Save** button.
 
