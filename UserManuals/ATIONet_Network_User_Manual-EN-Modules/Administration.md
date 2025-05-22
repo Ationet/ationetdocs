@@ -349,33 +349,75 @@ In this section each user can select their own notifications to be received eith
 ![Notifications](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notification.PNG)
 
 1. ***Inventory***
-   * **New Delivery notification:** Get a notification for each delivery detected.
-   * **Inventorty low notification:** Get a notification when the inventory is low.
-   * **Water volume notification alert:** Get a notification when the water is low.
+
+-INSERTAR IMAGEN-
+
+* **New Delivery notification:** Receive a notification for each delivery detected.
+* **Low inventory notification:** Receive a notification when the inventory is low.
+* **Water volume notification alert:** Receive a notification when water is low.
+
 2. ***Contract***
-   * **Contract balance low notification:** Get a notification when a contract balance is low.
-   * **Contract balance empty notification:** Get a notification when a contract has no balance.
-   * **Percent Credit Notification:** Get a notification when a percent credit is reached (click on the pencil to configure the percent).
-   * **Low amount balance:** Get a notification when a balance amount is reached (click on the pencil to configure the amount).
-   * **Company Contract Deposit:** Get a notification when a deposit to a contract is detected.
+
+  -INSERTAR IMAGEN-
+   
+* **Low contract balance notification:** Receive a notification when the balance of a contract is low.
+* **Notification of empty contract balance:** Receive a notification when a contract has no balance.
+* **Credit percentage notification:** Receive a notification when a credit percentage is reached (click on the pencil to set the percentage).
+* **Low balance notification:** Receive a notification when an amount is reached (click on the pencil to set the amount).
+* **Company contract deposit:** Receive a notification when a deposit to a contract is detected.
+
 3. ***Identification***
-   * **Identifications in risk of expiration notification:** Get a notification when an identification is about to expire.
+
+-INSERTAR IMAGEN-
+
+* **Notification of Idsentifications at risk of expiration:** Receive a notification when an identification is about to expire.
+
 4. ***Loyalty***
-   * **New loyalty account notification:** Get a notification when a new loyalty program was detected.
-   * **Loyalty points accumulation notification:** Get a notification when an accumulation was detected.
-   * **Notification loyalty exceptions:** Get a notification when a exception was detected.
+
+* -INSERTAR IMAGEN-
+
+* **New Loyalty Account Notification:** Receive a notification when a new loyalty program is detected.
+* **Loyalty point accumulation notification:** Receive a notification when an accumulation is detected.
+* **Loyalty exception notification:** You receive a notification when an exception is detected.
+
 5. ***Billing***
-   * **Billing process notification:** Get a notification when a bulling process was detected.
-   * **Merchant Charges:** Get a notification when merchant charges were detected.
-   * **External Charges:** Get a notification when external charges were detected.
+
+-INSERTAR IMAGEN-
+
+* **Notification of Billing process:** You receive a notification when a billing process is detected.
+* **Merchant Charges:** Receive a notification when merchant charges are detected.
+* **External charges:** Receive a notification when external charges are detected.
+
 6. ***Transactions***
-   * **New contingency transaction notification:** Get a notification when a new contingency was detected.
-   * **Transaction to review notification:** Get a notification when an exception marked to be reviwed was detected.
-   * **Fuel Out Exception:** Get a notification when an exception for fuel out was detected.
-   * **Transaction Exception:** Get a notification when an exception is detected.
-   * **Incorrect PIN:** Get a notification when a rejected transaction for incorrect PIN was detected.
-   * **Transaction Rejected:** Get a notification when a rejected transaction was detected.
-   * **Disputed Transactions:** Get a notification when a disputed transaction was detected.
+
+-INSERTAR IMAGEN-
+
+* **Notification of new contingency transactions:** Receive a notification when a new contingency is detected.
+* **Notification of transaction to be reviewed:** Receive a notification when an exception marked for review was detected.
+* **Fuel Exit Exception:** Receive a notification when a fuel exit exception was detected.
+* **Transaction exception:** Receives a notification when an exception is detected.
+* **Incorrect PIN:** Receive a notification when a rejected transaction is detected due to an incorrect PIN.
+* **Rejected transaction:** Receive a notification when a rejected transaction is detected.
+* **Disputed transactions:** Receive a notification when a disputed transaction is detected.
+
+7. ***Company***
+
+-INSERTAR IMAGEN-
+
+* **Company Activation/Deactivation:** Receive a notification when a change in the status of a company is detected.
+
+8. ***Trade***
+
+-INSERTAR IMAGEN-
+
+* **Trade Activation/Deactivation:** Receive a notification when a change in the status of a trade is detected.
+* **Site Offline Transaction Maximum Reached:** Receive a notification when it is detected that the site has reached the maximum possible Offline transactions.
+
+9. ***Fleet Workflow***
+
+-INSERTAR IMAGEN-
+
+* **Fleet workflow created:** Receive a notification when it is detected that a fleet workflow has been created.
 
 ### Company Notifications
 In this section company users can configure their own notifications (inside their company profiles in ATIONet).
@@ -383,22 +425,29 @@ In this section company users can configure their own notifications (inside thei
 ![Notification Company](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Notification%20Company.PNG)
 
 1. ***Contract***
-   * **Contract balance low notification:** Get a notification when a contract balance is low.
-   * **Contract balance empty notification:** Get a notification when a contract has no balance.
-   * **Percent Credit Notification:** Get a notification when a percent credit is reached (click on the pencil to configure the percent).
-   * **Low amount balance:** Get a notification when a balance amount is reached (click on the pencil to configure the amount).
-   * **Company Contract Deposit:** Get a notification when a deposit to a contract is detected.
-2. ***Billing***
-   * **External Charges:** Get a notification when external charges were detected.
+* **Low contract balance notification:** Receive a notification when the balance of a contract is low.
+* **Notification of empty contract balance:** Receive a notification when a contract has no balance.
+* **Credit percentage notification:** Receive a notification when a credit percentage is reached (click on the pencil to set the percentage).
+* **Low balance notification:** Receive a notification when an amount is reached (click on the pencil to set the amount).
+* **Company contract deposit:** Receive a notification when a deposit to a contract is detected.
+
+2. ***Liquidation***
+* **External charges:** Receive a notification when external charges are detected.
+
 3. ***Transactions***
-   * **Transaction Exception:** Get a notification when an exception is detected.
-   * **Non-Blocking Rules Authorization:** Get a notification when a non-blocking rule authorization was detected.
-   * **Identification Enabled/Disabled:** Get a notification when an identification was enabled/disabled.
-   * **Requested Identifications:** Get a notification when an identification request was detected.
-   * **Transaction Rejected:** Get a notification when a rejected transaction was detected.
-   * **Disputed Transactions:** Get a notification when a disputed transaction was detected.
-4. ***Fleet***
-   * **Vehicle Odometer Limit:** Get a notification when a vehicle odometer is reached (click the **Vehicle List** button to configure the odometer and select the vehicle associated to the notification). 
+* **Transaction exception:** Receives a notification when an exception is detected.
+* **Non-blocking rule authorization:** Receives a notification when a non-blocking rule authorization is detected.
+* **Identification enabled/disabled:** Receive a notification when an identifier was enabled/disabled.
+* **Requested identifiers:** Receive a notification when a request for identification is detected.
+* **Rejected transaction:** Receive a notification when a rejected transaction is detected.
+* **Disputed Transactions:** Receive a notification when a disputed transaction is detected.
+
+4. ***Vehicle fleet***
+* **Vehicle Odometer Limit:** Receive a notification when a vehicle's odometer is reached (click on the Vehicle List button to set the odometer and select the vehicle associated with the notification).
+
+5. ***Company***
+* **Company Activation/Deactivation:** Receive a notification when a change in the status of a company is detected.
+ 
 
 ## Payment Methods
 Payment methods are the different ways in which you can pay for a transaction: cash, credit card, debit card, gift cards, etc. To make queries easier, there is a panel of filters at the top.
