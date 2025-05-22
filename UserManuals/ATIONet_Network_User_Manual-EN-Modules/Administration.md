@@ -466,19 +466,34 @@ The fields to complete are the following:
 When you have finished filling in the fields, click the **Save** button.
 
 ## Rack Prices
-In this section you can view all rack prices generated. Rack prices are used when a company contract has no prices configured (that is if the option is enables inside the contract configuration).
+In this section you can view all the rack prices generated. These prices are the ones used when a company contract has no prices configured (if the rack prices option is enabled within the company contract configuration). 
 
-![Rack Prices](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Rack%20Prices.PNG)
+1. ***New price:*** 
 
-To create a rack price, click the **New** button.
+-INSERTAR IMAGEN-
 
-![Rack Prices New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Rack%20Prices%20New.PNG)
+* **Name:** Enter a name to identify the price
+* **Code:** Enter a code to identify the price
+* **Currency:** Enter the desired currency
+* **Grouping type:** This option enables the possibility of also configuring the fuel by zones (these are created in the **Administration>Zones** section).
 
-The fields to complete are the following:
+2. ***Fuel prices:***
 
-* **Fuel:** Select the fuel associated to the price.
-* **Value:** Input the value price of the fuel.
-* **Date From:** Input the start date for the fuel price.
+-INSERTAR IMAGEN-
+
+* **Fuel:** Enter the fuels for which these prices are to be applied
+* **Value:** Enter the value of the prices
+* **Date and Time:** Enter the date and time from which this price will start to apply (It is optional to set a date and time for which this price will stop applying).
+
+3. ***Prices per fuel and site:***
+
+-INSERTAR IMAGEN-
+
+* **Fuel:** Enter the fuels for which these prices are to be applied
+* **Value:** Enter the value of the prices
+* **Site:** Enter a site for which these prices apply.
+* **Date and Time:** Enter the date and time from which this price will start to apply (It is optional to set a date and time for which this price will stop applying).
+
 
 When you have finished filling in the fields, click the **Save** button.
 
