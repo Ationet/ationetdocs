@@ -545,51 +545,46 @@ Select a site to register. After this, the list of services that this site has w
 When you have finished filling in the fields, click the **Save** button.
 
 ## SKUs
-Stock Keeping Units (SKUs) are non-fuel products. In this section you can consult the created SKUs, edit them and also create new ones. To make queries easier, there is a panel of filters at the top. 
+Stock Keeping Units (SKUs) are non-fuel products. In this section you can consult the created SKUs, edit them and create new ones. To facilitate queries, there is a filter panel at the top. 
 
-![SKUs](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/SKUs.PNG)
+-INSERTAR IMAGEN-
 
-To create a SKU, click the **New** button.
+To create a SKU, click on the **New** button.
 
-![SKUs New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/SKUs%20New.PNG)
+-INSERTAR IMAGEN-
 
-The fields to complete are the following:
-
-* **Code:** The SKU code.
-* **Description:** The description of the SKU.
-* **Short Description:** A short description of the SKU.
-* **Ultra Short Description:** A very short description of the SKU.
-* **POS Product Type:** Select what type of product it is.
-* **Fuel Product:** Checkmark this option if the SKU is a fuel product.
+The fields to be completed are as follows:
+* **Code:** Enter an alphanumeric code (maximum 20 characters) for the SKU.
+* **Description:** SKU description.
+* **Short Description:** A shortened version of the SKU description.
+* **Extra Short Description:** An even shorter description of the SKU.
+* **SKU Product Type:** Select the type of product.
+* **Fuel Product:** Check this option if the SKU is a fuel product.
 * **SKU Category:** Enter the category to which the SKU belongs.
-* **Measurement Unit:** Enter the unit in which the SKU is measured.
-* **Sellable:** Checkmark this option if the SKU is sellable.
-* **Weightable:** Checkmark this option if the SKU is weighable.
-* **Fractional:** Checkmark this option if the SKU is fractional.
-* **Stockable:** Checkmark this option if the SKU is storable.
-* **Consignment:** Checkmark this option if the SKU is in consignment.
-* **Availability From/To:** Select the dates among which the SKU is available.
-* **Is POS:** Checkmark this option if the SKU is sold at the point of sale.
-* **Dry Fleet:** Checkmark this option if the SKU is a dry product.
-* **Reward:** Checkmark this option if the SKU can be redeemed for reward points.
-* **Service:** Checkmark this option if the SKU is a service.
-* **Loyalty:** Checkmark this option if the SKU accumulates points.
+* **Unit of measure:** Enter the unit in which the SKU is measured (Liters, Gallons, etc.).
+* **Reference value per unit:** Indicate the value and currency per unit of the product.
+* **Saleable:** Check this option if the SKU is saleable.
+* **Weighable:** Check this option if the SKU is weighable.
+* **Fractionable:** Check this option if the SKU is fractionable.
+* **Storable:** Check this option if the SKU is storable.
+* **Consignment:** Check this option if the SKU is on consignment.
+* **Availability From/To:** Select the dates between which the SKU is available.
+* **Is POS:** Check this option if the SKU is sold at the point of sale.
+* **Dry Fleet:** Check this option if the SKU is a dry product.
+* **Reward:** Check this option if the SKU can be redeemed for reward points.
+* **Service:** Check this option if the SKU is a service.
+* **Loyalty:** Check this option if the SKU accumulates points.
 
-Pricebook:
+***Items:***
 
-* **Site:** Select the site to which you will charge the SKU price.
-* **Date From:** Select the date on which the SKU goes into effect.
-* **Price:** Indicate the price of the SKU.
-* **Currency:** Select the currency in which the SKU is priced.
+-INSERTAR IMAGEN-
 
-Items:
-
-* **POS Code Format:** Select the point-of-sale code format.
+* **POS code format:** Select the POS code format.
 * **POS Code:** Enter a point-of-sale code.
 
-When you have finished filling those two fields, click the **Add** button.
+When you have finished filling in these two fields, press the Add button.
 
-* **Taxes:** Enter the SKU tax code.
+* **Taxes:** Enter the tax code of the SKU.
 
 When you have finished filling in the fields, click the **Save** button.
 
