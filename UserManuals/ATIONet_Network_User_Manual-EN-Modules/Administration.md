@@ -641,32 +641,39 @@ After filling in the fields **Date from** and **Amount** click the **Add** butto
 When you have finished filling in the fields, click the **Save** button.
 
 ## Terminals / Controllers
-Inside this section you can view, create and edit all terminals/controllers. The terminal is the point of sale of the site and the controller manages the pumps. To make queries easier, there is a panel of filters at the top.
 
-![Terminals](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Terminals.PNG)
+Within this section you can view, create and edit all terminals/controllers. The terminal is the point of sale of the site and the controller manages the pumps. For easy queries, there is a filter panel at the top.
 
-To create a Terminal/Controller, click the **New** button.
+-INSERTAR IMAGEN-
 
-![Terminals New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Terminals%20New.PNG)
+To create a Terminal/Controller, click on the New button.
 
-The fields to complete are the following:
+-INSERTAR IMAGEN-
 
-* **Merchant:** Select the merchant associated to the terminal/controller.
-* **Site:** Select the site associated to the terminal/controller
-* **Active:** Checkmark to enable/disable the terminal/controller.
-* **Terminal/Controller Type:** Select the terminal/controller type (ATIO-ControlGas, ATIO-NanoCPI, ATIO StandAlone, VF-Commander, etc.).
+The fields to be completed are as follows:
+* **Merchant:** Select the Merchant associated with the terminal/controller.
+* **Site:** Select the site associated with the terminal/controller. 
+* **Active:** Check the box to activate/deactivate the terminal/controller.
+* **Terminal/controller type:** Select the type of terminal/controller (ATIO-ControlGas, ATIO-NanoCPI, ATIO StandAlone, VF-Commander, etc.).
 * **Model:** Select the terminal/controller model.
-* **Code:** Input the terminal/controller code (ATIONet generates one automatically, but you can edit it. Except for the 3 first characters, since they represent the Subscription Code for the Network).
-* **Description:** Input the terminal/controller description.
-* **TAG Reader Present:** Checkmark this option if the terminal is capable of reading TAGs.
-* **Driver Id Usage:** Select the action ATIONet will take associated to the Driver Id from transactions (None, Secondary Track or Code Validation).
-* **Vehicle Id Usage:** Select the action ATIONet will take associated to the Vehicle Id from transactions (None, Secondary Track or Code Validation).
-* **Maximum Volume Cut Off:** Input the maximum volume the terminal/controller will authorize.
-* **Maximum Amount Cut Off:** Input the maximum amount the terminal/controller will authorize.
-* **Operative System:** Input the terminal/controller operative system.
-* **Serial Number:** Input the terminal/controller serial number.
+* **Code:** Enter the terminal/controller code, which can be an alphanumeric code of up to 50 characters.
+(ATIONET generates one automatically, but you can edit it. Except for the first 3 characters, as they represent the network subscription code).
+* **Description:** Enter a description corresponding to the terminal/controller.
+* **Assisted Pre-Authorizations Only:** Check the box to enable the terminal to perform assisted pre-authorizations.
+* **TAG reader present:** Check this option if the terminal is capable of reading TAGs.
+* **Driver ID Usage:** Select the action that ATIONet will take associated to the Driver ID of the transactions (None, Secondary Track or Code Validation).
+* **Vehicle ID Usage:** Select the action that ATIONet will take associated to the Vehicle ID of the transactions (None, Secondary Track or Code Validation).
+* **Maximum Volume Cut-off:** Enter the maximum volume that the terminal/controller will allow.
+* **Maximum Amount Cut-off:** Enter the maximum amount to be authorized by the terminal/controller.
+* **Operating system:** Enter the operating system of the terminal/controller.
+* **Serial number:** Enter the serial number of the terminal/controller.
+* **Track Encryption:** By entering a value, the terminal will be able to recognize an encrypted track and it will be recognized by ATIONET as a value if it exists. (IMPORTANT: For this reading to apply, the identifier model must be configured with the corresponding property).
 
-When you have finished filling in the fields, click the **Save** button.
+***Configuration***
+
+In this section you can indicate that the terminal will operate in offline mode (with the Local Agent) with the same configuration it has when online. Fields to complete: Message, Property Name, Factor Configuration, Modifier Configuration, Transaction Type.
+
+When you have finished filling in the fields, press the **Add** button if you have completed the configuration, and finally **Save**.
 
 ## Users
 In this section you can view, create or edit users for the Network. You can edit them by clicking on the pencil icon in the options column, enable/disable a user by clicking on the padlock icon and reset the password with the star icon.
