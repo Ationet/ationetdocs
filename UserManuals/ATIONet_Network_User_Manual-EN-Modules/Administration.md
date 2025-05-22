@@ -498,7 +498,7 @@ In this section you can view all the rack prices generated. These prices are the
 When you have finished filling in the fields, click the **Save** button.
 
 ## Sites
-In ATIONet the site represents the service station. This section lists the sites already created, edit them and also create new ones. You can also add taxes to sites directly from the **Options** column. To make queries easier, there is a panel of filters at the top.
+In ATIONET the site represents the service station. This section shows the sites already created, as well as the possibility to edit and create new ones. Taxes can be added to the sites directly from the **Options** column. To facilitate queries, there is a filter panel at the top.
 
 ![Sites](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Sites.PNG)
 
@@ -507,35 +507,40 @@ To create a site, click the **New** button.
 ![Sites New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Sites%20New.PNG)
 
 The fields to complete are the following:
-
-* **Merchant:** Select the merchant associated to the site.
-* **Code:** Input the unique code associated to the site.
-* **Zone:** Select the zone associated to the site.
-* **Automatically Generated:** Checkmark this option to have the **code** automatically generated.
-* **Brand:** Select the brand associated to the site.
-* **Language:** Select the language associated to the site.
-* **Short Name:** Input the short name of the site.
-* **Full Name:** Input the full name of the site
-* **Street 1:** Input the site primary street.
-* **Street 2:** Input the site secondary street.
-* **Industry:** Select the industry associated to the site.
-* **Time Zone:** Select the time zone associated to the site.
-* **Zip Code:** Input the site zip code.
-* **City:** Input the site city.
-* **Country:** Input the site country.
-* **State:** Input the site state.
-* **Phone Number 1:** Input the site primary phone number.
-* **Phone Number 2:** Input the site secondary phone number.
+To create a site, click on the New button.
+ The fields to be completed are the following: Information
+* **Merchant:** Select the merchant associated with the site.
+* **Code:** Enter an alphanumeric code (limited to 50 characters) which will be associated with the site.
+* **Zone:** Select the zone associated with the site.
+* **Automatically generated:** Check this option to have the code generated automatically.
+* **Brand:** Select the brand associated with the site.
+* **Language:** Select the language associated with the site.
+* **Short name:** Enter the short name of the site.
+* **Full name:** Enter the full name of the site.
+* **Street 1:** Enter the main street of the site.
+* **Street 2:** Enter the secondary street of the site.
+* **Industry:** Select the industry associated with the site.
+* **Time zone:** Select the time zone corresponding to the site.
+* **Zip Code:** Enter the zip code of the site.
+* **City:** Enter the city of the site.
+* **Country:** Enter the country of the site.
+* **State:** Enter the state of the site.
+* **Phone number 1:** Enter the main phone number of the site.
+* **Phone number 2:** Enter the secondary phone number of the site.
 * **Require Fuel Mapping:** Checkmark this option if specific fuel codes need to be configured for the site (if not, [ATIONet Master Fuel Codes](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/C%C3%B3digos%20Maestros%20de%20Combustible.PNG) will be used).
-* **Recipient Emails:** Input the email addresses associated to the site (they will receive the billing statements for the site).
-* **Latitude:** Input the latitude of the site.
-* **Longitude:** Input the longitude of the site.
-* **Currency:** Select the currency associated to the site.
+* **Recipient Emails:** Enter the email addresses associated with the site (they will receive site statements).
+* **Latitude:** Enter the latitude of the site.
+* **Longitude:** Enter the length of the site.
+* **Currency:** Select the currency associated with the site.
+Notification - Alert Rule
+* **Low Inventory Notification:** Enter the low inventory quantity. When it is reached, the recipient's email contacts will receive a notification.
+* **Water volume notification alert:** Enter the low water volume. When it is reached, contacts in the recipient emails will receive a notification.
 
-<br>
+***Services***
 
-* **Inventory Low Notification:** Input the low inventory amount. When reached, contacts in **recipient emails** will receive a notification.
-* **Water Volume Notification Alert:** Input the low water volume. When reached, contacts in **recipient emails** will receive a notification.
+-INSERTAR IMAGEN-
+
+Select a site to register. After this, the list of services that this site has will be assigned and the current one will be deleted. In the "Services" tab you can select one of the services enabled for that site.
 
 When you have finished filling in the fields, click the **Save** button.
 
