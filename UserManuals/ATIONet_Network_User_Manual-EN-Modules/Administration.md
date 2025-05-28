@@ -120,8 +120,6 @@ The fields to complete are the following:
 * **Mode:** Select the Company Group Mode (credit or debit).
 * **Limit:** Input the Company Group limit.
 
-<br>
-
 * **Company:** Select the company or companies that are included in the Company Group.
 
 When you have finished filling in the fields, click the **Save** button.
