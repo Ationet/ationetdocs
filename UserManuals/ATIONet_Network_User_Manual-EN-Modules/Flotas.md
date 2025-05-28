@@ -80,8 +80,6 @@ En la sección del lista de precios rellene los siguientes campos:
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
-</br>
-
 ## Configuración de Alertas de Fraude
 En esta sección puede consultar y configurar cómo y cuándo se activan las alertas de fraude para la Network.
 
