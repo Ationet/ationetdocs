@@ -501,9 +501,9 @@ When you have finished filling in the fields, click the **Save** button.
 
 In this section you can configure the quotation of multiple currencies. 
 
--INSERTAR IMAGEN-
+![Quotations Menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Quotations%20Menu.PNG)
 
--INSERTAR IMAGEN-
+![Quotations new](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Quotations%20new.PNG)
 
 The sections to be configured are as follows:
 * **Currency of Origin:** Select the currency of the country of origin.
@@ -726,7 +726,7 @@ When you have finished filling in the fields, press the **Add** button if you ha
 ## Vehicle
 This view shows all the vehicles that have been created. Remember that it is not mandatory to load the vehicles to be able to operate, it is only necessary if you decide to associate the IDs to the vehicles. To facilitate queries, there is a filter panel at the top.
 
--INSERTAR IMAGEN-
+![Vehicles](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Vehicles.PNG)
 
 In the **Options** column you can:
 * **Assign Identifiers:** Assign/unassign identifiers to the vehicle.
