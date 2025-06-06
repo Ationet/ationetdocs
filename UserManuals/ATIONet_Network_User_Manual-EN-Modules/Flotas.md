@@ -1,5 +1,3 @@
-![image](https://github.com/user-attachments/assets/3474a3bf-1fdc-4f1a-89d2-492f90cd5620)![ationetlogo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/ATIOnetLogo_250x70.png)
-
 # Contenido
 
 - [Flotas](#flotas)
