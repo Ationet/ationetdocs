@@ -1,9 +1,10 @@
-![ationetlogo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/ATIOnetLogo_250x70.png)
+![image](https://github.com/user-attachments/assets/3474a3bf-1fdc-4f1a-89d2-492f90cd5620)![ationetlogo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/ATIOnetLogo_250x70.png)
 
 # Contenido
 
 - [Flotas](#flotas)
 	- [Alertas de Fraude](#alertas-de-fraude)
+	- [Aprobaciones de Workflows de Flota](#aprobaciones-de-workflows-de-flota)
 	- [Autorizaciones Pendientes](#autorizaciones-pendientes)
 	- [Conceptos](#conceptos)
 	- [Configuración de Alertas de Fraude](#configuración-de-alertas-de-fraude)
@@ -15,20 +16,29 @@
 	- [Cuentas Corrientes de Compañía](#cuentas-corrientes-de-compañía)
 	- [Encargados](#encargados)
 	- [Excepciones](#excepciones)
+	- [Facturas](#facturas)
 	- [Familias de Conceptos](#familias-de-conceptos)
+	- [Fast Tracks](#fast-tracks)
 	- [Identificadores Solicitados](#identificadores-solicitados)
+	- [Planificador de Identificadores](#planificador-de-identificadores)
 	- [Programas](#programas)
 	- [Reglas](#reglas)
 	- [Sobregiro](#sobregiro)
+	- [Tarjeta de Regalo](#tarjeta-de-regalo)
+	- [Tarjetas de Regalo Solicitadas](#tarjetas-de-regalo-solicitadas)
+	- [Tipo de Comprobante](#tipo-de-comprobante)
 	- [Transacciones](#transacciones)
 	- [Transacciones Desconocidas](#transacciones-desconocidas)
 	- [Transacciones Despachadas](#transacciones-despachadas)
+	- [Transacciones ERP](#transacciones-ERP)
 	- [Transacciones por Conductor](#transacciones-por-conductor)
 	- [Transacciones por Flota](#transacciones-por-flota)
 	- [Transacciones por Sitio](#transacciones-por-sitio)
 	- [Transacciones por Vehículo](#transacciones-por-vehículo)
 	- [Transacciones por Rechazadas](#transacciones-rechazadas)
 	- [Transacciones Sin Control](#transacciones-sin-control)
+	- [Vales](#Vales)
+	- [Vales - Administración](#Vales-_-Administración)
 
 # Flotas
 Dentro de este módulo se pueden gestionar los Contratos de Compañía y Comercios, los Conceptos, las Contingencias y las Transacciones entre otras cosas.
@@ -37,6 +47,10 @@ Dentro de este módulo se pueden gestionar los Contratos de Compañía y Comerci
 Dentro de esta sección puede ver una lista de todos los fraudes realizados por la Network. Para configurar cómo/cuándo alertar de los fraudes, vaya a [Configuración de Alertas de Fraude](#configuración-de-alertas-de-fraude).
 
 ![Alertas de fraude](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Alertas%20de%20Fraude.PNG)
+
+</br>
+
+## Aprobaciones de Workflows de Flota
 
 </br>
 
@@ -381,6 +395,10 @@ Algunas transacciones permanecen en estado de **Revisión** en algunas situacion
 
 </br>
 
+## Facturas
+
+</br>
+
 ## Familias de Conceptos
 Las familias de conceptos en ATIONet son una forma de agrupar varios conceptos. En esta sección puedes consultar, crear o editar conceptos de familias.
 
@@ -391,6 +409,10 @@ Para crear una familia de conceptos, haz clic en el botón **Nuevo**.
 ![Familias de Conceptos Nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Famlia%20de%20Conceptos%20Nuevo.PNG)
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
+
+</br>
+
+## Fast Tracks
 
 </br>
 
@@ -423,6 +445,10 @@ Para solicitar una identificación de flota, haga clic en el botón **Nueva soli
 Cuando haya terminado de rellenar los campos, presione el botón **Solicitar Identificadores**.
 
 Para cambiar el estado de los identificadores solicitados, haga clic en el botón **Acción en Lote** y seleccione la opción **Poner en Producción** o **Poner como Entregado**. Puede hacer que **Todas** las solicitudes cambien el estado o sólo las **Seleccionadas**.
+
+</br>
+
+## Planificador de Identificadores
 
 </br>
 
@@ -529,6 +555,18 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 </br>
 
+## Tarjeta de Regalo
+
+</br>
+
+## Tarjetas de Regalo Solicitadas
+
+</br>
+
+## Tipo de Comprobante
+
+</br>
+
 ## Transacciones
 La vista de transacciones es una de las más importantes en ATIONet. En esta vista puede ver todas las transacciones exitosas.
 
@@ -575,7 +613,9 @@ En esta sección se pueden consultar las transacciones desconocidas, listadas po
 En esta sección puede ver todas las transacciones que han sido dispensadas. Con la incorporación de la funcionalidad de Multimoneda, en la columna Monto despachado se podrá visualizar la moneda con que se realizó cada transacción. 
 
 ![Transacciones Despachadas](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Despachadas.PNG)
- 
+
+## Transacciones ERP
+
 ## Transacciones por Conductor
 En esta vista puede ver las transacciones agrupadas por el conductor que las realizó. Los botones de la parte superior izquierda sirven para imprimir la tabla o crear un archivo Excel a partir de la misma, respectivamente.
 Dentro de la grilla en la columna Moneda puede ver en que divisa se realiza cada transacción. En caso de tener habilitada la funcionalidad Multimoneda, en el listado de transacciones se indicarán las diferentes divisas de acuerdo a cada una de ellas.
@@ -617,6 +657,14 @@ Las transacciones sin control son aquellas que se generan porque el controlador 
 
 ![Transacciones sin control](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Sin%20Control.PNG)
 
-<br>
+</br>
+
+## Vales
+
+</br>
+
+## Vales - Administración
+
+</br>
 
 [Volver al inicio](#contenido) 	:arrow_up:
