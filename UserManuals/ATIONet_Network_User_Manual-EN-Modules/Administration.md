@@ -228,11 +228,11 @@ The identifications models vary according to the customer's needs. They can be o
 * **TAG:** Image type identifications (usually in QR format). It is generally used as a sticker attached to the windshield of the vehicle.
 * **Chipkey:** Key type identifications, used by a specific terminal system.
 
-![Identification Models](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identifications%20Model.PNG)
+![Identifications Models (Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identifications%20Models%20(Menu).PNG)
 
 To create an identificaiton model, click the **New** button.
 
-![New Identification Model](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identifications%20Model%20New.PNG)
+![Identification Model (new)](	https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identifications%20Model%20New.PNG)
 
 The fields to complete are the following:
 
@@ -246,28 +246,28 @@ The fields to complete are the following:
 * **Ignore the behavior of the vehicle ID in the terminal:** When this option is activated, the behavior of the related vehicle ID in the terminal will be ignored. In other words, if a request were to be made for a transaction, it will be skipped. A situation where this function can be applied is for a "Gift Card". These do not have any vehicle ID, so if you wish to operate on a site that requests a vehicle ID, without this feature, the Gift Card will be rejected.
 * **Custom Track:** If this option is activated, a track number can be determined at will instead of being generated automatically.
 * **Single use:** If this option is activated, this identification's model cannot be used multiple times.
+* **No Offline support:** This function allows you to operate only when the system is in the Online state.
+
+![Identification Model (Notification)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identification%20Model%20(Notification).PNG)
+
 * **Notify assignment:** When this function is activated, an e-mail will be sent to the entity to which this identification is assigned.
 	* Enabling this feature will enable the "File attachment in notification" option, which allows the QR to be attached to a PDF file.
 		* Finally, in case the previous function is enabled, a third function will be enabled called, "Encrypted attachment". This will allow that when the file arrives, a password will be requested, being the vehicle code.
 
--INSERTAR IMAGEN-
+![Identification Model (Require Pin)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identification%20Model%20(Require%20Pin).PNG)
 
-* **No Offline support:** This function allows you to operate only when the system is in the Online state.
 * **Require PIN:** This function allows us to determine whether a PIN is required, and also requires us to set the number of numbers requested for the PIN.
 	* Activating this function will enable a new function called "Require PIN change" which is a one-time option for terminals that allow a PIN to be set directly from the station.
 
--INSERTAR IMAGEN-
+![Identification Model (inactivity)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identification%20Model%20(inactivity).PNG)
 
 * **Validate inactivity period:** This function allows us to evaluate the automatic inactivation of an identification corresponding to this model according to the established period.
+	* When this function is activated, a box will be enabled in which the period in question can be set.
 
--INSERTAR IMAGEN-
-
-* When this function is activated, a box will be enabled in which the period in question can be set.
+![Identification Model (Track)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identification%20Model%20(Track).PNG)
 
 * **Custom Track Type:** Enabling this function allows you to set a Prefix and a Suffix to the Track.
 * **Track Encryption:** This function gives the identifiers of this model the capacity to be verified with an encrypted track, which will be recognized by ATIONET and validated if it exists. For the reading of the encrypted track to be applied, the corresponding property must be configured in the terminal.
-
--INSERTAR IMAGEN-
 
 When you have finished filling in the fields, click the **Save** button.
 
@@ -278,7 +278,7 @@ In this section you can consult and create any supplier you wish to send your id
 
 To create a provider, click the **New** button.
 
-![Identification Providers New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identification%20Provider%20New.PNG)
+![Identifications Providers](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identification%20Provider%20New.PNG)
 
 The fields to complete are the following:
 
@@ -295,7 +295,7 @@ When you have finished filling in the fields, click the **Save** button.
 
 In this section you can view and renew identifications. In the filters option, you can filter by execution statuses, process statuses and the corresponding schedules in which the process was executed. 
 
--INSERTAR IMAGEN-
+![Identifier renewal processes (Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Identifier%20renewal%20processes%20(Menu).PNG)
 
 * ***Launch Process:*** When this process is confirmed, existing identifications will be massively renewed.
 
@@ -336,11 +336,11 @@ Then, in the Identification section select the Identification. When finished, cl
 
 In this section users can add specific locations for which a specific type of identification is enabled.
 
--INSERTAR IMAGEN-
+![Locations Menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Locations%20Menu.PNG)
 
 In the **New** option, locations are added, for which a minimum of information is required:
 
--INSERTAR IMAGEN-
+![Location New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Location%20New.PNG)
 
 * **Code:** An alphanumeric pattern is required.
 * **Country/ State/ City/ Street:** The semi-exact location of the place you wish to enter is specified.
@@ -518,7 +518,7 @@ In this section you can view all the rack prices generated. These prices are the
 
 1. ***New price:*** 
 
--INSERTAR IMAGEN-
+![Rack price (Information)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Rack%20price%20(Information).PNG)
 
 * **Name:** Enter a name to identify the price
 * **Code:** Enter a code to identify the price
@@ -527,7 +527,7 @@ In this section you can view all the rack prices generated. These prices are the
 
 2. ***Fuel prices:***
 
--INSERTAR IMAGEN-
+![Rack price(By Fuel)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Rack%20price(By%20Fuel).PNG)
 
 * **Fuel:** Enter the fuels for which these prices are to be applied
 * **Value:** Enter the value of the prices
@@ -535,7 +535,7 @@ In this section you can view all the rack prices generated. These prices are the
 
 3. ***Prices per fuel and site:***
 
--INSERTAR IMAGEN-
+![Rack price(By Fuel And Site)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Rack%20price(By%20Fuel%20And%20Site).PNG)
 
 * **Fuel:** Enter the fuels for which these prices are to be applied
 * **Value:** Enter the value of the prices
@@ -548,11 +548,11 @@ When you have finished filling in the fields, click the **Save** button.
 ## Sites
 In ATIONET the site represents the service station. This section shows the sites already created, as well as the possibility to edit and create new ones. Taxes can be added to the sites directly from the **Options** column. To facilitate queries, there is a filter panel at the top.
 
-![Sites](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Sites.PNG)
+![Site (Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Sites.PNG)
 
 To create a site, click the **New** button.
 
-![Sites New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Sites%20New.PNG)
+![Site (Info)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Sites%20New.PNG)
 
 The fields to complete are the following:
 To create a site, click on the New button.
@@ -586,7 +586,7 @@ Notification - Alert Rule
 
 ***Services***
 
--INSERTAR IMAGEN-
+![Site (Services)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Site%20(Services).PNG)
 
 Select a site to register. After this, the list of services that this site has will be assigned and the current one will be deleted. In the "Services" tab you can select one of the services enabled for that site.
 
@@ -595,11 +595,11 @@ When you have finished filling in the fields, click the **Save** button.
 ## SKUs
 Stock Keeping Units (SKUs) are non-fuel products. In this section you can consult the created SKUs, edit them and create new ones. To facilitate queries, there is a filter panel at the top. 
 
--INSERTAR IMAGEN-
+![SKUs (Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/SKUs%20(Menu).PNG)
 
 To create a SKU, click on the **New** button.
 
--INSERTAR IMAGEN-
+![SKUs (Information)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/SKUs%20(Information).PNG)
 
 The fields to be completed are as follows:
 * **Code:** Enter an alphanumeric code (maximum 20 characters) for the SKU.
@@ -625,7 +625,7 @@ The fields to be completed are as follows:
 
 ***Items:***
 
--INSERTAR IMAGEN-
+![SKUs (Items & Taxes)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/SKUs%20(Items%20%26%20Taxes).PNG)
 
 * **POS code format:** Select the POS code format.
 * **POS Code:** Enter a point-of-sale code.
@@ -674,7 +674,7 @@ The tax table displays:
 
 To create a  tax, click  the **New** button.
 
-![Taxes New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Taxes%20New.PNG) 
+![New Tax](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Taxes%20New.PNG)
 
 The fields to complete are the following:
 
@@ -692,11 +692,11 @@ When you have finished filling in the fields, click the **Save** button.
 
 Within this section you can view, create and edit all terminals/controllers. The terminal is the point of sale of the site and the controller manages the pumps. For easy queries, there is a filter panel at the top.
 
--INSERTAR IMAGEN-
+![Terminals-Controllers (Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Terminals-Controllers%20(Menu).PNG)
 
 To create a Terminal/Controller, click on the New button.
 
--INSERTAR IMAGEN-
+![Terminals-Controllers (Info)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Administration/Terminals-Controllers%20(Info).PNG)
 
 The fields to be completed are as follows:
 * **Merchant:** Select the Merchant associated with the terminal/controller.
