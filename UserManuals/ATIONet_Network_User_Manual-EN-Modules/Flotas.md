@@ -38,7 +38,7 @@
 	- [Transacciones por Rechazadas](#transacciones-rechazadas)
 	- [Transacciones Sin Control](#transacciones-sin-control)
 	- [Vales](#Vales)
-	- [Vales - Administración](#Vales-_-Administración)
+	- [Vales - Administración](#Vales---Administración)
 
 # Flotas
 Dentro de este módulo se pueden gestionar los Contratos de Compañía y Comercios, los Conceptos, las Contingencias y las Transacciones entre otras cosas.
