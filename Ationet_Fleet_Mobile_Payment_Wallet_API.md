@@ -214,7 +214,7 @@ Vacío
 
 
 
-###Endpoint Wallet Payment Object
+### Endpoint Wallet Payment Object
 <b>Relative URL:</b> URLWallet/{{PaymentId}}?access_token={{Access_token}}</br>
 <b>Method:</b> GET </br>
 <b>Input:</b> application/json </br>
