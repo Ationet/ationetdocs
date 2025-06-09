@@ -24,7 +24,7 @@
      - [Payment Request](#payment-request)
      - [Get Transaction](#transaction-data)
      - [Notification](#notification-prepaid)
-
+  - [Endpoint Wallet Payment Object](#endpoint-wallet-payment-object)
 
 
 ## Introducción
@@ -213,3 +213,34 @@ Vacío
 Vacío
 
 
+
+###Endpoint Wallet Payment Object
+<b>Relative URL:</b> URLWallet/{{PaymentId}}?access_token={{Access_token}}</br>
+<b>Method:</b> GET </br>
+<b>Input:</b> application/json </br>
+<b>Output:</b> application/json </br>
+<b>Uso:</b> Es un Endpoint expuesto por la billetera el cual permite obtener el objeto pago. Este endpoint tiene en su query string el valor del payment id enviado en la notificación de pago y un Access_Token que permite autenticar la petición hacia la billetera de manera de que Ationet pueda obtener el objeto pago.
+El Status del objeto pago debe ser approved en caso de pago exitoso. 
+<b>Request Body:</b>
+Vacío
+<b>Response Body:</b>
+```json
+{
+  "id": long?,
+  "externalReference": string,
+  "statementDescriptor": string,
+  "status": string,
+  "currencyId": string,
+  "dateCreated": DateTime?,
+  "authCode": string,
+  "transactionAmount": string,
+  "collectorId": int?,
+  "description": string,
+  "paymentMethodId": string,
+  "paymentTypeId": string,
+  "product": {
+        "code": null,
+        "productNo": null
+      }
+}
+```
