@@ -123,7 +123,16 @@ Vacío
 }
 ```
 
-#### Notification Postpaid
+<b>Flujo:</b>
+1) La billetera comienza a realizar el pooling posterior a crear la transacción.
+2) La billetera comienza a evaluar el campo State_Name (o State_Id en su defecto) a la espera de que la transacción quede en estado "PumpReserveAccepted" (State_Id = 5).
+3) Una vez que la reserva se encuentra aceptada, esto habilita a la billetera a procesar el pago para poder continuar con el flujo.
+4) La billetera realiza la gestión del pago.
+5) La billetera envía la notificación de pago a Ationet, del pago ya efectuado.
+
+
+
+#### Notification Prepaid
 <b>Relative URL:</b> URLAmbiente/v{{Version}}/MPA/prepaid/Notifications/{{TransactionId}}?topic={{topic}}&id={{paymentId}}</br>
 <b>Method:</b> GET </br>
 <b>Input:</b> application/json </br>
@@ -200,6 +209,15 @@ Vacío
   "idDispatch": guid
 }
 ```
+<b>Flujo:</b>
+1) La billetera comienza a realizar el pooling posterior a crear la transacción.
+2) La billetera comienza a evaluar el campo State_Name (o State_Id) en su defecto a la espera de que la transacción quede en estado "PostPaidLocked" (State_Id = 32).
+3) Una vez que la transacción se encuentra lockeada, esto quiere decir que el SiteSystem subió los datos de la transacción a Ationet, por lo cual esta puede ser abonada.
+4) La billetera utiliza los datos de DispatchedAmount para procesar el pago de la transacción.
+5) La billetera envía la notificación de pago a Ationet, del pago ya efectuado.
+
+
+
 
 #### Notification Postpaid
 <b>Relative URL:</b> URLAmbiente/v{{Version}}/MPA/postpaid/Notifications/{{TransactionId}}?topic={{topic}}&id={{paymentId}}</br>
