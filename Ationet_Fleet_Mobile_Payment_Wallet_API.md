@@ -221,8 +221,10 @@ Vacío
 <b>Output:</b> application/json </br>
 <b>Uso:</b> Es un Endpoint expuesto por la billetera el cual permite obtener el objeto pago. Este endpoint tiene en su query string el valor del payment id enviado en la notificación de pago y un Access_Token que permite autenticar la petición hacia la billetera de manera de que Ationet pueda obtener el objeto pago.
 El Status del objeto pago debe ser approved en caso de pago exitoso. 
+
 <b>Request Body:</b>
 Vacío
+
 <b>Response Body:</b>
 ```json
 {
