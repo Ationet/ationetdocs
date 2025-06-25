@@ -11,7 +11,7 @@
 	- [Configuración de Fast Track](#configuración-de-fast-track)
 	- [Contingencia](#contingencia)
 	- [Contratos de Comercio](#contratos-de-comercio)
-	- [Contrtos de Compañía](#contratos-de-compañía)
+	- [Contratos de Compañía](#contratos-de-compañía)
 	- [Cuentas Corrientes de Comercio](#cuentas-corrientes-de-comercio)
 	- [Cuentas Corrientes de Compañía](#cuentas-corrientes-de-compañía)
 	- [Encargados](#encargados)
