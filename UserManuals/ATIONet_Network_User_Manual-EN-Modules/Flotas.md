@@ -103,13 +103,13 @@ Para crear una configuración, haga clic en el botón **Nuevo**.
 
 ![Configuración de Alertas de Fraude Nueva](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Configuraci%C3%B3n%20de%20Alertas%20de%20Fraude%20Nuevo.PNG)
 
-**Tipo:** Seleccione el elemento al cual se le aplicara la alerta. (Esta puede aplicarse a transacciones, al monto, al volumen y a los KM/MI)
-**Modo:** (Esta opción solo esta habilitada en caso de seleccionar como elemento las “Transacciones”) Elija para que tipo de transacciones se aplicara la alerta. La misma se divide en 3 grupos; estándar, fuera de línea y contingencia
-**Cantidad:** Introduzca la cantidad a partir del cual se ejecutará la alerta.
-**Valor:** (Esta opción solo está habilitada en caso de seleccionar como elemento las “Monto”) Introduzca el valor a partir del cual se ejecutará la alerta.
-**Activo:** Marcar/Desmarcar esta casilla para mantener activa/desactiva esta alerta.
-**Dueño de subcuenta:** (Esta opción solo está habilitada en caso de seleccionar como elemento las “Transacciones”)
-**Periodicidad :** Introduzca la unidad de tiempo para la cual desea que esta alarma se mantenga vigente.
+* **Tipo:** Seleccione el elemento al cual se le aplicara la alerta. (Esta puede aplicarse a transacciones, al monto, al volumen y a los KM/MI)
+* **Modo:** (Esta opción solo esta habilitada en caso de seleccionar como elemento las “Transacciones”) Elija para que tipo de transacciones se aplicara la alerta. La misma se divide en 3 grupos; estándar, fuera de línea y contingencia
+* **Cantidad:** Introduzca la cantidad a partir del cual se ejecutará la alerta.
+* **Valor:** (Esta opción solo está habilitada en caso de seleccionar como elemento las “Monto”) Introduzca el valor a partir del cual se ejecutará la alerta.
+* **Activo:** Marcar/Desmarcar esta casilla para mantener activa/desactiva esta alerta.
+* **Dueño de subcuenta:** (Esta opción solo está habilitada en caso de seleccionar como elemento las “Transacciones”)
+* **Periodicidad :** Introduzca la unidad de tiempo para la cual desea que esta alarma se mantenga vigente.
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
@@ -136,35 +136,35 @@ Para crear una contingencia, haga click en el botón **Nuevo**.
 
 Los campos a completar son los siguientes:
 
-**Motivo:** Introduzca el motivo por el cual se está realizando la contingencia.
-**Código de autorización:** Al introducir el código de autorización en la contingencia, se podrán cargar los datos de la misma.
-**Sitio:** Seleccione el sitio asociado a la contingencia.
-**Terminal/Controlador:** Seleccione el terminal/controlador asociado a la contingencia.
-**Fecha:** Introduzca la fecha de la contingencia.
-**Hora:** Introduzca la hora de la contingencia.
-**Cuenta primaria:** Seleccione la subcuenta primaria asociada a la contingencia.
-**Cuenta secundaria:** Seleccione la subcuenta secundaria asociada a la contingencia.
-**Combustible:** Seleccione el combustible asociado a la contingencia.
-**Volumen Despachado:** Introduzca el volumen asociado a la contingencia.
-**Moneda:** Introduzca la moneda de la contingencia.
-**Aplicar precio de contingencia:** Al activar esta opción, el precio de la contingencia ignorara cualquier tipo de modificador relacionado con el precio correspondiente.
-**Contingencia con SKU:** Al activar esta opción, se podrán agregar SKUs a la contingencia (Para habilitar esta opción es necesario tener los campos de “Fecha”, “Hora” y “Sitio” completos)
+* **Motivo:** Introduzca el motivo por el cual se está realizando la contingencia.
+* **Código de autorización:** Al introducir el código de autorización en la contingencia, se podrán cargar los datos de la misma.
+* **Sitio:** Seleccione el sitio asociado a la contingencia.
+* **Terminal/Controlador:** Seleccione el terminal/controlador asociado a la contingencia.
+* **Fecha:** Introduzca la fecha de la contingencia.
+* **Hora:** Introduzca la hora de la contingencia.
+* **Cuenta primaria:** Seleccione la subcuenta primaria asociada a la contingencia.
+* **Cuenta secundaria:** Seleccione la subcuenta secundaria asociada a la contingencia.
+* **Combustible:** Seleccione el combustible asociado a la contingencia.
+* **Volumen Despachado:** Introduzca el volumen asociado a la contingencia.
+* **Moneda:** Introduzca la moneda de la contingencia.
+* **Aplicar precio de contingencia:** Al activar esta opción, el precio de la contingencia ignorara cualquier tipo de modificador relacionado con el precio correspondiente.
+* **Contingencia con SKU:** Al activar esta opción, se podrán agregar SKUs a la contingencia (Para habilitar esta opción es necesario tener los campos de “Fecha”, “Hora” y “Sitio” completos)
 
   - Insertar Imagen -
 
-**Precio Unitario:** Introduzca el precio unitario asociado a la contingencia.
-**Monto Despachado:** Introduzca el monto asociado a la contingencia.
-**Turno:** Introduzca el turno asociado a la contingencia.
-**Surtidor:** Introduzca la bomba asociada a la contingencia.
-**Odómetro:** Introduzca el odómetro del vehículo asociado a la contingencia.
-**Horas de Motor:** Introduzca las horas de motor del vehículo asociado a la contingencia.
-**Id Conductor:** Introduzca el identificador del conductor asociado a la contingencia.
-**Id Vehículo:** Introduzca el identificador del vehículo asociado a la contingencia.
-**Encargado:** Introduzca el encargado asociado a la contingencia.
-**Lado de la Bomba:** Introduzca el lado de la bomba asociado a la contingencia.
-**Misceláneos:** Introduzca el misceláneos del vehículo asociados a la contingencia.
-**Número de Comprobante:** Introduzca el número de comprobante asociado a la contingencia.
-**Número de Orden de Compra:** Introduzca el número de orden de compra asociado a la contingencia.
+* **Precio Unitario:** Introduzca el precio unitario asociado a la contingencia.
+* **Monto Despachado:** Introduzca el monto asociado a la contingencia.
+* **Turno:** Introduzca el turno asociado a la contingencia.
+* **Surtidor:** Introduzca la bomba asociada a la contingencia.
+* **Odómetro:** Introduzca el odómetro del vehículo asociado a la contingencia.
+* **Horas de Motor:** Introduzca las horas de motor del vehículo asociado a la contingencia.
+* **Id Conductor:** Introduzca el identificador del conductor asociado a la contingencia.
+* **Id Vehículo:** Introduzca el identificador del vehículo asociado a la contingencia.
+* **Encargado:** Introduzca el encargado asociado a la contingencia.
+* **Lado de la Bomba:** Introduzca el lado de la bomba asociado a la contingencia.
+* **Misceláneos:** Introduzca el misceláneos del vehículo asociados a la contingencia.
+* **Número de Comprobante:** Introduzca el número de comprobante asociado a la contingencia.
+* **Número de Orden de Compra:** Introduzca el número de orden de compra asociado a la contingencia.
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
@@ -181,16 +181,16 @@ Para crear un contrato de comercio, haga clic en el botón **Nuevo**.
 
 Los campos a rellenar son los siguientes:
 
-**Activo:** Marcar/Desmarcar esta casilla para mantener activa/desactiva este contrato.
-**Comercio:** Seleccione el comercio asociado al contrato.
-**Usuario del Comercio:** Introduzca el usuario de contacto del comercio.
-**Código:** Introduzca el código del contrato.
-**Generado automáticamente:** Marque esta opción para que ATIONet genere automáticamente el código del contrato.
-**Descripción:** Introduzca la descripción del contrato.
-**Fecha de inicio:** Introduzca la fecha de inicio del contrato.
-**Duración:** Introduzca la duración del contrato.
-**Modo de Cuenta Corriente:** Seleccione la modalidad de cuenta corriente (Producto o Dinero).
-**Lista de Precios de Distribución:** Seleccione la lista de precios del contrato.
+* **Activo:** Marcar/Desmarcar esta casilla para mantener activa/desactiva este contrato.
+* **Comercio:** Seleccione el comercio asociado al contrato.
+* **Usuario del Comercio:** Introduzca el usuario de contacto del comercio.
+* **Código:** Introduzca el código del contrato.
+* **Generado automáticamente:** Marque esta opción para que ATIONet genere automáticamente el código del contrato.
+* **Descripción:** Introduzca la descripción del contrato.
+* **Fecha de inicio:** Introduzca la fecha de inicio del contrato.
+* **Duración:** Introduzca la duración del contrato.
+* **Modo de Cuenta Corriente:** Seleccione la modalidad de cuenta corriente (Producto o Dinero).
+* **Lista de Precios de Distribución:** Seleccione la lista de precios del contrato.
 
 Después de rellenar estos campos, debe configurar las pestañas de Sitio, Combustible, Precios y Modficadores.
 
@@ -226,32 +226,32 @@ Para crear un contrato de empresa, haga clic en el botón **Nuevo**.
 
 El primer paso para crear un nuevo contrato es completar la información general:
 
-**Activo:** Marque esta opción para activar/desactivar el contrato.
-**Código:** Introduzca el código asociado al contrato.
-**Compañía:** Seleccione la empresa asociada al contrato.
-**Monto de reactivación:** Introduzca el importe mínimo necesario para la reactivación automática (si el contrato está desactivado y se ha realizado un depósito por ese importe o superior).
-**Descripción:** Introduzca la descripción del contrato.
-**Fecha de inicio:** Introduzca la fecha de inicio del contrato.
-**Duración:** Introduzca la duración deseada del contrato.
-**Modo de la cuenta corriente:** Seleccione la modalidad de cuenta corriente asociada al contrato (Producto o Importe).
+* **Activo:** Marque esta opción para activar/desactivar el contrato.
+* **Código:** Introduzca el código asociado al contrato.
+* **Compañía:** Seleccione la empresa asociada al contrato.
+* **Monto de reactivación:** Introduzca el importe mínimo necesario para la reactivación automática (si el contrato está desactivado y se ha realizado un depósito por ese importe o superior).
+* **Descripción:** Introduzca la descripción del contrato.
+* **Fecha de inicio:** Introduzca la fecha de inicio del contrato.
+* **Duración:** Introduzca la duración deseada del contrato.
+* **Modo de la cuenta corriente:** Seleccione la modalidad de cuenta corriente asociada al contrato (Producto o Importe).
 
-**Moneda:** Seleccione la moneda asociada al contrato (esta opción sólo se activa si el **modo de cuenta corriente** es **Importe**).
+* **Moneda:** Seleccione la moneda asociada al contrato (esta opción sólo se activa si el **modo de cuenta corriente** es **Importe**).
 
-**Modo:** Seleccione la modalidad del contrato (Crédito, Débito o Efectivo).
+* **Modo:** Seleccione la modalidad del contrato (Crédito, Débito o Efectivo).
   * En caso de seleccionar “Crédito”, se habilitará la opción de establecer un límite para el contrato en cuestión.
-**Modo de Saldo:** Seleccione la modalidad de saldo asociada al contrato:
-  * **_Dispersión:_** El saldo se gestiona a nivel de subcuenta.
-  * **_No dispersar:_** El saldo se gestiona a nivel de contrato.
-  * **_Llenado Automático:_** No hay saldo.
-**Lista de Precios de Distribución:** Seleccione los precios de distribución que serán utilizados siempre y cuando no haya precios configurados en el contrato
-**Aplicar menor precio en Autorización:** Al aplicar esta configuración el contrato aplicara el menos monto del producto involucrado en la transacción autorizada, ya sea que este se encuentre en la lista de precios de distribución, en el contrato, etc.
-**Validar Sitios:** Marque esta opción para activar/desactivar la validación de sitios (el contrato sólo puede operar dentro de los sitios asignados).
-**Validar Combustibles:** Marque esta opción para activar/desactivar la validación de combustible (el contrato sólo puede operar con los combustibles asignados).
-**Validar Programas:** Al activar esta función el contrato validara los programas en la solicitud de identificadores. (Al marcar esta opción se vuelve obligatorio incorporar al menos un programa)
-**Valores Subsidiados:** Marcar esta opción para indicar que el contrato se genera con Subsidio.
-**Uso de Locaciones:** Al marcar esta opción se establecerá que el contrato hace uso de las locaciones previamente configuradas (Administracion>Locaciones).
-**Validar Comercios:** Marque esta opción para activar/desactivar la validación de comercios (el contrato sólo puede operar dentro de los comercios asignados).
-**Permitir edición de direcciones a la compañía:** Al activar esta opción se permitirá la modificación de direcciones de entrega de la compañía.
+* **Modo de Saldo:** Seleccione la modalidad de saldo asociada al contrato:
+	-**_Dispersión:_** El saldo se gestiona a nivel de subcuenta.
+	- **_No dispersar:_** El saldo se gestiona a nivel de contrato.
+	- **_Llenado Automático:_** No hay saldo.
+* **Lista de Precios de Distribución:** Seleccione los precios de distribución que serán utilizados siempre y cuando no haya precios configurados en el contrato
+* **Aplicar menor precio en Autorización:** Al aplicar esta configuración el contrato aplicara el menos monto del producto involucrado en la transacción autorizada, ya sea que este se encuentre en la lista de precios de distribución, en el contrato, etc.
+* **Validar Sitios:** Marque esta opción para activar/desactivar la validación de sitios (el contrato sólo puede operar dentro de los sitios asignados).
+* **Validar Combustibles:** Marque esta opción para activar/desactivar la validación de combustible (el contrato sólo puede operar con los combustibles asignados).
+* **Validar Programas:** Al activar esta función el contrato validara los programas en la solicitud de identificadores. (Al marcar esta opción se vuelve obligatorio incorporar al menos un programa)
+* **Valores Subsidiados:** Marcar esta opción para indicar que el contrato se genera con Subsidio.
+* **Uso de Locaciones:** Al marcar esta opción se establecerá que el contrato hace uso de las locaciones previamente configuradas (Administracion>Locaciones).
+* **Validar Comercios:** Marque esta opción para activar/desactivar la validación de comercios (el contrato sólo puede operar dentro de los comercios asignados).
+* **Permitir edición de direcciones a la compañía:** Al activar esta opción se permitirá la modificación de direcciones de entrega de la compañía.
 
 Una vez completada la información general, tiene diferentes pestañas para configurar:
 
@@ -269,48 +269,48 @@ Una vez completada la información general, tiene diferentes pestañas para conf
 
 En el aparatado de **“Precios Vigentes”** se puede ver los precios actuales para los combustibles en los sitios correspondientes, así como los modificadores aplicados a los mismos
 
-**_Combustible:_** Seleccionar el combustible asociado al precio.
-**_Valor:_** Introduzca el valor del precio.
-**_Sitio:_** Seleccione el sitio asociado al precio.
-**_Fecha Desde:_** Introduzca la fecha de inicio del precio.
-**_Hora Desde:_** Introduzca la hora de inicio del precio.
-**_Fecha Hasta:_** Introduzca la fecha de finalización del precio.
-**_Fecha Hasta:_** Introduzca la hora de finalización del precio.
+* **_Combustible:_** Seleccionar el combustible asociado al precio.
+* **_Valor:_** Introduzca el valor del precio.
+* **_Sitio:_** Seleccione el sitio asociado al precio.
+* **_Fecha Desde:_** Introduzca la fecha de inicio del precio.
+* **_Hora Desde:_** Introduzca la hora de inicio del precio.
+* **_Fecha Hasta:_** Introduzca la fecha de finalización del precio.
+* **_Fecha Hasta:_** Introduzca la hora de finalización del precio.
 
 4. **Modificadores:** Configurar los modificadores asociados al contrato.
 
-**_Descripción:_** Introduzca la descripción del modificador.
-**_Clase:_** Seleccionar la clase de modificador (Descuento o Recarga).
-**_Tipo:_** Seleccione el tipo de modificador (Porcentual, Fijo por Transacción o Fijo por Unidad).
-**_Valor:_** Introduzca el valor del modificador.
-**_Combustible:_** Seleccione el combustible asociado al modificador.
-**_Sitio:_** Seleccione el sitio asociado al modificador.
-**_Fecha Desde:_** Introduzca la fecha de inicio del modificador.
-**_Hora Desde:_** Introduzca la hora de inicio del modificador.
-**_Fecha Hasta:_** Introduzca la fecha de finalización del modificador.
-**_Fecha Hasta:_** Introduzca la hora de finalización del modificador.
+* **_Descripción:_** Introduzca la descripción del modificador.
+* **_Clase:_** Seleccionar la clase de modificador (Descuento o Recarga).
+* **_Tipo:_** Seleccione el tipo de modificador (Porcentual, Fijo por Transacción o Fijo por Unidad).
+* **_Valor:_** Introduzca el valor del modificador.
+* **_Combustible:_** Seleccione el combustible asociado al modificador.
+* **_Sitio:_** Seleccione el sitio asociado al modificador.
+* **_Fecha Desde:_** Introduzca la fecha de inicio del modificador.
+* **_Hora Desde:_** Introduzca la hora de inicio del modificador.
+* **_Fecha Hasta:_** Introduzca la fecha de finalización del modificador.
+* **_Fecha Hasta:_** Introduzca la hora de finalización del modificador.
 
 5. **Liquidación:** Configurar el proceso de facturación asociado al contrato.
 
 - ACTUALIZAR IMAGEN -
 
-**_Tipo de Proceso de Facturación:_** Seleccionar el tipo de proceso de liquidación asociado al contrato (EdiFactMx es sólo para el cliente de México)
-**_Activo:_** Marque esta opción para activar/desactivar el proceso de liquidación.
-**_Días de vencimiento:_** Ingrese la cantidad de días de vencimiento asociados al estado de cuenta.
-**_Periodicidad:_** Introduzca la frecuencia con la que se generan los extractos.
-**_Manual:_** Marque esta opción para activar/desactivar el proceso manual del proceso de liquidación.
-**Fecha de Inicio de Liquidación:** Establezca la fecha para la cual se programará el inicio de las liquidaciones del contrato. En caso de dejar este apartado en blanco, la fecha por defecto se la misma que la creación del contrato.
-**_Cargos Deducen el Saldo de las Cuentas:_** Marque esta opción para habilitar/deshabilitar que ATIONet reste automáticamente los conceptos de los saldos de las cuentas.
-**_Documento de Cargos Separados:_** Marque esta opción para habilitar/deshabilitar que ATIONet separe cada concepto asociado al estado de cuenta.
-**_Emails de los Destinatarios:_** Introduzca las direcciones de correo electrónico que recibirán los estados de cuenta.
-**_ID del contribuyente:_** Introduzca el ID del contribuyente asociado a la estado de cuenta.
-**_Nombre:_** Introduzca el nombre asociado al estado de cuenta.
-**_Calle 1:_** Introduzca la calle principal asociada al estado de cuenta.
-**_Calle 2:_** Introduzca la calle secundaria asociada al estado de cuenta.
-**_Código Postal:_** Introduzca el código postal asociado al estado de cuenta.
-**_Ciudad:_** Introduzca la ciudad asociada al estado de cuenta.
-**_País:_** Introduzca el país asociado al estado de cuenta.
-**_Estado:_** Introduzca el estado asociado al estado de cuenta.
+* **_Tipo de Proceso de Facturación:_** Seleccionar el tipo de proceso de liquidación asociado al contrato (EdiFactMx es sólo para el cliente de México)
+* **_Activo:_** Marque esta opción para activar/desactivar el proceso de liquidación.
+* **_Días de vencimiento:_** Ingrese la cantidad de días de vencimiento asociados al estado de cuenta.
+* **_Periodicidad:_** Introduzca la frecuencia con la que se generan los extractos.
+* **_Manual:_** Marque esta opción para activar/desactivar el proceso manual del proceso de liquidación.
+* **Fecha de Inicio de Liquidación:** Establezca la fecha para la cual se programará el inicio de las liquidaciones del contrato. En caso de dejar este apartado en blanco, la fecha por defecto se la misma que la creación del contrato.
+* **_Cargos Deducen el Saldo de las Cuentas:_** Marque esta opción para habilitar/deshabilitar que ATIONet reste automáticamente los conceptos de los saldos de las cuentas.
+* **_Documento de Cargos Separados:_** Marque esta opción para habilitar/deshabilitar que ATIONet separe cada concepto asociado al estado de cuenta.
+* **_Emails de los Destinatarios:_** Introduzca las direcciones de correo electrónico que recibirán los estados de cuenta.
+* **_ID del contribuyente:_** Introduzca el ID del contribuyente asociado a la estado de cuenta.
+* **_Nombre:_** Introduzca el nombre asociado al estado de cuenta.
+* **_Calle 1:_** Introduzca la calle principal asociada al estado de cuenta.
+* **_Calle 2:_** Introduzca la calle secundaria asociada al estado de cuenta.
+* **_Código Postal:_** Introduzca el código postal asociado al estado de cuenta.
+* **_Ciudad:_** Introduzca la ciudad asociada al estado de cuenta.
+* **_País:_** Introduzca el país asociado al estado de cuenta.
+* **_Estado:_** Introduzca el estado asociado al estado de cuenta.
 
 6. **Conceptos:** Seleccione el concepto asociado al contrato. Para más información sobre los conceptos acceda a [aquí](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules).
 
@@ -324,20 +324,20 @@ En el aparatado de **“Precios Vigentes”** se puede ver los precios actuales 
 
 - ACTUALIZAR IMAGEN -
 
-**_Tipo:_** Seleccione **Fijo** para bloquear la operación en fechas concretas, o seleccione **Fijo** para bloquear la operación en días concretos de cada mes.
-**_Fecha desde:_** Introduzca la fecha de inicio del bloqueo.
-**_Fecha Hasta:_** Introduzca la fecha de finalización del bloqueo.
-**_Día desde:_** Introduzca el día de inicio de cada mes para el bloqueo.
-**_Día Hasta:_** Introduzca el día final de cada mes para el bloqueo.
+* **_Tipo:_** Seleccione **Fijo** para bloquear la operación en fechas concretas, o seleccione **Fijo** para bloquear la operación en días concretos de cada mes.
+* **_Fecha desde:_** Introduzca la fecha de inicio del bloqueo.
+* **_Fecha Hasta:_** Introduzca la fecha de finalización del bloqueo.
+* **_Día desde:_** Introduzca el día de inicio de cada mes para el bloqueo.
+* **_Día Hasta:_** Introduzca el día final de cada mes para el bloqueo.
 
 9. **Sobregiro:** Configure los sobregiros asociados al contrato.
 
 - ACTUALIZAR IMAGEN -
 
-**_Tipo:_** Seleccione el tipo de sobregiro (Porcentaje o Importe).
-**_Valor:_** Introduzca el valor asociado al sobregiro.
-**_Fecha Desde:_** Introduzca la fecha de inicio del sobregiro.
-**_Fecha Hasta:_** Introduzca la fecha de finalización del sobregiro.
+* **_Tipo:_** Seleccione el tipo de sobregiro (Porcentaje o Importe).
+* **_Valor:_** Introduzca el valor asociado al sobregiro.
+* **_Fecha Desde:_** Introduzca la fecha de inicio del sobregiro.
+* **_Fecha Hasta:_** Introduzca la fecha de finalización del sobregiro.
 
 10. **Programas:** Agregar los programas habilitados para poder operar con el contrato. (En caso de haber marcado la opción “Validar Programas” este campo es obligatorio)
 
@@ -508,18 +508,18 @@ Para crear un programa, haga clic en el botón **Nuevo**.
 
 Los campos a completar son los siguientes:
 
-**Código:** Introduzca el código deseado para el programa
-**Descripción:** Introduzca la descripción del programa.
-**Rango del BIN:** Introduzca el rango del BIN asociado al programa.
-**Aplicación de los sitios contractuales:** Seleccione si la validación del sitio se aplica o no en el programa.
-**Modo de Balance:** Seleccione el modo de balance para el programa (Contrato, Disperso, No Disperso o Auto Llenado).
-**Soporte de Contingencias:** Seleccione si la creación de contingencias se aplica o no en el programa.
-**Soporte Offline:** Seleccione si el módulo offline se aplica o no en el programa.
-**Tipo:** Seleccione el tipo de programa (Flota o Vales).
-**Soporte de Productos Secos:** Marque esta opción si el programa soporta SKUs. **Valida la Fecha de Caducidad:** Marque esta opción si el programa valida las fechas de caducidad de los identificadores.
-**Vencimiento de Identificadores:** Introduzca la duración de la identificación.
-**Uso del ID del conductor:** Seleccione el tipo de identificador que se le solicitara al conductor
-**Uso del ID del vehículo:** Seleccione el tipo de identificador que se le solicitara al vehículo
+* **Código:** Introduzca el código deseado para el programa
+* **Descripción:** Introduzca la descripción del programa.
+* **Rango del BIN:** Introduzca el rango del BIN asociado al programa.
+* **Aplicación de los sitios contractuales:** Seleccione si la validación del sitio se aplica o no en el programa.
+* **Modo de Balance:** Seleccione el modo de balance para el programa (Contrato, Disperso, No Disperso o Auto Llenado).
+* **Soporte de Contingencias:** Seleccione si la creación de contingencias se aplica o no en el programa.
+* **Soporte Offline:** Seleccione si el módulo offline se aplica o no en el programa.
+* **Tipo:** Seleccione el tipo de programa (Flota o Vales).
+* **Soporte de Productos Secos:** Marque esta opción si el programa soporta SKUs. **Valida la Fecha de Caducidad:** Marque esta opción si el programa valida las fechas de caducidad de los identificadores.
+* **Vencimiento de Identificadores:** Introduzca la duración de la identificación.
+* **Uso del ID del conductor:** Seleccione el tipo de identificador que se le solicitara al conductor
+* **Uso del ID del vehículo:** Seleccione el tipo de identificador que se le solicitara al vehículo
 
 Una vez completada la información general, también puede configurar las reglas de solicitud y localización para el programa:
 
