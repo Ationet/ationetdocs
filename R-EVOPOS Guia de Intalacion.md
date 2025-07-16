@@ -53,6 +53,8 @@ Este documento describe el procedimiento para instalar una aplicación Android u
 
 5. Confirmar instalación exitosa. (ADB mostrará el mensaje: Success)
 
+![Requisitos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/R-EVOPOS%20Guia%20de%20Intalacion/Requisitos.png)
+
 6. Instalar la APK en el dispositivo. Ingresar el siguiente comando: adb install -r revopos-t650p-release.apk 
  
 7. Confirmar instalación exitosa.(ADB mostrará el mensaje: Success). Posteriormente, la aplicación debe estar disponible en el menú de aplicaciones del dispositivo Android. 
@@ -61,4 +63,4 @@ Este documento describe el procedimiento para instalar una aplicación Android u
 
 9. Se informará la siguiente pantalla, presionar OK en la misma 
 
-
+![Resultados](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/R-EVOPOS%20Guia%20de%20Intalacion/Resultados.png)
