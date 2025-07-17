@@ -16,7 +16,6 @@
 	- [Cuentas Corrientes de Compañía](#cuentas-corrientes-de-compañía)
 	- [Encargados](#encargados)
 	- [Excepciones](#excepciones)
-	- [Facturas](#facturas)
 	- [Familias de Conceptos](#familias-de-conceptos)
 	- [Fast Tracks](#fast-tracks)
 	- [Identificadores Solicitados](#identificadores-solicitados)
@@ -24,8 +23,6 @@
 	- [Programas](#programas)
 	- [Reglas](#reglas)
 	- [Sobregiro](#sobregiro)
-	- [Tarjeta de Regalo](#tarjeta-de-regalo)
-	- [Tarjetas de Regalo Solicitadas](#tarjetas-de-regalo-solicitadas)
 	- [Tipo de Comprobante](#tipo-de-comprobante)
 	- [Transacciones](#transacciones)
 	- [Transacciones Desconocidas](#transacciones-desconocidas)
@@ -437,9 +434,6 @@ En esta vista, al principio se puede filtrar por el tipo de excepción. Los tipo
 
 Algunas transacciones permanecen en estado de **Revisión** en algunas situaciones, como cuando se envía más de lo autorizado (debido a un error del controlador o del TPV). En estos casos es necesario aprobar o rechazar la transacción utilizando uno de los dos iconos a la derecha de cada registro.
 
-</br>
-
-## Facturas
 
 </br>
 
@@ -612,13 +606,6 @@ Los campos a completar son los siguientes:
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
-</br>
-
-## Tarjeta de Regalo
-
-</br>
-
-## Tarjetas de Regalo Solicitadas
 
 </br>
 
@@ -689,6 +676,9 @@ En esta sección puede ver todas las transacciones que han sido dispensadas. Con
 ![Transacciones Despachadas](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Despachadas.PNG)
 
 ## Transacciones ERP
+En esta vista puede ver las transacciones agrupadas por ERP correspondiente. Los botones de la parte superior izquierda sirven para imprimir la tabla o crear un archivo Excel a partir de la misma, respectivamente. 
+
+![Transaccion ERP](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transaccion%20ERP.PNG)
 
 ## Transacciones por Conductor
 En esta vista puede ver las transacciones agrupadas por el conductor que las realizó. Los botones de la parte superior izquierda sirven para imprimir la tabla o crear un archivo Excel a partir de la misma, respectivamente.
