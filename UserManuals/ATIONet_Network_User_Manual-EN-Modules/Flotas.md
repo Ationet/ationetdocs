@@ -49,7 +49,8 @@ Dentro de esta sección puede ver una lista de todos los fraudes realizados por 
 
 ## Aprobaciones de Workflows de Flota
 
-En este apartado se puede visualizar las distintas operaciones pendientes de aprobación. Las mismas se determinan en [Configuraciones de Workflows de Flota](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Liquidaci%C3%B3n%20&%20Configuraci%C3%B3n%20&%20Bit%C3%A1cora.md#configuraciones-de-workflows-de-flota)
+En este apartado se puede visualizar las distintas operaciones pendientes de aprobación. 
+Las mismas se determinan en [Configuraciones de Workflows de Flota](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Liquidaci%C3%B3n%20&%20Configuraci%C3%B3n%20&%20Bit%C3%A1cora.md#configuraciones-de-workflows-de-flota)
 
 ACTUALIZAR IMAGEN
 
@@ -456,6 +457,10 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 ## Fast Tracks
 
+En este apartado se pueden visualizar los FasTracks creados. En esta vista, se puede visualizar tanto el monto como su periodo de disponibilidad. A su vez, se puede visualizar el monto utilizado del FastTrack y el volumen de transaccionado con el mismo.
+
+ACTUALIZAR IMAGEN
+
 </br>
 
 ## Identificadores Solicitados
@@ -729,9 +734,18 @@ Las transacciones sin control son aquellas que se generan porque el controlador 
 
 ## Vales
 
+En este apartado se pueden visualizar los vales creados, así como filtrar entre aquellos que estén activos e inactivos, y entre aquellos que poseen o no saldo. Con los botones de la parte superior se puede modificar las vistas entre detallada y simplificada, así como descargar un Excel con la información correspondiente de los vales.
+
+ACTUALIZAR IMAGEN
+
+
 </br>
 
 ## Vales - Administración
+
+En este apartado se puede visualizar los vales creados, los cuales están organizados por periodo de creación. En estas columnas se muestra el detalle de cuantos vales fueron generados en la fecha correspondiente y de cuanto corresponde su individual monto, así como el monto total de la operación.
+
+ACTUALIZAR IMAGEN
 
 </br>
 
