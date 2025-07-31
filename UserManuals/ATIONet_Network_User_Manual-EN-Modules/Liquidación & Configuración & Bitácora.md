@@ -12,6 +12,7 @@
 	- [Clasificadores de Contratos de Compañía](#clasificadores-de-contratos-de-compañía)
 	- [Clasificadores de Sitios](#clasificadores-de-sitios)
 	- [Configuración de Procesos](#configuración-de-procesos)
+ 	- [Configuraciones de Workflows de Flota](#Configuraciones-de-Workflows-de-Flota)
 	- [Motivos de Contingencias](#motivos-de-contingencias)
 	- [Red](#red)
 	- [Tipos de Documentos Externos](#tipos-de-documentos-externos)
@@ -79,6 +80,12 @@ Los campos a completar son los siguientes:
 * **Habilitado:** Marque esta opción para habilitar/deshabilitar el proceso.
 * **PDF:** Marque esta opción para habilitar/deshabilitar el proceso para crear un pdf del estado de cuenta cuando se termine de procesar.
 * **Email:** Marque esta opción para habilitar/deshabilitar el proceso para enviar el pdf creado de la declaración cuando se termine de procesar.
+
+</br>
+
+## Configuraciones de Workflows de Flota
+
+</br>
 
 ## Motivos de Contingencias
 En esta sección puede configurar los motivos de la creación de contingencias.
