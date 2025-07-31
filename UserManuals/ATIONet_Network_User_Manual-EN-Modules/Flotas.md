@@ -49,6 +49,10 @@ Dentro de esta sección puede ver una lista de todos los fraudes realizados por 
 
 ## Aprobaciones de Workflows de Flota
 
+En este apartado se puede visualizar las distintas operaciones pendientes de aprobación. Las mismas se determinan en [Configuraciones de Workflows de Flota](#Configuraciones-de-Workflows-de-Flota). 
+
+ACTUALIZAR IMAGEN
+
 </br>
 
 ## Autorizaciones Pendientes
