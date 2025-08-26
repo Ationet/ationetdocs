@@ -6,7 +6,7 @@
 	- [Alertas de Fraude](#alertas-de-fraude)
 	- [Aprobaciones de Workflows de Flota](#aprobaciones-de-workflows-de-flota)
 	- [Autorizaciones Pendientes](#autorizaciones-pendientes)
-	- [Conceptos](#conceptos)
+	- [Conceptos](#conceptos) 
 	- [Configuración de Alertas de Fraude](#configuración-de-alertas-de-fraude)
 	- [Configuración de Fast Track](#configuración-de-fast-track)
 	- [Contingencia](#contingencia)
