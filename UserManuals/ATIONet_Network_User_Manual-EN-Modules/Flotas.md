@@ -52,7 +52,7 @@ Dentro de esta sección puede ver una lista de todos los fraudes realizados por 
 En este apartado se puede visualizar las distintas operaciones pendientes de aprobación. 
 Las mismas se determinan en [Configuraciones de Workflows de Flota](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Liquidaci%C3%B3n%20&%20Configuraci%C3%B3n%20&%20Bit%C3%A1cora.md#configuraciones-de-workflows-de-flota)
 
-ACTUALIZAR IMAGEN
+[Aprobacion de Workflows de Flota](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Aprobacion%20de%20Workflows%20de%20Flota.PNG)
 
 </br>
 
@@ -129,11 +129,11 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Contingencia
 En ATIONet una contingencia es una operación introducida manualmente. En esta sección puede consultar y crear contingencias. Tenga en cuenta que las contingencias son transacciones sin autorización previa.
 
-![Contingencia](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contingencias.PNG)
+![Contingencia (Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contingencia%20(Menu).PNG)
 
 Para crear una contingencia, haga click en el botón **Nuevo**.
 
-![Contingencias Nueva](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contingencias%20Nueva.PNG)
+![Contingencia (Config)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contingencia%20(Config).PNG)
 
 
 Los campos a completar son los siguientes:
@@ -152,7 +152,7 @@ Los campos a completar son los siguientes:
 * **Aplicar precio de contingencia:** Al activar esta opción, el precio de la contingencia ignorara cualquier tipo de modificador relacionado con el precio correspondiente.
 * **Contingencia con SKU:** Al activar esta opción, se podrán agregar SKUs a la contingencia (Para habilitar esta opción es necesario tener los campos de “Fecha”, “Hora” y “Sitio” completos)
 
-  - Insertar Imagen -
+ ![Contingencia (Config SKUs)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contingencia%20(Config%20SKUs).PNG)
 
 * **Precio Unitario:** Introduzca el precio unitario asociado a la contingencia.
 * **Monto Despachado:** Introduzca el monto asociado a la contingencia.
@@ -175,11 +175,11 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Contratos de Comercio
 En ATIONet el término comercio se refiere a la entidad propietaria de los sitios. En esta sección puede consultar, editar y crear contratos de comercio. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-![Contratos de Comerio](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Comercio.PNG)
+![Contratos de Comercio (Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Comercio%20(Menu).PNG)
 
 Para crear un contrato de comercio, haga clic en el botón **Nuevo**.
 
-![Contrato de Comercio Nuevo](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Comercio%20Nuevo.PNG)
+![Contratos de Comercio (Config)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Comercio%20(Config).PNG)
 
 Los campos a rellenar son los siguientes:
 
@@ -199,19 +199,19 @@ Después de rellenar estos campos, debe configurar las pestañas de Sitio, Combu
 
 1. **Sitios:** Seleccione los sitios asociados al contrato.
 
-- Insertar Imagen -
+![Contratos de Comercio (Config - Sitios)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Comercio%20(Config%20-%20Sitios).PNG)
 
 2. **Combustibles:** Seleccione los combustibles asociados al contrato.
 
-- Insertar Imagen -
+![Contratos de Comercio (Config - Combustibles)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Comercio%20(Config%20-%20Combustibles).PNG)
 
 3. **Precios:** Seleccione los precios asociados al contrato.
 
-- Insertar Imagen -
+![Contratos de Comercio (Config - Precios - Edicion)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Comercio%20(Config%20-%20Precios%20-%20Edicion).PNG)
 
 4. **Modificadores:** Seleccione los modificadores asociados al contrato.
 
-- Insertar Imagen -
+![Contratos de Comercio (Config - Modificadores - Edicion)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Comercio%20(Config%20-%20Modificadores%20-%20Edicion).PNG)
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
@@ -224,7 +224,7 @@ En ATIONet el término compañía se refiere a la entidad que gestiona la flota.
 
 Para crear un contrato de empresa, haga clic en el botón **Nuevo**.
 
-![Contratos de Compañía Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Contratos%20de%20Compa%C3%B1%C3%ADa%20Nuevo.PNG)
+![Nuevo contrato de compañia](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Nuevo%20contrato%20de%20compa%C3%B1ia.PNG)
 
 El primer paso para crear un nuevo contrato es completar la información general:
 
@@ -259,15 +259,15 @@ Una vez completada la información general, tiene diferentes pestañas para conf
 
 1. **Combustibles:** Seleccione los combustibles asociados al contrato.
 
-- ACTUALIZAR IMAGEN -
+![Nuevo contrato de compañia (Combustible)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Nuevo%20contrato%20de%20compa%C3%B1ia%20(Combustible).PNG)
 
 2. **Sitios:** Seleccione los sitios asociados al contrato.
 
-- ACTUALIZAR IMAGEN -
+![Nuevo contrato de compañia (Sitios)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Nuevo%20contrato%20de%20compa%C3%B1ia%20(Sitios).PNG)
 
 3. **Precios:** Configure los precios asociados al contrato.
 
-- ACTUALIZAR IMAGEN -
+![Nuevo contrato de compañia (Precios)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Nuevo%20contrato%20de%20compa%C3%B1ia%20(Precios).PNG)
 
 En el aparatado de **“Precios Vigentes”** se puede ver los precios actuales para los combustibles en los sitios correspondientes, así como los modificadores aplicados a los mismos
 
@@ -280,6 +280,8 @@ En el aparatado de **“Precios Vigentes”** se puede ver los precios actuales 
 * **_Fecha Hasta:_** Introduzca la hora de finalización del precio.
 
 4. **Modificadores:** Configurar los modificadores asociados al contrato.
+
+![Nuevo contrato de compañia (modificadores)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Nuevo%20contrato%20de%20compa%C3%B1ia%20(modificadores).PNG)
 
 * **_Descripción:_** Introduzca la descripción del modificador.
 * **_Clase:_** Seleccionar la clase de modificador (Descuento o Recarga).
@@ -294,7 +296,7 @@ En el aparatado de **“Precios Vigentes”** se puede ver los precios actuales 
 
 5. **Liquidación:** Configurar el proceso de facturación asociado al contrato.
 
-- ACTUALIZAR IMAGEN -
+![Nuevo contrato de compañia (liquidaciones)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Nuevo%20contrato%20de%20compa%C3%B1ia%20(liquidaciones).PNG)
 
 * **_Tipo de Proceso de Facturación:_** Seleccionar el tipo de proceso de liquidación asociado al contrato (EdiFactMx es sólo para el cliente de México)
 * **_Activo:_** Marque esta opción para activar/desactivar el proceso de liquidación.
@@ -316,15 +318,15 @@ En el aparatado de **“Precios Vigentes”** se puede ver los precios actuales 
 
 6. **Conceptos:** Seleccione el concepto asociado al contrato. Para más información sobre los conceptos acceda a [aquí](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules).
 
-- ACTUALIZAR IMAGEN -
+![Nuevo contrato de compañia (conceptos)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Nuevo%20contrato%20de%20compa%C3%B1ia%20(conceptos).PNG)
 
 7. **Documentos:** Suba cualquier documento asociado al contrato (por ejemplo: un pdf del propio contrato físico).
 
-- ACTUALIZAR IMAGEN -
+![Nuevo contrato de compañia (documentos)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Nuevo%20contrato%20de%20compa%C3%B1ia%20(documentos).PNG)
 
 8. **Bloqueos:** Configurar los bloqueos asociados al contrato
 
-- ACTUALIZAR IMAGEN -
+![Nuevo contrato de compañia (bloqueos)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Nuevo%20contrato%20de%20compa%C3%B1ia%20(bloqueos).PNG)
 
 * **_Tipo:_** Seleccione **Fijo** para bloquear la operación en fechas concretas, o seleccione **Fijo** para bloquear la operación en días concretos de cada mes.
 * **_Fecha desde:_** Introduzca la fecha de inicio del bloqueo.
@@ -334,7 +336,7 @@ En el aparatado de **“Precios Vigentes”** se puede ver los precios actuales 
 
 9. **Sobregiro:** Configure los sobregiros asociados al contrato.
 
-- ACTUALIZAR IMAGEN -
+![Nuevo contrato de compañia (sobregiro)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Nuevo%20contrato%20de%20compa%C3%B1ia%20(sobregiro).PNG)
 
 * **_Tipo:_** Seleccione el tipo de sobregiro (Porcentaje o Importe).
 * **_Valor:_** Introduzca el valor asociado al sobregiro.
@@ -343,19 +345,19 @@ En el aparatado de **“Precios Vigentes”** se puede ver los precios actuales 
 
 10. **Programas:** Agregar los programas habilitados para poder operar con el contrato. (En caso de haber marcado la opción “Validar Programas” este campo es obligatorio)
 
-- ACTUALIZAR IMAGEN -
+![Nuevo contrato de compañia (Programas)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Nuevo%20contrato%20de%20compa%C3%B1ia%20(Programas).PNG)
 
 11. **Subsidios:** Agregar los subsidios temporales los cuales se implementaran a los combustibles deseados.
 
-- ACTUALIZAR IMAGEN -
+![Nuevo contrato de compañia (subsidios)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Nuevo%20contrato%20de%20compa%C3%B1ia%20(subsidios).PNG)
 
 12. **Comercios:** Agregar los comercios habilitados para poder operar con el contrato. (En caso de haber marcado la opción “Validar Comercios” este campo es obligatorio)
 
-- ACTUALIZAR IMAGEN -
+![Nuevo contrato de compañia (comercios)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Nuevo%20contrato%20de%20compa%C3%B1ia%20(comercios).PNG)
 
 13. **Modelo de Identificadores:** Selecciones los modelos de identificador asociados al contrato.
 
-- ACTUALIZAR IMAGEN -
+![Nuevo contrato de compañia (modelo de identificadores)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Nuevo%20contrato%20de%20compa%C3%B1ia%20(modelo%20de%20identificadores).PNG)
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
@@ -371,19 +373,19 @@ En la columna Moneda de la grilla puede ver en que moneda se realiza cada movimi
 
 **Lista de contratos:** Esta opción lista todos los contratos con sus respectivos saldos, pero no da detalles de los movimientos.
 
-- IMAGEN DE LOS RESULTADOS -
+![Cuenta corriente de Comercio (Listado de contratos)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuenta%20corriente%20de%20Comercio%20(Listado%20de%20contratos).PNG)
 
 **Movimientos de contratos:** Esta opción muestra todos los movimientos de los contratos.
 
-- IMAGEN DE LOS RESULTADOS -
+![Cuenta corriente de Comercio (movimientos de contrato)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuenta%20corriente%20de%20Comercio%20(movimientos%20de%20contrato).PNG)
 
 **Lista de Sitios:** Esta opción lista todos los Sitios con sus respectivos saldos, pero no da detalles de los movimientos.
 
-- IMAGEN DE LOS RESULTADOS -
+![Cuenta corriente de Comercio (Listado de Sitios)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuenta%20corriente%20de%20Comercio%20(Listado%20de%20Sitios).PNG)
 
 **Movimientos de Sitios:** Esta vista lista todos los movimientos de los Sitios
 
-- IMAGEN DE LOS RESULTADOS -
+![Cuenta corriente de Comercio (movimientos de sitios)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuenta%20corriente%20de%20Comercio%20(movimientos%20de%20sitios).PNG)
 
 </br>
 
@@ -393,7 +395,7 @@ En la columna Moneda de la grilla puede ver en que moneda se realiza cada movimi
 
 Para facilitar las consultas, hay un panel de filtros disponible. La primera opción del panel de filtros es el tipo de informe:
 
-- ACTUALIZAR IMAGEN -
+![Cuenta corriente de Compañia filtros](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Cuenta%20corriente%20de%20Compa%C3%B1ia%20filtros.PNG)
 
 1. **Lista de Contratos:** Esta opción lista todos los contratos con sus respectivos saldos, pero no da detalles de los movimientos.
 
@@ -418,7 +420,7 @@ Para facilitar las consultas, hay un panel de filtros disponible. La primera opc
 ## Encargados
 En ATIONet el término encargado se refiere a la persona responsable de hacer el despacho, el que opera las bombas. En esta sección se pueden ver, crear y editar todos los encargados. Para facilitar las consultas, hay un panel de filtros en la parte superior.
 
-- ACTUALIZAR IMAGEN -
+![Encargados](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Encargados.PNG)
 
 Para crear un encargado, haga clic en el botón **Nuevo**.
 
@@ -431,7 +433,7 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 ## Excepciones
 ATIONet separa las transacciones no autorizadas en 2 secciones: **Excepciones** y [Transacciones Rechazadas] (#transacciones-rechazadas). Las excepciones son aquellas transacciones que no pasaron las validaciones duras del sistema o las que se detectan como posibles fraudes.
 
-- ACTUALIZAR IMAGEN -
+![Excepciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Excepciones.PNG)
 
 En esta vista, al principio se puede filtrar por el tipo de excepción. Los tipos de excepciones disponibles son los siguientes:
 
@@ -459,7 +461,7 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 En este apartado se pueden visualizar los FasTracks creados. En esta vista, se puede visualizar tanto el monto como su periodo de disponibilidad. A su vez, se puede visualizar el monto utilizado del FastTrack y el volumen de transaccionado con el mismo.
 
-ACTUALIZAR IMAGEN
+![Fast Tracks](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Fast%20Tracks.PNG)
 
 </br>
 
@@ -474,7 +476,7 @@ También dispone de un panel para filtrar las identificaciones solicitadas y as�
 
 En la vista detallada se podrá visualizar la dirección de entrega que se haya configurado para la compañía, así como el tipo y modelo del identificador, además del solicitante del mismo.
 
- - ACTUALIZAR IMAGEN VISTA DETALLADA -
+![Identificaciones Solicitadas Detalle](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Identificaciones%20Solicitadas%20Detalle.PNG)
 
 </br>
 
@@ -498,6 +500,12 @@ Para cambiar el estado de los identificadores solicitados, haga clic en el botó
 
 ## Planificador de Identificadores
 
+En este apartado se pueden visualizar las ejecuciones del Planificador de Identificadores.
+
+Para mas detalles acerca de su configuracion consulte el apartado #Configuraciones_de_Planificador_de_Identificadores
+
+![Planificador de Identificadores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Planificador%20de%20Identificadores.PNG)
+
 </br>
 
 ## Programas
@@ -507,7 +515,7 @@ Dentro de esta sección puede consultar, editar o crear programas de flota. Para
 
 Para crear un programa, haga clic en el botón **Nuevo**.
 
-- ACTUALIZAR IMAGEN -
+![Programa (Nuevo)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Programa%20(Nuevo).PNG)
 
 Los campos a completar son los siguientes:
 
