@@ -313,7 +313,7 @@ A Fast Track in ATIONet is a way to configure a one-use-only authorization for a
 
 When you have finished filling in the fields, click the **Save** button.
 
-## Fast Track
+## Fast Tracks
 
 
 ## Fleet Workflow Approvals
