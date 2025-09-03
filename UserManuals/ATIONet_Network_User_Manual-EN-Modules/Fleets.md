@@ -8,14 +8,18 @@
 	- [Company Current Accounts](#company-current-accounts)
 	- [Concepts](#concepts)
 	- [Concept Families](#concept-families)
-	- [Contingency](#contingency)
+	- [Contingencies](#contingencies)
 	- [Declined Transactions](#declined-transactions)
 	- [Dispensed Transactions](#dispensed-transactions)
 	- [Disputed Transactions](#disputed-transactions)
 	- [Exceptions](#exceptions)
 	- [Fast Track Configuration](#fast-track-configuration)
+ 	- [Fast Track](#fast-tracks)
+    - [Fleet Workflow Approvals](#Fleet-Workflow-Approvals)
 	- [Fraud Alerts](#fraud-alerts)
 	- [Fraud Alerts Configuration](#fraud-alerts-configuration)
+ 	- [Identifications Scheduler](#Identifications-Scheduler)
+  	- [Invoice Type](Invoice-Type)
 	- [Merchants Contracts](#merchants-contracts)
 	- [Merchant Current Accounts](#merchant-current-accounts)
 	- [Outstanding Authorizations](#outstanding-authorizations)
@@ -28,7 +32,10 @@
 	- [Transactions by Fleet](#transactions-by-fleet)
 	- [Transactions by Site](#transactions-by-site)
 	- [Transactions by Vehicle](#transactions-by-vehicle)
+ 	- [Transactions ERP](Transactions-ERP)
 	- [Uncontrolled Transactions](#uncontrolled-transactions)
+ 	- [Vouchers](#Vouchers)
+  	- [Vouchers - Administration](#Vouchers---Administration)
 
 # Fleets
 Inside this module you can manage Company and Merchant Contracts, Concepts, Contingencies and Transactions among other things.
@@ -229,7 +236,7 @@ To create a concept family, click  the **New** button.
 
 When you have finished filling in the fields, click the **Save** button.
 
-## Contingency
+## Contingencies
 In ATIONet a contingency is a manually entered transaction. In this section you can consult and create contingencies. Take into account that contingencies are transactions without a pre-authorization.
 
 ![Contingency](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Contingencies.PNG)
@@ -306,6 +313,11 @@ A Fast Track in ATIONet is a way to configure a one-use-only authorization for a
 
 When you have finished filling in the fields, click the **Save** button.
 
+## Fast Track
+
+
+## Fleet Workflow Approvals
+
 ## Fraud Alerts
 Inside this section you can see a list of all frauds performed by the Network. To configure how/when to alert of fraud, go to [Fraud Alerts Configuration](#fraud-alerts-configuration).
 
@@ -321,6 +333,12 @@ To create a configuration, click the **New** button.
 ![Fraud Alerts Configuration New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Fraud%20Alerts%20Configuration%20New.PNG)
 
 When you have finished filling in the fields, click the **Save** button.
+
+
+## Identifications Scheduler
+
+
+## Invoice Type
 
 ## Merchants Contracts
 In ATIONet the term merchant refers to the entity that owns the sites. In this section you can consult, edit and create merchant contracts. To make queries easier, there is a panel of filters at the top.
@@ -542,10 +560,17 @@ Within the grid in the Currency column you can see in which currency each transa
 
 ![Transactions by Vehicle](https://github.com/nuchavez/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20by%20Vehicle.PNG)
 
+## Transactions ERP
+
 ## Uncontrolled Transactions
 Uncontrolled transactions are those that are generated because the controller detects a difference in gauges and sends a transaction for the difference. These transactions do not contain data about the identification, since they were generated automatically and were not initiated with the presentation of an identification. As they do not have an identification assigned, they are not impacted in any current account nor do they count for the calculation of rules.
 
 ![Uncontrolled Transactions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Uncontrolled%20Transactions.PNG)
+
+
+## Vouchers
+
+## Vouchers - Administration
 
 <br>
 
