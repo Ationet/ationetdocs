@@ -52,7 +52,7 @@ Dentro de esta sección puede ver una lista de todos los fraudes realizados por 
 En este apartado se puede visualizar las distintas operaciones pendientes de aprobación. 
 Las mismas se determinan en [Configuraciones de Workflows de Flota](https://github.com/Ationet/ationetdocs/blob/master/UserManuals/ATIONet_Network_User_Manual-EN-Modules/Liquidaci%C3%B3n%20&%20Configuraci%C3%B3n%20&%20Bit%C3%A1cora.md#configuraciones-de-workflows-de-flota)
 
-[Aprobacion de Workflows de Flota](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Aprobacion%20de%20Workflows%20de%20Flota.PNG)
+![Aprobacion de Workflows de Flota](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Aprobacion%20de%20Workflows%20de%20Flota.PNG)
 
 </br>
 
