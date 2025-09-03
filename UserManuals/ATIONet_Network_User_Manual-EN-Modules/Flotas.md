@@ -502,7 +502,7 @@ Para cambiar el estado de los identificadores solicitados, haga clic en el botó
 
 En este apartado se pueden visualizar las ejecuciones del Planificador de Identificadores.
 
-Para mas detalles acerca de su configuracion consulte el apartado #Configuraciones_de_Planificador_de_Identificadores
+Para mas detalles acerca de su configuracion consulte el apartado [Configuraciones de Planificador de Identificadores](#Configuraciones_de_Planificador_de_Identificadores)
 
 ![Planificador de Identificadores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Planificador%20de%20Identificadores.PNG)
 
@@ -547,7 +547,7 @@ En ATIONet las reglas se refieren a los límites que pueden ser configurados por
 
 Tenga en cuenta que todas las reglas pueden ser **No Bloqueantes**, lo que significa que ATIONet no rechazará la transacción aunque se cumplan los parámetros.
 
-- ACTUALIZAR IMAGEN - 
+![reglas menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/reglas%20menu.PNG)
 
 1. **Cuota:** En esta regla puede limitar la cantidad de transacciones, el volumen y/o el dinero en una frecuencia específica.
 
@@ -559,7 +559,7 @@ Tenga en cuenta que todas las reglas pueden ser **No Bloqueantes**, lo que signi
 
 3. **Ubicación:** En esta regla puede limitar las transacciones que se realicen en sitios, zonas y comercios específicos
 
-- ACTUALIZAR IMAGEN -
+![Regla Ubicacion](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Regla%20Ubicacion.PNG)
 
 4. **Combustible:** En esta regla puede limitar las transacciones que se realicen para combustibles específicos y grupos de maestros de combustibles.
 
@@ -567,7 +567,7 @@ Tenga en cuenta que todas las reglas pueden ser **No Bloqueantes**, lo que signi
 
 5. **Límite por Transacciones:** En esta regla puede limitar el volumen de cada transacción y/o el dinero.
 
-- ACTUALIZAR IMAGEN -
+![Regla (Limite por transaccion)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Regla%20(Limite%20por%20transaccion).PNG)
 
 6. **Días/Hora:** En esta regla puede limitar las transacciones a realizar en días y horas específicas de la semana.
 
@@ -579,23 +579,23 @@ Tenga en cuenta que todas las reglas pueden ser **No Bloqueantes**, lo que signi
 
 8. **Límite de Producto por Transacción:** En esta regla se puede limitar el dinero de las transacciones de cada SKU.
 
-- ACTUALIZAR IMAGEN -
+![Regla (Limite de producto por transaccion)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Regla%20(Limite%20de%20producto%20por%20transaccion).PNG)
 
 9. **Cuota por Producto:** Las reglas de Cuota por Producto, limitan a aquellos a los que esta regla se aplique, la cantidad de dinero en la que se permitirá la compra/venta de productos secos, cada determinado número de días, semanas, meses o años. Una vez que este intervalo de tiempo termina, el monto usado hasta el momento se reinicia (es decir, vuelve a cero). A su vez, esta regla no está disponible en modo offline.
 
-- ACTUALIZAR IMAGEN -
+![Regla cuota por producto](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Regla%20cuota%20por%20producto.PNG)
 
 10. **Cuota por combustible:** Las reglas de Cuota por combustible especifican los tipos de combustibles que puede ser vendido por la compañía dentro de determinado periodo de tiempo. Una vez que este intervalo termine, el contador de las ventas se reiniciara (es decir, volverá a inicializarse en cero). La cantidad que puede ser transaccionada se puede especificar en cantidad de transacciones, volumen de combustible, o monto de dinero, pero solo una de estas puede ser seleccionada.
 
-- ACTUALIZAR IMAGEN -
+![Regla cuota por combustible](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Regla%20cuota%20por%20combustible.PNG)
 
 11. **Cuota por día:** Las reglas de tipo Cuota por día especifican la cantidad de combustible que puede ser comprado/vendido por la compañía durante cada día de la semana. El valor configurado para un día determinado implica el consumo disponible para ese día especifico y no son acumulativos bajo ningún criterio. El contador de cantidad vuelve a inicializarse en cero cuando el día finaliza y solo entrara en funcionamiento cuando inicie un nuevo día con valores configurados. Los días que se dejen inactivos o inhabilitados NO representan limite o restricción alguna para la compra/venta de combustible de dicho día. La cantidad de la cuota disponible se puede especificar en cantidad de transacciones, volumen de combustible o monto de dinero. A su vez, esta regla no está disponible en modo offline.
 
-- ACTUALIZAR IMAGEN -
+![Regla cuota por dia](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Regla%20cuota%20por%20dia.PNG)
 
 12. **Cuota completa:** Las reglas de tipo Cuota Completa especifican un límite general en el consumo de la compañía considerando tanto en combustibles, así como en SKUs cada un determinado periodo de tiempo. Una vez que este intervalo termine, el contador de consumo se reinicia (es decir, vuelve a inicializarse en cero). La cantidad que puede ser transaccionada se puede establecer en cantidad de transacciones o monto de dinero. A su vez, esta regla no está disponible en modo offline.
 
-- ACTUALIZAR IMAGEN -
+![Regla cuota completa](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Regla%20cuota%20completa.PNG)
 
 Después de configurar cualquier tipo de regla, el último paso es asociar la regla a una entidad. Se pueden aplicar reglas a: Flotas, Vehículos, Conductores, Sitios y Combustibles.
 
@@ -628,6 +628,17 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 ## Tipo de Comprobante
 
+En este apartado, se pueden CREAR, EDITAR y ELIMINAR diversos tipos de comprobantes.
+
+![Tipo de comprobantes](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Tipo%20de%20comprobantes.PNG)
+
+Para crear un nuevo tipo de comprobante, precione el boton **NUEVO** y rellene los campos obligatorios.
+
+![Tipo de comprobantes Nuevo](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Tipo%20de%20comprobantes%20Nuevo.PNG)
+
+Cuando haya termiando de rellenar dichos campos, precione el boton **Guardar**
+
+
 </br>
 
 ## Transacciones
@@ -635,7 +646,7 @@ La vista de transacciones es una de las más importantes en ATIONet. En esta vis
 
 El panel de filtro tiene todos estos campos disponibles:
 
-- ACTUALIZAR IMAGEN DEL FILTRO -
+![Transacciones Filtros](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20Filtros.PNG)
 
 * **Código de Autorización:** Introduzca el código de autorización asociado a la transacción.
 * **Turno:** Introduzca el número de turno asociado a la transacción.
@@ -676,7 +687,7 @@ Una vez que haya filtrado, haga clic en ***Búsqueda*** y se listarán las trans
 
 Si quiere ver el detalle de la transacción, presione sobre el **Código de Autorización** y esto le llevará a una vista detallada de la transacción.
 
-- ACTUALIZAR IMAGEN DE LOS DETALLES DE LA TRANSACCION -
+![Detalles de Transaccion](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Detalles%20de%20Transaccion.PNG)
 
 Con la incorporación de Multimoneda, dentro de Detalles de Transacción encontrara tres nuevas secciones: Moneda del Sitio, Moneda de la Compañía y Moneda de Comercio, las cuales son configurables como se explica en el documento de [Multimoneda](https://github.com/nuchavez/ationetdocs/blob/master/Multicurrency-ES.MD). 
 
@@ -727,7 +738,7 @@ ATIONet separa las transacciones no autorizadas en 2 secciones: [Excepciones](#e
 Las Transacciones Rechazadas son aquellas que lograron pasar las autenticaciones duras de ATIONET, pero fueron rechazadas por otras validaciones como una regla insatisfecha o una validación de saldo.
 En las columnas Volumen Despachado, Precio unitario Despachado, Monto Despachado, Precio unitario de Contrato, Monto de Contrato puede ver con que moneda fue realizada la transacción rechazada.
 
-- ACTUALIZAR IMAGEN -
+![Transacciones rechazadas menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Transacciones%20rechazadas%20menu.PNG)
 
 En esta vista, al principio se puede filtrar por el tipo de rechazo. Los tipos de rechazo disponibles son los siguientes:
 
@@ -744,8 +755,7 @@ Las transacciones sin control son aquellas que se generan porque el controlador 
 
 En este apartado se pueden visualizar los vales creados, así como filtrar entre aquellos que estén activos e inactivos, y entre aquellos que poseen o no saldo. Con los botones de la parte superior se puede modificar las vistas entre detallada y simplificada, así como descargar un Excel con la información correspondiente de los vales.
 
-ACTUALIZAR IMAGEN
-
+![Vales Menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Vales%20Menu.PNG)
 
 </br>
 
@@ -753,7 +763,7 @@ ACTUALIZAR IMAGEN
 
 En este apartado se puede visualizar los vales creados, los cuales están organizados por periodo de creación. En estas columnas se muestra el detalle de cuantos vales fueron generados en la fecha correspondiente y de cuanto corresponde su individual monto, así como el monto total de la operación.
 
-ACTUALIZAR IMAGEN
+![Vale - Administracion Menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Flotas/Vale%20-%20Administracion%20Menu.PNG)
 
 </br>
 
