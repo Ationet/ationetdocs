@@ -156,7 +156,7 @@ INSERTAR IMAGEN
 
 INSERTAR IMAGEN
 
-8. **Locks:** Configure the locks associated to the contract.
+8. **Blocks:** Configure the blocks associated to the contract.
 
 INSERTAR IMAGEN
 
@@ -166,14 +166,14 @@ INSERTAR IMAGEN
 * **Day From:** Enter the start day of each month for the block.
 * **Day To:** Enter the end day of each month for the block.
 
-9. **Overdraft:** Configure the overdrafts associated with the contract.
+9. **Over Limit:** Configure the over limit associated with the contract.
 
 INSERTAR IMAGEN
 
-* **Type:** Select the type of overdraft (Percentage or Amount).
-* **Value:** Enter the value associated to the overdraft.
-* **Date From:** Enter the start date of the overdraft.
-* **Date To:** Enter the end date of the overdraft.
+* **Type:** Select the type of over limit (Percentage or Amount).
+* **Value:** Enter the value associated to the over limit.
+* **Date From:** Enter the start date of the over limit.
+* **Date To:** Enter the end date of the over limit.
 
 10. **Programs:** Add the programs enabled to operate with the contract (If the "Validate Programs" option is checked, this field is mandatory).
 
