@@ -12,7 +12,7 @@
 |--- |--- |--- |
 |**Ver.**|**Date**|**Change Summary**|
 |1.0|12/Mar/2021|- Initial version
-|1.0|04/Sep/2025|- New version 2.6.0000 included
+|2.0|04/Sep/2025|- New version 2.6.0000 included
 
 
 # Contents
