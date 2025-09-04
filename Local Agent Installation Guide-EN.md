@@ -3,7 +3,7 @@
 |**Document Information**|.|
 |--- |--- |
 |**File:**|ATIONet-Local_Agent_Installation_Guide-EN.md|
-|**Doc Version:**|1.0|
+|**Doc Version:**|2.0|
 |**Release Date:**|12, March 2021|
 |**Author:**|ATIONet LLC|
 
