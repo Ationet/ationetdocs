@@ -12,6 +12,7 @@
 |--- |--- |--- |
 |**Ver.**|**Fecha**|**Resumen de Cambios**|
 |1.0|10/Mar/2021|- Versión Inicial
+|2.0|04/Sep/2025|- Se incluye nueva versión 2.6.0000
 
 # Contenido
 
