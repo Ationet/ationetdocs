@@ -3,7 +3,7 @@
 |**Document Information**|.|
 |--- |--- |
 |**File:**|ATIONet-Local_Agent_Installation_Guide-EN.md|
-|**Doc Version:**|1.0|
+|**Doc Version:**|2.0|
 |**Release Date:**|12, March 2021|
 |**Author:**|ATIONet LLC|
 
@@ -12,6 +12,8 @@
 |--- |--- |--- |
 |**Ver.**|**Date**|**Change Summary**|
 |1.0|12/Mar/2021|- Initial version
+|2.0|04/Sep/2025|- New version 2.6.0000 included
+
 
 # Contents
 
@@ -19,6 +21,8 @@
 - [Required Hardware & Sofware](#required-hardware--software)
 - [Installation Steps](#installation-steps)
 - [How to prepare the install.config file](#how-to-prepare-the-installconfig-file)
+- [Installation of version 2.6.0000 or higher](#instalacion-version-2.6.0000)
+- [Update to version 2.6.0000 or higher](#actualizacion-version-2.6.0000)
 - [Log Review](#log-review)
 - [Statistics](#statistics)
 
@@ -90,6 +94,29 @@ For our equipment to be able to connect to the Ationet portal, we will have to m
 ![](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Local%20Agent/Terminals-Controllers.PNG)
 
 Once we are in this section we must copy the first three characters found in the Code section and place them in **Subscriber_Code**.
+
+
+# **Installation Version 2.6.0000**
+
+To install LocalAgent version 2.6.0000 or higher, you must make a change to the Install.config file in order to incorporate the “Terminal_Code” variable.
+
+<img width="975" height="187" alt="image" src="https://github.com/user-attachments/assets/f24f5fe1-f15a-4128-a8c3-6b158cbf6baa" />
+
+
+This value must correspond to a terminal belonging to the network being installed in LocalAgent.
+Currently, it is not a requirement for the terminal to be registered with Ationet.
+The install.config file must be modified by adding the key with the required value so that the installation can be carried out.
+
+# **Update Version 2.6.0000**
+
+To perform this update, you must first use the LAConfig tool. This tool allows you to make changes to the LocalAgent Configuration table.
+
+To do this, we must run LAConfig with the argument “terminalcode=VALUE”, where the value of the variable “value” corresponds to the new terminal code that we want to assign to that LocalAgent. The terminal being configured must belong to the Network for which LocalAgent was installed. 
+
+Once this step has been completed, and we have the TerminalCode value in the Configuration table, which we can validate by running LAConfig with the “current” parameter, we are ready to update to version 2.6.0000 or higher.
+
+To do this, we follow the normal update steps, downloading the new LocalAgent and running the update wizard, as with any other version. 
+
 
 # **Log Review**
 
