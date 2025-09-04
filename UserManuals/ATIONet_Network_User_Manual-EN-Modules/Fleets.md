@@ -126,7 +126,7 @@ INSERTAR IMAGEN
 * **Date To:** Enter the end date of the modifier.
 * **Time To:** Enter the end time of the modifier.
 
-5. **Settlement:** Configure the billing process associated to the contract.
+5. **Billing:** Configure the billing process associated to the contract.
 
 INSERTAR IMAGEN
 
