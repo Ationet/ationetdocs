@@ -44,11 +44,11 @@ Inside this module you can manage Company and Merchant Contracts, Concepts, Cont
 
 In ATIONet the term attendant refers to the person responsible for dispatching, the one who operates the pumps. In this section you can view, create and edit all the attendants. To facilitate queries, there is a filter panel at the top.
 
-INSERTAR IMAGEN
+![Attendants menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Attendants%20menu.PNG)
 
 To create a attendant, click on the **New** button.
 
-INSERTAR IMAGEN
+![Attendants new](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Attendants%20new.PNG)
 
 When you have finished filling in the fields, press the **Save** button.
 
@@ -56,11 +56,11 @@ When you have finished filling in the fields, press the **Save** button.
 
 In ATIONet the term company refers to the entity that manages the fleet. In this section you can create, edit or consult all the company contracts. To facilitate queries, there is a filter panel at the top.
 
-INSERTAR IMAGEN
+![Company Contracts filters](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20filters.PNG)
 
 To create a company contract, click on the **New** button.
 
-INSERTAR IMAGEN
+![Company Contracts New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New.PNG)
 
 The first step to create a new contract is to complete the general information:
 * **Active:** Check this option to activate/deactivate the contract.
@@ -91,15 +91,15 @@ Once the general information is completed, you have different tabs to configure:
 
 1. **Fuels:** Select the fuels associated to the contract.
 
-INSERTAR IMAGEN
+![Company Contracts New (fuel)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20(fuel).PNG)
 
 2. **Sites:** Select the sites associated to the contract.
 
-INSERTAR IMAGEN
+![Company Contracts New (site)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20(site).PNG)
 
 3. **Prices:** Configure the prices associated to the contract.
 
-INSERTAR IMAGEN
+![Company Contracts New (price)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20(price).PNG)
 
 In the "Current Prices" section you can see the current prices for the fuels in the corresponding sites, as well as the modifiers applied to them.
 
@@ -113,7 +113,7 @@ In the "Current Prices" section you can see the current prices for the fuels in 
 
 4. **Modifiers:** Configure the modifiers associated to the contract.
 
-INSERTAR IMAGEN
+![Company Contracts New (modifiers)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20(modifiers).PNG)
 
 * **Description:** Enter the description of the modifier.
 * **Class:** Select the type of modifier (Discount or Recharge).
@@ -128,7 +128,7 @@ INSERTAR IMAGEN
 
 5. **Billing:** Configure the billing process associated to the contract.
 
-INSERTAR IMAGEN
+![Company Contracts New (billing)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20(billing).PNG)
 
 * **Billing Process Type:** Select the type of settlement process associated to the contract (EdiFactMx is only for Mexico customer).
 * **Active:** Check this option to activate/deactivate the settlement process.
@@ -150,15 +150,15 @@ INSERTAR IMAGEN
 
 6. **Concepts:** Select the concept associated to the contract. For more information about the concepts click here.
 
-INSERTAR IMAGEN
+![Company Contracts New (concept)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20(concept).PNG)
 
 7. **Documents:** Upload any document associated to the contract (for example: a pdf of the physical contract itself).
 
-INSERTAR IMAGEN
+![Company Contracts New (documents)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20(documents).PNG)
 
 8. **Blocks:** Configure the blocks associated to the contract.
 
-INSERTAR IMAGEN
+![Company Contracts New (blocks)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20(blocks).PNG)
 
 * **Type:** Select Fixed to block the transaction on specific dates, or select Fixed to block the transaction on specific days of each month.
 * **Date from:** Enter the start date of the block.
@@ -168,7 +168,7 @@ INSERTAR IMAGEN
 
 9. **Over Limit:** Configure the over limit associated with the contract.
 
-INSERTAR IMAGEN
+![Company Contracts New (Over limit)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20(Over%20limit).PNG)
 
 * **Type:** Select the type of over limit (Percentage or Amount).
 * **Value:** Enter the value associated to the over limit.
@@ -177,19 +177,19 @@ INSERTAR IMAGEN
 
 10. **Programs:** Add the programs enabled to operate with the contract (If the "Validate Programs" option is checked, this field is mandatory).
 
-INSERTAR IMAGEN
+![Company Contracts New (programs)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20(programs).PNG)
 
 11. **Subsidies:** Add the temporary subsidies that will be implemented for the desired fuels.
 
-INSERTAR IMAGEN
+![Company Contracts New (Subsidies)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20(Subsidies).PNG)
 
 12. **Merchants:** Add the merchants enabled to operate with the contract (In case of having checked the "Validate Merchants" option, this field is mandatory).
 
-INSERTAR IMAGEN
+![Company Contracts New (merchants)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20(merchants).PNG)
 
 13. **Identifier Model:** Select the identifier models associated to the contract.
 
-INSERTAR IMAGEN
+![Company Contracts New (Identification Model)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Contracts%20New%20(Identification%20Model).PNG)
 
 When you have finished filling in the fields, press the **Save** button.
 
@@ -199,23 +199,23 @@ The Company Current Accounts section is the view of the available balance of the
 
 To facilitate the queries, there is a filter panel available. The first option in the filter panel is the report type:
 
-INSERTAR IMAGEN
+![Company Current Accounts filters](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20filters.PNG)
 
 1. **Contracts List:** This option lists all contracts with their respective balances, but does not give details of the movements.
 
-INSERTAR IMAGEN
+![Company Current Accounts (contract list)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20(contract%20list).PNG)
 
 2. **Contract Movements:** This option shows all contract movements.
 
-INSERTAR IMAGEN
+![Company Current Accounts (contract movements)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20(contract%20movements).PNG)
 
 3. **List of Subaccounts:** This option lists all subaccounts with their respective balances, but does not give details of the movements.
 
-INSERTAR IMAGEN
+![Company Current Accounts (subaccount list)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20(subaccount%20list).PNG)
 
 4. **Sub-Account Movements:** This view lists all the movements of the subaccounts.
 
-INSERTAR IMAGEN
+![Company Current Accounts (subaccount movements)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Company%20Current%20Accounts%20(subaccount%20movements).PNG)
 
 5. **Subaccount Recharges:** This view lists all subaccount reloads.
 
@@ -265,11 +265,11 @@ When you have finished filling in the fields, click the **Save** button.
 
 In ATIONet a contingency is a manually entered transaction. In this section you can query and create contingencies. Note that contingencies are transactions without prior authorization.
 
-INSERTAR IMAGEN
+![Contingencies](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Contingencies.PNG)
 
 To create a contingency, click on the **New** button.
 
-INSERTAR IMAGEN
+![Contingencies New](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Contingencies%20New.PNG)
 
 The fields to be completed are as follows:
 * **Reason:** Enter the reason for which the contingency is being made.
@@ -286,7 +286,7 @@ The fields to be completed are as follows:
 * **Apply Contingency Price:** By activating this option, the contingency price will ignore any type of modifier related to the corresponding price.
 * **Contingency with SKU:** By activating this option, SKUs can be added to the contingency (To enable this option it is necessary to have the "Date", "Time" and "Site" fields completed).
 
-INSERTAR IMAGEN
+![Contingencies New (SKU)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Contingencies%20New%20(SKU).PNG)
 
 * **Unit Price:** Enter the unit price associated to the contingency.
 * **Amount Dispatched:** Enter the amount associated to the contingency.
@@ -310,11 +310,11 @@ ATIONet separates unauthorized transactions into 2 sections: [Exceptions](#excep
 
 Rejected Transactions are those that managed to pass ATIONet's hard authentications, but were rejected by other validations such as an unsatisfied rule or a balance validation. In the columns Volume Dispatched, Unit Price Dispatched, Amount Dispatched, Contract Unit Price, Contract Amount you can see in which currency the rejected transaction was made.
 
-INSERTAR IMAGEN
+![Declined Transactions menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Declined%20Transactions%20menu.PNG)
 
 In this view, at first you can filter by scrap type. The available scrap types are as follows:
 
-INSERTAR IMAGEN
+![Declined Transactions type filter](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Declined%20Transactions%20type%20filter.PNG)
 
 
 ## Dispensed Transactions
@@ -333,11 +333,11 @@ In this section you can consult the disputed transactions, listed by code, date,
 
 ATIONet separates unauthorized transactions into 2 sections: Exceptions and [Rejected Transactions](#rejected-transactions). Exceptions are those transactions that did not pass the hard validations of the system or those that are detected as possible frauds.
 
-INSERTAR IMAGEN
+![Exceptions menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Exceptions%20menu.PNG)
 
 In this view, at first you can filter by the type of exception. The types of exceptions available are as follows:
 
-INSERTAR IMAGEN
+![Exceptions type filter](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Exceptions%20type%20filter.PNG)
 
 Some transactions remain in Review status in some situations, such as when more than authorized is sent (due to a controller or POS error). In these cases it is necessary to approve or reject the transaction using one of the two icons to the right of each record.
 
@@ -353,14 +353,14 @@ When you have finished filling in the fields, click the **Save** button.
 
 In this section you can view the FasTracks created. In this view, you can visualize both the amount and its period of availability. You can also view the amount of FastTrack used and the volume transacted with it.
 
-INSERTAR IMAGEN
+![Fast tracks](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Fast%20tracks.PNG)
 
 
 ## Fleet Workflow Approvals
 
 In this section you can view the different operations pending approval. These are determined in [Fleet Workflows Settings](#Fleet-Workflows-Settings).
 
-INSERTAR IMAGEN
+![Fleet Workflow Approvals](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Fleet%20Workflow%20Approvals.PNG)
 
 ## Fraud Alerts
 Inside this section you can see a list of all frauds performed by the Network. To configure how/when to alert of fraud, go to [Fraud Alerts Configuration](#fraud-alerts-configuration).
@@ -371,11 +371,11 @@ Inside this section you can see a list of all frauds performed by the Network. T
 
 In this section you can view and configure how and when fraud alerts are triggered for the Network.
 
-INSERTAR IMAGEN
+![Fraud Alerts Configuration menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Fraud%20Alerts%20Configuration%20menu.PNG)
 
 To create a configuration, click on the **New** button.
 
-INSERTAR IMAGEN
+![Fraud Alerts Configuration new](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Fraud%20Alerts%20Configuration%20new.PNG)
 
 * **Type:** Select the item to which the alert will be applied (this can be applied to transactions, amount, volume and KM/MI).
 * **Mode:** (This option is only enabled in case of selecting "Transactions" as an element) Choose for which type of transactions the alert will be applied. It is divided into 3 groups; standard, offline and contingency.
@@ -393,17 +393,17 @@ In this section you can view the Identifier Scheduler excecuted processes.
 
 For more details about its configuration refer to the section [Identifier Scheduler Settings](Identifier-Scheduler-Settings).
 
-INSERTAR IMAGEN
+![Identifications Scheduler menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Identifications%20Scheduler%20menu.PNG)
 
 ## Invoice Type
 
 In this section, you can CREATE, EDIT and DELETE various types of invoices.
 
-INSERTAR IMAGEN
+![Invoice Type menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Invoice%20Type%20menu.PNG)
 
 To create a new invoices type, press the **NEW** button and fill in the required fields.
 
-INSERTAR IMAGEN
+![Invoice Type new](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Invoice%20Type%20new.PNG)
 
 When you have finished filling in these fields, click the **Save** button.
 
