@@ -411,11 +411,11 @@ When you have finished filling in these fields, click the **Save** button.
 
 In ATIONet the term trade refers to the entity that owns the sites. In this section you can consult, edit and create trade contracts. To facilitate queries, there is a filter panel at the top.
 
-INSERTAR IMAGEN
+![Merchant Contracts menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Merchant%20Contracts%20menu.PNG)
 
 To create a merchant contract, click on the **New** button.
 
-INSERTAR IMAGEN
+![Merchant Contract new](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Merchant%20Contract%20new.PNG)
 
 The fields to fill in are as follows:
 
@@ -434,19 +434,19 @@ After filling in these fields, you must configure the Site, Fuel, Prices and Mod
 
 1. **Sites:** Select the sites associated to the contract.
 
-INSERTAR IMAGEN
+![Merchant Contract new sites](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Merchant%20Contract%20new%20sites.PNG)
 
 2. **Fuels:** Select the fuels associated to the contract.
 
-INSERTAR IMAGEN
+![Merchant Contract new fuel](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Merchant%20Contract%20new%20fuel.PNG)
 
 3. **Prices:** Select the prices associated to the contract.
 
-INSERTAR IMAGEN
+![Merchant Contract new price](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Merchant%20Contract%20new%20price.PNG)
 
 4. **Modifiers:** Select the modifiers associated to the contract.
 
-INSERTAR IMAGEN
+![Merchant Contract new Modifiers](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Merchant%20Contract%20new%20Modifiers.PNG)
 
 When you have finished filling in the fields, press the **Save** button.
 
@@ -456,23 +456,23 @@ The Merchant Current Accounts view is where the balances and movements of all me
 
 To make queries easier, a filter panel is available and the first option in the panel is the type of report you want to view (List of Contracts, Contract Movements, List of Sites and Site Movements). In the Currency column of the grid you can see in which currency each movement is made. If you have Multi-Currency functionality configured, you can see the different currencies in each movement.
 
-INSERTAR IMAGEN
+![Merchant Current Accounts menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Merchant%20Current%20Accounts%20menu.PNG)
 
 **List of contracts:** This option lists all contracts with their respective balances, but does not give details of the movements.
 
-INSERTAR IMAGEN
+![Merchant Current Accounts (contract lists)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Merchant%20Current%20Accounts%20(contract%20lists).PNG)
 
 **Contract movements:** This option shows all contract movements.
 
-INSERTAR IMAGEN
+![Merchant Current Accounts (contract movements)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Merchant%20Current%20Accounts%20(contract%20movements).PNG)
 
 **Sites List:** This option lists all Sites with their respective balances, but does not give details of the movements.
 
-INSERTAR IMAGEN
+![Merchant Current Accounts (site lists)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Merchant%20Current%20Accounts%20(site%20lists).PNG)
 
 **Site Movements:** This view lists all the movements of the Sites.
 
-INSERTAR IMAGEN
+![Merchant Current Accounts (site movements)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Merchant%20Current%20Accounts%20(site%20movements).PNG)
 
 ## Outstanding Authorizations
 In ATIONet outstanding authorizations are those transactions that have not yet received the completion transaction, but have been pre-authorized. The information seen in this view are dispatches that are currently underway. If for some reason there are old pre-authorizations, it is likely that the POS did not send the completion transaction or the cancellation transaction if the dispatch was not completed.
@@ -508,11 +508,11 @@ When you have finished filling in the fields, click the **Save** button.
 
 In this section you can consult, edit or create fleet programs. For each Network ATIONet already has a CLASSIC program created by default. A fleet program in ATIONet allows identifiers to ignore some of their behaviors, such as Balance Mode, Contingency Support, Offline Support, etc.
 
-INSERTAR IMAGEN
+![Programs menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Programs%20menu.PNG)
 
 To create a program, click on the **New** button.
 
-INSERTAR IMAGEN
+![Program new](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Program%20new.PNG)
 
 The fields to be completed are as follows:
 * **Code:** Enter the desired code for the program
@@ -530,7 +530,7 @@ The fields to be completed are as follows:
 
 Once you have completed the general information, you can also configure the request and location rules for the program:
 
-INSERTAR IMAGEN
+![Programs requests](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Programs%20requests.PNG)
 
 For more information on the rules go [here](#rules).
 
@@ -543,15 +543,15 @@ In this section you can consult the IDs requested by the company and request the
 
 You also have a panel to filter the requested IDs to facilitate the search.
 
-INSERTAR IMAGEN
+![Requested Identifications filters](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Requested%20Identifications%20filters.PNG)
 
 In the detail view you can see the delivery address that has been configured for the company, as well as the type and model of the badge, and the requestor of the badge.
 
-INSERTAR IMAGEN
+![Requested Identifications menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Requested%20Identifications%20menu.PNG)
 
 To request a fleet ID, click on the **New Request** button and select Request Fleet IDs. This will open a form.
 
-INSERTAR IMAGEN
+![Request Identifications new fleet](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Request%20Identifications%20new%20fleet.PNG)
 
 * **Type:** Select the type of identifiers (Card, TAG, Chipkey, ATIOnet Card, ATIOnet TAG, Barcode and QR).
 * **Model:** Select the identifier model.
@@ -570,59 +570,59 @@ In ATIONet rules refer to limits that can be configured by the company and assoc
 
 Note that all rules can be Non-Blocking, which means that ATIONet will not reject the transaction even if the parameters are met.
 
-INSERTAR IMAGEN
+![Rules menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rules%20menu.PNG)
 
 1. **Quota:** In this rule you can limit the amount of transactions, volume and/or money at a specific frequency.
 
-INSERTAR IMAGEN
+![Rule (Quota)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rule%20(Quota).PNG)
 
 2. **Date Range:** In this rule you can limit the transactions to be made in specific date and time ranges.
 
-INSERTAR IMAGEN
+![Rule (Date Range)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rule%20(Date%20Range).PNG)
 
 3. **Location:** In this rule you can limit transactions to be made in specific locations, zones and trades.
 
-INSERTAR IMAGEN
+![Rule (Location)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rule%20(Location).PNG)
 
 4. **Fuel:** In this rule you can limit transactions to be made for specific fuels and fuel master groups.
 
-INSERTAR IMAGEN
+![Rule (Fuel)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rule%20(Fuel).PNG)
 
 5. **Limit per Transaction:** In this rule you can limit the volume of each transaction and/or money.
 
-INSERTAR IMAGEN
+![Rule (Dry Quota Limit)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rule%20(Dry%20Quota%20Limit).PNG)
 
 6. **Days/Time:** In this rule you can limit the transactions to be performed on specific days and times of the week.
 
-INSERTAR IMAGEN
+![Rule (DaysTime)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rule%20(DaysTime).PNG)
 
 7. **Request:** In this rule you can configure the information request for transactions, such as driver/vehicle ID, driver/vehicle PIN, etc.
 
-INSERTAR IMAGEN
+![Rule (Prompting)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rule%20(Prompting).PNG)
 
 8. **Product Limit per Transaction:** In this rule you can limit the transaction money for each SKU.
 
-INSERTAR IMAGEN
+![Rule (Limit per Transaction)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rule%20(Limit%20per%20Transaction).PNG)
 
 9. **Per Product Quota:** Per Product Quota rules, limit to those to whom this rule applies, the amount of money in which dry goods will be allowed to be bought/sold, every certain number of days, weeks, months or years. Once this time interval ends, the amount used so far is reset (i.e. returns to zero). In turn, this rule is not available in offline mode.
 
-INSERTAR IMAGEN
+![Rule (Dry Transaction Limit)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rule%20(Dry%20Transaction%20Limit).PNG)
 
 10. **Fuel Quota:** The Fuel Quota rules specify the types of fuels that can be sold by the company within a certain period of time. Once this interval ends, the sales counter will be reset (i.e. reset to zero). The amount that can be transacted can be specified in number of transactions, volume of fuel, or amount of money, but only one of these can be selected.
 
-INSERTAR IMAGEN
+![Rule (Fuel quota limit)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rule%20(Fuel%20quota%20limit).PNG)
 
 11. **Quota per day:** The rules of type Quota per day specify the amount of fuel that can be bought/sold by the company during each day of the week. The value set for a given day implies the consumption available for that specific day and are not cumulative under any criteria. The quantity counter resets to zero when the day ends and will only come into operation when a new day with configured values starts. Days that are left inactive or disabled do NOT represent any limit or restriction on the purchase/sale of fuel for that day. The amount of available quota can be specified in number of transactions, volume of fuel or amount of money. Also, this rule is not available in offline mode.
 
-INSERTAR IMAGEN
+![Rule (Daily quotas)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rule%20(Daily%20quotas).PNG)
 
 12. **Full Quota:** Full Quota type rules specify an overall limit on the company's consumption considering both fuels and SKUs every certain period of time. Once this interval ends, the consumption counter is reset (i.e., reset to zero). The amount that can be transacted can be set in number of transactions or amount of money. At the same time, this rule is not available in offline mode.
 
-INSERTAR IMAGEN
+![Rule (full quota)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rule%20(full%20quota).PNG)
 
 After setting up any type of rule, the last step is to associate the rule to an entity. Rules can be applied to: Fleets, Vehicles, Drivers, Sites and Fuels.
 
-INSERTAR IMAGEN
+![Rule (applying to)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rule%20(applying%20to).PNG)
 
 
 ## Transactions
@@ -631,7 +631,7 @@ The transactions view is one of the most important views in ATIONet. In this vie
 
 The filter panel has all these fields available:
 
-INSERTAR IMAGEN
+![Transactions filters](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20filters.PNG)
 
 * **Authorization Code:** Enter the authorization code associated with the transaction.
 * **Shift:** Enter the shift number associated with the transaction.
@@ -668,11 +668,11 @@ INSERTAR IMAGEN
 
 Once you have filtered, click **Search** and the transactions that match the filter will be listed.
 
-INSERTAR IMAGEN
+![Transactions menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20menu.PNG)
 
 If you want to see the detail of the transaction, click on the **Authorization Code** and this will take you to a detailed view of the transaction.
 
-INSERTAR IMAGEN
+![Transaction details](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transaction%20details.PNG)
 
 With the addition of Multicurrency, within Transaction Details you will find three new sections: Site Currency, Company Currency and Trade Currency, which are configurable as explained in the Multicurrency document.
 
@@ -705,7 +705,7 @@ Within the grid in the Currency column you can see in which currency each transa
 
 In this view you can see the transactions grouped by corresponding ERP. The buttons on the top left are used to print the table or to create an Excel file from the table, respectively.
 
-INSERTAR IMAGEN
+![Transactions ERP menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Transactions%20ERP%20menu.PNG)
 
 ## Uncontrolled Transactions
 Uncontrolled transactions are those that are generated because the controller detects a difference in gauges and sends a transaction for the difference. These transactions do not contain data about the identification, since they were generated automatically and were not initiated with the presentation of an identification. As they do not have an identification assigned, they are not impacted in any current account nor do they count for the calculation of rules.
@@ -717,13 +717,13 @@ Uncontrolled transactions are those that are generated because the controller de
 
 In this section you can view the vouchers created, as well as filter between those that are active and inactive, and between those that have or do not have a balance. With the buttons at the top you can modify the views between detailed and simplified, as well as download an Excel file with the corresponding information of the vouchers.
 
-INSERTAR IMAGEN
+![Vouchers menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Vouchers%20menu.PNG)
 
 ## Vouchers - Administration
 
 In this section you can view the vouchers created, which are organized by period of creation. These columns show the detail of how many vouchers were generated on the corresponding date and how much their individual amount corresponds to, as well as the total amount of the operation.
 
-INSERTAR IMAGEN
+![Vouchers - Administration menu](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Vouchers%20-%20Administration%20menu.PNG)
 
 <br>
 
