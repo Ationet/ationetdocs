@@ -109,7 +109,7 @@ In the "Current Prices" section you can see the current prices for the fuels in 
 * **Date From:** Enter the start date of the price.
 * **Time From:** Enter the start time of the price.
 * **Date To:** Enter the end date of the price.
-* **Date To:** Enter the end time of the price.
+* **Time To:** Enter the end time of the price.
 
 4. **Modifiers:** Configure the modifiers associated to the contract.
 
@@ -135,7 +135,7 @@ In the "Current Prices" section you can see the current prices for the fuels in 
 * **Due days:** Enter the number of due days associated with the statement.
 * **Periodicity:** Enter the frequency with which statements are generated.
 * **Manual:** Check this option to activate/deactivate the manual process of the settlement process.
-* **Settlement Start Date:** Set the date for which the contract settlements will be scheduled to start. If this section is left blank, the default date will be the same as the contract creation date.
+* **Starting Billing Date:** Set the date for which the contract billing will be scheduled to start. If this section is left blank, the default date will be the same as the contract creation date.
 * **Charges Deduct Account Balance:** Check this option to enable/disable ATIONet to automatically subtract items from account balances.
 * **Separate Document Charges:** Check this option to enable/disable ATIONet to separate each item associated to the account statement.
 * **Recipient Emails:** Enter the email addresses that will receive the statements.
@@ -281,7 +281,7 @@ The fields to be completed are as follows:
 * **Primary Account:** Select the primary sub-account associated with the contingency.
 * **Sub Account:** Select the sub account associated to the contingency.
 * **Fuel:** Select the fuel associated with the contingency.
-* **Volume Dispatched:** Enter the volume associated with the contingency.
+* **Dispensed Volume:** Enter the volume associated with the contingency.
 * **Currency:** Enter the currency of the contingency.
 * **Apply Contingency Price:** By activating this option, the contingency price will ignore any type of modifier related to the corresponding price.
 * **Contingency with SKU:** By activating this option, SKUs can be added to the contingency (To enable this option it is necessary to have the "Date", "Time" and "Site" fields completed).
@@ -590,7 +590,7 @@ Note that all rules can be Non-Blocking, which means that ATIONet will not rejec
 
 5. **Limit per Transaction:** In this rule you can limit the volume of each transaction and/or money.
 
-![Rule (Dry Quota Limit)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rule%20(Dry%20Quota%20Limit).PNG)
+![Rule (Limit per Transaction)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rule%20(Limit%20per%20Transaction).PNG)
 
 6. **Days/Time:** In this rule you can limit the transactions to be performed on specific days and times of the week.
 
@@ -602,11 +602,11 @@ Note that all rules can be Non-Blocking, which means that ATIONet will not rejec
 
 8. **Product Limit per Transaction:** In this rule you can limit the transaction money for each SKU.
 
-![Rule (Limit per Transaction)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rule%20(Limit%20per%20Transaction).PNG)
+![Rule (Dry Transaction Limit)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rule%20(Dry%20Transaction%20Limit).PNG)
 
 9. **Per Product Quota:** Per Product Quota rules, limit to those to whom this rule applies, the amount of money in which dry goods will be allowed to be bought/sold, every certain number of days, weeks, months or years. Once this time interval ends, the amount used so far is reset (i.e. returns to zero). In turn, this rule is not available in offline mode.
 
-![Rule (Dry Transaction Limit)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rule%20(Dry%20Transaction%20Limit).PNG)
+![Rule (Dry Quota Limit)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Fleets/Rule%20(Dry%20Quota%20Limit).PNG)
 
 10. **Fuel Quota:** The Fuel Quota rules specify the types of fuels that can be sold by the company within a certain period of time. Once this interval ends, the sales counter will be reset (i.e. reset to zero). The amount that can be transacted can be specified in number of transactions, volume of fuel, or amount of money, but only one of these can be selected.
 
