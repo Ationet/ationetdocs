@@ -72,24 +72,84 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 ## Documentos de Cargos
 
+En este apartado se pueden visualizar el resumen de los conceptos aplicados.
+Al hacer click sobre el **Numero**, se podrá visualizar el detalle de cuales conceptos se aplicaron, así como el número de transacciones a las cuales se aplicaron dicho concepto.
+
+INSERTAR IMAGEN
+
+Para más detalle acerca de su configuración dirigirse al apartado [#Programas](#Programas)
+
+</br>
 
 ## Documentos de Liquidaciones
 
+En esta sección se pueden ver todos los estados de registro de los documentos de liquidación solicitados. 
+Los estados posibles son: **Pendiente**, **Procesando**, **Finalizado** o **Finalizado con errores**.
+
+INSERTAR IMAGEN
+
+</br>
 
 ## Errores
 
 
 ## Estados de Cuenta
 
+En esta sección podrá ver y descargar los estados de cuenta de su Network. También puede generar los estados de cuenta en **.PDF** uno a uno, o dentro de la "Acción en Lote" generando un paquete.
+A su vez, al interactuar con el **Numero de Liquidación**, se podrán ver los detalles del estado de cuenta correspondiente.
+
+INSERTAR IMAGEN
+
+</br>
 
 ## Items Liquidados
 
+En esta sección puede ver los conceptos aplicados para cada estado de cuenta.
+En el apartado superior se encuentra un sistema de filtros el cual puede filtrar por el código de proceso de liquidación, así como por el numero de la liquidación, el cliente y fecha/hora.
+
+Al interactuar con, la columna de fecha, se puede reordenar la lista de ítems liquidados por fecha
+
+INSERTAR IMAGEN
+
+</br>
 
 ## Movimientos
 
+En la sección de **Movimientos** se pueden visualizar todas las interacciones relacionadas al saldo de las tarjetas
+Para facilitar las consultas, hay un panel de filtros disponible:
+
+INSERTAR IMAGEN
+
+</br>
 
 ## Procesos de Liquidación
 
+En esta sección puede ejecutar manualmente un proceso de facturación o ver el estado de todos los procesos de facturación. Los posibles estados de los procesos son: **Pendiente**, **Confirmado**, **Error** o **Confirmado con errores**.
+
+INSERTAR IMAGEN
+
+Adicionalmente, en la columna de detalles, se puede visualizar 4 opciones las cuales permiten facilitar el acceso a los apartados relacionados con este proceso.
+Desde Izquierda a Derecha, los procesos son los siguientes:
+
+INSERTAR IMAGEN
+
+**Liquidaciones**: Al interactuar con esta opción, seremos redireccionados al apartado de “Documentos de Cargo” donde automáticamente se habrá aplicado el filtro de “Procesos”, resaltando así los resultados relacionados con el proceso de liquidación 
+
+INSERTAR IMAGEN
+
+**ítems Liquidados**: Al interactuar con esta opción, seremos redireccionados al apartado de “ítems liquidados” donde automáticamente se habrá aplicado el filtro de “Procesos”, resaltando así los resultados relacionados con el proceso de liquidación
+
+INSERTAR IMAGEN
+
+**Estados de cuenta**: Al interactuar con esta opción, seremos redireccionados al apartado de “Estados de cuenta” donde automáticamente se habrá aplicado el filtro de “Procesos”, resaltando así los resultados relacionados con el proceso de liquidación
+
+INSERTAR IMAGEN
+
+**Error**: Al interactuar con esta opción, seremos redireccionados al apartado de “Errores”.
+
+INSERTAR IMAGEN
+
+</br>
 
 ## Programas
 
@@ -99,16 +159,81 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 ## Tarjetas
 
+En este apartado se pueden visualizar las tarjetas creadas, así como se dispone de la opción para editarlas y **habilitar/deshabilitar** tarjetas.
+
+INSERTAR IMAGEN
+
+A su vez en la opción **“Tarjetas Masivas”**, se pueden crear múltiples tarjetas simplemente seleccionando el programa al cual estas pertenecerán y la cantidad deseada
+
+INSERTAR IMAGEN
+
+Para crear una nueva tarjeta, interactúe con el botón “Nuevo” donde se deberán completar los siguientes campos:
+
+INSERTAR IMAGEN 
+
+*	**Programa:** Introduzca el programa al cual se asociará la tarjeta
+*	**Apellidos:** Introduzca los apellidos del titular de la tarjeta
+*	**Nombre:** Introduzca el nombre del titular de la tarjeta
+*	**Correo:** Introduzca el correo del titular de la tarjeta
+*	**Fecha de Nacimiento:** Introduzca la fecha de nacimiento del titular de la tarjeta
+*	**País:** Introduzca el país al cual se asociará al usuario de la tarjeta
+*	**Estado:** Introduzca el estado al cual se asociará al usuario de la tarjeta
+*	**Ciudad:** Introduzca la ciudad al cual se asociará al usuario de la tarjeta
+*	**Cod. Postal:** Introduzca el código postal correspondiente con el usuario de la tarjeta
+*	**Calle:** Introduzca la calle principal asociada al usuario de la tarjeta
+*	**Calle 2:** Introduzca la calle secundaria asociada al usuario de la tarjeta
+*	**Teléfono 1:** Introduzca el teléfono principal asociada al usuario de la tarjeta
+* **Teléfono 2:** Introduzca el teléfono secundario asociada al usuario de la tarjeta
+
+</br>
 
 ## Tarjetas Solicitadas
 
+En este apartado se pueden visualizar los procesos de tarjetas solicitadas. Los mismos se encuentran ordenamos por numero de orden de manera predeterminada, pero al interactuar con el título de columna **“Orden de solicitud”** o **“Fecha de pedido”** los resultados se reorganizaran de menor a mayor dependiendo de con que título se haya interactuado.
+
+INSERTAR IMAGEN
+
+Para crear una nueva solicitud, interactúe con el botón **“Nueva solicitud”**.
+Tas seleccionar el programa asociado a dichas tarjetas y la cantidad de tarjetas deseada, haga click en el botón **“Crear”** y el mismo entrara en proceso.
+
+INSERTAR IMAGEN 
+
+</br>
 
 ## Transacciones
 
+En esta vista se pueden visualizar todas las transacciones correspondientes a esta sección.
+
+El panel de filtro tiene todos estos campos disponibles:
+
+INSERTAR IMAGEN
+
+*	**Código de Autorización:** Introduzca el código de autorización asociado a la transacción.
+*	**Cliente:** Introduzca nombre del cliente asociado a la transacción
+*	**Programa:** Seleccione el programa de consumer card asociado a la transacción.
+*	**Sitio:** Seleccione el sitio asociado a la transacción.
+*	**Terminal / Controlador:** Seleccione la terminal asociada a la transacción.
+*	**Fecha desde/hasta:** Introduzca las fechas de inicio y finalización asociadas a la transacción.
+*	**Hora desde/hasta:** Introduzca las horas de inicio y finalización asociadas a la transacción.
+
+Una vez que haya filtrado, haga clic en **Búsqueda** y se listarán las transacciones que cumplen con el filtro.
+
+INSERTAR IMAGEN
+
+Si quiere ver el detalle de la transacción, presione sobre el **Código de Autorización** y esto le llevará a una vista detallada de la transacción
+
+INSERTAR IMAGEN
+
+</br>
 
 ## Transacciones Rechazadas
 
+Las Transacciones Rechazadas son aquellas que lograron pasar las autenticaciones duras de ATIONET, pero fueron rechazadas por otras validaciones como una regla insatisfecha o una validación de saldo. 
+En las columnas **Volumen Despachado**, **Precio unitario Despachado**, **Monto Despachado**, **Precio unitario de Contrato**, **Monto de Contrato** puede ver con que moneda fue realizada la transacción rechazada.
 
+Insertar Imagen
+
+</br>
 
 
 
