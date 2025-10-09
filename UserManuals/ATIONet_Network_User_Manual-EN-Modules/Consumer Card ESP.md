@@ -158,23 +158,13 @@ INSERTAR IMAGEN
 Adicionalmente, en la columna de detalles, se puede visualizar 4 opciones las cuales permiten facilitar el acceso a los apartados relacionados con este proceso.
 Desde Izquierda a Derecha, los procesos son los siguientes:
 
-INSERTAR IMAGEN
+* **Liquidaciones**: Al interactuar con esta opción, seremos redireccionados al apartado de “Documentos de Cargo” donde automáticamente se habrá aplicado el filtro de “Procesos”, resaltando así los resultados relacionados con el proceso de liquidación 
 
-**Liquidaciones**: Al interactuar con esta opción, seremos redireccionados al apartado de “Documentos de Cargo” donde automáticamente se habrá aplicado el filtro de “Procesos”, resaltando así los resultados relacionados con el proceso de liquidación 
+* **ítems Liquidados**: Al interactuar con esta opción, seremos redireccionados al apartado de “ítems liquidados” donde automáticamente se habrá aplicado el filtro de “Procesos”, resaltando así los resultados relacionados con el proceso de liquidación
 
-INSERTAR IMAGEN
+* **Estados de cuenta**: Al interactuar con esta opción, seremos redireccionados al apartado de “Estados de cuenta” donde automáticamente se habrá aplicado el filtro de “Procesos”, resaltando así los resultados relacionados con el proceso de liquidación
 
-**ítems Liquidados**: Al interactuar con esta opción, seremos redireccionados al apartado de “ítems liquidados” donde automáticamente se habrá aplicado el filtro de “Procesos”, resaltando así los resultados relacionados con el proceso de liquidación
-
-INSERTAR IMAGEN
-
-**Estados de cuenta**: Al interactuar con esta opción, seremos redireccionados al apartado de “Estados de cuenta” donde automáticamente se habrá aplicado el filtro de “Procesos”, resaltando así los resultados relacionados con el proceso de liquidación
-
-INSERTAR IMAGEN
-
-**Error**: Al interactuar con esta opción, seremos redireccionados al apartado de “Errores”.
-
-INSERTAR IMAGEN
+* **Error**: Al interactuar con esta opción, seremos redireccionados al apartado de “Errores”.
 
 </br>
 
