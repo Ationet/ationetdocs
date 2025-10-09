@@ -129,7 +129,7 @@ Para registrar un nuevo movimiento presione el boton **Nuevo**, para luego prior
     
   *  INSERTAR IMAGEN
     
-        -**Descripcion:** Ingrese una descripcion para el movimiento en concreto.
+        - **Descripcion:** Ingrese una descripcion para el movimiento en concreto.
         - **Cliente:** Ingrese el cliente a quien corresponda el movimiento
         - **Tarjeta de Origen:** Ingrese la tarjeta desde la cual se extraeran los fondos
         - **Tarjeta de Destino:** Ingrese la tarjeta a la cual ingresaran los fondos enviados
