@@ -48,13 +48,13 @@ INSERT IMAGE
 Additionally, in the details column, you can view four options that facilitate access to sections related to this process.
 From left to right, the processes are as follows:
 
-**Settlements:** When you interact with this option, you will be redirected to the "Charge Documents" section, where the "Processes" filter will have been automatically applied, highlighting the results related to the settlement process. 
+* **Settlements:** When you interact with this option, you will be redirected to the "Charge Documents" section, where the "Processes" filter will have been automatically applied, highlighting the results related to the settlement process. 
 
-**Settled items:** When you select this option, you will be redirected to the "Settled items" section, where the "Processes" filter will have been automatically applied, highlighting the results related to the settlement process.
+* **Settled items:** When you select this option, you will be redirected to the "Settled items" section, where the "Processes" filter will have been automatically applied, highlighting the results related to the settlement process.
 
-**Account statements:** When you select this option, you will be redirected to the "Account statements" section, where the "Processes" filter will have been automatically applied, highlighting the results related to the settlement process.
+* **Account statements:** When you select this option, you will be redirected to the "Account statements" section, where the "Processes" filter will have been automatically applied, highlighting the results related to the settlement process.
 
-**Error:** When you select this option, you will be redirected to the "Errors" section.
+* **Error:** When you select this option, you will be redirected to the "Errors" section.
 
 
   </br>
@@ -332,4 +332,4 @@ INSERT IMAGE
 
   </br>
 
-[Volver al inicio](#contenido) 	:arrow_up:
+[Back to top](#contents) 	:arrow_up:
