@@ -124,7 +124,8 @@ Para facilitar las consultas, hay un panel de filtros disponible:
 INSERTAR IMAGEN
 
 Para registrar un nuevo movimiento presione el boton **Nuevo**, para luego priorizar la siguiente informacion:
-**Tipo:** Seleccione el tipo de movieminto que desea realizar, el mismo puede ser desde una transaferencia de fondos entre dos tarjetas o el retiro de fondos para una subcuenta.
+
+* **Tipo:** Seleccione el tipo de movieminto que desea realizar, el mismo puede ser desde una transaferencia de fondos entre dos tarjetas o el retiro de fondos para una subcuenta.
     * **En caso de seleccionar *"Transferencia de fondos entre tarjetas"***:
     
   *  INSERTAR IMAGEN
