@@ -124,20 +124,24 @@ Para facilitar las consultas, hay un panel de filtros disponible:
 INSERTAR IMAGEN
 
 Para registrar un nuevo movimiento presione el boton **Nuevo**, para luego priorizar la siguiente informacion:
-* **Tipo:** Seleccione el tipo de movieminto que desea realizar, el mismo puede ser desde una transaferencia de fondos entre dos tarjetas o el retiro de fondos para una subcuenta.
+**Tipo:** Seleccione el tipo de movieminto que desea realizar, el mismo puede ser desde una transaferencia de fondos entre dos tarjetas o el retiro de fondos para una subcuenta.
     * **En caso de seleccionar *"Transferencia de fondos entre tarjetas"***:
-INSERTAR IMAGEN
-        - **Descripcion:** Ingrese una descripcion para el movimiento en concreto.
+    
+  *  INSERTAR IMAGEN
+    
+        -**Descripcion:** Ingrese una descripcion para el movimiento en concreto.
         - **Cliente:** Ingrese el cliente a quien corresponda el movimiento
         - **Tarjeta de Origen:** Ingrese la tarjeta desde la cual se extraeran los fondos
         - **Tarjeta de Destino:** Ingrese la tarjeta a la cual ingresaran los fondos enviados
         - **Monto:** Ingrese el monto deseado para la operacion
-
     * **En caso de seleccionar *"Retiro de fondos de subcuenta"***:
-INSERTAR IMAGEN
+
+  *  INSERTAR IMAGEN
+
         - **Programa:** Ingrese el programa correspondiente de la tarjeta 
         - **Tarjeta:** Ingrese la tarjeta desde la cual se extraeran los fondos
         - **Monto:** Ingrese el monto deseado para la operacion
+
 INSERTAR IMAGEN
 
 Una vez finalizada la configuracion de dicho movimiento, presione **Crear**.
