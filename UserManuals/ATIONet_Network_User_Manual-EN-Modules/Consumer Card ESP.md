@@ -233,8 +233,6 @@ En las columnas **Volumen Despachado**, **Precio unitario Despachado**, **Monto 
 
 Insertar Imagen
 
-<span style="color:red;">*</span>  
-
 </br>
 
 [Volver al inicio](#contenido) 	:arrow_up:
