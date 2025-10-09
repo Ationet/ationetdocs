@@ -232,7 +232,7 @@ Las Transacciones Rechazadas son aquellas que lograron pasar las autenticaciones
 En las columnas **Volumen Despachado**, **Precio unitario Despachado**, **Monto Despachado**, **Precio unitario de Contrato**, **Monto de Contrato** puede ver con que moneda fue realizada la transacción rechazada.
 
 Insertar Imagen
-
+<span style="color:red;">*</span>   
 </br>
 
 [Volver al inicio](#contenido) 	:arrow_up:
