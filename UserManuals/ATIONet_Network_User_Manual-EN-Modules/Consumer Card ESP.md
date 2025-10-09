@@ -28,7 +28,7 @@ Tenga en cuenta que en el momento de la preautorización, ATIONet congeló el im
 
 Si necesita ver más detalles, al hacer clic en el **código de autorización** accederá a la vista de detalles de la transacción.
 
--Insertar Imagen
+![Autorizaciones Pendientes (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Autorizaciones%20Pendientes%20(CC).PNG)
 
 Si aparecen transacciones pendientes antiguas y está seguro de que no se trata de un envío en curso, puede cancelarlas y devolver el saldo a la cuenta corriente. 
 Para ello existen 2 formas: De forma individual, pulsando el icono **X** a la derecha, o de forma masiva, seleccionando las transacciones, desplegando el menú Acciones en Lote y seleccionando Cancelar. 
@@ -40,11 +40,11 @@ Esto cancelará las transacciones y devolverá el saldo reservado a cada una de 
 
 En ATIONet una contingencia es una operación introducida manualmente. En esta sección puede consultar y crear contingencias. Tenga en cuenta que las contingencias son transacciones sin autorización previa.
 
-IMAGEN
+![Contingencias (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Contingencias%20(CC).PNG)
 
 Para crear una contingencia, haga click en el botón **Nuevo.
 
-IMAGEN
+![Contingencias Nueva (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Contingencias%20Nueva%20(CC).PNG)
 
 *	**Motivo:** Introduzca el motivo por el cual se está realizando la contingencia.
 *	**Fecha:** Introduzca la fecha de la contingencia.
@@ -75,7 +75,7 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 En este apartado se pueden visualizar el resumen de los conceptos aplicados.
 Al hacer click sobre el **Numero**, se podrá visualizar el detalle de cuales conceptos se aplicaron, así como el número de transacciones a las cuales se aplicaron dicho concepto.
 
-INSERTAR IMAGEN
+![Documentos de Cargos (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Documentos%20de%20Cargos%20(CC).PNG)
 
 Para más detalle acerca de su configuración dirigirse al apartado [#Programas](#Programas)
 
@@ -86,7 +86,7 @@ Para más detalle acerca de su configuración dirigirse al apartado [#Programas]
 En esta sección se pueden ver todos los estados de registro de los documentos de liquidación solicitados. 
 Los estados posibles son: **Pendiente**, **Procesando**, **Finalizado** o **Finalizado con errores**.
 
-INSERTAR IMAGEN
+![Documentos de Liquidaciones (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Documentos%20de%20Liquidaciones%20(CC).PNG)
 
 </br>
 
@@ -94,14 +94,14 @@ INSERTAR IMAGEN
 
 En este apartado se pueden visualizar errores resultado de los procesos de liquidación terminados en errores
 
-INSERTAR IMAGEN
+![Errores](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Errores.PNG)
 
 ## Estados de Cuenta
 
 En esta sección podrá ver y descargar los estados de cuenta de su Network. También puede generar los estados de cuenta en **.PDF** uno a uno, o dentro de la "Acción en Lote" generando un paquete.
 A su vez, al interactuar con el **Numero de Liquidación**, se podrán ver los detalles del estado de cuenta correspondiente.
 
-INSERTAR IMAGEN
+![Estados de cuenta (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Estados%20de%20cuenta%20(CC).PNG)
 
 </br>
 
@@ -112,7 +112,7 @@ En el apartado superior se encuentra un sistema de filtros el cual puede filtrar
 
 Al interactuar con, la columna de fecha, se puede reordenar la lista de ítems liquidados por fecha
 
-INSERTAR IMAGEN
+![Items Liquidados (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Items%20Liquidados%20(CC).PNG)
 
 </br>
 
@@ -121,14 +121,14 @@ INSERTAR IMAGEN
 En la sección de **Movimientos** se pueden visualizar todas las interacciones relacionadas al saldo de las tarjetas
 Para facilitar las consultas, hay un panel de filtros disponible:
 
-INSERTAR IMAGEN
+![Movimientos (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Movimientos%20(CC).PNG)
 
 Para registrar un nuevo movimiento presione el boton **Nuevo**, para luego priorizar la siguiente informacion:
 
 * **Tipo:** Seleccione el tipo de movieminto que desea realizar, el mismo puede ser desde una transaferencia de fondos entre dos tarjetas o el retiro de fondos para una subcuenta.
     * **En caso de seleccionar *"Transferencia de fondos entre tarjetas"***:
     
-  *  INSERTAR IMAGEN
+  *  ![Movimientos Nuevo (Transferencia de fondos entre tarjetas) (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Movimientos%20Nuevo%20(Transferencia%20de%20fondos%20entre%20tarjetas)%20(CC).PNG)
     
         - **Descripcion:** Ingrese una descripcion para el movimiento en concreto.
         - **Cliente:** Ingrese el cliente a quien corresponda el movimiento
@@ -137,13 +137,11 @@ Para registrar un nuevo movimiento presione el boton **Nuevo**, para luego prior
         - **Monto:** Ingrese el monto deseado para la operacion
     * **En caso de seleccionar *"Retiro de fondos de subcuenta"***:
 
-  *  INSERTAR IMAGEN
+  *  ![Movimientos Nuevo (Retiro de fondos de subcuenta) (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Movimientos%20Nuevo%20(Retiro%20de%20fondos%20de%20subcuenta)%20(CC).PNG)
 
         - **Programa:** Ingrese el programa correspondiente de la tarjeta 
         - **Tarjeta:** Ingrese la tarjeta desde la cual se extraeran los fondos
         - **Monto:** Ingrese el monto deseado para la operacion
-
-INSERTAR IMAGEN
 
 Una vez finalizada la configuracion de dicho movimiento, presione **Crear**.
 
@@ -153,7 +151,7 @@ Una vez finalizada la configuracion de dicho movimiento, presione **Crear**.
 
 En esta sección puede ejecutar manualmente un proceso de facturación o ver el estado de todos los procesos de facturación. Los posibles estados de los procesos son: **Pendiente**, **Confirmado**, **Error** o **Confirmado con errores**.
 
-INSERTAR IMAGEN
+![Procesos de Liquidacion (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Procesos%20de%20Liquidacion%20(CC).PNG)
 
 Adicionalmente, en la columna de detalles, se puede visualizar 4 opciones las cuales permiten facilitar el acceso a los apartados relacionados con este proceso.
 Desde Izquierda a Derecha, los procesos son los siguientes:
@@ -172,11 +170,11 @@ Desde Izquierda a Derecha, los procesos son los siguientes:
 
 En este apartado, se puede visualizar, crear y editar los programas de consumer card.
 
-INSERTAR IMAGEN
+![Programas (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Programas%20(CC).PNG)
 
 Para crear un nuevo programa presione el botón **NUEVO**
 
-INSERTAR IMAGEN
+![Programas Nuevo (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Programas%20Nuevo%20(CC).PNG)
 
 Luego deberá completar con la siguiente información:
 
@@ -197,35 +195,35 @@ Luego, se pueden configurar los siguientes apartados:
 
 * **Combustibles:** En este apartado se pueden configurar con que combustibles podrán operar las tarjetas relacionadas a este programa
 
-INSERTAR IMAGEN
+![Programas Nuevo (Combustible) (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Programas%20Nuevo%20(Combustible)%20(CC).PNG)
 
 * **Sitios:** En este apartado se pueden configurar los sitios y los combustibles con los que se operara en los sitios correspondientes
 
-INSERTAR IMAGEN
+![Programas Nuevo (Sitios) (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Programas%20Nuevo%20(Sitios)%20(CC).PNG)
 
 * **Descuentos:** En este apartado se pueden configurar los descuentos 
 
-INSERTAR IMAGEN
+![Programas Nuevo (Descuentos) (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Programas%20Nuevo%20(Descuentos)%20(CC).PNG)
 
 * **Liquidaciones:** En este apartado se pueden configurar la periodicidad de las liquidaciones para las tarjetas asociadas a este programa
 
-INSERTAR IMAGEN
+![Programas Nuevo (Liquidaciones) (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Programas%20Nuevo%20(Liquidaciones)%20(CC).PNG)
 
 * **Conceptos:** En este apartado se pueden configurar los conceptos aplicables a las tarjetas asociadas con este programa
 
-INSERTAR IMAGEN
+![Programas Nuevo (Conceptos) (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Programas%20Nuevo%20(Conceptos)%20(CC).PNG)
 
 * **Modelos de Identificador:** En este apartado se pueden configurar las características de la tarjeta como identificador
 
-INSERTAR IMAGEN
+![Programas Nuevo (Modelos de Identificador) (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Programas%20Nuevo%20(Modelos%20de%20Identificador)%20(CC).PNG)
 
 * **Regla:** En este apartado se pueden configurar las reglas correspondientes a este programa
 
-INSERTAR IMAGEN
+  ![Programas Nuevo (Reglas) (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Programas%20Nuevo%20(Reglas)%20(CC).PNG)
 
 * **Comercio:** En este apartado se pueden configurar los comercios asociados al programa
 
-INSERTAR IMAGEN
+![Programas Nuevo (Comercios) (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Programas%20Nuevo%20(Comercios)%20(CC).PNG)
 
 Una ver termine de configurar el programa a voluntad presione **Guardar**
 
@@ -233,12 +231,12 @@ Una ver termine de configurar el programa a voluntad presione **Guardar**
 
 En este apartado es donde se pueden visualizar las recargas realizadas a las respectivas tarjetas.
 
-INSERTAR IMAGEN
+![Recargas (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Recargas%20(CC).PNG)
 
 Por su parte, para realizar una recarga deberemos interactuar con botón **NUEVO**
 Una vez en esta vista, deberemos completar con la información solicitada:
 
-INSERTAR IMAGEN
+![Recargas Nuevas (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Recargas%20Nuevas%20(CC).PNG)
 
 * **Programa:** Ingrese el programa al cual la tarjeta se encuentra asociada.
 * **Tarjeta:** Ingrese el numero de la tarjeta a la cual desea recargar
@@ -252,15 +250,15 @@ Para finalizar, presione **Crear** para de esta manera completar el proceso de r
 
 En este apartado se pueden visualizar las tarjetas creadas, así como se dispone de la opción para editarlas y **habilitar/deshabilitar** tarjetas.
 
-INSERTAR IMAGEN
+![Tarjetas (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Tarjetas%20(CC).PNG)
 
 A su vez en la opción **“Tarjetas Masivas”**, se pueden crear múltiples tarjetas simplemente seleccionando el programa al cual estas pertenecerán y la cantidad deseada
 
-INSERTAR IMAGEN
+![Tarjetas Masivas (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Tarjetas%20Masivas%20(CC).PNG)
 
 Para crear una nueva tarjeta, interactúe con el botón “Nuevo” donde se deberán completar los siguientes campos:
 
-INSERTAR IMAGEN 
+![Tarjeta Nueva (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Tarjeta%20Nueva%20(CC).PNG)
 
 *	**Programa:** Introduzca el programa al cual se asociará la tarjeta
 *	**Apellidos:** Introduzca los apellidos del titular de la tarjeta
@@ -282,12 +280,12 @@ INSERTAR IMAGEN
 
 En este apartado se pueden visualizar los procesos de tarjetas solicitadas. Los mismos se encuentran ordenamos por numero de orden de manera predeterminada, pero al interactuar con el título de columna **“Orden de solicitud”** o **“Fecha de pedido”** los resultados se reorganizaran de menor a mayor dependiendo de con que título se haya interactuado.
 
-INSERTAR IMAGEN
+![Tarjetas Solicitadas (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Tarjetas%20Solicitadas%20(CC).PNG)
 
 Para crear una nueva solicitud, interactúe con el botón **“Nueva solicitud”**.
 Tas seleccionar el programa asociado a dichas tarjetas y la cantidad de tarjetas deseada, haga click en el botón **“Crear”** y el mismo entrara en proceso.
 
-INSERTAR IMAGEN 
+![Tarjetas Solicitadas (Nueva solicitud) (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Tarjetas%20Solicitadas%20(Nueva%20solicitud)%20(CC).PNG)
 
 </br>
 
@@ -297,7 +295,7 @@ En esta vista se pueden visualizar todas las transacciones correspondientes a es
 
 El panel de filtro tiene todos estos campos disponibles:
 
-INSERTAR IMAGEN
+![Transacciones Filtros (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Transacciones%20Filtros%20(CC).PNG)
 
 *	**Código de Autorización:** Introduzca el código de autorización asociado a la transacción.
 *	**Cliente:** Introduzca nombre del cliente asociado a la transacción
@@ -309,11 +307,11 @@ INSERTAR IMAGEN
 
 Una vez que haya filtrado, haga clic en **Búsqueda** y se listarán las transacciones que cumplen con el filtro.
 
-INSERTAR IMAGEN
+![Transacciones (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Transacciones%20(CC).PNG)
 
 Si quiere ver el detalle de la transacción, presione sobre el **Código de Autorización** y esto le llevará a una vista detallada de la transacción
 
-INSERTAR IMAGEN
+![Transacciones Detalles (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Transacciones%20Detalles%20(CC).PNG)
 
 </br>
 
@@ -322,7 +320,7 @@ INSERTAR IMAGEN
 Las Transacciones Rechazadas son aquellas que lograron pasar las autenticaciones duras de ATIONET, pero fueron rechazadas por otras validaciones como una regla insatisfecha o una validación de saldo. 
 En las columnas **Volumen Despachado**, **Precio unitario Despachado**, **Monto Despachado**, **Precio unitario de Contrato**, **Monto de Contrato** puede ver con que moneda fue realizada la transacción rechazada.
 
-Insertar Imagen
+![Transacciones Rechazadas (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Transacciones%20Rechazadas%20(CC).PNG)
 
 </br>
 
