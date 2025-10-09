@@ -92,6 +92,9 @@ INSERTAR IMAGEN
 
 ## Errores
 
+En este apartado se pueden visualizar errores resultado de los procesos de liquidación terminados en errores
+
+INSERTAR IMAGEN
 
 ## Estados de Cuenta
 
@@ -153,8 +156,82 @@ INSERTAR IMAGEN
 
 ## Programas
 
+En este apartado, se puede visualizar, crear y editar los programas de consumer card.
+
+INSERTAR IMAGEN
+
+Para crear un nuevo programa presione el botón **NUEVO**
+
+INSERTAR IMAGEN
+
+Luego deberá completar con la siguiente información:
+
+* **Nombre:** Ingrese el nombre deseado para el programa
+* **Descripción:** Ingrese una descripción acerca del programa
+* **Rango BIN:** Ingrese un rango BIN cuya disponibilidad es de 7 caracteres Alpha numéricos 
+* **Fecha Inicio:** Ingrese la fecha de inicio del programa
+* **Duración:** Ingrese la duración deseada del programa
+* **Validar Sitios:** Habilitando esta opción, el programa solo operara en los sitios configurados
+* **Descuento Requiere Registro:** Al activar esta check box, solo los usuarios finales los cuales están registrados en el Portal de Consumer Card podrán hacer uso de los descuentos configurados en el programa 
+* **Validar fecha de expiración:** Habilitando esta opción, se podrá configurar una fecha de expiración para las tarjetas creadas con este programa
+* **Nombre de Contacto:** Ingrese un nombre de contacto para el programa
+* **Correo de Contacto:** Ingrese el correo del contacto del programa
+* **Lista de Precios de Distribución:** Seleccione la lista de precios de distribución la cual será aplicada para el programa
+* **Moneda:** Seleccione la moneda con la cual operaran las tarjetas de dicho programa.
+
+Luego, se pueden configurar los siguientes apartados:
+
+* **Combustibles:** En este apartado se pueden configurar con que combustibles podrán operar las tarjetas relacionadas a este programa
+
+INSERTAR IMAGEN
+
+* **Sitios:** En este apartado se pueden configurar los sitios y los combustibles con los que se operara en los sitios correspondientes
+
+INSERTAR IMAGEN
+
+* **Descuentos:** En este apartado se pueden configurar los descuentos 
+
+INSERTAR IMAGEN
+
+* **Liquidaciones:** En este apartado se pueden configurar la periodicidad de las liquidaciones para las tarjetas asociadas a este programa
+
+INSERTAR IMAGEN
+
+* **Conceptos:** En este apartado se pueden configurar los conceptos aplicables a las tarjetas asociadas con este programa
+
+INSERTAR IMAGEN
+
+* **Modelos de Identificador:** En este apartado se pueden configurar las características de la tarjeta como identificador
+
+INSERTAR IMAGEN
+
+* **Regla:** En este apartado se pueden configurar las reglas correspondientes a este programa
+
+INSERTAR IMAGEN
+
+* **Comercio:** En este apartado se pueden configurar los comercios asociados al programa
+
+INSERTAR IMAGEN
+
+Una ver termine de configurar el programa a voluntad presione **Guardar**
 
 ## Recargas
+
+En este apartado es donde se pueden visualizar las recargas realizadas a las respectivas tarjetas.
+
+INSERTAR IMAGEN
+
+Por su parte, para realizar una recarga deberemos interactuar con botón **NUEVO**
+Una vez en esta vista, deberemos completar con la información solicitada:
+
+INSERTAR IMAGEN
+
+* **Programa:** Ingrese el programa al cual la tarjeta se encuentra asociada.
+* **Tarjeta:** Ingrese el numero de la tarjeta a la cual desea recargar
+* **Monto:** Ingrese el monto correspondiente a la recarga
+* **Encargado:** Ingrese el encargado asociado a la tarjeta.
+
+Para finalizar, presione **Crear** para de esta manera completar el proceso de recarga.
 
 
 ## Tarjetas
