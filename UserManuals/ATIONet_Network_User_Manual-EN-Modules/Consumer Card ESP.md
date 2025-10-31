@@ -318,7 +318,7 @@ Si quiere ver el detalle de la transacción, presione sobre el **Código de Auto
 ## Transacciones Rechazadas
 
 Las Transacciones Rechazadas son aquellas que lograron pasar las autenticaciones duras de ATIONET, pero fueron rechazadas por otras validaciones como una regla insatisfecha o una validación de saldo. 
-En las columnas **Volumen Despachado**, **Precio unitario Despachado**, **Monto Despachado**, **Precio unitario de Contrato**, **Monto de Contrato** puede ver con que moneda fue realizada la transacción rechazada.
+
 
 ![Transacciones Rechazadas (CC)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Consumer%20Card%20ESP/Transacciones%20Rechazadas%20(CC).PNG)
 
