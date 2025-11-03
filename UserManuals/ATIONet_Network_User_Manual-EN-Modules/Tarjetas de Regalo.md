@@ -17,11 +17,9 @@
 
  En ATIONet las autorizaciones pendientes son aquellas operaciones que aún no han recibido la transacción de finalización, pero que han sido preautorizadas. La información que se ve en esta vista son los despachos que están actualmente en curso.
 
-INSERTAR IMAGEN 
+![Autorizaciones Pendientes](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tarjetas%20de%20Regalo/Autorizaciones%20Pendientes.PNG)
  
 Tenga en cuenta que en el momento de la pre-autorización, ATIONet congeló el importe de la autorización de la tarjeta asociada. Esta vista presenta todos los campos necesarios para identificar la transacción y la tarjeta. Si necesita ver más detalles, al hacer clic en el código de autorización accederá a la vista de detalles de la transacción.
-
-INSERTAR IMAGEN
 
  <br/>
  
@@ -29,11 +27,11 @@ INSERTAR IMAGEN
  
 En ATIONet una contingencia es una operación introducida manualmente. En esta sección puede consultar y crear contingencias. Tenga en cuenta que las contingencias son transacciones sin autorización previa.
 
-INSERTAR IMAGEN
+![Contingencias](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tarjetas%20de%20Regalo/Contingencias.PNG)
 
 Para crear una contingencia, haga click en el botón **Nuevo**.
 
-INSERTAR IMAGEN
+![Contingencias (Nuevo)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tarjetas%20de%20Regalo/Contingencias%20(Nuevo).PNG)
 
 Los campos a completar son los siguientes:
 
@@ -66,7 +64,7 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 La sección de Movimientos se pueden visualizar todas las interacciones relacionadas al saldo de las tarjetas Para facilitar las consultas, hay un panel de filtros disponible. 
 
-iNSERTAR IMAGEN
+![Movimientos](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tarjetas%20de%20Regalo/Movimientos.PNG)
 
  <br/>
  
@@ -74,9 +72,11 @@ iNSERTAR IMAGEN
 
  Dentro de esta sección puede consultar, editar o crear programas de las tarjetas de regalos
 
-INSERTAR IMAGEN
+![Programas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tarjetas%20de%20Regalo/Programas.PNG)
  
 Para crear un programa, haga clic en el botón **Nuevo**.
+
+![Programas (nuevo)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tarjetas%20de%20Regalo/Programas%20(nuevo).PNG)
 
 Los campos a completar son los siguientes:
 * **Nombre:** Introduzca el nombre deseado para el programa
@@ -93,27 +93,27 @@ Luego, se pueden configurar los siguientes apartados:
 
 * **Valor:** En este apartado se puede configurar el valor de las tarjetas
 
-INSERTAR IMAGEN
+![Programas (valor)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tarjetas%20de%20Regalo/Programas%20(valor).PNG)
 
 * **Combustibles:** En este apartado se pueden configurar con que combustibles podrán operar las tarjetas relacionadas a este programa
 
-INSERTAR IMAGEN
+![Programas (combustible)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tarjetas%20de%20Regalo/Programas%20(combustible).PNG)
 
 * **Sitios:** En este apartado se pueden configurar los sitios y los combustibles con los que se operara en los sitios correspondientes
 
-INSERTAR IMAGEN
+![Programas (sitios)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tarjetas%20de%20Regalo/Programas%20(sitios).PNG)
 
 * **Descuentos:** En este apartado se pueden configurar los descuentos
 
-INSERTAR IMAGEN
+![Programas (descuentos)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tarjetas%20de%20Regalo/Programas%20(descuentos).PNG)
 
 * **Modelos de Identificador:** En este apartado se pueden configurar las características de la tarjeta como identificador
 
-INSERTAR IMAGEN
+![Programas (modelo de identificadores)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tarjetas%20de%20Regalo/Programas%20(modelo%20de%20identificadores).PNG)
 
 * **Regla:** En este apartado se pueden configurar las reglas correspondientes a este programa
 
-INSERTAR IMAGEN
+![Programas (reglas)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tarjetas%20de%20Regalo/Programas%20(reglas).PNG)
 
 Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
@@ -124,12 +124,12 @@ Cuando haya terminado de rellenar los campos, presione el botón **Guardar**.
 
 En este apartado se pueden visualizar las tarjetas creadas, así como se dispone de la opción para **habilitar/deshabilitar** tarjetas y llegado el caso para marcarlas como extraviadas.
 
-INSERTAR IMAGEN
+![tarjetas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tarjetas%20de%20Regalo/tarjetas.PNG)
 
 A su vez en la opción **“Acciones de Lote”**, se pueden Activar o Desactivar múltiples tarjetas simplemente seleccionando las tarjetas mediante la casilla de la izquierda.
 Finalmente, en el botón de **“Actualizar”** se puede descargar un template desde el cual se puede realizar una actualización masiva de tarjetas, donde a diferencia de **“Acciones de Lote”**, esta no se ve limitada por el limite de 50 resultados de Ationet.
 
-INSERTAR IMAGEN
+![tarjetas (masivas)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tarjetas%20de%20Regalo/tarjetas%20(masivas).PNG)
 
 
  <br/>
@@ -138,11 +138,11 @@ INSERTAR IMAGEN
 
  En este apartado se pueden visualizar los procesos de tarjetas solicitadas. Los mismos se encuentran ordenamos por numero de orden de manera predeterminada, pero al interactuar con el título de columna **“Orden de solicitud”** o **“Fecha de pedido”** los resultados se reorganizaran de menor a mayor dependiendo de con que título se haya interactuado.
 
-INSERTAR IMAGEN
+![tarjetas solicitadas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tarjetas%20de%20Regalo/tarjetas%20solicitadas.PNG)
 
 Para crear una nueva solicitud, interactúe con el botón **“Nueva solicitud”**. Tas seleccionar el programa asociado a dichas tarjetas y la cantidad de tarjetas deseada, haga click en el botón **“Crear”** y el mismo entrara en proceso.
 
-INSERTAR IMAGEN
+![tarjetas solicitadas (masivas)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tarjetas%20de%20Regalo/tarjetas%20solicitadas%20(masivas).PNG)
 
  <br/>
  
@@ -152,7 +152,7 @@ La vista de transacciones es una de las más importantes en ATIONet. En esta vis
 
 El panel de filtro tiene todos estos campos disponibles:
 
-INSERTAR IMAGEN
+![transacciones](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tarjetas%20de%20Regalo/transacciones.PNG)
 
 * **Código de Autorización:** Introduzca el código de autorización asociado a la transacción.
 * **Programa:** Seleccione el programa de flota asociado a la transacción.
@@ -167,7 +167,7 @@ Una vez que haya filtrado, haga clic en Búsqueda y se listarán las transaccion
 
 Si quiere ver el detalle de la transacción, presione sobre el **Código de Autorización** y esto le llevará a una vista detallada de la transacción.
 
-INSERTAR IMAGEN
+![transacciones (detalles)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Tarjetas%20de%20Regalo/transacciones%20(detalles).PNG)
 
  <br/>
  
