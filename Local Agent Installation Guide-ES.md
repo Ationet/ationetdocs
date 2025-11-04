@@ -94,9 +94,7 @@ Para que nuestro equipo se pueda conectar con el portal de Ationet deberemos mod
 
 Una vez estemos en este apartado deberemos copiar los primero tres caracteres que se encuentran en el apartado de Código y colocarlos en **Subscriber_Code**.
 
-
-# **Instalación de versión 2.6.0000 o superior**
-
+# Instalación de versión 2.6.0000 o superior
 
 Para realizar la instalación de la versión 2.6.0000 o superior de LocalAgent, se debe contar con un cambio en el archivo de Install.config con el fin de incorporar la variable “Terminal_Code”.
 
