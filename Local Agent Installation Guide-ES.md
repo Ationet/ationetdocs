@@ -20,8 +20,8 @@
 - [Hardware & Software necesario](#hardware--software-necesario)
 - [Pasos de Instalación](#pasos-de-instalación)
 - [Como Armar el Archivo install.config](#como-armar-el-archivo-installconfig)
-- [Instalacion de version 2.6.0000 o superior](#Instalacion-de-version-2.6.0000-o-superior)
-- [Actualizacion de version 2.6.0000 o superior](#Actualizacion-de-version-2.6.0000-o-superior)
+- [Instalacion de version 2,6,0000 o superior](#Instalacion-de-version-2,6,0000-o-superior)
+- [Actualizacion de version 2,6,0000 o superior](#Actualizacion-de-version-2,6,0000-o-superior)
 - [Revisión de Logs](#revisión-de-logs)
 - [Estadísticas](#estadísticas)
 
@@ -94,7 +94,7 @@ Para que nuestro equipo se pueda conectar con el portal de Ationet deberemos mod
 
 Una vez estemos en este apartado deberemos copiar los primero tres caracteres que se encuentran en el apartado de Código y colocarlos en **Subscriber_Code**.
 
-# Instalacion de version 2.6.0000 o superior
+# Instalacion de version 2,6,0000 o superior
 
 Para realizar la instalación de la versión 2.6.0000 o superior de LocalAgent, se debe contar con un cambio en el archivo de Install.config con el fin de incorporar la variable “Terminal_Code”.
 
@@ -106,7 +106,7 @@ Actualmente no es requisito de que la Terminal se encuentre dada de alta en Atio
 Se debe modificar el archivo install.config agregando la key, con el valor requerido para que la instalación pueda llevarse a cabo.
 
 
-# Actualizacion de version 2.6.0000 o superior
+# Actualizacion de version 2,6,0000 o superior
 
 
 Para efectuar esta actualización, se debe en primera instancia utilizar la herramienta LAConfig. Esta herramienta permite realizar cambios en la tabla de Configuration de LocalAgent.
