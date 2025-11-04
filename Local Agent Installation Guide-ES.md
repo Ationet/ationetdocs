@@ -97,6 +97,7 @@ Una vez estemos en este apartado deberemos copiar los primero tres caracteres qu
 
 # **Instalación de versión 2.6.0000 o superior**
 
+
 Para realizar la instalación de la versión 2.6.0000 o superior de LocalAgent, se debe contar con un cambio en el archivo de Install.config con el fin de incorporar la variable “Terminal_Code”.
 
 <img width="975" height="187" alt="image" src="https://github.com/user-attachments/assets/f24f5fe1-f15a-4128-a8c3-6b158cbf6baa" />
@@ -106,7 +107,9 @@ Este valor debe corresponder a una terminal que pertenezca a la Network que se e
 Actualmente no es requisito de que la Terminal se encuentre dada de alta en Ationet. 
 Se debe modificar el archivo install.config agregando la key, con el valor requerido para que la instalación pueda llevarse a cabo.
 
+
 # **Actualización de versión 2.6.0000 o superior**
+
 
 Para efectuar esta actualización, se debe en primera instancia utilizar la herramienta LAConfig. Esta herramienta permite realizar cambios en la tabla de Configuration de LocalAgent.
 
