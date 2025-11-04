@@ -95,7 +95,7 @@ Para que nuestro equipo se pueda conectar con el portal de Ationet deberemos mod
 Una vez estemos en este apartado deberemos copiar los primero tres caracteres que se encuentran en el apartado de Código y colocarlos en **Subscriber_Code**.
 
 
-# **Instalacion Version 2.6.0000**
+## **Instalacion Version 2.6.0000**
 
 Para realizar la instalación de la versión 2.6.0000 o superior de LocalAgent, se debe contar con un cambio en el archivo de Install.config con el fin de incorporar la variable “Terminal_Code”.
 
@@ -106,7 +106,7 @@ Este valor debe corresponder a una terminal que pertenezca a la Network que se e
 Actualmente no es requisito de que la Terminal se encuentre dada de alta en Ationet. 
 Se debe modificar el archivo install.config agregando la key, con el valor requerido para que la instalación pueda llevarse a cabo.
 
-# **Actualización Version 2.6.0000**
+## **Actualización Version 2.6.0000**
 
 Para efectuar esta actualización, se debe en primera instancia utilizar la herramienta LAConfig. Esta herramienta permite realizar cambios en la tabla de Configuration de LocalAgent.
 
@@ -117,7 +117,7 @@ Una vez realizado este paso, donde tendremos en la tabla Configuration el valor 
 Para esto, seguimos los pasos normales de actualización donde se descarga el nuevo LocalAgent y se procede a ejecutar el Wizard de actualización, como cualquier otra versión. 
 
 
-# **Revisión de logs**
+## **Revisión de logs**
 
 Una vez finalizada la instalación procedemos a verificar los logs para ver si completó la descarga de datos correspondiente para la base offline.
 
