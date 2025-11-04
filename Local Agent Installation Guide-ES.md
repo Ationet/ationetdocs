@@ -20,8 +20,8 @@
 - [Hardware & Software necesario](#hardware--software-necesario)
 - [Pasos de Instalación](#pasos-de-instalación)
 - [Como Armar el Archivo install.config](#como-armar-el-archivo-installconfig)
-- [Instalación de versión 2.6.0000 o superior](#Instalación-de-versión-2.6.0000-o-superior)
-- [Actualización de versión 2.6.0000 o superior](#Actualización-de-versión-2.6.0000-o-superior)
+- [Instalacion de version 2.6.0000 o superior](#Instalacion-de-version-2.6.0000-o-superior)
+- [Actualizacion de version 2.6.0000 o superior](#Actualizacion-de-version-2.6.0000-o-superior)
 - [Revisión de Logs](#revisión-de-logs)
 - [Estadísticas](#estadísticas)
 
