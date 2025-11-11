@@ -1,0 +1,570 @@
+{
+	"info": {
+		"_postman_id": "a8d6c71f-abd6-40b5-ad2d-df184938d1e8",
+		"name": "PostPaid - Example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14358826"
+	},
+	"item": [
+		{
+			"name": "01 - Connection",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"applicationSender\": \"{{SiteId}}\",\r\n  \"workstationID\": \"{{SiteId}}\",\r\n  \"timestamp\": \"2009-11-20T17:30:50\",\r\n  \"interfaceVersion\": \"1.0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}v{{Version}}/SiteSystem/connection",
+					"host": [
+						"{{FleetMobilePaymentURL}}v{{Version}}"
+					],
+					"path": [
+						"SiteSystem",
+						"connection"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02 - MobileEvents",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// var data = JSON.parse(responseBody);\r",
+							"// tests[\"URL: \" + data.url];\r",
+							"// postman.setEnvironmentVariable(\"SiteSessionId\", data.url); \r",
+							"\r",
+							"pm.test(\"response should be okay to process\", function () {\r",
+							"    const responseJson = pm.response.json();\r",
+							"    const URL = responseJson.url;\r",
+							"    const siteId = URL.split('/')[URL.split('/').length - 1];\r",
+							"    postman.setEnvironmentVariable(\"SiteSessionId\", siteId); \r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}v{{Version}}/SiteSystem/MobileEvents",
+					"host": [
+						"{{FleetMobilePaymentURL}}v{{Version}}"
+					],
+					"path": [
+						"SiteSystem",
+						"MobileEvents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03 - SiteData",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"name\" : \"IFSF/Conexxus Station\",   \r\n     \"siteIDs\" : [\r\n             { \"type\":\"SHIPTO\", \"id\": \"{{SiteId}}\" } \r\n     ],\r\n     \"addressLines\" : [\r\n       \"Delta 1A, Building L’Aimant\",   \r\n       \"Business Park Ijsseloord 2\"\r\n     ]\r\n   }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}v{{Version}}/SiteSystem/SSE/{{SiteSessionId}}/siteData",
+					"host": [
+						"{{FleetMobilePaymentURL}}v{{Version}}"
+					],
+					"path": [
+						"SiteSystem",
+						"SSE",
+						"{{SiteSessionId}}",
+						"siteData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03 - Products",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"fuelProducts\":[\r\n      {\r\n         \"productNo\":\"1\",\r\n         \"productID\":{\r\n            \"productName\":\"Premium\",\r\n            \"description\": \"Premium\"\r\n         },\r\n         \"productCode\":\"CODE1\",\r\n         \"prices\":[\r\n            {\r\n               \"fuelUnitPrice\":{\r\n                  \"value\":\"20.00\",\r\n                  \"currency\":\"\"\r\n               },\r\n               \"priceTier\":\"cash\",\r\n               \"modeNo\":\"1\"\r\n            },\r\n            {\r\n               \"fuelUnitPrice\":{\r\n                  \"value\":\"25.00\",\r\n                  \"currency\":\"\"\r\n               },\r\n               \"priceTier\":\"cash\",\r\n               \"modeNo\":\"2\"\r\n            }\r\n         ]\r\n      },\r\n      {\r\n         \"productNo\":\"2\",\r\n         \"productID\":{\r\n            \"productName\":\"Premium\",\r\n            \"description\": \"Premium\"\r\n         },\r\n         \"productCode\":\"CODE2\",\r\n         \"prices\":[\r\n            {\r\n               \"fuelUnitPrice\":{\r\n                  \"value\":\"30.00\",\r\n                  \"currency\":\"\"\r\n               },\r\n               \"priceTier\":\"cash\",\r\n               \"modeNo\":\"1\"\r\n            },\r\n            {\r\n               \"fuelUnitPrice\":{\r\n                  \"value\":\"35.00\",\r\n                  \"currency\":\"\"\r\n               },\r\n               \"priceTier\":\"cash\",\r\n               \"modeNo\":\"2\"\r\n            }\r\n         ]\r\n      }\r\n   ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}v{{Version}}/SiteSystem/SSE/{{SiteSessionId}}/products",
+					"host": [
+						"{{FleetMobilePaymentURL}}v{{Version}}"
+					],
+					"path": [
+						"SiteSystem",
+						"SSE",
+						"{{SiteSessionId}}",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03 - DSPS",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dispensersConfiguration\": [\r\n    {\r\n      \"dispenserID\": \"1\",\r\n      \"fuelingPoints\": [\r\n        {\r\n          \"fuelingPointID\": \"1\",\r\n          \"nozzles\": [\r\n            {\r\n              \"nozzleNo\": \"1\",\r\n              \"productNo\": \"1\",\r\n              \"tankNo1\": \"1\"\r\n            },\r\n            {\r\n              \"nozzleNo\": \"2\",\r\n              \"productNo\": \"2\",\r\n              \"tankNo1\": \"2\"\r\n            },\r\n            {\r\n              \"nozzleNo\": \"3\",\r\n              \"productNo\": \"3\",\r\n              \"tankNo1\": \"3\"\r\n            },\r\n            {\r\n              \"nozzleNo\": \"4\",\r\n              \"productNo\": \"4\",\r\n              \"tankNo1\": \"4\"\r\n            }\r\n          ]\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"dispenserID\": \"2\",\r\n      \"fuelingPoints\": [\r\n        {\r\n          \"fuelingPointID\": \"2\",\r\n          \"nozzles\": [\r\n            {\r\n              \"nozzleNo\": \"1\",\r\n              \"productNo\": \"1\",\r\n              \"tankNo1\": \"1\"\r\n            },\r\n            {\r\n              \"nozzleNo\": \"2\",\r\n              \"productNo\": \"2\",\r\n              \"tankNo1\": \"2\"\r\n            },\r\n            {\r\n              \"nozzleNo\": \"3\",\r\n              \"productNo\": \"3\",\r\n              \"tankNo1\": \"3\"\r\n            },\r\n            {\r\n              \"nozzleNo\": \"4\",\r\n              \"productNo\": \"4\",\r\n              \"tankNo1\": \"4\"\r\n            }\r\n          ]\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}v{{Version}}/SiteSystem/SSE/{{SiteSessionId}}/dsps",
+					"host": [
+						"{{FleetMobilePaymentURL}}v{{Version}}"
+					],
+					"path": [
+						"SiteSystem",
+						"SSE",
+						"{{SiteSessionId}}",
+						"dsps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "04 - SSE",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// var data = JSON.parse(responseBody);\r",
+							"// tests[\"URL: \" + data.url];\r",
+							"// postman.setEnvironmentVariable(\"SiteSessionId\", data.url); \r",
+							"\r",
+							"// pm.test(\"response should be okay to process\", function () {\r",
+							"//     const responseJson = pm.response.json();\r",
+							"//     const URL = responseJson.url;\r",
+							"//     const siteId = URL.split('/')[URL.split('/').length - 1];\r",
+							"//     postman.setEnvironmentVariable(\"SiteSessionId\", siteId); \r",
+							"// });\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/event-stream",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}v{{Version}}/SiteSystem/SSE/{{SiteSessionId}}",
+					"host": [
+						"{{FleetMobilePaymentURL}}v{{Version}}"
+					],
+					"path": [
+						"SiteSystem",
+						"SSE",
+						"{{SiteSessionId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PaymentRequest",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"response should be okay to process\", function () {\r",
+							"    const responseJson = pm.response.json();\r",
+							"    const transactionId = responseJson.umti;\r",
+							"    postman.setEnvironmentVariable(\"TransactionId\", transactionId); \r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "FusionWallet",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "AdminWallet",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}v{{Version}}/MPA/postpaid/{{PosId}}/PaymentRequest",
+					"host": [
+						"{{FleetMobilePaymentURL}}v{{Version}}"
+					],
+					"path": [
+						"MPA",
+						"postpaid",
+						"{{PosId}}",
+						"PaymentRequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PaymentRequest WalletId",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"response should be okay to process\", function () {\r",
+							"    const responseJson = pm.response.json();\r",
+							"    const transactionId = responseJson.umti;\r",
+							"    postman.setEnvironmentVariable(\"TransactionId\", transactionId); \r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "FusionWallet",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "AdminWallet",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}v{{Version}}/MPA/postpaid/{{PosId}}/{{WalletId}}/PaymentRequest",
+					"host": [
+						"{{FleetMobilePaymentURL}}v{{Version}}"
+					],
+					"path": [
+						"MPA",
+						"postpaid",
+						"{{PosId}}",
+						"{{WalletId}}",
+						"PaymentRequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TransactionData",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "FusionWallet",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "AdminWallet",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}v{{Version}}/MPA/postpaid/Transaction/{{TransactionId}}",
+					"host": [
+						"{{FleetMobilePaymentURL}}v{{Version}}"
+					],
+					"path": [
+						"MPA",
+						"postpaid",
+						"Transaction",
+						"{{TransactionId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TransactionData",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"umti\": \"{{TransactionId}}\",\r\n  \"trxInfo\": {\r\n    \"timestamp\": \"2023-07-06T13:47:17.526Z\",\r\n    \"result\": \"success\",\r\n    \"error\": \"string\",\r\n    \"message\": \"string\",\r\n    \"UMTI\": \"{{TransactionId}}\",\r\n    \"transactionStatus\": \"string\",\r\n    \"fuelingPointID\": \"string\",\r\n    \"merchantID\": \"string\",\r\n    \"siteID\": {\r\n      \"type\": \"string\",\r\n      \"id\": \"string\"\r\n    }\r\n  },\r\n  \"paymentInfo\": {\r\n    \"paymentMethod\": \"string\",\r\n    \"finalAmount\": {\r\n      \"value\": \"string\",\r\n      \"currency\": \"string\"\r\n    },\r\n    \"hostAuthNumber\": \"string\",\r\n    \"cardType\": \"string\",\r\n    \"cardCircuit\": \"string\"\r\n  },\r\n  \"fuelingInfo\": {\r\n    \"fuelProducts\": [\r\n      {\r\n        \"productNo\": \"1\",\r\n        \"productName\": \"Combustible 1\",\r\n        \"productCode\": \"CODE01\",\r\n        \"prices\": [\r\n          {\r\n            \"fuelUnitPrice\": {\r\n              \"value\": \"string\",\r\n              \"currency\": \"string\"\r\n            },\r\n            \"priceTier\": \"string\",\r\n            \"modeNo\": \"string\"\r\n          }\r\n        ],\r\n        \"fuelPrice\": {\r\n          \"value\": \"10\",\r\n          \"currency\": \"USD\"\r\n        },\r\n        \"fuelUnitOfMeasurement\": \"LTR\",\r\n        \"gradeAllowed\": \"string\",\r\n        \"merchandiseCode\": \"string\",\r\n        \"taxId\": \"string\"\r\n      }\r\n    ],\r\n    \"fuelingPointID\": \"string\",\r\n    \"fuelAmount\": {\r\n      \"value\": \"1\",\r\n      \"currency\": \"USD\"\r\n    },\r\n    \"quantity\": {\r\n      \"value\": \"10\",\r\n      \"uom\": \"LTR\"\r\n    },\r\n    \"serviceLevel\": \"string\",\r\n    \"modeNo\": \"string\",\r\n    \"priceTier\": \"string\"\r\n  },\r\n  \"receiptInfo\": [\r\n    \"string\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}v{{Version}}/SiteSystem/trxs/{{TransactionId}}/trxData",
+					"host": [
+						"{{FleetMobilePaymentURL}}v{{Version}}"
+					],
+					"path": [
+						"SiteSystem",
+						"trxs",
+						"{{TransactionId}}",
+						"trxData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TransactionData Failure",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"umti\": \"{{TransactionId}}\",\r\n  \"trxInfo\": {\r\n    \"timestamp\": \"2023-07-06T13:47:17.526Z\",\r\n    \"result\": \"failure\",\r\n    \"error\": \"string\",\r\n    \"message\": \"string\",\r\n    \"UMTI\": \"{{TransactionId}}\",\r\n    \"transactionStatus\": \"string\",\r\n    \"fuelingPointID\": \"string\",\r\n    \"merchantID\": \"string\",\r\n    \"siteID\": {\r\n      \"type\": \"string\",\r\n      \"id\": \"string\"\r\n    }\r\n  },\r\n  \"paymentInfo\": {\r\n    \"paymentMethod\": \"string\",\r\n    \"finalAmount\": {\r\n      \"value\": \"string\",\r\n      \"currency\": \"string\"\r\n    },\r\n    \"hostAuthNumber\": \"string\",\r\n    \"cardType\": \"string\",\r\n    \"cardCircuit\": \"string\"\r\n  },\r\n  \"fuelingInfo\": {\r\n    \"fuelProducts\": [\r\n      {\r\n        \"productNo\": \"01\",\r\n        \"productId\": {\r\n          \"productName\": \"Combustible 1\",\r\n          \"description\": \"Combustible 1\"\r\n        },\r\n        \"productCode\": \"string\",\r\n        \"prices\": [\r\n          {\r\n            \"fuelUnitPrice\": {\r\n              \"value\": \"string\",\r\n              \"currency\": \"string\"\r\n            },\r\n            \"priceTier\": \"string\",\r\n            \"modeNo\": \"string\"\r\n          }\r\n        ],\r\n        \"fuelPrice\": {\r\n          \"value\": \"10\",\r\n          \"currency\": \"USD\"\r\n        },\r\n        \"fuelUnitOfMeasurement\": \"LTR\",\r\n        \"gradeAllowed\": \"string\",\r\n        \"merchandiseCode\": \"string\",\r\n        \"taxId\": \"string\"\r\n      }\r\n    ],\r\n    \"fuelingPointID\": \"string\",\r\n    \"fuelAmount\": {\r\n      \"value\": \"1\",\r\n      \"currency\": \"USD\"\r\n    },\r\n    \"quantity\": {\r\n      \"value\": \"10\",\r\n      \"uom\": \"LTR\"\r\n    },\r\n    \"serviceLevel\": \"string\",\r\n    \"modeNo\": \"string\",\r\n    \"priceTier\": \"string\"\r\n  },\r\n  \"receiptInfo\": [\r\n    \"string\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}v{{Version}}/SiteSystem/trxs/{{TransactionId}}/trxData",
+					"host": [
+						"{{FleetMobilePaymentURL}}v{{Version}}"
+					],
+					"path": [
+						"SiteSystem",
+						"trxs",
+						"{{TransactionId}}",
+						"trxData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Payment Ok Notification",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}v{{Version}}/MPA/postpaid/Notifications/{{TransactionId}}?topic=PaymentOk_25_3&id=123456789",
+					"host": [
+						"{{FleetMobilePaymentURL}}v{{Version}}"
+					],
+					"path": [
+						"MPA",
+						"postpaid",
+						"Notifications",
+						"{{TransactionId}}"
+					],
+					"query": [
+						{
+							"key": "topic",
+							"value": "PaymentOk_25_3"
+						},
+						{
+							"key": "id",
+							"value": "123456789"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Payment Fail Notification",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}v{{Version}}/MPA/postpaid/Notifications/{{TransactionId}}?topic=PaymentFail&id=123456789",
+					"host": [
+						"{{FleetMobilePaymentURL}}v{{Version}}"
+					],
+					"path": [
+						"MPA",
+						"postpaid",
+						"Notifications",
+						"{{TransactionId}}"
+					],
+					"query": [
+						{
+							"key": "topic",
+							"value": "PaymentFail"
+						},
+						{
+							"key": "id",
+							"value": "123456789"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CloseTransactionNotification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"umti\": \"{{TransactionId}}\",\r\n  \"trxInfo\": {\r\n    \"timestamp\": \"2023-07-06T14:06:25.148Z\",\r\n    \"result\": \"success\",\r\n    \"error\": \"string\",\r\n    \"message\": \"string\",\r\n    \"UMTI\": \"{{TransactionId}}\",\r\n    \"transactionStatus\": \"success\",\r\n    \"fuelingPointID\": \"string\",\r\n    \"merchantID\": \"string\",\r\n    \"siteID\": {\r\n      \"type\": \"string\",\r\n      \"id\": \"string\"\r\n    }\r\n  },\r\n  \"paymentInfo\": {\r\n    \"paymentMethod\": \"string\",\r\n    \"finalAmount\": {\r\n      \"value\": \"string\",\r\n      \"currency\": \"string\"\r\n    },\r\n    \"hostAuthNumber\": \"string\",\r\n    \"cardType\": \"string\",\r\n    \"cardCircuit\": \"string\"\r\n  },\r\n  \"fuelingInfo\": {\r\n    \"fuelProducts\": [\r\n      {\r\n        \"productNo\": \"string\",\r\n        \"productId\": {\r\n          \"productName\": \"string\",\r\n          \"description\": \"string\"\r\n        },\r\n        \"productCode\": \"string\",\r\n        \"prices\": [\r\n          {\r\n            \"fuelUnitPrice\": {\r\n              \"value\": \"string\",\r\n              \"currency\": \"string\"\r\n            },\r\n            \"priceTier\": \"string\",\r\n            \"modeNo\": \"string\"\r\n          }\r\n        ],\r\n        \"fuelPrice\": {\r\n          \"value\": \"string\",\r\n          \"currency\": \"string\"\r\n        },\r\n        \"fuelUnitOfMeasurement\": \"string\",\r\n        \"gradeAllowed\": \"string\",\r\n        \"merchandiseCode\": \"string\",\r\n        \"taxId\": \"string\"\r\n      }\r\n    ],\r\n    \"fuelingPointID\": \"string\",\r\n    \"fuelAmount\": {\r\n      \"value\": \"string\",\r\n      \"currency\": \"string\"\r\n    },\r\n    \"quantity\": {\r\n      \"value\": \"string\",\r\n      \"uom\": \"string\"\r\n    },\r\n    \"serviceLevel\": \"string\",\r\n    \"modeNo\": \"string\",\r\n    \"priceTier\": \"string\"\r\n  },\r\n  \"receiptInfo\": [\r\n    \"string\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}v{{Version}}/SiteSystem/trxs/{{TransactionId}}/closeTrxNotification",
+					"host": [
+						"{{FleetMobilePaymentURL}}v{{Version}}"
+					],
+					"path": [
+						"SiteSystem",
+						"trxs",
+						"{{TransactionId}}",
+						"closeTrxNotification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CloseTransactionNotification Fail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"umti\": \"{{TransactionId}}\",\r\n  \"trxInfo\": {\r\n    \"timestamp\": \"2023-07-06T14:06:25.148Z\",\r\n    \"result\": \"fail\",\r\n    \"error\": \"string\",\r\n    \"message\": \"string\",\r\n    \"UMTI\": \"{{TransactionId}}\",\r\n    \"transactionStatus\": \"success\",\r\n    \"fuelingPointID\": \"string\",\r\n    \"merchantID\": \"string\",\r\n    \"siteID\": {\r\n      \"type\": \"string\",\r\n      \"id\": \"string\"\r\n    }\r\n  },\r\n  \"paymentInfo\": {\r\n    \"paymentMethod\": \"string\",\r\n    \"finalAmount\": {\r\n      \"value\": \"string\",\r\n      \"currency\": \"string\"\r\n    },\r\n    \"hostAuthNumber\": \"string\",\r\n    \"cardType\": \"string\",\r\n    \"cardCircuit\": \"string\"\r\n  },\r\n  \"fuelingInfo\": {\r\n    \"fuelProducts\": [\r\n      {\r\n        \"productNo\": \"string\",\r\n        \"productId\": {\r\n          \"productName\": \"string\",\r\n          \"description\": \"string\"\r\n        },\r\n        \"productCode\": \"string\",\r\n        \"prices\": [\r\n          {\r\n            \"fuelUnitPrice\": {\r\n              \"value\": \"string\",\r\n              \"currency\": \"string\"\r\n            },\r\n            \"priceTier\": \"string\",\r\n            \"modeNo\": \"string\"\r\n          }\r\n        ],\r\n        \"fuelPrice\": {\r\n          \"value\": \"string\",\r\n          \"currency\": \"string\"\r\n        },\r\n        \"fuelUnitOfMeasurement\": \"string\",\r\n        \"gradeAllowed\": \"string\",\r\n        \"merchandiseCode\": \"string\",\r\n        \"taxId\": \"string\"\r\n      }\r\n    ],\r\n    \"fuelingPointID\": \"string\",\r\n    \"fuelAmount\": {\r\n      \"value\": \"string\",\r\n      \"currency\": \"string\"\r\n    },\r\n    \"quantity\": {\r\n      \"value\": \"string\",\r\n      \"uom\": \"string\"\r\n    },\r\n    \"serviceLevel\": \"string\",\r\n    \"modeNo\": \"string\",\r\n    \"priceTier\": \"string\"\r\n  },\r\n  \"receiptInfo\": [\r\n    \"string\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{FleetMobilePaymentURL}}v{{Version}}/SiteSystem/trxs/{{TransactionId}}/closeTrxNotification",
+					"host": [
+						"{{FleetMobilePaymentURL}}v{{Version}}"
+					],
+					"path": [
+						"SiteSystem",
+						"trxs",
+						"{{TransactionId}}",
+						"closeTrxNotification"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
