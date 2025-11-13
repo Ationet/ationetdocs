@@ -31,23 +31,23 @@
 
 # Ajustes
 
-< br/ >
+</br>
 
 # Canjes
 
-< br/ >
+</br>
 
 # Cierres de Lotes
 
-< br/ >
+</br>
 
 # Clases de Entrada de Servicios
 
-< br/ >
+</br>
 
 # Clientes
 
-< br/ >
+</br>
 
 # Comunidades
 
@@ -55,74 +55,74 @@
 
 # Conciliaciones
 
-< br/ >
+</br>
 
 # Configuracion de Comunidad
 
-< br/ >
+</br>
 
 # Contingencias
 
-< br/ >
+</br>
 
 # Cuenta Corriente
 
-< br/ >
+</br>
 
 # Cupones
 
-< br/ >
+</br>
 
 # Excepciones
 
-< br/ >
+</br>
 
 # Grupos de tipo de entrada de servicios
 
-< br/ >
+</br>
 
 # Hojas de Servicio
 
-< br/ >
+</br>
 
 # Identidades
 
-< br/ >
+</br>
 
 # Parámetros de liquidaciones
 
-< br/ >
+</br>
 
 # Procesos de Contingencias
 
-< br/ >
+</br>
 
 # Procesos de cupones de fidelidad
 
-< br/ >
+</br>
 
 # Reglas de Descuento
 
-< br/ >
+</br>
 
 # Reglas de Puntos
 
-< br/ >
+</br>
 
 # Tipos de Entrada de Servicio
 
-< br/ >
+</br>
 
 # Transacciones
 
-< br/ >
+</br>
 
 # Transferencias
 
-< br/ >
+</br>
 
 # Unidades
 
-< br/ >
+</br>
 
 [Volver al inicio](#contenido) 	:arrow_up:
