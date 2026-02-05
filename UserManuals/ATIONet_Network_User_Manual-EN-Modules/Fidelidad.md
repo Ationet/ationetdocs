@@ -29,11 +29,11 @@
 
 En este apartado se pueden programar recargas de créditos para las cuentas corrientes de fidelidad.
 
-IMAGEN
+![Ajustes (Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Ajustes%20(Menu).PNG)
 
 Para programar un nuevo ajuste haga click en ***Nuevo***, luego complete los siguientes apartados:
 
-IMAGEN
+![Ajustes (Nuevo)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Ajustes%20(Nuevo).PNG)
 
 * **Descripción:** Introduzca una descripción para el Ajuste deseado
 * **Fecha:** Introduzca la fecha en la cual se realiza el ajuste
@@ -52,11 +52,11 @@ Una vez finalidad la configuración deseada, haga click en ***Guardar***
 
 En este apartado se pueden visualizar los canjes realizados, así como realizar nuevos canjes.
 
-IMAGEN
+![Canje (Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Canje%20(Menu).PNG)
 
 Para realizar un nuevo canje presiones el botón **Nuevo**:
 
-IMAGEN
+![Canje (Nuevo)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Canje%20(Nuevo).PNG)
 
 * **Descripción:** Introduzca una descripción para el canje deseado
 * **Fecha/hora:** Introduzca la fecha en la cual se realiza el canje
@@ -78,7 +78,7 @@ Una vez haya finalizado su selección, presione ***Guardar***.
 
 # Clases de Entrada de Servicios
 
-IMAGEN
+![Clases de Entrada de Servicios (config)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Clases%20de%20Entrada%20de%20Servicios%20(config).PNG)
 
 En este apartado se puede configurar hasta 3 clases de entrada de servicios.
 Una vez creada una clase, se puede acceder y visualizar como un apartado adicional, dentro del cual se pueden visualizar y crear códigos correspondientes al tipo de dicha entrada de servicio.
@@ -89,7 +89,7 @@ Una vez creada una clase, se puede acceder y visualizar como un apartado adicion
 
 En este apartado se pueden crear clientes que operen con el modulo de fidelidad.
 
-IMAGEN
+![Cliente (Comunidad)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Cliente%20(Comunidad).PNG)
 
 Para crear un cliente, debe completar la siguiente información:
 
@@ -98,7 +98,7 @@ Para crear un cliente, debe completar la siguiente información:
 
  > En la sección de ***“Conductores”***:
 
-IMAGEN
+![Cliente (Conductor)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Cliente%20(Conductor).PNG)
 
 * **Licencia:** Ingrese la licencia del conductor 
 * **Código:** Ingrese un código con el que se identificara al conductor
@@ -109,7 +109,7 @@ IMAGEN
 
 > En la sección de ***”Vehículo”***:
 
-IMAGEN
+![Cliente (Vehiculo)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Cliente%20(Vehiculo).PNG)
 
 * **Patente:** Ingrese la patente correspondiente al vehículo
 * **Código:** Ingrese un código con el que se identificara al vehículo
@@ -120,7 +120,7 @@ IMAGEN
 
 > En la sección de ***”Identificadores”***:
 
-IMAGEN
+![Cliente (Identificacion)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Cliente%20(Identificacion).PNG)
 
 * **Etiqueta:** Ingrese la etiqueta del identificador
 * **PAN:** Ingrese el PAN del identificador
@@ -130,7 +130,7 @@ IMAGEN
 
 > En la sección de ***”Entrada de Servicios”***:
 
-IMAGEN
+![Cliente (Entrada de Servicio)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Cliente%20(Entrada%20de%20Servicio).PNG)
 
 * **Código de Hoja de Servicio:** Introduzca el código de la hoja de servicio
 * **Grupo de tipo de entrada de servicios:** Ingrese el código del grupo de entrada de servicios
@@ -150,7 +150,7 @@ En este apartado se pueden visualizar, editar y crear las comunidades
 
 Para crear una nueva Comunidad, presione el botón ***”Nuevo”*** y complete la siguiente información:
 
-IMAGEN
+![Comunidad(Nuevas)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Comunidad(Nuevas).PNG)
 
 * **Código:** Ingrese el Código correspondiente a la comunidad
 * **Activo:** Active esta casilla de selección para marcar la comunidad como activa
@@ -175,33 +175,33 @@ IMAGEN
 
   > ***Conciliaciones***
 
-IMAGEN
+![Comunidad(Conciliaciones)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Comunidad(Conciliaciones).PNG)
  
 * **Email de Conciliación:** Introduzca el correo asociado a las conciliaciones 
 * **Nombre del Email de Conciliación:** Introduzca el nombre de la entidad asociada al correo utilizado
 
   > ***Zonas***
 
-IMAGEN
+![Comunidad(Zona)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Comunidad(Zona).PNG)
 
 * **Zona:** Indique una zona asociada a la comunidad
 
   >	***Sitios***
 
-IMAGEN
+![Comunidad(sitios)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Comunidad(sitios).PNG)
 
 * **Sitio:** Indique sitios asociados a la comunidad
 
   > ***Elite Status***
 
-IMAGEN
+![comunidad(Elite Status)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/comunidad(Elite%20Status).PNG)
 
 * **Código:** Detalle el código correspondiente con el estatus a crear
 * **Nombre:** Detalle el nombre de el estatus asociado al código correspondiente
 
   > ***Información de Expiración***
 
-IMAGEN
+![Comunidad (Informacion de Expiracion)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Comunidad%20(Informacion%20de%20Expiracion).PNG)
 
 * **Tipo de Expiración:** Seleccione el tipo de expiración de la comunidad
 * **Periodicidad:**	Indique la periodicidad hasta la expiración
@@ -215,11 +215,11 @@ Una vez finalizada las configuraciones, haga click en el botón ***”Guardar”
 
 En ATIONet una contingencia es una operación introducida manualmente. En esta sección puede consultar y crear contingencias. Tenga en cuenta que las contingencias son transacciones sin autorización previa.
 
-IMAGEN
+![Contingencias (Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Contingencias%20(Menu).PNG)
 
 Los campos a completar son los siguientes:
 
-IMAGEN
+![Contingencias (Nuevas)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Contingencias%20(Nuevas).PNG)
 
 *	**Descripcion:** Introduzca el motivo por el cual se está realizando la contingencia.
 *	**Fecha:** Introduzca la fecha de la contingencia.
@@ -232,7 +232,7 @@ IMAGEN
 
   > ***Productos***
 
-IMAGEN
+![Contingencias (Productos)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Contingencias%20(Productos).PNG)
 
 *	**Producto:** Ingrese el producto asociado a la contingencia 
 *	**Cantidad:** Ingrese la cantidad correspondiente al producto.
@@ -246,7 +246,7 @@ Cuando haya terminado de rellenar los campos, presione el botón ***Guardar***.
 
 La sección de Cuentas Corrientes de Fidelidad es la vista del saldo disponible de las cuentas, y también la vista de todos los movimientos de las mismas. 
 
-IMAGEN
+![Cuenta corriente (Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Cuenta%20corriente%20(Menu).PNG)
 
 </br>
 
@@ -255,7 +255,7 @@ IMAGEN
 En este apartado se puede visualizar los Cupones aplicados en las respectivas operaciones relacionadas a las cuentas de fidelidad.
 (Para mas detalles respecto a la configuración del apartado, comunicarse con ***support@atioinc.com***)
 
-IMAGEN 
+![Cupones(Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Cupones(Menu).PNG)
 
 </br>
 
@@ -263,7 +263,7 @@ IMAGEN
 
 ATIONet separa las transacciones no autorizadas en 2 secciones: ***Excepciones*** y ***[Transacciones Rechazadas](#transacciones-rechazadas)***. Las excepciones son aquellas transacciones que no pasaron las validaciones duras del sistema o las que se detectan como posibles fraudes.
 
-IMAGEN
+![Excepciones (Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Excepciones%20(Menu).PNG)
 
 </br>
 
@@ -271,7 +271,7 @@ IMAGEN
 
 En este apartado se pueden editar así como visualizar el estado  los grupos de tipo de entrada de servicios.
 
-IMAGEN
+![Grupos de Tipo de entrada de servicios (Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Grupos%20de%20Tipo%20de%20entrada%20de%20servicios%20(Menu).PNG)
 
 Para crear un nuevo grupo de tipo de entrada de servicio presione el botón ***Nuevo*** y complete la siguiente información:
 
@@ -279,12 +279,12 @@ Para crear un nuevo grupo de tipo de entrada de servicio presione el botón ***N
   * **Código:** Introduzca el código deseado para el grupo
   * **Activo:** Marque esta opción si desea que el grupo se encuentre creado 
 
-IMAGEN 
+![Grupos de Tipo de entrada de servicios (informacion)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Grupos%20de%20Tipo%20de%20entrada%20de%20servicios%20(informacion).PNG)
 
    > ***Items:***
   * **Tipo de entrada de servicio:** Ingrese el código tipo de entrada de servicio al que desea asignar 
 
-IMAGEN 
+![Grupos de Tipo de entrada de servicios (Items)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Grupos%20de%20Tipo%20de%20entrada%20de%20servicios%20(Items).PNG)
 
 Una vez finalizada la configuración correspondiente presione el botón ***Guardar*** para crear el grupo exitosamente.
 
@@ -300,11 +300,11 @@ El apartado de "Listas" se organiza principalmente en base a la subcuenta, es de
 
 Al presionar en botón de **Nuevo** se puede crear una nueva entrada de servicio.
 
-IMAGEN 
+![Hoja de servicios (menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Hoja%20de%20servicios%20(menu).PNG)
 
    > ***Información:***
 
-IMAGEN
+![Hoja de servicios (informacion)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Hoja%20de%20servicios%20(informacion).PNG)
 
 * **Vehículo/Conductor:** Introduzca el vehículo/conductor correspondiente a la entrada de servicio (En caso de que el vehículo/conductor ya posea un código, el mismo se aplicara automáticamente)
 
@@ -331,11 +331,11 @@ Una vez finalizada las configuraciones deseadas presione en ***Guardar***.
 
 En este apartado se pueden filtrar y visualizar las entidadas creadas previamente en el apartado de "Clientes"
 
-IMAGEN
+![Identidades (Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Identidades%20(Menu).PNG)
 
 A su vez, haciendo click sobre el **"Numero de documento"** en dicha vista se podra acceder a los detalles de dicha entidad
 
-IMAGEN 
+![Identidades (Informacion)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Identidades%20(Informacion).PNG)
 
 </br>
 
@@ -344,7 +344,7 @@ IMAGEN
 En este apartado se puede visualizar los procesos correspondientes con las contingencias relacionadas a las cuentas de fidelidad.
 (Para mas detalles respecto a la configuración del apartado, comunicarse con ***support@atioinc.com***)
 
-IMAGEN
+![Proceso de Contingecias (Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Proceso%20de%20Contingecias%20(Menu).PNG)
 
 </br>
 
@@ -353,7 +353,7 @@ IMAGEN
 En este apartado se puede visualizar los procesos correspondientes con los cupones aplicados en las respectivas operaciones relacionadas a las cuentas de fidelidad.
 (Para mas detalles respecto a la configuración del apartado, comunicarse con ***support@atioinc.com***)
 
-IMAGEN
+![Proceso de cupones de fidelidad (Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Proceso%20de%20cupones%20de%20fidelidad%20(Menu).PNG)
 
 </br>
 
@@ -362,7 +362,7 @@ IMAGEN
 En este apartado se puede visualizar, editar y crear/eliminar las reglas de descuento.
 Para crear una nueva regla de descuento presione el botón de ***Nuevo*** y complete la siguiente información:
 
-IMAGEN
+![Regla de descuento (Nuevo)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Regla%20de%20descuento%20(Nuevo).PNG)
 
 * **Código:** Ingrese el código de la regla en cuestión
 
@@ -378,7 +378,7 @@ IMAGEN
 
   > Dichos limites se seccionan de la siguiente forma:
 
-IMAGEN
+![Reglas de Descuentos(Resto de config)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Reglas%20de%20Descuentos(Resto%20de%20config).PNG)
 
 - **Limite Diario de Transacciones**
 - **Limite Mensual de Transacciones**
@@ -399,11 +399,11 @@ Una vez completada con la información necesaria presione ***Guardar*** para com
 
 En este apartado se puede visualizar, editar y crear las reglas de puntos.
 
-IMAGEN
+![Regla de puntos (Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Regla%20de%20puntos%20(Menu).PNG)
 
 Para crear una nueva regla de puntos presione el botón de ***Nuevo*** y complete la siguiente información:
 
-IMAGEN
+![Regla de puntos (nuevo)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Regla%20de%20puntos%20(nuevo).PNG)
 
 * **Código:** Ingrese el código de la regla en cuestión
 
@@ -434,11 +434,11 @@ Una vez completada con la información necesaria presione ***Guardar*** para com
 
 En este apartado se puede visualizar, editar y crear los tipos de entrada de servicio.
 
-IMAGEN
+![tipo de entrada de servicios (menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/tipo%20de%20entrada%20de%20servicios%20(menu).PNG)
 
 Para crear una tipo de entrada de servicio precione el boton de ***Nuevo*** y complete la siguiente informacion:
 
-IMAGEN
+![tipo de entrada de servicios (nuevo)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/tipo%20de%20entrada%20de%20servicios%20(nuevo).PNG)
 
 * **Código:** Ingrese el codigo de la entrada de servicio en cuestion
 
@@ -456,11 +456,11 @@ IMAGEN
 
 La vista de transacciones es una de las más importantes en ATIONet. En esta vista puede ver todas las transacciones exitosas.
 
-IMAGEN
+![Transacciones (Menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Transacciones%20(Menu).PNG)
 
   > El panel de filtro tiene todos estos campos disponibles:
 
-IMAGEN
+![Transacciones (filtros)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/Transacciones%20(filtros).PNG)
 
 * **Código de Autorización:** Introduzca el código de autorización asociado a la transacción.
 * **Tipo:** Seleccione el tipo de transacción correspondiente con la operación.
@@ -487,11 +487,11 @@ En caso de querer ver el detalle de la transacción, presione sobre el **Código
 
 En este apartado se pueden visualizar las transferencias realizadas entre las cuentas de fidelidad.
 
-IMAGEN
+![transferencia (menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/transferencia%20(menu).PNG)
 
 Para realizar una nueva transferencia presione el botón de ***Nuevo***:
 
-IMAGEN
+![transferencia (nuevo)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/transferencia%20(nuevo).PNG)
 
 * **Descripción:** Introduzca una descripción para la operación 
 * **Fecha:** Ingrese la fecha en la que se realiza la transferencia
@@ -511,11 +511,11 @@ Una vez completada la información correspondiente presione el botón de ***Guar
 
 En este apartado se pueden crear las unidades las cuales se verán aplicadas en descuentos y otras operaciones.
 
-IMAGEN
+![unidades (menu)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/unidades%20(menu).PNG)
 
 Para crear una nueva unidad presione el botón de ***Nuevo***:
 
-IMAGEN
+![unidades (nuevo)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Manual%20Usuario%20ATIONet/Fidelidad/unidades%20(nuevo).PNG)
 
 *	**Código:** Introduzca el código por el cual se identificará la unidad.
 *	**Nombre:** Introduzca el nombre de dicha unidad.
