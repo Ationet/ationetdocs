@@ -58,6 +58,21 @@ IMAGEN
 
 Ahora deberan seleccionar la opcion de ***"Supervisor"*** para la cual se les solicitara una contraseña, la misma por default es **1668311**
 
+IMAGEN
+
+Posteriormente, deberemos seleccionar las opciones **"Device"** > **"Load Update Package"**.
+
+IMAGEN
+
+En esta vista precionaremos el icono de las 3 lineas para seleccionar la opcion **"Choose Files"** donde finalmente deberemos seleccionar la opcion de **"Memoria Interna"** (Esto debido a que ya pasamos los archivos de instacion a la memoria interna de la termianl).
+En este apartado podremos visualizar los distintos pre-requisitos, los cuales deberan ser instalados en el siguiente orden:
+
+***Ota_Secure > SetSponsor > SDI > APK (Ultima version de la terminal 650p)***
+
+IMAGEN
+
+Tras haber realizado estos pasasos, 
+
 # Configuración
 
 
