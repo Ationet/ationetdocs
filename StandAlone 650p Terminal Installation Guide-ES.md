@@ -30,7 +30,7 @@ La instalación debe ser realizada descargando los archivos desde una computador
 # Hardware necesario
 
 - Terminal Verifone T650p
-- Cable USB (Hembra) a tipo C (Macho) ([Ejemplo del tipo de cable requerido]( https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/USB%20hembra%20a%20tipo%20C%20macho.webp))
+- Cable USB (Hembra) a tipo C (Macho) ([Ejemplo del tipo de cable requerido](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/USB%20hembra%20a%20tipo%20C%20macho.webp))
 - USB pendrive
 - Dispositivo desde el cual realizar la descarga de archivos
 
