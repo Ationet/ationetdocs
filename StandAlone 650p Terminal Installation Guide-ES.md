@@ -113,6 +113,61 @@ Una vez, finalizado esto, para instalar la nueva versión se deberán repetir lo
 
 # Configuración
 
+En esta sección indicaremos la configuración necesaria para poder empezar a operar con la terminal T650p
+
+>  [!NOTE]
+> [La única información que se detalla en esta sección es la información MÍNIMA para poder operar con la terminal]
+
+1. Iniciaremos Ingresando al apartado de ***"Mantenimiento"*** en la parte inferior derecha de la pantalla
+
+IMAGEN
+
+2. Posteriormente, ingresamos la contraseña de supervisor, la cual por default es ***Ationet@1*** (En caso de no poder ingresar con esta contraseña, comuníquese con support@atioinc.com)
+
+IMAGEN
+
+3. Luego ingresamos al menú de ***"Configuraciones"***
+
+IMAGEN
+
+4. Una vez en este menú, nos dirigimos a la sección ***"Ationet"***
+
+IMAGEN 
+
+5. Finalmente, deberemos configurar los siguientes parámetros:
+
+* **"Native URL"**: Esta es la Url que apunta a uno de los dos siguientes ambientes:
+
+    - https://native-beta.ationet.com/ (BETA)
+
+    - https://native.ationet.com/ (PROD)
+
+* **Terminal Identification**: En este apartado deberán configurar el código de terminal correspondiente con la del portal
+
+    - **Terminal code:** "Los primeros 3 caracteres del código de suscripción" + "Código particular de la terminal"
+
+IMÁGENES DE EJEMPLO 
+
+6. Una vez finalizada esta configuración, debemos **guardar** y **salir**.
+
+IMAGEN
+
+7. Finalmente, deberemos ingresar al apartado de ***"Configuración de Producto/SKU"*** y configurar los productos con los cuales vamos a operar.
+
+IMAGEN 
+
+8. Aquí deberemos seleccionar "Añadir nuevo Producto/SKU" he introducir la siguiente información:
+
+* **Código de Producto/SKU**: Introduzca el código del Producto/SKU correspondiente con el del portal de flota
+  
+* **Nombre del Producto/SKU**: Introduzca un nombre referencial para el Producto/SKU
+  
+* **Precio del Producto/SKU**: Introduzca el precio deseado para el Producto/SKU
+
+IMAGEN
+
+Una vez completada esta información presione **Guardar** y con esto habrá completado la configuración principal de la terminal T650p
+
 
 
 ## Terminal
