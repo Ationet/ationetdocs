@@ -116,7 +116,7 @@ Una vez, finalizado esto, para instalar la nueva versión se deberán repetir lo
 En esta sección indicaremos la configuración necesaria para poder empezar a operar con la terminal T650p
 
 >  [!NOTE]
-> [La única información que se detalla en esta sección es la información MÍNIMA para poder operar con la terminal]
+> *La única información que se detalla en esta sección es la información MÍNIMA para poder operar con la terminal*
 
 1. Iniciaremos Ingresando al apartado de ***"Mantenimiento"*** en la parte inferior derecha de la pantalla
 
