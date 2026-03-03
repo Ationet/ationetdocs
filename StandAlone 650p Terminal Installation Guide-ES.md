@@ -44,27 +44,26 @@ Descargue los archivos necesarios para la instalación desde [aquí](https://dow
 Primero deberán descargar los archivos previamente indicados **(OTA Secure, SetSponsor, SDI y la Versión de Terminal T650p)** en el pendrive para posteriormente hacer uso del cable USB (HEMBRA) a tipo C (MACHO) para poder cargarlos en la terminal.
 Una vez realizado este paso, deberán abrir la parte posterior de la terminal donde se podrá visualizar la batería. 
 
-IMAGEN 
+![Parte de Atras de la terminal](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/Parte%20de%20Atras%20de%20la%20terminal.jpg)
 
 Debajo de la misma se encuentra un pequeño botón para el cual deberán introducir un clip de papel u otro objeto de volumen similar.
 Al mantener presionado este botón por 3 segundos habían ingresado al menú de operadores de la terminal desde el cual accederemos al menú de supervisor.
 
-IMAGEN
+![Menu de Supervisor](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/Menu%20de%20Supervisor.PNG)
 
 Ahora deberan seleccionar la opción de ***"Supervisor"*** para la cual se les solicitará una contraseña, la misma por default es **1668311**
 
-IMAGEN
+![Menu de Supervisor (Password)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/Menu%20de%20Supervisor%20(Password).PNG)
 
 Posteriormente, deberemos seleccionar las opciones **"Device"** > **"Load Update Package"**.
 
-IMAGEN
+![Menu de Supervisor (Devices)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/Menu%20de%20Supervisor%20(Devices).PNG)
+![Menu de Supervisor (Load Update Package)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/Menu%20de%20Supervisor%20(Load%20Update%20Package).PNG)
 
 En esta vista presionaremos el ícono de las 3 líneas para seleccionar la opción **"Choose Files"** donde finalmente deberemos seleccionar la opción de **"Memoria Interna"** (Esto debido a que ya pasamos los archivos de instalación a la memoria interna de la terminal).
 En este apartado podremos visualizar los distintos pre-requisitos, los cuales deberán ser instalados en el siguiente orden:
 
 ***OTA Secure > SetSponsor > SDI > APK (Ultima versión de la terminal 650p)***
-
-IMAGEN
 
 >  [!NOTE]
 > ***Una vez subido el primer archivo se reiniciará la terminal, por lo que se deberá repetir el proceso de instalación por cada archivo a subir***
@@ -82,32 +81,29 @@ Para avanzar de este apartado deberá presionar las 4 esquinas de la pantalla en
 
 Para actualizar la terminal T650p, será necesario resetear de fábrica la terminal.
 Para realizar este paso, deberán abrir la parte posterior de la terminal donde se podrá visualizar la batería. 
-
-IMAGEN 
-
 Debajo de la misma se encuentra un pequeño botón para el cual deberán introducir un clip de papel u otro objeto de volumen similar.
 Al mantener presionado este botón por 3 segundos habían ingresado al menú de operadores de la terminal desde el cual accederemos al menú de supervisor.
 
-IMAGEN
+![Parte de Atras de la terminal](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/Parte%20de%20Atras%20de%20la%20terminal.jpg)
 
 Ahora deberan seleccionar la opción de ***"Supervisor"*** para la cual se les solicitará una contraseña, la misma por default es **1668311**
 
-IMAGEN
+![Menu de Supervisor](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/Menu%20de%20Supervisor.PNG)
 
 Posteriormente, deberemos presionar en los 3 puntos ubicados en la esquina superior izquierda de la pantalla y seleccionaremos la opción ***“Android Settings”***.
 
-IMAGEN
+![Menu de Supervisor (Android Settings)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/Menu%20de%20Supervisor%20(Android%20Settings).PNG)
 
 Dentro de este menú seleccionaremos las opciones ***“Sistema”*** y dirigirnos a  ***“Opcion de Recuperacion”***.
 
-IMAGEN
+![Menu de Supervisor (System)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/Menu%20de%20Supervisor%20(System).PNG)
+![Menu de Supervisor (Reset options)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/Menu%20de%20Supervisor%20(Reset%20options).PNG)
 
 Una vez en esta visita realizaremos la siguiente selección: ***“Borrar datos de Fábrica” > “Restablecer” > “Borrar Todo”***
 
-IMAGEN
+![Menu de Supervisor (Reset de fabrica)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/Menu%20de%20Supervisor%20(Reset%20de%20fabrica).PNG)
 
 Una vez, finalizado esto, para instalar la nueva versión se deberán repetir los pasos realizados en el apartado de [Instalación](#Instalación).
-
 
 
 # Configuración
@@ -119,19 +115,19 @@ En esta sección indicaremos la configuración necesaria para poder empezar a op
 
 1. Iniciaremos Ingresando al apartado de ***"Mantenimiento"*** en la parte inferior derecha de la pantalla
 
-IMAGEN
+![Config (Manteinance)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/Config%20(Manteinance).PNG)
 
 2. Posteriormente, ingresamos la contraseña de supervisor, la cual por default es ***Ationet@1*** (En caso de no poder ingresar con esta contraseña, comuníquese con support@atioinc.com)
 
-IMAGEN
+![Config (Password)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/Config%20(Password).PNG)
 
 3. Luego ingresamos al menú de ***"Configuraciones"***
 
-IMAGEN
+![Config (Settings)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/Config%20(Settings).PNG)
 
 4. Una vez en este menú, nos dirigimos a la sección ***"Ationet"***
 
-IMAGEN 
+![Config (Ationet)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/Config%20(Ationet).PNG)
 
 5. Finalmente, deberemos configurar los siguientes parámetros:
 
@@ -145,15 +141,15 @@ IMAGEN
 
     - **Terminal code:** "Los primeros 3 caracteres del código de suscripción" + "Código particular de la terminal"
 
-IMÁGENES DE EJEMPLO 
+![Config (Ationet - Terminal de ejemplo)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/Config%20(Ationet%20-%20Terminal%20de%20ejemplo).PNG)
 
 6. Una vez finalizada esta configuración, debemos **guardar** y **salir**.
 
-IMAGEN
+![Config (Ationet - Save)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/Config%20(Ationet%20-%20Save).PNG)
 
 7. Finalmente, deberemos ingresar al apartado de ***"Configuración de Producto/SKU"*** y configurar los productos con los cuales vamos a operar.
 
-IMAGEN 
+![Config (Products)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/Config%20(Products).PNG)
 
 8. Aquí deberemos seleccionar "Añadir nuevo Producto/SKU" e introducir la siguiente información:
 
@@ -163,7 +159,7 @@ IMAGEN
   
 * **Precio del Producto/SKU**: Introduzca el precio deseado para el Producto/SKU
 
-IMAGEN
+![Config (Products - New)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/Config%20(Products%20-%20New).PNG)
 
 "Una vez completada esta información presione **Guardar** y con esto habrá completado la configuración principal de la terminal T650p"
 
