@@ -16,11 +16,7 @@
 - [Descarga de Pre-requisitos y Aplicación](#Descarga-de-Pre-requisitos-y-Aplicación)
 - [Instalación](#Instalación)
 - [Actualizacion](#Actualizacion)
-- [Configuración](#Configuración)
-    - [Terminal](#Terminal)
-    - [Sites](#Sites)
-    - [Ationet](#Ationet)
- 
+- [Configuración](#Configuración) 
 
 # Introducción
 
@@ -30,22 +26,22 @@ La instalación debe ser realizada descargando los archivos desde una computador
 # Hardware necesario
 
 - Terminal Verifone T650p
-- Cable USB (Hembra) a tipo C (Macho) ([Ejemplo del tipo de cable requerido](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/Ejemplo%20del%20tipo%20de%20cable%20requerido.webp)
+- Cable USB [HEMBRA] a tipo C [MACHO] ([Ejemplo del tipo de cable requerido](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/Verifone%20T650p/Ejemplo%20del%20tipo%20de%20cable%20requerido.webp))
 - USB pendrive
-- Dispositivo desde el cual realizar la descarga de archivos
+- Ordenador
 
 # Descarga de Pre-requisitos y Aplicación
 
 Descargue los archivos necesarios para la instalación desde [aquí](https://downloads.ationet.com). Los archivos a descargar son:
 
-- Ota_Secure v3.45.1
+- OTA Secure
 - SetSponsor
 - SDI
 - Versión de Terminal T650p
 
 # Instalación
 
-Primero deberán descargar los archivos previamente indicados **(Ota_Secure v3.45.1, SetSponsor, SDI y la Versión de Terminal T650p)** en el pendrive para posteriormente hacer uso del cable USB (hembra) a tipo C (Macho) para poder cargarlos en la terminal.
+Primero deberán descargar los archivos previamente indicados **(OTA Secure, SetSponsor, SDI y la Versión de Terminal T650p)** en el pendrive para posteriormente hacer uso del cable USB (HEMBRA) a tipo C (MACHO) para poder cargarlos en la terminal.
 Una vez realizado este paso, deberán abrir la parte posterior de la terminal donde se podrá visualizar la batería. 
 
 IMAGEN 
@@ -66,9 +62,12 @@ IMAGEN
 En esta vista presionaremos el ícono de las 3 líneas para seleccionar la opción **"Choose Files"** donde finalmente deberemos seleccionar la opción de **"Memoria Interna"** (Esto debido a que ya pasamos los archivos de instalación a la memoria interna de la terminal).
 En este apartado podremos visualizar los distintos pre-requisitos, los cuales deberán ser instalados en el siguiente orden:
 
-***Ota_Secure > SetSponsor > SDI > APK (Ultima versión de la terminal 650p)***
+***OTA Secure > SetSponsor > SDI > APK (Ultima versión de la terminal 650p)***
 
 IMAGEN
+
+>  [!NOTE]
+> ***Una vez subido el primer archivo se reiniciará la terminal, por lo que se deberá repetir el proceso de instalación por cada archivo a subir***
 
 Tras haber realizado estos pasos, se mostrará una pantalla la cual indicará ***“Buscando actualizaciones”***. 
 Para avanzar de este apartado deberá presionar las 4 esquinas de la pantalla en el siguiente orden:
@@ -156,7 +155,7 @@ IMAGEN
 
 IMAGEN 
 
-8. Aquí deberemos seleccionar "Añadir nuevo Producto/SKU" he introducir la siguiente información:
+8. Aquí deberemos seleccionar "Añadir nuevo Producto/SKU" e introducir la siguiente información:
 
 * **Código de Producto/SKU**: Introduzca el código del Producto/SKU correspondiente con el del portal de flota
   
@@ -166,22 +165,11 @@ IMAGEN
 
 IMAGEN
 
-Una vez completada esta información presione **Guardar** y con esto habrá completado la configuración principal de la terminal T650p
+"Una vez completada esta información presione **Guardar** y con esto habrá completado la configuración principal de la terminal T650p"
 
 
 
-## Terminal
-
-
-
-## Sites
-
-
-
-## Ationet
-
-
-
+[Volver al inicio](#contenido) 	:arrow_up:
 
 
 
