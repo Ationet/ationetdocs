@@ -7,6 +7,7 @@
 - [Spanish](https://github.com/Ationet/ationetdocs/blob/master/Local%20Agent%20Installation%20Guide-ES.md)
 
 ## T650p StandAlone Terminal Installation Guide
+- [English](https://github.com/Ationet/ationetdocs/blob/master/StandAlone%20650p%20Terminal%20Installation%20Guide-EN.md)
 - [Spanish](https://github.com/Ationet/ationetdocs/blob/master/StandAlone%20650p%20Terminal%20Installation%20Guide-ES.md)
 
 ## V240m StandAlone Terminal Installation Guide
