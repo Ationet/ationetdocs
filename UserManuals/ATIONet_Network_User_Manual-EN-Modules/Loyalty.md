@@ -28,7 +28,11 @@
 
 In this section, you can schedule credit top-ups for loyalty accounts.
 
+![Adjustment](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Adjustment.PNG)
+
 To schedule a new setting, click ***New***, then complete the following sections:
+
+![Adjustment (New)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Adjustment%20(New).PNG)
 
 * **Description:** Enter a description for the desired Setting
 * **Date:** Enter the date on which the setting is made
@@ -47,12 +51,16 @@ Once you have completed the desired configuration, click ***Save***.
 
 In this section, you can create clients who operate with the loyalty module.
 
+![Clients (a Community)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Clients%20(a%20Community).PNG)
+
 To create a clients, you must complete the following information:
 
 * **Community:** Add the community associated with the clients
 * **Site:** Enter the site corresponding to the clients
 
   > In the ***"Drivers"*** section:
+
+![Clients (b Driver)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Clients%20(b%20Driver).PNG)
 
 * **License:** Enter the driver's license 
 * **Code:** Enter a code that will identify the driver
@@ -63,6 +71,8 @@ To create a clients, you must complete the following information:
 
   > In the ***"Vehicle"*** section:
 
+![Clients (c vehicle)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Clients%20(c%20vehicle).PNG)
+
 * **License plate:** Enter the license plate number corresponding to the vehicle
 * **Code:** Enter a code that will identify the vehicle
 * **Make:** Enter the make of the vehicle
@@ -72,6 +82,8 @@ To create a clients, you must complete the following information:
 
   > In the ***"Identifiers"*** section:
 
+![Clients (d identification)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Clients%20(d%20identification).PNG)
+
 * **Label:** Enter the identifier label
 * **PAN:** Enter the identifier's PAN
 * **Track:** Enter the track of the identifier
@@ -79,6 +91,8 @@ To create a clients, you must complete the following information:
 * **Model:** Select the identifier model
 
   > In the ***"Service Entry"*** section:
+
+![Clients (e service entry)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Clients%20(e%20service%20entry).PNG)
 
 * **Service Sheet Code:** Enter the service sheet code
 * **Service Entry Type Group:** Enter the service entry group code
@@ -97,6 +111,8 @@ Once these parameters have been completed, click ***Save*** to successfully regi
 In this section, you can view, edit, and create communities 
 
 To create a new Community, press the **"New"** button and fill in the following information:
+
+![Communities](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Communities.PNG)
 
 * **Code:** Enter the code corresponding to the community
 * **Active:** Check this box to mark the community as active
@@ -122,20 +138,35 @@ To create a new Community, press the **"New"** button and fill in the following 
 * **Allow anonymous IDs:** When this option is enabled, the community will allow anonymous IDs corresponding to the associated company (the "Company" field becomes mandatory).
 
     > **Reconciliations:**
+
+![Communities (a conciliations)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Communities%20(a%20conciliations).PNG)
+
 * **Reconciliation email:** Enter the email address associated with reconciliations 
 * **Reconciliation Email Name:** Enter the name of the entity associated with the email address used
 
     > **Zones:**
+
+![Communities (b zones)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Communities%20(b%20zones).PNG)
+
 * **Zone:** Indicate a zone associated with the community
 
     > **Locations:**
+
+![Communities (c sites)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Communities%20(c%20sites).PNG)
+
 * **Site:** Indicate sites associated with the community
 
     > **Elite Status:**
+
+![Communities (d elite status)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Communities%20(d%20elite%20status).PNG)
+
 * **Code:** Specify the code corresponding to the status to be created
 * **Name:** Specify the name of the status associated with the corresponding code
 
     > **Expiration Information**
+
+![Communities (e expiration information)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Communities%20(e%20expiration%20information).PNG)
+
 * **Expiration Type:** Select the expiration type for the community
 * **Frequency:** Indicate the periodicity until expiration
 * **Grace Days:** Set the grace days after the community expires
@@ -148,7 +179,12 @@ Once you have finished configuring the settings, click on the ***"Save"*** butto
 
 In ATIONet, a contingency is a manually entered transaction. In this section, you can view and create contingencies. Please note that contingencies are transactions without prior authorization.
 
+![Contingencies](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Contingencies.PNG)
+
 The fields to be completed are as follows:
+
+![Contingencies (a new)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Contingencies%20(a%20new).PNG)
+
 * **Description:** Enter the reason for the contingency.
 * **Date:** Enter the date of the contingency.
 * **Time:** Enter the time of the contingency.
@@ -159,6 +195,8 @@ The fields to be completed are as follows:
 * **Loyalty account:** Enter the loyalty account corresponding to the contingency (only accounts with assigned identifiers will be selectable).
 
     >  ***PRODUCTS***
+
+![Contingencies (b Products)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Contingencies%20(b%20Products).PNG)
 
 * **Product:** Enter the product associated with the contingency. 
 * **Quantity:** Enter the quantity corresponding to the product.
@@ -176,6 +214,8 @@ In this section, you can view the processes corresponding to contingencies relat
 </br>
 
 # Current Account
+
+![current accounts](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/current%20accounts.PNG)
 
 The Loyalty Current Accounts section shows the available balance of the accounts, as well as all account movements. 
 
@@ -218,6 +258,8 @@ Once you have entered all the necessary information, click ***Save*** to complet
 
 ATIONet separates unauthorized transactions into two sections: ***Exceptions*** and ***[Rejected Transactions](#rejected-transactions)***. Exceptions are transactions that did not pass the system's strict validations or those that are detected as possible fraud.
 
+![Exceptions](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Exceptions.PNG)
+
 </br>
 
 # Identities
@@ -232,6 +274,8 @@ In turn, by clicking on the ***"Document number"*** in that view, you can access
 
 In this section, you can view the Coupons applied to the respective transactions related to the loyalty accounts.
 (For more details regarding the configuration of this section, please ***contactsupport@atioinc.com***)
+
+![Loyalty Coupons](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Loyalty%20Coupons.PNG)
 
 </br>
 
@@ -274,7 +318,12 @@ Once you have entered all the necessary information, click ***Save*** to complet
 # Redemptions
 
 In this section, you can view the redemptions made, as well as make new redemptions.
+
+![Redemption](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Redemption.PNG)
+
 To make a new redemption, press the ***New*** button:
+
+![Redemption (New)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Redemption%20(New).PNG)
 
 * **Description:** Enter a description for the desired redemption
 * **Date/time:** Enter the date on which the redemption is made
@@ -294,6 +343,8 @@ Once you have finished your selection, press ***Save***.
 </br>
 
 # Service Entry Classes
+
+![Service Entry Classes](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Service%20Entry%20Classes.PNG)
 
 In this section, you can configure up to 3 types of service entries.
 Once a type has been created, it can be accessed and viewed as an additional section, within which you can view and create codes corresponding to the type of service entry.
@@ -321,13 +372,21 @@ To create a service entry type, press the ***New*** button and complete the foll
 
 In this section, you can edit and view the status of service entry type groups.
 
+![Service Entry Types Groups](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Service%20Entry%20Types%20Groups.PNG)
+
 To create a new service entry type group, press the ***New*** button and fill in the following information:
 
    > **Information:**
+
+![Service Entry Types Groups (a information)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Service%20Entry%20Types%20Groups%20(a%20information).PNG)
+
 * **Code:** Enter the desired code for the group
 * **Active:** Check this option if you want the group to be created 
 
 	> **Items:**
+
+![Service Entry Types Groups (b item)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Service%20Entry%20Types%20Groups%20(b%20item).PNG)
+
 * **Service entry type:** Enter the service entry type code you want to assign 
 
 Once you have finished the corresponding configuration, press the ***Save*** button to successfully create the group.
@@ -343,6 +402,8 @@ The ***"Lists"*** section is mainly organized based on the subaccount, i.e., a s
 By clicking on the ***New*** button, you can create a new service entry.
 
    > ***Information:***
+
+![Service Files](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Service%20Files.PNG)
 
 * **Vehicle/Driver:** Enter the vehicle/driver corresponding to the service entry (if the vehicle/driver already has a code, it will be applied automatically).
 
@@ -367,7 +428,12 @@ By clicking on the ***New*** button, you can create a new service entry.
 # Transactions
 
 The transactions view is one of the most important views in ATIONet. In this view, you can see all successful transactions.
+
+![Transaction (a Header)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Transaction%20(a%20Header).PNG)
+
 The filter panel has all of these fields available:
+
+![Transaction (b filter)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Transaction%20(b%20filter).PNG)
 
 * **Authorization code:** Enter the authorization code associated with the transaction.
 * **Type:** Select the transaction type corresponding to the operation.
@@ -393,8 +459,13 @@ If you want to see the transaction details, click on the ***"Authorization Code"
 
 # Transfers
 
+![Tranfer (a Header)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Tranfer%20(a%20Header).PNG)
+
 In this section, you can view the transfers made between loyalty accounts.
 To make a new transfer, click on the ***New*** button:
+
+![Tranfer (b operation)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Tranfer%20(b%20operation).PNG)
+
 * **Description:** Enter a description for the transaction 
 * **Date:** Enter the date on which the transfer is made
 * **Time:** Enter the time the transfer was made
@@ -405,14 +476,19 @@ To make a new transfer, click on the ***New*** button:
 * **Secondary Account:** Enter the account to which the amount will be transferred 
 * **Amount:** Enter the amount to be sent in the transfer
 
-Once you have completed the relevant information, press the ***Save*** button:
+Once you have completed the relevant information, press the ***Save*** button.
 
 </br>
 
 # Units
 
 In this section, you can create units that will be applied to discounts and other operations.
+
+![Units (a Header)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Units%20(a%20Header).PNG)
+
 To create a new unit, press the ***New*** button:
+
+![Units (b Options)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/User%20Manual%20ATIONet/Loyalty/Units%20(b%20Options).PNG)
 
 * **Code:** Enter the code that will identify the unit
 * **Name:** Enter the name of the unit
