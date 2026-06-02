@@ -10,26 +10,26 @@
 
 # Índice
 
-- [Introducción](#introducción)
-- [Operaciones](#operaciones)
-- [Menú principal](#menú-principal)
-  - [Preautorización](#preautorización)
-  - [Confirmación](#confirmación)
-  - [Borrar preautorización  pendiente](#clear-pending-pre-authorization)
-  - [Venta](#sale)
-  - [Consulta  de saldo](#balance-enquiry)
-  - [Fidelización](#fidelización)
-    - [Acumulación](#acumulación)
-    - [Reembolso    de acumulación](#reembolso-de-acumulación)
-    - [Consulta    de saldo](#balance-enquiry-1)
-- [Mantenimiento](#maintenance)
-  - [Cierre  de lote](#cierre-de-lote)
-  - [Imprimir último recibo](#print-last-receipt)
-  - [Anular transacción](#reverse-transaction)
-  - [Activar tarjeta regalo](#activate-giftcard)
-  - [Recargar tarjeta de crédito](#recharge-cc)
-- [Configuración](#configuración)
-  - [Contraseña  de supervisor](#supervisor-password)
+- [Introducción](#Introducción)
+- [Operaciones](#Operaciones)
+- [Menú principal](#Menú-principal)
+  - [Preautorización](#Preautorización)
+  - [Confirmación](#Confirmación)
+  - [Limpieza de preautorizaciones pendientes](#Limpieza-de-preautorizaciones-pendientes)
+  - [Venta](#Venta)
+  - [Consulta de saldo](#Consulta-de-saldo)
+  - [Fidelidad](#Fidelidad)
+    - [Acumulación](#Acumulación)
+    - [Reembolso](#Reembolso)
+    - [Consulta de saldo](#Consulta-de-saldo)
+- [Mantenimiento](#Mantenimiento)
+  - [Cierre de lote](#Cierre-de-lote)
+  - [Imprimir último recibo](#Imprimir-último-recibo)
+  - [Anular transacción](#Anular-transacción)
+  - [Activar la tarjeta regalo](#Activar-la-tarjeta-regalo)
+  - [Recargar de Consumer Card](#Recargar-de-Consumer-Card)
+- [Configuración](#Configuración)
+  - [Contraseña de supervisor](#Contraseña-de-supervisor)
   - [Combustibles](#combustibles)
 
 ## Introducción
@@ -40,27 +40,29 @@ Este manual tiene como objetivo ayudar y guiar al usuario en el uso del terminal
 
 A continuación se detallan todas las operaciones disponibles en los terminales autónomos V240m:
 
+- Introducción
+- Operaciones
 - Menú principal
   - Preautorización
   - Confirmación
-  - Borrar preautorizaciones pendientes
+  - Limpieza de preautorizaciones pendientes
   - Venta
   - Consulta de saldo
-  - Fidelización
+  - Fidelidad
     - Acumulación
-    - Reembolso de puntos acumulados
+    - Reembolso
     - Consulta de saldo
 - Mantenimiento
-  - Cierre de lotes
+  - Cierre de lote
   - Imprimir último recibo
-  - Anulación de transacción
-  - Tarjeta regalo  activa
-  - Recarga de tarjeta de crédito
+  - Anular transacción
+  - Activar la tarjeta regalo
+  - Recargar de Consumer Card
 - Configuración
   - Contraseña de supervisor
   - Combustibles
 
-## Menú principal
+  ## Menú principal
 
 ### Preautorización
 
@@ -93,7 +95,7 @@ Pulse el botón verde para volver a introducir el importe correcto.
 
 Esta primera copia del ticket es para la estación y normalmente se solicita que la firme el cliente. A continuación, el terminal le pedirá que imprima una segunda copia para el cliente. Para ello, solo tiene que pulsar el botón verde para imprimir o el botón rojo para no hacerlo.
 
-### Borrar preautorizaciones pendientes
+### Limpieza de preautorizaciones pendientes
 
 Si por alguna razón se han realizado una o más preautorizaciones c e y no se han efectuado los correspondientes envíos, será necesario liberar el saldo de estas preautorizaciones para normalizar el saldo de la cuenta.
 
@@ -126,7 +128,7 @@ Esta operación indica el importe máximo que se puede despachar en la siguiente
 - Tras leer la identificación, el terminal muestra **Procesando...** mientras se comunica con los sistemas centrales para comprobar el saldo.
 - El sistema responde con el importe máximo disponible para el envío. Se muestra en pantalla y el TPV también imprime un ticket con dicha información.
 
-### Fidelización
+### Fidelidad
 
 ATIOnet Loyalty mantiene una cuenta de fidelidad independiente para cada miembro del programa. El saldo de la cuenta se incrementa con las transacciones de acumulación y se reduce con los reembolsos de acumulación y las reglas de caducidad del programa. Las transacciones de ajuste y transferencia también pueden aumentar o reducir el saldo de la cuenta, dependiendo del signo de la operación.
 
@@ -149,7 +151,7 @@ Un programa de fidelización determinado puede tener ninguna, una o varias regla
 - Una vez introducidos todos los datos, el TPV mostrará el mensaje **Procesando...** mientras se comunica con el sistema central para procesar la acumulación.
 - Si la transacción se autoriza, el sistema responderá con un mensaje de confirmación y, a continuación, el terminal imprimirá un ticket de acumulación. El ticket indica la cantidad acumulada para ese identificador en esa transacción.
 
-#### Reembolso de acumulación
+#### Reembolso
 
 Si por algún motivo es necesario reembolsar una acumulación ya realizada, será necesario:
 
@@ -183,7 +185,7 @@ Este concepto permite agrupar un conjunto de transacciones para su posterior an�
 - Cuando finaliza el proceso, el TPV muestra un mensaje que indica **OPERACIÓN COMPLETADA** e imprime el ticket de cierre.
 - El ticket de cierre incluye un número de identificación único generado por el servidor, el número de transacciones procesadas desde el último cierre, el total de ventas, las cancelaciones y el importe acumulado durante el periodo.
 
-### Imprimir último ticket
+### Imprimir último recibo
 
 Si por alguna razón es necesario volver a imprimir el último ticket emitido (normalmente cuando el papel de la impresora se ha atascado), esto se puede hacer desde este menú.
 
@@ -210,7 +212,7 @@ Esta función permite a los usuarios activar su tarjeta regalo directamente desd
 - Una vez completado el proceso, el sistema activará la tarjeta regalo y el TPV mostrará un mensaje indicándolo.
 
 
-### Recargar CC
+### Recargar de Consumer Card
 
 Si por alguna razón es necesario recargar una tarjeta de consumo directamente desde el terminal en lugar de desde el portal, esta opción le permitirá hacerlo.
 
