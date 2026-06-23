@@ -12,7 +12,7 @@
 
 - [Introducción](#Introducción)
 - [Operaciones](#Operaciones)
-- [Menú de operacionesl](#Menú-de-operaciones)
+- [Menú de operaciones](#Menú-de-operaciones)
   - [Preautorización](#Preautorización)
   - [Confirmación](#Confirmación)
   - [Limpieza de preautorizaciones pendientes](#Limpieza-de-preautorizaciones-pendientes)
