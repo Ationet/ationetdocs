@@ -21,7 +21,7 @@
   - [Reembolso](#Reembolso)
   - [Imprimir último recibo](#Imprimir-último-recibo)
   - [Anular transacción](#Anular-transacción)
-- [Menú de Tareas](Menú-de-Tareas)
+- [Menú de Tareas](#Menú-de-Tareas)
   - [Activar la tarjeta regalo](#Activar-la-tarjeta-regalo)
   - [Cierre de lote](#Cierre-de-lote)
   - [Cambio de PIN](#Cambio-de-PIN)
@@ -197,7 +197,7 @@ En el punto de servicio (tienda, quiosco, tienda online, etc.), el proceso de ac
 
 Un programa de fidelización determinado puede tener ninguna, una o varias reglas de acumulación. Las reglas de acumulación se procesan en tiempo real cuando se recibe una solicitud de transacción de acumulación e indican a ATIOnet Loyalty cuántos puntos deben añadirse a la cuenta del socio. No obstante, la captura también puede especificar una cantidad determinada de puntos que se deben otorgar a la cuenta, anulando las reglas del programa.
 
-##Acumulación
+## Acumulación
 Inicie la operación seleccionando en el menú del panel táctil la opción FIDELIDAD y, a continuación, ACUMULACIÓN.
 El sistema le pedirá ahora que presente la identificación de fidelidad. Para la introducción manual u otros métodos de lectura (por ejemplo, un escáner), seleccione la opción Otros.
 Seleccione el producto correspondiente con el que desea acumular puntos.
@@ -205,7 +205,7 @@ A continuación, el sistema le pedirá que introduzca la cantidad de la transacc
 Una vez introducidos todos los datos, el TPV mostrará el mensaje Procesando... mientras se comunica con el sistema central para procesar la acumulación.
 Si la transacción se autoriza, el sistema responderá con un mensaje de confirmación y, a continuación, el terminal imprimirá un ticket de acumulación. El ticket indica la cantidad acumulada para ese identificador en esa transacción.
 
-##Cierre de lote Fidelidad
+## Cierre de lote Fidelidad
 Este concepto permite agrupar un conjunto de transacciones para su posterior análisis y procesamiento. Por lo general, se recomienda realizar un cierre de lote al final de cada turno operativo en la gasolinera. De esta forma, se pueden conciliar fácilmente las transacciones que se pagaron con cualquiera de los medios de pago procesados por ATIONET.
 
 Inicie la operación seleccionando en el menú del panel táctil la opción CIERRE POR LOTES.
@@ -229,7 +229,7 @@ Una vez completada la operación, el sistema habrá añadido el importe a la Tar
 
 ## Mantenimiento
 
-##Cambiar contraseña de supervisor
+## Cambiar contraseña de supervisor
 Si por alguna razón es necesario modificar la contraseña de supervisor, se puede hacer desde este menú.
 
 Inicie la operación seleccionando en el menú del panel táctil la opción CONTRASEÑA DE SUPERVISOR.
