@@ -132,6 +132,15 @@ Tras leer la identificación, el terminal muestra Procesando... mientras se comu
 
 El sistema responde con el importe máximo disponible para el envío. Se muestra en pantalla y el TPV también imprime un ticket con dicha información.
 
+## Reembolso
+Si por algún motivo es necesario reembolsar una acumulación ya realizada, será necesario:
+
+Iniciar la operación seleccionando en el menú del panel táctil la opción FIDELIDAD y, a continuación, REEMBOLSO DE ACUMULACIÓN.
+El TPV solicitará ahora que se presente la identificación asociada a la transacción acumulada que se va a reembolsar.
+A continuación, el sistema solicitará introducir el Código de autorización asociado a la transacción acumulada que se va a reembolsar.
+Una vez introducidos todos los datos, el TPV mostrará el mensaje Procesando... mientras se comunica con el sistema central para procesar el reembolso de la acumulación.
+Si la transacción se autoriza, el sistema responderá con un mensaje de confirmación y, a continuación, el terminal imprimirá el ticket de reembolso.
+
 
 ## Imprimir último recibo
 Si por alguna razón es necesario volver a imprimir el último ticket emitido (normalmente cuando el papel de la impresora se ha atascado), esto se puede hacer desde este menú.
