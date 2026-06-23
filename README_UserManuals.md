@@ -36,7 +36,7 @@
 - [Stand Alone Terminal User Manual (English)](UserManuals/AN-Stand_AloneTerminal-UserManual-EN.md)
 
 ### Verifone V240m
-- [Stand Alone Terminal User Manual (Spanish)]()
+- [Stand Alone Terminal User Manual (Spanish)](https://github.com/Ationet/ationetdocs/blob/master/Procesos%20operativos%20para%20la%20terminal%20V240M%20Stand%20Alone%20de%20ATIONet-ES.md)
 - [Stand Alone Terminal User Manual (English)](https://github.com/Ationet/ationetdocs/blob/master/Operations%20procedure%20for%20ATIONet%20V240m%20Stand%20Alone%20terminal-EN.md)
 
 <br>
