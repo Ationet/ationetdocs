@@ -3,10 +3,10 @@
 
 |**Información del Documento**|.|
 |--- |--- |
-|**Archivo:**|Procesos operativos para la terminal V240M Stand Alone de ATIONet-ES.md|
+|**Archivo:**|Procesos operativos para la terminal V240M Stand Alone de ATIONET-ES.md|
 |**Versión del Doc.:**|1.0|
 |**Fecha de Publicación:**|02, Junio 2026|
-|**Autor:**|ATIONet LLC|
+|**Autor:**|ATIONET LLC|
 
 # Índice
 
@@ -34,7 +34,7 @@
 
 ## Introducción
 
-Este manual tiene como objetivo ayudar y guiar al usuario en el uso del terminal autónomo ATIONet V240m. Los terminales autónomos ATIONet permiten al usuario autorizar transacciones de flotas en los hosts de ATIONet.
+Este manual tiene como objetivo ayudar y guiar al usuario en el uso del terminal autónomo ATIONET V240m. Los terminales autónomos ATIONET permiten al usuario autorizar transacciones de flotas en los hosts de ATIONET.
 
 ## Operaciones
 
@@ -238,7 +238,7 @@ Si por alguna razón es necesario modificar la contraseña de supervisor, se pue
 
 ### Combustibles
 
-Esta operación le permitirá configurar todos los combustibles disponibles para su dispensación. Desde aquí podrá configurar el nombre, el precio y el código del combustible. Es muy importante configurar el mismo código que en el sistema central, ya que es con este código con el que ATIONet reconoce el producto que se está dispensando.
+Esta operación le permitirá configurar todos los combustibles disponibles para su dispensación. Desde aquí podrá configurar el nombre, el precio y el código del combustible. Es muy importante configurar el mismo código que en el sistema central, ya que es con este código con el que ATIONET reconoce el producto que se está dispensando.
 
 - Inicie la operación seleccionando en el menú del panel táctil la opción **COMBUSTIBLES**.
 
