@@ -3,10 +3,10 @@
 
 |**Información del Documento**|.|
 |--- |--- |
-|**Archivo:**|Procesos operativos para la terminal T650p Stand Alone de ATIONet-ES.md|
+|**Archivo:**|Procesos operativos para la terminal T650p Stand Alone de ATIONET-ES.md|
 |**Versión del Doc.:**|1.0|
 |**Fecha de Publicación:**|23, Junio 2026|
-|**Autor:**|ATIONet LLC|
+|**Autor:**|ATIONET LLC|
 
 
 
@@ -39,7 +39,7 @@
  
     
 ## Introducción
-Este manual tiene como objetivo ayudar y guiar al usuario en el uso del terminal autónomo AtioNet T650p. Los terminales autónomos AtioNet permiten al usuario autorizar transacciones de flotas en los hosts de AtioNet.
+Este manual tiene como objetivo ayudar y guiar al usuario en el uso del terminal autónomo ATIONET T650p. Los terminales autónomos ATIONET permiten al usuario autorizar transacciones de flotas en los hosts de ATIONET.
 
 ## Operaciones
 A continuación se detallan todas las operaciones disponibles en los terminales autónomos T650p:
@@ -186,7 +186,7 @@ Esta opción permite realizar el cambio de PIN para un identificador en concreto
 
 ## Menú de Fidelidad
 
-ATIOnet Loyalty mantiene una cuenta de fidelidad independiente para cada miembro del programa. El saldo de la cuenta se incrementa con las transacciones de acumulación y se reduce con los reembolsos de acumulación y las reglas de caducidad del programa. Las transacciones de ajuste y transferencia también pueden aumentar o reducir el saldo de la cuenta, dependiendo del signo de la operación.
+ATIONET Loyalty mantiene una cuenta de fidelidad independiente para cada miembro del programa. El saldo de la cuenta se incrementa con las transacciones de acumulación y se reduce con los reembolsos de acumulación y las reglas de caducidad del programa. Las transacciones de ajuste y transferencia también pueden aumentar o reducir el saldo de la cuenta, dependiendo del signo de la operación.
 Hay tres tipos de operaciones de fidelización dentro del TPV:
 
 - Acumulación
@@ -195,7 +195,7 @@ Hay tres tipos de operaciones de fidelización dentro del TPV:
 
 En el punto de servicio (tienda, quiosco, tienda online, etc.), el proceso de acumulación suele estar relacionado con una operación de compra o pago, en la que los clientes obtienen puntos a cambio de su compra.
 
-Un programa de fidelización determinado puede tener ninguna, una o varias reglas de acumulación. Las reglas de acumulación se procesan en tiempo real cuando se recibe una solicitud de transacción de acumulación e indican a ATIOnet Loyalty cuántos puntos deben añadirse a la cuenta del socio. No obstante, la captura también puede especificar una cantidad determinada de puntos que se deben otorgar a la cuenta, anulando las reglas del programa.
+Un programa de fidelización determinado puede tener ninguna, una o varias reglas de acumulación. Las reglas de acumulación se procesan en tiempo real cuando se recibe una solicitud de transacción de acumulación e indican a ATIONET Loyalty cuántos puntos deben añadirse a la cuenta del socio. No obstante, la captura también puede especificar una cantidad determinada de puntos que se deben otorgar a la cuenta, anulando las reglas del programa.
 
 ## Acumulación
 Inicie la operación seleccionando en el menú del panel táctil la opción FIDELIDAD y, a continuación, ACUMULACIÓN.
@@ -239,7 +239,7 @@ Una vez finalizado el proceso de cambio de contraseña, el TPV mostrará un mens
 
 
 ## Crear o editar productos
-Esta operación le permitirá configurar todos los combustibles disponibles para su dispensación. Desde aquí podrá configurar el nombre, el precio y el código del combustible. Es muy importante configurar el mismo código que en el sistema central, ya que es con este código con el que AtioNet reconoce el producto que se está dispensando.
+Esta operación le permitirá configurar todos los combustibles disponibles para su dispensación. Desde aquí podrá configurar el nombre, el precio y el código del combustible. Es muy importante configurar el mismo código que en el sistema central, ya que es con este código con el que ATIONET reconoce el producto que se está dispensando.
 
 Inicie la operación seleccionando en el menú del panel táctil la opción COMBUSTIBLES & SKUs.
 
