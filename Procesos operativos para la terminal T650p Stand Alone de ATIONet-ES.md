@@ -12,108 +12,107 @@
 
 - [Introducción](#Introducción)
 - [Operaciones](#Operaciones)
-- [Menú de operaciones](#Menú-de-operaciones)
-  - [Preautorización](#Preautorización)
-  - [Confirmación](#Confirmación)
-  - [Limpieza de preautorizaciones pendientes](#Limpieza-de-preautorizaciones-pendientes)
-  - [Venta](#Venta)
-  - [Consulta de saldo](#Consulta-de-saldo)
-  - [Reembolso](#Reembolso)
-  - [Imprimir último recibo](#Imprimir-último-recibo)
-  - [Anular transacción](#Anular-transacción)
+- [Menú de Flota](#Menú-de-Flota)
+  - [Autorizacion](#Autorizacion)
+  - [Finalizacion](#Finalizacion)
+  - [PostPago](#PostPago)
+  - [Recibo](#Recibo)
+  - [Consulta de Saldo](#Consulta-de-Saldo)
+  - [Eliminar transacciones pendientes](#Eliminar-transacciones-pendientes)
+  - [Anular transaccion](#Anular-transaccion)
 - [Menú de Tareas](#Menú-de-Tareas)
-  - [Activar la tarjeta regalo](#Activar-la-tarjeta-regalo)
-  - [Cierre de lote](#Cierre-de-lote)
-  - [Cambio de PIN](#Cambio-de-PIN)
+  - [Cambiar PIN](#Cambiar-PIN)
+  - [Cierre de Lote](#Cierre-de-Lote)
+  - [Recarga](#Recarga)
 - [Menú de Fidelidad](#Menú-de-Fidelidad)
-    - [Acumulación](#Acumulación)
-    - [Cierre de lote Fidelidad](#Cierre-de-lote-Fidelidad)
-- [Menú de Consumer Card](#Menú-de-Consumer-Card)
-  - [Recargar de Consumer Card](#Recargar-de-Consumer-Card)
+  - [Fidelizar](#Fidelizar)
+  - [Consulta de Saldo Fidelidad](#Consulta-de-Saldo-Fidelidad)
+  - [Redencion de Puntos](#Redencion-de-Puntos)
+  - [Canje de Premios](#Canje-de-Premios)
+  - [Cierre de lote Fidelidad](#Cierre-de-lote-Fidelidad)
+  - [Reversa de Acumulacion](#Reversa-de-Acumulacion)
+  - 
 - [Mantenimiento](#Mantenimiento)
-  - [Contraseña de supervisor](#Contraseña-de-supervisor)
+  - [Cambias la constraseña del suprevisor](#Cambias-la-constraseña-del-suprevisor)
   - [Crear o editar productos](#Crear-o-editar-productos)
-  - [Sincronización con Terminal Management](#Sincronización-con-Terminal-Management)
+  - [Sincronizar ahora](#Sincronizar-ahora)
   - [Enviar Logs](#Enviar-Logs)
   - [Configuración](#Configuración)
- 
-    
+      - [Controlador](#Controlador)
+      - [ATIONET](#ATIONET)
+      - [Módulos](#Módulos)
+      - [Configuración de Tickets](#Configuración-de-Tickets)
+      - [Otros](#Otros)
+
+     
 ## Introducción
 Este manual tiene como objetivo ayudar y guiar al usuario en el uso del terminal autónomo ATIONET T650p. Los terminales autónomos ATIONET permiten al usuario autorizar transacciones de flotas en los hosts de ATIONET.
 
 ## Operaciones
 A continuación se detallan todas las operaciones disponibles en los terminales autónomos T650p:
 
-**> Menú de Operaciones**
-- Preautorización
-- Confirmación
-- Limpieza de preautorizaciones pendientes
-- Venta
-- Consulta de saldo
-- Reembolso
-- Imprimir último recibo
-- Anular transacción
+**> Menú de Flota**
+- Autorizacion
+- Finalizacion
+- PostPago
+- Recibo
+- Consulta de Saldo
+- Eliminar transacciones pendientes
+- Anular transaccion
 
 **> Menú de tareas**
-- Activar la tarjeta regalo
+- Cambiar PIN
+- Cierre de Lote
+- Recarga
 
 **> Menú de Fidelidad**
-- Acumulación
-- Cierre de lote
-
-**> Menú de Consumer card**
-- Recargar de Consumer Card
+- Fidelizar
+- Consulta de Saldo Fidelidad
+- Redencion de Puntos 
+- Canje de Premios
+- Cierre de Lote Fidelidad
+- Reversa de Acumulacion 
 
 **> Mantenimiento**
-- Contraseña de supervisor
-- Combustibles & SKUs
-- Configuración
+- Cambias la constraseña del suprevisor
+- Crear o editar productos
+- Sincronizar ahora
+- Enviar logs
+- Configuracion
 
-## Menú de operaciones
 
-## Preautorización
+## Menu de Flota
+
+## Autorizacion
 Durante el funcionamiento normal, la transacción se divide en dos operaciones. Primero se realiza una preautorización desde el TPV para obtener la autorización para continuar con la transacción y el importe del envío máximo. Una vez realizado el envío, tiene lugar la confirmación, en la que se informa del importe real.
 
 La preautorización implica la comunicación con el sistema central y la obtención del saldo que este autoriza. Además, la captura de este saldo implica que no puede utilizarse simultáneamente desde otro lugar. Esto significa que, SIEMPRE después de una preautorización, debe realizarse una finalización o una eliminación de preautorización pendiente para actualizar el saldo en el sistema central.
 
 Inicie la operación seleccionando en el menú del panel táctil la opción AUTORIZACIÓN.
-El sistema le pedirá ahora que presente la identificación asignada al vehículo/conductor. Para la introducción manual u otros métodos de lectura (por ejemplo, escáner), seleccione la opción Otros.
+El sistema le pedirá ahora que presente la identificación asignada al vehículo/conductor ya sea de manera manual o utilizando otros metodos de lectura.
 Seleccione el producto correspondiente que desea expedir.
 Una vez introducidos todos los datos, el TPV mostrará el mensaje Procesando... mientras se comunica con el sistema central para solicitar la autorización.
 Si la transacción no se autoriza, el sistema mostrará un mensaje de error y, tras seleccionar Aceptar, el terminal imprimirá el ticket.
 Si la transacción se autoriza, el sistema responderá con un mensaje de confirmación y, a continuación, el terminal imprimirá un ticket de autorización. El ticket indica el importe autorizado para el envío correspondiente a ese identificador en esa transacción.
-Realice el envío siguiendo las instrucciones indicadas en el albarán.
 
 
-## Confirmación
+## Finalizacion
+
 Una vez completado el envío, es necesario confirmar la transacción en el sistema. Para ello, siga estos pasos:
 
-Inicie la confirmación seleccionando en el menú del panel táctil la opción CONFIRMACIÓN.
+Inicie la confirmación seleccionando en el menú del panel táctil la opción FINALIZACION.
 Recuerda que el importe enviado no puede superar el importe autorizado en la preautorización.
-Si introduce un importe superior al preautorizado, recibirá un mensaje de error y la transacción NO se confirmará. Pulse el botón verde para volver a introducir el importe correcto.
+Si introduce un importe superior al preautorizado, recibirá un mensaje de error y la transacción NO se confirmará.
 
 Si los datos introducidos son correctos, la operación se confirmará en el servidor.
 La pantalla mostrará el mensaje Operación completada y el TPV imprimirá el ticket de la transacción.
-Esta primera copia del ticket es para la estación y normalmente se solicita que la firme el cliente. A continuación, el terminal le pedirá que imprima una segunda copia para el cliente. Para ello, solo tiene que pulsar el botón verde para imprimir o el botón rojo para no hacerlo.
 
 
-## Limpieza de preautorizaciones pendientes
-Si por alguna razón se han realizado una o más preautorizaciones y no se han efectuado los correspondientes envíos, será necesario liberar el saldo de estas pre autorizaciones para normalizar el saldo de la cuenta.
+## PostPago
 
-Inicie la cancelación de la preautorización seleccionando en el menú del panel táctil la opción BORRAR PREAUTORIZACIÓN PENDIENTE.
+En algunas circunstancias, puede darse el caso de que la venta ya se haya realizado y el envío se haya completado sin seguir el flujo normal de pre autorización y confirmación. Es importante tener en cuenta que, al procesar una operacion postpago, el sistema aplicará las mismas restricciones que se habrían aplicado en una preautorización; por lo tanto, si se intenta introducir una venta por un importe o volumen que no esté autorizado para ese identificador en ese momento, la venta será rechazada. Si esto ocurre, será necesario ponerse en contacto con el servicio de asistencia para determinar cómo proceder con la venta.
 
-El TPV solicitará que se presente la identificación asociada a la preautorización que se va a cancelar.
-
-La identificación asignada al vehículo/conductor debe presentarse ahora a través del terminal.
-
-Tras leer la identificación, el terminal muestra Procesando... mientras se comunica con los sistemas centrales para cancelar la pre autorización.
-
-Cuando el servidor haya respondido confirmando la cancelación de la preautorización, la pantalla mostrará un mensaje de confirmación. El saldo de la preautorización ya está disponible para su uso de nuevo.
-
-## Venta
-En algunas circunstancias, puede darse el caso de que la venta ya se haya realizado y el envío se haya completado sin seguir el flujo normal de pre autorización y confirmación. Es importante tener en cuenta que, al procesar una venta, el sistema aplicará las mismas restricciones que se habrían aplicado en una preautorización; por lo tanto, si se intenta introducir una venta por un importe o volumen que no esté autorizado para ese identificador en ese momento, la venta será rechazada. Si esto ocurre, será necesario ponerse en contacto con el servicio de asistencia para determinar cómo proceder con la venta.
-
-Inicie la venta seleccionando en el menú del panel táctil la opción VENTA.
+Inicie la venta seleccionando en el menú del panel táctil la opción POSTPAGO.
 El TPV solicitará que se presente la identificación asociada a la venta para ser registrada.
 Tras leer la identificación, el terminal muestra Procesando... mientras se comunica con los sistemas centrales para notificar la venta.
 Si la transacción no está autorizada, el sistema responderá con un mensaje de error y, tras seleccionar Aceptar, el terminal imprimirá el ticket.
@@ -121,7 +120,15 @@ Si los datos introducidos son correctos, la operación se confirmará en el serv
 Si la transacción es autorizada, el sistema responderá con un mensaje de confirmación como el del ejemplo e imprimirá un ticket de autorización.
 
 
-## Consulta de saldo
+## Recibo
+Si por alguna razón es necesario volver a imprimir el último ticket emitido, esto se puede hacer desde este menú.
+
+Inicie la operación seleccionando en el menú del panel táctil la opción RECIBO.
+El TPV imprimirá automáticamente una copia del último ticket emitido. No se puede volver a imprimir ningún ticket anterior al ultimo.
+
+
+## Consulta de Saldo
+
 Esta operación indica el importe máximo que se puede despachar en la siguiente transacción para una identificación específica. Realice esta consulta cuando se desconozcan los límites del vehículo en cuestión para evitar realizar múltiples intentos de preautorización que puedan ser denegados. Si el saldo indicado no se corresponde con la cantidad que el cliente cree tener, es necesario ponerse en contacto con el servicio de asistencia para determinar cómo proceder.
 
 Inicie la venta seleccionando en el menú del panel táctil la opción CONSULTA DE SALDO.
@@ -132,24 +139,23 @@ Tras leer la identificación, el terminal muestra Procesando... mientras se comu
 
 El sistema responde con el importe máximo disponible para el envío. Se muestra en pantalla y el TPV también imprime un ticket con dicha información.
 
-## Reembolso
-Si por algún motivo es necesario reembolsar una acumulación ya realizada, será necesario:
 
-Iniciar la operación seleccionando en el menú del panel táctil la opción FIDELIDAD y, a continuación, REEMBOLSO DE ACUMULACIÓN.
-El TPV solicitará ahora que se presente la identificación asociada a la transacción acumulada que se va a reembolsar.
-A continuación, el sistema solicitará introducir el Código de autorización asociado a la transacción acumulada que se va a reembolsar.
-Una vez introducidos todos los datos, el TPV mostrará el mensaje Procesando... mientras se comunica con el sistema central para procesar el reembolso de la acumulación.
-Si la transacción se autoriza, el sistema responderá con un mensaje de confirmación y, a continuación, el terminal imprimirá el ticket de reembolso.
+## Eliminar transacciones pendientes
+
+Si por alguna razón se han realizado una o más preautorizaciones y no se han efectuado los correspondientes envíos, será necesario liberar el saldo de estas pre autorizaciones para normalizar el saldo de la cuenta.
+
+Inicie la cancelación de la preautorización seleccionando en el menú del panel táctil la opción ElLIMINAR TRANSACCIONES PENDIENTES.
+
+El TPV solicitará que se presente la identificación asociada a la preautorización que se va a cancelar.
+
+La identificación asignada al vehículo/conductor debe presentarse ahora a través del terminal.
+
+Tras leer la identificación, el terminal muestra Procesando... mientras se comunica con los sistemas centrales para cancelar la pre autorización.
+
+Cuando el servidor haya respondido confirmando la cancelación de la preautorización, la pantalla mostrará un mensaje de confirmación. El saldo de la preautorización ya está disponible para su uso de nuevo.
 
 
-## Imprimir último recibo
-Si por alguna razón es necesario volver a imprimir el último ticket emitido (normalmente cuando el papel de la impresora se ha atascado), esto se puede hacer desde este menú.
-
-Inicie la operación seleccionando en el menú del panel táctil la opción IMPRIMIR ÚLTIMO TICKET.
-El TPV imprimirá automáticamente una copia del último ticket emitido. No se puede volver a imprimir ningún otro ticket.
-
-
-## Anular transacción
+## Anular transaccion
 Si se produce un error al procesar una transacción en el sistema y el turno aún no se ha cerrado, esta opción permite anularlo y procesarlo correctamente.
 
 Inicie la operación seleccionando en el menú del panel táctil la opción ANULAR TRANSACCIÓN.
@@ -159,19 +165,17 @@ Una vez completado correctamente el proceso de anulación, el TPV muestra un men
 
 
 
-## Menú de Tareas
 
-## Activar la tarjeta regalo
-Esta función permite a los usuarios activar su tarjeta regalo directamente desde el terminal sin tener que acceder al portal.
+## Menu de Tareas
 
-Inicie la operación seleccionando en el menú del panel táctil la opción ACTIVAR TARJETA REGALO.
-Para poder continuar con la activación de la tarjeta regalo, se necesitan permisos del supervisor. 
-Introduzca la contraseña del supervisor.
-El terminal le pedirá ahora que presente la tarjeta regalo.
-A continuación, el TPV solicitará al sistema que active la tarjeta. Durante ese proceso, aparecerá en pantalla el mensaje Procesando….
-Una vez completado el proceso, el sistema activará la tarjeta regalo y el TPV mostrará un mensaje indicándolo.
+## Cambiar PIN
 
-## Cierre de lote
+Esta opción permite realizar el cambio de PIN para un identificador en concreto.
+Para esto presione el boton en el menu CAMBIAR PIN.
+Posteriormente introduzca el identificador el cual recibira el correspondiente cambio, introduzca el antiguo PIN y posteriormente introduzca el NUEVO PIN y presione acceptar.
+
+
+## Cierre de Lote
 Este concepto permite agrupar un conjunto de transacciones para su posterior análisis y procesamiento. Por lo general, se recomienda realizar un cierre de lote al final de cada turno operativo en la gasolinera. De esta forma, se pueden conciliar fácilmente las transacciones que se pagaron con cualquiera de los medios de pago procesados por ATIONET.
 
 Inicie la operación seleccionando en el menú del panel táctil la opción CIERRE POR LOTES.
@@ -180,32 +184,44 @@ El TPV solicitará al sistema central el cierre de un lote y su procesamiento. D
 Cuando finaliza el proceso, el TPV muestra un mensaje que indica OPERACIÓN COMPLETADA e imprime el ticket de cierre.
 El ticket de cierre incluye un número de identificación único generado por el servidor, el número de transacciones procesadas desde el último cierre, el total de ventas, las cancelaciones y el importe acumulado durante el periodo.
 
-## Cambio de PIN
 
-Esta opción permite realizar el cambio de PIN para un identificador en concreto
+## Recarga
 
-## Menú de Fidelidad
+
+## Menu de Fidelidad
 
 ATIONET Loyalty mantiene una cuenta de fidelidad independiente para cada miembro del programa. El saldo de la cuenta se incrementa con las transacciones de acumulación y se reduce con los reembolsos de acumulación y las reglas de caducidad del programa. Las transacciones de ajuste y transferencia también pueden aumentar o reducir el saldo de la cuenta, dependiendo del signo de la operación.
-Hay tres tipos de operaciones de fidelización dentro del TPV:
-
-- Acumulación
-- Reembolso de acumulación
-- Consulta de saldo
 
 En el punto de servicio (tienda, quiosco, tienda online, etc.), el proceso de acumulación suele estar relacionado con una operación de compra o pago, en la que los clientes obtienen puntos a cambio de su compra.
 
 Un programa de fidelización determinado puede tener ninguna, una o varias reglas de acumulación. Las reglas de acumulación se procesan en tiempo real cuando se recibe una solicitud de transacción de acumulación e indican a ATIONET Loyalty cuántos puntos deben añadirse a la cuenta del socio. No obstante, la captura también puede especificar una cantidad determinada de puntos que se deben otorgar a la cuenta, anulando las reglas del programa.
 
-## Acumulación
-Inicie la operación seleccionando en el menú del panel táctil la opción FIDELIDAD y, a continuación, ACUMULACIÓN.
+
+## Fidelizar
+Inicie la operación seleccionando en el menú del panel táctil la opción FIDELIZAR y, a continuación, ACUMULACIÓN.
 El sistema le pedirá ahora que presente la identificación de fidelidad. Para la introducción manual u otros métodos de lectura (por ejemplo, un escáner), seleccione la opción Otros.
 Seleccione el producto correspondiente con el que desea acumular puntos.
 A continuación, el sistema le pedirá que introduzca la cantidad de la transacción.
 Una vez introducidos todos los datos, el TPV mostrará el mensaje Procesando... mientras se comunica con el sistema central para procesar la acumulación.
 Si la transacción se autoriza, el sistema responderá con un mensaje de confirmación y, a continuación, el terminal imprimirá un ticket de acumulación. El ticket indica la cantidad acumulada para ese identificador en esa transacción.
 
-## Cierre de lote Fidelidad
+
+## Consulta de Saldo Fidelidad
+Esta operación indica el importe máximo que se puede despachar en la siguiente transacción para una identificación fidelizada. Realice esta consulta cuando se desconozcan los límites del vehículo en cuestión para evitar realizar múltiples intentos de preautorización que puedan ser denegados. Si el saldo indicado no se corresponde con la cantidad que el cliente cree tener, es necesario ponerse en contacto con el servicio de asistencia para determinar cómo proceder.
+
+Inicie la venta seleccionando en el menú del panel táctil la opción CONSULTA DE SALDO.
+
+El TPV le pedirá que presente la identificación asociada al identificador cuyo saldo desea consultar.
+
+Tras leer la identificación, el terminal muestra Procesando... mientras se comunica con los sistemas centrales para comprobar el saldo.
+
+El sistema responde con el importe máximo disponible para el envío. Se muestra en pantalla y el TPV también imprime un ticket con dicha información.
+
+## Redencion de Puntos 
+
+## Canje de Premios
+
+## Cierre de Lote Fidelidad
 Este concepto permite agrupar un conjunto de transacciones para su posterior análisis y procesamiento. Por lo general, se recomienda realizar un cierre de lote al final de cada turno operativo en la gasolinera. De esta forma, se pueden conciliar fácilmente las transacciones que se pagaron con cualquiera de los medios de pago procesados por ATIONET.
 
 Inicie la operación seleccionando en el menú del panel táctil la opción CIERRE POR LOTES.
@@ -214,22 +230,13 @@ El TPV solicitará al sistema central el cierre de un lote y su procesamiento. D
 Cuando finaliza el proceso, el TPV muestra un mensaje que indica OPERACIÓN COMPLETADA e imprime el ticket de cierre.
 El ticket de cierre incluye un número de identificación único generado por el servidor, el número de transacciones procesadas desde el último cierre, el total de ventas, las cancelaciones y el importe acumulado durante el periodo.
 
-## Menú de Consumer Card
 
-
-## Recargar de Consumer Card
-Si por alguna razón es necesario recargar una tarjeta de consumo directamente desde el terminal en lugar de desde el portal, esta opción le permitirá hacerlo.
-
-Inicie la operación seleccionando en el menú del panel táctil la opción RECARGAR CC.
-El terminal le pedirá que presente la tarjeta de consumidor que desea recargar.
-A continuación, el terminal le pedirá que introduzca el importe que desea recargar en la tarjeta.
-A continuación, el TPV solicitará al sistema que recargue la tarjeta con el importe introducido. Durante ese proceso, se mostrará en pantalla Procesando….
-Una vez completada la operación, el sistema habrá añadido el importe a la Tarjeta de Consumidor y el TPV mostrará un mensaje indicándolo.
+## Reversa de Acumulacion 
 
 
 ## Mantenimiento
 
-## Cambiar contraseña de supervisor
+## Cambias la constraseña del suprevisor
 Si por alguna razón es necesario modificar la contraseña de supervisor, se puede hacer desde este menú.
 
 Inicie la operación seleccionando en el menú del panel táctil la opción CONTRASEÑA DE SUPERVISOR.
@@ -249,21 +256,57 @@ El sistema le pedirá ahora que complete el nombre, el código y el precio del c
 
 Si por alguna razón es necesario modificar un combustible ya existente, solo tiene que seleccionar el combustible de la lista y el sistema le mostrará todos los detalles del mismo; a continuación, sólo tiene que editar los campos.
 
-## Sincronización con Terminal Management
 
+## Sincronizar ahora
 Comunicarse al correo de support@atioinc.com para recibir más detalles acerca del servicio de Terminal Management
 
-## Enviar Logs
 
-Para poder enviar Logs se debe haber hecho previamente la vinculación con ‘Terminal Management’
+## Enviar logs
+Para poder enviar Logs se debe haber hecho previamente la vinculación con el servicio de ‘Terminal Management’
 
-## Configuración
-El menú de configuración permite modificar los parámetros del TPV. Estas operaciones no son habituales y requieren en todos los casos la contraseña del supervisor.
 
-* Idioma
-* Controladora
-* ATIONET
-* Módulos
-* Configuración de Tickets 
-* Otros
+## Configuracion
+El menú de configuración permite modificar los parámetros del TPV. Estas operaciones no son habituales y requieren en todos los casos la contraseña del supervisor para ingresar.
+
+> [!NOTE]
+Es importante aclarar que las imagenes solo reflejan la vista inicial del apartado, deberan desplazarse hacia abajo en la pantalla para ver el resto de la configuracion de cada apartado
+
+
+## ***Idioma***
+En este apartado se podra configurar el idioma deseado para la terminal. Para ello, debera presionar el boton con el idioma indicado y elegir el idioma de preferencia.
+(Actualmente la terminal cuanta con el Ingles y Español).
+  
+## ***Controlador***
+En este apartado se podra seleccionar el tipo de controladora que se utilizara para operar en la estacion. Para ello, debera desplazarse hacia la derecha he izquierda para navergar entre los tipos de sistemas disponibles.
+(Actualmente la terminal cuanta con los sistemas de Stand Alone Y Fusion Business Service).
+En caso de seleccionar el servicio de FUSION, debera ser necesario introducir la IP, el puerto y el codigo de tipo de pago correspondientes a la terminal.
+
+## ***ATIONET***
+En este apartado se configurara la informacion relacionada al sistema de ATIONET.
+
+Se debera completar la siguiente informacion: 
+
+* URL Nativa: Introduzca la URL del ambiente correspondiente
+    - URL de BETA: https://native-beta.ationet.com/
+    - URL de PRODUCTIVA: https://native.ationet.com/
+  
+* Identifiacacion de la terminal: Introduzca el mismo codigo de terminal configurado su subscripcion del portal de ATIONET.
+
+
+## ***Módulos***
+En este apartado se puede seleccionar los modulos con los cuales se operaran. Habilitar o deshabilitar modulos va a modificar la vista principal del menu.
+Para seleccionar un modulo, debera desplazarse hacia la derecha he izquierda para navergar entre los distintos modulos y presionar el boton de "Habilitar Operaciones" para habilitar asi el modulo.
+
+
+## ***Configuración de Tickets***
+Este apartado se puede configuar la estructura del ticket al momento de ser impreso.
+Para ver las multiples opciones de personalizacion, debera despazarse hacia abajo en la pantalla. 
+Al pie del apartado, se podra ver una previsualizacion de resultado final del ticket que desea imprimir.
+
+
+## ***Otros***
+En este apartado se permitira configurar informacion como la unidad de medida del combustible/GNC y el tipo de moneda con el que se transaccionara.
+Adicionalmente, se encuentra el boton de "Imprimir Configuraciones", el cual al presionarlo generara que la terminal imprima ciertas configuraciones adicionales como lo son el tipo de version instalada en la terminal o el ID de sistema.
+
+
 
