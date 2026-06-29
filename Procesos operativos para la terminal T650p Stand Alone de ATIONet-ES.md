@@ -23,7 +23,6 @@
 - [Menú de Tareas](#Menú-de-Tareas)
   - [Cambiar PIN](#Cambiar-PIN)
   - [Cierre de Lote](#Cierre-de-Lote)
-  - [Recarga](#Recarga)
 - [Menú de Fidelidad](#Menú-de-Fidelidad)
   - [Fidelizar](#Fidelizar)
   - [Consulta de Saldo Fidelidad](#Consulta-de-Saldo-Fidelidad)
@@ -64,7 +63,6 @@ A continuación se detallan todas las operaciones disponibles en los terminales 
 **> Menú de tareas**
 - Cambiar PIN
 - Cierre de Lote
-- Recarga
 
 **> Menú de Fidelidad**
 - Fidelizar
@@ -125,7 +123,7 @@ Si la transacción es autorizada, el sistema responderá con un mensaje de confi
 Si por alguna razón es necesario volver a imprimir el último ticket emitido, esto se puede hacer desde este menú.
 
 Inicie la operación seleccionando en el menú del panel táctil la opción RECIBO.
-El TPV imprimirá automáticamente una copia del último ticket emitido. No se puede volver a imprimir ningún ticket anterior al ultimo.
+En la pantalla se veran reflejas las ultimas DOS operaciones. Al presionar en cualquiera de esos dos, la TPV imprimirá automáticamente una copia del ticket indicado.
 
 
 ## Consulta de Saldo
@@ -149,9 +147,7 @@ Inicie la cancelación de la preautorización seleccionando en el menú del pane
 
 El TPV solicitará que se presente la identificación asociada a la preautorización que se va a cancelar.
 
-La identificación asignada al vehículo/conductor debe presentarse ahora a través del terminal.
-
-Tras leer la identificación, el terminal muestra Procesando... mientras se comunica con los sistemas centrales para cancelar la pre autorización.
+Tras leer la identificación, el terminal muestra la operacion correspondiente y para avanzar hay que presionar el boton de **¡Eliminar!**. Tras esto la TPV se comunicara con los sistemas centrales para cancelar la pre autorización.
 
 Cuando el servidor haya respondido confirmando la cancelación de la preautorización, la pantalla mostrará un mensaje de confirmación. El saldo de la preautorización ya está disponible para su uso de nuevo.
 
@@ -160,11 +156,10 @@ Cuando el servidor haya respondido confirmando la cancelación de la preautoriza
 Si se produce un error al procesar una transacción en el sistema y el turno aún no se ha cerrado, esta opción permite anularlo y procesarlo correctamente.
 
 Inicie la operación seleccionando en el menú del panel táctil la opción ANULAR TRANSACCIÓN.
-El TPV solicitará el código de autorización de la transacción que se va a cancelar. El código de autorización se encuentra en el ticket. Pulse el botón verde para procesar la anulación de la transacción.
-El TPV solicitará al sistema que anule la transacción. Durante ese proceso, se mostrará en pantalla Procesando….
+El TPV solicitará la contraseña del supervisor y una vez ingresada, nos solicitara el código de autorización de la transacción que se va a cancelar. 
+Ante de proceder con la eliminacion se nos consultara una última vez antes de anularla, para proceder hay que darle al boton de **SI**.
+Posteriormente, el TPV solicitará al sistema que anule la transacción. Durante ese proceso, se mostrará en pantalla Procesando….
 Una vez completado correctamente el proceso de anulación, el TPV muestra un mensaje indicando e imprime un ticket de confirmación o uno de error si el proceso ha fallado.
-
-
 
 
 ## Menu de Tareas
@@ -181,12 +176,7 @@ Este concepto permite agrupar un conjunto de transacciones para su posterior an�
 
 Inicie la operación seleccionando en el menú del panel táctil la opción CIERRE POR LOTES.
 Para proceder con el cierre de lote, se requieren permisos de supervisor. Introduzca la contraseña del supervisor.
-El TPV solicitará al sistema central el cierre de un lote y su procesamiento. Durante ese proceso, se muestra en pantalla Procesando….
-Cuando finaliza el proceso, el TPV muestra un mensaje que indica OPERACIÓN COMPLETADA e imprime el ticket de cierre.
-El ticket de cierre incluye un número de identificación único generado por el servidor, el número de transacciones procesadas desde el último cierre, el total de ventas, las cancelaciones y el importe acumulado durante el periodo.
-
-
-## Recarga
+Posteriormente, se presenta un breve paso de verificacion, en el cual luego de presionar el boton **SI**, se procedera con el cierre correspondiene y una vez que la operacion sea completada, el TPV mostrara un mensaje que indica OPERACIÓN COMPLETADA e imprime el ticket de cierre.
 
 
 ## Menu de Fidelidad
@@ -199,12 +189,9 @@ Un programa de fidelización determinado puede tener ninguna, una o varias regla
 
 
 ## Fidelizar
-Inicie la operación seleccionando en el menú del panel táctil la opción FIDELIZAR y, a continuación, ACUMULACIÓN.
-El sistema le pedirá ahora que presente la identificación de fidelidad. Para la introducción manual u otros métodos de lectura (por ejemplo, un escáner), seleccione la opción Otros.
-Seleccione el producto correspondiente con el que desea acumular puntos.
-A continuación, el sistema le pedirá que introduzca la cantidad de la transacción.
+Inicie la operación seleccionando en el menú del panel táctil la opción FIDELIZAR y, a continuación, introducimos el identificador de fidelidad correspondiente mediante la introducción manual u otros métodos de lectura. Luego procederemos a elegir entre la acumulacion de punto o la aplicacion del descuento, para despues elegir el tipo de producto (Combustible o secos) y el monto o cantidad correspondiente.
 Una vez introducidos todos los datos, el TPV mostrará el mensaje Procesando... mientras se comunica con el sistema central para procesar la acumulación.
-Si la transacción se autoriza, el sistema responderá con un mensaje de confirmación y, a continuación, el terminal imprimirá un ticket de acumulación. El ticket indica la cantidad acumulada para ese identificador en esa transacción.
+Si la transacción se autoriza, el sistema responderá con un mensaje de confirmación y, a continuación, el terminal imprimirá un ticket de acumulación. El ticket indica la cantidad acumulada o el descuento aplicado para ese identificador dependiendo del tipo de operacion que hayamos deseado realizar.
 
 
 ## Consulta de Saldo Fidelidad
@@ -218,21 +205,37 @@ Tras leer la identificación, el terminal muestra Procesando... mientras se comu
 
 El sistema responde con el importe máximo disponible para el envío. Se muestra en pantalla y el TPV también imprime un ticket con dicha información.
 
+
 ## Redencion de Puntos 
+En este apartado se puede realizar el intercambio de los puntos disponibles por multiples recompensas.
+Al precionar el boton de **REDENCION DE PUNTOS**, la controladora solicitara el identificador de fidelidad correspondiente. Posteriormente, seleccionamos el producto a reclamar y despues seleccionamos la cantidad del mismo. Finalmente, presionamos en el boton de **Confirmar** y el TPV tras procesar lo solicitado, imprimira el ticket con la informacion correspondiente a la redencion
+
 
 ## Canje de Premios
+En este apartado se puede realizar el canje de premios mediante las funciones de la camara.
+Primero presionamos el boton de **Canje de Premios**, lo cual habilitara la camara del dispositivo.
+Luego escaneamos el QR con el premio correspondiente y finalmente, si se tienen los puntos necesarios, se efectua el canje.
+Posteriormente, se imprimira el ticket mostrando los detalles del canje realizado.
+
 
 ## Cierre de Lote Fidelidad
 Este concepto permite agrupar un conjunto de transacciones para su posterior análisis y procesamiento. Por lo general, se recomienda realizar un cierre de lote al final de cada turno operativo en la gasolinera. De esta forma, se pueden conciliar fácilmente las transacciones que se pagaron con cualquiera de los medios de pago procesados por ATIONET.
 
 Inicie la operación seleccionando en el menú del panel táctil la opción CIERRE POR LOTES.
 Para proceder con el cierre de lote, se requieren permisos de supervisor. Introduzca la contraseña del supervisor.
-El TPV solicitará al sistema central el cierre de un lote y su procesamiento. Durante ese proceso, se muestra en pantalla Procesando….
+El TPV nos preguntar por ultima vez si queremos realizar el cierre. Luego este solicitará al sistema central el cierre de un lote y su procesamiento. Durante ese proceso, se muestra en pantalla Procesando….
 Cuando finaliza el proceso, el TPV muestra un mensaje que indica OPERACIÓN COMPLETADA e imprime el ticket de cierre.
 El ticket de cierre incluye un número de identificación único generado por el servidor, el número de transacciones procesadas desde el último cierre, el total de ventas, las cancelaciones y el importe acumulado durante el periodo.
 
 
 ## Reversa de Acumulacion 
+Si se produce un error al procesar una acumulacion en el sistema, esta opción permite anularlo y procesarlo correctamente.
+
+Inicie la operación seleccionando en el menú del panel táctil la opción REVERSA DE TRANSACCIÓN.
+El TPV solicitará la contraseña del supervisor y una vez ingresada, nos solicitara el código de autorización de la operacion que se va a cancelar. 
+Antes de proceder con la eliminacion se nos consultara una última vez antes de anularla, para proceder hay que darle al boton de **SI**.
+Posteriormente, el TPV solicitará al sistema que anule la acumulacion. Durante ese proceso, se mostrará en pantalla Procesando….
+Una vez completado correctamente el proceso de anulación, el TPV muestra un mensaje indicando e imprime un ticket de confirmación o uno de error si el proceso ha fallado.
 
 
 ## Mantenimiento
@@ -241,8 +244,7 @@ El ticket de cierre incluye un número de identificación único generado por el
 Si por alguna razón es necesario modificar la contraseña de supervisor, se puede hacer desde este menú.
 
 Inicie la operación seleccionando en el menú del panel táctil la opción CONTRASEÑA DE SUPERVISOR.
-Introduzca la contraseña actual para realizar esta operación y, a continuación, pulse el botón verde para confirmar.
-Introduzca la nueva contraseña y pulse el botón verde para continuar.
+Introduzca la nueva contraseña de supervisor y luego vuelva a inroducirla para confirmar.
 Una vez finalizado el proceso de cambio de contraseña, el TPV mostrará un mensaje de confirmación o un error si el proceso ha fallado.
 
 
@@ -259,11 +261,12 @@ Si por alguna razón es necesario modificar un combustible ya existente, solo ti
 
 
 ## Sincronizar ahora
+Este apartado se utiliza para establecer una vinculación con el servicio de Terminal Management. Este servicio permite, administrar, configurar y actualizar terminales a distancia, así como monitorear múltiples terminales.
 Comunicarse al correo de support@atioinc.com para recibir más detalles acerca del servicio de Terminal Management
 
 
 ## Enviar logs
-Para poder enviar Logs se debe haber hecho previamente la vinculación con el servicio de ‘Terminal Management’
+Para poder enviar Logs se debe haber hecho previamente la vinculación con el servicio de ‘Terminal Management’, ya que es con este boton con el cual se pueden enviar los Logs de la terminal.
 
 
 ## Configuracion
@@ -293,21 +296,59 @@ Se debera completar la siguiente informacion:
   
 * Identifiacacion de la terminal: Introduzca el mismo codigo de terminal configurado su subscripcion del portal de ATIONET.
 
+* Establecer por defecto montó en lugar de cantidad: Habilia que por default se muestre primero la opción de introducir montó en lugar de volumen.
+
+* Solicitudes fijas en operaciones: Al activar esta opción, se desplegara un menú con múltiples opciones, las cuales al ser activadas, esta se solicitarán siempre que se lleven a cabo operaciones.
+
+La información que se puede solicitar es la siguiente:
+
+- Identificación del asistente
+- Identificación del conductor
+- Identificacion del vehiculo
+- Odómetro
+- Horas de motor
+- Remolque
+- Misceláneos
+- Unidad de camión
+- Identificación secundaria
+- PIN primario
+- PIN secundario
+
 
 ## ***Módulos***
 En este apartado se puede seleccionar los modulos con los cuales se operaran. Habilitar o deshabilitar modulos va a modificar la vista principal del menu.
 Para seleccionar un modulo, debera desplazarse hacia la derecha he izquierda para navergar entre los distintos modulos y presionar el boton de "Habilitar Operaciones" para habilitar asi el modulo.
+Adicionalmente, en modulo de Fidelidad, hay que agregar un usuario el cual tenga el rol de Loyalty API en el portal de ATIONET. Adicionalmente se puede seleccionar el tipo de sistema fidelidad con el que se quiera operar. (Es posible operar con Descuentos, Puntos o con ambos).
 
 
 ## ***Configuración de Tickets***
-Este apartado se puede configuar la estructura del ticket al momento de ser impreso.
-Para ver las multiples opciones de personalizacion, debera despazarse hacia abajo en la pantalla. 
-Al pie del apartado, se podra ver una previsualizacion de resultado final del ticket que desea imprimir.
+En este apartado se configura la información principal del sitio, siendo el **Código** y el **Nombre** lo mas importante.
+Estas son las opciones de configuracion del sitio:
+
+- Código de Sitio
+- Nombre de Sitio
+- Dirección de Sitio
+- CUIT del Sitio
+
+Posteriormente, se puede configurar qué información va a aparecer al momento de imprimir el ticket. 
+La información que se podrá visualizar es la siguiente:
+
+- Identificación del conductor
+- Identificacion del vehiculo
+- Nombre de la empresa
+- Identificación primaria
+- Identificación secundaria
+- Precio de compañía
+
+Adicionalmente se puede personalizar cierta información del ticket, como los son el título, el subtítulo, el pie de página y la nota inferior.
+
+* Imprimir detalles de la transacción en columnas: Al activar esta opción, se verán los detalles de la transacción en columnas en lugar de un orden de lista.
+
+La última opción disponible a configurar es una opción la cual permite mostrar número de factura en lugar de código de autorización.
+Finalmente al pie de esta sección, se encuentra una previsualización del resultado final del ticket en base a la configuración realizada, la cual puede ser impresa para tener una versión física del mismo. 
 
 
 ## ***Otros***
 En este apartado se permitira configurar informacion como la unidad de medida del combustible/GNC y el tipo de moneda con el que se transaccionara.
 Adicionalmente, se encuentra el boton de "Imprimir Configuraciones", el cual al presionarlo generara que la terminal imprima ciertas configuraciones adicionales como lo son el tipo de version instalada en la terminal o el ID de sistema.
-
-
 
