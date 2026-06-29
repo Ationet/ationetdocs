@@ -30,7 +30,7 @@
   - [Canje de Premios](#Canje-de-Premios)
   - [Cierre de lote Fidelidad](#Cierre-de-lote-Fidelidad)
   - [Reversa de Acumulacion](#Reversa-de-Acumulacion)
-  - 
+
 - [Mantenimiento](#Mantenimiento)
   - [Cambias la constraseña del suprevisor](#Cambias-la-constraseña-del-suprevisor)
   - [Crear o editar productos](#Crear-o-editar-productos)
@@ -41,7 +41,8 @@
       - [Controlador](#Controlador)
       - [ATIONET](#ATIONET)
       - [Módulos](#Módulos)
-      - [Configuración de Tickets](#Configuración-de-Tickets)
+      - [Terminal Management](#Terminal-Management)
+      - [Tickets & Sitios](#Tickets-&-Sitios)
       - [Otros](#Otros)
 
      
@@ -81,6 +82,7 @@ A continuación se detallan todas las operaciones disponibles en los terminales 
 
 
 ## Menu de Flota
+![Menu Flota](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20T650p/Menu%20Flota.PNG)
 
 ## Autorizacion
 Durante el funcionamiento normal, la transacción se divide en dos operaciones. Primero se realiza una preautorización desde el TPV para obtener la autorización para continuar con la transacción y el importe del envío máximo. Una vez realizado el envío, tiene lugar la confirmación, en la que se informa del importe real.
@@ -163,6 +165,7 @@ Una vez completado correctamente el proceso de anulación, el TPV muestra un men
 
 
 ## Menu de Tareas
+![Menu Tareas](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20T650p/Menu%20Tareas.PNG)
 
 ## Cambiar PIN
 
@@ -187,6 +190,7 @@ En el punto de servicio (tienda, quiosco, tienda online, etc.), el proceso de ac
 
 Un programa de fidelización determinado puede tener ninguna, una o varias reglas de acumulación. Las reglas de acumulación se procesan en tiempo real cuando se recibe una solicitud de transacción de acumulación e indican a ATIONET Loyalty cuántos puntos deben añadirse a la cuenta del socio. No obstante, la captura también puede especificar una cantidad determinada de puntos que se deben otorgar a la cuenta, anulando las reglas del programa.
 
+![Menu fidelidad](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20T650p/Menu%20fidelidad.PNG)
 
 ## Fidelizar
 Inicie la operación seleccionando en el menú del panel táctil la opción FIDELIZAR y, a continuación, introducimos el identificador de fidelidad correspondiente mediante la introducción manual u otros métodos de lectura. Luego procederemos a elegir entre la acumulacion de punto o la aplicacion del descuento, para despues elegir el tipo de producto (Combustible o secos) y el monto o cantidad correspondiente.
@@ -240,6 +244,8 @@ Una vez completado correctamente el proceso de anulación, el TPV muestra un men
 
 ## Mantenimiento
 
+![Mantenimiento](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20T650p/Mantenimiento.PNG)
+
 ## Cambias la constraseña del suprevisor
 Si por alguna razón es necesario modificar la contraseña de supervisor, se puede hacer desde este menú.
 
@@ -277,15 +283,25 @@ Es importante aclarar que las imagenes solo reflejan la vista inicial del aparta
 
 
 ## ***Idioma***
+
 En este apartado se podra configurar el idioma deseado para la terminal. Para ello, debera presionar el boton con el idioma indicado y elegir el idioma de preferencia.
 (Actualmente la terminal cuanta con el Ingles y Español).
+
+  ![Configuracion (a idioma)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20T650p/Configuracion%20(a%20idioma).PNG)
   
 ## ***Controlador***
+
 En este apartado se podra seleccionar el tipo de controladora que se utilizara para operar en la estacion. Para ello, debera desplazarse hacia la derecha he izquierda para navergar entre los tipos de sistemas disponibles.
 (Actualmente la terminal cuanta con los sistemas de Stand Alone Y Fusion Business Service).
+
+![Configuracion (b controladora SA)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20T650p/Configuracion%20(b%20controladora%20SA).PNG)
+
 En caso de seleccionar el servicio de FUSION, debera ser necesario introducir la IP, el puerto y el codigo de tipo de pago correspondientes a la terminal.
 
+![Configuracion (c controladora Fusion)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20T650p/Configuracion%20(c%20controladora%20Fusion).PNG)
+
 ## ***ATIONET***
+
 En este apartado se configurara la informacion relacionada al sistema de ATIONET.
 
 Se debera completar la siguiente informacion: 
@@ -314,14 +330,28 @@ La información que se puede solicitar es la siguiente:
 - PIN primario
 - PIN secundario
 
+![Configuracion (d Ationet)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20T650p/Configuracion%20(d%20Ationet).PNG)
 
 ## ***Módulos***
+
 En este apartado se puede seleccionar los modulos con los cuales se operaran. Habilitar o deshabilitar modulos va a modificar la vista principal del menu.
 Para seleccionar un modulo, debera desplazarse hacia la derecha he izquierda para navergar entre los distintos modulos y presionar el boton de "Habilitar Operaciones" para habilitar asi el modulo.
+
+![Configuracion (e modulo Flota)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20T650p/Configuracion%20(e%20modulo%20Flota).PNG)
+
 Adicionalmente, en modulo de Fidelidad, hay que agregar un usuario el cual tenga el rol de Loyalty API en el portal de ATIONET. Adicionalmente se puede seleccionar el tipo de sistema fidelidad con el que se quiera operar. (Es posible operar con Descuentos, Puntos o con ambos).
 
+![Configuracion (f modulo Fidelidad)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20T650p/Configuracion%20(f%20modulo%20Fidelidad).PNG)
 
-## ***Configuración de Tickets***
+## Terminal Management
+
+En este apartado se puede llevar a cabo la configuracion del servicio de Terminal Management.
+Comunicarse al correo de support@atioinc.com para recibir más detalles acerca del servicio de Terminal Management
+
+![Configuracion (g Terminal management)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20T650p/Configuracion%20(g%20Terminal%20management).PNG)
+
+## ***Tickets & Sitios***
+
 En este apartado se configura la información principal del sitio, siendo el **Código** y el **Nombre** lo mas importante.
 Estas son las opciones de configuracion del sitio:
 
@@ -347,8 +377,11 @@ Adicionalmente se puede personalizar cierta información del ticket, como los so
 La última opción disponible a configurar es una opción la cual permite mostrar número de factura en lugar de código de autorización.
 Finalmente al pie de esta sección, se encuentra una previsualización del resultado final del ticket en base a la configuración realizada, la cual puede ser impresa para tener una versión física del mismo. 
 
+![Configuracion (h Ticket)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20T650p/Configuracion%20(h%20Ticket).PNG)
 
 ## ***Otros***
+
 En este apartado se permitira configurar informacion como la unidad de medida del combustible/GNC y el tipo de moneda con el que se transaccionara.
 Adicionalmente, se encuentra el boton de "Imprimir Configuraciones", el cual al presionarlo generara que la terminal imprima ciertas configuraciones adicionales como lo son el tipo de version instalada en la terminal o el ID de sistema.
 
+![Configuracion (i Otros)](https://github.com/Ationet/ationetdocs/blob/master/Content/Images/StandAlone%20T650p/Configuracion%20(i%20Otros).PNG)
