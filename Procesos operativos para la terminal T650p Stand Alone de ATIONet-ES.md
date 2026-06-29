@@ -38,6 +38,7 @@
   - [Sincronizar ahora](#Sincronizar-ahora)
   - [Enviar Logs](#Enviar-Logs)
   - [Configuración](#Configuración)
+      - [Idioma](#Idioma)
       - [Controlador](#Controlador)
       - [ATIONET](#ATIONET)
       - [Módulos](#Módulos)
